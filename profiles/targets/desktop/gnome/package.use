@@ -1,0 +1,10 @@
+# Copyright 1999-2010 Gentoo Foundation
+# Distributed under the terms of the GNU General Public License v2
+# $Header: /var/cvsroot/gentoo-x86/profiles/targets/desktop/gnome/package.use,v 1.3 2010/12/18 23:53:59 ssuominen Exp $
+
+# The following are required by ekiga-3
+net-libs/opal sip
+net-libs/ptlib wav
+
+# Required by app-admin/sabayon
+x11-base/xorg-server kdrive

@@ -1,0 +1,22 @@
+# Copyright 1999-2011 Gentoo Foundation
+# Distributed under the terms of the GNU General Public License v2
+# $Header: /var/cvsroot/gentoo-x86/profiles/arch/mips/make.defaults,v 1.8 2011/02/21 17:14:51 mattst88 Exp $
+
+# 2006/08/18 - Donnie Berkholz <dberkholz@gentoo.org>
+# Defaults for video drivers
+VIDEO_CARDS="fbdev impact newport"
+
+ARCH="mips"
+ACCEPT_KEYWORDS="${ARCH} ~mips"
+
+PROFILE_ARCH="mips"
+
+USE="-fortran -openmp"
+
+STAGE1_USE="nptl nptlonly"
+
+CHOST="mips-unknown-linux-gnu"
+
+# 2010/12/06 - Matt Turner <mattst88@gentoo.org>
+# Probably missing a bunch for various SGI systems.
+ALSA_CARDS="au1x00"

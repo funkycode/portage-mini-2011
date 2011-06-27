@@ -1,0 +1,22 @@
+gtk? ( x11-libs/gtk+:2 ) xml? ( dev-libs/libxml2 ) gtk? ( dev-util/pkgconfig ) xml? ( dev-util/pkgconfig ) >=dev-vcs/git-1.6
+gtk? ( x11-libs/gtk+:2 ) xml? ( dev-libs/libxml2 )
+0
+
+
+http://sparse.wiki.kernel.org/index.php/Main_Page
+OSL-1.1
+C semantic parser
+
+eutils git multilib portability toolchain-funcs
+gtk xml
+
+
+
+2
+
+install prepare unpack
+
+
+
+
+

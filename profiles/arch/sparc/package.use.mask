@@ -1,0 +1,112 @@
+# Copyright 1999-2011 Gentoo Foundation
+# Distributed under the terms of the GNU General Public License v2
+# $Header: /var/cvsroot/gentoo-x86/profiles/arch/sparc/package.use.mask,v 1.73 2011/05/09 14:27:48 ssuominen Exp $
+
+# Pacho Ramos <pacho@gentoo.org> (02 Apr 2011)
+# quvi support is needed to play youtube files now
+media-video/totem youtube
+
+# Pacho Ramos <pacho@gentoo.org> (27 Jan 2011)
+# missing keywords on needed plugins
+media-plugins/gst-plugins-meta dv wavpack
+
+# Michael Weber <xmw@gentoo.org> (03 Jan 2011)
+# dev-libs/libev is not keyworded
+www-servers/lighttpd libev
+
+# Nirbheek Chauhan <nirbheek@gentoo.org> (10 Dec 2010)
+# net-misc/connman is not keyworded, bug 348308
+mail-client/evolution connman
+
+# Raúl Porcel <armin76@gentoo.org> (5 Dec 2010)
+# Mask doc-pdf because of Java dependencies (bug #347259)
+net-analyzer/wireshark doc-pdf
+
+# Arfrever Frehtes Taifersar Arahesis <arfrever@gentoo.org> (07 Nov 2010)
+# x11-libs/qt-declarative is not keyworded.
+dev-python/PyQt4 declarative
+
+# Justin Lecher <jlec@gentoo.org> (13 Aug 2010)
+# MKL not available on this arch
+media-gfx/povray mkl
+
+# Arfrever Frehtes Taifersar Arahesis <arfrever@gentoo.org> (29 Jul 2010)
+# Mask python3 for stable portage until python-3.x is marked stable.
+=sys-apps/portage-2.1.9* python3
+
+# Steve Arnold <nerdboy@gentoo.org> (12 Jun 2010)
+# masking for gdal (see bug 315659)
+sci-libs/gdal ecwj2k
+
+# uses games-board/ggz-gtk-client
+games-strategy/freeciv ggz
+
+# Ben de Groot <yngwin@gentoo.org> (18 Jan 2010)
+# newer qt-webkit is not keyworded (bug #235685)
+>=dev-python/PyQt4-4.7.2 webkit
+
+# Raúl Porcel <armin76@gentoo.org> (02 Mar 2010)
+# needs dev-python/mako which depends on
+# dev-python/beaker which sigbuses
+media-sound/rhythmbox webkit
+
+# Alexey Shvetsov <alexxy@gentoo.org> (09 Feb 2010)
+# need dev-db/virtuoso-* keyworded
+dev-libs/soprano virtuoso
+
+# Alexey Shvetsov <alexxy@gentoo.org> (09 Feb 2010)
+# need sys-auth/polkit keyworded
+app-admin/system-config-printer-common  policykit
+
+# Ben de Groot <yngwin@gentoo.org> (16 Jan 2010)
+# qt-multimedia is not keyworded, bug 293671
+dev-python/PyQt4 multimedia
+
+# Ben de Groot <yngwin@gentoo.org> (11 Nov 2009)
+# Requires qt-assistant, which requires qt-webkit, bug 292838
+dev-libs/uriparser doc
+media-libs/libxspf doc
+
+# Romain Perier <mrpouet@gentoo.org> (18 Oct. 2009)
+# >=networkmanager-0.7.0 is not keyworded.
+gnome-base/gnome-applets networkmanager
+
+# Raúl Porcel <armin76@gentoo.org> (09 Jun 2009)
+# Needs qt-assistant
+dev-python/PyQt4 assistant
+
+# Raúl Porcel <armin76@gentoo.org>
+# Depends on dev-java/fop which requires java...
+sci-geosciences/gpsbabel doc
+
+# Ben de Groot <yngwin@gentoo.org> (30 Dec 2008)
+# mask because mozilla-firefox-3 is -sparc keyworded
+x11-themes/gtk-engines-qtcurve firefox3
+
+# depends on mpich2 which isn't keyworded (bug #217854)
+sci-libs/hdf5 mpi
+
+# wavgain fails to build
+media-sound/rubyripper wav
+
+# Needs libmodplug
+media-libs/sdl-sound mikmod
+
+# Needs clisp which won't build
+app-text/texlive xindy
+
+# Needs krb4 USE flag for mit-krb5 (Bug #255579), and we believe it to be unstable.
+net-im/pidgin zephyr
+
+# Mask zemberek for enchant because it requires java.
+app-text/enchant zemberek
+
+# Mask srtp for ortp because libsrtp is marked -sparc
+net-libs/ortp srtp
+
+# Alexis Ballier <aballier@gentoo.org> (14 Nov 2010)
+# building the documentation needs ptex
+# app-text/ptex does not build: bug #323559
+# >=dev-texlive/texlive-langcjk-2010 provides ptex too but is masked
+# unmask when TeX Live 2010 keywording is done (bug #342513)
+app-i18n/canna doc

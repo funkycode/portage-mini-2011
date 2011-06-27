@@ -1,0 +1,25 @@
+# Copyright 1999-2011 Gentoo Foundation
+# Distributed under the terms of the GNU General Public License v2
+# $Header: /var/cvsroot/gentoo-x86/profiles/prefix/sunos/solaris/package.mask,v 1.28 2011/05/02 19:36:17 grobian Exp $
+
+# Fabian Groffen <grobian@gentoo.org> (14 Feb 2010)
+# fails to compile, offical 7.2 works like a charm
+=sys-devel/gdb-7.2.50.20101117.4.15
+
+# Fabian Groffen <grobian@gentoo.org> (23 May 2010)
+# ld: target elf32-i386 not found
+>=sys-devel/binutils-2.20.51.0.7
+
+# Fabian Groffen <grobian@gentoo.org> (29 Nov 2009)
+# segfaults during compilation, bug #294479
+~app-editors/emacs-23.2
+=virtual/emacs-23
+
+# Fabian Groffen <grobian@gentoo.org> (02 Feb 2009)
+# Fails to compile, complaining about a missing target for gmon.o, maybe
+# related to http://gcc.gnu.org/ml/gcc-patches/2008-11/msg00990.html
+=sys-devel/gcc-4.3.3*
+
+# Fabian Groffen <grobian@gentoo.org> (02 Oct 2008)
+# Doesn't compile on Solaris.
+=app-shells/ksh-93.20081104

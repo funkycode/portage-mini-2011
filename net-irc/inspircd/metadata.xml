@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pkgmetadata SYSTEM "http://www.gentoo.org/dtd/metadata.dtd">
+<pkgmetadata>
+    <herd>no-herd</herd>
+    <maintainer>
+		<email>nimiux@gentoo.org</email>
+		<name>Chema Alonso</name>
+		<description>Proxy-Maintainer. Assign him the bugs.</description>
+	</maintainer>
+	<maintainer>
+		<email>c1pher@gentoo.org</email>
+		<name>Dane Smith</name>
+		<description>Proxy. CC on bugs</description>
+	</maintainer>
+    <maintainer>
+        <email>brain@brainbox.cc</email>
+		<name>Craig Edwards</name>
+		<description>Formerly indirectly maintaining through hansmi@gentoo.org -
+looking for a new proxy maintainer</description>
+    </maintainer>
+	<use>
+		<flag name='openssl'>Build <pkg>dev-libs/openssl</pkg> module</flag>
+	</use>
+</pkgmetadata>

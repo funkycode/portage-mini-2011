@@ -1,0 +1,155 @@
+# Copyright 1999-2011 Gentoo Foundation
+# Distributed under the terms of the GNU General Public License v2
+# $Header: /var/cvsroot/gentoo-x86/profiles/arch/powerpc/package.use.mask,v 1.86 2011/06/26 00:54:13 ranger Exp $
+
+
+# Brent Baude <ranger@gentoo.org> (25 June  2011)
+# kde-base/krossjava fails to build on ppc
+=kde-base/kdebindings-meta-4.6.3 java
+
+# Kacper Kowalik <xarthisius@gentoo.org> (2 June 2011)
+# kde-base/krossjava fails to build wrt #354033
+=kde-base/kdebindings-meta-4.6.2 java
+
+# Brent Baude <ranger@gentoo.org> (1 June  2011)
+# dev-util/kdevplatform masking reviewboard USE
+=dev-util/kdevplatform-1.2.2 reviewboard
+
+# Brent Baude <ranger@gentoo.org> (1 June  2011)
+# dev-libs/libdbusmenu-qt masking test USE to complete bug 354033
+=dev-libs/libdbusmenu-qt-0.6.2 test
+
+# Doug Goldstein <cardoe@gentoo.org> (27 May 2011)
+# app-emulation/spice, app-emulation/xen, and sys-cluster/ceph
+# are not keyworded. bug #368959
+app-emulation/qemu-kvm spice xen rbd
+
+# Kacper Kowalik <xarthisius@gentoo.org> (16 Jan 2011)
+# bug 350513, app-pda/jpilot is not keyworded
+mail-client/claws-mail pda
+
+# Alexey Shvetsov <alexxy@gentoo.org> (04 Mar 2011)
+# Mask unsatisfied kde-deps bug #357403
+=kde-base/kdelibs-4.6* policykit
+=kde-base/solid-4.6* bluetooth
+
+# Sebastian Pipping <sping@gentoo.org> (22 Feb 2011)
+# No media-sound/lilypond here, yet (bug #356069)
+app-text/asciidoc test
+
+# Joseph Jezak <JoseJX@gentoo.org> (25 Jan 2011)
+# x11-libs/qt-webkit doesn't have a working JIT yet on PowerPC
+x11-libs/qt-webkit jit
+
+# Kacper Kowalik <xarthisius@gentoo.org> (16 Jan 2011)
+# bug 303931
+# dev-lang/icc is not available for ppc
+# sci-chemistry/arp-warp-bin is not available for ppc
+sci-biology/fasta icc
+sci-chemistry/ccp4 arpwarp
+
+# Brent Baude <ranger@gentoo.org> (13 Jan 2011)
+# no oracle stuff for powerpc
+net-im/ekg2 oracle
+
+# Nirbheek Chauhan <nirbheek@gentoo.org> (10 Dec 2010)
+# net-misc/connman is not keyworded, bug 348308
+mail-client/evolution connman
+
+# Justin Lecher <jlec@gentoo.org> (01 Nov 2010)
+# Deps not Keyworded
+sci-chemistry/apbs fetk
+
+# Vlastimil Babka <caster@gentoo.org> (13 Oct 2010)
+# dev-util/systemtap not keyworded on ppc arches. Note that this currently applies for java-overlay
+# icedtea only, but the plan is to move it to main tree.
+dev-java/icedtea systemtap
+
+# Alexey Shvetsov <alexxy@gentoo.org> (22 Aug 2010)
+# sci-chemistry/msms not available for this arch
+sci-chemistry/vmd msms
+
+# Justin Lecher <jlec@gentoo.org> (13 Aug 2010)
+# MKL not available on this arch
+media-gfx/povray mkl
+
+# Steve Arnold <nerdboy@gentoo.org> (12 Jun 2010)
+# masking for gdal (see bug 315659)
+sci-libs/gdal ecwj2k
+
+# Bernard Cafarelli <voyageur@gentoo.org> (26 Apr 2010)
+# This is for x86/amd64 only
+sys-devel/llvm udis86
+
+# Alexey Shvetsov <alexxy@gentoo.org> (23 Feb 2010)
+# media-gfx/tachyon needed to be keyworded per bug #306549
+sci-chemistry/vmd tachyon
+
+# QA: This entry is moved from INVALID location from default/linux/powerpc.
+# Not keyworded
+media-plugins/gst-plugins-meta mythtv
+
+# QA: This entry is moved from INVALID location from default/linux/powerpc.
+# VDPAU is currently not keyworded on PPC since its a nvidia-drivers feature
+# only presently. If other drivers support it in the future, then this can
+# get unmasked
+media-tv/mythtv vdpau
+
+# Brent Baude <ranger@gentoo.org> (14 Jan 2009)
+# # Temporarily masking sql off activerecord
+dev-ruby/activerecord sqlite3
+
+# Brent Baude <ranger@gentoo.org>
+# Masking off video cards and input devices for xorg-1.5.3 stablization
+x11-base/xorg-server input_devices_spaceorb input_devices_mutouch input_devices_hyperpen input_devices_fpit input_devices_dynapro input_devices_calcomp input_devices_summa input_devices_elographics input_devices_citron input_devices_microtouch input_devices_jamstudio input_devices_elo2300 input_devices_penmount input_devices_tek4957 input_devices_dmc input_devices_digitaledge input_devices_palmax input_devices_magellan video_cards_v4l video_cards_cirrus video_cards_voodoo video_cards_sisusb video_cards_s3 video_cards_s3virge
+
+# Joseph Jezak <josejx@gentoo.org> (Mar 20 2009)
+# Mask Ruby -> Oracle bindings
+dev-ruby/ruby-dbi oracle
+
+# Brent Baude <ranger@gentoo.org>
+# masking zephyr USE on pidgin
+net-im/pidgin zephyr
+
+# Mart Raudsepp <leio@gentoo.org> (02 Apr 2008)
+# media-plugins/gst-plugins-{mythtv,dvb,fluendo-mpegdemux} not keyworded
+# Joseph Jezak <josejx@gentoo.org> (27 Feb 2009)
+# Marked ~ppc, but masking current versions because of stable keyword
+<=media-plugins/gst-plugins-meta-0.10-r2 dvb mythtv
+
+# Mark Loeser <halcy0n@gentoo.org> (18 Jan 2008)
+# mono doesn't work with Openoffice - bug #202361
+app-office/openoffice mono
+
+=dev-java/ibm-jdk-bin-1.5* -nsplugin
+=dev-java/ibm-jre-bin-1.5* -nsplugin
+=dev-java/ibm-jdk-bin-1.6* -nsplugin
+=dev-java/ibm-jre-bin-1.6* -nsplugin
+
+# Joseph Jezak <josejx@gentoo.org> (28 Jun 2007)
+# Masked Parallel LCD devices for bug #180683
+# app-misc/lcd4linux
+app-misc/lcd4linux lcd_devices_hd44780
+
+# nixnut <nixnut@gentoo.org> (5 feb 2008)
+# Masking hb and hb2 USE flags as no suitable solution for evms exists
+sys-fs/evms hb hb2
+
+# Tobias Scherbaum <dertobi123@gentoo.org> (1 Feb 2008)
+# Mask mono flag for gnome as tomboy is segfaulting.
+gnome-base/gnome mono
+
+# Joseph Jezak <josejx@gentoo.org> (12 November 2008)
+# Mask the JIT for pearpc, it's x86 only
+app-emulation/pearpc jit
+
+# Alexis Ballier <aballier@gentoo.org> (14 Nov 2010)
+# building the documentation needs ptex
+# app-text/ptex does not build: bug #323559
+# >=dev-texlive/texlive-langcjk-2010 provides ptex too but is masked
+# unmask when TeX Live 2010 keywording is done (bug #342513)
+app-i18n/canna doc
+
+# Tomas Touceda <chiiph@gentoo.org> (21 Nov 2010)
+# JIT isn't implemented on ppc: bug #346167
+x11-libs/qt-script jit

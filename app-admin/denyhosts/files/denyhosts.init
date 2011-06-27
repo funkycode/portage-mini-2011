@@ -1,0 +1,22 @@
+#!/sbin/runscript
+# Copyright 1999-2010 Gentoo Foundation
+# Distributed under the terms of the GNU General Public License v2
+# $Header: /var/cvsroot/gentoo-x86/app-admin/denyhosts/files/denyhosts.init,v 1.6 2010/10/07 12:45:33 darkside Exp $
+
+opts="depend start stop"
+
+depend() {
+	use logger sshd
+}
+
+start() {
+	ebegin "Starting DenyHosts daemon"
+	start-stop-daemon --start --exec /usr/bin/denyhosts.py --pidfile /var/run/denyhosts.pid -- --daemon -c /etc/denyhosts.conf
+	eend $?
+}
+
+stop() {
+	ebegin "Stopping DenyHosts daemon"
+	start-stop-daemon --quiet --stop --pidfile /var/run/denyhosts.pid
+	eend $?
+}

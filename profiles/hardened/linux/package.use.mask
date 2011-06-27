@@ -1,0 +1,6 @@
+# Copyright 1999-2011 Gentoo Foundation
+# Distributed under the terms of the GNU General Public License v2
+# $Header: /var/cvsroot/gentoo-x86/profiles/hardened/linux/package.use.mask,v 1.10 2011/03/08 00:05:04 blueness Exp $
+
+sys-devel/gcc -hardened
+sys-libs/glibc -hardened

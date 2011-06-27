@@ -1,0 +1,22 @@
+dev-lang/tk
+dev-lang/tk
+0
+http://dev.gentoo.org/~jlec/distfiles/visualregexp-icon.png.tar http://laurent.riesterer.free.fr/regexp/visual_regexp-3.0.tar.gz
+
+http://laurent.riesterer.free.fr/regexp/
+GPL-2
+Type the regexp and visualize it on a sample of your choice
+~amd64 ~ppc ~x86
+eutils multilib portability toolchain-funcs
+
+
+
+
+4
+
+install prepare
+
+
+
+
+

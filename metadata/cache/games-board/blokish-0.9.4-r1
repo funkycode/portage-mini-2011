@@ -1,0 +1,22 @@
+x11-libs/wxGTK:2.8[X,opengl] virtual/opengl || ( =sys-devel/automake-1.11* ) >=sys-devel/autoconf-2.61 >=sys-devel/libtool-2.2.6b
+x11-libs/wxGTK:2.8[X,opengl] virtual/opengl
+0
+mirror://sourceforge/blokish/blokish_v0.9.4.tgz
+
+http://sourceforge.net/projects/blokish/
+GPL-2
+Open source clone of the four-player board game Blokus
+amd64 x86
+autotools base eutils games libtool multilib portability toolchain-funcs wxwidgets
+
+
+
+
+2
+
+compile configure install postinst preinst prepare setup unpack
+
+
+
+
+

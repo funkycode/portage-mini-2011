@@ -1,0 +1,22 @@
+dev-ruby/ruby-tcpwrap =dev-lang/ruby-1.8*
+dev-ruby/ruby-tcpwrap app-i18n/skk-jisyo =dev-lang/ruby-1.8*
+0
+http://www.unixuser.org/~ysjj/rskkserv/rskkserv-2.95.3.tar.gz
+
+http://raa.ruby-lang.org/list.rhtml?name=rskkserv
+GPL-2
+rskkserv is an alternative version of skkserv implemented by Ruby
+~ppc x86
+eutils multilib portability ruby toolchain-funcs
+
+
+
+
+
+
+compile install postinst unpack
+
+
+
+
+

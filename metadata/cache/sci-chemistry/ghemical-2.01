@@ -1,0 +1,22 @@
+media-libs/freeglut virtual/glu virtual/opengl x11-libs/gtk+:2 >=x11-libs/gtkglext-1.0.5 gnome-base/libglade:2.0 >=sci-libs/libghemical-2 openbabel? ( >=sci-chemistry/openbabel-2 ) threads? ( dev-libs/glib:2 ) x11-libs/libXmu >=dev-util/pkgconfig-0.15
+media-libs/freeglut virtual/glu virtual/opengl x11-libs/gtk+:2 >=x11-libs/gtkglext-1.0.5 gnome-base/libglade:2.0 >=sci-libs/libghemical-2 openbabel? ( >=sci-chemistry/openbabel-2 ) threads? ( dev-libs/glib:2 ) x11-libs/libXmu
+0
+http://bioinformatics.org/ghemical/download/ghemical-2.01.tar.gz
+
+http://bioinformatics.org/ghemical/
+GPL-2
+Chemical quantum mechanics and molecular mechanics
+ppc x86
+eutils multilib portability toolchain-funcs
+threads openbabel toolbar
+
+
+
+1
+
+compile install postinst setup
+
+
+
+
+

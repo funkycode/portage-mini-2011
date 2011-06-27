@@ -1,0 +1,22 @@
+!net-misc/rarpd ssl? ( dev-libs/openssl ) idn? ( net-dns/libidn ) sys-fs/sysfsutils virtual/os-headers app-text/openjade dev-perl/SGMLSpm app-text/docbook-sgml-dtd app-text/docbook-sgml-utils >=dev-vcs/git-1.6
+!net-misc/rarpd ssl? ( dev-libs/openssl ) idn? ( net-dns/libidn ) sys-fs/sysfsutils
+0
+
+
+http://www.linux-foundation.org/en/Net:Iputils
+BSD
+Network monitoring tools including ping and ping6
+
+eutils flag-o-matic git multilib portability toolchain-funcs
+doc idn ipv6 SECURITY_HAZARD ssl static
+
+
+
+2
+
+compile install prepare unpack
+
+
+
+
+

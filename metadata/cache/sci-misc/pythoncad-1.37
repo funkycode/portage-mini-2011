@@ -1,0 +1,22 @@
+>=app-admin/eselect-python-20091230 =dev-lang/python-2*
+dev-python/pygtk:2 >=app-admin/eselect-python-20091230 =dev-lang/python-2*
+0
+mirror://sourceforge/pythoncad/PythonCAD-DS1-R37.tar.gz
+
+http://www.pythoncad.org/
+GPL-2
+CAD program written in PyGTK
+~amd64 ~x86
+distutils eutils multilib portability python toolchain-funcs versionator
+
+
+
+
+3
+
+compile install postinst postrm prepare
+
+
+
+
+

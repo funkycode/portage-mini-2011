@@ -1,0 +1,22 @@
+>=app-admin/eselect-python-20091230 =dev-lang/python-2* dev-vcs/subversion net-misc/rsync
+dev-util/confix-wrapper sys-devel/autoconf-archive sys-devel/automake sys-devel/libtool >=app-admin/eselect-python-20091230 =dev-lang/python-2*
+2
+
+
+http://confix.sourceforge.net
+GPL-2
+Confix: A Build Tool on Top of GNU Automake
+
+distutils eutils multilib portability python subversion toolchain-funcs
+
+
+
+
+3
+
+compile install postinst postrm preinst prepare unpack
+
+
+
+
+

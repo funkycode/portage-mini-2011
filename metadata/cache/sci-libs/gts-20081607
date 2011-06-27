@@ -1,0 +1,22 @@
+virtual/fortran dev-libs/glib:2 sys-apps/gawk media-libs/netpbm sys-devel/libtool dev-util/pkgconfig
+virtual/fortran dev-libs/glib:2 sys-apps/gawk media-libs/netpbm
+0
+mirror://gentoo/gts-20081607.tar.gz
+
+http://gts.sourceforge.net/
+LGPL-2
+GNU Triangulated Surface Library
+~amd64 ~ppc ~x86
+eutils fortran-2 multilib portability toolchain-funcs
+doc
+
+
+
+1
+
+install setup unpack
+
+
+
+
+

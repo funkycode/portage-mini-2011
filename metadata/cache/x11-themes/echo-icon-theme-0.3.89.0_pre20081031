@@ -1,0 +1,22 @@
+dev-util/pkgconfig >=x11-misc/icon-naming-utils-0.8.90 >=sys-apps/sed-4
+
+0
+mirror://gentoo/echo-icon-theme-0.3.89.0_pre20081031.tar.bz2
+binchecks strip
+https://fedorahosted.org/echo-icon-theme
+CCPL-Attribution-ShareAlike-3.0
+SVG icon theme from the Echo Icon project
+~amd64 ~x86
+eutils gnome2-utils multilib portability toolchain-funcs
+
+
+
+
+2
+
+install postinst postrm preinst
+
+
+
+
+

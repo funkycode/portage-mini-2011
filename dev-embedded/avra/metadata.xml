@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pkgmetadata SYSTEM "http://www.gentoo.org/dtd/metadata.dtd">
+<pkgmetadata>
+	<herd>no-herd</herd>
+	<maintainer>
+		<email>raxas@pavouk-v-rohu.net</email>
+		<name>Petr Kocmid</name>
+	</maintainer>
+	<maintainer>
+		<email>scarabeus@gentoo.org</email>
+		<name>Tomas Chvatal</name>
+		<description>Proxy commiter for the above maintainer</description>
+	</maintainer>
+	<longdescription lang="en">
+		Assembler for Atmel AVR microprocessors
+	</longdescription>
+</pkgmetadata>

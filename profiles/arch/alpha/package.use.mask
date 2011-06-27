@@ -1,0 +1,77 @@
+# Copyright 1999-2011 Gentoo Foundation
+# Distributed under the terms of the GNU General Public License v2
+# $Header: /var/cvsroot/gentoo-x86/profiles/arch/alpha/package.use.mask,v 1.60 2011/05/09 14:27:47 ssuominen Exp $
+
+# Pacho Ramos <pacho@gentoo.org> (02 Apr 2011)
+# quvi support is needed to play youtube files now
+media-video/totem youtube
+
+# Diego Elio Pettenò <flameeyes@gentoo.org> (17 Dec 2010)
+# needs sys-libs/libcap-ng that is masked right now
+sys-apps/smartmontools caps
+
+# Nirbheek Chauhan <nirbheek@gentoo.org> (10 Dec 2010)
+# net-misc/connman is not keyworded, bug 348308
+mail-client/evolution connman
+
+# Raúl Porcel <armin76@gentoo.org> (5 Dec 2010)
+# Mask doc-pdf because of Java dependencies (bug #347259)
+net-analyzer/wireshark doc-pdf
+# legacy mask
+www-client/elinks javascript
+
+# Arfrever Frehtes Taifersar Arahesis <arfrever@gentoo.org> (07 Nov 2010)
+# x11-libs/qt-declarative is not keyworded.
+dev-python/PyQt4 declarative
+
+# Justin Lecher <jlec@gentoo.org> (13 Aug 2010)
+# MKL not available on this arch
+media-gfx/povray mkl
+
+# Arfrever Frehtes Taifersar Arahesis <arfrever@gentoo.org> (29 Jul 2010)
+# Mask python3 for stable portage until python-3.x is marked stable.
+=sys-apps/portage-2.1.9* python3
+
+# Raúl Porcel <armin76@gentoo.org> (26 Jun 2010)
+# custom-optimization doesn't work on alpha
+mail-client/thunderbird custom-optimization
+net-libs/xulrunner custom-optimization
+www-client/icecat custom-optimization
+www-client/firefox custom-optimization
+www-client/seamonkey custom-optimization
+x11-plugins/enigmail custom-optimization
+
+# Kacper Kowalik <xarthisius@gentoo.org> (30 May 2010)
+# quesoglc is not keyworded
+x11-misc/rss-glx quesoglc
+
+# uses games-board/ggz-gtk-client
+games-strategy/freeciv ggz
+
+# Ben de Groot <yngwin@gentoo.org> (16 Jan 2010)
+# qt-multimedia is not keyworded, bug 293671
+dev-python/PyQt4 multimedia
+
+# Raúl Porcel <armin76@gentoo.org> (07 Jul 2008)
+# Make clisp deps minimal
+dev-lisp/clisp hyperspec pari svm
+
+# Tobias Klausmann <klausman@gentoo.org> (15 Jun 2008)
+# No hardware to test net-dialup/linux-atm on alpha, so mask atm use flag
+# on those.
+sys-apps/iproute2 atm
+net-dialup/ppp atm
+
+# Needs nut and qstat respectively, neither is keyworded on alpha.
+net-analyzer/nagios-plugins ups nagios-game
+
+# Alexis Ballier <aballier@gentoo.org> (14 Nov 2010)
+# building the documentation needs ptex
+# app-text/ptex does not build: bug #323559
+# >=dev-texlive/texlive-langcjk-2010 provides ptex too but is masked
+# unmask when TeX Live 2010 keywording is done (bug #342513)
+app-i18n/canna doc
+
+# Matt Turner <mattst88@gentoo.org> (26 Dec 2010)
+# No idea why. Bug 347827
+www-client/elinks javascript

@@ -1,0 +1,20 @@
+# Copyright 1999-2011 Gentoo Foundation
+# Distributed under the terms of the GNU General Public License v2
+# $Header: /var/cvsroot/gentoo-x86/profiles/targets/desktop/package.use,v 1.12 2011/06/08 07:51:06 williamh Exp $
+
+# Samuli Suominen <ssuominen@gentoo.org> (19 Dec 2010)
+# Required by sys-fs/udisks for xfce4-power-manager, gnome-disk-utility (gvfs),
+# e_dbus (e17), and libfm (pcmanfm)
+# http://tinderbox.dev.gentoo.org/misc/rindex/sys-fs/udisks
+sys-fs/udev extras gudev hwdb keymap
+sys-block/parted device-mapper
+
+# Samuli Suominen <ssuominen@gentoo.org> (19 Dec 2010)
+# Required for desktop icons integration. Only desktop users should get this
+# dependency hell.
+xfce-base/xfdesktop thunar
+
+# Chris Gianelloni <wolf31o2@gentoo.org> (26 Mar 2008)
+# While we may need LDAP client support, who needs the server on a desktop?
+# Did I mention that this also fixes the horrible perl dependency hell, too?
+net-nds/openldap minimal

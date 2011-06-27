@@ -1,0 +1,45 @@
+# Copyright 1999-2011 Gentoo Foundation
+# Distributed under the terms of the GNU General Public License v2
+# $Header: /var/cvsroot/gentoo-x86/profiles/prefix/darwin/package.mask,v 1.27 2011/05/11 18:34:51 grobian Exp $
+
+
+# Fabian Groffen <grobian@gentoo.org> (11 May 2011)
+# Uses the horribly broken build-system waf.  When hacked far enough,
+# produces a MH_OBJ with invalid install_name called _cairo.bundle.
+~dev-python/pycairo-1.10.0
+
+# Fabian Groffen <grobian@gentoo.org> (21 Apr 2010)
+# Requires thread-local storage (__thread), Darwin has pthread_getspecific
+# http://lists.apple.com/archives/xcode-users/2006/Jun/msg00551.html
+=media-gfx/povray-3.7.0*
+
+# Fabian Groffen <grobian@gentoo.org> (21 Apr 2010)
+# state of mesa is probably not too good on OSX, opengl-apple is
+# preferred
+media-libs/mesa
+
+# Fabian Groffen <grobian@gentoo.org> (03 Feb 2010)
+# ld: duplicate symbol mylist<....> caused by implementation code in
+# mylist.h file
+~dev-vcs/cssc-1.2.0
+
+# Fabian Groffen <grobian@gentoo.org> (27 Oct 2009)
+# Fails compiling due to some missing dwarf symbols and internal
+# segfaults
+~sys-devel/gcc-4.4.2
+~sys-devel/gcc-4.4.3
+~sys-devel/gcc-4.4.4
+
+# Fabian Groffen <grobian@gentoo.org> (30 Jun 2009)
+# platform.h:81: error: conflicting types for ‘setmode’
+# /usr/include/unistd.h:570: error: previous declaration of ‘setmode’ was here
+=app-crypt/ccrypt-1.8
+
+# Elias Pipping <pipping@gentoo.org> (22 Dec 2007)
+# bug #211712: archive has no table of contents
+sci-libs/blas-atlas
+
+# Elias Pipping <pipping@gentoo.org> (09 Oct 2007)
+# darwin-miscutils are only available on darwin
+-sys-apps/darwin-miscutils
+

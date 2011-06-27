@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pkgmetadata SYSTEM "http://www.gentoo.org/dtd/metadata.dtd">
+<pkgmetadata>
+	<herd>no-herd</herd>
+	<maintainer>
+		<email>c1pher@gentoo.org</email>
+		<name>Dane Smith</name>
+	</maintainer>
+	<maintainer>
+		<email>nimiux@gentoo.org</email>
+		<name>Chema Alonso</name>
+		<description>Proxy-Maintainer. Assign bugs to him and CC
+			me.</description>
+	</maintainer>
+	<longdescription lang="en">
+		Tripwire is a tool that aids system administrators and users in
+		monitoring a designated set of files for any changes. Used with system
+		files on a regular (e.g., daily) basis, Tripwire can notify system
+		administrators of corrupted or tampered files, so damage control
+		measures can be taken in a timely manner.
+	</longdescription>
+</pkgmetadata>

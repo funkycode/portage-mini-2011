@@ -1,0 +1,45 @@
+# PLEASE KEEP MOST RECENT MASKS ON TOP, REVERSE CHRONO ORDER
+
+# Daniel Robbins <drobbins@funtoo.org> (02 Mar 2011)
+# mask sys-apps/man as part of a workaround to get
+# man-db to merge smoothly:
+sys-apps/man
+
+# Daniel Robbins <drobbins@funtoo.org> (29 Aug 2010)
+
+>=dev-lang/python-3
+
+# Group python-3-specific ebuilds here - they should
+# all be masked for now to avoid situations where
+# deps cannot be satisfied due to python-3 not being
+# available. We want the python-2 version of the
+# ebuild to be the most recent for stable and 
+# unstable to avoid this problem:
+
+=dev-python/beautifulsoup-3.1*
+net-zope/zope-fixers
+>=net-zope/zope-interface-3.6.1
+
+# Daniel Robbins <drobbins@funtoo.org> (07 Jul 2010)
+# allow users to upgrade
+=dev-lang/python-2.7*
+
+# Daniel Robbins <drobbins@funtoo.org> (28 Dec 2009)
+# Requested by slashbeast (Piotr Karbowski) in #funtoo due to /etc/cron.hourly
+# running up to 4 times per hour:
+=sys-process/cronbase-0.3.3*
+
+# Andrew Kirch <trelane@trelane.net> (10 June 2009)
+# Paludis does not support the profiles/package.mask hierarchy.
+# See Funtoo FAQ: http://www.funtoo.org/en/funtoo/faq/
+sys-apps/paludis
+
+# Pkgcore also does not support this at present
+<=sys-apps/pkgcore-0.4.8
+
+# Daniel Robbins <drobbins@funtoo.org> (12 Mar 2009)
+# If you want to use mysql-community, unmask it and mask dev-db/mysql.
+# Having both unmasked causes "emerge dev-db/mysql" to fail, which is
+# not optimal.
+dev-db/mysql-community
+

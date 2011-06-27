@@ -1,0 +1,22 @@
+>=x11-libs/openmotif-2.3:0
+>=x11-libs/openmotif-2.3:0
+0
+ftp://ftp.fu-berlin.de/unix/X11/apps/plan/plan-1.9.tar.gz mirror://gentoo/plan-1.9-gentoo.tar.bz2
+
+http://www.bitrot.de/plan.html
+as-is
+Motif based schedule planner
+~amd64 ~hppa ~ppc ~sparc ~x86
+eutils multilib portability toolchain-funcs
+
+
+
+
+1
+
+compile install postinst unpack
+
+
+
+
+
