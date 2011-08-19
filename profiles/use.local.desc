@@ -176,7 +176,8 @@ app-arch/cabextract:extra-tools - Install experimental tools: wince_info and win
 app-arch/cfv:bittorrent - Enable support for checking .torrent files
 app-arch/dpkg:dselect - Build the dselect package-management frontend
 app-arch/dump:ermt - encrypted rmt support
-app-arch/file-roller:nautilus - Enable file-roller to integrate with gnome-base/nautilus by providing entries in its context menu.
+app-arch/file-roller:nautilus - Enable file-roller to integrate with gnome-base/nautilus by providing entries in its context menu
+app-arch/file-roller:packagekit - Enable support for the distro-neutral package manager GUI app-admin/packagekit
 app-arch/gzip:pic - disable optimized assembly code that is not PIC friendly
 app-arch/libarchive:bzip2 - Allow accessing bzip2-compressed archives through libbz2 (which comes with app-arch/bzip2). This only affects libarchive's native support: bsdtar will keep using bunzip2 as a filter if that's not built-in.
 app-arch/libarchive:static - Build bsdtar and bsdcpio as static archives, removing dependencies over the enabled compression libraries (lzma, lzmadec, libbz2, zlib).
@@ -212,7 +213,8 @@ app-benchmarks/jmeter:beanshell - Enable BeanShell scripting support
 app-cdr/backlite:mplayer - Add support for mplayer preview in addition to X11 and phonon
 app-cdr/brasero:introspection - Use dev-libs/gobject-introspection for introspection
 app-cdr/brasero:libburn - Enable dev-libs/libburn backend
-app-cdr/brasero:nautilus - Build gnome-base/nautilus extension
+app-cdr/brasero:nautilus - Build the gnome-base/nautilus extension
+app-cdr/brasero:packagekit - Enable support for the distro-neutral package manager GUI app-admin/packagekit
 app-cdr/brasero:playlist - Enable support for playlists through dev-libs/totem-pl-parser
 app-cdr/cdemu:cdemud - Pull app-cdr/cdemud dependency, useful in chroot environment (bug #315491). Do not disable until you know what you are doing.
 app-cdr/cdrdao:gcdmaster - Enable building of gcdmaster application
@@ -1255,6 +1257,7 @@ dev-php/eaccelerator:doccommentinclusion - If you want eAccelerator to retain do
 dev-php/eaccelerator:inode - Use inode-based caching
 dev-php/smarty-docs:html - Install the documentation in HTML format
 dev-php/smarty-docs:pdf - Install the documentation in PDF format
+dev-php5/pecl-memcached:igbinary - Enable support for the igbinary serializer
 dev-php5/php-gtk:glade - Enable libglade support
 dev-php5/php-gtk:libsexy - Enable libsexy support
 dev-php5/php-gtk:mozembed - Enable GtkMozembed support
@@ -1676,11 +1679,18 @@ gnome-extra/evolution-data-server:weather - Enable optional weather calendar sup
 gnome-extra/file-browser-applet:gtkhotkey - Enable hotkey support via x11-libs/gtkhotkey
 gnome-extra/gdesklets-core:dbus - Enable gDesklets Controls to use DBus
 gnome-extra/gget:epiphany - Install epiphany extensions
+gnome-extra/gnome-color-manager:introspection - Use dev-libs/gobject-introspection for introspection
+gnome-extra/gnome-color-manager:packagekit - Enable support for the distro-neutral package manager GUI app-admin/packagekit
 gnome-extra/gnome-do-plugins:banshee - Enables the Banshee (media-sound/banshee) plugin
 gnome-extra/gnome-dvb-daemon:totem - Build a plugin for media-video/totem
 gnome-extra/gnome-dvb-daemon:vala - Add support for dev-lang/vala
+gnome-extra/gnome-games:aisleriot - Install the card game Aisleriot (Solitaire)
 gnome-extra/gnome-games:artworkextra - Installs extra artwork for various games
-gnome-extra/gnome-games:clutter - Build games that use media-libs/clutter and are written in JavaScript using dev-libs/seed
+gnome-extra/gnome-games:clutter - Install games that use media-libs/clutter
+gnome-extra/gnome-games:glchess - Install Chess written in dev-lang/vala and OpenGL
+gnome-extra/gnome-games:introspection - Use dev-libs/gobject-introspection for introspection
+gnome-extra/gnome-games:seed - Install swell-foop and lightsoff which are written in JavaScript using dev-libs/seed
+gnome-extra/gnome-games:sudoku - Install the game Sudoku which uses dev-python/pygobject and introspection
 gnome-extra/gnome-power-manager:applet - Build battery monitor applet
 gnome-extra/gnome-utils:bonobo - Enable applets (gdict one) still not ported to DBUS, requiring deprecated bonobo support in gnome-panel.
 gnome-extra/gucharmap:introspection - Use dev-libs/gobject-introspection for introspection
@@ -1692,6 +1702,7 @@ gnome-extra/libgda:sourceview - Enable support for x11-libs/gtksourceview
 gnome-extra/libgda:xbase - Enables support for xbase databases (dBase, FoxPro, etc.)
 gnome-extra/libgsf:gtk - Enable use of gdk in thumbnailer
 gnome-extra/libgsf:thumbnail - Enable libgsf supported formats thumbnailer
+gnome-extra/mousetweaks:applet - Build the gnome-base/gnome-panel applet
 gnome-extra/music-applet:mpd - Enable MPD support
 gnome-extra/nautilus-sendto:gajim - Enables support for net-im/gajim
 gnome-extra/nautilus-sendto:mail - Enables support for mailto using gnome-extra/evolution-data-server
@@ -3663,9 +3674,10 @@ net-misc/tor:upnp - Enable Universal Plug and Play
 net-misc/vde:pcap - Enable the pcap-based plugin that allows creating a switch against a real interface.
 net-misc/vde:ssl - Enable the cryptcab plugin that allows creating an encrypted virtual cable.
 net-misc/vidalia:tor - Allow to use a local tor setup
-net-misc/vinagre:applet - Enable vinagre applet for gnome-base/gnome-panel.
-net-misc/vinagre:ssh - Enable ssh plugin.
-net-misc/vinagre:telepathy - Enable access to remote desktop via a telepathy client.
+net-misc/vinagre:applet - Enable vinagre applet for gnome-base/gnome-panel
+net-misc/vinagre:introspection - Use dev-libs/gobject-introspection for introspection
+net-misc/vinagre:ssh - Enable ssh plugin using x11-libs/vte
+net-misc/vinagre:telepathy - Enable access to remote desktop via a net-libs/telepathy-glib client
 net-misc/vino:telepathy - Enable desktop sharing through a telepathy client
 net-misc/vpnc:hybrid-auth - Enable hybrid authentication (certificates), only if not redistributed as compiled binary
 net-misc/vpnc:openssl - Use dev-libs/openssl for hybrid-auth instead of net-libs/gnutls, may cause license issues when redistributing.
@@ -3822,7 +3834,8 @@ net-wireless/bluez:old-daemons - Install old daemons like hidd and sdpd that are
 net-wireless/bluez:pnat - Enable pnat plugin
 net-wireless/bluez:test-programs - Install tools for testing of various Bluetooth functions
 net-wireless/gnome-bluetooth:introspection - Use dev-libs/gobject-introspection for introspection
-net-wireless/gnome-bluetooth:nautilus - Build nautilus-sendto plugin
+net-wireless/gnome-bluetooth:nautilus - Build the gnome-extra/nautilus-sendto plugin
+net-wireless/gnome-bluetooth:sendto - Build the gnome-extra/nautilus-sendto plugin
 net-wireless/hostapd:debug - Enables debugging
 net-wireless/hostapd:logwatch - Install support files for sys-app/logwatch
 net-wireless/hostapd:madwifi - Add support for madwifi (Atheros chipset)
