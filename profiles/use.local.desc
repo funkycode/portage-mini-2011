@@ -1447,6 +1447,7 @@ dev-util/metro:ccache - Enable support for ccache
 dev-util/metro:git - Enable support for git snapshots
 dev-util/metro:threads - Enable support for pbzip2 tarball packing/unpacking
 dev-util/mono-tools:webkit - Use net-libs/webkit-gtk for rendering.
+dev-util/monodevelop:git - Enable Git version control support
 dev-util/nemiver:memoryview - Enable the optional hexadecimal memory inspection with app-editors/ghex.
 dev-util/netbeans:keychain - enables support for keychain in netbeans start script
 dev-util/nsis:config-log - Enable the logging facility (useful in debugging installers)
@@ -2394,6 +2395,7 @@ media-sound/freewheeling:fluidsynth - compile with support for fluidsynth
 media-sound/gejengel:audioscrobbler - Enable track submission on last.fm
 media-sound/gimmix:cover - Enable cover art fetching
 media-sound/gimmix:lyrics - Enable lyric fetching
+media-sound/gmpc:unique - Enable single instance support using dev-libs/libunique
 media-sound/gmpc:xspf - Enable support for reading and saving XSPF playlists
 media-sound/gmusicbrowser:webkit - Enables gtk WebKit support
 media-sound/gpodder:webkit - Enable the webkit rendering engine for HTML episode shownotes
