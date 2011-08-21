@@ -1,5 +1,5 @@
 
-virtual/man
+virtual/man !<dev-libs/libaio-0.3.109-r2
 0
 mirror://kernel/linux/docs/manpages/Archive/man-pages-3.32.tar.bz2 mirror://gentoo/man-pages-gentoo-2.tar.bz2 http://dev.gentoo.org/~cardoe/files/man-pages-gentoo-2.tar.bz2
 binchecks
