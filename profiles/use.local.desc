@@ -3038,6 +3038,7 @@ net-dns/opendnssec:softhsm - Enables support for storing DNSSEC keys in a dev-li
 net-dns/pdns:opendbx - Enable the OpenDBX backend
 net-dns/pdnsd:isdn - Linux-only: check status of ippp interfaces with ISDN-specific system calls.
 net-dns/pdnsd:urandom - Linux-only: use /dev/urandom (pseudo-random number generation) instead of the default use of random() PRNG.
+net-dns/resolvconf-symlink:symlink - Actually replace /etc/resolv.conf with a symlink. Without this flag, the ebuild is a no-op.
 net-dns/unbound:gost - Enable GOST support
 net-firewall/arno-iptables-firewall:plugins - Install optional plugins
 net-firewall/ipsec-tools:hybrid - Makes available both mode-cfg and xauth support
@@ -4590,6 +4591,7 @@ www-client/firefox:methodjit - Enable JIT for JavaScript using MethodJIT for fas
 www-client/firefox:pgo - Add support for profile-guided optimization using gcc-4.5, for faster binaries. This option will double the compile time.
 www-client/firefox:system-sqlite - Use the system-wide dev-db/sqlite installation with secure-delete enabled
 www-client/firefox:webm - Use system media-libs/libvpx for HTML5 WebM video support.
+www-client/icecat:crashreporter - Enable crashreporter for mozilla upstream, debugging symbols are not required for reporting crashes.
 www-client/icecat:custom-optimization - Fine-tune custom compiler optimizations
 www-client/icecat:ipc - Use inter-process communication between tabs and plugins. Allows for greater stability in case of plugin crashes
 www-client/icecat:methodjit - Enable JIT for JavaScript using MethodJIT for faster JS performance. Hardened users can disable this USE-flag to use MPROTECT on grsecurity kernels.

@@ -6,7 +6,7 @@ mirror://berlios/hatari/hatari-1.5.0.tar.bz2
 http://hatari.berlios.de/
 GPL-2
 Atari ST emulator
-~amd64 ~ppc ~x86
+amd64 ~ppc ~x86
 base cmake-utils eutils flag-o-matic games multilib portability toolchain-funcs
 
 
