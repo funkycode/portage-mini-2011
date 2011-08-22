@@ -1,6 +1,6 @@
 # Copyright 1999-2011 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/mail-client/thunderbird/thunderbird-5.0.ebuild,v 1.4 2011/07/31 14:58:39 anarchy Exp $
+# $Header: /var/cvsroot/gentoo-x86/mail-client/thunderbird/thunderbird-6.0.ebuild,v 1.2 2011/08/21 18:31:32 nirbheek Exp $
 
 EAPI="3"
 WANT_AUTOCONF="2.1"
@@ -9,7 +9,7 @@ inherit flag-o-matic toolchain-funcs eutils mozconfig-3 makeedit multilib mozext
 
 TB_PV="${PV/_beta/b}"
 TB_P="${PN}-${TB_PV}"
-EMVER="1.2"
+EMVER="1.3"
 
 DESCRIPTION="Thunderbird Mail Client"
 HOMEPAGE="http://www.mozilla.com/en-US/thunderbird/"
@@ -20,39 +20,38 @@ LICENSE="|| ( MPL-1.1 GPL-2 LGPL-2.1 )"
 IUSE="bindist gconf +crashreporter +crypt +ipc +lightning mozdom"
 PATCH="${PN}-5.0-patches-0.1"
 
-REL_URI="http://releases.mozilla.org/pub/mozilla.org/${PN}/releases"
-SRC_URI="${REL_URI}/${TB_PV}/source/${TB_P}.source.tar.bz2
+FTP_URI="ftp://ftp.mozilla.org/pub/${PN}/releases/"
+SRC_URI="${FTP_URI}/${TB_PV}/source/${TB_P}.source.tar.bz2
 	crypt? ( http://www.mozilla-enigmail.org/download/source/enigmail-${EMVER}.tar.gz )
 	http://dev.gentoo.org/~anarchy/mozilla/patchsets/${PATCH}.tar.bz2"
 
 if ! [[ ${PV} =~ alpha|beta ]]; then
 	# This list can be updated using get_langs.sh from the mozilla overlay
-	# Not supported yet bn-BD ro id zh-CN be af el
-	LANGS="ar bg ca cs da de en en-GB en-US es-AR es-ES et eu fi fr \
-	fy-NL ga-IE he hu is it ja ko lt nb-NO nl nn-NO pa-IN pl pt-BR pt-PT ru si \
-	sk sl sq sv-SE tr uk zh-TW"
-	NOSHORTLANGS="en-GB es-AR pt-BR zh-TW"
+	# Not supported yet bn-BD ro id zh-CN be af el pa-IN bg
+	LANGS=(ar be bn-BD br ca cs da de el en en-GB en-US es-AR es-ES et eu fi fr
+	fy-NL ga-IE gd gl he hu id is it ja ko lt nb-NO nl nn-NO pl pt-BR pt-PT rm
+	ru si sk sl sq sv-SE ta-LK tr uk)
 
-	for X in ${LANGS} ; do
-		if [ "${X}" != "en" ] && [ "${X}" != "en-US" ]; then
+	for X in "${LANGS[@]}" ; do
+		# en and en_US are handled internally
+		if [[ ${X} != en ]] && [[ ${X} != en-US ]]; then
 			SRC_URI="${SRC_URI}
-				linguas_${X/-/_}? ( ${REL_URI}/${TB_PV}/linux-i686/xpi/${X}.xpi -> ${P}-${X}.xpi )"
+				linguas_${X/-/_}? ( ${FTP_URI}/${TB_PV}/linux-i686/xpi/${X}.xpi -> ${P}-${X}.xpi )"
 		fi
 		IUSE="${IUSE} linguas_${X/-/_}"
-		# english is handled internally
-		if [ "${#X}" == 5 ] && ! has ${X} ${NOSHORTLANGS}; then
-			if [ "${X}" != "en-US" ]; then
-				SRC_URI="${SRC_URI}
-					linguas_${X%%-*}? ( ${REL_URI}/${TB_PV}/linux-i686/xpi/${X}.xpi -> ${P}-${X}.xpi )"
-			fi
+		# Install all the specific locale xpis if there's no generic locale xpi
+		# Example: there's no pt.xpi, so install all pt-*.xpi
+		if ! has ${X%%-*} "${LANGS[@]}"; then
+			SRC_URI="${SRC_URI}
+				linguas_${X%%-*}? ( ${FTP_URI}/${TB_PV}/linux-i686/xpi/${X}.xpi -> ${P}-${X}.xpi )"
 			IUSE="${IUSE} linguas_${X%%-*}"
 		fi
 	done
 fi
 
 RDEPEND=">=sys-devel/binutils-2.16.1
-	>=dev-libs/nss-3.12.9
-	>=dev-libs/nspr-4.8.7
+	>=dev-libs/nss-3.12.10
+	>=dev-libs/nspr-4.8.8
 	gconf? ( >=gnome-base/gconf-1.2.1:2 )
 	media-libs/libpng[apng]
 	!x11-plugins/lightning
@@ -70,29 +69,36 @@ RDEPEND=">=sys-devel/binutils-2.16.1
 
 DEPEND="${RDEPEND}"
 
-S="${WORKDIR}"/comm-miramar
+S="${WORKDIR}"/comm-release
 
+# TODO: Move all the linguas crap to an eclass
 linguas() {
-	local LANG SLANG
-	for LANG in ${LINGUAS}; do
-		if has ${LANG} en en_US; then
-			has en ${linguas} || linguas="${linguas:+"${linguas} "}en"
+	# Generate the list of language packs called "linguas"
+	# This list is used to install the xpi language packs
+	local LINGUA
+	for LINGUA in ${LINGUAS}; do
+		if has ${LINGUA} en en_US; then
+			# For mozilla products, en and en_US are handled internally
 			continue
-		elif has ${LANG} ${LANGS//-/_}; then
-			has ${LANG//_/-} ${linguas} || linguas="${linguas:+"${linguas} "}${LANG//_/-}"
+		# If this language is supported by ${P},
+		elif has ${LINGUA} "${LANGS[@]//-/_}"; then
+			# Add the language to linguas, if it isn't already there
+			has ${LINGUA//_/-} "${linguas[@]}" || linguas+=(${LINGUA//_/-})
 			continue
-		elif [[ " ${LANGS} " == *" ${LANG}-"* ]]; then
-			for X in ${LANGS}; do
-				if [[ "${X}" == "${LANG}-"* ]] && \
-					[[ " ${NOSHORTLANGS} " != *" ${X} "* ]]; then
-					has ${X} ${linguas} || linguas="${linguas:+"${linguas} "}${X}"
+		# For each short LINGUA that isn't in LANGS,
+		# add *all* long LANGS to the linguas list
+		elif ! has ${LINGUA%%-*} "${LANGS[@]}"; then
+			for LANG in "${LANGS[@]}"; do
+				if [[ ${LANG} == ${LINGUA}-* ]]; then
+					has ${LANG} "${linguas[@]}" || linguas+=(${LANG})
 					continue 2
 				fi
 			done
 		fi
-		ewarn "Sorry, but ${PN} does not support the ${LANG} LINGUA"
+		ewarn "Sorry, but ${P} does not support the ${LINGUA} locale"
 	done
 }
+
 
 pkg_setup() {
 	moz_pkgsetup
@@ -110,12 +116,12 @@ src_unpack() {
 
 	if ! [[ ${PV} =~ alpha|beta ]]; then
 		linguas
-		for X in ${linguas}; do
+		for X in "${linguas[@]}"; do
 			# FIXME: Add support for unpacking xpis to portage
-			[[ ${X} != "en" ]] && xpi_unpack "${P}-${X}.xpi"
+			xpi_unpack "${P}-${X}.xpi"
 		done
-		if [[ ${linguas} != "" && ${linguas} != "en" ]]; then
-			einfo "Selected language packs (first will be default): ${linguas}"
+		if [[ "${linguas[*]}" != "" ]]; then
+			einfo "Selected language packs (first will be default): ${linguas[*]}"
 		fi
 	fi
 }
@@ -125,6 +131,8 @@ src_prepare() {
 	EPATCH_SUFFIX="patch" \
 	EPATCH_FORCE="yes" \
 	epatch "${WORKDIR}"
+
+	epatch "${FILESDIR}"/fix-thunderbird-calender-support.patch
 
 	if use crypt ; then
 		mv "${WORKDIR}"/enigmail "${S}"/mailnews/extensions/enigmail
@@ -200,11 +208,10 @@ src_configure() {
 
 	if [[ $(gcc-major-version) -lt 4 ]]; then
 		append-cxxflags -fno-stack-protector
-	fi
-
-	# Ensure we do not fail on i{3,5,7} processors that support -mavx
-	if use amd64 || use x86; then
-		append-flags -mno-avx
+	elif [[ $(gcc-major-version) -gt 4 || $(gcc-minor-version) -gt 3 ]]; then
+		if use amd64 || use x86; then
+			append-flags -mno-avx
+		fi
 	fi
 
 	CPPFLAGS="${CPPFLAGS}" \
@@ -258,8 +265,8 @@ src_install() {
 
 	if ! [[ ${PV} =~ alpha|beta ]]; then
 		linguas
-		for X in ${linguas}; do
-			[[ ${X} != "en" ]] && xpi_install "${WORKDIR}"/"${P}-${X}"
+		for X in "${linguas[@]}"; do
+			xpi_install "${WORKDIR}/${P}-${X}"
 		done
 	fi
 
