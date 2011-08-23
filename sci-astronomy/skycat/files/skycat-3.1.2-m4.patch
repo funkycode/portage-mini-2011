@@ -1,5 +1,5 @@
---- tclconfig/tcl.m4.orig	2006-02-01 22:10:36.000000000 +0000
-+++ tclconfig/tcl.m4	2006-09-14 11:23:20.000000000 +0100
+--- a/tclconfig/tcl.m4
++++ b/tclconfig/tcl.m4
 @@ -731,6 +731,50 @@
  ])
  
@@ -128,6 +128,15 @@
 +	fi
      fi
  ])
+ 
+@@ -3169,7 +3173,7 @@
+ 	MAKE_STUB_LIB="\${STLIB_LD} -out:\[$]@ \$(PKG_STUB_OBJECTS)"
+     else
+ 	MAKE_STATIC_LIB="\${STLIB_LD} \[$]@ \$(PKG_OBJECTS)"
+-	MAKE_SHARED_LIB="\${SHLIB_LD} -o \[$]@ \$(PKG_OBJECTS) \${SHLIB_LD_LIBS}"
++	MAKE_SHARED_LIB="\${SHLIB_LD} -Wl,-soname=\[$]@ -o \[$]@ \$(PKG_OBJECTS) \${SHLIB_LD_LIBS}"
+ 	MAKE_STUB_LIB="\${STLIB_LD} \[$]@ \$(PKG_STUB_OBJECTS)"
+     fi
  
 @@ -3817,7 +3821,8 @@
  
