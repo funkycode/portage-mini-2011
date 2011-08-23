@@ -1,4 +1,4 @@
-x11-libs/gtk+:2 media-sound/sox || ( =sys-devel/automake-1.11* ) >=sys-devel/autoconf-2.61 >=sys-devel/libtool-2.2.6b
+x11-libs/gtk+:2 media-sound/sox || ( =sys-devel/automake-1.11* ) >=sys-devel/autoconf-2.61 sys-devel/libtool
 x11-libs/gtk+:2 media-sound/sox virtual/ffmpeg
 0
 mirror://sourceforge/imagination/imagination/3.0/imagination-3.0.tar.gz

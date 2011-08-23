@@ -1737,7 +1737,10 @@ kde-base/kde-meta:oldpim - Allow the use of non-akonadi kdepim-4.4
 kde-base/kde-meta:sdk - Pull in developer-specific meta-packages
 kde-base/kdeartwork-kscreensaver:eigen - Enable various arithmetic screensavers which use Eigen2 for computations.
 kde-base/kdeartwork-kscreensaver:kexiv2 - Enable image rotation based on exif tags with libkexiv2.
+kde-base/kdebase-data:wallpapers - Install the KDE wallpapers
 kde-base/kdebase-kioslaves:sftp - Enable SFTP protocol support using net-libs/libssh
+kde-base/kdebase-meta:wallpapers - Install the KDE wallpapers
+kde-base/kdebase-startkde:wallpapers - Install the KDE wallpapers
 kde-base/kdebindings-csharp:akonadi - Compile bindings for Akonadi.
 kde-base/kdebindings-csharp:phonon - Compile bindings for Phonon.
 kde-base/kdebindings-csharp:plasma - Compile bindings for KDE's Plasma.
