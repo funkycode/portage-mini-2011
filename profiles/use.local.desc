@@ -3172,6 +3172,25 @@ net-im/kadu:phonon - Enables phonon audio plugin
 net-im/kadu:speech - Enables speech module
 net-im/kmess:konqueror - Enable integration with konqueror
 net-im/kmess:libnotify - Enable desktop notifications using the knotify library
+net-im/leechcraft-azoth:acetamide - Build Acetamide, the IRC protocol support
+net-im/leechcraft-azoth:adiumstyles - Build support for Adium styles
+net-im/leechcraft-azoth:autoidler - Build support for automatic status changing according to user idle time
+net-im/leechcraft-azoth:autopaste - Build Autopaste for pasting long texts to pastebins
+net-im/leechcraft-azoth:chathistory - Build ChatHistory which stories chat history
+net-im/leechcraft-azoth:depester - Build Depester which enables to ignore MUC participants
+net-im/leechcraft-azoth:embedmedia - Build EmbedMedia for embedding flash videos and images directly into chat windows
+net-im/leechcraft-azoth:herbicide - Build Herbicide, a basic antispam plugin
+net-im/leechcraft-azoth:hili - Build HiLi which allows to customize highlight settings in MUCs
+net-im/leechcraft-azoth:juick - Build plugin for the Juick.com microblogging service
+net-im/leechcraft-azoth:lastseen - Build plugin for client-side recording of the last online/available time
+net-im/leechcraft-azoth:metacontacts - Build plugin for metacontacts support
+net-im/leechcraft-azoth:modnok - Build Modnok for in-chat LaTeX formulae rendering
+net-im/leechcraft-azoth:nativeemoticons - Build support for native Azoth's emoticons packs
+net-im/leechcraft-azoth:p100q - Build p100q, plugin for psto.net microblogging service
+net-im/leechcraft-azoth:rosenthal - Build Rosenthal, the spellchecker plugin
+net-im/leechcraft-azoth:standardstyles - Build support for standard Azoth styles engine
+net-im/leechcraft-azoth:xoox - Build Xoox, gloox-based plugin for XMPP support
+net-im/leechcraft-azoth:xtazy - Build Xtazy for publishing currently playing tune
 net-im/mcabber:aspell - Adds support for app-text/aspell spell checker.
 net-im/mcabber:otr - Enable encrypted conversations using Off-The-Records messaging
 net-im/minbif:video - Add video support
@@ -4601,6 +4620,13 @@ www-client/icecat:methodjit - Enable JIT for JavaScript using MethodJIT for fast
 www-client/icecat:pgo - Add support for profile-guided optimization using gcc-4.5, for faster binaries. This option will double the compile time.
 www-client/icecat:system-sqlite - Use the system-wide dev-db/sqlite installation with secure-delete enabled
 www-client/icecat:webm - Use system libvpx media-libs/libvpx
+www-client/leechcraft-poshuku:cleanweb - Build CleanWeb for ad blocking compatible with Firefox's AdBlock+.
+www-client/leechcraft-poshuku:fatape - Build FatApe, GreaseMonkey userscripts support layer.
+www-client/leechcraft-poshuku:filescheme - Build FileScheme for accessing local URLs.
+www-client/leechcraft-poshuku:fua - Build FUA for faking user agents for different hosts.
+www-client/leechcraft-poshuku:keywords - Build Keywords for adjusting search shortcuts.
+www-client/leechcraft-poshuku:onlinebookmarks - Build OnlineBookmarks for syncing bookmarks with social bookmarking services like Read It Later.
+www-client/leechcraft-poshuku:wyfv - Build WYFV for replacing Flash-based video players on some sites.
 www-client/luakit:helpers - Optional tools used by luakit
 www-client/luakit:luajit - Use the lua just-in-time compiler dev-lang/luajit instead of dev-lang/lua, which should make luakit faster.
 www-client/lynx:gnutls - Use gnutls library for HTTPS support (openssl is the default library for HTTPS support).
