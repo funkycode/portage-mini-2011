@@ -676,9 +676,6 @@ app-office/lyx:monolithic-build - This should speed up compilation significantly
 app-office/lyx:rcs - Add support for revision control via dev-vcs/rcs
 app-office/lyx:rtf - Add support for RTF import/export packages
 app-office/lyx:xetex - Add support for XeTeX typesetting
-app-office/openoffice:binfilter - Enable support for legacy StarOffice 5.x and earlier file formats
-app-office/openoffice:odk - Build the Office Development Kit
-app-office/openoffice:templates - Enable installation of Sun templates
 app-office/rabbit:gs - Ghostscript support (app-text/ghostscript-gpl)
 app-office/rabbit:tgif - tgif support (media-gfx/tgif)
 app-office/scribus:minimal - Don't install headers (only required for e.g. plug-in developers)
@@ -4088,6 +4085,7 @@ sci-mathematics/unuran:prng - Use sci-mathematics/prng library
 sci-mathematics/unuran:rngstreams - Use sci-mathematics/rngstreams library
 sci-mathematics/yacas:server - Build the network server version
 sci-misc/boinc:cuda - Use nvidia cuda toolkit for speeding up computations. NOTE: works only for subset of nvidia graphic cards so make sure your card is supported before opening bug about it.
+sci-misc/h5utils:hdf - Build hdf to hdf5 (and vice-versa) converter
 sci-misc/h5utils:octave - Build Octave plugins
 sci-misc/nco:ncap2 - Build next generation netcdf arithmetic processor (needs dev-java/antlr)
 sci-misc/nco:udunits - Add sci-libs/udunits files support
@@ -4494,7 +4492,6 @@ sys-kernel/mips-sources:ip27 - Enables support for SGI Origin (IP27)
 sys-kernel/mips-sources:ip28 - Enables support for SGI Indigo2 Impact R10000 (IP28)
 sys-kernel/mips-sources:ip30 - Enables support for SGI Octane (IP30, 'Speedracer')
 sys-kernel/mips-sources:ip32r10k - Enables experimental support for IP32 R10K kernels (SGI O2, 'Moosehead')
-sys-kernel/mm-sources:deblob - Remove binary blobs from kernel sources to provide libre license compliance.
 sys-kernel/openvz-sources:deblob - Remove binary blobs from kernel sources to provide libre license compliance.
 sys-kernel/pf-sources:deblob - Remove binary blobs from kernel sources to provide libre license compliance.
 sys-kernel/pf-sources:experimental - Apply patches that are considered experimental. For more information, check out the ChangeLog or the ebuild that interests you.
