@@ -1,5 +1,5 @@
-sys-libs/ncurses perl? ( dev-lang/perl sys-devel/libperl )
-sys-libs/ncurses perl? ( dev-lang/perl sys-devel/libperl )
+perl? ( dev-lang/perl sys-devel/libperl ) || ( =sys-devel/automake-1.11* ) >=sys-devel/autoconf-2.61 sys-devel/libtool
+perl? ( dev-lang/perl sys-devel/libperl )
 0
 http://verplant.org/liboping/files/liboping-1.6.1.tar.bz2
 
@@ -7,14 +7,14 @@ http://verplant.org/liboping
 LGPL-2.1 GPL-2
 C library and ncurses based program to generate ICMP echo requests and ping multiple hosts at once
 ~amd64 ~x86
-
+autotools base eutils libtool multilib portability toolchain-funcs
 perl
 
 
 
-3
+4
 
-configure install
+compile configure install prepare unpack
 
 
 
