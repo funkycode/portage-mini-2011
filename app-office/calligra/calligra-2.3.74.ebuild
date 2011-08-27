@@ -1,6 +1,6 @@
 # Copyright 1999-2011 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/app-office/calligra/calligra-2.3.74.ebuild,v 1.3 2011/08/22 21:48:07 dilfridge Exp $
+# $Header: /var/cvsroot/gentoo-x86/app-office/calligra/calligra-2.3.74.ebuild,v 1.5 2011/08/26 20:46:55 dilfridge Exp $
 
 # note: files that need to be checked for dependencies etc:
 # CMakeLists.txt, kexi/CMakeLists.txt kexi/migration/CMakeLists.txt
@@ -24,7 +24,7 @@ SLOT="4"
 [[ ${PV} == 9999 ]] || KEYWORDS="~amd64 ~x86"
 IUSE="+crypt +eigen +exif fftw +fontconfig freetds +gif glew +glib +gsf
 gsl +iconv +jpeg jpeg2k +kdcraw kdepim +lcms marble mysql +mso +okular openctl openexr
-+pdf postgres +semantic-desktop +ssl sybase tiff +threads +truetype
++pdf postgres +semantic-desktop +ssl sybase test tiff +threads +truetype
 +wmf word-perfect xbase +xml +xslt"
 
 # please do not sort here, order is same as in CMakeLists.txt
@@ -39,10 +39,20 @@ REQUIRED_USE="
 	calligra_features_krita? ( eigen exif lcms )
 	calligra_features_plan? ( kdepim )
 	calligra_features_tables? ( eigen )
+	test? ( calligra_features_karbon )
 "
 
 RDEPEND="
+	!app-office/karbon
+	!app-office/koffice-data
+	!app-office/koffice-l10n
 	!app-office/koffice-libs
+	!app-office/koffice-meta
+	!app-office/krita
+	!app-office/kplato
+	!app-office/kpresenter
+	!app-office/kspread
+	!app-office/kword
 	dev-db/sqlite:3
 	dev-lang/perl
 	dev-libs/boost
@@ -174,6 +184,7 @@ src_configure() {
 	for cal_ft in ${CAL_FTS}; do
 		mycmakeargs+=( $(cmake-utils_use_build calligra_features_${cal_ft} ${cal_ft}) )
 	done
+	mycmakeargs+=( $(cmake-utils_use_build test cstester) )
 
 	# filters
 
