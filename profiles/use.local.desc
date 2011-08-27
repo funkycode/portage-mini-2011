@@ -210,6 +210,7 @@ app-backup/spideroak-bin:qt-bundled - Use bundled Qt4 libraies
 app-backup/tsm:hsm - Installs Tivoli Storage Manager for Space Management
 app-benchmarks/bootchart:acct - Enable process accounting
 app-benchmarks/jmeter:beanshell - Enable BeanShell scripting support
+app-benchmarks/sysbench:aio - Enable libaio support
 app-cdr/backlite:mplayer - Add support for mplayer preview in addition to X11 and phonon
 app-cdr/brasero:introspection - Use dev-libs/gobject-introspection for introspection
 app-cdr/brasero:libburn - Enable dev-libs/libburn backend
@@ -1874,6 +1875,9 @@ kde-base/smokeqt:qwt - Compile bindings for x11-libs/qwt.
 kde-base/smokeqt:webkit - Compile bindings for x11-libs/qt-webkit.
 kde-base/solid:wicd - Enable Wicd wired and wireless network manager.
 kde-base/step:qalculate - Enable the libqalculate library for unit conversion
+kde-misc/kcm-grub2:hwinfo - Used to work out supported framebuffer resolutions
+kde-misc/kcm-grub2:imagemagick - Create splash images compatible with GRUB2
+kde-misc/kcm-grub2:packagekit - Add support for packagekit integration
 kde-misc/kdiff3:konqueror - Enable integration with konqueror
 kde-misc/knetworkmanager:consolekit - Enable support for sys-auth/consolekit
 kde-misc/synaptiks:upower - Handle mouse devices correctly across suspend and resume with upower
@@ -2022,6 +2026,7 @@ media-fonts/mplus-outline-fonts:ipafont - Generates new fonts merged with media-
 media-fonts/sil-charis:compact - Use more compactly spaced font
 media-fonts/terminus-font:a-like-o - Changes view of letter 'a' - a looks like o (see homepage)
 media-fonts/terminus-font:bolddiag - Boldified diagonal parts of '4', 'k', 'x' and some other chars
+media-fonts/terminus-font:distinct-l - ll2 variant with more distinctive l (lowercase L)
 media-fonts/terminus-font:pcf - Install Portable Compiled Font (PCF) (required for X11)
 media-fonts/terminus-font:psf - Install PC Screen Font (PSF) with unicode data (for linux console)
 media-fonts/terminus-font:quote - Changes view of quotes: symmetric ` and ' instead of asymmetric one (see homepage)
@@ -3732,10 +3737,9 @@ net-nds/openldap:overlays - Enable contributed OpenLDAP overlays
 net-nds/openldap:smbkrb5passwd - Enable overlay for syncing ldap, unix and lanman passwords
 net-nds/tac_plus:finger - Adds support for checking user counts via fingering the NAS
 net-nds/tac_plus:maxsess - Enforce a limit on maximum sessions per user
-net-news/liferea:dbus - Enables the DBUS connector for liferea, so feeds can be managed from external programs
+net-news/liferea:ayatana - Build in support for Ayatana notification using the libindicate plugin.
 net-news/liferea:libnotify - Enable popup notifications
 net-news/liferea:lua - Enable lua scripting
-net-news/liferea:networkmanager - Enable NetworkManager integration to automatically detect online/offline status
 net-nntp/inn:innkeywords - Enable automatic keyword generation support
 net-nntp/inn:inntaggedhash - Use tagged hash table for history (disables large file support)
 net-nntp/nzbget:parcheck - Enable support for checking PAR archives
@@ -4275,7 +4279,6 @@ sys-boot/arcboot:ip27 - Disable support for SGI Origin (IP27)
 sys-boot/arcboot:ip28 - Disable support for SGI Indigo2 Impact R10000 (IP28)
 sys-boot/arcboot:ip30 - Disable support for SGI Octane (IP30)
 sys-boot/grub:device-mapper - Enable support for sys-fs/device-mapper
-sys-boot/grub:multislot - Allow grub1 and grub2 to be installed simultaneously
 sys-boot/lilo:device-mapper - Enable support for sys-fs/device-mapper
 sys-boot/lilo:minimal - Do not install the dolilo helper script
 sys-boot/lilo:pxeserial - Avoid character echo on PXE serial console
