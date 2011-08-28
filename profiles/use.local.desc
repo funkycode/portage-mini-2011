@@ -4279,6 +4279,7 @@ sys-boot/arcboot:ip27 - Disable support for SGI Origin (IP27)
 sys-boot/arcboot:ip28 - Disable support for SGI Indigo2 Impact R10000 (IP28)
 sys-boot/arcboot:ip30 - Disable support for SGI Octane (IP30)
 sys-boot/grub:device-mapper - Enable support for sys-fs/device-mapper
+sys-boot/grub:efiemu - Build and install the efiemu runtimes
 sys-boot/lilo:device-mapper - Enable support for sys-fs/device-mapper
 sys-boot/lilo:minimal - Do not install the dolilo helper script
 sys-boot/lilo:pxeserial - Avoid character echo on PXE serial console
@@ -4404,6 +4405,14 @@ sys-fs/aufs2:kernel-patch - Patch the current kernel for aufs2 support
 sys-fs/aufs2:nfs - Enable support for nfs export
 sys-fs/aufs2:pax_kernel - Apply patch needed for pax enabled kernels
 sys-fs/aufs2:ramfs - Enable initramfs/rootfs support
+sys-fs/aufs3:debug - Enable additional debugging support
+sys-fs/aufs3:fuse - Enable fuse support
+sys-fs/aufs3:hfs - Enable hfs support
+sys-fs/aufs3:inotify - Enable inotify support
+sys-fs/aufs3:kernel-patch - Patch the current kernel for aufs2 support
+sys-fs/aufs3:nfs - Enable support for nfs export
+sys-fs/aufs3:pax_kernel - Apply patch needed for pax enabled kernels
+sys-fs/aufs3:ramfs - Enable initramfs/rootfs support
 sys-fs/btrfs-progs:debug-utils - Build additional utils for debugging
 sys-fs/cryptsetup:dynamic - Build cryptsetup dynamically
 sys-fs/dmraid:dietlibc - Compile against dev-libs/dietlibc
@@ -4616,6 +4625,7 @@ www-client/firefox:methodjit - Enable JIT for JavaScript using MethodJIT for fas
 www-client/firefox:pgo - Add support for profile-guided optimization using gcc-4.5, for faster binaries. This option will double the compile time.
 www-client/firefox:system-sqlite - Use the system-wide dev-db/sqlite installation with secure-delete enabled
 www-client/firefox:webm - Use system media-libs/libvpx for HTML5 WebM video support.
+www-client/google-chrome:plugins - Add system plugins path to launcher
 www-client/icecat:crashreporter - Enable crashreporter for mozilla upstream, debugging symbols are not required for reporting crashes.
 www-client/icecat:custom-optimization - Fine-tune custom compiler optimizations
 www-client/icecat:ipc - Use inter-process communication between tabs and plugins. Allows for greater stability in case of plugin crashes

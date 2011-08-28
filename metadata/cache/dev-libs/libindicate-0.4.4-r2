@@ -14,7 +14,7 @@ doc +introspection
 
 2
 
-configure install prepare test
+configure install prepare
 
 
 

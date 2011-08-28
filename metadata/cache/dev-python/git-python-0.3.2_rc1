@@ -1,4 +1,4 @@
-dev-vcs/git dev-python/setuptools >=app-admin/eselect-python-20091230 =dev-lang/python-2*
+dev-vcs/git >=dev-python/gitdb-0.5.4 dev-python/setuptools >=app-admin/eselect-python-20091230 =dev-lang/python-2*
 dev-vcs/git >=app-admin/eselect-python-20091230 =dev-lang/python-2*
 0
 mirror://pypi/G/GitPython/GitPython-0.3.2.RC1.tar.gz

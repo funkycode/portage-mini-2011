@@ -1,4 +1,4 @@
-=net-misc/leechcraft-core-0.4.85 dev-libs/qrosscore >=dev-util/cmake-2.8.1 userland_GNU? ( >=sys-apps/findutils-4.4.0 )
+=net-misc/leechcraft-core-0.4.85 dev-libs/qrosscore >=dev-util/cmake-2.8.4 userland_GNU? ( >=sys-apps/findutils-4.4.0 )
 =net-misc/leechcraft-core-0.4.85 dev-libs/qrosscore
 0
 mirror://sourceforge/leechcraft/leechcraft-0.4.85.tar.bz2

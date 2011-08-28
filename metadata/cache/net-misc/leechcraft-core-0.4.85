@@ -1,4 +1,4 @@
->=dev-libs/boost-1.39 x11-libs/qt-core x11-libs/qt-gui x11-libs/qt-script x11-libs/qt-sql[postgres?,sqlite?] >=dev-util/cmake-2.8.1 userland_GNU? ( >=sys-apps/findutils-4.4.0 )
+>=dev-libs/boost-1.39 x11-libs/qt-core x11-libs/qt-gui x11-libs/qt-script x11-libs/qt-sql[postgres?,sqlite?] >=dev-util/cmake-2.8.4 userland_GNU? ( >=sys-apps/findutils-4.4.0 )
 >=dev-libs/boost-1.39 x11-libs/qt-core x11-libs/qt-gui x11-libs/qt-script x11-libs/qt-sql[postgres?,sqlite?] x11-libs/qt-svg
 0
 mirror://sourceforge/leechcraft/leechcraft-0.4.85.tar.bz2
