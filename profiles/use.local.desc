@@ -157,6 +157,10 @@ app-admin/puppet:rrdtool - Enable rrdtool support
 app-admin/puppet:shadow - Enable shadow support
 app-admin/rsyslog:extras - Add support for the UDP spoofing module (omudpspoof) using net-libs/libnet
 app-admin/rsyslog:relp - Add support for the Reliable Event Logging Protocol using dev-libs/librelp
+app-admin/sagan:libdnet - Add support for dev-libs/libdnet
+app-admin/sagan:lognorm - Add support for log/rules normalizations via dev-libs/liblognorm
+app-admin/sagan:pcap - Add support for network packet capture via net-libs/libpcap
+app-admin/sagan:smtp - Build witch SMTP (E-Mail) support
 app-admin/sshguard:ipfilter - Enable ipfilter firewall support (only for *bsd)
 app-admin/sudo:offensive - Let sudo print insults when the user types the wrong password.
 app-admin/syslog-ng:spoof-source - Enable support for spoofed source addresses
@@ -4254,7 +4258,6 @@ sys-auth/pambase:sha512 - Switch Linux-PAM's pam_unix module to use sha512 for p
 sys-auth/polkit:introspection - Use dev-libs/gobject-introspection for introspection
 sys-auth/sssd:locator - Install sssd's Kerberos plugin
 sys-auth/sssd:logrotate - Install logrotate.d file
-sys-auth/sssd:openssl - Enable dev-libs/openssl support instead of dev-libs/nss
 sys-block/gparted:btrfs - Include Btrfs support (sys-fs/btrfs-progs)
 sys-block/gparted:dmraid - Support for dmraid devices, also known as ATA-RAID, or Fake RAID.
 sys-block/gparted:fat - Include FAT16/FAT32 support (sys-fs/dosfstools)
@@ -4478,21 +4481,7 @@ sys-infiniband/openib-files:rds - Automatically generated description for rds
 sys-infiniband/openib-files:srp - Automatically generated description for srp
 sys-infiniband/openib-files:vnic - Automatically generated description for vnic
 sys-kernel/ck-sources:deblob - Remove binary blobs from kernel sources to provide libre license compliance.
-sys-kernel/dracut:bootchart - Add support for bootchart (app-benchmarks/bootchart)
-sys-kernel/dracut:btrfs - Add support for root on Btrfs
-sys-kernel/dracut:crypt - Add support for encrypted partitions with cryptsetup/LUKS
 sys-kernel/dracut:debug - Module installing additional tools like strace, file editor, ssh and more
-sys-kernel/dracut:dmraid - Add support for dmraid devices, also known as ATA-RAID, or Fake RAID.
-sys-kernel/dracut:dmsquash-live - Module which might be used for Live CDs
-sys-kernel/dracut:gensplash - Add support for framebuffer splash at boot-time
-sys-kernel/dracut:iscsi - Add support for iSCSI
-sys-kernel/dracut:lvm - Add support for the Logical Volume Manager (sys-apps/lvm2)
-sys-kernel/dracut:mdraid - Add support for MD devices, also known as software RAID devices
-sys-kernel/dracut:multipath - Add support for Device Mapper multipathing
-sys-kernel/dracut:nbd - Add support for network block devices
-sys-kernel/dracut:nfs - Add support for NFS
-sys-kernel/dracut:uswsusp - Add support for uswsusp (sys-power/suspend)
-sys-kernel/dracut:xen - Add support for Xen
 sys-kernel/gentoo-sources:deblob - Remove binary blobs from kernel sources to provide libre license compliance.
 sys-kernel/hardened-sources:deblob - Remove binary blobs from kernel sources to provide libre license compliance.
 sys-kernel/linux-docs:html - Install HTML documentation
@@ -4507,6 +4496,7 @@ sys-kernel/mips-sources:ip32r10k - Enables experimental support for IP32 R10K ke
 sys-kernel/openvz-sources:deblob - Remove binary blobs from kernel sources to provide libre license compliance.
 sys-kernel/pf-sources:deblob - Remove binary blobs from kernel sources to provide libre license compliance.
 sys-kernel/pf-sources:experimental - Apply patches that are considered experimental. For more information, check out the ChangeLog or the ebuild that interests you.
+sys-kernel/rt-sources:deblob - Remove binary blobs from kernel sources to provide libre license compliance.
 sys-kernel/sparc-sources:ultra1 - If you have a SUN Ultra 1 with a HME interface
 sys-kernel/tuxonice-sources:deblob - Remove binary blobs from kernel sources to provide libre license compliance.
 sys-kernel/vanilla-sources:deblob - Remove binary blobs from kernel sources to provide libre license compliance.
