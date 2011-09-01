@@ -1,6 +1,6 @@
 # Copyright 1999-2011 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/www-client/seamonkey/seamonkey-2.3.1.ebuild,v 1.2 2011/08/29 21:38:16 hwoarang Exp $
+# $Header: /var/cvsroot/gentoo-x86/www-client/seamonkey/seamonkey-2.3.1.ebuild,v 1.3 2011/08/31 21:04:58 polynomial-c Exp $
 
 EAPI="3"
 WANT_AUTOCONF="2.1"
@@ -32,7 +32,7 @@ if [[ ${PV} == *_pre* ]] ; then
 	LANGPACK_PREFIX=""
 	LANGPACK_SUFFIX=""
 	#KEYWORDS=""
-	KEYWORDS="~alpha amd64 ~arm ~hppa ~ppc ~ppc64 ~x86"
+	KEYWORDS="~alpha ~amd64 ~arm ~hppa ~ppc ~ppc64 ~x86"
 	#HAS_LANGS="false"
 else
 	# This is where arch teams should change the KEYWORDS.

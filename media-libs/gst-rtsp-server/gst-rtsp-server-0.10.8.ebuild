@@ -1,8 +1,11 @@
 # Copyright 1999-2011 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/media-libs/gst-rtsp-server/gst-rtsp-server-0.10.8.ebuild,v 1.1 2011/08/17 20:07:43 mattst88 Exp $
+# $Header: /var/cvsroot/gentoo-x86/media-libs/gst-rtsp-server/gst-rtsp-server-0.10.8.ebuild,v 1.3 2011/09/01 00:21:01 mattst88 Exp $
 
-EAPI=4
+EAPI=3
+
+PYTHON_DEPEND="2"
+inherit python
 
 DESCRIPTION="A GStreamer based RTSP server"
 HOMEPAGE="http://people.freedesktop.org/~wtay/"
@@ -18,7 +21,6 @@ S="${WORKDIR}/${P/-server/}"
 PYGOBJECT_REQ=2.11.2
 
 RDEPEND="
-	>=dev-lang/python-2.3
 	>=dev-libs/glib-2.10.0
 	dev-libs/libxml2
 	>=dev-python/pygobject-${PYGOBJECT_REQ}
@@ -31,6 +33,10 @@ DEPEND="${RDEPEND}
 	>=dev-util/pkgconfig-0.9
 	doc? ( >=dev-util/gtk-doc-1.3 )
 	nls? ( >=sys-devel/gettext-0.17 )"
+
+pkg_setup() {
+	python_set_active_version 2
+}
 
 src_configure() {
 	econf \
