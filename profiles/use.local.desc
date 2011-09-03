@@ -3033,6 +3033,7 @@ net-dns/bind:resolvconf - Enable support for net-dns/openresolv
 net-dns/bind:rpz - Enable response policy rewriting (rpz)
 net-dns/bind:sdb-ldap - Enables ldap-sdb backend
 net-dns/bind:urandom - Use /dev/urandom instead of /dev/random
+net-dns/bind-tools:pkcs11 - Enable PKCS#11 key support/tools for DNSSEC
 net-dns/bind-tools:urandom - Use /dev/urandom instead of /dev/random
 net-dns/ddclient:hardened - Use iproute2 instead of ifconfig to grab an IP address
 net-dns/ddclient:ssl - Connect to the server utilizing SSL
@@ -3076,8 +3077,10 @@ net-fs/coda:coda_layout - Use legacy filesystem layout instead of FHS compliant 
 net-fs/coda:coda_symlinks - Install legacy symlinks when FHS layout has been selected (-coda_layout). You should only need this if you use local scripts or 3rd party apps relying on precise layout. Note: /coda symlink is installed unconditionally, so the namespace is preserved in any case.
 net-fs/coda:server - Build and install the server components of coda filesystem. Note: at least one of client/server flags must be enabled.
 net-fs/netatalk:xfs - Enable support for XFS Quota
+net-fs/nfs-utils:nfsidmap - Enable support for newer nfsidmap helper
 net-fs/nfs-utils:nfsv3 - Enable support for NFSv3
 net-fs/nfs-utils:nfsv4 - Enable support for NFSv4
+net-fs/nfs-utils:nfsv41 - Enable support for NFSv4.1
 net-fs/nfs-utils:nonfsv4 - Disable support for NFSv4
 net-fs/samba:addns - Enable AD DNS integration
 net-fs/samba:ads - Enable Active Directory support
