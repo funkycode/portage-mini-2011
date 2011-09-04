@@ -1,6 +1,6 @@
 # Copyright 1999-2011 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/app-office/libreoffice/libreoffice-9999-r1.ebuild,v 1.1 2011/09/03 21:01:18 scarabeus Exp $
+# $Header: /var/cvsroot/gentoo-x86/app-office/libreoffice/libreoffice-9999-r1.ebuild,v 1.3 2011/09/04 11:52:14 scarabeus Exp $
 
 EAPI=3
 
@@ -178,7 +178,7 @@ RDEPEND="${COMMON_DEPEND}
 
 # FIXME: l10n after release/branching
 PDEPEND="
-    >=app-office/libreoffice-l10n-3.4
+	>=app-office/libreoffice-l10n-3.4
 "
 
 DEPEND="${COMMON_DEPEND}
@@ -481,6 +481,7 @@ src_configure() {
 		--without-myspell-dicts \
 		--without-ppds \
 		--without-stlport \
+		--without-helppack-integration \
 		$(use_enable binfilter) \
 		$(use_enable dbus) \
 		$(use_enable debug crashdump) \
