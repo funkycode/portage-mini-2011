@@ -3590,10 +3590,15 @@ net-misc/dnetstats:gnome - Use gksu to gain root access
 net-misc/dnetstats:kde - Use kdesu to gain root access
 net-misc/dropbear:bsdpty - Add support for legacy BSD pty's rather than dynamic UNIX pty's -- do not use this flag unless you are absolutely sure you actually want it
 net-misc/dropbear:multicall - Build all the programs as one little binary (to save space)
-net-misc/freerdp:X - Install also GUI client
-net-misc/freerdp:alsa - Enable sound support (using alsa)
-net-misc/freerdp:cups - Enable printing support (using cups)
-net-misc/freerdp:debug - Enable all debugging options
+net-misc/freerdp:debug-assert - Enable assert debugging
+net-misc/freerdp:debug-gdi - Enable debugging of GDI
+net-misc/freerdp:debug-kbd - Enable debugging of keyboard handling
+net-misc/freerdp:debug-nla - Enable debugging of network level authentication
+net-misc/freerdp:debug-proto - Enable protocol debugging output
+net-misc/freerdp:debug-serial - Enable debugging of serial code
+net-misc/freerdp:debug-smartcard - Enable debugging of smard-card code
+net-misc/freerdp:debug-sound - Enable debugging of sound code
+net-misc/freerdp:debug-stream-assert - Enable stream assert debugging
 net-misc/freerdp:gnutls - Use GnuTLS as crypto backend
 net-misc/freerdp:nss - Use NSS as crypto backend
 net-misc/freerdp:polarssl - Use PolarSSL as crypto backend
