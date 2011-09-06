@@ -1,5 +1,5 @@
-dev-libs/openssl >=dev-libs/libevent-2.0 nat-pmp? ( net-libs/libnatpmp ) upnp? ( <net-libs/miniupnpc-1.6 ) || ( =sys-devel/automake-1.11* ) >=sys-devel/autoconf-2.61 sys-devel/libtool
-dev-libs/openssl >=dev-libs/libevent-2.0 nat-pmp? ( net-libs/libnatpmp ) upnp? ( <net-libs/miniupnpc-1.6 ) net-proxy/tsocks[tordns]
+dev-libs/openssl >=dev-libs/libevent-2.0.13 nat-pmp? ( net-libs/libnatpmp ) upnp? ( <net-libs/miniupnpc-1.6 ) || ( =sys-devel/automake-1.11* ) >=sys-devel/autoconf-2.61 sys-devel/libtool
+dev-libs/openssl >=dev-libs/libevent-2.0.13 nat-pmp? ( net-libs/libnatpmp ) upnp? ( <net-libs/miniupnpc-1.6 ) net-proxy/tsocks[tordns]
 0
 http://www.torproject.org/dist/tor-0.2.3.3-alpha.tar.gz
 
