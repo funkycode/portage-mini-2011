@@ -2899,7 +2899,6 @@ media-video/vlc:wma-fixed - Enables fixed point WMA decoder.
 media-video/vlc:zvbi - Enables support for teletext subtitles via the zvbi library.
 media-video/winki:mjpeg - Enables mjpegtools support
 media-video/x264-encoder:ffmpegsource - Enable ffmpegsource aka ffms support, disables lavf
-media-video/x264-encoder:system-libx264 - Use the system x264 library
 media-video/xine-ui:vdr - Enables Video Disk Recorder support
 net-analyzer/aimsniff:http - Install the WAS (Web AIM Sniff) frontend
 net-analyzer/barnyard:sguil - Enable sguil (The Analyst Console for Network Security Monitoring) support
@@ -4713,6 +4712,7 @@ www-servers/nginx:nginx_modules_http_slowfs_cache - This module adds the ability
 www-servers/nginx:nginx_modules_http_stub_status - This module provides the ability to get some status from nginx
 www-servers/nginx:nginx_modules_http_sub - Enable support for search and replace text in the nginx response
 www-servers/nginx:nginx_modules_http_upload - Enable support for handling file uploads using multipart/form-data encoding
+www-servers/nginx:nginx_modules_http_upload_progress - This module adds the ability to track POST upload progress via JSON API
 www-servers/nginx:nginx_modules_mail_imap - Enables IMAP proxy support
 www-servers/nginx:nginx_modules_mail_pop3 - Enables POP3 proxy support
 www-servers/nginx:nginx_modules_mail_smtp - Enables SMTP proxy support
