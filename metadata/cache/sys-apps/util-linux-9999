@@ -8,7 +8,7 @@ GPL-2
 Various useful Linux utilities
 
 autotools eutils flag-o-matic git libtool multilib portability toolchain-funcs
-+cramfs crypt loop-aes ncurses nls old-linux perl selinux slang static-libs uclibc unicode
++cramfs crypt ddate loop-aes ncurses nls old-linux perl selinux slang static-libs uclibc unicode
 
 
 
