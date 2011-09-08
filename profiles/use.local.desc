@@ -685,6 +685,7 @@ app-office/rabbit:tgif - tgif support (media-gfx/tgif)
 app-office/scribus:minimal - Don't install headers (only required for e.g. plug-in developers)
 app-office/scribus:templates - Document tamplates
 app-office/texmacs:netpbm - Add support for media-libs/netpbm
+app-office/texstudio:video - Use phonon for video embedding
 app-office/tpp:figlet - Install app-misc/figlet to support the --huge command
 app-pda/barry:boost - Enable boost support
 app-pda/barry:gui - Install the GUI backup tool
@@ -2276,6 +2277,8 @@ media-libs/vips:fits - Enable support for the FITS image format through sci-libs
 media-libs/vips:orc - Use dev-lang/orc for runtime optimisations
 media-libs/vo-aacenc:neon - Enable neon cpu instructions
 media-libs/win32codecs:real - Installs the real video codecs
+media-libs/x264:10bit - Set output bit depth to 10, this may not be compatible with all decoders
+media-libs/x264:interlaced - enable interlaced encoding support, this can decrease encoding speed by up to 2%
 media-libs/x264:pic - disable optimized assembly code that is not PIC friendly
 media-libs/xine-lib:dxr3 - Enable support for DXR3 mpeg acceleration cards.
 media-libs/xine-lib:flac - Build the media-libs/flac based FLAC demuxer and decoder. This flag is not needed for playing FLAC content, neither standalone nor in Ogg container (OggFLAC), but might have better support for exotic features like 24-bit samples or 96kHz sample rates.
@@ -2898,7 +2901,9 @@ media-video/vlc:wingdi - Enable Win32 GDI module.
 media-video/vlc:wma-fixed - Enables fixed point WMA decoder.
 media-video/vlc:zvbi - Enables support for teletext subtitles via the zvbi library.
 media-video/winki:mjpeg - Enables mjpegtools support
+media-video/x264-encoder:10bit - Set output bit depth to 10
 media-video/x264-encoder:ffmpegsource - Enable ffmpegsource aka ffms support, disables lavf
+media-video/x264-encoder:interlaced - Enable interlaced encoding support, this can decrease encoding speed by up to 2%
 media-video/xine-ui:vdr - Enables Video Disk Recorder support
 net-analyzer/aimsniff:http - Install the WAS (Web AIM Sniff) frontend
 net-analyzer/barnyard:sguil - Enable sguil (The Analyst Console for Network Security Monitoring) support
