@@ -8,7 +8,7 @@ GPL-2 GPL-3
 Python modules to work with Debian-related data formats
 ~amd64 ~x86
 distutils multilib python toolchain-funcs
-examples
+examples test
 
 
 
