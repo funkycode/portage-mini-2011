@@ -12,7 +12,7 @@ dbus debug gnutls eap-sim fasteap madwifi ps3 qt4 readline ssl wimax wps kernel_
 
 
 
-2
+4
 
 compile configure install postinst prepare setup unpack
 

@@ -1,5 +1,5 @@
->=dev-libs/libebml-1.2.0
->=dev-libs/libebml-1.2.0
+>=dev-libs/libebml-1.2.1
+>=dev-libs/libebml-1.2.1
 0
 http://www.bunkus.org/videotools/mkvtoolnix/sources/libmatroska-1.2.0.tar.bz2
 test
