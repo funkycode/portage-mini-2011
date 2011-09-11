@@ -6,7 +6,7 @@ mirror://pypi/b/buildbot/buildbot-0.8.4p2.tar.gz
 http://trac.buildbot.net/ http://code.google.com/p/buildbot/ http://pypi.python.org/pypi/buildbot
 GPL-2
 BuildBot build automation system
-~amd64 ~x86
+~amd64 ~hppa ~x86
 distutils eutils multilib portability python toolchain-funcs
 doc examples irc mail manhole test
 

@@ -1,6 +1,6 @@
 # Copyright 1999-2011 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/app-editors/uemacs-pk/uemacs-pk-4.0.15_p20101216.ebuild,v 1.5 2011/09/01 07:46:13 chainsaw Exp $
+# $Header: /var/cvsroot/gentoo-x86/app-editors/uemacs-pk/uemacs-pk-4.0.15_p20101216.ebuild,v 1.6 2011/09/10 21:42:39 ulm Exp $
 
 EAPI=4
 
@@ -39,6 +39,6 @@ src_install() {
 }
 
 pkg_postinst() {
-	einfo "If you upgrade from version 4.0.18, please note that the"
+	einfo "If you are upgrading from version 4.0.18, please note that the"
 	einfo "executable is now installed as \"em\" instead of \"uemacs\"."
 }
