@@ -1,6 +1,6 @@
 # Copyright 1999-2011 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/dev-vcs/monotone/monotone-1.0.ebuild,v 1.1 2011/09/05 13:33:03 pva Exp $
+# $Header: /var/cvsroot/gentoo-x86/dev-vcs/monotone/monotone-1.0.ebuild,v 1.2 2011/09/11 11:26:01 pva Exp $
 
 # QA failiures reported in https://code.monotone.ca/p/monotone/issues/181/
 EAPI="4"
@@ -13,7 +13,7 @@ SRC_URI="http://monotone.ca/downloads/${PV}/${P}.tar.bz2"
 LICENSE="GPL-2"
 SLOT="1"
 KEYWORDS="~amd64 ~ia64 ~x86"
-IUSE="doc emacs ipv6 nls"
+IUSE="doc emacs ipv6 nls test"
 
 RDEPEND="sys-libs/zlib
 	emacs? ( virtual/emacs )
@@ -25,7 +25,9 @@ RDEPEND="sys-libs/zlib
 DEPEND="${RDEPEND}
 	>=dev-libs/boost-1.33.1
 	nls? ( >=sys-devel/gettext-0.11.5 )
-	doc? ( sys-apps/texinfo )"
+	doc? ( sys-apps/texinfo )
+	test? ( dev-tcltk/expect
+		app-shells/bash-completion )"
 
 pkg_setup() {
 	enewgroup monotone
@@ -37,6 +39,8 @@ src_prepare() {
 		( $(gcc-major-version) -eq "3" && $(gcc-minor-version) -le 3 ) ]]; then
 		die 'requires >=gcc-3.4'
 	fi
+	epatch "${FILESDIR}/monotone-1.0-bash-completion-tests.patch"
+	epatch "${FILESDIR}/monotone-1.0-botan-1.10.patch"
 }
 
 src_configure() {
@@ -60,14 +64,10 @@ src_test() {
 	# Disables netsync_bind_opt test
 	# https://code.monotone.ca/p/monotone/issues/179/
 	export DISABLE_NETWORK_TESTS=true
-	# bash_completion test fails too. Expected thus disab
-	# https://code.monotone.ca/p/monotone/issues/180/
-	rm test/extra/bash_completion/ -rf
 	if [[ ${UID} != 0 ]]; then
 		emake check
 	else
-		# Tests fail if run as root
-		su portage emake check
+		ewarn "Tests will fail if ran as root, skipping."
 	fi
 }
 
