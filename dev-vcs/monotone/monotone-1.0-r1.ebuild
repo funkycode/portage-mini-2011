@@ -1,6 +1,6 @@
 # Copyright 1999-2011 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/dev-vcs/monotone/monotone-1.0-r1.ebuild,v 1.1 2011/09/11 11:26:01 pva Exp $
+# $Header: /var/cvsroot/gentoo-x86/dev-vcs/monotone/monotone-1.0-r1.ebuild,v 1.3 2011/09/12 15:21:23 mr_bones_ Exp $
 
 # QA failiures reported in https://code.monotone.ca/p/monotone/issues/181/
 EAPI="4"
@@ -73,8 +73,8 @@ src_install() {
 	newbashcomp extra/shell/monotone.bash_completion ${PN}
 
 	if use doc; then
-		dohtml -r html/*
-		dohtml -r figures
+		dohtml -r doc/html/*
+		dohtml -r doc/figures
 	fi
 
 	dodoc AUTHORS NEWS README* UPGRADE
@@ -110,4 +110,3 @@ pkg_postinst() {
 	elog "  5. make persistent: rc-update add monotone default"
 	elog
 }
-
