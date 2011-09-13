@@ -1330,7 +1330,6 @@ dev-python/pyudev:pyside - Install PySide binding
 dev-python/pyyaml:libyaml - enable libyaml support
 dev-python/pyzor:pyzord - enable support for pyzord
 dev-python/rdflib:redland - enable support for Redland triplestore
-dev-python/rdflib:zodb - enable support for Zope Object Database triplestore
 dev-python/restkit:cli - Install the restcli command line interface/tool, based on dev-python/ipython
 dev-python/scrapy:boto - Add support for Amazon S3 via dev-python/boto
 dev-python/scrapy:ibl - Use Instace Based Learning alrogirithm for automatic extraction
@@ -2179,6 +2178,7 @@ media-libs/freetype:fontforge - Install internal headers required for TrueType d
 media-libs/freetype:kpathsea - Enable TeX support (ttf2pk and ttf2pfb)
 media-libs/freetype:utils - Install utilities and examples from ft2demos
 media-libs/freeverb3:audacious - Build Audacious plugin
+media-libs/freeverb3:avx - Adds support for Advanced Vector Extensions instructions
 media-libs/freeverb3:forcefpu - Disable assembly code
 media-libs/freeverb3:plugdouble - Build plugins in double precision mode (default is float)
 media-libs/freeverb3:sse3 - Enable SSE3 support

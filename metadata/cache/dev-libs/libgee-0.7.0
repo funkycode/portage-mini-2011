@@ -1,4 +1,4 @@
->=dev-libs/glib-2.12 introspection? ( >=dev-libs/gobject-introspection-0.9.6 ) dev-util/pkgconfig >=dev-lang/vala-0.9.3:0.10 >=sys-apps/sed-4
+>=dev-libs/glib-2.12 introspection? ( >=dev-libs/gobject-introspection-0.9.6 ) dev-util/pkgconfig >=dev-lang/vala-0.9.3:0.10 app-arch/xz-utils >=sys-apps/sed-4
 >=dev-libs/glib-2.12 introspection? ( >=dev-libs/gobject-introspection-0.9.6 )
 0.8
 mirror://gnome/sources/libgee/0.7/libgee-0.7.0.tar.xz
