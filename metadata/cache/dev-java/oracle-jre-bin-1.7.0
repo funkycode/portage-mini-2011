@@ -5,7 +5,7 @@ x86? ( jre-7-linux-i586.tar.gz ) amd64? ( jre-7-linux-x64.tar.gz ) jce? ( Unlimi
 fetch strip
 http://www.oracle.com/technetwork/java/javase/
 Oracle-BCLA-JavaSE
-Oracle's Java SE Development Kit
+Oracle's Java SE Runtime Environment
 ~amd64 ~x86
 eutils fdo-mime java-vm-2 multilib pax-utils portability prefix toolchain-funcs
 X alsa jce nsplugin

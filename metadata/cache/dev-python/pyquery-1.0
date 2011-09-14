@@ -8,7 +8,7 @@ BSD
 A jquery-like library for python
 ~amd64 ~x86
 distutils multilib python toolchain-funcs
-
+test
 
 
 
