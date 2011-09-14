@@ -2438,8 +2438,6 @@ media-sound/jack-audio-connection-kit:cpudetection - Enables runtime cpudetectio
 media-sound/jack-audio-connection-kit:netjack - Build with support for Realtime Audio Transport over generic IP
 media-sound/jack-audio-connection-kit:pam - Add basic realime configuration via sys-auth/realtime-base
 media-sound/lame:mp3rtp - Build the mp3-to-RTP streaming utility. **UNSUPPORTED**
-media-sound/listen:libsexy - Enable libsexy support
-media-sound/listen:webkit - Enable webkit rendering engine instead of mozembed
 media-sound/lmms:fluidsynth - Enables Fluidsynth MIDI software synthesis plugin.
 media-sound/lmms:stk - Enables STK Mallet plugin.
 media-sound/lmms:vst - Enables the VeSTige plugin to run VST plugins through Wine.
@@ -2933,6 +2931,7 @@ net-analyzer/echoping:priority - enable socket priority support.
 net-analyzer/echoping:smtp - enable support for SMTP protocol.
 net-analyzer/echoping:tos - enable support for TOS (TYpe Of Service).
 net-analyzer/fprobe:messages - enable console messages
+net-analyzer/hydra:ncp - NCP protocol (NetWare) support through net-fs/ncpfs
 net-analyzer/lilac:nmap - Installs nmap which can be used to automatically discover devices to monitor.
 net-analyzer/linkchecker:bookmarks - Mozilla Bookmark parsing
 net-analyzer/linkchecker:login - login form submission
