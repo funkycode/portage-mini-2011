@@ -3831,6 +3831,8 @@ net-p2p/ktorrent:stats - Shows statistics about torrents in several graphs
 net-p2p/ktorrent:upnp - Forward ports using UPnP
 net-p2p/ktorrent:webinterface - Allows control of KTorrent via a web interface
 net-p2p/ktorrent:zeroconf - Discover peers on the local network using the Zeroconf protocol
+net-p2p/leechcraft-eiskaltdcpp:emoticons - Install emoticon packs
+net-p2p/leechcraft-eiskaltdcpp:upnp - Forward ports using UPnP
 net-p2p/mldonkey:bittorrent - enable bittorrent support
 net-p2p/mldonkey:fasttrack - enable fasttrack support
 net-p2p/mldonkey:gnutella - enable gnutella and gnutella2 support
@@ -4708,6 +4710,7 @@ www-plugins/gnash:ssl - Enable directly using OpenSSL in libnet (not needed for 
 www-plugins/gnash:vaapi - Enables VAAPI (Video Acceleration API) for hardware decoding
 www-plugins/google-talkplugin:system-libCg - Use system libCg instead of bundled one
 www-plugins/lightspark:rtmp - Enable Real Time Messaging Protocol using librtmp
+www-servers/apache:static - Link in apache2 modules statically rather then plugins
 www-servers/apache:suexec - Install suexec with apache
 www-servers/cherokee:admin - Install web based cherokee conf tool
 www-servers/cherokee:coverpage - Installs the default cherokee coverpage
