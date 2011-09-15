@@ -1,6 +1,6 @@
 # Copyright 1999-2011 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/dev-java/icedtea6-bin/icedtea6-bin-1.10.2.ebuild,v 1.3 2011/06/20 11:43:21 hwoarang Exp $
+# $Header: /var/cvsroot/gentoo-x86/dev-java/icedtea6-bin/icedtea6-bin-1.10.2.ebuild,v 1.5 2011/09/15 04:17:06 serkan Exp $
 
 EAPI="1"
 
@@ -62,7 +62,7 @@ DEPEND=""
 
 src_install() {
 	local dest="/opt/${P}"
-	local ddest="${D}/${dest}"
+	local ddest="${ED}/${dest}"
 	dodir "${dest}" || die
 
 	local arch=${ARCH}
