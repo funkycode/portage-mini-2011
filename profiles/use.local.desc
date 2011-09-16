@@ -3385,6 +3385,7 @@ net-libs/gtk-vnc:gtk3 - Build the gtk3 gtk-vnc library and other gtk3 assets
 net-libs/gtk-vnc:introspection - Use dev-libs/gobject-introspection for introspection
 net-libs/gupnp:introspection - Use dev-libs/gobject-introspection for introspection
 net-libs/gupnp-av:introspection - Use dev-libs/gobject-introspection for introspection
+net-libs/gupnp-igd:introspection - Use dev-libs/gobject-introspection for introspection
 net-libs/iax:snomhack - Use slower memset for SNOM phoneem
 net-libs/ldns:gost - Enable GOST support
 net-libs/libeXosip:srv - enable support for SRV records DNS queries
