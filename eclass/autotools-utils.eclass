@@ -1,6 +1,6 @@
 # Copyright 1999-2010 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/eclass/autotools-utils.eclass,v 1.11 2011/09/12 20:32:41 mgorny Exp $
+# $Header: /var/cvsroot/gentoo-x86/eclass/autotools-utils.eclass,v 1.13 2011/09/16 15:29:22 mgorny Exp $
 
 # @ECLASS: autotools-utils.eclass
 # @MAINTAINER:
@@ -146,12 +146,12 @@ remove_libtool_files() {
 	debug-print-function ${FUNCNAME} "$@"
 
 	local f
-	for f in $(find "${D}" -type f -name '*.la'); do
+	find "${D}" -type f -name '*.la' -print0 | while read -r -d '' f; do
 		# Keep only .la files with shouldnotlink=yes - likely plugins
 		local shouldnotlink=$(sed -ne '/^shouldnotlink=yes$/p' "${f}")
 		if [[  "$1" == 'all' || -z ${shouldnotlink} ]]; then
 			if [[ "$1" != 'none' ]]; then
-				einfo "Removing unnecessary ${f}"
+				einfo "Removing unnecessary ${f#${D%/}}"
 				rm -f "${f}"
 			fi
 		fi
@@ -159,7 +159,7 @@ remove_libtool_files() {
 		if [[ -n ${shouldnotlink} ]]; then
 			local remove=${f/%.la/.a}
 			[[ "${f}" != "${remove}" ]] || die 'regex sanity check failed'
-			einfo "Removing unnecessary ${remove}"
+			einfo "Removing unnecessary ${remove#${D%/}}"
 			rm -f "${remove}"
 		fi
 	done

@@ -1,12 +1,10 @@
 # Copyright 1999-2011 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/dev-lang/php/php-5.3.7_rc5.ebuild,v 1.1 2011/08/12 07:40:09 olemarkus Exp $
+# $Header: /var/cvsroot/gentoo-x86/dev-lang/php/php-5.4.0_beta1.ebuild,v 1.1 2011/09/16 07:04:41 olemarkus Exp $
 
 EAPI=4
 
-PHPCONFUTILS_MISSING_DEPS="adabas birdstep db2 dbmaker empress empress-bcs esoob interbase oci8 sapdb solid"
-
-inherit eutils autotools flag-o-matic versionator depend.apache apache-module db-use phpconfutils php-common-r1 libtool
+inherit eutils autotools flag-o-matic versionator depend.apache apache-module db-use libtool
 
 SUHOSIN_VERSION=""
 FPM_VERSION="builtin"
@@ -17,8 +15,11 @@ KEYWORDS="~alpha ~amd64 ~arm ~hppa ~ia64 ~ppc ~ppc64 ~s390 ~sh ~sparc ~x86"
 function php_get_uri ()
 {
 	case "${1}" in
+		"php-stas")
+			echo "http://downloads.php.net/stas/${2}"
+		;;
 		"php-pre")
-			echo "http://downloads.php.net/ilia/${2}"
+			echo "http://downloads.php.net/johannes/${2}"
 		;;
 		"php")
 			echo "http://www.php.net/distributions/${2}"
@@ -43,7 +44,9 @@ PHP_MV="$(get_major_version)"
 # alias, so we can handle different types of releases (finals, rcs, alphas,
 # betas, ...) w/o changing the whole ebuild
 PHP_PV="${PV/_rc/RC}"
-PHP_RELEASE="php-pre"
+PHP_PV="${PV/_alpha/alpha}"
+PHP_PV="${PV/_beta/beta}"
+PHP_RELEASE="php-stas"
 PHP_P="${PN}-${PHP_PV}"
 
 PHP_PATCHSET_LOC="olemarkus"
@@ -53,9 +56,6 @@ PHP_SRC_URI="$(php_get_uri "${PHP_RELEASE}" "${PHP_P}.tar.bz2")"
 PHP_PATCHSET="0"
 PHP_PATCHSET_URI="
 	$(php_get_uri "${PHP_PATCHSET_LOC}" "php-patchset-${PV}-r${PHP_PATCHSET}.tar.bz2")"
-
-PHP_FPM_INIT_VER="4"
-PHP_FPM_CONF_VER="1"
 
 if [[ ${SUHOSIN_VERSION} == *-gentoo ]]; then
 	# in some cases we use our own suhosin patch (very recent version,
@@ -97,15 +97,15 @@ IUSE="${IUSE}
 	${SAPIS/cli/+cli}
 	threads"
 
-IUSE="${IUSE} adabas bcmath berkdb birdstep bzip2 calendar cdb cjk
-	crypt +ctype curl curlwrappers db2 dbmaker debug doc empress
-	empress-bcs enchant esoob exif frontbase +fileinfo +filter firebird
-	flatfile ftp gd gd-external gdbm gmp +hash +iconv imap inifile
-	interbase intl iodbc ipv6 +json kerberos ldap ldap-sasl libedit mhash
-	mssql mysql mysqlnd mysqli nls oci8
+IUSE="${IUSE} bcmath berkdb bzip2 calendar cdb cjk
+	crypt +ctype curl curlwrappers debug doc
+	enchant exif frontbase +fileinfo +filter firebird
+	flatfile ftp gd gdbm gmp +hash +iconv imap inifile
+	intl iodbc ipv6 +json kerberos ldap ldap-sasl libedit mhash
+	mssql mysql mysqlnd mysqli nls
 	oci8-instant-client odbc pcntl pdo +phar pic +posix postgres qdbm
-	readline recode sapdb +session sharedext sharedmem
-	+simplexml snmp soap sockets solid spell sqlite sqlite3 ssl
+	readline recode +session sharedmem
+	+simplexml snmp soap sockets spell sqlite3 ssl
 	sybase-ct sysvipc tidy +tokenizer truetype unicode wddx
 	xml xmlreader xmlwriter xmlrpc xpm xsl zip zlib"
 
@@ -115,33 +115,25 @@ IUSE="${IUSE} adabas bcmath berkdb birdstep bzip2 calendar cdb cjk
 DEPEND="!dev-lang/php:5
 	>=app-admin/eselect-php-0.6.2
 	>=dev-libs/libpcre-8.12[unicode]
-	adabas? ( >=dev-db/unixODBC-1.8.13 )
 	apache2? ( www-servers/apache[threads=] )
 	berkdb? ( =sys-libs/db-4* )
-	birdstep? ( >=dev-db/unixODBC-1.8.13 )
 	bzip2? ( app-arch/bzip2 )
 	cdb? ( || ( dev-db/cdb dev-db/tinycdb ) )
-	cjk? ( !gd? ( !gd-external? (
+	cjk? ( !gd? (
 		virtual/jpeg
 		media-libs/libpng
 		sys-libs/zlib
-	) ) )
+	) )
 	crypt? ( >=dev-libs/libmcrypt-2.4 )
 	curl? ( >=net-misc/curl-7.10.5 )
-	db2? ( >=dev-db/unixODBC-1.8.13 )
-	dbmaker? ( >=dev-db/unixODBC-1.8.13 )
-	empress? ( >=dev-db/unixODBC-1.8.13 )
-	empress-bcs? ( >=dev-db/unixODBC-1.8.13 )
 	enchant? ( app-text/enchant )
-	esoob? ( >=dev-db/unixODBC-1.8.13 )
-	exif? ( !gd? ( !gd-external? (
+	exif? ( !gd? (
 		virtual/jpeg
 		media-libs/libpng
 		sys-libs/zlib
-	) ) )
+	) )
 	firebird? ( dev-db/firebird )
 	gd? ( virtual/jpeg media-libs/libpng sys-libs/zlib )
-	gd-external? ( media-libs/gd )
 	gdbm? ( >=sys-libs/gdbm-1.8.0 )
 	gmp? ( >=dev-libs/gmp-4.1.2 )
 	iconv? ( virtual/libiconv )
@@ -150,8 +142,8 @@ DEPEND="!dev-lang/php:5
 	iodbc? ( dev-db/libiodbc )
 	kerberos? ( virtual/krb5 )
 	kolab? ( >=net-libs/c-client-2004g-r1 )
-	ldap? ( !oci8? ( >=net-nds/openldap-1.2.11 ) )
-	ldap-sasl? ( !oci8? ( dev-libs/cyrus-sasl >=net-nds/openldap-1.2.11 ) )
+	ldap? ( >=net-nds/openldap-1.2.11 )
+	ldap-sasl? ( dev-libs/cyrus-sasl >=net-nds/openldap-1.2.11 )
 	libedit? ( || ( sys-freebsd/freebsd-lib dev-libs/libedit ) )
 	mssql? ( dev-db/freetds[mssql] )
 	!mysqlnd? (
@@ -165,23 +157,20 @@ DEPEND="!dev-lang/php:5
 	qdbm? ( dev-db/qdbm )
 	readline? ( sys-libs/readline )
 	recode? ( app-text/recode )
-	sapdb? ( >=dev-db/unixODBC-1.8.13 )
 	sharedmem? ( dev-libs/mm )
 	simplexml? ( >=dev-libs/libxml2-2.6.8 )
 	snmp? ( >=net-analyzer/net-snmp-5.2 )
 	soap? ( >=dev-libs/libxml2-2.6.8 )
-	solid? ( >=dev-db/unixODBC-1.8.13 )
 	spell? ( >=app-text/aspell-0.50 )
-	sqlite? ( =dev-db/sqlite-2* pdo? ( >=dev-db/sqlite-3.7.7.1 ) )
-	sqlite3? ( >=dev-db/sqlite-3.7.7.1 )
+	sqlite3? ( >=dev-db/sqlite-3.7.6.3 )
 	ssl? ( >=dev-libs/openssl-0.9.7 )
 	sybase-ct? ( dev-db/freetds )
 	tidy? ( app-text/htmltidy )
 	truetype? (
 		=media-libs/freetype-2*
 		>=media-libs/t1lib-5.0.0
-		!gd? ( !gd-external? (
-			virtual/jpeg media-libs/libpng sys-libs/zlib ) )
+		!gd? (
+			virtual/jpeg media-libs/libpng sys-libs/zlib )
 	)
 	unicode? ( dev-libs/oniguruma )
 	wddx? ( >=dev-libs/libxml2-2.6.8 )
@@ -203,29 +192,19 @@ DEPEND="!dev-lang/php:5
 php="=${CATEGORY}/${PF}"
 
 REQUIRED_USE="
-	truetype? ( || ( gd gd-external ) )
-	cjk? ( || ( gd gd-external ) )
-	exif? ( || ( gd gd-external ) )
+	truetype? ( gd )
+	cjk? ( gd )
+	exif? ( gd )
 
 	xpm? ( gd )
-	gd? ( zlib !gd-external )
-	gd-external? ( !gd )
+	gd? ( zlib )
 	simplexml? ( xml )
 	soap? ( xml )
 	wddx? ( xml )
 	xmlrpc? ( || ( xml iconv ) )
 	xmlreader? ( xml )
 	xsl? ( xml )
-	ldap-sasl? ( ldap !oci8 )
-	adabas? ( odbc )
-	birdstep? ( odbc )
-	dbmaker? ( odbc )
-	empress-bcs? ( empress )
-	empress? ( odbc )
-	esoob? ( odbc )
-	db2? ( odbc )
-	sapdb? ( odbc )
-	solid? ( odbc )
+	ldap-sasl? ( ldap )
 	kolab? ( imap )
 	mhash? ( hash )
 	phar? ( hash )
@@ -235,13 +214,9 @@ REQUIRED_USE="
 		pdo
 	) )
 
-	oci8? ( !oci8-instant-client !ldap-sasl )
-	oci8-instant-client? ( !oci8 )
-
 	qdbm? ( !gdbm )
 	readline? ( !libedit )
 	recode? ( !imap !mysql !mysqli )
-	firebird? ( !interbase )
 	sharedmem? ( !threads )
 
 	!cli? ( !cgi? ( !fpm? ( !apache2? ( !embed? ( cli ) ) ) ) )"
@@ -329,7 +304,7 @@ eblit-run-maybe() {
 # Usage: <function> [version]
 # Runs a function defined in an eblit
 eblit-run() {
-	eblit-include --skip common "${*:2}"
+	eblit-include --skip common v2
 	eblit-include "$@"
 	eblit-run-maybe eblit-$1-pre
 	eblit-${PN}-$1
@@ -344,11 +319,11 @@ eblit-pkg() {
 	eblit-core $1 $2 1
 }
 
-eblit-pkg pkg_setup v2
+eblit-pkg pkg_setup v3
 
-src_prepare() { eblit-run src_prepare v3 ; }
-src_configure() { eblit-run src_configure v2 ; }
+src_prepare() { eblit-run src_prepare v4 ; }
+src_configure() { eblit-run src_configure v3 ; }
 src_compile() { eblit-run src_compile v1 ; }
-src_install() { eblit-run src_install v2 ; }
+src_install() { eblit-run src_install v3 ; }
 src_test() { eblit-run src_test v1 ; }
 pkg_postinst() { eblit-run pkg_postinst v2 ; }
