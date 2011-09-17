@@ -1,6 +1,6 @@
 # Copyright 1999-2011 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/app-office/libreoffice/libreoffice-9999-r1.ebuild,v 1.9 2011/09/16 08:51:58 scarabeus Exp $
+# $Header: /var/cvsroot/gentoo-x86/app-office/libreoffice/libreoffice-9999-r1.ebuild,v 1.14 2011/09/17 03:58:44 scarabeus Exp $
 
 EAPI=3
 
@@ -49,8 +49,6 @@ unset DEV_URI
 
 # addons
 # FIXME: actually review which one of these are used
-ADDONS_SRC+=" ${ADDONS_URI}/17410483b5b5f267aa18b7e00b65e6e0-hsqldb_1_8_0.zip"
-ADDONS_SRC+=" ${ADDONS_URI}/bd30e9cf5523cdfc019b94f5e1d7fd19-cppunit-1.12.1.tar.gz"
 ADDONS_SRC+=" ${ADDONS_URI}/1756c4fa6c616ae15973c104cd8cb256-Adobe-Core35_AFMs-314.tar.gz"
 ADDONS_SRC+=" ${ADDONS_URI}/1f24ab1d39f4a51faf22244c94a6203f-xmlsec1-1.2.14.tar.gz"
 ADDONS_SRC+=" ${ADDONS_URI}/24be19595acad0a2cae931af77a0148a-LICENSE_source-9.0.0.7-bj.html"
@@ -65,7 +63,6 @@ ADDONS_SRC+=" ${ADDONS_URI}/8294d6c42e3553229af9934c5c0ed997-stax-api-1.0-2-sour
 ADDONS_SRC+=" ${ADDONS_URI}/a7983f859eafb2677d7ff386a023bc40-xsltml_2.1.2.zip"
 ADDONS_SRC+=" ${ADDONS_URI}/ada24d37d8d638b3d8a9985e80bc2978-source-9.0.0.7-bj.zip"
 ADDONS_SRC+=" ${ADDONS_URI}/d4c4d91ab3a8e52a2e69d48d34ef4df4-core.zip"
-ADDONS_SRC+=" ${ADDONS_URI}/fdb27bfe2dbe2e7b57ae194d9bf36bab-SampleICC-1.3.2.tar.gz"
 ADDONS_SRC+=" ${ADDONS_URI}/3404ab6b1792ae5f16bbd603bd1e1d03-libformula-1.1.7.zip"
 ADDONS_SRC+=" ${ADDONS_URI}/3bdf40c0d199af31923e900d082ca2dd-libfonts-1.1.6.zip"
 ADDONS_SRC+=" ${ADDONS_URI}/8ce2fcd72becf06c41f7201d15373ed9-librepository-1.1.6.zip"
@@ -81,6 +78,9 @@ ADDONS_SRC+=" ${ADDONS_URI}/0f63ee487fda8f21fafa767b3c447ac9-ixion-0.2.0.tar.gz"
 ADDONS_SRC+=" ${ADDONS_URI}/71474203939fafbe271e1263e61d083e-nss-3.12.8-with-nspr-4.8.6.tar.gz"
 ADDONS_SRC+=" http://download.go-oo.org/extern/185d60944ea767075d27247c3162b3bc-unowinreg.dll"
 ADDONS_SRC+=" http://www.numbertext.org/linux/881af2b7dca9b8259abbca00bbbc004d-LinLibertineG-20110101.zip"
+# REALLY REQUIRED
+ADDONS_SRC+=" ${ADDONS_URI}/bd30e9cf5523cdfc019b94f5e1d7fd19-cppunit-1.12.1.tar.gz"
+ADDONS_SRC+=" ${ADDONS_URI}/fdb27bfe2dbe2e7b57ae194d9bf36bab-SampleICC-1.3.2.tar.gz"
 SRC_URI+=" ${ADDONS_SRC}"
 
 TDEPEND="${EXT_URI}/472ffb92d82cf502be039203c606643d-Sun-ODF-Template-Pack-en-US_1.0.0.oxt"
@@ -130,10 +130,11 @@ COMMON_DEPEND="
 	>=dev-libs/openssl-0.9.8g
 	dev-libs/redland[ssl]
 	>=dev-python/translate-toolkit-1.8.0
-	media-libs/freetype:2
 	>=media-libs/fontconfig-2.3.0
-	>=media-libs/vigra-1.7
+	media-libs/freetype:2
 	>=media-libs/libpng-1.4
+	media-libs/libvisio
+	>=media-libs/vigra-1.7
 	net-print/cups
 	sci-mathematics/lpsolve
 	>=sys-libs/db-4.8
@@ -212,9 +213,6 @@ DEPEND="${COMMON_DEPEND}
 
 PATCHES=(
 	"${FILESDIR}/${PN}-3.3.1-neon_remove_SSPI_support.diff"
-	"${FILESDIR}/sdext-presenter.diff"
-	"${FILESDIR}/${PN}-svx.patch"
-	"${FILESDIR}/${PN}-binfilter-as-needed.patch"
 	"${FILESDIR}/${PN}-kill-cppunit.patch"
 )
 
@@ -248,18 +246,6 @@ pkg_setup() {
 		ewarn
 		ewarn "Before reporting a bug, please make sure you rebuild and try with"
 		ewarn "basic CFLAGS, otherwise the bug will not be accepted."
-		ewarn
-	fi
-
-	if ! use java; then
-		ewarn "You are building with java-support disabled, this results in some"
-		ewarn "of the LibreOffice functionality being disabled."
-		ewarn "If something you need does not work for you, rebuild with"
-		ewarn "java in your USE-flags."
-		ewarn
-		ewarn "Some java libraries will be provided internally by libreoffice"
-		ewarn "during the build. You should really reconsider enabling java"
-		ewarn "use flag."
 		ewarn
 	fi
 
@@ -339,12 +325,13 @@ src_prepare() {
 
 	base_src_prepare
 	eautoreconf
+	# hack in the autogen.sh
+	touch autogen.lastrun
 }
 
 src_configure() {
 	local java_opts
 	local internal_libs
-	local extensions
 	local themes="crystal"
 	local jbs=$(sed -ne 's/.*\(-j[[:space:]]*\|--jobs=\)\([[:digit:]]\+\).*/\2/;T;p' <<< "${MAKEOPTS}")
 
@@ -355,33 +342,19 @@ src_configure() {
 	use gnome && themes+=" tango"
 	use kde && themes+=" oxygen"
 
-	# list the extensions we are going to build by default
-	extensions="
-		--enable-ext-pdfimport
-		--enable-ext-presenter-console
-		--enable-ext-presenter-minimizer
-	"
-
-	# hsqldb: requires just 1.8.0 not 1.8.1 which we don't ship at all
 	# dmake: not worth of splitting out
 	# cppunit: patched not to run anything, just main() { return 0; }
 	#          workaround to upstream running the tests during build
 	# sane: just sane.h header that is used for scan in writer, not
 	#       linked or anything else, worthless to depend on
 	internal_libs+="
-		--without-system-hsqldb
 		--without-system-cppunit
 		--without-system-sane
 	"
 
-	# When building without java some things needs to be done
-	# as internal libraries.
-	if ! use java; then
-		internal_libs+="
-			--without-junit
-		"
-	else
+	if use java; then
 		java_opts="
+			--without-system-hsqldb
 			--with-ant-home="${ANT_HOME}"
 			--with-jdk-home=$(java-config --jdk-home 2>/dev/null)
 			--with-java-target-version=$(java-pkg_get-target)
@@ -399,7 +372,7 @@ src_configure() {
 	fi
 
 	if use branding; then
-		extensions+="
+		internal_libs+="
 			--with-about-bitmap="${WORKDIR}/branding-about.png"
 			--with-intro-bitmap="${WORKDIR}/branding-intro.png"
 		"
@@ -432,6 +405,9 @@ src_configure() {
 		--with-system-jars \
 		--with-system-db \
 		--with-system-dicts \
+		--with-system-libvisio \
+		--with-system-libtextcat --with-external-libtextcat-data \
+		--with-system-translate-toolkit \
 		--enable-cairo-canvas \
 		--enable-largefile \
 		--enable-python=system \
@@ -462,8 +438,8 @@ src_configure() {
 		--with-external-thes-dir="${EPREFIX}/usr/share/myspell" \
 		--with-external-tar="${DISTDIR}" \
 		--with-lang="" \
-		--with-max-jobs=${jbs} \
-		--with-num-cpus=1 \
+		--with-max-jobs=1 \
+		--with-num-cpus=${jbs} \
 		--with-theme="${themes}" \
 		--with-unix-wrapper=libreoffice \
 		--with-vendor="Gentoo Foundation" \
@@ -503,8 +479,7 @@ src_configure() {
 		$(use_with nsplugin system-mozilla libxul) \
 		$(use_with templates sun-templates) \
 		${internal_libs} \
-		${java_opts} \
-		${extensions}
+		${java_opts}
 }
 
 src_compile() {

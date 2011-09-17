@@ -921,7 +921,6 @@ dev-haskell/cabal-install:noprefs - Ignore 'preferred-versions' file from hackag
 dev-haskell/citeproc-hs:bibutils - Use Chris Putnam's app-text/bibutils
 dev-haskell/citeproc-hs:network - Use dev-haskell/network and dev-haskell/http to retrieve CSL file from URIs.
 dev-haskell/gtk:gio - Add glib's GIO bindings.
-dev-haskell/gtk2hs:glade - Enable gnome-base/libglade bindings compilation
 dev-haskell/highlighting-kate:executable - Build the Highlight executable
 dev-haskell/json:generic - Add support for generic encoder (dev-haskell/syb)
 dev-haskell/json:parsec - Add support for parsing with Parsec
@@ -2940,6 +2939,7 @@ net-analyzer/metasploit:gui - Enable Java GUI
 net-analyzer/munin:asterisk - installs deps for monitoring Asterisk
 net-analyzer/munin:irc - installs deps for monitoring IRC
 net-analyzer/munin:memcached - installs deps for monitoring memcached
+net-analyzer/munin:minimal - installs only the munin-node, applicable if the host is not the munin master installation"
 net-analyzer/nagios-core:lighttpd - install www-servers/lighttpd config
 net-analyzer/nagios-core:web - enable web interface
 net-analyzer/nagios-nrpe:command-args - allow clients to specify command arguments
@@ -4504,7 +4504,6 @@ sys-fs/udev:keymap - map custom hardware's multimedia keys
 sys-fs/udev:old-hd-rules - Install rules for /dev/hd* devices, removed upstream at udev-148
 sys-fs/udev:rule_generator - enable persistent network and optical device rule generator
 sys-fs/udisks:remote-access - Control whether connections from other clients over LAN are allowed
-sys-fs/unionfs:nfs - Adds support for NFS file system
 sys-infiniband/openib:dapl - Automatically generated description for dapl
 sys-infiniband/openib:diags - Automatically generated description for diags
 sys-infiniband/openib:ehca - Automatically generated description for ehca
