@@ -1,5 +1,5 @@
->=media-libs/libpng-1.2.40 sys-libs/zlib app-arch/xz-utils
->=media-libs/libpng-1.2.40 sys-libs/zlib
+>=media-libs/libpng-1.4 sys-libs/zlib app-arch/xz-utils
+>=media-libs/libpng-1.4 sys-libs/zlib
 0
 mirror://sourceforge/pmt/pngcrush-1.7.17-nolib.tar.xz
 
@@ -14,7 +14,7 @@ multilib toolchain-funcs
 
 4
 
-install prepare
+install prepare setup
 
 
 

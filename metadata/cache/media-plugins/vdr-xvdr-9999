@@ -6,7 +6,7 @@
 https://github.com/pipelka/vdr-plugin-xvdr
 GPL-2
 VDR plugin: XVDR Streamserver Plugin
-~x86 ~amd64
+
 base eutils flag-o-matic git-2 multilib portability toolchain-funcs vdr-plugin
 
 
