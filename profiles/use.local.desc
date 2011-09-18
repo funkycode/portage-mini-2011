@@ -109,6 +109,7 @@ app-admin/collectd:collectd_plugins_unixsock - Build the unixsock output plugin 
 app-admin/collectd:collectd_plugins_uptime - Build the uptime input plugin (system uptime)
 app-admin/collectd:collectd_plugins_users - Build the users input plugin (number of users currently logged in)
 app-admin/collectd:collectd_plugins_uuid - Build the uuid plugin (tries hard to determine the UUID of the system it is running on)
+app-admin/collectd:collectd_plugins_varnish - Build the varnish input plugin
 app-admin/collectd:collectd_plugins_vmem - Build the vmem input plugin (information about the virtual memory subsystem)
 app-admin/collectd:collectd_plugins_vserver - Build the vserver input plugin (virtual servers running on a system)
 app-admin/collectd:collectd_plugins_wireless - Build the wireless input plugin (signal quality, signal power and signal-to-noise ratio for wireless LAN cards)
@@ -4585,6 +4586,7 @@ sys-process/fcron:debug - Enable debug code and output. Since version 3.0.5 this
 sys-process/fcron:pam - Enable PAM support for fcron. This means that fcron will pass through the "fcron" stack before executing the jobs, and fcrontab will use the "fcrontab" stack to authenticate the user before editing its crontab file.
 sys-process/htop:openvz - Enable openvz support
 sys-process/htop:vserver - Enable vserver support
+sys-process/lsof:rpc - support looking up RPC service info
 virtual/ffmpeg:vaapi - Enables VAAPI (Video Acceleration API) for hardware decoding
 virtual/ffmpeg:vdpau - Enables VDPAU decoders (requires nVidia video cards to offload CPU processing to video card
 virtual/mpi:romio - Enable romio, a high-performance portable MPI-IO
