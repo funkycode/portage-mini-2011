@@ -1,5 +1,5 @@
-<sys-libs/glibc-2.14 hesiod? ( net-dns/hesiod ) ldap? ( >=net-nds/openldap-2.0 sasl? ( dev-libs/cyrus-sasl dev-libs/libxml2 virtual/krb5 ) ) || ( =sys-devel/automake-1.11* ) >=sys-devel/autoconf-2.61 sys-devel/libtool
-<sys-libs/glibc-2.14 hesiod? ( net-dns/hesiod ) ldap? ( >=net-nds/openldap-2.0 sasl? ( dev-libs/cyrus-sasl dev-libs/libxml2 virtual/krb5 ) )
+hesiod? ( net-dns/hesiod ) ldap? ( >=net-nds/openldap-2.0 sasl? ( dev-libs/cyrus-sasl dev-libs/libxml2 virtual/krb5 ) ) virtual/yacc || ( =sys-devel/automake-1.11* ) >=sys-devel/autoconf-2.61 sys-devel/libtool
+hesiod? ( net-dns/hesiod ) ldap? ( >=net-nds/openldap-2.0 sasl? ( dev-libs/cyrus-sasl dev-libs/libxml2 virtual/krb5 ) )
 0
 mirror://kernel/linux/daemons/autofs/v5/autofs-5.0.6.tar.bz2
 
