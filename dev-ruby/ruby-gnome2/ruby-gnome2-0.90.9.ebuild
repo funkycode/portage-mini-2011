@@ -1,6 +1,6 @@
 # Copyright 1999-2011 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/dev-ruby/ruby-gnome2/ruby-gnome2-0.90.9.ebuild,v 1.1 2011/09/17 16:42:24 naota Exp $
+# $Header: /var/cvsroot/gentoo-x86/dev-ruby/ruby-gnome2/ruby-gnome2-0.90.9.ebuild,v 1.2 2011/09/19 03:01:30 naota Exp $
 
 EAPI="2"
 USE_RUBY="ruby18 ruby19"
@@ -23,7 +23,8 @@ DEPEND="${DEPEND}
 	>=gnome-base/libgnome-2.2
 	>=gnome-base/libgnomeui-2.2"
 
-ruby_add_rdepend ">=dev-ruby/ruby-goocanvas-${PV}
+ruby_add_rdepend ">=dev-ruby/ruby-gio2-${PV}
+	>=dev-ruby/ruby-goocanvas-${PV}
 	>=dev-ruby/ruby-gstreamer-${PV}
 	>=dev-ruby/ruby-gtk2-${PV}
 	>=dev-ruby/ruby-gtkmozembed-${PV}
