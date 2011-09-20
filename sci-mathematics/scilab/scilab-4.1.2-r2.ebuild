@@ -1,6 +1,6 @@
 # Copyright 1999-2011 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/sci-mathematics/scilab/scilab-4.1.2-r2.ebuild,v 1.13 2011/09/19 15:30:17 jlec Exp $
+# $Header: /var/cvsroot/gentoo-x86/sci-mathematics/scilab/scilab-4.1.2-r2.ebuild,v 1.14 2011/09/19 15:39:11 jlec Exp $
 
 EAPI=4
 
@@ -51,8 +51,7 @@ src_prepare() {
 		"${FILESDIR}"/${PN}-4.1-examples.patch \
 		"${FILESDIR}"/${P}-java-config.patch \
 		"${FILESDIR}"/${P}-tmp-fix.patch \
-		"${FILESDIR}"/${P}-gcc45.patch \
-		"${FILESDIR}"/${P}-gcc45-2.patch
+		"${FILESDIR}"/${P}-gcc45.patch
 	eautoconf
 
 	sed \

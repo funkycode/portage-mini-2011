@@ -6,7 +6,7 @@ mirror://pypi/p/pyquery/pyquery-1.0.tar.gz
 http://pypi.python.org/pypi/pyquery
 BSD
 A jquery-like library for python
-~amd64 ~x86
+~amd64 ~arm ~x86
 distutils multilib python toolchain-funcs
 test
 

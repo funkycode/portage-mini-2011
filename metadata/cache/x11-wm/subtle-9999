@@ -2,7 +2,7 @@ x11-libs/libX11 xft? ( x11-libs/libXft ) xinerama? ( x11-libs/libXinerama ) xpm?
 x11-libs/libX11 xft? ( x11-libs/libXft ) xinerama? ( x11-libs/libXinerama ) xpm? ( x11-libs/libXpm ) xtest? ( x11-libs/libXtst ) xrandr? ( x11-libs/libXrandr ) ruby_targets_ruby19? ( dev-ruby/archive-tar-minitar[ruby_targets_ruby19] ) ruby_targets_ruby19? ( dev-lang/ruby:1.9 )
 0
 
-test
+
 http://subforge.org/projects/subtle/wiki
 GPL-2
 A manual tiling window manager
