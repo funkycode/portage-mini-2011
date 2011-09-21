@@ -1,4 +1,4 @@
-test? ( dev-python/twisted ) >=app-admin/eselect-python-20091230 =dev-lang/python-2* test? ( dev-python/twisted )
+>=app-admin/eselect-python-20091230 =dev-lang/python-2* test? ( dev-python/twisted )
 >=app-admin/eselect-python-20091230 =dev-lang/python-2*
 0
 mirror://pypi/p/pyflakes/pyflakes-0.5.0.tar.gz
