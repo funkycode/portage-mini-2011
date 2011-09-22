@@ -1,6 +1,6 @@
 # Copyright 1999-2011 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/dev-db/virtuoso-server/virtuoso-server-6.1.3-r1.ebuild,v 1.1 2011/09/08 22:42:51 dilfridge Exp $
+# $Header: /var/cvsroot/gentoo-x86/dev-db/virtuoso-server/virtuoso-server-6.1.3-r1.ebuild,v 1.3 2011/09/21 22:25:23 reavertm Exp $
 
 EAPI=4
 
@@ -20,7 +20,7 @@ IUSE="kerberos ldap readline"
 COMMON_DEPEND="
 	dev-libs/libxml2:2
 	>=dev-libs/openssl-0.9.7i:0
-	sys-libs/zlib:0
+	>=sys-libs/zlib-1.2.5.1-r2:0[minizip]
 	kerberos? ( app-crypt/mit-krb5 )
 	ldap? ( net-nds/openldap )
 	readline? ( sys-libs/readline:0 )
@@ -49,7 +49,10 @@ VOS_EXTRACT="
 
 DOCS=(AUTHORS ChangeLog CREDITS INSTALL NEWS README)
 
-PATCHES=( "${FILESDIR}/${P}-unicode.patch" )
+PATCHES=(
+	"${FILESDIR}/${P}-unicode.patch"
+	"${FILESDIR}/${P}-unbundle-minizip.patch"
+)
 
 src_prepare() {
 	sed -e '/^lib_LTLIBRARIES\s*=.*/s/lib_/noinst_/' -i binsrc/virtuoso/Makefile.am \

@@ -1498,7 +1498,9 @@ dev-util/qdevelop:plugins - Build and install additional plugins
 dev-util/qt-creator:bazaar - Add support for bazaar version control system
 dev-util/qt-creator:bineditor - enable bineditor plugin
 dev-util/qt-creator:bookmarks - enable bookmarks plugin
+dev-util/qt-creator:botan-bundled - Use the bundled copy of dev-libs/botan
 dev-util/qt-creator:cmake - enable cmake project manager plugin
+dev-util/qt-creator:debugger - enable debugger plugin
 dev-util/qt-creator:designer - enable designer plugin
 dev-util/qt-creator:fakevim - enable vim-like key bindings plugin
 dev-util/qt-creator:git - enable git plugin
@@ -2668,6 +2670,7 @@ media-video/dvdrip:subtitles - Enables support for subtitle ripping
 media-video/ffmpeg:3dnowext - Enable manually-optimised routines using the AMD 3DNow!Ex SIMD instruction set, present in modern AMD CPUs. (Check for 3dnowext in /proc/cpuinfo to know whether your CPU supports it).
 media-video/ffmpeg:amr - Enables Adaptive Multi-Rate Audio support
 media-video/ffmpeg:avx - Adds support for Advanced Vector Extensions instructions (Intel Sandy Bridge, AMD Bulldozer and later chips)
+media-video/ffmpeg:cdio - Enables audio CD grabbing with dev-libs/libcdio.
 media-video/ffmpeg:celt - Adds Xiph CELT/Opus audio decoding support via media-libs/celt
 media-video/ffmpeg:cpudetection - Enables runtime CPU detection (useful for bindist, compatibility on other CPUs)
 media-video/ffmpeg:dirac - Enable Dirac video support (an advanced royalty-free video compression format) via the reference library: dirac.
@@ -3398,6 +3401,7 @@ net-libs/farsight2:upnp - Enable UPnP IGD support
 net-libs/glib-networking:gnome - Extract HTTP/HTTPS/SOCKS proxy configuration stored using GSettings
 net-libs/glib-networking:libproxy - Use net-libs/libproxy for getting the HTTP/HTTPS/SOCKS proxy configuration
 net-libs/gnutls:nettle - Use dev-libs/nettle as crypto backend
+net-libs/gnutls:pkcs11 - Add support for PKCS#11 over app-crypt/p11-kit
 net-libs/gssdp:introspection - Use dev-libs/gobject-introspection for introspection
 net-libs/gtk-vnc:gtk3 - Build the gtk3 gtk-vnc library and other gtk3 assets
 net-libs/gtk-vnc:introspection - Use dev-libs/gobject-introspection for introspection
@@ -4577,6 +4581,7 @@ sys-libs/uclibc:ssp - Force the use of ssp to be built into a hardened uclibc se
 sys-libs/uclibc:uclibc-compat - Build uclibc with backwards compatible options
 sys-libs/uclibc:userlocales - Build only the locales specified in /etc/locales.build
 sys-libs/uclibc:wordexp - Add support for word expansion (wordexp.h)
+sys-libs/zlib:minizip - include the minizip library for quick and dirty zip extraction
 sys-power/cpufreqd:nforce2 - Enable support for nforce2 voltage settings plug-in
 sys-power/cpufreqd:nvidia - Enable nvidia overclocking (media-video/nvclock) plug-in
 sys-power/cpufreqd:pmu - Enable Power Management Unit plug-in

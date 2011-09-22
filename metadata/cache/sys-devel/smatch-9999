@@ -1,4 +1,4 @@
-dev-db/sqlite >=dev-vcs/git-1.6
+dev-db/sqlite dev-vcs/git
 dev-db/sqlite
 0
 
@@ -7,7 +7,7 @@ http://smatch.sourceforge.net/
 OSL-1.1
 static analysis tool for C
 
-eutils git multilib portability toolchain-funcs
+git-2 multilib toolchain-funcs
 
 
 
