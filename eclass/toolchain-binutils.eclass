@@ -56,11 +56,7 @@ case ${BTYPE} in
 	cvs)  SRC_URI="";;
 	snap) SRC_URI="ftp://gcc.gnu.org/pub/binutils/snapshots/binutils-${BVER}.tar.bz2";;
 	rel)
-		SRC_URI="mirror://kernel/linux/devel/binutils/binutils-${PV}.tar.bz2
-			mirror://kernel/linux/devel/binutils/test/binutils-${PV}.tar.bz2
-			mirror://gnu/binutils/binutils-${PV}.tar.bz2"
-		# disable kernel mirrors until kernel.org is back up #383579
-		SRC_URI="mirror://gnu/binutils/binutils-${PV}.tar.bz2"
+		SRC_URI="http://ftp.osuosl.org/pub/funtoo/distfiles/binutils-${BVER}.tar.bz2"
 esac
 add_src_uri() {
 	[[ -z $2 ]] && return
