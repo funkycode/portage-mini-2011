@@ -1,6 +1,6 @@
 # Copyright 1999-2011 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/media-sound/pianobar/pianobar-2011.07.09-r1.ebuild,v 1.1 2011/09/22 05:57:02 radhermit Exp $
+# $Header: /var/cvsroot/gentoo-x86/media-sound/pianobar/pianobar-2011.09.22.ebuild,v 1.1 2011/09/22 18:15:52 radhermit Exp $
 
 EAPI=4
 
@@ -23,8 +23,7 @@ RDEPEND="${DEPEND}"
 REQUIRED_USE="|| ( mp3 aac )"
 
 src_prepare() {
-	epatch "${FILESDIR}"/${P}-tests.patch \
-		"${FILESDIR}"/${P}-protocol-bump.patch
+	epatch "${FILESDIR}"/${PN}-2011.07.09-tests.patch
 }
 
 src_compile() {
