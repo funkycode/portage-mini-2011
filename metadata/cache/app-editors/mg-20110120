@@ -8,13 +8,13 @@ public-domain BSD
 Micro GNU/emacs, a port from the BSDs
 alpha amd64 ppc sparc x86 ~amd64-linux ~x86-linux ~x86-macos
 multilib toolchain-funcs
-
+livecd
 
 
 
 3
 
-compile configure install
+compile configure install postinst
 
 
 
