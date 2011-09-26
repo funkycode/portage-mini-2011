@@ -282,6 +282,7 @@ app-editors/emacs:hesiod - Enable support for net-dns/hesiod
 app-editors/emacs:leim - Add support for Emacs input methods
 app-editors/emacs:sendmail - Build Emacs with MTA support
 app-editors/emacs:toolkit-scroll-bars - Use the selected toolkit's scrollbars in preference to Emacs' own scrollbars
+app-editors/emacs-vcs:athena - Enable the MIT Athena widget set (x11-libs/libXaw)
 app-editors/emacs-vcs:gconf - Use gnome-base/gconf to read the system font name
 app-editors/emacs-vcs:gsettings - Use gsettings (dev-libs/glib) to read the system font name
 app-editors/emacs-vcs:gtk3 - Link against version 3 of the GIMP Toolkit instead of version 2 (x11-libs/gtk+)
