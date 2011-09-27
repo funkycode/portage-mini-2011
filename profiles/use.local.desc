@@ -590,6 +590,21 @@ app-misc/lirc:transmitter - Add transmitter support to some lirc-drivers (e.g. s
 app-misc/mc:edit - Build mcedit application
 app-misc/note:general - Add support for ascii flatfile backend
 app-misc/note:text - Add support for text backend
+app-misc/recoll:audio - Index audio files
+app-misc/recoll:camelcase - Enable indexing for camelCase sentences and words
+app-misc/recoll:chm - Index chm files
+app-misc/recoll:dvi - Index dvi files
+app-misc/recoll:gs - Index PostScript files
+app-misc/recoll:ics - Index icalendar files
+app-misc/recoll:info - Index GNU info files
+app-misc/recoll:inotify - Use the Linux Kenrel notification subsystem for monitoring file alterations
+app-misc/recoll:lyx - Index Latex lyx files
+app-misc/recoll:msdoc - Index Microsoft Word documents
+app-misc/recoll:msppt - Index Microsoft Power Point documents
+app-misc/recoll:msxls - Index Microsoft Excel documents
+app-misc/recoll:rtf - Index Microsoft RTF documents
+app-misc/recoll:tex - Index Tex files
+app-misc/recoll:wordperfect - Index wordperfect documents
 app-misc/roadnav:festival - Enable support for app-accessibility/festival
 app-misc/roadnav:flite - Enable support for app-accessibility/flite (festival-lite)
 app-misc/roadnav:openstreetmap - Enable openstreetmap support
@@ -3129,6 +3144,7 @@ net-fs/cifs-utils:caps - libcap support
 net-fs/cifs-utils:caps-ng - libcap-ng support
 net-fs/cifs-utils:creds - cifs credentials support
 net-fs/cifs-utils:setuid - Seting SETUID bit for mount.cifs
+net-fs/cifs-utils:upcall - Create cifs.idmap binary; idmap support
 net-fs/coda:client - Build and install the client components of coda filesystem. At least one of client or server should be enabled.
 net-fs/coda:coda_layout - Use legacy filesystem layout instead of FHS compliant one. Note: /coda symlink is installed unconditionally when FHS layout is used. Therefore the /coda namespace is preserved with either layout.
 net-fs/coda:coda_symlinks - Install legacy symlinks when FHS layout has been selected (-coda_layout). You should only need this if you use local scripts or 3rd party apps relying on precise layout. Note: /coda symlink is installed unconditionally, so the namespace is preserved in any case.
@@ -4000,6 +4016,7 @@ sci-biology/mcl:blast - add support for NCBI BLAST data
 sci-biology/plink:R - add support R language
 sci-biology/plink:webcheck - add support for online update checking every time the program starts
 sci-biology/raxml:sse3 - Enable optimization for SSE3 capable chips
+sci-biology/tophat:bam - Compile support for the BAM format
 sci-biology/ucsc-genome-browser:server - Install genome browser Web application. If this flag is off, only libraries and utilities from the suite are installed.
 sci-biology/yass:dmalloc - Enable debugging with the dmalloc library
 sci-biology/yass:lowmem - Build for environments with low amounts of memory
