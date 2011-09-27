@@ -1,6 +1,6 @@
 # Copyright 1999-2011 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/media-sound/pulseaudio/pulseaudio-9999.ebuild,v 1.11 2011/08/16 10:37:51 ford_prefect Exp $
+# $Header: /var/cvsroot/gentoo-x86/media-sound/pulseaudio/pulseaudio-9999.ebuild,v 1.13 2011/09/27 13:45:29 ford_prefect Exp $
 
 EAPI=4
 
@@ -18,7 +18,7 @@ IUSE="+alsa avahi +caps equalizer jack lirc oss tcpd +X dbus libsamplerate gnome
 
 RDEPEND="app-admin/eselect-esd
 	X? (
-		|| ( >=x11-libs/libX11-1.4.0 <x11-libs/libX11-1.4.0[xcb] )
+		>=x11-libs/libX11-1.4.0
 		>=x11-libs/libxcb-1.6
 		>=x11-libs/xcb-util-0.3.1
 		x11-libs/libSM
@@ -55,7 +55,7 @@ DEPEND="${RDEPEND}
 	doc? ( app-doc/doxygen )
 	X? (
 		x11-proto/xproto
-		|| ( >=x11-libs/libXtst-1.0.99.2 <x11-proto/xextproto-7.0.99 )
+		>=x11-libs/libXtst-1.0.99.2
 	)
 	dev-libs/libatomic_ops
 	dev-util/pkgconfig
@@ -108,6 +108,7 @@ src_configure() {
 		$(use_enable udev) \
 		$(use_enable ipv6) \
 		$(use_with caps) \
+		$(use_with equalizer fftw) \
 		--localstatedir="${EPREFIX}"/var \
 		--disable-per-user-esound-socket \
 		--with-database=gdbm \

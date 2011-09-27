@@ -1157,6 +1157,7 @@ dev-libs/gdl:introspection - Use dev-libs/gobject-introspection for introspectio
 dev-libs/gecode:gist - Enable Gist, the Gecode Interactive Search Tool
 dev-libs/geoip:perl-geoipupdate - Install pure perl version of geoipupdate, with Proxy Server support via via the "http_proxy" environment variable and easy to customize.
 dev-libs/glib:introspection - Use dev-libs/gobject-introspection for introspection
+dev-libs/glib:systemtap - Build support for profiling and tracing using dev-util/systemtap
 dev-libs/jemalloc:stats - Enable statistics calculation/reporting
 dev-libs/json-glib:coverage - Enable coverage analysis
 dev-libs/json-glib:introspection - Use dev-libs/gobject-introspection for introspection
@@ -3745,7 +3746,6 @@ net-misc/quagga:multipath - Enable multipath routes support for any number of ro
 net-misc/quagga:ospfapi - Enable OSPFAPI support for client applications accessing the OSPF link state database
 net-misc/quagga:pam - Add support for PAM (via sys-libs/pam) to the Quagga Virtual Terminal Interface Shell (vtysh); if the readline USE flag is disabled, this flag is ignored.
 net-misc/quagga:readline - Enable support for sys-libs/readline to provide the Quagga Virtual Terminal Interface Shell (vtysh).
-net-misc/quagga:realms - Apply unofficial patch to enable realms support. Patch and information to be found at http://vcalinus.gemenii.ro/quaggarealms.html and http://linux.mantech.ro/quagga+realm_en.php
 net-misc/quagga:tcp-zebra - Enable TCP zserv interface on port 2600 for Zebra/protocol-daemon communication. Unix domain sockets are chosen otherwise.
 net-misc/rdesktop:pcsc-lite - Enable smartcard support with sys-apps/pcsc-lite driver
 net-misc/remmina:ssh - Enable support for SSH/SFTP using net-libs/libssh
