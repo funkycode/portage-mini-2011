@@ -483,6 +483,7 @@ app-forensics/afflib:qemu - Enable qemu stuff
 app-forensics/afflib:s3 - Enable S3
 app-forensics/aide:audit - Enable support for sys-process/audit
 app-forensics/aide:prelink - Enable support for sys-devel/prelink
+app-forensics/chkrootkit:cron - Install cron script for weekly rootkit scans
 app-forensics/libewf:ewf2 - Enables the v2 API
 app-forensics/libewf:rawio - Enables raw IO handling
 app-forensics/openscap:nss - Prefer NSS over libgcrypt as the crypto engine
@@ -2695,6 +2696,7 @@ media-video/dvd-slideshow:themes - Install theme pack
 media-video/dvdrip:fping - Enables fping support for cluster rendering
 media-video/dvdrip:subtitles - Enables support for subtitle ripping
 media-video/ffmpeg:3dnowext - Enable manually-optimised routines using the AMD 3DNow!Ex SIMD instruction set, present in modern AMD CPUs. (Check for 3dnowext in /proc/cpuinfo to know whether your CPU supports it).
+media-video/ffmpeg:aacplus - AAC+ encoding via media-libs/libaacplus.
 media-video/ffmpeg:amr - Enables Adaptive Multi-Rate Audio support
 media-video/ffmpeg:avx - Adds support for Advanced Vector Extensions instructions (Intel Sandy Bridge, AMD Bulldozer and later chips)
 media-video/ffmpeg:cdio - Enables audio CD grabbing with dev-libs/libcdio.
