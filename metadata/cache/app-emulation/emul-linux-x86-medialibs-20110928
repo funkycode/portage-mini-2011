@@ -10,7 +10,7 @@ Provides precompiled 32bit libraries
 emul-linux-x86 eutils multilib portability toolchain-funcs versionator
 development
 
-~app-emulation/emul-linux-x86-soundlibs-20110928
+~app-emulation/emul-linux-x86-soundlibs-20110928 ~app-emulation/emul-linux-x86-sdl-20110928
 
 4
 

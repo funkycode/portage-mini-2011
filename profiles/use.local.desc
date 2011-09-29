@@ -691,6 +691,7 @@ app-office/libreoffice:binfilter - Enable support for legacy StarOffice 5.x and 
 app-office/libreoffice:graphite - Enable support for non-Roman fonts via media-gfx/graphite2
 app-office/libreoffice:jemalloc - Use dev-libs/jemalloc for allocations
 app-office/libreoffice:odk - Build the Office Development Kit
+app-office/libreoffice:pdfimport - Build pdf-import extension using app-text/poppler. Note that you don't need this for pdf-export!
 app-office/libreoffice:templates - Enable installation of Sun templates
 app-office/libreoffice:vba - Enable support for VBA compatibility and ActiveX embedding
 app-office/libreoffice:webdav - Adds support for HTTP repositories via net-libs/neon
@@ -1129,6 +1130,7 @@ dev-libs/apr:uuid - Enable UUID support
 dev-libs/atk:introspection - Use dev-libs/gobject-introspection for introspection
 dev-libs/boost:eselect - Run "eselect boost update" even if version is already selected
 dev-libs/boost:tools - Build and install the boost tools (bcp, quickbook, inspect, wave)
+dev-libs/check:subunit - Enable support for the subunit unit test protocol
 dev-libs/cyberjack:fox - Enable installation of x11-libs/fox based fxcyberjack program
 dev-libs/cyberjack:pcsc-lite - Enable installation of sys-apps/pcsc-lite driver
 dev-libs/cyrus-sasl:authdaemond - Adds Courier-IMAP authdaemond's unix socket support (net-mail/courier-imap, mail-mta/courier)
