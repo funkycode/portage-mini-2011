@@ -1,7 +1,7 @@
 >=dev-libs/openssl-1 media-libs/raptor:2 >=media-libs/ladspa-sdk-1.12 dev-util/pkgconfig || ( =sys-devel/automake-1.11* ) >=sys-devel/autoconf-2.61 sys-devel/libtool
 >=dev-libs/openssl-1 media-libs/raptor:2 >=media-libs/ladspa-sdk-1.12
 0
-http://dev.gentoo.org/~ssuominen/liblrdf-0.4.0_p20110928.tar.xz
+mirror://gentoo/liblrdf-0.4.0_p20110928.tar.xz
 
 http://lrdf.sourceforge.net/ http://github.com/swh/LRDF
 GPL-2
