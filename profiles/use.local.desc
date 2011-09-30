@@ -3557,6 +3557,7 @@ net-libs/telepathy-qt4:glib - Enable support for various telepathy/glib related 
 net-libs/webkit-gtk:coverage - Enable code coverage support
 net-libs/webkit-gtk:introspection - Use dev-libs/gobject-introspection for introspection
 net-libs/webkit-gtk:jit - Enable JIT javascript compiler (disabling it will cause performance penalty)
+net-libs/webkit-gtk:webgl - Build support for the WebGL HTML API using virtual/opengl
 net-libs/wt:extjs - Build Wt Ext library with JavaScript-only widgets (http://extjs.com/)
 net-libs/wt:fcgi - Compile in FCGI connector
 net-libs/wt:graphicsmagick - Enable GraphicsMagick, for supporting painting to raster images (PNG, GIF, ...) (WRasterImage)
@@ -3850,6 +3851,7 @@ net-news/liferea:lua - Enable lua scripting
 net-nntp/inn:innkeywords - Enable automatic keyword generation support
 net-nntp/inn:inntaggedhash - Use tagged hash table for history (disables large file support)
 net-nntp/nzbget:parcheck - Enable support for checking PAR archives
+net-nntp/slrn:canlock - Add support for cancel locks via net-libs/canlock
 net-nntp/slrn:uudeview - Add support for yEnc coding and more using dev-libs/uulib
 net-nntp/tin:cancel-locks - Enable Cancel-Lock header functionality (also enables USE=evil)
 net-nntp/tin:etiquette - Enable the display off posting etiquettes
@@ -4795,6 +4797,7 @@ www-servers/nginx:nginx_modules_http_dav - This module adds the HTTP and WebDAV 
 www-servers/nginx:nginx_modules_http_ey_balancer - This module adds an upstream connection queue to nginx
 www-servers/nginx:nginx_modules_http_flv - This module provides the ability to seek within FLV (Flash) files using time-based offsets.
 www-servers/nginx:nginx_modules_http_gzip_static - Enables support for gzipping static content on disk
+www-servers/nginx:nginx_modules_http_mp4 - This module adds pseudo-streaming support for H.264/AAC in MP4 containers.
 www-servers/nginx:nginx_modules_http_random_index - Pick a random directory index from a directory.
 www-servers/nginx:nginx_modules_http_realip - This module allows to change the client's IP address to value from request header (e. g. X-Real-IP or X-Forwarded-For).
 www-servers/nginx:nginx_modules_http_slowfs_cache - This module adds the ability to cache static files
