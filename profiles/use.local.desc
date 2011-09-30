@@ -165,6 +165,8 @@ app-admin/sagan:pcap - Add support for network packet capture via net-libs/libpc
 app-admin/sagan:smtp - Build witch SMTP (E-Mail) support
 app-admin/sshguard:ipfilter - Enable ipfilter firewall support (only for *bsd)
 app-admin/sudo:offensive - Let sudo print insults when the user types the wrong password.
+app-admin/syslog-ng:json - Enable support for JSON template formatting via dev-libs/json-glib
+app-admin/syslog-ng:mongodb - Enable support for mongodb destinations
 app-admin/syslog-ng:spoof-source - Enable support for spoofed source addresses
 app-admin/syslog-ng:sql - Enable support for SQL destinations
 app-admin/sysstat:cron - Install /etc/cron.d script to periodically run sar
@@ -3156,6 +3158,10 @@ net-fs/coda:client - Build and install the client components of coda filesystem.
 net-fs/coda:coda_layout - Use legacy filesystem layout instead of FHS compliant one. Note: /coda symlink is installed unconditionally when FHS layout is used. Therefore the /coda namespace is preserved with either layout.
 net-fs/coda:coda_symlinks - Install legacy symlinks when FHS layout has been selected (-coda_layout). You should only need this if you use local scripts or 3rd party apps relying on precise layout. Note: /coda symlink is installed unconditionally, so the namespace is preserved in any case.
 net-fs/coda:server - Build and install the server components of coda filesystem. Note: at least one of client/server flags must be enabled.
+net-fs/netatalk:appletalk - Build support for Apple's AppleTalk (DDP) protocol and its utilities (atalkd, timelord, papd).
+net-fs/netatalk:cups - Add support for net-print/cups printers in papd. This flag is only considered if appletalk USE flag is enabled, and is otherwise ignored.
+net-fs/netatalk:quota - Add support for user quota on various filesystems.
+net-fs/netatalk:ssl - Use dev-libs/openssl to provide DHX User Access Modules. These are not used with most recent versions of OS X and can be kept disabled without risks.
 net-fs/netatalk:xfs - Enable support for XFS Quota
 net-fs/nfs-utils:nfsidmap - Enable support for newer nfsidmap helper
 net-fs/nfs-utils:nfsv3 - Enable support for NFSv3
