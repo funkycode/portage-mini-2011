@@ -1723,6 +1723,7 @@ gnome-base/gnome-panel:bonobo - Enable Bonobo compatibility modules for applets 
 gnome-base/gnome-panel:introspection - Use dev-libs/gobject-introspection for introspection
 gnome-base/gnome-settings-daemon:packagekit - Enable support for the distro-neutral package manager GUI app-admin/packagekit
 gnome-base/gnome-settings-daemon:short-touchpad-timeout - Change the touchpad timeout so that it's effective for fast typists
+gnome-base/gnome-shell:nm-applet - Pull in an automagic dependency on gnome-extra/nm-applet and net-misc/networkmanager, should be removed soon
 gnome-base/gvfs:archive - Enables support for accessing files in archives transparently via app-arch/libarchive
 gnome-base/gvfs:fuse - Enables fuse mount points in $HOME/.gvfs for legacy application access
 gnome-base/gvfs:gdu - Enable sys-apps/gnome-disk-utility integration
@@ -1761,6 +1762,7 @@ gnome-extra/libgda:canvas - Enables support for x11-libs/goocanvas
 gnome-extra/libgda:http - Enable embedded net-libs/libsoup based server
 gnome-extra/libgda:introspection - Use dev-libs/gobject-introspection for introspection
 gnome-extra/libgda:json - Enable support for JSON format
+gnome-extra/libgda:mdb - Enable support for Microsoft Access Database using app-office/mdbtools
 gnome-extra/libgda:sourceview - Enable support for x11-libs/gtksourceview
 gnome-extra/libgsf:gtk - Enable use of gdk in thumbnailer
 gnome-extra/libgsf:thumbnail - Enable libgsf supported formats thumbnailer
@@ -1964,6 +1966,7 @@ mail-client/evolution:clutter - Build with clutter support for animation effects
 mail-client/evolution:connman - Enable net-misc/connman support (requires 'networkmanager' USE flag to be disabled).
 mail-client/evolution:crypt - Enable GPG encryption support using app-crypt/gnupg and app-crypt/pinentry
 mail-client/evolution:ldap - Enable support for fetching contacts from an LDAP or Active Directory server using net-nds/openldap
+mail-client/evolution:map - Enable support for displaying contacts on a map inside evolution using media-libs/libchamplain
 mail-client/evolution:networkmanager - Allows Evolution to automagically toggle online/offline mode by talking to net-misc/networkmanager and getting the current network state
 mail-client/mail-notification:gmail - Enable Gmail mailbox checking
 mail-client/mail-notification:mh - Enable MH mailbox checking
@@ -2648,10 +2651,6 @@ media-tv/xbmc:vaapi - Enables VAAPI (Video Acceleration API) for hardware decodi
 media-tv/xbmc:vdpau - enable support for Video Decode and Presentation API for Unix
 media-tv/xbmc:webserver - Enable internal webserver
 media-tv/xbmc:xrandr - Support X randr extension
-media-tv/xdtv:aqua_theme - Enable graphic theme Aqua-style
-media-tv/xdtv:carbone_theme - Adds the Carbone pixmaps theme for the GUI
-media-tv/xdtv:schedule - Adds the possibility to schedule tv recording via xdtv_record.sh
-media-tv/xdtv:zvbi - Enable VBI Decoding Library for Zapping
 media-tv/xmltv:ar - Argentina tv listing grabber
 media-tv/xmltv:be - Belgium and Luxemburg tv listing grabber
 media-tv/xmltv:brnet - Brazil cable tv listing grabber
@@ -3267,6 +3266,7 @@ net-im/gnugadu:tlen - Enable Tlen.pl protocol support
 net-im/jabberd2:memdebug - Enable nad and pool debug. Requires USE="debug" to be set.
 net-im/kadu:gadu - Enables Gadu communication protocol
 net-im/kadu:phonon - Enables phonon audio plugin
+net-im/kadu:sdk - Install Kadu SDK (cmake module, API headers)
 net-im/kadu:speech - Enables speech module
 net-im/kmess:konqueror - Enable integration with konqueror
 net-im/kmess:libnotify - Enable desktop notifications using the knotify library
@@ -4714,7 +4714,6 @@ www-client/epiphany:nss - Import passwords from older gecko based www-client/epi
 www-client/firefox:crashreporter - Enable crashreporter for mozilla upstream, debugging symbols are not required for reporting crashes.
 www-client/firefox:custom-optimization - Fine-tune custom compiler optimizations, setting this is not recommended.
 www-client/firefox:ipc - Use inter-process communication between tabs and plugins. Allows for greater stability in case of plugin crashes
-www-client/firefox:methodjit - Enable JIT for JavaScript using MethodJIT for faster JS performance. Hardened users can disable this USE-flag to use MPROTECT on grsecurity kernels.
 www-client/firefox:pgo - Add support for profile-guided optimization using gcc-4.5, for faster binaries. This option will double the compile time.
 www-client/firefox:system-sqlite - Use the system-wide dev-db/sqlite installation with secure-delete enabled
 www-client/firefox:webm - Use system media-libs/libvpx for HTML5 WebM video support.
@@ -5021,6 +5020,7 @@ x11-wm/matchbox-panel:dnotify - Use the linux kernel directory notification feat
 x11-wm/matchbox-panel:lowres - Optimize for low resolution screens.
 x11-wm/musca:apis - Optionally install the experimental `apis' window manager
 x11-wm/musca:xlisten - Optionally install the xlisten utility
+x11-wm/mutter:introspection - Use dev-libs/gobject-introspection for introspection
 x11-wm/openbox:session - Enables support for session managers
 x11-wm/ratpoison:history - Use sys-libs/readline for history handling
 x11-wm/sawfish:pango - Enable pango support
