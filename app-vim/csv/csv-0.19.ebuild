@@ -1,6 +1,6 @@
 # Copyright 1999-2011 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/app-vim/csv/csv-0.17.ebuild,v 1.1 2011/08/17 03:47:55 radhermit Exp $
+# $Header: /var/cvsroot/gentoo-x86/app-vim/csv/csv-0.19.ebuild,v 1.1 2011/10/01 21:53:16 radhermit Exp $
 
 EAPI="4"
 VIM_PLUGIN_VIM_VERSION="7.3"
@@ -23,5 +23,5 @@ src_unpack() {
 }
 
 src_prepare() {
-	rm -f README
+	rm README || die
 }

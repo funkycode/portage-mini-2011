@@ -1243,6 +1243,7 @@ dev-libs/xerces-c:threads - Enable threading support through pthread (or other l
 dev-libs/xml-security-c:nss - Use dev-libs/nss for certain crypto operations (configureable at runtime)
 dev-libs/xml-security-c:xalan - Enable support for XSLT and XPath parsing by dev-libs/xalan-c
 dev-libs/xmlrpc-c:abyss - Build the Abyss mini web-server.
+dev-libs/xmlrpc-c:libxml2 - Use dev-libs/libxml2 to parse XML instead of the internal expat library.
 dev-libs/xmlrpc-c:threads - Controls whether to build the Abyss web-server with pthreads or fork 'threading'.
 dev-libs/xmlrpc-c:tools - Build the xmlrpc* tools.
 dev-libs/xmlsec:gcrypt - Install xmlsec-gcrypt library
@@ -2568,10 +2569,14 @@ media-sound/qtractor:rubberband - Enable support for in-place audio clip pitch-s
 media-sound/qtscrobbler:cli - Build commandline client
 media-sound/rezound:16bittmp - Use 16bit temporary files (default 32bit float), useful for slower computers
 media-sound/rezound:soundtouch - compile with support for soundtouch
-media-sound/rhythmbox:daap - Enable support for local network music sharing via daap
-media-sound/rhythmbox:lastfm - Enable support for Last.fm scrobbling
-media-sound/rhythmbox:upnp - Enable support for local network music sharing via upnp
-media-sound/rhythmbox:webkit - Enable context panel plugin.
+media-sound/rhythmbox:clutter - Build the visualizer plugin which uses media-libs/clutter and x11-libs/mx
+media-sound/rhythmbox:daap - Build the local network music sharing plugin which uses the DAAP protocol using net-libs/libdmapsharing
+media-sound/rhythmbox:dbus - Allow the im-status plugin to set the status of your IM clients using dev-python/dbus-python
+media-sound/rhythmbox:html - Use net-libs/webkit-gtk for detecting and displaying HTML podcast episode descriptions.
+media-sound/rhythmbox:lastfm - Build a plugin for Last.fm and Librefm scrobbling
+media-sound/rhythmbox:udev - Enable hardware detection via sys-fs/udev replacing the deprecated sys-apps/hal code
+media-sound/rhythmbox:upnp - Build a plugin for local network music sharing which uses UPnP protocols using media-video/coherence, dev-python/louie, and dev-python/twisted
+media-sound/rhythmbox:webkit - Enable context panel plugin
 media-sound/rubyripper:cdrdao - Add support for advanced toc scanning using app-cdr/cdrdao
 media-sound/rubyripper:cli - Build command line interface rubyripper
 media-sound/rubyripper:normalize - Add support for normalizing audio file volume levels
@@ -2643,6 +2648,7 @@ media-tv/mythtv:xvmc - Instructs MythTV to use XvMC for its video output. By def
 media-tv/tvbrowser:themes - Install extra theme packs
 media-tv/xawtv:xext - Enable use of XFree extensions (DGA,VidMode,DPMS)
 media-tv/xawtv:zvbi - Enable VBI Decoding Library for Zapping
+media-tv/xbmc:airplay - enable AirPlay support
 media-tv/xbmc:bluray - Enable playback of Blu-ray filesystems
 media-tv/xbmc:midi - Support MIDI files
 media-tv/xbmc:rsxs - Enable really slick X screensavers
@@ -3680,14 +3686,25 @@ net-misc/dnetstats:kde - Use kdesu to gain root access
 net-misc/dropbear:bsdpty - Add support for legacy BSD pty's rather than dynamic UNIX pty's -- do not use this flag unless you are absolutely sure you actually want it
 net-misc/dropbear:multicall - Build all the programs as one little binary (to save space)
 net-misc/freerdp:debug-assert - Enable assert debugging
-net-misc/freerdp:debug-gdi - Enable debugging of GDI
-net-misc/freerdp:debug-kbd - Enable debugging of keyboard handling
-net-misc/freerdp:debug-nla - Enable debugging of network level authentication
+net-misc/freerdp:debug-certificate - Enable certificate related debug messages
+net-misc/freerdp:debug-chanman - Enable channel manager debug messages
+net-misc/freerdp:debug-dvc - Enable dynamic virtual channel debug messages
+net-misc/freerdp:debug-gdi - Enable graphics debug messages
+net-misc/freerdp:debug-kbd - Enable keyboard related debug messages
+net-misc/freerdp:debug-license - Enable license debug messages
+net-misc/freerdp:debug-nego - Enable negotiation related debug messages
+net-misc/freerdp:debug-nla - Enable authentication related debug messages
 net-misc/freerdp:debug-proto - Enable protocol debugging output
+net-misc/freerdp:debug-rail - Enable RemoteApp debug messages
+net-misc/freerdp:debug-rfx - Enable RemoteFX debug messages
 net-misc/freerdp:debug-serial - Enable debugging of serial code
 net-misc/freerdp:debug-smartcard - Enable debugging of smard-card code
 net-misc/freerdp:debug-sound - Enable debugging of sound code
 net-misc/freerdp:debug-stream-assert - Enable stream assert debugging
+net-misc/freerdp:debug-svc - Enable static virtual channel debug messages
+net-misc/freerdp:debug-transport - Enable transport debug messages
+net-misc/freerdp:debug-x11 - Enable X11 Client debug messages
+net-misc/freerdp:debug-xv - Enable XVideo debug messages
 net-misc/freerdp:gnutls - Use GnuTLS as crypto backend
 net-misc/freerdp:nss - Use NSS as crypto backend
 net-misc/freerdp:polarssl - Use PolarSSL as crypto backend
