@@ -1,6 +1,6 @@
 # Copyright 1999-2011 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/app-office/libreoffice/libreoffice-9999-r1.ebuild,v 1.31 2011/09/30 11:47:52 scarabeus Exp $
+# $Header: /var/cvsroot/gentoo-x86/app-office/libreoffice/libreoffice-9999-r1.ebuild,v 1.33 2011/10/03 09:28:24 scarabeus Exp $
 
 EAPI=3
 
@@ -39,7 +39,11 @@ MODULES="core binfilter dictionaries help"
 if [[ ${PV} != *9999* ]]; then
 	for i in ${DEV_URI}; do
 		for mod in ${MODULES}; do
-			SRC_URI+=" ${i}/${PN}-${mod}-${PV}.tar.bz2"
+			if [[ ${mod} == binfilter ]]; then
+				SRC_URI+=" binfilter? ( ${i}/${PN}-${mod}-${PV}.tar.bz2 )"
+			else
+				SRC_URI+=" ${i}/${PN}-${mod}-${PV}.tar.bz2"
+			fi
 		done
 		unset mod
 	done
@@ -70,7 +74,7 @@ unset EXT_URI
 unset ADDONS_SRC
 
 IUSE="binfilter +branding dbus debug eds gnome +graphite gstreamer gtk +jemalloc
-kde ldap mysql nsplugin odk opengl pdfimport svg templates test +vba webdav"
+kde ldap mysql nsplugin odk opengl pdfimport svg templates test +vba +webdav"
 LICENSE="LGPL-3"
 SLOT="0"
 [[ ${PV} == *9999* ]] || KEYWORDS="~amd64 ~ppc ~x86 ~amd64-linux ~x86-linux"
@@ -91,6 +95,7 @@ COMMON_DEPEND="
 	app-text/libwpd:0.9[tools]
 	app-text/libwpg:0.2
 	>=app-text/libwps-0.2.2
+	dev-cpp/libcmis
 	dev-db/unixODBC
 	dev-libs/expat
 	>=dev-libs/glib-2.18
@@ -241,6 +246,9 @@ src_unpack() {
 		done
 	else
 		for mod in ${MODULES}; do
+			if [[ ${mod} == binfilter ]] && ! use binfilter; then
+				continue
+			fi
 			mypv=${PV/.9999}
 			[[ ${mypv} != ${PV} ]] && EGIT_BRANCH="${PN}-${mypv/./-}"
 			EGIT_PROJECT="${PN}/${mod}"
@@ -359,6 +367,7 @@ src_configure() {
 		--with-system-jars \
 		--with-system-db \
 		--with-system-dicts \
+		--with-system-libcmis \
 		--with-system-libvisio \
 		--with-system-libexttextcat \
 		--with-system-translate-toolkit \

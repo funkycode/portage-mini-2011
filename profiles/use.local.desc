@@ -4464,7 +4464,7 @@ sys-devel/binutils:multitarget - Adds support to binutils for cross compiling (d
 sys-devel/binutils-apple:lto - Add support for Link-Time Optimization with LLVM
 sys-devel/binutils-hppa64:multislot - Allow for multiple versions of binutils to be emerged at once for same CTARGET
 sys-devel/binutils-hppa64:multitarget - Adds support to binutils for cross compiling (does not work with gas)
-sys-devel/clang:alltargets - Build all host targets (default: host only)
+sys-devel/clang:multitarget - Build all host targets (default: host only)
 sys-devel/clang:static-analyzer - Install the Clang static analyzer
 sys-devel/clang:system-cxx-headers - By default, clang++ searchs for C++ headers in a series of hardcoded paths. Enabling this flag will force it to use the active gcc profile ones
 sys-devel/gcc:d - Enable support for the D programming language
@@ -4491,8 +4491,8 @@ sys-devel/gdb:multitarget - Support all known targets in one gdb binary
 sys-devel/gettext:git - When running `autopoint`, use git to store the internal development files; this requires git at runtime, but will be faster/smaller than raw archives
 sys-devel/kgcc64:multislot - Allow for SLOTs to include minor version (eg. 3.3.4 instead of just 3.3)
 sys-devel/libperl:ithreads - Enable Perl threads, has some compatibility problems
-sys-devel/llvm:alltargets - Build all host targets (default: host only)
 sys-devel/llvm:llvm-gcc - Build LLVM with sys-devel/llvm-gcc
+sys-devel/llvm:multitarget - Build all host targets (default: host only)
 sys-devel/llvm:udis86 - Enable support for dev-libs/udis86 disassembler library
 sys-devel/llvm-gcc:bootstrap - Compile the final llvm-gcc executables with llvm-gcc itself
 sys-devel/llvm-gcc:objc - Build support for the Objective C code language

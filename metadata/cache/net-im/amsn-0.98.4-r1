@@ -12,9 +12,9 @@ debug
 
 
 
-2
+4
 
-configure install postinst postrm prepare
+configure install postinst postrm preinst prepare
 
 
 
