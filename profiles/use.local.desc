@@ -4791,6 +4791,7 @@ www-plugins/gnash:ssl - Enable directly using OpenSSL in libnet (not needed for 
 www-plugins/gnash:vaapi - Enables VAAPI (Video Acceleration API) for hardware decoding
 www-plugins/google-talkplugin:system-libCg - Use system libCg instead of bundled one
 www-plugins/lightspark:rtmp - Enable Real Time Messaging Protocol using librtmp
+www-plugins/mozplugger:xembed - Build with xembed always enabled.
 www-servers/apache:static - Link in apache2 modules statically rather then plugins
 www-servers/apache:suexec - Install suexec with apache
 www-servers/cherokee:admin - Install web based cherokee conf tool
