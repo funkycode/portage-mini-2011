@@ -690,7 +690,7 @@ app-office/krita:kdcraw - Enable KDE image manipulating interface.
 app-office/kspread:solver - Use solver extension for solving lingebra and others.
 app-office/kword:wpd - Build wordperfect document support.
 app-office/libreoffice:binfilter - Enable support for legacy StarOffice 5.x and earlier file formats
-app-office/libreoffice:cmis - 
+app-office/libreoffice:cmis - Enable support for the CMIS interface via dev-cpp/libcmis
 app-office/libreoffice:graphite - Enable support for non-Roman fonts via media-gfx/graphite2
 app-office/libreoffice:jemalloc - Use dev-libs/jemalloc for allocations
 app-office/libreoffice:odk - Build the Office Development Kit
@@ -3158,7 +3158,6 @@ net-fs/cifs-utils:ads - Enable Active Directory support
 net-fs/cifs-utils:caps - libcap support
 net-fs/cifs-utils:caps-ng - libcap-ng support
 net-fs/cifs-utils:creds - cifs credentials support
-net-fs/cifs-utils:setuid - Seting SETUID bit for mount.cifs
 net-fs/cifs-utils:upcall - Create cifs.idmap binary; idmap support
 net-fs/coda:client - Build and install the client components of coda filesystem. At least one of client or server should be enabled.
 net-fs/coda:coda_layout - Use legacy filesystem layout instead of FHS compliant one. Note: /coda symlink is installed unconditionally when FHS layout is used. Therefore the /coda namespace is preserved with either layout.

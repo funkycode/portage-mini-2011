@@ -1,6 +1,6 @@
 # Copyright 1999-2011 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/media-libs/gst-plugins-base/gst-plugins-base-0.10.35.ebuild,v 1.6 2011/10/03 21:43:59 maekke Exp $
+# $Header: /var/cvsroot/gentoo-x86/media-libs/gst-plugins-base/gst-plugins-base-0.10.35.ebuild,v 1.8 2011/10/04 19:06:29 jer Exp $
 
 EAPI="3"
 GCONF_DEBUG="no"
