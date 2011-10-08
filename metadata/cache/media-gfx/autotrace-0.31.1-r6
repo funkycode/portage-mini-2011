@@ -8,11 +8,11 @@ GPL-2 LGPL-2.1
 A program for converting bitmaps to vector graphics
 ~alpha ~amd64 ~hppa ~ia64 ~ppc ~ppc64 ~sparc ~x86
 autotools eutils libtool multilib portability toolchain-funcs
-+imagemagick
++imagemagick static-libs
 
 
 
-3
+4
 
 configure install prepare
 
