@@ -6,7 +6,7 @@ mirror://github/dpaleino/syslog-summary/syslog-summary-1.14.tar.gz
 http://github.com/dpaleino/syslog-summary
 GPL-3
 Summarizes the contents of a syslog log file.
-~amd64 ~x86
+amd64 x86
 eutils multilib portability python toolchain-funcs
 
 
