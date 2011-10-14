@@ -1,33 +1,34 @@
 # Copyright 1999-2011 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/media-gfx/pngcrush/pngcrush-1.7.17-r2.ebuild,v 1.2 2011/10/10 21:07:42 ssuominen Exp $
+# $Header: /var/cvsroot/gentoo-x86/media-gfx/pngcrush/pngcrush-1.7.18.ebuild,v 1.1 2011/10/14 11:27:04 ssuominen Exp $
 
 EAPI=4
-inherit toolchain-funcs eutils
+
+MY_P=${P}-nolib
+
+inherit toolchain-funcs
 
 DESCRIPTION="Portable Network Graphics (PNG) optimizing utility"
 HOMEPAGE="http://pmt.sourceforge.net/pngcrush/"
-SRC_URI="mirror://sourceforge/pmt/${P}.tar.xz"
+SRC_URI="mirror://sourceforge/pmt/${MY_P}.tar.xz"
 
 LICENSE="as-is"
 SLOT="0"
 KEYWORDS="~alpha ~amd64 ~ppc ~x86 ~amd64-linux ~x86-linux ~ppc-macos ~x86-macos"
 IUSE=""
 
-# media-libs/libpng
-RDEPEND="sys-libs/zlib"
+RDEPEND=">=media-libs/libpng-1.4
+	sys-libs/zlib"
 DEPEND="${RDEPEND}
 	app-arch/xz-utils"
 
-src_prepare() {
-	epatch "${FILESDIR}"/${P}-unbundle-zlib.diff
-}
+S=${WORKDIR}/${MY_P}
 
 src_compile() {
 	emake \
 		CC="$(tc-getCC)" \
 		LD="$(tc-getCC)" \
-		CFLAGS="${CFLAGS} -Wall -Wshadow" \
+		CFLAGS="${CFLAGS} -Wall" \
 		LDFLAGS="${LDFLAGS}"
 }
 

@@ -1,6 +1,6 @@
 # Copyright 1999-2011 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/dev-ruby/bundler/bundler-1.0.17.ebuild,v 1.1 2011/08/10 04:51:41 graaff Exp $
+# $Header: /var/cvsroot/gentoo-x86/dev-ruby/bundler/bundler-1.0.21.ebuild,v 1.1 2011/10/14 05:53:06 graaff Exp $
 
 EAPI=2
 
@@ -22,7 +22,7 @@ HOMEPAGE="http://github.com/carlhuda/bundler"
 
 LICENSE="MIT"
 SLOT="0"
-KEYWORDS="~amd64 ~ia64 ~ppc ~ppc64 ~sparc ~x86 ~x86-solaris"
+KEYWORDS="~amd64 ~ia64 ~ppc ~ppc64 ~sparc ~x86 ~sparc-solaris ~x86-solaris"
 IUSE=""
 
 ruby_add_rdepend dev-ruby/rubygems
@@ -34,11 +34,9 @@ RDEPEND="${RDEPEND}
 DEPEND="${DEPEND}
 	test? ( dev-vcs/git )"
 
-RUBY_PATCHES=( "${FILESDIR}"/${PN}-1.0.3-gentoo.patch )
-
 all_ruby_prepare() {
 	# Reported upstream: http://github.com/carlhuda/bundler/issues/issue/738
-	sed -i -e '707s/should/should_not/' spec/runtime/setup_spec.rb || die
+	sed -i -e '726s/should/should_not/' spec/runtime/setup_spec.rb || die
 
 	# Fails randomly and no clear cause can be found. Might be related
 	# to bug 346357. This was broken in previous releases without a
