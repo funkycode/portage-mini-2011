@@ -1,7 +1,7 @@
 >=app-admin/eselect-python-20091230 =dev-lang/python-3*
 >=app-portage/gentoolkit-0.3.0.4 >=sys-apps/portage-2.1.10.11 >=app-admin/eselect-python-20091230 =dev-lang/python-3*
 0
-http://www.mpagano.com/downloads/portpeek-2.0.11.tar.gz
+http://www.mpagano.com/downloads/portpeek-2.0.12.tar.gz
 
 http://www.mpagano.com/blog/?page_id=3
 GPL-2
