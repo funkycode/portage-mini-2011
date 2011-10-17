@@ -351,7 +351,6 @@ app-emulation/emul-linux-x86-qtlibs:development - Install pkgconfig files
 app-emulation/emul-linux-x86-sdl:development - Install pkgconfig files
 app-emulation/emul-linux-x86-soundlibs:development - Install pkgconfig files
 app-emulation/emul-linux-x86-xlibs:development - Install pkgconfig files
-app-emulation/fuse:libdsk - Enable support for the floppy disk emulation library app-emulation/libdsk
 app-emulation/fuse-utils:gcrypt - Use dev-libs/libgcrypt for low-level crypto of some features, including logfiles.
 app-emulation/ganeti:drbd - Enable DRBD support
 app-emulation/ganeti:filestorage - Enable File Storage
@@ -1162,6 +1161,7 @@ dev-libs/gecode:gist - Enable Gist, the Gecode Interactive Search Tool
 dev-libs/geoip:perl-geoipupdate - Install pure perl version of geoipupdate, with Proxy Server support via via the "http_proxy" environment variable and easy to customize.
 dev-libs/glib:introspection - Use dev-libs/gobject-introspection for introspection
 dev-libs/glib:systemtap - Build support for profiling and tracing using dev-util/systemtap
+dev-libs/glib:utils - Install gtester-report utility to generate test report files for your software.
 dev-libs/jemalloc:stats - Enable statistics calculation/reporting
 dev-libs/json-glib:introspection - Use dev-libs/gobject-introspection for introspection
 dev-libs/libburn:track-src-odirect - Read track input with O_DIRECT (see man 2 open), this may deliver a better write performance in some situations
