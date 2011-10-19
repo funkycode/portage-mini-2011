@@ -1,6 +1,6 @@
 # Copyright 1999-2011 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/app-office/libreoffice-bin/libreoffice-bin-3.4.3.2-r1.ebuild,v 1.1 2011/10/17 14:21:01 scarabeus Exp $
+# $Header: /var/cvsroot/gentoo-x86/app-office/libreoffice-bin/libreoffice-bin-3.4.3.2-r1.ebuild,v 1.3 2011/10/19 09:26:01 scarabeus Exp $
 
 EAPI=4
 
@@ -84,7 +84,7 @@ COMMON_DEPEND="
 "
 
 RDEPEND="${COMMON_DEPEND}
-	!app-office/libreoffice-bin
+	!app-office/libreoffice
 	!app-office/openoffice-bin
 	!app-office/openoffice
 	java? ( >=virtual/jre-1.6 )
@@ -102,6 +102,12 @@ REQUIRED_USE="kde? ( !gnome ) gnome? ( !kde )"
 RESTRICT="test strip"
 
 S="${WORKDIR}"
+
+pkg_pretend() {
+	[[ $(gcc-major-version) -lt 4 ]] || \
+			( [[ $(gcc-major-version) -eq 4 && $(gcc-minor-version) -le 4 ]] ) \
+		&& die "Sorry, but gcc-4.4 and earlier won't work for libreoffice-bin package (see bug #387515)."
+}
 
 pkg_setup() {
 	kde4-base_pkg_setup
