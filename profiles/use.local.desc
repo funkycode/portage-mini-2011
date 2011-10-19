@@ -1222,7 +1222,6 @@ dev-libs/seed:mpfr - Build the JS module for dev-libs/mpfr
 dev-libs/seed:profile - Build support for profiling dev-libs/seed for development purposes
 dev-libs/seed:xml - Build JS module for dev-libs/libxml2
 dev-libs/soprano:clucene - Enable dev-cpp/clucene backend support.
-dev-libs/soprano:java - Enables support for virtual/jre-1.6.0 (sesame2) storage backend.
 dev-libs/soprano:raptor - Enables support for media-libs/raptor RDF parser/serializer.
 dev-libs/soprano:redland - Enables support for the dev-libs/redland storage backend (really slow one).
 dev-libs/soprano:virtuoso - Enables support for dev-db/virtuoso storage backend.
@@ -2603,6 +2602,7 @@ media-sound/split2flac:replaygain - Support for Replay Gain metadata, for relati
 media-sound/squeezeboxserver:aac - Enable playback support for AAC (.m4a) encoded files
 media-sound/squeezeslave:display - Enable a text-based display
 media-sound/squeezeslave:wma - Enable support for streaming Windows Media Audio
+media-sound/squeezeslave:zones - Pairs surround sound speakers into stereo zones (requires 5.1 setup or better)
 media-sound/traverso:lv2 - Add support for Ladspa V2
 media-sound/vorbis-tools:kate - Adds support for Ogg Kate subtitles via libkate.
 media-sound/vorbis-tools:ogg123 - Build ogg123 player, needs libao and curl
@@ -3486,10 +3486,8 @@ net-libs/liboauth:bindist - Alias for the nss USE flag, since there are license 
 net-libs/liboauth:curl - If enabled, net-misc/curl is used thorugh the libcurl library; if it's not, the curl command is used instead. Some features are only available when using the library, but using it as library requires matching SSL implementations.
 net-libs/liboauth:nss - Use Mozilla NSS (dev-libs/nss) as hash library; if this is disabled, dev-libs/openssl is used instead.
 net-libs/libpcap:libnl - link with dev-libs/libnl (used to put wireless interfaces in monitor mode)
-net-libs/libproxy:gnome - Enable support for reading proxy settings from GNOME using gnome-base/gconf
+net-libs/libproxy:gnome - Enable support for reading proxy settings from GNOME
 net-libs/libproxy:kde - Enable support for reading proxy settings from KDE
-net-libs/libproxy:webkit - Enable support for reading proxy settings from net-libs/webkit-gtk
-net-libs/libproxy:xulrunner - Enable support for reading proxy settings from net-libs/xulrunner
 net-libs/libsocialweb:connman - Use net-misc/connman for getting network connection status information
 net-libs/libsocialweb:gnome - Extract proxy information using net-libs/libsoup-gnome
 net-libs/libsocialweb:introspection - Use dev-libs/gobject-introspection for introspection
@@ -4559,8 +4557,6 @@ sys-fs/ecryptfs-utils:gpg - Enable app-crypt/gnupg key module
 sys-fs/ecryptfs-utils:openssl - Enable dev-libs/openssl key module
 sys-fs/ecryptfs-utils:pkcs11 - Enable PKCS#11 (Smartcards) key module
 sys-fs/ecryptfs-utils:tpm - Enable support for Trusted Platform Module (TPM) using app-crypt/trousers
-sys-fs/evms:hb - Enable support for heartbeat-1
-sys-fs/evms:hb2 - Enable support for heartbeat-2
 sys-fs/lessfs:filelog - Enable the ability to log to a file instead of syslog
 sys-fs/lessfs:memtrace - Enable leefs to create a report regarding the memory allocation. This feature should be used for debugging purposes to avoid performance degradation
 sys-fs/loop-aes:aes-ni - Enable support for Intel's AES instruction set
@@ -4866,7 +4862,9 @@ x11-libs/cairo:opengl - Use Mesa backend for acceleration
 x11-libs/cairo:openvg - Use OpenVG for backend acceleration
 x11-libs/fltk:games - Builds and installs some extra games
 x11-libs/gdk-pixbuf:introspection - Use dev-libs/gobject-introspection for introspection
+x11-libs/gtk+:colord - Use x11-misc/colord for color management in printing
 x11-libs/gtk+:introspection - Use dev-libs/gobject-introspection for introspection
+x11-libs/gtk+:packagekit - Enable support for the distro-neutral package manager GUI app-admin/packagekit in application chooser
 x11-libs/gtkdatabox:glade - Build with libglade and glade-3 supports, which includes a glade's module for GtkDataBox widget
 x11-libs/gtkmathview:mathml - Install additional fonts for proper mathml support.
 x11-libs/gtkmathview:t1lib - Enable media-libs/t1lib support

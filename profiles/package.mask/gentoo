@@ -1,5 +1,5 @@
 ####################################################################
-# $Header: /var/cvsroot/gentoo-x86/profiles/package.mask,v 1.13144 2011/10/18 01:25:38 mr_bones_ Exp $
+# $Header: /var/cvsroot/gentoo-x86/profiles/package.mask,v 1.13149 2011/10/19 02:15:35 ssuominen Exp $
 #
 # When you add an entry to the top of this file, add your name, the date, and
 # an explanation of why something is getting masked. Please be extremely
@@ -30,6 +30,26 @@
 ## app-misc/some-package
 
 #--- END OF EXAMPLES ---
+
+# Alexandre Rostovtsev <tetromino@gentoo.org> (18 Oct 2011)
+# Gtk+-3.2, friends, and dependencies; will be unmasked soon™
+# (before rest of GNOME-3.2)
+>=dev-cpp/gtkmm-3.2
+>=dev-libs/atk-2.2
+>=x11-libs/gtk+-3.2
+>=x11-libs/pango-1.29
+x11-themes/gtk-engines-unico
+>=x11-themes/gnome-themes-standard-3.2
+
+# Markos Chandras <hwoarang@gentoo.org> (18 Oct 2011)
+# Mask openbox and obconf snapshots for testing
+~x11-wm/openbox-3.5.0_p20111019
+~x11-misc/obconf-2.0.3_p20111019
+
+# Jeroen Roovers <jer@gentoo.org> (18 Oct 2011)
+# Masked for removal on 18 Nov 2011
+# https://bugs.gentoo.org/377695
+sys-apps/lsparisc
 
 # Michael Sterrett <mr_bones_@gentoo.org> (17 Oct 2011)
 # Masked for removal on 20111116
@@ -575,7 +595,6 @@ dev-tex/pdftex
 >=dev-libs/libgweather-3.0
 >=gnome-base/libgnomekbd-3.0
 =media-libs/libcanberra-0.28-r4
->=x11-misc/notification-daemon-0.7
 # Core Applications
 >=app-accessibility/orca-3.0
 >=gnome-base/gdm-3.0
@@ -756,9 +775,10 @@ sci-chemistry/webmo
 =mail-mta/postfix-2.9*
 
 # Nirbheek Chauhan <nirbheek@gentoo.org> (14 Jun 2011)
-# GNOME 3.1.x pre-releases for libraries in the tree
+# GNOME 3.2 mask
 >=dev-libs/gobject-introspection-1.29
 >=dev-libs/gjs-1.29
+>=dev-python/pygobject-2.28.6-r50
 =media-libs/clutter-1.7*
 
 # Christian Faulhammer <fauli@gentoo.org> (13 Jun 2011)
