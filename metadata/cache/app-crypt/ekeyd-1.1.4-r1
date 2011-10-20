@@ -1,5 +1,5 @@
 !minimal? ( dev-lang/lua usb? ( virtual/libusb:0 ) )
-!minimal? ( dev-lang/lua usb? ( virtual/libusb:0 ) dev-lua/luasocket kernel_linux? ( >=sys-fs/udev-147 ) usb? ( !kernel_linux? ( sys-apps/usbutils ) ) munin? ( net-analyzer/munin ) ) !app-crypt/ekey-egd-linux
+!minimal? ( dev-lang/lua usb? ( virtual/libusb:0 ) dev-lua/luasocket kernel_linux? ( >=sys-fs/udev-147 ) usb? ( !kernel_linux? ( sys-apps/usbutils ) ) munin? ( net-analyzer/munin ) ) !app-crypt/ekey-egd-linux sys-apps/openrc
 0
 http://www.entropykey.co.uk/res/download/ekeyd-1.1.4.tar.gz
 
