@@ -3202,7 +3202,6 @@ net-fs/samba:swat - Enables support for swat configuration gui
 net-fs/samba:tools - Enable extra tools
 net-fs/samba:winbind - Enables support for the winbind auth daemon
 net-fs/smbnetfs:gnome - Use the gnome-base/gnome-keyring for password management.
-net-ftp/ftpcube:sftp - Enable sftp connection support
 net-ftp/proftpd:authfile - Enable support for the auth-file module
 net-ftp/proftpd:ban - Enable support for the mod_ban module
 net-ftp/proftpd:case - Enable support for the mod_case module
@@ -3283,6 +3282,7 @@ net-im/gajim:xhtml - Enable XHTML support
 net-im/gnugadu:tlen - Enable Tlen.pl protocol support
 net-im/jabberd2:memdebug - Enable nad and pool debug. Requires USE="debug" to be set.
 net-im/kadu:gadu - Enables Gadu communication protocol
+net-im/kadu:mpd - Enables Music Player Daemon support
 net-im/kadu:phonon - Enables phonon audio plugin
 net-im/kadu:sdk - Install Kadu SDK (cmake module, API headers)
 net-im/kadu:speech - Enables speech module
