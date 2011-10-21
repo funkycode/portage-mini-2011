@@ -1,13 +1,13 @@
 # Copyright 1999-2011 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/x11-misc/xscreensaver/xscreensaver-5.13.ebuild,v 1.1 2011/05/18 15:04:13 ssuominen Exp $
+# $Header: /var/cvsroot/gentoo-x86/x11-misc/xscreensaver/xscreensaver-5.15.ebuild,v 1.1 2011/10/21 15:17:00 ssuominen Exp $
 
 EAPI=4
 inherit autotools eutils flag-o-matic multilib pam
 
 DESCRIPTION="A modular screen saver and locker for the X Window System"
+HOMEPAGE="http://www.jwz.org/xscreensaver/"
 SRC_URI="http://www.jwz.org/xscreensaver/${P}.tar.gz"
-HOMEPAGE="http://www.jwz.org/xscreensaver"
 
 LICENSE="BSD"
 SLOT="0"
@@ -49,7 +49,7 @@ MAKEOPTS="${MAKEOPTS} -j1"
 
 src_prepare() {
 	epatch \
-		"${FILESDIR}"/${PN}-5.10-gentoo.patch \
+		"${FILESDIR}"/${PN}-5.15-gentoo.patch \
 		"${FILESDIR}"/${PN}-5.05-interix.patch
 
 	eautoconf
@@ -64,6 +64,7 @@ src_configure() {
 
 	unset LINGUAS #113681
 	unset BC_ENV_ARGS #24568
+	export RPM_PACKAGE_VERSION="no" #368025
 
 	econf \
 		--x-includes="${EPREFIX}"/usr/include \

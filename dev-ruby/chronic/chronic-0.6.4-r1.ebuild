@@ -1,9 +1,9 @@
 # Copyright 1999-2011 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/dev-ruby/chronic/chronic-0.6.2.ebuild,v 1.1 2011/08/20 09:01:46 graaff Exp $
+# $Header: /var/cvsroot/gentoo-x86/dev-ruby/chronic/chronic-0.6.4-r1.ebuild,v 1.1 2011/10/21 07:14:28 graaff Exp $
 
 EAPI="2"
-USE_RUBY="ruby18 ree18 jruby"
+USE_RUBY="ruby18 ree18 jruby rbx"
 
 RUBY_FAKEGEM_TASK_DOC=""
 RUBY_FAKEGEM_EXTRADOC="HISTORY.md README.md"
@@ -19,5 +19,3 @@ LICENSE="MIT"
 KEYWORDS="~amd64 ~x86"
 SLOT="0"
 IUSE=""
-
-ruby_add_bdepend "test? ( virtual/ruby-test-unit )"
