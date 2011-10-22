@@ -1,11 +1,11 @@
 # Copyright 1999-2011 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/dev-ruby/rubygems/rubygems-1.8.7.ebuild,v 1.1 2011/08/24 17:09:18 a3li Exp $
+# $Header: /var/cvsroot/gentoo-x86/dev-ruby/rubygems/rubygems-1.8.10.ebuild,v 1.3 2011/10/22 11:39:00 graaff Exp $
 
 EAPI="4"
 
 # jruby's own RUBY_ENGINE defaults are no longer compatible.
-USE_RUBY="ruby18 ree18 ruby19"
+USE_RUBY="ruby18 ree18 ruby19 jruby"
 
 inherit ruby-ng prefix
 
@@ -19,9 +19,9 @@ KEYWORDS="~amd64 ~arm ~hppa ~ia64 ~mips ~ppc ~ppc64 ~s390 ~sh ~sparc ~x86 ~x86-f
 SLOT="0"
 IUSE="server test"
 
-#RDEPEND="
-#	ruby_targets_jruby? ( >=dev-java/jruby-1.4.0-r5 )
-#	ruby_targets_ruby19? ( >=dev-lang/ruby-1.9.2 )"
+RDEPEND="
+	ruby_targets_jruby? ( >=dev-java/jruby-1.5.6-r1 )
+	ruby_targets_ruby19? ( >=dev-lang/ruby-1.9.3_rc1 )"
 
 # index_gem_repository.rb
 PDEPEND="server? ( dev-ruby/builder[ruby_targets_ruby18] )"
@@ -50,14 +50,6 @@ all_ruby_prepare() {
 	rm test/rubygems/test_gem_uninstaller.rb test/rubygems/test_gem_install_update_options.rb || die
 }
 
-each_ruby_prepare() {
-	case "${RUBY}" in
-		*ruby19)
-			epatch "${FILESDIR}/${P}-ruby19.patch" || die
-			;;
-	esac
-}
-
 each_ruby_compile() {
 	# Not really a build but...
 	sed -i -e 's:#!.*:#!'"${RUBY}"':' bin/gem
@@ -67,13 +59,14 @@ each_ruby_test() {
 	# Unset RUBYOPT to avoid interferences, bug #158455 et. al.
 	unset RUBYOPT
 
-	RUBYLIB="$(pwd)/lib${RUBYLIB+:${RUBYLIB}}" ${RUBY} -Ilib:test \
+	RUBYLIB="$(pwd)/lib${RUBYLIB+:${RUBYLIB}}" ${RUBY} -I.:lib:test \
 	-e 'Dir["test/**/test_*.rb"].each { |tu| require tu }' || die "tests failed"
 }
 
 each_ruby_install() {
 	# Unset RUBYOPT to avoid interferences, bug #158455 et. al.
 	unset RUBYOPT
+	export RUBYLIB="$(pwd)/lib${RUBYLIB+:${RUBYLIB}}"
 
 	pushd lib &>/dev/null
 	doruby -r *

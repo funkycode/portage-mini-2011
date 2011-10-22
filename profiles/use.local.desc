@@ -4400,6 +4400,7 @@ sys-auth/sssd:logrotate - Install logrotate.d file
 sys-block/gparted:btrfs - Include Btrfs support (sys-fs/btrfs-progs)
 sys-block/gparted:dmraid - Support for dmraid devices, also known as ATA-RAID, or Fake RAID.
 sys-block/gparted:fat - Include FAT16/FAT32 support (sys-fs/dosfstools)
+sys-block/gparted:gtk - Enable .desktop support for gtk+ based desktops.
 sys-block/gparted:hfs - Include HFS support (sys-fs/hfsutils)
 sys-block/gparted:jfs - Include JFS support (sys-fs/jfsutils)
 sys-block/gparted:mdadm - Support for Linux software RAID.
