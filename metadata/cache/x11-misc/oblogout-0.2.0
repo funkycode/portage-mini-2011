@@ -1,4 +1,4 @@
-dev-python/python-distutils-extra >=app-admin/eselect-python-20091230 dev-lang/python
+dev-python/python-distutils-extra dev-python/imaging dev-python/dbus-python sys-power/upower x11-libs/cairo dev-python/pygtk sys-auth/consolekit >=app-admin/eselect-python-20091230 dev-lang/python
 >=app-admin/eselect-python-20091230 dev-lang/python
 0
 http://launchpad.net/oblogout/0.2/0.2.0/+download/oblogout-0.2.tar.bz2

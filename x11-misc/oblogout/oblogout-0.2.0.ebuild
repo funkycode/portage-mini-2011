@@ -20,6 +20,13 @@ SLOT="0"
 KEYWORDS="~x86 ~amd64"
 IUSE=""
 
-DEPEND="dev-python/python-distutils-extra"
+DEPEND="dev-python/python-distutils-extra
+dev-python/imaging
+dev-python/dbus-python
+sys-power/upower
+x11-libs/cairo
+dev-python/pygtk
+sys-auth/consolekit"
+
 RDEPEND=""
 

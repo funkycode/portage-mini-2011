@@ -1,6 +1,6 @@
 # Copyright 1999-2011 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/dev-ruby/minitest/minitest-2.5.0.ebuild,v 1.1 2011/08/19 07:17:48 graaff Exp $
+# $Header: /var/cvsroot/gentoo-x86/dev-ruby/minitest/minitest-2.6.2.ebuild,v 1.1 2011/10/25 06:02:17 graaff Exp $
 
 EAPI=2
 # jruby → tests fail, reported upstream
@@ -23,9 +23,9 @@ KEYWORDS="~alpha ~amd64 ~arm ~hppa ~ia64 ~mips ~ppc ~ppc64 ~s390 ~sh ~sparc ~x86
 IUSE=""
 
 ruby_add_bdepend "
-	doc? ( dev-ruby/hoe )
+	doc? ( dev-ruby/hoe dev-ruby/rdoc )
 	test? (
-		virtual/ruby-test-unit
+		dev-ruby/rdoc
 		dev-ruby/hoe
 	)"
 

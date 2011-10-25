@@ -2156,6 +2156,8 @@ media-gfx/freewrl:osc - Allows for OSC-based control and communication between m
 media-gfx/freewrl:xulrunner - Use libmozjs from xulrunner instead of using spidermonkey
 media-gfx/gimp:smp - Enable support for multiprocessors
 media-gfx/gimp:webkit - Enable the webkit rendering engine
+media-gfx/gmic:graphicsmagick - Enable support for many common image file formats using the GraphicsMagick++ library
+media-gfx/gmic:opencv - Enable support for webcams using the OpenCV library
 media-gfx/graphicsmagick:fpx - Enable FlashPix support with media-libs/libfpx
 media-gfx/graphicsmagick:modules - Compile graphicsmagick with dynamically loadable modules
 media-gfx/graphicsmagick:q16 - Set storage quantum size to 16 (~2*memory)
