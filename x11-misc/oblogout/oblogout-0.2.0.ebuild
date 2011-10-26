@@ -5,6 +5,7 @@
 EAPI=3
 SUPPORT_PYTHON_ABIS=1
 RESTRICT_PYTHON_ABIS="3.*"
+PYTHON_MODNAME="oblogout"
 
 inherit versionator distutils
 
@@ -29,4 +30,14 @@ dev-python/pygtk
 sys-auth/consolekit"
 
 RDEPEND=""
+
+src_prepare(){
+	epatch "${FILESDIR}/${P}_archlinux.patch" || die
+}
+
+src_install(){
+	distutils_src_install
+	insinto /etc
+	doins ${FILESDIR}/oblogout.conf || die
+}
 

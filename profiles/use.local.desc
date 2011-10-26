@@ -4481,6 +4481,7 @@ sys-cluster/pacemaker-gui:heartbeat - Enable support for heartbeat based sys-clu
 sys-cluster/resource-agents:libnet - Force use of net-libs/libnet
 sys-cluster/slurm:maui - Enable maui scheduler support
 sys-cluster/slurm:munge - Enable authentication via munge
+sys-cluster/slurm:torque - Enable perl scripts that emulates pbs (qstat, qsub etc.)
 sys-cluster/torque:cpusets - Enable pbs_mom to utilize linux cpusets if available
 sys-cluster/torque:drmaa - Enable the Distributed Resource Management Application API
 sys-cluster/torque:munge - Enable authentication via munge
