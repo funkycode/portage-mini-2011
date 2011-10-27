@@ -7,7 +7,7 @@ https://github.com/apenwarr/sshuttle/
 GPL-2
 Transparent proxy server that works as a poor man's VPN using ssh
 ~amd64 ~x86
-eutils linux-info multilib portability python toolchain-funcs versionator
+eutils linux-info multilib portability python toolchain-funcs user versionator
 
 
 

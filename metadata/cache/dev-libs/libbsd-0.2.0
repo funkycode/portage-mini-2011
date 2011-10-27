@@ -7,7 +7,7 @@ http://libbsd.freedesktop.org/wiki/
 BSD BSD-2 BSD-4 ISC
 A BSD compatibility library
 amd64 x86
-eutils multilib portability toolchain-funcs
+eutils multilib portability toolchain-funcs user
 
 
 

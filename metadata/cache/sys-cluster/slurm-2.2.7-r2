@@ -7,7 +7,7 @@ https://computing.llnl.gov/linux/slurm/
 GPL-2
 SLURM: A Highly Scalable Resource Manager
 ~amd64 ~x86
-base eutils flag-o-matic multilib pam perl-module portability toolchain-funcs
+base eutils flag-o-matic multilib pam perl-module portability toolchain-funcs user
 maui +munge mysql pam +perl postgres ssl static-libs +torque
 torque? ( perl )
 

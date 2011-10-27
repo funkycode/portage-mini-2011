@@ -7,7 +7,7 @@ http://plugins.geany.org/geany-plugins
 GPL-2
 A collection of different plugins for Geany
 amd64 x86
-base eutils multilib portability toolchain-funcs versionator
+base eutils multilib portability toolchain-funcs user versionator
 enchant gtkspell lua nls
 
 

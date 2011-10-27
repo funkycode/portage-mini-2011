@@ -7,7 +7,7 @@ http://lxmed.sourceforge.net/
 GPL-3
 freedesktop.org specification compatible menu editor
 ~amd64 ~x86
-eutils java-utils-2 multilib portability toolchain-funcs versionator
+eutils java-utils-2 multilib portability toolchain-funcs user versionator
 elibc_FreeBSD
 
 

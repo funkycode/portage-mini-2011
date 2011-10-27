@@ -7,7 +7,7 @@ http://developer.opensound.com/
 GPL-2
 Open Sound System - portable, mixing-capable, high quality sound system for Unix.
 ~amd64 ~x86
-eutils flag-o-matic mercurial multilib portability toolchain-funcs
+eutils flag-o-matic mercurial multilib portability toolchain-funcs user
 
 
 

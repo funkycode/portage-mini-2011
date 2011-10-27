@@ -7,7 +7,7 @@ http://blt.sourceforge.net/ http://jos.decoster.googlepages.com/bltfortk8.5.2
 BSD
 Extension to Tk, adding new widgets, geometry managers, and misc commands
 amd64 arm ~hppa ppc ppc64 sparc x86
-eutils flag-o-matic multilib portability toolchain-funcs
+eutils flag-o-matic multilib portability toolchain-funcs user
 
 
 
