@@ -1,6 +1,6 @@
 doc? ( app-doc/doxygen )
 
-0
+1.1
 http://people.suug.ch/~tgr/libnl/files/libnl-1.1.tar.gz
 
 http://people.suug.ch/~tgr/libnl/

@@ -1644,6 +1644,9 @@ games-fps/doom3:roe - Adds support for the Resurrection of Evil expansion
 games-fps/duke3d:demo - Install the demo files
 games-fps/duke3d:pic - disable optimized assembly code that is not PIC friendly
 games-fps/ezquake-bin:security - install the security module needed for some servers
+games-fps/lsdldoom:freedoom - Install games-fps/freedoom wad file
+games-fps/lsdldoom:net - Enables network game support
+games-fps/lsdldoom:shareware - Install games-fps/doom-data for shareware wad file
 games-fps/nexuiz:maps - Install the community map pack
 games-fps/quake2-icculus:demo - Install the demo files (quake2-demodata) and configure for use
 games-fps/quake2-icculus:qmax - Build the pretty version (quake max)
@@ -5088,3 +5091,4 @@ xfce-extra/xfce4-mpc-plugin:libmpd - Build using media-libs/libmpd backend, inst
 xfce-extra/xfce4-playercontrol-plugin:audacious - Enable Audacious support
 xfce-extra/xfce4-playercontrol-plugin:mpd - Enable Music Player Daemon support
 xfce-extra/xfce4-sensors-plugin:nvidia - Use nvctrl to obtain Nvidia GPU temperature value
+xfce-extra/xfce4-soundmenu-plugin:lastfm - Enable last.fm support using media-libs/libclastfm

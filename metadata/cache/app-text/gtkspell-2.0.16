@@ -1,6 +1,6 @@
 x11-libs/gtk+:2 >=app-text/enchant-1.1.6 dev-util/pkgconfig >=dev-util/intltool-0.35.0 doc? ( dev-util/gtk-doc app-text/docbook-xml-dtd:4.2 )
 x11-libs/gtk+:2 >=app-text/enchant-1.1.6
-0
+2
 http://gtkspell.sourceforge.net/download/gtkspell-2.0.16.tar.gz
 
 http://gtkspell.sourceforge.net/
