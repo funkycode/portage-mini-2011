@@ -1,40 +1,28 @@
 # Copyright 1999-2011 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/gnome-extra/polkit-gnome/polkit-gnome-0.104.ebuild,v 1.2 2011/10/18 17:31:51 ssuominen Exp $
+# $Header: /var/cvsroot/gentoo-x86/gnome-extra/polkit-gnome/polkit-gnome-0.105.ebuild,v 1.1 2011/10/27 17:24:53 ssuominen Exp $
 
 EAPI=4
 inherit gnome.org
 
 DESCRIPTION="A dbus session bus service that is used to bring up authentication dialogs"
-HOMEPAGE="http://hal.freedesktop.org/docs/PolicyKit/"
+HOMEPAGE="http://www.freedesktop.org/wiki/Software/PolicyKit"
 
-LICENSE="GPL-2 LGPL-2"
+LICENSE="LGPL-2"
 SLOT="0"
 KEYWORDS="~alpha ~amd64 ~arm ~ia64 ~mips ~ppc ~ppc64 ~sh ~sparc ~x86 ~x86-fbsd"
-IUSE="doc examples +introspection"
+IUSE=""
 
-RDEPEND=">=sys-auth/polkit-0.102[introspection?]
-	x11-libs/gtk+:3[introspection?]
-	introspection? ( >=dev-libs/gobject-introspection-0.6.2 )
+RDEPEND=">=dev-libs/glib-2.30
+	>=sys-auth/polkit-0.102
+	x11-libs/gtk+:3
 	!lxde-base/lxpolkit"
 DEPEND="${RDEPEND}
-	>=dev-util/intltool-0.35.0
+	dev-util/intltool
 	dev-util/pkgconfig
-	sys-devel/gettext
-	doc? ( >=dev-util/gtk-doc-1.3 )"
-	# gnome-base/gnome-common
-	# dev-util/gtk-doc-am
+	sys-devel/gettext"
 
 DOCS=( AUTHORS HACKING NEWS README TODO )
-
-src_configure() {
-	econf \
-		--disable-static \
-		$(use_enable doc gtk-doc) \
-		$(use_enable examples) \
-		$(use_enable introspection) \
-		--with-html-dir=/usr/share/doc/${PF}/html
-}
 
 src_install() {
 	default

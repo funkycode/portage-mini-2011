@@ -1,6 +1,6 @@
 # Copyright 1999-2011 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/x11-drivers/nvidia-drivers/nvidia-drivers-280.13.ebuild,v 1.1 2011/09/13 15:22:54 cardoe Exp $
+# $Header: /var/cvsroot/gentoo-x86/x11-drivers/nvidia-drivers/nvidia-drivers-285.05.09-r1.ebuild,v 1.2 2011/10/27 21:05:03 mr_bones_ Exp $
 
 EAPI="2"
 
@@ -12,9 +12,9 @@ X86_FBSD_NV_PACKAGE="NVIDIA-FreeBSD-x86-${PV}"
 
 DESCRIPTION="NVIDIA X11 driver and GLX libraries"
 HOMEPAGE="http://www.nvidia.com/"
-SRC_URI="x86? ( http://us.download.nvidia.com/XFree86/Linux-x86/${PV}/${X86_NV_PACKAGE}.run )
-	 amd64? ( http://us.download.nvidia.com/XFree86/Linux-x86_64/${PV}/${AMD64_NV_PACKAGE}.run )
-	 x86-fbsd? ( http://us.download.nvidia.com/XFree86/FreeBSD-x86/${PV}/${X86_FBSD_NV_PACKAGE}.tar.gz )"
+SRC_URI="x86? ( ftp://download.nvidia.com/XFree86/Linux-x86/${PV}/${X86_NV_PACKAGE}.run )
+	 amd64? ( ftp://download.nvidia.com/XFree86/Linux-x86_64/${PV}/${AMD64_NV_PACKAGE}.run )
+	 x86-fbsd? ( ftp://download.nvidia.com/XFree86/FreeBSD-x86/${PV}/${X86_FBSD_NV_PACKAGE}.tar.gz )"
 
 LICENSE="NVIDIA"
 SLOT="0"
@@ -23,6 +23,9 @@ IUSE="acpi custom-cflags gtk multilib kernel_linux"
 RESTRICT="strip"
 EMULTILIB_PKG="true"
 
+# While this release does officially support xorg-server 1.11, it has poor
+# performance characteristics for many users. see bug #275612 & bug #385669
+# as well as http://lists.x.org/archives/xorg-devel/2011-October/026050.html
 COMMON="<x11-base/xorg-server-1.10.99
 	kernel_linux? ( >=sys-libs/glibc-2.6.1 )
 	multilib? ( app-emulation/emul-linux-x86-xlibs )
@@ -332,21 +335,30 @@ src_install() {
 	# NVIDIA kernel <-> userspace driver config lib
 	dolib.so ${NV_LIB}/libnvidia-cfg.so.${NV_SOVER} || \
 		die "failed to install libnvidia-cfg"
-	dosym /usr/$(get_libdir)/libnvidia-cfg.so.${NV_SOVER} \
+	dosym libnvidia-cfg.so.${NV_SOVER} \
+		/usr/$(get_libdir)/libnvidia-cfg.so.1 || \
+		die "failed to create libnvidia-cfg.so symlink"
+	dosym libnvidia-cfg.so.1 \
 		/usr/$(get_libdir)/libnvidia-cfg.so || \
 		die "failed to create libnvidia-cfg.so symlink"
 
 	# NVIDIA monitoring library
 	dolib.so ${NV_LIB}/libnvidia-ml.so.${NV_SOVER} || \
 		die "failed to install libnvidia-ml"
-	dosym /usr/$(get_libdir)/libnvidia-ml.so.${NV_SOVER} \
+	dosym libnvidia-ml.so.${NV_SOVER} \
+		/usr/$(get_libdir)/libnvidia-ml.so.1 || \
+		die "failed to create libnvidia-ml.so symlink"
+	dosym libnvidia-ml.so.1 \
 		/usr/$(get_libdir)/libnvidia-ml.so || \
 		die "failed to create libnvidia-ml.so symlink"
 
 	# NVIDIA video decode <-> CUDA
 	dolib.so ${NV_LIB}/libnvcuvid.so.${NV_SOVER} || \
 		die "failed to install libnvcuvid.so"
-	dosym /usr/$(get_libdir)/libnvcuvid.so.${NV_SOVER} \
+	dosym libnvcuvid.so.${NV_SOVER} \
+		/usr/$(get_libdir)/libnvcuvid.so.1 || \
+		die "failed to create libnvcuvid.so symlink"
+	dosym libnvcuvid.so.1 \
 		/usr/$(get_libdir)/libnvcuvid.so || \
 		die "failed to create libnvcuvid.so symlink"
 
@@ -358,7 +370,7 @@ src_install() {
 	insinto /usr/$(get_libdir)/opengl/nvidia/extensions
 	doins ${NV_X11_EXT}/libglx.so.${NV_SOVER} || \
 		die "failed to install libglx.so"
-	dosym /usr/$(get_libdir)/opengl/nvidia/extensions/libglx.so.${NV_SOVER} \
+	dosym libglx.so.${NV_SOVER} \
 		/usr/$(get_libdir)/opengl/nvidia/extensions/libglx.so || \
 		die "failed to create libglx.so symlink"
 
@@ -367,8 +379,14 @@ src_install() {
 		die "failed to install libXvMCNVIDIA.so"
 	dolib.so ${NV_X11}/libXvMCNVIDIA.so.${NV_SOVER} || \
 		die "failed to install libXvMCNVIDIA.so"
-	dosym libXvMCNVIDIA.so.${NV_SOVER} /usr/$(get_libdir)/libXvMCNVIDIA.so || \
+	dosym libXvMCNVIDIA.so.${NV_SOVER} \
+		/usr/$(get_libdir)/libXvMCNVIDIA.so.1 || \
 		die "failed to create libXvMCNVIDIA.so symlink"
+	dosym libXvMCNVIDIA.so.1 /usr/$(get_libdir)/libXvMCNVIDIA.so || \
+		die "failed to create libXvMCNVIDIA.so symlink"
+	dosym libXvMCNVIDIA.so.${NV_SOVER} \
+		/usr/$(get_libdir)/libXvMCNVIDIA_dynamic.so.1 || \
+		die "failed to create libXvMCNVIDIA_dynamic.so symlink"
 
 	# OpenCL ICD for NVIDIA
 	if use kernel_linux; then

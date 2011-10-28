@@ -1241,6 +1241,12 @@ dev-libs/totem-pl-parser:archive - Enables support for accessing media files in 
 dev-libs/totem-pl-parser:introspection - Use dev-libs/gobject-introspection for introspection
 dev-libs/totem-pl-parser:quvi - Use media-libs/quvi for parsing video links
 dev-libs/udis86:pic - Force shared libraries to be built as PIC
+dev-libs/xapian:brass - Enabled brass backend db support
+dev-libs/xapian:chert - Enabled chert backend db support
+dev-libs/xapian:flint - Enabled flint backend db support
+dev-libs/xapian:inmemory - Enabled inmemory backend db support
+dev-libs/xapian:nosse - Disable all sse support
+dev-libs/xapian:remote - Enabled remot backend db support
 dev-libs/xerces-c:iconv - Use iconv (virtual/libiconv) as message loader and transcoder (in general it would be possible to use iconv only as message loader and something else like icu or the native method as transcoder and vice-versa, but this is a less common case and hard to handle)
 dev-libs/xerces-c:libwww - Use the net-libs/libwww library for fetching URLs, instead of the builtin method
 dev-libs/xerces-c:threads - Enable threading support through pthread (or other libraries on AIX, IRIX, HPUX, Solars). Highly recommended

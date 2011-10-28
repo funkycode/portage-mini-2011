@@ -1,7 +1,7 @@
 <x11-base/xorg-server-1.10.99 kernel_linux? ( >=sys-libs/glibc-2.6.1 ) multilib? ( app-emulation/emul-linux-x86-xlibs ) >=app-admin/eselect-opengl-1.0.9 !<media-video/nvidia-settings-256.52 kernel_linux? ( virtual/linux-sources ) kernel_linux? ( sys-apps/module-init-tools ) sys-apps/sed kernel_linux? ( virtual/linux-sources ) sys-apps/pciutils
 <x11-base/xorg-server-1.10.99 kernel_linux? ( >=sys-libs/glibc-2.6.1 ) multilib? ( app-emulation/emul-linux-x86-xlibs ) >=app-admin/eselect-opengl-1.0.9 !<media-video/nvidia-settings-256.52 x11-libs/libXvMC acpi? ( sys-power/acpid ) kernel_linux? ( sys-apps/module-init-tools )
 0
-x86? ( http://us.download.nvidia.com/XFree86/Linux-x86/280.13/NVIDIA-Linux-x86-280.13.run ) amd64? ( http://us.download.nvidia.com/XFree86/Linux-x86_64/280.13/NVIDIA-Linux-x86_64-280.13.run ) x86-fbsd? ( http://us.download.nvidia.com/XFree86/FreeBSD-x86/280.13/NVIDIA-FreeBSD-x86-280.13.tar.gz )
+x86? ( ftp://download.nvidia.com/XFree86/Linux-x86/285.05.09/NVIDIA-Linux-x86-285.05.09.run ) amd64? ( ftp://download.nvidia.com/XFree86/Linux-x86_64/285.05.09/NVIDIA-Linux-x86_64-285.05.09.run ) x86-fbsd? ( ftp://download.nvidia.com/XFree86/FreeBSD-x86/285.05.09/NVIDIA-FreeBSD-x86-285.05.09.tar.gz )
 strip
 http://www.nvidia.com/
 NVIDIA

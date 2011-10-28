@@ -1,14 +1,14 @@
 # Copyright 1999-2011 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/sys-block/megacli/megacli-8.01.06.ebuild,v 1.2 2011/07/11 21:32:22 mr_bones_ Exp $
+# $Header: /var/cvsroot/gentoo-x86/sys-block/megacli/megacli-8.02.16.ebuild,v 1.2 2011/10/27 23:27:33 radhermit Exp $
 
-EAPI="3"
+EAPI="4"
 
 inherit rpm
 
 DESCRIPTION="LSI Logic MegaRAID Command Line Interface management tool"
 HOMEPAGE="http://www.lsi.com/"
-SRC_URI="http://www.lsi.com/downloads/Public/MegaRAID%20Common%20Files/${PV}_Linux_MegaCLI.zip"
+SRC_URI="http://www.lsi.com/downloads/Public/MegaRAID%20Common%20Files/${PV}_MegaCLI.zip"
 
 LICENSE="LSI"
 SLOT="0"
@@ -19,39 +19,47 @@ IUSE=""
 
 DEPEND="app-arch/unzip
 	app-admin/chrpath"
-RDEPEND="sys-fs/sysfsutils"
 
 S="${WORKDIR}"
 
 RESTRICT="mirror"
 
-QA_PRESTRIPPED="/opt/bin/megacli"
+QA_PRESTRIPPED="/opt/megacli/megacli"
 
 src_unpack() {
 	unpack ${A}
 	cd "${S}"
-	unpack ./MegaCliLin.zip || die "failed to unpack inner ZIP"
-	rpm_unpack ./MegaCli-${PV}-1.i386.rpm || die "failed to unpack RPM"
+	unpack ./LINUX/MegaCliLin.zip
+	rpm_unpack ./MegaCli-${PV}-1.i386.rpm
+	rpm_unpack ./Lib_Utils-1.00-09.noarch.rpm
 }
 
 src_install() {
-	exeinto /opt/bin
+	exeinto /opt/megacli
+	libsysfs=libsysfs.so.2.0.2
 	case ${ARCH} in
-		amd64) MegaCli=MegaCli64;;
+		amd64) MegaCli=MegaCli64 libsysfs=x86_64/${libsysfs};;
 		x86) MegaCli=MegaCli;;
 		*) die "invalid ARCH";;
 	esac
-	newexe opt/MegaRAID/MegaCli/${MegaCli} megacli || die
-	dosym /opt/bin/megacli /opt/bin/MegaCli
-	dodoc ${PV}_Linux_MegaCLI.txt
+	newexe opt/MegaRAID/MegaCli/${MegaCli} megacli
 
-	# Get a rid of DT_RPATH
-	chrpath -d "${D}/opt/bin/megacli"
+	exeinto /opt/megacli/lib
+	doexe opt/lsi/3rdpartylibs/${libsysfs}
+
+	into /opt
+	newbin "${FILESDIR}"/${PN}-wrapper ${PN}
+	dosym ${PN} /opt/bin/MegaCli
+
+	dodoc ${PV}_MegaCLI.txt
+
+	# Remove DT_RPATH
+	chrpath -d "${D}"/opt/megacli/megacli
 }
 
 pkg_postinst() {
 	einfo
-	einfo "See /usr/share/doc/${PF}/${PV}_Linux_MegaCli.txt for a list of supported controllers"
+	einfo "See /usr/share/doc/${PF}/${PV}_MegaCli.txt for a list of supported controllers"
 	einfo "(contains LSI model names only, not those sold by 3rd parties"
 	einfo "under custom names like Dell PERC etc)."
 	einfo

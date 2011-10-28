@@ -1,6 +1,6 @@
 # Copyright 1999-2011 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/net-wireless/wpa_supplicant/wpa_supplicant-0.7.3-r5.ebuild,v 1.6 2011/09/10 11:42:40 scarabeus Exp $
+# $Header: /var/cvsroot/gentoo-x86/net-wireless/wpa_supplicant/wpa_supplicant-0.7.3-r5.ebuild,v 1.8 2011/10/27 19:24:26 gurligebis Exp $
 
 EAPI=4
 
@@ -24,7 +24,7 @@ RDEPEND="dbus? ( sys-apps/dbus )
 				net-wireless/madwifi-old
 			)
 		)
-		dev-libs/libnl
+		dev-libs/libnl:1.1
 	)
 	!kernel_linux? ( net-libs/libpcap )
 	qt4? (
@@ -88,6 +88,9 @@ src_prepare() {
 	epatch "${FILESDIR}/${P}-dbus-api-changes.patch"
 	# bug (374089)
 	epatch "${FILESDIR}/${P}-dbus-WPAIE-fix.patch"
+	# systemd entries to D-Bus service files (bug #372877)
+	echo 'SystemdService=wpa_supplicant.service' \
+		| tee -a dbus/*.service >/dev/null || die
 }
 
 src_configure() {
@@ -193,9 +196,11 @@ src_configure() {
 
 	# If we are using libnl 2.0 and above, enable support for it
 	# Bug 382159
-	if has_version ">=dev-libs/libnl-2.0"; then
-		echo "CONFIG_LIBNL20=y" >> .config
-	fi
+	# Removed for now, since the 3.2 version is broken, and we don't
+	# support it.
+	#if has_version ">=dev-libs/libnl-2.0"; then
+	#	echo "CONFIG_LIBNL20=y" >> .config
+	#fi
 
 	if use qt4 ; then
 		pushd "${S}"/wpa_gui-qt4 > /dev/null
