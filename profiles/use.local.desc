@@ -1961,7 +1961,7 @@ kde-misc/kcm-grub2:hwinfo - Used to work out supported framebuffer resolutions
 kde-misc/kcm-grub2:imagemagick - Create splash images compatible with GRUB2
 kde-misc/kcm-grub2:packagekit - Add support for packagekit integration
 kde-misc/kdiff3:konqueror - Enable integration with konqueror
-kde-misc/knetworkmanager:consolekit - Enable support for sys-auth/consolekit
+kde-misc/networkmanagement:consolekit - Enable support for sys-auth/consolekit
 kde-misc/synaptiks:upower - Handle mouse devices correctly across suspend and resume with upower
 kde-misc/tellico:addressbook - Add support for kdepim addressbook (kabc)
 lxde-base/lxdm:consolekit - Enables support for authorization using consolekit
@@ -4903,6 +4903,7 @@ x11-libs/gtksourceview:introspection - Use dev-libs/gobject-introspection for in
 x11-libs/libSM:uuid - Use UUID for session identification instead of IP address and system time.
 x11-libs/libaosd:pango - Enable the textual helpers (requires pangocairo).
 x11-libs/libaosd:tools - Install the aosd_cat tool (requires glib-2.0).
+x11-libs/libcryptui:introspection - Use dev-libs/gobject-introspection for introspection
 x11-libs/libdesktop-agnostic:gconf - Enable GConf as configuration backend
 x11-libs/libdesktop-agnostic:glade - Install the Glade catalog for the desktop-agnotstic GTK widgets.
 x11-libs/libdesktop-agnostic:introspection - Use dev-libs/gobject-introspection for introspection
