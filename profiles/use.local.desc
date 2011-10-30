@@ -1761,6 +1761,7 @@ gnome-extra/evolution-data-server:introspection - Use dev-libs/gobject-introspec
 gnome-extra/evolution-data-server:weather - Enable optional weather calendar support
 gnome-extra/file-browser-applet:gtkhotkey - Enable hotkey support via x11-libs/gtkhotkey
 gnome-extra/gdesklets-core:dbus - Enable gDesklets Controls to use DBus
+gnome-extra/gnome-color-manager:clutter - Use media-libs/clutter to render color gamut representations
 gnome-extra/gnome-color-manager:introspection - Use dev-libs/gobject-introspection for introspection
 gnome-extra/gnome-color-manager:packagekit - Enable support for the distro-neutral package manager GUI app-admin/packagekit
 gnome-extra/gnome-do-plugins:banshee - Enables the Banshee (media-sound/banshee) plugin
@@ -3518,6 +3519,7 @@ net-libs/libsocialweb:gnome - Extract proxy information using net-libs/libsoup-g
 net-libs/libsocialweb:introspection - Use dev-libs/gobject-introspection for introspection
 net-libs/libsocialweb:vala - Build bindings for dev-lang/vala
 net-libs/libsoup:introspection - Use dev-libs/gobject-introspection for introspection
+net-libs/libsoup:samba - Use net-fs/samba for NTLM Single Sign-On
 net-libs/libsoup-gnome:introspection - Use dev-libs/gobject-introspection for introspection
 net-libs/libsrtp:aesicm - Use AES ICM cryptographic algorithm
 net-libs/libsrtp:console - Use /dev/console instead of stdout for error messages
