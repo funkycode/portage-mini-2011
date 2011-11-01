@@ -1,6 +1,6 @@
 # Copyright 1999-2011 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/www-client/chromium/chromium-9999-r1.ebuild,v 1.64 2011/10/26 09:26:44 phajdan.jr Exp $
+# $Header: /var/cvsroot/gentoo-x86/www-client/chromium/chromium-9999-r1.ebuild,v 1.66 2011/11/01 04:42:17 floppym Exp $
 
 EAPI="4"
 PYTHON_DEPEND="2:2.6"
@@ -103,7 +103,7 @@ src_unpack() {
 
 	gclient_config
 	gclient_sync
-	gclient_runhooks
+	#gclient_runhooks
 
 	subversion_wc_info
 
@@ -242,6 +242,7 @@ src_prepare() {
 		\! -path 'third_party/harfbuzz/*' \
 		\! -path 'third_party/hunspell/*' \
 		\! -path 'third_party/iccjpeg/*' \
+		\! -path 'third_party/jsoncpp/*' \
 		\! -path 'third_party/launchpad_translations/*' \
 		\! -path 'third_party/leveldb/*' \
 		\! -path 'third_party/leveldatabase/*' \
