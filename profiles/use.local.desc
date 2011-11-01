@@ -585,7 +585,8 @@ app-misc/lcdproc:nfs - Adds support for NFS file system
 app-misc/lcdproc:seamless-hbars - Try to avoid gaps in horizontal bars
 app-misc/lirc:hardware-carrier - The transmitter device generates its clock signal in hardware
 app-misc/lirc:transmitter - Add transmitter support to some lirc-drivers (e.g. serial)
-app-misc/mc:edit - Build mcedit application
+app-misc/mc:edit - Compile and install the mcedit application
+app-misc/mc:mclib - Compile and install the libmc.so shared library
 app-misc/note:general - Add support for ascii flatfile backend
 app-misc/note:text - Add support for text backend
 app-misc/recoll:audio - Index audio files
