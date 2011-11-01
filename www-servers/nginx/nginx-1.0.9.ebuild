@@ -27,7 +27,7 @@ HTTP_HEADERS_MORE_MODULE_SHA1="137855d"
 HTTP_PUSH_MODULE_P="nginx_http_push_module-0.692"
 
 # http_cache_purge (http://labs.frickle.com/nginx_ngx_cache_purge/, BSD-2 license)
-HTTP_CACHE_PURGE_MODULE_P="ngx_cache_purge-1.3"
+HTTP_CACHE_PURGE_MODULE_P="ngx_cache_purge-1.4"
 
 # HTTP Upload module from Valery Kholodkov
 # (http://www.grid.net.ru/nginx/upload.en.html, BSD license)
@@ -308,7 +308,8 @@ src_install() {
 
 	if use nginx_modules_http_cache_purge; then
 		docinto ${HTTP_CACHE_PURGE_MODULE_P}
-		dodoc "${WORKDIR}"/${HTTP_CACHE_PURGE_MODULE_P}/{CHANGES,README.md,TODO.md}
+		dodoc
+		"${WORKDIR}"/${HTTP_CACHE_PURGE_MODULE_P}/{CHANGES,README.md,TODO.md}
 	fi
 
 	if use nginx_modules_http_upload; then
