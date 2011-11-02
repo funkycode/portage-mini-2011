@@ -1174,6 +1174,7 @@ dev-libs/libburn:track-src-odirect - Read track input with O_DIRECT (see man 2 o
 dev-libs/libcdio:minimal - Only build the libcdio library and little more, just to be used to link against from multimedia players. With this USE flag enabled, none of the command-line utilities are built, nor is the CDDA library.
 dev-libs/libcgroup:daemon - Install the configuration tools and init/config files.
 dev-libs/libcgroup:tools - Install the cgroup rules processing daemon and init/config files.
+dev-libs/libdbusmenu:gtk3 - Build gtk3 version instead of using gtk2
 dev-libs/libdbusmenu:introspection - Use dev-libs/gobject-introspection for introspection
 dev-libs/libdbusmenu:vala - Enable bindings for dev-lang/vala
 dev-libs/libgdata:introspection - Use dev-libs/gobject-introspection for introspection
@@ -3219,6 +3220,9 @@ net-fs/samba:aio - Enable asynchronous IO support
 net-fs/samba:client - Enables the client part
 net-fs/samba:cluster - Enable support for clustering
 net-fs/samba:dso - Enable dso support
+net-fs/samba:fulltest - Enabling extra tests in test phase
+net-fs/samba:iprint - Enabling iPrint technology by Novell
+net-fs/samba:krb5 - Enable kerberos support
 net-fs/samba:ldb - Enable the ldb tools
 net-fs/samba:netapi - Enable building of netapi bits
 net-fs/samba:quota - Enables support for user quotas
