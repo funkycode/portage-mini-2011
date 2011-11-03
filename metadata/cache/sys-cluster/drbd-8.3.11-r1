@@ -12,7 +12,7 @@ bash-completion heartbeat pacemaker +udev xen
 
 
 
-2
+4
 
 compile configure install postinst prepare
 
