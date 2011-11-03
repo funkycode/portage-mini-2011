@@ -625,6 +625,7 @@ app-misc/tomboy:applet - Enable tomboy applet for gnome-base/gnome-panel
 app-misc/tomboy:galago - Add support for the galago desktop presence framework (dev-dotnet/galago-sharp)
 app-misc/towitoko:moneyplex - Makes libtowitoko work for the moneyplex home banking software
 app-misc/tracker:applet - Build tracker monitor applet
+app-misc/tracker:firefox-bookmarks - Install bookmark data miner plugin for www-client/firefox and www-client/firefox-bin
 app-misc/tracker:flickr - Build flickr data miner
 app-misc/tracker:gsf - Enable gnome-extra/libgsf based data extractor and for ODT.
 app-misc/tracker:introspection - Use dev-libs/gobject-introspection for introspection
@@ -634,6 +635,7 @@ app-misc/tracker:laptop - Make tracker power management aware
 app-misc/tracker:nautilus - Enable tracker to integrate with gnome-base/nautilus by providing entries in its context menu
 app-misc/tracker:playlist - Add support for playlists
 app-misc/tracker:strigi - Add support for app-misc/strigi search engine.
+app-misc/tracker:thunderbird - Install email data miner plugin for mail-client/thunderbird and mail-client/thunderbird-bin
 app-misc/tracker:upnp - Add support for video extraction via media-libs/gupnp-dlna.
 app-misc/worker:avfs - Enable support for sys-fs/avfs
 app-misc/workrave:distribution - Enable networking. See http://www.workrave.org/features/
@@ -696,6 +698,7 @@ app-office/libreoffice:pdfimport - Build pdf-import extension using app-text/pop
 app-office/libreoffice:templates - Enable installation of Sun templates
 app-office/libreoffice:vba - Enable support for VBA compatibility and ActiveX embedding
 app-office/libreoffice:webdav - Adds support for HTTP repositories via net-libs/neon
+app-office/libreoffice:xmlsec - Adds support for document signing using internal modified dev-libs/xmlsec and system dev-libs/nss
 app-office/libreoffice-bin:offlinehelp - Download and install help files locally instead of using the LibreOffice Wiki
 app-office/libreoffice-l10n:offlinehelp - Install help files locally instead of using the LibreOffice Wiki
 app-office/lyx:aspell - Add support for aspell spellchecking
@@ -785,8 +788,6 @@ app-text/libwpg:tools - Build miscellaneous tools
 app-text/lodgeit:vim - Install a vim plugin allowing to paste and download from within vim
 app-text/mathtex:png - Generate png images by default instead of gif
 app-text/namazu:kakasi - Enable kakasi support (dev-perl/Text-Kakasi)
-app-text/notmuch:emacs - Install Notmuch client for Emacs (main client)
-app-text/notmuch:vim - Install Notmuch client for Vim (experimental)
 app-text/pandoc:highlight - Add support for syntax highlighting with dev-haskell/highlighting-kate
 app-text/pdf2djvu:graphicsmagick - Enable media-gfx/graphicsmagick support
 app-text/pdftk:nodrm - Decrypt a document with the user_pw even if it has an owner_pw set
@@ -1201,6 +1202,7 @@ dev-libs/libpcre:jit - Enable Just-In-Time compilation of regexp bytecode to mac
 dev-libs/libpcre:readline - Add support for command line editing to pcretest, through sys-libs/readline.
 dev-libs/libpcre:recursion-limit - Limit match recursion to 8192; if disabled, the default limit is used, which is the same as the match limit.
 dev-libs/libpcre:zlib - Add support for pcregrep command to search within gzip-compressed files, through app-arch/gzip.
+dev-libs/libpeas:gjs - Build support for loading JavaScript plugins using dev-libs/gjs
 dev-libs/libpeas:glade - Install the glade catalog
 dev-libs/libpeas:python - Build support for loading dev-lang/python plugins
 dev-libs/libpeas:seed - Build support for loading JavaScript plugins using dev-libs/seed
@@ -1725,6 +1727,7 @@ games-strategy/x2:dynamic - Use dynamic binaries instead of static
 games-strategy/x2:langpacks - Install additional language packs
 games-strategy/x2:modkit - Install the modkit
 games-util/gslist:web - Enable the web interface
+games-util/pyfa:graph - Enable support for graphs
 gnome-base/dconf:introspection - Use dev-libs/gobject-introspection for introspection
 gnome-base/dconf:vala - Add support for dev-lang/vala
 gnome-base/gconf:introspection - Use dev-libs/gobject-introspection for introspection
@@ -1758,7 +1761,10 @@ gnome-base/libgtop:introspection - Use dev-libs/gobject-introspection for intros
 gnome-base/librsvg:gtk3 - Build with gtk+-3 support
 gnome-base/librsvg:tools - Build miscellaneous tools
 gnome-base/nautilus:introspection - Use dev-libs/gobject-introspection for introspection
+gnome-base/nautilus:packagekit - Use packagekit to search for programs to open unknown file types
+gnome-base/nautilus:previewer - Use gnome-extra/sushi to preview files from the file mananger
 gnome-base/nautilus:sendto - Enable the nautilus-sendto extension to send files to various locations/devices
+gnome-base/nautilus:tracker - Add support for app-misc/tracker search
 gnome-extra/avant-window-navigator:thunar - Enables support for the deprecated Thunar VFS layer
 gnome-extra/avant-window-navigator:vala - Enables support for applets written in dev-lang/vala.
 gnome-extra/avant-window-navigator-extras:webkit - Enables support for net-libs/webkit-gtk.

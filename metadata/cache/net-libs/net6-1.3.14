@@ -14,7 +14,7 @@ nls static-libs
 
 4
 
-configure install
+configure install postinst
 
 
 
