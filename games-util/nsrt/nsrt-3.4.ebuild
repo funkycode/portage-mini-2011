@@ -14,6 +14,8 @@ KEYWORDS="-* ~amd64 ~x86"
 IUSE=""
 RESTRICT="mirror strip"
 
+S="${WORKDIR}"
+
 src_install() {
 	dogamesbin ipsedit nren nsrt || die "dogamesbin failed"
 	dodoc nsrt.txt || die "dodoc failed"
