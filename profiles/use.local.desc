@@ -1776,9 +1776,8 @@ gnome-base/nautilus:packagekit - Use packagekit to search for programs to open u
 gnome-base/nautilus:previewer - Use gnome-extra/sushi to preview files from the file mananger
 gnome-base/nautilus:sendto - Enable the nautilus-sendto extension to send files to various locations/devices
 gnome-base/nautilus:tracker - Add support for app-misc/tracker search
-gnome-extra/avant-window-navigator:thunar - Enables support for the deprecated Thunar VFS layer
-gnome-extra/avant-window-navigator:vala - Enables support for applets written in dev-lang/vala.
-gnome-extra/avant-window-navigator-extras:webkit - Enables support for net-libs/webkit-gtk.
+gnome-extra/avant-window-navigator:gconf - Enable GConf as configuration backend
+gnome-extra/avant-window-navigator:vala - Enable installation of dev-lang/vala binding
 gnome-extra/evolution-data-server:gnome-online-accounts - Enable using net-libs/gnome-online-accounts for authorization
 gnome-extra/evolution-data-server:introspection - Use dev-libs/gobject-introspection for introspection
 gnome-extra/evolution-data-server:vala - Build dev-lang/vala bindings
@@ -5104,6 +5103,7 @@ x11-wm/compiz:fuse - Enables support for the filesystem in userspace plugin thro
 x11-wm/compiz:gconf - Enable the GConf-based configuration backend; it is not required to work with GNOME, and might actually be faster if it's not used.
 x11-wm/compiz-fusion:emerald - Install the x11-wm/emerald package.
 x11-wm/compiz-fusion:unsupported - Install the x11-plugins/compiz-fusion-plugins-unsupported package.
+x11-wm/echinus:xrandr - Enable support for multihead configuration
 x11-wm/enlightenment:pango - Enable pango font rendering
 x11-wm/enlightenment:xrandr - Enable support for the X xrandr extension
 x11-wm/fluxbox:bidi - Enable bidirectional language support with dev-libs/fribidi
