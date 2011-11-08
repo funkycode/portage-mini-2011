@@ -1,6 +1,6 @@
 # Copyright 1999-2011 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/dev-vcs/tortoisehg/tortoisehg-9999.ebuild,v 1.1 2011/11/04 19:17:08 floppym Exp $
+# $Header: /var/cvsroot/gentoo-x86/dev-vcs/tortoisehg/tortoisehg-9999.ebuild,v 1.2 2011/11/07 20:39:34 floppym Exp $
 
 EAPI=4
 
@@ -8,16 +8,23 @@ SUPPORT_PYTHON_ABIS=1
 PYTHON_DEPEND="2:2.5"
 RESTRICT_PYTHON_ABIS="2.4 3.*"
 
-inherit distutils eutils mercurial multilib
+inherit distutils eutils multilib
+
+if [[ ${PV} != *9999* ]]; then
+	KEYWORDS="~amd64 ~x86"
+	SRC_URI="http://bitbucket.org/${PN}/targz/downloads/${P}.tar.gz"
+else
+	inherit mercurial
+	EHG_REPO_URI="https://bitbucket.org/tortoisehg/thg"
+	KEYWORDS=""
+	SRC_URI=""
+fi
 
 DESCRIPTION="Set of graphical tools for Mercurial"
 HOMEPAGE="http://tortoisehg.bitbucket.org"
-SRC_URI=""
-EHG_REPO_URI="https://bitbucket.org/tortoisehg/thg"
 
 LICENSE="GPL-2"
 SLOT="0"
-KEYWORDS=""
 IUSE="doc nautilus"
 
 RDEPEND="dev-python/iniparse
