@@ -4842,7 +4842,8 @@ www-client/luakit:luajit - Use the lua just-in-time compiler dev-lang/luajit ins
 www-client/lynx:gnutls - Use gnutls library for HTTPS support (openssl is the default library for HTTPS support).
 www-client/lynx:ssl - Enable HTTPS support.
 www-client/midori:unique - Enable single instance support using dev-libs/libunique
-www-client/opera:gtk - Set runtime dependencies to support GTK+/GNOME desktop integration
+www-client/opera:gtk - Set runtime dependencies to support GTK+/GNOME version 2 desktop integration
+www-client/opera:gtk3 - Set runtime dependencies to support GTK+/GNOME version 3 desktop integration
 www-client/opera:kde - Set runtime dependencies to support KDE desktop integration
 www-client/opera-next:gtk - Set runtime dependencies to support GTK+/GNOME desktop integration
 www-client/opera-next:kde - Set runtime dependencies to support KDE desktop integration
