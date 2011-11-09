@@ -1,6 +1,6 @@
 # Copyright 1999-2011 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/dev-embedded/mspdebug/mspdebug-0.15.ebuild,v 1.1 2011/04/19 02:34:46 radhermit Exp $
+# $Header: /var/cvsroot/gentoo-x86/dev-embedded/mspdebug/mspdebug-0.18.ebuild,v 1.1 2011/11/09 06:20:39 radhermit Exp $
 
 EAPI=4
 
@@ -27,10 +27,10 @@ src_compile() {
 	local myflags
 	! use readline && myflags="WITHOUT_READLINE=1"
 
-	emake CC=$(tc-getCC) ${myflags}
+	emake CC="$(tc-getCC)" ${myflags}
 }
 
 src_install() {
-	emake DESTDIR="${D}" PREFIX=/usr install
-	dodoc AUTHORS ChangeLog
+	emake DESTDIR="${ED}" PREFIX="${EPREFIX}"/usr install
+	dodoc AUTHORS ChangeLog README
 }

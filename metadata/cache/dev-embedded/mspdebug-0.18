@@ -1,7 +1,7 @@
 readline? ( sys-libs/readline ) virtual/libusb:0
 readline? ( sys-libs/readline ) virtual/libusb:0
 0
-mirror://sourceforge/mspdebug/mspdebug-0.15.tar.gz
+mirror://sourceforge/mspdebug/mspdebug-0.18.tar.gz
 
 http://mspdebug.sourceforge.net/
 GPL-2

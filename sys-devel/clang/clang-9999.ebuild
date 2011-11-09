@@ -1,6 +1,6 @@
 # Copyright 1999-2011 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/sys-devel/clang/clang-9999.ebuild,v 1.17 2011/10/04 11:52:07 voyageur Exp $
+# $Header: /var/cvsroot/gentoo-x86/sys-devel/clang/clang-9999.ebuild,v 1.18 2011/11/09 15:11:48 voyageur Exp $
 
 EAPI=3
 
@@ -39,6 +39,8 @@ src_prepare() {
 	sed -e "/PROJ_headers/s#lib/clang#$(get_libdir)/clang#" \
 		-i tools/clang/lib/Headers/Makefile \
 		|| die "clang Makefile failed"
+	# Fix cxx_include_root path for Gentoo
+	epatch "${FILESDIR}"/${PN}-3.0-fix_cxx_include_root.patch
 	# fix the static analyzer for in-tree install
 	sed -e 's/import ScanView/from clang \0/'  \
 		-i tools/clang/tools/scan-view/scan-view \
@@ -84,9 +86,6 @@ src_configure() {
 	if use amd64; then
 		CONF_FLAGS="${CONF_FLAGS} --enable-pic"
 	fi
-
-	# Skip llvm-gcc parts even if installed
-	CONF_FLAGS="${CONF_FLAGS} --with-llvmgccdir=/dev/null"
 
 	if use system-cxx-headers; then
 		# Try to get current gcc headers path
