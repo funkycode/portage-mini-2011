@@ -1,7 +1,7 @@
 static-analyzer? ( dev-lang/perl ) >=app-admin/eselect-python-20091230
-~sys-devel/llvm-3.0_rc1[multitarget=] >=app-admin/eselect-python-20091230
+~sys-devel/llvm-3.0_rc3[multitarget=] >=app-admin/eselect-python-20091230
 0
-http://llvm.org/pre-releases/3.0/rc1/sources/llvm-3.0rc1.src.tar.gz http://llvm.org/pre-releases/3.0/rc1/sources/clang-3.0rc1.src.tar.gz
+http://llvm.org/pre-releases/3.0/rc3/llvm-3.0rc3.src.tar.gz http://llvm.org/pre-releases/3.0/rc3/clang-3.0rc3.src.tar.gz
 
 http://clang.llvm.org/
 UoI-NCSA
