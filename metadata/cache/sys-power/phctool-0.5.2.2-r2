@@ -12,9 +12,9 @@ doc sudo
 
 
 
-2
+4
 
-install postinst postrm prepare setup
+install postinst prepare setup
 
 
 

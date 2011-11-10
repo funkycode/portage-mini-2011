@@ -1,5 +1,5 @@
 ####################################################################
-# $Header: /var/cvsroot/gentoo-x86/profiles/package.mask,v 1.13220 2011/11/09 19:03:55 scarabeus Exp $
+# $Header: /var/cvsroot/gentoo-x86/profiles/package.mask,v 1.13222 2011/11/10 12:32:27 voyageur Exp $
 #
 # When you add an entry to the top of this file, add your name, the date, and
 # an explanation of why something is getting masked. Please be extremely
@@ -35,6 +35,7 @@
 # Mask release candidates
 =sys-devel/llvm-3.0_rc*
 =sys-devel/clang-3.0_rc*
+=sys-devel/dragonegg-3.0_rc*
 
 # Andreas K. Huettel <dilfridge@gentoo.org> (8 Nov 2011)
 # Dead project, and has started crashing KDE apps, see bug 388261 and
@@ -75,7 +76,10 @@ x11-themes/polyester
 # Jeroen Roovers <jer@gentoo.org> (04 Nov 2011)
 # Masked www-client/opera snapshots
 # http://my.opera.com/desktopteam/blog/2011/11/04/opera-11-60
->=www-client/opera-11.60
+=www-client/opera-11.60.1134
+=www-client/opera-11.60.1139
+=www-client/opera-11.60.1144
+=www-client/opera-11.60.1145
 
 # Alexis Ballier <aballier@gentoo.org> (04 Nov 2011)
 # Pre-releases of vlc 1.2. Mask it until final version is out
