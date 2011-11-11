@@ -8,7 +8,7 @@ GPL-3 LGPL-3 || ( GPL-3 libgcc libstdc++ ) FDL-1.2
 The GNU Compiler Collection. Includes C/C++, java compilers, pie+ssp extensions, Haj Ten Brugge runtime bounds checking
 *
 eutils fixheadtails flag-o-matic gnuconfig libtool multilib portability toolchain toolchain-funcs user versionator
-multislot nptl test altivec build fortran nls nocxx nopie nossp bootstrap doc gcj gtk hardened libffi multilib objc vanilla n32 n64 objc-gc mudflap objc++ openmp fixed-point
+multislot nptl test vanilla altivec build fortran nls nocxx nopie nossp bootstrap doc gcj gtk hardened libffi multilib objc objc-gc mudflap objc++ openmp fixed-point
 
 >=sys-devel/gcc-config-1.4 elibc_glibc? ( >=sys-libs/glibc-2.8 )
 
