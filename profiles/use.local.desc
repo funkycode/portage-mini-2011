@@ -2043,6 +2043,7 @@ mail-client/thunderbird:ipc - Use inter-process communication between tabs and p
 mail-client/thunderbird:lightning - Enable calendar support
 mail-client/thunderbird:mozdom - Enable Mozilla's DOM inspector
 mail-client/thunderbird:system-sqlite - Use the system-wide dev-db/sqlite installation with secure-delete enabled
+mail-client/thunderbird:webm - Use system media-libs/libvpx for HTML5 WebM video support.
 mail-filter/amavisd-new:courier - Add courier support
 mail-filter/amavisd-new:dkim - Add DomainKeys Identified Mail support
 mail-filter/amavisd-new:qmail - Add qmail support
@@ -2655,6 +2656,7 @@ media-sound/sonata:trayicon - Enable support for trayicon
 media-sound/sonic-visualiser:id3tag - Enables ID3 tagging with id3tag library
 media-sound/sox:amr - Enables Adaptive Multi-Rate Audio support
 media-sound/sox:id3tag - Enables ID3 tagging with id3tag library
+media-sound/split2flac:enca - Try to guess the charset using enca
 media-sound/split2flac:flake - Add support for Flake, alternative FLAC encoder
 media-sound/split2flac:mac - Add support for Monkey's Audio files
 media-sound/split2flac:replaygain - Support for Replay Gain metadata, for relative volume adjustment
@@ -3170,7 +3172,7 @@ net-dialup/misdn:ecmg2 - Use the MG2 echo canceller (default)
 net-dialup/ppp:activefilter - Enables active filter support
 net-dialup/ppp:atm - Enables ATM (Asynchronous Transfer Mode) protocol support
 net-dialup/ppp:dhcp - Installs PPP DHCP client plugin for IP address allocation by a DHCP server (see http://www.netservers.co.uk/gpl/)
-net-dialup/ppp:eap-tls - Enables support for Extensible Authentication Protocol and Transport Level Security (see http://eaptls.spe.net/index.html)
+net-dialup/ppp:eap-tls - Enables support for Extensible Authentication Protocol and Transport Level Security (see http://www.nikhef.nl/~janjust/ppp/index.html)
 net-dialup/ppp:gtk - Installs GTK+ password prompting program that can be used by passprompt.so PPP plugin for reading the password from a X11 input terminal
 net-dialup/ppp:ipv6 - Enables support for IP version 6
 net-dialup/ppp:mppe-mppc - Enables support for MPPC (Microsoft Point-to-Point Compression) - NEEDS A PATCHED KERNEL <=2.6.14 (see http://mppe-mppc.alphacron.de)
@@ -5001,6 +5003,26 @@ x11-libs/qt-gui:raster - Use the alternative raster graphicssystem as default re
 x11-libs/qt-gui:trace - Build the new 'trace' graphicsssytem engine which allows to record all drawing operations into a trace buffer. Later it can be replayed with the qttracereplay utility
 x11-libs/qt-meta:kde - Select media-sound/phonon as phonon variant needed for kde
 x11-libs/qt-meta:qt3support - Enable the Qt3Support libraries for Qt4
+x11-libs/qt-mobility:bearer - Build the QtBearer module
+x11-libs/qt-mobility:bluetooth - Enable Bluetooth support in QtConnectivity and QtSystemInfo modules
+x11-libs/qt-mobility:connectivity - Build the QtConnectivity module
+x11-libs/qt-mobility:contacts - Build the QtContacts module
+x11-libs/qt-mobility:feedback - Build the QtFeedback module
+x11-libs/qt-mobility:gallery - Build the QtGallery module
+x11-libs/qt-mobility:location - Build the QtLocation module
+x11-libs/qt-mobility:messaging - Build the QtMessaging module
+x11-libs/qt-mobility:multimedia - Build the QtMultimediaKit module
+x11-libs/qt-mobility:networkmanager - Enable NetworkManager support in QtBearer and QtSystemInfo modules
+x11-libs/qt-mobility:opengl - Enable OpenGL support in QtMultimediaKit module
+x11-libs/qt-mobility:organizer - Build the QtOrganizer module
+x11-libs/qt-mobility:publishsubscribe - Build the QtPublishSubscribe module
+x11-libs/qt-mobility:pulseaudio - Enable PulseAudio support in QtMultimediaKit module
+x11-libs/qt-mobility:qml - Build QML bindings
+x11-libs/qt-mobility:sensors - Build the QtSensors module
+x11-libs/qt-mobility:serviceframework - Build the QtServiceFramework module
+x11-libs/qt-mobility:systeminfo - Build the QtSystemInfo module
+x11-libs/qt-mobility:tools - Build various useful tools (e.g.: qcrmlgen, servicexmlgen, vsexplorer, ...)
+x11-libs/qt-mobility:versit - Build the QtVersit module
 x11-libs/qt-multimedia:exceptions - Add support for exceptions - like catching them inside the event loop (recommended by Nokia)
 x11-libs/qt-opengl:egl - Use EGL instead of default GLX to manage OpenGL contexts on the desktop
 x11-libs/qt-opengl:exceptions - Add support for exceptions - like catching them inside the event loop (recommended by Nokia)
