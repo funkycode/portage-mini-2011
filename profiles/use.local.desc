@@ -4919,6 +4919,8 @@ www-servers/nginx:nginx_modules_mail_pop3 - Enables POP3 proxy support
 www-servers/nginx:nginx_modules_mail_smtp - Enables SMTP proxy support
 www-servers/ocsigen:ocamlduce - Enables ocamlduce XML typechecking for generated web pages
 www-servers/pound:dynscaler - Enable dynamic rescaling of back-end priorities
+www-servers/pshs:magic - Enable automatic detection of Content-Type using libmagic (sys-apps/file)
+www-servers/pshs:upnp - Enable port forwarding using UPnP via net-libs/miniupnpc
 www-servers/resin:admin - Enable Resin admin webapp
 www-servers/tomcat:admin - Enable Tomcat admin webapp
 x11-apps/ardesia:cwiid - cwiid support: collection of Linux tools written in C for interfacing to the Nintendo Wiimote.
