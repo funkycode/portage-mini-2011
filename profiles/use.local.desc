@@ -844,6 +844,7 @@ app-text/yagf:cuneiform - Enable support for the app-text/cuneiform OCR engine.
 app-text/yagf:tesseract - Enable support for the tesseract OCR engine
 app-vim/gentoo-syntax:ignore-glep31 - Remove GLEP 31 (UTF-8 file encodings) settings
 app-vim/vim-latex:html - Install HTML documentation
+dev-cpp/glog:gflags - Use gflags module for flag parsing
 dev-cpp/sptk:aspell - Enable support for app-text/aspell
 dev-cpp/sptk:excel - Enable Excel support
 dev-cpp/xsd:ace - Enable support for serializing to/from an ACE CDR stream
