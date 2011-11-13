@@ -846,6 +846,8 @@ app-text/yagf:tesseract - Enable support for the tesseract OCR engine
 app-vim/gentoo-syntax:ignore-glep31 - Remove GLEP 31 (UTF-8 file encodings) settings
 app-vim/vim-latex:html - Install HTML documentation
 dev-cpp/glog:gflags - Use gflags module for flag parsing
+dev-cpp/pficommon:fcgi - Build FCGI feature
+dev-cpp/pficommon:mprpc - Build MessagePack RPC feature
 dev-cpp/sptk:aspell - Enable support for app-text/aspell
 dev-cpp/sptk:excel - Enable Excel support
 dev-cpp/xsd:ace - Enable support for serializing to/from an ACE CDR stream
@@ -2667,6 +2669,8 @@ media-sound/squeezeboxserver:aac - Enable playback support for AAC (.m4a) encode
 media-sound/squeezeslave:display - Enable a text-based display
 media-sound/squeezeslave:wma - Enable support for streaming Windows Media Audio
 media-sound/squeezeslave:zones - Pairs surround sound speakers into stereo zones (requires 5.1 setup or better)
+media-sound/tomahawk:resolver - Resolver download and installation integration
+media-sound/tomahawk:twitter - Enable twitter support
 media-sound/traverso:lv2 - Add support for Ladspa V2
 media-sound/vorbis-tools:kate - Adds support for Ogg Kate subtitles via libkate.
 media-sound/vorbis-tools:ogg123 - Build ogg123 player, needs libao and curl
@@ -4214,6 +4218,7 @@ sci-geosciences/googleearth:qt-bundled - Use bundled Qt4 libraries instead of sy
 sci-geosciences/gpsd:ntp - Enable net-misc/ntp shared memory interface and PPS kernel support for GPS time
 sci-geosciences/grass:gmath - Enable gmath wrapper for BLAS/Lapack (virtual/blas, virtual/lapack)
 sci-geosciences/mapnik:gdal - Enable sci-libs/gdal library support
+sci-geosciences/mapnik:nobfonts - Enable Dejavu fonts instead of built-in fonts
 sci-geosciences/mapserver:gdal - Enable sci-libs/gdal library support
 sci-geosciences/mapserver:geos - Enable sci-libs/geos library support
 sci-geosciences/mapserver:postgis - Enable dev-db/postgis support
