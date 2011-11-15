@@ -597,17 +597,20 @@ app-misc/recoll:audio - Index audio files
 app-misc/recoll:camelcase - Enable indexing for camelCase sentences and words
 app-misc/recoll:chm - Index chm files
 app-misc/recoll:dvi - Index dvi files
-app-misc/recoll:gs - Index PostScript files
-app-misc/recoll:ics - Index icalendar files
+app-misc/recoll:ics - Index iCalendar files
 app-misc/recoll:info - Index GNU info files
-app-misc/recoll:inotify - Use the Linux Kenrel notification subsystem for monitoring file alterations
+app-misc/recoll:inotify - Use the Linux Kenrel notification subsystem for monitoring file alterations in realtime
 app-misc/recoll:lyx - Index Latex lyx files
 app-misc/recoll:msdoc - Index Microsoft Word documents
-app-misc/recoll:msppt - Index Microsoft Power Point documents
+app-misc/recoll:msppt - Index Microsoft PowerPoint documents
 app-misc/recoll:msxls - Index Microsoft Excel documents
+app-misc/recoll:pdf - Index PDF documents
+app-misc/recoll:ps - Index PostScript files
 app-misc/recoll:rtf - Index Microsoft RTF documents
-app-misc/recoll:tex - Index Tex files
-app-misc/recoll:wordperfect - Index wordperfect documents
+app-misc/recoll:session - Stop monitoring file alterations when X11 session terminates
+app-misc/recoll:tex - Index TeX files
+app-misc/recoll:wordperfect - Index WordPerfect documents
+app-misc/recoll:xml - Index several XML-based formats (Abiword, FictionBook, Kword, Office OpenXML, OpenDocument, SVG)
 app-misc/roadnav:festival - Enable support for app-accessibility/festival
 app-misc/roadnav:flite - Enable support for app-accessibility/flite (festival-lite)
 app-misc/roadnav:openstreetmap - Enable openstreetmap support
@@ -3087,6 +3090,11 @@ net-analyzer/echoping:smtp - enable support for SMTP protocol.
 net-analyzer/echoping:tos - enable support for TOS (TYpe Of Service).
 net-analyzer/fprobe:messages - enable console messages
 net-analyzer/hydra:ncp - NCP protocol (NetWare) support through net-fs/ncpfs
+net-analyzer/icinga:api - Adds support for the icinga API
+net-analyzer/icinga:idoutils - Adds DB support
+net-analyzer/icinga:lighttpd - Adds Lighttpd support
+net-analyzer/icinga:plugins - Adds support for nagios plugins
+net-analyzer/icinga:web - Adds generic web interface support
 net-analyzer/lilac:nmap - Installs nmap which can be used to automatically discover devices to monitor.
 net-analyzer/linkchecker:bookmarks - Mozilla Bookmark parsing
 net-analyzer/linkchecker:login - login form submission

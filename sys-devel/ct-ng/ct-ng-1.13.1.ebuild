@@ -1,6 +1,6 @@
 # Copyright 1999-2011 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/sys-devel/ct-ng/ct-ng-1.12.2.ebuild,v 1.1 2011/09/11 23:10:55 blueness Exp $
+# $Header: /var/cvsroot/gentoo-x86/sys-devel/ct-ng/ct-ng-1.13.1.ebuild,v 1.1 2011/11/14 17:45:12 blueness Exp $
 
 EAPI="4"
 
