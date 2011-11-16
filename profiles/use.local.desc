@@ -1509,6 +1509,7 @@ dev-tex/latex-beamer:lyx - Install with app-office/lyx layouts
 dev-util/anjuta:devhelp - Enable devhelp integration
 dev-util/anjuta:glade - Build glade plugin for anjuta
 dev-util/anjuta:introspection - Use dev-libs/gobject-introspection for introspection
+dev-util/anjuta:packagekit - Use packagekit to search for missing tools
 dev-util/anjuta:sourceview - Build sourceview editing plugin for anjuta
 dev-util/anjuta:vala - Enable support for the Vala programming language
 dev-util/astyle:libs - builds and installs both shared and static library interfaces
@@ -4760,6 +4761,8 @@ sys-libs/gdbm:berkdb - enable compatibility layer for UNIX-like dbm and ndbm int
 sys-libs/gdbm:exporter - enable gdbmexport binary for exporting data from gdbm-1.8 databases into gdbm-1.9
 sys-libs/glibc:glibc-omitfp - Configure glibc with --enable-omitfp which lets the build system determine when it is safe to use -fomit-frame-pointer
 sys-libs/gwenhywfar:fox - Use x11-libs/fox graphical toolkit
+sys-libs/libosinfo:introspection - Use dev-libs/gobject-introspection for introspection
+sys-libs/libosinfo:vala - Enable bindings for dev-lang/vala
 sys-libs/ncurses:ada - Add bindings for the ADA programming language
 sys-libs/ncurses:trace - Enable test trace() support in ncurses calls
 sys-libs/pam:audit - Enable support for sys-process/audit
