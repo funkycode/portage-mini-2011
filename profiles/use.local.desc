@@ -510,6 +510,7 @@ app-i18n/ibus-mozc:scim - Enable support for app-i18n/scim
 app-i18n/ibus-pinyin:boost - Compile against dev-libs/boost libraries
 app-i18n/ibus-pinyin:opencc - Enable support for app-i18n/opencc
 app-i18n/ibus-table-xingma:extra-phrases - Add extra phrases into builded Engine
+app-i18n/ibus-unikey:gtk3 - Enable support for gtk+3
 app-i18n/im-ja:anthy - Support for Anthy input method
 app-i18n/im-ja:skk - Support for SKK input method
 app-i18n/imsettings:xfconf - Enable integration in the Xfce desktop environment with xfce-base/xfconf
@@ -4280,6 +4281,7 @@ sci-libs/gerris:dx - Enable support for sci-visualization/opendx
 sci-libs/getdata:fortran - Build fortran bindings
 sci-libs/getdata:python - Build python bindings
 sci-libs/gsl:cblas-external - Link gsl with external cblas provided by (virtual/cblas) instead of shipped internal version
+sci-libs/hdf5:fortran2003 - enable new features that require Fortran 2003 (http://www.hdfgroup.org/HDF5/doc/fortran/NewFeatures_F2003.pdf)
 sci-libs/indilib:fits - Enable support for the FITS image format through cfitsio
 sci-libs/indilib:nova - Enable support for nova celestial mechanics calculations
 sci-libs/libcmatrix:atlas - Use of atlas blas implementation
