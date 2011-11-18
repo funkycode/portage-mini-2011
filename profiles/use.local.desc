@@ -1055,6 +1055,7 @@ dev-java/rxtx:lfd - Installs and uses LockFileServer daemon (lfd)
 dev-java/sun-jdk:derby - Enable Installation of Bundled Derby (Java DB)
 dev-java/sun-jdk:jce - Enable Java Cryptographic Extension Unlimited Strength Policy files
 dev-java/sun-jre-bin:jce - Enable Java Cryptographic Extension Unlimited Strength Policy files
+dev-java/swt:webkit - Embedded browser support via net-libs/webkit-gtk:2, replacing former xulrunner-based browser.
 dev-java/swt:xulrunner - Embedded browser support via xulrunner-1.9 (1.8 for swt-3.3). Xulrunner 2.0 is not supported, will be replaced by webkit in 3.7.
 dev-lang/bas:lr0 - Use the LR0 parser instead of the recursive descending parser
 dev-lang/erlang:halfword - Enable halfword emulator
@@ -1641,7 +1642,6 @@ games-arcade/lbreakout2:themes - Install additional themes
 games-arcade/moleinvasion:music - Download and install the music files
 games-arcade/slimevolley:net - Enable network support
 games-arcade/smc:music - Download and install the music files
-games-arcade/stepmania:force-oss - Force using OSS
 games-arcade/triplexinvaders:psyco - psyco python accelerator
 games-arcade/tuxanci:physfs - Use dev-games/physfs instead of dev-libs/libzip to load compressed data
 games-arcade/tuxanci:sound - Enable sound
@@ -2862,6 +2862,17 @@ media-video/libav:vis - Adds support for SIMD optimizations for UltraSPARC proce
 media-video/libav:vpx - Enable vp8 encoding support using libvpx.
 media-video/lives:libvisual - Enable libvisual support
 media-video/mjpegtools:sdlgfx - Enables y4mhist to display a graphical histogram
+media-video/mjpg-streamer:input_control - Plugin giving ability to control camera movement (only specific cameras)
+media-video/mjpg-streamer:input_file - Plugin that watches given directory and send it's content
+media-video/mjpg-streamer:input_testpicture - Plugin for sending compiled in, test pictures
+media-video/mjpg-streamer:input_uvc - Plugin that sends video stream from UVC compatible camera
+media-video/mjpg-streamer:output_autofocus - Auto focusing plugin
+media-video/mjpg-streamer:output_file - Plugin that saves received content under given location
+media-video/mjpg-streamer:output_http - Small HTTP server plugin which sends WWW directory content and streams image content
+media-video/mjpg-streamer:output_rtsp - Plugin which provides a mechanism to take snapshots with a trigger from a UDP packet
+media-video/mjpg-streamer:output_udp - Plugin receiving content over UDP and storing to a directory
+media-video/mjpg-streamer:v4l - Uses media-libs/libv4l function mapping for input_uvc plugin
+media-video/mjpg-streamer:www - Installs WWW content
 media-video/motiontrack:multiprocess - Enables multi-process support (SMP/cluster) for motiontrack programs
 media-video/mplayer:3dnowext - Enable 3dnowext cpu instructions
 media-video/mplayer:amr - Enables Adaptive Multi-Rate format support
