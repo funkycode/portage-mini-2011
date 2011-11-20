@@ -1529,7 +1529,10 @@ dev-util/cppcheck:htmlreport - install cppcheck-htmlreport
 dev-util/ctags:ada - Enable Ada support
 dev-util/dialog:minimal - Disable library, install command-line program only
 dev-util/geany:vte - Enable Terminal support (x11-libs/vte)
+dev-util/geany-plugins:debugger - Enable the debugger plugin which interfaces with sys-devel/gdb
+dev-util/geany-plugins:devhelp - Enable the devhelp plugin which integrates dev-util/devhelp
 dev-util/geany-plugins:enchant - Enable spell checking using enchant
+dev-util/geany-plugins:gpg - Enable geanypg plugin which integrates GPG using app-crypt/gpgme
 dev-util/geany-plugins:gtkspell - Use gtkspell for dictionary support
 dev-util/geany-plugins:soup - Enable updatechecker plugin which requires net-libs/libsoup
 dev-util/geany-plugins:webkit - Enable webhelper plugin which requires net-libs/webkit-gtk
@@ -1788,6 +1791,7 @@ gnome-base/gvfs:archive - Enables support for accessing files in archives transp
 gnome-base/gvfs:bluray - Enable playback of Blu-ray filesystems using media-libs/libbluray
 gnome-base/gvfs:fuse - Enables fuse mount points in $HOME/.gvfs for legacy application access
 gnome-base/gvfs:gdu - Enable sys-apps/gnome-disk-utility integration
+gnome-base/gvfs:gnome - Enable support for reading settings from gnome-base/gconf and for the special network:/// URL
 gnome-base/gvfs:http - Enable the HTTP/DAV backend using net-libs/libsoup-gnome
 gnome-base/gvfs:udev - Enable udev base replacement code for cdda feature
 gnome-base/libgnomecanvas:glade - Enable glade support
@@ -2570,7 +2574,7 @@ media-sound/gmpc:xspf - Enable support for reading and saving XSPF playlists
 media-sound/gmusicbrowser:webkit - Enables gtk WebKit support
 media-sound/google-musicmanager:log - Enables advanced logging through dev-libs/log4cxx
 media-sound/gpodder:webkit - Enable the webkit rendering engine for HTML episode shownotes
-media-sound/guayadeque:indicate - App indicator support via dev-libs/libindicate
+media-sound/guayadeque:ayatana - Build in support for Ayatana notification using the libindicate plugin.
 media-sound/herrie:http - Enable http streaming
 media-sound/herrie:xspf - Enable support for reading and saving XSPF playlists
 media-sound/hydrogen:archive - Use libarchive instead of libtar
@@ -3369,7 +3373,7 @@ net-im/centerim:gadu - Enable support for the Gadu-Gadu protocol
 net-im/centerim:irc - Enable support for the IRC protocol
 net-im/centerim:lj - Enable support for the LiveJournal weblog system
 net-im/centerim:otr - Enable encrypted conversations
-net-im/choqok:indicate - Support for dev-libs/libindicate-qt notifications
+net-im/choqok:ayatana - Build in support for Ayatana notification using the libindicate-qt plugin.
 net-im/climm:otr - Enable encrypted conversations
 net-im/ejabberd:captcha - Support for CAPTCHA Forms (XEP-158)
 net-im/ejabberd:mod_irc - Build irc gateway
@@ -4997,6 +5001,7 @@ x11-base/xorg-server:xnest - Build the Xnest server
 x11-base/xorg-server:xorg - Build the Xorg X server (HIGHLY RECOMMENDED)
 x11-base/xorg-server:xvfb - Build the Xvfb server
 x11-drivers/ati-drivers:modules - Build the kernel modules
+x11-drivers/ati-drivers:opencl - Install OpenCL libraries
 x11-drivers/ati-drivers:qt4 - Install qt4 dependent optional tools (e.g Catalyst Control Panel)
 x11-drivers/xf86-video-intel:sna - Enable SandyBridge's New Acceleration (useful on all chipsets, not just SandyBridge)
 x11-drivers/xf86-video-qxl:xspice - Build the xspice driver
