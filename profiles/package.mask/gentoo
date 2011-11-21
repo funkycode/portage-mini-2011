@@ -1,5 +1,5 @@
 ####################################################################
-# $Header: /var/cvsroot/gentoo-x86/profiles/package.mask,v 1.13263 2011/11/20 15:20:05 eras Exp $
+# $Header: /var/cvsroot/gentoo-x86/profiles/package.mask,v 1.13271 2011/11/20 22:48:03 eva Exp $
 #
 # When you add an entry to the top of this file, add your name, the date, and
 # an explanation of why something is getting masked. Please be extremely
@@ -30,6 +30,11 @@
 ## app-misc/some-package
 
 #--- END OF EXAMPLES ---
+
+# Andreas K. Huettel <dilfridge@gentoo.org> (20 Nov 2011)
+# Not released yet
+~app-office/calligra-2.3.84
+~app-office/calligra-l10n-2.3.84
 
 # Eray Aslan <eras@gentoo.org> (20 Nov 2011)
 # Abandoned project. Historical standard. Use one of the DKIM
@@ -323,6 +328,7 @@ app-emacs/rst
 >=net-libs/gupnp-av-0.10.1
 >=net-libs/gupnp-igd-0.2
 >=net-misc/rygel-0.12.0
+>=net-libs/gupnp-vala-0.10
 
 # Tim Harder <radhermit@gentoo.org> (19 Sep 2011)
 # Mask development releases
@@ -594,13 +600,6 @@ dev-php/roadsend-php
 # Masking beta version
 =dev-php5/pecl-memcached-2.0.0_beta2
 
-# Andreas K. Hüttel <dilfridge@gentoo.org> (21 Aug 2011)
-# Starting with version 4.2, net-libs/libfwbuilder is integrated
-# into net-firewall/fwbuilder (its only reverse dep). Mask
-# libfwbuilder and the old fwbuilder version for removal.
-net-libs/libfwbuilder
-=net-firewall/fwbuilder-3.0.7
-
 # Alexis Ballier <aballier@gentoo.org> (20 Aug 2011)
 # dev-tex/pdftex-1.40.11 is 100% identical to the one in TeX Live 2010;
 # TeX Live 2011 has a newer version, which makes the standalone package useless;
@@ -721,6 +720,7 @@ gnome-extra/office-runner
 >=gnome-base/gnome-3.0
 # Misc applications
 >=gnome-extra/nautilus-open-terminal-0.19
+>=app-mobilephone/gnome-phone-manager-0.67
 
 # Jorge Manuel B. S. Vicetto <jmbsvicetto@gentoo.org> (28 Jul 2011)
 # A new update of the mysql / mariadb mask
@@ -733,10 +733,6 @@ gnome-extra/office-runner
 =virtual/mysql-5.2*
 =dev-db/mariadb-5.3*
 =virtual/mysql-5.3*
-
-# Gilles Dartiguelongue <eva@gentoo.org> (24 Jul 2011)
-# Mask development release
-=dev-libs/json-glib-0.13*
 
 # Peter Volkov <pva@gentoo.org> (23 Jul 2001)
 # Mask release candidates
@@ -812,6 +808,7 @@ gnome-extra/sushi
 >=net-libs/gnome-online-accounts-3
 >=x11-libs/libcryptui-3
 >=x11-misc/alacarte-0.13.2-r50
+>=app-accessibility/accerciser-3.2
 
 # Diego E. Pettenò <flameeyes@gentoo.org> (8 Jun 2011)
 # Broken upstream
@@ -899,12 +896,6 @@ dev-util/perf
 # Emacs live ebuilds. Use at your own risk.
 ~app-editors/emacs-vcs-23.3.9999
 ~app-editors/emacs-vcs-24.0.9999
-
-# Gilles Dartiguelongue <eva@gentoo.org> (23 Feb 2011)
-# Masked for removal due to libgnome ABI breakage
-# See bug #348644.
-=games-arcade/monster-masher-1.8.1
-=games-puzzle/gtetrinet-0.7.11
 
 # Ryan Hill <dirtyepic@gentoo.org> (30 Mar 2011)
 # Masked indefinitely (until 0.40 is released).
