@@ -20,7 +20,7 @@
    always a description without a lang attribute. Also there are no overlapping
    descriptions allowed (multiple description tags with the same language)
 
-   $Header: /var/cvsroot/gentoo/xml/htdocs/proj/en/metastructure/herds/herds.xml,v 1.876 2011/11/17 20:36:27 swift Exp $
+   $Header: /var/cvsroot/gentoo/xml/htdocs/proj/en/metastructure/herds/herds.xml,v 1.878 2011/11/22 18:47:13 pacho Exp $
 
 -->
 <herds>
@@ -147,10 +147,6 @@
   <maintainer>
     <email>robbat2@gentoo.org</email>
       <name>Robin H. Johnson</name>
-  </maintainer>
-  <maintainer>
-    <email>vanquirius@gentoo.org</email>
-    <name>Marcelo Goes</name>
   </maintainer>
   <maintainer>
           <email>c1pher@gentoo.org</email>
@@ -1334,10 +1330,6 @@
     <name>Stuart Longland</name>
   </maintainer>
   <maintainer>
-    <email>ricmm@gentoo.org</email>
-    <name>Ricardo Mendoza</name>
-  </maintainer>
-  <maintainer>
     <email>alexxy@gentoo.org</email>
     <name>Alexey Shvetsov</name>
   </maintainer>
@@ -1740,10 +1732,6 @@
     <name>Luca Barbato</name>
   </maintainer>
   <maintainer>
-    <email>vanquirius@gentoo.org</email>
-    <name>Marcelo Goes</name>
-  </maintainer>
-  <maintainer>
     <email>maekke@gentoo.org</email>
     <name>Markus Meier</name>
   </maintainer>
@@ -1979,10 +1967,6 @@
   <maintainer>
     <email>vapier@gentoo.org</email>
     <role>netcat and a small handful of packages</role>
-  </maintainer>
-  <maintainer>
-    <email>vanquirius@gentoo.org</email>
-    <name>Marcelo Goes</name>
   </maintainer>
   <maintainer>
     <email>pva@gentoo.org</email>
