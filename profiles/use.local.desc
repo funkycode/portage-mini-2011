@@ -3472,6 +3472,11 @@ net-im/qutim:mrim - Enable mrim plugin
 net-im/qutim:vkontakte - Enable vkontakte plugin
 net-im/qutim:yandexnarod - Enable yanderx.narod plugin
 net-im/skype:qt-static - Installs binaries statically linked to Qt
+net-im/telepathy-connection-managers:irc - Enable Internet Relay Chat (IRC) support.
+net-im/telepathy-connection-managers:jabber - Enable XMPP protocol handler (this is also Google Talk).
+net-im/telepathy-connection-managers:sip - Enable SIP/SIMPLE messaging and calling.
+net-im/telepathy-connection-managers:yahoo - Enable Yahoo! messaging support.
+net-im/telepathy-connection-managers:zeroconf - Enable Link-Local Messaging via the zeroconf or Bonjour protocol.
 net-im/telepathy-logger:introspection - Use dev-libs/gobject-introspection for introspection
 net-im/telepathy-mission-control:upower - Use sys-power/upower to detect suspend and resume
 net-im/tkabber:extras - Enables extra non official patches
@@ -4125,11 +4130,6 @@ net-voip/ekiga:static - Statically link to opal and ptlib
 net-voip/ekiga:xcap - Enable XML Configuration Access Protocal
 net-voip/linphone:video - Enable video support (display/capture)
 net-voip/sflphone:iax - Support for IAX (Inter Asterisk eXchange)
-net-voip/telepathy-connection-managers:irc - Enable Internet Relay Chat (IRC) support.
-net-voip/telepathy-connection-managers:jabber - Enable XMPP protocol handler (this is also Google Talk).
-net-voip/telepathy-connection-managers:sip - Enable SIP/SIMPLE messaging and calling.
-net-voip/telepathy-connection-managers:yahoo - Enable Yahoo! messaging support.
-net-voip/telepathy-connection-managers:zeroconf - Enable Link-Local Messaging via the zeroconf or Bonjour protocol.
 net-voip/yate:h323 - Build H.323 Channel plugin
 net-voip/yate:ilbc - Build ILBC codec plugin
 net-voip/yate:sctp - Support for Stream Control Transmission Protocol
@@ -4475,6 +4475,7 @@ sys-apps/memtest86:serial - Compile with serial console support
 sys-apps/memtest86+:floppy - Install a script to create floppy disks containing memtest86+ binaries.
 sys-apps/memtest86+:serial - Compile with serial console support
 sys-apps/moreutils:perl - Install scripts written in Perl
+sys-apps/net-tools:old-output - use old ifconfig output style (useful for when new output breaks scripts)
 sys-apps/pacman:gpg - Support verifying packages signed with GPG using app-crypt/gpgme
 sys-apps/paludis:pbins - Enable binary package support. Adds dependency upon app-arch/libarchive
 sys-apps/paludis:pink - Use a less boring colourscheme than the default
