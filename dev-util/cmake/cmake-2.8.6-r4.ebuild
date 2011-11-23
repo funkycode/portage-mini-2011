@@ -1,6 +1,6 @@
 # Copyright 1999-2011 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/dev-util/cmake/cmake-2.8.6-r3.ebuild,v 1.1 2011/10/30 23:09:30 dilfridge Exp $
+# $Header: /var/cvsroot/gentoo-x86/dev-util/cmake/cmake-2.8.6-r4.ebuild,v 1.1 2011/11/22 22:15:19 dilfridge Exp $
 
 EAPI=4
 
@@ -56,7 +56,7 @@ PATCHES=(
 	"${FILESDIR}"/${PN}-2.8.3-more-no_host_paths.patch
 	"${FILESDIR}"/${PN}-2.8.3-ruby_libname.patch
 	"${FILESDIR}"/${PN}-2.8.4-FindBoost.patch
-	"${FILESDIR}"/${PN}-2.8.6-FindBLAS.patch
+	"${FILESDIR}"/${PN}-2.8.6-FindBLAS-2.patch
 	"${FILESDIR}"/${PN}-2.8.6-FindLAPACK-2.patch
 	"${FILESDIR}"/${PN}-2.8.6-CodeBlocks.patch
 )
@@ -83,14 +83,20 @@ cmake_src_test() {
 	# fix OutDir test
 	# this is altered thanks to our eclass
 	sed -i -e 's:#IGNORE ::g' "${S}"/Tests/OutDir/CMakeLists.txt || die
+
 	pushd "${CMAKE_BUILD_DIR}" > /dev/null
+
+	local ctestargs
+	[[ -n ${TEST_VERBOSE} ]] && ctestargs="--extra-verbose --output-on-failure"
+
 	# Excluded tests:
 	#    BootstrapTest: we actualy bootstrap it every time so why test it.
 	#    SimpleCOnly_sdcc: sdcc choke on global cflags so just skip the test
 	#        as it was never intended to be used this way.
-	"${CMAKE_BUILD_DIR}"/bin/ctest \
+	"${CMAKE_BUILD_DIR}"/bin/ctest ${ctestargs} \
 		-E BootstrapTest SimpleCOnly_sdcc \
 		|| die "Tests failed"
+
 	popd > /dev/null
 }
 

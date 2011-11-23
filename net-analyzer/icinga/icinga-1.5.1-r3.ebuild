@@ -1,6 +1,6 @@
 # Copyright 1999-2011 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/net-analyzer/icinga/icinga-1.5.1-r2.ebuild,v 1.1 2011/11/21 23:54:06 prometheanfire Exp $
+# $Header: /var/cvsroot/gentoo-x86/net-analyzer/icinga/icinga-1.5.1-r3.ebuild,v 1.2 2011/11/22 21:06:50 prometheanfire Exp $
 
 EAPI=2
 
@@ -97,7 +97,7 @@ src_configure() {
 	myconf2="--bindir=/usr/sbin
 	--sbindir=/usr/$(get_libdir)/icinga/cgi-bin
 	--datarootdir=/usr/share/icinga/htdocs
-	--localstatedir=/var/icinga
+	--localstatedir=/var/lib/icinga
 	--sysconfdir=/etc/icinga"
 
 	if use plugins ; then
@@ -149,7 +149,7 @@ src_install() {
 
 	emake DESTDIR="${D}" install{,-config,-commandmode} || die
 
-	sed -i -e 's/icinga\/icinga.lock/run\/icinga\/icinga.lock/g' "${D}"/etc/icinga/icinga.cfg || die
+	sed -i -e 's/var\/lib\/icinga\/icinga.lock/var\/run\/icinga\/icinga.lock/g' "${D}"/etc/icinga/icinga.cfg || die
 	sed -i -e 's/var\/icinga\/icinga.tmp/tmp\/icinga\/icinga.tmp/g' "${D}"/etc/icinga/icinga.cfg || die
 
 	if use idoutils ; then
@@ -159,7 +159,7 @@ src_install() {
 		 emake DESTDIR="${D}" install-api || die
 	fi
 
-	newinitd "${FILESDIR}"/icinga-init.d icinga || die
+	newinitd "${FILESDIR}"/icinga-init.d-2 icinga || die
 	newconfd "${FILESDIR}"/icinga-conf.d icinga || die
 	if use idoutils ; then
 		newinitd "${FILESDIR}"/ido2db-init.d ido2db || die
@@ -190,10 +190,10 @@ src_install() {
 	fowners icinga:icinga /var/run/icinga || die
 
 	keepdir /etc/icinga
-	keepdir /var/icinga
-	keepdir /var/icinga/archives
-	keepdir /var/icinga/rw
-	keepdir /var/icinga/spool/checkresults
+	keepdir /var/lib/icinga
+	keepdir /var/lib/icinga/archives
+	keepdir /var/lib/icinga/rw
+	keepdir /var/lib/icinga/spool/checkresults
 
 	if use apache2 ; then
 		webserver=apache
@@ -203,10 +203,10 @@ src_install() {
 		webserver=icinga
 	fi
 
-	fowners icinga:icinga /var/icinga || die "Failed chown of /var/icinga"
-	fowners -R icinga:${webserver} /var/icinga/rw || die "Failed chown of /var/icinga/rw"
+	fowners icinga:icinga /var/lib/icinga || die "Failed chown of /var/lib/icinga"
+	fowners -R icinga:${webserver} /var/lib/icinga/rw || die "Failed chown of /var/lib/icinga/rw"
 
-	fperms 6755 /var/icinga/rw || die "Failed Chmod of ${D}/var/icinga/rw"
+	fperms 6755 /var/lib/icinga/rw || die "Failed Chmod of ${D}/var/lib/icinga/rw"
 	fperms 0750 /etc/icinga || die "Failed chmod of ${D}/etc/icinga"
 }
 
@@ -219,4 +219,7 @@ pkg_postinst() {
 	elog "will not be happy as it relies on accessing the proc"
 	elog "filesystem. You can fix this by adding icinga into"
 	elog "the group wheel, but this is not recomended."
+	elog
+	elog "/var/icinga was moved to /var/lib/icinga"
+	elog "please move the file if this was an upgrade"
 }
