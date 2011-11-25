@@ -646,6 +646,10 @@ app-misc/tracker:playlist - Add support for playlists
 app-misc/tracker:strigi - Add support for app-misc/strigi search engine.
 app-misc/tracker:thunderbird - Install email data miner plugin for mail-client/thunderbird and mail-client/thunderbird-bin
 app-misc/tracker:upnp - Add support for video extraction via media-libs/gupnp-dlna.
+app-misc/vifm:compatibility - Compatibility with previous versions of vifm
+app-misc/vifm:extended-keys - Support for extended keys (arrows, home etc)
+app-misc/vifm:magic - Use libmagic to determine mimetypes
+app-misc/vifm:vim-plugin - Install the vifm vim plugin
 app-misc/worker:avfs - Enable support for sys-fs/avfs
 app-misc/workrave:distribution - Enable networking. See http://www.workrave.org/features/
 app-mobilephone/gammu:irda - Enables infrared support
@@ -1034,6 +1038,7 @@ dev-java/icedtea:systemtap - Enable SystemTap probes in HotSpot.
 dev-java/icedtea:webstart - Enable Web Start support (via NetX).
 dev-java/icedtea:xrender - Enable support for using XRender with the AWT libraries.
 dev-java/icedtea:zero - Enable the zero assembler port of HotSpot.
+dev-java/icedtea-web:javascript - Enable support for using proxy auto config (PAC) files.
 dev-java/icedtea-web:nsplugin - Enable the browser plugin (NPPlugin).
 dev-java/itext:rtf - Build and provide libraries for rich text format
 dev-java/itext:rups - Build and provide GUI for Reading/Updating PDF Syntax

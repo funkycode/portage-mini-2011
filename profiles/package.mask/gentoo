@@ -1,5 +1,5 @@
 ####################################################################
-# $Header: /var/cvsroot/gentoo-x86/profiles/package.mask,v 1.13276 2011/11/22 16:56:40 jer Exp $
+# $Header: /var/cvsroot/gentoo-x86/profiles/package.mask,v 1.13282 2011/11/24 20:02:18 tetromino Exp $
 #
 # When you add an entry to the top of this file, add your name, the date, and
 # an explanation of why something is getting masked. Please be extremely
@@ -30,6 +30,25 @@
 ## app-misc/some-package
 
 #--- END OF EXAMPLES ---
+
+# Alexandre Rostovtsev <tetromino@gentoo.org> (24 Nov 2011)
+# GNOME 2 versions of seed are largely untested
+<dev-libs/seed-3.2
+
+# Naohiro Aota <naota@gentoo.org> (24 Nov 2011)
+# Masked for removal in 30 days
+# due to end of support (upstream) and
+# security issue: bug 390769
+app-text/chasen
+app-dicts/ipadic
+dev-ruby/ruby-chasen
+
+# Pacho Ramos <pacho@gentoo.org> (23 Nov 2011)
+# Upstream stopped their development and support for a long
+# time, they are not compatible with recent monodevelop versions.
+# See bug #389473. Removal in 30 days.
+dev-util/monodevelop-boo
+dev-util/monodevelop-debugger-mdb
 
 # Pacho Ramos <pacho@gentoo.org> (22 Nov 2011)
 # Mozilla dropped support for it and nothing uses it in
@@ -92,11 +111,6 @@ net-misc/emphetamine
 # Christoph Junghans <ottxor@gentoo.org> (15 Nov 2011)
 # current version of google-talkplugin never clear what you get
 =www-plugins/google-talkplugin-9999
-
-# Ian Stakenvicius <axs@gentoo.org> (15 Nov 2011)
-# Masking this version until spidermonkey-1.8.5 can be unmasked
-# (tracker bug 376987)
-=app-accessibility/edbrowse-3.4.8
 
 # Alexandre Rostovtsev <tetromino@gentoo.org> (13 Nov 2011)
 # Fails to build or run with >=opencv-2.3. Incompatible with pyatspi-2.2 (and
@@ -177,9 +191,7 @@ x11-themes/polyester
 # Jeroen Roovers <jer@gentoo.org> (04 Nov 2011)
 # Masked www-client/opera snapshots
 # http://my.opera.com/desktopteam/blog/2011/11/04/opera-11-60
-=www-client/opera-11.60.1150
-=www-client/opera-11.60.1159
-=www-client/opera-11.60.1163
+>www-client/opera-11.60.1147
 
 # Alexis Ballier <aballier@gentoo.org> (04 Nov 2011)
 # Pre-releases of vlc 1.2. Mask it until final version is out
@@ -256,10 +268,6 @@ games-strategy/dark-oberon
 # Masked for removal on 20 Nov 2011
 net-misc/x25_utils
 
-# Matt Turner <mattst88@gentoo.org> (19 Oct 2011)
-# pygobject:3 is masked. Remove this mask when pygobject:3 is unmasked.
->=gnome-extra/gnome-dvb-daemon-0.2.3
-
 # Alexandre Rostovtsev <tetromino@gentoo.org> (19 Oct 2011)
 # Requires nautilus[introspection] to run
 >=dev-python/nautilus-python-1.0
@@ -330,11 +338,6 @@ dev-perl/perl-PBS
 # soprano-2.[67].1 as it introduces major breakage.
 ~dev-libs/soprano-2.6.1
 ~dev-libs/soprano-2.7.1
-
-# Ulrich Mueller <ulm@gentoo.org> (26 Sep 2011)
-# Included in app-editors/emacs-23 and later.
-# Masked for removal in 30 days, bug 384561.
-app-emacs/rst
 
 # Olivier Crete <tester@gentoo.org> (20 Sep 2011)
 # Masked because the API was broken and it will  causes crashes in 
@@ -769,10 +772,6 @@ gnome-extra/office-runner
 # fails with libjpeg-turbo on tests
 >=dev-tcltk/tkimg-1.5_pre324
 
-# Nirbheek Chauhan <nirbheek@gentoo.org> (03 Jul 2011)
-# Mask js185 release, changes pkgconfig file, soname, etc
->=dev-lang/spidermonkey-1.8.5
-
 # Justin Lecher <jlec@gentoo.org> (27 Jun 2011)
 # Only avalable version isn't in the tree.
 # Mask until it is bumped
@@ -806,12 +805,8 @@ sci-chemistry/webmo
 app-admin/eselect-gnome-shell-extensions
 >=app-misc/tracker-0.12
 >=dev-libs/folks-0.6
->=dev-libs/gobject-introspection-1.29
->=dev-libs/gjs-1.29
 >=dev-libs/libgdata-0.9
->=dev-libs/libpeas-1.2
 >=dev-python/pyatspi-2.2
->=dev-python/pygobject-2.28.6-r50
 >=gnome-base/gconf-3.2
 >=gnome-extra/at-spi-2.2
 gnome-extra/gnome-contacts
@@ -1051,11 +1046,6 @@ net-misc/asterisk-spandsp_codec_g726
 # Doug Goldstein <cardoe@gentoo.org> (07 Jul 2010)
 # No actual Gentoo support yet. If you're interested, please see bug #295993
 net-misc/netcf
-
-# Nirbheek Chauhan <nirbheek@gentoo.org> (29 Jun 2010)
-# Mask dev-libs/seed; several ebuild issues, and missing pure-runtime deps
-# Also needs USE=introspection to be unmasked
-dev-libs/seed
 
 # Justin Lecher <jlec@gentoo.org> (16 Jun 10)
 # Just working with the masked experimental version of refmac
