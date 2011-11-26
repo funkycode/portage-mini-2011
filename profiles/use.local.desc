@@ -482,7 +482,7 @@ app-emulation/xen-tools:xend - Enable support the xend and xm to manage xen
 app-forensics/afflib:ewf - Enable libewf extra formats
 app-forensics/afflib:fuse - Enable extra fuse thingies
 app-forensics/afflib:qemu - Enable qemu stuff
-app-forensics/afflib:s3 - Enable S3
+app-forensics/afflib:s3 - Enable support for Amazon S3
 app-forensics/aide:audit - Enable support for sys-process/audit
 app-forensics/aide:prelink - Enable support for sys-devel/prelink
 app-forensics/chkrootkit:cron - Install cron script for weekly rootkit scans
@@ -4133,6 +4133,7 @@ net-voip/ekiga:shm - Enable the Shared Memory Extension from libXext
 net-voip/ekiga:static - Statically link to opal and ptlib
 net-voip/ekiga:xcap - Enable XML Configuration Access Protocal
 net-voip/linphone:video - Enable video support (display/capture)
+net-voip/sflphone:doxygen - Support for building documentation with doxygen
 net-voip/sflphone:iax - Support for IAX (Inter Asterisk eXchange)
 net-voip/yate:h323 - Build H.323 Channel plugin
 net-voip/yate:ilbc - Build ILBC codec plugin
@@ -5029,6 +5030,7 @@ x11-libs/goocanvas:introspection - Use dev-libs/gobject-introspection for intros
 x11-libs/gtk+:colord - Use x11-misc/colord for color management in printing
 x11-libs/gtk+:introspection - Use dev-libs/gobject-introspection for introspection
 x11-libs/gtk+:packagekit - Enable support for the distro-neutral package manager GUI app-admin/packagekit in application chooser
+x11-libs/gtk+extra:introspection - Use dev-libs/gobject-introspection for introspection
 x11-libs/gtkdatabox:glade - Build with libglade and glade-3 supports, which includes a glade's module for GtkDataBox widget
 x11-libs/gtkmathview:mathml - Install additional fonts for proper mathml support.
 x11-libs/gtkmathview:t1lib - Enable media-libs/t1lib support
