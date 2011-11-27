@@ -1,4 +1,4 @@
-DEFINED_PHASES=install prepare
+DEFINED_PHASES=prepare
 DEPEND=net-libs/libpcap
 DESCRIPTION=Layer Four Traceroute: an advanced traceroute implementation
 EAPI=4
@@ -8,4 +8,4 @@ LICENSE=VOSTROM
 RDEPEND=net-libs/libpcap
 SLOT=0
 SRC_URI=mirror://gentoo/lft-3.33.tar.gz
-_md5_=a0061a64d81ffaf2acb6c04c20cbce97
+_md5_=84265926e5ab69a48c8850f6f2295dd3
