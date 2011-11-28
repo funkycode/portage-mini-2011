@@ -11,4 +11,4 @@ RESTRICT=test
 SLOT=0
 SRC_URI=mirror://gnu/xnee/xnee-3.09.tar.gz
 _eclasses_=eutils	33ef77a15337022e05342d2c772a7a5a	multilib	c4883399ddd3e1d2bd291607b30fded4	portability	1d9665386ff87b70cba7f591ba27723f	toolchain-funcs	39892b66d54a54fdd2b28731b975d8bf	user	538ad22308a89d9fe0a1db60400a1807
-_md5_=8ca00c5055373ce3da6d4923651d998c
+_md5_=f84239c28481e8fa391e5d8fb8cac964
