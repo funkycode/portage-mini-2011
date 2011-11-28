@@ -7,14 +7,14 @@ https://launchpad.net/ecryptfs
 GPL-2
 eCryptfs userspace utilities
 ~amd64 ~x86
-autotools autotools-utils base eutils flag-o-matic libtool linux-info multilib pam portability python toolchain-funcs user versionator
+autotools eutils flag-o-matic libtool linux-info multilib pam portability python toolchain-funcs user versionator
 doc gpg gtk openssl pam pkcs11 python suid tpm
 
 
 
 4
 
-compile configure install postinst postrm prepare setup test unpack
+compile configure install postinst postrm prepare setup
 
 
 
