@@ -804,7 +804,6 @@ app-text/libwpd:tools - Build miscellaneous tools
 app-text/libwpg:tools - Build miscellaneous tools
 app-text/lodgeit:vim - Install a vim plugin allowing to paste and download from within vim
 app-text/mathtex:png - Generate png images by default instead of gif
-app-text/namazu:kakasi - Enable kakasi support (dev-perl/Text-Kakasi)
 app-text/pandoc:highlight - Add support for syntax highlighting with dev-haskell/highlighting-kate
 app-text/pdf2djvu:graphicsmagick - Enable media-gfx/graphicsmagick support
 app-text/pdftk:nodrm - Decrypt a document with the user_pw even if it has an owner_pw set
@@ -1208,9 +1207,7 @@ dev-libs/libburn:track-src-odirect - Read track input with O_DIRECT (see man 2 o
 dev-libs/libcdio:minimal - Only build the libcdio library and little more, just to be used to link against from multimedia players. With this USE flag enabled, none of the command-line utilities are built, nor is the CDDA library.
 dev-libs/libcgroup:daemon - Install the configuration tools and init/config files.
 dev-libs/libcgroup:tools - Install the cgroup rules processing daemon and init/config files.
-dev-libs/libdbusmenu:gtk3 - Build gtk3 version instead of using gtk2
 dev-libs/libdbusmenu:introspection - Use dev-libs/gobject-introspection for introspection
-dev-libs/libdbusmenu:vala - Enable bindings for dev-lang/vala
 dev-libs/libgdata:introspection - Use dev-libs/gobject-introspection for introspection
 dev-libs/libgee:introspection - Use dev-libs/gobject-introspection for introspection
 dev-libs/libgpg-error:common-lisp - Install common-lisp files
@@ -1496,9 +1493,6 @@ dev-scheme/kawa:servlets - Build support for generating servlets with dev-java/s
 dev-scheme/kawa:swing - Assume Swing is available
 dev-scheme/kawa:swt - Assume SWT is available with dev-java/swt
 dev-scheme/kawa:xqtests - Support XQuery Test Suite
-dev-scheme/plt-scheme:backtrace - Support GC backtrace dumps
-dev-scheme/plt-scheme:cgc - Compile and install additional executables which use the conservative garbage collector
-dev-scheme/plt-scheme:llvm - Add support for compiling to the low-level virtual machine (llvm)
 dev-scheme/racket:backtrace - Support GC backtrace dumps
 dev-scheme/racket:futures - Support for hardware parallelism for limited computations
 dev-scheme/racket:jit - Enable Just-in-Time compiler
