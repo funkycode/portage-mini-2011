@@ -14,7 +14,7 @@ static-libs
 
 4
 
-configure install prepare unpack
+configure install prepare test unpack
 
 
 
