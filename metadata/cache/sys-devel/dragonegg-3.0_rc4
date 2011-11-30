@@ -1,5 +1,5 @@
->=sys-devel/gcc-4.5.0[lto] ~sys-devel/llvm-3.0_rc4
->=sys-devel/gcc-4.5.0[lto] ~sys-devel/llvm-3.0_rc4
+|| ( sys-devel/gcc:4.5[lto] >=sys-devel/gcc-4.6 ) ~sys-devel/llvm-3.0_rc4
+|| ( sys-devel/gcc:4.5[lto] >=sys-devel/gcc-4.6 ) ~sys-devel/llvm-3.0_rc4
 0
 http://llvm.org/pre-releases/3.0/rc4/dragonegg-3.0rc4.src.tar.gz
 
