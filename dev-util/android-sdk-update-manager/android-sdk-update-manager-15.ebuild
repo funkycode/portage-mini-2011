@@ -1,12 +1,12 @@
 # Copyright 1999-2011 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/dev-util/android-sdk-update-manager/android-sdk-update-manager-12.ebuild,v 1.2 2011/11/02 21:44:03 vapier Exp $
+# $Header: /var/cvsroot/gentoo-x86/dev-util/android-sdk-update-manager/android-sdk-update-manager-15.ebuild,v 1.1 2011/11/29 20:05:22 rich0 Exp $
 
 EAPI="3"
 
 inherit eutils
 
-MY_P="android-sdk_r${PV}-linux_x86"
+MY_P="android-sdk_r${PV}-linux"
 
 DESCRIPTION="Open Handset Alliance's Android SDK"
 HOMEPAGE="http://developer.android.com"
@@ -22,7 +22,7 @@ DEPEND="app-arch/tar
 		app-arch/gzip"
 RDEPEND=">=virtual/jdk-1.5
 	>=dev-java/ant-core-1.6.5
-	=dev-java/swt-3.5*
+	>=dev-java/swt-3.5
 	amd64? ( app-emulation/emul-linux-x86-gtklibs )
 	x86? ( x11-libs/gtk+:2 )"
 
@@ -38,7 +38,7 @@ QA_DT_HASH_x86="
 "
 QA_DT_HASH_amd64="${QA_DT_HASH_x86}"
 
-S="${WORKDIR}/android-sdk-linux_x86"
+S="${WORKDIR}/android-sdk-linux"
 
 pkg_setup() {
 	enewgroup android
@@ -66,7 +66,17 @@ src_install(){
 
 	echo "PATH=\"${EPREFIX}${ANDROID_SDK_DIR}/tools:${EPREFIX}${ANDROID_SDK_DIR}/platform-tools\"" > "${T}/80${PN}" || die
 
-	SWT_PATH="`dirname \`java-config -p swt-3.5\``"
+	SWT_PATH=
+	SWT_VERSIONS="3.7 3.6 3.5"
+	for version in $SWT_VERSIONS; do
+		# redirecting stderr to /dev/null
+		# not sure if this is best, but avoids misleading error messages
+		SWT_PATH="`dirname \`java-config -p swt-\$version 2>/dev/null\` 2>/dev/null`"
+		if [ $SWT_PATH ]; then
+			einfo "SWT_PATH=$SWT_PATH selecting version $version of SWT."
+			break
+		fi
+	done
 
 	echo "ANDROID_SWT=\"${SWT_PATH}\"" >> "${T}/80${PN}" || die
 

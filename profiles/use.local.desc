@@ -2934,6 +2934,7 @@ media-video/mplayer:xanim - Enables support for xanim based codecs
 media-video/mplayer:xvmc - Enables X-Video Motion Compensation support
 media-video/mplayer:zoran - Enables ZR360[56]7/ZR36060 video output
 media-video/mplayer2:3dnowext - Enable 3dnowext cpu instructions
+media-video/mplayer2:amr - Enables Adaptive Multi-Rate format support
 media-video/mplayer2:ass - SRT/SSA/ASS (SubRip / SubStation Alpha) subtitle support
 media-video/mplayer2:bl - Blinkenlights video output
 media-video/mplayer2:bluray - Enable playback of Blu-ray filesystems
@@ -2941,6 +2942,7 @@ media-video/mplayer2:bs2b - Enable Bauer stereophonic-to-binaural headphone filt
 media-video/mplayer2:cdio - Use libcdio for CD support (instead of cdparanoia)
 media-video/mplayer2:cpudetection - Enables runtime CPU detection (useful for bindist, compatibility on other CPUs)
 media-video/mplayer2:custom-cpuopts - Fine-tune custom CPU optimizations (UNSUPPORTED)
+media-video/mplayer2:dirac - Enable Dirac video support (an advanced royalty-free video compression format) via the reference library: dirac.
 media-video/mplayer2:dvdnav - Use forked libdvdnav, navigate menus in GUIs
 media-video/mplayer2:dxr3 - Enable DXR3/H+ video output
 media-video/mplayer2:enca - Enables support for charset discovery and conversion
@@ -2959,10 +2961,13 @@ media-video/mplayer2:radio - Enable V4L2 radio interface and support
 media-video/mplayer2:rar - Enable Unique RAR File Library
 media-video/mplayer2:real - Adds real audo/video support
 media-video/mplayer2:rtc - Enables usage of the linux real time clock. The alternative is software emulation of rtc
+media-video/mplayer2:rtmp - Enables RTMP support through librtmp
+media-video/mplayer2:schroedinger - Enable Dirac video support (an advanced royalty-free video compression format) via libschroedinger (high-speed implementation in C of the Dirac codec).
 media-video/mplayer2:shm - Enable support for shm
 media-video/mplayer2:ssse3 - Faster floating point optimization for SSSE3 capable chips (Intel Core 2 and later chips)
 media-video/mplayer2:tga - Enables Targa video output
 media-video/mplayer2:vdpau - Enables experimental VDPAU support (requires nVidia video cards) to offload MPEG2/MPEG4/VC1/WMV CPU processing to video card
+media-video/mplayer2:vpx - Enables vp8 codec support using libvpx: Decoding vp8 does not require this to be enabled but libvpx can also be used for decoding; encoding vp8 requires this useflag to be enabled though.
 media-video/mplayer2:xanim - Enables support for xanim based codecs
 media-video/mplayer2:xvmc - Enables X-Video Motion Compensation support
 media-video/ogmrip:ogm - Support for OGM container format

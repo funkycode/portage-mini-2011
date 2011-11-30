@@ -1,6 +1,6 @@
 # Copyright 1999-2011 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/media-video/mplayer2/mplayer2-9999.ebuild,v 1.17 2011/11/01 01:05:08 ssuominen Exp $
+# $Header: /var/cvsroot/gentoo-x86/media-video/mplayer2/mplayer2-9999.ebuild,v 1.18 2011/11/30 04:49:34 lu_zero Exp $
 
 EAPI=4
 
@@ -32,7 +32,7 @@ ftp gif ggi +iconv ipv6 jack joystick jpeg kernel_linux ladspa
 libcaca lirc +live mad md5sum +mmx mmxext mng +mp3 nas
 +network nut +opengl oss png pnm pulseaudio pvr +quicktime
 radio +rar +real +rtc samba +shm sdl +speex sse sse2 ssse3
-tga +theora +truetype +unicode v4l v4l2 vdpau
+tga +theora +truetype +unicode v4l vdpau
 +vorbis win32codecs +X xanim xinerama +xscreensaver +xv xvid"
 
 VIDEO_CARDS="s3virge mga tdfx vesa"
