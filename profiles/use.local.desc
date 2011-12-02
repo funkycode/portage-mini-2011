@@ -2968,6 +2968,7 @@ media-video/mplayer2:rtmp - Enables RTMP support through librtmp
 media-video/mplayer2:schroedinger - Enable Dirac video support (an advanced royalty-free video compression format) via libschroedinger (high-speed implementation in C of the Dirac codec).
 media-video/mplayer2:shm - Enable support for shm
 media-video/mplayer2:ssse3 - Faster floating point optimization for SSSE3 capable chips (Intel Core 2 and later chips)
+media-video/mplayer2:symlink - Copy all binaries and configuration into locations occupied by media-video/mplayer and thus act like drop-in replacement.
 media-video/mplayer2:tga - Enables Targa video output
 media-video/mplayer2:vdpau - Enables experimental VDPAU support (requires nVidia video cards) to offload MPEG2/MPEG4/VC1/WMV CPU processing to video card
 media-video/mplayer2:vpx - Enables vp8 codec support using libvpx: Decoding vp8 does not require this to be enabled but libvpx can also be used for decoding; encoding vp8 requires this useflag to be enabled though.
@@ -2977,6 +2978,7 @@ media-video/ogmrip:ogm - Support for OGM container format
 media-video/ogmrip:srt - Support for SRT subtitle format
 media-video/rtmpdump:gnutls - Use GnuTLS library instead of the default OpenSSL
 media-video/rtmpdump:polarssl - Use PolarSSL library instead of the default OpenSSL
+media-video/smplayer2:download-subs - Enable subtitle downloader (requires QuaZip)
 media-video/totem:bluetooth - Enable support for user-presence detection via the user's bluetooth handset using net-wireless/bluez
 media-video/totem:galago - Allow Totem to set your IM client to "away" when a movie is playing in fullscreen using dev-libs/libgalago
 media-video/totem:grilo - Use media-libs/grilo to browse media content from various sources
@@ -3831,8 +3833,8 @@ net-misc/connman:vpnc - Use net-misc/vpnc for cisco VPN support.
 net-misc/connman:wimax - Use net-wireless/wimax for WiMAX support.
 net-misc/curl:ares - Enabled c-ares dns support
 net-misc/curl:gnutls - Prefer gnutls over nss and openssl as the crypto engine
-net-misc/curl:libssh2 - Enabled SSH urls in curl using libssh2
 net-misc/curl:nss - Prefer NSS over openssl as the crypto engine
+net-misc/curl:ssh - Enabled SSH urls in curl using libssh2
 net-misc/curl:ssl - Enable crypto engine support (via openssl if USE='-gnutls -nss')
 net-misc/dahdi:flash - Support (short) flash on FXS
 net-misc/dahdi-tools:ppp - Enables PPP/DAHDIRAS support
