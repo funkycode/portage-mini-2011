@@ -1,7 +1,7 @@
 !net-misc/arpd !minimal? ( berkdb? ( sys-libs/db ) ) atm? ( net-dialup/linux-atm ) sys-devel/bison sys-devel/flex >=sys-kernel/linux-headers-2.6.27 elibc_glibc? ( >=sys-libs/glibc-2.7 )
 !net-misc/arpd !minimal? ( berkdb? ( sys-libs/db ) ) atm? ( net-dialup/linux-atm )
 0
-mirror://kernel/linux/utils/networking/iproute2/iproute2-3.1.0.tar.bz2
+mirror://kernel/linux/utils/net/iproute2/iproute2-3.1.0.tar.bz2
 
 http://www.linuxfoundation.org/collaborate/workgroups/networking/iproute2
 GPL-2

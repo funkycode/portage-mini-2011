@@ -1,8 +1,8 @@
-# Copyright 1999-2010 Gentoo Foundation
+# Copyright 1999-2011 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/x11-misc/bubblemon/bubblemon-1.46-r1.ebuild,v 1.9 2010/03/20 17:00:03 ssuominen Exp $
+# $Header: /var/cvsroot/gentoo-x86/x11-plugins/bubblemon/bubblemon-1.46-r2.ebuild,v 1.2 2011/12/03 16:03:06 ssuominen Exp $
 
-EAPI=2
+EAPI=4
 inherit eutils toolchain-funcs
 
 DESCRIPTION="A fun monitoring applet for your desktop, complete with swimming duck"
@@ -21,23 +21,23 @@ DEPEND="${RDEPEND}
 S=${WORKDIR}/${PN}-dockapp-${PV}
 
 src_prepare() {
-	epatch "${FILESDIR}"/${P}-gtk.patch \
-		"${FILESDIR}"/${P}-asneeded.patch
+	epatch \
+		"${FILESDIR}"/${P}-gtk.patch \
+		"${FILESDIR}"/${P}-asneeded.patch \
+		"${FILESDIR}"/${P}-no_display.patch
 }
 
 src_compile() {
 	tc-export CC
-	emake GENTOO_CFLAGS="${CFLAGS}" || die "emake failed."
+	emake GENTOO_CFLAGS="${CFLAGS}"
 }
 
 src_install() {
-	dobin bubblemon || die
-
+	dobin bubblemon
 	dodoc ChangeLog README doc/Xdefaults.sample
 
 	insinto /usr/share/${PN}
-	doins misc/*.{xcf,wav} || die
-
+	doins misc/*.{xcf,wav}
 	exeinto /usr/share/${PN}
-	doexe misc/wakwak.sh || die
+	doexe misc/wakwak.sh
 }

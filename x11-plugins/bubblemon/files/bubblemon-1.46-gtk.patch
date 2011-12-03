@@ -1,6 +1,5 @@
-diff -ur bubblemon-dockapp-1.46.orig/bubblemon.c bubblemon-dockapp-1.46/bubblemon.c
---- bubblemon-dockapp-1.46.orig/bubblemon.c	2003-10-01 03:37:32.000000000 +0300
-+++ bubblemon-dockapp-1.46/bubblemon.c	2007-05-28 18:10:43.000000000 +0300
+--- bubblemon.c
++++ bubblemon.c
 @@ -58,6 +58,7 @@
  #include <gdk/gdk.h>
  #include <gdk/gdkx.h>
@@ -34,9 +33,8 @@ diff -ur bubblemon-dockapp-1.46.orig/bubblemon.c bubblemon-dockapp-1.46/bubblemo
  #ifdef KDE_DOCKAPP
      /* makes the dockapp visible inside KDE wm */
      gdk_window_show(bm.iconwin);
-diff -ur bubblemon-dockapp-1.46.orig/Makefile bubblemon-dockapp-1.46/Makefile
---- bubblemon-dockapp-1.46.orig/Makefile	2003-10-04 03:22:07.000000000 +0300
-+++ bubblemon-dockapp-1.46/Makefile	2007-05-28 18:11:20.000000000 +0300
+--- Makefile
++++ Makefile
 @@ -11,30 +11,49 @@
  
  # no user serviceable parts below
