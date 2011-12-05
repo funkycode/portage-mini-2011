@@ -1,0 +1,12 @@
+DEFINED_PHASES=compile install postinst postrm preinst prepare setup
+DEPEND=dev-python/pygtk dev-python/numpy >=dev-python/pycairo-1.4 dev-libs/protobuf[python] dev-lang/swig dev-util/pkgconfig >=sys-apps/sed-4 dev-util/scons >=app-admin/eselect-python-20091230 || ( =dev-lang/python-2.7* =dev-lang/python-2.6* =dev-lang/python-2.5* =dev-lang/python-2.4* )
+DESCRIPTION=fast and easy graphics application for digital painters
+EAPI=4
+HOMEPAGE=http://mypaint.intilinux.com/
+KEYWORDS=~amd64 ~x86
+LICENSE=GPL-2
+RDEPEND=dev-python/pygtk dev-python/numpy >=dev-python/pycairo-1.4 dev-libs/protobuf[python] >=app-admin/eselect-python-20091230 || ( =dev-lang/python-2.7* =dev-lang/python-2.6* =dev-lang/python-2.5* =dev-lang/python-2.4* )
+SLOT=0
+SRC_URI=http://download.gna.org/mypaint/mypaint-1.0.0.tar.bz2
+_eclasses_=eutils	56c868c387979233365d02c584c057a1	fdo-mime	0acfe1a88fd8751a1d5dc671168219fa	gnome2-utils	dfcd797d126b46852d33936f4a0a1702	multilib	c4883399ddd3e1d2bd291607b30fded4	portability	1d9665386ff87b70cba7f591ba27723f	python	262a0983b6716502852b4418e0f433b8	scons-utils	bfa350a15756117faaecd9056bbb79c2	toolchain-funcs	39892b66d54a54fdd2b28731b975d8bf	user	9e552f935106ff0bc92af16da64b4b29
+_md5_=7f132b24e6ed5d2dd10a34ddc705901c

@@ -6,7 +6,7 @@ mirror://cpan/authors/id/D/DA/DAVECROSS/Calendar-Simple-1.21.tar.gz
 http://search.cpan.org/dist/Calendar-Simple/
 || ( Artistic GPL-1 GPL-2 GPL-3 )
 Perl extension to create simple calendars
-~amd64 ~ppc ~sparc ~x86
+~amd64 ~hppa ~ppc ~sparc ~x86
 base eutils multilib perl-module portability toolchain-funcs user
 test
 
