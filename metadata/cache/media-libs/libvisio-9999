@@ -1,4 +1,4 @@
-sys-devel/libtool doc? ( app-doc/doxygen ) || ( =sys-devel/automake-1.11* ) >=sys-devel/autoconf-2.61 sys-devel/libtool dev-vcs/git
+dev-util/pkgconfig sys-devel/libtool doc? ( app-doc/doxygen ) || ( =sys-devel/automake-1.11* ) >=sys-devel/autoconf-2.61 sys-devel/libtool dev-vcs/git
 app-text/libwpd:0.9 app-text/libwpg:0.2
 0
 

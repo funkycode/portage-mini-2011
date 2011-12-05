@@ -1,0 +1,13 @@
+DEFINED_PHASES=compile configure install postinst prepare prerm setup test unpack
+DEPEND=<dev-haskell/base-unicode-symbols-0.3 =dev-haskell/transformers-0.2* >=dev-lang/ghc-6.8.2 >=dev-haskell/cabal-1.9.2 test? ( >=dev-haskell/cabal-1.10 <dev-haskell/test-framework-0.5 <dev-haskell/test-framework-hunit-0.3 ) doc? ( dev-haskell/haddock ) hscolour? ( dev-haskell/hscolour ) >=dev-haskell/cabal-1.1.4
+DESCRIPTION=Lift control operations, like exception catching, through monad transformers
+EAPI=3
+HOMEPAGE=https://github.com/basvandijk/monad-control/
+IUSE=test doc hscolour profile
+KEYWORDS=~amd64 ~x86
+LICENSE=BSD
+RDEPEND=<dev-haskell/base-unicode-symbols-0.3 =dev-haskell/transformers-0.2* >=dev-lang/ghc-6.8.2 dev-lang/ghc
+SLOT=0
+SRC_URI=http://hackage.haskell.org/packages/archive/monad-control/0.2.0.3/monad-control-0.2.0.3.tar.gz
+_eclasses_=base	dba02c674ce4dff67657c692954d7ef0	eutils	56c868c387979233365d02c584c057a1	ghc-package	83329f14231f6ba420fb965d858f37c0	haskell-cabal	c640d33b3ca22d10d4fc775cb69a4e00	multilib	c4883399ddd3e1d2bd291607b30fded4	portability	1d9665386ff87b70cba7f591ba27723f	toolchain-funcs	39892b66d54a54fdd2b28731b975d8bf	user	9e552f935106ff0bc92af16da64b4b29	versionator	865bc8b2fc9fcfb6d520bdf5a110f5ed
+_md5_=29e4438c439b50592c9531509ddf383d

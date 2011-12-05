@@ -1,5 +1,5 @@
->=net-irc/irssi-0.8.13 >=net-libs/loudmouth-1.2.0[debug]
->=net-irc/irssi-0.8.13 >=net-libs/loudmouth-1.2.0[debug]
+net-irc/irssi net-libs/loudmouth
+net-irc/irssi net-libs/loudmouth
 0
 http://cybione.org/~irssi-xmpp/files/irssi-xmpp-0.51.tar.gz
 

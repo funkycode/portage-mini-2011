@@ -1,6 +1,6 @@
 # Copyright 1999-2011 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/dev-ruby/crack/crack-0.3.1.ebuild,v 1.1 2011/09/22 06:03:50 graaff Exp $
+# $Header: /var/cvsroot/gentoo-x86/dev-ruby/crack/crack-0.3.1.ebuild,v 1.3 2011/12/04 18:46:36 graaff Exp $
 
 EAPI="2"
 
@@ -16,7 +16,7 @@ RUBY_FAKEGEM_EXTRADOC="README.rdoc History"
 inherit ruby-fakegem
 
 DESCRIPTION="Really simple JSON and XML parsing, ripped from Merb and Rails."
-HOMEPAGE="http://rubyforge.org/projects/crack"
+HOMEPAGE="https://github.com/jnunemaker/crack"
 
 LICENSE="MIT"
 SLOT="0"
@@ -32,4 +32,16 @@ all_ruby_prepare() {
 	# works fine with the mcmire gem that we package as
 	# dev-ruby/matchy.
 	sed -i -e 's:jnunemaker-matchy:mcmire-matchy:' test/test_helper.rb || die
+}
+
+each_ruby_prepare() {
+	case ${RUBY} in
+		*ruby19)
+			# Remove test suite that is broken for ruby19.
+			# Github Issues 26, 29, 32, 33.
+			rm test/json_test.rb || die
+			;;
+		*)
+			;;
+	esac
 }

@@ -1,5 +1,5 @@
 >=app-admin/eselect-python-20091230 =dev-lang/python-2* >=app-admin/eselect-python-20091230 =dev-lang/python-2* >=sys-apps/sed-4
-dev-python/pygtk dev-python/dbus-python sys-power/upower libnotify? ( x11-libs/libnotify ) || ( kde-base/oxygen-icons x11-themes/gnome-icon-theme x11-themes/lxde-icon-theme x11-themes/xfce-icon-theme ) >=app-admin/eselect-python-20091230 =dev-lang/python-2* >=app-admin/eselect-python-20091230 =dev-lang/python-2*
+dev-python/pygtk dev-python/dbus-python sys-power/upower x11-themes/hicolor-icon-theme libnotify? ( x11-libs/libnotify ) virtual/freedesktop-icon-theme >=app-admin/eselect-python-20091230 =dev-lang/python-2* >=app-admin/eselect-python-20091230 =dev-lang/python-2*
 0
 http://batti-gtk.googlecode.com/files/batti-0.3.8.tar.gz
 

@@ -1,0 +1,22 @@
+dev-libs/nss dev-libs/nspr doc? ( dev-python/docutils dev-python/epydoc ) >=app-admin/eselect-python-20091230 dev-lang/python
+dev-libs/nss dev-libs/nspr doc? ( dev-python/docutils dev-python/epydoc ) >=app-admin/eselect-python-20091230 dev-lang/python
+0
+ftp://ftp.mozilla.org/pub/mozilla.org/security/python-nss/releases/PYNSS_RELEASE_0_12_0/src/python-nss-0.12.tar.bz2
+
+http://www.mozilla.org/projects/security/pki/python-nss/
+|| ( MPL-1.1 GPL-2 LGPL-2 )
+Python bindings for Network Security Services (NSS)
+~amd64 ~x86
+distutils eutils multilib portability python toolchain-funcs user versionator
+doc
+
+
+
+4
+
+compile install postinst postrm prepare setup
+
+
+
+
+

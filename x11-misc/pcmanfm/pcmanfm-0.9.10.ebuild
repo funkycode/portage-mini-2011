@@ -1,6 +1,6 @@
 # Copyright 1999-2011 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/x11-misc/pcmanfm/pcmanfm-0.9.10.ebuild,v 1.1 2011/10/25 18:00:59 hwoarang Exp $
+# $Header: /var/cvsroot/gentoo-x86/x11-misc/pcmanfm/pcmanfm-0.9.10.ebuild,v 1.3 2011/12/04 16:51:18 hwoarang Exp $
 
 EAPI=4
 
@@ -10,7 +10,7 @@ DESCRIPTION="Fast lightweight tabbed filemanager"
 HOMEPAGE="http://pcmanfm.sourceforge.net/"
 SRC_URI="http://dev.gentoo.org/~hwoarang/distfiles/${P}.tar.gz"
 
-KEYWORDS="~alpha ~amd64 ~arm ~ppc ~x86 ~x86-linux"
+KEYWORDS="~alpha amd64 ~arm ~ppc ~x86 ~x86-linux"
 LICENSE="GPL-2"
 SLOT="0"
 IUSE="debug"
@@ -31,8 +31,8 @@ src_prepare() {
 	# Fix desktop icons
 	sed -i -e "/MimeType/s:=.*normal;:=:" "${S}"/data/${PN}.desktop \
 		|| die "failed to fix desktop icon"
-	# drop -O0. Bug #382265
-	sed -i -e "s:-O0::" "${S}"/configure.ac
+	# drop -O0 -g. Bug #382265 and #382265
+	sed -i -e "s:-O0::" -e "/-DG_ENABLE_DEBUG/s: -g::" "${S}"/configure.ac || die
 	eautoreconf
 
 }

@@ -1,0 +1,11 @@
+DEFINED_PHASES=compile configure install postinst preinst prepare setup unpack
+DESCRIPTION=Branding for the Mana client for server.themanaworld.org
+EAPI=2
+HOMEPAGE=http://themanaworld.org/
+KEYWORDS=~amd64 ~ppc ~x86
+LICENSE=GPL-2
+RDEPEND=games-rpg/mana
+SLOT=0
+SRC_URI=mirror://sourceforge/themanaworld/tmw-branding-20110911.tar.gz
+_eclasses_=base	dba02c674ce4dff67657c692954d7ef0	eutils	56c868c387979233365d02c584c057a1	games	01e29bd5b15de48f427e53d9fe13f130	multilib	c4883399ddd3e1d2bd291607b30fded4	portability	1d9665386ff87b70cba7f591ba27723f	toolchain-funcs	39892b66d54a54fdd2b28731b975d8bf	user	9e552f935106ff0bc92af16da64b4b29
+_md5_=a6047ed52a36d3c6cc45485060826a1c

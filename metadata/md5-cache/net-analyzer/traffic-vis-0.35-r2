@@ -4,10 +4,10 @@ DESCRIPTION=Generate traffic stats in html, ps, text and gif format
 EAPI=2
 HOMEPAGE=http://www.mindrot.org/traffic-vis.html
 IUSE=gif
-KEYWORDS=~amd64 ~ppc ~x86
+KEYWORDS=amd64 ~ppc ~x86
 LICENSE=BSD
 RDEPEND=net-libs/libpcap gif? ( media-libs/netpbm app-text/ghostscript-gpl dev-lang/perl ) =dev-libs/glib-1.2*
 SLOT=0
 SRC_URI=http://www.mindrot.org/files/traffic-vis-0.35.tar.gz
 _eclasses_=eutils	56c868c387979233365d02c584c057a1	multilib	c4883399ddd3e1d2bd291607b30fded4	portability	1d9665386ff87b70cba7f591ba27723f	toolchain-funcs	39892b66d54a54fdd2b28731b975d8bf	user	9e552f935106ff0bc92af16da64b4b29
-_md5_=0e234d6dfd29e5f65686b29f00d846f7
+_md5_=13822bf540c8e2e55b37c10ec719e923

@@ -6,7 +6,7 @@ http://lilypond.org/download/sources/mftrace/mftrace-1.2.13.tar.gz
 http://lilypond.org/mftrace/
 GPL-2
 traces TeX fonts to PFA or PFB fonts (formerly pktrace)
-alpha amd64 ia64 ppc sparc x86
+amd64 ppc x86
 eutils multilib portability python toolchain-funcs user
 truetype
 
