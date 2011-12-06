@@ -1,5 +1,5 @@
 
-userland_GNU? ( >=sys-apps/findutils-4.2 )
+userland_GNU? ( !<sys-apps/findutils-4.2 )
 0
 
 

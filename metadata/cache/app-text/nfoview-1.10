@@ -1,0 +1,22 @@
+dev-python/pygobject:3 >=app-admin/eselect-python-20091230 =dev-lang/python-3* >=sys-apps/sed-4
+dev-python/pygobject:3 media-fonts/terminus-font >=app-admin/eselect-python-20091230 =dev-lang/python-3*
+0
+http://download.gna.org/nfoview/1.10/nfoview-1.10.tar.gz
+
+http://home.gna.org/nfoview/
+GPL-3
+simple viewer for NFO files, which are ASCII art in the CP437 codepage
+~amd64 ~x86
+distutils fdo-mime gnome2-utils multilib python toolchain-funcs
+
+
+
+
+3
+
+compile install postinst postrm preinst prepare
+
+
+
+
+

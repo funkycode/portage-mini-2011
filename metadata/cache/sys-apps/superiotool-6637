@@ -1,0 +1,22 @@
+pci? ( sys-apps/pciutils ) app-arch/xz-utils
+pci? ( sys-apps/pciutils )
+0
+mirror://gentoo/superiotool-6637.tar.xz
+
+http://www.coreboot.org/Superiotool
+GPL-2
+util to detect Super I/O chips and functionality
+~amd64 ~x86
+eutils multilib portability toolchain-funcs user
+pci
+
+
+
+4
+
+compile install prepare
+
+
+
+
+

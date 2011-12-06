@@ -2022,6 +2022,7 @@ kde-base/smokeqt:qwt - Compile bindings for x11-libs/qwt.
 kde-base/smokeqt:webkit - Compile bindings for x11-libs/qt-webkit.
 kde-base/solid:wicd - Enable Wicd wired and wireless network manager.
 kde-base/step:qalculate - Enable the libqalculate library for unit conversion
+kde-misc/akonadi-google:oldpim - Allow the use of non-akonadi kdepim-4.4
 kde-misc/kcm-grub2:hwinfo - Used to work out supported framebuffer resolutions
 kde-misc/kcm-grub2:imagemagick - Create splash images compatible with GRUB2
 kde-misc/kcm-grub2:packagekit - Add support for packagekit integration
@@ -2071,6 +2072,7 @@ mail-client/postler:ayatana - Enable Messaging Menu support via dev-libs/libindi
 mail-client/squirrelmail:filter - Enable mail-filter/amavisd-new filtering
 mail-client/sylpheed:oniguruma - Use dev-libs/oniguruma for regular expression
 mail-client/thunderbird:crashreporter - Enable crash reporter for bugs
+mail-client/thunderbird:crypt - Enable encryption support with enigmail
 mail-client/thunderbird:custom-optimization - Enable user CFLAGS
 mail-client/thunderbird:gconf - Enable gnome2 gconf support
 mail-client/thunderbird:ipc - Use inter-process communication between tabs and plugins. Allows for greater stability in case of plugin crashes
@@ -4651,6 +4653,7 @@ sys-devel/gcc:gtk - Useful only when building GCJ, this enables Abstract Window 
 sys-devel/gcc:ip28 - Enable building a compiler capable of building a kernel for SGI Indigo2 Impact R10000 (IP28)
 sys-devel/gcc:ip32r10k - Enable building a compiler capable of building an experimental kernel for SGI O2 w/ R1x000 CPUs (IP32)
 sys-devel/gcc:libffi - Build the portable foreign function interface library
+sys-devel/gcc:libssp - Build SSP support into a dedicated library rather than use the code in the C library (DO NOT ENABLE THIS IF YOU DON'T KNOW WHAT IT DOES)
 sys-devel/gcc:lto - Add support for link-time optimizations (unsupported, use at your own risk).
 sys-devel/gcc:mudflap - Add support for mudflap, a pointer use checking library
 sys-devel/gcc:multislot - Allow for SLOTs to include minor version (3.3.4 instead of just 3.3)
@@ -5272,6 +5275,7 @@ xfce-base/xfce4-settings:libcanberra - Enable sound event support using media-li
 xfce-base/xfce4-settings:xklavier - Enable keyboard layout selection support using x11-libs/libxklavier
 xfce-base/xfdesktop:thunar - Build support for desktop icons (for example, launchers and folders)
 xfce-extra/thunar-vcs-plugin:git - Enable dev-vcs/git support
+xfce-extra/tumbler:odf - Enable support for .odf thumbnailers by using gnome-extra/libgsf
 xfce-extra/xfce4-mpc-plugin:libmpd - Build using media-libs/libmpd backend, instead of native fallback which is preferred
 xfce-extra/xfce4-playercontrol-plugin:audacious - Enable Audacious support
 xfce-extra/xfce4-playercontrol-plugin:mpd - Enable Music Player Daemon support

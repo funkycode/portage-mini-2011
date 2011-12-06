@@ -1,0 +1,22 @@
+
+
+0
+http://download.newrelic.com/server_monitor/release/newrelic-sysmond-1.1.2.124-linux.tar.gz
+strip
+http://www.newrelic.com/
+as-is
+NewRelic System Monitor
+~x86 ~amd64
+eutils multilib portability toolchain-funcs user
+
+
+
+
+4
+
+install postinst setup
+
+
+
+
+

@@ -6,7 +6,7 @@ mirror://sourceforge/xdesktopwaves/xdesktopwaves-1.3.tar.gz
 http://xdesktopwaves.sourceforge.net/
 GPL-2
 A cellular automata setting the background of your X Windows desktop under water
-~amd64 ~ppc ~x86
+amd64 ~ppc ~x86
 eutils multilib portability toolchain-funcs user
 
 

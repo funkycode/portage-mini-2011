@@ -1,5 +1,5 @@
-sys-fs/sysfsutils fuse? ( sys-fs/fuse ) snmp? ( net-analyzer/net-snmp ) dev-util/indent app-admin/genromfs
-sys-fs/sysfsutils fuse? ( sys-fs/fuse ) snmp? ( net-analyzer/net-snmp )
+fuse? ( sys-fs/fuse ) snmp? ( net-analyzer/net-snmp ) dev-util/indent app-admin/genromfs
+fuse? ( sys-fs/fuse ) snmp? ( net-analyzer/net-snmp )
 0
 http://download.boulder.ibm.com/ibmdl/pub/software/dw/linux390/ht_src/s390-tools-1.13.0.tar.bz2 zfcpdump? ( mirror://sourceforge/e2fsprogs/e2fsprogs-1.41.3.tar.gz mirror://kernel/linux/kernel/v2.6/linux-2.6.27.tar.bz2 )
 

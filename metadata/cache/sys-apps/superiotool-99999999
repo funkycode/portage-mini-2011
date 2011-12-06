@@ -1,0 +1,22 @@
+pci? ( sys-apps/pciutils ) app-arch/xz-utils dev-vcs/subversion net-misc/rsync
+pci? ( sys-apps/pciutils )
+0
+
+
+http://www.coreboot.org/Superiotool
+GPL-2
+util to detect Super I/O chips and functionality
+
+eutils multilib portability subversion toolchain-funcs user
+pci
+
+
+
+4
+
+compile install preinst prepare unpack
+
+
+
+
+
