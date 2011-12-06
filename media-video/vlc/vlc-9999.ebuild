@@ -1,6 +1,6 @@
 # Copyright 1999-2011 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/media-video/vlc/vlc-9999.ebuild,v 1.151 2011/11/04 12:16:19 aballier Exp $
+# $Header: /var/cvsroot/gentoo-x86/media-video/vlc/vlc-9999.ebuild,v 1.154 2011/12/06 13:32:21 aballier Exp $
 
 EAPI="4"
 
@@ -50,7 +50,7 @@ IUSE="a52 aac aalib alsa altivec atmo +audioqueue avahi +avcodec
 	growl httpd ieee1394 ios-vout jack kate kde libass libcaca libnotify
 	libproxy libsamplerate libtiger libv4l2 linsys libtar lirc live lua +macosx
 	+macosx-audio +macosx-dialog-provider +macosx-eyetv +macosx-quartztext
-	+macosx-qtcapture +macosx-vout matroska media-library mmx modplug mp3 mpeg
+	+macosx-qtkit +macosx-vout matroska media-library mmx modplug mp3 mpeg
 	mtp musepack ncurses neon ogg omxil opengl optimisememory oss png portaudio
 	+postproc projectm pulseaudio pvr +qt4 rtsp run-as-root samba schroedinger
 	sdl sdl-image shine shout sid skins speex sqlite sse svg +swscale switcher
@@ -67,7 +67,7 @@ RDEPEND="
 		avcodec? ( virtual/ffmpeg )
 		avformat? ( virtual/ffmpeg )
 		bidi? ( >=dev-libs/fribidi-0.10.4 )
-		bluray? ( media-libs/libbluray >=dev-libs/libxml2-2.6:2 )
+		bluray? ( >=media-libs/libbluray-0.2.1 )
 		cddb? ( >=media-libs/libcddb-1.2.0 )
 		dbus? ( >=sys-apps/dbus-1.0.2 )
 		dc1394? ( >=sys-libs/libraw1394-2.0.1 >=media-libs/libdc1394-2.0.2 )
@@ -129,7 +129,8 @@ RDEPEND="
 		swscale? ( virtual/ffmpeg )
 		taglib? ( >=media-libs/taglib-1.5 sys-libs/zlib )
 		theora? ( >=media-libs/libtheora-1.0_beta3 )
-		truetype? ( media-libs/freetype media-fonts/dejavu )
+		truetype? ( media-libs/freetype virtual/ttf-fonts
+			!fontconfig? ( media-fonts/dejavu ) )
 		twolame? ( media-sound/twolame )
 		udev? ( >=sys-fs/udev-142 )
 		upnp? ( net-libs/libupnp )
@@ -257,7 +258,7 @@ src_configure() {
 		$(use_enable macosx-audio) \
 		$(use_enable macosx-dialog-provider) \
 		$(use_enable macosx-eyetv) \
-		$(use_enable macosx-qtcapture) \
+		$(use_enable macosx-qtkit) \
 		$(use_enable macosx-quartztext) \
 		$(use_enable macosx-vout) \
 		$(use_enable matroska mkv) \

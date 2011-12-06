@@ -1,5 +1,5 @@
 ####################################################################
-# $Header: /var/cvsroot/gentoo-x86/profiles/package.mask,v 1.13304 2011/12/05 11:46:10 eras Exp $
+# $Header: /var/cvsroot/gentoo-x86/profiles/package.mask,v 1.13308 2011/12/06 16:02:33 ulm Exp $
 #
 # When you add an entry to the top of this file, add your name, the date, and
 # an explanation of why something is getting masked. Please be extremely
@@ -31,9 +31,18 @@
 
 #--- END OF EXAMPLES ---
 
-# Diego E. Pettenò <flameeyes@gentoo.org> (19 Nov 2011)
-# Keep masked until the distfile is published somewhere sane.
-=media-libs/netpbm-10.56.00
+# Alexis Ballier <aballier@gentoo.org> (06 Dec 2011)
+# lyx2html is unmaintained for almost 10 years, won't work with current lyx
+# formats, morevoer from lyx 2.0 there is lyx internal html export.
+# Bug #388987
+# Masked for removal on 06 Jan 2012
+app-text/lyx2html
+
+# Sven Vermeulen <swift@gentoo.org> (06 Dec 2011)
+# Package does not contain a SELinux module anymore, changes have been
+# integrated in sec-policy/selinux-xserver. Proper dependencies are already in
+# place so no user change necessary anymore. Removal ETA end of december.
+sec-policy/selinux-xfce4
 
 # Eray Aslan <eras@gentoo.org> (04 Dec 2011)
 # Masking rc release
@@ -355,12 +364,6 @@ app-admin/mon
 # Anthony G. Basile <blueness@gentoo.org> (08 Oct 2011)
 # Masked while testing potentially dangerous utility
 dev-python/pypax
-
-# Hans de Graaff <graaff@gentoo.org> (04 Oct 2011)
-# Mask stable version of ruby-activeldap since the sole version
-# of rails that it works with no longer in the tree. A new
-# version of ruby-activeldap should be stable soon, bug 384827.
-=dev-ruby/ruby-activeldap-1.2.1
 
 # Michael Sterrett <mr_bones_@gentoo.org> (29 Sep 2011)
 # This version is added for ebuild testing only.

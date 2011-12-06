@@ -1,5 +1,5 @@
-dev-python/pygobject:3 >=app-admin/eselect-python-20091230 =dev-lang/python-3* >=sys-apps/sed-4
-dev-python/pygobject:3 media-fonts/terminus-font >=app-admin/eselect-python-20091230 =dev-lang/python-3*
+dev-python/pygobject:3 >=app-admin/eselect-python-20091230 =dev-lang/python-3.2* >=sys-apps/sed-4
+dev-python/pygobject:3 media-fonts/terminus-font >=app-admin/eselect-python-20091230 =dev-lang/python-3.2*
 0
 http://download.gna.org/nfoview/1.10/nfoview-1.10.tar.gz
 
