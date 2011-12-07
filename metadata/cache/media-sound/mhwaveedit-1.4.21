@@ -6,7 +6,7 @@ http://download.gna.org/mhwaveedit/mhwaveedit-1.4.21.tar.bz2
 https://gna.org/projects/mhwaveedit
 GPL-2
 GTK+ Sound file editor (wav, and a few others.)
-~amd64 ~ppc ~sparc ~x86
+~amd64 ~ppc ~sparc x86
 
 alsa esd jack ladspa libsamplerate nls oss pulseaudio sdl sndfile sox
 
