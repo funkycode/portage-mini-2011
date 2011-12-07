@@ -1,6 +1,6 @@
 # Copyright 1999-2011 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/sci-mathematics/gimps/gimps-26.6.ebuild,v 1.4 2011/07/15 20:09:39 maekke Exp $
+# $Header: /var/cvsroot/gentoo-x86/sci-mathematics/gimps/gimps-26.6.ebuild,v 1.6 2011/12/06 16:47:12 tomka Exp $
 
 IUSE=""
 DESCRIPTION="GIMPS - The Great Internet Mersenne Prime Search"
@@ -32,7 +32,7 @@ src_install() {
 
 	dodoc license.txt readme.txt stress.txt whatsnew.txt undoc.txt
 
-	newinitd "${FILESDIR}/gimps-25.6-init.d" gimps
+	newinitd "${FILESDIR}/gimps-25.7-init.d" gimps
 	newconfd "${FILESDIR}/gimps-25.6-conf.d" gimps
 }
 

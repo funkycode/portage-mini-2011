@@ -1,9 +1,9 @@
 # Copyright 1999-2011 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/media-gfx/scantailor/scantailor-0.9.10.ebuild,v 1.1 2011/07/31 18:31:24 radhermit Exp $
+# $Header: /var/cvsroot/gentoo-x86/media-gfx/scantailor/scantailor-0.9.10.ebuild,v 1.4 2011/12/07 03:16:41 radhermit Exp $
 
 EAPI=4
-inherit cmake-utils eutils
+inherit cmake-utils eutils virtualx
 
 DESCRIPTION="A interactive post-processing tool for scanned pages"
 HOMEPAGE="http://scantailor.sourceforge.net/"
@@ -24,7 +24,10 @@ RDEPEND=">=media-libs/libpng-1.2.43
 DEPEND="${RDEPEND}
 	dev-libs/boost"
 
-PATCHES=( "${FILESDIR}/${PN}-0.9.9-environment_flags.patch" )
+PATCHES=(
+	"${FILESDIR}"/${PN}-0.9.9-environment_flags.patch
+	"${FILESDIR}"/${PN}-gcc46.patch
+)
 
 src_configure() {
 	mycmakeargs=(
@@ -32,6 +35,11 @@ src_configure() {
 	)
 
 	cmake-utils_src_configure
+}
+
+src_test() {
+	cd "${CMAKE_BUILD_DIR}" || die
+	Xemake test
 }
 
 src_install() {

@@ -3,7 +3,7 @@ dev-util/intltool >=app-admin/eselect-python-20091230 =dev-lang/python-2*
 0
 http://launchpad.net/terminator/trunk/0.95/+download/terminator_0.95.tar.gz
 
-http://www.tenshu.net/terminator/
+http://www.tenshu.net/p/terminator.html
 GPL-2
 Multiple GNOME terminals in one window
 amd64 x86
