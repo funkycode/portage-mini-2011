@@ -1,5 +1,5 @@
->=dev-libs/glib-2.28 dev-libs/expat introspection? ( >=dev-libs/gobject-introspection-0.6.2 ) pam? ( virtual/pam ) dev-libs/libxslt app-text/docbook-xml-dtd:4.1.2 app-text/docbook-xsl-stylesheets dev-util/pkgconfig dev-util/intltool doc? ( >=dev-util/gtk-doc-1.13 )
->=dev-libs/glib-2.28 dev-libs/expat introspection? ( >=dev-libs/gobject-introspection-0.6.2 ) pam? ( virtual/pam )
+>=dev-libs/glib-2.30 dev-libs/expat introspection? ( >=dev-libs/gobject-introspection-0.6.2 ) pam? ( virtual/pam ) dev-libs/libxslt app-text/docbook-xml-dtd:4.1.2 app-text/docbook-xsl-stylesheets dev-util/pkgconfig dev-util/intltool doc? ( >=dev-util/gtk-doc-1.13 )
+>=dev-libs/glib-2.30 dev-libs/expat introspection? ( >=dev-libs/gobject-introspection-0.6.2 ) pam? ( virtual/pam )
 0
 http://hal.freedesktop.org/releases/polkit-0.103.tar.gz
 

@@ -1,0 +1,13 @@
+DEFINED_PHASES=compile install postinst postrm prepare setup test
+DEPEND=dev-python/setuptools >=dev-python/apsw-3.7.0 >=dev-python/llfuse-0.37 dev-python/pycryptopp dev-python/pyliblzma || ( >=dev-lang/python-2.7 dev-python/argparse ) sys-fs/fuse test? ( net-misc/rsync[xattr] dev-python/unittest2 ) >=app-admin/eselect-python-20091230 =dev-lang/python-2*
+DESCRIPTION=A full-featured file system for online data storage
+EAPI=4
+HOMEPAGE=http://code.google.com/p/s3ql/
+IUSE=contrib doc test
+KEYWORDS=~amd64 ~x86
+LICENSE=GPL-3
+RDEPEND=dev-python/setuptools >=dev-python/apsw-3.7.0 >=dev-python/llfuse-0.37 dev-python/pycryptopp dev-python/pyliblzma || ( >=dev-lang/python-2.7 dev-python/argparse ) sys-fs/fuse >=app-admin/eselect-python-20091230 =dev-lang/python-2*
+SLOT=0
+SRC_URI=http://s3ql.googlecode.com/files/s3ql-1.8.1.tar.bz2
+_eclasses_=distutils	b4c334e216d998c4ce4b750cb091e42e	multilib	c4883399ddd3e1d2bd291607b30fded4	python	262a0983b6716502852b4418e0f433b8	toolchain-funcs	39892b66d54a54fdd2b28731b975d8bf
+_md5_=d564f2251c07f5dea2bee0622b3c6e9a
