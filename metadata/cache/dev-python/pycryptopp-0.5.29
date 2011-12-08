@@ -1,0 +1,22 @@
+dev-libs/crypto++ dev-python/setuptools >=app-admin/eselect-python-20091230 =dev-lang/python-2*
+dev-libs/crypto++ >=app-admin/eselect-python-20091230 =dev-lang/python-2*
+0
+mirror://pypi/p/pycryptopp/pycryptopp-0.5.29.tar.gz
+
+http://tahoe-lafs.org/trac/pycryptopp http://pypi.python.org/pypi/pycryptopp
+GPL-2
+Python wrappers for a few algorithms from the Crypto++ library
+~amd64 ~x86
+distutils multilib python toolchain-funcs
+
+
+
+
+4
+
+compile install postinst postrm prepare setup test
+
+
+
+
+

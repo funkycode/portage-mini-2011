@@ -1,5 +1,5 @@
 DEFINED_PHASES=configure install postinst postrm prepare unpack
-DEPEND=>=dev-libs/glib-2.18:2 >=x11-libs/gtk+-2.16:2 udev? ( dev-libs/dbus-glib ) >=lxde-base/menu-cache-0.3.2 dev-util/gtk-doc-am doc? ( dev-util/gtk-doc ) >=dev-util/intltool-0.40 dev-util/pkgconfig sys-devel/gettext || ( =sys-devel/automake-1.11* ) >=sys-devel/autoconf-2.61 sys-devel/libtool dev-vcs/git
+DEPEND=>=dev-libs/glib-2.18:2 >=x11-libs/gtk+-2.16:2 udev? ( dev-libs/dbus-glib ) >=lxde-base/menu-cache-0.3.2 >=dev-lang/vala-0.14.0 dev-util/gtk-doc-am doc? ( dev-util/gtk-doc ) >=dev-util/intltool-0.40 dev-util/pkgconfig sys-devel/gettext || ( =sys-devel/automake-1.11* ) >=sys-devel/autoconf-2.61 sys-devel/libtool dev-vcs/git
 DESCRIPTION=A library for file management
 EAPI=3
 HOMEPAGE=http://pcmanfm.sourceforge.net/
@@ -8,4 +8,4 @@ LICENSE=GPL-2
 RDEPEND=>=dev-libs/glib-2.18:2 >=x11-libs/gtk+-2.16:2 udev? ( dev-libs/dbus-glib ) >=lxde-base/menu-cache-0.3.2 x11-misc/shared-mime-info udev? ( sys-fs/udisks )
 SLOT=0
 _eclasses_=autotools	b81740a014934d6736a8795cdedb452e	eutils	56c868c387979233365d02c584c057a1	fdo-mime	0acfe1a88fd8751a1d5dc671168219fa	git-2	48dc75cccc109d7cda9f8dc3fff7a5b8	libtool	7c8f664cd4d1d18a9a75a4fd690594b8	multilib	c4883399ddd3e1d2bd291607b30fded4	portability	1d9665386ff87b70cba7f591ba27723f	toolchain-funcs	39892b66d54a54fdd2b28731b975d8bf	user	9e552f935106ff0bc92af16da64b4b29
-_md5_=e4023c4b7308e4bb59fd1f801605e5e4
+_md5_=d31fb0a4009819504b29fe87bc05f509

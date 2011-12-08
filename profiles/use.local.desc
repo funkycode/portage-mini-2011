@@ -1476,6 +1476,7 @@ dev-scheme/bigloo:ssl - Adds support for SSL connections through dev-libs/openss
 dev-scheme/bigloo:text - Library for dealing with text (e.g. BibTeX parser)
 dev-scheme/bigloo:threads - Enable thread support, it depends on dev-libs/boehm-gc built with threads use flag
 dev-scheme/bigloo:web - Library for web programming (e.g. XML, CGI parsers). Needed for dev-scheme/hop
+dev-scheme/chicken:parallel-build - Enable testing parallel build mode added in 4.7.3 version. Can still be not working
 dev-scheme/gauche-gl:cg - Enable NVidia Cg binding
 dev-scheme/gauche-gtk:glgd - Enable GL graph draw
 dev-scheme/guile:debug-freelist - Include garbage collector freelist debugging code
