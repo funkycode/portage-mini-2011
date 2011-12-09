@@ -1,13 +1,13 @@
 DEFINED_PHASES=compile configure install postinst postrm prepare setup test
-DEPEND=sys-libs/gdbm >=dev-libs/ntl-5.5.2 >=sci-mathematics/pari-2.3.4[gmp] >=sys-libs/readline-6.1 dev-libs/libxml2:2 sci-mathematics/frobby sci-mathematics/4ti2 sci-mathematics/nauty >=sci-mathematics/normaliz-2.5 sci-mathematics/gfan >=dev-libs/mpfr-3.0.0 >=sci-libs/mpir-2.1.1[cxx] sci-libs/cddlib sci-libs/cdd+ sci-libs/lrslib[gmp] virtual/blas virtual/lapack dev-util/ctags sys-libs/ncurses sys-process/time emacs? ( virtual/emacs ) || ( =sys-devel/automake-1.11* ) >=sys-devel/autoconf-2.61 sys-devel/libtool
+DEPEND=sys-libs/gdbm >=dev-libs/ntl-5.5.2 >=sci-mathematics/pari-2.3.4[gmp] >=sys-libs/readline-6.1 dev-libs/libxml2:2 sci-mathematics/frobby sci-mathematics/4ti2 sci-mathematics/nauty >=sci-mathematics/normaliz-2.5 <sci-mathematics/normaliz-2.7 sci-mathematics/gfan >=dev-libs/mpfr-3.0.0 >=sci-libs/mpir-2.1.1[cxx] sci-libs/cddlib sci-libs/cdd+ sci-libs/lrslib[gmp] virtual/blas virtual/lapack dev-util/ctags sys-libs/ncurses sys-process/time emacs? ( virtual/emacs ) || ( =sys-devel/automake-1.11* ) >=sys-devel/autoconf-2.61 sys-devel/libtool
 DESCRIPTION=research tool for commutative algebra and algebraic geometry
 EAPI=2
 HOMEPAGE=http://www.math.uiuc.edu/Macaulay2/
 IUSE=emacs optimization
-KEYWORDS=~amd64 ~x86
+KEYWORDS=amd64 ~x86
 LICENSE=GPL-2
-RDEPEND=sys-libs/gdbm >=dev-libs/ntl-5.5.2 >=sci-mathematics/pari-2.3.4[gmp] >=sys-libs/readline-6.1 dev-libs/libxml2:2 sci-mathematics/frobby sci-mathematics/4ti2 sci-mathematics/nauty >=sci-mathematics/normaliz-2.5 sci-mathematics/gfan >=dev-libs/mpfr-3.0.0 >=sci-libs/mpir-2.1.1[cxx] sci-libs/cddlib sci-libs/cdd+ sci-libs/lrslib[gmp] virtual/blas virtual/lapack dev-util/ctags sys-libs/ncurses sys-process/time emacs? ( virtual/emacs )
+RDEPEND=sys-libs/gdbm >=dev-libs/ntl-5.5.2 >=sci-mathematics/pari-2.3.4[gmp] >=sys-libs/readline-6.1 dev-libs/libxml2:2 sci-mathematics/frobby sci-mathematics/4ti2 sci-mathematics/nauty >=sci-mathematics/normaliz-2.5 <sci-mathematics/normaliz-2.7 sci-mathematics/gfan >=dev-libs/mpfr-3.0.0 >=sci-libs/mpir-2.1.1[cxx] sci-libs/cddlib sci-libs/cdd+ sci-libs/lrslib[gmp] virtual/blas virtual/lapack dev-util/ctags sys-libs/ncurses sys-process/time emacs? ( virtual/emacs )
 SLOT=0
 SRC_URI=http://www.math.uiuc.edu/Macaulay2/Downloads//OtherSourceCode/1.4/factory-3-1-1.tar.gz http://www.math.uiuc.edu/Macaulay2/Downloads//OtherSourceCode/1.4/libfac-3-1-1.tar.gz http://www.math.uiuc.edu/Macaulay2/Extra/gc-7.2alpha5-2010-09-03.tar.gz http://www.math.uiuc.edu/Macaulay2/Downloads//SourceCode/Macaulay2-1.4-r12617-src.tar.bz2
 _eclasses_=autotools	b81740a014934d6736a8795cdedb452e	elisp-common	3048b6bde509e1aa680e77d093d01409	eutils	56c868c387979233365d02c584c057a1	flag-o-matic	833d2225dfe45b29fbf471d4b2d4ed6d	libtool	7c8f664cd4d1d18a9a75a4fd690594b8	multilib	c4883399ddd3e1d2bd291607b30fded4	portability	1d9665386ff87b70cba7f591ba27723f	toolchain-funcs	39892b66d54a54fdd2b28731b975d8bf	user	9e552f935106ff0bc92af16da64b4b29
-_md5_=16dd2301ab2b437a84e1b546243b3c2c
+_md5_=dd6ddd7603d8c50acb3c4ae5707e6b57

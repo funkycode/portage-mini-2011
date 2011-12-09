@@ -4,10 +4,10 @@ DESCRIPTION=Converts DVI files to SVG
 EAPI=4
 HOMEPAGE=http://dvisvgm.sourceforge.net/
 IUSE=test
-KEYWORDS=~alpha ~amd64 ~hppa ~ia64 ~mips ~ppc ~s390 ~sh ~sparc ~x86 ~ppc-macos ~x64-macos ~x86-macos
+KEYWORDS=~alpha ~amd64 ~hppa ~ia64 ~mips ~ppc ~s390 ~sh ~sparc ~x86 ~x86-fbsd ~ppc-macos ~x64-macos ~x86-macos
 LICENSE=GPL-3
 RDEPEND=virtual/tex-base app-text/ghostscript-gpl >=media-gfx/potrace-1.10-r1 media-libs/freetype:2 sys-libs/zlib
 RESTRICT=test
 SLOT=0
 SRC_URI=mirror://sourceforge/dvisvgm/dvisvgm-1.0.9.tar.gz
-_md5_=c728e17f06d0f9215173085cdd895149
+_md5_=4bbdc2786166b98f4209e690bb066102

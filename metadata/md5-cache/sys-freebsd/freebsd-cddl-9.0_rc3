@@ -1,0 +1,12 @@
+DEFINED_PHASES=compile install unpack
+DEPEND==sys-freebsd/freebsd-lib-9.0* =sys-freebsd/freebsd-libexec-9.0* build? ( sys-apps/baselayout ) dev-libs/libelf =sys-freebsd/freebsd-mk-defs-9.0* !build? ( =sys-freebsd/freebsd-sources-9.0* ) virtual/pmake virtual/pmake
+DESCRIPTION=FreeBSD CDDL (opensolaris/zfs) extra software
+HOMEPAGE=http://www.freebsd.org/
+IUSE=build profile
+KEYWORDS=~x86-fbsd
+LICENSE=CDDL
+RDEPEND==sys-freebsd/freebsd-lib-9.0* =sys-freebsd/freebsd-libexec-9.0* build? ( sys-apps/baselayout ) dev-libs/libelf
+SLOT=0
+SRC_URI=mirror://gentoo/freebsd-cddl-9.0_rc3.tar.bz2 mirror://gentoo/freebsd-contrib-9.0_rc3.tar.bz2 mirror://gentoo/freebsd-ubin-9.0_rc3.tar.bz2 mirror://gentoo/freebsd-lib-9.0_rc3.tar.bz2 mirror://gentoo/freebsd-sbin-9.0_rc3.tar.bz2 mirror://gentoo/freebsd-sys-9.0_rc3.tar.bz2 build? ( mirror://gentoo/freebsd-sys-9.0_rc3.tar.bz2 mirror://gentoo/freebsd-include-9.0_rc3.tar.bz2 )
+_eclasses_=bsdmk	3d0ee174571cc190224b2ca024759aec	eutils	56c868c387979233365d02c584c057a1	flag-o-matic	833d2225dfe45b29fbf471d4b2d4ed6d	freebsd	1c2e16e610d7b7335a74750bc583cca9	multilib	c4883399ddd3e1d2bd291607b30fded4	portability	1d9665386ff87b70cba7f591ba27723f	toolchain-funcs	39892b66d54a54fdd2b28731b975d8bf	user	9e552f935106ff0bc92af16da64b4b29	versionator	865bc8b2fc9fcfb6d520bdf5a110f5ed
+_md5_=af1f35ea33baecef2965f90ed84ad106

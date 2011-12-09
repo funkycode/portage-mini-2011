@@ -3,7 +3,7 @@ dev-libs/boost dev-libs/libxml2 net-misc/curl
 0
 
 test
-http://gitorious.org/libcmis
+https://sourceforge.net/projects/libcmis/
 || ( GPL-2 LGPL-2 MPL-1.1 )
 C++ client library for the CMIS interface
 

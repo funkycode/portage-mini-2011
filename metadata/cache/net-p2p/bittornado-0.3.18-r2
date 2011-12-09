@@ -1,5 +1,5 @@
-gtk? ( =dev-python/wxpython-2.6* ) dev-python/pycrypto app-arch/unzip >=sys-apps/sed-4.0.5 >=app-admin/eselect-python-20091230 =dev-lang/python-2*
-gtk? ( =dev-python/wxpython-2.6* ) dev-python/pycrypto >=app-admin/eselect-python-20091230 =dev-lang/python-2*
+dev-python/pycrypto app-arch/unzip >=sys-apps/sed-4.0.5 >=app-admin/eselect-python-20091230 =dev-lang/python-2*
+dev-python/pycrypto >=app-admin/eselect-python-20091230 =dev-lang/python-2*
 0
 http://download2.bittornado.com/download/BitTornado-0.3.18.tar.gz
 
@@ -8,7 +8,7 @@ MIT
 TheShad0w's experimental BitTorrent client
 alpha amd64 ppc ppc64 ~sparc x86 ~x86-fbsd
 distutils eutils multilib portability python toolchain-funcs user
-gtk
+
 
 
 
