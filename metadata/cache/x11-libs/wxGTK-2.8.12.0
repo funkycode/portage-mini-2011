@@ -12,7 +12,7 @@ X aqua doc debug gnome gstreamer odbc opengl pch sdl tiff
 
 >=app-admin/eselect-wxwidgets-0.7
 
-2
+3
 
 compile configure install postinst postrm prepare
 
