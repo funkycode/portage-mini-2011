@@ -12,7 +12,7 @@ imagemagick math mysql postgres +ocamlopt sqlite vhosts
 
 
 
-3
+4
 
 compile install postinst preinst prerm setup
 

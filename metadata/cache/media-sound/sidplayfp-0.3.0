@@ -1,0 +1,22 @@
+media-libs/libsidplayfp alsa? ( media-libs/alsa-lib ) pulseaudio? ( media-sound/pulseaudio ) || ( =sys-devel/automake-1.11* ) >=sys-devel/autoconf-2.61 sys-devel/libtool
+media-libs/libsidplayfp alsa? ( media-libs/alsa-lib ) pulseaudio? ( media-sound/pulseaudio )
+0
+mirror://sourceforge/sidplay-residfp/sidplayfp-0.3.0.tar.gz
+
+http://sourceforge.net/projects/sidplay-residfp/
+GPL-2
+A sidplay2 fork with resid-fp
+~amd64 ~x86
+autotools autotools-utils base eutils libtool multilib portability toolchain-funcs user
+alsa oss pulseaudio
+
+
+
+4
+
+compile configure install prepare test unpack
+
+
+
+
+

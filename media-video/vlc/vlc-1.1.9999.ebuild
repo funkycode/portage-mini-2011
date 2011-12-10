@@ -1,6 +1,6 @@
 # Copyright 1999-2011 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/media-video/vlc/vlc-1.1.9999.ebuild,v 1.36 2011/12/06 12:29:01 aballier Exp $
+# $Header: /var/cvsroot/gentoo-x86/media-video/vlc/vlc-1.1.9999.ebuild,v 1.37 2011/12/09 19:58:47 aballier Exp $
 
 EAPI="3"
 
@@ -144,7 +144,7 @@ RDEPEND="
 		x264? ( >=media-libs/x264-0.0.20090923 )
 		xcb? ( x11-libs/libxcb x11-libs/xcb-util )
 		xml? ( dev-libs/libxml2 )
-		xosd? ( x11-libs/xosd )
+		xosd? ( x11-libs/xosd x11-libs/libX11 )
 		zvbi? ( >=media-libs/zvbi-0.2.25 )
 		"
 
@@ -185,6 +185,7 @@ pkg_setup() {
 	vlc_use_force vaapi ffmpeg
 	vlc_use_force nsplugin xcb
 	has_version '<media-sound/pulseaudio-0.9.22' && vlc_use_force pulseaudio X
+	vlc_use_force xosd X
 	vlc_use_force sdl X
 	vlc_use_force aalib X
 
@@ -341,6 +342,7 @@ src_configure() {
 		$(vlc_use_enable_force nsplugin xcb) \
 		$(has_version '<media-sound/pulseaudio-0.9.22' && use pulseaudio && echo '--with-x') \
 		$(use sdl && echo '--with-x') \
+		$(use xosd && echo '--with-x') \
 		$(use aalib && echo '--with-x')
 }
 

@@ -1,5 +1,5 @@
 DEFINED_PHASES=configure install prepare
-DEPEND=>=app-shells/bash-2.04-r3 !unicode? ( >=sys-libs/ncurses-5.2-r5 ) unicode? ( >=sys-libs/ncurses-5.2-r5[unicode] ) nls? ( sys-devel/gettext ) !minimal? ( sys-devel/libtool )
+DEPEND=>=app-shells/bash-2.04-r3 !unicode? ( >=sys-libs/ncurses-5.2-r5 ) unicode? ( >=sys-libs/ncurses-5.2-r5[unicode] ) nls? ( sys-devel/gettext ) !minimal? ( sys-devel/libtool ) !<=sys-freebsd/freebsd-contrib-8.9999
 DESCRIPTION=tool to display dialog boxes from a shell
 EAPI=2
 HOMEPAGE=http://invisible-island.net/dialog/dialog.html
@@ -10,4 +10,4 @@ RDEPEND=>=app-shells/bash-2.04-r3 !unicode? ( >=sys-libs/ncurses-5.2-r5 ) unicod
 SLOT=0
 SRC_URI=ftp://invisible-island.net/dialog/dialog-1.1-20110707.tgz
 _eclasses_=multilib	c4883399ddd3e1d2bd291607b30fded4	toolchain-funcs	39892b66d54a54fdd2b28731b975d8bf
-_md5_=0301e386b2c883424b785cfddb7ebd05
+_md5_=af2ad893a35ffeac7a459171885350d8
