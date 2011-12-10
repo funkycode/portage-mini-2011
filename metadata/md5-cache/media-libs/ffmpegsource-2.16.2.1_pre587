@@ -1,13 +1,13 @@
 DEFINED_PHASES=configure install prepare
-DEPEND=sys-libs/zlib virtual/ffmpeg dev-util/pkgconfig || ( =sys-devel/automake-1.11* ) >=sys-devel/autoconf-2.61 sys-devel/libtool
+DEPEND=sys-libs/zlib >=media-video/libav-0.8_pre20111116 dev-util/pkgconfig || ( =sys-devel/automake-1.11* ) >=sys-devel/autoconf-2.61 sys-devel/libtool
 DESCRIPTION=An FFmpeg based source library for easy frame accurate access
 EAPI=4
 HOMEPAGE=https://code.google.com/p/ffmpegsource/
 IUSE=postproc static-libs
 KEYWORDS=~amd64 ~x86
 LICENSE=MIT
-RDEPEND=sys-libs/zlib virtual/ffmpeg
+RDEPEND=sys-libs/zlib >=media-video/libav-0.8_pre20111116
 SLOT=0
 SRC_URI=http://rion-overlay.googlecode.com/files/ffmpegsource-2.16.2.1_pre587.tar.xz
 _eclasses_=autotools	b81740a014934d6736a8795cdedb452e	eutils	56c868c387979233365d02c584c057a1	libtool	7c8f664cd4d1d18a9a75a4fd690594b8	multilib	c4883399ddd3e1d2bd291607b30fded4	portability	1d9665386ff87b70cba7f591ba27723f	toolchain-funcs	39892b66d54a54fdd2b28731b975d8bf	user	9e552f935106ff0bc92af16da64b4b29
-_md5_=6e5d94cdd5334b98dec7a021eadd5bee
+_md5_=102f48c6a71bc409dc454e1d3f012679

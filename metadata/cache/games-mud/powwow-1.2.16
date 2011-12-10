@@ -1,0 +1,22 @@
+sys-libs/ncurses || ( =sys-devel/automake-1.11* ) >=sys-devel/autoconf-2.61 sys-devel/libtool
+sys-libs/ncurses
+0
+http://hoopajoo.net/static/projects/powwow-1.2.16.tar.gz
+
+http://hoopajoo.net/projects/powwow.html
+GPL-2
+PowWow Console MUD Client
+~amd64 ~ppc ~x86
+autotools base eutils games libtool multilib portability toolchain-funcs user
+
+
+
+
+2
+
+compile configure install postinst preinst prepare setup unpack
+
+
+
+
+

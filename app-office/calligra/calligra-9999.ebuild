@@ -1,6 +1,6 @@
 # Copyright 1999-2011 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/app-office/calligra/calligra-9999.ebuild,v 1.4 2011/10/29 17:44:14 dilfridge Exp $
+# $Header: /var/cvsroot/gentoo-x86/app-office/calligra/calligra-9999.ebuild,v 1.5 2011/12/10 14:46:39 dilfridge Exp $
 
 # note: files that need to be checked for dependencies etc:
 # CMakeLists.txt, kexi/CMakeLists.txt kexi/migration/CMakeLists.txt
@@ -11,7 +11,9 @@ EAPI=4
 KDE_SCM=git
 KDE_MINIMAL=4.6.4
 OPENGL_REQUIRED=optional
+
 KDE_HANDBOOK=optional
+
 KDE_LINGUAS_LIVE_OVERRIDE=true
 inherit kde4-base
 
@@ -53,7 +55,7 @@ RDEPEND="
 	!app-office/kpresenter
 	!app-office/kspread
 	!app-office/kword
-	dev-db/sqlite:3
+	>=dev-db/sqlite-3.7.9:3
 	dev-lang/perl
 	dev-libs/boost
 	dev-libs/libxml2
@@ -118,13 +120,13 @@ src_configure() {
 		"-DGHNS=ON"
 		"-DWITH_X11=ON"
 		"-DWITH_Qt4=ON"
+		"-DQT3SUPPORT=ON" # kde4-base.eclass pulls this in anyway
 	)
 
 	# default disablers
 	mycmakeargs+=(
 		"-DBUILD_mobile=OFF" # we dont suppor mobile gui, maybe arm could
 		"-DWITH_LCMS=OFF" # we use lcms:2
-		"-DWITH_XBase=OFF" # i am not the one to support this
 		"-DCREATIVEONLY=OFF"
 		"-DWITH_TINY=OFF"
 		"-DWITH_CreateResources=OFF" # NOT PACKAGED: http://create.freedesktop.org/

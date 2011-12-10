@@ -1,5 +1,5 @@
-sys-libs/zlib virtual/ffmpeg dev-util/pkgconfig || ( =sys-devel/automake-1.11* ) >=sys-devel/autoconf-2.61 sys-devel/libtool
-sys-libs/zlib virtual/ffmpeg
+sys-libs/zlib >=media-video/libav-0.8_pre20111116 dev-util/pkgconfig || ( =sys-devel/automake-1.11* ) >=sys-devel/autoconf-2.61 sys-devel/libtool
+sys-libs/zlib >=media-video/libav-0.8_pre20111116
 0
 http://rion-overlay.googlecode.com/files/ffmpegsource-2.16.2.1_pre587.tar.xz
 

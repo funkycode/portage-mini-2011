@@ -1,0 +1,13 @@
+DEFINED_PHASES=install
+DEPEND=app-mobilephone/anyremote[bluetooth=] dev-python/pygtk bluetooth? ( dev-python/pybluez )
+DESCRIPTION=Gnome frontend to Anyremote
+EAPI=2
+HOMEPAGE=http://anyremote.sourceforge.net/
+IUSE=bluetooth
+KEYWORDS=~amd64 ~x86
+LICENSE=GPL-2
+RDEPEND=app-mobilephone/anyremote[bluetooth=] dev-python/pygtk bluetooth? ( dev-python/pybluez )
+SLOT=0
+SRC_URI=mirror://sourceforge/anyremote/ganyremote-5.13.tar.gz
+_eclasses_=eutils	56c868c387979233365d02c584c057a1	multilib	c4883399ddd3e1d2bd291607b30fded4	portability	1d9665386ff87b70cba7f591ba27723f	toolchain-funcs	39892b66d54a54fdd2b28731b975d8bf	user	9e552f935106ff0bc92af16da64b4b29
+_md5_=01ba1f2642fbc1b700050dde97ea518f
