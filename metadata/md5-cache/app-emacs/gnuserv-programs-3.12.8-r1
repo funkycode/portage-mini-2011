@@ -10,5 +10,5 @@ PDEPEND=~app-emacs/gnuserv-3.12.8
 RDEPEND=!app-editors/xemacs !<=app-emacs/gnuserv-3.12.7 X? ( x11-libs/libXau )
 SLOT=0
 SRC_URI=http://meltin.net/hacks/emacs/src/gnuserv-3.12.8.tar.gz
-_eclasses_=multilib	c4883399ddd3e1d2bd291607b30fded4	toolchain-funcs	39892b66d54a54fdd2b28731b975d8bf
+_eclasses_=multilib	96c2a0a85a74a03e8bed788c8c4ac424	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68
 _md5_=f6ac4d73c838054828b7a10f1c333781

@@ -1,5 +1,5 @@
->=app-admin/eselect-python-20091230 =dev-lang/python-2*
-net-misc/whois virtual/mta net-firewall/iptables >=app-admin/eselect-python-20091230 =dev-lang/python-2*
+selinux? ( sec-policy/selinux-fail2ban ) >=app-admin/eselect-python-20091230 =dev-lang/python-2*
+net-misc/whois virtual/mta net-firewall/iptables selinux? ( sec-policy/selinux-fail2ban ) >=app-admin/eselect-python-20091230 =dev-lang/python-2*
 0
 mirror://sourceforge/fail2ban/fail2ban-0.8.4.tar.bz2
 
@@ -8,7 +8,7 @@ GPL-2
 Bans IP that make too many password failures
 amd64 hppa ppc ppc64 ~sparc x86 ~x86-fbsd
 distutils eutils multilib portability python toolchain-funcs user
-
+selinux
 
 
 

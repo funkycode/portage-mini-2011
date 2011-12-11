@@ -10,5 +10,5 @@ RDEPEND=sys-libs/glibc media-libs/libsdl media-libs/sdl-ttf media-fonts/dejavu a
 REQUIRED_USE=|| ( cdda mp3 fallback ) || ( alsa jack oss )
 SLOT=0
 SRC_URI=http://www.xwax.co.uk/releases/xwax-1.0.tar.gz
-_eclasses_=multilib	c4883399ddd3e1d2bd291607b30fded4	toolchain-funcs	39892b66d54a54fdd2b28731b975d8bf
+_eclasses_=multilib	96c2a0a85a74a03e8bed788c8c4ac424	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68
 _md5_=932daf89057d00da9bf3b6a9bfaf3ed4

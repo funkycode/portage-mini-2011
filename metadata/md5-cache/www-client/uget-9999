@@ -8,5 +8,5 @@ LICENSE=LGPL-2.1
 RDEPEND=dev-libs/libpcre >=dev-libs/glib-2:2 !gtk3? ( >=x11-libs/gtk+-2.18:2 ) gtk3? ( x11-libs/gtk+:3 ) curl? ( >=net-misc/curl-7.10 ) gstreamer? ( media-libs/gstreamer ) libnotify? ( x11-libs/libnotify )
 REQUIRED_USE=|| ( aria2 curl )
 SLOT=0
-_eclasses_=autotools	b81740a014934d6736a8795cdedb452e	eutils	56c868c387979233365d02c584c057a1	git-2	48dc75cccc109d7cda9f8dc3fff7a5b8	libtool	7c8f664cd4d1d18a9a75a4fd690594b8	multilib	c4883399ddd3e1d2bd291607b30fded4	portability	1d9665386ff87b70cba7f591ba27723f	toolchain-funcs	39892b66d54a54fdd2b28731b975d8bf	user	9e552f935106ff0bc92af16da64b4b29
+_eclasses_=autotools	b81740a014934d6736a8795cdedb452e	eutils	56c868c387979233365d02c584c057a1	git-2	48dc75cccc109d7cda9f8dc3fff7a5b8	libtool	7c8f664cd4d1d18a9a75a4fd690594b8	multilib	96c2a0a85a74a03e8bed788c8c4ac424	portability	0d9341be2bffb3ace510580f192f231e	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
 _md5_=27502151e0856d105b8b999f9ea7564a

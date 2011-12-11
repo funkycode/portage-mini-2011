@@ -4,9 +4,9 @@ DESCRIPTION=A small command-line program to download videos from YouTube.
 EAPI=3
 HOMEPAGE=http://rg3.github.com/youtube-dl/
 KEYWORDS=~amd64 ~arm ~hppa ~ppc ~ppc64 ~x86 ~amd64-linux ~x86-linux ~ppc-macos ~x64-macos ~x86-macos ~x86-solaris
-LICENSE=MIT
+LICENSE=public-domain
 RDEPEND=>=app-admin/eselect-python-20091230 || ( =dev-lang/python-2.7* =dev-lang/python-2.6* =dev-lang/python-2.5* =dev-lang/python-2.4* )
 SLOT=0
 SRC_URI=http://github.com/rg3/youtube-dl/tarball/2011.09.30 -> youtube-dl-2011.09.30.tar.gz
-_eclasses_=multilib	c4883399ddd3e1d2bd291607b30fded4	python	262a0983b6716502852b4418e0f433b8	toolchain-funcs	39892b66d54a54fdd2b28731b975d8bf
-_md5_=060516a25f4700f8bb9a220f3607947b
+_eclasses_=multilib	96c2a0a85a74a03e8bed788c8c4ac424	python	262a0983b6716502852b4418e0f433b8	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68
+_md5_=cdaf03806adb4bc265ffb4fa3b35f1b2

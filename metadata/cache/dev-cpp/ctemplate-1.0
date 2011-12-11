@@ -12,7 +12,7 @@ doc emacs vim-syntax static-libs test
 
 
 
-3
+4
 
 compile configure install postinst postrm setup
 

@@ -1,0 +1,22 @@
+>=sys-devel/libtool-2.2.6b >=sys-libs/db-4 sys-libs/ncurses[unicode?] aac? ( media-libs/faad2 ) alsa? ( media-libs/alsa-lib ) curl? ( net-misc/curl ) ffmpeg? ( virtual/ffmpeg ) flac? ( media-libs/flac ) jack? ( media-sound/jack-audio-connection-kit ) libsamplerate? ( media-libs/libsamplerate ) mad? ( media-libs/libmad sys-libs/zlib media-libs/libid3tag ) modplug? ( media-libs/libmodplug ) musepack? ( media-sound/musepack-tools media-libs/taglib ) sid? ( >=media-libs/libsidplay-2 ) sndfile? ( media-libs/libsndfile ) speex? ( media-libs/speex ) timidity? ( media-libs/libtimidity media-sound/timidity++ ) vorbis? ( media-libs/libvorbis ) wavpack? ( media-sound/wavpack ) dev-util/pkgconfig || ( =sys-devel/automake-1.11* ) >=sys-devel/autoconf-2.61 sys-devel/libtool
+>=sys-devel/libtool-2.2.6b >=sys-libs/db-4 sys-libs/ncurses[unicode?] aac? ( media-libs/faad2 ) alsa? ( media-libs/alsa-lib ) curl? ( net-misc/curl ) ffmpeg? ( virtual/ffmpeg ) flac? ( media-libs/flac ) jack? ( media-sound/jack-audio-connection-kit ) libsamplerate? ( media-libs/libsamplerate ) mad? ( media-libs/libmad sys-libs/zlib media-libs/libid3tag ) modplug? ( media-libs/libmodplug ) musepack? ( media-sound/musepack-tools media-libs/taglib ) sid? ( >=media-libs/libsidplay-2 ) sndfile? ( media-libs/libsndfile ) speex? ( media-libs/speex ) timidity? ( media-libs/libtimidity media-sound/timidity++ ) vorbis? ( media-libs/libvorbis ) wavpack? ( media-sound/wavpack )
+0
+http://dev.gentoo.org/~ssuominen/moc-2.5.0_alpha4_p20111211.tar.xz
+
+http://moc.daper.net
+GPL-2
+Music On Console - ncurses interface for playing audio files
+~alpha ~amd64 ~ppc ~ppc64 ~sparc ~x86
+autotools eutils libtool multilib portability toolchain-funcs user
+aac alsa curl debug ffmpeg flac jack libsamplerate mad modplug musepack oss sid sndfile speex timidity +unicode vorbis wavpack
+
+
+
+4
+
+configure install prepare
+
+
+
+
+
