@@ -4,10 +4,10 @@ DESCRIPTION=identify a file's format by scanning binary data for patterns
 EAPI=2
 HOMEPAGE=ftp://ftp.astron.com/pub/file/
 IUSE=python static-libs zlib
-KEYWORDS=~alpha ~amd64 ~arm hppa ~ia64 ~m68k ~mips ~ppc ~ppc64 ~s390 ~sh ~sparc ~x86 ~sparc-fbsd ~x86-fbsd
+KEYWORDS=~alpha ~amd64 ~arm hppa ~ia64 ~m68k ~mips ~ppc ~ppc64 ~s390 ~sh ~sparc x86 ~sparc-fbsd ~x86-fbsd
 LICENSE=BSD-2
 RDEPEND=zlib? ( sys-libs/zlib ) >=app-admin/eselect-python-20091230 python? ( dev-lang/python )
 SLOT=0
 SRC_URI=ftp://ftp.astron.com/pub/file/file-5.09.tar.gz ftp://ftp.gw.com/mirrors/pub/unix/file/file-5.09.tar.gz
 _eclasses_=distutils	b4c334e216d998c4ce4b750cb091e42e	eutils	56c868c387979233365d02c584c057a1	flag-o-matic	f829a384b238abde8d21ba4d22139892	libtool	7c8f664cd4d1d18a9a75a4fd690594b8	multilib	96c2a0a85a74a03e8bed788c8c4ac424	portability	0d9341be2bffb3ace510580f192f231e	python	262a0983b6716502852b4418e0f433b8	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
-_md5_=c05c7c3f3c886a5350df91059a2b5f23
+_md5_=30ab7441713cf4d49224ada737cc8273

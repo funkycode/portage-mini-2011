@@ -6,7 +6,7 @@ mirror://gentoo/cvsmenu-1.80.tar.bz2
 http://www.vim.org/scripts/script.php?script_id=58
 LGPL-2
 vim plugin: Menu for CVS-Versioncontrol
-alpha sparc x86 ia64 ppc amd64
+amd64 ppc x86
 vim-doc vim-plugin
 
 

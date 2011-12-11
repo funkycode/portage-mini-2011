@@ -3,10 +3,10 @@ DEPEND=>=app-admin/eselect-python-20091230 =dev-lang/python-2*
 DESCRIPTION=A script that converts a CHM file into a single PDF file.
 EAPI=2
 HOMEPAGE=http://code.google.com/p/chm2pdf/
-KEYWORDS=amd64 ~x86
+KEYWORDS=amd64 x86
 LICENSE=GPL-2
 RDEPEND=dev-python/pychm app-text/htmldoc || ( >=dev-libs/chmlib-0.40-r1[examples] <dev-libs/chmlib-0.40-r1 ) >=app-admin/eselect-python-20091230 =dev-lang/python-2*
 SLOT=0
 SRC_URI=http://chm2pdf.googlecode.com/files/chm2pdf-0.9.1.tar.gz
 _eclasses_=eutils	56c868c387979233365d02c584c057a1	multilib	96c2a0a85a74a03e8bed788c8c4ac424	portability	0d9341be2bffb3ace510580f192f231e	python	262a0983b6716502852b4418e0f433b8	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
-_md5_=083a4d856e0dfc9b2f74fd3f534cd3fe
+_md5_=5605c7b1d54a0f10b6766ca5a5a598b5

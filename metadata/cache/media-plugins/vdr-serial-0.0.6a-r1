@@ -6,7 +6,7 @@ http://www.lf-klueber.de/vdr-serial-0.0.6a.tgz mirror://vdrfiles/vdr-serial/vdr-
 http://www.lf-klueber.de/vdr.htm
 GPL-2
 VDR Plugin: attach some buttons with diodes to the serial port
-~x86 ~amd64
+~amd64 x86
 base eutils flag-o-matic multilib portability toolchain-funcs user vdr-plugin
 
 

@@ -948,6 +948,8 @@ dev-embedded/msp430-gcc:multislot - Allow for SLOTs to include minor version (3.
 dev-embedded/msp430-gcc:objc - Build support for the Objective C code language
 dev-embedded/msp430-gcc:objc++ - Build support for the Objective C++ language
 dev-embedded/msp430-gcc:objc-gc - Build support for the Objective C code language Garbage Collector
+dev-embedded/msp430-gdb:multitarget - Support all known targets in one gdb binary
+dev-embedded/msp430-gdb:python - Enable support for the new internal scripting language, as well as extended pretty printers
 dev-embedded/openocd:blaster - Enable support for Altera USE-Blaster
 dev-embedded/openocd:dummy - Build the dummy port driver
 dev-embedded/openocd:ftd2xx - Enable support for USB FTDI chips via dev-embedded/libftd2xx
@@ -2260,17 +2262,18 @@ media-gfx/graphviz:lasi - Enables PostScript output via media-libs/lasi library
 media-gfx/gthumb:http - Enable webservice integration through net-libs/libsoup
 media-gfx/gthumb:slideshow - Enable slideshow plugin
 media-gfx/hugin:sift - automatically align images with media-gfx/autopano-sift or media-gfx/autopano-sift-C
-media-gfx/imagemagick:autotrace - use media-gfx/autotrace to convert bitmaps into vector graphics
-media-gfx/imagemagick:corefonts - pull in media-fonts/corefonts, which is required for some commands
-media-gfx/imagemagick:fpx - enable media-libs/libfpx support
-media-gfx/imagemagick:gs - enable ghostscript support
+media-gfx/imagemagick:autotrace - Use media-gfx/autotrace to convert bitmaps into vector graphics
+media-gfx/imagemagick:corefonts - Use media-fonts/corefonts which is required by some commands
+media-gfx/imagemagick:fpx - Enable media-libs/libfpx support
+media-gfx/imagemagick:gs - Enable ghostscript support
 media-gfx/imagemagick:hdri - enable High Dynamic Range Images formats
-media-gfx/imagemagick:lqr - enable experimental liquid rescale support
+media-gfx/imagemagick:lqr - Enable experimental liquid rescale support using media-libs/liblqr
 media-gfx/imagemagick:opencl - Enable OpenCL support
-media-gfx/imagemagick:q32 - set quantum depth to 32
-media-gfx/imagemagick:q64 - set quantum depth to 64
-media-gfx/imagemagick:q8 - set quantum depth to 8
-media-gfx/imagemagick:webp - enable webp image format support
+media-gfx/imagemagick:pango - Enable Pango support using x11-libs/pango
+media-gfx/imagemagick:q32 - Set quantum depth value to 32
+media-gfx/imagemagick:q64 - Set quantum depth value to 64
+media-gfx/imagemagick:q8 - Set quantum depth value to 8
+media-gfx/imagemagick:webp - Enable webp image format support using media-libs/libwebp
 media-gfx/imageworsener:webp - enable webp image format support
 media-gfx/inkscape:dia - pull in app-office/dia for dia import extension
 media-gfx/inkscape:gs - enables support for the PostScript import extension
@@ -5285,6 +5288,7 @@ x11-wm/xpra:parti - Runtime support for partioning window manager
 x11-wm/xpra:server - Build server-side code
 x11-wm/xpra:ssh - Runtime support for secure shell communication
 xfce-base/libxfce4ui:glade - Build support for Glade 3's GtkBuilder implementation
+xfce-base/libxfce4ui:vanilla - Don't apply extra keyboard shortcuts patch from Fedora
 xfce-base/libxfcegui4:glade - Build glade bindings
 xfce-base/xfce-utils:lock - Enable screen locking
 xfce-base/xfce4-session:consolekit - Enable authentication support using sys-auth/consolekit

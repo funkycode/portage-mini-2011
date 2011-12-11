@@ -6,7 +6,7 @@ http://sweb.cz/tripie/utils/wmctrl/dist/wmctrl-1.07.tar.gz
 http://sweb.cz/tripie/utils/wmctrl/
 GPL-2
 command line tool to interact with an EWMH/NetWM compatible X Window Manager
-amd64 ~ppc ~sparc ~x86
+amd64 ~ppc ~sparc x86
 eutils multilib portability toolchain-funcs user
 
 

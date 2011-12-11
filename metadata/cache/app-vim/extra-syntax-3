@@ -6,7 +6,7 @@ app-vim/bnf-syntax app-vim/brainfuck-syntax app-vim/cfengine-syntax app-vim/dhcp
 http://www.vim.org/
 as-is
 vim plugin: metapackage for all extra syntax packages
-~alpha ~amd64 ~ia64 ~ppc ~ppc64 ~sparc ~x86
+~amd64 ~ppc ~ppc64 ~x86
 vim-doc vim-plugin
 
 

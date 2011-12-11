@@ -1,0 +1,12 @@
+DEFINED_PHASES=install prepare setup
+DEPEND=>=app-admin/eselect-python-20091230 =dev-lang/python-2*
+DESCRIPTION=A set of profiles for the GNU Screen console window manager (app-misc/screen)
+EAPI=4
+HOMEPAGE=https://launchpad.net/byobu
+KEYWORDS=~amd64 ~x86
+LICENSE=GPL-3
+RDEPEND=|| ( app-misc/screen app-misc/tmux ) dev-libs/newt >=app-admin/eselect-python-20091230 =dev-lang/python-2*
+SLOT=0
+SRC_URI=http://launchpad.net/byobu/trunk/4.54/+download/byobu_4.54.orig.tar.gz
+_eclasses_=multilib	96c2a0a85a74a03e8bed788c8c4ac424	python	262a0983b6716502852b4418e0f433b8	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68
+_md5_=afd53ed5716bfa522c82a12d07f402c3
