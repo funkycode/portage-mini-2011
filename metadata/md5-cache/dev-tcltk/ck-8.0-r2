@@ -1,11 +1,11 @@
 DEFINED_PHASES=compile configure install prepare
-DEPEND=>=dev-lang/tk-8.0
+DEPEND=dev-lang/tk
 DESCRIPTION=A curses based toolkit for tcl
 EAPI=2
 HOMEPAGE=http://www.ch-werner.de/ck/
 KEYWORDS=~amd64 ~x86
 LICENSE=BSD
-RDEPEND=>=dev-lang/tk-8.0
+RDEPEND=dev-lang/tk
 SLOT=0
 SRC_URI=http://www.ch-werner.de/ck/ck8.0.tar.gz
-_md5_=a9fcdbcf35d02bb1bda2ec9e035fa1f2
+_md5_=6299f97a82cae65860a1d3dd75660e54

@@ -1,0 +1,22 @@
+dev-lang/tk
+dev-lang/tk
+0
+http://www.ch-werner.de/ck/ck8.0.tar.gz
+
+http://www.ch-werner.de/ck/
+BSD
+A curses based toolkit for tcl
+~amd64 ~x86
+eutils multilib portability toolchain-funcs user
+
+
+
+
+4
+
+configure prepare
+
+
+
+
+

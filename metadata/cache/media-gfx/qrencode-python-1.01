@@ -1,5 +1,5 @@
-media-gfx/qrencode >=app-admin/eselect-python-20091230 =dev-lang/python-2*
-media-gfx/qrencode >=app-admin/eselect-python-20091230 =dev-lang/python-2*
+dev-python/imaging media-gfx/qrencode >=app-admin/eselect-python-20091230 =dev-lang/python-2*
+dev-python/imaging media-gfx/qrencode >=app-admin/eselect-python-20091230 =dev-lang/python-2*
 0
 mirror://pypi/q/qrencode/qrencode-1.01.tar.gz -> qrencode-python-1.01.tar.gz
 

@@ -1,0 +1,13 @@
+DEFINED_PHASES=compile configure install postinst postrm prepare
+DEPEND=>=app-text/djvu-3.5.22-r1 x11-libs/qt-gui:4 !!app-text/djview4 >=sys-devel/autoconf-2.67 dev-util/pkgconfig nsplugin? ( dev-libs/glib:2 ) || ( =sys-devel/automake-1.11* ) >=sys-devel/autoconf-2.61 sys-devel/libtool
+DESCRIPTION=Portable DjVu viewer using Qt4
+EAPI=4
+HOMEPAGE=http://djvu.sourceforge.net/djview4.html
+IUSE=debug nsplugin
+KEYWORDS=~alpha ~amd64 ~hppa ~ia64 ~ppc ~ppc64 ~x86
+LICENSE=GPL-2
+RDEPEND=>=app-text/djvu-3.5.22-r1 x11-libs/qt-gui:4 !!app-text/djview4
+SLOT=0
+SRC_URI=mirror://sourceforge/djvu/djview-4.8.tar.gz
+_eclasses_=autotools	b81740a014934d6736a8795cdedb452e	eutils	56c868c387979233365d02c584c057a1	fdo-mime	0acfe1a88fd8751a1d5dc671168219fa	flag-o-matic	f829a384b238abde8d21ba4d22139892	libtool	7c8f664cd4d1d18a9a75a4fd690594b8	multilib	96c2a0a85a74a03e8bed788c8c4ac424	nsplugins	6b89311e0bc22214ba7051d45cd9f1a8	portability	0d9341be2bffb3ace510580f192f231e	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e	versionator	2b24e535dc51a6963a610f7651fde5ec
+_md5_=31331bc267d776b71775b8026a696994
