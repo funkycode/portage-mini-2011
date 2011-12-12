@@ -6,7 +6,7 @@ mirror://cpan/authors/id/M/MD/MDOOTSON/Alien-wxWidgets-0.53.tar.gz
 http://search.cpan.org/dist/Alien-wxWidgets/
 || ( Artistic GPL-1 GPL-2 GPL-3 )
 Building, finding and using wxWidgets binaries
-amd64 ~ia64 ~x86
+amd64 ~ia64 x86
 base eutils multilib perl-module portability toolchain-funcs user wxwidgets
 test
 

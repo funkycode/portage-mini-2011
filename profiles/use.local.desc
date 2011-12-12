@@ -363,6 +363,9 @@ app-emulation/ganeti:lxc - Enable Linux Countainers support
 app-emulation/ganeti:sharedstorage - Enable Shared Storage support
 app-emulation/ganeti:xen - Enable Xen support
 app-emulation/lib765:libdsk - Enable support for the floppy disk emulation library app-emulation/libdsk
+app-emulation/libguestfs:fuse - Enable image mount support via fuse
+app-emulation/libguestfs:haskell - Install GHC binding
+app-emulation/libguestfs:javadoc - Install java docs
 app-emulation/libspectrum:gcrypt - Use dev-libs/libgcrypt for low-level crypto of some features, including logfiles.
 app-emulation/libvirt:iscsi - Allow using an iSCSI remote storage server as pool for disk image storage
 app-emulation/libvirt:json - Support QEmu 0.13 JSON-based interface, using dev-libs/yajl.
@@ -1086,6 +1089,7 @@ dev-lang/erlang:halfword - Enable halfword emulator
 dev-lang/erlang:hipe - HIgh Performance Erlang extension
 dev-lang/erlang:kpoll - Enable kernel polling support
 dev-lang/erlang:sctp - Support for Stream Control Transmission Protocol
+dev-lang/fpc:ide - Build and install the Free Pascal Compiler IDE
 dev-lang/gdl:grib - Adds support for the meteorological GRIB format
 dev-lang/gdl:hdf - Adds support for the Hierarchical Data Format
 dev-lang/gdl:udunits - Support for manipulating units of physical quantities

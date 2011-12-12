@@ -10,4 +10,4 @@ RDEPEND=kernel_linux? ( sys-apps/module-init-tools )
 SLOT=0
 SRC_URI=http://r8168.googlecode.com/files/r8168-8.026.00.tar.bz2
 _eclasses_=eutils	56c868c387979233365d02c584c057a1	linux-info	0a300da62c346bbaee5bcf82727f23ac	linux-mod	a4e07f78bacb6b129ea7b18ad060dbfc	multilib	96c2a0a85a74a03e8bed788c8c4ac424	portability	0d9341be2bffb3ace510580f192f231e	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e	versionator	2b24e535dc51a6963a610f7651fde5ec
-_md5_=6d99c12c4dd7fe80ac9dafc8614b339b
+_md5_=7b04512b04f69908c07fc667d1027ca3
