@@ -6,7 +6,7 @@ mirror://gentoo/cvsmenu-1.147.tar.bz2
 http://www.vim.org/scripts/script.php?script_id=1245
 LGPL-2
 vim plugin: CVS(NT) integration script
-~amd64 ~ppc ~x86
+amd64 ~ppc ~x86
 vim-doc vim-plugin
 
 

@@ -9,5 +9,5 @@ LICENSE=LGPL-3
 RDEPEND=sys-libs/libcap vanilla? ( sys-apps/util-linux app-misc/pax-utils )
 SLOT=0
 SRC_URI=http://lxc.sourceforge.net/download/lxc/lxc-0.7.5.tar.gz
-_eclasses_=eutils	56c868c387979233365d02c584c057a1	flag-o-matic	f829a384b238abde8d21ba4d22139892	linux-info	0a300da62c346bbaee5bcf82727f23ac	multilib	96c2a0a85a74a03e8bed788c8c4ac424	portability	0d9341be2bffb3ace510580f192f231e	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e	versionator	2b24e535dc51a6963a610f7651fde5ec
+_eclasses_=eutils	56c868c387979233365d02c584c057a1	flag-o-matic	f829a384b238abde8d21ba4d22139892	linux-info	cc184ad3383ffb6ffbaa82f53608e77f	multilib	96c2a0a85a74a03e8bed788c8c4ac424	portability	0d9341be2bffb3ace510580f192f231e	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e	versionator	2b24e535dc51a6963a610f7651fde5ec
 _md5_=c46646cebd7b4b605082024e80e3a401

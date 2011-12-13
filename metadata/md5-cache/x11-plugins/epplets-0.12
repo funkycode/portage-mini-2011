@@ -3,9 +3,9 @@ DEPEND=x11-libs/libX11 x11-libs/libXext media-libs/freeglut esd? ( media-sound/e
 DESCRIPTION=Base files for Enlightenment epplets and some epplets
 HOMEPAGE=http://www.enlightenment.org/
 IUSE=esd
-KEYWORDS=~alpha ~amd64 ~ppc ~sparc ~x86
+KEYWORDS=~alpha amd64 ~ppc ~sparc ~x86
 LICENSE=GPL-2
 RDEPEND=x11-libs/libX11 x11-libs/libXext media-libs/freeglut esd? ( media-sound/esound ) media-libs/imlib2 >=x11-wm/enlightenment-0.16.4
 SLOT=0
 SRC_URI=mirror://sourceforge/enlightenment/epplets-0.12.tar.gz
-_md5_=2445796915bc76fef57ebb2134248f3b
+_md5_=567c1de08ae06e377b11561b7fa9c751
