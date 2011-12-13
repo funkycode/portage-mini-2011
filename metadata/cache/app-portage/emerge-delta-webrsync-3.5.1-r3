@@ -6,7 +6,7 @@ mirror://gentoo/emerge-delta-webrsync-3.5.1
 http://www.gentoo.org/proj/en/portage/index.xml
 GPL-2
 emerge-webrsync using patches to minimize bandwidth
-alpha amd64 ~hppa ia64 ~mips ~ppc ~sparc x86
+alpha amd64 ~hppa ia64 ~mips ~ppc ~sparc x86 ~x86-fbsd
 eutils multilib portability toolchain-funcs user
 
 

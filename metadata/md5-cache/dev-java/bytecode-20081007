@@ -9,5 +9,5 @@ LICENSE=LGPL-2.1
 RDEPEND=>=virtual/jre-1.4 >=dev-java/java-config-2.1.9-r1 source? ( app-arch/zip )
 SLOT=0
 SRC_URI=http://dev.gentoo.org/~serkan/distfiles/bytecode-20081007.tar.bz2
-_eclasses_=eutils	56c868c387979233365d02c584c057a1	java-ant-2	babe067b6f66840f129ae290d1ccf762	java-pkg-2	5fe9c5085c2a9785371d4fb8f05b46b1	java-utils-2	03ab8cac2b9deec34f79c505eb42a99d	multilib	96c2a0a85a74a03e8bed788c8c4ac424	portability	0d9341be2bffb3ace510580f192f231e	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e	versionator	2b24e535dc51a6963a610f7651fde5ec
+_eclasses_=eutils	56c868c387979233365d02c584c057a1	java-ant-2	babe067b6f66840f129ae290d1ccf762	java-pkg-2	5fe9c5085c2a9785371d4fb8f05b46b1	java-utils-2	8386f5293b96245786782d8a7166db9a	multilib	96c2a0a85a74a03e8bed788c8c4ac424	portability	0d9341be2bffb3ace510580f192f231e	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e	versionator	2b24e535dc51a6963a610f7651fde5ec
 _md5_=7663ce522d2933772407ca6e6ebd4081
