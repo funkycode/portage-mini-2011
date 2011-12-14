@@ -8,5 +8,5 @@ LICENSE=GPL-2
 RDEPEND=>=sys-libs/pam-0.72 virtual/mysql
 SLOT=0
 SRC_URI=mirror://sourceforge/pam-mysql/pam_mysql-0.7RC1.tar.gz
-_eclasses_=libtool	7c8f664cd4d1d18a9a75a4fd690594b8	multilib	96c2a0a85a74a03e8bed788c8c4ac424	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68
+_eclasses_=libtool	0fd90d183673bf1107465ec45849d1ea	multilib	96c2a0a85a74a03e8bed788c8c4ac424	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68
 _md5_=efb6ed46d6ace54d7978daa27f89af3e

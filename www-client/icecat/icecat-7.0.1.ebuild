@@ -1,6 +1,6 @@
 # Copyright 1999-2011 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/www-client/icecat/icecat-7.0.1.ebuild,v 1.1 2011/10/08 18:26:42 polynomial-c Exp $
+# $Header: /var/cvsroot/gentoo-x86/www-client/icecat/icecat-7.0.1.ebuild,v 1.2 2011/12/13 17:20:18 polynomial-c Exp $
 
 EAPI="3"
 VIRTUALX_REQUIRED="pgo"
@@ -24,8 +24,7 @@ IUSE="+crashreporter +ipc pgo system-sqlite +webm"
 
 # More URIs appended below...
 SRC_URI="mirror://gnu/gnuzilla/${FF_PV}/${PN}-${FF_PV}.tar.bz2
-	http://dev.gentoo.org/~anarchy/mozilla/patchsets/${PATCH}.tar.xz
-	http://dev.gentoo.org/~polynomial-c/mozilla/ff701.diff.xz"
+	http://dev.gentoo.org/~anarchy/mozilla/patchsets/${PATCH}.tar.xz"
 LANGPACK_URI="http://gnuzilla.gnu.org/download/langpacks/${FF_PV}"
 
 ASM_DEPEND=">=dev-lang/yasm-1.1"

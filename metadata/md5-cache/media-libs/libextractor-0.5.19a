@@ -8,5 +8,5 @@ LICENSE=LGPL-2.1
 RESTRICT=test
 SLOT=0
 SRC_URI=http://gnunet.org/libextractor/download/libextractor-0.5.19a.tar.gz
-_eclasses_=libtool	7c8f664cd4d1d18a9a75a4fd690594b8	multilib	96c2a0a85a74a03e8bed788c8c4ac424	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68
+_eclasses_=libtool	0fd90d183673bf1107465ec45849d1ea	multilib	96c2a0a85a74a03e8bed788c8c4ac424	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68
 _md5_=14e1edcc820c4d97e0ff9ac73902ce12

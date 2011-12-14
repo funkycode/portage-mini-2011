@@ -1,0 +1,22 @@
+dev-libs/expat app-arch/unzip
+dev-libs/expat
+0
+http://csvfix.googlecode.com/files/csvfix_src_120.zip doc? ( http://csvfix.googlecode.com/files/csvfix_man_html_120.zip )
+
+http://code.google.com/p/csvfix/
+MIT
+A stream editor for manipulating CSV files
+~amd64 ~x86
+eutils multilib portability toolchain-funcs user versionator
+doc
+
+
+
+4
+
+compile install prepare test
+
+
+
+
+

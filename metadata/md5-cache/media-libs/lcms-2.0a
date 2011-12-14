@@ -10,5 +10,5 @@ RDEPEND=jpeg? ( virtual/jpeg ) tiff? ( media-libs/tiff:0 ) zlib? ( sys-libs/zlib
 RESTRICT=test
 SLOT=2
 SRC_URI=mirror://sourceforge/lcms/lcms2-2.0a.tar.gz
-_eclasses_=libtool	7c8f664cd4d1d18a9a75a4fd690594b8	multilib	96c2a0a85a74a03e8bed788c8c4ac424	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68
+_eclasses_=libtool	0fd90d183673bf1107465ec45849d1ea	multilib	96c2a0a85a74a03e8bed788c8c4ac424	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68
 _md5_=280b7067d804c51131a6534cf214fadc

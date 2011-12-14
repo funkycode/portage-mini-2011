@@ -6,7 +6,7 @@ http://hpwww.ec-lyon.fr/~vincent/chgres-0.1.tar.gz
 http://hpwww.ec-lyon.fr/~vincent/
 GPL-2
 A very simple command line utility for changing X resolutions
-~amd64 ~ppc x86
+amd64 ~ppc x86
 eutils multilib portability toolchain-funcs user
 
 

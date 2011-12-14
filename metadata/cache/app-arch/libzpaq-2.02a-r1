@@ -1,4 +1,4 @@
-app-arch/unzip || ( =sys-devel/automake-1.11* ) >=sys-devel/autoconf-2.61 sys-devel/libtool || ( =sys-devel/automake-1.11* ) >=sys-devel/autoconf-2.61 sys-devel/libtool
+app-arch/unzip || ( =sys-devel/automake-1.11* ) >=sys-devel/autoconf-2.61 sys-devel/libtool
 !=app-arch/zpaq-2.04
 0
 http://mattmahoney.net/dc/libzpaq.202a.zip

@@ -1,0 +1,13 @@
+DEFINED_PHASES=configure install
+DEPEND=perl? ( dev-lang/perl ) =app-editors/vile-9.8f >=x11-libs/libX11-1.0.0 >=x11-libs/libXt-1.0.0 >=x11-libs/libICE-1.0.0 >=x11-libs/libSM-1.0.0 >=x11-libs/libXaw-1.0.1 >=x11-libs/libXpm-3.5.4.2 >=x11-proto/xproto-7.0.4 sys-devel/flex
+DESCRIPTION=VI Like Emacs -- yet another full-featured vi clone
+EAPI=4
+HOMEPAGE=http://invisible-island.net/vile/
+IUSE=perl
+KEYWORDS=~alpha ~amd64 ~ia64 ~ppc ~sparc ~x86
+LICENSE=GPL-2
+RDEPEND=perl? ( dev-lang/perl ) =app-editors/vile-9.8f >=x11-libs/libX11-1.0.0 >=x11-libs/libXt-1.0.0 >=x11-libs/libICE-1.0.0 >=x11-libs/libSM-1.0.0 >=x11-libs/libXaw-1.0.1 >=x11-libs/libXpm-3.5.4.2 >=x11-proto/xproto-7.0.4
+SLOT=0
+SRC_URI=ftp://invisible-island.net/vile/current/vile-9.8f.tgz
+_eclasses_=eutils	56c868c387979233365d02c584c057a1	multilib	96c2a0a85a74a03e8bed788c8c4ac424	portability	0d9341be2bffb3ace510580f192f231e	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e	versionator	2b24e535dc51a6963a610f7651fde5ec
+_md5_=27032d90e3b7541fc28b3762634fd354

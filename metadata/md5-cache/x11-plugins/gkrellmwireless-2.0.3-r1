@@ -3,10 +3,10 @@ DEPEND==app-admin/gkrellm-2* dev-util/pkgconfig
 DESCRIPTION=A plugin for GKrellM that monitors your wireless network card
 EAPI=2
 HOMEPAGE=http://gkrellm.luon.net/gkrellmwireless.php
-KEYWORDS=~amd64 ~ppc ~sparc x86
+KEYWORDS=amd64 ~ppc ~sparc x86
 LICENSE=GPL-2
 RDEPEND==app-admin/gkrellm-2*
 SLOT=2
 SRC_URI=http://gkrellm.luon.net/files/gkrellmwireless-2.0.3.tar.gz
 _eclasses_=eutils	56c868c387979233365d02c584c057a1	gkrellm-plugin	ed070af3b0d893d87445360bb28c119c	multilib	96c2a0a85a74a03e8bed788c8c4ac424	portability	0d9341be2bffb3ace510580f192f231e	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
-_md5_=b76ec6ebec675df244039b9b0011217a
+_md5_=bf08206a684b5d09996c94a665f17a52

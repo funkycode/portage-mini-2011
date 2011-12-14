@@ -9,5 +9,5 @@ LICENSE=GPL-2
 RDEPEND=app-shells/bash || ( sys-apps/which sys-freebsd/freebsd-ubin ) dev-libs/libxslt >=app-text/docbook-xsl-stylesheets-1.62.0-r1 ~app-text/docbook-xml-dtd-4.2 || ( sys-apps/util-linux app-misc/getopt ) || ( >=sys-apps/coreutils-6.10-r1 sys-apps/mktemp sys-freebsd/freebsd-ubin ) latex? ( >=app-text/passivetex-1.25 >=dev-tex/xmltex-1.9-r2 )
 SLOT=0
 SRC_URI=https://fedorahosted.org/releases/x/m/xmlto/xmlto-0.0.22.tar.bz2
-_eclasses_=autotools	b81740a014934d6736a8795cdedb452e	eutils	56c868c387979233365d02c584c057a1	libtool	7c8f664cd4d1d18a9a75a4fd690594b8	multilib	96c2a0a85a74a03e8bed788c8c4ac424	portability	0d9341be2bffb3ace510580f192f231e	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
+_eclasses_=autotools	235f58128aa13fc66a32f8876bda2eee	eutils	56c868c387979233365d02c584c057a1	libtool	0fd90d183673bf1107465ec45849d1ea	multilib	96c2a0a85a74a03e8bed788c8c4ac424	portability	0d9341be2bffb3ace510580f192f231e	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
 _md5_=f49b2efbce0e4e77f05166d3e8018915

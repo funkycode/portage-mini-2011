@@ -1,0 +1,12 @@
+DEFINED_PHASES=prepare
+DEPEND=net-libs/libpcap
+DESCRIPTION=Displays statistics about ethernet traffic including protocol breakdown
+EAPI=4
+HOMEPAGE=http://trash.net/~reeler/nstats/
+KEYWORDS=~amd64 ~ppc ~sparc ~x86
+LICENSE=Artistic
+RDEPEND=net-libs/libpcap
+SLOT=0
+SRC_URI=http://trash.net/~reeler/nstats/files/nstats-0.4.tar.gz
+_eclasses_=eutils	56c868c387979233365d02c584c057a1	multilib	96c2a0a85a74a03e8bed788c8c4ac424	portability	0d9341be2bffb3ace510580f192f231e	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
+_md5_=10a03becdfb1e269148c0b519657b30a

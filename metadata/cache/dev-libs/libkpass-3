@@ -1,0 +1,22 @@
+dev-libs/openssl[static-libs?]
+dev-libs/openssl[static-libs?]
+0
+mirror://sourceforge/libkpass/libkpass-3.tar.gz
+
+http://libkpass.sourceforge.net/
+GPL-2
+Libkpass is a from-scratch C implementation of accessing KeePass 1.x format password databases
+~amd64
+
+static-libs
+
+
+
+4
+
+configure install
+
+
+
+
+
