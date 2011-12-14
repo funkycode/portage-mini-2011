@@ -7,14 +7,14 @@ http://proxychains.sourceforge.net/ https://github.com/haad/proxychains/tree/pro
 GPL-2
 force any tcp connections to flow through a proxy (or proxy chain)
 ~amd64 ~ppc ~sparc ~x86
-autotools autotools-utils base eutils libtool multilib portability toolchain-funcs user
+autotools autotools-utils eutils libtool multilib portability toolchain-funcs user
 static-libs
 
 
 
 4
 
-compile configure install prepare test unpack
+compile configure install prepare test
 
 
 

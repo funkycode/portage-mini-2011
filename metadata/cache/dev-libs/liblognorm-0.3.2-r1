@@ -7,14 +7,14 @@ http://www.liblognorm.com
 LGPL-2.1
 Fast samples-based log normalization library
 ~amd64 ~x86 ~amd64-linux
-autotools autotools-utils base eutils libtool multilib portability toolchain-funcs user
+autotools autotools-utils eutils libtool multilib portability toolchain-funcs user
 debug static-libs
 
 
 
 4
 
-compile configure install prepare test unpack
+compile configure install prepare test
 
 
 

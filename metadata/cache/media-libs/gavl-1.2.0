@@ -7,14 +7,14 @@ http://gmerlin.sourceforge.net
 GPL-3
 library for handling uncompressed audio and video data
 ~amd64 hppa ~ppc ~ppc64 ~x86
-autotools autotools-utils base eutils libtool multilib portability toolchain-funcs user
+autotools autotools-utils eutils libtool multilib portability toolchain-funcs user
 doc
 
 
 
 4
 
-compile configure install prepare test unpack
+compile configure install prepare test
 
 
 

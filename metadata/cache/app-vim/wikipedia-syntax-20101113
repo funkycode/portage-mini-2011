@@ -6,7 +6,7 @@ mirror://gentoo/wikipedia-syntax-20101113.tar.bz2
 http://en.wikipedia.org/wiki/Wikipedia:Text_editor_support#Vim
 as-is
 vim plugin: Wikipedia syntax highlighting
-amd64 ~hppa ~mips ~ppc ~ppc64 ~x86
+amd64 ~hppa ~mips ~ppc ~ppc64 x86
 vim-doc vim-plugin
 
 

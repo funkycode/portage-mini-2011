@@ -1,13 +1,13 @@
 # Copyright 1999-2011 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/dev-python/django/django-9999.ebuild,v 1.9 2011/02/09 18:16:28 arfrever Exp $
+# $Header: /var/cvsroot/gentoo-x86/dev-python/django/django-9999.ebuild,v 1.10 2011/12/14 10:23:36 floppym Exp $
 
 EAPI="3"
 PYTHON_DEPEND="2"
 SUPPORT_PYTHON_ABIS="1"
 RESTRICT_PYTHON_ABIS="3.*"
 
-inherit bash-completion distutils subversion webapp
+inherit bash-completion-r1 distutils subversion webapp
 
 DESCRIPTION="High-level Python web framework"
 HOMEPAGE="http://www.djangoproject.com/ http://pypi.python.org/pypi/Django"
@@ -30,7 +30,7 @@ S="${WORKDIR}"
 
 ESVN_REPO_URI="http://code.djangoproject.com/svn/django/trunk/"
 
-DOCS="docs/* AUTHORS"
+DOCS="docs/README AUTHORS"
 WEBAPP_MANUAL_SLOT="yes"
 
 pkg_setup() {
@@ -61,7 +61,7 @@ src_test() {
 src_install() {
 	distutils_src_install
 
-	dobashcompletion extras/django_bash_completion
+	dobashcomp extras/django_bash_completion ${PN}
 
 	if use doc; then
 		rm -fr docs/_build/html/_sources

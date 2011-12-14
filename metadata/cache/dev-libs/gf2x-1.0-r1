@@ -7,14 +7,14 @@ http://gf2x.gforge.inria.fr/
 GPL-2
 C/C++ routines for fast arithmetic in GF(2)[x]
 ~amd64 ~ppc ~x86 ~amd64-linux ~x86-linux ~ppc-macos
-autotools autotools-utils base eutils libtool multilib portability toolchain-funcs user
+autotools autotools-utils eutils libtool multilib portability toolchain-funcs user
 bindist
 
 
 
 2
 
-compile configure install prepare test unpack
+compile configure install prepare test
 
 
 

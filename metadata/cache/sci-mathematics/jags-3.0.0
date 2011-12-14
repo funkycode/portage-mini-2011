@@ -7,14 +7,14 @@ http://www-fis.iarc.fr/~martyn/software/jags/
 GPL-2
 Just Another Gibbs Sampler for Bayesian MCMC simulation
 ~amd64 ~x86 ~amd64-linux ~x86-linux
-autotools autotools-utils base eutils libtool multilib portability toolchain-funcs user
+autotools autotools-utils eutils libtool multilib portability toolchain-funcs user
 
 
 
 
 4
 
-compile configure install prepare test unpack
+compile configure install prepare test
 
 
 

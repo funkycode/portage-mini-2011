@@ -7,14 +7,14 @@ http://afflib.org/
 BSD-4
 Library that implements the AFF image standard
 ~amd64 ~hppa ~ppc ~x86
-autotools autotools-utils base eutils libtool multilib portability python toolchain-funcs user
+autotools autotools-utils eutils libtool multilib portability python toolchain-funcs user
 fuse ncurses python qemu readline s3 static-libs threads
 
 
 
 4
 
-compile configure install prepare setup test unpack
+compile configure install prepare setup test
 
 
 

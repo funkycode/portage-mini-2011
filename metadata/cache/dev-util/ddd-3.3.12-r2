@@ -7,14 +7,14 @@ http://www.gnu.org/software/ddd
 GPL-3 LGPL-3 FDL-1.1
 Graphical front-end for command-line debuggers
 ~alpha ~amd64 ~ia64 ~ppc ~ppc64 ~sparc ~x86 ~amd64-linux ~x86-linux
-autotools autotools-utils base eutils libtool multilib portability toolchain-funcs user
+autotools autotools-utils eutils libtool multilib portability toolchain-funcs user
 +gnuplot
 
 
 
 4
 
-compile configure install postinst prepare test unpack
+compile configure install postinst prepare test
 
 
 

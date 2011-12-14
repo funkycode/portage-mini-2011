@@ -7,14 +7,14 @@ http://parchive.sourceforge.net/
 GPL-2
 A library for par2, extracted from par2cmdline
 ~alpha ~amd64 ~ppc ~x86
-autotools autotools-utils base eutils libtool multilib portability toolchain-funcs user
+autotools autotools-utils eutils libtool multilib portability toolchain-funcs user
 static-libs
 
 
 
 4
 
-compile configure install prepare test unpack
+compile configure install prepare test
 
 
 

@@ -7,14 +7,14 @@ http://libewf.sourceforge.net
 BSD
 Implementation of the EWF (SMART and EnCase) image format
 amd64 hppa ~ppc x86
-autotools autotools-utils base eutils libtool multilib portability toolchain-funcs user
+autotools autotools-utils eutils libtool multilib portability toolchain-funcs user
 debug ewf2 rawio static-libs unicode
 
 
 
 4
 
-compile configure install prepare test unpack
+compile configure install prepare test
 
 
 

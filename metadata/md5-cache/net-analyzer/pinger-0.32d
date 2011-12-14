@@ -4,10 +4,10 @@ DESCRIPTION=Cyclic multi ping utility for selected adresses using GTK/ncurses.
 EAPI=2
 HOMEPAGE=http://aa.vslib.cz/silk/projekty/pinger/index.php
 IUSE=gtk nls
-KEYWORDS=~amd64 ~ppc ~x86
+KEYWORDS=~amd64 ~ppc x86
 LICENSE=GPL-2
 RDEPEND=gtk? ( >=x11-libs/gtk+-2.4:2 ) sys-libs/ncurses
 SLOT=0
 SRC_URI=http://aa.vslib.cz/silk/projekty/pinger/download/pinger-0.32d.tar.gz mirror://gentoo/gtk-2.0-for-pinger.m4.bz2
 _eclasses_=autotools	235f58128aa13fc66a32f8876bda2eee	eutils	56c868c387979233365d02c584c057a1	flag-o-matic	f829a384b238abde8d21ba4d22139892	libtool	0fd90d183673bf1107465ec45849d1ea	multilib	96c2a0a85a74a03e8bed788c8c4ac424	portability	0d9341be2bffb3ace510580f192f231e	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
-_md5_=4c452a04a0a2426600327fad668b9387
+_md5_=1bb9655e6e625b25c8db6e1b64ee8e67

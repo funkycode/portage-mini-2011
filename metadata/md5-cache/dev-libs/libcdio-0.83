@@ -1,4 +1,4 @@
-DEFINED_PHASES=compile configure install postinst prepare test unpack
+DEFINED_PHASES=compile configure install postinst prepare test
 DEPEND=cddb? ( >=media-libs/libcddb-1.0.1 ) virtual/libintl sys-devel/gettext dev-util/pkgconfig || ( =sys-devel/automake-1.11* ) >=sys-devel/autoconf-2.61 sys-devel/libtool
 DESCRIPTION=A library to encapsulate CD-ROM reading and control
 EAPI=4
@@ -9,5 +9,5 @@ LICENSE=GPL-2
 RDEPEND=cddb? ( >=media-libs/libcddb-1.0.1 ) virtual/libintl
 SLOT=0
 SRC_URI=mirror://gnu/libcdio/libcdio-0.83.tar.gz
-_eclasses_=autotools	235f58128aa13fc66a32f8876bda2eee	autotools-utils	8568b5523693d69a929254eca0bf9e75	base	dba02c674ce4dff67657c692954d7ef0	eutils	56c868c387979233365d02c584c057a1	libtool	0fd90d183673bf1107465ec45849d1ea	multilib	96c2a0a85a74a03e8bed788c8c4ac424	portability	0d9341be2bffb3ace510580f192f231e	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
+_eclasses_=autotools	235f58128aa13fc66a32f8876bda2eee	autotools-utils	1a50ce298315c74b307c84cfa7773d1d	eutils	56c868c387979233365d02c584c057a1	libtool	0fd90d183673bf1107465ec45849d1ea	multilib	96c2a0a85a74a03e8bed788c8c4ac424	portability	0d9341be2bffb3ace510580f192f231e	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
 _md5_=de9e6d25bc4bdf786013ab2bdbe39c7f

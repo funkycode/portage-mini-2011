@@ -7,14 +7,14 @@ http://plugins.geany.org/geany-plugins
 GPL-2
 A collection of different plugins for Geany
 ~amd64 ~ppc ~x86
-autotools autotools-utils base eutils libtool multilib portability toolchain-funcs user versionator
+autotools autotools-utils eutils libtool multilib portability toolchain-funcs user versionator
 enchant gtkspell lua nls soup webkit
 
 
 
 2
 
-compile configure install prepare test unpack
+compile configure install prepare test
 
 
 

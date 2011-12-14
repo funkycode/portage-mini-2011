@@ -1,5 +1,5 @@
-dev-libs/openssl[static-libs?]
-dev-libs/openssl[static-libs?]
+>=dev-libs/openssl-1
+>=dev-libs/openssl-1
 0
 mirror://sourceforge/libkpass/libkpass-3.tar.gz
 

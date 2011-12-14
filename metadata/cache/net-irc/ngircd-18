@@ -7,14 +7,14 @@ http://ngircd.barton.de/
 GPL-2
 A IRC server written from scratch
 ~amd64 ~x86 ~x64-macos
-autotools autotools-utils base eutils libtool multilib portability toolchain-funcs user
+autotools autotools-utils eutils libtool multilib portability toolchain-funcs user
 debug gnutls ident ipv6 pam ssl tcpd zlib
 
 
 
 4
 
-compile configure install postinst prepare test unpack
+compile configure install postinst prepare test
 
 
 

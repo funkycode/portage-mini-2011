@@ -1,4 +1,4 @@
-DEFINED_PHASES=compile config configure install postinst prepare test unpack
+DEFINED_PHASES=compile config configure install postinst prepare test
 DEPEND=dbi? ( dev-db/libdbi ) extras? ( net-libs/libnet ) gnutls? ( net-libs/gnutls ) kerberos? ( virtual/krb5 ) mysql? ( virtual/mysql ) postgres? ( dev-db/postgresql-base ) oracle? ( dev-db/oracle-instantclient-basic ) relp? ( >=dev-libs/librelp-0.1.3 ) snmp? ( net-analyzer/net-snmp ) zeromq? ( net-libs/zeromq ) zlib? ( sys-libs/zlib ) dev-util/pkgconfig || ( =sys-devel/automake-1.11* ) >=sys-devel/autoconf-2.61 sys-devel/libtool
 DESCRIPTION=An enhanced multi-threaded syslogd with database support and more.
 EAPI=4
@@ -10,5 +10,5 @@ RDEPEND=dbi? ( dev-db/libdbi ) extras? ( net-libs/libnet ) gnutls? ( net-libs/gn
 RESTRICT=test
 SLOT=0
 SRC_URI=http://www.rsyslog.com/files/download/rsyslog/rsyslog-5.8.5.tar.gz zeromq? ( https://github.com/aggregateknowledge/rsyslog-zeromq/tarball/44b551abc29dd5b541884bd51b45b413855a93d8 -> rsyslog-zeromq.tar.gz )
-_eclasses_=autotools	235f58128aa13fc66a32f8876bda2eee	autotools-utils	8568b5523693d69a929254eca0bf9e75	base	dba02c674ce4dff67657c692954d7ef0	eutils	56c868c387979233365d02c584c057a1	libtool	0fd90d183673bf1107465ec45849d1ea	multilib	96c2a0a85a74a03e8bed788c8c4ac424	portability	0d9341be2bffb3ace510580f192f231e	systemd	c296542c6b40f8c6a76798dbc71b69ca	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
+_eclasses_=autotools	235f58128aa13fc66a32f8876bda2eee	autotools-utils	1a50ce298315c74b307c84cfa7773d1d	eutils	56c868c387979233365d02c584c057a1	libtool	0fd90d183673bf1107465ec45849d1ea	multilib	96c2a0a85a74a03e8bed788c8c4ac424	portability	0d9341be2bffb3ace510580f192f231e	systemd	c296542c6b40f8c6a76798dbc71b69ca	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
 _md5_=19bf7971903a1b07380cb70f1a0eeed3
