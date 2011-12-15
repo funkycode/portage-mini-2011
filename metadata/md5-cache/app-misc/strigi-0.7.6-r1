@@ -9,5 +9,5 @@ LICENSE=GPL-2
 RDEPEND=app-arch/bzip2:0 dev-libs/boost dev-libs/libxml2:2 sys-libs/zlib:0 virtual/libiconv clucene? ( >=dev-cpp/clucene-0.9.21[-debug] ) dbus? ( sys-apps/dbus qt4? ( x11-libs/qt-dbus:4 ) ) exif? ( >=media-gfx/exiv2-0.17 ) fam? ( virtual/fam ) ffmpeg? ( virtual/ffmpeg ) hyperestraier? ( app-text/hyperestraier ) log? ( >=dev-libs/log4cxx-0.10.0 ) qt4? ( x11-libs/qt-core:4 x11-libs/qt-gui:4 )
 SLOT=0
 SRC_URI=http://dev.gentoo.org/~dilfridge/distfiles/strigi-0.7.6.tar.xz
-_eclasses_=base	dba02c674ce4dff67657c692954d7ef0	cmake-utils	00f9fd5a80cf3605f6d9a2e808c48a92	eutils	56c868c387979233365d02c584c057a1	flag-o-matic	f829a384b238abde8d21ba4d22139892	multilib	96c2a0a85a74a03e8bed788c8c4ac424	portability	0d9341be2bffb3ace510580f192f231e	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
+_eclasses_=base	809ab15a673823938260f6b17661c3f1	cmake-utils	00f9fd5a80cf3605f6d9a2e808c48a92	eutils	1bb26e220731063f07d67bca36aa89aa	flag-o-matic	8ffbf0dc65f73498fcba6d29048fdfff	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	portability	0d9341be2bffb3ace510580f192f231e	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
 _md5_=8b8d8a622444364e1b9f5d8564ec0c86

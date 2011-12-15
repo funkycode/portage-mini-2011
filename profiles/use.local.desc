@@ -1377,13 +1377,13 @@ dev-php/pecl-apc:lock_pthreadmutex - Enable pthread mutex locking
 dev-php/pecl-apc:lock_pthreadrw - Enable pthread read/write locking
 dev-php/pecl-apc:lock_semaphore - Enable semaphore locks instead of fcntl
 dev-php/pecl-apc:lock_spinlock - Enable spin locks (EXPERIMENTAL)
+dev-php/pecl-memcached:igbinary - Enable support for the igbinary serializer
+dev-php/php-gtk:glade - Enable libglade support
+dev-php/php-gtk:libsexy - Enable libsexy support
+dev-php/php-gtk:mozembed - Enable GtkMozembed support
+dev-php/php-gtk:scintilla - Enable Scintilla support
 dev-php/smarty-docs:html - Install the documentation in HTML format
 dev-php/smarty-docs:pdf - Install the documentation in PDF format
-dev-php5/pecl-memcached:igbinary - Enable support for the igbinary serializer
-dev-php5/php-gtk:glade - Enable libglade support
-dev-php5/php-gtk:libsexy - Enable libsexy support
-dev-php5/php-gtk:mozembed - Enable GtkMozembed support
-dev-php5/php-gtk:scintilla - Enable Scintilla support
 dev-python/PyFoam:extras - Enable optional dependencies
 dev-python/PyQt4:X - Build the QtGui and QtDesigner modules
 dev-python/PyQt4:assistant - Build the QtHelp and QtAssistant modules
@@ -5038,6 +5038,7 @@ www-servers/pshs:netlink - Use libnetlink (sys-apps/iproute2) to get network int
 www-servers/pshs:upnp - Enable port forwarding using UPnP via net-libs/miniupnpc
 www-servers/resin:admin - Enable Resin admin webapp
 www-servers/tomcat:admin - Enable Tomcat admin webapp
+www-servers/varnish:tools - Build additional tools: varnishhist, varnishstat, varnishtop, varnishsizes
 x11-apps/ardesia:cwiid - cwiid support: collection of Linux tools written in C for interfacing to the Nintendo Wiimote.
 x11-apps/xdpyinfo:dmx - Builds support for Distributed Multiheaded X x11-base/xorg-server
 x11-apps/xinit:minimal - Control dependencies on legacy apps (xterm, twm, ...). Safe to enable if you use a modern desktop environment.
@@ -5187,6 +5188,7 @@ x11-misc/revelation:applet - Enable applet for gnome-base/gnome-panel
 x11-misc/rss-glx:quesoglc - Enable support for OpenGL Character Renderer
 x11-misc/shutter:drawing - Enables drawing tool
 x11-misc/shutter:webphoto - Enables screenshots of websites
+x11-misc/slim:consolekit - Enable native consolekit support
 x11-misc/tint2:battery - Enable battery status plugin
 x11-misc/tint2:examples - Install tint2rc examples
 x11-misc/tint2:tint2conf - Build/Install tint2conf as well

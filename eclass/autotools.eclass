@@ -1,6 +1,6 @@
 # Copyright 1999-2011 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/eclass/autotools.eclass,v 1.113 2011/12/13 21:57:05 vapier Exp $
+# $Header: /var/cvsroot/gentoo-x86/eclass/autotools.eclass,v 1.116 2011/12/14 20:46:36 vapier Exp $
 
 # @ECLASS: autotools.eclass
 # @MAINTAINER:
@@ -9,6 +9,9 @@
 # @DESCRIPTION:
 # This eclass is for safely handling autotooled software packages that need to
 # regenerate their build scripts.  All functions will abort in case of errors.
+
+# Note: We require GNU m4, as does autoconf.  So feel free to use any features
+# from the GNU version of m4 without worrying about other variants (i.e. BSD).
 
 if [[ ${___ECLASS_ONCE_AUTOTOOLS} != "recur -_+^+_- spank" ]] ; then
 ___ECLASS_ONCE_AUTOTOOLS="recur -_+^+_- spank"
@@ -102,11 +105,10 @@ unset _automake_atom _autoconf_atom
 # useful when elibtoolize needs to be ran with
 # particular options
 
-# XXX: M4DIR should be deprecated
 # @ECLASS-VARIABLE: AT_M4DIR
 # @DESCRIPTION:
 # Additional director(y|ies) aclocal should search
-: ${AT_M4DIR:=${M4DIR}}
+: ${AT_M4DIR:=}
 
 # @ECLASS-VARIABLE: AT_SYS_M4DIR
 # @INTERNAL
@@ -199,7 +201,7 @@ eaclocal_amflags() {
 # Respects AT_M4DIR for additional directories to search for macro's.
 eaclocal() {
 	[[ ! -f aclocal.m4 || -n $(grep -e 'generated.*by aclocal' aclocal.m4) ]] && \
-		autotools_run_tool aclocal $(autotools_m4dir_include) "$@" $(eaclocal_amflags)
+		autotools_run_tool --at-m4flags aclocal "$@" $(eaclocal_amflags)
 }
 
 # @FUNCTION: _elibtoolize
@@ -228,7 +230,7 @@ _elibtoolize() {
 eautoheader() {
 	# Check if we should run autoheader
 	[[ -n $(autotools_check_macro "AC_CONFIG_HEADERS") ]] || return 0
-	NO_FAIL=1 autotools_run_tool autoheader $(autotools_m4dir_include) "$@"
+	autotools_run_tool --at-no-fail --at-m4flags autoheader "$@"
 }
 
 # @FUNCTION: eautoconf
@@ -242,7 +244,7 @@ eautoconf() {
 		die "No configure.{ac,in} present!"
 	fi
 
-	autotools_run_tool autoconf $(autotools_m4dir_include) "$@"
+	autotools_run_tool --at-m4flags autoconf "$@"
 }
 
 # @FUNCTION: eautomake
@@ -314,6 +316,18 @@ autotools_env_setup() {
 	[[ ${WANT_AUTOCONF} == "latest" ]] && export WANT_AUTOCONF=2.5
 }
 autotools_run_tool() {
+	# Process our own internal flags first
+	local autofail=true m4flags=false
+	while [[ -n $1 ]] ; do
+		case $1 in
+		--at-no-fail) autofail=false;;
+		--at-m4flags) m4flags=true;;
+		# whatever is left goes to the actual tool
+		*) break;;
+		esac
+		shift
+	done
+
 	if [[ ${EBUILD_PHASE} != "unpack" && ${EBUILD_PHASE} != "prepare" ]]; then
 		ewarn "QA Warning: running $1 in ${EBUILD_PHASE} phase"
 	fi
@@ -332,13 +346,15 @@ autotools_run_tool() {
 		done
 	fi
 
+	if ${m4flags} ; then
+		set -- "${1}" $(autotools_m4dir_include) "${@:2}" $(autotools_m4sysdir_include)
+	fi
+
 	printf "***** $1 *****\n***** PWD: ${PWD}\n***** $*\n\n" > "${STDERR_TARGET}"
 
 	ebegin "Running $@"
 	"$@" >> "${STDERR_TARGET}" 2>&1
-	eend $?
-
-	if [[ $? != 0 && ${NO_FAIL} != 1 ]] ; then
+	if ! eend $? && ${autofail} ; then
 		echo
 		eerror "Failed Running $1 !"
 		eerror
@@ -378,14 +394,13 @@ autotools_check_macro_val() {
 autotools_get_subdirs() { autotools_check_macro_val AC_CONFIG_SUBDIRS ; }
 autotools_get_auxdir() { autotools_check_macro_val AC_CONFIG_AUX_DIR ; }
 
-autotools_m4dir_include() {
+_autotools_m4dir_include() {
 	local x include_opts
 
-	for x in ${AT_M4DIR} $(eval echo ${AT_SYS_M4DIR}) ; do
-		case "${x}" in
-			"-I")
-				# We handle it below
-				;;
+	for x in "$@" ; do
+		case ${x} in
+			# We handle it below
+			-I) ;;
 			*)
 				[[ ! -d ${x} ]] && ewarn "autotools.eclass: '${x}' does not exist"
 				include_opts+=" -I ${x}"
@@ -395,5 +410,7 @@ autotools_m4dir_include() {
 
 	echo ${include_opts}
 }
+autotools_m4dir_include()    { _autotools_m4dir_include ${AT_M4DIR} ; }
+autotools_m4sysdir_include() { _autotools_m4dir_include $(eval echo ${AT_SYS_M4DIR}) ; }
 
 fi

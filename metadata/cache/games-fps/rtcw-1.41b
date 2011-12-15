@@ -13,7 +13,7 @@ opengl dedicated
 
 
 2
-interactive
+
 compile configure install postinst preinst prepare setup unpack
 
 

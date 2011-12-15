@@ -6,7 +6,7 @@ http://augeas.net/download/augeas-0.9.0.tar.gz
 http://augeas.net/
 LGPL-2.1
 A library for changing configuration files
-~alpha ~amd64 ~hppa ~ppc ~sparc x86
+~alpha amd64 ~hppa ~ppc ~sparc x86
 eutils multilib portability toolchain-funcs user
 static-libs test
 

@@ -8,5 +8,5 @@ LICENSE=|| ( LGPL-2.1 LGPL-3 )
 RDEPEND=>=dev-php/PEAR-DB_DataObject-1.8.5 >=dev-php/PEAR-HTML_QuickForm-3.2.4 !minimal? ( >=dev-php/PEAR-Date-1.4.7 >=dev-php/PEAR-HTML_Table-1.7.5 >=dev-php/PEAR-HTML_QuickForm_ElementGrid-0.1.0 ) dev-lang/php || ( ( >=dev-php/PEAR-PEAR-1.6.1 <dev-php/PEAR-PEAR-1.8.1 ) >=dev-php/pear-1.8.1 )
 SLOT=0
 SRC_URI=http://pear.php.net/get/DB_DataObject_FormBuilder-1.0.0RC7.tgz
-_eclasses_=multilib	96c2a0a85a74a03e8bed788c8c4ac424	php-pear-r1	21ad9cb77f000c57f7a7e4b46ae18783	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68
+_eclasses_=multilib	5f4ad6cf85e365e8f0c6050ddd21659e	php-pear-r1	21ad9cb77f000c57f7a7e4b46ae18783	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68
 _md5_=e761b0b12075d28eeb385ac7461177d4

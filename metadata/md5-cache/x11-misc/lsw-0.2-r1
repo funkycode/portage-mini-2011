@@ -8,5 +8,5 @@ LICENSE=MIT
 RDEPEND=x11-libs/libX11
 SLOT=0
 SRC_URI=http://dl.suckless.org/tools/lsw-0.2.tar.gz
-_eclasses_=multilib	96c2a0a85a74a03e8bed788c8c4ac424	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68
+_eclasses_=multilib	5f4ad6cf85e365e8f0c6050ddd21659e	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68
 _md5_=6544fa5a63d46dfa9e34e7e7359d7fbb

@@ -9,5 +9,5 @@ RDEPEND=~virtual/libstdc++-3.3 amd64? ( app-emulation/emul-linux-x86-compat )
 RESTRICT=mirror strip
 SLOT=0
 SRC_URI=http://registrationcenter-download.intel.com/irc_nas/1536/l_cproc_p_11.1.046.tgz
-_eclasses_=multilib	96c2a0a85a74a03e8bed788c8c4ac424	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68
+_eclasses_=multilib	5f4ad6cf85e365e8f0c6050ddd21659e	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68
 _md5_=35808b56b7c9d680715a827ea76b415d

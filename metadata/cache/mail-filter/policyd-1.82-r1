@@ -6,7 +6,7 @@ http://policyd.sourceforge.net/policyd-1.82.tar.gz
 http://policyd.sf.net/
 GPL-2
 Policy daemon for postfix and other MTAs
-~amd64 ~hppa x86
+amd64 ~hppa x86
 eutils multilib portability toolchain-funcs user
 
 

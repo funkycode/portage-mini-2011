@@ -6,5 +6,5 @@ HOMEPAGE=http://jim.berlios.de/
 IUSE=static-libs
 LICENSE=LGPL-2
 SLOT=0
-_eclasses_=git-2	48dc75cccc109d7cda9f8dc3fff7a5b8
+_eclasses_=git-2	e093fad2de8fa7ca11e7ed938d27ceb1
 _md5_=fbdc9a7e263e539e24e64a1b7768002e

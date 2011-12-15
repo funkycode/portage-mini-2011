@@ -9,5 +9,5 @@ LICENSE=GPL-2 LGPL-2.1
 RDEPEND=>=dev-libs/glib-2.14:2 sys-apps/dbus >=sys-fs/udev-169 alsa? ( media-libs/alsa-lib[alsa_pcm_plugins_extplug,alsa_pcm_plugins_ioplug] media-libs/libsndfile ) caps? ( >=sys-libs/libcap-ng-0.6.2 ) cups? ( net-print/cups ) gstreamer? ( >=media-libs/gstreamer-0.10:0.10 >=media-libs/gst-plugins-base-0.10:0.10 ) usb? ( dev-libs/libusb:1 ) !net-wireless/bluez-libs !net-wireless/bluez-utils consolekit? ( sys-auth/consolekit ) test-programs? ( dev-python/dbus-python dev-python/pygobject:2 )
 SLOT=0
 SRC_URI=mirror://kernel/linux/bluetooth/bluez-4.96.tar.gz http://dev.gentoo.org/~pacho/bluez/oui-20110801.txt.xz
-_eclasses_=eutils	56c868c387979233365d02c584c057a1	multilib	96c2a0a85a74a03e8bed788c8c4ac424	portability	0d9341be2bffb3ace510580f192f231e	systemd	c296542c6b40f8c6a76798dbc71b69ca	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
+_eclasses_=eutils	1bb26e220731063f07d67bca36aa89aa	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	portability	0d9341be2bffb3ace510580f192f231e	systemd	c296542c6b40f8c6a76798dbc71b69ca	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
 _md5_=dfe0fdec7826bdc74fdb58e927ba4d66

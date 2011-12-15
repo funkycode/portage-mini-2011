@@ -7,5 +7,5 @@ LICENSE=as-is
 RDEPEND=virtual/fortran x11-libs/libXext x11-libs/libXi || ( x11-apps/xdpyinfo x11-apps/xwininfo )
 SLOT=0
 SRC_URI=http://www.bernstein-plus-sons.com/software/RasMol_2.7.2.1.1.tar.gz
-_eclasses_=fortran-2	368b82ae80c1184988a9d651e6efcbd0	multilib	96c2a0a85a74a03e8bed788c8c4ac424	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68
+_eclasses_=fortran-2	368b82ae80c1184988a9d651e6efcbd0	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68
 _md5_=bd28dcf9af6ac8d3f9eb6aac09936722

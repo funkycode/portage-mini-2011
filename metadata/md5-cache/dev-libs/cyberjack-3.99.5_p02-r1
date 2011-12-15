@@ -9,5 +9,5 @@ LICENSE=GPL-2 LGPL-2.1
 RDEPEND=sys-apps/pcsc-lite virtual/libusb:1 fox? ( >=x11-libs/fox-1.6 ) xml? ( dev-libs/libxml2 ) kernel_linux? ( sys-fs/udev )
 SLOT=0
 SRC_URI=http://support.reiner-sct.de/downloads/LINUX/V3.99.5_SP02/pcsc-cyberjack_3.99.5final.SP02.tar.gz
-_eclasses_=multilib	96c2a0a85a74a03e8bed788c8c4ac424	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68
+_eclasses_=multilib	5f4ad6cf85e365e8f0c6050ddd21659e	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68
 _md5_=2c843a6a3965e060a98b962cee774f56

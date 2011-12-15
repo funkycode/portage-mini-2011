@@ -9,5 +9,5 @@ LICENSE=GPL-2
 RDEPEND=virtual/libusb:0 cameras_ax203? ( media-libs/gd ) cameras_st2205? ( media-libs/gd ) zeroconf? ( || ( net-dns/avahi[mdnsresponder-compat] net-misc/mDNSResponder ) ) exif? ( >=media-libs/libexif-0.5.9 ) sys-devel/libtool !<sys-fs/udev-136
 SLOT=0
 SRC_URI=mirror://sourceforge/gphoto/libgphoto2-2.4.11.tar.bz2
-_eclasses_=autotools	235f58128aa13fc66a32f8876bda2eee	eutils	56c868c387979233365d02c584c057a1	libtool	0fd90d183673bf1107465ec45849d1ea	multilib	96c2a0a85a74a03e8bed788c8c4ac424	portability	0d9341be2bffb3ace510580f192f231e	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
+_eclasses_=autotools	63332a15502113ca711ccccb3889a109	eutils	1bb26e220731063f07d67bca36aa89aa	libtool	0fd90d183673bf1107465ec45849d1ea	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	portability	0d9341be2bffb3ace510580f192f231e	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
 _md5_=617cddf5b27f990e155d0a7eaeb70ca6

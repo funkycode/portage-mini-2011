@@ -5,5 +5,5 @@ KEYWORDS=alpha amd64 ppc ppc64 sparc x86
 LICENSE=clustalw
 SLOT=1
 SRC_URI=ftp://ftp.ebi.ac.uk/pub/software/unix/clustalw/clustalw1.83.UNIX.tar.gz
-_eclasses_=multilib	96c2a0a85a74a03e8bed788c8c4ac424	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68
+_eclasses_=multilib	5f4ad6cf85e365e8f0c6050ddd21659e	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68
 _md5_=3256db220042b00cf7ac0686fb03d689

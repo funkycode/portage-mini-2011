@@ -13,7 +13,7 @@ alsa opengl dedicated
 
 
 
-interactive
+
 compile install postinst preinst setup unpack
 
 

@@ -9,5 +9,5 @@ LICENSE=GPL-2
 RDEPEND=gsl? ( sci-libs/gsl ) prng? ( sci-mathematics/prng ) rngstreams? ( sci-mathematics/rngstreams )
 SLOT=0
 SRC_URI=http://statmath.wu.ac.at/unuran/unuran-1.8.0.tar.gz
-_eclasses_=autotools	235f58128aa13fc66a32f8876bda2eee	eutils	56c868c387979233365d02c584c057a1	libtool	0fd90d183673bf1107465ec45849d1ea	multilib	96c2a0a85a74a03e8bed788c8c4ac424	portability	0d9341be2bffb3ace510580f192f231e	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
+_eclasses_=autotools	63332a15502113ca711ccccb3889a109	eutils	1bb26e220731063f07d67bca36aa89aa	libtool	0fd90d183673bf1107465ec45849d1ea	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	portability	0d9341be2bffb3ace510580f192f231e	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
 _md5_=682082453ef3fb32fa0acafc82f33d58

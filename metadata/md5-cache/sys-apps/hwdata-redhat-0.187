@@ -7,5 +7,5 @@ LICENSE=GPL-2 MIT
 RDEPEND=>=sys-apps/module-init-tools-3.2 !sys-apps/hwdata-gentoo
 SLOT=0
 SRC_URI=mirror://fedora/development/source/SRPMS/hwdata-0.187-1.src.rpm
-_eclasses_=eutils	56c868c387979233365d02c584c057a1	flag-o-matic	f829a384b238abde8d21ba4d22139892	multilib	96c2a0a85a74a03e8bed788c8c4ac424	portability	0d9341be2bffb3ace510580f192f231e	rpm	1eff8355cdb7f243ba377957efe91abb	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
+_eclasses_=eutils	1bb26e220731063f07d67bca36aa89aa	flag-o-matic	8ffbf0dc65f73498fcba6d29048fdfff	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	portability	0d9341be2bffb3ace510580f192f231e	rpm	1eff8355cdb7f243ba377957efe91abb	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
 _md5_=3b4a2951fdafa0cf3d994766a13880d3

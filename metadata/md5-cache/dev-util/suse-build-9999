@@ -6,5 +6,5 @@ HOMEPAGE=https://build.opensuse.org/package/show?package=build&project=openSUSE%
 LICENSE=GPL-2
 RDEPEND=virtual/perl-Digest-MD5 virtual/perl-Getopt-Long dev-perl/XML-Parser dev-perl/TimeDate app-shells/bash app-arch/rpm
 SLOT=0
-_eclasses_=eutils	56c868c387979233365d02c584c057a1	git-2	48dc75cccc109d7cda9f8dc3fff7a5b8	multilib	96c2a0a85a74a03e8bed788c8c4ac424	portability	0d9341be2bffb3ace510580f192f231e	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
+_eclasses_=eutils	1bb26e220731063f07d67bca36aa89aa	git-2	e093fad2de8fa7ca11e7ed938d27ceb1	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	portability	0d9341be2bffb3ace510580f192f231e	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
 _md5_=6bcc16206fb233925929ddfc8e33ef03

@@ -8,5 +8,5 @@ LICENSE=GPL-3
 RDEPEND=app-arch/libzpaq
 SLOT=0
 SRC_URI=http://mattmahoney.net/dc/zpipe.201.zip
-_eclasses_=multilib	96c2a0a85a74a03e8bed788c8c4ac424	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68
+_eclasses_=multilib	5f4ad6cf85e365e8f0c6050ddd21659e	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68
 _md5_=3c37a9676546e84f97f2170a9fb7c370

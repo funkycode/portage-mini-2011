@@ -7,5 +7,5 @@ IUSE=doc gnome libnotify nls +unique
 LICENSE=LGPL-2.1 MIT
 RDEPEND=dev-db/sqlite:3 >=dev-libs/glib-2.22 dev-libs/libxml2 net-libs/libsoup:2.4 net-libs/webkit-gtk:3 x11-libs/gtk+:3 x11-libs/libXScrnSaver gnome? ( net-libs/libsoup-gnome:2.4 ) libnotify? ( x11-libs/libnotify ) unique? ( dev-libs/libunique:3 ) >=app-admin/eselect-python-20091230
 SLOT=0
-_eclasses_=base	dba02c674ce4dff67657c692954d7ef0	eutils	56c868c387979233365d02c584c057a1	fdo-mime	0acfe1a88fd8751a1d5dc671168219fa	git-2	48dc75cccc109d7cda9f8dc3fff7a5b8	gnome2-utils	dfcd797d126b46852d33936f4a0a1702	multilib	96c2a0a85a74a03e8bed788c8c4ac424	portability	0d9341be2bffb3ace510580f192f231e	python	262a0983b6716502852b4418e0f433b8	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e	waf-utils	6a06d354382c90eecb783e2536b5316f
+_eclasses_=base	809ab15a673823938260f6b17661c3f1	eutils	1bb26e220731063f07d67bca36aa89aa	fdo-mime	0acfe1a88fd8751a1d5dc671168219fa	git-2	e093fad2de8fa7ca11e7ed938d27ceb1	gnome2-utils	b5ca2ccadb60760889faa3bccba121d9	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	portability	0d9341be2bffb3ace510580f192f231e	python	262a0983b6716502852b4418e0f433b8	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e	waf-utils	6a06d354382c90eecb783e2536b5316f
 _md5_=008cdbd5a6296179fafd9ace6a696d7a

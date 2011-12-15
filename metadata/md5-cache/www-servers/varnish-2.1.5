@@ -1,14 +1,14 @@
 DEFINED_PHASES=install postinst prepare
-DEPEND=dev-python/docutils || ( =sys-devel/automake-1.11* ) >=sys-devel/autoconf-2.61 sys-devel/libtool
+DEPEND=dev-libs/libpcre dev-python/docutils dev-util/pkgconfig || ( =sys-devel/automake-1.11* ) >=sys-devel/autoconf-2.61 sys-devel/libtool
 DESCRIPTION=Varnish is a state-of-the-art, high-performance HTTP accelerator.
 EAPI=3
 HOMEPAGE=http://www.varnish-cache.org/
 IUSE=doc
 KEYWORDS=~amd64 ~x86
 LICENSE=BSD-2
-RDEPEND=sys-devel/gcc
+RDEPEND=dev-libs/libpcre sys-devel/gcc
 RESTRICT=test
 SLOT=0
 SRC_URI=http://repo.varnish-cache.org/source/varnish-2.1.5.tar.gz
-_eclasses_=autotools	235f58128aa13fc66a32f8876bda2eee	eutils	56c868c387979233365d02c584c057a1	libtool	0fd90d183673bf1107465ec45849d1ea	multilib	96c2a0a85a74a03e8bed788c8c4ac424	portability	0d9341be2bffb3ace510580f192f231e	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
-_md5_=d75583cbc1b3b5cb71e69be6b574a764
+_eclasses_=autotools	63332a15502113ca711ccccb3889a109	eutils	1bb26e220731063f07d67bca36aa89aa	libtool	0fd90d183673bf1107465ec45849d1ea	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	portability	0d9341be2bffb3ace510580f192f231e	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
+_md5_=fb49fead3ccfff37914380568302c52a

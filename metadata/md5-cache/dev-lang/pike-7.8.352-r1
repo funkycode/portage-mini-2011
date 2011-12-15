@@ -8,5 +8,5 @@ KEYWORDS=~alpha ~amd64 ~hppa ~ia64 ~mips ~ppc ~sparc ~x86 ~x86-fbsd
 LICENSE=GPL-2 LGPL-2.1 MPL-1.1
 SLOT=0
 SRC_URI=http://pike.ida.liu.se/pub/pike/all/7.8.352/Pike-v7.8.352.tar.gz
-_eclasses_=multilib	96c2a0a85a74a03e8bed788c8c4ac424	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68
+_eclasses_=multilib	5f4ad6cf85e365e8f0c6050ddd21659e	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68
 _md5_=a5c7b7da9df445d0231172d53d51f0e5

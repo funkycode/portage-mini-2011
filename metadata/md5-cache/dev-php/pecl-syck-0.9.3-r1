@@ -1,0 +1,13 @@
+DEFINED_PHASES=compile configure install prepare test unpack
+DEPEND=dev-libs/syck || ( <dev-lang/php-5.3.1[hash,spl] >=dev-lang/php-5.3.1[hash] ) || ( =sys-devel/automake-1.11* ) >=sys-devel/autoconf-2.61 sys-devel/libtool >=sys-devel/m4-1.4.3 >=sys-devel/libtool-1.5.18
+DESCRIPTION=PHP bindings for Syck - reads and writes YAML with it.
+EAPI=2
+HOMEPAGE=http://pecl.php.net/syck
+IUSE=php_targets_php5-3 php_targets_php5-2
+KEYWORDS=amd64 ~arm ppc ppc64 x86
+LICENSE=PHP-3.01
+RDEPEND=dev-libs/syck || ( <dev-lang/php-5.3.1[hash,spl] >=dev-lang/php-5.3.1[hash] ) || ( =dev-php/pecl-syck-0.9.3-r1[php_targets_php5-3] =dev-php/pecl-syck-0.9.3-r1[php_targets_php5-2] ) php_targets_php5-3? ( dev-lang/php:5.3 ) php_targets_php5-2? ( dev-lang/php:5.2 )
+SLOT=0
+SRC_URI=http://pecl.php.net/get/syck-0.9.3.tgz
+_eclasses_=autotools	63332a15502113ca711ccccb3889a109	eutils	1bb26e220731063f07d67bca36aa89aa	flag-o-matic	8ffbf0dc65f73498fcba6d29048fdfff	libtool	0fd90d183673bf1107465ec45849d1ea	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	php-ext-pecl-r2	de1308bcf4fef59a8ee8793efc7c3051	php-ext-source-r2	b978a26df1307fcf04586dead6fa08e9	portability	0d9341be2bffb3ace510580f192f231e	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
+_md5_=0ad374fa7cb72aa58494cd5c6595fd8e

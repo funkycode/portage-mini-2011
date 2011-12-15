@@ -7,5 +7,5 @@ IUSE=debug exif gps nls libproxy webkit
 LICENSE=GPL-2
 RDEPEND=>=sci-libs/gdal-1.6.0 >=sci-libs/proj-4.6 >=x11-libs/qt-gui-4.7.2:4 >=x11-libs/qt-svg-4.7.2:4 exif? ( media-gfx/exiv2 ) gps? ( >=sci-geosciences/gpsd-2.92 ) libproxy? ( net-libs/libproxy ) webkit? ( >=x11-libs/qt-webkit-4.7.2:4 )
 SLOT=0
-_eclasses_=base	dba02c674ce4dff67657c692954d7ef0	eutils	56c868c387979233365d02c584c057a1	git-2	48dc75cccc109d7cda9f8dc3fff7a5b8	multilib	96c2a0a85a74a03e8bed788c8c4ac424	portability	0d9341be2bffb3ace510580f192f231e	qt4-r2	562a0a4214d92cf49cc3e97d1f39d891	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
+_eclasses_=base	809ab15a673823938260f6b17661c3f1	eutils	1bb26e220731063f07d67bca36aa89aa	git-2	e093fad2de8fa7ca11e7ed938d27ceb1	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	portability	0d9341be2bffb3ace510580f192f231e	qt4-r2	562a0a4214d92cf49cc3e97d1f39d891	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
 _md5_=e2d51243616c83e0e7c8c0bec7b03604

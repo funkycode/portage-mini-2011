@@ -7,5 +7,5 @@ LICENSE=GPL-2
 RESTRICT=binchecks strip
 SLOT=0
 SRC_URI=http://icon-theme.freedesktop.org/releases/hicolor-icon-theme-0.12.tar.gz
-_eclasses_=gnome2-utils	dfcd797d126b46852d33936f4a0a1702
+_eclasses_=gnome2-utils	b5ca2ccadb60760889faa3bccba121d9
 _md5_=84a7bf55961ed5736def5f659ab16ff6

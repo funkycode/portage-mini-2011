@@ -1,5 +1,5 @@
 
->=dev-lang/php-5.2[cli,curl,gd,posix,pcntl,pcre(+),truetype] app-arch/unzip dev-php5/pecl-ps
+>=dev-lang/php-5.2[cli,curl,gd,posix,pcntl,pcre(+),truetype] app-arch/unzip dev-php/pecl-ps
 0
 http://www.phoronix-test-suite.com/download.php?file=phoronix-test-suite-2.8.1 -> phoronix-test-suite-2.8.1.tar.gz
 

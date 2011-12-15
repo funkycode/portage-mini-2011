@@ -10,7 +10,7 @@ amd64 ~arm ppc ppc64 x86 ~amd64-linux ~x86-linux ~x86-macos
 distutils eutils flag-o-matic multilib portability python toolchain-funcs user
 php python
 
-php? ( dev-php5/pecl-syck !=dev-libs/syck-0.55-r1 )
+php? ( dev-php/pecl-syck !=dev-libs/syck-0.55-r1 )
 
 3
 

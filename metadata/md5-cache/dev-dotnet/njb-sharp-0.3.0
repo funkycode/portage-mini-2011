@@ -8,5 +8,5 @@ LICENSE=MIT
 RDEPEND=>=dev-lang/mono-1.1.10 doc? ( >=virtual/monodoc-1.1.8 ) >=dev-dotnet/gtk-sharp-2.0
 SLOT=0
 SRC_URI=http://banshee-project.org/files/njb-sharp/njb-sharp-0.3.0.tar.gz
-_eclasses_=mono	203a4295c06155d318bdff9c6b2d5e1c	multilib	96c2a0a85a74a03e8bed788c8c4ac424	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68
+_eclasses_=mono	203a4295c06155d318bdff9c6b2d5e1c	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68
 _md5_=a49f69745287656223482cb92f50b7ff

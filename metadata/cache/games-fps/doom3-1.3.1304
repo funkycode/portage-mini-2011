@@ -13,7 +13,7 @@ alsa cdinstall dedicated opengl roe
 
 
 
-interactive
+
 compile install postinst preinst setup unpack
 
 

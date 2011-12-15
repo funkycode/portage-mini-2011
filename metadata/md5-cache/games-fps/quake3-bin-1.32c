@@ -5,10 +5,9 @@ HOMEPAGE=http://www.idsoftware.com/
 IUSE=cdinstall dedicated opengl teamarena
 KEYWORDS=-* amd64 x86
 LICENSE=Q3AEULA
-PROPERTIES=interactive
 RDEPEND=sys-libs/glibc dedicated? ( app-misc/screen ) amd64? ( app-emulation/emul-linux-x86-baselibs ) opengl? ( virtual/opengl x86? ( x11-libs/libXext x11-libs/libX11 x11-libs/libXau x11-libs/libXdmcp ) amd64? ( app-emulation/emul-linux-x86-xlibs || ( >=app-emulation/emul-linux-x86-xlibs-7.0 x11-drivers/nvidia-drivers >=x11-drivers/ati-drivers-8.8.25-r1 ) ) ) cdinstall? ( games-fps/quake3-data ) cdinstall? ( teamarena? ( games-fps/quake3-teamarena ) ) !dedicated? ( !opengl? ( virtual/opengl x86? ( x11-libs/libXext x11-libs/libX11 x11-libs/libXau x11-libs/libXdmcp ) amd64? ( app-emulation/emul-linux-x86-xlibs || ( >=app-emulation/emul-linux-x86-xlibs-7.0 x11-drivers/nvidia-drivers >=x11-drivers/ati-drivers-8.8.25-r1 ) ) ) )
 RESTRICT=strip
 SLOT=0
 SRC_URI=mirror://idsoftware/quake3/linux/linuxq3apoint-1.32b-3.x86.run mirror://idsoftware/quake3/quake3-1.32c.zip
-_eclasses_=base	dba02c674ce4dff67657c692954d7ef0	eutils	56c868c387979233365d02c584c057a1	games	01e29bd5b15de48f427e53d9fe13f130	multilib	96c2a0a85a74a03e8bed788c8c4ac424	portability	0d9341be2bffb3ace510580f192f231e	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
-_md5_=09379ab5a43ab3383a443110d9b51781
+_eclasses_=base	809ab15a673823938260f6b17661c3f1	eutils	1bb26e220731063f07d67bca36aa89aa	games	ef93d90e0de66f9dc4e36c3b5098de94	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	portability	0d9341be2bffb3ace510580f192f231e	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
+_md5_=28e0034e604e20465b62b45dacefa5f2

@@ -13,7 +13,7 @@ cdinstall dedicated opengl teamarena
 
 
 
-interactive
+
 compile install postinst preinst setup unpack
 
 

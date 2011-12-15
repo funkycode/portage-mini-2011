@@ -6,5 +6,5 @@ HOMEPAGE=http://www.gentoo.org/proj/en/qa/pms.xml
 IUSE=html
 LICENSE=CCPL-Attribution-ShareAlike-3.0
 SLOT=live
-_eclasses_=git-2	48dc75cccc109d7cda9f8dc3fff7a5b8
+_eclasses_=git-2	e093fad2de8fa7ca11e7ed938d27ceb1
 _md5_=af97ee1e1e988f4b51446d5d9faf0de1

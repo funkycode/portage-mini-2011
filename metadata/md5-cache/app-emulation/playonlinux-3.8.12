@@ -8,5 +8,5 @@ LICENSE=GPL-3
 RDEPEND=app-emulation/wine app-arch/cabextract app-arch/unzip dev-python/wxpython:2.8 || ( media-gfx/imagemagick media-gfx/graphicsmagick[imagemagick] ) net-misc/wget x11-apps/mesa-progs x11-terms/xterm >=app-admin/eselect-python-20091230 =dev-lang/python-2*
 SLOT=0
 SRC_URI=http://www.playonlinux.com/script_files/PlayOnLinux/3.8.12/PlayOnLinux_3.8.12.tar.gz
-_eclasses_=base	dba02c674ce4dff67657c692954d7ef0	eutils	56c868c387979233365d02c584c057a1	games	01e29bd5b15de48f427e53d9fe13f130	multilib	96c2a0a85a74a03e8bed788c8c4ac424	portability	0d9341be2bffb3ace510580f192f231e	python	262a0983b6716502852b4418e0f433b8	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
+_eclasses_=base	809ab15a673823938260f6b17661c3f1	eutils	1bb26e220731063f07d67bca36aa89aa	games	ef93d90e0de66f9dc4e36c3b5098de94	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	portability	0d9341be2bffb3ace510580f192f231e	python	262a0983b6716502852b4418e0f433b8	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
 _md5_=3401b283ba3a449f59cdd3079a7b80e6
