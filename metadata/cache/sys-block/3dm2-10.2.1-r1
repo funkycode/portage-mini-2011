@@ -1,0 +1,22 @@
+~sys-block/tw_cli-10.2 virtual/libc virtual/logger virtual/mta
+~sys-block/tw_cli-10.2 virtual/libc virtual/logger virtual/mta
+0
+http://www.lsi.com/downloads/Public/SATA/SATA%20Common%20Files/3DM2_CLI-Linux_10.2.1_9.5.4.zip
+fetch
+http://www.lsi.com/
+LSI
+3ware/LSI Disk Managment web utility
+amd64 ~x86
+eutils multilib portability toolchain-funcs user
+
+
+
+
+3
+
+install nofetch postinst preinst prepare unpack
+
+
+
+
+

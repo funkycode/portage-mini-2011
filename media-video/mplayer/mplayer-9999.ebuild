@@ -1,6 +1,6 @@
 # Copyright 1999-2011 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/media-video/mplayer/mplayer-9999.ebuild,v 1.106 2011/10/31 17:12:00 ssuominen Exp $
+# $Header: /var/cvsroot/gentoo-x86/media-video/mplayer/mplayer-9999.ebuild,v 1.108 2011/12/15 12:48:11 aballier Exp $
 
 EAPI=4
 
@@ -37,8 +37,7 @@ FONT_URI="
 if [[ ${PV} == *9999* ]]; then
 	RELEASE_URI=""
 else
-	RELEASE_URI="http://dev.gentoo.org/~scarabeus/${P}.tar.xz
-		mirror://gentoo/${P}.tar.xz"
+	RELEASE_URI="mirror://gentoo/${P}.tar.xz"
 fi
 SRC_URI="${RELEASE_URI}
 	!truetype? ( ${FONT_URI} )"
@@ -61,7 +60,7 @@ RDEPEND+="
 	sys-libs/ncurses
 	app-arch/bzip2
 	sys-libs/zlib
-	>=virtual/ffmpeg-0.6.90
+	>=media-video/ffmpeg-0.9
 	!bindist? (
 		x86? (
 			win32codecs? ( media-libs/win32codecs )

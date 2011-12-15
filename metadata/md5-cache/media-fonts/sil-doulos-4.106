@@ -3,9 +3,9 @@ DEPEND=app-arch/unzip X? ( x11-apps/mkfontdir media-fonts/encodings ) >=media-li
 DESCRIPTION=SIL Doulos - SIL font for Roman and Cyrillic Languages
 HOMEPAGE=http://scripts.sil.org/DoulosSILfont
 IUSE=X
-KEYWORDS=~alpha ~amd64 arm hppa ~ia64 ~ppc ~ppc64 ~s390 ~sh ~sparc x86 ~x86-fbsd
+KEYWORDS=~alpha amd64 arm hppa ~ia64 ~ppc ~ppc64 ~s390 ~sh ~sparc x86 ~x86-fbsd
 LICENSE=OFL-1.1
 SLOT=0
 SRC_URI=mirror://gentoo/DoulosSIL4.106.zip
 _eclasses_=eutils	1bb26e220731063f07d67bca36aa89aa	font	9aa70ebc5cefbdd9056687b550a2fdc4	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	portability	0d9341be2bffb3ace510580f192f231e	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
-_md5_=42869ff2d1deadd049d263253af9ef63
+_md5_=30f66bf0b3a6652b34c46cc277d7f35a

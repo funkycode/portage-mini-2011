@@ -1,6 +1,6 @@
 # Copyright 1999-2011 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/media-video/ffmpeg/ffmpeg-9999.ebuild,v 1.68 2011/12/09 13:59:29 aballier Exp $
+# $Header: /var/cvsroot/gentoo-x86/media-video/ffmpeg/ffmpeg-9999.ebuild,v 1.75 2011/12/15 12:07:04 aballier Exp $
 
 EAPI="4"
 
@@ -29,11 +29,11 @@ if [ "${PV#9999}" = "${PV}" ] ; then
 	KEYWORDS="~alpha ~amd64 ~arm ~hppa ~ia64 ~ppc ~ppc64 ~sparc ~x86 ~x86-fbsd"
 fi
 IUSE="
-	aac aacplus alsa amr ass bindist +bzip2 cdio celt cpudetection debug dirac doc
-	+encode faac frei0r gnutls gsm +hardcoded-tables ieee1394 jack jpeg2k libv4l
-	modplug mp3 network openal openssl oss pic pulseaudio +qt-faststart rtmp
-	schroedinger sdl speex static-libs test theora threads truetype v4l vaapi
-	vdpau vorbis vpx X x264 xvid +zlib
+	aac aacplus alsa amr ass avconv bindist +bzip2 cdio celt cpudetection debug
+	dirac doc +encode faac frei0r gnutls gsm +hardcoded-tables ieee1394 jack
+	jpeg2k libv4l modplug mp3 network openal openssl oss pic pulseaudio
+	+qt-faststart rtmp schroedinger sdl speex static-libs test theora threads
+	truetype v4l vaapi vdpau vorbis vpx X x264 xvid +zlib
 	"
 
 # String for CPU features in the useflag[:configure_option] form
@@ -126,7 +126,9 @@ src_configure() {
 
 	use cpudetection && myconf="${myconf} --enable-runtime-cpudetect"
 	use openssl && myconf="${myconf} --enable-openssl --enable-nonfree"
-	use gnutls && myconf="${myconf} --enable-gnutls"
+	for i in gnutls avconv ; do
+		use $i && myconf="${myconf} --enable-$i"
+	done
 
 	# Encoders
 	if use encode
@@ -180,14 +182,12 @@ src_configure() {
 	for i in ${CPU_FEATURES}; do
 		use ${i%:*} || myconf="${myconf} --disable-${i#*:}"
 	done
-	# disable mmx accelerated code if PIC is required
-	# as the provided asm decidedly is not PIC for x86.
-	if use pic && use x86 ; then
-		myconf="${myconf} --disable-mmx --disable-mmx2"
+	if use pic ; then
+		myconf="${myconf} --enable-pic"
+		# disable asm code if PIC is required
+		# as the provided asm decidedly is not PIC for x86.
+		use x86 && myconf="${myconf} --disable-asm"
 	fi
-
-	# Option to force building pic
-	use pic && myconf="${myconf} --enable-pic"
 
 	# Try to get cpu type based on CFLAGS.
 	# Bug #172723
@@ -228,21 +228,6 @@ src_configure() {
 	# Misc stuff
 	use hardcoded-tables && myconf="${myconf} --enable-hardcoded-tables"
 
-	# Specific workarounds for too-few-registers arch...
-	if [[ $(tc-arch) == "x86" ]]; then
-		filter-flags -fforce-addr -momit-leaf-frame-pointer
-		append-flags -fomit-frame-pointer
-		is-flag -O? || append-flags -O2
-		if (use debug); then
-			# no need to warn about debug if not using debug flag
-			ewarn ""
-			ewarn "Debug information will be almost useless as the frame pointer is omitted."
-			ewarn "This makes debugging harder, so crashes that has no fixed behavior are"
-			ewarn "difficult to fix. Please have that in mind."
-			ewarn ""
-		fi
-	fi
-
 	cd "${S}"
 	./configure \
 		--prefix="${EPREFIX}/usr" \
@@ -251,14 +236,16 @@ src_configure() {
 		--mandir="${EPREFIX}/usr/share/man" \
 		--enable-shared \
 		--cc="$(tc-getCC)" \
-		--disable-optimizations \
+		--cxx="$(tc-getCXX)" \
+		--ar="$(tc-getAR)" \
+		--optflags="${CFLAGS}" \
+		--extra-cflags="${CFLAGS}" \
+		--extra-cxxflags="${CXXFLAGS}" \
 		$(use_enable static-libs static) \
 		${myconf} || die
 }
 
 src_compile() {
-	#252269
-	emake version.h
 	emake
 
 	if use qt-faststart; then

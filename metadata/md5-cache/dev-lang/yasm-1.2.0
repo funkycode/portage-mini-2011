@@ -5,9 +5,9 @@ EAPI=4
 HOMEPAGE=http://www.tortall.net/projects/yasm/
 IUSE=nls python
 KEYWORDS=-* ~amd64 ~x86 ~x86-fbsd ~x86-freebsd ~amd64-linux ~x86-linux ~x64-macos ~x86-macos ~x86-solaris
-LICENSE=Artistic BSD BSD-2 GPL-2 LGPL-2
+LICENSE=BSD-2 BSD || ( Artistic GPL-2 LGPL-2 )
 RDEPEND=nls? ( virtual/libintl ) >=app-admin/eselect-python-20091230 python? ( =dev-lang/python-2.7* )
 SLOT=0
 SRC_URI=http://www.tortall.net/projects/yasm/releases/yasm-1.2.0.tar.gz
 _eclasses_=multilib	5f4ad6cf85e365e8f0c6050ddd21659e	python	262a0983b6716502852b4418e0f433b8	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68
-_md5_=7d771a9c734df6cb42300695d30161e8
+_md5_=83949cf44efab0103b02b7235940d808

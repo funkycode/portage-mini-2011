@@ -10,4 +10,4 @@ RDEPEND=sys-libs/ncurses >=app-admin/eselect-emacs-1.2 net-libs/liblockfile hesi
 SLOT=24
 SRC_URI=mirror://gentoo/emacs-24.0.92.tar.gz ftp://alpha.gnu.org/gnu/emacs/pretest/emacs-24.0.92.tar.gz
 _eclasses_=autotools	63332a15502113ca711ccccb3889a109	elisp-common	3048b6bde509e1aa680e77d093d01409	eutils	1bb26e220731063f07d67bca36aa89aa	flag-o-matic	8ffbf0dc65f73498fcba6d29048fdfff	libtool	0fd90d183673bf1107465ec45849d1ea	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	portability	0d9341be2bffb3ace510580f192f231e	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
-_md5_=0a486f467845343174796b869981946a
+_md5_=8631e5eabec9336a8eb40fc2a78c7b83
