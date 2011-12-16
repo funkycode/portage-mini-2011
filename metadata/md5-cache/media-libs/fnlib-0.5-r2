@@ -3,10 +3,10 @@ DEPEND=media-libs/imlib || ( =sys-devel/automake-1.11* ) >=sys-devel/autoconf-2.
 DESCRIPTION=Font Library for enlightenment
 EAPI=2
 HOMEPAGE=http://www.enlightenment.org/
-KEYWORDS=~alpha ~amd64 ~hppa ~ia64 ~ppc ~sparc ~x86
+KEYWORDS=~alpha amd64 ~hppa ~ia64 ~ppc ~sparc ~x86
 LICENSE=GPL-2
 RDEPEND=media-libs/imlib
 SLOT=0
 SRC_URI=mirror://sourceforge/enlightenment/fnlib-0.5.tar.gz
 _eclasses_=autotools	63332a15502113ca711ccccb3889a109	eutils	1bb26e220731063f07d67bca36aa89aa	libtool	0fd90d183673bf1107465ec45849d1ea	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	portability	0d9341be2bffb3ace510580f192f231e	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
-_md5_=95a8e39cca4fd2d6f1e6052034d4354b
+_md5_=0dc5a9f6b515107b7d7ef3cc6fd49d82

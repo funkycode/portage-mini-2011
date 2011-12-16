@@ -8,4 +8,4 @@ LICENSE=public-domain
 RDEPEND=emboss? ( sci-biology/emboss )
 SLOT=0
 SRC_URI=mirror://gentoo/prints-39.0.tar.bz2
-_md5_=3dec710b2ca04a4d3c91a788c511813d
+_md5_=377e1db316ca3bb5d30ad5e1771c7877

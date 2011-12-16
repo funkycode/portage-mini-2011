@@ -2,11 +2,11 @@ DEFINED_PHASES=compile install unpack
 DEPEND=>=media-libs/gst-plugins-base-0.10.33 media-libs/libofa =media-libs/gstreamer-0.10* =media-libs/gst-plugins-base-0.10* >=dev-libs/glib-2.6 sys-apps/sed dev-util/pkgconfig sys-devel/gettext
 DESCRIPTION=plugin for gstreamer
 HOMEPAGE=http://gstreamer.freedesktop.org/
-KEYWORDS=~alpha ~amd64 ~amd64-linux ~hppa ~ppc ~ppc64 ~x86 ~x86-linux
+KEYWORDS=~alpha amd64 ~hppa ~ppc ~ppc64 ~x86 ~amd64-linux ~x86-linux
 LICENSE=GPL-2
 RDEPEND=>=media-libs/gst-plugins-base-0.10.33 media-libs/libofa =media-libs/gstreamer-0.10* =media-libs/gst-plugins-base-0.10* >=dev-libs/glib-2.6
 RESTRICT=test
 SLOT=0.10
 SRC_URI=http://gstreamer.freedesktop.org/src/gst-plugins-bad/gst-plugins-bad-0.10.22.tar.bz2
 _eclasses_=eutils	1bb26e220731063f07d67bca36aa89aa	gst-plugins-bad	b874fc2959676f0295a3d6f696d01716	gst-plugins10	1bd03bd0e2784dfa49d423edd8508c1f	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	portability	0d9341be2bffb3ace510580f192f231e	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e	versionator	3a6c6ae0c0f6578737dd398e98311d46
-_md5_=bd6317a716c68a1bc7e659666fee5d77
+_md5_=7a4973c7f5dcf718037db38756ff8697

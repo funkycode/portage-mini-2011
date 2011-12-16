@@ -1,8 +1,8 @@
 # Copyright 1999-2011 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/sci-biology/velvet/velvet-1.0.18-r1.ebuild,v 1.1 2011/04/13 12:32:36 xarthisius Exp $
+# $Header: /var/cvsroot/gentoo-x86/sci-biology/velvet/velvet-1.0.18-r1.ebuild,v 1.4 2011/12/16 13:01:21 jlec Exp $
 
-EAPI="3"
+EAPI=4
 
 inherit eutils toolchain-funcs flag-o-matic
 
@@ -15,15 +15,17 @@ SRC_URI="http://www.ebi.ac.uk/~zerbino/velvet/${MY_P}.tgz"
 LICENSE="GPL-2"
 SLOT="0"
 IUSE="-doc"
-KEYWORDS="~amd64 ~x86"
+KEYWORDS="amd64 ~x86"
 
-DEPEND="doc? ( virtual/latex-base )"
-RDEPEND=""
+RDEPEND="sys-libs/zlib"
+DEPEND="${RDEPEND}
+	doc? ( virtual/latex-base )"
 
-S=${WORKDIR}/${MY_P}
+S="${WORKDIR}"/${MY_P}
 
 src_prepare() {
-	append-flags -O3 # as recommended by upstream
+	# necessary?
+	# append-flags -O3 # as recommended by upstream
 	epatch "${FILESDIR}"/${P}-gentoo-r1.diff
 	use doc || sed -i -e '/default :/ s/doc//' "${S}"/Makefile || die
 }

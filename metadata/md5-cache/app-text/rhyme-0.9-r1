@@ -3,11 +3,11 @@ DEPEND=>=sys-libs/readline-4.3 >=sys-libs/gdbm-1.8.0
 DESCRIPTION=Console based Rhyming Dictionary
 EAPI=2
 HOMEPAGE=http://rhyme.sourceforge.net/
-KEYWORDS=~alpha ~amd64 ~x86
+KEYWORDS=~alpha amd64 ~x86
 LICENSE=GPL-2
 RDEPEND=>=sys-libs/readline-4.3 >=sys-libs/gdbm-1.8.0
 RESTRICT=test
 SLOT=0
 SRC_URI=mirror://sourceforge/rhyme/rhyme-0.9.tar.gz
 _eclasses_=multilib	5f4ad6cf85e365e8f0c6050ddd21659e	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68
-_md5_=67f910ce98941125623655cc1438d988
+_md5_=8d668d2fec2e3453303002c157045e4c

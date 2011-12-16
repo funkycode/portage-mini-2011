@@ -3,10 +3,10 @@ DEPEND=>=net-im/jabber-base-0.01 >=dev-libs/pth-1.4.0 dev-libs/expat net-dns/lib
 DESCRIPTION=Open-source Jabber server
 HOMEPAGE=http://www.jabber.org
 IUSE=ipv6 mysql postgres
-KEYWORDS=alpha amd64 hppa ppc sparc x86
+KEYWORDS=alpha amd64 hppa ppc sparc x86 ~x86-fbsd
 LICENSE=GPL-2
 RDEPEND=>=net-im/jabber-base-0.01 >=dev-libs/pth-1.4.0 dev-libs/expat net-dns/libidn mysql? ( virtual/mysql ) postgres? ( dev-db/postgresql-server ) net-libs/gnutls dev-libs/popt
 SLOT=0
 SRC_URI=http://download.jabberd.org/jabberd14/jabberd14-1.6.1.1.tar.gz
 _eclasses_=autotools	63332a15502113ca711ccccb3889a109	eutils	1bb26e220731063f07d67bca36aa89aa	libtool	0fd90d183673bf1107465ec45849d1ea	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	portability	0d9341be2bffb3ace510580f192f231e	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
-_md5_=5a8ad3e3021a8bf583d89068ad549db4
+_md5_=b2d5bfcb1f7b799b5f0383ea9b3068e2

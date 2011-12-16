@@ -1,6 +1,6 @@
 # Copyright 1999-2011 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/media-video/mplayer/mplayer-9999.ebuild,v 1.108 2011/12/15 12:48:11 aballier Exp $
+# $Header: /var/cvsroot/gentoo-x86/media-video/mplayer/mplayer-9999.ebuild,v 1.111 2011/12/16 13:52:53 aballier Exp $
 
 EAPI=4
 
@@ -10,14 +10,11 @@ ESVN_REPO_URI="svn://svn.mplayerhq.hu/mplayer/trunk"
 
 inherit toolchain-funcs eutils flag-o-matic multilib base ${SVN_ECLASS}
 
-# BUMP ME PLZ, NO COOKIES OTHERWISE
-[[ ${PV} != *9999* ]] && MPLAYER_REVISION=SVN-r33094
-
 IUSE="3dnow 3dnowext +a52 aalib +alsa altivec aqua +ass bidi bindist bl bluray
 bs2b cddb +cdio cdparanoia cpudetection custom-cpuopts debug dga
 directfb doc +dts +dv dvb +dvd +dvdnav dxr3 +enca +encode esd faac +faad fbcon
 ftp gif ggi gsm +iconv ipv6 jack joystick jpeg jpeg2k kernel_linux ladspa
-libcaca libmpeg2 lirc +live lzo mad md5sum +mmx mmxext mng +mp3 mpg123 nas
+libcaca libmpeg2 lirc +live lzo mad md5sum +mmx mmxext mng +mp3 nas
 +network nut openal +opengl +osdmenu oss png pnm pulseaudio pvr +quicktime
 radio +rar +real +rtc rtmp samba +shm sdl +speex sse sse2 ssse3
 tga +theora +tremor +truetype +toolame +twolame +unicode v4l vdpau vidix
@@ -87,7 +84,7 @@ RDEPEND+="
 	alsa? ( media-libs/alsa-lib )
 	ass? ( ${FONT_RDEPS} >=media-libs/libass-0.9.10[enca?] )
 	bidi? ( dev-libs/fribidi )
-	bluray? ( media-libs/libbluray )
+	bluray? ( >=media-libs/libbluray-0.2.1 )
 	bs2b? ( media-libs/libbs2b )
 	cdio? ( dev-libs/libcdio )
 	cdparanoia? ( !cdio? ( media-sound/cdparanoia ) )
@@ -124,7 +121,7 @@ RDEPEND+="
 	lzo? ( >=dev-libs/lzo-2 )
 	mad? ( media-libs/libmad )
 	mng? ( media-libs/libmng )
-	mpg123? ( media-sound/mpg123 )
+	mp3? ( media-sound/mpg123 )
 	nas? ( media-libs/nas )
 	nut? ( >=media-libs/libnut-661 )
 	openal? ( media-libs/openal )
@@ -252,14 +249,15 @@ src_unpack() {
 }
 
 src_prepare() {
+	local svf=snapshot_version
 	if [[ ${PV} = *9999* ]]; then
 		# Set SVN version manually
 		subversion_wc_info
-		sed -i -e "s/UNKNOWN/${ESVN_WC_REVISION}/" "${S}/version.sh" || die
-	else
-		# Set version #
-		sed -i -e "s/UNKNOWN/${MPLAYER_REVISION}/" "${S}/version.sh" || die
+		printf "${ESVN_WC_REVISION}" > $svf
 	fi
+	[ -f "$svf" ] || die "Missing ${svf}. Did you generate your snapshot with prepare_mplayer.sh?"
+	local sv=$(<$svf)
+	printf "SVN-r${sv} (Gentoo)" > VERSION
 
 	# fix path to bash executable in configure scripts
 	sed -i -e "1c\#!${EPREFIX}/bin/bash" configure version.sh || die
@@ -398,10 +396,16 @@ src_configure() {
 	myconf+=" --disable-musepack" # Use internal musepack codecs for SV7 and SV8 support
 	myconf+=" --disable-libmpeg2-internal" # always use system media-libs/libmpeg2
 	use dts || myconf+=" --disable-libdca"
+	# Disable internal mp3lib, bug #384849
+	# Samuli Suominen: Looks like MPlayer in Portage is using internal mp3lib by
+	# default, where as mpg123 upstream has incorporated all the optimizations
+	# from mplayer's mp3lib	in libmpg123 and more.
+	# It makes very little sense to use the internal copy as default anymore.
+	myconf+=" --disable-mp3lib"
 	if ! use mp3; then
 		myconf+="
 			--disable-mp3lame
-			--disable-mp3lib
+			--disable-mpg123
 		"
 	fi
 	uses="a52 bs2b dv gsm lzo rtmp"
@@ -409,7 +413,7 @@ src_configure() {
 		use ${i} || myconf+=" --disable-lib${i}"
 	done
 
-	uses="faad gif jpeg libmpeg2 live mad mng mpg123 png pnm speex tga theora xanim"
+	uses="faad gif jpeg libmpeg2 live mad mng png pnm speex tga theora xanim"
 	for i in ${uses}; do
 		use ${i} || myconf+=" --disable-${i}"
 	done

@@ -1,6 +1,6 @@
 # Copyright 1999-2011 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/dev-db/mysql-workbench/mysql-workbench-5.2.36.ebuild,v 1.2 2011/12/14 19:34:14 graaff Exp $
+# $Header: /var/cvsroot/gentoo-x86/dev-db/mysql-workbench/mysql-workbench-5.2.36.ebuild,v 1.4 2011/12/16 07:38:27 graaff Exp $
 
 EAPI="3"
 GCONF_DEBUG="no"
@@ -17,7 +17,7 @@ SRC_URI="mirror://mysql/Downloads/MySQLGUITools/${MY_P}.tar.gz"
 LICENSE="GPL-2"
 SLOT="0"
 KEYWORDS="~amd64 ~ppc ~x86 ~amd64-linux ~x86-linux"
-IUSE="debug doc nls readline static-libs"
+IUSE="debug doc nls static-libs"
 
 CDEPEND="dev-db/sqlite:3
 	>=x11-libs/gtk+-2.6:2
@@ -41,8 +41,7 @@ CDEPEND="dev-db/sqlite:3
 	dev-python/pexpect
 	dev-python/paramiko
 	doc? ( dev-python/pysqlite:2 )
-	nls? ( sys-devel/gettext )
-	readline? ( sys-libs/readline )"
+	nls? ( sys-devel/gettext )"
 RDEPEND="${CDEPEND}
 	app-admin/sudo
 	sys-apps/net-tools"
@@ -65,6 +64,10 @@ src_prepare() {
 	# http://bugs.mysql.com/bug.php?id=63750
 	sed -i -e 's/4,5,6/4,5,6,7/' plugins/wb.admin/backend/wb_admin_ssh.py || die
 
+	# Remove hardcoded CXXFLAGS
+	sed -i -e 's/debug_flags="-ggdb3 /debug_flags="/' configure || die
+	sed -i -e 's/-O0 -g3//' ext/scintilla/gtk/Makefile.in ext/scintilla/gtk/Makefile.am || die
+
 	# Remove bundled ctemplate version to make sure we use the system
 	# version, but leave a directory to avoid confusing configure, bug
 	# 357539.
@@ -75,7 +78,6 @@ src_prepare() {
 src_configure() {
 	econf \
 		$(use_enable nls i18n) \
-		$(use_enable readline readline) \
 		$(use_enable debug) \
 		$(use_enable static-libs static)
 }

@@ -1,6 +1,6 @@
 # Copyright 1999-2011 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/dev-lang/php/php-5.4.0_rc3.ebuild,v 1.3 2011/12/14 22:48:49 mabi Exp $
+# $Header: /var/cvsroot/gentoo-x86/dev-lang/php/php-5.4.0_rc3.ebuild,v 1.4 2011/12/16 09:02:43 olemarkus Exp $
 
 EAPI=4
 
@@ -110,7 +110,7 @@ IUSE="${IUSE} bcmath berkdb bzip2 calendar cdb cjk
 	readline recode +session sharedmem
 	+simplexml snmp soap sockets spell sqlite3 ssl
 	sybase-ct sysvipc tidy +tokenizer truetype unicode wddx
-	xml xmlreader xmlwriter xmlrpc xpm xsl zip zlib"
+	+xml xmlreader xmlwriter xmlrpc xpm xsl zip zlib"
 
 # Enable suhosin if available
 [[ -n $SUHOSIN_VERSION ]] && IUSE="${IUSE} suhosin"

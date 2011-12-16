@@ -6,7 +6,7 @@ mirror://sourceforge/gkrellsun/gkrellsun-1.0.0.tar.gz
 http://gkrellsun.sourceforge.net/
 GPL-2
 A GKrellM plugin that shows sunrise and sunset times.
-~alpha ~amd64 ~hppa ~ia64 ~ppc ~sparc ~x86
+~alpha amd64 ~hppa ~ia64 ~ppc ~sparc ~x86
 eutils gkrellm-plugin multilib portability toolchain-funcs user
 nls
 

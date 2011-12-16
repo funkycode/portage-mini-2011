@@ -1,8 +1,8 @@
-# Copyright 1999-2010 Gentoo Foundation
+# Copyright 1999-2011 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/dev-cpp/muParser/muParser-1.34.ebuild,v 1.1 2010/11/11 17:00:58 jlec Exp $
+# $Header: /var/cvsroot/gentoo-x86/dev-cpp/muParser/muParser-1.34.ebuild,v 1.3 2011/12/16 14:48:42 jlec Exp $
 
-EAPI=2
+EAPI=4
 
 inherit eutils
 
@@ -18,12 +18,15 @@ SLOT="0"
 KEYWORDS="~amd64 ~ppc ~ppc64 ~x86 ~amd64-linux ~x86-linux ~ppc-macos ~x86-macos"
 IUSE="doc test"
 
-S=${WORKDIR}/${MY_P}
+S="${WORKDIR}"/${MY_P}
 
 src_prepare() {
 	epatch \
 		"${FILESDIR}"/${PN}-1.32-build.patch \
 		"${FILESDIR}"/${PN}-1.32-parallel-build.patch
+	sed \
+		-e 's:-O2::g' \
+		-i configure || die
 }
 
 src_configure() {
@@ -32,7 +35,7 @@ src_configure() {
 
 src_test() {
 	cat > test.sh <<- EOFTEST
-	LD_LIBRARY_PATH=${S}/lib samples/example1/example1 << EOF
+	LD_LIBRARY_PATH=${S}/lib samples/example1/example1 <<- EOF
 	quit
 	EOF
 	EOFTEST
@@ -40,7 +43,7 @@ src_test() {
 }
 
 src_install() {
-	emake DESTDIR="${D}" install || die "emake install failed"
+	default
 	dodoc Changes.txt  Credits.txt || die "dodoc failed"
 	if use doc; then
 		insinto /usr/share/doc/${PF}

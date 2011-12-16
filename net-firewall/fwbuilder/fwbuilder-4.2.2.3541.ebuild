@@ -1,6 +1,6 @@
 # Copyright 1999-2011 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/net-firewall/fwbuilder/fwbuilder-4.2.2.3541.ebuild,v 1.6 2011/08/21 09:45:32 dilfridge Exp $
+# $Header: /var/cvsroot/gentoo-x86/net-firewall/fwbuilder/fwbuilder-4.2.2.3541.ebuild,v 1.7 2011/12/16 16:28:12 kumba Exp $
 
 EAPI=4
 
@@ -17,8 +17,7 @@ IUSE=""
 DEPEND=">=x11-libs/qt-gui-4.3
 	dev-libs/openssl
 	dev-libs/elfutils
-	sys-devel/gnuconfig
-	!net-libs/libfwbuilder"
+	sys-devel/gnuconfig"
 RDEPEND="${DEPEND}"
 
 PATCHES=(

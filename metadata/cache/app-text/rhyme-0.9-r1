@@ -6,7 +6,7 @@ test
 http://rhyme.sourceforge.net/
 GPL-2
 Console based Rhyming Dictionary
-~alpha ~amd64 ~x86
+~alpha amd64 ~x86
 multilib toolchain-funcs
 
 

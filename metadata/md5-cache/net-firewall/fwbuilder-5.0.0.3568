@@ -1,0 +1,12 @@
+DEFINED_PHASES=compile configure install postinst prepare unpack
+DEPEND=>=x11-libs/qt-gui-4.3 dev-libs/openssl dev-libs/elfutils sys-devel/gnuconfig || ( =sys-devel/automake-1.11* ) >=sys-devel/autoconf-2.61 sys-devel/libtool
+DESCRIPTION=A firewall GUI
+EAPI=4
+HOMEPAGE=http://www.fwbuilder.org/
+KEYWORDS=~amd64 ~ppc ~ppc64 ~x86
+LICENSE=GPL-2
+RDEPEND=>=x11-libs/qt-gui-4.3 dev-libs/openssl dev-libs/elfutils sys-devel/gnuconfig
+SLOT=0
+SRC_URI=mirror://sourceforge/fwbuilder/fwbuilder-5.0.0.3568.tar.gz
+_eclasses_=autotools	63332a15502113ca711ccccb3889a109	base	809ab15a673823938260f6b17661c3f1	eutils	1bb26e220731063f07d67bca36aa89aa	libtool	0fd90d183673bf1107465ec45849d1ea	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	portability	0d9341be2bffb3ace510580f192f231e	qt4-r2	562a0a4214d92cf49cc3e97d1f39d891	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
+_md5_=1f7d40d7204737b1948449884f3a999e

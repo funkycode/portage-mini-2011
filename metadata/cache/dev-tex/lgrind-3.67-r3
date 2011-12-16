@@ -6,7 +6,7 @@ mirror://gentoo/lgrind.tar.gz
 http://www.tug.org/
 as-is
 A source pretty printer for LaTeX - styles to stylise your source and code examples.
-~amd64 ~ppc ~sparc ~x86
+amd64 ~ppc ~sparc ~x86
 base eutils latex-package multilib portability toolchain-funcs user
 examples
 
