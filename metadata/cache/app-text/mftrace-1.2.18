@@ -1,0 +1,22 @@
+>=app-text/t1utils-1.25 || ( media-gfx/potrace >=media-gfx/autotrace-0.30 ) truetype? ( media-gfx/fontforge ) virtual/latex-base test? ( media-gfx/fontforge ) >=app-admin/eselect-python-20091230 =dev-lang/python-2*
+>=app-text/t1utils-1.25 || ( media-gfx/potrace >=media-gfx/autotrace-0.30 ) truetype? ( media-gfx/fontforge ) virtual/latex-base >=app-admin/eselect-python-20091230 =dev-lang/python-2*
+1
+http://lilypond.org/download/sources/mftrace/mftrace-1.2.18.tar.gz
+
+http://lilypond.org/mftrace/
+GPL-2
+Traces TeX fonts to PFA or PFB fonts (formerly pktrace)
+~amd64 ~hppa ~ppc ~x86 ~x86-fbsd
+multilib python toolchain-funcs
+test truetype
+
+
+
+4
+
+compile configure install postinst postrm setup
+
+
+
+
+

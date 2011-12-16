@@ -1,6 +1,6 @@
 # Copyright 1999-2011 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/sci-libs/neartree/neartree-2.3.2.ebuild,v 1.2 2011/05/09 15:07:22 jlec Exp $
+# $Header: /var/cvsroot/gentoo-x86/sci-libs/neartree/neartree-2.3.2.ebuild,v 1.5 2011/12/15 21:39:19 jlec Exp $
 
 EAPI=4
 
@@ -15,8 +15,8 @@ SRC_URI="mirror://sourceforge/${PN}/${PN}/${MY_P}/${MY_P}.tar.gz -> ${P}.tar.gz"
 
 LICENSE="LGPL-2.1"
 SLOT="0"
-KEYWORDS="~amd64 ~ppc ~x86 ~amd64-linux ~x86-linux"
-IUSE=""
+KEYWORDS="amd64 ~ppc ~x86 ~amd64-linux ~x86-linux"
+IUSE="static-libs"
 
 RDEPEND="dev-libs/cvector"
 DEPEND="${RDEPEND}"
@@ -32,7 +32,7 @@ src_prepare() {
 	sed \
 		-e "s:GENTOOLIBDIR:$(get_libdir):g" \
 		-e "s:/usr:${EPREFIX}/usr:g" \
-		-i Makefile
+		-i Makefile || die
 }
 
 src_compile() {
@@ -47,6 +47,10 @@ src_install() {
 		CC=$(tc-getCC) \
 		CXX=$(tc-getCXX) \
 		DESTDIR="${D}" install
+
+	if ! use static-libs; then
+		rm "${ED}"/usr/$(get_libdir)/*.{a,la} || die
+	fi
 
 	dodoc README_NearTree.txt
 	dohtml *.html

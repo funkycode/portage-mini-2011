@@ -3451,6 +3451,7 @@ net-im/kmess:konqueror - Enable integration with konqueror
 net-im/kmess:libnotify - Enable desktop notifications using the knotify library
 net-im/leechcraft-azoth:acetamide - Build Acetamide, the IRC protocol support
 net-im/leechcraft-azoth:adiumstyles - Build support for Adium styles
+net-im/leechcraft-azoth:astrality - Build Astrality, support for protocols provided by Telepathy
 net-im/leechcraft-azoth:autoidler - Build support for automatic status changing according to user idle time
 net-im/leechcraft-azoth:autopaste - Build Autopaste for pasting long texts to pastebins
 net-im/leechcraft-azoth:chathistory - Build ChatHistory which stories chat history
@@ -4955,6 +4956,7 @@ www-client/leechcraft-poshuku:filescheme - Build FileScheme for accessing local 
 www-client/leechcraft-poshuku:fua - Build FUA for faking user agents for different hosts.
 www-client/leechcraft-poshuku:keywords - Build Keywords for adjusting search shortcuts.
 www-client/leechcraft-poshuku:onlinebookmarks - Build OnlineBookmarks for syncing bookmarks with social bookmarking services like Read It Later.
+www-client/leechcraft-poshuku:pogooglue - Build Pogooglue for searching for selected words in Google in two clicks
 www-client/leechcraft-poshuku:wyfv - Build WYFV for replacing Flash-based video players on some sites.
 www-client/luakit:helpers - Optional tools used by luakit
 www-client/luakit:luajit - Use the lua just-in-time compiler dev-lang/luajit instead of dev-lang/lua, which should make luakit faster.
@@ -5208,6 +5210,7 @@ x11-plugins/compiz-plugins-main:gconf - Install GConf schemas for the plugins, n
 x11-plugins/enigmail:custom-optimization - Enable user CFLAGS
 x11-plugins/enigmail:system-sqlite - Use the system-wide dev-db/sqlite installation with secure-delete enabled
 x11-plugins/pidgin-mbpurple:twitgin - Enable graphical plugin for Gtk+ interface of Pidgin.
+x11-plugins/pidgin-sipe:voice - Enable experimental voice/video support
 x11-plugins/purple-plugin_pack:talkfilters - Enable support for app-text/talklfilters
 x11-plugins/screenlets:svg - Highly Recommended: Enable SVG graphics via dev-python/librsvg-python
 x11-plugins/wmfire:session - Enable session management

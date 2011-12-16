@@ -1,0 +1,22 @@
+=net-misc/leechcraft-core-9999 sys-power/upower x11-libs/qwt:6 x11-libs/qt-dbus virtual/leechcraft-trayarea >=dev-util/cmake-2.8.4 userland_GNU? ( >=sys-apps/findutils-4.4.0 ) dev-vcs/git
+=net-misc/leechcraft-core-9999 sys-power/upower x11-libs/qwt:6 x11-libs/qt-dbus virtual/leechcraft-trayarea
+0
+
+
+http://leechcraft.org/
+GPL-3
+UPower-based power manager for LeechCraft
+
+base cmake-utils eutils flag-o-matic git-2 leechcraft multilib portability toolchain-funcs user versionator
+debug
+
+
+
+2
+
+compile configure install prepare test unpack
+
+
+
+
+

@@ -1,6 +1,6 @@
 # Copyright 1999-2011 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/sci-chemistry/moldy/moldy-2.16e-r2.ebuild,v 1.2 2011/06/26 08:39:46 jlec Exp $
+# $Header: /var/cvsroot/gentoo-x86/sci-chemistry/moldy/moldy-2.16e-r2.ebuild,v 1.5 2011/12/15 21:51:34 jlec Exp $
 
 EAPI=4
 
@@ -12,7 +12,7 @@ SRC_URI="ftp://ftp.earth.ox.ac.uk/pub/keith/${P}.tar.gz"
 
 LICENSE="GPL-2"
 SLOT="0"
-KEYWORDS="~x86 ~amd64 ~x86-linux ~ppc-macos"
+KEYWORDS="amd64 ~x86 ~amd64-linux ~x86-linux ~ppc-macos"
 IUSE="doc examples"
 
 DEPEND="doc? ( virtual/latex-base )"
@@ -22,6 +22,10 @@ S="${WORKDIR}"
 
 src_prepare() {
 	epatch "${FILESDIR}"/${PV}-as-needed.patch
+	sed \
+		-e 's:-O2::g' \
+		-e 's:-ffast-math::g' \
+		-i configure* || die
 }
 
 src_configure() {

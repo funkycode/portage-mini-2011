@@ -1,7 +1,7 @@
 dev-lang/tk jpeg? ( virtual/jpeg ) X? ( x11-libs/libX11 )
 dev-lang/tk jpeg? ( virtual/jpeg ) X? ( x11-libs/libX11 )
 0
-http://jos.decoster.googlepages.com/blt2.4z-8.5.2.tar.gz
+http://dev.gentoo.org/~jlec/distfiles/blt2.4z-8.5.2.tar.gz http://jos.decoster.googlepages.com/blt2.4z-8.5.2.tar.gz
 
 http://blt.sourceforge.net/ http://jos.decoster.googlepages.com/bltfortk8.5.2
 BSD

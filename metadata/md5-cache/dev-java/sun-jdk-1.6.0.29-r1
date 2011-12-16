@@ -4,11 +4,11 @@ DESCRIPTION=Oracle's Java SE Development Kit
 EAPI=4
 HOMEPAGE=http://www.oracle.com/technetwork/java/javase/
 IUSE=X alsa derby doc examples jce nsplugin
-KEYWORDS=~amd64 ~x86
+KEYWORDS=~amd64 ~x86 ~amd64-linux ~x86-linux ~sparc-solaris ~sparc64-solaris ~x64-solaris ~x86-solaris
 LICENSE=Oracle-BCLA-JavaSE
-RDEPEND=doc? ( dev-java/java-sdk-docs:1.6.0 ) !prefix? ( sys-libs/glibc ) alsa? ( media-libs/alsa-lib ) X? ( x11-libs/libXext x11-libs/libXi x11-libs/libXrender x11-libs/libXtst x11-libs/libX11 ) =dev-java/java-config-2*
+RDEPEND=doc? ( dev-java/java-sdk-docs:1.6.0 ) !prefix? ( sys-libs/glibc ) kernel_Solaris? ( app-arch/unzip ) alsa? ( media-libs/alsa-lib ) X? ( x11-libs/libXext x11-libs/libXi x11-libs/libXrender x11-libs/libXtst x11-libs/libX11 ) =dev-java/java-config-2*
 RESTRICT=fetch strip
 SLOT=1.6
-SRC_URI=x86? ( jdk-6u29-linux-i586.bin ) amd64? ( jdk-6u29-linux-x64.bin )
+SRC_URI=x86? ( jdk-6u29-linux-i586.bin ) amd64? ( jdk-6u29-linux-x64.bin ) x86-solaris? ( jdk-6u29-solaris-i586.sh ) x64-solaris? ( jdk-6u29-solaris-i586.sh jdk-6u29-solaris-x64.sh ) sparc-solaris? ( jdk-6u29-solaris-sparc.sh ) sparc64-solaris? ( jdk-6u29-solaris-sparc.sh jdk-6u29-solaris-sparcv9.sh )
 _eclasses_=eutils	1bb26e220731063f07d67bca36aa89aa	fdo-mime	0acfe1a88fd8751a1d5dc671168219fa	java-vm-2	a34fe9a7d2a4f163b7f0c5af7d53ae33	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	pax-utils	43c50115ec22f684df1dc43187a60fcc	portability	0d9341be2bffb3ace510580f192f231e	prefix	21058c21ca48453d771df15500873ede	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e	versionator	3a6c6ae0c0f6578737dd398e98311d46
-_md5_=c682a9bc248110ba84e7f7eb1045400a
+_md5_=5342f9bfac0cde3cd77104ae2385691c

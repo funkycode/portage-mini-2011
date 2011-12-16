@@ -6,7 +6,7 @@ http://snapshots.repository.codehaus.org/com/thoughtworks/qdox/qdox/1.12-SNAPSHO
 http://qdox.codehaus.org/
 Apache-2.0
 Parser for extracting class/interface/method definitions
-~x86
+~amd64 ~x86
 eutils java-ant-2 java-pkg-2 java-utils-2 multilib portability toolchain-funcs user versionator
 elibc_FreeBSD doc source elibc_FreeBSD
 

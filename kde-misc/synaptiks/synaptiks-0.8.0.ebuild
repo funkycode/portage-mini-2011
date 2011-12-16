@@ -1,6 +1,6 @@
 # Copyright 1999-2011 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/kde-misc/synaptiks/synaptiks-0.8.0.ebuild,v 1.4 2011/12/15 14:26:34 johu Exp $
+# $Header: /var/cvsroot/gentoo-x86/kde-misc/synaptiks/synaptiks-0.8.0.ebuild,v 1.7 2011/12/15 22:52:33 dilfridge Exp $
 
 EAPI=3
 PYTHON_DEPEND="2:2.6"
@@ -20,6 +20,7 @@ IUSE="debug +upower"
 RDEPEND="|| ( >=dev-lang/python-2.7 dev-python/argparse )
 	>=dev-python/PyQt4-4.7
 	>=dev-python/pyudev-0.8[pyqt4]
+	dev-python/setuptools
 	$(add_kdebase_dep pykde4)
 	$(add_kdebase_dep kdesdk-scripts)
 	>=x11-drivers/xf86-input-synaptics-1.3
@@ -41,5 +42,5 @@ src_test() {
 }
 
 src_install() {
-	distutils_src_install --single-version-externally-managed
+	distutils_src_install
 }
