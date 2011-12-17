@@ -8,5 +8,5 @@ LICENSE=GPL-2
 RDEPEND=>=sys-libs/lwp-2.1 >=net-libs/rpc2-2.0 >=sys-libs/rvm-1.11 >=sys-libs/db-3 >=sys-libs/ncurses-4 >=sys-libs/readline-3 >=dev-lang/perl-5.8 kerberos? ( virtual/krb5 ) ssl? ( dev-libs/openssl )
 SLOT=0
 SRC_URI=http://www.coda.cs.cmu.edu/pub/coda/src/coda-6.0.15.tar.gz
-_eclasses_=eutils	1bb26e220731063f07d67bca36aa89aa	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	portability	0d9341be2bffb3ace510580f192f231e	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
+_eclasses_=eutils	17c907467c9dbca015656a174592ef78	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	portability	0d9341be2bffb3ace510580f192f231e	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
 _md5_=fc057c02cce78aa24802ac2920de8833

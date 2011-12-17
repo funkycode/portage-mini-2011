@@ -10,5 +10,5 @@ PDEPEND=!mbox? ( mail-filter/procmail )
 RDEPEND=net-mail/mailbase sys-devel/m4 sasl? ( >=dev-libs/cyrus-sasl-2.1.10 ) tcpd? ( sys-apps/tcp-wrappers ) ssl? ( dev-libs/openssl ) ldap? ( net-nds/openldap ) >=sys-libs/db-3.2 !net-mail/vacation >=net-mail/mailbase-0.00 !mail-mta/courier !mail-mta/esmtp !mail-mta/exim !mail-mta/mini-qmail !mail-mta/msmtp[mta] !mail-mta/nbsmtp !mail-mta/netqmail !mail-mta/nullmailer !mail-mta/postfix !mail-mta/qmail-ldap !<mail-mta/ssmtp-2.64-r2 !>=mail-mta/ssmtp-2.64-r2[mta]
 SLOT=0
 SRC_URI=ftp://ftp.sendmail.org/pub/sendmail/sendmail.8.14.5.tar.gz
-_eclasses_=eutils	1bb26e220731063f07d67bca36aa89aa	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	portability	0d9341be2bffb3ace510580f192f231e	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
+_eclasses_=eutils	17c907467c9dbca015656a174592ef78	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	portability	0d9341be2bffb3ace510580f192f231e	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
 _md5_=5a5bb37acf6ff2eccb5a97dd4939bf16

@@ -9,5 +9,5 @@ LICENSE=GPL-2
 RDEPEND=>=sys-libs/slang-2 X? ( x11-libs/libX11 xft? ( x11-libs/libXext x11-libs/libXft x11-libs/libXrender >=media-libs/freetype-2.0 ) ) gpm? ( sys-libs/gpm )
 SLOT=0
 SRC_URI=ftp://space.mit.edu/pub/davis/jed/v0.99/jed-0.99-19.tar.bz2
-_eclasses_=eutils	1bb26e220731063f07d67bca36aa89aa	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	portability	0d9341be2bffb3ace510580f192f231e	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e	versionator	3a6c6ae0c0f6578737dd398e98311d46
+_eclasses_=eutils	17c907467c9dbca015656a174592ef78	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	portability	0d9341be2bffb3ace510580f192f231e	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e	versionator	3a6c6ae0c0f6578737dd398e98311d46
 _md5_=9e1b98311c6b21458cd591f7520992a5

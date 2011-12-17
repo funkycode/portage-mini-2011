@@ -9,5 +9,5 @@ LICENSE=GPL-2
 RDEPEND=>=dev-libs/libebml-1.2.0 >=media-libs/libmatroska-1.1.0 >=dev-libs/boost-1.36.0 dev-libs/expat media-libs/flac media-libs/libogg media-libs/libvorbis sys-apps/file sys-libs/zlib bzip2? ( app-arch/bzip2 ) lzo? ( dev-libs/lzo ) wxwidgets? ( x11-libs/wxGTK:2.8[X] )
 SLOT=0
 SRC_URI=http://www.bunkus.org/videotools/mkvtoolnix/sources/mkvtoolnix-4.9.0.tar.bz2
-_eclasses_=autotools	63332a15502113ca711ccccb3889a109	eutils	1bb26e220731063f07d67bca36aa89aa	libtool	0fd90d183673bf1107465ec45849d1ea	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	portability	0d9341be2bffb3ace510580f192f231e	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e	wxwidgets	9b355ad2394810db50553e45cd663578
+_eclasses_=autotools	63332a15502113ca711ccccb3889a109	eutils	17c907467c9dbca015656a174592ef78	libtool	0fd90d183673bf1107465ec45849d1ea	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	portability	0d9341be2bffb3ace510580f192f231e	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e	wxwidgets	9b355ad2394810db50553e45cd663578
 _md5_=94c36ff576d19d57eff31c1533b300cf

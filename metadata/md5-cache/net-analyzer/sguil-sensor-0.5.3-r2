@@ -7,5 +7,5 @@ LICENSE=QPL
 RDEPEND=>=dev-lang/tcl-8.3 >=dev-tcltk/tclx-8.3 >=net-analyzer/snort-2.4.1-r1 >=net-analyzer/barnyard-0.2.0-r1 net-analyzer/sancp dev-ml/pcre-ocaml
 SLOT=0
 SRC_URI=mirror://sourceforge/sguil/sguil-sensor-0.5.3.tar.gz
-_eclasses_=eutils	1bb26e220731063f07d67bca36aa89aa	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	portability	0d9341be2bffb3ace510580f192f231e	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
+_eclasses_=eutils	17c907467c9dbca015656a174592ef78	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	portability	0d9341be2bffb3ace510580f192f231e	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
 _md5_=febe6f7844ed3f8b15d01cb95036f6ef

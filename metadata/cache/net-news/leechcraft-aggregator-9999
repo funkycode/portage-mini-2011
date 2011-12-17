@@ -1,5 +1,5 @@
-=net-misc/leechcraft-core-9999[postgres?,sqlite?] >=dev-util/cmake-2.8.4 userland_GNU? ( >=sys-apps/findutils-4.4.0 ) dev-vcs/git
-=net-misc/leechcraft-core-9999[postgres?,sqlite?] virtual/leechcraft-downloader-http
+~net-misc/leechcraft-core-9999[postgres?,sqlite?] >=dev-util/cmake-2.8.4 userland_GNU? ( >=sys-apps/findutils-4.4.0 ) dev-vcs/git
+~net-misc/leechcraft-core-9999[postgres?,sqlite?] virtual/leechcraft-downloader-http
 0
 
 

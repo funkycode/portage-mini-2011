@@ -8,5 +8,5 @@ LICENSE=as-is BSD
 RDEPEND=selinux? ( sec-policy/selinux-sudo ) ldap? ( dev-lang/perl ) pam? ( sys-auth/pambase ) pam? ( virtual/pam ) ldap? ( >=net-nds/openldap-2.1.30-r1 dev-libs/cyrus-sasl ) !pam? ( skey? ( >=sys-auth/skey-1.1.5-r1 ) ) app-misc/editor-wrapper virtual/editor virtual/mta
 SLOT=0
 SRC_URI=http://www.sudo.ws/sudo/dist/sudo-1.7.4p5.tar.gz ftp://ftp.sudo.ws/pub/sudo/sudo-1.7.4p5.tar.gz
-_eclasses_=eutils	1bb26e220731063f07d67bca36aa89aa	flag-o-matic	8ffbf0dc65f73498fcba6d29048fdfff	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	pam	71d772c7b2ecf139ec916c4584563109	portability	0d9341be2bffb3ace510580f192f231e	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
+_eclasses_=eutils	17c907467c9dbca015656a174592ef78	flag-o-matic	8ffbf0dc65f73498fcba6d29048fdfff	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	pam	adfe33c13740895d65356efc74df76cc	portability	0d9341be2bffb3ace510580f192f231e	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
 _md5_=075f7e38cd9c9a74b2495386e40ee8cc

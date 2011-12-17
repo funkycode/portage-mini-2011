@@ -9,5 +9,5 @@ LICENSE=GPL-2
 RDEPEND=>=dev-texlive/texlive-basic-2011 >=app-text/texlive-core-2011
 SLOT=0
 SRC_URI=mirror://gentoo/texlive-module-hyphen-dutch-2011.tar.xz mirror://gentoo/texlive-module-collection-langdutch-2011.tar.xz
-_eclasses_=base	809ab15a673823938260f6b17661c3f1	eutils	1bb26e220731063f07d67bca36aa89aa	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	portability	0d9341be2bffb3ace510580f192f231e	texlive-common	dbfff854bb5a0c2569428127d2266dcb	texlive-module	e47d269864ae853a74eff0e428331a85	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
+_eclasses_=base	809ab15a673823938260f6b17661c3f1	eutils	17c907467c9dbca015656a174592ef78	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	portability	0d9341be2bffb3ace510580f192f231e	texlive-common	dbfff854bb5a0c2569428127d2266dcb	texlive-module	e47d269864ae853a74eff0e428331a85	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
 _md5_=17cd6c9626ebcbdfd9862a4cb68b9b70

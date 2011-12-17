@@ -7,5 +7,5 @@ LICENSE=GPL-2
 RDEPEND=>=dev-lang/perl-5.6.1-r6 >=media-gfx/imagemagick-6.2.2.0 >=dev-perl/ImageSize-2.99 >=dev-perl/ImageInfo-1.04-r1 >=dev-perl/IO-String-1.01-r1 >=dev-perl/HTML-Clean-0.8 >=dev-perl/HTML-Parser-3.26-r1 >=dev-perl/HTML-Template-2.6 >=dev-perl/Locale-gettext-1.01 >=virtual/perl-Storable-2.04 >=dev-perl/Text-Iconv-1.2 >=dev-perl/URI-1.18 >=dev-perl/libxml-perl-0.07-r1 dev-perl/Text-Unaccent >=dev-perl/XML-DOM-1.39-r1 >=dev-perl/XML-Grove-0.46_alpha >=dev-perl/XML-Handler-YAWriter-0.23 >=dev-perl/XML-XQL-0.67 dev-perl/TimeDate >=sys-apps/sed-4
 SLOT=0
 SRC_URI=http://zubro.chez.tiscali.fr/BINS/bins-1.1.29.tar.gz
-_eclasses_=eutils	1bb26e220731063f07d67bca36aa89aa	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	portability	0d9341be2bffb3ace510580f192f231e	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
+_eclasses_=eutils	17c907467c9dbca015656a174592ef78	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	portability	0d9341be2bffb3ace510580f192f231e	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
 _md5_=de87fb6eff67c448d2ec7a1686e4ce05

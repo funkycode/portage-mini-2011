@@ -4379,6 +4379,7 @@ sci-libs/vtk:boost - Add support for boost
 sci-libs/vtk:cg - Use nvidia's cg shaders
 sci-libs/vtk:patented - Build patented classes
 sci-mathematics/Macaulay2:optimization - Accept upstream's choices for -O option, i.e. -O3 almost everywhere.
+sci-mathematics/cgal:mpfi - Enable support for multiple recision interval arithmetic via sci-mathematics/mpfi
 sci-mathematics/dataplot:gs - Add Ghostscript support (app-text/ghostscript-gpl)
 sci-mathematics/freemat:arpack - Add sparse eigen value support via sci-libs/arpack
 sci-mathematics/freemat:ffcall - Enable use of dev-libs/ffcall

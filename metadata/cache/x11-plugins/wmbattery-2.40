@@ -6,7 +6,7 @@ mirror://debian/pool/main/w/wmbattery/wmbattery_2.40.tar.gz
 http://kitenet.net/~joey/code/wmbattery/
 GPL-2
 A dockable app to report APM, ACPI, or SPIC battery status
-~amd64 ~ppc -sparc ~x86
+amd64 ~ppc -sparc ~x86
 autotools eutils libtool multilib portability toolchain-funcs user
 
 

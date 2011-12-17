@@ -9,5 +9,5 @@ LICENSE=|| ( Artistic GPL-1 GPL-2 GPL-3 )
 RDEPEND=>=dev-perl/Package-Stash-0.220 dev-lang/perl[-build]
 SLOT=0
 SRC_URI=mirror://cpan/authors/id/R/RI/RIBASUSHI/namespace-clean-0.21.tar.gz
-_eclasses_=base	809ab15a673823938260f6b17661c3f1	eutils	1bb26e220731063f07d67bca36aa89aa	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	perl-module	01501a30505074cd0012cabbf5d99447	portability	0d9341be2bffb3ace510580f192f231e	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
+_eclasses_=base	809ab15a673823938260f6b17661c3f1	eutils	17c907467c9dbca015656a174592ef78	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	perl-module	01501a30505074cd0012cabbf5d99447	portability	0d9341be2bffb3ace510580f192f231e	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
 _md5_=346c55bf20350da11b47e20d8c040b24

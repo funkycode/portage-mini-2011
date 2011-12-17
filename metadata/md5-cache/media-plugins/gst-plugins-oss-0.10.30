@@ -8,5 +8,5 @@ RDEPEND=>=media-libs/gst-plugins-base-0.10.33 =media-libs/gst-plugins-base-0.10*
 RESTRICT=test
 SLOT=0.10
 SRC_URI=http://gstreamer.freedesktop.org/src/gst-plugins-good/gst-plugins-good-0.10.30.tar.bz2
-_eclasses_=eutils	1bb26e220731063f07d67bca36aa89aa	gst-plugins-good	b29e5bbf654ca7514a32b8161d71ea8c	gst-plugins10	1bd03bd0e2784dfa49d423edd8508c1f	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	portability	0d9341be2bffb3ace510580f192f231e	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e	versionator	3a6c6ae0c0f6578737dd398e98311d46
+_eclasses_=eutils	17c907467c9dbca015656a174592ef78	gst-plugins-good	b29e5bbf654ca7514a32b8161d71ea8c	gst-plugins10	1bd03bd0e2784dfa49d423edd8508c1f	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	portability	0d9341be2bffb3ace510580f192f231e	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e	versionator	3a6c6ae0c0f6578737dd398e98311d46
 _md5_=6bee69986f9f0c615e68c5b244f1477f

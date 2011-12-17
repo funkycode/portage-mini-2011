@@ -9,5 +9,5 @@ LICENSE=GPL-2
 RDEPEND=gtk? ( gnome-base/libglade x11-libs/pango x11-libs/gtk+:2 dev-libs/glib:2 ) X? ( x11-libs/libSM x11-libs/libX11 ) !ncurses? ( !X? ( !sdl? ( !gtk? ( sys-libs/ncurses ) ) ) ) sdl? ( media-libs/libsdl[video,X] media-libs/sdl-ttf media-libs/sdl-image sound? ( media-libs/sdl-mixer media-libs/libsdl[audio] ) )
 SLOT=0
 SRC_URI=http://rephial.org/downloads/3.2/angband-3.2.0.tar.gz
-_eclasses_=autotools	63332a15502113ca711ccccb3889a109	base	809ab15a673823938260f6b17661c3f1	eutils	1bb26e220731063f07d67bca36aa89aa	games	ef93d90e0de66f9dc4e36c3b5098de94	libtool	0fd90d183673bf1107465ec45849d1ea	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	portability	0d9341be2bffb3ace510580f192f231e	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e	versionator	3a6c6ae0c0f6578737dd398e98311d46
+_eclasses_=autotools	63332a15502113ca711ccccb3889a109	base	809ab15a673823938260f6b17661c3f1	eutils	17c907467c9dbca015656a174592ef78	games	ef93d90e0de66f9dc4e36c3b5098de94	libtool	0fd90d183673bf1107465ec45849d1ea	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	portability	0d9341be2bffb3ace510580f192f231e	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e	versionator	3a6c6ae0c0f6578737dd398e98311d46
 _md5_=a551a10b201a6e5c07139b04952e20f4

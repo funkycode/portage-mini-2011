@@ -1,0 +1,22 @@
+app-arch/libarchive media-libs/glew media-libs/libsdl[opengl,video] media-libs/sdl-gfx media-libs/sdl-image[png] media-libs/libvorbis net-misc/curl sci-physics/bullet virtual/opengl virtual/glu dev-cpp/asio dev-libs/boost dev-util/pkgconfig dev-util/scons
+app-arch/libarchive media-libs/glew media-libs/libsdl[opengl,video] media-libs/sdl-gfx media-libs/sdl-image[png] media-libs/libvorbis net-misc/curl sci-physics/bullet virtual/opengl virtual/glu
+0
+mirror://sourceforge/vdrift/vdrift-2011-10-22.tar.bz2
+
+http://vdrift.net/
+GPL-3 ZLIB
+A driving simulation made with drift racing in mind
+~amd64 ~x86
+base eutils games multilib portability scons-utils toolchain-funcs user
+
+
+
+
+2
+
+compile configure install postinst preinst prepare setup unpack
+
+
+
+
+

@@ -1,6 +1,6 @@
 # Copyright 1999-2011 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/net-libs/libpcap/libpcap-1.1.1-r1.ebuild,v 1.12 2011/12/11 15:52:28 armin76 Exp $
+# $Header: /var/cvsroot/gentoo-x86/net-libs/libpcap/libpcap-1.1.1-r1.ebuild,v 1.13 2011/12/16 17:30:38 jer Exp $
 
 EAPI=4
 inherit autotools eutils multilib toolchain-funcs
@@ -24,10 +24,7 @@ DEPEND="${RDEPEND}
 DOCS=( CREDITS CHANGES VERSION TODO README{,.dag,.linux,.macosx,.septel} )
 
 src_prepare() {
-	epatch \
-		"${FILESDIR}/${PN}-1.1-cross-linux.patch" \
-		"${FILESDIR}/${P}-ignore-ENODEV.patch"
-
+	epatch "${FILESDIR}/${P}-cross-linux.patch"
 	eautoreconf
 }
 

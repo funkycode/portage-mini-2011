@@ -9,5 +9,5 @@ LICENSE=BSD
 RDEPEND=net-libs/libpcap >=net-libs/libnet-1.1.2.1-r1 >=net-libs/libnids-1.21 >=dev-libs/openssl-0.9.6e >=sys-libs/db-4.2.52_p4 X? ( x11-libs/libXmu )
 SLOT=0
 SRC_URI=http://monkey.org/~dugsong/dsniff/beta/dsniff-2.4b1.tar.gz mirror://debian/pool/main/d/dsniff/dsniff_2.4b1+debian-18.diff.gz
-_eclasses_=autotools	63332a15502113ca711ccccb3889a109	eutils	1bb26e220731063f07d67bca36aa89aa	flag-o-matic	8ffbf0dc65f73498fcba6d29048fdfff	libtool	0fd90d183673bf1107465ec45849d1ea	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	portability	0d9341be2bffb3ace510580f192f231e	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
+_eclasses_=autotools	63332a15502113ca711ccccb3889a109	eutils	17c907467c9dbca015656a174592ef78	flag-o-matic	8ffbf0dc65f73498fcba6d29048fdfff	libtool	0fd90d183673bf1107465ec45849d1ea	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	portability	0d9341be2bffb3ace510580f192f231e	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
 _md5_=dedc550095baab14f5ec618ec35282dc

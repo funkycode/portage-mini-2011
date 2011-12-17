@@ -9,5 +9,5 @@ LICENSE=GPL-2
 RDEPEND=!dedicated? ( virtual/opengl virtual/glu media-libs/libsdl media-libs/sdl-image[jpeg,png] media-libs/sdl-ttf media-libs/sdl-mixer virtual/jpeg media-libs/libpng media-libs/libogg media-libs/libvorbis x11-proto/xf86vidmodeproto ) net-misc/curl sys-devel/gettext sys-libs/zlib editor? ( dev-libs/libxml2:2 virtual/jpeg media-libs/openal x11-libs/gtkglext x11-libs/gtksourceview:2.0 )
 SLOT=0
 SRC_URI=mirror://sourceforge/ufoai/ufoai-2.3.1-source.tar.bz2 mirror://sourceforge/ufoai/ufoai-2.3.1-data.tar http://mattn.ninex.info/1maps.pk3
-_eclasses_=base	809ab15a673823938260f6b17661c3f1	eutils	1bb26e220731063f07d67bca36aa89aa	flag-o-matic	8ffbf0dc65f73498fcba6d29048fdfff	games	ef93d90e0de66f9dc4e36c3b5098de94	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	portability	0d9341be2bffb3ace510580f192f231e	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
+_eclasses_=base	809ab15a673823938260f6b17661c3f1	eutils	17c907467c9dbca015656a174592ef78	flag-o-matic	8ffbf0dc65f73498fcba6d29048fdfff	games	ef93d90e0de66f9dc4e36c3b5098de94	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	portability	0d9341be2bffb3ace510580f192f231e	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
 _md5_=30b35a2ec6137efdb62476a8c4bcfcd0

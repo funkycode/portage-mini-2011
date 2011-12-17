@@ -1,11 +1,11 @@
 DEFINED_PHASES=compile configure install prepare test unpack
-DEPEND==net-misc/leechcraft-core-9999 kde? ( media-libs/phonon ) !kde? ( x11-libs/qt-phonon ) >=dev-util/cmake-2.8.4 userland_GNU? ( >=sys-apps/findutils-4.4.0 ) dev-vcs/git
+DEPEND=~net-misc/leechcraft-core-9999 kde? ( media-libs/phonon ) !kde? ( x11-libs/qt-phonon ) >=dev-util/cmake-2.8.4 userland_GNU? ( >=sys-apps/findutils-4.4.0 ) dev-vcs/git
 DESCRIPTION=LeechCraft Media Player, Phonon-based audio/video player.
-EAPI=2
+EAPI=4
 HOMEPAGE=http://leechcraft.org/
 IUSE=debug kde
 LICENSE=GPL-3
-RDEPEND==net-misc/leechcraft-core-9999 kde? ( media-libs/phonon ) !kde? ( x11-libs/qt-phonon )
+RDEPEND=~net-misc/leechcraft-core-9999 kde? ( media-libs/phonon ) !kde? ( x11-libs/qt-phonon )
 SLOT=0
-_eclasses_=base	809ab15a673823938260f6b17661c3f1	cmake-utils	00f9fd5a80cf3605f6d9a2e808c48a92	eutils	1bb26e220731063f07d67bca36aa89aa	flag-o-matic	8ffbf0dc65f73498fcba6d29048fdfff	git-2	e093fad2de8fa7ca11e7ed938d27ceb1	leechcraft	e2700268ca47bdf575c50821fe68205e	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	portability	0d9341be2bffb3ace510580f192f231e	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e	versionator	3a6c6ae0c0f6578737dd398e98311d46
-_md5_=2b2872aa47fc7a0da8b5a7760f994fd9
+_eclasses_=base	809ab15a673823938260f6b17661c3f1	cmake-utils	00f9fd5a80cf3605f6d9a2e808c48a92	eutils	17c907467c9dbca015656a174592ef78	flag-o-matic	8ffbf0dc65f73498fcba6d29048fdfff	git-2	e093fad2de8fa7ca11e7ed938d27ceb1	leechcraft	1b215843b07989f61c5a8ba447fd5550	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	portability	0d9341be2bffb3ace510580f192f231e	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e	versionator	3a6c6ae0c0f6578737dd398e98311d46
+_md5_=f61ed0aa552eb6d3edda6241db5db35e

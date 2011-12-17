@@ -8,5 +8,5 @@ LICENSE=GPL-2 LGPL-2.1
 RDEPEND=!app-i18n/anthy-ss emacs? ( virtual/emacs )
 SLOT=0
 SRC_URI=mirror://sourceforge.jp/anthy/37536/anthy-9100h.tar.gz
-_eclasses_=elisp-common	3048b6bde509e1aa680e77d093d01409	eutils	1bb26e220731063f07d67bca36aa89aa	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	portability	0d9341be2bffb3ace510580f192f231e	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
+_eclasses_=elisp-common	3048b6bde509e1aa680e77d093d01409	eutils	17c907467c9dbca015656a174592ef78	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	portability	0d9341be2bffb3ace510580f192f231e	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
 _md5_=f04bbf628bbe07b8be5ce9c6790e0a9f
