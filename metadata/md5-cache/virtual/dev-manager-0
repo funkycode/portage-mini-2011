@@ -1,6 +1,6 @@
 DEFINED_PHASES=-
 DESCRIPTION=Virtual for the device filesystem manager
-KEYWORDS=amd64 sparc x86
+KEYWORDS=*
 RDEPEND=sys-fs/udev
 SLOT=0
-_md5_=f8f28193b3c3c6022217eabd2d0cb2b4
+_md5_=0a06985970a89486ee6bcb57154ed57c

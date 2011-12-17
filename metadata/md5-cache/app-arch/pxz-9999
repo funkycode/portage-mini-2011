@@ -1,10 +1,10 @@
-DEFINED_PHASES=compile install unpack
-DEPEND=app-arch/xz-utils sys-devel/gcc[openmp] dev-vcs/git
-DESCRIPTION=parallel LZMA compressor (no parallel decompression!)
+DEFINED_PHASES=install prepare unpack
+DEPEND=>=app-arch/xz-utils-4.999.9_beta >=dev-vcs/git-1.6
+DESCRIPTION=Parallel LZMA compressor/decompressor
 EAPI=3
-HOMEPAGE=http://jnovy.fedorapeople.org/pxz/
-LICENSE=GPL-2
-RDEPEND=app-arch/xz-utils sys-devel/gcc[openmp]
+HOMEPAGE=http://jnovy.fedorapeople.org/pxz
+LICENSE=LGPL-2.1
+RDEPEND=>=app-arch/xz-utils-4.999.9_beta
 SLOT=0
-_eclasses_=eutils	1bb26e220731063f07d67bca36aa89aa	flag-o-matic	8ffbf0dc65f73498fcba6d29048fdfff	git-2	e093fad2de8fa7ca11e7ed938d27ceb1	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	portability	0d9341be2bffb3ace510580f192f231e	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
-_md5_=2e2a77d91cf47ecf423dac4dfece9cdd
+_eclasses_=eutils	1bb26e220731063f07d67bca36aa89aa	git	08aa84bd1bc27e3dc5e58b3ec83854a6	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	portability	0d9341be2bffb3ace510580f192f231e	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
+_md5_=aa01e7245ac0d114fad1274cb3093414

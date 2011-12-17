@@ -6,7 +6,7 @@ binchecks strip
 http://www.openvz.org
 GPL-2
 Ubuntu Server sources (and optional binary kernel)
-x86 amd64
+*
 mount-boot
 binary
 
