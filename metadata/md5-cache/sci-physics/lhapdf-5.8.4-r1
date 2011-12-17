@@ -10,5 +10,5 @@ RDEPEND=octave? ( sci-mathematics/octave )
 REQUIRED_USE=octave? ( cxx )
 SLOT=0
 SRC_URI=http://www.hepforge.org/archive/lhapdf/lhapdf-5.8.4.tar.gz mirror://gentoo/lhapdf-5.8.4-updates-20110126.patch.gz test? ( http://svn.hepforge.org/lhapdf/pdfsets/tags/5.8.4/cteq61.LHgrid http://svn.hepforge.org/lhapdf/pdfsets/tags/5.8.4/MRST2004nlo.LHgrid http://svn.hepforge.org/lhapdf/pdfsets/tags/5.8.4/cteq61.LHpdf octave? ( http://svn.hepforge.org/lhapdf/pdfsets/tags/5.8.4/cteq5l.LHgrid ) )
-_eclasses_=eutils	17c907467c9dbca015656a174592ef78	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	portability	0d9341be2bffb3ace510580f192f231e	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e	versionator	3a6c6ae0c0f6578737dd398e98311d46
+_eclasses_=eutils	ac049c4fa17000293228df51f9460566	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	portability	0d9341be2bffb3ace510580f192f231e	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e	versionator	3a6c6ae0c0f6578737dd398e98311d46
 _md5_=cbfdb9f866a3eab20846ce2a37056e08

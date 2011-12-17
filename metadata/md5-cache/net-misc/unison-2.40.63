@@ -9,5 +9,5 @@ LICENSE=GPL-2
 RDEPEND=gtk? ( >=dev-ml/lablgtk-2.2 || ( net-misc/x11-ssh-askpass net-misc/ssh-askpass-fullscreen ) ) !net-misc/unison:0 app-admin/eselect-unison
 SLOT=2.40
 SRC_URI=http://www.cis.upenn.edu/~bcpierce/unison/download/releases/unison-2.40.63/unison-2.40.63.tar.gz doc? ( http://www.cis.upenn.edu/~bcpierce/unison/download/releases/unison-2.40.63/unison-2.40.63-manual.pdf http://www.cis.upenn.edu/~bcpierce/unison/download/releases/unison-2.40.63/unison-2.40.63-manual.html )
-_eclasses_=eutils	17c907467c9dbca015656a174592ef78	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	portability	0d9341be2bffb3ace510580f192f231e	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e	versionator	3a6c6ae0c0f6578737dd398e98311d46
+_eclasses_=eutils	ac049c4fa17000293228df51f9460566	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	portability	0d9341be2bffb3ace510580f192f231e	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e	versionator	3a6c6ae0c0f6578737dd398e98311d46
 _md5_=b369b2d761952e2040729b88d3f47a29

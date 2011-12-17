@@ -1,6 +1,6 @@
 # Copyright 1999-2011 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/media-video/mplayer/mplayer-9999.ebuild,v 1.111 2011/12/16 13:52:53 aballier Exp $
+# $Header: /var/cvsroot/gentoo-x86/media-video/mplayer/mplayer-9999.ebuild,v 1.115 2011/12/17 15:57:56 aballier Exp $
 
 EAPI=4
 
@@ -11,7 +11,7 @@ ESVN_REPO_URI="svn://svn.mplayerhq.hu/mplayer/trunk"
 inherit toolchain-funcs eutils flag-o-matic multilib base ${SVN_ECLASS}
 
 IUSE="3dnow 3dnowext +a52 aalib +alsa altivec aqua +ass bidi bindist bl bluray
-bs2b cddb +cdio cdparanoia cpudetection custom-cpuopts debug dga
+bs2b cddb +cdio cdparanoia cpudetection debug dga
 directfb doc +dts +dv dvb +dvd +dvdnav dxr3 +enca +encode esd faac +faad fbcon
 ftp gif ggi gsm +iconv ipv6 jack joystick jpeg jpeg2k kernel_linux ladspa
 libcaca libmpeg2 lirc +live lzo mad md5sum +mmx mmxext mng +mp3 nas
@@ -99,7 +99,7 @@ RDEPEND+="
 	encode? (
 		!twolame? ( toolame? ( media-sound/toolame ) )
 		twolame? ( media-sound/twolame )
-		faac? ( !bindist? ( media-libs/faac ) )
+		faac? ( media-libs/faac )
 		mp3? ( media-sound/lame )
 		x264? ( >=media-libs/x264-0.0.20100423 )
 		xvid? ( media-libs/xvid )
@@ -185,9 +185,6 @@ fi
 # xvmc requires xvideo support
 REQUIRED_USE="bindist? ( !faac !win32codecs )"
 
-PATCHES=(
-)
-
 pkg_setup() {
 	if [[ ${PV} == *9999* ]]; then
 		elog
@@ -207,23 +204,6 @@ pkg_setup() {
 		ewarn "You won't need this turned on if you are only building"
 		ewarn "mplayer for this system. Also, if your compile fails, try"
 		ewarn "disabling this use flag."
-	fi
-
-	if use custom-cpuopts; then
-		ewarn
-		ewarn "You are using the custom-cpuopts flag which will"
-		ewarn "specifically allow you to enable / disable certain"
-		ewarn "CPU optimizations."
-		ewarn
-		ewarn "Most desktop users won't need this functionality, but it"
-		ewarn "is included for corner cases like cross-compiling and"
-		ewarn "certain profiles. If unsure, disable this flag and MPlayer"
-		ewarn "will automatically detect and use your available CPU"
-		ewarn "optimizations."
-		ewarn
-		ewarn "Using this flag means your build is unsupported, so"
-		ewarn "please make sure your CPU optimization use flags (3dnow"
-		ewarn "3dnowext mmx mmxext sse sse2 ssse3) are properly set."
 	fi
 }
 
@@ -434,10 +414,6 @@ src_configure() {
 		for i in ${uses}; do
 			use ${i} || myconf+=" --disable-${i}"
 		done
-		if use bindist && use faac; then
-			ewarn "faac is nonfree and cannot be distributed; disabling faac support."
-			myconf+=" --disable-faac"
-		fi
 	else
 		myconf+=" --disable-mencoder"
 		for i in ${uses}; do
@@ -524,16 +500,10 @@ src_configure() {
 	# Platform specific flags, hardcoded on amd64 (see below)
 	use cpudetection && myconf+=" --enable-runtime-cpudetection"
 
-	# Turning off CPU optimizations usually will break the build.
-	# However, this use flag, if enabled, will allow users to completely
-	# specify which ones to use. If disabled, mplayer will automatically
-	# enable all CPU optimizations that the host build supports.
-	if use custom-cpuopts; then
-		uses="3dnow 3dnowext altivec mmx mmxext shm sse sse2 ssse3"
-		for i in ${uses}; do
-			myconf+=" $(use_enable ${i})"
-		done
-	fi
+	uses="3dnow 3dnowext altivec mmx mmxext shm sse sse2 ssse3"
+	for i in ${uses}; do
+		myconf+=" $(use_enable ${i})"
+	done
 
 	use debug && myconf+=" --enable-debug=3"
 
@@ -638,10 +608,10 @@ src_compile() {
 			has ${i} ${ALLOWED_LINGUAS} && BUILT_DOCS+=" ${i}"
 		done
 		if [[ -z $BUILT_DOCS ]]; then
-			emake -j1 -C DOCS/xml html-chunked
+			emake -j1 html-chunked
 		else
 			for i in ${BUILT_DOCS}; do
-				emake -j1 -C DOCS/xml html-chunked-${i}
+				emake -j1 html-chunked-${i}
 			done
 		fi
 	fi

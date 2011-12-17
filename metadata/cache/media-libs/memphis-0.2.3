@@ -1,5 +1,5 @@
->=dev-libs/expat-2.0.1 dev-libs/glib:2 >=x11-libs/cairo-1.8.8 introspection? ( dev-libs/gobject-introspection ) vala? ( dev-lang/vala:0.12 ) doc? ( >=dev-util/gtk-doc-1.12 ) =sys-devel/automake-1.11* >=sys-devel/autoconf-2.61 sys-devel/libtool
->=dev-libs/expat-2.0.1 dev-libs/glib:2 >=x11-libs/cairo-1.8.8 introspection? ( dev-libs/gobject-introspection ) vala? ( dev-lang/vala:0.12 )
+dev-libs/expat dev-libs/glib:2 x11-libs/cairo introspection? ( dev-libs/gobject-introspection ) vala? ( dev-lang/vala:0.12 ) doc? ( >=dev-util/gtk-doc-1.12 ) =sys-devel/automake-1.11* >=sys-devel/autoconf-2.61 sys-devel/libtool
+dev-libs/expat dev-libs/glib:2 x11-libs/cairo introspection? ( dev-libs/gobject-introspection ) vala? ( dev-lang/vala:0.12 )
 0.2
 http://wenner.ch/files/public/mirror/memphis/memphis-0.2.3.tar.gz
 
@@ -7,14 +7,14 @@ http://trac.openstreetmap.ch/trac/memphis/
 LGPL-2.1
 A map-rendering application and a library for OpenStreetMap
 amd64 x86
-autotools base eutils libtool multilib portability toolchain-funcs user
-debug doc +introspection vala
+autotools autotools-utils eutils libtool multilib portability toolchain-funcs user
+debug doc +introspection vala static-libs
 
 
 
-3
+4
 
-compile configure install prepare unpack
+compile configure install prepare test
 
 
 

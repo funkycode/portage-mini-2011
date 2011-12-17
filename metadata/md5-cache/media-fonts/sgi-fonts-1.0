@@ -7,5 +7,5 @@ KEYWORDS=alpha amd64 arm ia64 ~ppc ppc64 s390 sh sparc x86 ~x86-fbsd
 LICENSE=MIT
 SLOT=0
 SRC_URI=ftp://ftp.suse.com/pub/suse/i386/9.1/suse/noarch/sgi-fonts-1.0-705.noarch.rpm
-_eclasses_=eutils	17c907467c9dbca015656a174592ef78	font	9aa70ebc5cefbdd9056687b550a2fdc4	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	portability	0d9341be2bffb3ace510580f192f231e	rpm	1eff8355cdb7f243ba377957efe91abb	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
+_eclasses_=eutils	ac049c4fa17000293228df51f9460566	font	9aa70ebc5cefbdd9056687b550a2fdc4	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	portability	0d9341be2bffb3ace510580f192f231e	rpm	1eff8355cdb7f243ba377957efe91abb	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
 _md5_=362f28f2d50571c096a1711086cc0a6f

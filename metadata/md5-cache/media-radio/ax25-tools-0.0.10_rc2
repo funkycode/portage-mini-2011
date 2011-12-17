@@ -9,5 +9,5 @@ LICENSE=GPL-2
 RDEPEND=dev-libs/libax25 X? ( x11-libs/libX11 media-libs/mesa )
 SLOT=0
 SRC_URI=http://www.linux-ax25.org/pub/ax25-tools/ax25-tools-0.0.10-rc2.tar.gz
-_eclasses_=autotools	63332a15502113ca711ccccb3889a109	eutils	17c907467c9dbca015656a174592ef78	libtool	0fd90d183673bf1107465ec45849d1ea	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	portability	0d9341be2bffb3ace510580f192f231e	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
+_eclasses_=autotools	63332a15502113ca711ccccb3889a109	eutils	ac049c4fa17000293228df51f9460566	libtool	0fd90d183673bf1107465ec45849d1ea	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	portability	0d9341be2bffb3ace510580f192f231e	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
 _md5_=3a5ab294fbfb00786373111dabfd916a

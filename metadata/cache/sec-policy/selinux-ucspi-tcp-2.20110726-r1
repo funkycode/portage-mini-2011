@@ -1,0 +1,22 @@
+
+>=sec-policy/selinux-ucspitcp-2.20110726-r1
+0
+
+
+http://hardened.gentoo.org/selinux
+as-is
+SELinux policy for ucspi-tcp (meta-package for selinux-ucspitcp)
+~amd64 ~x86
+
+
+
+
+
+3
+
+-
+
+
+
+
+

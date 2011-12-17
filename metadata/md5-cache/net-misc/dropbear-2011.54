@@ -10,5 +10,5 @@ RDEPEND=static? ( zlib? ( sys-libs/zlib[static-libs] ) ) pam? ( virtual/pam ) !s
 REQUIRED_USE=pam? ( !static )
 SLOT=0
 SRC_URI=http://matt.ucc.asn.au/dropbear/releases/dropbear-2011.54.tar.bz2 http://matt.ucc.asn.au/dropbear/testing/dropbear-2011.54.tar.bz2
-_eclasses_=eutils	17c907467c9dbca015656a174592ef78	flag-o-matic	8ffbf0dc65f73498fcba6d29048fdfff	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	pam	adfe33c13740895d65356efc74df76cc	portability	0d9341be2bffb3ace510580f192f231e	savedconfig	b6de83929082b025894761073ef75599	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
+_eclasses_=eutils	ac049c4fa17000293228df51f9460566	flag-o-matic	8ffbf0dc65f73498fcba6d29048fdfff	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	pam	adfe33c13740895d65356efc74df76cc	portability	0d9341be2bffb3ace510580f192f231e	savedconfig	b6de83929082b025894761073ef75599	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
 _md5_=32ba6105c56a77ce5362382ced644797

@@ -305,6 +305,8 @@ app-editors/gedit-plugins:terminal - Embed a terminal in the bottom pane
 app-editors/gvim:netbeans - Include netbeans externaleditor integration support
 app-editors/jasspa-microemacs:nanoemacs - Build NanoEmacs instead of MicroEmacs
 app-editors/joe:xterm - Enable full xterm clipboard support
+app-editors/latexila:latexmk - Install dev-tex/latexmk (used by default for the build tools)
+app-editors/latexila:rubber - Install dev-tex/rubber (can be used for the build tools)
 app-editors/leafpad:emacs - Enable Emacs key theme
 app-editors/nano:debug - Enable debug messages and assert warnings. Note that these will all be sent straight to stderr rather than some logging facility.
 app-editors/nano:justify - Enable justify/unjustify functions for text formatting.
@@ -1406,6 +1408,7 @@ dev-python/atpy:fits - Enable support for reading and FITS with dev-python/pyfit
 dev-python/atpy:votable - Enable support for reading and VOTABLE with dev-python/vo.
 dev-python/bpython:urwid - Backend based on dev-python/urwid
 dev-python/cgkit:3ds - Enable support for importing 3D Studio models
+dev-python/cython:numpy - Enable support for dev-python/numpy
 dev-python/dap:server - Enable OpenDAP server support
 dev-python/django-extensions:graphviz - Create a diagram of your database entity relationships using dev-python/pygraphviz.
 dev-python/django-extensions:s3 - Upload your media files to S3.
@@ -4394,6 +4397,7 @@ sci-mathematics/fricas:sbcl - Add support for Steel Bank Common Lisp (dev-lisp/s
 sci-mathematics/geomview:avg - Enable experimental motion averaging technique
 sci-mathematics/geomview:netpbm - Add media-libs/netpbm support for external modules
 sci-mathematics/gretl:R - Enable support for dev-lang/R
+sci-mathematics/gretl:gtk3 - Use GTK+3 frontend instead of GTK+2
 sci-mathematics/gretl:sourceview - Enable support for x11-libs/gtksourceview
 sci-mathematics/maxima:clisp - Compile maxima with GNU CLISP (dev-lisp/clisp)
 sci-mathematics/maxima:clozurecl - Compile maxima with Clozure Common Lisp (dev-lisp/clozurecl)
@@ -4646,6 +4650,7 @@ sys-cluster/mvapich2:romio - Automatically generated description for romio
 sys-cluster/ocfs:aio - Add aio support
 sys-cluster/openmpi:heterogeneous - Enable features required for heterogeneous platform support
 sys-cluster/openmpi:mpi-threads - Enable MPI_THREAD_MULTIPLE
+sys-cluster/openmpi:numa - Enable numa memory allocation support
 sys-cluster/openmpi:pbs - Add support for the Portable Batch System (PBS)
 sys-cluster/openmpi:romio - Build the ROMIO MPI-IO component
 sys-cluster/openmpi:sctp - Enable SCTP support

@@ -9,5 +9,5 @@ LICENSE=BSD
 RDEPEND=!aqua? ( x11-libs/libX11 x11-libs/libXt truetype? ( x11-libs/libXft ) xscreensaver? ( x11-libs/libXScrnSaver ) ) ~dev-lang/tcl-8.5.10
 SLOT=0
 SRC_URI=mirror://sourceforge/tcl/tk8.5.10-src.tar.gz
-_eclasses_=autotools	63332a15502113ca711ccccb3889a109	eutils	17c907467c9dbca015656a174592ef78	libtool	0fd90d183673bf1107465ec45849d1ea	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	portability	0d9341be2bffb3ace510580f192f231e	prefix	21058c21ca48453d771df15500873ede	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
+_eclasses_=autotools	63332a15502113ca711ccccb3889a109	eutils	ac049c4fa17000293228df51f9460566	libtool	0fd90d183673bf1107465ec45849d1ea	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	portability	0d9341be2bffb3ace510580f192f231e	prefix	21058c21ca48453d771df15500873ede	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
 _md5_=fe61c3ef35c1dd8f85118e538761207e

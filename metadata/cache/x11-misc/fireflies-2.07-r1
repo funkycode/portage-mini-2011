@@ -1,20 +1,20 @@
-media-libs/mesa media-libs/libsdl x11-libs/libX11 || ( =sys-devel/automake-1.11* ) >=sys-devel/autoconf-2.61 sys-devel/libtool
-media-libs/mesa media-libs/libsdl x11-libs/libX11
+media-libs/libsdl x11-libs/libX11 virtual/opengl || ( =sys-devel/automake-1.11* ) >=sys-devel/autoconf-2.61 sys-devel/libtool
+media-libs/libsdl x11-libs/libX11 virtual/opengl
 0
 http://somewhere.fscked.org/proj/fireflies/files/fireflies-2.07.tar.gz
 
 http://somewhere.fscked.org/proj/fireflies/
-GPL-2
+as-is GPL-2
 Fireflies screensaver: Wicked cool eye candy
-~amd64 ~ppc ~x86
+amd64 ~ppc ~x86
 autotools eutils libtool multilib portability toolchain-funcs user
 
 
 
 
-2
+4
 
-configure install prepare unpack
+configure prepare unpack
 
 
 

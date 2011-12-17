@@ -9,5 +9,5 @@ LICENSE=GPL-2
 RDEPEND=dev-scheme/guile[networking,regex] dev-scheme/guile-gnome-platform >=dev-scheme/guile-cairo-1.4 >=sci-libs/starparse-1.0 x11-libs/gtk+:2
 SLOT=0
 SRC_URI=examples? ( mirror://sourceforge/burrow-owl/burrow-demos.tar ) mirror://sourceforge/burrow-owl/burrow-owl-1.4.tar.gz
-_eclasses_=autotools	63332a15502113ca711ccccb3889a109	base	809ab15a673823938260f6b17661c3f1	eutils	17c907467c9dbca015656a174592ef78	libtool	0fd90d183673bf1107465ec45849d1ea	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	portability	0d9341be2bffb3ace510580f192f231e	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e	virtualx	0c41ff55e46b959d9457dde69e7a09d9
+_eclasses_=autotools	63332a15502113ca711ccccb3889a109	base	809ab15a673823938260f6b17661c3f1	eutils	ac049c4fa17000293228df51f9460566	libtool	0fd90d183673bf1107465ec45849d1ea	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	portability	0d9341be2bffb3ace510580f192f231e	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e	virtualx	0c41ff55e46b959d9457dde69e7a09d9
 _md5_=ed01a06d5c696e9d9cb0ac88dfb336e2

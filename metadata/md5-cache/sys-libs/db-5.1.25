@@ -9,5 +9,5 @@ LICENSE=OracleDB
 RDEPEND=tcl? ( dev-lang/tcl ) java? ( >=virtual/jre-1.5 ) java? ( >=dev-java/java-config-2.1.9-r1 )
 SLOT=5.1
 SRC_URI=http://download.oracle.com/berkeley-db/db-5.1.25.tar.gz
-_eclasses_=autotools	63332a15502113ca711ccccb3889a109	db	8ba7034e15c2592b7e0250f157b35787	eutils	17c907467c9dbca015656a174592ef78	flag-o-matic	8ffbf0dc65f73498fcba6d29048fdfff	java-pkg-opt-2	31a1663247652448431dcc8c194e2752	java-utils-2	8386f5293b96245786782d8a7166db9a	libtool	0fd90d183673bf1107465ec45849d1ea	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	portability	0d9341be2bffb3ace510580f192f231e	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e	versionator	3a6c6ae0c0f6578737dd398e98311d46
+_eclasses_=autotools	63332a15502113ca711ccccb3889a109	db	8ba7034e15c2592b7e0250f157b35787	eutils	ac049c4fa17000293228df51f9460566	flag-o-matic	8ffbf0dc65f73498fcba6d29048fdfff	java-pkg-opt-2	31a1663247652448431dcc8c194e2752	java-utils-2	8386f5293b96245786782d8a7166db9a	libtool	0fd90d183673bf1107465ec45849d1ea	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	portability	0d9341be2bffb3ace510580f192f231e	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e	versionator	3a6c6ae0c0f6578737dd398e98311d46
 _md5_=7a7072c22c0f26630a7a4ae422ec3ed3

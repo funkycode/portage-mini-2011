@@ -8,5 +8,5 @@ LICENSE=as-is
 RDEPEND=>=virtual/jre-1.2 >=dev-java/java-config-2.1.9-r1 source? ( app-arch/zip )
 SLOT=0
 SRC_URI=mirror://gentoo/gentoo-concurrent-util-1.3.4.tar.bz2
-_eclasses_=eutils	17c907467c9dbca015656a174592ef78	java-ant-2	babe067b6f66840f129ae290d1ccf762	java-pkg-2	5fe9c5085c2a9785371d4fb8f05b46b1	java-utils-2	8386f5293b96245786782d8a7166db9a	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	portability	0d9341be2bffb3ace510580f192f231e	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e	versionator	3a6c6ae0c0f6578737dd398e98311d46
+_eclasses_=eutils	ac049c4fa17000293228df51f9460566	java-ant-2	babe067b6f66840f129ae290d1ccf762	java-pkg-2	5fe9c5085c2a9785371d4fb8f05b46b1	java-utils-2	8386f5293b96245786782d8a7166db9a	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	portability	0d9341be2bffb3ace510580f192f231e	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e	versionator	3a6c6ae0c0f6578737dd398e98311d46
 _md5_=4e73b15603efd1dc8e3d31d7e42fef75

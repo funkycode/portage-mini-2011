@@ -10,5 +10,5 @@ RDEPEND=dedicated? ( || ( games-server/ut2004-ded games-fps/ut2004[dedicated] ) 
 RESTRICT=fetch
 SLOT=0
 SRC_URI=aut-r1-msuc.zip
-_eclasses_=base	809ab15a673823938260f6b17661c3f1	eutils	17c907467c9dbca015656a174592ef78	games	ef93d90e0de66f9dc4e36c3b5098de94	games-mods	7e4c3951dad796fdd5d6f3025af67588	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	portability	0d9341be2bffb3ace510580f192f231e	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
+_eclasses_=base	809ab15a673823938260f6b17661c3f1	eutils	ac049c4fa17000293228df51f9460566	games	ef93d90e0de66f9dc4e36c3b5098de94	games-mods	7e4c3951dad796fdd5d6f3025af67588	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	portability	0d9341be2bffb3ace510580f192f231e	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
 _md5_=0fc55b581826935fa5cf396955ad8a32
