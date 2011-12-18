@@ -6,7 +6,7 @@ mirror://gentoo/eden_V5.3.tar.gz
 http://www.gromacs.org/pipermail/eden-users/
 GPL-2
 A crystallographic real-space electron-density refinement and optimization program
-~amd64 ~x86
+amd64 ~x86
 eutils multilib portability python toolchain-funcs user
 double-precision
 

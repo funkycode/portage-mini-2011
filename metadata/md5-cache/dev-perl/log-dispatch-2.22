@@ -2,10 +2,10 @@ DEFINED_PHASES=compile install postinst postrm preinst prerm setup test unpack
 DEPEND=dev-perl/Params-Validate virtual/perl-Sys-Syslog dev-lang/perl >=virtual/perl-Module-Build-0.28
 DESCRIPTION=Dispatches messages to multiple Log::Dispatch::* objects
 HOMEPAGE=http://search.cpan.org/dist/Log-Dispatch/
-KEYWORDS=alpha amd64 ia64 ~ppc sparc x86
+KEYWORDS=amd64 ~ppc x86
 LICENSE=|| ( Artistic GPL-2 )
 RDEPEND=dev-perl/Params-Validate virtual/perl-Sys-Syslog dev-lang/perl
 SLOT=0
 SRC_URI=mirror://cpan/authors/id/D/DR/DROLSKY/Log-Dispatch-2.22.tar.gz
 _eclasses_=base	809ab15a673823938260f6b17661c3f1	eutils	ac049c4fa17000293228df51f9460566	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	perl-module	01501a30505074cd0012cabbf5d99447	portability	0d9341be2bffb3ace510580f192f231e	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
-_md5_=9dc986fd82eb3e78fb5ec460d556cb0e
+_md5_=c79f3838763294faf09a49f4fc8ec628

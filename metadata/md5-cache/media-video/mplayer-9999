@@ -10,4 +10,4 @@ REQUIRED_USE=bindist? ( !faac !win32codecs ) dvdnav? ( dvd ) ass? ( truetype ) t
 SLOT=0
 SRC_URI=!truetype? ( mirror://mplayer/releases/fonts/font-arial-iso-8859-1.tar.bz2 mirror://mplayer/releases/fonts/font-arial-iso-8859-2.tar.bz2 mirror://mplayer/releases/fonts/font-arial-cp1250.tar.bz2 )
 _eclasses_=base	809ab15a673823938260f6b17661c3f1	eutils	ac049c4fa17000293228df51f9460566	flag-o-matic	8ffbf0dc65f73498fcba6d29048fdfff	git-2	e093fad2de8fa7ca11e7ed938d27ceb1	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	portability	0d9341be2bffb3ace510580f192f231e	subversion	3a59e3b0a06a1a65e8187ac4530abf25	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
-_md5_=d7344bf89b0261233d7674095bdebc17
+_md5_=ce5b6e4312b5b6e9b2c10c357934e714

@@ -6,7 +6,7 @@ mirror://gentoo/sjsxp-1.0.1.tar.bz2
 http://sjsxp.dev.java.net/
 bea.ri.jsr173
 The Sun Java Streaming XML Parser (SJSXP) is an efficient implementation of the StAX API.
-~amd64 ~ppc ~x86 ~x86-fbsd
+amd64 ~ppc ~x86 ~x86-fbsd
 eutils java-ant-2 java-pkg-2 java-utils-2 multilib portability toolchain-funcs user versionator
 elibc_FreeBSD doc source elibc_FreeBSD
 
