@@ -1,11 +1,11 @@
 DEFINED_PHASES=compile configure install preinst prepare setup test unpack
-DEPEND=test? ( ruby_targets_ruby18? ( dev-ruby/ruby-gtk2[ruby_targets_ruby18] dev-ruby/rcairo[ruby_targets_ruby18] dev-ruby/httpclient[ruby_targets_ruby18] virtual/ruby-ssl[ruby_targets_ruby18] ) ruby_targets_ruby19? ( dev-ruby/ruby-gtk2[ruby_targets_ruby19] dev-ruby/rcairo[ruby_targets_ruby19] dev-ruby/httpclient[ruby_targets_ruby19] virtual/ruby-ssl[ruby_targets_ruby19] ) ) ruby_targets_ruby18? ( dev-lang/ruby:1.8 ) ruby_targets_ruby19? ( dev-lang/ruby:1.9 ) dev-vcs/subversion net-misc/rsync
+DEPEND=test? ( ruby_targets_ruby19? ( dev-ruby/ruby-gtk2[ruby_targets_ruby19] dev-ruby/rcairo[ruby_targets_ruby19] dev-ruby/httpclient[ruby_targets_ruby19] virtual/ruby-ssl[ruby_targets_ruby19] ) ) ruby_targets_ruby19? ( dev-lang/ruby:1.9 ) dev-vcs/subversion net-misc/rsync
 DESCRIPTION=mikutter is simple, powerful and moeful twitter client
 EAPI=3
 HOMEPAGE=http://mikutter.hachune.net/
-IUSE=+libnotify sound test elibc_FreeBSD ruby_targets_ruby18 ruby_targets_ruby19
+IUSE=+libnotify sound test elibc_FreeBSD ruby_targets_ruby19
 LICENSE=GPL-3
-RDEPEND=libnotify? ( x11-libs/libnotify ) sound? ( media-sound/alsa-utils ) ruby_targets_ruby18? ( dev-ruby/ruby-gtk2[ruby_targets_ruby18] dev-ruby/rcairo[ruby_targets_ruby18] dev-ruby/httpclient[ruby_targets_ruby18] virtual/ruby-ssl[ruby_targets_ruby18] ) ruby_targets_ruby19? ( dev-ruby/ruby-gtk2[ruby_targets_ruby19] dev-ruby/rcairo[ruby_targets_ruby19] dev-ruby/httpclient[ruby_targets_ruby19] virtual/ruby-ssl[ruby_targets_ruby19] ) ruby_targets_ruby18? ( dev-lang/ruby:1.8 ) ruby_targets_ruby19? ( dev-lang/ruby:1.9 )
+RDEPEND=libnotify? ( x11-libs/libnotify ) sound? ( media-sound/alsa-utils ) ruby_targets_ruby19? ( dev-ruby/ruby-gtk2[ruby_targets_ruby19] dev-ruby/rcairo[ruby_targets_ruby19] dev-ruby/httpclient[ruby_targets_ruby19] virtual/ruby-ssl[ruby_targets_ruby19] ) ruby_targets_ruby19? ( dev-lang/ruby:1.9 )
 SLOT=0
 _eclasses_=eutils	ac049c4fa17000293228df51f9460566	java-utils-2	8386f5293b96245786782d8a7166db9a	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	portability	0d9341be2bffb3ace510580f192f231e	ruby-ng	9306a3d60da89e858115fafece052b0d	subversion	3a59e3b0a06a1a65e8187ac4530abf25	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e	versionator	3a6c6ae0c0f6578737dd398e98311d46
-_md5_=bd07aa3b848731d0b64d1c0ed429eab4
+_md5_=9c5a166bf3bc9b04872df673875b7df0

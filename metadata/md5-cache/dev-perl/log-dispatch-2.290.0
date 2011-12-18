@@ -3,10 +3,10 @@ DEPEND=dev-perl/Params-Validate >=virtual/perl-Sys-Syslog-0.16 >=virtual/perl-Ex
 DESCRIPTION=Dispatches messages to multiple Log::Dispatch::* objects
 EAPI=3
 HOMEPAGE=http://search.cpan.org/dist/Log-Dispatch/
-KEYWORDS=~alpha ~amd64 ~ia64 ~ppc ~sparc ~x86
+KEYWORDS=~alpha amd64 ~ia64 ~ppc ~sparc ~x86
 LICENSE=Artistic-2
 RDEPEND=dev-perl/Params-Validate >=virtual/perl-Sys-Syslog-0.16 dev-lang/perl[-build]
 SLOT=0
 SRC_URI=mirror://cpan/authors/id/D/DR/DROLSKY/Log-Dispatch-2.29.tar.gz
 _eclasses_=base	809ab15a673823938260f6b17661c3f1	eutils	ac049c4fa17000293228df51f9460566	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	perl-module	01501a30505074cd0012cabbf5d99447	portability	0d9341be2bffb3ace510580f192f231e	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
-_md5_=630c231337eaea3e2d88d85838c7f8a6
+_md5_=473e6ae04c20e45eef578c002904e347

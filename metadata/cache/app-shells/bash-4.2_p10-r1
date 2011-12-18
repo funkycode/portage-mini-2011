@@ -6,7 +6,7 @@ mirror://gnu/bash/bash-4.2.tar.gz ftp://ftp.cwru.edu/pub/bash/bash-4.2-patches/b
 http://tiswww.case.edu/php/chet/bash/bashtop.html
 GPL-3
 The standard GNU Bourne again shell
-~amd64 ~sparc ~x86
+~*
 eutils flag-o-matic multilib portability toolchain-funcs user
 afs bashlogger examples mem-scramble +net nls plugins vanilla
 
