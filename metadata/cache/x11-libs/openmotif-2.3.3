@@ -1,5 +1,5 @@
 x11-libs/libXmu x11-libs/libXp unicode? ( virtual/libiconv ) xft? ( x11-libs/libXft ) jpeg? ( virtual/jpeg ) png? ( >=media-libs/libpng-1.4 ) sys-devel/flex x11-misc/xbitmaps || ( =sys-devel/automake-1.11* ) >=sys-devel/autoconf-2.61 sys-devel/libtool
-x11-libs/libXmu x11-libs/libXp unicode? ( virtual/libiconv ) xft? ( x11-libs/libXft ) jpeg? ( virtual/jpeg ) png? ( >=media-libs/libpng-1.4 ) !x11-libs/motif-config !x11-libs/lesstif doc? ( app-doc/openmotif-manual )
+x11-libs/libXmu x11-libs/libXp unicode? ( virtual/libiconv ) xft? ( x11-libs/libXft ) jpeg? ( virtual/jpeg ) png? ( >=media-libs/libpng-1.4 ) doc? ( app-doc/openmotif-manual )
 0
 ftp://ftp.ics.com/openmotif/2.3/2.3.3/openmotif-2.3.3.tar.gz
 !kernel_linux? ( !kernel_FreeBSD? ( !kernel_Darwin? ( !kernel_SunOS? ( fetch bindist ) ) ) )
@@ -14,7 +14,7 @@ doc examples jpeg png static-libs unicode xft
 
 3
 
-compile configure install nofetch postinst prepare setup
+compile configure install nofetch postinst prepare
 
 
 

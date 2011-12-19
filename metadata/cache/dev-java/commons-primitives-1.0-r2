@@ -3,7 +3,7 @@
 0
 mirror://apache/jakarta/commons/primitives/source/commons-primitives-1.0-src.tar.gz
 test
-http://jakarta.apache.org/commons/primitives/
+http://commons.apache.org/primitives/
 Apache-1.1
 The Jakarta-Commons Primitives Component
 amd64 ppc x86 ~x86-fbsd

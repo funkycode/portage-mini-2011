@@ -3,7 +3,7 @@
 0
 mirror://apache/jakarta/commons/vfs/source/commons-vfs-1.0-src.tar.gz
 
-http://jakarta.apache.org/commons/vfs/
+http://commons.apache.org/vfs/
 Apache-2.0
 a single API for accessing various different file systems
 amd64 ppc ppc64 x86 ~x86-fbsd ~amd64-linux ~x86-linux

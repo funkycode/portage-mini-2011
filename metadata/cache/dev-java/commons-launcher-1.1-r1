@@ -3,7 +3,7 @@
 0
 mirror://apache/jakarta/commons/launcher/source/commons-launcher-1.1-src.tar.gz
 
-http://jakarta.apache.org/commons/launcher/
+http://commons.apache.org/launcher/
 Apache-2.0
 Commons-launcher eliminates the need for a batch or shell script to launch a Java class.
 amd64 ~ppc ppc64 x86 ~x86-fbsd

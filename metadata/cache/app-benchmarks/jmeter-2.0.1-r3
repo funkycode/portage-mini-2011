@@ -3,7 +3,7 @@
 0
 mirror://apache/jakarta/jmeter/source/jakarta-jmeter-2.0.1_src.tgz
 
-http://jakarta.apache.org/jmeter
+http://jmeter.apache.org/
 Apache-2.0
 Load test and measure performance on HTTP/FTP services and databases.
 ~amd64 ~x86

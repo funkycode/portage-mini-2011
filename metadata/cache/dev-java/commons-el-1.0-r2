@@ -3,7 +3,7 @@
 0
 mirror://apache/jakarta/commons/el/source/commons-el-1.0-src.tar.gz
 
-http://jakarta.apache.org/commons/el/
+http://commons.apache.org/el/
 Apache-1.1
 EL is the JSP 2.0 Expression Language Interpreter from Apache.
 amd64 ppc ppc64 x86 ~x86-fbsd

@@ -3,7 +3,7 @@
 0
 mirror://apache/jakarta/commons/lang/source/commons-lang-2.0-src.tar.gz
 
-http://jakarta.apache.org/commons/lang/
+http://commons.apache.org/lang/
 Apache-1.1
 Jakarta components to manipulate core java classes
 amd64 ppc ppc64 x86 ~x86-fbsd ~x86-freebsd ~amd64-linux ~x86-linux ~ppc-macos ~x86-macos

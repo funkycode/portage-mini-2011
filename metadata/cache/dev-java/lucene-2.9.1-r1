@@ -3,7 +3,7 @@
 2.9
 mirror://apache/lucene/java/lucene-2.9.1-src.tar.gz
 
-http://jakarta.apache.org/lucene
+http://lucene.apache.org
 Apache-2.0
 High-performance, full-featured text search engine written entirely in Java
 amd64 ppc x86 ~x86-fbsd

@@ -1,0 +1,14 @@
+DEFINED_PHASES=compile configure install postinst postrm prepare setup test
+DEPEND=virtual/pam dev-libs/popt !glib? ( >=dev-libs/libunistring-0.9.3 ) glib? ( dev-libs/glib:2 ) >=dev-libs/ding-libs-0.1.2 >=sys-libs/talloc-2.0 sys-libs/tdb sys-libs/tevent sys-libs/ldb >=net-nds/openldap-2.4.19 dev-libs/libpcre >=app-crypt/mit-krb5-1.9.1 sys-apps/keyutils >=net-dns/c-ares-1.7.4 >=dev-libs/nss-3.12.9 selinux? ( >=sys-libs/libselinux-2.0.94 >=sys-libs/libsemanage-2.0.45 ) net-dns/bind-tools dev-libs/cyrus-sasl sys-apps/dbus nls? ( >=sys-devel/gettext-0.17 ) virtual/libintl netlink? ( dev-libs/libnl ) test? ( dev-libs/check ) >=dev-libs/libxslt-1.1.26 app-text/docbook-xml-dtd:4.4 doc? ( app-doc/doxygen ) >=app-admin/eselect-python-20091230 python? ( || ( =dev-lang/python-2.7* =dev-lang/python-2.6* ) ) || ( =sys-devel/automake-1.11* ) >=sys-devel/autoconf-2.61 sys-devel/libtool
+DESCRIPTION=System Security Services Daemon provides access to identity and authentication
+EAPI=4
+HOMEPAGE=http://fedorahosted.org/sssd/
+IUSE=glib doc +locator logrotate netlink nls python +libunistring selinux test
+KEYWORDS=~amd64 ~x86
+LICENSE=GPL-3
+RDEPEND=virtual/pam dev-libs/popt !glib? ( >=dev-libs/libunistring-0.9.3 ) glib? ( dev-libs/glib:2 ) >=dev-libs/ding-libs-0.1.2 >=sys-libs/talloc-2.0 sys-libs/tdb sys-libs/tevent sys-libs/ldb >=net-nds/openldap-2.4.19 dev-libs/libpcre >=app-crypt/mit-krb5-1.9.1 sys-apps/keyutils >=net-dns/c-ares-1.7.4 >=dev-libs/nss-3.12.9 selinux? ( >=sys-libs/libselinux-2.0.94 >=sys-libs/libsemanage-2.0.45 ) net-dns/bind-tools dev-libs/cyrus-sasl sys-apps/dbus nls? ( >=sys-devel/gettext-0.17 ) virtual/libintl netlink? ( dev-libs/libnl ) >=app-admin/eselect-python-20091230 python? ( || ( =dev-lang/python-2.7* =dev-lang/python-2.6* ) )
+REQUIRED_USE=^^ ( glib libunistring )
+SLOT=0
+SRC_URI=http://fedorahosted.org/released/sssd/sssd-1.6.4.tar.gz
+_eclasses_=autotools	63332a15502113ca711ccccb3889a109	autotools-utils	1a50ce298315c74b307c84cfa7773d1d	eutils	ac049c4fa17000293228df51f9460566	flag-o-matic	8ffbf0dc65f73498fcba6d29048fdfff	libtool	0fd90d183673bf1107465ec45849d1ea	linux-info	cc184ad3383ffb6ffbaa82f53608e77f	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	pam	adfe33c13740895d65356efc74df76cc	portability	0d9341be2bffb3ace510580f192f231e	python	68cfdfd857b7b9e8f75a3fa84d60be94	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e	versionator	3a6c6ae0c0f6578737dd398e98311d46
+_md5_=a2fe6de9a61622a2ffadc00d889d762d

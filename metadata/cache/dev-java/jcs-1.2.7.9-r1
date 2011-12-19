@@ -3,7 +3,7 @@
 1.2
 mirror://gentoo/jcs-1.2.7.9.tar.bz2
 
-http://jakarta.apache.org/jcs/
+http://commons.apache.org/jcs/
 Apache-2.0
 JCS is a distributed caching system written in java for server-side java applications
 amd64 ppc x86

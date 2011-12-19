@@ -3,7 +3,7 @@
 0
 mirror://apache/jakarta/commons/net/source/commons-net-1.4.1-src.tar.gz
 test
-http://jakarta.apache.org/commons/net/
+http://commons.apache.org/net/
 Apache-2.0
 The purpose of the library is to provide fundamental protocol access, not higher-level abstractions.
 amd64 ~ia64 ppc ppc64 x86 ~x86-fbsd ~x64-freebsd ~x86-freebsd ~amd64-linux ~x86-linux ~ppc-macos ~x64-macos ~x86-macos ~sparc-solaris ~sparc64-solaris ~x64-solaris ~x86-solaris

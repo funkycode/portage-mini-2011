@@ -1,0 +1,12 @@
+DEFINED_PHASES=compile configure install postinst postrm preinst prepare
+DEPEND=sys-libs/ncurses >=app-admin/eselect-emacs-1.2 amd64? ( app-emulation/emul-linux-x86-baselibs )
+DESCRIPTION=The extensible self-documenting text editor
+EAPI=4
+HOMEPAGE=http://www.gnu.org/software/emacs/
+KEYWORDS=~amd64 ~x86
+LICENSE=GPL-1 GPL-2 BSD
+RDEPEND=sys-libs/ncurses >=app-admin/eselect-emacs-1.2 amd64? ( app-emulation/emul-linux-x86-baselibs )
+SLOT=18
+SRC_URI=mirror://gnu/old-gnu/emacs/emacs-18.59.tar.gz ftp://ftp.splode.com/pub/users/friedman/emacs/emacs-18.59-linux22x-elf-glibc21.diff.gz mirror://gentoo/emacs-18.59-patches-5.tar.bz2
+_eclasses_=eutils	ac049c4fa17000293228df51f9460566	flag-o-matic	8ffbf0dc65f73498fcba6d29048fdfff	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	portability	0d9341be2bffb3ace510580f192f231e	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
+_md5_=57cf0690ff1f6ba604c9d628e35b3b35

@@ -3,7 +3,7 @@
 0
 mirror://apache/poi/release/src/poi-src-3.0.2-FINAL-20080204.tar.gz
 
-http://jakarta.apache.org/poi/
+http://poi.apache.org/
 Apache-2.0
 Java API To Access Microsoft Format Files
 amd64 ppc ppc64 x86
