@@ -1,8 +1,8 @@
 DEFINED_PHASES=install
 DESCRIPTION=german-language hypertext tutorial about Linux
 HOMEPAGE=http://selflinux.sourceforge.net/
-KEYWORDS=amd64 ~ppc ~sparc ~x86
+KEYWORDS=amd64 ~ppc ~sparc x86
 LICENSE=GPL-2
 SLOT=0
 SRC_URI=mirror://sourceforge/selflinux/SelfLinux-0.13.0-html.tar.gz
-_md5_=13d309ca2ef49a3a837d289455507601
+_md5_=5686291e0312b31cbe1711fee7d888b9

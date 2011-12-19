@@ -6,7 +6,7 @@ mirror://gentoo/ipsc-0.4.3.2.tar.bz2
 http://packages.debian.org/unstable/net/ipsc
 GPL-2
 IP Subnet Calculator
-amd64 ~x86
+amd64 x86
 multilib toolchain-funcs
 
 

@@ -1,0 +1,22 @@
+>=net-libs/libnet-1.1.1 net-libs/libpcap ncurses? ( >=sys-libs/ncurses-5.4 ) || ( =sys-devel/automake-1.11* ) >=sys-devel/autoconf-2.61 sys-devel/libtool
+>=net-libs/libnet-1.1.1 net-libs/libpcap ncurses? ( >=sys-libs/ncurses-5.4 )
+0
+mirror://berlios/nast/nast-0.2.0.tar.gz
+
+http://nast.berlios.de/
+GPL-2
+NAST - Network Analyzer Sniffer Tool
+~amd64 ~ppc ~ppc64 ~x86
+autotools eutils libtool multilib portability toolchain-funcs user
+ncurses
+
+
+
+4
+
+compile install prepare
+
+
+
+
+

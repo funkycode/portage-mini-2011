@@ -6,7 +6,7 @@ http://ieee.uow.edu.au/~daniel/software/spectromatic/dist/spectromatic_1.0-1.tar
 http://ieee.uow.edu.au/~daniel/software/spectromatic/
 GPL-2
 Generates time-frequency analysis images from wav files
-~amd64 ~ppc ~x86
+amd64 ~ppc ~x86
 base eutils multilib portability toolchain-funcs user
 
 

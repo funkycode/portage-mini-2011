@@ -4,10 +4,10 @@ DESCRIPTION=A crystallographic real-space electron-density refinement and optimi
 EAPI=3
 HOMEPAGE=http://www.gromacs.org/pipermail/eden-users/
 IUSE=double-precision
-KEYWORDS=amd64 ~x86
+KEYWORDS=amd64 x86
 LICENSE=GPL-2
 RDEPEND=sci-libs/fftw:2.1 sci-libs/gsl >=app-admin/eselect-python-20091230 =dev-lang/python-2*
 SLOT=0
 SRC_URI=mirror://gentoo/eden_V5.3.tar.gz
-_eclasses_=eutils	ac049c4fa17000293228df51f9460566	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	portability	0d9341be2bffb3ace510580f192f231e	python	262a0983b6716502852b4418e0f433b8	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
-_md5_=8d093d26b8d6fdaa13efc38f7e7941da
+_eclasses_=eutils	ac049c4fa17000293228df51f9460566	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	portability	0d9341be2bffb3ace510580f192f231e	python	68cfdfd857b7b9e8f75a3fa84d60be94	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
+_md5_=5c38e9e550cb6dbb07206d555cc126c2

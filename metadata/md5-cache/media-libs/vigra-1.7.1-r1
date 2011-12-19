@@ -4,12 +4,12 @@ DESCRIPTION=C++ computer vision library with emphasize on customizable algorithm
 EAPI=4
 HOMEPAGE=http://hci.iwr.uni-heidelberg.de/vigra/
 IUSE=doc +fftw +hdf5 +jpeg +png +python test +tiff
-KEYWORDS=amd64 ~ppc ~ppc64 ~sparc ~x86 ~amd64-linux ~x86-linux ~sparc-solaris ~x64-solaris ~x86-solaris
+KEYWORDS=amd64 ppc ~ppc64 ~sparc ~x86 ~amd64-linux ~x86-linux ~sparc-solaris ~x64-solaris ~x86-solaris
 LICENSE=MIT
 RDEPEND=dev-libs/boost fftw? ( >=sci-libs/fftw-3 ) hdf5? ( sci-libs/hdf5 ) jpeg? ( virtual/jpeg ) png? ( media-libs/libpng:0 ) tiff? ( media-libs/tiff:0 ) >=app-admin/eselect-python-20091230 python? ( || ( =dev-lang/python-2.7* =dev-lang/python-2.6* ) ) python? ( || ( =dev-lang/python-2.7*[threads,xml] =dev-lang/python-2.6*[threads,xml] ) )
 REQUIRED_USE=doc? ( hdf5 fftw ) python? ( hdf5 ) test? ( hdf5 python fftw )
 RESTRICT=test
 SLOT=0
 SRC_URI=http://hci.iwr.uni-heidelberg.de/vigra/vigra-1.7.1-src.tar.gz
-_eclasses_=base	809ab15a673823938260f6b17661c3f1	cmake-utils	00f9fd5a80cf3605f6d9a2e808c48a92	eutils	ac049c4fa17000293228df51f9460566	flag-o-matic	8ffbf0dc65f73498fcba6d29048fdfff	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	portability	0d9341be2bffb3ace510580f192f231e	python	262a0983b6716502852b4418e0f433b8	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
-_md5_=89b0a78bfbb7c21aff95f9793be8fc72
+_eclasses_=base	809ab15a673823938260f6b17661c3f1	cmake-utils	00f9fd5a80cf3605f6d9a2e808c48a92	eutils	ac049c4fa17000293228df51f9460566	flag-o-matic	8ffbf0dc65f73498fcba6d29048fdfff	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	portability	0d9341be2bffb3ace510580f192f231e	python	68cfdfd857b7b9e8f75a3fa84d60be94	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
+_md5_=e0f640faf7bd7c6407d7352aeea11384

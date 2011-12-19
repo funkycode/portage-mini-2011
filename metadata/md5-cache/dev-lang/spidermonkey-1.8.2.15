@@ -9,5 +9,5 @@ LICENSE=NPL-1.1
 RDEPEND=threadsafe? ( >=dev-libs/nspr-4.8.6 ) >=app-admin/eselect-python-20091230
 SLOT=0
 SRC_URI=http://releases.mozilla.org/pub/mozilla.org/firefox/releases/3.6.15/source/firefox-3.6.15.source.tar.bz2
-_eclasses_=eutils	ac049c4fa17000293228df51f9460566	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	portability	0d9341be2bffb3ace510580f192f231e	python	262a0983b6716502852b4418e0f433b8	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
+_eclasses_=eutils	ac049c4fa17000293228df51f9460566	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	portability	0d9341be2bffb3ace510580f192f231e	python	68cfdfd857b7b9e8f75a3fa84d60be94	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
 _md5_=2df9da16a94515bb72865507aa785c70

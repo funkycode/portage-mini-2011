@@ -3,10 +3,10 @@ DEPEND=>=sys-libs/ncurses-5.4 >=sys-apps/sed-4
 DESCRIPTION=Compare directories and select files to copy
 EAPI=2
 HOMEPAGE=http://home.hccnet.nl/paul.schuurmans/
-KEYWORDS=~alpha ~amd64 ~ppc ~x86
+KEYWORDS=~alpha ~amd64 ~ppc x86
 LICENSE=GPL-2
 RDEPEND=>=sys-libs/ncurses-5.4
 SLOT=0
 SRC_URI=http://home.hccnet.nl/paul.schuurmans/download/cdircmp-0.3.tar.gz
 _eclasses_=multilib	5f4ad6cf85e365e8f0c6050ddd21659e	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68
-_md5_=8863107b8ba158dfe7c0f0f1555359c3
+_md5_=e6112c2b1573494e3e2dd6ea15f173eb

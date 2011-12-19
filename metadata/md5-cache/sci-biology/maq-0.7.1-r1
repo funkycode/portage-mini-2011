@@ -3,10 +3,10 @@ DEPEND=sys-libs/zlib || ( =sys-devel/automake-1.11* ) >=sys-devel/autoconf-2.61 
 DESCRIPTION=Mapping and Assembly with Qualities - mapping Solexa and SOLiD reads to reference sequences
 EAPI=4
 HOMEPAGE=http://maq.sourceforge.net/
-KEYWORDS=amd64 ~x86 ~amd64-linux ~x86-linux
+KEYWORDS=amd64 x86 ~amd64-linux ~x86-linux
 LICENSE=GPL-3
 RDEPEND=sys-libs/zlib
 SLOT=0
 SRC_URI=mirror://sourceforge/maq/maq-0.7.1.tar.bz2 mirror://sourceforge/maq/calib-36.dat.gz
 _eclasses_=autotools	63332a15502113ca711ccccb3889a109	eutils	ac049c4fa17000293228df51f9460566	libtool	0fd90d183673bf1107465ec45849d1ea	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	portability	0d9341be2bffb3ace510580f192f231e	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
-_md5_=24dbd5c5e1487e4380112d96ef05b1dd
+_md5_=60e73165ff9f525218a863fba4fdb774

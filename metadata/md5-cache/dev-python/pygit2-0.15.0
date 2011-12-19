@@ -8,5 +8,5 @@ LICENSE=GPL-2-with-linking-exception
 RDEPEND=~dev-libs/libgit2-0.15.0 dev-libs/openssl sys-libs/zlib >=app-admin/eselect-python-20091230 || ( =dev-lang/python-2.7* =dev-lang/python-2.6* )
 SLOT=0
 SRC_URI=https://github.com/libgit2/pygit2/tarball/v0.15.0 -> pygit2-0.15.0.tar.gz
-_eclasses_=distutils	b4c334e216d998c4ce4b750cb091e42e	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	python	262a0983b6716502852b4418e0f433b8	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68
+_eclasses_=distutils	b4c334e216d998c4ce4b750cb091e42e	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	python	68cfdfd857b7b9e8f75a3fa84d60be94	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68
 _md5_=0ff785614e3c429e229dceea5a9184c3

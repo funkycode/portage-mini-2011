@@ -1,0 +1,12 @@
+DEFINED_PHASES=install prepare
+DEPEND=>=dev-libs/glib-2.26:2 dev-util/pkgconfig || ( =sys-devel/automake-1.11* ) >=sys-devel/autoconf-2.61 sys-devel/libtool
+DESCRIPTION=Client library to interact with zeitgeist
+EAPI=4
+HOMEPAGE=http://launchpad.net/libzeitgeist
+KEYWORDS=~amd64 ~x86
+LICENSE=GPL-3
+RDEPEND=>=dev-libs/glib-2.26:2 gnome-extra/zeitgeist
+SLOT=0
+SRC_URI=http://launchpad.net/libzeitgeist/0.3/0.3.12/+download/libzeitgeist-0.3.12.tar.gz
+_eclasses_=autotools	63332a15502113ca711ccccb3889a109	eutils	ac049c4fa17000293228df51f9460566	libtool	0fd90d183673bf1107465ec45849d1ea	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	portability	0d9341be2bffb3ace510580f192f231e	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e	versionator	3a6c6ae0c0f6578737dd398e98311d46
+_md5_=e6b60b11f2f5a29a21f07db19a4ffd66

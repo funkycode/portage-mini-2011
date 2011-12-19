@@ -9,5 +9,5 @@ LICENSE=BSD
 RDEPEND=dev-libs/maloc[mpi=] virtual/blas sys-libs/readline virtual/fortran arpack? ( sci-libs/arpack ) tools? ( !sci-libs/gts ) mpi? ( virtual/mpi ) >=app-admin/eselect-python-20091230 python? ( =dev-lang/python-2* )
 SLOT=0
 SRC_URI=mirror://sourceforge/apbs/apbs-1.2.1b-source.tar.gz
-_eclasses_=autotools	63332a15502113ca711ccccb3889a109	eutils	ac049c4fa17000293228df51f9460566	flag-o-matic	8ffbf0dc65f73498fcba6d29048fdfff	fortran-2	368b82ae80c1184988a9d651e6efcbd0	libtool	0fd90d183673bf1107465ec45849d1ea	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	portability	0d9341be2bffb3ace510580f192f231e	python	262a0983b6716502852b4418e0f433b8	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e	versionator	3a6c6ae0c0f6578737dd398e98311d46
+_eclasses_=autotools	63332a15502113ca711ccccb3889a109	eutils	ac049c4fa17000293228df51f9460566	flag-o-matic	8ffbf0dc65f73498fcba6d29048fdfff	fortran-2	368b82ae80c1184988a9d651e6efcbd0	libtool	0fd90d183673bf1107465ec45849d1ea	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	portability	0d9341be2bffb3ace510580f192f231e	python	68cfdfd857b7b9e8f75a3fa84d60be94	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e	versionator	3a6c6ae0c0f6578737dd398e98311d46
 _md5_=ddf5a1d86c621246f8a2683397a4e7d4

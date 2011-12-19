@@ -6,7 +6,7 @@ http://www.psmon.com/psmon-1.39.tar.gz
 http://www.psmon.com/
 GPL-2
 Monitors process table to slay aggressive, and spawn dead, processes
-amd64 ~ppc ~x86
+amd64 ~ppc x86
 base eutils multilib perl-app perl-module portability toolchain-funcs user
 
 

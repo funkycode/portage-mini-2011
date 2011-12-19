@@ -6,7 +6,7 @@ mirror://cpan/authors/id/D/DR/DROLSKY/Log-Dispatch-2.29.tar.gz
 http://search.cpan.org/dist/Log-Dispatch/
 Artistic-2
 Dispatches messages to multiple Log::Dispatch::* objects
-amd64 ~ppc ~x86
+amd64 ~ppc x86
 base eutils multilib perl-module portability toolchain-funcs user
 
 

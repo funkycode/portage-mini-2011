@@ -6,7 +6,7 @@ http://downloads.xiph.org/releases/libfishsound/libfishsound-1.0.0.tar.gz
 http://www.xiph.org/fishsound/
 BSD
 Simple programming interface for decoding and encoding audio data using vorbis or speex
-~amd64 ~x86
+amd64 ~x86
 eutils multilib portability toolchain-funcs user
 flac speex
 
