@@ -1,0 +1,22 @@
+!<=dev-cpp/tbb-2.1.016
+!<=dev-cpp/tbb-2.1.016
+0
+http://www.threadingbuildingblocks.org/uploads/78/179/4.0%20update%202/tbb40_278oss_src.tgz
+
+http://www.threadingbuildingblocks.org/
+GPL-2-with-exceptions
+High level abstract threading library
+~amd64 ~x86
+eutils multilib portability toolchain-funcs user versionator
+debug doc examples
+
+
+
+4
+
+compile install prepare test
+
+
+
+
+
