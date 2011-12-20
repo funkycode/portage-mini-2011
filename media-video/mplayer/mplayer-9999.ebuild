@@ -1,6 +1,6 @@
 # Copyright 1999-2011 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/media-video/mplayer/mplayer-9999.ebuild,v 1.120 2011/12/19 15:23:54 aballier Exp $
+# $Header: /var/cvsroot/gentoo-x86/media-video/mplayer/mplayer-9999.ebuild,v 1.123 2011/12/19 16:47:17 aballier Exp $
 
 EAPI=4
 
@@ -21,7 +21,7 @@ tga +theora +tremor +truetype +toolame +twolame +unicode v4l vdpau vidix
 +vorbis win32codecs +X +x264 xanim xinerama +xscreensaver +xv +xvid xvmc
 zoran"
 
-VIDEO_CARDS="s3virge mga tdfx vesa"
+VIDEO_CARDS="s3virge mga tdfx"
 for x in ${VIDEO_CARDS}; do
 	IUSE+=" video_cards_${x}"
 done
@@ -63,22 +63,6 @@ RDEPEND+="
 			win32codecs? ( media-libs/win32codecs )
 		)
 	)
-	X? (
-		${X_RDEPS}
-		dga? ( x11-libs/libXxf86dga )
-		ggi? (
-			media-libs/libggi
-			media-libs/libggiwmh
-		)
-		opengl? ( virtual/opengl )
-		vdpau? ( x11-libs/libvdpau )
-		xinerama? ( x11-libs/libXinerama )
-		xscreensaver? ( x11-libs/libXScrnSaver )
-		xv? (
-			x11-libs/libXv
-			xvmc? ( x11-libs/libXvMC )
-		)
-	)
 	a52? ( media-libs/a52dec )
 	aalib? ( media-libs/aalib )
 	alsa? ( media-libs/alsa-lib )
@@ -88,14 +72,13 @@ RDEPEND+="
 	bs2b? ( media-libs/libbs2b )
 	cdio? ( dev-libs/libcdio )
 	cdparanoia? ( !cdio? ( media-sound/cdparanoia ) )
+	dga? ( x11-libs/libXxf86dga )
 	directfb? ( dev-libs/DirectFB )
 	dts? ( media-libs/libdca )
 	dv? ( media-libs/libdv )
 	dvb? ( media-tv/linuxtv-dvb-headers )
-	dvd? (
-		>=media-libs/libdvdread-4.1.3
-		dvdnav? ( >=media-libs/libdvdnav-4.1.3 )
-	)
+	dvd? ( >=media-libs/libdvdread-4.1.3 )
+	dvdnav? ( >=media-libs/libdvdnav-4.1.3 )
 	encode? (
 		!twolame? ( toolame? ( media-sound/toolame ) )
 		twolame? ( media-sound/twolame )
@@ -107,6 +90,7 @@ RDEPEND+="
 	esd? ( media-sound/esound )
 	enca? ( app-i18n/enca )
 	faad? ( media-libs/faad2 )
+	ggi? ( media-libs/libggi media-libs/libggiwmh )
 	gif? ( media-libs/giflib )
 	gsm? ( media-sound/gsm )
 	iconv? ( virtual/libiconv )
@@ -125,6 +109,7 @@ RDEPEND+="
 	nas? ( media-libs/nas )
 	nut? ( >=media-libs/libnut-661 )
 	openal? ( media-libs/openal )
+	opengl? ( virtual/opengl )
 	png? ( media-libs/libpng )
 	pnm? ( media-libs/netpbm )
 	pulseaudio? ( media-sound/pulseaudio )
@@ -140,8 +125,14 @@ RDEPEND+="
 	speex? ( media-libs/speex )
 	theora? ( media-libs/libtheora[encode?] )
 	truetype? ( ${FONT_RDEPS} )
+	vdpau? ( x11-libs/libvdpau )
 	vorbis? ( media-libs/libvorbis )
+	X? ( ${X_RDEPS}	)
 	xanim? ( media-video/xanim )
+	xinerama? ( x11-libs/libXinerama )
+	xscreensaver? ( x11-libs/libXScrnSaver )
+	xv? ( x11-libs/libXv )
+	xvmc? ( x11-libs/libXvMC )
 "
 
 X_DEPS="
@@ -151,13 +142,11 @@ X_DEPS="
 ASM_DEP="dev-lang/yasm"
 DEPEND="${RDEPEND}
 	dev-util/pkgconfig
-	X? (
-		${X_DEPS}
-		dga? ( x11-proto/xf86dgaproto )
-		dxr3? ( media-video/em8300-libraries )
-		xinerama? ( x11-proto/xineramaproto )
-		xscreensaver? ( x11-proto/scrnsaverproto )
-	)
+	dga? ( x11-proto/xf86dgaproto )
+	dxr3? ( media-video/em8300-libraries )
+	X? ( ${X_DEPS} )
+	xinerama? ( x11-proto/xineramaproto )
+	xscreensaver? ( x11-proto/scrnsaverproto )
 	amd64? ( ${ASM_DEP} )
 	doc? (
 		dev-libs/libxslt app-text/docbook-xml-dtd
@@ -186,7 +175,18 @@ fi
 REQUIRED_USE="bindist? ( !faac !win32codecs )
 	dvdnav? ( dvd )
 	ass? ( truetype )
-	truetype? ( iconv )"
+	truetype? ( iconv )
+	dxr3? ( X )
+	ggi? ( X )
+	xinerama? ( X )
+	dga? ( X )
+	opengl? ( X )
+	osdmenu? ( X )
+	vdpau? ( X )
+	vidix? ( X )
+	xscreensaver? ( X )
+	xv? ( X )
+	xvmc? ( xv )"
 
 pkg_setup() {
 	if [[ ${PV} == *9999* ]]; then
@@ -402,7 +402,7 @@ src_configure() {
 		myconf+=" --disable-mencoder"
 		for i in ${uses}; do
 			myconf+=" --disable-${i}"
-			use ${i} && elog "Useflag \"${i}\" require \"encode\" useflag enabled to work."
+			use ${i} && elog "Useflag \"${i}\" will only be useful for encoding, i.e., with \"encode\" useflag enabled."
 		done
 	fi
 
@@ -500,52 +500,21 @@ src_configure() {
 	# X enabled configuration #
 	###########################
 	myconf+=" --disable-gui"
-	if use X; then
-		uses="dxr3 ggi xinerama"
-		for i in ${uses}; do
-			use ${i} || myconf+=" --disable-${i}"
-		done
-		use dga || myconf+=" --disable-dga1 --disable-dga2"
-		use opengl || myconf+=" --disable-gl"
-		use osdmenu && myconf+=" --enable-menu"
-		use vdpau || myconf+=" --disable-vdpau"
-		use video_cards_vesa || myconf+=" --disable-vesa"
-		use vidix || myconf+=" --disable-vidix --disable-vidix-pcidb"
-		use xscreensaver || myconf+=" --disable-xss"
-
-		if use xv; then
-			if use xvmc; then
-				myconf+=" --enable-xvmc --with-xvmclib=XvMCW"
-			else
-				myconf+=" --disable-xvmc"
-			fi
-		else
-			myconf+="
-				--disable-xv
-				--disable-xvmc
-			"
-			use xvmc && elog "Disabling xvmc because it requires \"xv\" useflag enabled."
-		fi
+	myconf+=" --disable-vesa"
+	uses="dxr3 ggi vdpau xinerama xv"
+	for i in ${uses}; do
+		use ${i} || myconf+=" --disable-${i}"
+	done
+	use dga          || myconf+=" --disable-dga1 --disable-dga2"
+	use opengl       || myconf+=" --disable-gl"
+	use osdmenu      && myconf+=" --enable-menu"
+	use vidix        || myconf+=" --disable-vidix --disable-vidix-pcidb"
+	use xscreensaver || myconf+=" --disable-xss"
+	use X            || myconf+=" --disable-x11"
+	if use xvmc; then
+		myconf+=" --enable-xvmc --with-xvmclib=XvMCW"
 	else
-		myconf+="
-			--disable-dga1
-			--disable-dga2
-			--disable-dxr3
-			--disable-ggi
-			--disable-gl
-			--disable-vdpau
-			--disable-vidix
-			--disable-vidix-pcidb
-			--disable-xinerama
-			--disable-xss
-			--disable-xv
-			--disable-xvmc
-			--disable-x11
-		"
-		uses="dga dxr3 ggi opengl osdmenu vdpau vidix xinerama xscreensaver xv"
-		for i in ${uses}; do
-			use ${i} && elog "Useflag \"${i}\" require \"X\" useflag enabled to work."
-		done
+		myconf+=" --disable-xvmc"
 	fi
 
 	############################

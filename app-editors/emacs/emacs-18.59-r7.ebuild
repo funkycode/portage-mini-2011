@@ -1,6 +1,6 @@
 # Copyright 1999-2011 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/app-editors/emacs/emacs-18.59-r7.ebuild,v 1.1 2011/12/19 07:38:20 ulm Exp $
+# $Header: /var/cvsroot/gentoo-x86/app-editors/emacs/emacs-18.59-r7.ebuild,v 1.4 2011/12/19 23:27:30 ulm Exp $
 
 EAPI=4
 
@@ -10,7 +10,7 @@ DESCRIPTION="The extensible self-documenting text editor"
 HOMEPAGE="http://www.gnu.org/software/emacs/"
 SRC_URI="mirror://gnu/old-gnu/emacs/${P}.tar.gz
 	ftp://ftp.splode.com/pub/users/friedman/emacs/${P}-linux22x-elf-glibc21.diff.gz
-	mirror://gentoo/${P}-patches-5.tar.bz2"
+	mirror://gentoo/${P}-patches-6.tar.bz2"
 
 LICENSE="GPL-1 GPL-2 BSD" #as-is
 SLOT="18"
@@ -59,10 +59,9 @@ src_configure() {
 src_compile() {
 	# Do not use the sandbox, or the dumped Emacs will be twice as large
 	export SANDBOX_ON=0
-	emake --jobs=1 CC="$(tc-getCC)" CFLAGS="${CFLAGS} ${LDFLAGS}" etc
 	emake --jobs=1 \
 		CC="$(tc-getCC)" CFLAGS="${CFLAGS} -Demacs" \
-		LD="$(tc-getCC)" LDFLAGS="-nostdlib ${LDFLAGS}"
+		LD="$(tc-getCC) -nostdlib" LDFLAGS="${LDFLAGS}"
 }
 
 src_install() {
@@ -77,9 +76,8 @@ src_install() {
 		install
 
 	rmdir "${D}"${basedir}/lock || die
-	find "${D}"${basedir} -type f \
-		\( -name ChangeLog -o -name COPYING -o -name "*.c" \) \
-		-exec rm "{}" + || die
+	find "${D}"${basedir} -type f \( -name "*.c" -o -name ChangeLog \
+		-o -name COPYING ! -path "*/etc/COPYING" \) -exec rm "{}" + || die
 	fperms -R go-w ${basedir}
 
 	# move executables to the correct place
@@ -130,7 +128,8 @@ pkg_preinst() {
 		ewarn "Removing old symlink /usr/share/info/emacs-${SLOT}"
 		rm "${ROOT}"/usr/share/info/emacs-${SLOT} || die
 	fi
-	if [[ -d "${ROOT}"/usr/share/emacs/${PV}/info ]]; then
+	if [[ -d "${ROOT}"/usr/share/emacs/${PV}/info \
+		&& ! -L "${ROOT}"/usr/share/emacs/${PV}/info ]]; then
 		ewarn "Removing old directory /usr/share/emacs/${PV}/info"
 		rm -r "${ROOT}"/usr/share/emacs/${PV}/info || die
 	fi

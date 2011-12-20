@@ -1,0 +1,12 @@
+DEFINED_PHASES=compile install postinst
+DEPEND=ncurses? ( sys-libs/ncurses )
+DESCRIPTION=replacement for GNU stow with extensions
+HOMEPAGE=http://xstow.sourceforge.net/
+IUSE=ncurses static
+KEYWORDS=~amd64 ~ppc ~x86
+LICENSE=GPL-2
+RDEPEND=ncurses? ( sys-libs/ncurses )
+SLOT=0
+SRC_URI=mirror://sourceforge/xstow/xstow-1.0.0.tar.bz2
+_eclasses_=eutils	ac049c4fa17000293228df51f9460566	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	portability	0d9341be2bffb3ace510580f192f231e	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
+_md5_=9e7e7613e555c49d8a9a084e82b7fce6

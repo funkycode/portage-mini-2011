@@ -1,0 +1,22 @@
+!<sci-physics/root-5.32[xrootd] sys-libs/zlib fuse? ( sys-fs/fuse ) kerberos? ( virtual/krb5 ) perl? ( dev-lang/perl readline? ( dev-perl/Term-ReadLine-Perl ) ) readline? ( sys-libs/readline ) ssl? ( dev-libs/openssl ) perl? ( dev-lang/swig ) >=dev-util/cmake-2.8.4 userland_GNU? ( >=sys-apps/findutils-4.4.0 )
+!<sci-physics/root-5.32[xrootd] sys-libs/zlib fuse? ( sys-fs/fuse ) kerberos? ( virtual/krb5 ) perl? ( dev-lang/perl readline? ( dev-perl/Term-ReadLine-Perl ) ) readline? ( sys-libs/readline ) ssl? ( dev-libs/openssl )
+0
+http://xrootd.org//download/v3.1.0/xrootd-3.1.0.tar.gz doc? ( http://xrootd.slac.stanford.edu/doc/prod/Syntax_config.pdf http://xrootd.slac.stanford.edu/doc/prod/xrd_config.pdf http://xrootd.slac.stanford.edu/doc/prod/ofs_config.pdf http://xrootd.slac.stanford.edu/doc/prod/cms_config.pdf http://xrootd.slac.stanford.edu/doc/prod/sec_config.pdf http://xrootd.slac.stanford.edu/doc/prod/xrd_monitoring.pdf http://xrootd.slac.stanford.edu/doc/prod/frm_config.pdf http://xrootd.slac.stanford.edu/doc/prod/XRdv297.pdf )
+
+http://xrootd.org/
+BSD
+Extended ROOT remote file server
+~amd64 ~x86
+base cmake-utils eutils flag-o-matic multilib portability toolchain-funcs user
+doc fuse kerberos perl readline ssl
+
+
+
+4
+
+compile configure install prepare setup test unpack
+
+
+
+
+

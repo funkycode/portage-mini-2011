@@ -1,0 +1,6 @@
+DEFINED_PHASES=-
+DESCRIPTION=Virtual for Module-Loaded
+KEYWORDS=~amd64 ~x86
+RDEPEND=~perl-core/Module-Loaded-0.80.0
+SLOT=0
+_md5_=98b8adbe947ae95d7bf2fd5a214a2ac0

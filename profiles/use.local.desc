@@ -3754,6 +3754,7 @@ net-libs/wt:fcgi - Compile in FCGI connector
 net-libs/wt:graphicsmagick - Enable GraphicsMagick, for supporting painting to raster images (PNG, GIF, ...) (WRasterImage)
 net-libs/wt:resources - Install resources directory
 net-libs/wt:server - Compile in stand-alone httpd connector
+net-libs/xrootd:fuse - Enable the sys-fs/fuse filesystem driver
 net-libs/xulrunner:crashreporter - Enable crash reporter for bugs
 net-libs/xulrunner:custom-optimization - Fine-tune custom compiler optimizations
 net-libs/xulrunner:gconf - Enable gnome2 gconf support

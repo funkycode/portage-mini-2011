@@ -1,5 +1,5 @@
 DEFINED_PHASES=compile install prepare unpack
-DEPEND=!sys-freebsd/freebsd-bin nls? ( virtual/libintl ) nls? ( sys-devel/gettext ) elibc_IRIX? ( dev-libs/gnulib ) x86-interix? ( dev-libs/gnulib ) elibc_mintlib? ( virtual/libiconv )
+DEPEND=!sys-freebsd/freebsd-bin nls? ( virtual/libintl ) nls? ( sys-devel/gettext ) x86-interix? ( dev-libs/gnulib ) elibc_mintlib? ( virtual/libiconv )
 DESCRIPTION=Return the canonicalized absolute pathname
 EAPI=3
 HOMEPAGE=http://packages.debian.org/unstable/utils/realpath
@@ -10,4 +10,4 @@ RDEPEND=!sys-freebsd/freebsd-bin nls? ( virtual/libintl )
 SLOT=0
 SRC_URI=mirror://debian/pool/main/r/realpath/realpath_1.15.tar.gz nls? ( mirror://debian/pool/main/r/realpath/realpath_1.15_i386.deb )
 _eclasses_=eutils	ac049c4fa17000293228df51f9460566	flag-o-matic	8ffbf0dc65f73498fcba6d29048fdfff	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	portability	0d9341be2bffb3ace510580f192f231e	prefix	21058c21ca48453d771df15500873ede	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
-_md5_=5de3d376a19b23eccc821dbabe22b890
+_md5_=a595cfd0528aebf70aa8d57fb99e2ef2
