@@ -1,6 +1,6 @@
 DEFINED_PHASES=-
 DESCRIPTION=Virtual for Attribute-Handlers
-KEYWORDS=~alpha amd64 ~arm ~hppa ~ia64 ~ppc ~ppc64 ~s390 ~sh ~sparc ~x86 ~x86-fbsd ~ppc-macos ~x64-macos ~x86-solaris
+KEYWORDS=~alpha amd64 ~arm hppa ~ia64 ~ppc ~ppc64 ~s390 ~sh ~sparc ~x86 ~x86-fbsd ~ppc-macos ~x64-macos ~x86-solaris
 RDEPEND=~perl-core/Attribute-Handlers-0.910.0
 SLOT=0
-_md5_=1c466f1d9fd7e1e2e5c792a27ea14d12
+_md5_=4fc3bd2c178b708e134007507d6fb138

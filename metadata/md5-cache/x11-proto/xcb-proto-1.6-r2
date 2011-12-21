@@ -3,10 +3,10 @@ DEPEND=dev-libs/libxml2 >=app-admin/eselect-python-20091230 || ( =dev-lang/pytho
 DESCRIPTION=X C-language Bindings protocol headers
 EAPI=3
 HOMEPAGE=http://xcb.freedesktop.org/
-KEYWORDS=~alpha amd64 ~arm ~hppa ~ia64 ~mips ~ppc ~ppc64 ~s390 ~sh ~sparc ~x86 ~x86-fbsd ~x86-freebsd ~x86-interix ~amd64-linux ~x86-linux ~ppc-macos ~x64-macos ~x86-macos ~sparc-solaris ~sparc64-solaris ~x64-solaris ~x86-solaris
+KEYWORDS=~alpha amd64 ~arm hppa ~ia64 ~mips ~ppc ~ppc64 ~s390 ~sh ~sparc ~x86 ~x86-fbsd ~x86-freebsd ~x86-interix ~amd64-linux ~x86-linux ~ppc-macos ~x64-macos ~x86-macos ~sparc-solaris ~sparc64-solaris ~x64-solaris ~x86-solaris
 LICENSE=MIT
 RDEPEND=>=app-admin/eselect-python-20091230 || ( =dev-lang/python-2.7* =dev-lang/python-2.6* =dev-lang/python-2.5* )
 SLOT=0
 SRC_URI=http://xcb.freedesktop.org/dist/xcb-proto-1.6.tar.bz2
 _eclasses_=autotools	63332a15502113ca711ccccb3889a109	autotools-utils	1a50ce298315c74b307c84cfa7773d1d	eutils	ac049c4fa17000293228df51f9460566	flag-o-matic	8ffbf0dc65f73498fcba6d29048fdfff	libtool	0fd90d183673bf1107465ec45849d1ea	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	portability	0d9341be2bffb3ace510580f192f231e	python	68cfdfd857b7b9e8f75a3fa84d60be94	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e	xorg-2	093ea4dbb66911426bbf98ed86963ed2
-_md5_=9fed91d14aa24dd0a3fa7483d2601027
+_md5_=9c6877ef07aa62b89201e63a13a61685

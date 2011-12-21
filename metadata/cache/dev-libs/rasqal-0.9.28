@@ -1,5 +1,5 @@
-media-libs/raptor:2 pcre? ( dev-libs/libpcre ) xml? ( dev-libs/libxml2 ) !gmp? ( dev-libs/mpfr ) gmp? ( dev-libs/gmp ) crypt? ( !mhash? ( dev-libs/libgcrypt ) mhash? ( app-crypt/mhash ) ) dev-util/pkgconfig sys-devel/flex test? ( dev-perl/XML-DOM )
-media-libs/raptor:2 pcre? ( dev-libs/libpcre ) xml? ( dev-libs/libxml2 ) !gmp? ( dev-libs/mpfr ) gmp? ( dev-libs/gmp ) crypt? ( !mhash? ( dev-libs/libgcrypt ) mhash? ( app-crypt/mhash ) )
+>=media-libs/raptor-2.0.6:2 pcre? ( dev-libs/libpcre ) xml? ( dev-libs/libxml2 ) !gmp? ( dev-libs/mpfr ) gmp? ( dev-libs/gmp ) crypt? ( !mhash? ( dev-libs/libgcrypt ) mhash? ( app-crypt/mhash ) ) dev-util/pkgconfig sys-devel/flex test? ( dev-perl/XML-DOM )
+>=media-libs/raptor-2.0.6:2 pcre? ( dev-libs/libpcre ) xml? ( dev-libs/libxml2 ) !gmp? ( dev-libs/mpfr ) gmp? ( dev-libs/gmp ) crypt? ( !mhash? ( dev-libs/libgcrypt ) mhash? ( app-crypt/mhash ) )
 0
 http://download.librdf.org/source/rasqal-0.9.28.tar.gz
 
