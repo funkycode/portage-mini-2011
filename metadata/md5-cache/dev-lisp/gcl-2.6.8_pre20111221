@@ -1,0 +1,14 @@
+DEFINED_PHASES=compile configure install postinst postrm prepare test
+DEPEND=emacs? ( virtual/emacs ) readline? ( sys-libs/readline ) >=dev-libs/gmp-4.1 tk? ( dev-lang/tk ) X? ( x11-libs/libXt x11-libs/libXext x11-libs/libXmu x11-libs/libXaw ) virtual/latex-base doc? ( virtual/texi2dvi ) >=app-text/texi2html-1.64 >=sys-devel/autoconf-2.52
+DESCRIPTION=GNU Common Lisp
+EAPI=3
+HOMEPAGE=http://www.gnu.org/software/gcl/gcl.html
+IUSE=+ansi debug doc emacs +readline tk X
+KEYWORDS=~x86
+LICENSE=GPL-2
+RDEPEND=emacs? ( virtual/emacs ) readline? ( sys-libs/readline ) >=dev-libs/gmp-4.1 tk? ( dev-lang/tk ) X? ( x11-libs/libXt x11-libs/libXext x11-libs/libXmu x11-libs/libXaw ) virtual/latex-base
+RESTRICT=strip
+SLOT=0
+SRC_URI=http://dev.gentoo.org/~grozin/gcl-2.6.8_pre20111221.tar.bz2
+_eclasses_=elisp-common	3048b6bde509e1aa680e77d093d01409	eutils	ac049c4fa17000293228df51f9460566	flag-o-matic	8ffbf0dc65f73498fcba6d29048fdfff	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	portability	0d9341be2bffb3ace510580f192f231e	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
+_md5_=8f97c57d00e2d1b41e57e1916e25f386

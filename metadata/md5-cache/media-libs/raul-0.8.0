@@ -4,10 +4,10 @@ DESCRIPTION=C++ utility library primarily aimed at audio/musical applications.
 EAPI=2
 HOMEPAGE=http://wiki.drobilla.net/Raul
 IUSE=debug doc test
-KEYWORDS=amd64 ~x86
+KEYWORDS=amd64 x86
 LICENSE=GPL-2
 RDEPEND=dev-libs/boost >=dev-libs/glib-2.14.0
 SLOT=0
 SRC_URI=http://download.drobilla.net/raul-0.8.0.tar.bz2
 _eclasses_=eutils	ac049c4fa17000293228df51f9460566	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	portability	0d9341be2bffb3ace510580f192f231e	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
-_md5_=989c493e52be0d001d41e2b697754e3a
+_md5_=0d3069fa82fac9e3f7d3095ea9ec2cfa

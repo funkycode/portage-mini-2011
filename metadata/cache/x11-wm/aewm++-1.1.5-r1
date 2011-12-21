@@ -6,7 +6,7 @@ mirror://gentoo/aewm++-1.1.5.tar.gz
 http://github.com/frankhale/aewmpp
 GPL-2
 A window manager with more modern features than aewm but with the same look and feel.
-amd64 ~ppc ~x86 ~x86-fbsd
+amd64 ~ppc x86 ~x86-fbsd
 eutils multilib portability toolchain-funcs user
 
 

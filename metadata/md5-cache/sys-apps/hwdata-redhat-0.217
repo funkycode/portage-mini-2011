@@ -9,4 +9,4 @@ RDEPEND=>=sys-apps/module-init-tools-3.2 !sys-apps/hwdata-gentoo
 SLOT=0
 SRC_URI=mirror://fedora-dev/releases/9/Everything/source/SRPMS/hwdata-0.217-1.fc9.src.rpm
 _eclasses_=eutils	ac049c4fa17000293228df51f9460566	flag-o-matic	8ffbf0dc65f73498fcba6d29048fdfff	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	portability	0d9341be2bffb3ace510580f192f231e	rpm	1eff8355cdb7f243ba377957efe91abb	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
-_md5_=b87e4ec794a4a06208c07e0778fecb18
+_md5_=3e959bc686aecbea7f37febad56001fe

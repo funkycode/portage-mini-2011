@@ -4,10 +4,10 @@ DESCRIPTION=C++ library of mathematical, signal processing and communication
 EAPI=4
 HOMEPAGE=http://itpp.sourceforge.net/
 IUSE=blas debug doc fftw lapack minimal static-libs
-KEYWORDS=amd64 ~ppc ~ppc64 ~sparc ~x86
+KEYWORDS=amd64 ~ppc ~ppc64 ~sparc x86
 LICENSE=GPL-3
 RDEPEND=blas? ( virtual/blas lapack? ( virtual/lapack ) ) !minimal? ( fftw? ( >=sci-libs/fftw-3 ) )
 SLOT=0
 SRC_URI=mirror://sourceforge/itpp/itpp-4.2.tar.bz2
 _eclasses_=autotools	63332a15502113ca711ccccb3889a109	autotools-utils	1a50ce298315c74b307c84cfa7773d1d	eutils	ac049c4fa17000293228df51f9460566	flag-o-matic	8ffbf0dc65f73498fcba6d29048fdfff	libtool	0fd90d183673bf1107465ec45849d1ea	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	portability	0d9341be2bffb3ace510580f192f231e	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
-_md5_=de82ee299763335079bb344803e40dbb
+_md5_=1b89aa5e12510d20bfb14dedd576c4b0

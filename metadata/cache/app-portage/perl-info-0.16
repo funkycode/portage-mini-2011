@@ -6,7 +6,7 @@ mirror://gentoo/perl-info-0.16.tar.gz http://dev.gentoo.org/~tove/files/perl-inf
 http://www.gentoo.org/proj/en/perl/
 GPL-2
 Tool to gather relevant perl data useful for bugreports; 'emerge --info' for perl
-~alpha amd64 hppa ~ia64 ~ppc ~sparc ~x86
+~alpha amd64 hppa ~ia64 ~ppc ~sparc x86
 
 
 

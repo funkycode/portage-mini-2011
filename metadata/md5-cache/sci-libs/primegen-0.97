@@ -1,9 +1,0 @@
-DEFINED_PHASES=compile install unpack
-DESCRIPTION=A small, fast library to generate primes in order
-HOMEPAGE=http://cr.yp.to/primegen.html
-KEYWORDS=x86 ~amd64 ~ppc
-LICENSE=public-domain
-SLOT=0
-SRC_URI=http://cr.yp.to/primegen/primegen-0.97.tar.gz
-_eclasses_=eutils	ac049c4fa17000293228df51f9460566	flag-o-matic	8ffbf0dc65f73498fcba6d29048fdfff	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	portability	0d9341be2bffb3ace510580f192f231e	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
-_md5_=b3dcbf91d6d9ad45b2932627a230c072

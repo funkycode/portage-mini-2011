@@ -1,6 +1,6 @@
 # Copyright 1999-2011 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/media-video/vlc/vlc-1.1.9999.ebuild,v 1.37 2011/12/09 19:58:47 aballier Exp $
+# $Header: /var/cvsroot/gentoo-x86/media-video/vlc/vlc-1.1.9999.ebuild,v 1.38 2011/12/21 12:18:47 aballier Exp $
 
 EAPI="3"
 
@@ -22,7 +22,7 @@ MY_PV="${MY_PV/-beta/-test}"
 MY_P="${PN}-${MY_PV}"
 VLC_SNAPSHOT_TIME="0013"
 
-PATCHLEVEL="99"
+PATCHLEVEL="104"
 DESCRIPTION="VLC media player - Video player and streamer"
 HOMEPAGE="http://www.videolan.org/vlc/"
 if [ "${PV%9999}" != "${PV}" ] ; then # Live ebuild
@@ -107,8 +107,7 @@ RDEPEND="
 		opengl? ( virtual/opengl || ( >=x11-libs/libX11-1.3.99.901 <x11-libs/libX11-1.3.99.901[xcb] ) )
 		png? ( media-libs/libpng sys-libs/zlib )
 		projectm? ( media-libs/libprojectm )
-		pulseaudio? ( || ( >=media-sound/pulseaudio-0.9.22
-			( >=media-sound/pulseaudio-0.9.11 x11-libs/libX11 ) ) )
+		pulseaudio? ( >=media-sound/pulseaudio-0.9.22 )
 		qt4? ( x11-libs/qt-gui:4 x11-libs/qt-core:4 x11-libs/libX11 )
 		remoteosd? ( >=dev-libs/libgcrypt-1.2.0 )
 		samba? ( || ( >=net-fs/samba-3.4.6[smbclient] <net-fs/samba-3.4 ) )
@@ -184,7 +183,6 @@ pkg_setup() {
 	vlc_use_force vlm stream
 	vlc_use_force vaapi ffmpeg
 	vlc_use_force nsplugin xcb
-	has_version '<media-sound/pulseaudio-0.9.22' && vlc_use_force pulseaudio X
 	vlc_use_force xosd X
 	vlc_use_force sdl X
 	vlc_use_force aalib X
@@ -340,7 +338,6 @@ src_configure() {
 		$(vlc_use_enable_force gnutls libgcrypt) \
 		$(vlc_use_enable_force vaapi avcodec) \
 		$(vlc_use_enable_force nsplugin xcb) \
-		$(has_version '<media-sound/pulseaudio-0.9.22' && use pulseaudio && echo '--with-x') \
 		$(use sdl && echo '--with-x') \
 		$(use xosd && echo '--with-x') \
 		$(use aalib && echo '--with-x')

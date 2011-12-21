@@ -8,4 +8,4 @@ LICENSE=BSD
 RDEPEND=dev-python/imaging sqlite? ( || ( dev-lang/python:2.7[sqlite] dev-lang/python:2.6[sqlite] dev-lang/python:2.5[sqlite] dev-python/pysqlite:2 ) ) postgres? ( dev-python/psycopg ) mysql? ( >=dev-python/mysql-python-1.2.1_p2 ) >=app-admin/eselect-python-20091230 =dev-lang/python-2* >=app-admin/webapp-config-1.50.15
 SLOT=0
 _eclasses_=bash-completion-r1	3480f8385cb9e31797e7b659e366e2d2	distutils	b4c334e216d998c4ce4b750cb091e42e	eutils	ac049c4fa17000293228df51f9460566	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	portability	0d9341be2bffb3ace510580f192f231e	python	68cfdfd857b7b9e8f75a3fa84d60be94	subversion	3a59e3b0a06a1a65e8187ac4530abf25	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e	webapp	b79de1dd84dd3022661b31ea1d6685e2
-_md5_=5ea544bdd94aa8c98b831ff35a86f067
+_md5_=39f79973f798cddb5003139a11ef73c8
