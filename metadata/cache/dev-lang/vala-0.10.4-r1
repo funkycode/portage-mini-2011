@@ -1,4 +1,4 @@
->=dev-libs/glib-2.14:2 sys-devel/flex || ( sys-devel/bison dev-util/byacc dev-util/yacc ) dev-util/pkgconfig dev-libs/libxslt test? ( >=dev-libs/glib-2.26:2 dev-libs/dbus-glib ) >=sys-apps/sed-4
+>=dev-libs/glib-2.14:2 !dev-lang/vala:0 sys-devel/flex || ( sys-devel/bison dev-util/byacc dev-util/yacc ) dev-util/pkgconfig dev-libs/libxslt test? ( >=dev-libs/glib-2.26:2 dev-libs/dbus-glib ) >=sys-apps/sed-4
 >=dev-libs/glib-2.14:2
 0.10
 mirror://gnome/sources/vala/0.10/vala-0.10.4.tar.bz2

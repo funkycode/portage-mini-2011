@@ -4,10 +4,10 @@ DESCRIPTION=A distributed application deployment system
 EAPI=2
 HOMEPAGE=http://capify.org/
 IUSE=test elibc_FreeBSD ruby_targets_ruby18 test test
-KEYWORDS=~amd64 ~ia64 ~ppc ~ppc64 ~x86 ~amd64-linux ~x86-linux ~ppc-macos ~x86-macos ~x64-solaris ~x86-solaris
+KEYWORDS=amd64 ~ia64 ~ppc ~ppc64 ~x86 ~amd64-linux ~x86-linux ~ppc-macos ~x86-macos ~x64-solaris ~x86-solaris
 LICENSE=MIT
 RDEPEND=ruby_targets_ruby18? ( >=dev-ruby/net-ssh-2.0.14[ruby_targets_ruby18] >=dev-ruby/net-sftp-2.0.2[ruby_targets_ruby18] >=dev-ruby/net-scp-1.0.2[ruby_targets_ruby18] >=dev-ruby/net-ssh-gateway-1.1.0[ruby_targets_ruby18] >=dev-ruby/highline-1.2.7[ruby_targets_ruby18] ) ruby_targets_ruby18? ( dev-lang/ruby:1.8 ) ruby_targets_ruby18? ( virtual/rubygems[ruby_targets_ruby18] )
 SLOT=2
 SRC_URI=mirror://rubygems/capistrano-2.9.0.gem
 _eclasses_=eutils	ac049c4fa17000293228df51f9460566	java-utils-2	8386f5293b96245786782d8a7166db9a	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	portability	0d9341be2bffb3ace510580f192f231e	ruby-fakegem	6732f927427c6069df6c4f22271f2c75	ruby-ng	4f1be3b6db6ebad08d2c6d7996907767	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e	versionator	3a6c6ae0c0f6578737dd398e98311d46
-_md5_=6b564a9a5b538ca431d1d5ab9f4b65cb
+_md5_=0b0fed485f2eb0aca9ab71614895e968

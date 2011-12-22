@@ -194,8 +194,6 @@ app-arch/pbzip2:symlink - Install symlinks which override app-arch/bzip2 impleme
 app-arch/rar:all_sfx - Install all SFX (Self-Extracting) files rather than just the native format (allows creation of Windows EXEs on Linux ELF systems)
 app-arch/rpm:magic - Add magic file support (sys-apps/file)
 app-arch/rpm:webdav-neon - Include support for net-libs/neon
-app-arch/squeeze:pathbar - Include pathbar feature
-app-arch/squeeze:toolbar - Include toolbar feature
 app-arch/unzip:natspec - Use dev-libs/libnatspec to correctly decode non-ascii file names archived in Windows.
 app-arch/zip:natspec - Use dev-libs/libnatspec to correctly decode non-ascii file names archived in Windows.
 app-backup/amanda:devpay - Support for using Amazon DevPay with S3
@@ -237,7 +235,6 @@ app-cdr/k3b:emovix - Enable burning support for eMoviX images
 app-cdr/k3b:wav - Enable support for reading WAVE files
 app-cdr/mirage2iso:pinentry - Support app-crypt/pinentry password input backend.
 app-cdr/mybashburn:normalize - Add support for normalizing audio file volume levels
-app-cdr/serpentine:muine - Enable support for the GNOME music player Muine
 app-cdr/xfburn:thunar - Use Thunar VFS layer for mimetype and icons support (WARNING: deprecated, will be replaced by GIO in future)
 app-crypt/ccid:twinserial - Enable twinserial reader
 app-crypt/ekeyd:minimal - Only install the ekey-egd-linux service rather than the full ekeyd package.
@@ -5240,7 +5237,7 @@ x11-terms/mrxvt:utempter - REcords user logins. Useful on multi-user systems
 x11-terms/rxvt:linuxkeys - Define LINUX_KEYS (changes Home/End key)
 x11-terms/rxvt:xgetdefault - Enable resources via X instead of rxvt small version
 x11-terms/rxvt-unicode:256-color - Enable 256 color support
-x11-terms/rxvt-unicode:afterimage - Enable transparency support using media-libs/libafterimage
+x11-terms/rxvt-unicode:afterimage - Enable transparency support using media-libs/libafterimage (deprecated in 9.14)
 x11-terms/rxvt-unicode:alt-font-width - Calculate the font width using a different method
 x11-terms/rxvt-unicode:blink - Enable blinking text
 x11-terms/rxvt-unicode:fading-colors - Enable colors fading when off focus

@@ -1,6 +1,6 @@
-DEFINED_PHASES=compile configure install
+DEFINED_PHASES=compile configure
 DESCRIPTION=Pipe Viewer: a tool for monitoring the progress of data through a pipe
-EAPI=2
+EAPI=4
 HOMEPAGE=http://www.ivarch.com/programs/pv.shtml
 IUSE=nls
 KEYWORDS=alpha amd64 arm hppa ppc ppc64 sparc x86 ~amd64-linux ~x86-linux ~ppc-macos ~x86-macos ~sparc64-solaris ~x86-solaris
@@ -8,4 +8,4 @@ LICENSE=Artistic-2
 SLOT=0
 SRC_URI=http://pipeviewer.googlecode.com/files/pv-1.2.0.tar.bz2
 _eclasses_=multilib	5f4ad6cf85e365e8f0c6050ddd21659e	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68
-_md5_=f2c8580aeda825c63f06fc76072f79be
+_md5_=4dc1076da48bb7223737eb80feedba26
