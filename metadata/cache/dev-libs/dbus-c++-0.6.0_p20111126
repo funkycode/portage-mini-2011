@@ -1,4 +1,4 @@
-sys-apps/dbus dev-util/pkgconfig || ( =sys-devel/automake-1.11* ) >=sys-devel/autoconf-2.61 sys-devel/libtool
+sys-apps/dbus dev-util/cppunit dev-util/pkgconfig || ( =sys-devel/automake-1.11* ) >=sys-devel/autoconf-2.61 sys-devel/libtool
 sys-apps/dbus
 0
 http://www.elvanor.net/files/gentoo/dbus-c++-0.6.0_p20111126.tar.bz2

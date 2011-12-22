@@ -1,0 +1,22 @@
+|| ( =sys-devel/automake-1.11* ) >=sys-devel/autoconf-2.61 sys-devel/libtool
+
+0
+ftp://ftp.hdfgroup.org/lib-external/szip/2.1/src/szip-2.1.tar.gz
+
+http://www.hdfgroup.org/doc_resource/SZIP/
+szip
+Extended-Rice lossless compression algorithm implementation
+~alpha ~amd64 ~hppa ~ia64 ~ppc ~ppc64 ~sparc ~x86
+autotools autotools-utils eutils libtool multilib portability toolchain-funcs user
+static-libs
+
+
+
+4
+
+compile configure install prepare test
+
+
+
+
+

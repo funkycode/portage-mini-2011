@@ -1,7 +1,7 @@
 sys-devel/gnuconfig >=sys-devel/binutils-config-1.9 zlib? ( sys-libs/zlib ) test? ( dev-util/dejagnu ) nls? ( sys-devel/gettext ) sys-devel/flex virtual/yacc
 >=sys-devel/binutils-config-1.9 zlib? ( sys-libs/zlib )
 0
-mirror://gnu/binutils/binutils-2.21.1.tar.bz2 http://dev.gentoo.org/~radhermit/distfiles/msp430-binutils-2.21.1_p20111205.patch.bz2
+mirror://gnu/binutils/binutils-2.21.1.tar.bz2 mirror://gentoo/binutils-2.21.1-patches-1.4.tar.bz2 http://dev.gentoo.org/~vapier/dist/binutils-2.21.1-patches-1.4.tar.bz2 http://dev.gentoo.org/~radhermit/distfiles/msp430-binutils-2.21.1_p20111205.patch.bz2
 
 http://sources.redhat.com/binutils/
 || ( GPL-3 LGPL-3 )
@@ -12,9 +12,9 @@ nls multitarget multislot static-libs test vanilla zlib
 
 
 
-4
 
-compile install postinst postrm prepare pretend test unpack
+
+compile install postinst postrm setup test unpack
 
 
 

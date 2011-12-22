@@ -6,7 +6,7 @@ mirror://sourceforge/blobby/blobby2-linux-0.9c.tar.gz
 http://sourceforge.net/projects/blobby/
 GPL-2
 A beach ball game with blobs of goo
-~amd64 ~x86
+amd64 ~x86
 base cmake-utils eutils flag-o-matic games multilib portability toolchain-funcs user
 
 

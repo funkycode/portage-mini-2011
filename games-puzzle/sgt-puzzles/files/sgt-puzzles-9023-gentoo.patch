@@ -1,5 +1,5 @@
---- mkfiles.pl.old	2010-03-07 11:14:11.000000000 -0300
-+++ mkfiles.pl	2010-03-07 11:24:20.000000000 -0300
+--- mkfiles.pl.old
++++ mkfiles.pl
 @@ -1110,8 +1110,8 @@
      "\n".
      &splitline("CFLAGS := -O2 -Wall -Werror -ansi -pedantic -g " .

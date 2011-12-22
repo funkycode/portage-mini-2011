@@ -9,5 +9,5 @@ RDEPEND=>=sys-libs/zlib-1.2.5.1-r2[minizip] a52? ( >=media-libs/a52dec-0.7.4-r3 
 REQUIRED_USE=aalib? ( X ) bidi? ( truetype ) cddb? ( cdda ) dxva2? ( avcodec ) egl? ( X ) ffmpeg? ( avcodec avformat postproc swscale ) fontconfig? ( truetype ) gnutls? ( gcrypt ) libtar? ( skins ) libtiger? ( kate ) media-library? ( sqlite ) qt4? ( X ) sdl? ( X ) skins? ( truetype qt4 X ) switcher? ( avcodec ) vaapi? ( avcodec X ) vlm? ( encode ) xosd? ( X ) xv? ( xcb )
 SLOT=0
 SRC_URI=mirror://gentoo/vlc-patches-101.tar.bz2
-_eclasses_=autotools	63332a15502113ca711ccccb3889a109	eutils	ac049c4fa17000293228df51f9460566	flag-o-matic	8ffbf0dc65f73498fcba6d29048fdfff	git-2	e093fad2de8fa7ca11e7ed938d27ceb1	libtool	0fd90d183673bf1107465ec45849d1ea	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	portability	0d9341be2bffb3ace510580f192f231e	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
+_eclasses_=autotools	63332a15502113ca711ccccb3889a109	eutils	ac049c4fa17000293228df51f9460566	flag-o-matic	8ffbf0dc65f73498fcba6d29048fdfff	git-2	e093fad2de8fa7ca11e7ed938d27ceb1	libtool	5f623f5a211fb1b2d84d88ee49959a54	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	portability	0d9341be2bffb3ace510580f192f231e	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
 _md5_=271ed264d439259e697393165a358843

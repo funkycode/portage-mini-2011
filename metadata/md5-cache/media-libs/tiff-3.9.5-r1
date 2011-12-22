@@ -9,5 +9,5 @@ LICENSE=as-is
 RDEPEND=jpeg? ( virtual/jpeg ) jbig? ( media-libs/jbigkit ) zlib? ( sys-libs/zlib ) !media-libs/tiff-compat !=media-libs/tiff-3*:0
 SLOT=3
 SRC_URI=ftp://ftp.remotesensing.org/pub/libtiff/tiff-3.9.5.tar.gz
-_eclasses_=libtool	0fd90d183673bf1107465ec45849d1ea	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68
+_eclasses_=libtool	5f623f5a211fb1b2d84d88ee49959a54	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68
 _md5_=0ed9f15ef35e4be55decbb2ddd2f9e5e
