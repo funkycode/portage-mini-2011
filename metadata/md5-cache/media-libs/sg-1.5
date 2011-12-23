@@ -1,13 +1,13 @@
 DEFINED_PHASES=configure install prepare
-DEPEND=dev-libs/maloc x11-libs/openmotif opengl? ( || ( media-libs/mesa[motif] media-libs/opengl-apple ) ) doc? ( media-gfx/graphviz app-doc/doxygen ) || ( =sys-devel/automake-1.11* ) >=sys-devel/autoconf-2.61 sys-devel/libtool
+DEPEND=dev-libs/maloc x11-libs/libXaw x11-libs/openmotif opengl? ( || ( media-libs/mesa[motif] media-libs/opengl-apple ) ) doc? ( media-gfx/graphviz app-doc/doxygen ) || ( =sys-devel/automake-1.11* ) >=sys-devel/autoconf-2.61 sys-devel/libtool
 DESCRIPTION=Socket Graphics tool for displaying polygons
 EAPI=3
 HOMEPAGE=http://fetk.org/codes/sg/index.html
 IUSE=doc opengl
 KEYWORDS=~amd64 ~x86 ~amd64-linux ~x86-linux
 LICENSE=GPL-2
-RDEPEND=dev-libs/maloc x11-libs/openmotif opengl? ( || ( media-libs/mesa[motif] media-libs/opengl-apple ) )
+RDEPEND=dev-libs/maloc x11-libs/libXaw x11-libs/openmotif opengl? ( || ( media-libs/mesa[motif] media-libs/opengl-apple ) )
 SLOT=0
 SRC_URI=http://www.fetk.org/codes/download/sg-1.5.tar.gz
 _eclasses_=autotools	63332a15502113ca711ccccb3889a109	eutils	ac049c4fa17000293228df51f9460566	libtool	5f623f5a211fb1b2d84d88ee49959a54	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	portability	0d9341be2bffb3ace510580f192f231e	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
-_md5_=9b69568f10c3e6e88a5c888a9b82308a
+_md5_=457a7f14f09b9304b1e8afc79ab2614c

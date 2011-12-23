@@ -3,10 +3,10 @@ DEPEND=>=app-admin/eselect-python-20091230 =dev-lang/python-2* =dev-lang/python-
 DESCRIPTION=Command line client for Amazon S3
 EAPI=3
 HOMEPAGE=http://s3tools.org/s3cmd
-KEYWORDS=amd64 ~x86
+KEYWORDS=amd64 x86
 LICENSE=GPL-2
 RDEPEND=>=app-admin/eselect-python-20091230 =dev-lang/python-2* =dev-lang/python-2*[xml]
 SLOT=0
 SRC_URI=mirror://sourceforge/s3tools/s3cmd-1.0.0.tar.gz
 _eclasses_=distutils	b4c334e216d998c4ce4b750cb091e42e	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	python	68cfdfd857b7b9e8f75a3fa84d60be94	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68
-_md5_=72c57832493c8977ffe4bdfd2c51ccfd
+_md5_=a1aa6ad846b7bb8cbd5e57b7d5a88b9f

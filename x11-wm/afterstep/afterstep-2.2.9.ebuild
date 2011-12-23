@@ -1,6 +1,6 @@
 # Copyright 1999-2011 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/x11-wm/afterstep/afterstep-2.2.9.ebuild,v 1.18 2011/11/12 10:39:59 jlec Exp $
+# $Header: /var/cvsroot/gentoo-x86/x11-wm/afterstep/afterstep-2.2.9.ebuild,v 1.20 2011/12/23 07:54:11 ssuominen Exp $
 
 EAPI=4
 
@@ -40,7 +40,7 @@ DEPEND="${RDEPEND}
 	x11-proto/xextproto
 	x11-proto/xproto
 	xinerama? ( x11-proto/xineramaproto )
-	!media-libs/libafterimage"
+	!!media-libs/libafterimage"
 
 S=${WORKDIR}/AfterStep-${PV}
 
@@ -113,7 +113,7 @@ src_compile() {
 }
 
 src_install() {
-	default
+	emake DESTDIR="${D}" install
 
 	# Create a symlink from MonitorWharf to Wharf
 	rm "${D}"/usr/bin/MonitorWharf

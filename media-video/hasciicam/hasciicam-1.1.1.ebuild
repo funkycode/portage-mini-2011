@@ -1,6 +1,6 @@
 # Copyright 1999-2011 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/media-video/hasciicam/hasciicam-1.1.1.ebuild,v 1.3 2011/10/08 16:18:26 phajdan.jr Exp $
+# $Header: /var/cvsroot/gentoo-x86/media-video/hasciicam/hasciicam-1.1.1.ebuild,v 1.5 2011/12/22 16:57:03 ssuominen Exp $
 
 EAPI=4
 
@@ -13,10 +13,8 @@ SLOT="0"
 KEYWORDS="amd64 x86"
 IUSE=""
 
-RDEPEND="media-libs/aalib"
-DEPEND="${RDEPEND}"
+DEPEND="media-libs/aalib"
+RDEPEND="${DEPEND}
+	media-fonts/font-misc-misc" #387909
 
-src_install() {
-	emake DESTDIR="${D}" install || die "emake install failed."
-	dodoc AUTHORS ChangeLog NEWS README TODO
-}
+DOCS=( AUTHORS ChangeLog NEWS README TODO )

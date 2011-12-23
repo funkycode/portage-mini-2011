@@ -1,6 +1,6 @@
 # Copyright 1999-2011 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/media-libs/phonon/phonon-9999.ebuild,v 1.12 2011/11/08 19:04:23 flameeyes Exp $
+# $Header: /var/cvsroot/gentoo-x86/media-libs/phonon/phonon-9999.ebuild,v 1.13 2011/12/23 13:17:06 johu Exp $
 
 EAPI=4
 
@@ -20,10 +20,10 @@ HOMEPAGE="https://projects.kde.org/projects/kdesupport/phonon"
 
 LICENSE="LGPL-2.1"
 SLOT="0"
-IUSE="aqua debug +gstreamer pulseaudio vlc xine"
+IUSE="aqua debug +gstreamer pulseaudio vlc xine zeitgeist"
 
 COMMON_DEPEND="
-	!x11-libs/qt-phonon:4
+	!!x11-libs/qt-phonon:4
 	>=x11-libs/qt-core-4.6.0:4
 	>=x11-libs/qt-dbus-4.6.0:4
 	>=x11-libs/qt-gui-4.6.0:4
@@ -32,6 +32,7 @@ COMMON_DEPEND="
 		dev-libs/glib:2
 		>=media-sound/pulseaudio-0.9.21[glib]
 	)
+	zeitgeist? ( dev-libs/libqzeitgeist )
 "
 # directshow? ( media-sound/phonon-directshow )
 # mmf? ( media-sound/phonon-mmf )

@@ -1,0 +1,13 @@
+DEFINED_PHASES=compile configure install postinst postrm preinst prepare setup unpack
+DEPEND=>=dev-libs/glib-2 dev-libs/libxml2 dev-libs/libxslt dev-libs/popt >=media-libs/freetype-2 >=media-libs/libart_lgpl-2 media-libs/libpng sys-libs/zlib x11-libs/gtk+:2 x11-libs/pango cairo? ( x11-libs/cairo ) doc? ( app-text/docbook-xml-dtd:4.5 app-text/docbook-xsl-stylesheets ) gnome? ( >=gnome-base/libgnome-2 >=gnome-base/libgnomeui-2 ) python? ( >=dev-python/pygtk-2 ) dev-util/intltool dev-util/pkgconfig doc? ( dev-libs/libxslt ) || ( =sys-devel/automake-1.11* ) >=sys-devel/autoconf-2.61 sys-devel/libtool app-arch/xz-utils >=sys-apps/sed-4 >=app-admin/eselect-python-20091230 python? ( =dev-lang/python-2* )
+DESCRIPTION=Diagram/flowchart creation program
+EAPI=4
+HOMEPAGE=http://live.gnome.org/Dia
+IUSE=cairo doc gnome python debug
+KEYWORDS=~alpha ~amd64 ~hppa ~ia64 ~ppc ~ppc64 ~sparc ~x86 ~x86-fbsd ~x86-freebsd ~amd64-linux ~x86-linux ~ppc-macos
+LICENSE=GPL-2
+RDEPEND=>=dev-libs/glib-2 dev-libs/libxml2 dev-libs/libxslt dev-libs/popt >=media-libs/freetype-2 >=media-libs/libart_lgpl-2 media-libs/libpng sys-libs/zlib x11-libs/gtk+:2 x11-libs/pango cairo? ( x11-libs/cairo ) doc? ( app-text/docbook-xml-dtd:4.5 app-text/docbook-xsl-stylesheets ) gnome? ( >=gnome-base/libgnome-2 >=gnome-base/libgnomeui-2 ) python? ( >=dev-python/pygtk-2 ) >=app-admin/eselect-python-20091230 python? ( =dev-lang/python-2* )
+SLOT=0
+SRC_URI=mirror://gnome/sources/dia/0.97/dia-0.97.2.tar.xz
+_eclasses_=autotools	63332a15502113ca711ccccb3889a109	eutils	ac049c4fa17000293228df51f9460566	fdo-mime	0acfe1a88fd8751a1d5dc671168219fa	gnome.org	8fef8f967214f56e08fa92d61163d891	gnome2	490ce89f5d905297c7a34898fa498bd0	gnome2-utils	b5ca2ccadb60760889faa3bccba121d9	libtool	5f623f5a211fb1b2d84d88ee49959a54	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	portability	0d9341be2bffb3ace510580f192f231e	python	68cfdfd857b7b9e8f75a3fa84d60be94	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e	versionator	3a6c6ae0c0f6578737dd398e98311d46
+_md5_=9927796ed662ebb02102e505185e2ca3

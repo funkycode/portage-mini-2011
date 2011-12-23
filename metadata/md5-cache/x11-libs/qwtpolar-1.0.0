@@ -1,12 +1,12 @@
 DEFINED_PHASES=compile configure install prepare unpack
-DEPEND=x11-libs/qwt:5[svg] app-arch/unzip
+DEPEND=x11-libs/qwt:6[svg] app-arch/unzip
 DESCRIPTION=Library for displaying values on a polar coordinate system
 EAPI=4
 HOMEPAGE=http://qwtpolar.sourceforge.net/
 KEYWORDS=~amd64 ~x86
 LICENSE=qwt
-RDEPEND=x11-libs/qwt:5[svg]
+RDEPEND=x11-libs/qwt:6[svg]
 SLOT=0
 SRC_URI=mirror://sourceforge/qwtpolar/qwtpolar-1.0.0.zip
 _eclasses_=base	809ab15a673823938260f6b17661c3f1	eutils	ac049c4fa17000293228df51f9460566	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	portability	0d9341be2bffb3ace510580f192f231e	qt4-r2	562a0a4214d92cf49cc3e97d1f39d891	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
-_md5_=d5b7d1e20282577554d5a3f4f8cdc21c
+_md5_=189a29423f839a7155ea6038a952bbc4

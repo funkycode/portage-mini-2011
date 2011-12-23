@@ -2378,6 +2378,7 @@ media-libs/libgpod:gtk - Enable ArtworkDB support
 media-libs/libmikmod:raw - Enable raw file writer plug-in
 media-libs/libmp4v2:utils - Install command-line utilities
 media-libs/libpng:apng - support unofficial APNG (Animated PNG) spec
+media-libs/libpng:neon - support ARM NEON cpu instruction set
 media-libs/libquicktime:schroedinger - Enable Dirac video support (an advanced royalty-free video compression format) via libschroedinger (high-speed implementation in C of the Dirac codec).
 media-libs/libraw:demosaic - Enable support for external interpolation algorithms
 media-libs/libsdl:audio - Control audio support (disable at your own risk)
@@ -2421,6 +2422,7 @@ media-libs/opencv:ipp - Enable Intel Integrated Primitive support
 media-libs/opencv:sse3 - Enable optimization for SSE3 capable chips
 media-libs/opencv:ssse3 - faster floating point optimization for SSSE3 capable chips (Intel Core 2 and later chips)
 media-libs/phonon:vlc - Install VLC Phonon backend
+media-libs/phonon:zeitgeist - Add support for Zeitgeist event tracking system
 media-libs/phonon-xine:xcb - Enable video support in Xine backend, via x11-libs/libxcb
 media-libs/raptor:json - Enable support for JSON parsing
 media-libs/sdif:ftruncate - Enables usage of ftruncate v. truncate

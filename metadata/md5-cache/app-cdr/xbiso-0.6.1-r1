@@ -1,0 +1,12 @@
+DEFINED_PHASES=configure install prepare
+DEPEND=net-libs/ftplib
+DESCRIPTION=Xbox xdvdfs ISO extraction utility
+EAPI=4
+HOMEPAGE=http://sourceforge.net/projects/xbiso/
+KEYWORDS=~amd64 ~x86 ~x86-interix ~amd64-linux ~x86-linux ~ppc-macos ~x86-macos
+LICENSE=GPL-2
+RDEPEND=net-libs/ftplib
+SLOT=0
+SRC_URI=mirror://sourceforge/xbiso/xbiso-0.6.1.tar.gz
+_eclasses_=eutils	ac049c4fa17000293228df51f9460566	flag-o-matic	8ffbf0dc65f73498fcba6d29048fdfff	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	portability	0d9341be2bffb3ace510580f192f231e	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
+_md5_=f087e441f82af3c2f4f3ac1642361737
