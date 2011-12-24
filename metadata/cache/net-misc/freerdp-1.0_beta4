@@ -1,0 +1,22 @@
+dev-libs/openssl sys-libs/zlib alsa? ( media-libs/alsa-lib ) cups? ( net-print/cups ) directfb? ( dev-libs/DirectFB ) ffmpeg? ( virtual/ffmpeg ) pulseaudio? ( media-sound/pulseaudio ) smartcard? ( sys-apps/pcsc-lite ) X? ( x11-libs/libX11 x11-libs/libXcursor x11-libs/libXext x11-libs/libxkbfile xinerama? ( x11-libs/libXinerama ) xv? ( x11-libs/libXv ) ) doc? ( X? ( app-text/docbook-xml-dtd:4.1.2 app-text/xmlto ) ) test? ( dev-util/cunit ) >=dev-util/cmake-2.8.4 userland_GNU? ( >=sys-apps/findutils-4.4.0 )
+dev-libs/openssl sys-libs/zlib alsa? ( media-libs/alsa-lib ) cups? ( net-print/cups ) directfb? ( dev-libs/DirectFB ) ffmpeg? ( virtual/ffmpeg ) pulseaudio? ( media-sound/pulseaudio ) smartcard? ( sys-apps/pcsc-lite ) X? ( x11-libs/libX11 x11-libs/libXcursor x11-libs/libXext x11-libs/libxkbfile xinerama? ( x11-libs/libXinerama ) xv? ( x11-libs/libXv ) )
+0
+https://github.com/downloads/FreeRDP/FreeRDP/FreeRDP-1.0-beta4.tar.gz
+test
+http://www.freerdp.com/
+Apache-2.0
+Client-side implementation of the Remote Desktop Protocol
+~amd64 ~x86
+base cmake-utils eutils flag-o-matic multilib portability toolchain-funcs user
+alsa cups directfb doc ffmpeg pulseaudio smartcard sse2 test X xinerama xv debug-transport debug-chanman debug-svc debug-dvc debug-kbd debug-nla debug-nego debug-certificate debug-license debug-gdi debug-rfx debug-x11 debug-rail debug-xv debug-scard debug-orders debug-redir
+
+
+
+4
+
+compile configure install prepare test unpack
+
+
+
+
+

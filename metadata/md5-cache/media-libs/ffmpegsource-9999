@@ -1,11 +1,11 @@
 DEFINED_PHASES=configure install preinst prepare unpack
-DEPEND=sys-libs/zlib virtual/ffmpeg dev-util/pkgconfig || ( =sys-devel/automake-1.11* ) >=sys-devel/autoconf-2.61 sys-devel/libtool dev-vcs/subversion net-misc/rsync
+DEPEND=sys-libs/zlib >=virtual/ffmpeg-0.9 dev-util/pkgconfig || ( =sys-devel/automake-1.11* ) >=sys-devel/autoconf-2.61 sys-devel/libtool dev-vcs/subversion net-misc/rsync
 DESCRIPTION=An FFmpeg based source library for easy frame accurate access
 EAPI=4
 HOMEPAGE=https://code.google.com/p/ffmpegsource/
 IUSE=postproc static-libs
 LICENSE=MIT
-RDEPEND=sys-libs/zlib virtual/ffmpeg
+RDEPEND=sys-libs/zlib >=virtual/ffmpeg-0.9
 SLOT=0
 _eclasses_=autotools	63332a15502113ca711ccccb3889a109	eutils	ac049c4fa17000293228df51f9460566	libtool	5f623f5a211fb1b2d84d88ee49959a54	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	portability	0d9341be2bffb3ace510580f192f231e	subversion	3a59e3b0a06a1a65e8187ac4530abf25	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
-_md5_=993214f7083355fdcaf1d3544db2aa2a
+_md5_=73a4d18c96c4532c5bd250cf49fe3323

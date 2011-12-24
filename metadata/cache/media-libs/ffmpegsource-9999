@@ -1,5 +1,5 @@
-sys-libs/zlib virtual/ffmpeg dev-util/pkgconfig || ( =sys-devel/automake-1.11* ) >=sys-devel/autoconf-2.61 sys-devel/libtool dev-vcs/subversion net-misc/rsync
-sys-libs/zlib virtual/ffmpeg
+sys-libs/zlib >=virtual/ffmpeg-0.9 dev-util/pkgconfig || ( =sys-devel/automake-1.11* ) >=sys-devel/autoconf-2.61 sys-devel/libtool dev-vcs/subversion net-misc/rsync
+sys-libs/zlib >=virtual/ffmpeg-0.9
 0
 
 

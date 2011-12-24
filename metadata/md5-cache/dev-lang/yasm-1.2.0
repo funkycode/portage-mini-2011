@@ -4,10 +4,10 @@ DESCRIPTION=An assembler for x86 and x86_64 instruction sets
 EAPI=4
 HOMEPAGE=http://www.tortall.net/projects/yasm/
 IUSE=nls python
-KEYWORDS=-* ~amd64 ~x86 ~x86-fbsd ~x86-freebsd ~amd64-linux ~x86-linux ~x64-macos ~x86-macos ~x86-solaris
+KEYWORDS=-* amd64 x86 ~x86-fbsd ~x86-freebsd ~amd64-linux ~x86-linux ~x64-macos ~x86-macos ~x86-solaris
 LICENSE=BSD-2 BSD || ( Artistic GPL-2 LGPL-2 )
 RDEPEND=nls? ( virtual/libintl ) >=app-admin/eselect-python-20091230 python? ( =dev-lang/python-2.7* )
 SLOT=0
 SRC_URI=http://www.tortall.net/projects/yasm/releases/yasm-1.2.0.tar.gz
 _eclasses_=multilib	5f4ad6cf85e365e8f0c6050ddd21659e	python	68cfdfd857b7b9e8f75a3fa84d60be94	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68
-_md5_=83949cf44efab0103b02b7235940d808
+_md5_=72455ff7d152e334e4098f0c0f320ac6
