@@ -1,0 +1,22 @@
+>=net-libs/nodejs-0.6.6 dev-vcs/git
+>=net-libs/nodejs-0.6.6
+0
+
+
+http://npmjs.org/
+MIT
+A package manager for node.js
+
+base eutils git-2 multilib portability toolchain-funcs user
+
+
+
+
+4
+
+compile configure install prepare unpack
+
+
+
+
+

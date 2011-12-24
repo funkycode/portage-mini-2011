@@ -10,4 +10,4 @@ RDEPEND=pam? ( virtual/pam ) ssl? ( dev-libs/openssl ) !<net-mail/uw-imap-2007f
 SLOT=0
 SRC_URI=ftp://ftp.cac.washington.edu/imap/imap-2007f.tar.Z
 _eclasses_=eutils	ac049c4fa17000293228df51f9460566	flag-o-matic	8ffbf0dc65f73498fcba6d29048fdfff	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	portability	0d9341be2bffb3ace510580f192f231e	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
-_md5_=4798aa5dd3faf0f739981a8f1c44f82d
+_md5_=31be4e65e986f657b1d3d9ddc3415deb

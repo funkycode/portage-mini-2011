@@ -1,0 +1,22 @@
+sys-libs/ncurses dev-libs/glib:2 media-libs/hamlib media-sound/sox sys-apps/gawk
+sys-libs/ncurses dev-libs/glib:2 media-libs/hamlib media-sound/sox
+0
+http://www.hs-mittweida.de/tb/tlf-1.1.0.tar.gz
+
+http://home.iae.nl/users/reinc/TLF-0.2.html
+GPL-2
+Console-mode amateur radio contest logger
+~amd64 ~x86
+eutils flag-o-matic multilib portability toolchain-funcs user
+
+
+
+
+4
+
+configure install
+
+
+
+
+
