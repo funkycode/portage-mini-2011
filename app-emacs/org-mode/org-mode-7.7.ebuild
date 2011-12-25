@@ -1,6 +1,6 @@
 # Copyright 1999-2011 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/app-emacs/org-mode/org-mode-7.7.ebuild,v 1.2 2011/10/09 10:26:59 ulm Exp $
+# $Header: /var/cvsroot/gentoo-x86/app-emacs/org-mode/org-mode-7.7.ebuild,v 1.3 2011/12/25 15:41:00 ulm Exp $
 
 EAPI=4
 NEED_EMACS=22
@@ -17,13 +17,10 @@ KEYWORDS="~amd64 ~ppc ~x86 ~sparc-fbsd ~x86-fbsd ~x86-macos"
 IUSE="contrib"
 
 S="${WORKDIR}/org-${PV}"
+# Remove autoload file to make sure that it is regenerated with
+# the right Emacs version.
+ELISP_REMOVE="lisp/org-install.el"
 SITEFILE="50${PN}-gentoo.el"
-
-src_prepare() {
-	# Remove autoload file to make sure that it is regenerated with
-	# the right Emacs version.
-	rm -f lisp/org-install.el
-}
 
 src_compile() {
 	default
