@@ -1,0 +1,13 @@
+DEFINED_PHASES=compile configure install preinst prepare setup
+DEPEND=>=virtual/jdk-1.5 app-arch/unzip >=dev-java/javacup-0.11a_beta20060608:0 >=dev-java/java-config-2.1.9-r1 source? ( app-arch/zip ) >=dev-java/ant-core-1.7.0 >=dev-java/javatoolkit-0.3.0-r2 >=dev-lang/python-2.4
+DESCRIPTION=A Java data mining package
+EAPI=3
+HOMEPAGE=http://www.cs.waikato.ac.nz/ml/weka/
+IUSE=elibc_FreeBSD doc source elibc_FreeBSD
+KEYWORDS=~amd64 ~ppc ~x86
+LICENSE=GPL-2
+RDEPEND=>=virtual/jre-1.5 >=dev-java/javacup-0.11a_beta20060608:0 >=dev-java/java-config-2.1.9-r1 source? ( app-arch/zip )
+SLOT=0
+SRC_URI=mirror://sourceforge/weka/weka-3-6-6.zip
+_eclasses_=eutils	ac049c4fa17000293228df51f9460566	java-ant-2	babe067b6f66840f129ae290d1ccf762	java-pkg-2	5fe9c5085c2a9785371d4fb8f05b46b1	java-utils-2	8386f5293b96245786782d8a7166db9a	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	portability	0d9341be2bffb3ace510580f192f231e	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e	versionator	3a6c6ae0c0f6578737dd398e98311d46
+_md5_=1fe1cd9775ceef63c4d8eb7dd251ba4b
