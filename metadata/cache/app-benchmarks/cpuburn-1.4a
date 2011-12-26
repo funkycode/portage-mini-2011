@@ -6,7 +6,7 @@ http://pages.sbcglobal.net/redelm/cpuburn_1_4a_tar.gz
 http://pages.sbcglobal.net/redelm/
 GPL-2
 designed to heavily load CPU chips [testing purposes]
--* amd64 ~x86
+-* amd64 x86
 eutils flag-o-matic multilib portability toolchain-funcs user
 
 

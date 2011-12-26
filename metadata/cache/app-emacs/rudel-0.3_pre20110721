@@ -1,4 +1,4 @@
-virtual/emacs-cedet >=virtual/emacs-23
+virtual/emacs-cedet app-arch/xz-utils >=virtual/emacs-23
 virtual/emacs-cedet >=virtual/emacs-23
 0
 mirror://gentoo/rudel-0.3_pre20110721.tar.xz

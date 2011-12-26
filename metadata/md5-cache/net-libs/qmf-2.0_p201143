@@ -9,5 +9,5 @@ LICENSE=LGPL-2.1
 RDEPEND=dev-libs/icu sys-libs/zlib >=x11-libs/qt-gui-4.6.0 >=x11-libs/qt-sql-4.6.0 examples? ( >=x11-libs/qt-webkit-4.6.0 )
 SLOT=0
 SRC_URI=http://qt.gitorious.org/qt-labs/messagingframework/archive-tarball/2011W43 -> qmf-2.0_p201143.tar.gz
-_eclasses_=base	809ab15a673823938260f6b17661c3f1	eutils	ac049c4fa17000293228df51f9460566	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	portability	0d9341be2bffb3ace510580f192f231e	qt4-r2	562a0a4214d92cf49cc3e97d1f39d891	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
+_eclasses_=base	809ab15a673823938260f6b17661c3f1	eutils	ac049c4fa17000293228df51f9460566	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	portability	0d9341be2bffb3ace510580f192f231e	qt4-r2	f6c4934b9a1a95fb29e1f3c520fdd00f	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
 _md5_=70236ff464ad4a49f17cb49c2a227593

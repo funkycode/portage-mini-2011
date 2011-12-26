@@ -4,11 +4,11 @@ DESCRIPTION=KOffice word processor
 EAPI=3
 HOMEPAGE=http://www.koffice.org/
 IUSE=wpd aqua kdeenablefinal debug
-KEYWORDS=amd64 ~x86
+KEYWORDS=amd64 x86
 LICENSE=GPL-2
 RDEPEND=dev-libs/glib gnome-extra/libgsf wpd? ( app-text/libwpd ) !app-text/wv2 >=kde-base/oxygen-icons-4.4:4[aqua=] dev-lang/perl >=x11-libs/qt-core-4.7.0:4[qt3support,ssl] >=x11-libs/qt-gui-4.7.0:4[accessibility,dbus] >=x11-libs/qt-qt3support-4.7.0:4[accessibility,kde] >=x11-libs/qt-script-4.7.0:4 >=x11-libs/qt-sql-4.7.0:4[qt3support] >=x11-libs/qt-svg-4.7.0:4 >=x11-libs/qt-test-4.7.0:4 >=x11-libs/qt-webkit-4.7.0:4[kde] !aqua? ( x11-libs/libXext x11-libs/libXt x11-libs/libXxf86vm x11-libs/libXcomposite x11-libs/libxkbfile ) >=kde-base/kdelibs-4.4:4[aqua=] !app-office/kword:0 !app-office/koffice:0 !app-office/koffice-meta:0 media-gfx/imagemagick dev-cpp/eigen:2 media-libs/fontconfig media-libs/freetype:2 >=app-office/koffice-libs-2.3.3:2
 RESTRICT=test
 SLOT=2
 SRC_URI=mirror://kde/stable/koffice-2.3.3/koffice-2.3.3.tar.bz2 http://dev.gentoo.org/~dilfridge/distfiles/kword-2.3.3-libwpg02.patch.bz2
 _eclasses_=base	809ab15a673823938260f6b17661c3f1	cmake-utils	00f9fd5a80cf3605f6d9a2e808c48a92	eutils	ac049c4fa17000293228df51f9460566	fdo-mime	0acfe1a88fd8751a1d5dc671168219fa	flag-o-matic	8ffbf0dc65f73498fcba6d29048fdfff	gnome2-utils	b5ca2ccadb60760889faa3bccba121d9	kde4-base	cb353270e1cb2879ed7efa57e6454a54	kde4-functions	3fc7b5d60204b49948f87741ba8cea55	kde4-meta	7b73d26b8a9cc3ce7d2baf684d8360f4	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	portability	0d9341be2bffb3ace510580f192f231e	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e	versionator	3a6c6ae0c0f6578737dd398e98311d46	virtualx	0c41ff55e46b959d9457dde69e7a09d9
-_md5_=06a45423849f504d011b0dbebae65f0b
+_md5_=f3f9e535af811d20ef5657d7167cfbcb

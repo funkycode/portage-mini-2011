@@ -2,11 +2,11 @@ DEFINED_PHASES=compile install postinst setup
 DEPEND==www-servers/apache-2*
 DESCRIPTION=Allows administrators to limit the number of simultaneous downloads permitted.
 HOMEPAGE=http://dominia.org/djao/limitipconn2.html
-KEYWORDS=amd64 ~ppc ~x86
+KEYWORDS=amd64 ~ppc x86
 LICENSE=as-is
 RDEPEND==www-servers/apache-2*
 RESTRICT=test
 SLOT=2
 SRC_URI=http://dominia.org/djao/limit/mod_limitipconn-0.23.tar.bz2
 _eclasses_=apache-module	5133dc38567f469fa65ebf9b4606f3e8	depend.apache	a471783c63e68987a2b20eb46f9edf68	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68
-_md5_=0c8d303aba694eead72aef619ce8da13
+_md5_=b972d7395669c0cc0dd28908e00d1c59

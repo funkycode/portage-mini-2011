@@ -2,10 +2,10 @@ DEFINED_PHASES=install prepare unpack
 DESCRIPTION=designed to heavily load CPU chips [testing purposes]
 EAPI=2
 HOMEPAGE=http://pages.sbcglobal.net/redelm/
-KEYWORDS=-* amd64 ~x86
+KEYWORDS=-* amd64 x86
 LICENSE=GPL-2
 RDEPEND=amd64? ( >=app-emulation/emul-linux-x86-baselibs-1.0 )
 SLOT=0
 SRC_URI=http://pages.sbcglobal.net/redelm/cpuburn_1_4a_tar.gz
 _eclasses_=eutils	ac049c4fa17000293228df51f9460566	flag-o-matic	8ffbf0dc65f73498fcba6d29048fdfff	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	portability	0d9341be2bffb3ace510580f192f231e	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
-_md5_=861dee78e54d9d6e6221ca3e3a724bd0
+_md5_=0d5252a87e83845020c0766f717b9e7f
