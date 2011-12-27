@@ -1,7 +1,7 @@
 =dev-python/twisted-11.0* dev-python/pyasn1 dev-python/pycrypto >=app-admin/eselect-python-20091230 =dev-lang/python-2*
 =dev-python/twisted-11.0* dev-python/pyasn1 dev-python/pycrypto >=app-admin/eselect-python-20091230 =dev-lang/python-2*
 0
-http://tmrc.mit.edu/mirror/twisted/Conch/11.0/TwistedConch-11.0.0.tar.bz2
+http://twistedmatrix.com/Releases/Conch/11.0/TwistedConch-11.0.0.tar.bz2
 
 http://www.twistedmatrix.com/
 MIT

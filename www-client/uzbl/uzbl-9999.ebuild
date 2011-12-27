@@ -1,6 +1,6 @@
 # Copyright 1999-2011 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/www-client/uzbl/uzbl-9999.ebuild,v 1.23 2011/10/24 06:43:25 tetromino Exp $
+# $Header: /var/cvsroot/gentoo-x86/www-client/uzbl/uzbl-9999.ebuild,v 1.24 2011/12/26 21:58:38 wired Exp $
 
 EAPI="4"
 
@@ -15,7 +15,7 @@ if [[ ${PV} == *9999* ]]; then
 		EGIT_BRANCH="experimental" &&
 		EGIT_COMMIT="experimental"
 else
-	KEYWORDS="~amd64 ~x86"
+	KEYWORDS="~amd64 ~x86 ~amd64-linux ~x86-linux"
 	SRC_URI="http://github.com/Dieterbe/${PN}/tarball/${PV} -> ${P}.tar.gz"
 fi
 
@@ -119,7 +119,7 @@ src_install() {
 	use browser && targets="${targets} install-uzbl-browser"
 	use browser && use tabbed && targets="${targets} install-uzbl-tabbed"
 
-	emake DESTDIR="${D}" PREFIX="/usr" DOCDIR="${D}/usr/share/doc/${PF}" ${targets}
+	emake DESTDIR="${D}" PREFIX="${EPREFIX}/usr" DOCDIR="${ED}/usr/share/doc/${PF}" ${targets}
 
 	if use vim-syntax; then
 		insinto /usr/share/vim/vimfiles/ftdetect

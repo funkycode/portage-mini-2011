@@ -1,7 +1,7 @@
 =dev-python/twisted-11.0* =dev-python/twisted-mail-11.0* >=app-admin/eselect-python-20091230 =dev-lang/python-2*
 =dev-python/twisted-11.0* =dev-python/twisted-mail-11.0* >=app-admin/eselect-python-20091230 =dev-lang/python-2*
 0
-http://tmrc.mit.edu/mirror/twisted/News/11.0/TwistedNews-11.0.0.tar.bz2
+http://twistedmatrix.com/Releases/News/11.0/TwistedNews-11.0.0.tar.bz2
 
 http://www.twistedmatrix.com/
 MIT

@@ -9,4 +9,4 @@ RDEPEND=dev-libs/glib:2 >=dev-libs/icu-4.0.1 >=net-libs/libsoup-2.24:2.4 !gtk3? 
 REQUIRED_USE=tabbed? ( browser )
 SLOT=0
 _eclasses_=git-2	e093fad2de8fa7ca11e7ed938d27ceb1
-_md5_=1014008bd8c6188637c72541eec37d64
+_md5_=c17830835f108a26c5cf7401b922f6aa

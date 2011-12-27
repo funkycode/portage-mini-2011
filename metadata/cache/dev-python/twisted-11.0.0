@@ -1,7 +1,7 @@
 >=net-zope/zope-interface-3.0.1 crypt? ( >=dev-python/pyopenssl-0.5.1 ) gtk? ( >=dev-python/pygtk-1.99 ) serial? ( dev-python/pyserial ) >=app-admin/eselect-python-20091230 =dev-lang/python-2*
 >=net-zope/zope-interface-3.0.1 crypt? ( >=dev-python/pyopenssl-0.5.1 ) gtk? ( >=dev-python/pygtk-1.99 ) serial? ( dev-python/pyserial ) >=app-admin/eselect-python-20091230 =dev-lang/python-2*
 0
-http://tmrc.mit.edu/mirror/twisted/Core/11.0/TwistedCore-11.0.0.tar.bz2
+http://twistedmatrix.com/Releases/Core/11.0/TwistedCore-11.0.0.tar.bz2
 
 http://www.twistedmatrix.com/ http://pypi.python.org/pypi/Twisted
 MIT

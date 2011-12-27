@@ -1,7 +1,7 @@
 =dev-python/twisted-11.0* soap? ( dev-python/soappy ) >=app-admin/eselect-python-20091230 =dev-lang/python-2*
 =dev-python/twisted-11.0* soap? ( dev-python/soappy ) >=app-admin/eselect-python-20091230 =dev-lang/python-2*
 0
-http://tmrc.mit.edu/mirror/twisted/Web/11.0/TwistedWeb-11.0.0.tar.bz2
+http://twistedmatrix.com/Releases/Web/11.0/TwistedWeb-11.0.0.tar.bz2
 
 http://www.twistedmatrix.com/
 MIT

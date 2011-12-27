@@ -1,7 +1,7 @@
 =dev-python/twisted-10* >=app-admin/eselect-python-20091230 =dev-lang/python-2*
 =dev-python/twisted-10* >=app-admin/eselect-python-20091230 =dev-lang/python-2*
 0
-http://tmrc.mit.edu/mirror/twisted/Runner/10.2/TwistedRunner-10.2.0.tar.bz2
+http://twistedmatrix.com/Releases/Runner/10.2/TwistedRunner-10.2.0.tar.bz2
 
 http://www.twistedmatrix.com/
 MIT

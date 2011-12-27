@@ -1,0 +1,22 @@
+|| ( =sys-devel/automake-1.11* ) >=sys-devel/autoconf-2.61 sys-devel/libtool
+
+0
+http://torsocks.googlecode.com/files/torsocks-1.2.tar.gz
+
+http://code.google.com/p/torsocks
+GPL-2
+Use most socks-friendly applications with Tor.
+~amd64 ~x86
+autotools eutils libtool multilib portability toolchain-funcs user
+static-libs
+
+
+
+4
+
+configure install prepare
+
+
+
+
+
