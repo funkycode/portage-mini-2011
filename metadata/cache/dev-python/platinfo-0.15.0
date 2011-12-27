@@ -6,7 +6,7 @@ http://platinfo.googlecode.com/files/platinfo-0.15.0.zip
 http://code.google.com/p/platinfo/
 MIT
 Determines and returns consistent names for platforms
-~amd64
+~amd64 ~x86
 distutils multilib python toolchain-funcs
 
 

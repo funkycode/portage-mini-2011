@@ -1,7 +1,7 @@
 >=virtual/emacs-21
 >=virtual/emacs-21
 0
-mirror://gnu/emacs/emacs-21.4a.tar.gz
+http://ftp.xemacs.org/pub/xemacs/packages/cookie-1.15-pkg.tar.gz mirror://gentoo/yow-1.15-21.4_p20020329.patch.gz
 
 http://www.gnu.org/software/emacs/
 GPL-2

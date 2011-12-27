@@ -1,0 +1,13 @@
+DEFINED_PHASES=configure install prepare test
+DEPEND=>=dev-lang/parrot-3.9.0[unicode] dev-lang/perl
+DESCRIPTION=Not Quite Perl, a Perl 6 bootstrapping compiler
+EAPI=3
+HOMEPAGE=http://rakudo.org/
+IUSE=doc
+KEYWORDS=~amd64 ~x86
+LICENSE=Artistic-2
+RDEPEND=>=dev-lang/parrot-3.9.0[unicode]
+SLOT=0
+SRC_URI=http://github.com/perl6/nqp/tarball/2011.12 -> nqp-2011.12.tar.gz
+_eclasses_=eutils	ac049c4fa17000293228df51f9460566	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	portability	0d9341be2bffb3ace510580f192f231e	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
+_md5_=8eb2cfbad704b3310a5bbb6a2f3d4352

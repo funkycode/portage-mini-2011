@@ -1,5 +1,5 @@
 DEFINED_PHASES=compile configure install postinst postrm prepare
-DEPEND=>=app-admin/eselect-postgresql-1.0.7 virtual/libintl !!dev-db/libpq !!dev-db/postgresql !!dev-db/postgresql-client !!dev-db/postgresql-libs kerberos? ( virtual/krb5 ) ldap? ( net-nds/openldap ) pam? ( virtual/pam ) readline? ( sys-libs/readline ) ssl? ( >=dev-libs/openssl-0.9.6-r1 ) zlib? ( sys-libs/zlib ) sys-devel/bison sys-devel/flex >=sys-apps/sandbox-2.0 nls? ( sys-devel/gettext ) >=sys-devel/autoconf-2.61 sys-devel/libtool
+DEPEND=>=app-admin/eselect-postgresql-1.0.7 virtual/libintl !!dev-db/libpq !!dev-db/postgresql !!dev-db/postgresql-client !!dev-db/postgresql-libs kerberos? ( virtual/krb5 ) ldap? ( net-nds/openldap ) pam? ( virtual/pam ) readline? ( sys-libs/readline ) ssl? ( >=dev-libs/openssl-0.9.6-r1 ) zlib? ( sys-libs/zlib ) sys-devel/bison sys-devel/flex !!<sys-apps/sandbox-2.0 nls? ( sys-devel/gettext ) >=sys-devel/autoconf-2.61 sys-devel/libtool
 DESCRIPTION=PostgreSQL libraries and clients
 EAPI=4
 HOMEPAGE=http://www.postgresql.org/
@@ -12,4 +12,4 @@ RESTRICT=test
 SLOT=9.0
 SRC_URI=mirror://postgresql/source/v9.0.6/postgresql-9.0.6.tar.bz2 http://dev.gentoo.org/~titanofold/postgresql-patches-9.0-r3.tbz2
 _eclasses_=autotools	63332a15502113ca711ccccb3889a109	eutils	ac049c4fa17000293228df51f9460566	flag-o-matic	8ffbf0dc65f73498fcba6d29048fdfff	libtool	5f623f5a211fb1b2d84d88ee49959a54	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	portability	0d9341be2bffb3ace510580f192f231e	prefix	21058c21ca48453d771df15500873ede	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e	versionator	3a6c6ae0c0f6578737dd398e98311d46
-_md5_=3685de4a0ff0d2861c23c591a620e755
+_md5_=5ff7f57ae849cc5d16d16daf9d8853f2

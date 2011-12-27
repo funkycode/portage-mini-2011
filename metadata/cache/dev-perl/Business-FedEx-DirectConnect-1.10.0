@@ -6,7 +6,7 @@ mirror://cpan/authors/id/J/JP/JPOWERS/Business-FedEx-DirectConnect-1.01.tar.gz
 http://search.cpan.org/dist/Business-FedEx-DirectConnect/
 || ( Artistic GPL-1 GPL-2 GPL-3 )
 Interface to FedEx Ship Manager Direct
-~amd64 ~ia64 ~x86
+amd64 ia64 x86
 base eutils multilib perl-module portability toolchain-funcs user
 
 

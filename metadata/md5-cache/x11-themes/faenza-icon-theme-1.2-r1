@@ -1,0 +1,14 @@
+DEFINED_PHASES=install postinst postrm preinst prepare
+DEPEND=>=sys-apps/sed-4
+DESCRIPTION=A scalable icon theme called Faenza
+EAPI=4
+HOMEPAGE=http://code.google.com/p/faenza-icon-theme/
+IUSE=minimal
+KEYWORDS=~amd64 ~x86
+LICENSE=GPL-3
+RDEPEND=!minimal? ( x11-themes/gnome-icon-theme ) x11-themes/hicolor-icon-theme
+RESTRICT=binchecks strip
+SLOT=0
+SRC_URI=http://ppa.launchpad.net/tiheum/equinox/ubuntu/pool/main/f/faenza-icon-theme/faenza-icon-theme_1.2.tar.gz
+_eclasses_=gnome2-utils	b5ca2ccadb60760889faa3bccba121d9
+_md5_=e9f7981f610fd8f2644252e7298c7690
