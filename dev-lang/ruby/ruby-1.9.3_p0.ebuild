@@ -1,6 +1,6 @@
 # Copyright 1999-2011 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/dev-lang/ruby/ruby-1.9.3_p0.ebuild,v 1.1 2011/12/18 18:09:12 graaff Exp $
+# $Header: /var/cvsroot/gentoo-x86/dev-lang/ruby/ruby-1.9.3_p0.ebuild,v 1.3 2011/12/28 15:55:31 graaff Exp $
 
 EAPI=2
 
@@ -34,7 +34,7 @@ SRC_URI="mirror://ruby/1.9/${MY_P}.tar.bz2
 		 http://dev.gentoo.org/~flameeyes/ruby-team/${PN}-patches-${PATCHSET}.tar.bz2"
 
 LICENSE="|| ( Ruby BSD-2 )"
-KEYWORDS="~alpha ~amd64 ~arm ~hppa ~ia64 ~mips ~ppc ~ppc64 ~s390 ~sh ~sparc ~x86"
+KEYWORDS="~amd64 ~ia64 ~mips ~ppc ~ppc64 ~s390 ~sh ~sparc ~x86"
 IUSE="berkdb debug doc examples gdbm ipv6 +rdoc rubytests socks5 ssl tk xemacs ncurses +readline +yaml" #libedit
 
 # libedit support is removed everywhere because of this upstream bug:
@@ -52,10 +52,8 @@ RDEPEND="
 	virtual/libffi
 	sys-libs/zlib
 	>=app-admin/eselect-ruby-20100402
-	!=dev-lang/ruby-cvs-${SLOT}*
-	!<dev-ruby/rdoc-2
-	!<dev-ruby/rubygems-1.3.7-r4
-	!dev-ruby/rexml"
+	!<dev-ruby/rdoc-3.9.4
+	!<dev-ruby/rubygems-1.8.10-r1"
 #	libedit? ( dev-libs/libedit )
 #	!libedit? ( readline? ( sys-libs/readline ) )
 

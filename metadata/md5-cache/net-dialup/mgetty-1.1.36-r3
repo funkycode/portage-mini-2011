@@ -9,5 +9,5 @@ LICENSE=GPL-2
 RDEPEND=doc? ( virtual/latex-base virtual/texi2dvi ) >=sys-apps/sed-4 sys-apps/gawk sys-apps/groff dev-lang/perl sys-apps/texinfo fax? ( !net-misc/hylafax ) fax? ( media-libs/netpbm app-text/ghostscript-gpl )
 SLOT=0
 SRC_URI=ftp://mgetty.greenie.net/pub/mgetty/source/1.1/mgetty1.1.36-Jun15.tar.gz
-_eclasses_=eutils	ac049c4fa17000293228df51f9460566	flag-o-matic	f2418abc9d462f330b40beff7657bbbf	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	portability	5c04908f6c6df62582d9011a01c03b88	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
+_eclasses_=eutils	ac049c4fa17000293228df51f9460566	flag-o-matic	9bfd4a1550735a7fc561ff5bae86e4c9	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	portability	5c04908f6c6df62582d9011a01c03b88	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
 _md5_=9f327525720ecc850c94fe498400b80b

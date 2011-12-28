@@ -1,10 +1,10 @@
 # Copyright 1999-2011 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/dev-ruby/mechanize/mechanize-1.0.0.ebuild,v 1.5 2011/12/26 14:32:09 graaff Exp $
+# $Header: /var/cvsroot/gentoo-x86/dev-ruby/mechanize/mechanize-1.0.0.ebuild,v 1.6 2011/12/28 08:35:42 graaff Exp $
 
 EAPI=2
 
-USE_RUBY="ruby18 ruby19 jruby"
+USE_RUBY="ruby18 jruby"
 
 RUBY_FAKEGEM_TASK_DOC="redocs"
 RUBY_FAKEGEM_DOCDIR="doc"

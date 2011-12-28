@@ -1,9 +1,9 @@
 # Copyright 1999-2011 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/dev-ruby/tzinfo/tzinfo-0.3.31.ebuild,v 1.5 2011/12/18 15:52:49 armin76 Exp $
+# $Header: /var/cvsroot/gentoo-x86/dev-ruby/tzinfo/tzinfo-0.3.31.ebuild,v 1.6 2011/12/28 08:14:14 graaff Exp $
 
 EAPI=2
-USE_RUBY="ruby18 ree18 ruby19 jruby"
+USE_RUBY="ruby18 ree18 jruby"
 
 # No longer compatible with rake 0.9 starting with 0.3.31.
 RUBY_FAKEGEM_TASK_DOC=""

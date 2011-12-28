@@ -492,6 +492,7 @@ app-forensics/chkrootkit:cron - Install cron script for weekly rootkit scans
 app-forensics/libewf:ewf2 - Enables the v2 API
 app-forensics/libewf:rawio - Enables raw IO handling
 app-forensics/openscap:nss - Prefer NSS over libgcrypt as the crypto engine
+app-forensics/openscap:rpm - Compiles the RPM probes
 app-forensics/openscap:sql - Build the sql independant probes
 app-forensics/ovaldi:rpm - Enable the RPM probes
 app-forensics/rdd:rawio - Enables raw IO handling
@@ -1074,6 +1075,7 @@ dev-java/jython:servletapi - Add optional support for servlet-api
 dev-java/log4j:javamail - Build the SMTPAppender
 dev-java/log4j:jms - Build the JMSAppender
 dev-java/log4j:jmx - Build org.apace.log4j.jmx
+dev-java/miglayout:swt - Add support for the SWT toolkit.
 dev-java/netbeans-nb:keychain - Automatically starts keychain on netbeans start and loads specified keys so Netbeans can use them.
 dev-java/oracle-jdk-bin:derby - Enable Installation of Bundled Derby (Java DB)
 dev-java/oracle-jdk-bin:jce - Enable Java Cryptographic Extension Unlimited Strength Policy files
@@ -4656,8 +4658,6 @@ sys-cluster/gearmand:tokyocabinet - Support dev-db/tokyocabinet for the queue st
 sys-cluster/glusterfs:extras - Install extra helper scripts
 sys-cluster/glusterfs:fuse - Add FUSE mount helper
 sys-cluster/glusterfs:infiniband - Add support for Infiniband ibverbs transport. Libraries can be found in science overlay
-sys-cluster/heartbeat:ldirectord - Adds support for ldiretord, use enabled because it has a lot of deps
-sys-cluster/heartbeat:management - Adds support for management GUI
 sys-cluster/lam-mpi:pbs - Add support for the Portable Batch System (PBS)
 sys-cluster/lam-mpi:romio - Enable romio, a high-performance portable MPI-IO implementation
 sys-cluster/lam-mpi:xmpi - Build support for the external XMPI debugging GUI
