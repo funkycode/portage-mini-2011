@@ -9,5 +9,5 @@ LICENSE=GPL-3
 RDEPEND=>=x11-libs/gtk+-2.6:2 pda? ( >=app-pda/jpilot-0.99 ) ssl? ( >=net-libs/gnutls-2.0.3 ) ldap? ( >=net-nds/openldap-2.0.7 ) crypt? ( >=app-crypt/gpgme-0.4.5 ) dbus? ( >=dev-libs/dbus-glib-0.60 ) dillo? ( www-client/dillo ) spell? ( >=app-text/enchant-1.0.0 ) imap? ( >=net-libs/libetpan-0.57 ) nntp? ( >=net-libs/libetpan-0.57 ) gnutls? ( >=net-libs/gnutls-2.0.3 ) startup-notification? ( x11-libs/startup-notification ) bogofilter? ( mail-filter/bogofilter ) session? ( x11-libs/libSM x11-libs/libICE ) smime? ( >=app-crypt/gpgme-0.4.5 ) app-misc/mime-types x11-misc/shared-mime-info
 SLOT=0
 SRC_URI=mirror://sourceforge/sylpheed-claws/claws-mail-3.7.9.tar.bz2
-_eclasses_=eutils	ac049c4fa17000293228df51f9460566	gnome2-utils	b5ca2ccadb60760889faa3bccba121d9	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	portability	0d9341be2bffb3ace510580f192f231e	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
+_eclasses_=eutils	ac049c4fa17000293228df51f9460566	gnome2-utils	b5ca2ccadb60760889faa3bccba121d9	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	portability	5c04908f6c6df62582d9011a01c03b88	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
 _md5_=1bfc5e44e022b9fb5034a97466afa99f

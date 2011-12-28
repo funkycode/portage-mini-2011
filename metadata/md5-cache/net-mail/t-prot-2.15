@@ -7,5 +7,5 @@ LICENSE=as-is
 RDEPEND=dev-lang/perl dev-perl/Locale-gettext dev-perl/Getopt-Mixed
 SLOT=0
 SRC_URI=http://www.escape.de/~tolot/mutt/t-prot/downloads/t-prot-2.15.tar.gz
-_eclasses_=eutils	ac049c4fa17000293228df51f9460566	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	portability	0d9341be2bffb3ace510580f192f231e	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
+_eclasses_=eutils	ac049c4fa17000293228df51f9460566	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	portability	5c04908f6c6df62582d9011a01c03b88	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
 _md5_=b480063a343c5dc5f1a73f7af812f096

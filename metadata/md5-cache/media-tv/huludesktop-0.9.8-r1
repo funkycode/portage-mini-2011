@@ -9,5 +9,5 @@ RDEPEND=sys-libs/glibc www-plugins/adobe-flash !amd64? ( sys-libs/zlib x11-libs/
 RESTRICT=mirror strip
 SLOT=0
 SRC_URI=amd64? ( http://download.hulu.com/huludesktop_amd64.deb -> huludesktop-0.9.8_amd64.deb ) x86? ( http://download.hulu.com/huludesktop_i386.deb -> huludesktop-0.9.8_i386.deb )
-_eclasses_=eutils	ac049c4fa17000293228df51f9460566	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	portability	0d9341be2bffb3ace510580f192f231e	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
+_eclasses_=eutils	ac049c4fa17000293228df51f9460566	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	portability	5c04908f6c6df62582d9011a01c03b88	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
 _md5_=504609d7c0d9b704b6eaf1a2e17b8a56

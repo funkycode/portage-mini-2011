@@ -7,5 +7,5 @@ IUSE=debug static-libs test
 LICENSE=MIT
 SLOT=0
 SRC_URI=ftp://sourceware.org/pub/libffi/libffi-3.0.11-rc1.tar.gz
-_eclasses_=eutils	ac049c4fa17000293228df51f9460566	libtool	5f623f5a211fb1b2d84d88ee49959a54	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	portability	0d9341be2bffb3ace510580f192f231e	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
+_eclasses_=eutils	ac049c4fa17000293228df51f9460566	libtool	5f623f5a211fb1b2d84d88ee49959a54	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	portability	5c04908f6c6df62582d9011a01c03b88	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
 _md5_=4bf10e730477bfbfd7d40cec7dee22b0

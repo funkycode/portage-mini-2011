@@ -9,5 +9,5 @@ LICENSE=GPL-2
 RDEPEND=>=x11-libs/gtk+-2.10.0:2 >=gnome-base/libglade-2.6.0:2.0 >=app-emulation/libvirt-0.6.0 >=net-libs/gtk-vnc-0.3.8 >=dev-libs/libxml2-2.6.0:2 nsplugin? ( >=dev-libs/nspr-4.0.0 >=net-libs/xulrunner-1.9.1:1.9 )
 SLOT=0
 SRC_URI=http://virt-manager.org/download/sources/virt-viewer/virt-viewer-0.2.0.tar.gz
-_eclasses_=eutils	ac049c4fa17000293228df51f9460566	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	portability	0d9341be2bffb3ace510580f192f231e	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
+_eclasses_=eutils	ac049c4fa17000293228df51f9460566	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	portability	5c04908f6c6df62582d9011a01c03b88	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
 _md5_=00666111a9436bbf1c4eaed07957962e

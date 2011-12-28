@@ -1,0 +1,22 @@
+>=app-admin/eselect-python-20091230 || ( =dev-lang/python-3* =dev-lang/python-2.7* =dev-lang/python-2.6* =dev-lang/python-2.5* ) test? ( dev-python/nose )
+>=app-admin/eselect-python-20091230 || ( =dev-lang/python-3* =dev-lang/python-2.7* =dev-lang/python-2.6* =dev-lang/python-2.5* )
+0
+mirror://pypi/m/msgpack-python/msgpack-python-0.1.12.tar.gz
+
+http://msgpack.org http://pypi.python.org/pypi/msgpack-python/
+Apache-2.0
+MessagePack (de)serializer for Python
+~amd64 ~x86
+distutils multilib python toolchain-funcs
+test test
+
+
+
+3
+
+compile install postinst postrm prepare test
+
+
+
+
+

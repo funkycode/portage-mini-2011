@@ -1,5 +1,5 @@
-emacs? ( virtual/emacs ) >=app-admin/eselect-python-20091230 || ( =dev-lang/python-2.7* =dev-lang/python-2.6* =dev-lang/python-2.5* =dev-lang/python-2.4* )
-emacs? ( virtual/emacs ) >=app-admin/eselect-python-20091230 || ( =dev-lang/python-2.7* =dev-lang/python-2.6* =dev-lang/python-2.5* =dev-lang/python-2.4* )
+emacs? ( virtual/emacs ) >=app-admin/eselect-python-20091230 =dev-lang/python-2*
+emacs? ( virtual/emacs ) >=app-admin/eselect-python-20091230 =dev-lang/python-2*
 0
 mirror://sourceforge/bashdb/pydb-1.26.tar.bz2
 
@@ -14,7 +14,7 @@ emacs
 
 4
 
-compile configure install prepare setup test
+compile configure install postinst postrm prepare setup test
 
 
 

@@ -9,5 +9,5 @@ LICENSE=GPL-2
 RDEPEND=>=dev-texlive/texlive-basic-2010 >=app-text/texlive-core-2010
 SLOT=0
 SRC_URI=mirror://gentoo/texlive-module-hyphen-latvian-2010.tar.xz mirror://gentoo/texlive-module-collection-langlatvian-2010.tar.xz
-_eclasses_=base	809ab15a673823938260f6b17661c3f1	eutils	ac049c4fa17000293228df51f9460566	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	portability	0d9341be2bffb3ace510580f192f231e	texlive-common	dbfff854bb5a0c2569428127d2266dcb	texlive-module	e47d269864ae853a74eff0e428331a85	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
+_eclasses_=base	809ab15a673823938260f6b17661c3f1	eutils	ac049c4fa17000293228df51f9460566	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	portability	5c04908f6c6df62582d9011a01c03b88	texlive-common	dbfff854bb5a0c2569428127d2266dcb	texlive-module	e47d269864ae853a74eff0e428331a85	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
 _md5_=3cad12ea3331f045094f342788f92685

@@ -7,5 +7,5 @@ KEYWORDS=amd64 ~arm ~ppc ~ppc64 x86 ~x86-fbsd ~amd64-linux ~x86-linux
 LICENSE=|| ( BSD CCPL-Attribution-ShareAlike-3.0 )
 SLOT=0
 SRC_URI=mirror://sourceforge/oscaf/shared-desktop-ontologies/shared-desktop-ontologies-0.7.0.tar.bz2
-_eclasses_=base	809ab15a673823938260f6b17661c3f1	cmake-utils	00f9fd5a80cf3605f6d9a2e808c48a92	eutils	ac049c4fa17000293228df51f9460566	flag-o-matic	8ffbf0dc65f73498fcba6d29048fdfff	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	portability	0d9341be2bffb3ace510580f192f231e	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
+_eclasses_=base	809ab15a673823938260f6b17661c3f1	cmake-utils	00f9fd5a80cf3605f6d9a2e808c48a92	eutils	ac049c4fa17000293228df51f9460566	flag-o-matic	f2418abc9d462f330b40beff7657bbbf	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	portability	5c04908f6c6df62582d9011a01c03b88	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
 _md5_=752a2aeba4d98d3e3b0250835c193142

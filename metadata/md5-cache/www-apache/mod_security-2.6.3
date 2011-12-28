@@ -1,0 +1,15 @@
+DEFINED_PHASES=compile configure install postinst prepare setup test
+DEPEND=>=dev-libs/libxml2-2.7.8 dev-libs/libpcre lua? ( >=dev-lang/lua-5.1 ) curl? ( >=net-misc/curl-7.15.1 ) www-servers/apache[apache2_modules_unique_id] =www-servers/apache-2* || ( =sys-devel/automake-1.11* ) >=sys-devel/autoconf-2.61 sys-devel/libtool
+DESCRIPTION=Web application firewall and Intrusion Detection System for Apache.
+EAPI=4
+HOMEPAGE=http://www.modsecurity.org/
+IUSE=geoip curl lua
+KEYWORDS=~amd64 ~ppc ~sparc ~x86
+LICENSE=Apache-2.0
+PDEPEND=www-apache/modsecurity-crs
+RDEPEND=>=dev-libs/libxml2-2.7.8 dev-libs/libpcre lua? ( >=dev-lang/lua-5.1 ) curl? ( >=net-misc/curl-7.15.1 ) www-servers/apache[apache2_modules_unique_id] geoip? ( dev-libs/geoip ) =www-servers/apache-2*
+RESTRICT=test
+SLOT=0
+SRC_URI=mirror://sourceforge/project/mod-security/modsecurity-apache/2.6.3/modsecurity-apache_2.6.3.tar.gz
+_eclasses_=apache-module	1f60370f9dceba046ec036cd6bbb0c8b	autotools	63332a15502113ca711ccccb3889a109	depend.apache	a471783c63e68987a2b20eb46f9edf68	eutils	ac049c4fa17000293228df51f9460566	libtool	5f623f5a211fb1b2d84d88ee49959a54	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	portability	5c04908f6c6df62582d9011a01c03b88	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
+_md5_=76e5e0a7f3481da2f4e05c0d11b22309

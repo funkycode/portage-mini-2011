@@ -6,5 +6,5 @@ HOMEPAGE=http://pwmt.org/projects/jumanji
 LICENSE=ZLIB
 RDEPEND=>=dev-libs/glib-2.22.4:2 >=dev-libs/libunique-1.1.6:1 >=net-libs/libsoup-2.30.2:2.4 >=net-libs/webkit-gtk-1.2.1:2 >=x11-libs/gtk+-2.18.6:2
 SLOT=0
-_eclasses_=eutils	ac049c4fa17000293228df51f9460566	flag-o-matic	8ffbf0dc65f73498fcba6d29048fdfff	git-2	e093fad2de8fa7ca11e7ed938d27ceb1	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	portability	0d9341be2bffb3ace510580f192f231e	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
+_eclasses_=eutils	ac049c4fa17000293228df51f9460566	flag-o-matic	f2418abc9d462f330b40beff7657bbbf	git-2	e093fad2de8fa7ca11e7ed938d27ceb1	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	portability	5c04908f6c6df62582d9011a01c03b88	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
 _md5_=9ccdac5eddd10d57006ba934fc9c3539

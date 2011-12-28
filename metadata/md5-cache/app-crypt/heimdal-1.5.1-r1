@@ -1,0 +1,13 @@
+DEFINED_PHASES=compile configure install postinst preinst prepare setup
+DEPEND=ssl? ( dev-libs/openssl ) berkdb? ( sys-libs/db ) !berkdb? ( sys-libs/gdbm ) caps? ( sys-libs/libcap-ng ) >=dev-db/sqlite-3.5.7 >=sys-libs/e2fsprogs-libs-1.41.11 afs? ( net-fs/openafs ) hdb-ldap? ( >=net-nds/openldap-2.3.0 ) !!app-crypt/mit-krb5 =dev-lang/python-2* dev-util/pkgconfig >=sys-devel/autoconf-2.62 test? ( X? ( !prefix? ( x11-base/xorg-server[xvfb] ) x11-apps/xhost ) ) || ( =sys-devel/automake-1.11* ) >=sys-devel/autoconf-2.61 sys-devel/libtool >=app-admin/eselect-python-20091230
+DESCRIPTION=Kerberos 5 implementation from KTH
+EAPI=2
+HOMEPAGE=http://www.h5l.org/
+IUSE=afs +berkdb caps hdb-ldap ipv6 otp +pkinit ssl static-libs threads test X
+KEYWORDS=~alpha ~amd64 ~arm ~hppa ~ia64 ~mips ~ppc ~ppc64 ~s390 ~sh ~sparc ~x86
+LICENSE=BSD
+RDEPEND=ssl? ( dev-libs/openssl ) berkdb? ( sys-libs/db ) !berkdb? ( sys-libs/gdbm ) caps? ( sys-libs/libcap-ng ) >=dev-db/sqlite-3.5.7 >=sys-libs/e2fsprogs-libs-1.41.11 afs? ( net-fs/openafs ) hdb-ldap? ( >=net-nds/openldap-2.3.0 ) !!app-crypt/mit-krb5 >=app-admin/eselect-python-20091230
+SLOT=0
+SRC_URI=http://www.h5l.org/dist/src/heimdal-1.5.1.tar.gz
+_eclasses_=autotools	63332a15502113ca711ccccb3889a109	db-use	2f5d6a2718559b90a51648d8ff58be83	eutils	ac049c4fa17000293228df51f9460566	flag-o-matic	f2418abc9d462f330b40beff7657bbbf	libtool	5f623f5a211fb1b2d84d88ee49959a54	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	portability	5c04908f6c6df62582d9011a01c03b88	python	68cfdfd857b7b9e8f75a3fa84d60be94	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e	versionator	6601b4c5b3f019a993db59a50e1854e4	virtualx	0c41ff55e46b959d9457dde69e7a09d9
+_md5_=16eb52f5fb1237336a1c478f7f332e7c

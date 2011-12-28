@@ -11,5 +11,5 @@ RDEPEND=!build? ( >=sys-libs/ncurses-5.2 sys-devel/make )
 RESTRICT=binchecks strip
 SLOT=3.0.13
 SRC_URI=mirror://kernel/linux/kernel/v3.x/linux-3.0.tar.bz2 deblob? ( http://www.fsfla.org/svnwiki/selibre/linux-libre//download/releases/LATEST-3.0.N/deblob-3.0 http://www.fsfla.org/svnwiki/selibre/linux-libre//download/releases/LATEST-3.0.N/deblob-check -> deblob-check-3.0 ) mirror://gentoo/genpatches-3.0-13.base.tar.bz2 mirror://gentoo/genpatches-3.0-13.extras.tar.bz2
-_eclasses_=eutils	ac049c4fa17000293228df51f9460566	kernel-2	f6bc76f6aacd763879420dba9fa0168e	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	portability	0d9341be2bffb3ace510580f192f231e	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e	versionator	3a6c6ae0c0f6578737dd398e98311d46
+_eclasses_=eutils	ac049c4fa17000293228df51f9460566	kernel-2	f6bc76f6aacd763879420dba9fa0168e	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	portability	5c04908f6c6df62582d9011a01c03b88	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e	versionator	6601b4c5b3f019a993db59a50e1854e4
 _md5_=0485b7dfb00023b655bc01f6ca8a017d

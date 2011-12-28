@@ -8,5 +8,5 @@ LICENSE=GPL-2
 RDEPEND=app-misc/lcdproc net-misc/curl dev-libs/glib imap? ( net-libs/libetpan ) mpd? ( >=media-libs/libmpd-0.12.0 ) mp3? ( media-libs/taglib ) xml? ( net-libs/libnxml ) rss? ( net-libs/libmrss net-libs/libnxml )
 SLOT=0
 SRC_URI=mirror://berlios/lcd-stuff/lcd-stuff-0.1.2.tar.bz2
-_eclasses_=eutils	ac049c4fa17000293228df51f9460566	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	portability	0d9341be2bffb3ace510580f192f231e	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
+_eclasses_=eutils	ac049c4fa17000293228df51f9460566	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	portability	5c04908f6c6df62582d9011a01c03b88	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
 _md5_=1511b862dd55c0c65e6941641d15c5c5

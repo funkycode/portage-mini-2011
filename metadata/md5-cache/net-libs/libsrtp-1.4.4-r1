@@ -7,5 +7,5 @@ KEYWORDS=alpha amd64 ~hppa ia64 ppc ~ppc64 -sparc x86 ~x86-fbsd ~ppc-macos ~x64-
 LICENSE=BSD
 SLOT=0
 SRC_URI=mirror://sourceforge/srtp/srtp-1.4.4.tgz
-_eclasses_=eutils	ac049c4fa17000293228df51f9460566	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	portability	0d9341be2bffb3ace510580f192f231e	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
+_eclasses_=eutils	ac049c4fa17000293228df51f9460566	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	portability	5c04908f6c6df62582d9011a01c03b88	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
 _md5_=f645f3d23b5da24e1996c23d60351b94

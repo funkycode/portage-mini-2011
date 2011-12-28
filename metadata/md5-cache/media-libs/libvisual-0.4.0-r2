@@ -9,5 +9,5 @@ LICENSE=LGPL-2.1
 RDEPEND=threads? ( dev-libs/glib:2 )
 SLOT=0.4
 SRC_URI=mirror://sourceforge/libvisual/libvisual-0.4.0.tar.gz
-_eclasses_=eutils	ac049c4fa17000293228df51f9460566	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	portability	0d9341be2bffb3ace510580f192f231e	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
+_eclasses_=eutils	ac049c4fa17000293228df51f9460566	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	portability	5c04908f6c6df62582d9011a01c03b88	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
 _md5_=c1d42935cafaced7e8fd91c34abef94a

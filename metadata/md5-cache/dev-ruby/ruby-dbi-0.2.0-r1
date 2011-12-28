@@ -9,5 +9,5 @@ LICENSE=BSD
 RDEPEND=mysql? ( dev-ruby/mysql-ruby ) postgres? ( dev-ruby/ruby-postgres ) firebird? ( >=dev-db/firebird-1.0-r1 ) odbc? ( dev-ruby/ruby-odbc ) oracle? ( dev-ruby/ruby-oci8 ) sqlite? ( dev-db/sqlite:0 ) sqlite3? ( dev-db/sqlite:3 ) =dev-lang/ruby-1.8*
 SLOT=0
 SRC_URI=http://rubyforge.org/frs/download.php/33959/dbi-0.2.0.tar.gz
-_eclasses_=eutils	ac049c4fa17000293228df51f9460566	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	portability	0d9341be2bffb3ace510580f192f231e	ruby	d0d4dafe867eb79ce8953e27d88fc00f	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
+_eclasses_=eutils	ac049c4fa17000293228df51f9460566	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	portability	5c04908f6c6df62582d9011a01c03b88	ruby	d0d4dafe867eb79ce8953e27d88fc00f	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
 _md5_=9a97489510bbca8bf0c49d5b47f10718

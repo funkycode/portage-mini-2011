@@ -1,6 +1,6 @@
 # Copyright 1999-2011 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/net-p2p/ncdc/ncdc-9999.ebuild,v 1.1 2011/10/03 16:38:37 xmw Exp $
+# $Header: /var/cvsroot/gentoo-x86/net-p2p/ncdc/ncdc-9999.ebuild,v 1.2 2011/12/27 21:07:12 xmw Exp $
 
 EAPI=3
 
@@ -18,6 +18,7 @@ KEYWORDS=""
 IUSE=""
 
 RDEPEND="app-arch/bzip2
+	dev-db/sqlite:3
 	dev-libs/glib:2
 	dev-libs/libxml2:2
 	sys-libs/gdbm

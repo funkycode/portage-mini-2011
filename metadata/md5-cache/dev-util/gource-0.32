@@ -8,5 +8,5 @@ LICENSE=GPL-3
 RDEPEND=>=media-libs/libsdl-1.2.10[opengl,X] >=media-libs/sdl-image-1.2[jpeg,png] dev-libs/libpcre:3 >=media-libs/ftgl-2.1.3_rc5 >=media-libs/libpng-1.2 virtual/jpeg media-libs/mesa media-fonts/freefont-ttf >=media-libs/glew-1.5 dev-libs/tinyxml[-stl]
 SLOT=0
 SRC_URI=http://gource.googlecode.com/files/gource-0.32.tar.gz
-_eclasses_=eutils	ac049c4fa17000293228df51f9460566	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	portability	0d9341be2bffb3ace510580f192f231e	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e	versionator	3a6c6ae0c0f6578737dd398e98311d46
+_eclasses_=eutils	ac049c4fa17000293228df51f9460566	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	portability	5c04908f6c6df62582d9011a01c03b88	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e	versionator	6601b4c5b3f019a993db59a50e1854e4
 _md5_=b30837ab39915256815700fe0d00344f
