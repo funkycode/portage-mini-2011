@@ -275,7 +275,7 @@ app-doc/tldp-howto:html - Install the docs in multipage HTML format (default)
 app-doc/tldp-howto:htmlsingle - Install the docs in single page HTML format
 app-doc/tldp-howto:pdf - Install the docs in pdf format
 app-doc/tldp-howto:text - Install the docs in plain text format
-app-editors/bluefish:gucharmap - Enable gucharmap dictionary plugin
+app-editors/bluefish:gtk3 - Enable gtk3 frontend instead of gtk2 one
 app-editors/cssed:plugins - Install plugin development files
 app-editors/emacs:athena - Enable the MIT Athena widget set (x11-libs/libXaw)
 app-editors/emacs:gconf - Use gnome-base/gconf to read the system font name
@@ -2302,7 +2302,7 @@ media-gfx/k3d:cuda - Use nvidia cuda toolkit for speeding up computations
 media-gfx/k3d:gts - Add Support for the GNU Triangulated Surface Library sci-libs/gts
 media-gfx/kphotoalbum:geolocation - Add support for kde-base/marble
 media-gfx/kphotoalbum:kipi - Support for the KDE Image Plugin Interface
-media-gfx/mcomix:rar - Enable support for rar (.cbr) archives
+media-gfx/mcomix:rar - Enable support for .cbr archives using rar/unrar.
 media-gfx/nip2:goffice - use x11-libs/goffice to show plots
 media-gfx/openclipart:gzip - Compresses clip art using gzip
 media-gfx/potrace:metric - default to a4 paper size and metric measurement

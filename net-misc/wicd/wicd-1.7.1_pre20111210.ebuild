@@ -1,6 +1,6 @@
 # Copyright 1999-2011 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/net-misc/wicd/wicd-1.7.1_pre20111210.ebuild,v 1.3 2011/12/11 10:21:18 tomka Exp $
+# $Header: /var/cvsroot/gentoo-x86/net-misc/wicd/wicd-1.7.1_pre20111210.ebuild,v 1.4 2011/12/30 09:42:08 tomka Exp $
 
 EAPI=3
 
@@ -17,7 +17,7 @@ S="${WORKDIR}/${MY_PV}"
 
 DESCRIPTION="A lightweight wired and wireless network manager for Linux"
 HOMEPAGE="http://wicd.sourceforge.net/"
-SRC_URI="http://dev.gentoo.org/~tomka/files/${PF}.tar.gz"
+SRC_URI="http://dev.gentoo.org/~tomka/files/${P}.tar.gz"
 
 LICENSE="GPL-2"
 SLOT="0"

@@ -1,0 +1,13 @@
+DEFINED_PHASES=configure install postinst prepare setup
+DEPEND=dev-libs/openssl >=dev-libs/libevent-2.0.14 nat-pmp? ( net-libs/libnatpmp ) upnp? ( net-libs/miniupnpc )
+DESCRIPTION=Anonymizing overlay network for TCP
+EAPI=4
+HOMEPAGE=http://www.torproject.org/
+IUSE=+bufferevents doc nat-pmp tor-hardening transparent-proxy threads upnp
+KEYWORDS=~amd64 ~arm ~ppc ~ppc64 ~sparc ~x86 ~x86-fbsd
+LICENSE=BSD
+RDEPEND=dev-libs/openssl >=dev-libs/libevent-2.0.14 nat-pmp? ( net-libs/libnatpmp ) upnp? ( net-libs/miniupnpc )
+SLOT=0
+SRC_URI=http://www.torproject.org/dist/tor-0.2.3.10-alpha.tar.gz
+_eclasses_=eutils	ac049c4fa17000293228df51f9460566	flag-o-matic	9bfd4a1550735a7fc561ff5bae86e4c9	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	portability	5c04908f6c6df62582d9011a01c03b88	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e	versionator	6601b4c5b3f019a993db59a50e1854e4
+_md5_=cb50323e833c7f28faf768d73ac008e9
