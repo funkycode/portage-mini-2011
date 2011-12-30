@@ -3,7 +3,7 @@ dev-lang/php >=dev-php/pear-1.9.0
 0
 http://pear.phpunit.de/get/PHP_Timer-1.0.0.tgz
 
-http://paer.phpunit.de/
+http://pear.phpunit.de/
 BSD
 Utility class for timing
 amd64 x86

@@ -1,0 +1,11 @@
+DEFINED_PHASES=configure install postinst prepare
+DEPEND=dev-lang/perl
+DESCRIPTION=A shell tool for executing jobs in parallel locally or on remote machines
+EAPI=3
+HOMEPAGE=http://www.gnu.org/software/parallel/
+KEYWORDS=~amd64 ~x86 ~amd64-linux ~x86-linux
+LICENSE=GPL-3
+RDEPEND=dev-lang/perl
+SLOT=0
+SRC_URI=mirror://gnu/parallel/parallel-20111222.tar.bz2
+_md5_=e820255ce4795f97aa8b303f4b6a6a20

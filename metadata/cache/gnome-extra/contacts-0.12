@@ -6,13 +6,13 @@ mirror://gnome/sources/contacts/0.12/contacts-0.12.tar.bz2
 http://pimlico-project.org/contacts.html
 GPL-2
 A small, lightweight addressbook for GNOME
-~amd64 ~ppc ~x86
+amd64 ~ppc ~x86
 autotools eutils fdo-mime gnome.org gnome2 gnome2-utils libtool multilib portability toolchain-funcs user versionator
 dbus gnome
 
 
 
-3
+4
 
 compile configure install postinst postrm preinst prepare setup unpack
 

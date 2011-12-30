@@ -1,0 +1,12 @@
+DEFINED_PHASES=configure prepare
+DEPEND=|| ( =sys-devel/automake-1.11* ) >=sys-devel/autoconf-2.61 sys-devel/libtool
+DESCRIPTION=High Energy Physics C++ library
+EAPI=4
+HOMEPAGE=http://www.cern.ch/clhep
+IUSE=exceptions static-libs
+KEYWORDS=~amd64 ~hppa ~ppc ~x86
+LICENSE=public-domain
+SLOT=2
+SRC_URI=http://proj-clhep.web.cern.ch/proj-clhep/DISTRIBUTION/tarFiles/clhep-2.1.2.0.tgz
+_eclasses_=autotools	63332a15502113ca711ccccb3889a109	eutils	ac049c4fa17000293228df51f9460566	libtool	5f623f5a211fb1b2d84d88ee49959a54	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	portability	5c04908f6c6df62582d9011a01c03b88	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
+_md5_=c6079172109066951a2467758e1a261e

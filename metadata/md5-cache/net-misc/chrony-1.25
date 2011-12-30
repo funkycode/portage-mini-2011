@@ -4,10 +4,10 @@ DESCRIPTION=NTP client and server programs
 EAPI=2
 HOMEPAGE=http://chrony.tuxfamily.org/
 IUSE=caps readline
-KEYWORDS=amd64 hppa ~mips ppc sparc x86
+KEYWORDS=ppc
 LICENSE=GPL-2
 RDEPEND=readline? ( >=sys-libs/readline-4.1-r4 ) caps? ( sys-libs/libcap )
 SLOT=0
 SRC_URI=http://download.tuxfamily.org/chrony/chrony-1.25.tar.gz
 _eclasses_=eutils	ac049c4fa17000293228df51f9460566	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	portability	5c04908f6c6df62582d9011a01c03b88	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
-_md5_=314e51f4a9c9aa18aa611df1c69d92fd
+_md5_=78f4a43252d7a32da83920e2c43f4b06

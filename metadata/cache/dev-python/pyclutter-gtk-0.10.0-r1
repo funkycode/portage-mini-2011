@@ -6,7 +6,7 @@ http://www.clutter-project.org/sources/pyclutter-gtk/0.10/pyclutter-gtk-0.10.0.t
 http://www.clutter-project.org/
 LGPL-2.1
 Python bindings for Clutter-GTK
-~amd64 ~x86
+amd64 ~x86
 clutter eutils multilib portability python toolchain-funcs user versionator
 doc examples
 

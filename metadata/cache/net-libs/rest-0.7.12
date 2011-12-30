@@ -6,7 +6,7 @@ mirror://gnome/sources/rest/0.7/rest-0.7.12.tar.xz
 http://git.gnome.org/browse/librest
 LGPL-2.1
 Helper library for RESTful services
-~amd64 ~x86
+amd64 ~x86
 eutils fdo-mime gnome.org gnome2 gnome2-utils libtool multilib portability toolchain-funcs user versionator virtualx
 doc +gnome +introspection test test
 

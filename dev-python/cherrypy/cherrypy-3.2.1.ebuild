@@ -1,6 +1,6 @@
 # Copyright 1999-2011 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/dev-python/cherrypy/cherrypy-3.2.1.ebuild,v 1.1 2011/09/10 19:08:36 floppym Exp $
+# $Header: /var/cvsroot/gentoo-x86/dev-python/cherrypy/cherrypy-3.2.1.ebuild,v 1.2 2011/12/28 22:44:07 floppym Exp $
 
 EAPI="3"
 PYTHON_DEPEND="*:2.5"
@@ -33,6 +33,10 @@ src_prepare() {
 		-e "/('cherrypy\/tutorial',/,/),/d" \
 		-e "/LICENSE.txt/d" \
 		setup.py || die "sed failed"
+}
+
+src_test() {
+	distutils_src_test < /dev/tty
 }
 
 src_install() {

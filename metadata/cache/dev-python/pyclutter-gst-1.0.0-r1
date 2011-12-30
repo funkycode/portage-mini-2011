@@ -6,7 +6,7 @@ http://www.clutter-project.org/sources/pyclutter-gst/1.0/pyclutter-gst-1.0.0.tar
 http://www.clutter-project.org/
 LGPL-2.1
 Python bindings for Clutter
-~amd64 ~x86
+amd64 ~x86
 clutter eutils multilib portability python toolchain-funcs user versionator
 examples
 

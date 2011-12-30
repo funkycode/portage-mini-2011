@@ -6,7 +6,7 @@ mirror://gnome/sources/ghex/3.0/ghex-3.0.0.tar.xz
 http://www.gnome.org/
 GPL-2 FDL-1.1
 Gnome hexadecimal editor
-~amd64 ~ppc ~sparc ~x86 ~x86-interix ~amd64-linux ~x86-linux
+amd64 ~ppc ~sparc ~x86 ~x86-interix ~amd64-linux ~x86-linux
 eutils fdo-mime gnome.org gnome2 gnome2-utils libtool multilib portability toolchain-funcs user versionator
 
 
