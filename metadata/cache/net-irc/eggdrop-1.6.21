@@ -1,0 +1,22 @@
+dev-lang/tcl !vanilla? ( mysql? ( virtual/mysql ) postgres? ( dev-db/postgresql-server ) ssl? ( dev-libs/openssl ) )
+dev-lang/tcl !vanilla? ( mysql? ( virtual/mysql ) postgres? ( dev-db/postgresql-server ) ssl? ( dev-libs/openssl ) )
+0
+ftp://ftp.eggheads.org/pub/eggdrop/source/1.6/eggdrop1.6.21.tar.bz2 http://dev.gentoo.org/~binki/distfiles/net-irc/eggdrop/eggdrop-1.6.21-patches-1.0.tar.bz2
+
+http://www.eggheads.org/
+GPL-2
+An IRC bot extensible with C or TCL
+~alpha ~amd64 ~ia64 ~mips ~ppc ~sparc ~x86
+eutils multilib portability toolchain-funcs user
+debug mysql postgres ssl static vanilla
+vanilla? ( !mysql !postgres !ssl )
+
+
+4
+
+compile configure install postinst prepare
+
+
+
+
+

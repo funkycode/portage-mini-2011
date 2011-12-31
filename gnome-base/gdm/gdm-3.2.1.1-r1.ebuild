@@ -1,6 +1,6 @@
 # Copyright 1999-2011 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/gnome-base/gdm/gdm-3.2.1.1-r1.ebuild,v 1.1 2011/11/05 08:19:52 tetromino Exp $
+# $Header: /var/cvsroot/gentoo-x86/gnome-base/gdm/gdm-3.2.1.1-r1.ebuild,v 1.2 2011/12/31 08:34:36 tetromino Exp $
 
 EAPI="4"
 GNOME2_LA_PUNT="yes"
@@ -13,10 +13,9 @@ HOMEPAGE="http://www.gnome.org/projects/gdm/"
 
 LICENSE="GPL-2"
 SLOT="0"
-KEYWORDS="~amd64 ~arm ~sh ~x86"
+KEYWORDS="~amd64 ~sh ~x86"
 
-IUSE_LIBC="elibc_glibc"
-IUSE="accessibility +consolekit fprint +gnome-shell ipv6 gnome-keyring +introspection selinux smartcard tcpd test xinerama +xklavier $IUSE_LIBC"
+IUSE="accessibility +consolekit fprint +gnome-shell ipv6 gnome-keyring +introspection selinux smartcard tcpd test xinerama +xklavier"
 
 # Name of the tarball with gentoo specific files
 GDM_EXTRA="${PN}-3.2.1.1-gentoo-files"

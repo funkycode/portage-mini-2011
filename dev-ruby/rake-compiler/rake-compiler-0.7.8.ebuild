@@ -1,9 +1,9 @@
 # Copyright 1999-2011 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/dev-ruby/rake-compiler/rake-compiler-0.7.8.ebuild,v 1.2 2011/09/14 17:06:36 jer Exp $
+# $Header: /var/cvsroot/gentoo-x86/dev-ruby/rake-compiler/rake-compiler-0.7.8.ebuild,v 1.3 2011/12/31 07:36:29 graaff Exp $
 
 EAPI=2
-USE_RUBY="ruby18 ree18 ruby19 jruby"
+USE_RUBY="ruby18 ree18 jruby"
 
 # Tests for now seem only to work when rubygems is fully installed for
 # the implementation and that for now only means Ruby 1.8
@@ -33,7 +33,7 @@ ruby_add_rdepend "dev-ruby/rake"
 
 each_ruby_prepare() {
 	case ${RUBY} in
-		*ruby19|*jruby)
+		*jruby)
 			# Remove this task so that it won't load on Ruby 1.9 and JRuby
 			# that lack the package_task file. It is, though, needed for the
 			# tests
@@ -48,9 +48,6 @@ each_ruby_prepare() {
 
 each_ruby_test() {
 	case ${RUBY} in
-		*ruby19)
-			ewarn "Tests disabled for this implementation. Long story, check ebuild if you want."
-			;;
 		*jruby)
 			${RUBY} -S spec spec || die "Tests failed."
 			;;
