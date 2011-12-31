@@ -1,9 +1,9 @@
 # Copyright 1999-2011 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/virtual/ruby-minitest/ruby-minitest-0-r1.ebuild,v 1.11 2011/12/05 00:22:12 naota Exp $
+# $Header: /var/cvsroot/gentoo-x86/virtual/ruby-minitest/ruby-minitest-0-r1.ebuild,v 1.12 2011/12/30 19:27:22 graaff Exp $
 
 EAPI=2
-USE_RUBY="ruby18 ree18 ruby19 jruby"
+USE_RUBY="ruby18 ree18 jruby"
 
 inherit ruby-ng
 
@@ -18,6 +18,5 @@ IUSE=""
 
 RDEPEND="ruby_targets_ruby18? ( dev-ruby/minitest[ruby_targets_ruby18] )
 	ruby_targets_ree18? ( dev-ruby/minitest[ruby_targets_ree18] )
-	ruby_targets_ruby19? ( || ( dev-ruby/minitest[ruby_targets_ruby19] dev-lang/ruby:1.9 ) )
 	ruby_targets_jruby? ( dev-ruby/minitest[ruby_targets_jruby] )"
 DEPEND=""

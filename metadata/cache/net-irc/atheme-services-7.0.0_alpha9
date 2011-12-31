@@ -1,4 +1,4 @@
->=dev-libs/libmowgli-0.9.95 ldap? ( net-nds/openldap ) nls? ( sys-devel/gettext ) perl? ( dev-lang/perl ) pcre? ( dev-libs/libpcre ) ssl? ( dev-libs/openssl ) dev-util/pkgconfig dev-lang/perl[-build]
+>=dev-libs/libmowgli-0.9.95 ldap? ( net-nds/openldap ) nls? ( sys-devel/gettext ) perl? ( dev-lang/perl ) pcre? ( dev-libs/libpcre ) ssl? ( dev-libs/openssl ) dev-util/pkgconfig || ( =sys-devel/automake-1.11* ) >=sys-devel/autoconf-2.61 sys-devel/libtool dev-lang/perl[-build]
 >=dev-libs/libmowgli-0.9.95 ldap? ( net-nds/openldap ) nls? ( sys-devel/gettext ) perl? ( dev-lang/perl ) pcre? ( dev-libs/libpcre ) ssl? ( dev-libs/openssl ) dev-lang/perl[-build]
 0
 http://atheme.net/downloads/atheme-services-7.0.0-alpha9.tar.bz2
@@ -7,7 +7,7 @@ http://atheme.net/
 BSD
 A portable and secure set of open-source and modular IRC services
 ~amd64 ~sparc ~x86 ~x86-fbsd ~amd64-linux
-base eutils flag-o-matic multilib perl-module portability toolchain-funcs user
+autotools base eutils flag-o-matic libtool multilib perl-module portability toolchain-funcs user
 largenet ldap nls +pcre perl profile ssl
 
 

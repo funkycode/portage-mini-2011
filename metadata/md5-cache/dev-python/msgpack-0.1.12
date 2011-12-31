@@ -10,4 +10,4 @@ RDEPEND=>=app-admin/eselect-python-20091230 || ( =dev-lang/python-3* =dev-lang/p
 SLOT=0
 SRC_URI=mirror://pypi/m/msgpack-python/msgpack-python-0.1.12.tar.gz
 _eclasses_=distutils	b4c334e216d998c4ce4b750cb091e42e	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	python	68cfdfd857b7b9e8f75a3fa84d60be94	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68
-_md5_=1cc6bca7a9427cda734aa2d9253d22df
+_md5_=1b96e7a36f8aaccf8b97e8f43bec47e7

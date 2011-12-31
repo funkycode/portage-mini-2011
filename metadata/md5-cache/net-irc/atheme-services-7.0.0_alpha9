@@ -1,5 +1,5 @@
 DEFINED_PHASES=compile configure install prepare setup test unpack
-DEPEND=>=dev-libs/libmowgli-0.9.95 ldap? ( net-nds/openldap ) nls? ( sys-devel/gettext ) perl? ( dev-lang/perl ) pcre? ( dev-libs/libpcre ) ssl? ( dev-libs/openssl ) dev-util/pkgconfig dev-lang/perl[-build]
+DEPEND=>=dev-libs/libmowgli-0.9.95 ldap? ( net-nds/openldap ) nls? ( sys-devel/gettext ) perl? ( dev-lang/perl ) pcre? ( dev-libs/libpcre ) ssl? ( dev-libs/openssl ) dev-util/pkgconfig || ( =sys-devel/automake-1.11* ) >=sys-devel/autoconf-2.61 sys-devel/libtool dev-lang/perl[-build]
 DESCRIPTION=A portable and secure set of open-source and modular IRC services
 EAPI=4
 HOMEPAGE=http://atheme.net/
@@ -9,5 +9,5 @@ LICENSE=BSD
 RDEPEND=>=dev-libs/libmowgli-0.9.95 ldap? ( net-nds/openldap ) nls? ( sys-devel/gettext ) perl? ( dev-lang/perl ) pcre? ( dev-libs/libpcre ) ssl? ( dev-libs/openssl ) dev-lang/perl[-build]
 SLOT=0
 SRC_URI=http://atheme.net/downloads/atheme-services-7.0.0-alpha9.tar.bz2
-_eclasses_=base	809ab15a673823938260f6b17661c3f1	eutils	ac049c4fa17000293228df51f9460566	flag-o-matic	9bfd4a1550735a7fc561ff5bae86e4c9	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	perl-module	01501a30505074cd0012cabbf5d99447	portability	5c04908f6c6df62582d9011a01c03b88	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
-_md5_=48d1ba83fb6b45963a73ee852560e4b3
+_eclasses_=autotools	63332a15502113ca711ccccb3889a109	base	809ab15a673823938260f6b17661c3f1	eutils	ac049c4fa17000293228df51f9460566	flag-o-matic	9bfd4a1550735a7fc561ff5bae86e4c9	libtool	5f623f5a211fb1b2d84d88ee49959a54	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	perl-module	01501a30505074cd0012cabbf5d99447	portability	5c04908f6c6df62582d9011a01c03b88	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
+_md5_=8fa97b5b93b2e7fb02e18d9f234095c1

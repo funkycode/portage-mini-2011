@@ -1,6 +1,6 @@
 # Copyright 1999-2011 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/net-libs/libktorrent/libktorrent-1.1.1.ebuild,v 1.5 2011/06/01 19:50:53 ranger Exp $
+# $Header: /var/cvsroot/gentoo-x86/net-libs/libktorrent/libktorrent-1.1.1.ebuild,v 1.7 2011/12/30 23:02:57 dilfridge Exp $
 
 EAPI=4
 
