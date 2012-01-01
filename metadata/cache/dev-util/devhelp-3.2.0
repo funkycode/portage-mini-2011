@@ -1,5 +1,5 @@
 >=gnome-base/gconf-2.6:2 >=dev-libs/glib-2.25.11:2 >=x11-libs/gtk+-3.0.2:3 x11-libs/libwnck:3 net-libs/webkit-gtk:3 >=sys-devel/gettext-0.17 >=dev-util/intltool-0.40 >=dev-util/pkgconfig-0.9 app-arch/xz-utils >=sys-apps/sed-4 >=app-admin/eselect-python-20091230 =dev-lang/python-2*
->=gnome-base/gconf-2.6:2 >=dev-libs/glib-2.25.11:2 >=x11-libs/gtk+-3.0.2:3 x11-libs/libwnck:3 net-libs/webkit-gtk:3 >=app-admin/eselect-python-20091230 =dev-lang/python-2*
+>=gnome-base/gconf-2.6:2 >=dev-libs/glib-2.25.11:2 >=x11-libs/gtk+-3.0.2:3 x11-libs/libwnck:3 net-libs/webkit-gtk:3 gnome-base/libgnome >=app-admin/eselect-python-20091230 =dev-lang/python-2*
 0
 mirror://gnome/sources/devhelp/3.2/devhelp-3.2.0.tar.xz
 

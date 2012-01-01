@@ -1,0 +1,13 @@
+DEFINED_PHASES=compile install postinst setup
+DEPEND=gd? ( media-libs/gd[png] )
+DESCRIPTION=Console-based network traffic monitor that keeps statistics of network usage
+EAPI=2
+HOMEPAGE=http://humdi.net/vnstat/
+IUSE=gd
+KEYWORDS=amd64 arm hppa ppc ppc64 sparc x86
+LICENSE=GPL-2
+RDEPEND=gd? ( media-libs/gd[png] ) virtual/cron
+SLOT=0
+SRC_URI=http://humdi.net/vnstat/vnstat-1.10.tar.gz
+_eclasses_=eutils	ac049c4fa17000293228df51f9460566	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	portability	5c04908f6c6df62582d9011a01c03b88	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
+_md5_=7b124e9f08ad1fb21baca07539ba9591

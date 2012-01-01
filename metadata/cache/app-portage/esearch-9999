@@ -1,5 +1,5 @@
-sys-apps/portage >=app-admin/eselect-python-20091230 dev-lang/python[readline] dev-lang/python >=app-admin/eselect-python-20091230 dev-lang/python[readline] dev-vcs/git
-sys-apps/portage >=app-admin/eselect-python-20091230 dev-lang/python[readline] dev-lang/python >=app-admin/eselect-python-20091230 dev-lang/python[readline]
+sys-apps/portage >=app-admin/eselect-python-20091230 dev-lang/python[readline] dev-lang/python dev-vcs/git
+sys-apps/portage >=app-admin/eselect-python-20091230 dev-lang/python[readline] dev-lang/python
 0
 
 

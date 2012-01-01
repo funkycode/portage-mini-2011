@@ -1,5 +1,5 @@
-sys-apps/portage >=app-admin/eselect-python-20091230 dev-lang/python[xml] dev-lang/python >=app-admin/eselect-python-20091230 dev-lang/python[xml] dev-vcs/git
-sys-apps/portage !<=app-portage/gentoolkit-dev-0.2.7 dev-python/argparse || ( app-misc/realpath sys-freebsd/freebsd-bin ) sys-apps/gawk sys-apps/grep !minimal? ( app-portage/diffmask app-portage/eclean-kernel app-portage/flaggie app-portage/install-mask app-portage/smart-live-rebuild ) >=app-admin/eselect-python-20091230 dev-lang/python[xml] dev-lang/python >=app-admin/eselect-python-20091230 dev-lang/python[xml]
+sys-apps/portage >=app-admin/eselect-python-20091230 dev-lang/python[xml] dev-lang/python dev-vcs/git
+sys-apps/portage !<=app-portage/gentoolkit-dev-0.2.7 dev-python/argparse || ( app-misc/realpath sys-freebsd/freebsd-bin ) sys-apps/gawk sys-apps/grep !minimal? ( app-portage/diffmask app-portage/eclean-kernel app-portage/flaggie app-portage/install-mask app-portage/smart-live-rebuild ) >=app-admin/eselect-python-20091230 dev-lang/python[xml] dev-lang/python
 0
 
 

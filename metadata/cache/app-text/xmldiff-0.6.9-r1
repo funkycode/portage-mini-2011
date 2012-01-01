@@ -1,5 +1,5 @@
-dev-python/pyxml >=app-admin/eselect-python-20091230 =dev-lang/python-2* >=app-admin/eselect-python-20091230 =dev-lang/python-2*
-dev-python/pyxml >=app-admin/eselect-python-20091230 =dev-lang/python-2* >=app-admin/eselect-python-20091230 =dev-lang/python-2*
+dev-python/pyxml >=app-admin/eselect-python-20091230 =dev-lang/python-2*
+dev-python/pyxml >=app-admin/eselect-python-20091230 =dev-lang/python-2*
 0
 ftp://ftp.logilab.fr/pub/xmldiff/xmldiff-0.6.9.tar.gz
 

@@ -8,5 +8,5 @@ LICENSE=GPL-2
 RDEPEND=dev-python/dbus-python ~app-cdr/cdemud-1.2.0 >=app-admin/eselect-python-20091230 =dev-lang/python-2*
 SLOT=0
 SRC_URI=mirror://sourceforge/cdemu/cdemu-client-1.2.0.tar.bz2
-_eclasses_=multilib	5f4ad6cf85e365e8f0c6050ddd21659e	python	68cfdfd857b7b9e8f75a3fa84d60be94	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68
-_md5_=1465fb61a78e3aadbbd9a01fc25acc4d
+_eclasses_=multilib	5f4ad6cf85e365e8f0c6050ddd21659e	python	412a8596c4b1620189e299c8dd303d0a	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68
+_md5_=0e122f938c59761e71ef37611d79ec69

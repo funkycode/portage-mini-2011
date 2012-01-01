@@ -10,5 +10,5 @@ RDEPEND=>=sys-libs/libsepol-2.1.0 sys-libs/libselinux >=dev-db/sqlite-3.2:3 dev-
 RESTRICT=test
 SLOT=0
 SRC_URI=http://oss.tresys.com/projects/setools/chrome/site/dists/setools-3.3.7/setools-3.3.7.tar.bz2
-_eclasses_=autotools	63332a15502113ca711ccccb3889a109	eutils	ac049c4fa17000293228df51f9460566	java-pkg-opt-2	131dd2a697d663c0e33247611b9a1cd7	java-utils-2	0b830e0a2e6c4bdf1c81fec1b53d95f1	libtool	5f623f5a211fb1b2d84d88ee49959a54	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	portability	5c04908f6c6df62582d9011a01c03b88	python	68cfdfd857b7b9e8f75a3fa84d60be94	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e	versionator	6601b4c5b3f019a993db59a50e1854e4
+_eclasses_=autotools	63332a15502113ca711ccccb3889a109	eutils	ac049c4fa17000293228df51f9460566	java-pkg-opt-2	131dd2a697d663c0e33247611b9a1cd7	java-utils-2	0b830e0a2e6c4bdf1c81fec1b53d95f1	libtool	5f623f5a211fb1b2d84d88ee49959a54	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	portability	5c04908f6c6df62582d9011a01c03b88	python	412a8596c4b1620189e299c8dd303d0a	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e	versionator	6601b4c5b3f019a993db59a50e1854e4
 _md5_=5729b9a9d288a3e27fe8b976c4ba0d77

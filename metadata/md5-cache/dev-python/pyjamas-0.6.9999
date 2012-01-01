@@ -1,11 +1,11 @@
 DEFINED_PHASES=compile install postinst postrm preinst prepare unpack
-DEPEND=>=app-admin/eselect-python-20091230 =dev-lang/python-2* >=app-admin/eselect-python-20091230 =dev-lang/python-2* dev-vcs/subversion net-misc/rsync
+DEPEND=>=app-admin/eselect-python-20091230 =dev-lang/python-2* dev-vcs/subversion net-misc/rsync
 DESCRIPTION=Stand-alone python to javascript compiler
 EAPI=3
 HOMEPAGE=http://pyjs.org
 IUSE=doc
 LICENSE=Apache-2.0
-RDEPEND=>=app-admin/eselect-python-20091230 =dev-lang/python-2* >=app-admin/eselect-python-20091230 =dev-lang/python-2*
+RDEPEND=>=app-admin/eselect-python-20091230 =dev-lang/python-2*
 SLOT=0
-_eclasses_=distutils	b4c334e216d998c4ce4b750cb091e42e	eutils	ac049c4fa17000293228df51f9460566	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	portability	5c04908f6c6df62582d9011a01c03b88	python	68cfdfd857b7b9e8f75a3fa84d60be94	subversion	106a7b7cee5d7bd86eb9351f3f670c55	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
+_eclasses_=distutils	c8b0cab86443a130f3737ad1456d57d3	eutils	ac049c4fa17000293228df51f9460566	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	portability	5c04908f6c6df62582d9011a01c03b88	python	412a8596c4b1620189e299c8dd303d0a	subversion	106a7b7cee5d7bd86eb9351f3f670c55	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
 _md5_=60880b333c66f651a9854fa8bca82ae0

@@ -9,5 +9,5 @@ LICENSE=LGPL-2.1
 RDEPEND=pulseaudio? ( !gstreamer? ( media-sound/pulseaudio ) ) gstreamer? ( media-libs/gstreamer ) >=app-emulation/spice-protocol-0.8.0-r1 >=x11-libs/pixman-0.17.7 >=media-libs/celt-0.5.1.1:0.5.1 dev-libs/openssl gtk3? ( x11-libs/gtk+:3[introspection?] ) !gtk3? ( x11-libs/gtk+:2[introspection?] ) >=dev-libs/glib-2.26:2 >=x11-libs/cairo-1.2 virtual/jpeg sys-libs/zlib introspection? ( dev-libs/gobject-introspection ) python? ( dev-python/pygtk:2 ) sasl? ( dev-libs/cyrus-sasl ) gnome? ( gnome-base/gconf ) >=app-admin/eselect-python-20091230
 SLOT=0
 SRC_URI=http://spice-space.org/download/gtk/spice-gtk-0.6.tar.bz2
-_eclasses_=eutils	ac049c4fa17000293228df51f9460566	gnome2-utils	b5ca2ccadb60760889faa3bccba121d9	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	portability	5c04908f6c6df62582d9011a01c03b88	python	68cfdfd857b7b9e8f75a3fa84d60be94	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
+_eclasses_=eutils	ac049c4fa17000293228df51f9460566	gnome2-utils	b5ca2ccadb60760889faa3bccba121d9	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	portability	5c04908f6c6df62582d9011a01c03b88	python	412a8596c4b1620189e299c8dd303d0a	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
 _md5_=ba1da90ee4f8a672904e73b89b26d526

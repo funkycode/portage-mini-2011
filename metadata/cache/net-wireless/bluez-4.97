@@ -1,0 +1,22 @@
+>=dev-libs/glib-2.14:2 sys-apps/dbus >=sys-fs/udev-146[extras] alsa? ( media-libs/alsa-lib[alsa_pcm_plugins_extplug,alsa_pcm_plugins_ioplug] media-libs/libsndfile ) caps? ( >=sys-libs/libcap-ng-0.6.2 ) cups? ( net-print/cups ) gstreamer? ( >=media-libs/gstreamer-0.10:0.10 >=media-libs/gst-plugins-base-0.10:0.10 ) usb? ( dev-libs/libusb:1 ) >=dev-util/pkgconfig-0.20 >=dev-libs/check-0.9.4 sys-devel/flex >=app-admin/eselect-python-20091230 test-programs? ( =dev-lang/python-2* )
+>=dev-libs/glib-2.14:2 sys-apps/dbus >=sys-fs/udev-146[extras] alsa? ( media-libs/alsa-lib[alsa_pcm_plugins_extplug,alsa_pcm_plugins_ioplug] media-libs/libsndfile ) caps? ( >=sys-libs/libcap-ng-0.6.2 ) cups? ( net-print/cups ) gstreamer? ( >=media-libs/gstreamer-0.10:0.10 >=media-libs/gst-plugins-base-0.10:0.10 ) usb? ( dev-libs/libusb:1 ) !net-wireless/bluez-libs !net-wireless/bluez-utils consolekit? ( || ( sys-auth/consolekit >=sys-apps/systemd-37 ) ) test-programs? ( dev-python/dbus-python dev-python/pygobject:2 ) >=app-admin/eselect-python-20091230 test-programs? ( =dev-lang/python-2* )
+0
+mirror://kernel/linux/bluetooth/bluez-4.97.tar.xz http://dev.gentoo.org/~pacho/bluez/oui-20111231.txt.xz
+
+http://www.bluez.org/
+GPL-2 LGPL-2.1
+Bluetooth Tools and System Daemons for Linux
+~amd64 ~arm ~hppa ~ppc ~ppc64 ~x86
+eutils multilib portability python systemd toolchain-funcs user
+alsa caps +consolekit cups debug gstreamer pcmcia test-programs usb
+
+
+
+4
+
+configure install postinst prepare setup
+
+
+
+
+

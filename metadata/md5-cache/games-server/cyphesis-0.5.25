@@ -8,5 +8,5 @@ LICENSE=GPL-2
 RDEPEND=>=media-libs/skstream-0.3.6 >=dev-games/wfmath-0.3.9 >=dev-games/mercator-0.2.9:0 dev-libs/libgcrypt dev-libs/libsigc++:2 sys-libs/ncurses sys-libs/readline =media-libs/atlas-c++-0.6* >=media-libs/varconf-0.6.4 dev-db/postgresql-base >=app-admin/eselect-python-20091230 =dev-lang/python-2*
 SLOT=0
 SRC_URI=mirror://sourceforge/worldforge/cyphesis-0.5.25.tar.bz2
-_eclasses_=autotools	63332a15502113ca711ccccb3889a109	base	809ab15a673823938260f6b17661c3f1	eutils	ac049c4fa17000293228df51f9460566	games	f75cdbfdf1760e514ca65e2f6c6a7c72	libtool	5f623f5a211fb1b2d84d88ee49959a54	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	portability	5c04908f6c6df62582d9011a01c03b88	python	68cfdfd857b7b9e8f75a3fa84d60be94	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
+_eclasses_=autotools	63332a15502113ca711ccccb3889a109	base	809ab15a673823938260f6b17661c3f1	eutils	ac049c4fa17000293228df51f9460566	games	f75cdbfdf1760e514ca65e2f6c6a7c72	libtool	5f623f5a211fb1b2d84d88ee49959a54	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	portability	5c04908f6c6df62582d9011a01c03b88	python	412a8596c4b1620189e299c8dd303d0a	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
 _md5_=434230e66bcbea3c70b593786a6a706f

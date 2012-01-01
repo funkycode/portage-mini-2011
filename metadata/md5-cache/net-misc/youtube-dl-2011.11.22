@@ -8,5 +8,5 @@ LICENSE=public-domain
 RDEPEND=>=app-admin/eselect-python-20091230 || ( =dev-lang/python-2.7* =dev-lang/python-2.6* =dev-lang/python-2.5* )
 SLOT=0
 SRC_URI=http://github.com/rg3/youtube-dl/tarball/2011.11.22 -> youtube-dl-2011.11.22.tar.gz
-_eclasses_=multilib	5f4ad6cf85e365e8f0c6050ddd21659e	python	68cfdfd857b7b9e8f75a3fa84d60be94	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68
+_eclasses_=multilib	5f4ad6cf85e365e8f0c6050ddd21659e	python	412a8596c4b1620189e299c8dd303d0a	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68
 _md5_=e593e618004b6c0eccf51e8488421146

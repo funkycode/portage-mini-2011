@@ -1,5 +1,5 @@
->=net-misc/tor-0.2.1.27 >=app-admin/eselect-python-20091230 || ( =dev-lang/python-2.7* =dev-lang/python-2.6* =dev-lang/python-2.5* ) || ( =dev-lang/python-2.7*[ncurses] =dev-lang/python-2.6*[ncurses] =dev-lang/python-2.5*[ncurses] ) >=app-admin/eselect-python-20091230 || ( =dev-lang/python-2.7* =dev-lang/python-2.6* =dev-lang/python-2.5* ) || ( =dev-lang/python-2.7*[ncurses] =dev-lang/python-2.6*[ncurses] =dev-lang/python-2.5*[ncurses] )
->=net-misc/tor-0.2.1.27 >=app-admin/eselect-python-20091230 || ( =dev-lang/python-2.7* =dev-lang/python-2.6* =dev-lang/python-2.5* ) || ( =dev-lang/python-2.7*[ncurses] =dev-lang/python-2.6*[ncurses] =dev-lang/python-2.5*[ncurses] ) >=app-admin/eselect-python-20091230 || ( =dev-lang/python-2.7* =dev-lang/python-2.6* =dev-lang/python-2.5* ) || ( =dev-lang/python-2.7*[ncurses] =dev-lang/python-2.6*[ncurses] =dev-lang/python-2.5*[ncurses] )
+>=net-misc/tor-0.2.1.27 >=app-admin/eselect-python-20091230 || ( =dev-lang/python-2.7* =dev-lang/python-2.6* =dev-lang/python-2.5* ) || ( =dev-lang/python-2.7*[ncurses] =dev-lang/python-2.6*[ncurses] =dev-lang/python-2.5*[ncurses] )
+>=net-misc/tor-0.2.1.27 >=app-admin/eselect-python-20091230 || ( =dev-lang/python-2.7* =dev-lang/python-2.6* =dev-lang/python-2.5* ) || ( =dev-lang/python-2.7*[ncurses] =dev-lang/python-2.6*[ncurses] =dev-lang/python-2.5*[ncurses] )
 0
 http://www.atagar.com/arm/resources/arm-1.4.0-2.tar.bz2
 

@@ -9,5 +9,5 @@ LICENSE=GPL-2
 RDEPEND=dev-python/dbus-python X? ( gtk? ( dev-python/pygtk || ( x11-libs/gksu kde-base/kdesu ) ) ) || ( net-misc/dhcpcd net-misc/dhcp net-misc/pump ) net-wireless/wireless-tools net-wireless/wpa_supplicant || ( sys-apps/net-tools sys-apps/ethtool ) !gtk? ( dev-python/pygobject:2 ) ioctl? ( dev-python/python-iwscan dev-python/python-wpactrl ) libnotify? ( dev-python/notify-python ) ncurses? ( >=dev-python/urwid-0.9.9.1 <dev-python/urwid-1.0.0 dev-python/pygobject:2 ) pm-utils? ( >=sys-power/pm-utils-1.1.1 ) >=app-admin/eselect-python-20091230 =dev-lang/python-2* =dev-lang/python-2*[ncurses?,xml]
 SLOT=0
 SRC_URI=http://downloads.wicd.net/src/testing/1.7.x/wicd-1.7.1b2.tar.bz2
-_eclasses_=distutils	b4c334e216d998c4ce4b750cb091e42e	eutils	ac049c4fa17000293228df51f9460566	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	portability	5c04908f6c6df62582d9011a01c03b88	python	68cfdfd857b7b9e8f75a3fa84d60be94	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
+_eclasses_=distutils	c8b0cab86443a130f3737ad1456d57d3	eutils	ac049c4fa17000293228df51f9460566	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	portability	5c04908f6c6df62582d9011a01c03b88	python	412a8596c4b1620189e299c8dd303d0a	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
 _md5_=7f23cb4c599edb296a5480d0a545d3be

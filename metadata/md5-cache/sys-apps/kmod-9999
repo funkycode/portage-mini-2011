@@ -1,11 +1,11 @@
-DEFINED_PHASES=compile configure install prepare test unpack
-DEPEND=zlib? ( sys-libs/zlib ) lzma? ( app-arch/xz-utils ) || ( =sys-devel/automake-1.11* ) >=sys-devel/autoconf-2.61 sys-devel/libtool dev-vcs/git
-DESCRIPTION=Library and utilities for kernel module loading
+DEFINED_PHASES=configure install prepare unpack
+DEPEND=zlib? ( sys-libs/zlib ) lzma? ( app-arch/xz-utils ) dev-vcs/git || ( =sys-devel/automake-1.11* ) >=sys-devel/autoconf-2.61 sys-devel/libtool
+DESCRIPTION=library and tools for managing linux kernel modules
 EAPI=4
-HOMEPAGE=http://git.profusion.mobi/cgit.cgi/kmod.git/
+HOMEPAGE=http://git.profusion.mobi/cgit.cgi/kmod.git
 IUSE=debug lzma static-libs +tools zlib
 LICENSE=LGPL-2
 RDEPEND=zlib? ( sys-libs/zlib ) lzma? ( app-arch/xz-utils )
 SLOT=0
-_eclasses_=autotools	63332a15502113ca711ccccb3889a109	autotools-utils	9959407b3d97951cd99a7685f7229cc7	eutils	ac049c4fa17000293228df51f9460566	git-2	e093fad2de8fa7ca11e7ed938d27ceb1	libtool	5f623f5a211fb1b2d84d88ee49959a54	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	portability	5c04908f6c6df62582d9011a01c03b88	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
-_md5_=251097112bbe2b7e0bd868c5a39b6f9a
+_eclasses_=autotools	63332a15502113ca711ccccb3889a109	eutils	ac049c4fa17000293228df51f9460566	git-2	e093fad2de8fa7ca11e7ed938d27ceb1	libtool	5f623f5a211fb1b2d84d88ee49959a54	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	portability	5c04908f6c6df62582d9011a01c03b88	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
+_md5_=9f9374dece8a64f190e968db4146263e
