@@ -1,4 +1,4 @@
-test? ( app-shells/ksh )
+
 
 0
 http://www.fatalmind.com/software/hatools/hatools-2.14.tar.gz
@@ -12,9 +12,9 @@ test
 
 
 
-3
+4
 
-install
+prepare
 
 
 

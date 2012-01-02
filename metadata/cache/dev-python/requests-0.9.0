@@ -1,0 +1,22 @@
+dev-python/setuptools >=app-admin/eselect-python-20091230 =dev-lang/python-2*
+dev-python/certifi >=app-admin/eselect-python-20091230 =dev-lang/python-2*
+0
+mirror://pypi/r/requests/requests-0.9.0.tar.gz
+
+http://python-requests.org/ http://pypi.python.org/pypi/requests
+ISC
+HTTP library for human beings
+~amd64 ~x86
+distutils multilib python toolchain-funcs
+test
+
+
+
+4
+
+compile install postinst postrm prepare setup
+
+
+
+
+

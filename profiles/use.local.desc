@@ -235,7 +235,6 @@ app-cdr/k3b:emovix - Enable burning support for eMoviX images
 app-cdr/k3b:wav - Enable support for reading WAVE files
 app-cdr/mirage2iso:pinentry - Support app-crypt/pinentry password input backend.
 app-cdr/mybashburn:normalize - Add support for normalizing audio file volume levels
-app-cdr/xfburn:thunar - Use Thunar VFS layer for mimetype and icons support (WARNING: deprecated, will be replaced by GIO in future)
 app-crypt/ccid:twinserial - Enable twinserial reader
 app-crypt/ekeyd:minimal - Only install the ekey-egd-linux service rather than the full ekeyd package.
 app-crypt/ekeyd:munin - Install a plugin for net-analyzer/munin to graph statistical data from ekeyd.
@@ -2395,7 +2394,6 @@ media-libs/libgpod:gtk - Enable ArtworkDB support
 media-libs/libmikmod:raw - Enable raw file writer plug-in
 media-libs/libmp4v2:utils - Install command-line utilities
 media-libs/libpng:apng - support unofficial APNG (Animated PNG) spec
-media-libs/libpng:neon - support ARM NEON cpu instruction set
 media-libs/libquicktime:schroedinger - Enable Dirac video support (an advanced royalty-free video compression format) via libschroedinger (high-speed implementation in C of the Dirac codec).
 media-libs/libraw:demosaic - Enable support for external interpolation algorithms
 media-libs/libsdl:audio - Control audio support (disable at your own risk)
@@ -2466,7 +2464,6 @@ media-libs/taglib:asf - Provide support for Microsoft's 'advanced systems format
 media-libs/urt:gs - Add support for postscript
 media-libs/vips:fits - Enable support for the FITS image format through sci-libs/cfitsio
 media-libs/vips:orc - Use dev-lang/orc for runtime optimisations
-media-libs/vo-aacenc:neon - Enable neon cpu instructions
 media-libs/win32codecs:real - Installs the real video codecs
 media-libs/x264:10bit - Set output bit depth to 10, this may not be compatible with all decoders
 media-libs/x264:interlaced - enable interlaced encoding support, this can decrease encoding speed by up to 2%
@@ -2879,7 +2876,6 @@ media-video/ffmpeg:frei0r - Enable frei0r wrapping in libavfilter
 media-video/ffmpeg:hardcoded-tables - Use pre-calculated tables rather than calculating them on the fly.
 media-video/ffmpeg:libv4l - Uses media-libs/libv4l for video4linux instead of direct calls. Adds support for more devices via the userspace library.
 media-video/ffmpeg:mmxext - Enables mmx2 support
-media-video/ffmpeg:neon - Enables NEON optimizations for arm processors.
 media-video/ffmpeg:network - Enables network streaming support
 media-video/ffmpeg:openssl - Enables dev-libs/openssl support. Adds support for encrypted network protocols (TLS/HTTPS).
 media-video/ffmpeg:pic - Force shared libraries to be built as PIC (this is slower)
@@ -2912,7 +2908,6 @@ media-video/libav:frei0r - Enable frei0r wrapping in libavfilter
 media-video/libav:gpl - Build all GPL licensed code. Without this flag set the package is build under LGPL license.
 media-video/libav:hardcoded-tables - Use pre-calculated tables rather than calculating them on the fly.
 media-video/libav:mmxext - Enable mmx2 support.
-media-video/libav:neon - Enable NEON optimizations for arm processors.
 media-video/libav:network - Enable network streaming support.
 media-video/libav:openssl - Prefer dev-libs/openssl over net-libs/gnutls to provide SSL/TLS support (notice: the resulting binaries are unredistributable).
 media-video/libav:pic - Force shared libraries to be built as PIC (this is slower).
@@ -3128,7 +3123,6 @@ media-video/vlc:macosx-quartztext - Enables Mac OS X quartz text module.
 media-video/vlc:macosx-vout - Enables Mac OS X video output module.
 media-video/vlc:matroska - Enables matroska support using reference libraries (fallback on other existing matroska support if disabled, i.e., matroska enabled FFmpeg)
 media-video/vlc:media-library - Build the (sqlite based) media library.
-media-video/vlc:neon - Enables NEON optimizations for arm processors.
 media-video/vlc:omxil - Enables OpenMAX Integration Layer codec module.
 media-video/vlc:optimisememory - Enable optimisation for memory rather than performance.
 media-video/vlc:postproc - Enables image post-processing via libpostproc (part of FFmpeg).
@@ -4511,6 +4505,7 @@ sys-apps/busybox:mdev - Create the appropriate symlink in /sbin and install mdev
 sys-apps/busybox:nfs - Support mounting nfs shares
 sys-apps/dmtcp:fast - Enable experimental performance options such as mmap allocator.
 sys-apps/dmtcp:trace - Enable ptrace support (only valid with debug enabled).
+sys-apps/dstat:wifi - Enable wireless network functions
 sys-apps/elfix:xtpax - Enable XT_PAX and prefer it to PT_PAX.
 sys-apps/flashrom:atahpt - Highpoint (HPT) ATA/RAID controller support
 sys-apps/flashrom:bitbang_spi - Bitbanging SPI infrastructure
@@ -5140,7 +5135,6 @@ x11-libs/libwnck:introspection - Use dev-libs/gobject-introspection for introspe
 x11-libs/mx:glade - Build the dev-util/glade catalog files
 x11-libs/mx:introspection - Use dev-libs/gobject-introspection for introspection
 x11-libs/pango:introspection - Use dev-libs/gobject-introspection for introspection
-x11-libs/pixman:neon - Enables NEON optimizations for ARM processors.
 x11-libs/qt-assistant:compat - Build the extra compatibility package required by a few packages. More information at http://labs.qt.nokia.com/2010/06/22/qt-assistant-compat-version-available-as-extra-source-package/
 x11-libs/qt-assistant:exceptions - Add support for exceptions - like catching them inside the event loop (recommended by Nokia)
 x11-libs/qt-assistant:glib - Enable dev-libs/glib eventloop support
@@ -5280,6 +5274,7 @@ x11-terms/rxvt-unicode:iso14755 - Enable ISO-14755 support
 x11-terms/rxvt-unicode:mousewheel - Enable scrolling via mouse wheel or buttons 4 and 5
 x11-terms/rxvt-unicode:perl - Enable perl script support. You can still disable this at runtime with -pe ""
 x11-terms/rxvt-unicode:pixbuf - Enable transparency support using gtk's pixbuf
+x11-terms/rxvt-unicode:secondary-wheel - Support for wheel scrolling on secondary screens (like mutt). Read http://lists.schmorp.de/pipermail/rxvt-unicode/2011q4/001491.html
 x11-terms/rxvt-unicode:unicode3 - Use 21 instead of 16 bits to represent unicode characters
 x11-terms/rxvt-unicode:wcwidth - Enable wide char width support
 x11-terms/xterm:toolbar - Enable the xterm toolbar to be built

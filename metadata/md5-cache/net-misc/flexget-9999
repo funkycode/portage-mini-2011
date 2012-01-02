@@ -1,11 +1,11 @@
 DEFINED_PHASES=compile install postinst postrm preinst prepare setup test unpack
-DEPEND=dev-python/setuptools dev-python/paver test? ( dev-python/feedparser >=dev-python/sqlalchemy-0.7 dev-python/pyyaml dev-python/beautifulsoup:python-2 dev-python/html5lib dev-python/jinja dev-python/PyRSS2Gen dev-python/pynzb dev-python/progressbar dev-python/flask dev-python/cherrypy dev-python/nose ) >=app-admin/eselect-python-20091230 || ( =dev-lang/python-2.7* =dev-lang/python-2.6* =dev-lang/python-2.5* ) dev-vcs/subversion net-misc/rsync
+DEPEND=dev-python/setuptools dev-python/paver test? ( dev-python/feedparser >=dev-python/sqlalchemy-0.7 dev-python/pyyaml dev-python/beautifulsoup:python-2 dev-python/html5lib dev-python/jinja dev-python/PyRSS2Gen dev-python/pynzb dev-python/progressbar dev-python/flask dev-python/cherrypy dev-python/requests dev-python/nose ) >=app-admin/eselect-python-20091230 || ( =dev-lang/python-2.7* =dev-lang/python-2.6* =dev-lang/python-2.5* ) dev-vcs/subversion net-misc/rsync
 DESCRIPTION=Multipurpose automation tool for content like torrents, nzbs, podcasts, comics, etc
 EAPI=4
 HOMEPAGE=http://flexget.com/
 IUSE=deluge test transmission
 LICENSE=MIT
-RDEPEND=dev-python/feedparser >=dev-python/sqlalchemy-0.7 dev-python/pyyaml dev-python/beautifulsoup:python-2 dev-python/html5lib dev-python/jinja dev-python/PyRSS2Gen dev-python/pynzb dev-python/progressbar dev-python/flask dev-python/cherrypy dev-python/setuptools deluge? ( net-p2p/deluge ) transmission? ( dev-python/transmissionrpc ) >=app-admin/eselect-python-20091230 || ( =dev-lang/python-2.7* =dev-lang/python-2.6* =dev-lang/python-2.5* )
+RDEPEND=dev-python/feedparser >=dev-python/sqlalchemy-0.7 dev-python/pyyaml dev-python/beautifulsoup:python-2 dev-python/html5lib dev-python/jinja dev-python/PyRSS2Gen dev-python/pynzb dev-python/progressbar dev-python/flask dev-python/cherrypy dev-python/requests dev-python/setuptools deluge? ( net-p2p/deluge ) transmission? ( dev-python/transmissionrpc ) >=app-admin/eselect-python-20091230 || ( =dev-lang/python-2.7* =dev-lang/python-2.6* =dev-lang/python-2.5* )
 SLOT=0
 _eclasses_=distutils	c8b0cab86443a130f3737ad1456d57d3	eutils	ac049c4fa17000293228df51f9460566	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	portability	5c04908f6c6df62582d9011a01c03b88	python	412a8596c4b1620189e299c8dd303d0a	subversion	106a7b7cee5d7bd86eb9351f3f670c55	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
-_md5_=9ed10fb4f16795046c6ff446af8cdb6e
+_md5_=555ae123b84e1b5fa0dc22e4d5947c67

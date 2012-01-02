@@ -1,4 +1,4 @@
-DEFINED_PHASES=compile install
+DEFINED_PHASES=compile install prepare
 DEPEND=app-arch/unzip
 DESCRIPTION=Recovery tool for wpa passphrase
 EAPI=4
@@ -8,4 +8,4 @@ LICENSE=GPL-2
 SLOT=0
 SRC_URI=http://tools.salvatorefresta.net/WiRouter_KeyRec_1.1.0.zip -> WiRouterKeyRec-1.1.0.zip
 _eclasses_=multilib	5f4ad6cf85e365e8f0c6050ddd21659e	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68
-_md5_=83fd4a77aa4ff7e253f86f42bad19ac6
+_md5_=05b327b1362c3e3dd3ecf2ca553246a2
