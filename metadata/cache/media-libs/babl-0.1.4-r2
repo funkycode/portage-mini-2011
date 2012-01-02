@@ -1,4 +1,4 @@
-introspection? ( >=dev-libs/gobject-introspection-0.6.8 ) || ( =sys-devel/automake-1.11* ) >=sys-devel/autoconf-2.61 sys-devel/libtool
+introspection? ( >=dev-libs/gobject-introspection-0.6.8 ) dev-util/pkgconfig || ( =sys-devel/automake-1.11* ) >=sys-devel/autoconf-2.61 sys-devel/libtool
 introspection? ( >=dev-libs/gobject-introspection-0.6.8 )
 0
 ftp://ftp.gimp.org/pub/babl/0.1/babl-0.1.4.tar.bz2

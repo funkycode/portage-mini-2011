@@ -1,6 +1,6 @@
-# Copyright 1999-2011 Gentoo Foundation
+# Copyright 1999-2012 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/dev-ruby/fxruby/fxruby-1.6.20-r1.ebuild,v 1.1 2011/12/31 16:40:32 graaff Exp $
+# $Header: /var/cvsroot/gentoo-x86/dev-ruby/fxruby/fxruby-1.6.20-r1.ebuild,v 1.3 2012/01/01 17:03:18 ago Exp $
 
 EAPI=2
 USE_RUBY="ruby18"
@@ -18,7 +18,7 @@ HOMEPAGE="http://www.fxruby.org/"
 
 LICENSE="LGPL-2.1"
 SLOT="1.6"
-KEYWORDS="~alpha ~amd64 ~hppa ~ppc ~ppc64 ~sparc ~x86"
+KEYWORDS="~alpha amd64 ~hppa ~ppc ~ppc64 ~sparc ~x86"
 IUSE="examples doc"
 
 DEPEND="x11-libs/fox:1.6
@@ -44,6 +44,9 @@ all_ruby_prepare() {
 	# Use our own metadata since the distributed version doesn't work
 	# with recent rubygems, bug 396541
 	rm ../metadata || die
+
+	# Avoid a dependency on rake-compiler.
+	sed -i -e '/extensiontask/ s:^:#:' -e '/Rake::ExtensionTask/,$ s:^:#:' Rakefile || die
 }
 
 each_ruby_configure() {

@@ -6,15 +6,15 @@ http://savannah.nongnu.org/download/dmidecode/dmidecode-2.11.tar.bz2
 http://www.nongnu.org/dmidecode/
 GPL-2
 DMI (Desktop Management Interface) table related utilities
--* ~amd64 ~arm ~ia64 ~ppc ~sparc ~x86
+-* ~amd64 ~arm ~ia64 ~ppc ~sparc ~x86 ~x86-solaris
 eutils flag-o-matic multilib portability toolchain-funcs user
 
 
 
 
-2
+3
 
-compile install prepare
+compile install postinst prepare
 
 
 

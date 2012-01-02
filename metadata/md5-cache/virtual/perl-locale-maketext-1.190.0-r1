@@ -1,6 +1,6 @@
 DEFINED_PHASES=-
 DESCRIPTION=Virtual for locale-maketext
-KEYWORDS=~alpha amd64 arm hppa ~ia64 ~ppc ~s390 ~sh ~sparc ~x86
+KEYWORDS=alpha amd64 arm hppa ia64 ~ppc s390 sh sparc x86
 RDEPEND=|| ( =dev-lang/perl-5.14* ~perl-core/locale-maketext-1.190.0 )
 SLOT=0
-_md5_=7a87e0a458bfc11866157979a3c6ef90
+_md5_=6240b87a2dbb99a23ad7f8e8a1c6205b

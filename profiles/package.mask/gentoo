@@ -1,5 +1,5 @@
 ####################################################################
-# $Header: /var/cvsroot/gentoo-x86/profiles/package.mask,v 1.13362 2011/12/30 06:49:49 graaff Exp $
+# $Header: /var/cvsroot/gentoo-x86/profiles/package.mask,v 1.13366 2012/01/01 14:53:21 sping Exp $
 #
 # When you add an entry to the top of this file, add your name, the date, and
 # an explanation of why something is getting masked. Please be extremely
@@ -30,6 +30,10 @@
 ## app-misc/some-package
 
 #--- END OF EXAMPLES ---
+
+# Chí-Thanh Christopher Nguyễn <chithanh@gentoo.org> (01 Jan 2012)
+# Mask until dependencies are keyworded, bug #396669
+>=x11-drivers/xf86-input-evdev-2.6.99
 
 # Sebastien Fabbro <bicatali@gentoo.org> (29 Dec 2011)
 # current version very broken (bug #239254 and bug #296770)
@@ -79,7 +83,9 @@ media-radio/fldigi
 # Chí-Thanh Christopher Nguyễn <chithanh@gentoo.org> (19 Dec 2011)
 # Mask prerelease x11 packages
 =x11-base/xorg-server-1.11.99*
+=x11-libs/libXi-1.5.99*
 =x11-libs/libpciaccess-0.12.902
+=x11-proto/inputproto-2.1.99*
 
 # Johannes Huber <johu@gentoo.org> (16 Dec 2011)
 # Masked for removal in 30 days. Dead upstream. Package
@@ -220,12 +226,6 @@ dev-python/gnome-python-extras
 # therefore with gnome-3.2). No upstream activity since early 2010.
 # Masked for removal in 30 days. Bug #389979
 app-accessibility/gnome-mousetrap
-
-# Markos Chandras <hwoarang@gentoo.org> (13 Nov 2011)
-# Fails to link with gold linker. Uses tempnam instead
-# of mkstemp which is a fatal error in recent gcc versions
-# Masked for removal in 30 days. Bug #371451
-games-mud/kmuddy
 
 # Alin Năstac <mrness@gentoo.org> (13 Nov 2011)
 # Dead project, masked for removal in 30 days
@@ -616,7 +616,7 @@ net-zope/zwiki
 
 # Sebastian Pipping <sping@gentoo.org> (31 Aug 2011)
 # Upcoming bump, afraid of ~arch for now (bug #283152)
-~media-gfx/gimp-2.7.3
+>=media-gfx/gimp-2.7
 
 # Tomáš Chvátal <scarabeus@gentoo.org> (28 Aug 2011)
 # Breaks lots of rdeps.

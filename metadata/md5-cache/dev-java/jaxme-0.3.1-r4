@@ -3,11 +3,10 @@ DEPEND=|| ( =virtual/jdk-1.5* =virtual/jdk-1.4* ) >=dev-java/xerces-2.7 =dev-jav
 DESCRIPTION=JaxMe 2 is an open source implementation of JAXB, the specification for Java/XML binding.
 HOMEPAGE=http://ws.apache.org/jaxme/index.html
 IUSE=elibc_FreeBSD doc source elibc_FreeBSD
-KEYWORDS=~ia64
 LICENSE=Apache-2.0
 RDEPEND=>=virtual/jre-1.4 >=dev-java/xerces-2.7 =dev-java/junit-3.8* dev-java/gnu-crypto >=dev-java/log4j-1.2.8 dev-java/ant-core dev-java/xmldb >=dev-java/java-config-2.1.9-r1 source? ( app-arch/zip )
 RESTRICT=test
 SLOT=0
 SRC_URI=mirror://apache/ws/jaxme/source/ws-jaxme-0.3.1-src.tar.gz
 _eclasses_=eutils	ac049c4fa17000293228df51f9460566	java-ant-2	c637c20d93ef0d49a5efcf5feaa776cd	java-pkg-2	6f723b44cff6b07377ca5c0848da887b	java-utils-2	0b830e0a2e6c4bdf1c81fec1b53d95f1	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	portability	5c04908f6c6df62582d9011a01c03b88	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e	versionator	6601b4c5b3f019a993db59a50e1854e4
-_md5_=01942f2c880a92e907a4ad14d3d8faff
+_md5_=582512d56552723a7dad091fae7f856d

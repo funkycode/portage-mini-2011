@@ -1,6 +1,6 @@
-# Copyright 1999-2011 Gentoo Foundation
+# Copyright 1999-2012 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/dev-ruby/rack/rack-1.4.0.ebuild,v 1.2 2011/12/31 19:37:40 grobian Exp $
+# $Header: /var/cvsroot/gentoo-x86/dev-ruby/rack/rack-1.4.0.ebuild,v 1.3 2012/01/01 10:21:55 graaff Exp $
 
 EAPI="2"
 USE_RUBY="ruby18 ree18 ruby19 jruby"
@@ -28,7 +28,7 @@ ruby_add_rdepend "virtual/ruby-ssl"
 ruby_add_bdepend "test? ( dev-ruby/bacon dev-ruby/ruby-fcgi )"
 
 # Block against versions in older slots that also try to install a binary.
-RDEPEND="${RDEPEND} !<dev-ruby/rack-1.1.3-r1:0 !<dev-ruby/rack-1.2.5:1.2 !<dev-ruby/rack-1.3.6:1.3"
+RDEPEND="${RDEPEND} !<dev-ruby/rack-1.1.3-r1:0 !<dev-ruby/rack-1.2.5:1.2 !<dev-ruby/rack-1.3.6-r1:1.3"
 
 all_ruby_prepare() {
 	epatch "${FILESDIR}"/${PN}-1.2.1-gentoo.patch
