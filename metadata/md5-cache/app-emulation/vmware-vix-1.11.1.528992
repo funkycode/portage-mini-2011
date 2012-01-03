@@ -10,5 +10,5 @@ RDEPEND=dev-libs/glib:2 dev-libs/libxml2 =dev-libs/openssl-0.9.8* net-misc/curl 
 RESTRICT=binchecks fetch mirror strip
 SLOT=0
 SRC_URI=x86? ( VMware-VIX-1.11.1-528992.i386.bundle ) amd64? ( VMware-VIX-1.11.1-528992.x86_64.bundle )
-_eclasses_=eutils	ac049c4fa17000293228df51f9460566	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	portability	5c04908f6c6df62582d9011a01c03b88	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e	versionator	6601b4c5b3f019a993db59a50e1854e4	vmware-bundle	23c070352c2722510704dae8063293e0
+_eclasses_=eutils	d92f291efb4ef0595cb90e4b4e7e6b6c	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	portability	5c04908f6c6df62582d9011a01c03b88	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e	versionator	6601b4c5b3f019a993db59a50e1854e4	vmware-bundle	23c070352c2722510704dae8063293e0
 _md5_=68b506e186fb32b3271d7140b10050aa

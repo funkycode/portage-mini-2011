@@ -8,5 +8,5 @@ RDEPEND=>=media-libs/libvorbis-1.0 >=media-libs/libogg-1.0 >=media-libs/gst-plug
 RESTRICT=test
 SLOT=0.10
 SRC_URI=http://gstreamer.freedesktop.org/src/gst-plugins-base/gst-plugins-base-0.10.35.tar.bz2
-_eclasses_=eutils	ac049c4fa17000293228df51f9460566	gst-plugins-base	3a98a707d0f245d2be8f346b371003f7	gst-plugins10	cdf76f89776a74425daf6cd80706ab65	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	portability	5c04908f6c6df62582d9011a01c03b88	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
+_eclasses_=eutils	d92f291efb4ef0595cb90e4b4e7e6b6c	gst-plugins-base	3a98a707d0f245d2be8f346b371003f7	gst-plugins10	cdf76f89776a74425daf6cd80706ab65	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	portability	5c04908f6c6df62582d9011a01c03b88	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
 _md5_=ace9ec571622e2dfd895701720b3caf3

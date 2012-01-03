@@ -9,5 +9,5 @@ PDEPEND=setup? ( >=media-plugins/vdr-setup-0.3.1-r1 )
 RDEPEND=virtual/jpeg sys-libs/libcap >=media-libs/fontconfig-2.4.2 >=media-libs/freetype-2 sys-devel/gettext dvdarchive? ( dvdchapjump? ( >=media-libs/libdvdread-4.1.3_p1168 ) ) dev-lang/perl >=media-tv/gentoo-vdr-scripts-0.4.5 media-fonts/corefonts
 SLOT=0
 SRC_URI=ftp://ftp.tvdr.de/vdr/vdr-1.6.0.tar.bz2 ftp://ftp.tvdr.de/vdr/Developer/vdr-1.6.0-1.diff ftp://ftp.tvdr.de/vdr/Developer/vdr-1.6.0-2.diff http://www.zulu-entertainment.de/files/patches/VDR-Extensions-Patch-72.tar.bz2
-_eclasses_=eutils	ac049c4fa17000293228df51f9460566	flag-o-matic	9bfd4a1550735a7fc561ff5bae86e4c9	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	portability	5c04908f6c6df62582d9011a01c03b88	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
+_eclasses_=eutils	d92f291efb4ef0595cb90e4b4e7e6b6c	flag-o-matic	9bfd4a1550735a7fc561ff5bae86e4c9	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	portability	5c04908f6c6df62582d9011a01c03b88	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
 _md5_=0e95fe7a1bb55019594ac8250ca2ee20

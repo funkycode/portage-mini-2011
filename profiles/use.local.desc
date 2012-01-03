@@ -2243,7 +2243,6 @@ media-gfx/darktable:opencl - Enable opencl support
 media-gfx/darktable:rawspeed - Enable the rawspeed backend
 media-gfx/darktable:slideshow - Build the opengl slideshow viewer
 media-gfx/digikam:addressbook - Add support for kdepim
-media-gfx/digikam:geolocation - Add support for marble
 media-gfx/digikam:linguas_ha - Hausa translation
 media-gfx/digikam:linguas_mi - Maori translation
 media-gfx/digikam:linguas_tt - ?? translation

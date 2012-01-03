@@ -1,0 +1,13 @@
+DEFINED_PHASES=compile configure install prepare setup test unpack
+DEPEND=ruby_targets_ruby18? ( dev-lang/ruby:1.8 ) ruby_targets_ruby18? ( virtual/rubygems[ruby_targets_ruby18] ) test? ( ruby_targets_ruby18? ( virtual/rubygems[ruby_targets_ruby18] ) )
+DESCRIPTION=Log4r is a comprehensive and flexible logging library written in Ruby for use in Ruby programs.
+EAPI=2
+HOMEPAGE=http://log4r.sourceforge.net/
+IUSE=elibc_FreeBSD ruby_targets_ruby18 doc test
+KEYWORDS=~amd64 ~ia64 ~ppc ~ppc64 ~x86
+LICENSE=LGPL-3
+RDEPEND=ruby_targets_ruby18? ( dev-lang/ruby:1.8 ) ruby_targets_ruby18? ( virtual/rubygems[ruby_targets_ruby18] )
+SLOT=0
+SRC_URI=mirror://rubygems/log4r-1.1.10.gem
+_eclasses_=eutils	d92f291efb4ef0595cb90e4b4e7e6b6c	java-utils-2	0b830e0a2e6c4bdf1c81fec1b53d95f1	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	portability	5c04908f6c6df62582d9011a01c03b88	ruby-fakegem	6732f927427c6069df6c4f22271f2c75	ruby-ng	4f1be3b6db6ebad08d2c6d7996907767	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e	versionator	6601b4c5b3f019a993db59a50e1854e4
+_md5_=f0d6f18a5e4d741a6a2c01037d9027dc

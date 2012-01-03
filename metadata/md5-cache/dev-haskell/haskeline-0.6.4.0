@@ -9,5 +9,5 @@ LICENSE=BSD
 RDEPEND=<dev-haskell/mtl-2.1 >=dev-haskell/terminfo-0.3.1.3 <dev-haskell/utf8-string-0.4 >=dev-lang/ghc-6.10.4 dev-lang/ghc
 SLOT=0
 SRC_URI=http://hackage.haskell.org/packages/archive/haskeline/0.6.4.0/haskeline-0.6.4.0.tar.gz
-_eclasses_=base	809ab15a673823938260f6b17661c3f1	eutils	ac049c4fa17000293228df51f9460566	ghc-package	83329f14231f6ba420fb965d858f37c0	haskell-cabal	c640d33b3ca22d10d4fc775cb69a4e00	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	portability	5c04908f6c6df62582d9011a01c03b88	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e	versionator	6601b4c5b3f019a993db59a50e1854e4
+_eclasses_=base	809ab15a673823938260f6b17661c3f1	eutils	d92f291efb4ef0595cb90e4b4e7e6b6c	ghc-package	83329f14231f6ba420fb965d858f37c0	haskell-cabal	c640d33b3ca22d10d4fc775cb69a4e00	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	portability	5c04908f6c6df62582d9011a01c03b88	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e	versionator	6601b4c5b3f019a993db59a50e1854e4
 _md5_=df65258267c6b54431a202c1b39d11c9
