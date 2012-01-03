@@ -1,20 +1,20 @@
->=dev-lang/tk-8.3.3 x11-libs/libXpm
->=dev-lang/tk-8.3.3 x11-libs/libXpm
+dev-lang/tk x11-libs/libXext x11-libs/libXmu x11-libs/libXpm || ( =sys-devel/automake-1.11* ) >=sys-devel/autoconf-2.61 sys-devel/libtool
+dev-lang/tk x11-libs/libXext x11-libs/libXmu x11-libs/libXpm
 0
 http://www.xmission.com/~georgeps/Tk_Theme/other/tkTheme.tgz
 
 http://www.xmission.com/~georgeps/Tk_Theme/other/
 BSD
-Tcl/Tk Theming library.
+Tcl/Tk Theming library
 ~alpha ~amd64 ~ppc ~sparc ~x86
-eutils multilib portability toolchain-funcs user
+autotools autotools-utils eutils libtool multilib portability toolchain-funcs user
+debug examples static-libs threads
 
 
 
+4
 
-3
-
-configure install prepare
+compile configure install prepare test
 
 
 
