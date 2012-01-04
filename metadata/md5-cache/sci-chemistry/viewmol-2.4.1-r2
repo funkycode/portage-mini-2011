@@ -8,5 +8,5 @@ LICENSE=GPL-2
 RDEPEND=media-libs/libpng media-libs/tiff virtual/opengl x11-libs/libX11 x11-libs/libXi x11-libs/libXmu x11-libs/libXt >=x11-libs/openmotif-2.3:0 >=app-admin/eselect-python-20091230 =dev-lang/python-2* =dev-lang/python-2*[tk]
 SLOT=0
 SRC_URI=mirror://sourceforge/viewmol/viewmol-2.4.1.src.tgz
-_eclasses_=eutils	d92f291efb4ef0595cb90e4b4e7e6b6c	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	portability	5c04908f6c6df62582d9011a01c03b88	prefix	21058c21ca48453d771df15500873ede	python	412a8596c4b1620189e299c8dd303d0a	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
+_eclasses_=eutils	d92f291efb4ef0595cb90e4b4e7e6b6c	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	portability	536c5e70c5fb252ed3b769e04aa3f05b	prefix	21058c21ca48453d771df15500873ede	python	412a8596c4b1620189e299c8dd303d0a	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
 _md5_=eae6dc3fc7c65672c4b51fc05ad867c3

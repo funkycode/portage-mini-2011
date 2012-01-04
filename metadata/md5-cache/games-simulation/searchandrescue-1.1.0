@@ -8,5 +8,5 @@ LICENSE=GPL-2
 RDEPEND=x11-libs/libXxf86vm x11-libs/libXmu x11-libs/libXi x11-libs/libXpm virtual/opengl virtual/glu media-libs/libsdl media-libs/sdl-mixer
 SLOT=0
 SRC_URI=mirror://sourceforge/searchandrescue/SearchAndRescue-1.1.0.tar.gz mirror://sourceforge/searchandrescue/SearchAndRescue-data-1.0.0.tar.gz
-_eclasses_=base	809ab15a673823938260f6b17661c3f1	eutils	d92f291efb4ef0595cb90e4b4e7e6b6c	games	f75cdbfdf1760e514ca65e2f6c6a7c72	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	portability	5c04908f6c6df62582d9011a01c03b88	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
+_eclasses_=base	809ab15a673823938260f6b17661c3f1	eutils	d92f291efb4ef0595cb90e4b4e7e6b6c	games	f75cdbfdf1760e514ca65e2f6c6a7c72	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	portability	536c5e70c5fb252ed3b769e04aa3f05b	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
 _md5_=ef95ec354283bfe50275b6d8b3b88bc8

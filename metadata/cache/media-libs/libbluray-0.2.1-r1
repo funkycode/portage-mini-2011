@@ -8,9 +8,9 @@ LGPL-2.1
 Blu-ray playback libraries
 ~amd64 ~x86 ~x86-fbsd
 autotools eutils flag-o-matic java-pkg-opt-2 java-utils-2 libtool multilib portability toolchain-funcs user versionator
-aacs java static-libs utils xine +xml elibc_FreeBSD java
+aacs java static-libs utils +xml elibc_FreeBSD java
 utils? ( static-libs )
-xine? ( ~media-libs/libbluray-xine-0.2.1 )
+
 
 4
 

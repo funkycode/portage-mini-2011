@@ -11,5 +11,5 @@ RDEPEND=!build? ( >=sys-libs/ncurses-5.2 sys-devel/make )
 RESTRICT=binchecks strip
 SLOT=3.0.4-r4
 SRC_URI=mirror://kernel/linux/kernel/v3.x/linux-3.0.tar.bz2 http://dev.gentoo.org/~blueness/hardened-sources/hardened-patches/hardened-patches-3.0.4-5.extras.tar.bz2 mirror://gentoo/genpatches-3.0-5.base.tar.bz2 mirror://gentoo/genpatches-3.0-5.extras.tar.bz2
-_eclasses_=eutils	d92f291efb4ef0595cb90e4b4e7e6b6c	kernel-2	86f1b70fd28e9511b2a8205ac837c9e4	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	portability	5c04908f6c6df62582d9011a01c03b88	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e	versionator	6601b4c5b3f019a993db59a50e1854e4
+_eclasses_=eutils	d92f291efb4ef0595cb90e4b4e7e6b6c	kernel-2	86f1b70fd28e9511b2a8205ac837c9e4	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	portability	536c5e70c5fb252ed3b769e04aa3f05b	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e	versionator	6601b4c5b3f019a993db59a50e1854e4
 _md5_=3b211bd6a4bb6d69fee84094a1eabd26

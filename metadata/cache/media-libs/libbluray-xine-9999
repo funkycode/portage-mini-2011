@@ -1,4 +1,4 @@
-~media-libs/libbluray-9999 media-libs/xine-lib dev-util/pkgconfig dev-vcs/git
+~media-libs/libbluray-9999 media-libs/xine-lib !media-libs/xine-lib[bluray] dev-util/pkgconfig dev-vcs/git
 ~media-libs/libbluray-9999 media-libs/xine-lib
 0
 

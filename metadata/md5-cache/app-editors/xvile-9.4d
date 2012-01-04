@@ -8,5 +8,5 @@ LICENSE=GPL-2
 RDEPEND=perl? ( dev-lang/perl ) >=x11-libs/libX11-1.0.0 >=x11-libs/libXt-1.0.0 >=x11-libs/libICE-1.0.0 >=x11-libs/libSM-1.0.0 >=x11-libs/libXaw-1.0.1 >=x11-libs/libXpm-3.5.4.2 >=x11-proto/xproto-7.0.4 =app-editors/vile-9.4d
 SLOT=0
 SRC_URI=ftp://ftp.phred.org/pub/vile/vile-9.4.tgz ftp://ftp.phred.org/pub/vile/patches/vile-9.4a.patch.gz ftp://ftp.phred.org/pub/vile/patches/vile-9.4b.patch.gz ftp://ftp.phred.org/pub/vile/patches/vile-9.4c.patch.gz ftp://ftp.phred.org/pub/vile/patches/vile-9.4d.patch.gz
-_eclasses_=eutils	d92f291efb4ef0595cb90e4b4e7e6b6c	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	portability	5c04908f6c6df62582d9011a01c03b88	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
+_eclasses_=eutils	d92f291efb4ef0595cb90e4b4e7e6b6c	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	portability	536c5e70c5fb252ed3b769e04aa3f05b	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
 _md5_=ef40889af8fcb8b654241a1a4e5f02ca

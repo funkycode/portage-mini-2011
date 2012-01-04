@@ -1,5 +1,5 @@
 DEFINED_PHASES=prepare unpack
-DEPEND=~media-libs/libbluray-9999 media-libs/xine-lib dev-util/pkgconfig dev-vcs/git
+DEPEND=~media-libs/libbluray-9999 media-libs/xine-lib !media-libs/xine-lib[bluray] dev-util/pkgconfig dev-vcs/git
 DESCRIPTION=Xine plugin for blu-ray playback libraries
 EAPI=4
 HOMEPAGE=http://www.videolan.org/developers/libbluray.html
@@ -7,4 +7,4 @@ LICENSE=GPL-2
 RDEPEND=~media-libs/libbluray-9999 media-libs/xine-lib
 SLOT=0
 _eclasses_=git-2	e093fad2de8fa7ca11e7ed938d27ceb1	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68
-_md5_=4eedfa416af079a3c6cf7539744d03d4
+_md5_=0829ce53e64f0b5ec442a9578f68960e

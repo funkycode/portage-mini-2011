@@ -9,5 +9,5 @@ LICENSE=GPL-2
 RDEPEND=sci-libs/fftw:3.0 fltk? ( x11-libs/fltk:1 ) jack? ( media-sound/jack-audio-connection-kit ) alsa? ( media-libs/alsa-lib ) lash? ( media-sound/lash ) >=dev-libs/mini-xml-2.2.1
 SLOT=0
 SRC_URI=mirror://sourceforge/zynaddsubfx/ZynAddSubFX-2.4.0.tar.bz2
-_eclasses_=eutils	d92f291efb4ef0595cb90e4b4e7e6b6c	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	portability	5c04908f6c6df62582d9011a01c03b88	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
+_eclasses_=eutils	d92f291efb4ef0595cb90e4b4e7e6b6c	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	portability	536c5e70c5fb252ed3b769e04aa3f05b	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
 _md5_=13ae0a888264e975c05de56739456830

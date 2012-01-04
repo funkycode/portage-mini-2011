@@ -9,4 +9,4 @@ RDEPEND=net-libs/libpcap
 SLOT=0
 SRC_URI=http://siphon.datanerds.net/siphon-v.666.tar.gz
 _eclasses_=multilib	5f4ad6cf85e365e8f0c6050ddd21659e	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68
-_md5_=834618b95d0835ca7ae1f7695a5e8695
+_md5_=b74d4fefd00e40800831bb946a470bdc

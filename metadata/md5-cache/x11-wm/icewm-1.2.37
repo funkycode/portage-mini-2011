@@ -9,5 +9,5 @@ LICENSE=GPL-2
 RDEPEND=x11-libs/libX11 x11-libs/libXrandr x11-libs/libXext x11-libs/libXpm x11-libs/libXrender x11-libs/libXft x11-libs/libSM x11-libs/libICE xinerama? ( x11-libs/libXinerama ) esd? ( media-sound/esound ) gnome? ( gnome-base/gnome-desktop:2 ) imlib? ( >=media-libs/imlib-1.9.10-r1 ) nls? ( sys-devel/gettext ) truetype? ( >=media-libs/freetype-2.0.9 ) media-libs/giflib
 SLOT=0
 SRC_URI=mirror://sourceforge/icewm/icewm-1.2.37.tar.gz
-_eclasses_=autotools	63332a15502113ca711ccccb3889a109	eutils	d92f291efb4ef0595cb90e4b4e7e6b6c	libtool	5f623f5a211fb1b2d84d88ee49959a54	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	portability	5c04908f6c6df62582d9011a01c03b88	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
+_eclasses_=autotools	63332a15502113ca711ccccb3889a109	eutils	d92f291efb4ef0595cb90e4b4e7e6b6c	libtool	5f623f5a211fb1b2d84d88ee49959a54	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	portability	536c5e70c5fb252ed3b769e04aa3f05b	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
 _md5_=6e99ade18633890b18af8db303bbf98b

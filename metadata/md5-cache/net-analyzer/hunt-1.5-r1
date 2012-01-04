@@ -7,4 +7,4 @@ LICENSE=GPL-2
 SLOT=0
 SRC_URI=http://lin.fsid.cvut.cz/~kra/hunt/hunt-1.5.tgz
 _eclasses_=multilib	5f4ad6cf85e365e8f0c6050ddd21659e	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68
-_md5_=660aa2ab52aab3f70ea0fa250ab2db1f
+_md5_=06f31d3b3f43c34fc76bb6747b46f081

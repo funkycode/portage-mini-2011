@@ -8,5 +8,5 @@ LICENSE=GPL-2
 RDEPEND=x11-libs/gtk+:1 >=dev-scheme/guile-1.6.3 <dev-scheme/guile-1.8 =x11-libs/guile-gtk-1.2*
 SLOT=0
 SRC_URI=http://www.geda.seul.org/dist/gwave-20051222.tar.gz
-_eclasses_=eutils	d92f291efb4ef0595cb90e4b4e7e6b6c	flag-o-matic	9bfd4a1550735a7fc561ff5bae86e4c9	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	portability	5c04908f6c6df62582d9011a01c03b88	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
+_eclasses_=eutils	d92f291efb4ef0595cb90e4b4e7e6b6c	flag-o-matic	9bfd4a1550735a7fc561ff5bae86e4c9	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	portability	536c5e70c5fb252ed3b769e04aa3f05b	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
 _md5_=b73012ef2f7fa1037491ec02d7606149

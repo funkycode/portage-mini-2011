@@ -9,5 +9,5 @@ LICENSE=GPL-2
 RDEPEND=qt4? ( x11-libs/qt-gui:4 ) latex? ( app-text/texlive-core dev-texlive/texlive-genericrecommended dev-texlive/texlive-fontsrecommended dev-texlive/texlive-latexrecommended dev-texlive/texlive-fontsextra dev-texlive/texlive-latexextra ) dev-lang/python virtual/libiconv media-libs/libpng app-text/ghostscript-gpl !nodot? ( >=media-gfx/graphviz-2.6 media-libs/freetype )
 SLOT=0
 SRC_URI=ftp://ftp.stack.nl/pub/users/dimitri/doxygen-1.5.8.src.tar.gz
-_eclasses_=base	809ab15a673823938260f6b17661c3f1	eutils	d92f291efb4ef0595cb90e4b4e7e6b6c	fdo-mime	0acfe1a88fd8751a1d5dc671168219fa	flag-o-matic	9bfd4a1550735a7fc561ff5bae86e4c9	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	portability	5c04908f6c6df62582d9011a01c03b88	qt4-r2	05d7a72491b4cbbac2f4d4383657bc4f	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
+_eclasses_=base	809ab15a673823938260f6b17661c3f1	eutils	d92f291efb4ef0595cb90e4b4e7e6b6c	fdo-mime	0acfe1a88fd8751a1d5dc671168219fa	flag-o-matic	9bfd4a1550735a7fc561ff5bae86e4c9	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	portability	536c5e70c5fb252ed3b769e04aa3f05b	qt4-r2	05d7a72491b4cbbac2f4d4383657bc4f	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
 _md5_=9520886a64907cff58af207300bdfeea

@@ -9,5 +9,5 @@ LICENSE=FESTIVAL BSD as-is
 RDEPEND=~app-accessibility/speech-tools-2.0.95_beta
 SLOT=0
 SRC_URI=http://www.festvox.org/packed/festival/2.0.95/festival-2.0.95-beta.tar.gz http://www.festvox.org/packed/festival/2.0.95/festlex_CMU.tar.gz http://www.festvox.org/packed/festival/2.0.95/festlex_OALD.tar.gz http://www.festvox.org/packed/festival/2.0.95/festlex_POSLEX.tar.gz http://www.festvox.org/packed/festival/2.0.95/festvox_cmu_us_awb_cg.tar.gz http://www.festvox.org/packed/festival/2.0.95/festvox_cmu_us_rms_cg.tar.gz http://www.festvox.org/packed/festival/2.0.95/festvox_cmu_us_slt_arctic_hts.tar.gz http://www.festvox.org/packed/festival/2.0.95/festvox_rablpc16k.tar.gz http://www.festvox.org/packed/festival/2.0.95/festvox_kallpc16k.tar.gz http://www.festvox.org/packed/festival/2.0.95/speech_tools-2.0.95-beta.tar.gz
-_eclasses_=eutils	d92f291efb4ef0595cb90e4b4e7e6b6c	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	portability	5c04908f6c6df62582d9011a01c03b88	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
+_eclasses_=eutils	d92f291efb4ef0595cb90e4b4e7e6b6c	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	portability	536c5e70c5fb252ed3b769e04aa3f05b	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
 _md5_=f888ad994210e692679ed6fd86737498

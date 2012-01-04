@@ -9,5 +9,5 @@ LICENSE=LGPL-2.1
 RDEPEND=>=sys-devel/libtool-2.2.6b alsa? ( media-libs/alsa-lib ) amr? ( media-libs/opencore-amr ) encode? ( >=media-sound/lame-3.98.4 ) flac? ( media-libs/flac ) mad? ( media-libs/libmad ) sndfile? ( media-libs/libsndfile ) ogg? ( media-libs/libvorbis media-libs/libogg ) ao? ( media-libs/libao ) ffmpeg? ( virtual/ffmpeg ) ladspa? ( media-libs/ladspa-sdk ) >=media-sound/gsm-1.0.12-r1 id3tag? ( media-libs/libid3tag ) png? ( media-libs/libpng sys-libs/zlib ) pulseaudio? ( media-sound/pulseaudio ) wavpack? ( media-sound/wavpack )
 SLOT=0
 SRC_URI=mirror://sourceforge/sox/sox-14.3.2.tar.gz
-_eclasses_=eutils	d92f291efb4ef0595cb90e4b4e7e6b6c	flag-o-matic	9bfd4a1550735a7fc561ff5bae86e4c9	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	portability	5c04908f6c6df62582d9011a01c03b88	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
+_eclasses_=eutils	d92f291efb4ef0595cb90e4b4e7e6b6c	flag-o-matic	9bfd4a1550735a7fc561ff5bae86e4c9	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	portability	536c5e70c5fb252ed3b769e04aa3f05b	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
 _md5_=1f20c19606e1f0e817f0de0848dc60f4
