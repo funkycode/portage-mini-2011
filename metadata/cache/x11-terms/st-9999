@@ -14,7 +14,7 @@ savedconfig
 
 3
 
-install prepare setup unpack
+install postinst prepare setup unpack
 
 
 

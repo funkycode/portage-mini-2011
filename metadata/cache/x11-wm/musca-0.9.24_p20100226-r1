@@ -14,7 +14,7 @@ apis xlisten savedconfig
 
 2
 
-compile install prepare
+compile install postinst prepare
 
 
 

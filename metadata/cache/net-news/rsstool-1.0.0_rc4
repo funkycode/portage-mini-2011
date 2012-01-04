@@ -3,7 +3,7 @@ dev-libs/libxml2
 0
 mirror://berlios/rsstool/rsstool-1.0.0rc4-src.tar.gz
 
-http://rsstool.y7.ath.cx/
+http://rsstool.sourceforge.net/
 GPL-2
 cmdline tool to read, parse, merge, and write RSS (and Atom) feeds
 amd64 ppc ppc64 x86 ~x86-fbsd

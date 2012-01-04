@@ -8,6 +8,7 @@ inherit() {
 		source ../${e}.eclass
 	done
 }
+EXPORT_FUNCTIONS() { :; }
 
 debug-print() {
 	[[ ${#} -eq 0 ]] && return
@@ -37,6 +38,7 @@ has() {
 	done
 	return 1
 }
+use() { has "$1" ${IUSE} ; }
 
 die() {
 	echo "die: $*" 1>&2
@@ -93,6 +95,7 @@ tbegin() {
 	ebegin "Testing $*"
 }
 texit() {
+	rm -rf "${tmpdir}"
 	exit ${tret}
 }
 tend() {
@@ -104,3 +107,24 @@ t() {
 	: $(( tret |= ${ret} ))
 	return ${ret}
 }
+
+tmpdir="${PWD}/tmp"
+pkg_root="${tmpdir}/$0/${RANDOM}"
+T="${pkg_root}/temp"
+D="${pkg_root}/image"
+WORKDIR="${pkg_root}/work"
+ED=${D}
+mkdir -p "${D}" "${T}" "${WORKDIR}"
+
+dodir() {
+	mkdir -p "${@/#/${ED}/}"
+}
+
+elog() { einfo "$@" ; }
+
+IUSE=""
+CATEGORY="dev-eclass"
+PN="tests"
+PV="0"
+P="${PN}-${PV}"
+PF=${P}

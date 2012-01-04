@@ -1,6 +1,6 @@
 # Copyright 1999-2011 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/eclass/savedconfig.eclass,v 1.16 2011/12/27 17:55:12 fauli Exp $
+# $Header: /var/cvsroot/gentoo-x86/eclass/savedconfig.eclass,v 1.20 2012/01/04 08:23:51 vapier Exp $
 
 # @ECLASS: savedconfig.eclass
 # @MAINTAINER:
@@ -29,25 +29,23 @@ save_config() {
 	if [[ ${EBUILD_PHASE} != "install" ]]; then
 		die "Bad package!  save_config only for use in src_install functions!"
 	fi
-	[[ -z "${ED}" ]] && ED=${D}
-	case $# in
-		0) die "Tell me what to save"
-			;;
-		1) if [[ -f "$1" ]]; then
-				dodir /etc/portage/savedconfig/${CATEGORY}
-				cp "$1" "${ED}"/etc/portage/savedconfig/${CATEGORY}/${PF} \
-					|| die "Failed to save $1"
-			else
-				dodir /etc/portage/savedconfig/${CATEGORY}/${PF}
-				treecopy "$1" "${ED}"/etc/portage/savedconfig/${CATEGORY}/${PF} \
-					|| die "Failed to save $1"
-			fi
-			;;
-		*)
-			dodir "${PORTAGE_CONFIGROOT}"/etc/portage/savedconfig/${CATEGORY}/${PF}
-			treecopy $* "${D}/${PORTAGE_CONFIGROOT}"/etc/portage/savedconfig/${CATEGORY}/${PF} \
-					|| die "Failed to save $1"
-	esac
+	[[ $# -eq 0 ]] && die "Usage: save_config <files>"
+
+	# Be lazy in our EAPI compat
+	: ${ED:=${D}}
+
+	local dest="/etc/portage/savedconfig/${CATEGORY}"
+	if [[ $# -eq 1 && -f $1 ]] ; then
+		# Just one file, so have the ${PF} be that config file
+		dodir "${dest}"
+		cp "$@" "${ED}/${dest}/${PF}" || die "failed to save $*"
+	else
+		# A dir, or multiple files, so have the ${PF} be a dir
+		# with all the saved stuff below it
+		dodir "${dest}/${PF}"
+		treecopy "$@" "${ED}/${dest}/${PF}" || die "failed to save $*"
+	fi
+
 	elog "Your configuration for ${CATEGORY}/${PF} has been saved in "
 	elog "/etc/portage/savedconfig/${CATEGORY}/${PF} for your editing pleasure."
 	elog "You can edit these files by hand and remerge this package with"
@@ -78,12 +76,13 @@ save_config() {
 # ${PORTAGE_CONFIGROOT}/etc/portage/savedconfig/${CATEGORY}/${PN}
 # @CODE
 restore_config() {
-	use savedconfig || return
-
 	case ${EBUILD_PHASE} in
 		unpack|compile|configure|prepare) ;;
 		*) die "Bad package!  restore_config only for use in src_{unpack,compile,configure,prepare} functions!" ;;
 	esac
+
+	use savedconfig || return
+
 	local found check configfile
 	local base=${PORTAGE_CONFIGROOT}/etc/portage/savedconfig
 	for check in {${CATEGORY}/${PF},${CATEGORY}/${P},${CATEGORY}/${PN}}; do
@@ -121,3 +120,20 @@ restore_config() {
 		ewarn "Your config file(s) will not be used this time"
 	fi
 }
+
+savedconfig_pkg_postinst() {
+	# If the user has USE=savedconfig, then chances are they
+	# are modifying these files, so keep them around.  #396169
+	# This might lead to cruft build up, but the alternatives
+	# are worse :/.
+
+	if use savedconfig ; then
+		# Be lazy in our EAPI compat
+		: ${EROOT:=${ROOT}}
+
+		find "${EROOT}/etc/portage/savedconfig/${CATEGORY}/${PF}" \
+			-exec touch {} + 2>/dev/null
+	fi
+}
+
+EXPORT_FUNCTIONS pkg_postinst

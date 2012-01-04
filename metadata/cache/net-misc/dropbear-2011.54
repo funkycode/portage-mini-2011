@@ -14,7 +14,7 @@ pam? ( !static )
 
 4
 
-compile configure install preinst prepare
+compile configure install postinst preinst prepare
 
 
 

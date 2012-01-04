@@ -1,7 +1,3 @@
-# Copyright 1999-2010 Gentoo Foundation
-# Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/net-analyzer/tcpreplay/tcpreplay-3.4.4.ebuild,v 1.1 2010/04/21 19:24:09 pva Exp $
-
 EAPI="2"
 
 DESCRIPTION="replay saved tcpdump or snoop files at arbitrary speeds"
@@ -10,7 +6,7 @@ SRC_URI="mirror://sourceforge/${PN}/${P}.tar.gz"
 
 LICENSE="BSD"
 SLOT="0"
-KEYWORDS="~amd64 ~sparc ~x86"
+KEYWORDS="*"
 IUSE="debug pcapnav +tcpdump"
 
 DEPEND="
@@ -28,8 +24,10 @@ src_prepare() {
 
 src_configure() {
 	# By default it uses static linking. Avoid that, bug 252940
+	# We also want to tell it to use dynamic linking
 	econf --enable-shared \
 		--disable-local-libopts \
+		--enable-dynamic-link
 		$(use_with tcpdump tcpdump /usr/sbin/tcpdump) \
 		$(use_with pcapnav pcapnav-config /usr/bin/pcapnav-config) \
 		$(use_enable debug)

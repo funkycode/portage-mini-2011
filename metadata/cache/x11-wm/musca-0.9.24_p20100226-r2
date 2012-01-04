@@ -14,7 +14,7 @@ apis xlisten savedconfig
 
 4
 
-install prepare
+install postinst prepare
 
 
 

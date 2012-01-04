@@ -1,7 +1,3 @@
-# Copyright 1999-2010 Gentoo Foundation
-# Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/net-analyzer/tcpreplay/tcpreplay-3.4.5_beta2.ebuild,v 1.1 2010/10/29 06:03:08 jer Exp $
-
 EAPI="2"
 
 MY_P="${P/_/}"
@@ -11,7 +7,7 @@ SRC_URI="http://synfin.net/${MY_P}.tar.gz"
 
 LICENSE="BSD"
 SLOT="0"
-KEYWORDS="~amd64 ~sparc ~x86"
+KEYWORDS="~*"
 IUSE="debug pcapnav +tcpdump"
 
 DEPEND="
@@ -34,6 +30,7 @@ src_configure() {
 	# By default it uses static linking. Avoid that, bug 252940
 	econf --enable-shared \
 		--disable-local-libopts \
+		--enable-dynamic-link
 		$(use_with tcpdump tcpdump /usr/sbin/tcpdump) \
 		$(use_with pcapnav pcapnav-config /usr/bin/pcapnav-config) \
 		$(use_enable debug)
