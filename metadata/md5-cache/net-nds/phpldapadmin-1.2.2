@@ -1,0 +1,13 @@
+DEFINED_PHASES=install postinst prepare prerm setup
+DEPEND=|| ( virtual/httpd-cgi virtual/httpd-fastcgi ) virtual/httpd-php >=app-admin/webapp-config-1.50.15
+DESCRIPTION=phpLDAPadmin is a web-based tool for managing all aspects of your LDAP server.
+EAPI=2
+HOMEPAGE=http://phpldapadmin.sourceforge.net
+IUSE=vhosts
+KEYWORDS=~alpha ~amd64 ~ia64 ~ppc ~sparc ~x86
+LICENSE=GPL-2
+RDEPEND=dev-lang/php[hash,ldap,session,xml,nls] || ( <dev-lang/php-5.3[pcre] >=dev-lang/php-5.3 ) virtual/httpd-php >=app-admin/webapp-config-1.50.15
+SLOT=1.2.2
+SRC_URI=mirror://sourceforge/phpldapadmin/phpldapadmin-1.2.2.tgz
+_eclasses_=depend.php	ce98226ee6abc9debc88f584f7649f45	eutils	d92f291efb4ef0595cb90e4b4e7e6b6c	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	phpconfutils	e108303831029e5b8a9d24b991b1d62a	portability	536c5e70c5fb252ed3b769e04aa3f05b	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e	webapp	30d951d5c98c4f31c7999ab4ba4806d1
+_md5_=1b162278c8e46296bf41a7b928a122d9

@@ -1,6 +1,6 @@
-# Copyright 1999-2011 Gentoo Foundation
+# Copyright 1999-2012 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/gnome-extra/gnome-games/gnome-games-3.2.1.ebuild,v 1.1 2011/11/07 04:03:58 tetromino Exp $
+# $Header: /var/cvsroot/gentoo-x86/gnome-extra/gnome-games/gnome-games-3.2.1.ebuild,v 1.2 2012/01/04 23:30:09 tetromino Exp $
 
 EAPI="3"
 GNOME_TARBALL_SUFFIX="xz"
@@ -128,8 +128,6 @@ pkg_setup() {
 }
 
 src_prepare() {
-	gnome2_src_prepare
-
 	use sudoku && python_convert_shebangs -r 2 gnome-sudoku/src
 
 	# TODO: File upstream bug for this
@@ -141,8 +139,9 @@ src_prepare() {
 	eautoreconf
 
 	# disable pyc compiling
-	mv py-compile py-compile.orig
-	ln -s $(type -P true) py-compile
+	echo > py-compile
+
+	gnome2_src_prepare
 }
 
 src_test() {

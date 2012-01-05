@@ -9,5 +9,5 @@ LICENSE=GPL-2
 RDEPEND=>=dev-util/geany-0.20 dev-libs/libxml2:2 dev-libs/glib:2 enchant? ( app-text/enchant ) gtkspell? ( app-text/gtkspell:2 ) lua? ( dev-lang/lua ) soup? ( net-libs/libsoup ) webkit? ( net-libs/webkit-gtk:2 x11-libs/gtk+:2 x11-libs/gdk-pixbuf:2 )
 SLOT=0
 SRC_URI=http://plugins.geany.org/geany-plugins/geany-plugins-0.20.tar.gz
-_eclasses_=autotools	63332a15502113ca711ccccb3889a109	autotools-utils	9959407b3d97951cd99a7685f7229cc7	eutils	d92f291efb4ef0595cb90e4b4e7e6b6c	libtool	5f623f5a211fb1b2d84d88ee49959a54	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	portability	536c5e70c5fb252ed3b769e04aa3f05b	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e	versionator	6601b4c5b3f019a993db59a50e1854e4
+_eclasses_=autotools	5c39d4c6ef5f3cc5eeaad64a9e5a84c5	autotools-utils	9959407b3d97951cd99a7685f7229cc7	eutils	d92f291efb4ef0595cb90e4b4e7e6b6c	libtool	5f623f5a211fb1b2d84d88ee49959a54	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	portability	536c5e70c5fb252ed3b769e04aa3f05b	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e	versionator	6601b4c5b3f019a993db59a50e1854e4
 _md5_=1540235b12d8638a3c4fac1e3f40088d

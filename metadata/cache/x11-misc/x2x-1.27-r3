@@ -6,7 +6,7 @@ http://ftp.digital.com/pub/Digital/SRC/x2x/x2x-1.27.tar.gz mirror://debian/pool/
 http://www.the-labs.com/X11/#x2x
 as-is
 An utility to connect the Mouse and KeyBoard to another X
-~alpha amd64 ~mips ~ppc ~sparc x86
+~alpha amd64 ~mips ppc ~sparc x86
 eutils multilib portability toolchain-funcs user
 
 

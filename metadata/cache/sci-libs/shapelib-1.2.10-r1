@@ -4,15 +4,15 @@
 http://dl.maptools.org/dl/shapelib//shapelib-1.2.10.tar.gz
 
 http://shapelib.maptools.org/
-GPL-2
-library for manipulating ESRI Shapefiles
+GPL-2 LGPL-2
+Library for manipulating ESRI Shapefiles
 amd64 ~ppc x86
 eutils multilib portability toolchain-funcs user
+static-libs
 
 
 
-
-2
+4
 
 compile install prepare
 

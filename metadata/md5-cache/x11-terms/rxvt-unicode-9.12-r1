@@ -4,11 +4,11 @@ DESCRIPTION=rxvt clone with xft and unicode support
 EAPI=4
 HOMEPAGE=http://software.schmorp.de/pkg/rxvt-unicode.html
 IUSE=256-color alt-font-width afterimage blink +focused-urgency fading-colors +font-styles force-hints iso14755 +mousewheel +perl pixbuf truetype unicode3 +vanilla wcwidth
-KEYWORDS=~alpha amd64 hppa ~ia64 ~ppc ~ppc64 ~sparc ~x86 ~x86-fbsd ~amd64-linux ~x86-linux ~ppc-macos ~x64-macos ~x86-macos ~sparc-solaris
+KEYWORDS=~alpha amd64 hppa ~ia64 ~ppc ~ppc64 ~sparc x86 ~x86-fbsd ~amd64-linux ~x86-linux ~ppc-macos ~x64-macos ~x86-macos ~sparc-solaris
 LICENSE=GPL-2
 RDEPEND=x11-libs/libX11 x11-libs/libXft x11-libs/libXrender >=sys-libs/ncurses-5.7-r6 afterimage? ( || ( media-libs/libafterimage x11-wm/afterstep ) ) perl? ( dev-lang/perl ) pixbuf? ( x11-libs/gdk-pixbuf x11-libs/gtk+:2 ) kernel_Darwin? ( dev-perl/Mac-Pasteboard )
 REQUIRED_USE=vanilla? ( !alt-font-width focused-urgency !force-hints !wcwidth )
 SLOT=0
 SRC_URI=http://dist.schmorp.de/rxvt-unicode/Attic/rxvt-unicode-9.12.tar.bz2
-_eclasses_=autotools	63332a15502113ca711ccccb3889a109	eutils	d92f291efb4ef0595cb90e4b4e7e6b6c	libtool	5f623f5a211fb1b2d84d88ee49959a54	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	portability	536c5e70c5fb252ed3b769e04aa3f05b	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
-_md5_=bb9ef39c12a788b5b1e5e80357ed21e6
+_eclasses_=autotools	5c39d4c6ef5f3cc5eeaad64a9e5a84c5	eutils	d92f291efb4ef0595cb90e4b4e7e6b6c	libtool	5f623f5a211fb1b2d84d88ee49959a54	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	portability	536c5e70c5fb252ed3b769e04aa3f05b	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
+_md5_=f848f5da2691e65140947e0facbc2669

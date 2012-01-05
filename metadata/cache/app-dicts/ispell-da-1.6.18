@@ -6,7 +6,7 @@ http://da.speling.org/filer/ispell-da-1.6.18.tar.gz
 http://da.speling.org/
 GPL-2
 A danish dictionary for ispell
-~alpha amd64 hppa ~mips ~ppc ~sparc x86
+~alpha amd64 hppa ~mips ppc ~sparc x86
 multilib toolchain-funcs
 
 

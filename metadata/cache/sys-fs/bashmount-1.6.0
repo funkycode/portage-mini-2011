@@ -6,7 +6,7 @@ mirror://sourceforge/bashmount/bashmount-1.6.0.tar.gz
 http://sourceforge.net/projects/bashmount/
 GPL-2
 A bash script that uses udisks to handle removable devices without dependencies on any GUI
-amd64 ~x86
+amd64 x86
 
 
 
