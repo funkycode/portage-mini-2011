@@ -1,6 +1,6 @@
 # Copyright 1999-2012 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/media-libs/xine-lib/xine-lib-1.2.9999.ebuild,v 1.8 2012/01/03 22:44:39 ssuominen Exp $
+# $Header: /var/cvsroot/gentoo-x86/media-libs/xine-lib/xine-lib-1.2.9999.ebuild,v 1.9 2012/01/05 09:57:15 ssuominen Exp $
 
 EAPI=4
 
@@ -24,6 +24,7 @@ SLOT="1"
 IUSE="a52 aac aalib +alsa altivec bluray +css directfb dts dvb dxr3 fbcon flac fusion gtk imagemagick ipv6 jack libcaca mad +mmap mng modplug musepack opengl oss pulseaudio real samba sdl speex theora truetype v4l vcd vdpau vdr vidix +vis vorbis wavpack win32codecs +X +xcb xinerama +xv xvmc"
 
 RDEPEND="dev-libs/libxdg-basedir
+	media-libs/libdvdnav
 	sys-libs/zlib
 	virtual/ffmpeg
 	virtual/libiconv
@@ -149,8 +150,7 @@ src_configure() {
 		$(use_enable dvb) \
 		--disable-gnomevfs \
 		$(use_enable samba) \
-		--disable-v4l \
-		$(use_enable v4l v4l2) $(use_enable v4l libv4l) \
+		--disable-v4l $(use_enable v4l v4l2) $(use_enable v4l libv4l) \
 		$(use_enable vcd) \
 		$(use_enable vdr) \
 		$(use_enable bluray) \
@@ -176,6 +176,7 @@ src_configure() {
 		$(use_with xcb) \
 		--with-xv-path=/usr/$(get_libdir) \
 		$(use_with imagemagick) \
+		--with-external-dvdnav \
 		$(use_with flac libflac) \
 		$(use_with speex) \
 		$(use_with theora) \

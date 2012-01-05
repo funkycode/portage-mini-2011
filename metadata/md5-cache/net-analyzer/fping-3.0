@@ -1,0 +1,11 @@
+DEFINED_PHASES=compile configure install prepare
+DESCRIPTION=A utility to ping multiple hosts at once
+EAPI=4
+HOMEPAGE=http://fping.org/
+IUSE=ipv6
+KEYWORDS=~alpha ~amd64 ~hppa ~ia64 ~ppc ~ppc64 ~sparc ~x86 ~x86-fbsd ~x86-freebsd ~amd64-linux ~x86-linux ~x86-macos
+LICENSE=fping
+SLOT=0
+SRC_URI=http://fping.org/dist/fping-3.0.tar.gz
+_eclasses_=eutils	d92f291efb4ef0595cb90e4b4e7e6b6c	flag-o-matic	9bfd4a1550735a7fc561ff5bae86e4c9	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	portability	536c5e70c5fb252ed3b769e04aa3f05b	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
+_md5_=fb9ca188c6c6ab549102c886befb2dca

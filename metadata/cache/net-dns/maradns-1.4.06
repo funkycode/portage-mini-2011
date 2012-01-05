@@ -4,7 +4,7 @@ dev-lang/perl
 http://www.maradns.org/download/1.4/1.4.06/maradns-1.4.06.tar.bz2
 
 http://www.maradns.org/
-as-is
+BSD-2
 Proxy DNS server with permanent caching
 amd64 ppc sparc x86
 eutils multilib portability toolchain-funcs user

@@ -2601,7 +2601,9 @@ media-sound/banshee:karma - Build with karma support
 media-sound/banshee:web - Enable support for plugins that access web-based services such as Amazon and wikipedia (requires net-libs/webkit-gtk)
 media-sound/banshee:youtube - Enable the Youtube plugin
 media-sound/clementine:ayatana - Build in support for Ayatana notification using the libindicate-qt plugin.
+media-sound/clementine:kde - Enable plasma krunner global search
 media-sound/clementine:lastfm - Enable Last.fm streaming services support through media-libs/liblastfm
+media-sound/clementine:ofa - Support for Open Fingerprint Architecture (OFA)
 media-sound/clementine:projectm - Build with ProjectM visualization
 media-sound/clementine:wiimote - Enable support for Wii remote
 media-sound/cmus:pidgin - install support script for net-im/pidgin
@@ -4546,7 +4548,6 @@ sys-apps/iproute2:iptables - include support for iptables filtering
 sys-apps/irqbalance:numa - Support balancing IRQs across NUMA nodes
 sys-apps/kexec-tools:lzma - Enables support for LZMA compressed kernel images
 sys-apps/kexec-tools:xen - Enable extended xen support
-sys-apps/kmod:rootfs-install - Install the library into rootfs, to satisfy dependencies of udev when using separate /usr.
 sys-apps/kmod:tools - Install module loading/unloading tools.
 sys-apps/lm_sensors:sensord - Enable sensord - a daemon that can be used to periodically log sensor readings from hardware health-monitoring chips
 sys-apps/memtest86:serial - Compile with serial console support
@@ -4616,6 +4617,7 @@ sys-auth/pambase:pam_ssh - Enable pam_ssh module on system auth stack for authen
 sys-auth/pambase:passwdqc - Enable pam_passwdqc module on system auth stack for password quality validation. This is an alternative to pam_cracklib producing warnings, rejecting or providing example passwords when changing your system password. It is used by default by OpenWall GNU/*/Linux and by FreeBSD.
 sys-auth/pambase:sha512 - Switch Linux-PAM's pam_unix module to use sha512 for passwords hashes rather than MD5. This option requires >=sys-libs/pam-1.0.1 built against >=sys-libs/glibc-2.7, if it's built against an earlier version, it will silently be ignored, and MD5 hashes will be used. All the passwords changed after this USE flag is enabled will be saved to the shadow file hashed using SHA512 function. The password previously saved will be left untouched. Please note that while SHA512-hashed passwords will still be recognised if the USE flag is removed, the shadow file will not be compatible with systems using an earlier glibc version.
 sys-auth/polkit:introspection - Use dev-libs/gobject-introspection for introspection
+sys-auth/polkit:systemd - Use sys-apps/systemd instead of sys-auth/consolekit for session tracking
 sys-auth/sssd:glib - Use dev-libs/glib as UTF-8 string library
 sys-auth/sssd:libunistring - Use dev-libs/libunistring as UTF-8 string library
 sys-auth/sssd:locator - Install sssd's Kerberos plugin

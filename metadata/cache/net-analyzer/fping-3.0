@@ -1,0 +1,22 @@
+
+
+0
+http://fping.org/dist/fping-3.0.tar.gz
+
+http://fping.org/
+fping
+A utility to ping multiple hosts at once
+~alpha ~amd64 ~hppa ~ia64 ~ppc ~ppc64 ~sparc ~x86 ~x86-fbsd ~x86-freebsd ~amd64-linux ~x86-linux ~x86-macos
+eutils flag-o-matic multilib portability toolchain-funcs user
+ipv6
+
+
+
+4
+
+compile configure install prepare
+
+
+
+
+

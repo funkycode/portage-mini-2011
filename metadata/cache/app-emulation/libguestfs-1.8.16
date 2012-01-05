@@ -1,0 +1,22 @@
+virtual/perl-Getopt-Long >=dev-perl/Sys-Virt-0.2.4 >=app-misc/hivex-1.2.1[perl] dev-perl/libintl-perl dev-perl/String-ShellQuote dev-libs/libpcre app-arch/cpio dev-lang/perl app-cdr/cdrkit >=app-emulation/qemu-kvm-0.13[qemu_user_targets_x86_64,qemu_softmmu_targets_x86_64] sys-apps/fakeroot sys-apps/file app-emulation/libvirt dev-libs/libxml2:2 >=sys-apps/fakechroot-2.8 >=app-admin/augeas-0.7.1 sys-fs/squashfs-tools perl? ( virtual/perl-ExtUtils-MakeMaker ) fuse? ( sys-fs/fuse ) readline? ( sys-libs/readline ) doc? ( dev-libs/libxml2 ) ocaml? ( dev-lang/ocaml dev-ml/findlib dev-ml/xml-light ) ruby? ( dev-lang/ruby dev-ruby/rake ) java? ( virtual/jre ) haskell? ( dev-lang/ghc ) java? ( >=virtual/jdk-1.6 source? ( app-arch/zip ) ) doc? ( app-text/po4a ) =sys-devel/automake-1.11* >=sys-devel/autoconf-2.61 sys-devel/libtool java? ( >=dev-java/java-config-2.1.9-r1 ) dev-lang/perl[-build] >=app-admin/eselect-python-20091230 python? ( || ( =dev-lang/python-2.7* =dev-lang/python-2.6* ) ) >=sys-devel/m4-1.4.3 >=sys-devel/libtool-1.5.18
+virtual/perl-Getopt-Long >=dev-perl/Sys-Virt-0.2.4 >=app-misc/hivex-1.2.1[perl] dev-perl/libintl-perl dev-perl/String-ShellQuote dev-libs/libpcre app-arch/cpio dev-lang/perl app-cdr/cdrkit >=app-emulation/qemu-kvm-0.13[qemu_user_targets_x86_64,qemu_softmmu_targets_x86_64] sys-apps/fakeroot sys-apps/file app-emulation/libvirt dev-libs/libxml2:2 >=sys-apps/fakechroot-2.8 >=app-admin/augeas-0.7.1 sys-fs/squashfs-tools perl? ( virtual/perl-ExtUtils-MakeMaker ) fuse? ( sys-fs/fuse ) readline? ( sys-libs/readline ) doc? ( dev-libs/libxml2 ) ocaml? ( dev-lang/ocaml dev-ml/findlib dev-ml/xml-light ) ruby? ( dev-lang/ruby dev-ruby/rake ) java? ( virtual/jre ) haskell? ( dev-lang/ghc ) java? ( >=virtual/jre-1.6 ) java? ( >=dev-java/java-config-2.1.9-r1 ) dev-lang/perl[-build] >=app-admin/eselect-python-20091230 python? ( || ( =dev-lang/python-2.7* =dev-lang/python-2.6* ) ) php? ( || ( =app-emulation/libguestfs-1.8.16[php_targets_php5-3] =app-emulation/libguestfs-1.8.16[php_targets_php5-4] ) php_targets_php5-3? ( dev-lang/php:5.3 ) php_targets_php5-4? ( dev-lang/php:5.4 ) )
+0
+http://libguestfs.org/download/1.8-stable/libguestfs-1.8.16.tar.gz http://rion-overlay.googlecode.com/files/libguestfs-1.7.18-x86_64.tar.gz
+
+http://libguestfs.org/
+GPL-2
+Library for accessing and modifying virtual machine (VM) disk images
+~amd64
+autotools base bash-completion-r1 confutils eutils flag-o-matic ghc-package java-pkg-opt-2 java-utils-2 libtool multilib perl-module php-ext-source-r2 portability python ruby-ng toolchain-funcs user versionator
+fuse +ocaml perl python ruby haskell +readline nls php debug doc nls source javadoc elibc_FreeBSD java elibc_FreeBSD ruby_targets_ruby18 php_targets_php5-3 php_targets_php5-4
+
+
+
+3
+
+compile configure install postinst preinst prepare prerm setup test unpack
+
+
+
+
+

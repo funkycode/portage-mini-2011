@@ -1,4 +1,4 @@
->=net-libs/libnfnetlink-0.0.25
+>=net-libs/libnfnetlink-0.0.25 dev-util/pkgconfig
 >=net-libs/libnfnetlink-0.0.25
 0
 http://www.netfilter.org/projects/libnetfilter_conntrack/files/libnetfilter_conntrack-0.0.80.tar.bz2

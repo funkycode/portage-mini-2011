@@ -1,0 +1,22 @@
+zlib? ( sys-libs/zlib ) lzma? ( app-arch/xz-utils ) || ( =sys-devel/automake-1.11* ) >=sys-devel/autoconf-2.61 sys-devel/libtool
+zlib? ( sys-libs/zlib ) lzma? ( app-arch/xz-utils )
+0
+http://packages.profusion.mobi/kmod/kmod-3.tar.xz
+
+http://git.profusion.mobi/cgit.cgi/kmod.git
+LGPL-2
+library and tools for managing linux kernel modules
+~amd64 ~x86
+autotools eutils libtool multilib portability toolchain-funcs user
+debug lzma static-libs +tools zlib
+
+
+
+4
+
+configure install prepare
+
+
+
+
+

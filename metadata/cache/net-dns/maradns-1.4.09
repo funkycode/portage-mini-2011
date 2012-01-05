@@ -1,0 +1,22 @@
+dev-lang/perl
+
+0
+http://www.maradns.org/download/1.4/maradns-1.4.09.tar.bz2
+
+http://www.maradns.org/
+BSD-2
+Proxy DNS server with permanent caching
+~amd64 ~ppc ~sparc ~x86
+eutils multilib portability toolchain-funcs user
+authonly
+
+
+
+2
+
+configure install postinst prepare
+
+
+
+
+
