@@ -1428,6 +1428,8 @@ dev-python/atpy:fits - Enable support for reading and FITS with dev-python/pyfit
 dev-python/atpy:votable - Enable support for reading and VOTABLE with dev-python/vo.
 dev-python/bpython:urwid - Backend based on dev-python/urwid
 dev-python/cgkit:3ds - Enable support for importing 3D Studio models
+dev-python/cvxopt:dsdp - Use interior point library sci-libs/dsdp
+dev-python/cvxopt:glpk - Use GNU Linear Programming Kit sci-mathematics/glpk
 dev-python/cython:numpy - Enable support for dev-python/numpy
 dev-python/dap:server - Enable OpenDAP server support
 dev-python/django-extensions:graphviz - Create a diagram of your database entity relationships using dev-python/pygraphviz.
@@ -5344,7 +5346,6 @@ x11-wm/xpra:parti - Runtime support for partioning window manager
 x11-wm/xpra:server - Build server-side code
 x11-wm/xpra:ssh - Runtime support for secure shell communication
 xfce-base/libxfce4ui:glade - Build support for Glade 3's GtkBuilder implementation
-xfce-base/libxfce4ui:vanilla - Don't apply extra keyboard shortcuts patch from Fedora
 xfce-base/libxfcegui4:glade - Build glade bindings
 xfce-base/xfce-utils:lock - Enable screen locking
 xfce-base/xfce4-session:consolekit - Enable authentication support using sys-auth/consolekit
@@ -5357,6 +5358,5 @@ xfce-extra/tumbler:odf - Enable support for .odf thumbnailers by using gnome-ext
 xfce-extra/xfce4-mpc-plugin:libmpd - Build using media-libs/libmpd backend, instead of native fallback which is preferred
 xfce-extra/xfce4-playercontrol-plugin:audacious - Enable Audacious support
 xfce-extra/xfce4-playercontrol-plugin:mpd - Enable Music Player Daemon support
-xfce-extra/xfce4-sensors-plugin:nvidia - Use nvctrl to obtain Nvidia GPU temperature value
 xfce-extra/xfce4-soundmenu-plugin:glyr - Enable music metadata searchengine support using media-libs/glyr
 xfce-extra/xfce4-soundmenu-plugin:lastfm - Enable last.fm support using media-libs/libclastfm

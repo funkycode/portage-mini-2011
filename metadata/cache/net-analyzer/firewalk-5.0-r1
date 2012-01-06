@@ -6,7 +6,7 @@ mirror://gentoo/firewalk-5.0.tgz
 http://packetfactory.openwall.net/projects/firewalk/
 BSD
 A tool for determining a firewall's rule set
-~amd64 ~ppc ~x86
+amd64 ~ppc ~x86
 eutils multilib portability toolchain-funcs user
 
 

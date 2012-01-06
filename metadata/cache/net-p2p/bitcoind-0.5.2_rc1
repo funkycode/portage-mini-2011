@@ -1,0 +1,22 @@
+>=dev-libs/boost-1.41.0 dev-libs/openssl[-bindist] upnp? ( net-libs/miniupnpc ) sys-libs/db:4.8[cxx] >=app-shells/bash-4.1
+>=dev-libs/boost-1.41.0 dev-libs/openssl[-bindist] upnp? ( net-libs/miniupnpc ) sys-libs/db:4.8[cxx]
+0
+http://gitorious.org/bitcoin/bitcoind-stable/archive-tarball/v0.5.2rc1 -> bitcoin-v0.5.2_rc1.tgz eligius? ( http://luke.dashjr.org/programs/bitcoin/files/0.5.2-eligius_sendfee.patch.xz )
+
+http://bitcoin.org/
+MIT ISC
+Original Bitcoin crypto-currency wallet for automated services
+~amd64 ~arm ~x86
+db-use eutils multilib portability toolchain-funcs user versionator
++eligius examples ssl upnp
+
+
+
+4
+
+compile install prepare setup
+
+
+
+
+

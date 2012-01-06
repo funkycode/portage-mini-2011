@@ -4,7 +4,7 @@ DESCRIPTION=Mediastreaming library for telephony application
 EAPI=4
 HOMEPAGE=http://www.linphone.org/
 IUSE=+alsa amr bindist coreaudio debug examples gsm ilbc ipv6 jack oss portaudio pulseaudio sdl +speex static-libs theora v4l video x264 X
-KEYWORDS=amd64 ~ppc ~ppc64 x86 ~x64-macos ~x86-macos
+KEYWORDS=amd64 ppc ~ppc64 x86 ~x64-macos ~x86-macos
 LICENSE=GPL-2
 PDEPEND=amr? ( !bindist? ( media-plugins/mediastreamer-amr ) ) ilbc? ( media-plugins/mediastreamer-ilbc ) video? ( x264? ( media-plugins/mediastreamer-x264 ) )
 RDEPEND=>=net-libs/ortp-0.16.2[ipv6?] alsa? ( media-libs/alsa-lib ) gsm? ( media-sound/gsm ) jack? ( >=media-libs/libsamplerate-0.0.13 media-sound/jack-audio-connection-kit ) portaudio? ( media-libs/portaudio ) pulseaudio? ( >=media-sound/pulseaudio-0.9.21 ) speex? ( >=media-libs/speex-1.2_beta3 ) video? ( virtual/ffmpeg v4l? ( media-libs/libv4l sys-kernel/linux-headers ) theora? ( media-libs/libtheora ) sdl? ( media-libs/libsdl[video,X] ) X? ( x11-libs/libX11 x11-libs/libXv ) )
@@ -12,4 +12,4 @@ REQUIRED_USE=|| ( oss alsa jack portaudio coreaudio pulseaudio ) video? ( || ( s
 SLOT=0
 SRC_URI=mirror://nongnu/linphone/mediastreamer/mediastreamer-2.7.3.tar.gz
 _eclasses_=autotools	5c39d4c6ef5f3cc5eeaad64a9e5a84c5	eutils	d92f291efb4ef0595cb90e4b4e7e6b6c	libtool	5f623f5a211fb1b2d84d88ee49959a54	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	portability	536c5e70c5fb252ed3b769e04aa3f05b	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
-_md5_=9c4cab14339de395be1261f4f107c85e
+_md5_=eee54429eade18eef846fcc59aec5627

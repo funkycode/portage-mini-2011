@@ -1,13 +1,13 @@
 DEFINED_PHASES=compile configure install prepare test
-DEPEND=dev-lang/tk x11-libs/libXext x11-libs/libXmu x11-libs/libXpm
+DEPEND=dev-lang/tk x11-libs/libX11 x11-libs/libXext x11-libs/libXmu x11-libs/libXpm
 DESCRIPTION=Tcl/Tk Theming library
 EAPI=4
 HOMEPAGE=http://www.xmission.com/~georgeps/Tk_Theme/other/
 IUSE=debug examples static-libs threads
-KEYWORDS=~alpha ~amd64 ~ppc ~sparc ~x86
+KEYWORDS=~alpha amd64 ~ppc ~sparc ~x86
 LICENSE=BSD
-RDEPEND=dev-lang/tk x11-libs/libXext x11-libs/libXmu x11-libs/libXpm
+RDEPEND=dev-lang/tk x11-libs/libX11 x11-libs/libXext x11-libs/libXmu x11-libs/libXpm
 SLOT=0
 SRC_URI=http://www.xmission.com/~georgeps/Tk_Theme/other/tkTheme.tgz
 _eclasses_=autotools	5c39d4c6ef5f3cc5eeaad64a9e5a84c5	autotools-utils	adf12297c30baf96eb69e4039475a894	eutils	d92f291efb4ef0595cb90e4b4e7e6b6c	libtool	5f623f5a211fb1b2d84d88ee49959a54	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	portability	536c5e70c5fb252ed3b769e04aa3f05b	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
-_md5_=1c7987e16d8ac3d232d1104c03094837
+_md5_=1910e0c83e5873f39adc69bd5613ad4a
