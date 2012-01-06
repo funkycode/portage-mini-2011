@@ -6,7 +6,7 @@ https://www.github.com/funtoo/baselayout/tarball/baselayout-2.1.8-r3 -> baselayo
 http://www.funtoo.org/
 GPL-2 BSD-2
 Filesystem baselayout, initscripts and /sbin/realdev command
-~*
+*
 multilib toolchain-funcs
 build
 
