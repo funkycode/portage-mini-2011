@@ -1,4 +1,4 @@
-dev-libs/libxml2 dev-libs/libestr || ( =sys-devel/automake-1.11* ) >=sys-devel/autoconf-2.61 sys-devel/libtool
+dev-libs/libxml2 dev-libs/libestr
 dev-libs/libxml2 dev-libs/libestr
 0
 http://www.libee.org/files/download/libee-0.3.2.tar.gz

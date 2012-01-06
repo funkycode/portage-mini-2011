@@ -1,4 +1,4 @@
-media-libs/libsidplayfp alsa? ( media-libs/alsa-lib ) pulseaudio? ( media-sound/pulseaudio ) || ( =sys-devel/automake-1.11* ) >=sys-devel/autoconf-2.61 sys-devel/libtool
+media-libs/libsidplayfp alsa? ( media-libs/alsa-lib ) pulseaudio? ( media-sound/pulseaudio )
 media-libs/libsidplayfp alsa? ( media-libs/alsa-lib ) pulseaudio? ( media-sound/pulseaudio )
 0
 mirror://sourceforge/sidplay-residfp/sidplayfp-0.3.0.tar.gz

@@ -1,6 +1,6 @@
-# Copyright 1999-2011 Gentoo Foundation
+# Copyright 1999-2012 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/games-engines/gemrb/gemrb-0.6.4.ebuild,v 1.4 2011/06/01 15:42:19 tupone Exp $
+# $Header: /var/cvsroot/gentoo-x86/games-engines/gemrb/gemrb-0.6.4.ebuild,v 1.6 2012/01/05 21:23:54 mr_bones_ Exp $
 
 PYTHON_DEPEND="2"
 EAPI=2

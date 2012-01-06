@@ -1,7 +1,7 @@
 dev-lang/perl app-arch/xz-utils
 dev-lang/perl sys-libs/cracklib
 0
-mirror://gentoo/skey-1.1.5.tar.bz2 mirror://gentoo/skey-1.1.5-patches-1.tar.xz
+mirror://gentoo/skey-1.1.5.tar.bz2 mirror://gentoo/skey-1.1.5-patches-2.tar.xz
 
 http://www.openbsd.org/faq/faq8.html#SKey
 BSD MIT RSA-MD4 RSA-MD5 BEER-WARE

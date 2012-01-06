@@ -1,4 +1,4 @@
-app-arch/xz-utils || ( =sys-devel/automake-1.11* ) >=sys-devel/autoconf-2.61 sys-devel/libtool
+app-arch/xz-utils
 net-dns/bind-tools
 0
 http://dev.gentoo.org/~radhermit/distfiles/proxychains-3.1_p20110225.tar.xz

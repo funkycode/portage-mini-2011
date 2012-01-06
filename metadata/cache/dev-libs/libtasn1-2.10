@@ -1,4 +1,4 @@
->=dev-lang/perl-5.6 sys-devel/bison || ( =sys-devel/automake-1.11* ) >=sys-devel/autoconf-2.61 sys-devel/libtool
+>=dev-lang/perl-5.6 sys-devel/bison
 
 0
 mirror://gnu/libtasn1/libtasn1-2.10.tar.gz

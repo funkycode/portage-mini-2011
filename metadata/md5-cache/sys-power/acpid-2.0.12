@@ -7,5 +7,5 @@ LICENSE=GPL-2
 RDEPEND=!<sys-apps/openrc-0.6.0
 SLOT=0
 SRC_URI=http://tedfelix.com/linux/acpid-2.0.12.tar.gz
-_eclasses_=eutils	d92f291efb4ef0595cb90e4b4e7e6b6c	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	portability	536c5e70c5fb252ed3b769e04aa3f05b	systemd	c296542c6b40f8c6a76798dbc71b69ca	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
+_eclasses_=eutils	d92f291efb4ef0595cb90e4b4e7e6b6c	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	portability	536c5e70c5fb252ed3b769e04aa3f05b	systemd	545c55e67f121567882feecae3804a8c	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
 _md5_=e5a8040e9fceb56952632ac256a09284

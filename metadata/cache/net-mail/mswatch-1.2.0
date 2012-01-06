@@ -1,4 +1,4 @@
->=dev-libs/glib-2.6:2 dev-util/pkgconfig || ( =sys-devel/automake-1.11* ) >=sys-devel/autoconf-2.61 sys-devel/libtool
+>=dev-libs/glib-2.6:2 dev-util/pkgconfig
 >=dev-libs/glib-2.6:2
 0
 mirror://sourceforge/mswatch/mswatch-1.2.0.tar.gz

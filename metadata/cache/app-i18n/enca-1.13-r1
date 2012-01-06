@@ -1,4 +1,4 @@
-recode? ( >=app-text/recode-3.6_p15 ) || ( =sys-devel/automake-1.11* ) >=sys-devel/autoconf-2.61 sys-devel/libtool
+recode? ( >=app-text/recode-3.6_p15 )
 recode? ( >=app-text/recode-3.6_p15 )
 0
 http://dl.cihar.com/enca/enca-1.13.tar.bz2

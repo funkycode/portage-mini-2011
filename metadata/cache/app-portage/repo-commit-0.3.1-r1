@@ -1,4 +1,4 @@
-|| ( =sys-devel/automake-1.11* ) >=sys-devel/autoconf-2.61 sys-devel/libtool
+
 app-portage/gentoolkit-dev sys-apps/portage
 0
 http://cloud.github.com/downloads/mgorny/repo-commit/repo-commit-0.3.1.tar.bz2

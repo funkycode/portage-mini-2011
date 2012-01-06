@@ -1,4 +1,4 @@
-dev-libs/boost sys-libs/ncurses dev-cpp/asio || ( =sys-devel/automake-1.11* ) >=sys-devel/autoconf-2.61 sys-devel/libtool
+dev-libs/boost sys-libs/ncurses dev-cpp/asio
 dev-libs/boost sys-libs/ncurses
 0
 http://www.ant.uni-bremen.de/whomes/rinas/sinfo/download/sinfo-0.0.44.tar.gz

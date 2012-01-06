@@ -1,5 +1,5 @@
 DEFINED_PHASES=compile configure install postinst prepare setup test
-DEPEND=sys-apps/util-linux sys-libs/readline || ( sys-fs/device-mapper >=sys-fs/lvm2-2.02.45 ) ncurses? ( >=dev-libs/glib-2.12.4-r1 sys-libs/ncurses ) ncurses? ( dev-util/pkgconfig ) || ( =sys-devel/automake-1.11* ) >=sys-devel/autoconf-2.61 sys-devel/libtool
+DEPEND=sys-apps/util-linux sys-libs/readline || ( sys-fs/device-mapper >=sys-fs/lvm2-2.02.45 ) ncurses? ( >=dev-libs/glib-2.12.4-r1 sys-libs/ncurses ) ncurses? ( dev-util/pkgconfig )
 DESCRIPTION=Utilities for the IBM Enterprise Volume Management System
 EAPI=4
 HOMEPAGE=http://www.sourceforge.net/projects/evms
@@ -10,5 +10,5 @@ RDEPEND=sys-apps/util-linux sys-libs/readline || ( sys-fs/device-mapper >=sys-fs
 RESTRICT=test
 SLOT=0
 SRC_URI=mirror://sourceforge/evms/evms-2.5.5.tar.gz mirror://gentoo/evms-patches-2.5.5-3.tar.bz2
-_eclasses_=autotools	5c39d4c6ef5f3cc5eeaad64a9e5a84c5	autotools-utils	9959407b3d97951cd99a7685f7229cc7	eutils	d92f291efb4ef0595cb90e4b4e7e6b6c	flag-o-matic	9bfd4a1550735a7fc561ff5bae86e4c9	libtool	5f623f5a211fb1b2d84d88ee49959a54	linux-info	cc184ad3383ffb6ffbaa82f53608e77f	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	portability	536c5e70c5fb252ed3b769e04aa3f05b	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e	versionator	6601b4c5b3f019a993db59a50e1854e4
+_eclasses_=autotools	5c39d4c6ef5f3cc5eeaad64a9e5a84c5	autotools-utils	adf12297c30baf96eb69e4039475a894	eutils	d92f291efb4ef0595cb90e4b4e7e6b6c	flag-o-matic	9bfd4a1550735a7fc561ff5bae86e4c9	libtool	5f623f5a211fb1b2d84d88ee49959a54	linux-info	cc184ad3383ffb6ffbaa82f53608e77f	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	portability	536c5e70c5fb252ed3b769e04aa3f05b	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e	versionator	6601b4c5b3f019a993db59a50e1854e4
 _md5_=cbdafb6baeb88e4ace4d4bf3d4249504

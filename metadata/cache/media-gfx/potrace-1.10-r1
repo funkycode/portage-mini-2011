@@ -1,4 +1,4 @@
-sys-libs/zlib || ( =sys-devel/automake-1.11* ) >=sys-devel/autoconf-2.61 sys-devel/libtool
+sys-libs/zlib
 sys-libs/zlib
 0
 http://potrace.sourceforge.net/download/potrace-1.10.tar.gz
