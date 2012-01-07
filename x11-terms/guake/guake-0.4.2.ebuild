@@ -1,6 +1,6 @@
-# Copyright 1999-2011 Gentoo Foundation
+# Copyright 1999-2012 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/x11-terms/guake/guake-0.4.2.ebuild,v 1.5 2011/10/14 20:58:48 ssuominen Exp $
+# $Header: /var/cvsroot/gentoo-x86/x11-terms/guake/guake-0.4.2.ebuild,v 1.7 2012/01/07 16:19:30 ssuominen Exp $
 
 EAPI=3
 

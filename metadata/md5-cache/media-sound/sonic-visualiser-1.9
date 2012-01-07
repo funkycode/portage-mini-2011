@@ -1,0 +1,14 @@
+DEFINED_PHASES=compile configure install postinst postrm prepare unpack
+DEPEND=x11-libs/qt-core:4 x11-libs/qt-gui:4 media-libs/libsndfile media-libs/libsamplerate fftw? ( sci-libs/fftw:3.0 ) app-arch/bzip2 >=media-libs/dssi-0.9.1 media-libs/liblrdf dev-libs/redland media-libs/ladspa-sdk osc? ( media-libs/liblo ) media-libs/speex >=media-libs/vamp-plugin-sdk-2.0 media-libs/rubberband jack? ( media-sound/jack-audio-connection-kit ) mad? ( media-libs/libmad ) id3tag? ( media-libs/libid3tag ) ogg? ( media-libs/libfishsound >=media-libs/liboggz-1.1.0 ) portaudio? ( >=media-libs/portaudio-19_pre20071207 ) pulseaudio? ( media-sound/pulseaudio ) >=dev-util/pkgconfig-0.9 || ( =sys-devel/automake-1.11* ) >=sys-devel/autoconf-2.61 sys-devel/libtool
+DESCRIPTION=Music audio files viewer and analiser
+EAPI=4
+HOMEPAGE=http://www.sonicvisualiser.org/
+IUSE=fftw id3tag jack mad ogg osc portaudio pulseaudio
+KEYWORDS=~amd64 ~x86
+LICENSE=GPL-2
+RDEPEND=x11-libs/qt-core:4 x11-libs/qt-gui:4 media-libs/libsndfile media-libs/libsamplerate fftw? ( sci-libs/fftw:3.0 ) app-arch/bzip2 >=media-libs/dssi-0.9.1 media-libs/liblrdf dev-libs/redland media-libs/ladspa-sdk osc? ( media-libs/liblo ) media-libs/speex >=media-libs/vamp-plugin-sdk-2.0 media-libs/rubberband jack? ( media-sound/jack-audio-connection-kit ) mad? ( media-libs/libmad ) id3tag? ( media-libs/libid3tag ) ogg? ( media-libs/libfishsound >=media-libs/liboggz-1.1.0 ) portaudio? ( >=media-libs/portaudio-19_pre20071207 ) pulseaudio? ( media-sound/pulseaudio )
+REQUIRED_USE=|| ( jack pulseaudio portaudio )
+SLOT=0
+SRC_URI=http://code.soundsoftware.ac.uk/attachments/download/194/sonic-visualiser-1.9.tar.gz
+_eclasses_=autotools	cc61a7c888abf6d8622105c6184881ed	base	809ab15a673823938260f6b17661c3f1	eutils	d92f291efb4ef0595cb90e4b4e7e6b6c	fdo-mime	0acfe1a88fd8751a1d5dc671168219fa	libtool	5f623f5a211fb1b2d84d88ee49959a54	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	portability	536c5e70c5fb252ed3b769e04aa3f05b	qt4-r2	05d7a72491b4cbbac2f4d4383657bc4f	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
+_md5_=1c36d8ad26718710147cd40a11f476eb

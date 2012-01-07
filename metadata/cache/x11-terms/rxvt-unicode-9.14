@@ -8,8 +8,8 @@ GPL-2
 rxvt clone with xft and unicode support
 ~alpha ~amd64 ~hppa ~ia64 ~ppc ~ppc64 ~sparc ~x86 ~x86-fbsd ~amd64-linux ~x86-linux ~ppc-macos ~x64-macos ~x86-macos ~sparc-solaris
 autotools eutils libtool multilib portability toolchain-funcs user
-256-color alt-font-width afterimage blink +focused-urgency fading-colors +font-styles iso14755 +mousewheel +perl pixbuf secondary-wheel startup-notification truetype unicode3 +vanilla wcwidth
-vanilla? ( !alt-font-width focused-urgency !secondary-wheel !wcwidth )
+256-color alt-font-width afterimage blink buffer-on-clear +focused-urgency fading-colors +font-styles iso14755 +mousewheel +perl pixbuf secondary-wheel startup-notification truetype unicode3 +vanilla wcwidth
+vanilla? ( !alt-font-width !buffer-on-clear focused-urgency !secondary-wheel !wcwidth )
 
 
 4

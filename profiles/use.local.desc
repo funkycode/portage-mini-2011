@@ -1501,7 +1501,6 @@ dev-ruby/ruby-sdl:image - Enable media-libs/sdl-image support
 dev-ruby/ruby-sdl:mixer - Enable media-libs/sdl-mixer support
 dev-ruby/ruby-sdl:sge - Enable sdl-sge support
 dev-ruby/rubygems:server - Install support for the rubygems server
-dev-ruby/sqlite3-ruby:swig - Use dev-lang/swig to generate bindings
 dev-scheme/bigloo:bglpkg - Build bglpkg binary, which can be use to access scmpkg servers (requires web)
 dev-scheme/bigloo:calendar - Build the embedded library for calendar programming
 dev-scheme/bigloo:crypto - Build the embedded cryptographic library
@@ -2721,6 +2720,7 @@ media-sound/qmmp:tray - Build tray icon
 media-sound/qsampler:libgig - Enable libgig support for loading Gigasampler files and DLS (Downloadable Sounds) Level 1/2 files
 media-sound/qtractor:dssi - Enable support for DSSI Soft Synth Interface
 media-sound/qtractor:rubberband - Enable support for in-place audio clip pitch-shifting through the rubberband library
+media-sound/qtractor:suil - Enable LV2 Plug-in UI instantiation support via media-libs/suil.
 media-sound/qtscrobbler:cli - Build commandline client
 media-sound/rezound:16bittmp - Use 16bit temporary files (default 32bit float), useful for slower computers
 media-sound/rezound:soundtouch - compile with support for soundtouch
@@ -5280,6 +5280,7 @@ x11-terms/rxvt-unicode:256-color - Enable 256 color support
 x11-terms/rxvt-unicode:afterimage - Enable transparency support using media-libs/libafterimage (deprecated in 9.14)
 x11-terms/rxvt-unicode:alt-font-width - Calculate the font width using a different method
 x11-terms/rxvt-unicode:blink - Enable blinking text
+x11-terms/rxvt-unicode:buffer-on-clear - Store visible output to history buffer when clearing the screen with ctrl-l. Read https://bbs.archlinux.org/viewtopic.php?id=129302
 x11-terms/rxvt-unicode:fading-colors - Enable colors fading when off focus
 x11-terms/rxvt-unicode:focused-urgency - Enable the urgent flag when a terminal window is focused
 x11-terms/rxvt-unicode:font-styles - Enable support for bold and italic fonts

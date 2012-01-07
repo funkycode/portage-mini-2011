@@ -6,7 +6,7 @@ mirror://cpan/authors/id/R/RO/ROAM/Net-FreeDB-0.08.tar.gz
 http://search.cpan.org/dist/Net-FreeDB/
 || ( Artistic GPL-1 GPL-2 GPL-3 )
 OOP interface to the FreeDB database
-~amd64 ~x86
+amd64 ~x86
 base eutils multilib perl-module portability toolchain-funcs user
 
 
