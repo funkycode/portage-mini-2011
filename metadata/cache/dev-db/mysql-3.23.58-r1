@@ -14,7 +14,7 @@ perl? ( dev-perl/DBI dev-perl/DBD-mysql )
 
 
 
-compile config install postinst preinst unpack
+compile config install postinst preinst setup unpack
 
 
 

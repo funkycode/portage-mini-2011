@@ -9,5 +9,5 @@ LICENSE=GPL-3
 RDEPEND=>=x11-libs/gtk+-2.6:2 >=gnome-base/libglade-2.3 dev-libs/popt gnome? ( || ( gnome-base/gnome-panel[bonobo] <gnome-base/gnome-panel-2.32 ) >=gnome-base/libgnome-2.2 >=gnome-base/libgnomeui-2.2 ) password? ( dev-libs/openssl ) fam? ( virtual/fam ) x11-proto/xproto
 SLOT=0
 SRC_URI=mirror://sourceforge/gnubiff/gnubiff-2.2.13.tar.gz
-_eclasses_=autotools	5c39d4c6ef5f3cc5eeaad64a9e5a84c5	eutils	d92f291efb4ef0595cb90e4b4e7e6b6c	libtool	5f623f5a211fb1b2d84d88ee49959a54	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	portability	536c5e70c5fb252ed3b769e04aa3f05b	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
+_eclasses_=autotools	cc61a7c888abf6d8622105c6184881ed	eutils	d92f291efb4ef0595cb90e4b4e7e6b6c	libtool	5f623f5a211fb1b2d84d88ee49959a54	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	portability	536c5e70c5fb252ed3b769e04aa3f05b	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
 _md5_=e8dfd98eebf8f73762b72a3a65465d2c

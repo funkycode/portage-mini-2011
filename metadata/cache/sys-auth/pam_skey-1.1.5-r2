@@ -1,7 +1,7 @@
->=sys-libs/pam-0.78-r3 >=sys-auth/skey-1.1.5-r4 || ( =sys-devel/automake-1.11* ) >=sys-devel/autoconf-2.61 sys-devel/libtool
+>=sys-libs/pam-0.78-r3 >=sys-auth/skey-1.1.5-r4 app-arch/xz-utils || ( =sys-devel/automake-1.11* ) >=sys-devel/autoconf-2.61 sys-devel/libtool
 >=sys-libs/pam-0.78-r3 >=sys-auth/skey-1.1.5-r4
 0
-http://dkorunic.net/tarballs/pam_skey-1.1.5.tar.gz mirror://gentoo/pam_skey-1.1.5-patches-2.tar.bz2
+http://dkorunic.net/tarballs/pam_skey-1.1.5.tar.gz mirror://gentoo/pam_skey-1.1.5-patches-3.tar.xz
 
 http://freshmeat.net/projects/pam_skey/
 GPL-2
@@ -12,9 +12,9 @@ autotools eutils flag-o-matic libtool multilib pam portability toolchain-funcs u
 
 
 
+4
 
-
-compile install postinst unpack
+configure postinst prepare
 
 
 

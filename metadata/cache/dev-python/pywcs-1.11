@@ -1,0 +1,22 @@
+>=sci-astronomy/wcslib-4.8.2 dev-util/pkgconfig >=app-admin/eselect-python-20091230 dev-lang/python
+>=sci-astronomy/wcslib-4.8.2 dev-python/pyfits >=app-admin/eselect-python-20091230 dev-lang/python
+0
+http://stsdas.stsci.edu/astrolib/pywcs-1.11-4.8.2.tar.gz
+
+https://trac6.assembla.com/astrolib/wiki http://www.scipy.org/AstroLib
+BSD
+Python routines for handling the FITS World Coordinate System
+~amd64 ~x86
+distutils eutils multilib portability python toolchain-funcs user
+
+
+
+
+4
+
+compile install postinst postrm prepare setup test
+
+
+
+
+

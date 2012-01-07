@@ -1,0 +1,13 @@
+DEFINED_PHASES=compile configure install postinst prepare setup
+DEPEND==media-tv/mythtv-0.24.1* >=sys-apps/sed-4 app-arch/unzip
+DESCRIPTION=Video player module for MythTV.
+EAPI=2
+HOMEPAGE=http://www.mythtv.org
+IUSE=jamu profile debug
+KEYWORDS=~amd64 ~x86
+LICENSE=GPL-2
+RDEPEND=media-tv/mythtv[python] jamu? ( >=dev-python/imdbpy-3.8 dev-python/imaging dev-python/pyxml >=dev-python/mysql-python-1.2.2 media-tv/mythtv[python] ) virtual/eject =media-tv/mythtv-0.24.1*
+SLOT=0
+SRC_URI=https://github.com/MythTV/mythtv/tarball/20110524 -> mythtv-0.24.1_p20110524.tar.gz
+_eclasses_=eutils	d92f291efb4ef0595cb90e4b4e7e6b6c	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	mythtv	2a7f3ae9a53385e3565ee0b90f813da5	portability	536c5e70c5fb252ed3b769e04aa3f05b	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e	versionator	6601b4c5b3f019a993db59a50e1854e4
+_md5_=424e120b6437a5883ac8fabd86f1acf5

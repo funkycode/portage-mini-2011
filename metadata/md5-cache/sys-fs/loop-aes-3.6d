@@ -1,0 +1,13 @@
+DEFINED_PHASES=compile install postinst postrm preinst prepare setup
+DEPEND=>=sys-apps/util-linux-2.12r[crypt,loop-aes] kernel_linux? ( sys-apps/module-init-tools ) sys-apps/sed kernel_linux? ( virtual/linux-sources )
+DESCRIPTION=Linux kernel module to encrypt local file systems and disk partitions with AES cipher.
+EAPI=3
+HOMEPAGE=http://loop-aes.sourceforge.net/loop-AES.README
+IUSE=aes-ni extra-ciphers keyscrub padlock kernel_linux
+KEYWORDS=~amd64 ~arm ~hppa ~ppc ~sparc ~x86
+LICENSE=GPL-2
+RDEPEND=>=sys-apps/util-linux-2.12r[crypt,loop-aes] kernel_linux? ( sys-apps/module-init-tools )
+SLOT=0
+SRC_URI=mirror://sourceforge/loop-aes/loop-AES-v3.6d.tar.bz2
+_eclasses_=eutils	d92f291efb4ef0595cb90e4b4e7e6b6c	linux-info	cc184ad3383ffb6ffbaa82f53608e77f	linux-mod	a4e07f78bacb6b129ea7b18ad060dbfc	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	portability	536c5e70c5fb252ed3b769e04aa3f05b	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e	versionator	6601b4c5b3f019a993db59a50e1854e4
+_md5_=ed0572f0c6b2c4718bc979631d5dae00

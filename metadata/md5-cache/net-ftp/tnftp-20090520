@@ -8,5 +8,5 @@ LICENSE=as-is
 RDEPEND=>=sys-libs/ncurses-5.1 socks5? ( net-proxy/dante )
 SLOT=0
 SRC_URI=ftp://ftp.netbsd.org/pub/NetBSD/misc/tnftp/tnftp-20090520.tar.gz ftp://ftp.netbsd.org/pub/NetBSD/misc/tnftp/old/tnftp-20090520.tar.gz
-_eclasses_=autotools	5c39d4c6ef5f3cc5eeaad64a9e5a84c5	eutils	d92f291efb4ef0595cb90e4b4e7e6b6c	libtool	5f623f5a211fb1b2d84d88ee49959a54	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	portability	536c5e70c5fb252ed3b769e04aa3f05b	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
+_eclasses_=autotools	cc61a7c888abf6d8622105c6184881ed	eutils	d92f291efb4ef0595cb90e4b4e7e6b6c	libtool	5f623f5a211fb1b2d84d88ee49959a54	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	portability	536c5e70c5fb252ed3b769e04aa3f05b	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
 _md5_=4dead19b61b6c5123bbe725b906a2289

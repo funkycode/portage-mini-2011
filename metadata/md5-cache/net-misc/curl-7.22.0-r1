@@ -10,5 +10,5 @@ RDEPEND=ldap? ( net-nds/openldap ) gnutls? ( net-libs/gnutls dev-libs/libgcrypt 
 REQUIRED_USE=threads? ( !ares ) nss? ( !gnutls )
 SLOT=0
 SRC_URI=http://curl.haxx.se/download/curl-7.22.0.tar.bz2
-_eclasses_=autotools	5c39d4c6ef5f3cc5eeaad64a9e5a84c5	eutils	d92f291efb4ef0595cb90e4b4e7e6b6c	libtool	5f623f5a211fb1b2d84d88ee49959a54	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	portability	536c5e70c5fb252ed3b769e04aa3f05b	prefix	21058c21ca48453d771df15500873ede	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
+_eclasses_=autotools	cc61a7c888abf6d8622105c6184881ed	eutils	d92f291efb4ef0595cb90e4b4e7e6b6c	libtool	5f623f5a211fb1b2d84d88ee49959a54	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	portability	536c5e70c5fb252ed3b769e04aa3f05b	prefix	21058c21ca48453d771df15500873ede	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
 _md5_=357831bd4b1b65d11fcb769b24e8d37d

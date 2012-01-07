@@ -8,7 +8,7 @@ google-talkplugin openssl
 Video chat browser plug-in for Google Talk
 -* ~amd64 ~x86
 eutils multilib nsplugins portability toolchain-funcs user
-libnotify +system-libCg
+libnotify +system-libCg linguas_ar linguas_cs linguas_en linguas_et linguas_fr linguas_hu linguas_lt linguas_ms linguas_pl linguas_ru linguas_sv linguas_tl linguas_vi linguas_bg linguas_da linguas_fa linguas_gu linguas_id linguas_ja linguas_lv linguas_nl linguas_sk linguas_ta linguas_tr linguas_bn linguas_de linguas_es linguas_fi linguas_hi linguas_is linguas_kn linguas_ml linguas_no linguas_sl linguas_te linguas_uk linguas_ca linguas_el linguas_fil linguas_hr linguas_it linguas_ko linguas_mr linguas_or linguas_ro linguas_sr linguas_th linguas_ur
 
 
 
