@@ -1,5 +1,5 @@
 DEFINED_PHASES=compile configure install postinst prepare setup test
-DEPEND=X? ( x11-libs/libX11 x11-libs/libXt ) selinux? ( sys-libs/libselinux sec-policy/selinux-dbus ) >=dev-libs/expat-1.95.8 dev-util/pkgconfig doc? ( app-doc/doxygen app-text/docbook-xml-dtd:4.1.2 app-text/xmlto ) test? ( =dev-lang/python-2* >=dev-libs/glib-2.30.1-r2:2 ) !<dev-libs/glib-2.30.1-r2:2 || ( =sys-devel/automake-1.11* ) >=sys-devel/autoconf-2.61 sys-devel/libtool >=app-admin/eselect-python-20091230 test? ( !prefix? ( x11-base/xorg-server[xvfb] ) x11-apps/xhost )
+DEPEND=X? ( x11-libs/libX11 x11-libs/libXt ) selinux? ( sys-libs/libselinux sec-policy/selinux-dbus ) >=dev-libs/expat-1.95.8 dev-util/pkgconfig doc? ( app-doc/doxygen app-text/docbook-xml-dtd:4.1.2 app-text/xmlto ) test? ( =dev-lang/python-2* >=dev-libs/glib-2.30.1-r2:2 ) !<dev-libs/glib-2.30.1-r2:2 || ( =sys-devel/automake-1.11* ) >=sys-devel/autoconf-2.61 sys-devel/libtool >=app-admin/eselect-python-20091230 !<sys-apps/systemd-29-r4 !=sys-apps/systemd-37-r1 test? ( !prefix? ( x11-base/xorg-server[xvfb] ) x11-apps/xhost )
 DESCRIPTION=A message bus system, a simple way for applications to talk to each other
 EAPI=2
 HOMEPAGE=http://dbus.freedesktop.org/
@@ -9,5 +9,5 @@ LICENSE=|| ( GPL-2 AFL-2.1 )
 RDEPEND=X? ( x11-libs/libX11 x11-libs/libXt ) selinux? ( sys-libs/libselinux sec-policy/selinux-dbus ) >=dev-libs/expat-1.95.8 >=app-admin/eselect-python-20091230
 SLOT=0
 SRC_URI=http://dbus.freedesktop.org/releases/dbus/dbus-1.4.16.tar.gz
-_eclasses_=autotools	cc61a7c888abf6d8622105c6184881ed	eutils	d92f291efb4ef0595cb90e4b4e7e6b6c	flag-o-matic	9bfd4a1550735a7fc561ff5bae86e4c9	libtool	5f623f5a211fb1b2d84d88ee49959a54	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	portability	536c5e70c5fb252ed3b769e04aa3f05b	python	412a8596c4b1620189e299c8dd303d0a	systemd	545c55e67f121567882feecae3804a8c	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e	virtualx	0c41ff55e46b959d9457dde69e7a09d9
+_eclasses_=autotools	cc61a7c888abf6d8622105c6184881ed	eutils	d92f291efb4ef0595cb90e4b4e7e6b6c	flag-o-matic	9bfd4a1550735a7fc561ff5bae86e4c9	libtool	5f623f5a211fb1b2d84d88ee49959a54	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	portability	536c5e70c5fb252ed3b769e04aa3f05b	python	412a8596c4b1620189e299c8dd303d0a	systemd	70a153740015c3457222dbdd8e07c1f7	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e	virtualx	0c41ff55e46b959d9457dde69e7a09d9
 _md5_=1d34abd2eed7703bdd124a2f8a752bd0

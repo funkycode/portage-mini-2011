@@ -673,6 +673,7 @@ app-office/abiword:ots - Enable Text Summarizer plugin
 app-office/abiword:plugins - Enable plugins build (see http://www.abisource.com/wiki/PluginMatrix for more information). If your file cannot be opened due lack of support, try enabling this.
 app-office/abiword:thesaurus - Enable thesaurus support
 app-office/abiword:wordperfect - Enable wordperfect file support via app-text/libwpd
+app-office/calligra:attica - Get hot stuff with dev-libs/libattica
 app-office/calligra:eigen - Enable dev-cpp/eigen mathematical templates support
 app-office/calligra:glew - Enable media-libs/glew opengl extension library support
 app-office/calligra:glib - Enable support for C library routines from dev-libs/glib
@@ -2221,6 +2222,7 @@ media-fonts/liberation-fonts:fontforge - Use media-gfx/fontforge to build fonts 
 media-fonts/montecarlo:bdf - Install BDF fonts in addition to PCF
 media-fonts/mplus-outline-fonts:ipafont - Generates new fonts merged with media-fonts/ja-ipafonts
 media-fonts/sil-charis:compact - Use more compactly spaced font
+media-fonts/sil-gentium:compact - Also install more compact version of the font.
 media-fonts/terminus-font:a-like-o - Changes view of letter 'a' - a looks like o (see homepage)
 media-fonts/terminus-font:bolddiag - Boldified diagonal parts of '4', 'k', 'x' and some other chars
 media-fonts/terminus-font:distinct-l - ll2 variant with more distinctive l (lowercase L)
@@ -4463,6 +4465,8 @@ sci-physics/cernlib-montecarlo:herwig - Build Herwig internal event generator, n
 sci-physics/clhep:exceptions - Enable zoom exceptions for user intervention
 sci-physics/espresso:examples - Installs the examples
 sci-physics/espresso:packages - Installs extra subpackages
+sci-physics/fastjet:cgal - Use sci-mathematics/cgal instead of bundled algorithms
+sci-physics/fastjet:plugins - Build all standard and C++ plugins
 sci-physics/geant:aida - Add support for Abstract Interfaces for Data Analysis
 sci-physics/geant:athena - Enable the MIT Athena (x11-libs/libXaw) widget set (default is Motif)
 sci-physics/geant:data - Add a lot of standard physics data files for geant4

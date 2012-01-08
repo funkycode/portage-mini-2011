@@ -1,5 +1,5 @@
 DEFINED_PHASES=configure install
-DEPEND=dev-libs/glib:2 caps? ( sys-libs/libcap-ng ) numa? ( sys-process/numactl ) dev-util/pkgconfig
+DEPEND=dev-libs/glib:2 caps? ( sys-libs/libcap-ng ) numa? ( sys-process/numactl ) dev-util/pkgconfig !<sys-apps/systemd-29-r4 !=sys-apps/systemd-37-r1
 DESCRIPTION=Distribute hardware interrupts across processors on a multiprocessor system
 EAPI=4
 HOMEPAGE=http://www.irqbalance.org/
@@ -9,5 +9,5 @@ LICENSE=GPL-2
 RDEPEND=dev-libs/glib:2 caps? ( sys-libs/libcap-ng ) numa? ( sys-process/numactl )
 SLOT=0
 SRC_URI=http://irqbalance.googlecode.com/files/irqbalance-1.0.2.tar.gz
-_eclasses_=systemd	545c55e67f121567882feecae3804a8c
-_md5_=f65572f9bbae200c2a6f3f264eb43972
+_eclasses_=systemd	70a153740015c3457222dbdd8e07c1f7
+_md5_=78715becd5e645c954e754353e67e9fc

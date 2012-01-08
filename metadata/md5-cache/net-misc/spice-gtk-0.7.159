@@ -1,0 +1,13 @@
+DEFINED_PHASES=configure install postinst preinst prerm setup
+DEPEND=pulseaudio? ( !gstreamer? ( media-sound/pulseaudio ) ) gstreamer? ( media-libs/gstreamer:0.10 media-libs/gst-plugins-base:0.10 ) >=app-emulation/spice-protocol-0.9.1 >=x11-libs/pixman-0.17.7 >=media-libs/celt-0.5.1.1:0.5.1 dev-libs/openssl gtk3? ( x11-libs/gtk+:3[introspection?] ) !gtk3? ( x11-libs/gtk+:2[introspection?] ) >=dev-libs/glib-2.26:2 >=x11-libs/cairo-1.2 virtual/jpeg sys-libs/zlib introspection? ( dev-libs/gobject-introspection ) python? ( dev-python/pygtk:2 ) sasl? ( dev-libs/cyrus-sasl ) gnome? ( gnome-base/gconf ) vala? ( dev-lang/vala:0.14 ) dev-lang/python dev-lang/perl dev-perl/Text-CSV dev-python/pyparsing dev-util/pkgconfig >=app-admin/eselect-python-20091230 >=sys-apps/sed-4
+DESCRIPTION=Set of GObject and Gtk objects for connecting to Spice servers and a client GUI.
+EAPI=4
+HOMEPAGE=http://spice-space.org http://gitorious.org/spice-gtk
+IUSE=+cairo doc gnome gstreamer gtk3 +introspection kde +pulseaudio python sasl static-libs vala
+KEYWORDS=~amd64 ~x86
+LICENSE=LGPL-2.1
+RDEPEND=pulseaudio? ( !gstreamer? ( media-sound/pulseaudio ) ) gstreamer? ( media-libs/gstreamer:0.10 media-libs/gst-plugins-base:0.10 ) >=app-emulation/spice-protocol-0.9.1 >=x11-libs/pixman-0.17.7 >=media-libs/celt-0.5.1.1:0.5.1 dev-libs/openssl gtk3? ( x11-libs/gtk+:3[introspection?] ) !gtk3? ( x11-libs/gtk+:2[introspection?] ) >=dev-libs/glib-2.26:2 >=x11-libs/cairo-1.2 virtual/jpeg sys-libs/zlib introspection? ( dev-libs/gobject-introspection ) python? ( dev-python/pygtk:2 ) sasl? ( dev-libs/cyrus-sasl ) gnome? ( gnome-base/gconf ) >=app-admin/eselect-python-20091230
+SLOT=0
+SRC_URI=http://spice-space.org/download/gtk/spice-gtk-0.7.159.tar.bz2
+_eclasses_=eutils	d92f291efb4ef0595cb90e4b4e7e6b6c	gnome2-utils	b5ca2ccadb60760889faa3bccba121d9	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	portability	536c5e70c5fb252ed3b769e04aa3f05b	python	412a8596c4b1620189e299c8dd303d0a	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
+_md5_=991e6f321b7297d2de7ae388f3d82d96

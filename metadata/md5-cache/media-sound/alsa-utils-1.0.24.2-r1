@@ -1,5 +1,5 @@
 DEFINED_PHASES=compile configure install postinst prepare setup unpack
-DEPEND=>=sys-libs/ncurses-5.1 dev-util/dialog >=media-libs/alsa-lib-1.0.24.1 doc? ( app-text/xmlto )
+DEPEND=>=sys-libs/ncurses-5.1 dev-util/dialog >=media-libs/alsa-lib-1.0.24.1 doc? ( app-text/xmlto ) !<sys-apps/systemd-29-r4 !=sys-apps/systemd-37-r1
 DESCRIPTION=Advanced Linux Sound Architecture Utils (alsactl, alsamixer, etc.)
 EAPI=3
 HOMEPAGE=http://www.alsa-project.org/
@@ -9,5 +9,5 @@ LICENSE=GPL-2
 RDEPEND=>=sys-libs/ncurses-5.1 dev-util/dialog >=media-libs/alsa-lib-1.0.24.1 sys-apps/module-init-tools !minimal? ( sys-apps/pciutils )
 SLOT=0.9
 SRC_URI=mirror://alsaproject/utils/alsa-utils-1.0.24.2.tar.bz2 mirror://alsaproject/driver/alsa-driver-1.0.24.tar.bz2
-_eclasses_=base	809ab15a673823938260f6b17661c3f1	eutils	d92f291efb4ef0595cb90e4b4e7e6b6c	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	portability	536c5e70c5fb252ed3b769e04aa3f05b	systemd	545c55e67f121567882feecae3804a8c	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
+_eclasses_=base	809ab15a673823938260f6b17661c3f1	eutils	d92f291efb4ef0595cb90e4b4e7e6b6c	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	portability	536c5e70c5fb252ed3b769e04aa3f05b	systemd	70a153740015c3457222dbdd8e07c1f7	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
 _md5_=24f9fc2775c384cfeef77ed3feffca3d

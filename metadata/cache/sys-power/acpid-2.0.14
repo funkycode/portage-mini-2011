@@ -1,4 +1,4 @@
-
+!<sys-apps/systemd-29-r4 !=sys-apps/systemd-37-r1
 
 0
 http://tedfelix.com/linux/acpid-2.0.14.tar.gz

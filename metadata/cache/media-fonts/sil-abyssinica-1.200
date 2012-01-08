@@ -1,0 +1,22 @@
+app-arch/unzip X? ( x11-apps/mkfontdir media-fonts/encodings ) >=media-libs/fontconfig-2.4.0
+
+0
+mirror://gentoo/AbyssinicaSIL1.200.zip
+
+http://scripts.sil.org/AbyssinicaSIL
+OFL-1.1
+SIL Opentype Unicode fonts for Ethiopic languages
+~alpha ~amd64 ~arm ~hppa ~ia64 ~ppc ~ppc64 ~s390 ~sh ~sparc ~x86 ~x86-fbsd ~ppc-macos ~x86-macos
+eutils font multilib portability toolchain-funcs user
+doc X
+
+
+
+4
+
+install postinst postrm setup
+
+
+
+
+

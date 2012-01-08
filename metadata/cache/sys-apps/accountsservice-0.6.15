@@ -1,4 +1,4 @@
-dev-libs/glib:2 dev-libs/dbus-glib sys-auth/polkit introspection? ( >=dev-libs/gobject-introspection-0.9.12 ) dev-libs/libxslt dev-util/pkgconfig sys-devel/gettext >=dev-util/intltool-0.40 doc? ( app-text/docbook-xml-dtd:4.1.2 app-text/xmlto ) app-arch/xz-utils >=sys-apps/sed-4
+dev-libs/glib:2 dev-libs/dbus-glib sys-auth/polkit introspection? ( >=dev-libs/gobject-introspection-0.9.12 ) dev-libs/libxslt dev-util/pkgconfig sys-devel/gettext >=dev-util/intltool-0.40 doc? ( app-text/docbook-xml-dtd:4.1.2 app-text/xmlto ) app-arch/xz-utils >=sys-apps/sed-4 !<sys-apps/systemd-29-r4 !=sys-apps/systemd-37-r1
 dev-libs/glib:2 dev-libs/dbus-glib sys-auth/polkit introspection? ( >=dev-libs/gobject-introspection-0.9.12 )
 0
 http://www.freedesktop.org/software/accountsservice/accountsservice-0.6.15.tar.xz

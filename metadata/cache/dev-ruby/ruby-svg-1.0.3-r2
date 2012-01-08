@@ -6,7 +6,7 @@ http://downloads.sourceforge.jp/ruby-svg/2288/ruby-svg-1.0.3.tar.gz
 http://ruby-svg.sourceforge.jp/
 LGPL-2.1
 Ruby SVG Generator
-~amd64 ~ia64 ~ppc ~x86
+amd64 ~ia64 ~ppc ~x86
 eutils java-utils-2 multilib portability ruby-ng toolchain-funcs user versionator
 doc examples elibc_FreeBSD ruby_targets_ruby18
 

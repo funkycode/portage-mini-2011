@@ -6,7 +6,7 @@ http://savannah.nongnu.org/download/icoutils/icoutils-0.29.1.tar.bz2
 http://www.nongnu.org/icoutils/
 GPL-2
 A set of programs for extracting and converting images in Microsoft Windows icon and cursor files (.ico, .cur).
-~amd64 ~ppc ~x86
+amd64 ~ppc ~x86
 autotools eutils libtool multilib portability toolchain-funcs user
 nls
 

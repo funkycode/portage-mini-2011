@@ -1,4 +1,5 @@
 DEFINED_PHASES=compile install postinst prepare
+DEPEND=!<sys-apps/systemd-29-r4 !=sys-apps/systemd-37-r1
 DESCRIPTION=Daemon for Advanced Configuration and Power Interface
 EAPI=4
 HOMEPAGE=http://tedfelix.com/linux/acpid-netlink.html
@@ -7,5 +8,5 @@ LICENSE=GPL-2
 RDEPEND=!<sys-apps/openrc-0.6.0
 SLOT=0
 SRC_URI=http://tedfelix.com/linux/acpid-2.0.12.tar.gz
-_eclasses_=eutils	d92f291efb4ef0595cb90e4b4e7e6b6c	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	portability	536c5e70c5fb252ed3b769e04aa3f05b	systemd	545c55e67f121567882feecae3804a8c	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
+_eclasses_=eutils	d92f291efb4ef0595cb90e4b4e7e6b6c	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	portability	536c5e70c5fb252ed3b769e04aa3f05b	systemd	70a153740015c3457222dbdd8e07c1f7	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
 _md5_=e5a8040e9fceb56952632ac256a09284

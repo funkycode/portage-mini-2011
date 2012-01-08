@@ -1,0 +1,22 @@
+app-arch/unzip dev-python/numpy dev-python/setuptools >=app-admin/eselect-python-20091230 dev-lang/python[tk?] dev-lang/python
+dev-python/numpy !minimal? ( dev-python/cvxopt[glpk] dev-python/lp_solve dev-python/matplotlib dev-python/setproctitle sci-libs/nlopt[python] sci-libs/scipy ) >=app-admin/eselect-python-20091230 dev-lang/python[tk?] dev-lang/python
+0
+http://openopt.org/images/f/f3/OOSuite.zip -> OOSuite-0.37.zip
+
+http://openopt.org/
+BSD
+OpenOpt suite of Python modules for numerical optimization
+~amd64 ~x86
+distutils eutils multilib portability python toolchain-funcs user
+examples minimal tk
+
+
+
+4
+
+compile install postinst postrm prepare setup test
+
+
+
+
+

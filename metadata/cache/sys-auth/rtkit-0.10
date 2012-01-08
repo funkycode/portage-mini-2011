@@ -1,4 +1,4 @@
-sys-apps/dbus sys-auth/polkit sys-libs/libcap
+sys-apps/dbus sys-auth/polkit sys-libs/libcap !<sys-apps/systemd-29-r4 !=sys-apps/systemd-37-r1
 sys-apps/dbus sys-auth/polkit sys-libs/libcap
 0
 http://0pointer.de/public/rtkit-0.10.tar.gz

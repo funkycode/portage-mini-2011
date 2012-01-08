@@ -1,4 +1,4 @@
-dev-libs/glib:2 caps? ( sys-libs/libcap-ng ) numa? ( sys-process/numactl ) dev-util/pkgconfig
+dev-libs/glib:2 caps? ( sys-libs/libcap-ng ) numa? ( sys-process/numactl ) dev-util/pkgconfig !<sys-apps/systemd-29-r4 !=sys-apps/systemd-37-r1
 dev-libs/glib:2 caps? ( sys-libs/libcap-ng ) numa? ( sys-process/numactl )
 0
 http://irqbalance.googlecode.com/files/irqbalance-1.0.2.tar.gz
