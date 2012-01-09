@@ -1,0 +1,14 @@
+DEFINED_PHASES=compile config configure install postinst postrm preinst prepare setup test unpack
+DEPEND=|| ( >=sys-devel/gcc-3.4.6 >=sys-devel/gcc-apple-4.0 ) sys-devel/gnuconfig || ( =sys-devel/automake-1.11* ) >=sys-devel/autoconf-2.61 sys-devel/libtool ssl? ( >=dev-libs/openssl-0.9.6d ) kernel_linux? ( sys-process/procps ) >=sys-apps/sed-4 >=sys-apps/texinfo-4.7-r1 >=sys-libs/readline-4.1 >=sys-libs/zlib-1.2.3 !dev-db/mysql-community !dev-db/mysql-cluster !dev-db/mariadb virtual/yacc static? ( || ( sys-libs/ncurses[static-libs] <=sys-libs/ncurses-5.7-r3 ) ) berkdb? ( sys-apps/ed )
+DESCRIPTION=A fast, multi-threaded, multi-user SQL database server.
+EAPI=2
+HOMEPAGE=http://www.mysql.com/
+IUSE=big-tables debug embedded minimal +perl selinux ssl static test latin1 extraengine cluster max-idx-128 berkdb +community profiling
+KEYWORDS=alpha amd64 arm hppa ia64 ppc ppc64 s390 sh sparc x86 ~sparc-fbsd ~x86-fbsd ~x86-freebsd ~amd64-linux ~x86-linux ~ppc-macos ~x64-macos ~x86-macos ~x64-solaris
+LICENSE=GPL-2
+PDEPEND=perl? ( >=dev-perl/DBD-mysql-2.9004 ) =virtual/mysql-5.0
+RDEPEND=ssl? ( >=dev-libs/openssl-0.9.6d ) kernel_linux? ( sys-process/procps ) >=sys-apps/sed-4 >=sys-apps/texinfo-4.7-r1 >=sys-libs/readline-4.1 >=sys-libs/zlib-1.2.3 !dev-db/mysql-community !dev-db/mysql-cluster !dev-db/mariadb !minimal? ( !prefix? ( dev-db/mysql-init-scripts ) ) selinux? ( sec-policy/selinux-mysql )
+SLOT=0
+SRC_URI=http://downloads.mysql.com/archives/mysql-5.0/mysql-5.0.91.tar.gz mirror://mysql/Downloads/MySQL-5.0/mysql-5.0.91.tar.gz mirror://gentoo/mysql-extras-20100809-0452Z.tar.bz2 http://g3nt8.org/patches/mysql-extras-20100809-0452Z.tar.bz2 http://dev.gentoo.org/~robbat2/distfiles/mysql-extras-20100809-0452Z.tar.bz2
+_eclasses_=autotools	cc61a7c888abf6d8622105c6184881ed	eutils	d92f291efb4ef0595cb90e4b4e7e6b6c	flag-o-matic	9bfd4a1550735a7fc561ff5bae86e4c9	gnuconfig	9200bfc8e0184357abfb86a08edd4fc3	libtool	5f623f5a211fb1b2d84d88ee49959a54	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	mysql	82bc822c6865fcaf0191535c0391b934	mysql_fx	5c567c9ed8d5c8e062ecd13d3f6cef77	portability	536c5e70c5fb252ed3b769e04aa3f05b	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e	versionator	6601b4c5b3f019a993db59a50e1854e4
+_md5_=7b5c60f0a15f334046cfa56c117d93e0

@@ -1,5 +1,5 @@
 ####################################################################
-# $Header: /var/cvsroot/gentoo-x86/profiles/package.mask,v 1.13385 2012/01/08 01:33:01 hwoarang Exp $
+# $Header: /var/cvsroot/gentoo-x86/profiles/package.mask,v 1.13389 2012/01/08 23:46:23 robbat2 Exp $
 #
 # When you add an entry to the top of this file, add your name, the date, and
 # an explanation of why something is getting masked. Please be extremely
@@ -30,6 +30,21 @@
 ## app-misc/some-package
 
 #--- END OF EXAMPLES ---
+
+# Samuli Suominen <ssuominen@gentoo.org> (08 Jan 2012)
+# Incompatible with upstream libdvdread without custom
+# patching the UDF symbols in again wrt bug #387813. 
+# Multiple other issues. Bugs 262084, 165700, 340739,
+# 369775 and 339965. No upstream or hope for new releases 
+# anymore either.   Removal in 30 days.
+media-video/ogle
+media-video/ogle-gui
+media-video/goggles
+
+# Markos Chandras <hwoarang@gentoo.org> (08 Jan 2012)
+# Masking new boost release for testing
+~dev-util/boost-build-1.48.0
+~dev-libs/boost-1.48.0
 
 # Andreas K. Huettel <dilfridge@gentoo.org> (08 Jan 2012)
 # Mask not-yet-released calligra
@@ -1031,8 +1046,8 @@ dev-lisp/gcl
 # These versions are vulnerable to GLSA's and should not be used. They will stay
 # in the tree because they are useful to tracking down bugs. You have been
 # warned. bug 271686
-<dev-db/mysql-5.0.60-r1
-<virtual/mysql-5.0
+<dev-db/mysql-5.1.56
+<virtual/mysql-5.1
 
 # Nirbheek Chauhan <nirbheek@gentoo.org> (10 Jun 2009)
 # Several feature regressions that will make our users

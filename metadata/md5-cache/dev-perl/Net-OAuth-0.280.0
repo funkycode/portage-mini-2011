@@ -1,0 +1,13 @@
+DEFINED_PHASES=compile configure install prepare test unpack
+DEPEND=>=dev-perl/Class-Accessor-0.31 >=dev-perl/Class-Data-Inheritable-0.06 dev-perl/Digest-HMAC dev-perl/URI virtual/perl-Digest-SHA >=virtual/perl-Encode-2.35 dev-perl/libwww-perl virtual/perl-Module-Build test? ( >=virtual/perl-Test-Simple-0.66 >=dev-perl/Test-Warn-0.21 ) dev-lang/perl[-build]
+DESCRIPTION=OAuth protocol support
+EAPI=4
+HOMEPAGE=http://search.cpan.org/dist/Net-OAuth/
+IUSE=test
+KEYWORDS=~amd64 ~x86 ~x64-macos
+LICENSE=|| ( Artistic GPL-1 GPL-2 GPL-3 )
+RDEPEND=>=dev-perl/Class-Accessor-0.31 >=dev-perl/Class-Data-Inheritable-0.06 dev-perl/Digest-HMAC dev-perl/URI virtual/perl-Digest-SHA >=virtual/perl-Encode-2.35 dev-perl/libwww-perl dev-lang/perl[-build]
+SLOT=0
+SRC_URI=mirror://cpan/authors/id/K/KG/KGRENNAN/Net-OAuth-0.28.tar.gz
+_eclasses_=base	809ab15a673823938260f6b17661c3f1	eutils	d92f291efb4ef0595cb90e4b4e7e6b6c	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	perl-module	01501a30505074cd0012cabbf5d99447	portability	536c5e70c5fb252ed3b769e04aa3f05b	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
+_md5_=dcb655b60b80b0fe96b21e2c5a319a01

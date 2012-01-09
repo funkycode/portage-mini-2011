@@ -1,0 +1,12 @@
+DEFINED_PHASES=install prepare unpack
+DEPEND=>=dev-vcs/git-1.6
+DESCRIPTION=release metatool used for creating Gentoo and Funtoo releases
+EAPI=2
+HOMEPAGE=http://www.github.com/funtoo/metro
+IUSE=+ccache +git threads
+KEYWORDS=~amd64 ~arm ~x86
+LICENSE=GPL-2
+RDEPEND=dev-lang/python threads? ( app-arch/pbzip2 ) ccache? ( dev-util/ccache ) git? ( dev-vcs/git )
+SLOT=0
+_eclasses_=eutils	d92f291efb4ef0595cb90e4b4e7e6b6c	git	08aa84bd1bc27e3dc5e58b3ec83854a6	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	portability	536c5e70c5fb252ed3b769e04aa3f05b	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
+_md5_=c3433f14a5e4f3aa15190a0569ae3e72

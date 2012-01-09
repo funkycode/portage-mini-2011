@@ -1,0 +1,14 @@
+DEFINED_PHASES=compile configure install postinst postrm preinst prepare setup unpack
+DEPEND=>=dev-libs/glib-2.16 dev-libs/libsigc++:2 sys-libs/zlib >=x11-libs/gtk+-2.20:2 editor? ( dev-libs/libpcre dev-libs/libxml2 virtual/mysql ) gnome? ( >=gnome-base/libbonobo-2 >=gnome-base/libgnome-2 >=gnome-base/libgnomeui-2 >=gnome-base/gconf-2 >=gnome-base/orbit-2 ) gucharmap? ( >=gnome-extra/gucharmap-2.22.1:0 ) spell? ( >=app-text/enchant-1.2 ) app-text/docbook-xml-dtd:4.3 app-text/gnome-doc-utils dev-libs/libxslt dev-util/intltool dev-util/pkgconfig sys-devel/gettext app-arch/xz-utils >=sys-apps/sed-4
+DESCRIPTION=A international dictionary supporting fuzzy and glob style matching
+EAPI=4
+HOMEPAGE=http://code.google.com/p/stardict-3/
+IUSE=editor espeak gnome gucharmap qqwry pronounce spell
+KEYWORDS=~amd64 ~ppc ~ppc64 ~sparc ~x86
+LICENSE=CPL-1.0 GPL-3 LGPL-2
+RDEPEND=>=dev-libs/glib-2.16 dev-libs/libsigc++:2 sys-libs/zlib >=x11-libs/gtk+-2.20:2 editor? ( dev-libs/libpcre dev-libs/libxml2 virtual/mysql ) gnome? ( >=gnome-base/libbonobo-2 >=gnome-base/libgnome-2 >=gnome-base/libgnomeui-2 >=gnome-base/gconf-2 >=gnome-base/orbit-2 ) gucharmap? ( >=gnome-extra/gucharmap-2.22.1:0 ) spell? ( >=app-text/enchant-1.2 ) espeak? ( >=app-accessibility/espeak-1.29 )
+RESTRICT=test
+SLOT=0
+SRC_URI=http://stardict-3.googlecode.com/files/stardict-3.0.3.tar.bz2 pronounce? ( http://stardict-3.googlecode.com/files/WyabdcRealPeopleTTS.tar.bz2 ) qqwry? ( mirror://gentoo/QQWry.Dat.bz2 )
+_eclasses_=eutils	d92f291efb4ef0595cb90e4b4e7e6b6c	fdo-mime	0acfe1a88fd8751a1d5dc671168219fa	gnome.org	8fef8f967214f56e08fa92d61163d891	gnome2	490ce89f5d905297c7a34898fa498bd0	gnome2-utils	b5ca2ccadb60760889faa3bccba121d9	libtool	5f623f5a211fb1b2d84d88ee49959a54	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	portability	536c5e70c5fb252ed3b769e04aa3f05b	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e	versionator	6601b4c5b3f019a993db59a50e1854e4
+_md5_=301e7ac70faded2bb435d34ebe72eac6

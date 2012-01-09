@@ -830,6 +830,7 @@ app-text/poppler:introspection - Enable GObject introspection.
 app-text/poppler:utils - Install command-line PDF converters and various utilities.
 app-text/poppler:xpdf-headers - 
 app-text/sgmltools-lite:jadetex - Add support for app-text/jadetex (for processing tex files produced by the TeX backend of Jade)
+app-text/stardict:editor - Build and install the stardict-editor utility
 app-text/stardict:espeak - Enable text to speech synthesizer using espeak engine
 app-text/stardict:festival - Enable text to speech synthesizer using festival engine
 app-text/stardict:gucharmap - Enable gucharmap dictionary plugin
@@ -1168,6 +1169,7 @@ dev-lang/php:suhosin - Add Suhosin support (patch and extension from http://www.
 dev-lang/php:xmlreader - Enable XMLReader support
 dev-lang/php:xmlwriter - Enable XMLWriter support
 dev-lang/php:zip - Enable ZIP file support
+dev-lang/polyml:portable - Build the portable interpreter version of Poly/ML instead of native.
 dev-lang/python:threads - Enable threading support. (DON'T DISABLE THIS UNLESS YOU KNOW WHAT YOU'RE DOING)
 dev-lang/python:wide-unicode - Enable wide Unicode implementation which uses 4-byte Unicode characters. Switching of this USE flag changes ABI of Python and requires reinstallation of many Python modules. (DON'T DISABLE THIS UNLESS YOU KNOW WHAT YOU'RE DOING)
 dev-lang/python:wininst - Install Windows executables required to create an executable installer for MS Windows.
@@ -1438,6 +1440,7 @@ dev-python/django-extensions:s3 - Upload your media files to S3.
 dev-python/django-extensions:vcard - Export your users email addresses to the vcard format.
 dev-python/docutils:glep - Install support for GLEPs
 dev-python/icalendar:doc - Generate examples and other extra documentation
+dev-python/ipython:notebook - Install requirements for the web notebook based on www-servers/tornado
 dev-python/jinja:i18n - Enables support for i18n with dev-python/Babel
 dev-python/kaa-base:tls - SSL/TLS support via dev-python/tlslite
 dev-python/ldaptor:web - enable the web front end for ldaptor (uses dev-python/nevow)
@@ -4432,6 +4435,18 @@ sci-mathematics/geomview:netpbm - Add media-libs/netpbm support for external mod
 sci-mathematics/gretl:R - Enable support for dev-lang/R
 sci-mathematics/gretl:gtk3 - Use GTK+3 frontend instead of GTK+2
 sci-mathematics/gretl:sourceview - Enable support for x11-libs/gtksourceview
+sci-mathematics/isabelle:CCL - CCL (Classical Computational Logic)
+sci-mathematics/isabelle:CTT - CTT (Constructive Type Theory) is an extensional version of Martin-Löf's Type Theory.
+sci-mathematics/isabelle:Cube - Cube (The Lambda Cube)
+sci-mathematics/isabelle:FOL - FOL (Many-sorted First-Order Logic) provides basic classical and intuitionistic first-order logic. It is polymorphic.
+sci-mathematics/isabelle:FOLP - FOLP (FOL with Proof Terms)
+sci-mathematics/isabelle:HOL - (Higher-Order Logic) is a version of classical higher-order logic resembling that of the HOL System.
+sci-mathematics/isabelle:LCF - LCF (Logic of Computable Functions)
+sci-mathematics/isabelle:Pure - Pure is the basis for all object-logics.
+sci-mathematics/isabelle:Sequents - Sequents (first-order, modal and linear logics)
+sci-mathematics/isabelle:ZF - ZF (Set Theory) offers a formulation of Zermelo-Fraenkel set theory on top of FOL.
+sci-mathematics/isabelle:graphbrowsing - Generate theory browsing information, including HTML documents that show a theory's definition, the theorems proved in its ML file and the relationship with its ancestors and descendants.
+sci-mathematics/isabelle:proofgeneral - Add support for the app-emacs/proofgeneral proof assistant front end.
 sci-mathematics/maxima:clisp - Compile maxima with GNU CLISP (dev-lisp/clisp)
 sci-mathematics/maxima:clozurecl - Compile maxima with Clozure Common Lisp (dev-lisp/clozurecl)
 sci-mathematics/maxima:cmucl - Compile maxima with CMU Common Lisp (dev-lisp/cmucl)

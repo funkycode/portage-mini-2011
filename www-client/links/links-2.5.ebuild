@@ -1,9 +1,9 @@
 # Copyright 1999-2012 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/www-client/links/links-2.5.ebuild,v 1.1 2012/01/03 09:41:23 ssuominen Exp $
+# $Header: /var/cvsroot/gentoo-x86/www-client/links/links-2.5.ebuild,v 1.4 2012/01/08 11:47:19 ssuominen Exp $
 
 EAPI=4
-inherit autotools eutils
+inherit autotools eutils fdo-mime
 
 DESCRIPTION="A fast and lightweight web browser running in both graphics and text mode"
 HOMEPAGE="http://links.twibright.com/"
@@ -106,7 +106,9 @@ src_install() {
 
 	if use X; then
 		newicon Links_logo.png ${PN}.png
-		make_desktop_entry "${PN} -g" Links ${PN} "Network;WebBrowser"
+		make_desktop_entry "${PN} -g" Links ${PN} 'Network;WebBrowser'
+		echo 'MimeType=x-scheme-handler/http;x-scheme-handler/https;' \
+			>> "${ED}"usr/share/applications/*.desktop
 	fi
 
 	dohtml doc/links_cal/*
@@ -114,4 +116,12 @@ src_install() {
 	dosym links /usr/bin/links2
 
 	use suid && fperms 4755 /usr/bin/links
+}
+
+pkg_postinst() {
+	use X && fdo-mime_desktop_database_update
+}
+
+pkg_postrm() {
+	use X && fdo-mime_desktop_database_update
 }

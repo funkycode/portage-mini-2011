@@ -1,0 +1,13 @@
+DEFINED_PHASES=compile configure install prepare test unpack
+DEPEND=dev-perl/Class-Inspector >=dev-perl/Class-XSAccessor-1.130 >=dev-perl/Sub-Name-0.05 test? ( >=dev-perl/Test-Exception-0.31 >=virtual/perl-Test-Simple-0.94 ) dev-lang/perl[-build]
+DESCRIPTION=Lets you build groups of accessors
+EAPI=4
+HOMEPAGE=http://search.cpan.org/dist/Class-Accessor-Grouped/
+IUSE=test
+KEYWORDS=~amd64 ~ppc ~x86 ~ppc-macos ~x86-solaris
+LICENSE=|| ( Artistic GPL-1 GPL-2 GPL-3 )
+RDEPEND=dev-perl/Class-Inspector >=dev-perl/Class-XSAccessor-1.130 >=dev-perl/Sub-Name-0.05 dev-lang/perl[-build]
+SLOT=0
+SRC_URI=mirror://cpan/authors/id/C/CL/CLACO/Class-Accessor-Grouped-0.10006.tar.gz
+_eclasses_=base	809ab15a673823938260f6b17661c3f1	eutils	d92f291efb4ef0595cb90e4b4e7e6b6c	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	perl-module	01501a30505074cd0012cabbf5d99447	portability	536c5e70c5fb252ed3b769e04aa3f05b	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
+_md5_=98b987490eaf95d42f6564f57c3ab5fe
