@@ -1,10 +1,12 @@
 DEFINED_PHASES=install prepare
-DESCRIPTION=Tools for configuring ISA PnP devices
+DEPEND=sys-process/acct
+DESCRIPTION=Resource-specific view of processes
 EAPI=3
-HOMEPAGE=http://www.roestock.demon.co.uk/isapnptools/
-KEYWORDS=-* amd64 ~x86
+HOMEPAGE=http://www.atoptool.nl/
+KEYWORDS=~alpha ~amd64 ~hppa ~ppc ~x86
 LICENSE=GPL-2
+RDEPEND=sys-process/acct
 SLOT=0
-SRC_URI=ftp://metalab.unc.edu/pub/Linux/system/hardware/isapnptools-1.27.tgz
+SRC_URI=http://www.atoptool.nl/download/atop-1.26.tar.gz
 _eclasses_=eutils	d92f291efb4ef0595cb90e4b4e7e6b6c	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	portability	536c5e70c5fb252ed3b769e04aa3f05b	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
-_md5_=80d3eebfc820cc962fe12ef25d308e45
+_md5_=46f54124da2239ca584bf2952a988a56

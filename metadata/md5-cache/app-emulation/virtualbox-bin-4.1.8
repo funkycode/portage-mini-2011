@@ -1,14 +1,14 @@
-DEFINED_PHASES=install postinst postrm unpack
-DEPEND=app-arch/unzip
+DEFINED_PHASES=compile configure install postinst postrm preinst prepare unpack
+DEPEND=app-arch/unzip >=sys-apps/sed-4
 DESCRIPTION=Family of powerful x86 virtualization products for enterprise as well as home use
 EAPI=2
 HOMEPAGE=http://www.virtualbox.org/
-IUSE=+additions +chm headless python sdk vboxwebsrv rdesktop-vrdp
+IUSE=+additions +chm headless python sdk vboxwebsrv rdesktop-vrdp debug
 KEYWORDS=~amd64 ~x86
 LICENSE=GPL-2 PUEL
 RDEPEND=!!app-emulation/virtualbox !app-emulation/virtualbox-additions ~app-emulation/virtualbox-modules-4.1.8 !headless? ( x11-libs/libXcursor media-libs/libsdl[X] x11-libs/libXrender x11-libs/libXfixes media-libs/libpng x11-libs/libXi x11-libs/libXrandr x11-libs/libXinerama x11-libs/libXft media-libs/freetype media-libs/fontconfig x11-libs/libXext dev-libs/glib chm? ( dev-libs/expat ) ) x11-libs/libXt dev-libs/libxml2 x11-libs/libXau x11-libs/libX11 x11-libs/libXmu x11-libs/libSM x11-libs/libICE x11-libs/libXdmcp python? ( || ( dev-lang/python:2.7 dev-lang/python:2.6 dev-lang/python:2.5 dev-lang/python:2.4 ) )
 RESTRICT=mirror
 SLOT=0
 SRC_URI=amd64? ( http://download.virtualbox.org/virtualbox/4.1.8/VirtualBox-4.1.8-75467-Linux_amd64.run ) x86? ( http://download.virtualbox.org/virtualbox/4.1.8/VirtualBox-4.1.8-75467-Linux_x86.run ) sdk? ( http://download.virtualbox.org/virtualbox/4.1.8/VirtualBoxSDK-4.1.8-75467.zip ) http://download.virtualbox.org/virtualbox/4.1.8/Oracle_VM_VirtualBox_Extension_Pack-4.1.8-75467.vbox-extpack -> Oracle_VM_VirtualBox_Extension_Pack-4.1.8-75467.tar.gz
-_eclasses_=eutils	d92f291efb4ef0595cb90e4b4e7e6b6c	fdo-mime	0acfe1a88fd8751a1d5dc671168219fa	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	pax-utils	3551398d6ede2b572568832730cc2a45	portability	536c5e70c5fb252ed3b769e04aa3f05b	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
-_md5_=fef58d1b98080aa372153b914e564cc4
+_eclasses_=eutils	d92f291efb4ef0595cb90e4b4e7e6b6c	fdo-mime	0acfe1a88fd8751a1d5dc671168219fa	gnome.org	8fef8f967214f56e08fa92d61163d891	gnome2	490ce89f5d905297c7a34898fa498bd0	gnome2-utils	b5ca2ccadb60760889faa3bccba121d9	libtool	5f623f5a211fb1b2d84d88ee49959a54	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	pax-utils	3551398d6ede2b572568832730cc2a45	portability	536c5e70c5fb252ed3b769e04aa3f05b	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e	versionator	6601b4c5b3f019a993db59a50e1854e4
+_md5_=235e73385ae4aa6f5f39b1521424ba12

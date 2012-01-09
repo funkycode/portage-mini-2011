@@ -1,6 +1,6 @@
 # Copyright 1999-2012 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/media-radio/grig/grig-0.8.0.ebuild,v 1.2 2012/01/08 20:22:25 tomjbe Exp $
+# $Header: /var/cvsroot/gentoo-x86/media-radio/grig/grig-0.8.0.ebuild,v 1.4 2012/01/09 21:01:40 tomjbe Exp $
 
 EAPI=4
 
@@ -12,7 +12,7 @@ SRC_URI="mirror://sourceforge/groundstation/${P}.tar.gz"
 
 LICENSE="GPL-2"
 SLOT="0"
-KEYWORDS="~amd64 ~x86"
+KEYWORDS="amd64 ~x86"
 IUSE=""
 
 DEPEND="
@@ -22,7 +22,7 @@ DEPEND="
 RDEPEND="${DEPEND}"
 
 src_prepare() {
-	sed -i -e "s/-DG_DISABLE_DEPRECATED//" src/Makefile.in
+	sed -i -e "s/-DG_DISABLE_DEPRECATED//" src/Makefile.in || die
 }
 
 src_configure() {
