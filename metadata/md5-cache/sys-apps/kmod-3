@@ -1,13 +1,14 @@
 DEFINED_PHASES=configure install prepare
-DEPEND=zlib? ( sys-libs/zlib ) lzma? ( app-arch/xz-utils ) || ( =sys-devel/automake-1.11* ) >=sys-devel/autoconf-2.61 sys-devel/libtool
+DEPEND=compat? ( !!sys-apps/module-init-tools ) lzma? ( app-arch/xz-utils ) zlib? ( sys-libs/zlib ) || ( =sys-devel/automake-1.11* ) >=sys-devel/autoconf-2.61 sys-devel/libtool
 DESCRIPTION=library and tools for managing linux kernel modules
 EAPI=4
 HOMEPAGE=http://git.profusion.mobi/cgit.cgi/kmod.git
-IUSE=debug lzma static-libs +tools zlib
+IUSE=+compat debug lzma static-libs +tools zlib
 KEYWORDS=~amd64 ~x86
 LICENSE=LGPL-2
-RDEPEND=zlib? ( sys-libs/zlib ) lzma? ( app-arch/xz-utils )
+RDEPEND=compat? ( !!sys-apps/module-init-tools ) lzma? ( app-arch/xz-utils ) zlib? ( sys-libs/zlib )
+REQUIRED_USE=compat? ( tools )
 SLOT=0
 SRC_URI=http://packages.profusion.mobi/kmod/kmod-3.tar.xz
 _eclasses_=autotools	cc61a7c888abf6d8622105c6184881ed	eutils	d92f291efb4ef0595cb90e4b4e7e6b6c	libtool	5f623f5a211fb1b2d84d88ee49959a54	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	portability	536c5e70c5fb252ed3b769e04aa3f05b	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
-_md5_=9cf3f30ed3461d8f0d5a0c1f309ccb2e
+_md5_=e94e2b88e63ca46bb6c795e2c7df56f3

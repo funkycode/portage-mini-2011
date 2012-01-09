@@ -1,5 +1,5 @@
 ####################################################################
-# $Header: /var/cvsroot/gentoo-x86/profiles/package.mask,v 1.13389 2012/01/08 23:46:23 robbat2 Exp $
+# $Header: /var/cvsroot/gentoo-x86/profiles/package.mask,v 1.13391 2012/01/09 14:21:36 williamh Exp $
 #
 # When you add an entry to the top of this file, add your name, the date, and
 # an explanation of why something is getting masked. Please be extremely
@@ -30,6 +30,12 @@
 ## app-misc/some-package
 
 #--- END OF EXAMPLES ---
+
+# Samuli Suominen <ssuominen@gentoo.org> (09 Jan 2012)
+# Fails to compile against recent glibc and multiple other issues.
+# No maintainer to take care of the package. Removal in 30 days.
+# Bugs 325331, 284369, 380749, 388741, 381539, 358697, and 332395.
+sys-fs/zfs-fuse
 
 # Samuli Suominen <ssuominen@gentoo.org> (08 Jan 2012)
 # Incompatible with upstream libdvdread without custom
@@ -296,6 +302,7 @@ net-mail/vmailmgr-tools
 #
 # http://www.freedesktop.org/wiki/Software/systemd/separate-usr-is-broken
 ~sys-fs/udev-175
+<sys-apps/kmod-9999
 >=sys-apps/systemd-30
 
 # Michael Weber <xmw@gentoo.org> (04 Nov 2011)

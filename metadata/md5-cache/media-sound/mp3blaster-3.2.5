@@ -1,12 +1,14 @@
-DEFINED_PHASES=compile install unpack
-DEPEND=>=sys-libs/ncurses-5.2 lirc? ( app-misc/lirc ) vorbis? ( >=media-libs/libvorbis-1 ) sid? ( =media-libs/libsidplay-1* ) esd? ( media-sound/esound ) sdl? ( media-libs/libsdl ) x11-misc/imake
+DEFINED_PHASES=configure install prepare
+DEPEND=>=sys-libs/ncurses-5.7-r7 lirc? ( app-misc/lirc ) sdl? ( media-libs/libsdl ) sid? ( =media-libs/libsidplay-1* ) vorbis? ( >=media-libs/libvorbis-1 ) x11-misc/imake oss? ( virtual/os-headers )
 DESCRIPTION=Text console based program for playing audio files
+EAPI=4
 HOMEPAGE=http://mp3blaster.sourceforge.net/
-IUSE=esd lirc oss sdl sid vorbis
+IUSE=lirc oss sdl sid vorbis
 KEYWORDS=alpha amd64 arm ppc ppc64 sparc x86 ~x86-fbsd
 LICENSE=GPL-2
-RDEPEND=>=sys-libs/ncurses-5.2 lirc? ( app-misc/lirc ) vorbis? ( >=media-libs/libvorbis-1 ) sid? ( =media-libs/libsidplay-1* ) esd? ( media-sound/esound ) sdl? ( media-libs/libsdl )
+RDEPEND=>=sys-libs/ncurses-5.7-r7 lirc? ( app-misc/lirc ) sdl? ( media-libs/libsdl ) sid? ( =media-libs/libsidplay-1* ) vorbis? ( >=media-libs/libvorbis-1 )
+REQUIRED_USE=|| ( oss sdl )
 SLOT=0
 SRC_URI=mirror://sourceforge/mp3blaster/mp3blaster-3.2.5.tar.gz
 _eclasses_=eutils	d92f291efb4ef0595cb90e4b4e7e6b6c	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	portability	536c5e70c5fb252ed3b769e04aa3f05b	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
-_md5_=a6824b11d4e099ade1697c1cbc1de18a
+_md5_=82cd8c5ebdea07d068aeeef83c710179

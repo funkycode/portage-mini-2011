@@ -2076,6 +2076,7 @@ kde-misc/kcm-grub2:hwinfo - Used to work out supported framebuffer resolutions
 kde-misc/kcm-grub2:imagemagick - Create splash images compatible with GRUB2
 kde-misc/kcm-grub2:packagekit - Add support for packagekit integration
 kde-misc/kdiff3:konqueror - Enable integration with konqueror
+kde-misc/krusader:bookmarks - Add dependency on bookmark package.
 kde-misc/networkmanagement:consolekit - Enable support for sys-auth/consolekit
 kde-misc/synaptiks:upower - Handle mouse devices correctly across suspend and resume with upower
 kde-misc/tellico:addressbook - Add support for kdepim addressbook (kabc)
@@ -4024,7 +4025,9 @@ net-misc/sitecopy:webdav - Enable WebDav (Web-based Distributed Authoring and Ve
 net-misc/slimrat:X - Install also GUI client
 net-misc/spice-gtk:gtk3 - Link against x11-libs/gtk+:3 instead of x11-libs/gtk+:2
 net-misc/spice-gtk:introspection - Use dev-libs/gobject-introspection for introspection
-net-misc/spice-gtk:vala - Regenerate pre-generated vala code using dev-lang/vala:0.12
+net-misc/spice-gtk:policykit - Enable sys-auth/polkit support for the usbredir acl helper
+net-misc/spice-gtk:usbredir - Use sys-apps/usbredir to redirect USB devices to another machine over TCP
+net-misc/spice-gtk:vala - Generate dev-lang/vala bindings using vapigen and regenerate .vala files using valac
 net-misc/streamtuner:shout - Enable shoutcast plug-in.
 net-misc/streamtuner:xiph - Enable xiph.org plug-in.
 net-misc/strongswan:cisco - Enable support for the Cisco VPN client.
@@ -4571,6 +4574,7 @@ sys-apps/iproute2:iptables - include support for iptables filtering
 sys-apps/irqbalance:numa - Support balancing IRQs across NUMA nodes
 sys-apps/kexec-tools:lzma - Enables support for LZMA compressed kernel images
 sys-apps/kexec-tools:xen - Enable extended xen support
+sys-apps/kmod:compat - Install module-init-tools compatible symlinks.
 sys-apps/kmod:tools - Install module loading/unloading tools.
 sys-apps/lm_sensors:sensord - Enable sensord - a daemon that can be used to periodically log sensor readings from hardware health-monitoring chips
 sys-apps/memtest86:serial - Compile with serial console support

@@ -1,6 +1,6 @@
 # Copyright 1999-2012 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/net-voip/ekiga/ekiga-3.2.7.ebuild,v 1.10 2012/01/04 10:34:46 nirbheek Exp $
+# $Header: /var/cvsroot/gentoo-x86/net-voip/ekiga/ekiga-3.2.7.ebuild,v 1.12 2012/01/09 13:33:06 ago Exp $
 
 EAPI=3
 
@@ -16,7 +16,7 @@ HOMEPAGE="http://www.ekiga.org/"
 
 LICENSE="GPL-2"
 SLOT="0"
-KEYWORDS="~alpha ~amd64 ~ia64 ~ppc ~ppc64 ~sparc x86"
+KEYWORDS="~alpha amd64 ~ia64 ~ppc ~ppc64 ~sparc x86"
 IUSE="avahi dbus debug doc eds gconf gnome gstreamer h323 kde kontact ldap
 libnotify mmx nls +shm static v4l xcap xv"
 
@@ -140,6 +140,9 @@ src_prepare() {
 		sed -i -e "s:\(KDE_LIBS=.*\)\(-lkdeui\):\1-L${KDEDIR}/$(get_libdir) \2:" \
 			configure || die "sed failed"
 	fi
+
+	# Remove silly -D*_DISABLE_DEPRECATED CFLAGS
+	sed -e 's/-D[^\s\t]\+_DISABLE_DEPRECATED//g' -i configure || die
 }
 
 src_test() {
