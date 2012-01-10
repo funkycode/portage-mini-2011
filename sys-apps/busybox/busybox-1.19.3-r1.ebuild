@@ -58,14 +58,14 @@ fi
 
 LICENSE="GPL-2"
 SLOT="0"
-KEYWORDS="~alpha amd64 arm hppa ~ia64 ~m68k ~mips ppc ~ppc64 ~s390 ~sh ~sparc x86 ~x86-linux"
+KEYWORDS="*"
 IUSE="ipv6 make-symlinks mdev -pam selinux static elibc_glibc"
 RESTRICT="test"
 
 RDEPEND="selinux? ( sys-libs/libselinux )
 	pam? ( sys-libs/pam )"
 DEPEND="${RDEPEND}
-	>=sys-kernel/linux-headers-2.6.39"
+	>=sys-kernel/linux-headers-2.6.32"
 
 S=${WORKDIR}/${MY_P}
 
