@@ -1,6 +1,6 @@
-# Copyright 1999-2011 Gentoo Foundation
+# Copyright 1999-2012 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/sci-chemistry/vmd/vmd-1.9.ebuild,v 1.6 2011/06/15 08:29:15 jlec Exp $
+# $Header: /var/cvsroot/gentoo-x86/sci-chemistry/vmd/vmd-1.9.ebuild,v 1.8 2012/01/10 14:44:42 jlec Exp $
 
 EAPI="3"
 
@@ -17,7 +17,7 @@ SRC_URI="
 SLOT="0"
 LICENSE="vmd"
 KEYWORDS="~amd64 ~x86 ~amd64-linux ~x86-linux"
-IUSE="cuda msms povray static-libs tachyon xinerama"
+IUSE="cuda msms povray tachyon xinerama"
 
 RESTRICT="fetch"
 
@@ -57,8 +57,9 @@ QA_DT_HASH_x86="usr/lib/vmd/plugins/LINUX/tcl/intersurf1.1/bin/intersurf.so"
 pkg_nofetch() {
 	elog "Please download ${P}.src.tar.gz from"
 	elog "${VMD_DOWNLOAD}"
-	elog "after agreeing to the license and then move it to "
-	elog "${DISTDIR}"
+	elog "after agreeing to the license and get"
+	elog "http://dev.gentoo.org/~jlec/distfiles/${P}-gentoo-patches.tar.xz"
+	elog "Place both in ${DISTDIR}"
 }
 
 src_prepare() {
@@ -78,8 +79,6 @@ src_prepare() {
 		-e "s:SHXXLD = g++:SHXXLD = $(tc-getCXX) -shared:" \
 		-e "s:-ltcl8.5:-ltcl:" \
 		-i Make-arch || die "Failed to set up plugins Makefile"
-
-	use static-libs || sed 's:staticlibs::g' -i Make-arch
 
 	# prepare vmd itself
 	cd "${S}"
@@ -117,8 +116,11 @@ src_prepare() {
 #		-e "s:gentoo-numpy-include:${EPREFIX}$(python_get_sitedir)/${NUMPY_INCLUDE}:" \
 #		-i configure || die "failed setting up python"
 
+	local gcc44_bindir="$(ls -d ${EPREFIX}/usr/*pc-linux-gnu/gcc-bin/4.4*)"
+
 	sed \
 		-e "s:gentoo-cuda-lib:${EPREFIX}/opt/cuda/$(get_libdir):g" \
+		-e "/^\$arch_nvccflags/s:=:= \"--compiler-bindir=${gcc44_bindir} \" . \n:1" \
 		-i configure || die
 
 	sed \
@@ -137,7 +139,6 @@ src_configure() {
 
 	use cuda && myconf+=" CUDA"
 #	use mpi && myconf+=" MPI"
-	use static-libs || myconf+=" NOSTATICPLUGINS"
 #	use tachion && myconf+=" LIBTACHYON"
 	use xinerama && myconf+=" XINERAMA"
 

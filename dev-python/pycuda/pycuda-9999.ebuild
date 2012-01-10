@@ -1,29 +1,33 @@
-# Copyright 1999-2011 Gentoo Foundation
+# Copyright 1999-2012 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/dev-python/pycuda/pycuda-9999.ebuild,v 1.8 2011/09/21 08:48:19 mgorny Exp $
+# $Header: /var/cvsroot/gentoo-x86/dev-python/pycuda/pycuda-9999.ebuild,v 1.9 2012/01/10 16:16:58 jlec Exp $
 
-EAPI="3"
+EAPI=4
+
 PYTHON_DEPEND="2"
+SUPPORT_PYTHON_ABIS="1"
+RESTRICT_PYTHON_ABIS="3.*"
 
-inherit git-2 distutils
-
-EGIT_REPO_URI="http://git.tiker.net/trees/pycuda.git"
+inherit git-2 distutils multilib
 
 DESCRIPTION="Python wrapper for NVIDIA CUDA"
-HOMEPAGE="http://mathema.tician.de/software/pycuda http://pypi.python.org/pypi/pycuda"
+HOMEPAGE="http://mathema.tician.de/software/pycuda/ http://pypi.python.org/pypi/pycuda/"
 SRC_URI=""
+EGIT_REPO_URI="http://git.tiker.net/trees/pycuda.git"
+EGIT_HAS_SUBMODULES="True"
 
 LICENSE="GPL-2"
 SLOT="0"
 KEYWORDS=""
 IUSE="examples opengl"
 
-RDEPEND="=dev-python/pytools-9999
+RDEPEND="
 	dev-libs/boost[python]
-	>=dev-util/nvidia-cuda-toolkit-2.0
-	>=dev-python/numpy-1.0.4
-	virtual/opengl"
-
+	dev-python/decorator
+	dev-python/numpy
+	dev-python/pytools
+	dev-util/nvidia-cuda-toolkit
+	opengl? ( virtual/opengl )"
 DEPEND="${RDEPEND}"
 
 src_unpack() {
@@ -33,9 +37,17 @@ src_unpack() {
 src_configure() {
 	local myopts=""
 	use opengl && myopts="${myopts} --cuda-enable-gl"
-	./configure.py --cuda-root="${ROOT}opt/cuda" \
+
+	./configure.py \
+		--cuda-root="${ROOT}opt/cuda" \
+		--boost-lib-dir="${EPREFIX}/usr/$(get_libdir)" \
+		--boost-inc-dir="${EPREFIX}/usr/include" \
+		--cudadrv-lib-dir="${EPREFIX}/usr/$(get_libdir)" \
+		--cudart-lib-dir="${EPREFIX}/opt/cuda/$(get_libdir)" \
 			--boost-python-libname=boost_python-mt \
-			--boost-thread-libname=boost_thread-mt --boost-compiler=gcc ${myopts}
+		--boost-thread-libname=boost_thread-mt \
+		--no-use-shipped-boost \
+		${myopts}
 }
 
 src_install() {
