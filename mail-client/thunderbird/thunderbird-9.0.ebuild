@@ -1,6 +1,6 @@
 # Copyright 1999-2012 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/mail-client/thunderbird/thunderbird-9.0.ebuild,v 1.2 2012/01/05 23:33:34 anarchy Exp $
+# $Header: /var/cvsroot/gentoo-x86/mail-client/thunderbird/thunderbird-9.0.ebuild,v 1.4 2012/01/10 23:38:06 polynomial-c Exp $
 
 EAPI="3"
 WANT_AUTOCONF="2.1"
@@ -51,16 +51,20 @@ if ! [[ ${PV} =~ alpha|beta ]]; then
 fi
 
 RDEPEND=">=sys-devel/binutils-2.16.1
-	>=dev-libs/nss-3.12.10
+	>=dev-libs/nss-3.13.1
 	>=dev-libs/nspr-4.8.8
+	>=dev-libs/glib-2.26
 	crashreporter? ( net-misc/curl )
 	gconf? ( >=gnome-base/gconf-1.2.1:2 )
 	media-libs/libpng[apng]
+	>=x11-libs/cairo-1.10
+	>=x11-libs/pango-1.14.0
+	>=x11-libs/gtk+-2.14
 	webm? ( media-libs/libvpx
 		media-libs/alsa-lib )
 	virtual/libffi
 	!x11-plugins/enigmail
-	system-sqlite? ( >=dev-db/sqlite-3.7.5[fts3,secure-delete,unlock-notify,debug=] )
+	system-sqlite? ( >=dev-db/sqlite-3.7.7.1[fts3,secure-delete,unlock-notify,debug=] )
 	crypt?  ( || (
 		( >=app-crypt/gnupg-2.0
 			|| (

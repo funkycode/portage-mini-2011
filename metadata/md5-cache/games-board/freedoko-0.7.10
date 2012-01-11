@@ -4,10 +4,10 @@ DESCRIPTION=FreeDoko is a Doppelkopf-game
 EAPI=2
 HOMEPAGE=http://free-doko.sourceforge.net
 IUSE=+xskatcards +gnomecards +kdecards +openclipartcards +pysolcards +backgrounds net doc
-KEYWORDS=amd64 ~ppc x86
+KEYWORDS=amd64 ppc x86
 LICENSE=GPL-2
 RDEPEND=net? ( net-libs/gnet ) >=dev-cpp/gtkmm-2.4:2.4
 SLOT=0
 SRC_URI=mirror://sourceforge/free-doko/FreeDoko_0.7.10.src.zip doc? ( mirror://sourceforge/free-doko/FreeDoko_0.7.10.manual.zip ) backgrounds? ( mirror://sourceforge/free-doko/backgrounds.zip -> freedoko-backgrounds.zip ) kdecards? ( mirror://sourceforge/free-doko/kdecarddecks.zip ) xskatcards? ( mirror://sourceforge/free-doko/xskat.zip ) pysolcards? ( mirror://sourceforge/free-doko/pysol.zip ) gnomecards? ( mirror://sourceforge/free-doko/gnome-games.zip ) openclipartcards? ( mirror://sourceforge/free-doko/openclipart.zip ) !xskatcards? ( !kdecards? ( !gnomecards? ( !openclipartcards? ( !pysolcards? ( mirror://sourceforge/free-doko/xskat.zip ) ) ) ) )
 _eclasses_=base	809ab15a673823938260f6b17661c3f1	eutils	d92f291efb4ef0595cb90e4b4e7e6b6c	games	f75cdbfdf1760e514ca65e2f6c6a7c72	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	portability	536c5e70c5fb252ed3b769e04aa3f05b	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
-_md5_=65237be13813fccc0d572c61493fc02d
+_md5_=fb280c51fad72d836ce2e639f1a8e8e0

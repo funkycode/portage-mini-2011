@@ -1308,7 +1308,7 @@ dev-libs/openobex:irda - Enable IrDA support
 dev-libs/opensc:libtool - Use sys-devel/libtool for dynamically loading libraries rather than the host libdl/dlopen helpers.
 dev-libs/opensc:openct - Use dev-libs/openct (and CT-API) for accessing Smartcard hardware. If neither openct nor pcsc-lite are enabled, only CT-API dynamic linking is enabled.
 dev-libs/opensc:pcsc-lite - Use sys-apps/pcsc-lite (and PC/SC API) for accessing Smartcard hardware. If neither openct nor pcsc-lite are enabled, only CT-API dynamic linking is enabled.
-dev-libs/openssl:bindist - Disable EC/IDEA/RC5 algorithms (as they seem to be patented)
+dev-libs/openssl:bindist - Disable EC/RC5 algorithms (as they seem to be patented)
 dev-libs/openssl:rfc3779 - Enable support for RFC 3779 (X.509 Extensions for IP Addresses and AS Identifiers)
 dev-libs/pkcs11-helper:nss - Enable NSS crypto engine
 dev-libs/ppl:lpsol - Build the ppl_lpsol linear programming problem solver
@@ -1442,6 +1442,8 @@ dev-python/django-extensions:s3 - Upload your media files to S3.
 dev-python/django-extensions:vcard - Export your users email addresses to the vcard format.
 dev-python/docutils:glep - Install support for GLEPs
 dev-python/icalendar:doc - Generate examples and other extra documentation
+dev-python/ipython:matplotlib - Add support for dev-python/matplotlib
+dev-python/ipython:mongodb - Enable support for MongoDB via dev-python/pymongo
 dev-python/ipython:notebook - Install requirements for the web notebook based on www-servers/tornado
 dev-python/jinja:i18n - Enables support for i18n with dev-python/Babel
 dev-python/kaa-base:tls - SSL/TLS support via dev-python/tlslite
@@ -3346,7 +3348,7 @@ net-dns/resolvconf-symlink:symlink - Actually replace /etc/resolv.conf with a sy
 net-dns/unbound:gost - Enable GOST support
 net-firewall/arno-iptables-firewall:plugins - Install optional plugins
 net-firewall/ipsec-tools:hybrid - Makes available both mode-cfg and xauth support
-net-firewall/ipsec-tools:idea - Enable support for the patented IDEA algorithm
+net-firewall/ipsec-tools:idea - Enable support for the IDEA algorithm
 net-firewall/ipsec-tools:nat - Enable NAT-Traversal
 net-firewall/ipsec-tools:rc5 - Enable support for the patented RC5 algorithm
 net-firewall/iptables:netlink - Build against libnfnetlink which enables the nfnl_osf util
