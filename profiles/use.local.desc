@@ -4781,9 +4781,6 @@ sys-devel/llvm:gold - Build the gold linker plugin
 sys-devel/llvm:llvm-gcc - Build LLVM with sys-devel/llvm-gcc
 sys-devel/llvm:multitarget - Build all host targets (default: host only)
 sys-devel/llvm:udis86 - Enable support for dev-libs/udis86 disassembler library
-sys-devel/llvm-gcc:bootstrap - Compile the final llvm-gcc executables with llvm-gcc itself
-sys-devel/llvm-gcc:objc - Build support for the Objective C code language
-sys-devel/llvm-gcc:objc++ - Build support for the Objective C++ language
 sys-devel/sparse:gtk - Build the test-inspect utility (requires x11-libs/gtk+ version 2)
 sys-devel/sparse:xml - Build the c2xml utility (requires dev-libs/libxml2).
 sys-freebsd/boot0:tftp - Enable PXE/TFTP boot support.
