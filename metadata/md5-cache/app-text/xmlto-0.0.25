@@ -1,0 +1,13 @@
+DEFINED_PHASES=configure prepare
+DEPEND=>=app-text/docbook-xsl-stylesheets-1.62.0-r1 app-text/docbook-xml-dtd:4.2 app-shells/bash dev-libs/libxslt sys-apps/grep || ( >=sys-apps/coreutils-6.10-r1 sys-freebsd/freebsd-ubin ) || ( sys-apps/util-linux app-misc/getopt ) || ( sys-apps/which sys-freebsd/freebsd-ubin ) latex? ( >=app-text/passivetex-1.25 >=dev-tex/xmltex-1.9-r2 ) sys-devel/flex
+DESCRIPTION=script for converting XML and DocBook formatted documents to a variety of output formats
+EAPI=4
+HOMEPAGE=https://fedorahosted.org/xmlto/
+IUSE=latex
+KEYWORDS=~alpha ~amd64 ~arm ~hppa ~ia64 ~m68k ~mips ~ppc ~ppc64 ~s390 ~sh ~sparc ~x86 ~sparc-fbsd ~x86-fbsd ~amd64-linux ~x86-linux ~ppc-macos ~x64-macos ~x86-macos ~x86-solaris
+LICENSE=GPL-2
+RDEPEND=>=app-text/docbook-xsl-stylesheets-1.62.0-r1 app-text/docbook-xml-dtd:4.2 app-shells/bash dev-libs/libxslt sys-apps/grep || ( >=sys-apps/coreutils-6.10-r1 sys-freebsd/freebsd-ubin ) || ( sys-apps/util-linux app-misc/getopt ) || ( sys-apps/which sys-freebsd/freebsd-ubin ) latex? ( >=app-text/passivetex-1.25 >=dev-tex/xmltex-1.9-r2 )
+SLOT=0
+SRC_URI=https://fedorahosted.org/releases/x/m/xmlto/xmlto-0.0.25.tar.bz2
+_eclasses_=eutils	d92f291efb4ef0595cb90e4b4e7e6b6c	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	portability	536c5e70c5fb252ed3b769e04aa3f05b	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
+_md5_=7d0422073008254c8a8aa64bebcf2276
