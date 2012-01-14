@@ -8,5 +8,5 @@ LICENSE=MIT as-is
 RDEPEND=app-text/rman sys-libs/ncurses x11-libs/libXmu x11-libs/libXpm x11-libs/libxkbfile x11-libs/libXaw x11-libs/libXp Xaw3d? ( x11-libs/libXaw3d )
 SLOT=0
 SRC_URI=ftp://ftp.x.org/contrib/applications/kterm-6.2.0.tar.gz http://www.asahi-net.or.jp/~hc3j-tkg/kterm/kterm-6.2.0-wpi.patch.gz http://www.st.rim.or.jp/~hanataka/kterm-6.2.0.ext02.patch.gz
-_eclasses_=eutils	d92f291efb4ef0595cb90e4b4e7e6b6c	flag-o-matic	9bfd4a1550735a7fc561ff5bae86e4c9	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	portability	536c5e70c5fb252ed3b769e04aa3f05b	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
+_eclasses_=eutils	d92f291efb4ef0595cb90e4b4e7e6b6c	flag-o-matic	133e3a154a7e387f518fe33b2a52afbf	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	portability	536c5e70c5fb252ed3b769e04aa3f05b	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
 _md5_=fda43fbb99162297ccd469de10fb5039

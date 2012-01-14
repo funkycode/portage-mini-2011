@@ -9,5 +9,5 @@ LICENSE=LGPL-2.1
 RDEPEND=dev-libs/boost dev-libs/icu dev-libs/libxml2:2 media-fonts/dejavu media-libs/freetype:2 virtual/jpeg media-libs/libpng media-libs/tiff sci-libs/proj x11-libs/agg[truetype] cairo? ( x11-libs/cairo dev-cpp/cairomm python? ( dev-python/pycairo ) ) curl? ( net-misc/curl ) gdal? ( sci-libs/gdal ) postgres? ( >=dev-db/postgresql-base-8.3 ) python? ( dev-libs/boost[python] ) sqlite? ( dev-db/sqlite:3 ) >=app-admin/eselect-python-20091230 python? ( =dev-lang/python-2* )
 SLOT=0
 SRC_URI=mirror://berlios/mapnik/mapnik-0.7.1.tar.bz2
-_eclasses_=eutils	d92f291efb4ef0595cb90e4b4e7e6b6c	flag-o-matic	9bfd4a1550735a7fc561ff5bae86e4c9	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	portability	536c5e70c5fb252ed3b769e04aa3f05b	python	412a8596c4b1620189e299c8dd303d0a	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e	versionator	6601b4c5b3f019a993db59a50e1854e4
+_eclasses_=eutils	d92f291efb4ef0595cb90e4b4e7e6b6c	flag-o-matic	133e3a154a7e387f518fe33b2a52afbf	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	portability	536c5e70c5fb252ed3b769e04aa3f05b	python	412a8596c4b1620189e299c8dd303d0a	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e	versionator	6601b4c5b3f019a993db59a50e1854e4
 _md5_=58ce2848dd2e28738c9f1b4d149ca398

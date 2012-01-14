@@ -9,5 +9,5 @@ LICENSE=GPL-2 OSL-2.0
 RDEPEND=dev-libs/libxml2 sys-libs/zlib nls? ( virtual/libintl ) >=app-admin/eselect-python-20091230 python? ( || ( =dev-lang/python-3.2* =dev-lang/python-3.1* =dev-lang/python-2.7* =dev-lang/python-2.6* =dev-lang/python-2.5* =dev-lang/python-2.4* ) )
 SLOT=0
 SRC_URI=http://linux.dell.com/libsmbios/download/libsmbios/libsmbios-2.2.26/libsmbios-2.2.26.tar.bz2
-_eclasses_=autotools	cc61a7c888abf6d8622105c6184881ed	eutils	d92f291efb4ef0595cb90e4b4e7e6b6c	flag-o-matic	9bfd4a1550735a7fc561ff5bae86e4c9	libtool	5f623f5a211fb1b2d84d88ee49959a54	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	portability	536c5e70c5fb252ed3b769e04aa3f05b	python	412a8596c4b1620189e299c8dd303d0a	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
+_eclasses_=autotools	cc61a7c888abf6d8622105c6184881ed	eutils	d92f291efb4ef0595cb90e4b4e7e6b6c	flag-o-matic	133e3a154a7e387f518fe33b2a52afbf	libtool	5f623f5a211fb1b2d84d88ee49959a54	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	portability	536c5e70c5fb252ed3b769e04aa3f05b	python	412a8596c4b1620189e299c8dd303d0a	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
 _md5_=702863c19fa7c021c7628429517da6cf

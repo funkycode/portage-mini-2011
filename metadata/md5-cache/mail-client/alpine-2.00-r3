@@ -9,5 +9,5 @@ LICENSE=Apache-2.0
 RDEPEND=virtual/pam >=sys-libs/ncurses-5.1 ssl? ( dev-libs/openssl ) ldap? ( net-nds/openldap ) kerberos? ( app-crypt/mit-krb5 ) spell? ( app-text/aspell ) topal? ( >=net-mail/topal-72 ) app-misc/mime-types !onlyalpine? ( !app-editors/pico ) !onlyalpine? ( !mail-client/pine ) !<=net-mail/uw-imap-2004g
 SLOT=0
 SRC_URI=ftp://ftp.cac.washington.edu/alpine/alpine-2.00.tar.bz2 chappa? ( http://staff.washington.edu/chappa/alpine/patches/alpine-2.00/all.patch.gz -> alpine-2.00-chappa-53-all.patch.gz )
-_eclasses_=eutils	d92f291efb4ef0595cb90e4b4e7e6b6c	flag-o-matic	9bfd4a1550735a7fc561ff5bae86e4c9	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	portability	536c5e70c5fb252ed3b769e04aa3f05b	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
+_eclasses_=eutils	d92f291efb4ef0595cb90e4b4e7e6b6c	flag-o-matic	133e3a154a7e387f518fe33b2a52afbf	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	portability	536c5e70c5fb252ed3b769e04aa3f05b	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
 _md5_=0421fb44a94250bc23c3cf410317689d

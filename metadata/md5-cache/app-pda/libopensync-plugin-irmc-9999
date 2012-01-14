@@ -9,5 +9,5 @@ LICENSE=GPL-2
 RDEPEND=~app-pda/libopensync-9999 dev-libs/glib:2 dev-libs/libxml2 >=dev-libs/openobex-1.0[bluetooth?,irda?] bluetooth? ( net-wireless/bluez )
 REQUIRED_USE=|| ( bluetooth irda )
 SLOT=0
-_eclasses_=base	809ab15a673823938260f6b17661c3f1	cmake-utils	00f9fd5a80cf3605f6d9a2e808c48a92	eutils	d92f291efb4ef0595cb90e4b4e7e6b6c	flag-o-matic	9bfd4a1550735a7fc561ff5bae86e4c9	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	portability	536c5e70c5fb252ed3b769e04aa3f05b	subversion	106a7b7cee5d7bd86eb9351f3f670c55	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
+_eclasses_=base	809ab15a673823938260f6b17661c3f1	cmake-utils	00f9fd5a80cf3605f6d9a2e808c48a92	eutils	d92f291efb4ef0595cb90e4b4e7e6b6c	flag-o-matic	133e3a154a7e387f518fe33b2a52afbf	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	portability	536c5e70c5fb252ed3b769e04aa3f05b	subversion	106a7b7cee5d7bd86eb9351f3f670c55	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
 _md5_=a6ab760940fb3553065607e3fb40ab73

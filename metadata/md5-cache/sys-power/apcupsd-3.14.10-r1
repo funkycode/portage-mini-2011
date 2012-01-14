@@ -9,5 +9,5 @@ LICENSE=GPL-2
 RDEPEND=cgi? ( >=media-libs/gd-1.8.4 ) nls? ( sys-devel/gettext ) snmp? ( net-analyzer/net-snmp ) gnome? ( >=x11-libs/gtk+-2.4.0:2 dev-libs/glib:2 >=gnome-base/gconf-2.0 ) sys-apps/openrc virtual/mailx
 SLOT=0
 SRC_URI=mirror://sourceforge/apcupsd/apcupsd-3.14.10.tar.gz
-_eclasses_=eutils	d92f291efb4ef0595cb90e4b4e7e6b6c	flag-o-matic	9bfd4a1550735a7fc561ff5bae86e4c9	linux-info	cc184ad3383ffb6ffbaa82f53608e77f	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	portability	536c5e70c5fb252ed3b769e04aa3f05b	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e	versionator	6601b4c5b3f019a993db59a50e1854e4
+_eclasses_=eutils	d92f291efb4ef0595cb90e4b4e7e6b6c	flag-o-matic	133e3a154a7e387f518fe33b2a52afbf	linux-info	cc184ad3383ffb6ffbaa82f53608e77f	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	portability	536c5e70c5fb252ed3b769e04aa3f05b	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e	versionator	6601b4c5b3f019a993db59a50e1854e4
 _md5_=de3e1b44ed6a3a3c9df0505fe9d3a8f3

@@ -8,5 +8,5 @@ LICENSE=GPL-2
 RDEPEND=|| ( >=sys-fs/lvm2-2.02.45 >=sys-fs/device-mapper-1.00.07-r1 ) >=dev-libs/libgcrypt-1.1.42 >=dev-libs/libgpg-error-1.0-r1 >=dev-libs/popt-1.7 >=sys-fs/udev-124 || ( >=sys-libs/e2fsprogs-libs-1.41 <sys-fs/e2fsprogs-1.41 ) selinux? ( sys-libs/libselinux ) !sys-fs/cryptsetup-luks
 SLOT=0
 SRC_URI=http://luks.endorphin.org/source/cryptsetup-1.0.6.tar.bz2
-_eclasses_=eutils	d92f291efb4ef0595cb90e4b4e7e6b6c	flag-o-matic	9bfd4a1550735a7fc561ff5bae86e4c9	linux-info	cc184ad3383ffb6ffbaa82f53608e77f	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	portability	536c5e70c5fb252ed3b769e04aa3f05b	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e	versionator	6601b4c5b3f019a993db59a50e1854e4
+_eclasses_=eutils	d92f291efb4ef0595cb90e4b4e7e6b6c	flag-o-matic	133e3a154a7e387f518fe33b2a52afbf	linux-info	cc184ad3383ffb6ffbaa82f53608e77f	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	portability	536c5e70c5fb252ed3b769e04aa3f05b	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e	versionator	6601b4c5b3f019a993db59a50e1854e4
 _md5_=e91ece085795d764f686f5f1fb938e9b

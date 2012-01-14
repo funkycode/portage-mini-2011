@@ -1,6 +1,6 @@
-# Copyright 1999-2011 Gentoo Foundation
+# Copyright 1999-2012 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/sys-devel/clang/clang-9999.ebuild,v 1.20 2011/11/14 15:02:31 voyageur Exp $
+# $Header: /var/cvsroot/gentoo-x86/sys-devel/clang/clang-9999.ebuild,v 1.21 2012/01/13 22:25:18 voyageur Exp $
 
 EAPI=3
 
@@ -61,6 +61,10 @@ src_prepare() {
 	sed -e 's,\$(RPATH) -Wl\,\$(\(ToolDir\|LibDir\)),$(RPATH) -Wl\,'"${EPREFIX}"/usr/$(get_libdir)/llvm, \
 		-e '/OmitFramePointer/s/-fomit-frame-pointer//' \
 		-i Makefile.rules || die "rpath sed failed"
+
+	# Use system llc (from llvm ebuild) for tests
+	sed -e "/^llc_props =/s/os.path.join(llvm_tools_dir, 'llc')/'llc'/" \
+		-i tools/clang/test/lit.cfg  || die "test path sed failed"
 }
 
 src_configure() {

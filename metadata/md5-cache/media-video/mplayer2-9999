@@ -9,5 +9,5 @@ RDEPEND=sys-libs/ncurses sys-libs/zlib !bindist? ( x86? ( win32codecs? ( media-l
 REQUIRED_USE=bindist? ( !win32codecs ) cdio? ( !cdparanoia ) cddb? ( || ( cdio cdparanoia ) network ) dvdnav? ( dvd ) radio? ( || ( dvb v4l ) ) dga? ( X ) dxr3? ( X ) ggi? ( X ) opengl? ( X ) vdpau? ( X ) xinerama? ( X ) xscreensaver? ( X ) xv? ( X )
 SLOT=0
 SRC_URI=!truetype? ( mirror://mplayer/releases/fonts/font-arial-iso-8859-1.tar.bz2 mirror://mplayer/releases/fonts/font-arial-iso-8859-2.tar.bz2 mirror://mplayer/releases/fonts/font-arial-cp1250.tar.bz2 )
-_eclasses_=base	809ab15a673823938260f6b17661c3f1	eutils	d92f291efb4ef0595cb90e4b4e7e6b6c	flag-o-matic	9bfd4a1550735a7fc561ff5bae86e4c9	git-2	e093fad2de8fa7ca11e7ed938d27ceb1	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	portability	536c5e70c5fb252ed3b769e04aa3f05b	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
+_eclasses_=base	809ab15a673823938260f6b17661c3f1	eutils	d92f291efb4ef0595cb90e4b4e7e6b6c	flag-o-matic	133e3a154a7e387f518fe33b2a52afbf	git-2	e093fad2de8fa7ca11e7ed938d27ceb1	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	portability	536c5e70c5fb252ed3b769e04aa3f05b	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
 _md5_=1ae587cdffe9e957e97605358f58a61e
