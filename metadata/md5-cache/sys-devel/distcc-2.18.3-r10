@@ -9,5 +9,5 @@ LICENSE=GPL-2
 RDEPEND=gnome? ( x11-libs/gtk+:2 >=gnome-base/libgnome-2.0.0 >=gnome-base/libgnomeui-2.0.0.0 gnome-base/libglade:2.0 x11-libs/pango >=gnome-base/gconf-2.0.0:2 ) gtk? ( x11-libs/gtk+:2 x11-libs/pango ) selinux? ( sec-policy/selinux-distcc )
 SLOT=0
 SRC_URI=http://distcc.samba.org/ftp/distcc/distcc-2.18.3.tar.bz2
-_eclasses_=eutils	d92f291efb4ef0595cb90e4b4e7e6b6c	flag-o-matic	133e3a154a7e387f518fe33b2a52afbf	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	portability	536c5e70c5fb252ed3b769e04aa3f05b	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
+_eclasses_=eutils	d92f291efb4ef0595cb90e4b4e7e6b6c	flag-o-matic	8efefb3178f418e569dc74ba65bcb05c	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	portability	536c5e70c5fb252ed3b769e04aa3f05b	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
 _md5_=a7b08d2cd608e74e50e9081120ff3085

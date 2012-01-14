@@ -10,5 +10,5 @@ RDEPEND=emacs? ( virtual/emacs ) readline? ( sys-libs/readline ) >=dev-libs/gmp-
 RESTRICT=strip
 SLOT=0
 SRC_URI=http://dev.gentoo.org/~grozin/gcl-2.6.8_pre20111221.tar.bz2
-_eclasses_=elisp-common	3048b6bde509e1aa680e77d093d01409	eutils	d92f291efb4ef0595cb90e4b4e7e6b6c	flag-o-matic	133e3a154a7e387f518fe33b2a52afbf	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	portability	536c5e70c5fb252ed3b769e04aa3f05b	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
+_eclasses_=elisp-common	3048b6bde509e1aa680e77d093d01409	eutils	d92f291efb4ef0595cb90e4b4e7e6b6c	flag-o-matic	8efefb3178f418e569dc74ba65bcb05c	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	portability	536c5e70c5fb252ed3b769e04aa3f05b	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
 _md5_=8f97c57d00e2d1b41e57e1916e25f386

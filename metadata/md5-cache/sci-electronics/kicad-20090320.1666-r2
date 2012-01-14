@@ -9,5 +9,5 @@ LICENSE=GPL-2
 RDEPEND=x11-libs/wxGTK:2.8[X,opengl] sys-libs/zlib dev-libs/boost[python?]
 SLOT=0
 SRC_URI=http://dev.gentoo.org/~calchan/distfiles/kicad-sources-20090320-r1666.tar.lzma !minimal? ( http://dev.gentoo.org/~calchan/distfiles/kicad-library-20090320-r1666.tar.lzma ) doc? ( http://dev.gentoo.org/~calchan/distfiles/kicad-doc-20090320-r1666.tar.lzma ) examples? ( http://dev.gentoo.org/~calchan/distfiles/kicad-examples-20090320-r1666.tar.lzma )
-_eclasses_=base	809ab15a673823938260f6b17661c3f1	cmake-utils	00f9fd5a80cf3605f6d9a2e808c48a92	eutils	d92f291efb4ef0595cb90e4b4e7e6b6c	flag-o-matic	133e3a154a7e387f518fe33b2a52afbf	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	portability	536c5e70c5fb252ed3b769e04aa3f05b	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e	versionator	6601b4c5b3f019a993db59a50e1854e4	wxwidgets	fb1a306837717dfa2af841ecdf929565
+_eclasses_=base	809ab15a673823938260f6b17661c3f1	cmake-utils	00f9fd5a80cf3605f6d9a2e808c48a92	eutils	d92f291efb4ef0595cb90e4b4e7e6b6c	flag-o-matic	8efefb3178f418e569dc74ba65bcb05c	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	portability	536c5e70c5fb252ed3b769e04aa3f05b	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e	versionator	6601b4c5b3f019a993db59a50e1854e4	wxwidgets	fb1a306837717dfa2af841ecdf929565
 _md5_=bf34c5acf4824e8790671467b3918109

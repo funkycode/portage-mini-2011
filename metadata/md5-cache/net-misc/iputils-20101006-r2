@@ -9,5 +9,5 @@ LICENSE=BSD
 RDEPEND=!net-misc/rarpd ssl? ( dev-libs/openssl ) idn? ( net-dns/libidn )
 SLOT=0
 SRC_URI=http://www.skbuff.net/iputils/iputils-s20101006.tar.bz2 mirror://gentoo/iputils-s20101006-manpages.tar.bz2
-_eclasses_=eutils	d92f291efb4ef0595cb90e4b4e7e6b6c	flag-o-matic	133e3a154a7e387f518fe33b2a52afbf	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	portability	536c5e70c5fb252ed3b769e04aa3f05b	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
+_eclasses_=eutils	d92f291efb4ef0595cb90e4b4e7e6b6c	flag-o-matic	8efefb3178f418e569dc74ba65bcb05c	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	portability	536c5e70c5fb252ed3b769e04aa3f05b	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
 _md5_=21826a57d355e9d82ce28a1bff81d7ad

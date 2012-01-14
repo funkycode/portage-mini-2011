@@ -1,6 +1,6 @@
 # Copyright 1999-2012 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/eclass/autotools-utils.eclass,v 1.33 2012/01/09 10:16:25 jlec Exp $
+# $Header: /var/cvsroot/gentoo-x86/eclass/autotools-utils.eclass,v 1.38 2012/01/14 15:18:05 mgorny Exp $
 
 # @ECLASS: autotools-utils.eclass
 # @MAINTAINER:
@@ -98,6 +98,11 @@ esac
 # @DESCRIPTION:
 # Set to a non-empty value in order to enable running autoreconf
 # in src_prepare() and adding autotools dependencies.
+#
+# This is usually necessary when using live sources or applying patches
+# modifying configure.ac or Makefile.am files. Note that in the latter case
+# setting this variable is obligatory even though the eclass will work without
+# it (to add the necessary dependencies).
 #
 # The eclass will try to determine the correct autotools to run including a few
 # external tools: gettext, glib-gettext, intltool, gtk-doc, gnome-doc-prepare.
@@ -302,13 +307,13 @@ autotools-utils_autoreconf() {
 	if [[ $(autotools_check_macro AM_GLIB_GNU_GETTEXT) ]]; then
 		echo 'no' | autotools_run_tool glib-gettextize --copy
 	elif [[ $(autotools_check_macro AM_GNU_GETTEXT) ]]; then
-		eautopoint
+		eautopoint --force
 	fi
 
 	# intltool
 	if [[ $(autotools_check_macro AC_PROG_INTLTOOL IT_PROG_INTLTOOL) ]]
 	then
-		autotools_run_tool intltoolize --copy --automake
+		autotools_run_tool intltoolize --copy --automake --force
 	fi
 
 	# gtk-doc
@@ -318,7 +323,7 @@ autotools-utils_autoreconf() {
 
 	# gnome-doc
 	if [[ $(autotools_check_macro GNOME_DOC_INIT) ]]; then
-		autotools_run_tool gnome-doc-prepare --copy
+		autotools_run_tool gnome-doc-prepare --copy --force
 	fi
 
 	# We need to perform the check twice to know whether to run eaclocal.
@@ -332,7 +337,7 @@ autotools-utils_autoreconf() {
 
 	eautoconf
 	eautoheader
-	eautomake
+	FROM_EAUTORECONF=sure eautomake
 
 	local x
 	for x in $(autotools_get_subdirs); do
@@ -354,8 +359,19 @@ autotools-utils_src_prepare() {
 
 	local want_autoreconf=${AUTOTOOLS_AUTORECONF}
 
+	touch "${T}"/.autotools-utils.timestamp || die
 	[[ ${PATCHES} ]] && epatch "${PATCHES[@]}"
 	epatch_user
+	if [[ ! ${want_autoreconf} ]]; then
+		if [[ $(find . -newer "${T}"/.autotools-utils.timestamp \
+				-a '(' -name 'Makefile.am' \
+				-o -name 'configure.ac' \
+				-o -name 'configure.in' ')' \
+				-print -quit) ]]; then
+			einfo 'Will autoreconfigure due to patches applied.'
+			want_autoreconf=yep
+		fi
+	fi
 
 	[[ ${want_autoreconf} ]] && autotools-utils_autoreconf
 	elibtoolize --patch-only
@@ -376,8 +392,12 @@ autotools-utils_src_configure() {
 	[[ -z ${myeconfargs+1} || $(declare -p myeconfargs) == 'declare -a'* ]] \
 		|| die 'autotools-utils.eclass: myeconfargs has to be an array.'
 
+	[[ ${EAPI} == 2 ]] && ! use prefix && EPREFIX=
+
 	# Common args
-	local econfargs=()
+	local econfargs=(
+		--docdir="${EPREFIX}/usr/share/doc/${PF}"
+	)
 
 	# Handle static-libs found in IUSE, disable them by default
 	if in_iuse static-libs; then
@@ -425,9 +445,34 @@ autotools-utils_src_install() {
 	emake DESTDIR="${D}" "$@" install || die "emake install failed"
 	popd > /dev/null
 
+	# Move docs installed by autotools (in EAPI < 4).
+	if [[ ${EAPI} == [23] && -d ${D}${EPREFIX}/usr/share/doc/${PF} ]]; then
+		mkdir "${T}"/temp-docdir
+		mv "${D}${EPREFIX}"/usr/share/doc/${PF}/* "${T}"/temp-docdir/ \
+			|| die "moving docs to tempdir failed"
+
+		local f
+		for f in "${T}"/temp-docdir/*; do
+			[[ -d ${f} ]] \
+				&& die "directories in docdir require at least EAPI 4"
+		done
+
+		dodoc "${T}"/temp-docdir/* || die "docdir dodoc failed"
+		rm -r "${T}"/temp-docdir || die
+	fi
+
 	# XXX: support installing them from builddir as well?
 	if [[ ${DOCS} ]]; then
 		dodoc "${DOCS[@]}" || die "dodoc failed"
+	else
+		local f
+		# same list as in PMS
+		for f in README* ChangeLog AUTHORS NEWS TODO CHANGES \
+				THANKS BUGS FAQ CREDITS CHANGELOG; do
+			if [[ -s ${f} ]]; then
+				dodoc "${f}" || die "(default) dodoc ${f} failed"
+			fi
+		done
 	fi
 	if [[ ${HTML_DOCS} ]]; then
 		dohtml -r "${HTML_DOCS[@]}" || die "dohtml failed"

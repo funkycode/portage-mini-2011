@@ -9,5 +9,5 @@ LICENSE=GPL-2 LGPL-2.1
 RDEPEND=>=media-video/vdr-1.6.0_p2-r1[graphtft] media-libs/imlib2[png,jpeg] imagemagick? ( media-gfx/imagemagick[png] ) gnome-base/libgtop >=virtual/ffmpeg-0.4.8_p20090201 directfb? ( dev-libs/DirectFB ) graphtft-fe? ( x11-libs/qt-gui:4 media-libs/imlib2[png,jpeg,X] ) >=media-tv/gentoo-vdr-scripts-0.4.2 >=app-admin/eselect-vdr-0.0.2
 SLOT=0
 SRC_URI=http://www.jwendel.de/vdr/vdr-graphtft-0.2.2.tar.bz2 http://www.jwendel.de/vdr/DeepBlue-horchi-0.0.11.tar.bz2
-_eclasses_=base	809ab15a673823938260f6b17661c3f1	eutils	d92f291efb4ef0595cb90e4b4e7e6b6c	flag-o-matic	133e3a154a7e387f518fe33b2a52afbf	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	portability	536c5e70c5fb252ed3b769e04aa3f05b	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e	vdr-plugin	f4adb7829cb88ca754a7e51c62b57ca5
+_eclasses_=base	809ab15a673823938260f6b17661c3f1	eutils	d92f291efb4ef0595cb90e4b4e7e6b6c	flag-o-matic	8efefb3178f418e569dc74ba65bcb05c	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	portability	536c5e70c5fb252ed3b769e04aa3f05b	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e	vdr-plugin	f4adb7829cb88ca754a7e51c62b57ca5
 _md5_=8ccb78d62c5894674adc39adac981ff3

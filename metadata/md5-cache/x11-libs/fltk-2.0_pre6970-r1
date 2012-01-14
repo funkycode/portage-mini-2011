@@ -9,5 +9,5 @@ LICENSE=FLTK LGPL-2
 RDEPEND=x11-libs/libXext x11-libs/libICE x11-libs/libSM x11-libs/libXt xft? ( x11-libs/libXft ) png? ( media-libs/libpng ) jpeg? ( virtual/jpeg ) opengl? ( virtual/opengl ) cairo? ( x11-libs/cairo ) xinerama? ( x11-libs/libXinerama ) zlib? ( sys-libs/zlib ) >=sys-libs/glibc-2.10
 SLOT=2
 SRC_URI=mirror://easysw/fltk/snapshots/fltk-2.0.x-r6970.tar.bz2
-_eclasses_=autotools	cc61a7c888abf6d8622105c6184881ed	eutils	d92f291efb4ef0595cb90e4b4e7e6b6c	flag-o-matic	133e3a154a7e387f518fe33b2a52afbf	libtool	5f623f5a211fb1b2d84d88ee49959a54	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	portability	536c5e70c5fb252ed3b769e04aa3f05b	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
+_eclasses_=autotools	cc61a7c888abf6d8622105c6184881ed	eutils	d92f291efb4ef0595cb90e4b4e7e6b6c	flag-o-matic	8efefb3178f418e569dc74ba65bcb05c	libtool	5f623f5a211fb1b2d84d88ee49959a54	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	portability	536c5e70c5fb252ed3b769e04aa3f05b	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
 _md5_=1236400ad86ab93f59c36ca3891735ac

@@ -1,6 +1,6 @@
 # Copyright 1999-2011 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/eclass/flag-o-matic.eclass,v 1.164 2012/01/13 22:40:29 vapier Exp $
+# $Header: /var/cvsroot/gentoo-x86/eclass/flag-o-matic.eclass,v 1.167 2012/01/14 09:10:54 vapier Exp $
 
 # @ECLASS: flag-o-matic.eclass
 # @MAINTAINER:
@@ -15,19 +15,10 @@ ___ECLASS_ONCE_FLAG_O_MATIC="recur -_+^+_- spank"
 
 inherit eutils toolchain-funcs multilib
 
-################ DEPRECATED functions ################
-# The following are still present to avoid breaking existing
-# code more than necessary; however they are deprecated. Please
-# use gcc-specs-* from toolchain-funcs.eclass instead, if you
-# need to know which hardened techs are active in the compiler.
-# See bug #100974
-#
-# has_hardened
-# has_pie
-# has_pic
-# has_ssp_all
-# has_ssp
-
+# Return all the flag variables that our high level funcs operate on.
+all-flag-vars() {
+	echo {C,CPP,CXX,F,FC,LD}FLAGS
+}
 
 # {C,CXX,F,FC}FLAGS that we allow in strip-flags
 # Note: shell globs and character lists are allowed
@@ -94,20 +85,17 @@ _filter-hardened() {
 # Strings removed are matched as globs, so for example
 # '-O*' would remove -O1, -O2 etc.
 _filter-var() {
-	local f x VAR VAL
-	declare -a new
-
-	VAR=$1
+	local f x var=$1 new=()
 	shift
-	eval VAL=\${${VAR}}
-	for f in ${VAL}; do
-		for x in "$@"; do
+
+	for f in ${!var} ; do
+		for x in "$@" ; do
 			# Note this should work with globs like -O*
 			[[ ${f} == ${x} ]] && continue 2
 		done
-		eval new\[\${\#new\[@]}]=\${f}
+		new+=( "${f}" )
 	done
-	eval export ${VAR}=\${new\[*]}
+	eval export ${var}=\""${new[*]}"\"
 }
 
 # @FUNCTION: filter-flags
@@ -117,8 +105,8 @@ _filter-var() {
 filter-flags() {
 	_filter-hardened "$@"
 	local v
-	for v in C CPP CXX F FC LD ; do
-		_filter-var ${v}FLAGS "$@"
+	for v in $(all-flag-vars) ; do
+		_filter-var ${v} "$@"
 	done
 	return 0
 }
@@ -202,24 +190,21 @@ append-flags() {
 # @DESCRIPTION:
 # Replace the <old> flag with <new>.  Accepts shell globs for <old>.
 replace-flags() {
-	[[ $# != 2 ]] \
-		&& echo && eerror "Usage: replace-flags <old flag> <new flag>" \
-		&& die "replace-flags takes 2 arguments, not $#"
+	[[ $# != 2 ]] && die "Usage: replace-flags <old flag> <new flag>"
 
-	local f fset
-	declare -a new_CFLAGS new_CXXFLAGS new_FFLAGS new_FCFLAGS
-
-	for fset in CFLAGS CXXFLAGS FFLAGS FCFLAGS; do
+	local f var new
+	for var in $(all-flag-vars) ; do
 		# Looping over the flags instead of using a global
 		# substitution ensures that we're working with flag atoms.
 		# Otherwise globs like -O* have the potential to wipe out the
 		# list of flags.
-		for f in ${!fset}; do
+		new=()
+		for f in ${!var} ; do
 			# Note this should work with globs like -O*
 			[[ ${f} == ${1} ]] && f=${2}
-			eval new_${fset}\[\${\#new_${fset}\[@]}]=\${f}
+			new+=( "${f}" )
 		done
-		eval export ${fset}=\${new_${fset}\[*]}
+		eval export ${var}=\""${new[*]}"\"
 	done
 
 	return 0
@@ -257,7 +242,12 @@ _is_flagq() {
 # Returns shell true if <flag> is in {C,CXX,F,FC}FLAGS, else returns shell false.  Accepts shell globs.
 is-flagq() {
 	[[ -n $2 ]] && die "Usage: is-flag <flag>"
-	_is_flagq CFLAGS $1 || _is_flagq CXXFLAGS $1 || _is_flagq FFLAGS $1 || _is_flagq FCFLAGS $1
+
+	local var
+	for var in $(all-flag-vars) ; do
+		_is_flagq ${var} "$1" && return 0
+	done
+	return 1
 }
 
 # @FUNCTION: is-flag
@@ -323,77 +313,35 @@ filter-mfpmath() {
 # @DESCRIPTION:
 # Strip C[XX]FLAGS of everything except known good/safe flags.
 strip-flags() {
-	local x y flag NEW_CFLAGS NEW_CXXFLAGS NEW_FFLAGS NEW_FCFLAGS
+	local x y var
 
 	setup-allowed-flags
 
-	local NEW_CFLAGS=""
-	local NEW_CXXFLAGS=""
-	local NEW_FFLAGS=""
-	local NEW_FCFLAGS=""
-
 	set -f	# disable pathname expansion
 
-	for x in ${CFLAGS}; do
-		for y in ${ALLOWED_FLAGS}; do
-			flag=${x%%=*}
-			if [ "${flag%%${y}}" = "" ] ; then
-				NEW_CFLAGS="${NEW_CFLAGS} ${x}"
-				break
-			fi
-		done
-	done
+	for var in $(all-flag-vars) ; do
+		local new=()
 
-	for x in ${CXXFLAGS}; do
-		for y in ${ALLOWED_FLAGS}; do
-			flag=${x%%=*}
-			if [ "${flag%%${y}}" = "" ] ; then
-				NEW_CXXFLAGS="${NEW_CXXFLAGS} ${x}"
-				break
-			fi
+		for x in ${!var} ; do
+			local flag=${x%%=*}
+			for y in ${ALLOWED_FLAGS} ; do
+				if [[ -z ${flag%%${y}} ]] ; then
+					new+=( "${x}" )
+					break
+				fi
+			done
 		done
-	done
 
-	for x in ${FFLAGS}; do
-		for y in ${ALLOWED_FLAGS}; do
-			flag=${x%%=*}
-			if [ "${flag%%${y}}" = "" ] ; then
-				NEW_FFLAGS="${NEW_FFLAGS} ${x}"
-				break
-			fi
-		done
-	done
+		# In case we filtered out all optimization flags fallback to -O2
+		if _is_flagq ${var} "-O*" && ! _is_flagq new "-O*" ; then
+			new+=( -O2 )
+		fi
 
-	for x in ${FCFLAGS}; do
-		for y in ${ALLOWED_FLAGS}; do
-			flag=${x%%=*}
-			if [ "${flag%%${y}}" = "" ] ; then
-				NEW_FCFLAGS="${NEW_FCFLAGS} ${x}"
-				break
-			fi
-		done
+		eval export ${var}=\""${new[*]}"\"
 	done
-
-	# In case we filtered out all optimization flags fallback to -O2
-	if [ "${CFLAGS/-O}" != "${CFLAGS}" -a "${NEW_CFLAGS/-O}" = "${NEW_CFLAGS}" ]; then
-		NEW_CFLAGS="${NEW_CFLAGS} -O2"
-	fi
-	if [ "${CXXFLAGS/-O}" != "${CXXFLAGS}" -a "${NEW_CXXFLAGS/-O}" = "${NEW_CXXFLAGS}" ]; then
-		NEW_CXXFLAGS="${NEW_CXXFLAGS} -O2"
-	fi
-	if [ "${FFLAGS/-O}" != "${FFLAGS}" -a "${NEW_FFLAGS/-O}" = "${NEW_FFLAGS}" ]; then
-		NEW_FFLAGS="${NEW_FFLAGS} -O2"
-	fi
-	if [ "${FCFLAGS/-O}" != "${FCFLAGS}" -a "${NEW_FCFLAGS/-O}" = "${NEW_FCFLAGS}" ]; then
-		NEW_FCFLAGS="${NEW_FCFLAGS} -O2"
-	fi
 
 	set +f	# re-enable pathname expansion
 
-	export CFLAGS="${NEW_CFLAGS}"
-	export CXXFLAGS="${NEW_CXXFLAGS}"
-	export FFLAGS="${NEW_FFLAGS}"
-	export FCFLAGS="${NEW_FCFLAGS}"
 	return 0
 }
 
@@ -511,29 +459,23 @@ strip-unsupported-flags() {
 # @DESCRIPTION:
 # Find and echo the value for a particular flag.  Accepts shell globs.
 get-flag() {
-	local f findflag="$1"
+	local f var findflag="$1"
 
 	# this code looks a little flaky but seems to work for
 	# everything we want ...
 	# for example, if CFLAGS="-march=i686":
 	# `get-flag -march` == "-march=i686"
 	# `get-flag march` == "i686"
-	for f in ${CFLAGS} ${CXXFLAGS} ${FFLAGS} ${FCFLAGS} ; do
-		if [ "${f/${findflag}}" != "${f}" ] ; then
-			printf "%s\n" "${f/-${findflag}=}"
-			return 0
-		fi
+	for var in $(all-flag-vars) ; do
+		for f in ${!var} ; do
+			if [ "${f/${findflag}}" != "${f}" ] ; then
+				printf "%s\n" "${f/-${findflag}=}"
+				return 0
+			fi
+		done
 	done
 	return 1
 }
-
-# DEAD FUNCS.  Remove by Dec 2011.
-test_flag()    { die "$0: deprecated, please use test-flags()!" ; }
-has_hardened() { die "$0: deprecated, please use gcc-specs-{relro,now}()!" ; }
-has_pic()      { die "$0: deprecated, please use gcc-specs-pie()!" ; }
-has_pie()      { die "$0: deprecated, please use gcc-specs-pie()!" ; }
-has_ssp_all()  { die "$0: deprecated, please use gcc-specs-ssp()!" ; }
-has_ssp()      { die "$0: deprecated, please use gcc-specs-ssp()!" ; }
 
 # @FUNCTION: has_m64
 # @DESCRIPTION:
@@ -541,6 +483,8 @@ has_ssp()      { die "$0: deprecated, please use gcc-specs-ssp()!" ; }
 # WORKS. Non-multilib gcc will take both -m32 and -m64. If the flag works
 # return code is 0, else the return code is 1.
 has_m64() {
+	eqawarn "${FUNCNAME}: don't use this anymore"
+
 	# this doesnt test if the flag is accepted, it tests if the flag
 	# actually -WORKS-. non-multilib gcc will take both -m32 and -m64!
 	# please dont replace this function with test_flag in some future
@@ -556,27 +500,8 @@ has_m64() {
 	return 1
 }
 
-# @FUNCTION: has_m32
-# @DESCRIPTION:
-# This doesn't test if the flag is accepted, it tests if the flag actually
-# WORKS. Non-mulilib gcc will take both -m32 and -64. If the flag works return
-# code is 0, else return code is 1.
 has_m32() {
-	# this doesnt test if the flag is accepted, it tests if the flag
-	# actually -WORKS-. non-multilib gcc will take both -m32 and -m64!
-	# please dont replace this function with test_flag in some future
-	# clean-up!
-
-	[ "$(tc-arch)" = "amd64" ] && has_multilib_profile && return 0
-
-	local temp=$(emktemp)
-	echo "int main() { return(0); }" > "${temp}".c
-	MY_CC=$(tc-getCC)
-	${MY_CC/ .*/} -m32 -o "$(emktemp)" "${temp}".c > /dev/null 2>&1
-	local ret=$?
-	rm -f "${temp}".c
-	[[ ${ret} != 1 ]] && return 0
-	return 1
+	die "${FUNCNAME}: don't use this anymore"
 }
 
 # @FUNCTION: replace-sparc64-flags

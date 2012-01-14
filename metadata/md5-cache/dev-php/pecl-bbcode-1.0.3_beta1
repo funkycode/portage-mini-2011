@@ -9,5 +9,5 @@ LICENSE=PHP-3.01 BSD
 RDEPEND=|| ( =dev-php/pecl-bbcode-1.0.3_beta1[php_targets_php5-2] =dev-php/pecl-bbcode-1.0.3_beta1[php_targets_php5-3] ) php_targets_php5-2? ( dev-lang/php:5.2 ) php_targets_php5-3? ( dev-lang/php:5.3 )
 SLOT=0
 SRC_URI=http://pecl.php.net/get/bbcode-1.0.3b1.tgz
-_eclasses_=autotools	cc61a7c888abf6d8622105c6184881ed	eutils	d92f291efb4ef0595cb90e4b4e7e6b6c	flag-o-matic	133e3a154a7e387f518fe33b2a52afbf	libtool	5f623f5a211fb1b2d84d88ee49959a54	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	php-ext-pecl-r2	de1308bcf4fef59a8ee8793efc7c3051	php-ext-source-r2	1db7defe9c9858ed14ef99d62cf85f2f	portability	536c5e70c5fb252ed3b769e04aa3f05b	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
+_eclasses_=autotools	cc61a7c888abf6d8622105c6184881ed	eutils	d92f291efb4ef0595cb90e4b4e7e6b6c	flag-o-matic	8efefb3178f418e569dc74ba65bcb05c	libtool	5f623f5a211fb1b2d84d88ee49959a54	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	php-ext-pecl-r2	de1308bcf4fef59a8ee8793efc7c3051	php-ext-source-r2	1db7defe9c9858ed14ef99d62cf85f2f	portability	536c5e70c5fb252ed3b769e04aa3f05b	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
 _md5_=d2e81f1a13ef8d7636b656f4c6e41c9a

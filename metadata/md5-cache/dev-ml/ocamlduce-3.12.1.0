@@ -9,5 +9,5 @@ LICENSE=QPL-1.0 LGPL-2
 RDEPEND=~dev-lang/ocaml-3.12.1[ocamlopt?] >=dev-ml/findlib-1.2.4-r1 !!<dev-ml/ocamlduce-3.12.1.0
 SLOT=0
 SRC_URI=https://forge.ocamlcore.org/frs/download.php/644/ocamlduce-3.12.1.0.tar.gz ftp://ftp.inria.fr/INRIA/cristal/ocaml/ocaml-3.12/ocaml-3.12.1.tar.bz2 mirror://gentoo/ocaml-patches-3.tar.bz2
-_eclasses_=eutils	d92f291efb4ef0595cb90e4b4e7e6b6c	flag-o-matic	133e3a154a7e387f518fe33b2a52afbf	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	portability	536c5e70c5fb252ed3b769e04aa3f05b	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e	versionator	6601b4c5b3f019a993db59a50e1854e4
+_eclasses_=eutils	d92f291efb4ef0595cb90e4b4e7e6b6c	flag-o-matic	8efefb3178f418e569dc74ba65bcb05c	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	portability	536c5e70c5fb252ed3b769e04aa3f05b	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e	versionator	6601b4c5b3f019a993db59a50e1854e4
 _md5_=7af3fed12e810eae988d4b49eb908ac0

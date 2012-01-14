@@ -9,5 +9,5 @@ LICENSE=ZSH gdbm? ( GPL-2 )
 RDEPEND=>=sys-libs/ncurses-5.1 static? ( || ( >=sys-libs/ncurses-5.7-r4[static-libs] <sys-libs/ncurses-5.7-r4 ) ) caps? ( sys-libs/libcap ) pcre? ( >=dev-libs/libpcre-3.9 static? ( >=dev-libs/libpcre-3.9[static-libs] ) ) gdbm? ( sys-libs/gdbm )
 SLOT=0
 SRC_URI=mirror://sourceforge/zsh/zsh-4.3.11.tar.bz2 ftp://ftp.zsh.org/pub/zsh-4.3.11.tar.bz2 examples? ( http://deb.grml.org/pool/main/z/zsh-lovers/zsh-lovers_0.8.3.tar.gz ) doc? ( ftp://ftp.zsh.org/pub/zsh-4.3.11-doc.tar.bz2 )
-_eclasses_=eutils	d92f291efb4ef0595cb90e4b4e7e6b6c	flag-o-matic	133e3a154a7e387f518fe33b2a52afbf	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	portability	536c5e70c5fb252ed3b769e04aa3f05b	prefix	21058c21ca48453d771df15500873ede	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
+_eclasses_=eutils	d92f291efb4ef0595cb90e4b4e7e6b6c	flag-o-matic	8efefb3178f418e569dc74ba65bcb05c	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	portability	536c5e70c5fb252ed3b769e04aa3f05b	prefix	21058c21ca48453d771df15500873ede	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
 _md5_=3537617dc77fb6cd8c446e7a0c0a8981

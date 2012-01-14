@@ -9,5 +9,5 @@ LICENSE=GPL-2
 RDEPEND=app-i18n/enca app-cdr/dvd+rw-tools dev-cpp/gtkmm:2.4 dev-cpp/libxmlpp:2.6 >=dev-libs/boost-1.47 media-libs/libdvdread media-sound/twolame media-video/dvdauthor virtual/cdrtools virtual/ffmpeg >=media-video/mjpegtools-1.8.0 x11-libs/gtk+:2 gnome? ( gnome-base/gvfs )
 SLOT=0
 SRC_URI=mirror://sourceforge/bombono/bombono-dvd-1.2.0.tar.bz2
-_eclasses_=base	809ab15a673823938260f6b17661c3f1	eutils	d92f291efb4ef0595cb90e4b4e7e6b6c	flag-o-matic	133e3a154a7e387f518fe33b2a52afbf	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	portability	536c5e70c5fb252ed3b769e04aa3f05b	scons-utils	9cb9120b919b1ea34b4b7028d9973261	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e	virtualx	0c41ff55e46b959d9457dde69e7a09d9
+_eclasses_=base	809ab15a673823938260f6b17661c3f1	eutils	d92f291efb4ef0595cb90e4b4e7e6b6c	flag-o-matic	8efefb3178f418e569dc74ba65bcb05c	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	portability	536c5e70c5fb252ed3b769e04aa3f05b	scons-utils	9cb9120b919b1ea34b4b7028d9973261	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e	virtualx	0c41ff55e46b959d9457dde69e7a09d9
 _md5_=5db89e57042a3f3ba675de7d5fee6594
