@@ -1,0 +1,12 @@
+DEFINED_PHASES=compile install postinst prepare
+DEPEND=x11-libs/gtk+:2 >=media-libs/libsndfile-1 >=media-libs/libpng-1.4 virtual/jpeg dev-util/pkgconfig
+DESCRIPTION=Tool to render 3D fractals
+EAPI=4
+HOMEPAGE=http://sites.google.com/site/mandelbulber/home
+KEYWORDS=~amd64 ~x86
+LICENSE=GPL-3
+RDEPEND=x11-libs/gtk+:2 >=media-libs/libsndfile-1 >=media-libs/libpng-1.4 virtual/jpeg
+SLOT=0
+SRC_URI=mirror://sourceforge/mandelbulber/mandelbulber1.10.tar.gz
+_eclasses_=eutils	d92f291efb4ef0595cb90e4b4e7e6b6c	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	portability	536c5e70c5fb252ed3b769e04aa3f05b	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
+_md5_=c5eead94699fa60e7c9332450f79992d

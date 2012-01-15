@@ -1,10 +1,10 @@
-# Copyright 1999-2011 Gentoo Foundation
+# Copyright 1999-2012 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/mail-client/claws-mail/claws-mail-3.8.0.ebuild,v 1.1 2011/12/26 10:08:22 fauli Exp $
+# $Header: /var/cvsroot/gentoo-x86/mail-client/claws-mail/claws-mail-3.8.0.ebuild,v 1.3 2012/01/14 21:34:49 fauli Exp $
 
 EAPI="4"
 
-inherit multilib gnome2-utils
+inherit autotools-utils multilib gnome2-utils
 
 DESCRIPTION="An email client (and news reader) based on GTK+"
 HOMEPAGE="http://www.claws-mail.org/"
@@ -14,7 +14,7 @@ SRC_URI="mirror://sourceforge/sylpheed-claws/${P}.tar.bz2"
 SLOT="0"
 LICENSE="GPL-3"
 KEYWORDS="~alpha ~amd64 ~hppa ~ppc ~ppc64 ~sparc ~x86 ~x86-fbsd"
-IUSE="bogofilter crypt dbus dillo doc +gnutls +imap ipv6 ldap nntp pda session smime spamassassin spell ssl startup-notification xface"
+IUSE="bogofilter crypt dbus dillo doc +imap ipv6 ldap nntp pda session smime spamassassin spell +ssl startup-notification xface"
 
 COMMONDEPEND=">=x11-libs/gtk+-2.20:2
 	pda? ( >=app-pda/jpilot-0.99 )
@@ -26,7 +26,6 @@ COMMONDEPEND=">=x11-libs/gtk+-2.20:2
 	spell? ( >=app-text/enchant-1.0.0 )
 	imap? ( >=net-libs/libetpan-0.57 )
 	nntp? ( >=net-libs/libetpan-0.57 )
-	gnutls? ( >=net-libs/gnutls-2.2.0 )
 	startup-notification? ( x11-libs/startup-notification )
 	bogofilter? ( mail-filter/bogofilter )
 	session? ( x11-libs/libSM
@@ -44,46 +43,46 @@ RDEPEND="${COMMONDEPEND}
 PLUGIN_NAMES="acpi-notifier address_keeper archive att-remover attachwarner clamd fancy fetchinfo gdata gtkhtml mailmbox newmail notification perl python rssyl spam_report tnef_parse vcalendar"
 
 src_configure() {
-	local myconf
+	local myeconfargs=(
+		$(use_enable ipv6)
+		$(use_enable ldap)
+		$(use_enable dbus)
+		$(use_enable pda jpilot)
+		$(use_enable spell enchant)
+		$(use_enable xface compface)
+		$(use_enable doc manual)
+		$(use_enable startup-notification)
+		$(use_enable session libsm)
+		$(use_enable crypt pgpmime-plugin)
+		$(use_enable crypt pgpinline-plugin)
+		$(use_enable crypt pgpcore-plugin)
+		$(use_enable dillo dillo-viewer-plugin)
+		$(use_enable spamassassin spamassassin-plugin)
+		$(use_enable bogofilter bogofilter-plugin)
+		$(use_enable smime smime-plugin)
+		--enable-trayicon-plugin
+		--disable-maemo
+	)
+
 	# libetpan is needed if user wants nntp or imap functionality
 	if use imap || use nntp; then
-		myconf="--enable-libetpan"
+		myeconfargs+=( --enable-libetpan )
 	else
-		myconf="--disable-libetpan"
+		myeconfargs+=( --disable-libetpan )
 	fi
 
-	# The usage of openssl was discarded once and USE=ssl is mapped to
-	# USE=gnutls now.  Maybe USE=ssl can fade out sometime
-	if use ssl || use gnutls; then
-		myconf="${myconf} --enable-gnutls"
+	if use ssl; then
+		myeconfargs+=( --enable-gnutls )
 	else
-		myconf="${myconf} --disable-gnutls"
+		myeconfargs+=( --disable-gnutls )
 	fi
 
-	econf \
-		$(use_enable ipv6) \
-		$(use_enable ldap) \
-		$(use_enable dbus) \
-		$(use_enable pda jpilot) \
-		$(use_enable spell enchant) \
-		$(use_enable xface compface) \
-		$(use_enable doc manual) \
-		$(use_enable startup-notification) \
-		$(use_enable session libsm) \
-		$(use_enable crypt pgpmime-plugin) \
-		$(use_enable crypt pgpinline-plugin) \
-		$(use_enable crypt pgpcore-plugin) \
-		$(use_enable dillo dillo-viewer-plugin) \
-		$(use_enable spamassassin spamassassin-plugin) \
-		$(use_enable bogofilter bogofilter-plugin) \
-		$(use_enable smime smime-plugin) \
-		--docdir=/usr/share/doc/${PF} \
-		--enable-trayicon-plugin \
-		--disable-maemo ${myconf}
+	autotools-utils_src_configure
 }
 
 src_install() {
-	emake DESTDIR="${D}" install || die
+	local DOCS=( AUTHORS ChangeLog* INSTALL* NEWS README* TODO* )
+	autotools-utils_src_install
 
 	# Makefile install claws-mail.png in /usr/share/icons/hicolor/48x48/apps
 	# => also install it in /usr/share/pixmaps for other desktop envs
@@ -97,7 +96,6 @@ src_install() {
 		newins ${PN}-${res}.png ${PN}.png || die
 	done
 
-	dodoc AUTHORS ChangeLog* INSTALL* NEWS README* TODO*
 	docinto tools
 	dodoc tools/README*
 
@@ -109,9 +107,6 @@ src_install() {
 	exeinto /usr/$(get_libdir)/${PN}/tools
 	doexe *.pl *.py *.conf *.sh || die
 	doexe tb2claws-mail update-po uudec uuooffice || die
-
-	# kill useless plugin files
-	rm -f "${D}"/usr/lib*/${PN}/plugins/*.{la,a}
 }
 
 pkg_preinst() {
