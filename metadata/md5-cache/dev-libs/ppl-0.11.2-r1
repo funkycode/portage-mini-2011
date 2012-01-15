@@ -4,10 +4,10 @@ DESCRIPTION=The Parma Polyhedra Library provides numerical abstractions for anal
 EAPI=3
 HOMEPAGE=http://www.cs.unipr.it/ppl/
 IUSE=doc lpsol pch static-libs test watchdog
-KEYWORDS=~alpha amd64 arm ~hppa ~ia64 ~mips ~ppc ~ppc64 ~s390 ~sh ~sparc ~x86 ~sparc-fbsd ~x86-fbsd ~amd64-linux ~sparc-solaris
+KEYWORDS=~alpha amd64 arm ~hppa ~ia64 ~mips ~ppc ~ppc64 ~s390 ~sh ~sparc x86 ~sparc-fbsd ~x86-fbsd ~amd64-linux ~sparc-solaris
 LICENSE=GPL-3
 RDEPEND=>=dev-libs/gmp-4.1.3[cxx] lpsol? ( sci-mathematics/glpk ) !<dev-libs/cloog-ppl-0.15.10
 SLOT=0
 SRC_URI=http://www.cs.unipr.it/ppl/Download/ftp/releases/0.11.2/ppl-0.11.2.tar.bz2
 _eclasses_=eutils	d92f291efb4ef0595cb90e4b4e7e6b6c	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	portability	536c5e70c5fb252ed3b769e04aa3f05b	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
-_md5_=5f243da240f4a460b9ed1e7df848981e
+_md5_=274bbc3ea277e46959cb1431ca9c44e6

@@ -3,10 +3,10 @@ DEPEND=net-libs/libpcap >=net-libs/libnet-1.1.0-r3
 DESCRIPTION=an implementation of an E-component of Network Intrusion Detection System
 EAPI=2
 HOMEPAGE=http://www.packetfactory.net/Projects/libnids/
-KEYWORDS=~alpha amd64 ~ppc ~sparc ~x86
+KEYWORDS=~alpha amd64 ~ppc ~sparc x86
 LICENSE=GPL-2
 RDEPEND=net-libs/libpcap >=net-libs/libnet-1.1.0-r3
 SLOT=1.1
 SRC_URI=http://www.packetfactory.net/Projects/libnids/dist/libnids-1.18.tar.gz
 _eclasses_=eutils	d92f291efb4ef0595cb90e4b4e7e6b6c	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	portability	536c5e70c5fb252ed3b769e04aa3f05b	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
-_md5_=7e00bc58a0ea18978f4a8d38a6d3edbd
+_md5_=88101264cf414adadbe915786fde09b3
