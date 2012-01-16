@@ -1,6 +1,6 @@
 # Copyright 1999-2012 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/net-fs/nfs-utils/nfs-utils-1.2.5.ebuild,v 1.2 2012/01/14 22:34:09 vapier Exp $
+# $Header: /var/cvsroot/gentoo-x86/net-fs/nfs-utils/nfs-utils-1.2.5.ebuild,v 1.4 2012/01/16 12:21:26 jlec Exp $
 
 EAPI="4"
 
@@ -39,6 +39,9 @@ DEPEND_COMMON="tcpd? ( sys-apps/tcp-wrappers )
 			sys-apps/keyutils
 		)
 	)
+	nfsv41? (
+		sys-fs/lvm2
+	)
 	selinux? (
 		sec-policy/selinux-rpc
 		sec-policy/selinux-rpcbind
@@ -70,7 +73,8 @@ src_configure() {
 }
 
 src_install() {
-	emake DESTDIR="${ED}" install
+	emake DESTDIR="${D}" install
+	rm linux-nfs/Makefile* || die
 	dodoc -r linux-nfs ChangeLog README
 
 	# Don't overwrite existing xtab/etab, install the original

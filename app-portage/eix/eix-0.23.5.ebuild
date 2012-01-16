@@ -23,8 +23,8 @@ DEPEND="${RDEPEND}
 	nls? ( sys-devel/gettext )"
 
 src_prepare() {
-	epatch "${FILESDIR}/disable-rsync.patch"
-} 
+	epatch "${FILESDIR}/${P}-disable-rsync.patch"
+}
 
 src_configure() {
 	econf $(use_with sqlite) $(use_with doc extra-doc) \

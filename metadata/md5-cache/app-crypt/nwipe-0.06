@@ -1,0 +1,11 @@
+DEFINED_PHASES=-
+DEPEND=sys-block/parted sys-libs/ncurses
+DESCRIPTION=Securely erase disks using a variety of recognized methods
+EAPI=4
+HOMEPAGE=http://sourceforge.net/projects/nwipe/
+KEYWORDS=~amd64 ~x86
+LICENSE=GPL-2
+RDEPEND=sys-block/parted sys-libs/ncurses
+SLOT=0
+SRC_URI=mirror://sourceforge/nwipe/nwipe-0.06.tar.gz
+_md5_=15951271e778536d97ee2829ea926c31
