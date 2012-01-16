@@ -1408,10 +1408,6 @@ dev-php/pecl-apc:lock_pthreadrw - Enable pthread read/write locking
 dev-php/pecl-apc:lock_semaphore - Enable semaphore locks instead of fcntl
 dev-php/pecl-apc:lock_spinlock - Enable spin locks (EXPERIMENTAL)
 dev-php/pecl-memcached:igbinary - Enable support for the igbinary serializer
-dev-php/php-gtk:glade - Enable libglade support
-dev-php/php-gtk:libsexy - Enable libsexy support
-dev-php/php-gtk:mozembed - Enable GtkMozembed support
-dev-php/php-gtk:scintilla - Enable Scintilla support
 dev-php/smarty-docs:html - Install the documentation in HTML format
 dev-php/smarty-docs:pdf - Install the documentation in PDF format
 dev-python/PyFoam:extras - Enable optional dependencies
@@ -1464,6 +1460,20 @@ dev-python/pymongo:mod_wsgi - Disable the C extension to work with mod_wsgi.
 dev-python/pypax:xtpax - Enable XT_PAX and prefer it to PT_PAX.
 dev-python/pypy:jit - Enable the JIT compiler
 dev-python/pypy:sandbox - Enable sandboxing functionality
+dev-python/pyside:X - Build the QtGui and QtDesigner modules
+dev-python/pyside:assistant - Build the QtHelp module
+dev-python/pyside:declarative - Build the QtDeclarative module
+dev-python/pyside:help - Build the QtHelp module
+dev-python/pyside:kde - Select media-sound/phonon as Phonon variant needed for KDE
+dev-python/pyside:multimedia - Build the QtMultimedia module
+dev-python/pyside:opengl - Build the QtOpenGL module
+dev-python/pyside:phonon - Build the phonon module
+dev-python/pyside:script - Build the QtScript module
+dev-python/pyside:sql - Build the QtSql module
+dev-python/pyside:svg - Build the QtSvg module
+dev-python/pyside:test - Build the QtTest module
+dev-python/pyside:webkit - Build the QtWebKit module
+dev-python/pyside:xmlpatterns - Build the QtXmlPatterns module
 dev-python/pytables:contrib - Install user-contributed files
 dev-python/pyudev:pygobject - Install PyGobject binding
 dev-python/pyudev:pyqt4 - Install PyQt4 binding
@@ -2565,6 +2575,7 @@ media-plugins/vdr-pvr350:yaepg - Enables full support for the output format of m
 media-plugins/vdr-softdevice:mmxext - enables MMXExt support
 media-plugins/vdr-streamdev:client - Compile the VDR plugin vdr-streamdev-client that acts like a dvb-budget card
 media-plugins/vdr-streamdev:server - Compile the VDR plugin vdr-streamdev-server that allows remote systems to access the DVB cards used for the local VDR
+media-plugins/vdr-text2skin:contrib - Install user contributed scripts
 media-plugins/vdr-weatherng:dxr3 - enables lower osd color depth for dxr3 cards
 media-plugins/vdr-xine:yaepg - Enables support for the plugin vdr-yaepg (showing scaled video besides OSD)
 media-plugins/vdr-xineliboutput:libextractor - Use media-libs/libextract to gather files' metadata in media-player
@@ -4165,6 +4176,7 @@ net-p2p/rtorrent:color - Add custom color support for torrent list
 net-p2p/rtorrent:daemon - Uses app-misc/screen to daemonize this application
 net-p2p/transmission:libcanberra - Enable sound event support with media-libs/libcanberra
 net-p2p/transmission:utp - Adds support for µTP (Micro Transport Protocol)
+net-print/cups:filters - Pull in net-print/foomatic-filters for filtering by default.
 net-print/cups:java - Add support for the Java interpeter in the web server CGIs.
 net-print/cups:perl - Add support for the Perl interpeter in the web server CGIs.
 net-print/cups:php - Add support for the PHP interpeter in the web server CGIs.

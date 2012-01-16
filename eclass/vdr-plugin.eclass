@@ -1,15 +1,17 @@
-# Copyright 1999-2011 Gentoo Foundation
+# Copyright 1999-2012 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/eclass/vdr-plugin.eclass,v 1.77 2011/12/31 01:01:56 hd_brummy Exp $
-#
+# $Header: /var/cvsroot/gentoo-x86/eclass/vdr-plugin.eclass,v 1.79 2012/01/15 20:54:56 idl0r Exp $
+
+# @ECLASS: vdr-plugin.eclass
+# @MAINTAINER:
+# vdr@gentoo.org
+# @BLURB: common vdr plugin ebuild functions
+# @DESCRIPTION:
+# Eclass for easing maitenance of vdr plugin ebuilds
+
 # Author:
 #   Matthias Schwarzott <zzam@gentoo.org>
 #   Joerg Bornkessel <hd_brummy@gentoo.org>
-
-# vdr-plugin.eclass
-#
-#   eclass to create ebuilds for vdr plugins
-#
 
 # Example ebuild (basic version without patching):
 #
@@ -68,7 +70,7 @@
 
 inherit base multilib eutils flag-o-matic
 
-if ! has "${EAPI:-0}" 0 1 2 3; then
+if ! has "${EAPI:-0}" 0 1 2 3 4; then
 	die "API of vdr-plugin.eclass in EAPI=\"${EAPI}\" not established"
 fi
 
@@ -479,7 +481,7 @@ vdr-plugin_src_unpack() {
 	fi
 	if [ -z "$1" ]; then
 		case "${EAPI:-0}" in
-			2|3)
+			2|3|4)
 				vdr-plugin_src_util unpack
 				;;
 			*)
@@ -622,7 +624,7 @@ vdr-plugin_pkg_config() {
 }
 
 case "${EAPI:-0}" in
-	2|3)
+	2|3|4)
 		EXPORT_FUNCTIONS pkg_setup src_unpack src_prepare src_compile src_install pkg_postinst pkg_postrm pkg_config
 		;;
 	*)

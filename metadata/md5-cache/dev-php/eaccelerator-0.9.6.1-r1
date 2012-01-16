@@ -1,13 +1,13 @@
 DEFINED_PHASES=compile configure install postinst prepare setup unpack
-DEPEND=!dev-php/pecl-apc !dev-php/xcache apache2? ( =www-servers/apache-2* ) || ( =sys-devel/automake-1.11* ) >=sys-devel/autoconf-2.61 sys-devel/libtool >=sys-devel/m4-1.4.3 >=sys-devel/libtool-1.5.18 php_targets_php5-3? ( dev-lang/php:5.3 ) php_targets_php5-2? ( dev-lang/php:5.2 )
+DEPEND=!dev-php/pecl-apc !dev-php/xcache apache2? ( =www-servers/apache-2* ) || ( =sys-devel/automake-1.11* ) >=sys-devel/autoconf-2.61 sys-devel/libtool >=sys-devel/m4-1.4.3 >=sys-devel/libtool-1.5.18 php_targets_php5-3? ( dev-lang/php:5.3 )
 DESCRIPTION=A PHP Accelerator & Encoder.
 EAPI=2
 HOMEPAGE=http://www.eaccelerator.net/
-IUSE=debug disassembler inode doccommentinclusion session apache2 php_targets_php5-3 php_targets_php5-2
+IUSE=debug disassembler inode doccommentinclusion session apache2 php_targets_php5-3
 KEYWORDS=amd64 x86
 LICENSE=GPL-2
-RDEPEND=!dev-php/pecl-apc !dev-php/xcache >=dev-lang/php-5.1[zlib,session?] virtual/httpd-php apache2? ( =www-servers/apache-2* ) || ( =dev-php/eaccelerator-0.9.6.1-r1[php_targets_php5-3] =dev-php/eaccelerator-0.9.6.1-r1[php_targets_php5-2] ) php_targets_php5-3? ( dev-lang/php:5.3 ) php_targets_php5-2? ( dev-lang/php:5.2 )
+RDEPEND=!dev-php/pecl-apc !dev-php/xcache >=dev-lang/php-5.1[zlib,session?] virtual/httpd-php apache2? ( =www-servers/apache-2* ) || ( =dev-php/eaccelerator-0.9.6.1-r1[php_targets_php5-3] ) php_targets_php5-3? ( dev-lang/php:5.3 )
 SLOT=0
 SRC_URI=http://bart.eaccelerator.net/source/0.9.6.1/eaccelerator-0.9.6.1.tar.bz2
-_eclasses_=autotools	cc61a7c888abf6d8622105c6184881ed	depend.apache	a471783c63e68987a2b20eb46f9edf68	eutils	d92f291efb4ef0595cb90e4b4e7e6b6c	flag-o-matic	8efefb3178f418e569dc74ba65bcb05c	libtool	5f623f5a211fb1b2d84d88ee49959a54	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	php-ext-source-r2	1db7defe9c9858ed14ef99d62cf85f2f	portability	536c5e70c5fb252ed3b769e04aa3f05b	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
+_eclasses_=autotools	cc61a7c888abf6d8622105c6184881ed	depend.apache	a471783c63e68987a2b20eb46f9edf68	eutils	d92f291efb4ef0595cb90e4b4e7e6b6c	flag-o-matic	8efefb3178f418e569dc74ba65bcb05c	libtool	5f623f5a211fb1b2d84d88ee49959a54	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	php-ext-source-r2	369cc6fe2c617ee90afc7d35cfb4cff3	portability	536c5e70c5fb252ed3b769e04aa3f05b	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
 _md5_=eff7154c8191ca3c79cb7001b22883b5
