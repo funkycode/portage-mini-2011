@@ -27,7 +27,7 @@ SLOT="0"
 KEYWORDS="~amd64 ~x86"
 IUSE=""
 
-RESTRICT="mirror"
+RESTRICT="mirror fetch"
 
 DEPEND=""
 RDEPEND=">=x11-libs/qt-core-4.6
@@ -41,6 +41,24 @@ S="${WORKDIR}/${MY_P}"
 QA_PRESTRIPPED="
 	/opt/mendeleydesktop/$(get_libdir)/mendeleydesktop/libexec/.*
 	/opt/mendeleydesktop/$(get_libdir)/lib.*so.*"
+
+pkg_nofetch() {
+	if use x86; then
+		AT=${MY_P_X86}.tar.bz2
+	elif use amd64; then
+		AT=${MY_P_AMD64}.tar.bz2
+	fi
+
+	TARBALL_URI=${HOMEPAGE}download-mendeley-desktop
+
+	einfo ""
+	einfo "This version of Mendeley Desktop does not seem to have a mirror where to manually download the needed tarball."
+	einfo ""
+	einfo "Please download ${AT} from:"
+	einfo "${TARBALL_URI}"
+	einfo "and move it to ${DISTDIR}"
+}
+
 
 src_prepare() {
 	# remove bundled Qt libraries
