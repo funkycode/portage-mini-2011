@@ -1,10 +1,10 @@
 # Copyright 1999-2011 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/sys-fs/cryptsetup/cryptsetup-1.4.1.ebuild,v 1.2 2011/11/13 16:32:08 vapier Exp $
+# $Header: /var/cvsroot/gentoo-x86/sys-fs/cryptsetup/cryptsetup-1.2.0-r1.ebuild,v 1.9 2011/09/19 01:33:47 vapier Exp $
 
 EAPI="2"
 
-inherit linux-info libtool
+inherit linux-info eutils multilib libtool
 
 MY_P=${P/_rc/-rc}
 DESCRIPTION="Tool to setup encrypted devices with dm-crypt"
@@ -18,7 +18,7 @@ IUSE="nls selinux +static"
 
 S=${WORKDIR}/${MY_P}
 
-RDEPEND="!<sys-apps/baselayout-2
+RDEPEND="
 	!static? (
 		>=dev-libs/libgcrypt-1.1.42
 		dev-libs/libgpg-error
@@ -48,7 +48,8 @@ pkg_setup() {
 }
 
 src_prepare() {
-	sed -i '/^LOOPDEV=/s:$: || exit 0:' tests/{compat,mode}-test
+	sed -i '/enable_static_cryptsetup=yes/d' configure #350463
+	sed -i '/^LOOPDEV=/s:=.*:=`losetup -f` || exit 0:' tests/{compat,mode}-test
 	elibtoolize
 }
 
@@ -56,6 +57,7 @@ src_configure() {
 	econf \
 		--sbindir=/sbin \
 		--enable-shared \
+		--libdir=/usr/$(get_libdir) \
 		$(use_enable static static-cryptsetup) \
 		$(use_enable nls) \
 		$(use_enable selinux)
@@ -74,8 +76,11 @@ src_install() {
 	use static && { mv "${D}"/sbin/cryptsetup{.static,} || die ; }
 	dodoc TODO ChangeLog README NEWS
 
+	insinto /$(get_libdir)/rcscripts/addons
+	newins "${FILESDIR}"/1.1.3-dm-crypt-start.sh dm-crypt-start.sh || die
+	newins "${FILESDIR}"/1.1.3-dm-crypt-stop.sh dm-crypt-stop.sh || die
 	newconfd "${FILESDIR}"/1.0.6-dmcrypt.confd dmcrypt || die
-	newinitd "${FILESDIR}"/dmcrypt.rc dmcrypt || die
+	newinitd "${FILESDIR}"/1.0.5-dmcrypt.rc dmcrypt || die
 }
 
 pkg_postinst() {
