@@ -1,0 +1,13 @@
+DEFINED_PHASES=install
+DEPEND=dev-lang/php >=dev-php/pear-1.8.1
+DESCRIPTION=Provides traces, timings, executed queries, watched variables etc.
+EAPI=4
+HOMEPAGE=http://pear.php.net/PHP_Debug
+IUSE=minimal
+KEYWORDS=~amd64 ~x86
+LICENSE=MIT
+RDEPEND=!minimal? ( dev-php/PEAR-Text_Highlighter dev-php/PEAR-Services_W3C_HTMLValidator ) dev-lang/php >=dev-php/pear-1.8.1
+SLOT=0
+SRC_URI=http://pear.php.net/get/PHP_Debug-1.0.3.tgz
+_eclasses_=multilib	5f4ad6cf85e365e8f0c6050ddd21659e	php-pear-r1	ec6ca81a78eed55923c519977010e559	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68
+_md5_=bf36f468a20bbe0212420644f214b575

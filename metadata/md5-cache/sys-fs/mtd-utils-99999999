@@ -7,5 +7,5 @@ IUSE=xattr
 LICENSE=GPL-2
 RDEPEND=!sys-fs/mtd dev-libs/lzo sys-libs/zlib >=sys-apps/util-linux-2.16
 SLOT=0
-_eclasses_=git-2	e093fad2de8fa7ca11e7ed938d27ceb1
+_eclasses_=git-2	6bb20ec18cca375571bcbe67bcf2e1d7
 _md5_=e9fd4c681052802fee883097ba8214b6

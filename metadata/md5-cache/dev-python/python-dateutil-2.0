@@ -1,0 +1,13 @@
+DEFINED_PHASES=compile install postinst postrm prepare test
+DEPEND=sys-libs/timezone-data dev-python/setuptools >=app-admin/eselect-python-20091230 =dev-lang/python-3*
+DESCRIPTION=Extensions to the standard Python datetime module
+EAPI=3
+HOMEPAGE=http://labix.org/python-dateutil http://pypi.python.org/pypi/python-dateutil
+IUSE=examples
+KEYWORDS=~amd64 ~ia64 ~ppc ~ppc64 ~x86 ~x86-fbsd ~amd64-linux ~x86-linux ~ppc-macos ~x64-macos ~x86-macos
+LICENSE=BSD
+RDEPEND=sys-libs/timezone-data >=app-admin/eselect-python-20091230 =dev-lang/python-3*
+SLOT=python-3
+SRC_URI=http://labix.org/download/python-dateutil/python-dateutil-2.0.tar.gz
+_eclasses_=distutils	c8b0cab86443a130f3737ad1456d57d3	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	python	412a8596c4b1620189e299c8dd303d0a	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68
+_md5_=89b0bf080c76699290d1e0f4bd5a3a16

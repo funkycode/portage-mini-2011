@@ -1,0 +1,9 @@
+DEFINED_PHASES=install prepare
+DESCRIPTION=A perl based version of pkg-config from OpenBSD
+EAPI=4
+HOMEPAGE=http://www.openbsd.org/cgi-bin/cvsweb/src/usr.bin/pkg-config/ http://www.openbsd.org/cgi-bin/cvsweb/src/usr.sbin/pkg_add/OpenBSD/PkgConfig.pm
+LICENSE=ISC
+RDEPEND=dev-lang/perl virtual/perl-Getopt-Long
+SLOT=0
+SRC_URI=http://dev.gentoo.org/~ssuominen/pkgconfig-openbsd-20120116.tar.xz
+_md5_=e12247c1557f7ac0ab0d1f435afb0f19

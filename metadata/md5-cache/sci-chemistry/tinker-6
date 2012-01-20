@@ -10,5 +10,5 @@ RDEPEND=>=sci-libs/fftw-3.2.2-r1[fortran,threads] dev-libs/maloc !dev-util/diffu
 RESTRICT=mirror
 SLOT=0
 SRC_URI=http://dasher.wustl.edu/tinker/downloads/tinker-6.tar.gz
-_eclasses_=eutils	d92f291efb4ef0595cb90e4b4e7e6b6c	flag-o-matic	8efefb3178f418e569dc74ba65bcb05c	fortran-2	368b82ae80c1184988a9d651e6efcbd0	java-pkg-opt-2	131dd2a697d663c0e33247611b9a1cd7	java-utils-2	0b830e0a2e6c4bdf1c81fec1b53d95f1	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	portability	536c5e70c5fb252ed3b769e04aa3f05b	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e	versionator	6601b4c5b3f019a993db59a50e1854e4
+_eclasses_=eutils	d92f291efb4ef0595cb90e4b4e7e6b6c	flag-o-matic	a2e1c4641a8aed225d4ddb0f74f382de	fortran-2	368b82ae80c1184988a9d651e6efcbd0	java-pkg-opt-2	131dd2a697d663c0e33247611b9a1cd7	java-utils-2	0b830e0a2e6c4bdf1c81fec1b53d95f1	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	portability	536c5e70c5fb252ed3b769e04aa3f05b	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e	versionator	6601b4c5b3f019a993db59a50e1854e4
 _md5_=a232249def3ce0e844cabc38d33c9942

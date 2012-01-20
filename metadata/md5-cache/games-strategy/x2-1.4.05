@@ -5,9 +5,10 @@ HOMEPAGE=http://www.linuxgamepublishing.com/info.php?id=x2
 IUSE=bonusscripts dynamic langpacks linguas_de modkit
 KEYWORDS=~amd64 ~x86
 LICENSE=as-is
+PROPERTIES=interactive
 RDEPEND=media-libs/alsa-lib sys-libs/glibc x86? ( media-libs/libsdl media-libs/openal sys-libs/zlib x11-libs/gtk+:2 x11-libs/libX11 x11-libs/libXau x11-libs/libXdmcp x11-libs/libXext x11-libs/libXi ) amd64? ( app-emulation/emul-linux-x86-gtklibs app-emulation/emul-linux-x86-sdl )
 RESTRICT=strip
 SLOT=0
 SRC_URI=http://updatefiles.linuxgamepublishing.com/x2/x2-1.4-1.4.01-x86.run http://updatefiles.linuxgamepublishing.com/x2/x2-1.4.01-1.4.02-x86.run http://updatefiles.linuxgamepublishing.com/x2/x2-1.4.02-1.4.03-x86.run http://updatefiles.linuxgamepublishing.com/x2/x2-1.4.03-1.4.04-x86.run http://updatefiles.linuxgamepublishing.com/x2/x2-1.4.04-1.4.05-x86.run
-_eclasses_=base	809ab15a673823938260f6b17661c3f1	eutils	d92f291efb4ef0595cb90e4b4e7e6b6c	games	f75cdbfdf1760e514ca65e2f6c6a7c72	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	portability	536c5e70c5fb252ed3b769e04aa3f05b	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
-_md5_=03da0cb1ed06ab6b4f00392c33b129de
+_eclasses_=base	809ab15a673823938260f6b17661c3f1	cdrom	415b847346ef9001a89e5c7da6711215	eutils	d92f291efb4ef0595cb90e4b4e7e6b6c	games	f75cdbfdf1760e514ca65e2f6c6a7c72	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	portability	536c5e70c5fb252ed3b769e04aa3f05b	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
+_md5_=1c53e88dbbf8d09bc12a0f6eeeb06421

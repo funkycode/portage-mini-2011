@@ -1,6 +1,6 @@
 # Copyright 1999-2012 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/app-office/skrooge/skrooge-1.1.1.ebuild,v 1.1 2012/01/12 22:23:05 dilfridge Exp $
+# $Header: /var/cvsroot/gentoo-x86/app-office/skrooge/skrooge-1.1.1.ebuild,v 1.2 2012/01/18 14:46:30 johu Exp $
 
 EAPI=4
 KDE_LINGUAS="bg bs ca ca@valencia cs da de el en_GB eo es et fr ga gl hu it ja lt nb
@@ -10,10 +10,10 @@ KDE_HANDBOOK=optional
 inherit kde4-base
 
 DESCRIPTION="personal finances manager for KDE4, aiming at being simple and intuitive"
-HOMEPAGE="http://skrooge.org/"
-SRC_URI="http://skrooge.org/files/${P}.tar.bz2"
+HOMEPAGE="http://www.skrooge.org/"
+SRC_URI="http://www.skrooge.org/files/${P}.tar.bz2"
 
-LICENSE="GPL-3"
+LICENSE="GPL-2"
 SLOT="4"
 KEYWORDS="~amd64 ~x86"
 IUSE="debug"

@@ -1,11 +1,11 @@
-# Copyright 1999-2011 Gentoo Foundation
+# Copyright 1999-2012 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/dev-python/apptools/apptools-4.0.0.ebuild,v 1.1 2011/08/03 23:51:07 bicatali Exp $
+# $Header: /var/cvsroot/gentoo-x86/dev-python/apptools/apptools-4.0.0.ebuild,v 1.2 2012/01/17 06:16:44 bicatali Exp $
 
-EAPI="3"
+EAPI=4
 PYTHON_DEPEND="2"
 SUPPORT_PYTHON_ABIS="1"
-RESTRICT_PYTHON_ABIS="3.* *-jython"
+RESTRICT_PYTHON_ABIS="*-jython"
 DISTUTILS_SRC_TEST="nosetests"
 
 inherit distutils virtualx
@@ -21,7 +21,7 @@ IUSE="doc examples test"
 
 RDEPEND="dev-python/configobj
 	dev-python/numpy
-	>=dev-python/traits-4.0.0"
+	>=dev-python/traits-4.1.0"
 DEPEND="dev-python/setuptools
 	doc? ( dev-python/sphinx )
 	test? (
@@ -33,12 +33,7 @@ DEPEND="dev-python/setuptools
 
 src_compile() {
 	distutils_src_compile
-	if use doc; then
-		einfo "Generation of documentation"
-		pushd docs > /dev/null
-		emake html || die "Generation of documentation failed"
-		popd > /dev/null
-	fi
+	use doc && emake -C docs html
 }
 
 src_test() {
@@ -49,15 +44,10 @@ src_install() {
 	find -name "*LICENSE*.txt" -delete
 	distutils_src_install
 
-	if use doc; then
-		pushd docs/build/html > /dev/null
-		insinto /usr/share/doc/${PF}/html
-		doins -r [a-z]* _static || die "Installation of documentation failed"
-		popd > /dev/null
-	fi
+	use doc && dohtml -r docs/build/html/*
 
 	if use examples; then
-		insinto /usr/share/doc/${PF}/examples
-		doins -r examples/* || die "Installation of examples failed"
+		insinto /usr/share/doc/${PF}
+		doins -r examples
 	fi
 }

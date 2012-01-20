@@ -1,0 +1,12 @@
+DEFINED_PHASES=configure install
+DEPEND=>=media-libs/libsdl-1.2.10 flac? ( media-libs/flac ) fluidsynth? ( media-sound/fluidsynth ) timidity? ( media-sound/timidity++ ) mad? ( media-libs/libmad ) !mad? ( mp3? ( >=media-libs/smpeg-0.4.4-r1 ) ) modplug? ( media-libs/libmodplug ) mikmod? ( >=media-libs/libmikmod-3.1.10 ) vorbis? ( >=media-libs/libvorbis-1.0_beta4 media-libs/libogg )
+DESCRIPTION=Simple Direct Media Layer Mixer Library
+EAPI=4
+HOMEPAGE=http://www.libsdl.org/projects/SDL_mixer/
+IUSE=flac fluidsynth mad midi mikmod modplug mp3 playtools static-libs timidity vorbis +wav
+KEYWORDS=~alpha ~amd64 ~arm ~hppa ~mips ~ppc ~ppc64 ~sh ~sparc ~x86 ~x86-fbsd ~x86-freebsd ~amd64-linux ~ia64-linux ~x86-linux ~ppc-macos ~x86-macos ~x86-solaris
+LICENSE=ZLIB
+REQUIRED_USE=midi? ( || ( timidity fluidsynth ) )
+SLOT=0
+SRC_URI=http://www.libsdl.org/projects/SDL_mixer/release/SDL_mixer-1.2.12.tar.gz
+_md5_=00d70de46c45b1d4eb3125ec0f09339c

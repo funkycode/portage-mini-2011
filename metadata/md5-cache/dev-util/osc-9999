@@ -6,5 +6,5 @@ HOMEPAGE=http://en.opensuse.org/openSUSE:OSC
 LICENSE=GPL-2
 RDEPEND=dev-python/urlgrabber dev-python/pyxml dev-python/elementtree app-arch/rpm[python] dev-python/m2crypto dev-util/suse-build >=app-admin/eselect-python-20091230 dev-lang/python
 SLOT=0
-_eclasses_=distutils	c8b0cab86443a130f3737ad1456d57d3	git-2	e093fad2de8fa7ca11e7ed938d27ceb1	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	python	412a8596c4b1620189e299c8dd303d0a	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68
+_eclasses_=distutils	c8b0cab86443a130f3737ad1456d57d3	git-2	6bb20ec18cca375571bcbe67bcf2e1d7	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	python	412a8596c4b1620189e299c8dd303d0a	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68
 _md5_=4ef5e2d37ed9bf442e09a0b8862d229f

@@ -10,5 +10,5 @@ RDEPEND=>=sys-libs/zlib-1.2.5.1-r2[minizip] a52? ( >=media-libs/a52dec-0.7.4-r3 
 REQUIRED_USE=aalib? ( X ) bidi? ( truetype ) cddb? ( cdda ) dxva2? ( avcodec ) egl? ( X ) ffmpeg? ( avcodec avformat postproc swscale ) fontconfig? ( truetype ) gnutls? ( gcrypt ) libtar? ( skins ) libtiger? ( kate ) media-library? ( sqlite ) qt4? ( X ) sdl? ( X ) skins? ( truetype qt4 X ) switcher? ( avcodec ) vaapi? ( avcodec X ) vlm? ( encode ) xosd? ( X ) xv? ( xcb )
 SLOT=0
 SRC_URI=http://download.videolan.org/pub/videolan/testing/vlc-1.2.0-pre3/vlc-1.2.0-pre3.tar.xz mirror://gentoo/vlc-patches-101.tar.bz2
-_eclasses_=autotools	cc61a7c888abf6d8622105c6184881ed	eutils	d92f291efb4ef0595cb90e4b4e7e6b6c	flag-o-matic	8efefb3178f418e569dc74ba65bcb05c	libtool	5f623f5a211fb1b2d84d88ee49959a54	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	portability	536c5e70c5fb252ed3b769e04aa3f05b	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
+_eclasses_=autotools	cc61a7c888abf6d8622105c6184881ed	eutils	d92f291efb4ef0595cb90e4b4e7e6b6c	flag-o-matic	a2e1c4641a8aed225d4ddb0f74f382de	libtool	5f623f5a211fb1b2d84d88ee49959a54	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	portability	536c5e70c5fb252ed3b769e04aa3f05b	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
 _md5_=b4b23a5690cdbc278778bc8add76a006

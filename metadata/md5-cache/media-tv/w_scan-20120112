@@ -1,5 +1,5 @@
 DEFINED_PHASES=install
-DEPEND=~media-tv/linuxtv-dvb-headers-5
+DEPEND=>=media-tv/linuxtv-dvb-headers-5.3
 DESCRIPTION=Scan for DVB-C/DVB-T/DVB-S channels without prior knowledge of frequencies and modulations
 EAPI=4
 HOMEPAGE=http://wirbel.htpc-forum.de/w_scan/index2.html
@@ -8,4 +8,4 @@ KEYWORDS=~amd64 ~x86
 LICENSE=GPL-2
 SLOT=0
 SRC_URI=http://wirbel.htpc-forum.de/w_scan/w_scan-20120112.tar.bz2
-_md5_=6e5d4f54c5654f864ab0736178b71626
+_md5_=5829fb89f69d049db82a21a4021e646b

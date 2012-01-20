@@ -1,0 +1,12 @@
+DEFINED_PHASES=install postinst
+DEPEND=dev-lang/php >=dev-php/pear-1.8.1
+DESCRIPTION=Generic server class for PHP.
+EAPI=4
+HOMEPAGE=http://pear.php.net/Net_Server
+KEYWORDS=~alpha ~amd64 ~hppa ~ia64 ~ppc ~ppc64 ~sparc ~x86
+LICENSE=PHP-3.01
+RDEPEND=dev-lang/php[sockets] dev-lang/php >=dev-php/pear-1.8.1
+SLOT=0
+SRC_URI=http://pear.php.net/get/Net_Server-1.0.2.tgz
+_eclasses_=multilib	5f4ad6cf85e365e8f0c6050ddd21659e	php-pear-r1	ec6ca81a78eed55923c519977010e559	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68
+_md5_=7d2d83315e68d479e4637b35e3669c50

@@ -1,0 +1,13 @@
+DEFINED_PHASES=compile install postinst postrm prepare setup test
+DEPEND=dev-python/setuptools doc? ( dev-python/sphinx ) test? ( dev-python/numpy ) >=app-admin/eselect-python-20091230 dev-lang/python test? ( dev-python/nose ) test? ( !prefix? ( x11-base/xorg-server[xvfb] ) x11-apps/xhost )
+DESCRIPTION=Enthought Tool Suite: Explicitly typed attributes for Python
+EAPI=4
+HOMEPAGE=http://code.enthought.com/projects/traits/ http://pypi.python.org/pypi/traits
+IUSE=doc examples test test test
+KEYWORDS=~amd64 ~ppc ~ppc64 ~x86
+LICENSE=BSD
+RDEPEND=dev-python/numpy >=app-admin/eselect-python-20091230 dev-lang/python
+SLOT=0
+SRC_URI=http://www.enthought.com/repo/ETS/traits-4.1.0.tar.gz
+_eclasses_=distutils	c8b0cab86443a130f3737ad1456d57d3	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	python	412a8596c4b1620189e299c8dd303d0a	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	virtualx	0c41ff55e46b959d9457dde69e7a09d9
+_md5_=bbe088bf9a6cb921843a3f707cd6777c

@@ -9,5 +9,5 @@ LICENSE=GPL-2
 RDEPEND=bluetooth? ( net-wireless/bluez ) curl? ( net-misc/curl ) usb? ( dev-libs/libusb:1 ) mysql? ( virtual/mysql ) postgres? ( dev-db/postgresql-server ) dbi? ( >=dev-db/libdbi-0.8.3 ) dev-util/dialog !dev-python/python-gammu >=app-admin/eselect-python-20091230 python? ( =dev-lang/python-2* )
 SLOT=0
 SRC_URI=http://dl.cihar.com/gammu/releases/gammu-1.28.0.tar.bz2
-_eclasses_=base	809ab15a673823938260f6b17661c3f1	cmake-utils	00f9fd5a80cf3605f6d9a2e808c48a92	eutils	d92f291efb4ef0595cb90e4b4e7e6b6c	flag-o-matic	8efefb3178f418e569dc74ba65bcb05c	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	portability	536c5e70c5fb252ed3b769e04aa3f05b	python	412a8596c4b1620189e299c8dd303d0a	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
+_eclasses_=base	809ab15a673823938260f6b17661c3f1	cmake-utils	00f9fd5a80cf3605f6d9a2e808c48a92	eutils	d92f291efb4ef0595cb90e4b4e7e6b6c	flag-o-matic	a2e1c4641a8aed225d4ddb0f74f382de	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	portability	536c5e70c5fb252ed3b769e04aa3f05b	python	412a8596c4b1620189e299c8dd303d0a	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
 _md5_=ca49d00773be34e590166d4f22e1c284

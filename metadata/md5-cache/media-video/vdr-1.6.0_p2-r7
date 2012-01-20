@@ -1,5 +1,5 @@
 DEFINED_PHASES=install postinst preinst prepare setup
-DEPEND=virtual/jpeg sys-libs/libcap >=media-libs/fontconfig-2.4.2 >=media-libs/freetype-2 sys-devel/gettext dvdarchive? ( dvdchapjump? ( >=media-libs/libdvdread-4.1.3_p1168 ) ) ~media-tv/linuxtv-dvb-headers-5 dev-util/unifdef setup? ( >=dev-libs/tinyxml-2.6.1[stl] )
+DEPEND=virtual/jpeg sys-libs/libcap >=media-libs/fontconfig-2.4.2 >=media-libs/freetype-2 sys-devel/gettext dvdarchive? ( dvdchapjump? ( >=media-libs/libdvdread-4.1.3_p1168 ) ) =media-tv/linuxtv-dvb-headers-5* dev-util/unifdef setup? ( >=dev-libs/tinyxml-2.6.1[stl] )
 DESCRIPTION=Video Disk Recorder - turns a pc into a powerful set top box for DVB
 EAPI=4
 HOMEPAGE=http://www.tvdr.de/
@@ -10,5 +10,5 @@ PDEPEND=setup? ( >=media-plugins/vdr-setup-0.3.1-r4 ) dxr3? ( >=media-plugins/vd
 RDEPEND=virtual/jpeg sys-libs/libcap >=media-libs/fontconfig-2.4.2 >=media-libs/freetype-2 sys-devel/gettext dvdarchive? ( dvdchapjump? ( >=media-libs/libdvdread-4.1.3_p1168 ) ) dev-lang/perl >=media-tv/gentoo-vdr-scripts-0.4.5 media-fonts/corefonts
 SLOT=0
 SRC_URI=ftp://ftp.tvdr.de/vdr/vdr-1.6.0.tar.bz2 ftp://ftp.tvdr.de/vdr/Developer/vdr-1.6.0-1.diff ftp://ftp.tvdr.de/vdr/Developer/vdr-1.6.0-2.diff http://www.zulu-entertainment.de/files/patches/VDR-Extensions-Patch-72.tar.bz2
-_eclasses_=eutils	d92f291efb4ef0595cb90e4b4e7e6b6c	flag-o-matic	8efefb3178f418e569dc74ba65bcb05c	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	portability	536c5e70c5fb252ed3b769e04aa3f05b	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
-_md5_=96a2c7d5d9cbea83017153d461ddcaf2
+_eclasses_=eutils	d92f291efb4ef0595cb90e4b4e7e6b6c	flag-o-matic	a2e1c4641a8aed225d4ddb0f74f382de	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	portability	536c5e70c5fb252ed3b769e04aa3f05b	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
+_md5_=fdef3b8b4d9fadb6a1b4786d50a51f75

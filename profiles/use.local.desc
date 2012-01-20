@@ -445,6 +445,9 @@ app-emulation/vice:xrandr - Enable support for the X xrandr extension
 app-emulation/virt-manager:policykit - Enables sys-auth/polkit authentication support, required when using app-emulation/libvirt with PolicyKit authentication
 app-emulation/virt-manager:sasl - Depend on the proper libraries needed to connect to SASL-enabled libvirtd instances (e.g. Kerberos-protected instances).
 app-emulation/virt-manager:spice - Support connecting to SPICE-enabled virtual machines.
+app-emulation/virt-viewer:gtk3 - Link against x11-libs/gtk+:3 instead of x11-libs/gtk+:2
+app-emulation/virt-viewer:spice - Support connecting to SPICE-enabled virtual machines.
+app-emulation/virt-viewer:vnc - Support connecting to VNC-enabled virtual machines.
 app-emulation/virtualbox:additions - Install Guest System Tools ISO
 app-emulation/virtualbox:extensions - Install extension module packages
 app-emulation/virtualbox:headless - Build without any graphic frontend
@@ -2218,6 +2221,7 @@ mail-mta/netqmail:highvolume - Prepare netqmail for high volume servers
 mail-mta/netqmail:noauthcram - If you do NOT want AUTHCRAM to be available
 mail-mta/postfix:dovecot-sasl - Enable net-mail/dovecot protocol version 1 (server only) SASL implementation
 mail-mta/postfix:ldap-bind - Adds support for binding to LDAP backend using dev-libs/cyrus-sasl
+mail-mta/postfix:memcached - Adds support for using net-misc/memcached for lookup tables
 mail-mta/postfix:vda - Adds support for virtual delivery agent quota enforcing
 mail-mta/qmail-ldap:cluster - Enable this if you want to have cluster support in qmail-ldap
 mail-mta/qmail-ldap:gencertdaily - Generate SSL certificates daily instead of hourly
@@ -2259,7 +2263,7 @@ media-gfx/asymptote:boehm-gc - Enables using the Boehm-Demers-Weiser conservativ
 media-gfx/asymptote:sigsegv - Enables using dev-libs/libsigsegv
 media-gfx/blender:apidoc - Build GameEngine/Python/C API documentation directly from the source code using tools epydoc (dev-python/epydoc) and doxygen (app-doc/doxygen).
 media-gfx/blender:blender-game - Adds Game Engine support to Blender (2.4* ebuilds).
-media-gfx/blender:collada - Add support for Collada interchange format.
+media-gfx/blender:collada - Add support for Collada interchange format through media-libs/opencollada.
 media-gfx/blender:contrib - Install contrib scripts.
 media-gfx/blender:dds - Adds DDS textures support to Blender.
 media-gfx/blender:elbeem - Adds surface fluid simulation to Blender using El'Beem library.
@@ -2475,8 +2479,10 @@ media-libs/phonon-gstreamer:network - Enable network streaming support via libso
 media-libs/phonon-xine:xcb - Enable video support in Xine backend, via x11-libs/libxcb
 media-libs/raptor:json - Enable support for JSON parsing
 media-libs/sdif:ftruncate - Enables usage of ftruncate v. truncate
+media-libs/sdl-image:webp - support loading WEBP images
+media-libs/sdl-mixer:fluidsynth - Use media-sound/fluidsynth for MIDI support
 media-libs/sdl-mixer:midi - basic support for MIDI files
-media-libs/sdl-mixer:playtools - Install playwave and playmus tools (usefull for testing)
+media-libs/sdl-mixer:playtools - Install playwave and playmus tools (useful for testing)
 media-libs/sdl-mixer:wav - support WAVE files
 media-libs/sdl-sound:physfs - Enable physfs support
 media-libs/sge:image - enable sdl-image support
@@ -3667,6 +3673,7 @@ net-irc/xchat:xchatdccserver - Enables support for the /dccserver command via a 
 net-irc/xchat:xchatnogtk - Disables building the GTK front end to XChat
 net-irc/xchat-xsys:audacious - Enables media-sound/audacious integration
 net-irc/znc:ares - Enables support for asynchronous DNS using the c-ares library
+net-irc/znc:dns-threads - Use threads for DNS resolving
 net-irc/znc:extras - Enable some additional modules
 net-libs/aqbanking:chipcard - Enable support for DDV/RSA-chipcards
 net-libs/c-client:doc - Install RFCs related to IMAP
@@ -5184,6 +5191,7 @@ x11-libs/libqxt:sql - Build the QxtSql module
 x11-libs/libqxt:web - Build the QxtWeb module
 x11-libs/libqxt:zeroconf - Build the QxtZeroconf module
 x11-libs/libwnck:introspection - Use dev-libs/gobject-introspection for introspection
+x11-libs/libxklavier:introspection - Use dev-libs/gobject-introspection for introspection
 x11-libs/mx:glade - Build the dev-util/glade catalog files
 x11-libs/mx:introspection - Use dev-libs/gobject-introspection for introspection
 x11-libs/pango:introspection - Use dev-libs/gobject-introspection for introspection

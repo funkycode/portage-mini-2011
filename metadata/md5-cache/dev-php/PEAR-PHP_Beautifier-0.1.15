@@ -1,12 +1,12 @@
 DEFINED_PHASES=install postinst
-DEPEND=dev-lang/php[tokenizer] dev-lang/php || ( ( >=dev-php/PEAR-PEAR-1.6.1 <dev-php/PEAR-PEAR-1.8.1 ) >=dev-php/pear-1.8.1 )
+DEPEND=dev-lang/php[tokenizer] dev-lang/php >=dev-php/pear-1.8.1
 DESCRIPTION=Code Beautifier for PHP.
 EAPI=2
 HOMEPAGE=http://pear.php.net/PHP_Beautifier
 KEYWORDS=~amd64 ~x86
 LICENSE=PHP-3
-RDEPEND=dev-lang/php[tokenizer] >=dev-php/PEAR-Log-1.8 dev-lang/php || ( ( >=dev-php/PEAR-PEAR-1.6.1 <dev-php/PEAR-PEAR-1.8.1 ) >=dev-php/pear-1.8.1 )
+RDEPEND=dev-lang/php[tokenizer] >=dev-php/PEAR-Log-1.8 dev-lang/php >=dev-php/pear-1.8.1
 SLOT=0
 SRC_URI=http://pear.php.net/get/PHP_Beautifier-0.1.15.tgz
-_eclasses_=multilib	5f4ad6cf85e365e8f0c6050ddd21659e	php-pear-r1	21ad9cb77f000c57f7a7e4b46ae18783	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68
+_eclasses_=multilib	5f4ad6cf85e365e8f0c6050ddd21659e	php-pear-r1	ec6ca81a78eed55923c519977010e559	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68
 _md5_=2ff143ece23cc4708bd94a1daa5e3710

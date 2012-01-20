@@ -6,5 +6,5 @@ HOMEPAGE=http://www.videolan.org/developers/x264.html
 IUSE=debug +threads pic static-libs
 LICENSE=GPL-2
 SLOT=0
-_eclasses_=git-2	e093fad2de8fa7ca11e7ed938d27ceb1	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68
+_eclasses_=git-2	6bb20ec18cca375571bcbe67bcf2e1d7	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68
 _md5_=146a58c8d276809fc315eae6a110b3be

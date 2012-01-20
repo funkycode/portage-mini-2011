@@ -1,8 +1,9 @@
-# Copyright 1999-2011 Gentoo Foundation
+# Copyright 1999-2012 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/media-sound/audacious/audacious-3.1.ebuild,v 1.4 2011/12/07 13:47:38 phajdan.jr Exp $
+# $Header: /var/cvsroot/gentoo-x86/media-sound/audacious/audacious-3.1.ebuild,v 1.6 2012/01/17 13:22:00 klausman Exp $
 
 EAPI=4
+inherit eutils
 
 MY_P="${P/_/-}"
 S="${WORKDIR}/${MY_P}"
@@ -13,7 +14,7 @@ SRC_URI="http://distfiles.atheme.org/${MY_P}.tar.bz2
 
 LICENSE="GPL-2"
 SLOT="0"
-KEYWORDS="~alpha amd64 hppa ~ppc ~ppc64 ~sparc x86 ~x86-fbsd ~x86-freebsd ~x86-interix ~amd64-linux ~x86-linux"
+KEYWORDS="alpha amd64 hppa ~ppc ~ppc64 ~sparc x86 ~x86-fbsd ~x86-freebsd ~x86-interix ~amd64-linux ~x86-linux"
 IUSE="altivec chardet nls session sse2"
 
 RDEPEND=">=dev-libs/dbus-glib-0.60
@@ -34,6 +35,10 @@ DEPEND="${RDEPEND}
 PDEPEND=">=media-plugins/audacious-plugins-3.1"
 
 src_configure() {
+	# Some gccs don't like "-z defs" on their command line. Explicitly make it a
+	# linker flag (bug 395213).
+	epatch "${FILESDIR}/audacious_ldflags.patch"
+
 	# D-Bus is a mandatory dependency, remote control,
 	# session management and some plugins depend on this.
 	# Building without D-Bus is *unsupported* and a USE-flag

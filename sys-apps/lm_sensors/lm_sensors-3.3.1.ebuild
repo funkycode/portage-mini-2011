@@ -1,6 +1,6 @@
-# Copyright 1999-2011 Gentoo Foundation
+# Copyright 1999-2012 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/sys-apps/lm_sensors/lm_sensors-3.3.1.ebuild,v 1.1 2011/09/30 19:58:10 polynomial-c Exp $
+# $Header: /var/cvsroot/gentoo-x86/sys-apps/lm_sensors/lm_sensors-3.3.1.ebuild,v 1.4 2012/01/17 12:59:39 ago Exp $
 
 EAPI=3
 inherit eutils linux-info toolchain-funcs multilib
@@ -11,11 +11,11 @@ SRC_URI="http://dl.lm-sensors.org/lm-sensors/releases/${P}.tar.bz2"
 
 LICENSE="GPL-2 LGPL-2.1"
 SLOT="0"
-KEYWORDS="~alpha ~amd64 ~mips ~ppc ~sparc ~x86 ~x86-linux"
-IUSE="sensord"
+KEYWORDS="~alpha amd64 ~mips ~ppc ~sparc ~x86 ~x86-linux"
+IUSE="sensord static-libs"
 
 RDEPEND="dev-lang/perl
-	virtual/logger"
+	sensord? ( virtual/logger )"
 DEPEND="sys-apps/sed
 	sys-devel/bison
 	sys-devel/flex
@@ -35,6 +35,10 @@ src_prepare() {
 
 	# Respect LDFLAGS
 	sed -i -e 's/\$(LIBDIR)$/\$(LIBDIR) \$(LDFLAGS)/g' Makefile || die
+
+	if ! use static-libs; then
+		sed -i -e '/^BUILD_STATIC_LIB/d' Makefile || die
+	fi
 }
 
 src_compile() {

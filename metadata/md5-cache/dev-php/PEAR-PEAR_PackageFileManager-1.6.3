@@ -1,12 +1,12 @@
 DEFINED_PHASES=install setup
-DEPEND=dev-lang/php || ( ( >=dev-php/PEAR-PEAR-1.6.1 <dev-php/PEAR-PEAR-1.8.1 ) >=dev-php/pear-1.8.1 )
+DEPEND=dev-lang/php >=dev-php/pear-1.8.1
 DESCRIPTION=Takes an existing package.xml file and updates it with a new filelist and changelog.
 HOMEPAGE=http://pear.php.net/PEAR_PackageFileManager
 IUSE=minimal
 KEYWORDS=~amd64 ~x86
 LICENSE=PHP-3.01
-RDEPEND=!minimal? ( >=dev-php/PEAR-PHP_CompatInfo-1.4.0 ) dev-lang/php || ( ( >=dev-php/PEAR-PEAR-1.6.1 <dev-php/PEAR-PEAR-1.8.1 ) >=dev-php/pear-1.8.1 )
+RDEPEND=!minimal? ( >=dev-php/PEAR-PHP_CompatInfo-1.4.0 ) dev-lang/php >=dev-php/pear-1.8.1
 SLOT=0
 SRC_URI=http://pear.php.net/get/PEAR_PackageFileManager-1.6.3.tgz
-_eclasses_=depend.php	ce98226ee6abc9debc88f584f7649f45	eutils	d92f291efb4ef0595cb90e4b4e7e6b6c	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	php-pear-r1	21ad9cb77f000c57f7a7e4b46ae18783	phpconfutils	e108303831029e5b8a9d24b991b1d62a	portability	536c5e70c5fb252ed3b769e04aa3f05b	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
+_eclasses_=depend.php	ce98226ee6abc9debc88f584f7649f45	eutils	d92f291efb4ef0595cb90e4b4e7e6b6c	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	php-pear-r1	ec6ca81a78eed55923c519977010e559	phpconfutils	e108303831029e5b8a9d24b991b1d62a	portability	536c5e70c5fb252ed3b769e04aa3f05b	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
 _md5_=f0c47e90167a2a5d127b3d739607f92f

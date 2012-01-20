@@ -1,6 +1,6 @@
 # Copyright 1999-2012 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/net-libs/glib-networking/glib-networking-2.30.1-r1.ebuild,v 1.4 2012/01/14 17:37:05 maekke Exp $
+# $Header: /var/cvsroot/gentoo-x86/net-libs/glib-networking/glib-networking-2.30.1-r1.ebuild,v 1.6 2012/01/18 21:00:43 maekke Exp $
 
 EAPI="4"
 GCONF_DEBUG="no"
@@ -14,7 +14,7 @@ HOMEPAGE="http://git.gnome.org/browse/glib-networking/"
 
 LICENSE="LGPL-2"
 SLOT="0"
-KEYWORDS="~alpha amd64 ~arm hppa ~ia64 ~mips ~ppc ~ppc64 ~sh ~sparc x86 ~x86-fbsd ~amd64-linux ~x86-linux ~ppc-macos ~x64-macos ~x86-macos ~sparc-solaris ~x86-solaris"
+KEYWORDS="~alpha amd64 arm hppa ~ia64 ~mips ~ppc ~ppc64 ~sh ~sparc x86 ~x86-fbsd ~amd64-linux ~x86-linux ~ppc-macos ~x64-macos ~x86-macos ~sparc-solaris ~x86-solaris"
 IUSE="+gnome +libproxy +ssl" # test
 
 RDEPEND=">=dev-libs/glib-2.29.16:2
@@ -27,8 +27,11 @@ RDEPEND=">=dev-libs/glib-2.29.16:2
 DEPEND="${RDEPEND}
 	>=dev-util/intltool-0.35.0
 	>=dev-util/pkgconfig-0.9
-	sys-devel/gettext"
+	sys-devel/gettext
+
+	>=sys-devel/autoconf-2.65:2.5"
 #	test? ( sys-apps/dbus[X] )"
+# eautoreconf needs >=sys-devel/autoconf-2.65:2.5
 
 # FIXME: tls tests often fail, figure out why
 # ERROR:tls.c:265:on_input_read_finish: assertion failed (error == NULL): Error performing TLS handshake: The request is invalid. (g-tls-error-quark, 1)

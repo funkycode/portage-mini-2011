@@ -8,5 +8,5 @@ LICENSE=BSD
 RDEPEND=sys-libs/ncurses
 SLOT=0
 SRC_URI=http://members.iinet.net.au/~lynx/vcp/vcp-2.2.tar.gz
-_eclasses_=eutils	d92f291efb4ef0595cb90e4b4e7e6b6c	flag-o-matic	8efefb3178f418e569dc74ba65bcb05c	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	portability	536c5e70c5fb252ed3b769e04aa3f05b	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
+_eclasses_=eutils	d92f291efb4ef0595cb90e4b4e7e6b6c	flag-o-matic	a2e1c4641a8aed225d4ddb0f74f382de	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	portability	536c5e70c5fb252ed3b769e04aa3f05b	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
 _md5_=3da6a79a4ebb2c8b5bc50a31c67c3007

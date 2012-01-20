@@ -11,5 +11,5 @@ RDEPEND=>=dev-lang/tk-8.3 >=dev-tcltk/blt-2.4 dev-tcltk/iwidgets dev-tcltk/itcl 
 RESTRICT=mirror
 SLOT=0
 SRC_URI=ftp://ftp.ccp4.ac.uk/ccp4/6.1.3/ccp4-6.1.3-core-src.tar.gz http://dev.gentooexperimental.org/~jlec/distfiles/6.1.3-oasis4.0.patch.bz2
-_eclasses_=autotools	cc61a7c888abf6d8622105c6184881ed	eutils	d92f291efb4ef0595cb90e4b4e7e6b6c	flag-o-matic	8efefb3178f418e569dc74ba65bcb05c	fortran-2	368b82ae80c1184988a9d651e6efcbd0	gnuconfig	9200bfc8e0184357abfb86a08edd4fc3	libtool	5f623f5a211fb1b2d84d88ee49959a54	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	portability	536c5e70c5fb252ed3b769e04aa3f05b	python	412a8596c4b1620189e299c8dd303d0a	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
+_eclasses_=autotools	cc61a7c888abf6d8622105c6184881ed	eutils	d92f291efb4ef0595cb90e4b4e7e6b6c	flag-o-matic	a2e1c4641a8aed225d4ddb0f74f382de	fortran-2	368b82ae80c1184988a9d651e6efcbd0	gnuconfig	9200bfc8e0184357abfb86a08edd4fc3	libtool	5f623f5a211fb1b2d84d88ee49959a54	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	portability	536c5e70c5fb252ed3b769e04aa3f05b	python	412a8596c4b1620189e299c8dd303d0a	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
 _md5_=d949ab2fdd7a99783beb4b20cd17236a

@@ -9,5 +9,5 @@ RDEPEND=>=dev-libs/gmp-5.0.2 >=dev-libs/mpfr-3.0.1 >=sys-libs/glibc-2.8 >=sys-li
 RESTRICT=strip test
 SLOT=0
 SRC_URI=mirror://gnu/binutils/binutils-2.20.1.tar.bz2 ftp://sources.redhat.com/pub/newlib/newlib-1.18.0.tar.gz mirror://gnu/gcc/gcc-4.4.3/gcc-4.4.3.tar.bz2 http://gsdview.appspot.com/nativeclient-archive2/x86_toolchain/r6869/nacltoolchain-buildscripts-r6869.tar.gz http://gsdview.appspot.com/nativeclient-archive2/x86_toolchain/r6869/naclbinutils-2.20.1-r6869.patch.bz2 http://gsdview.appspot.com/nativeclient-archive2/x86_toolchain/r6869/naclnewlib-1.18.0-r6869.patch.bz2 http://gsdview.appspot.com/nativeclient-archive2/x86_toolchain/r6869/naclgcc-4.4.3-r6869.patch.bz2
-_eclasses_=eutils	d92f291efb4ef0595cb90e4b4e7e6b6c	flag-o-matic	8efefb3178f418e569dc74ba65bcb05c	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	portability	536c5e70c5fb252ed3b769e04aa3f05b	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
+_eclasses_=eutils	d92f291efb4ef0595cb90e4b4e7e6b6c	flag-o-matic	a2e1c4641a8aed225d4ddb0f74f382de	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	portability	536c5e70c5fb252ed3b769e04aa3f05b	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
 _md5_=e020ea5ddea2071dfdbedd90f6054741

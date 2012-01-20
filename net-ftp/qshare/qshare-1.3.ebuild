@@ -1,6 +1,6 @@
-# Copyright 1999-2010 Gentoo Foundation
+# Copyright 1999-2012 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/net-ftp/qshare/qshare-1.3.ebuild,v 1.3 2010/07/14 13:40:27 fauli Exp $
+# $Header: /var/cvsroot/gentoo-x86/net-ftp/qshare/qshare-1.3.ebuild,v 1.4 2012/01/19 10:52:50 johu Exp $
 
 EAPI="2"
 
@@ -9,7 +9,7 @@ LANGS="en es fr ru"
 inherit qt4-r2
 
 DESCRIPTION="FTP server with a service discovery feature."
-HOMEPAGE="http://qt-apps.org/content/show.php/qShare?content=116612"
+HOMEPAGE="http://www.zuzuf.net/qshare/"
 SRC_URI="http://qt-apps.org/CONTENT/content-files/116612-${P}-src.tar.gz"
 
 LICENSE="GPL-3"

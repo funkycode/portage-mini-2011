@@ -7,5 +7,5 @@ IUSE=gnutls polarssl ssl
 LICENSE=GPL-2
 RDEPEND=ssl? ( gnutls? ( net-libs/gnutls ) polarssl? ( !gnutls? ( >=net-libs/polarssl-0.14.0 ) ) !gnutls? ( !polarssl? ( dev-libs/openssl ) ) ) sys-libs/zlib
 SLOT=0
-_eclasses_=git-2	e093fad2de8fa7ca11e7ed938d27ceb1	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68
+_eclasses_=git-2	6bb20ec18cca375571bcbe67bcf2e1d7	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68
 _md5_=97af18f739102f35ae70d4186ed06f02

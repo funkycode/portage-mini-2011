@@ -1,13 +1,12 @@
-# Copyright 1999-2011 Gentoo Foundation
+# Copyright 1999-2012 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/media-tv/linuxtv-dvb-headers/linuxtv-dvb-headers-5.ebuild,v 1.7 2011/10/22 17:47:51 hd_brummy Exp $
-
-inherit eutils
+# $Header: /var/cvsroot/gentoo-x86/media-tv/linuxtv-dvb-headers/linuxtv-dvb-headers-5.ebuild,v 1.9 2012/01/19 14:55:16 jer Exp $
 
 DESCRIPTION="Virtual Package installing the Header files for DVB"
 HOMEPAGE="http://www.linuxtv.org"
 LICENSE="GPL-2"
 SLOT="0"
-KEYWORDS="~arm amd64 ~hppa ~ppc ppc64 x86"
+KEYWORDS="amd64 ~arm ~ppc ppc64 x86"
 IUSE=""
-RDEPEND=">=sys-kernel/linux-headers-2.6.29"
+RDEPEND=">=sys-kernel/linux-headers-2.6.28
+	<sys-kernel/linux-headers-3.0"
