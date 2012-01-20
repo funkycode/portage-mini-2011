@@ -4736,9 +4736,12 @@ sys-cluster/mvapich2:medium-cluster - Automatically generated description for me
 sys-cluster/mvapich2:romio - Automatically generated description for romio
 sys-cluster/ocfs:aio - Add aio support
 sys-cluster/openmpi:heterogeneous - Enable features required for heterogeneous platform support
+sys-cluster/openmpi:knem - Add High-Performance intranode communication
 sys-cluster/openmpi:mpi-threads - Enable MPI_THREAD_MULTIPLE
 sys-cluster/openmpi:numa - Enable numa memory allocation support
+sys-cluster/openmpi:open-mx - Add support for Myrinet Express over Ethernet>
 sys-cluster/openmpi:pbs - Add support for the Portable Batch System (PBS)
+sys-cluster/openmpi:psm - Add support for Qlogic psm driver for IB
 sys-cluster/openmpi:romio - Build the ROMIO MPI-IO component
 sys-cluster/openmpi:sctp - Enable SCTP support
 sys-cluster/openmpi:slurm - Add support for SLURM

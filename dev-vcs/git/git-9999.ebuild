@@ -1,6 +1,6 @@
 # Copyright 1999-2012 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/dev-vcs/git/git-9999.ebuild,v 1.26 2012/01/13 21:48:42 robbat2 Exp $
+# $Header: /var/cvsroot/gentoo-x86/dev-vcs/git/git-9999.ebuild,v 1.27 2012/01/20 08:27:19 robbat2 Exp $
 
 EAPI=4
 
@@ -55,6 +55,7 @@ CDEPEND="
 	emacs?  ( virtual/emacs )"
 
 RDEPEND="${CDEPEND}
+	app-crypt/gnupg
 	perl? ( dev-perl/Error
 			dev-perl/Net-SMTP-SSL
 			dev-perl/Authen-SASL
@@ -74,10 +75,13 @@ RDEPEND="${CDEPEND}
 #   .texi         --(makeinfo)---------> .info
 DEPEND="${CDEPEND}
 	app-arch/cpio
-	doc?    (
+	doc? (
 		app-text/asciidoc
 		app-text/docbook2X
 		sys-apps/texinfo
+	)
+	test? (
+		app-crypt/gnupg
 	)"
 
 # Live ebuild builds man pages and HTML docs, additionally
@@ -256,6 +260,26 @@ src_prepare() {
 
 	# merged upstream
 	#epatch "${FILESDIR}"/git-1.7.6-interix.patch
+
+	# Newer versions of SVN hate a whitespace in the file URL. 
+	# So we avoid that by replaced the space with an underscore.
+	#Initialized empty Git repository in /dev/shm/portage/dev-vcs/git-9999/work/git-9999/t/t d.t9155/git_project/.git/
+	#svn: E235000: In file 'subversion/libsvn_subr/dirent_uri.c' line 2291: assertion failed (svn_uri_is_canonical(url, pool))
+	# 
+	# With this change the following tests still fail: t9100 t9118 t9120
+	# Without it, MOST of t91* fails, due to the space tripping up the
+	# svn_uri_is_canonical.
+    #
+	# git-svn actually needs to be fixed here, but this chagne is useful for
+	# testing it.
+	#
+	# This patch is my work to date on fixing git-svn, but it causes more
+	# breakage than it fixes (it's manually-edited now to do nothing).
+	epatch "${FILESDIR}"/git-1.7.8-git-svn-1.7-canonical-path.patch
+	cd "${S}"/t
+	sed -i \
+		-e 's/trash directory/trash_directory/g' \
+		test-lib.sh t0000-basic.sh Makefile || die "sed failed"
 }
 
 git_emake() {
@@ -355,7 +379,7 @@ src_install() {
 	fi
 
 	dobin contrib/fast-import/git-p4
-	dodoc contrib/fast-import/git-p4.txt
+	#dodoc contrib/fast-import/git-p4.txt # Moved upstream
 	newbin contrib/fast-import/import-tars.perl import-tars
 	newbin contrib/git-resurrect.sh git-resurrect
 
@@ -485,21 +509,23 @@ src_test() {
 	sed -e '/^[[:space:]]*$(MAKE) clean/s,^,#,g' \
 		-i "${S}"/t/Makefile
 
-	# Clean old results first
+	# Clean old results first, must always run
 	cd "${S}/t"
-	git_emake clean
+	nonfatal git_emake clean 
 
-	# Now run the tests
+	# Now run the tests, keep going if we hit an error, and don't terminate on
+	# failure
 	cd "${S}"
 	einfo "Start test run"
-	git_emake test
+	#MAKEOPTS=-j1 
+	nonfatal git_emake --keep-going test
 	rc=$?
 
-	# Display nice results
+	# Display nice results, now print the results
 	cd "${S}/t"
-	git_emake aggregate-results
+	nonfatal git_emake aggregate-results
 
-	# And exit
+	# And bail if there was a problem
 	[ $rc -eq 0 ] || die "tests failed. Please file a bug."
 }
 
