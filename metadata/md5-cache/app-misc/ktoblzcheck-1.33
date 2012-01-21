@@ -4,10 +4,10 @@ DESCRIPTION=Library to check account numbers and bank codes of German banks
 EAPI=4
 HOMEPAGE=http://ktoblzcheck.sourceforge.net/
 IUSE=python
-KEYWORDS=amd64 ppc ~ppc64 ~sparc ~x86
+KEYWORDS=amd64 ppc ~ppc64 ~sparc x86
 LICENSE=LGPL-2.1
 RDEPEND=app-text/recode sys-apps/gawk sys-apps/grep sys-apps/sed || ( net-misc/wget www-client/lynx ) >=app-admin/eselect-python-20091230 python? ( || ( =dev-lang/python-2.7* =dev-lang/python-2.6* ) )
 SLOT=0
 SRC_URI=mirror://sourceforge/ktoblzcheck/ktoblzcheck-1.33.tar.gz
 _eclasses_=multilib	5f4ad6cf85e365e8f0c6050ddd21659e	python	412a8596c4b1620189e299c8dd303d0a	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68
-_md5_=3c106dcec9e30e8e2a957d187d65e00f
+_md5_=f9d1de129726632e28d74d18271e8f60

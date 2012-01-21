@@ -1,10 +1,10 @@
 # Copyright 1999-2012 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/sci-libs/gts/gts-20111025.ebuild,v 1.1 2012/01/20 19:17:11 bicatali Exp $
+# $Header: /var/cvsroot/gentoo-x86/sci-libs/gts/gts-20111025.ebuild,v 1.3 2012/01/21 16:06:15 jlec Exp $
 
 EAPI=4
-AUTOTOOLS_AUTORECONF=yes
-inherit fortran-2 autotools-utils
+
+inherit autotools-utils fortran-2
 
 DESCRIPTION="GNU Triangulated Surface Library"
 LICENSE="LGPL-2"
@@ -26,8 +26,14 @@ DEPEND="${RDEPEND}
 # buggy
 RESTRICT=test
 
-PATCHES=( "${FILESDIR}"/${P}-autotools.patch )
 S="${WORKDIR}"/${P/-20/-snapshot-}
+
+PATCHES=( "${FILESDIR}"/${P}-autotools.patch )
+
+src_compile() {
+	autotools-utils_src_compile
+	use doc && autotools-utils_src_compile -C doc html
+}
 
 src_test() {
 	chmod +x test/*/*.sh
@@ -37,13 +43,12 @@ src_test() {
 }
 
 src_install() {
+	use doc && HTML_DOCS=("${AUTOTOOLS_BUILD_DIR}"/doc/html/)
 	autotools-utils_src_install
 
 	# rename to avoid collisions
 	mv "${ED}"/usr/bin/{,gts-}split || die
 	mv "${ED}"/usr/bin/{,gts-}merge || die
-
-	use doc && dohtml doc/html/*
 
 	if use examples; then
 		insinto /usr/share/doc/${PF}/examples

@@ -1,6 +1,6 @@
-# Copyright 1999-2011 Gentoo Foundation
+# Copyright 1999-2012 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/app-misc/mc/mc-4.8.1-r1.ebuild,v 1.2 2011/12/16 13:17:35 wired Exp $
+# $Header: /var/cvsroot/gentoo-x86/app-misc/mc/mc-4.8.1-r1.ebuild,v 1.3 2012/01/21 17:22:14 slyfox Exp $
 
 EAPI=4
 

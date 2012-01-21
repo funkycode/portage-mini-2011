@@ -2,11 +2,11 @@ DEFINED_PHASES=compile configure install postinst preinst prepare setup unpack
 DESCRIPTION=A crossplatform TCL/TK based MUD client
 EAPI=2
 HOMEPAGE=http://belfry.com/fuzzball/trebuchet/
-KEYWORDS=amd64 ~ppc ~x86
+KEYWORDS=amd64 ~ppc x86
 LICENSE=GPL-2
 RDEPEND=>=dev-lang/tk-8.3.3 dev-lang/tcl
 RESTRICT=test
 SLOT=0
 SRC_URI=mirror://sourceforge/trebuchet/trebuchet-1.075.tar.gz
 _eclasses_=base	809ab15a673823938260f6b17661c3f1	eutils	d92f291efb4ef0595cb90e4b4e7e6b6c	games	f75cdbfdf1760e514ca65e2f6c6a7c72	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	portability	536c5e70c5fb252ed3b769e04aa3f05b	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
-_md5_=46a23e357e648df5b2fef08ad399c580
+_md5_=344f5be25ddf4ac0e495e42f43188221

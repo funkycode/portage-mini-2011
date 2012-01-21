@@ -3,11 +3,11 @@ DEPEND==dev-vcs/bzr-2.4* >=app-admin/eselect-python-20091230 =dev-lang/python-2*
 DESCRIPTION=bzrtools is a useful collection of utilities for bzr.
 EAPI=3
 HOMEPAGE=http://bazaar-vcs.org/BzrTools
-KEYWORDS=amd64 ~ia64 ppc ~ppc64 ~sparc ~x86 ~x86-interix ~amd64-linux ~x86-linux ~x86-macos
+KEYWORDS=alpha amd64 ~ia64 ppc ~ppc64 ~sparc ~x86 ~x86-interix ~amd64-linux ~x86-linux ~x86-macos
 LICENSE=GPL-2
 RDEPEND==dev-vcs/bzr-2.4* >=app-admin/eselect-python-20091230 =dev-lang/python-2*
 RESTRICT=test
 SLOT=0
 SRC_URI=https://launchpad.net/bzrtools/stable/2.4.0/+download/bzrtools-2.4.0.tar.gz
 _eclasses_=distutils	c8b0cab86443a130f3737ad1456d57d3	eutils	d92f291efb4ef0595cb90e4b4e7e6b6c	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	portability	536c5e70c5fb252ed3b769e04aa3f05b	python	412a8596c4b1620189e299c8dd303d0a	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e	versionator	6601b4c5b3f019a993db59a50e1854e4
-_md5_=deb690e12f1148a5ec2048055ad748cf
+_md5_=72e046ab8dfb2cf8c47d3854b87f25ab

@@ -1,6 +1,5 @@
-diff -Nur hdf-4.2.6.orig/configure.ac hdf-4.2.6/configure.ac
---- hdf-4.2.6.orig/configure.ac	2011-12-21 23:40:35.000000000 +0000
-+++ hdf-4.2.6/configure.ac	2011-12-22 00:36:53.000000000 +0000
+--- a/configure.ac
++++ b/configure.ac
 @@ -199,20 +199,6 @@
  dnl Build static libraries by default. Furthermore, fortran shared libraries
  dnl are unsupported. Disallow a user from enabling both shared libraries and
@@ -31,24 +30,7 @@ diff -Nur hdf-4.2.6.orig/configure.ac hdf-4.2.6/configure.ac
  AC_ARG_WITH([szlib],
              [AC_HELP_STRING([--with-szlib=DIR],
                              [Use szlib library [default=no]])],,
-@@ -445,14 +431,13 @@
-     fi
- 
-     AC_CHECK_LIB([sz], [SZ_BufftoBuffCompress],, [unset HAVE_SZIP])
--
-+    ;;
-+esac
-     if test -z "$HAVE_SZIP"; then
-       AC_MSG_ERROR([couldn't find szlib library])
-     else
-       USE_COMP_SZIP="yes"
-     fi
--    ;;
--esac
- 
- dnl Check to see if SZIP has encoder 
- if test "X$HAVE_SZIP" = "Xyes"; then
-@@ -702,7 +687,7 @@
+@@ -702,7 +688,7 @@
  dnl ======================================================================
  dnl Libtool initialization
  dnl ======================================================================
@@ -57,7 +39,7 @@ diff -Nur hdf-4.2.6.orig/configure.ac hdf-4.2.6/configure.ac
  LT_OUTPUT
  
  dnl ======================================================================
-@@ -780,11 +765,6 @@
+@@ -780,11 +766,6 @@
  dnl ------------------------------------------------------------------------
  dnl Check to see if libtool has enabled shared libraries. Set a conditional
  dnl as some Makefiles will build based on availability of shared libraries.
@@ -69,7 +51,18 @@ diff -Nur hdf-4.2.6.orig/configure.ac hdf-4.2.6/configure.ac
  
  dnl ------------------------------------------------------------------------
  dnl Specify shared library extension the host machine should recognize.
-@@ -841,26 +821,7 @@
+@@ -814,10 +795,6 @@
+ dnl Report anything stripped as a flag in CFLAGS and 
+ dnl only the compiler in CC_VERSION.
+ CC_NOFLAGS=`echo $CC | sed 's/ -.*//'`
+-CFLAGS_TO_ADD=`echo $CC | grep - | sed 's/.* -/-/'`
+-if test -n $CFLAGS_TO_ADD; then
+-  CFLAGS="$CFLAGS_TO_ADD$CFLAGS"
+-fi
+ 
+ if `echo $CC_NOFLAGS | grep ^/ >/dev/null 2>&1`; then
+   CC_VERSION="$CC_NOFLAGS"
+@@ -841,26 +818,7 @@
  dnl Strip anything that looks like a flag off of $F77
  dnl Report anything stripped as a flag in RFLAGS and 
  dnl only the compiler in F77_VERSION.
@@ -97,9 +90,8 @@ diff -Nur hdf-4.2.6.orig/configure.ac hdf-4.2.6/configure.ac
  
  
  dnl This part doesn't work yet since HDF4 config files do not contain
-diff -Nur hdf-4.2.6.orig/hdf/test/fortestF.f hdf-4.2.6/hdf/test/fortestF.f
---- hdf-4.2.6.orig/hdf/test/fortestF.f	2011-12-21 23:40:35.000000000 +0000
-+++ hdf-4.2.6/hdf/test/fortestF.f	2011-12-21 23:47:04.000000000 +0000
+--- a/hdf/test/fortestF.f
++++ b/hdf/test/fortestF.f
 @@ -203,7 +203,7 @@
  
  	if (cmd .NE. 'Test' .AND. cmd .NE. 'test') then
@@ -109,9 +101,8 @@ diff -Nur hdf-4.2.6.orig/hdf/test/fortestF.f hdf-4.2.6/hdf/test/fortestF.f
  	 retcode = -1
  	 return
  	endif
-diff -Nur hdf-4.2.6.orig/mfhdf/libsrc/Makefile.am hdf-4.2.6/mfhdf/libsrc/Makefile.am
---- hdf-4.2.6.orig/mfhdf/libsrc/Makefile.am	2011-12-21 23:40:35.000000000 +0000
-+++ hdf-4.2.6/mfhdf/libsrc/Makefile.am	2011-12-21 23:48:07.000000000 +0000
+--- a/mfhdf/libsrc/Makefile.am
++++ b/mfhdf/libsrc/Makefile.am
 @@ -32,10 +32,11 @@
  else
  libmfhdf_la_SOURCES = $(CSOURCES)
