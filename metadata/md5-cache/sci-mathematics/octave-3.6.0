@@ -1,4 +1,4 @@
-DEFINED_PHASES=compile configure install prepare pretend test
+DEFINED_PHASES=compile configure install prepare setup test
 DEPEND=dev-libs/libpcre app-text/ghostscript-gpl sys-libs/ncurses virtual/lapack curl? ( net-misc/curl ) fftw? ( sci-libs/fftw:3.0 ) glpk? ( sci-mathematics/glpk ) imagemagick? ( || ( media-gfx/graphicsmagick[cxx] media-gfx/imagemagick[cxx] ) ) opengl? ( media-libs/freetype:2 media-libs/fontconfig >=x11-libs/fltk-1.3:1[opengl] ) qhull? ( media-libs/qhull ) qrupdate? ( sci-libs/qrupdate ) sparse? ( sci-libs/arpack sci-libs/camd sci-libs/ccolamd sci-libs/cholmod sci-libs/colamd sci-libs/cxsparse sci-libs/umfpack ) X? ( x11-libs/libX11 ) zlib? ( sys-libs/zlib ) doc? ( virtual/latex-base dev-texlive/texlive-genericrecommended sys-apps/texinfo ) dev-util/gperf dev-util/pkgconfig || ( =sys-devel/automake-1.11* ) >=sys-devel/autoconf-2.61 sys-devel/libtool
 DESCRIPTION=High-level interactive language for numerical computations
 EAPI=4
@@ -10,4 +10,4 @@ RDEPEND=dev-libs/libpcre app-text/ghostscript-gpl sys-libs/ncurses virtual/lapac
 SLOT=0
 SRC_URI=ftp://ftp.gnu.org/pub/gnu/octave/octave-3.6.0.tar.bz2
 _eclasses_=autotools	cc61a7c888abf6d8622105c6184881ed	autotools-utils	04875ee9410482aa62e6ff8c0cca65de	eutils	d92f291efb4ef0595cb90e4b4e7e6b6c	libtool	5f623f5a211fb1b2d84d88ee49959a54	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	portability	536c5e70c5fb252ed3b769e04aa3f05b	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
-_md5_=e72e8f1757970780c7b97aee24fdb177
+_md5_=cb06722ddd1a2d8ed0ad73ba32b5c8f4
