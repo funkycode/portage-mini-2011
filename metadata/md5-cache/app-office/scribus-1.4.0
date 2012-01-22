@@ -1,4 +1,4 @@
-DEFINED_PHASES=compile configure install postinst postrm prepare setup test unpack
+DEFINED_PHASES=compile configure install postinst postrm preinst prepare setup test unpack
 DEPEND=dev-libs/hyphen dev-libs/libxml2 media-libs/fontconfig media-libs/freetype:2 media-libs/lcms:2 media-libs/libpng:0 media-libs/tiff:0 net-print/cups sys-libs/zlib x11-libs/qt-core:4 x11-libs/qt-gui:4 virtual/jpeg spell? ( app-text/aspell ) pdf? ( app-text/podofo ) cairo? ( x11-libs/cairo[X,svg] ) dev-libs/boost >=dev-util/cmake-2.8.4 userland_GNU? ( >=sys-apps/findutils-4.4.0 ) >=app-admin/eselect-python-20091230 =dev-lang/python-2*
 DESCRIPTION=Desktop publishing (DTP) and layout program
 EAPI=4
@@ -10,4 +10,4 @@ RDEPEND=dev-libs/hyphen dev-libs/libxml2 media-libs/fontconfig media-libs/freety
 SLOT=0
 SRC_URI=mirror://sourceforge/scribus/scribus-1.4.0.tar.bz2
 _eclasses_=base	809ab15a673823938260f6b17661c3f1	cmake-utils	d9f3f2f6cc1a1d6ad8e31702e44133e5	eutils	d92f291efb4ef0595cb90e4b4e7e6b6c	fdo-mime	0acfe1a88fd8751a1d5dc671168219fa	flag-o-matic	a2e1c4641a8aed225d4ddb0f74f382de	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	portability	536c5e70c5fb252ed3b769e04aa3f05b	python	cf73fe2a491ad5310ed71ffc829b7464	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
-_md5_=5dca098655e9a948c878145272036423
+_md5_=87f5292d837307c60e3804d5cbc0ee86
