@@ -9,5 +9,5 @@ LICENSE=GPL-2
 RDEPEND=app-arch/bzip2 dev-libs/tinyxml media-libs/freetype:2 sys-libs/zlib virtual/opengl x11-libs/gtk+:2 >=x11-libs/wxGTK-2.8.11.0[X] gps? ( >=sci-geosciences/gpsd-2.95 )
 SLOT=0
 SRC_URI=mirror://sourceforge/opencpn/OpenCPN-2.5.0-Source.tar.gz
-_eclasses_=base	809ab15a673823938260f6b17661c3f1	cmake-utils	00f9fd5a80cf3605f6d9a2e808c48a92	eutils	d92f291efb4ef0595cb90e4b4e7e6b6c	flag-o-matic	a2e1c4641a8aed225d4ddb0f74f382de	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	portability	536c5e70c5fb252ed3b769e04aa3f05b	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e	wxwidgets	fb1a306837717dfa2af841ecdf929565
+_eclasses_=base	809ab15a673823938260f6b17661c3f1	cmake-utils	d9f3f2f6cc1a1d6ad8e31702e44133e5	eutils	d92f291efb4ef0595cb90e4b4e7e6b6c	flag-o-matic	a2e1c4641a8aed225d4ddb0f74f382de	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	portability	536c5e70c5fb252ed3b769e04aa3f05b	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e	wxwidgets	fb1a306837717dfa2af841ecdf929565
 _md5_=63d9d310b33fec677112e6da3619f95d

@@ -1,6 +1,6 @@
-# Copyright 1999-2011 Gentoo Foundation
+# Copyright 1999-2012 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/app-admin/eselect/eselect-1.2.18.ebuild,v 1.1 2011/09/25 16:24:18 ulm Exp $
+# $Header: /var/cvsroot/gentoo-x86/app-admin/eselect/eselect-1.2.18.ebuild,v 1.2 2012/01/21 19:02:55 ulm Exp $
 
 EAPI=2
 
@@ -51,6 +51,8 @@ src_install() {
 
 	# needed by news module
 	keepdir /var/lib/gentoo/news
+	fowners root:portage /var/lib/gentoo/news || die
+	fperms g+w /var/lib/gentoo/news || die
 }
 
 pkg_postinst() {

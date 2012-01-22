@@ -9,5 +9,5 @@ LICENSE=public-domain
 RDEPEND=>=sys-libs/libsepol-2.1.0 ruby? ( dev-lang/ruby ) >=app-admin/eselect-python-20091230 python? ( =dev-lang/python-2* )
 SLOT=0
 SRC_URI=http://userspace.selinuxproject.org/releases/20110727/devel/libselinux-2.1.0.tar.gz
-_eclasses_=multilib	5f4ad6cf85e365e8f0c6050ddd21659e	python	412a8596c4b1620189e299c8dd303d0a	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68
+_eclasses_=multilib	5f4ad6cf85e365e8f0c6050ddd21659e	python	cf73fe2a491ad5310ed71ffc829b7464	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68
 _md5_=8523de2cd3ab0b3b93cd645505cbfed9

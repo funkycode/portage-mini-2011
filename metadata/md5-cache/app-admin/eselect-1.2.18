@@ -10,4 +10,4 @@ RDEPEND=!app-admin/eselect-news sys-apps/sed || ( sys-apps/coreutils sys-freebsd
 SLOT=0
 SRC_URI=mirror://gentoo/eselect-1.2.18.tar.bz2
 _eclasses_=bash-completion-r1	3480f8385cb9e31797e7b659e366e2d2
-_md5_=a06eac06daa831e0a5bdfed495e8e6ef
+_md5_=f09ef67ad2753597af4e3cea0f927280

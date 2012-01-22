@@ -9,5 +9,5 @@ LICENSE=LGPL-2.1
 RDEPEND=>=dev-libs/glib-2.16:2 >=sys-apps/dbus-0.60 >=dev-libs/dbus-glib-0.60 >=net-libs/telepathy-glib-0.13.4 >=net-libs/farsight2-0.0.17 python? ( >=dev-python/pygobject-2.12.0:2 >=dev-python/gst-python-0.10.10 ) >=app-admin/eselect-python-20091230 python? ( || ( =dev-lang/python-2.7* =dev-lang/python-2.6* ) )
 SLOT=0
 SRC_URI=http://telepathy.freedesktop.org/releases/telepathy-farsight/telepathy-farsight-0.0.16.tar.gz
-_eclasses_=multilib	5f4ad6cf85e365e8f0c6050ddd21659e	python	412a8596c4b1620189e299c8dd303d0a	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68
+_eclasses_=multilib	5f4ad6cf85e365e8f0c6050ddd21659e	python	cf73fe2a491ad5310ed71ffc829b7464	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68
 _md5_=525554481a891069cfa9e29707159df0

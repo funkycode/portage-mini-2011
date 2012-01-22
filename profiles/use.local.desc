@@ -4527,16 +4527,15 @@ sci-physics/hepmc:cm - Build with cm instead of default mm for length units
 sci-physics/hepmc:gev - Build with GeV instead of default MeV for momentum units
 sci-physics/lhapdf:octave - Add bindings for sci-mathematics/octave
 sci-physics/pythia:hepmc - Adds support for High Energy Physics Monte Carlo Generators sci-physics/hepmc
-sci-physics/root:cint7 - Build the *experimental* new C++ interpretor CINT7
-sci-physics/root:clarens - Buld the Clarens and PEAC plug-ins, to use in a GRID enabled analysis.
+sci-physics/root:clarens - Build the Clarens and PEAC plug-ins, to use in a GRID enabled analysis
 sci-physics/root:fits - Support for images and data from FITS files with sci-libs/cfitsio
-sci-physics/root:geant4 - Build the sci-physics/geant (GEANT4) navigator
+sci-physics/root:geant4 - Support for sci-physics/geant version 4
 sci-physics/root:llvm - Build the new cling interactive interpreter based on sys-devel/llvm
 sci-physics/root:math - Build all math related libraries plugins, needs sci-libs/gsl
-sci-physics/root:pythia6 - Builds the interface to Pythia-6 (sci-physics/pythia) high energy physics generation events library
-sci-physics/root:pythia8 - Builds the interface to Pythia-8 (sci-physics/pythia) high energy physics generation events library
-sci-physics/root:reflex - Builds the reflection database for the C++ interpretor
-sci-physics/root:xrootd - Build the xrootd low latency file server
+sci-physics/root:pythia6 - Build the interface for sci-physics/pythia version 6.x
+sci-physics/root:pythia8 - Build the interface for sci-physics/pythia version 8.x
+sci-physics/root:reflex - Build the reflection database for the C++ interpreter
+sci-physics/root:xrootd - Build the interface for net-libs/xrootd
 sci-visualization/gnuplot:gd - Add support for media-libs/gd. Needed for GIF, JPEG, and PNG image output.
 sci-visualization/gnuplot:thin-splines - Enable thin plate splines
 sci-visualization/gwyddion:sourceview - Enable support for x11-libs/gtksourceview

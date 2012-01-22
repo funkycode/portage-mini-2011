@@ -1,0 +1,12 @@
+DEFINED_PHASES=compile configure install prepare test unpack
+DEPEND=virtual/perl-File-Spec virtual/perl-Scalar-List-Utils virtual/perl-Test-Simple dev-lang/perl[-build]
+DESCRIPTION=Run commands simply, with detailed diagnostics
+EAPI=4
+HOMEPAGE=http://search.cpan.org/dist/IPC-System-Simple/
+KEYWORDS=~amd64 ~x86
+LICENSE=|| ( Artistic GPL-1 GPL-2 GPL-3 )
+RDEPEND=virtual/perl-File-Spec virtual/perl-Scalar-List-Utils virtual/perl-Test-Simple dev-lang/perl[-build]
+SLOT=0
+SRC_URI=mirror://cpan/authors/id/P/PJ/PJF/IPC-System-Simple-1.21.tar.gz
+_eclasses_=base	809ab15a673823938260f6b17661c3f1	eutils	d92f291efb4ef0595cb90e4b4e7e6b6c	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	perl-module	01501a30505074cd0012cabbf5d99447	portability	536c5e70c5fb252ed3b769e04aa3f05b	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
+_md5_=2928b22dd3f426d2c6679a3c4c74ae4d

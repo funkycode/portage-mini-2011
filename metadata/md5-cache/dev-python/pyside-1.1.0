@@ -10,5 +10,5 @@ RDEPEND=>=x11-libs/qt-core-4.7.0 assistant? ( >=x11-libs/qt-assistant-4.7.0 ) X?
 REQUIRED_USE=opengl? ( X ) svg? ( X ) script? ( X ) X? ( script )
 SLOT=0
 SRC_URI=http://www.pyside.org/files/pyside-qt4.7+1.1.0.tar.bz2
-_eclasses_=base	809ab15a673823938260f6b17661c3f1	cmake-utils	00f9fd5a80cf3605f6d9a2e808c48a92	eutils	d92f291efb4ef0595cb90e4b4e7e6b6c	flag-o-matic	a2e1c4641a8aed225d4ddb0f74f382de	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	portability	536c5e70c5fb252ed3b769e04aa3f05b	python	412a8596c4b1620189e299c8dd303d0a	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e	virtualx	0c41ff55e46b959d9457dde69e7a09d9
+_eclasses_=base	809ab15a673823938260f6b17661c3f1	cmake-utils	d9f3f2f6cc1a1d6ad8e31702e44133e5	eutils	d92f291efb4ef0595cb90e4b4e7e6b6c	flag-o-matic	a2e1c4641a8aed225d4ddb0f74f382de	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	portability	536c5e70c5fb252ed3b769e04aa3f05b	python	cf73fe2a491ad5310ed71ffc829b7464	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e	virtualx	0c41ff55e46b959d9457dde69e7a09d9
 _md5_=293f532ff841016b849d9958bbe3a01f

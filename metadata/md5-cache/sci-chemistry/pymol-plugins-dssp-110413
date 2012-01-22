@@ -8,5 +8,5 @@ LICENSE=BSD pymol
 RDEPEND=>=sci-biology/biopython-1.5.7 sci-chemistry/dssp sci-chemistry/pymol >=app-admin/eselect-python-20091230 =dev-lang/python-2*
 SLOT=0
 SRC_URI=http://dev.gentoo.org/~jlec/distfiles/pymol-plugins-dssp-110413.py.xz
-_eclasses_=multilib	5f4ad6cf85e365e8f0c6050ddd21659e	python	412a8596c4b1620189e299c8dd303d0a	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68
+_eclasses_=multilib	5f4ad6cf85e365e8f0c6050ddd21659e	python	cf73fe2a491ad5310ed71ffc829b7464	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68
 _md5_=00149552a7c4099684ff74bed7935b45
