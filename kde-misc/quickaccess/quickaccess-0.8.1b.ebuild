@@ -1,6 +1,6 @@
-# Copyright 1999-2011 Gentoo Foundation
+# Copyright 1999-2012 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/kde-misc/quickaccess/quickaccess-0.8.1b.ebuild,v 1.3 2011/10/29 00:10:27 abcd Exp $
+# $Header: /var/cvsroot/gentoo-x86/kde-misc/quickaccess/quickaccess-0.8.1b.ebuild,v 1.4 2012/01/22 22:16:52 johu Exp $
 
 EAPI=4
 
@@ -19,7 +19,6 @@ SLOT="4"
 IUSE="debug"
 
 RDEPEND="
-	!kde-plasmoids/quickaccess
 	$(add_kdebase_dep plasma-workspace)
 "
 

@@ -1,0 +1,14 @@
+DEFINED_PHASES=install postinst postrm preinst setup unpack
+DEPEND=>=sys-apps/sed-4
+DESCRIPTION=Adobe's PDF reader
+EAPI=4
+HOMEPAGE=http://www.adobe.com/products/reader/
+IUSE=cups ldap minimal nsplugin linguas_de linguas_en linguas_fr linguas_ja
+KEYWORDS=-* ~amd64 ~x86
+LICENSE=Adobe
+RDEPEND=media-libs/fontconfig x86? ( =dev-libs/openssl-0.9.8* ) cups? ( net-print/cups ) x86? ( x11-libs/gtk+:2 ldap? ( net-nds/openldap ) !minimal? ( || ( net-libs/xulrunner www-client/firefox www-client/seamonkey ) ) ) amd64? ( app-emulation/emul-linux-x86-gtklibs app-emulation/emul-linux-x86-baselibs )
+RESTRICT=strip mirror
+SLOT=0
+SRC_URI=linguas_de? ( http://ardownload.adobe.com/pub/adobe/reader/unix/9.x/9.4.2/deu/AdbeRdr9.4.2-1_i486linux_deu.tar.bz2 ) linguas_en? ( http://ardownload.adobe.com/pub/adobe/reader/unix/9.x/9.4.2/enu/AdbeRdr9.4.2-1_i486linux_enu.tar.bz2 ) linguas_fr? ( http://ardownload.adobe.com/pub/adobe/reader/unix/9.x/9.4.2/fra/AdbeRdr9.4.2-1_i486linux_fra.tar.bz2 ) linguas_ja? ( http://ardownload.adobe.com/pub/adobe/reader/unix/9.x/9.4.2/jpn/AdbeRdr9.4.2-1_i486linux_jpn.tar.bz2 ) !linguas_ja? ( !linguas_fr? ( !linguas_en? ( !linguas_de? ( http://ardownload.adobe.com/pub/adobe/reader/unix/9.x/9.4.2/enu/AdbeRdr9.4.2-1_i486linux_enu.tar.bz2 ) ) ) )
+_eclasses_=eutils	d92f291efb4ef0595cb90e4b4e7e6b6c	gnome2-utils	b5ca2ccadb60760889faa3bccba121d9	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	nsplugins	6695ecf00333c6acf870a802d3ceb9fd	portability	536c5e70c5fb252ed3b769e04aa3f05b	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
+_md5_=295612199966b4ca6467518f2b8d6684

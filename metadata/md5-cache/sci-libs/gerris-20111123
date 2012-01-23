@@ -1,0 +1,13 @@
+DEFINED_PHASES=configure install prepare
+DEPEND=dev-libs/glib:2 dev-games/ode sci-libs/netcdf sci-libs/gsl sci-libs/gts sci-libs/hypre sci-libs/lis sci-libs/proj >=sci-libs/fftw-3 virtual/lapack mpi? ( virtual/mpi ) dev-util/pkgconfig || ( =sys-devel/automake-1.11* ) >=sys-devel/autoconf-2.61 sys-devel/libtool
+DESCRIPTION=Gerris Flow Solver
+EAPI=4
+HOMEPAGE=http://gfs.sourceforge.net/
+IUSE=examples mpi static-libs
+KEYWORDS=~amd64 ~x86
+LICENSE=GPL-2
+RDEPEND=dev-libs/glib:2 dev-games/ode sci-libs/netcdf sci-libs/gsl sci-libs/gts sci-libs/hypre sci-libs/lis sci-libs/proj >=sci-libs/fftw-3 virtual/lapack mpi? ( virtual/mpi )
+SLOT=0
+SRC_URI=http://dev.gentoo.org/~bicatali/distfiles/gerris-20111123.tar.gz
+_eclasses_=autotools	cc61a7c888abf6d8622105c6184881ed	eutils	d92f291efb4ef0595cb90e4b4e7e6b6c	flag-o-matic	a2e1c4641a8aed225d4ddb0f74f382de	libtool	5f623f5a211fb1b2d84d88ee49959a54	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	portability	536c5e70c5fb252ed3b769e04aa3f05b	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
+_md5_=1b1af3b2a47bb7c92ff448f076e64bd9

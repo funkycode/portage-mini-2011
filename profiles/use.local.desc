@@ -847,6 +847,7 @@ app-text/stardict:festival - Enable text to speech synthesizer using festival en
 app-text/stardict:gucharmap - Enable gucharmap dictionary plugin
 app-text/stardict:pronounce - Install WyabdcRealPeopleTTS package (it is just many .wav files) to make StarDict pronounce English words
 app-text/stardict:qqwry - Enable QQWry plugin, which provides information (in Chinese language) about geographical positions, owner, etc. for IP addresses
+app-text/stardict:tools - Build and install the extra stardict tools
 app-text/sword:lucene - Enable lucene support for faster searching (dev-cpp/clucene)
 app-text/texlive:context - Add support for the ConTeXt format (dev-texlive/texlive-context)
 app-text/texlive:detex - Add support for dev-tex/detex, a filter program that removes the LaTeX (or TeX) control sequences
@@ -2345,7 +2346,6 @@ media-gfx/k3d:cuda - Use nvidia cuda toolkit for speeding up computations
 media-gfx/k3d:gts - Add Support for the GNU Triangulated Surface Library sci-libs/gts
 media-gfx/kphotoalbum:geolocation - Add support for kde-base/marble
 media-gfx/kphotoalbum:kipi - Support for the KDE Image Plugin Interface
-media-gfx/mcomix:rar - Enable support for .cbr archives using rar/unrar.
 media-gfx/nip2:goffice - use x11-libs/goffice to show plots
 media-gfx/openclipart:gzip - Compresses clip art using gzip
 media-gfx/potrace:metric - default to a4 paper size and metric measurement
@@ -4194,6 +4194,10 @@ net-print/cups:java - Add support for the Java interpeter in the web server CGIs
 net-print/cups:perl - Add support for the Perl interpeter in the web server CGIs.
 net-print/cups:php - Add support for the PHP interpeter in the web server CGIs.
 net-print/cups:python - Add support for the Python interpeter in the web server CGIs.
+net-print/fax4cups:capisuite-fax - Install net-dialup/capisuite backend
+net-print/fax4cups:efax - Install net-misc/efax backend
+net-print/fax4cups:hylafax - Install net-misc/hylafax backend
+net-print/fax4cups:mgetty-fax - Install net-dialup/mgetty backend
 net-print/hplip:X - Enables scanner GUI dependencies with USE="scanner" where media-gfx/xsane is preferred over media-gfx/sane-frontends
 net-print/hplip:acl - Install udev acl rules which needs sys-fs/udev with acl support
 net-print/hplip:doc - Build documentation
@@ -4413,7 +4417,6 @@ sci-libs/gdal:geos - Add support for geometry engine (sci-libs/geos
 sci-libs/gdal:gml - Enable support for dev-libs/xerces-c C++ API
 sci-libs/gdal:hdf - Add support for the Hierarchical Data Format v. 4 (sci-libs/hdf)
 sci-libs/gdal:ogdi - Enable support for the open geographic datastore interface (sci-libs/ogdi)
-sci-libs/gerris:dx - Enable support for sci-visualization/opendx
 sci-libs/getdata:fortran - Build fortran bindings
 sci-libs/getdata:python - Build python bindings
 sci-libs/gsl:cblas-external - Link gsl with external cblas provided by (virtual/cblas) instead of shipped internal version
@@ -5198,6 +5201,7 @@ x11-libs/libfm:demo - Build demo
 x11-libs/libmatchbox:pango - Enable x11-libs/pango support
 x11-libs/libmatchbox:xsettings - Enable the use of xsettings for settings management
 x11-libs/libnotify:introspection - Use dev-libs/gobject-introspection for introspection
+x11-libs/libnotify:symlink - Create symlink from libnotify-notify-send to notify-send
 x11-libs/libqxt:berkdb - Build the QxtBerkeley module
 x11-libs/libqxt:sql - Build the QxtSql module
 x11-libs/libqxt:web - Build the QxtWeb module
