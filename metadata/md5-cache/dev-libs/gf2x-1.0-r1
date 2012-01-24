@@ -1,6 +1,6 @@
 DEFINED_PHASES=compile configure install prepare test
 DESCRIPTION=C/C++ routines for fast arithmetic in GF(2)[x]
-EAPI=2
+EAPI=4
 HOMEPAGE=http://gf2x.gforge.inria.fr/
 IUSE=bindist
 KEYWORDS=~amd64 ~ppc ~x86 ~amd64-linux ~x86-linux ~ppc-macos
@@ -8,4 +8,4 @@ LICENSE=GPL-2
 SLOT=0
 SRC_URI=http://gforge.inria.fr/frs/download.php/27999/gf2x-1.0.tar.gz
 _eclasses_=autotools	cc61a7c888abf6d8622105c6184881ed	autotools-utils	6db26fbac14aa2fac6409d63741db3aa	eutils	d92f291efb4ef0595cb90e4b4e7e6b6c	libtool	5f623f5a211fb1b2d84d88ee49959a54	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	portability	536c5e70c5fb252ed3b769e04aa3f05b	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
-_md5_=0b3580e2f72efa95bec0ddbf1784421b
+_md5_=ce2028ec9ff95bdcb16db91694c437fc

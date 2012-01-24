@@ -1,0 +1,13 @@
+DEFINED_PHASES=compile configure install prepare test unpack
+DEPEND=test? ( virtual/perl-Test-Simple >=dev-perl/Test-Pod-1.14 >=dev-perl/Test-Pod-Coverage-1.08 ) dev-lang/perl[-build]
+DESCRIPTION=RFC 2822 Address Parsing and Creation
+EAPI=4
+HOMEPAGE=http://search.cpan.org/dist/Email-Address/
+IUSE=test
+KEYWORDS=~alpha ~amd64 ~ia64 ~ppc ~ppc64 ~sparc ~x86 ~amd64-linux ~x86-linux ~ppc-macos ~x86-macos ~sparc-solaris ~x86-solaris
+LICENSE=|| ( Artistic GPL-1 GPL-2 GPL-3 )
+RDEPEND=dev-lang/perl[-build]
+SLOT=0
+SRC_URI=mirror://cpan/authors/id/R/RJ/RJBS/Email-Address-1.895.tar.gz
+_eclasses_=base	809ab15a673823938260f6b17661c3f1	eutils	d92f291efb4ef0595cb90e4b4e7e6b6c	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	perl-module	01501a30505074cd0012cabbf5d99447	portability	536c5e70c5fb252ed3b769e04aa3f05b	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
+_md5_=ee223b00682d66090e3a8e6233d2827c

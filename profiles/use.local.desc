@@ -3803,6 +3803,8 @@ net-libs/rest:gnome - Extract proxy information using net-libs/libsoup-gnome
 net-libs/rest:introspection - Use dev-libs/gobject-introspection for introspection
 net-libs/telepathy-glib:introspection - Use dev-libs/gobject-introspection for introspection
 net-libs/telepathy-glib:vala - Enable bindings for dev-lang/vala
+net-libs/telepathy-qt:farsight - Enable support for farsight connection manager
+net-libs/telepathy-qt:glib - Enable support for various telepathy/glib related packages
 net-libs/telepathy-qt4:farsight - Enable support for farsight connection manager
 net-libs/telepathy-qt4:glib - Enable support for various telepathy/glib related packages
 net-libs/webkit-gtk:coverage - Enable code coverage support
