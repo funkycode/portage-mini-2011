@@ -1,13 +1,13 @@
 DEFINED_PHASES=compile install postinst postrm prepare
-DEPEND=dev-python/wxpython:2.8 dev-python/python-dateutil ical? ( dev-python/icalendar ) >=app-admin/eselect-python-20091230 || ( =dev-lang/python-2.7* =dev-lang/python-2.6* =dev-lang/python-2.5* )
+DEPEND=dev-python/wxpython:2.8 dev-python/python-dateutil:python-2 ical? ( dev-python/icalendar ) >=app-admin/eselect-python-20091230 || ( =dev-lang/python-2.7* =dev-lang/python-2.6* =dev-lang/python-2.5* )
 DESCRIPTION=Event and Task Manager, an intuitive time management application
 EAPI=3
 HOMEPAGE=http://www.duke.edu/~dgraham/ETM/
 IUSE=ical
-KEYWORDS=~x86 ~amd64
+KEYWORDS=~amd64 ~x86
 LICENSE=GPL-3
-RDEPEND=dev-python/wxpython:2.8 dev-python/python-dateutil ical? ( dev-python/icalendar ) >=app-admin/eselect-python-20091230 || ( =dev-lang/python-2.7* =dev-lang/python-2.6* =dev-lang/python-2.5* )
+RDEPEND=dev-python/wxpython:2.8 dev-python/python-dateutil:python-2 ical? ( dev-python/icalendar ) >=app-admin/eselect-python-20091230 || ( =dev-lang/python-2.7* =dev-lang/python-2.6* =dev-lang/python-2.5* )
 SLOT=0
 SRC_URI=mirror://sourceforge/etmeventandtask/etm-696.tar.gz
 _eclasses_=distutils	c8b0cab86443a130f3737ad1456d57d3	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	python	cf73fe2a491ad5310ed71ffc829b7464	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68
-_md5_=7ce04a5d168477897ad7a55f29015e5d
+_md5_=6342a73b20e87f6e71393a3f3cd01d51

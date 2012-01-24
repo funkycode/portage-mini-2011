@@ -1,0 +1,12 @@
+DEFINED_PHASES=compile configure install postinst postrm prepare test
+DEPEND=>=dev-libs/boost-1.48[python] >=media-gfx/imagemagick-6.4 dev-util/pkgconfig || ( =sys-devel/automake-1.11* ) >=sys-devel/autoconf-2.61 sys-devel/libtool >=app-admin/eselect-python-20091230 || ( =dev-lang/python-2.7* =dev-lang/python-2.6* )
+DESCRIPTION=Python bindings for ImageMagick
+EAPI=3
+HOMEPAGE=http://www.imagemagick.org/script/api.php
+KEYWORDS=~amd64 ~ppc ~x86
+LICENSE=GPL-3
+RDEPEND=>=dev-libs/boost-1.48[python] >=media-gfx/imagemagick-6.4 >=app-admin/eselect-python-20091230 || ( =dev-lang/python-2.7* =dev-lang/python-2.6* )
+SLOT=0
+SRC_URI=http://www.imagemagick.org/download/python/PythonMagick-0.9.7.tar.xz
+_eclasses_=autotools	cc61a7c888abf6d8622105c6184881ed	eutils	d92f291efb4ef0595cb90e4b4e7e6b6c	libtool	5f623f5a211fb1b2d84d88ee49959a54	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	portability	536c5e70c5fb252ed3b769e04aa3f05b	python	cf73fe2a491ad5310ed71ffc829b7464	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
+_md5_=c1424df6bf97ff1d06127debc0f756a3

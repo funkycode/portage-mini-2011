@@ -1,0 +1,13 @@
+DEFINED_PHASES=configure install test
+DEPEND=>=app-text/djvu-3.5.21 >=app-text/poppler-0.16.7[xpdf-headers] dev-libs/libxml2 dev-libs/libxslt graphicsmagick? ( media-gfx/graphicsmagick ) dev-cpp/pstreams dev-util/pkgconfig nls? ( sys-devel/gettext )
+DESCRIPTION=A tool to create DjVu files from PDF files
+EAPI=4
+HOMEPAGE=http://code.google.com/p/pdf2djvu/
+IUSE=+graphicsmagick nls openmp
+KEYWORDS=~amd64 ~x86
+LICENSE=GPL-2
+RDEPEND=>=app-text/djvu-3.5.21 >=app-text/poppler-0.16.7[xpdf-headers] dev-libs/libxml2 dev-libs/libxslt graphicsmagick? ( media-gfx/graphicsmagick )
+SLOT=0
+SRC_URI=http://pdf2djvu.googlecode.com/files/pdf2djvu_0.7.12.tar.gz
+_eclasses_=multilib	5f4ad6cf85e365e8f0c6050ddd21659e	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68
+_md5_=d67a0c9ad02eec251de7db2bd8522be6

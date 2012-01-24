@@ -1,6 +1,6 @@
-# Copyright 1999-2011 Gentoo Foundation
+# Copyright 1999-2012 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/media-gfx/imagemagick/imagemagick-6.7.1.0.ebuild,v 1.13 2011/12/11 06:31:16 ssuominen Exp $
+# $Header: /var/cvsroot/gentoo-x86/media-gfx/imagemagick/imagemagick-6.7.1.0.ebuild,v 1.14 2012/01/23 22:54:00 ssuominen Exp $
 
 EAPI=4
 inherit multilib toolchain-funcs versionator
@@ -31,7 +31,7 @@ RDEPEND=">=sys-devel/libtool-2.2.6b
 	jpeg2k? ( media-libs/jasper )
 	lcms? ( media-libs/lcms:2 )
 	lqr? ( >=media-libs/liblqr-0.1.0 )
-	opencl? ( x11-drivers/nvidia-drivers >=dev-util/nvidia-cuda-toolkit-3.1 )
+	opencl? ( virtual/opencl )
 	openexr? ( media-libs/openexr )
 	perl? ( >=dev-lang/perl-5.8.6-r6 )
 	png? ( >=media-libs/libpng-1.4:0 )

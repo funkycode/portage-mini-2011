@@ -6,8 +6,8 @@ HOMEPAGE=http://www.opensync.org/
 IUSE=bluetooth
 KEYWORDS=~amd64 ~x86
 LICENSE=GPL-2
-RDEPEND=~app-pda/libopensync-0.22 ~app-pda/libopensync-plugin-python-0.22 dev-python/python-dateutil bluetooth? ( dev-python/pybluez ) >=app-admin/eselect-python-20091230 || ( =dev-lang/python-2.7* =dev-lang/python-2.6* )
+RDEPEND=~app-pda/libopensync-0.22 ~app-pda/libopensync-plugin-python-0.22 dev-python/python-dateutil:python-2 bluetooth? ( dev-python/pybluez ) >=app-admin/eselect-python-20091230 || ( =dev-lang/python-2.7* =dev-lang/python-2.6* )
 SLOT=0
 SRC_URI=http://www.opensync.org/download/releases/0.22/libopensync-plugin-moto-0.22.tar.bz2
 _eclasses_=multilib	5f4ad6cf85e365e8f0c6050ddd21659e	python	cf73fe2a491ad5310ed71ffc829b7464	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68
-_md5_=f56e16b8ed465ae7cb76c7b43fa40e21
+_md5_=081d4fe8760fc87400282f67ec56be97

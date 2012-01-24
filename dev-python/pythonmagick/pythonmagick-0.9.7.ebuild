@@ -1,11 +1,11 @@
-# Copyright 1999-2011 Gentoo Foundation
+# Copyright 1999-2012 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/dev-python/pythonmagick/pythonmagick-0.9.7.ebuild,v 1.1 2011/11/03 10:24:18 djc Exp $
+# $Header: /var/cvsroot/gentoo-x86/dev-python/pythonmagick/pythonmagick-0.9.7.ebuild,v 1.2 2012/01/23 22:25:36 hwoarang Exp $
 
 EAPI="3"
 PYTHON_DEPEND="2:2.6"
 SUPPORT_PYTHON_ABIS="1"
-RESTRICT_PYTHON_ABIS="2.[45] 3.* *-jython"
+RESTRICT_PYTHON_ABIS="2.4 2.5 3.* *-jython *-pypy-*"
 PYTHON_EXPORT_PHASE_FUNCTIONS="1"
 
 inherit autotools eutils python
@@ -22,8 +22,8 @@ SLOT="0"
 KEYWORDS="~amd64 ~ppc ~x86"
 IUSE=""
 
-RDEPEND=">=media-gfx/imagemagick-6.4
-	>=dev-libs/boost-1.35.0[python]"
+RDEPEND="<dev-libs/boost-1.48[python]
+	>=media-gfx/imagemagick-6.4"
 DEPEND="${RDEPEND}
 	dev-util/pkgconfig"
 
@@ -39,8 +39,7 @@ src_prepare() {
 
 	eautoreconf
 
-	# Disable byte-compilation.
-	echo "#!/bin/sh" > config/py-compile
+	python_clean_py-compile_files
 
 	python_src_prepare
 }

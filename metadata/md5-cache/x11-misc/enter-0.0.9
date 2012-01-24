@@ -1,12 +1,12 @@
-DEFINED_PHASES=install prepare
-DEPEND=x11-libs/libXau x11-libs/libXext x11-libs/libXft x11-libs/libX11 media-libs/imlib2 >=media-libs/freetype-2 x11-proto/xproto || ( =sys-devel/automake-1.11* ) >=sys-devel/autoconf-2.61 sys-devel/libtool
+DEFINED_PHASES=prepare
+DEPEND=>=media-libs/freetype-2 media-libs/imlib2 x11-libs/libX11 x11-libs/libXau x11-libs/libXext x11-libs/libXft dev-util/pkgconfig x11-proto/xproto || ( =sys-devel/automake-1.11* ) >=sys-devel/autoconf-2.61 sys-devel/libtool
 DESCRIPTION=A lightweight graphical login manager for X
-EAPI=2
+EAPI=4
 HOMEPAGE=http://enter.sourceforge.net/
 KEYWORDS=~amd64 ~x86
 LICENSE=GPL-2
-RDEPEND=x11-libs/libXau x11-libs/libXext x11-libs/libXft x11-libs/libX11 media-libs/imlib2
+RDEPEND=>=media-libs/freetype-2 media-libs/imlib2 x11-libs/libX11 x11-libs/libXau x11-libs/libXext x11-libs/libXft
 SLOT=0
 SRC_URI=mirror://sourceforge/enter/enter-0.0.9.tar.bz2
 _eclasses_=autotools	cc61a7c888abf6d8622105c6184881ed	eutils	d92f291efb4ef0595cb90e4b4e7e6b6c	libtool	5f623f5a211fb1b2d84d88ee49959a54	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	portability	536c5e70c5fb252ed3b769e04aa3f05b	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
-_md5_=13626c54b301343ba3b9b76de7d63a97
+_md5_=b5204a24963b7c9ccdc8c866482422f2
