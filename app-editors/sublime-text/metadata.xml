@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pkgmetadata SYSTEM "http://www.gentoo.org/dtd/metadata.dtd">
+<pkgmetadata>
+	<maintainer>
+		<email>ereslibre@kde.org</email>
+		<name>Rafael Fernández López</name>
+	</maintainer>
+	<longdescription lang="en">
+		Sublime Text is a sophisticated text editor for code, html and prose.
+		You'll love the slick user interface and extraordinary features.
+	</longdescription>
+</pkgmetadata>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pkgmetadata SYSTEM "http://www.gentoo.org/dtd/metadata.dtd">
+<pkgmetadata>
+	<maintainer>
+		<email>ereslibre@kde.org</email>
+		<name>Rafael Fernández López</name>
+	</maintainer>
+	<longdescription lang="en">
+		Oxygen Fonts created by the KDE Oxygen team to create a smooth, easy to
+		read font as well as pretty.
+	</longdescription>
+</pkgmetadata>
