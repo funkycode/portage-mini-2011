@@ -1,0 +1,13 @@
+DEFINED_PHASES=configure install prepare
+DEPEND=bidi? ( dev-libs/fribidi ) devil? ( media-libs/devil ) expat? ( dev-libs/expat ) truetype? ( media-libs/freetype:2 ) irrlicht? ( dev-games/irrlicht ) lua? ( dev-lang/lua dev-lua/toluapp ) opengl? ( virtual/opengl virtual/glu media-libs/freeglut media-libs/glew ) pcre? ( dev-libs/libpcre ) tinyxml? ( dev-libs/tinyxml ) xerces-c? ( dev-libs/xerces-c ) xml? ( dev-libs/libxml2 ) dev-util/pkgconfig doc? ( app-doc/doxygen )
+DESCRIPTION=Crazy Eddie's GUI System
+EAPI=4
+HOMEPAGE=http://www.cegui.org.uk/
+IUSE=bidi debug devil doc examples expat gtk irrlicht lua opengl pcre static-libs tinyxml truetype xerces-c xml zip
+KEYWORDS=~amd64 -ppc ~x86
+LICENSE=MIT
+RDEPEND=bidi? ( dev-libs/fribidi ) devil? ( media-libs/devil ) expat? ( dev-libs/expat ) truetype? ( media-libs/freetype:2 ) irrlicht? ( dev-games/irrlicht ) lua? ( dev-lang/lua dev-lua/toluapp ) opengl? ( virtual/opengl virtual/glu media-libs/freeglut media-libs/glew ) pcre? ( dev-libs/libpcre ) tinyxml? ( dev-libs/tinyxml ) xerces-c? ( dev-libs/xerces-c ) xml? ( dev-libs/libxml2 )
+REQUIRED_USE=|| ( expat tinyxml xerces-c xml )
+SLOT=0
+SRC_URI=mirror://sourceforge/crayzedsgui/CEGUI-0.7.6.tar.gz doc? ( mirror://sourceforge/crayzedsgui/CEGUI-DOCS-0.7.6.tar.gz )
+_md5_=2c39cf541147ddc32dee091c2bb67646

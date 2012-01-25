@@ -1,13 +1,13 @@
 DEFINED_PHASES=compile install postinst postrm prepare setup test
-DEPEND=dev-python/pyrex dev-libs/boost[python] dev-python/pyprotocols dev-python/pyopengl dev-python/pygame dev-python/imaging 3ds? ( media-libs/lib3ds ) dev-util/scons >=app-admin/eselect-python-20091230 =dev-lang/python-2*
+DEPEND=dev-python/pyrex <dev-libs/boost-1.48[python] dev-python/pyprotocols dev-python/pyopengl dev-python/pygame dev-python/imaging 3ds? ( media-libs/lib3ds ) dev-util/scons >=app-admin/eselect-python-20091230 =dev-lang/python-2*
 DESCRIPTION=Python library for creating 3D images
 EAPI=3
 HOMEPAGE=http://cgkit.sourceforge.net
 IUSE=3ds
 KEYWORDS=~amd64 ~ppc x86
 LICENSE=LGPL-2.1 MPL-1.1 GPL-2
-RDEPEND=dev-python/pyrex dev-libs/boost[python] dev-python/pyprotocols dev-python/pyopengl dev-python/pygame dev-python/imaging 3ds? ( media-libs/lib3ds ) >=app-admin/eselect-python-20091230 =dev-lang/python-2*
+RDEPEND=dev-python/pyrex <dev-libs/boost-1.48[python] dev-python/pyprotocols dev-python/pyopengl dev-python/pygame dev-python/imaging 3ds? ( media-libs/lib3ds ) >=app-admin/eselect-python-20091230 =dev-lang/python-2*
 SLOT=0
 SRC_URI=mirror://sourceforge/cgkit/cgkit-2.0.0alpha9.tar.gz
 _eclasses_=distutils	c8b0cab86443a130f3737ad1456d57d3	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	python	cf73fe2a491ad5310ed71ffc829b7464	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68
-_md5_=b1fe03a2c437c5d4ec203dc927149aa3
+_md5_=6c1087c958f7a0311600343bc6545f52

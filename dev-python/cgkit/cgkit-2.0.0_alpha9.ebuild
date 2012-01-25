@@ -1,6 +1,6 @@
-# Copyright 1999-2011 Gentoo Foundation
+# Copyright 1999-2012 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/dev-python/cgkit/cgkit-2.0.0_alpha9.ebuild,v 1.5 2011/05/27 12:32:04 flameeyes Exp $
+# $Header: /var/cvsroot/gentoo-x86/dev-python/cgkit/cgkit-2.0.0_alpha9.ebuild,v 1.6 2012/01/24 20:45:42 hwoarang Exp $
 
 EAPI="3"
 PYTHON_DEPEND="2"
@@ -14,7 +14,7 @@ HOMEPAGE="http://cgkit.sourceforge.net"
 SRC_URI="mirror://sourceforge/${PN}/${MY_P}.tar.gz"
 
 RDEPEND="dev-python/pyrex
-	dev-libs/boost[python]
+	<dev-libs/boost-1.48[python]
 	dev-python/pyprotocols
 	dev-python/pyopengl
 	dev-python/pygame

@@ -1,6 +1,6 @@
 # Copyright 1999-2012 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/app-emulation/qemu-kvm/qemu-kvm-9999.ebuild,v 1.30 2012/01/23 22:10:14 slyfox Exp $
+# $Header: /var/cvsroot/gentoo-x86/app-emulation/qemu-kvm/qemu-kvm-9999.ebuild,v 1.32 2012/01/25 06:02:34 cardoe Exp $
 
 #BACKPORTS=1
 
@@ -65,8 +65,10 @@ RDEPEND="
 	sys-apps/pciutils
 	>=sys-apps/util-linux-2.16.0
 	sys-libs/zlib
-	amd64? ( sys-apps/seabios )
-	x86? ( sys-apps/seabios )
+	amd64? ( sys-apps/seabios
+		sys-apps/vgabios )
+	x86? ( sys-apps/seabios
+		sys-apps/vgabios )
 	aio? ( dev-libs/libaio )
 	alsa? ( >=media-libs/alsa-lib-1.0.13 )
 	bluetooth? ( net-wireless/bluez )
@@ -322,6 +324,18 @@ src_install() {
 		# Remove SeaBIOS since we're using the SeaBIOS packaged one
 		rm "${D}/usr/share/qemu/bios.bin"
 		dosym ../seabios/bios.bin /usr/share/qemu/bios.bin
+
+		# Remove vgabios since we're using the vgabios packaged one
+		rm "${D}/usr/share/qemu/vgabios.bin"
+		rm "${D}/usr/share/qemu/vgabios-cirrus.bin"
+		rm "${D}/usr/share/qemu/vgabios-qxl.bin"
+		rm "${D}/usr/share/qemu/vgabios-stdvga.bin"
+		rm "${D}/usr/share/qemu/vgabios-vmware.bin"
+		dosym ../vgabios/vgabios.bin /usr/share/qemu/vgabios.bin
+		dosym ../vgabios/vgabios-cirrus.bin /usr/share/qemu/vgabios-cirrus.bin
+		dosym ../vgabios/vgabios-qxl.bin /usr/share/qemu/vgabios-qxl.bin
+		dosym ../vgabios/vgabios-stdvga.bin /usr/share/qemu/vgabios-stdvga.bin
+		dosym ../vgabios/vgabios-vmware.bin /usr/share/qemu/vgabios-vmware.bin
 	fi
 }
 

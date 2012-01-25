@@ -10,4 +10,4 @@ RDEPEND=>=dev-libs/boost-1.48[python] >=media-libs/taglib-1.4 >=app-admin/eselec
 SLOT=0
 SRC_URI=mirror://pypi/t/tagpy/tagpy-0.94.8.tar.gz
 _eclasses_=distutils	c8b0cab86443a130f3737ad1456d57d3	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	python	cf73fe2a491ad5310ed71ffc829b7464	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68
-_md5_=ce6c6f4218d9fa06f0c369aacafc1494
+_md5_=c8f8b026150c1cfddb96d31c6405e64e
