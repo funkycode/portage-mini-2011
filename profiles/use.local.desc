@@ -4191,6 +4191,7 @@ net-p2p/mldonkey:guionly - enable client build only
 net-p2p/mldonkey:magic - enable use of libmagic
 net-p2p/rtorrent:color - Add custom color support for torrent list
 net-p2p/rtorrent:daemon - Uses app-misc/screen to daemonize this application
+net-p2p/transmission:gtk3 - Enable gtk3 frontend instead of gtk2 one
 net-p2p/transmission:libcanberra - Enable sound event support with media-libs/libcanberra
 net-p2p/transmission:utp - Adds support for µTP (Micro Transport Protocol)
 net-print/cups:filters - Pull in net-print/foomatic-filters for filtering by default.
@@ -5401,6 +5402,7 @@ x11-wm/matchbox-common:pda - Support for pda folders
 x11-wm/matchbox-desktop:dnotify - Use the linux kernel directory notification feature.
 x11-wm/matchbox-panel:dnotify - Use the linux kernel directory notification feature.
 x11-wm/matchbox-panel:lowres - Optimize for low resolution screens.
+x11-wm/muffin:introspection - Use dev-libs/gobject-introspection for introspection
 x11-wm/musca:apis - Optionally install the experimental `apis' window manager
 x11-wm/musca:xlisten - Optionally install the xlisten utility
 x11-wm/mutter:introspection - Use dev-libs/gobject-introspection for introspection
