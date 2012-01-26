@@ -1,0 +1,11 @@
+DEFINED_PHASES=configure install prepare unpack
+DEPEND=app-arch/unzip
+DESCRIPTION=Proj.4 cartographic projection software with updated NAD27 grids
+EAPI=4
+HOMEPAGE=http://trac.osgeo.org/proj/
+IUSE=static-libs
+KEYWORDS=~alpha ~amd64 ~hppa ~mips ~ppc ~ppc64 ~s390 ~sparc ~x86 ~amd64-linux ~x86-linux ~ppc-macos ~x86-macos
+LICENSE=MIT
+SLOT=0
+SRC_URI=ftp://ftp.remotesensing.org/pub/proj/proj-4.7.0.tar.gz http://download.osgeo.org/proj/proj-datumgrid-1.5.zip
+_md5_=6c102721f3d2482fbd82c52aa7f5c485

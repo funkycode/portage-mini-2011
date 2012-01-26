@@ -4,10 +4,10 @@ DESCRIPTION=Python bindings for sys-block/parted
 EAPI=3
 HOMEPAGE=https://fedorahosted.org/pyparted/
 IUSE=test
-KEYWORDS=alpha amd64 hppa ia64 ~ppc ~ppc64 sparc x86
+KEYWORDS=alpha amd64 hppa ia64 ppc ppc64 sparc x86
 LICENSE=GPL-2
 RDEPEND=dev-python/decorator >=sys-block/parted-3 sys-libs/ncurses >=app-admin/eselect-python-20091230 =dev-lang/python-2.7*
 SLOT=0
 SRC_URI=https://fedorahosted.org/releases/p/y/pyparted/pyparted-3.8.tar.gz
 _eclasses_=distutils	c8b0cab86443a130f3737ad1456d57d3	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	python	cf73fe2a491ad5310ed71ffc829b7464	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68
-_md5_=1dfd22ec6e412fb5a747719475c98262
+_md5_=c309dcf489eb9136f88e9f0e189105eb

@@ -1,10 +1,11 @@
-DEFINED_PHASES=-
-DEPEND=app-arch/xz-utils
+DEFINED_PHASES=configure
+DEPEND=app-arch/xz-utils nls? ( sys-devel/gettext )
 DESCRIPTION=a cpp directive indenter
 EAPI=4
 HOMEPAGE=http://savannah.gnu.org/projects/cppi
+IUSE=nls linguas_sv linguas_eo linguas_fi linguas_vi linguas_it linguas_uk linguas_sr linguas_fr linguas_ja linguas_pl
 KEYWORDS=~amd64 ~x86
 LICENSE=GPL-3
 SLOT=0
 SRC_URI=mirror://gnu/cppi/cppi-1.16.tar.xz
-_md5_=82f0003aca13d6c8ca2f83b263d4981c
+_md5_=849ccfeb1dd8151ecc4b098276a4f24e
