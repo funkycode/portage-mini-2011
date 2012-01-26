@@ -1,13 +1,13 @@
 DEFINED_PHASES=compile configure install postinst preinst prepare
-DEPEND=mysql? ( virtual/mysql ) postgres? ( dev-db/postgresql-base ) ldap? ( >=net-nds/openldap-2.0.27-r4 ) sqlite? ( =dev-db/sqlite-2.8* ) sqlite3? ( =dev-db/sqlite-3* ) opendbx? ( dev-db/opendbx ) >=dev-libs/boost-1.31 doc? ( app-doc/doxygen )
+DEPEND=mysql? ( virtual/mysql ) postgres? ( dev-db/postgresql-base ) ldap? ( >=net-nds/openldap-2.0.27-r4 ) sqlite? ( =dev-db/sqlite-2.8* ) sqlite3? ( =dev-db/sqlite-3* ) opendbx? ( dev-db/opendbx ) !static? ( >=dev-libs/boost-1.31 ) static? ( >=dev-libs/boost-1.31[static-libs] ) doc? ( app-doc/doxygen )
 DESCRIPTION=The PowerDNS Daemon
 EAPI=2
 HOMEPAGE=http://www.powerdns.com/
 IUSE=debug doc ldap mysql postgres sqlite sqlite3 static opendbx
 KEYWORDS=amd64 x86
 LICENSE=GPL-2
-RDEPEND=mysql? ( virtual/mysql ) postgres? ( dev-db/postgresql-base ) ldap? ( >=net-nds/openldap-2.0.27-r4 ) sqlite? ( =dev-db/sqlite-2.8* ) sqlite3? ( =dev-db/sqlite-3* ) opendbx? ( dev-db/opendbx ) >=dev-libs/boost-1.31
+RDEPEND=mysql? ( virtual/mysql ) postgres? ( dev-db/postgresql-base ) ldap? ( >=net-nds/openldap-2.0.27-r4 ) sqlite? ( =dev-db/sqlite-2.8* ) sqlite3? ( =dev-db/sqlite-3* ) opendbx? ( dev-db/opendbx ) !static? ( >=dev-libs/boost-1.31 )
 SLOT=0
 SRC_URI=http://downloads.powerdns.com/releases/pdns-2.9.22.tar.gz
 _eclasses_=eutils	d92f291efb4ef0595cb90e4b4e7e6b6c	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	portability	536c5e70c5fb252ed3b769e04aa3f05b	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
-_md5_=9e9a7f8a931fea2274384a5f443315c0
+_md5_=c19c5c5dde087a856aae6e503ad96b79

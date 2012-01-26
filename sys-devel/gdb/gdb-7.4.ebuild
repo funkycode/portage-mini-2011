@@ -1,6 +1,6 @@
 # Copyright 1999-2012 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/sys-devel/gdb/gdb-7.4.ebuild,v 1.1 2012/01/25 04:34:34 vapier Exp $
+# $Header: /var/cvsroot/gentoo-x86/sys-devel/gdb/gdb-7.4.ebuild,v 1.3 2012/01/25 22:28:00 vapier Exp $
 
 EAPI="3"
 
@@ -76,7 +76,7 @@ src_prepare() {
 
 gdb_branding() {
 	printf "Gentoo ${PV} "
-	if [[ -n ${PATCH_VER} ]] ; then
+	if ! use vanilla && [[ -n ${PATCH_VER} ]] ; then
 		printf "p${PATCH_VER}"
 	else
 		printf "vanilla"
@@ -86,11 +86,14 @@ gdb_branding() {
 src_configure() {
 	strip-unsupported-flags
 
+	local sysroot="${EPREFIX}"/usr/${CTARGET}
 	local myconf=(
 		--with-pkgversion="$(gdb_branding)"
 		--with-bugurl='http://bugs.gentoo.org/'
 		--disable-werror
-		$(is_cross && echo --with-sysroot="${EPREFIX}"/usr/${CTARGET})
+		$(is_cross && echo \
+			--with-sysroot="${sysroot}" \
+			--includedir="${sysroot}/usr/include")
 	)
 
 	if use server && ! use client ; then

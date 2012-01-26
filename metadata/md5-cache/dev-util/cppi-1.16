@@ -1,0 +1,10 @@
+DEFINED_PHASES=-
+DEPEND=app-arch/xz-utils
+DESCRIPTION=a cpp directive indenter
+EAPI=4
+HOMEPAGE=http://savannah.gnu.org/projects/cppi
+KEYWORDS=~amd64 ~x86
+LICENSE=GPL-3
+SLOT=0
+SRC_URI=mirror://gnu/cppi/cppi-1.16.tar.xz
+_md5_=82f0003aca13d6c8ca2f83b263d4981c

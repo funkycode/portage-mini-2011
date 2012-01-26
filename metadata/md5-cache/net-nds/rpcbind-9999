@@ -1,10 +1,11 @@
 DEFINED_PHASES=configure install prepare unpack
-DEPEND=net-libs/libtirpc dev-util/pkgconfig || ( =sys-devel/automake-1.11* ) >=sys-devel/autoconf-2.61 sys-devel/libtool dev-vcs/git
+DEPEND=net-libs/libtirpc selinux? ( sec-policy/selinux-rpcbind ) tcpd? ( sys-apps/tcp-wrappers ) dev-util/pkgconfig || ( =sys-devel/automake-1.11* ) >=sys-devel/autoconf-2.61 sys-devel/libtool dev-vcs/git
 DESCRIPTION=portmap replacement which supports RPC over various protocols
 EAPI=2
 HOMEPAGE=http://sourceforge.net/projects/rpcbind/
+IUSE=selinux tcpd
 LICENSE=BSD
-RDEPEND=net-libs/libtirpc
+RDEPEND=net-libs/libtirpc selinux? ( sec-policy/selinux-rpcbind ) tcpd? ( sys-apps/tcp-wrappers )
 SLOT=0
 _eclasses_=autotools	cc61a7c888abf6d8622105c6184881ed	eutils	d92f291efb4ef0595cb90e4b4e7e6b6c	git-2	6bb20ec18cca375571bcbe67bcf2e1d7	libtool	5f623f5a211fb1b2d84d88ee49959a54	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	portability	536c5e70c5fb252ed3b769e04aa3f05b	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
-_md5_=dae27a2a466bdfac10c330e4905c831b
+_md5_=884ff6269c6c33e8b5dcf4834d14eee3

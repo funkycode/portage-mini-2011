@@ -133,7 +133,7 @@ diff -urN transmission-2.42.old/libtransmission/natpmp.h transmission-2.42/libtr
 - * This exemption does not extend to derived works not owned by
 - * the Transmission project.
 - *
-- * $Id: transmission-2.42-natpmp-system.patch,v 1.1 2012/01/25 14:33:01 scarabeus Exp $
+- * $Id: natpmp.h 12204 2011-03-22 15:19:54Z jordan $
 - */
 -
 -#ifndef __TRANSMISSION__
@@ -171,7 +171,7 @@ diff -urN transmission-2.42.old/libtransmission/natpmp_local.h transmission-2.42
 + * This exemption does not extend to derived works not owned by
 + * the Transmission project.
 + *
-+ * $Id: transmission-2.42-natpmp-system.patch,v 1.1 2012/01/25 14:33:01 scarabeus Exp $
++ * $Id: natpmp.h 12204 2011-03-22 15:19:54Z jordan $
 + */
 +
 +#ifndef __TRANSMISSION__

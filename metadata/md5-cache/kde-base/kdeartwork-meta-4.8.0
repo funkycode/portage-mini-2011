@@ -1,0 +1,11 @@
+DEFINED_PHASES=-
+DESCRIPTION=kdeartwork - merge this to pull in all kdeartwork-derived packages
+EAPI=4
+HOMEPAGE=http://www.kde.org/
+IUSE=aqua
+KEYWORDS=~amd64 ~x86 ~amd64-linux ~x86-linux
+LICENSE=GPL-2
+RDEPEND=>=kde-base/kdeartwork-colorschemes-4.8.0:4[aqua=] >=kde-base/kdeartwork-desktopthemes-4.8.0:4[aqua=] >=kde-base/kdeartwork-emoticons-4.8.0:4[aqua=] >=kde-base/kdeartwork-iconthemes-4.8.0:4[aqua=] >=kde-base/kdeartwork-kscreensaver-4.8.0:4[aqua=] >=kde-base/kdeartwork-sounds-4.8.0:4[aqua=] >=kde-base/kdeartwork-styles-4.8.0:4[aqua=] >=kde-base/kdeartwork-wallpapers-4.8.0:4[aqua=] >=kde-base/kdeartwork-weatherwallpapers-4.8.0:4[aqua=]
+SLOT=4
+_eclasses_=eutils	d92f291efb4ef0595cb90e4b4e7e6b6c	kde4-functions	3fc7b5d60204b49948f87741ba8cea55	kde4-meta-pkg	7b6625b5772347c052ea1f98a0b303d3	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	portability	536c5e70c5fb252ed3b769e04aa3f05b	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e	versionator	6601b4c5b3f019a993db59a50e1854e4
+_md5_=c813d0b5f6bb211fc5798f6fa8dc2280
