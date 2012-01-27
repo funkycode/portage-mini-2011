@@ -1,13 +1,11 @@
 DEFINED_PHASES=compile configure install postinst postrm preinst prepare setup unpack
-DEPEND==sys-fs/spl-9999 selinux? ( sys-libs/libselinux ) blkid? ( sys-libs/e2fsprogs-libs ) >=dev-vcs/git-1.6 kernel_linux? ( sys-apps/module-init-tools ) sys-apps/sed kernel_linux? ( virtual/linux-sources )
+DEPEND=>=sys-kernel/spl-9999 || ( =sys-devel/automake-1.11* ) >=sys-devel/autoconf-2.61 sys-devel/libtool dev-vcs/git kernel_linux? ( sys-apps/module-init-tools ) sys-apps/sed kernel_linux? ( virtual/linux-sources )
 DESCRIPTION=Native ZFS for Linux
 EAPI=4
 HOMEPAGE=http://zfsonlinux.org/
-IUSE=selinux blkid kernel_linux
-KEYWORDS=-* ~amd64
-LICENSE=GPL-2
-RDEPEND==sys-fs/spl-9999 selinux? ( sys-libs/libselinux ) blkid? ( sys-libs/e2fsprogs-libs ) kernel_linux? ( sys-apps/module-init-tools )
-RESTRICT=strip
+IUSE=kernel_linux
+LICENSE=CDDL GPL-2
+RDEPEND=>=sys-kernel/spl-9999 !sys-fs/zfs-fuse kernel_linux? ( sys-apps/module-init-tools )
 SLOT=0
-_eclasses_=eutils	d92f291efb4ef0595cb90e4b4e7e6b6c	git	08aa84bd1bc27e3dc5e58b3ec83854a6	linux-info	cc184ad3383ffb6ffbaa82f53608e77f	linux-mod	a4e07f78bacb6b129ea7b18ad060dbfc	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	portability	536c5e70c5fb252ed3b769e04aa3f05b	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e	versionator	6601b4c5b3f019a993db59a50e1854e4
-_md5_=319d7d9fdb30b68b5db09d264b22c367
+_eclasses_=autotools	cc61a7c888abf6d8622105c6184881ed	eutils	d92f291efb4ef0595cb90e4b4e7e6b6c	git-2	6bb20ec18cca375571bcbe67bcf2e1d7	libtool	5f623f5a211fb1b2d84d88ee49959a54	linux-info	cc184ad3383ffb6ffbaa82f53608e77f	linux-mod	a4e07f78bacb6b129ea7b18ad060dbfc	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	portability	536c5e70c5fb252ed3b769e04aa3f05b	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e	versionator	6601b4c5b3f019a993db59a50e1854e4
+_md5_=5333b4fd38fd7daa617c978ae9a3088a

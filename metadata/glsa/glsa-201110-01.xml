@@ -8,8 +8,8 @@
     execution of arbitrary code and other attacks.
   </synopsis>
   <product type="ebuild">openssl</product>
-  <announced>January 23, 2012</announced>
-  <revised>January 23, 2012: 4</revised>
+  <announced>January 27, 2012</announced>
+  <revised>January 27, 2012: 5</revised>
   <bug>303739</bug>
   <bug>308011</bug>
   <bug>322575</bug>
@@ -24,6 +24,7 @@
       <unaffected range="ge">1.0.0e</unaffected>
       <unaffected range="rge">0.9.8r</unaffected>
       <unaffected range="rge">0.9.8s</unaffected>
+      <unaffected range="rge">0.9.8t</unaffected>
       <vulnerable range="lt">1.0.0e</vulnerable>
     </package>
   </affected>
@@ -78,7 +79,7 @@
     <uri link="http://nvd.nist.gov/nvd.cfm?cvename=CVE-2011-3210">CVE-2011-3210</uri>
   </references>
   <metadata timestamp="Fri, 07 Oct 2011 23:38:03 +0000" tag="requester">craig</metadata>
-  <metadata timestamp="Mon, 23 Jan 2012 19:50:23 +0000" tag="submitter">
+  <metadata timestamp="Fri, 27 Jan 2012 16:27:31 +0000" tag="submitter">
     keytoaster
   </metadata>
 </glsa>

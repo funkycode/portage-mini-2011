@@ -1,5 +1,5 @@
 DEFINED_PHASES=compile configure install postinst postrm prepare
-DEPEND=cairo? ( x11-libs/cairo x11-libs/pango ) emacs? ( virtual/emacs ) gd? ( media-libs/gd[png] ) ggi? ( media-libs/libggi ) latex? ( virtual/latex-base lua? ( dev-tex/pgf >=dev-texlive/texlive-latexrecommended-2008-r2 ) ) lua? ( dev-lang/lua ) plotutils? ( media-libs/plotutils ) qt4? ( >=x11-libs/qt-core-4.5 >=x11-libs/qt-gui-4.5 >=x11-libs/qt-svg-4.5 ) readline? ( sys-libs/readline ) svga? ( media-libs/svgalib ) wxwidgets? ( x11-libs/wxGTK:2.8[X] x11-libs/cairo x11-libs/pango x11-libs/gtk+:2 ) X? ( x11-libs/libXaw ) xemacs? ( app-editors/xemacs app-xemacs/xemacs-base ) dev-util/pkgconfig doc? ( virtual/latex-base app-text/ghostscript-gpl ) !emacs? ( xemacs? ( app-xemacs/texinfo ) ) !emacs? ( !xemacs? ( || ( virtual/emacs app-xemacs/texinfo ) ) )
+DEPEND=cairo? ( x11-libs/cairo x11-libs/pango ) emacs? ( virtual/emacs ) gd? ( media-libs/gd[png] ) ggi? ( media-libs/libggi ) latex? ( virtual/latex-base lua? ( dev-tex/pgf >=dev-texlive/texlive-latexrecommended-2008-r2 ) ) lua? ( dev-lang/lua ) plotutils? ( media-libs/plotutils ) qt4? ( >=x11-libs/qt-core-4.5 >=x11-libs/qt-gui-4.5 >=x11-libs/qt-svg-4.5 ) readline? ( sys-libs/readline ) svga? ( media-libs/svgalib ) wxwidgets? ( x11-libs/wxGTK:2.8[X] x11-libs/cairo x11-libs/pango x11-libs/gtk+:2 ) X? ( x11-libs/libXaw ) xemacs? ( app-editors/xemacs app-xemacs/xemacs-base ) dev-util/pkgconfig doc? ( virtual/latex-base dev-texlive/texlive-latexextra app-text/ghostscript-gpl ) !emacs? ( xemacs? ( app-xemacs/texinfo ) )
 DESCRIPTION=Command-line driven interactive plotting program
 EAPI=4
 HOMEPAGE=http://www.gnuplot.info/
@@ -11,4 +11,4 @@ RESTRICT=wxwidgets? ( test )
 SLOT=0
 SRC_URI=mirror://sourceforge/gnuplot/gnuplot-4.6.rc1.tar.gz
 _eclasses_=elisp-common	3048b6bde509e1aa680e77d093d01409	eutils	d92f291efb4ef0595cb90e4b4e7e6b6c	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	portability	536c5e70c5fb252ed3b769e04aa3f05b	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e	wxwidgets	fb1a306837717dfa2af841ecdf929565
-_md5_=32d0097835654e4479a8d18ed3fa3340
+_md5_=7004e593bee6d1bdbbefffce08006725

@@ -4,10 +4,10 @@ DESCRIPTION=Set of GObject and Gtk objects for connecting to Spice servers and a
 EAPI=4
 HOMEPAGE=http://spice-space.org http://gitorious.org/spice-gtk
 IUSE=doc gnome gstreamer gtk3 +introspection kde policykit +pulseaudio python sasl static-libs usbredir vala
-KEYWORDS=~amd64 ~x86
+KEYWORDS=amd64 ~x86
 LICENSE=LGPL-2.1
 RDEPEND=pulseaudio? ( !gstreamer? ( media-sound/pulseaudio ) ) gstreamer? ( media-libs/gstreamer:0.10 media-libs/gst-plugins-base:0.10 ) >=app-emulation/spice-protocol-0.9.1 >=x11-libs/pixman-0.17.7 >=media-libs/celt-0.5.1.1:0.5.1 dev-libs/openssl gtk3? ( x11-libs/gtk+:3[introspection?] ) !gtk3? ( x11-libs/gtk+:2[introspection?] ) >=dev-libs/glib-2.26:2 >=x11-libs/cairo-1.2 virtual/jpeg sys-libs/zlib introspection? ( dev-libs/gobject-introspection ) python? ( dev-python/pygtk:2 ) sasl? ( dev-libs/cyrus-sasl ) gnome? ( gnome-base/gconf ) usbredir? ( policykit? ( sys-auth/polkit sys-apps/acl ) >=dev-libs/libusb-1.0.9_rc1 >=sys-apps/usbredir-0.3.1 sys-fs/udev[gudev] ) >=app-admin/eselect-python-20091230
 SLOT=0
 SRC_URI=http://spice-space.org/download/gtk/spice-gtk-0.7.159.tar.bz2
 _eclasses_=eutils	d92f291efb4ef0595cb90e4b4e7e6b6c	gnome2-utils	b5ca2ccadb60760889faa3bccba121d9	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	portability	536c5e70c5fb252ed3b769e04aa3f05b	python	cf73fe2a491ad5310ed71ffc829b7464	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
-_md5_=8aff948d9bceef5a55295a08d0458437
+_md5_=d84b3d9d4f456408014f19c6cbba03d8

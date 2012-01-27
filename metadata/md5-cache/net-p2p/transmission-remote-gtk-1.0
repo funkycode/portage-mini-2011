@@ -1,13 +1,13 @@
 DEFINED_PHASES=configure postinst postrm preinst
-DEPEND=>=dev-libs/glib-2.22:2 >=dev-libs/json-glib-0.12.2 ayatana? ( dev-libs/libappindicator ) unique? ( dev-libs/libunique:1 ) libproxy? ( net-libs/libproxy ) net-misc/curl >=x11-libs/gtk+-2.16:2 x11-libs/libnotify geoip? ( dev-libs/geoip ) dev-util/intltool dev-util/pkgconfig >=sys-apps/sed-4
+DEPEND=>=dev-libs/glib-2.22:2 >=dev-libs/json-glib-0.12.2 unique? ( dev-libs/libunique:1 ) libproxy? ( net-libs/libproxy ) net-misc/curl >=x11-libs/gtk+-2.16:2 x11-libs/libnotify geoip? ( dev-libs/geoip ) dev-util/intltool dev-util/pkgconfig >=sys-apps/sed-4
 DESCRIPTION=GTK client for management of the Transmission BitTorrent client, over HTTP RPC
 EAPI=4
 HOMEPAGE=http://code.google.com/p/transmission-remote-gtk
-IUSE=ayatana debug geoip libnotify libproxy unique
+IUSE=debug geoip libproxy unique
 KEYWORDS=~amd64 ~x86
 LICENSE=GPL-2
-RDEPEND=>=dev-libs/glib-2.22:2 >=dev-libs/json-glib-0.12.2 ayatana? ( dev-libs/libappindicator ) unique? ( dev-libs/libunique:1 ) libproxy? ( net-libs/libproxy ) net-misc/curl >=x11-libs/gtk+-2.16:2 x11-libs/libnotify geoip? ( dev-libs/geoip )
+RDEPEND=>=dev-libs/glib-2.22:2 >=dev-libs/json-glib-0.12.2 unique? ( dev-libs/libunique:1 ) libproxy? ( net-libs/libproxy ) net-misc/curl >=x11-libs/gtk+-2.16:2 x11-libs/libnotify geoip? ( dev-libs/geoip )
 SLOT=0
 SRC_URI=http://transmission-remote-gtk.googlecode.com/files/transmission-remote-gtk-1.0.tar.gz
 _eclasses_=gnome2-utils	b5ca2ccadb60760889faa3bccba121d9
-_md5_=ae2090a2366a683bb195f58c2f6ee5fb
+_md5_=82689afc449d3bf8ffe3d40138d264d9

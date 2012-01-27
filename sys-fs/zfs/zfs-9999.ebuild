@@ -1,70 +1,48 @@
-# Copyright 1999-2011 Gentoo Foundation
+# Copyright 1999-2012 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: $
+# $Header: /var/cvsroot/gentoo-x86/sys-fs/zfs/zfs-9999.ebuild,v 1.1 2012/01/27 17:06:14 floppym Exp $
 
-EAPI=4
-inherit eutils git linux-mod
+EAPI="4"
+
+inherit autotools git-2 linux-mod
+
 DESCRIPTION="Native ZFS for Linux"
 HOMEPAGE="http://zfsonlinux.org/"
-EGIT_REPO_URI="https://github.com/zfsonlinux/zfs.git"
-LICENSE="GPL-2"
-SLOT="0"
-KEYWORDS="-* ~amd64"
-RESTRICT="strip"
+SRC_URI=""
+EGIT_REPO_URI="git://github.com/zfsonlinux/zfs.git"
 
-IUSE="selinux blkid"
-DEPEND="
-	=sys-fs/spl-9999
-	selinux? ( sys-libs/libselinux )
-	blkid? ( sys-libs/e2fsprogs-libs )
-"
-RDEPEND="${DEPEND}"
+LICENSE="CDDL GPL-2"
+SLOT="0"
+KEYWORDS=""
+IUSE=""
+
+DEPEND=">=sys-kernel/spl-${PV}"
+RDEPEND="${DEPEND}
+	!sys-fs/zfs-fuse"
 
 pkg_setup() {
-	linux-mod_pkg_setup
-	linux_config_exists || die "Your kernel sources are unconfigured"
-	MODULE_NAMES="zfs(addon/zfs/zfs/zfs.ko)"
-	MODULE_NAMES="${MODULE_NAMES}:zunicode(addon/zfs/unicode/zunicode.ko)"
-	MODULE_NAMES="${MODULE_NAMES}:zpios(addon/zfs/zpios/zpios.ko)"
-	MODULE_NAMES="${MODULE_NAMES}:zavl(addon/zfs/avl/zavl.ko)"
-	MODULE_NAMES="${MODULE_NAMES}:zcommon(addon/zfs/zcommon/zcommon.ko)"
-	MODULE_NAMES="${MODULE_NAMES}:znvpair(addon/zfs/nvpair/znvpair.ko)"
+	CONFIG_CHECK="!PREEMPT !DEBUG_LOCK_ALLOC"
+	kernel_is ge 2 6 32 || die "Linux 2.6.32 or newer required"
+	check_extra_config
+}
+
+src_prepare() {
+	AT_M4DIR="config"
+	eautoreconf
 }
 
 src_configure() {
-	local conf_opts
-	conf_opts="--with-linux='$KV_DIR'"
-
-	if (use selinux) ; then
-		conf_opts="${conf_opts} --with-selinux"
-	else
-		conf_opts="${conf_opts} --without-selinux"
-	fi
-
-	if (use blkid) ; then
-		conf_opts="${conf_opts} --with-blkid"
-	else
-		conf_opts="${conf_opts} --without-blkid"
-	fi
-
-	econf $conf_opts || die "configure failed"
+	set_arch_to_kernel
+	econf \
+		--with-config=all \
+		--with-linux="${KV_DIR}" \
+		--with-linux-obj="${KV_OUT}"
 }
 
 src_compile() {
-	linux-mod_src_compile
+	emake
 }
 
 src_install() {
-	linux-mod_src_install
-}
-
-pkg_preinst() {
-	find /lib/modules/${KV_FULL} -name 'zfs.ko' -type f -delete
-	find /lib/modules/${KV_FULL} -name 'zunicode.ko' -type f -delete
-	find /lib/modules/${KV_FULL} -name 'zpios.ko' -type f -delete
-	find /lib/modules/${KV_FULL} -name 'zavl.ko' -type f -delete
-	find /lib/modules/${KV_FULL} -name 'zcommon.ko' -type f -delete
-	find /lib/modules/${KV_FULL} -name 'znvpair.ko' -type f -delete
-
-	linux-mod_pkg_preinst
+	emake DESTDIR="${D}" install
 }
