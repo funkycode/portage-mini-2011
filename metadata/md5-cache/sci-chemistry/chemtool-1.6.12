@@ -1,13 +1,13 @@
 DEFINED_PHASES=compile install
-DEPEND=media-gfx/transfig x11-libs/gtk+:2 x86? ( media-libs/libemf ) dev-util/pkgconfig
+DEPEND=dev-libs/glib:2 media-gfx/transfig x11-libs/gtk+:2 x11-libs/libX11 x11-libs/pango x86? ( media-libs/libemf ) dev-util/pkgconfig
 DESCRIPTION=GTK program for drawing organic molecules
 EAPI=1
 HOMEPAGE=http://ruby.chemie.uni-freiburg.de/~martin/chemtool/
 IUSE=gnome nls
 KEYWORDS=amd64 ppc x86
 LICENSE=GPL-2
-RDEPEND=media-gfx/transfig x11-libs/gtk+:2 x86? ( media-libs/libemf )
+RDEPEND=dev-libs/glib:2 media-gfx/transfig x11-libs/gtk+:2 x11-libs/libX11 x11-libs/pango x86? ( media-libs/libemf )
 SLOT=0
 SRC_URI=http://ruby.chemie.uni-freiburg.de/~martin/chemtool/chemtool-1.6.12.tar.gz
 _eclasses_=eutils	d92f291efb4ef0595cb90e4b4e7e6b6c	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	portability	536c5e70c5fb252ed3b769e04aa3f05b	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
-_md5_=829937a32567d21d419ceb84e42247a2
+_md5_=faa8dfef989159c2d43f6a2ca6e95da5

@@ -1,10 +1,11 @@
-DEFINED_PHASES=compile configure install
+DEFINED_PHASES=configure install
 DEPEND=sys-devel/gcc
 DESCRIPTION=A simple entropy daemon using the HAVEGE algorithm
-EAPI=3
+EAPI=4
 HOMEPAGE=http://www.issihosts.com/haveged/
 KEYWORDS=~amd64 ~x86
 LICENSE=GPL-2
+RDEPEND=sys-apps/openrc
 SLOT=0
-SRC_URI=http://www.issihosts.com/haveged/haveged-1.01.tar.gz
-_md5_=971843e067ad912180a23094b14b3e9f
+SRC_URI=http://www.issihosts.com/haveged/haveged-1.3a.tar.gz
+_md5_=705823bb86be2a0c7956ada64f75cc6d

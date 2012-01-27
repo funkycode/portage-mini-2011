@@ -1,6 +1,6 @@
-# Copyright 1999-2011 Gentoo Foundation
+# Copyright 1999-2012 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/sys-apps/haveged/haveged-1.2.ebuild,v 1.1 2011/10/17 17:20:53 flameeyes Exp $
+# $Header: /var/cvsroot/gentoo-x86/sys-apps/haveged/haveged-1.2.ebuild,v 1.3 2012/01/26 23:26:58 darkside Exp $
 
 EAPI=4
 DESCRIPTION="A simple entropy daemon using the HAVEGE algorithm"
