@@ -7,9 +7,9 @@ IUSE=aacs java static-libs utils xine elibc_FreeBSD java
 KEYWORDS=amd64 x86
 LICENSE=LGPL-2.1
 PDEPEND=xine? ( ~media-libs/libbluray-xine-0.0.1_pre20110819 )
-RDEPEND=dev-libs/libxml2 aacs? ( media-video/aacskeys ) java? ( >=virtual/jre-1.6 ) java? ( >=dev-java/java-config-2.1.9-r1 )
+RDEPEND=dev-libs/libxml2 aacs? ( media-libs/libaacs ) java? ( >=virtual/jre-1.6 ) java? ( >=dev-java/java-config-2.1.9-r1 )
 REQUIRED_USE=utils? ( static-libs )
 SLOT=0
 SRC_URI=mirror://gentoo/libbluray-0.0.1_pre20110819.tar.xz
 _eclasses_=autotools	cc61a7c888abf6d8622105c6184881ed	eutils	d92f291efb4ef0595cb90e4b4e7e6b6c	flag-o-matic	a2e1c4641a8aed225d4ddb0f74f382de	java-pkg-opt-2	131dd2a697d663c0e33247611b9a1cd7	java-utils-2	0b830e0a2e6c4bdf1c81fec1b53d95f1	libtool	5f623f5a211fb1b2d84d88ee49959a54	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	portability	536c5e70c5fb252ed3b769e04aa3f05b	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e	versionator	6601b4c5b3f019a993db59a50e1854e4
-_md5_=cc3d1979336fdee2517da38d4e4d58de
+_md5_=57279e0896f65eb2c7eda6cbf7141de1

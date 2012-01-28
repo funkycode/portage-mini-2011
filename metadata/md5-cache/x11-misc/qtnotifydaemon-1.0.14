@@ -1,0 +1,12 @@
+DEFINED_PHASES=compile configure install prepare unpack
+DEPEND=x11-libs/libX11 x11-libs/qt-dbus:4 x11-libs/qt-gui:4 !x11-misc/notification-daemon !x11-misc/notify-osd
+DESCRIPTION=A flexible and configurable notification daemon
+EAPI=4
+HOMEPAGE=http://drull.org.ru/qtnotifydaemon/ http://sourceforge.net/projects/qtnotifydaemon/
+KEYWORDS=~amd64 ~x86
+LICENSE=GPL-3
+RDEPEND=x11-libs/libX11 x11-libs/qt-dbus:4 x11-libs/qt-gui:4 !x11-misc/notification-daemon !x11-misc/notify-osd
+SLOT=0
+SRC_URI=mirror://sourceforge/qtnotifydaemon/qtnotifydaemon_1.0.14.orig.tar.gz
+_eclasses_=base	809ab15a673823938260f6b17661c3f1	eutils	d92f291efb4ef0595cb90e4b4e7e6b6c	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	portability	536c5e70c5fb252ed3b769e04aa3f05b	qt4-r2	05d7a72491b4cbbac2f4d4383657bc4f	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
+_md5_=9405760aab2bfdd8434a6f453afc5257

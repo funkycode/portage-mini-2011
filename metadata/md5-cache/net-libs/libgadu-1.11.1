@@ -1,0 +1,15 @@
+DEFINED_PHASES=compile configure install prepare test
+DEPEND=sys-libs/zlib ssl? ( gnutls? ( net-libs/gnutls ) !gnutls? ( >=dev-libs/openssl-0.9.6m ) ) doc? ( app-doc/doxygen )
+DESCRIPTION=This library implements the client side of the Gadu-Gadu protocol
+EAPI=4
+HOMEPAGE=http://toxygen.net/libgadu/
+IUSE=doc gnutls ssl static-libs threads
+KEYWORDS=~alpha ~amd64 ~arm ~hppa ~ia64 ~mips ~ppc ~ppc64 ~sparc ~x86 ~x86-fbsd ~x86-freebsd ~amd64-linux ~x86-linux ~ppc-macos
+LICENSE=LGPL-2.1
+RDEPEND=sys-libs/zlib ssl? ( gnutls? ( net-libs/gnutls ) !gnutls? ( >=dev-libs/openssl-0.9.6m ) ) !=net-im/kadu-0.6.0.2 !=net-im/kadu-0.6.0.1
+REQUIRED_USE=gnutls? ( ssl )
+RESTRICT=test
+SLOT=0
+SRC_URI=http://toxygen.net/libgadu/files/libgadu-1.11.1.tar.gz
+_eclasses_=autotools	cc61a7c888abf6d8622105c6184881ed	autotools-utils	6db26fbac14aa2fac6409d63741db3aa	eutils	d92f291efb4ef0595cb90e4b4e7e6b6c	libtool	5f623f5a211fb1b2d84d88ee49959a54	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	portability	536c5e70c5fb252ed3b769e04aa3f05b	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
+_md5_=90c2eca28987dce37afb12988a5ee6a7

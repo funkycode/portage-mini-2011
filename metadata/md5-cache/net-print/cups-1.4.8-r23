@@ -3,7 +3,7 @@ DEPEND=app-text/libpaper acl? ( kernel_linux? ( sys-apps/acl sys-apps/attr ) ) d
 DESCRIPTION=The Common Unix Printing System
 EAPI=3
 HOMEPAGE=http://www.cups.org/
-IUSE=acl dbus debug +filters gnutls java +jpeg kerberos ldap pam perl php +png python samba slp +ssl static-libs +threads +tiff usb X xinetd linguas_da linguas_de linguas_es linguas_eu linguas_fi linguas_fr linguas_id linguas_it linguas_ja linguas_ko linguas_nl linguas_no linguas_pl linguas_pt linguas_pt_BR linguas_ru linguas_sv linguas_zh linguas_zh_TW elibc_FreeBSD java
+IUSE=acl dbus debug +filters gnutls java +jpeg kerberos ldap pam perl php +png python slp +ssl static-libs +threads +tiff usb X xinetd linguas_da linguas_de linguas_es linguas_eu linguas_fi linguas_fr linguas_id linguas_it linguas_ja linguas_ko linguas_nl linguas_no linguas_pl linguas_pt linguas_pt_BR linguas_ru linguas_sv linguas_zh linguas_zh_TW elibc_FreeBSD java
 KEYWORDS=~alpha ~amd64 ~arm ~hppa ~ia64 ~m68k ~mips ~ppc ~ppc64 ~s390 ~sh ~sparc ~sparc-fbsd ~x86 ~x86-fbsd
 LICENSE=GPL-2
 PDEPEND=app-text/ghostscript-gpl[cups] >=app-text/poppler-0.12.3-r3[utils] filters? ( net-print/foomatic-filters )
@@ -12,4 +12,4 @@ RESTRICT=test
 SLOT=0
 SRC_URI=mirror://easysw/cups/1.4.8/cups-1.4.8-source.tar.bz2
 _eclasses_=autotools	cc61a7c888abf6d8622105c6184881ed	base	809ab15a673823938260f6b17661c3f1	eutils	d92f291efb4ef0595cb90e4b4e7e6b6c	fdo-mime	0acfe1a88fd8751a1d5dc671168219fa	flag-o-matic	a2e1c4641a8aed225d4ddb0f74f382de	gnome2-utils	b5ca2ccadb60760889faa3bccba121d9	java-pkg-opt-2	131dd2a697d663c0e33247611b9a1cd7	java-utils-2	0b830e0a2e6c4bdf1c81fec1b53d95f1	libtool	5f623f5a211fb1b2d84d88ee49959a54	linux-info	cc184ad3383ffb6ffbaa82f53608e77f	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	pam	3f746974e1cc47cabe3bd488c08cdc8e	perl-module	01501a30505074cd0012cabbf5d99447	portability	536c5e70c5fb252ed3b769e04aa3f05b	python	cf73fe2a491ad5310ed71ffc829b7464	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e	versionator	6601b4c5b3f019a993db59a50e1854e4
-_md5_=5f25f5a50185b35e788dd658ad3a9cc3
+_md5_=6f2210790cc0a20a897c95c7f14f251a
