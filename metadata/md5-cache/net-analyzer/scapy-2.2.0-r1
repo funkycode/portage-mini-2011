@@ -4,10 +4,10 @@ DESCRIPTION=A Python interactive packet manipulation program for mastering the n
 EAPI=3
 HOMEPAGE=http://www.secdev.org/projects/scapy/
 IUSE=gnuplot pyx crypt graphviz imagemagick visual tcpreplay
-KEYWORDS=amd64 ~x86
+KEYWORDS=amd64 x86
 LICENSE=GPL-2
 RDEPEND=net-analyzer/tcpdump gnuplot? ( dev-python/gnuplot-py ) pyx? ( dev-python/pyx ) crypt? ( dev-python/pycrypto ) graphviz? ( media-gfx/graphviz ) imagemagick? ( || ( media-gfx/imagemagick media-gfx/graphicsmagick[imagemagick] ) ) visual? ( dev-python/visual ) tcpreplay? ( net-analyzer/tcpreplay ) >=app-admin/eselect-python-20091230 || ( =dev-lang/python-2.7* =dev-lang/python-2.6* )
 SLOT=0
 SRC_URI=http://www.secdev.org/projects/scapy/files/scapy-2.2.0.tar.gz
 _eclasses_=distutils	c8b0cab86443a130f3737ad1456d57d3	eutils	d92f291efb4ef0595cb90e4b4e7e6b6c	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	portability	536c5e70c5fb252ed3b769e04aa3f05b	python	cf73fe2a491ad5310ed71ffc829b7464	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
-_md5_=283859a9f2de15ffbebc9221f61e453a
+_md5_=e6bf1e64adfda0f7b485d79d089f7785

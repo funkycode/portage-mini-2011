@@ -1,0 +1,14 @@
+DEFINED_PHASES=configure install postinst postrm prepare
+DEPEND=>=app-text/poppler-0.12.3-r3[cairo] >=x11-libs/pango-1.28.4 >=x11-libs/gtk+-2.6:2 cups? ( >=net-print/cups-1.1 ) dev-util/pkgconfig nls? ( sys-devel/gettext ) test? ( dev-util/cppunit ) userland_GNU? ( >=sys-apps/findutils-4.4 )
+DESCRIPTION=Lightweight PDF viewer using Poppler and GTK+ libraries.
+EAPI=4
+HOMEPAGE=http://trac.emma-soft.com/epdfview/
+IUSE=cups nls test
+KEYWORDS=~amd64 ~arm ~hppa ~ppc ~ppc64 ~sparc ~x86 ~x86-fbsd
+LICENSE=GPL-2
+RDEPEND=>=app-text/poppler-0.12.3-r3[cairo] >=x11-libs/pango-1.28.4 >=x11-libs/gtk+-2.6:2 cups? ( >=net-print/cups-1.1 )
+RESTRICT=test
+SLOT=0
+SRC_URI=http://trac.emma-soft.com/epdfview/chrome/site/releases/epdfview-0.1.8.tar.bz2
+_eclasses_=eutils	d92f291efb4ef0595cb90e4b4e7e6b6c	fdo-mime	0acfe1a88fd8751a1d5dc671168219fa	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	portability	536c5e70c5fb252ed3b769e04aa3f05b	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
+_md5_=129cb23d91236e9a172127956e151c3e

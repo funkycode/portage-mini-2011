@@ -2380,6 +2380,7 @@ media-libs/alure:fluidsynth - Enables Fluidsynth MIDI software synthesis
 media-libs/babl:introspection - Use dev-libs/gobject-introspection for introspection
 media-libs/babl:vala - Enable bindings for dev-lang/vala
 media-libs/cal3d:16bit-indices - Enables use of 16bit indices
+media-libs/chromaprint:tools - Build and install fpcalc and fpcollect tools
 media-libs/clutter:gtk - Use gdk-pixbuf from x11-libs/gtk+ as image rendering backend
 media-libs/clutter:introspection - Use dev-libs/gobject-introspection for introspection
 media-libs/clutter-gst:introspection - Use dev-libs/gobject-introspection for introspection
@@ -5174,6 +5175,7 @@ www-servers/pshs:upnp - Enable port forwarding using UPnP via net-libs/miniupnpc
 www-servers/resin:admin - Enable Resin admin webapp
 www-servers/varnish:tools - Build additional tools: varnishhist, varnishstat, varnishtop, varnishsizes
 x11-apps/ardesia:cwiid - cwiid support: collection of Linux tools written in C for interfacing to the Nintendo Wiimote.
+x11-apps/xdm:consolekit - Enable native sys-auth/consolekit support
 x11-apps/xdpyinfo:dmx - Builds support for Distributed Multiheaded X x11-base/xorg-server
 x11-apps/xinit:minimal - Control dependencies on legacy apps (xterm, twm, ...). Safe to enable if you use a modern desktop environment.
 x11-apps/xsm:rsh - This allows the use of rsh (remote shell) and rcp (remote copy).

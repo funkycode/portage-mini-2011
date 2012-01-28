@@ -1,5 +1,5 @@
 ####################################################################
-# $Header: /var/cvsroot/gentoo-x86/profiles/package.mask,v 1.13432 2012/01/27 22:47:34 nelchael Exp $
+# $Header: /var/cvsroot/gentoo-x86/profiles/package.mask,v 1.13435 2012/01/28 13:17:46 gurligebis Exp $
 #
 # When you add an entry to the top of this file, add your name, the date, and
 # an explanation of why something is getting masked. Please be extremely
@@ -30,6 +30,24 @@
 ## app-misc/some-package
 
 #--- END OF EXAMPLES ---
+
+# Bjarke Istrup Pedersen <gurligebis@gentoo.org> (28 Jan 2012)
+# Mask linux-igd for last-rites since upstream is dead and it contains
+# several bugs which makes it someway obsolete.
+# Please use net-misc/miniupnpd instead. Removal in 30 days.
+net-misc/linux-igd
+
+# Samuli Suominen <ssuominen@gentoo.org> (28 Jan 2012)
+# Missing native ConsoleKit support and upstream has
+# stopped development.
+# Use lightdm, gdm, kdm, lxdm, slim (only latest), or xdm (only latest).
+# Removal in 30 days.
+x11-misc/enter
+
+# Ralph Sennhauser <sera@gentoo.org> (28 Jan 2012)
+# Hopelessly outdated, contains broken jars. #91484
+# Removal in 30 days.
+dev-java/sun-j2ee
 
 # Krzysztof Pawlik <nelchael@gentoo.org> (27 Jan 2012)
 # Deprecated, please migrate your code to dev-python/xhtml2pdf.
