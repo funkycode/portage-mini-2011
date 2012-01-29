@@ -1,14 +1,14 @@
 DEFINED_PHASES=compile configure install prepare test unpack
-DEPEND=dev-libs/boost fftw? ( >=sci-libs/fftw-3 ) hdf5? ( sci-libs/hdf5 ) jpeg? ( virtual/jpeg ) png? ( media-libs/libpng ) python? ( || ( dev-lang/python:2.6 dev-lang/python:2.7 ) ) tiff? ( media-libs/tiff ) doc? ( app-doc/doxygen python? ( dev-python/sphinx ) ) test? ( python? ( dev-python/nose ) ) >=dev-util/cmake-2.8.4 userland_GNU? ( >=sys-apps/findutils-4.4.0 )
+DEPEND=dev-libs/boost[python?] fftw? ( >=sci-libs/fftw-3 ) hdf5? ( sci-libs/hdf5 ) jpeg? ( virtual/jpeg ) png? ( media-libs/libpng ) python? ( || ( dev-lang/python:2.6 dev-lang/python:2.7 ) ) tiff? ( media-libs/tiff ) doc? ( app-doc/doxygen python? ( dev-python/sphinx ) ) test? ( python? ( dev-python/nose ) ) >=dev-util/cmake-2.8.4 userland_GNU? ( >=sys-apps/findutils-4.4.0 )
 DESCRIPTION=C++ computer vision library with emphasize on customizable algorithms and data structures
 EAPI=4
 HOMEPAGE=http://hci.iwr.uni-heidelberg.de/vigra/
 IUSE=doc +fftw +hdf5 +jpeg +png +python test +tiff
 KEYWORDS=amd64 ppc ppc64 ~sparc x86
 LICENSE=MIT
-RDEPEND=dev-libs/boost fftw? ( >=sci-libs/fftw-3 ) hdf5? ( sci-libs/hdf5 ) jpeg? ( virtual/jpeg ) png? ( media-libs/libpng ) python? ( || ( dev-lang/python:2.6 dev-lang/python:2.7 ) ) tiff? ( media-libs/tiff )
+RDEPEND=dev-libs/boost[python?] fftw? ( >=sci-libs/fftw-3 ) hdf5? ( sci-libs/hdf5 ) jpeg? ( virtual/jpeg ) png? ( media-libs/libpng ) python? ( || ( dev-lang/python:2.6 dev-lang/python:2.7 ) ) tiff? ( media-libs/tiff )
 REQUIRED_USE=doc? ( hdf5 fftw ) python? ( hdf5 ) test? ( hdf5 python fftw )
 SLOT=0
 SRC_URI=http://hci.iwr.uni-heidelberg.de/vigra/vigra-1.7.1-src.tar.gz
 _eclasses_=base	809ab15a673823938260f6b17661c3f1	cmake-utils	d9f3f2f6cc1a1d6ad8e31702e44133e5	eutils	d92f291efb4ef0595cb90e4b4e7e6b6c	flag-o-matic	a2e1c4641a8aed225d4ddb0f74f382de	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	portability	536c5e70c5fb252ed3b769e04aa3f05b	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
-_md5_=c141aa2f78d7295c95d0035995f6f800
+_md5_=c7d8946ecbc148c87bc8b6fdde26ccad

@@ -1,11 +1,10 @@
 DEFINED_PHASES=compile install prepare unpack
-DEPEND=>=app-text/mupdf-0.8.165 dev-ml/lablgl[glut] dev-lang/ocaml[ocamlopt] media-libs/jbig2dec media-libs/openjpeg x11-misc/xsel dev-vcs/git
+DEPEND==app-text/mupdf-9999 dev-ml/lablgl[glut] dev-lang/ocaml[ocamlopt] media-libs/jbig2dec media-libs/openjpeg x11-misc/xsel dev-vcs/git
 DESCRIPTION=a graphical PDF viewer which aims to superficially resemble less(1)
 EAPI=3
 HOMEPAGE=http://repo.or.cz/w/llpp.git
-IUSE=vanilla
 LICENSE=GPL-3
-RDEPEND=>=app-text/mupdf-0.8.165 dev-ml/lablgl[glut] dev-lang/ocaml[ocamlopt] media-libs/jbig2dec media-libs/openjpeg x11-misc/xsel
+RDEPEND==app-text/mupdf-9999 dev-ml/lablgl[glut] dev-lang/ocaml[ocamlopt] media-libs/jbig2dec media-libs/openjpeg x11-misc/xsel
 SLOT=0
-_eclasses_=git-2	6bb20ec18cca375571bcbe67bcf2e1d7	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68
-_md5_=4b61baf807917aa62318b6ac55c460b0
+_eclasses_=eutils	d92f291efb4ef0595cb90e4b4e7e6b6c	git-2	6bb20ec18cca375571bcbe67bcf2e1d7	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	portability	536c5e70c5fb252ed3b769e04aa3f05b	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
+_md5_=6c5c2f4377c02dcdf712852d8a3b6c3f

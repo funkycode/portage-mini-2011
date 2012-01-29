@@ -1,10 +1,10 @@
 # Copyright 1999-2012 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/dev-python/visual/visual-5.72.ebuild,v 1.1 2012/01/05 17:37:14 bicatali Exp $
+# $Header: /var/cvsroot/gentoo-x86/dev-python/visual/visual-5.72.ebuild,v 1.2 2012/01/28 19:58:09 floppym Exp $
 
 EAPI="3"
-PYTHON_DEPEND="2"
 SUPPORT_PYTHON_ABIS="1"
+RESTRICT_PYTHON_ABIS="*-jython *-pypy-*"
 PYTHON_EXPORT_PHASE_FUNCTIONS="1"
 
 inherit flag-o-matic python versionator
@@ -20,7 +20,7 @@ SLOT="0"
 KEYWORDS="~amd64 ~x86"
 LICENSE="visual"
 
-RDEPEND=">=dev-libs/boost-1.41.0[python]
+RDEPEND="<dev-libs/boost-1.48[python]
 	dev-cpp/libglademm
 	>=dev-cpp/gtkglextmm-1.2
 	dev-python/numpy

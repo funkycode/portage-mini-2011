@@ -1,12 +1,12 @@
-DEFINED_PHASES=compile install postinst postrm prepare
-DEPEND=>=app-admin/eselect-python-20091230 =dev-lang/python-2*
+DEFINED_PHASES=compile install postinst postrm prepare setup
+DEPEND=>=app-admin/eselect-python-20091230 =dev-lang/python-2* =dev-lang/python-2*[xml]
 DESCRIPTION=GNOME interface for configuring the Foomatic printer filter system
 EAPI=3
 HOMEPAGE=http://freshmeat.net/projects/foomatic-gui/
 KEYWORDS=~amd64 ~ppc ~sparc ~x86
 LICENSE=GPL-2
-RDEPEND=dev-python/libgnome-python dev-python/pygobject:2 dev-python/libbonobo-python dev-python/gnome-vfs-python dev-python/ipy dev-python/pygtk:2 dev-python/pywebkitgtk >=dev-python/pyxml-0.8 net-print/foomatic-db-engine >=app-admin/eselect-python-20091230 =dev-lang/python-2*
+RDEPEND=dev-python/libgnome-python dev-python/pygobject:2 dev-python/libbonobo-python dev-python/gnome-vfs-python dev-python/ipy dev-python/pygtk:2 dev-python/pywebkitgtk net-print/foomatic-db-engine >=app-admin/eselect-python-20091230 =dev-lang/python-2* =dev-lang/python-2*[xml]
 SLOT=0
 SRC_URI=mirror://debian/pool/main/f/foomatic-gui/foomatic-gui_0.7.9.5.tar.gz
 _eclasses_=distutils	c8b0cab86443a130f3737ad1456d57d3	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	python	cf73fe2a491ad5310ed71ffc829b7464	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68
-_md5_=22956a82da952291ae000f7985c4cd49
+_md5_=df926116a48826bfa50b1ea777c731ba

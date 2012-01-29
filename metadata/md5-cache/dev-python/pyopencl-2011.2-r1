@@ -1,0 +1,13 @@
+DEFINED_PHASES=compile configure install postinst postrm prepare setup
+DEPEND=>=dev-libs/boost-1.48[python] dev-python/numpy dev-python/pytools virtual/opencl >=app-admin/eselect-python-20091230 =dev-lang/python-2*
+DESCRIPTION=Python wrapper for OpenCL
+EAPI=4
+HOMEPAGE=http://mathema.tician.de/software/pyopencl http://pypi.python.org/pypi/pyopencl
+IUSE=examples opengl
+KEYWORDS=~amd64 ~x86
+LICENSE=GPL-2
+RDEPEND=>=dev-libs/boost-1.48[python] dev-python/numpy dev-python/pytools virtual/opencl >=app-admin/eselect-python-20091230 =dev-lang/python-2*
+SLOT=0
+SRC_URI=mirror://pypi/p/pyopencl/pyopencl-2011.2.tar.gz
+_eclasses_=distutils	c8b0cab86443a130f3737ad1456d57d3	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	python	cf73fe2a491ad5310ed71ffc829b7464	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68
+_md5_=b773a7c5d252cea60a293f7cc6570b09

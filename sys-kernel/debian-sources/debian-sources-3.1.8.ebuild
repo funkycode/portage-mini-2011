@@ -13,7 +13,7 @@ KERNEL_ARCHIVE="linux-2.6_${PV}.orig.tar.gz"
 RESTRICT="binchecks strip"
 # based on : http://packages.ubuntu.com/maverick/linux-image-2.6.35-22-server
 LICENSE="GPL-2"
-KEYWORDS="~*"
+KEYWORDS="*"
 IUSE="openvz binary"
 DEPEND="binary? ( >=sys-kernel/genkernel-3.4.12.6-r4 )"
 RDEPEND="binary? ( >=sys-fs/udev-160 )"
@@ -91,6 +91,8 @@ src_prepare() {
 	chmod +x config-extract || die
 	./config-extract ${myarch} ${opts} || die
 	cp .config ${T}/config || die
+	make -s mrproper || die "make mrproper failed"
+	make -s include/linux/version.h || die "make include/linux/version.h failed"
 }
 
 src_compile() {
@@ -98,9 +100,9 @@ src_compile() {
 	install -d ${WORKDIR}/out/{lib,boot}
 	install -d ${T}/{cache,twork}
 	install -d $WORKDIR/build $WORKDIR/out/lib/firmware
-	genkernel ${GKARGS} \
+	genkernel \
 		--no-save-config \
-		--kernel-config="$S/.config" \
+		--kernel-config="$T/config" \
 		--kernname="${PN}" \
 		--build-src="$S" \
 		--build-dst=${WORKDIR}/build \
@@ -125,6 +127,7 @@ src_install() {
 	# prepare for real-world use and 3rd-party module building:
 	make mrproper || die
 	cp ${T}/config .config || die
+	cp -a ${T}/debian debian || die
 	yes "" | make oldconfig || die
 	# if we didn't use genkernel, we're done. The kernel source tree is left in
 	# an unconfigured state - you can't compile 3rd-party modules against it yet.

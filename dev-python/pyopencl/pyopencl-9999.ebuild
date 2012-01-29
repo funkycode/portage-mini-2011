@@ -1,18 +1,18 @@
-# Copyright 1999-2011 Gentoo Foundation
+# Copyright 1999-2012 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/dev-python/pyopencl/pyopencl-9999.ebuild,v 1.7 2011/12/21 18:35:11 vapier Exp $
+# $Header: /var/cvsroot/gentoo-x86/dev-python/pyopencl/pyopencl-9999.ebuild,v 1.8 2012/01/28 19:51:45 floppym Exp $
 
-EAPI="3"
+EAPI="4"
 PYTHON_DEPEND="2"
 SUPPORT_PYTHON_ABIS="1"
-RESTRICT_PYTHON_ABIS="3.* *-jython"
+RESTRICT_PYTHON_ABIS="3.* *-jython *-pypy-*"
 
 inherit distutils git-2
 
 EGIT_REPO_URI="http://git.tiker.net/trees/pyopencl.git"
 
 DESCRIPTION="Python wrapper for OpenCL"
-HOMEPAGE="http://mathema.tician.de/software/pyopencl"
+HOMEPAGE="http://mathema.tician.de/software/pyopencl http://pypi.python.org/pypi/pyopencl"
 SRC_URI=""
 
 LICENSE="GPL-2"
@@ -20,29 +20,40 @@ SLOT="0"
 KEYWORDS=""
 IUSE="examples opengl"
 
-RDEPEND=">=dev-python/numpy-1.0.4
+RDEPEND=">=dev-libs/boost-1.48[python]
+	dev-python/numpy
 	=dev-python/pytools-9999
 	virtual/opencl"
-DEPEND="${RDEPEND}
-	dev-libs/boost[python]"
+DEPEND="${RDEPEND}"
+
+DISTUTILS_USE_SEPARATE_SOURCE_DIRECTORIES="1"
 
 src_configure()
 {
-	if use opengl; then
-		myconf="${myconf} --cl-enable-gl"
-	fi
+	configuration() {
+		local myconf=()
 
-	"$(PYTHON -f)" ./configure.py --boost-python-libname=boost_python-mt \
-		--boost-thread-libname=boost_thread-mt --boost-compiler=gcc \
-		${myconf}
+		if use opengl; then
+			myconf+=(--cl-enable-gl)
+		fi
+
+		"$(PYTHON)" configure.py \
+			--boost-compiler=gcc \
+			--boost-python-libname=boost_python-${PYTHON_ABI}-mt \
+			--boost-thread-libname=boost_thread-mt \
+			--no-use-shipped-boost \
+			"${myconf[@]}"
+	}
+	python_execute_function -s configuration
 }
 
 src_install()
 {
 	distutils_src_install
-	insinto /usr/share/doc/${PF}
+
 	if use examples; then
-		doins -r examples || die
+		insinto /usr/share/doc/${PF}
+		doins -r examples
 	fi
 }
 
