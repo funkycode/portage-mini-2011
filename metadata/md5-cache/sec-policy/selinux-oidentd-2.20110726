@@ -2,8 +2,8 @@ DEFINED_PHASES=-
 DESCRIPTION=SELinux policy for oidentd (meta-package for selinux-oident)
 EAPI=3
 HOMEPAGE=http://hardened.gentoo.org/selinux
-KEYWORDS=~amd64 ~x86
+KEYWORDS=amd64 x86
 LICENSE=as-is
 RDEPEND=>=sec-policy/selinux-oident-2.20110726
 SLOT=0
-_md5_=bcab5aa247ea93044971e6201df9e722
+_md5_=4681961a7410b5ef072738235770c75f

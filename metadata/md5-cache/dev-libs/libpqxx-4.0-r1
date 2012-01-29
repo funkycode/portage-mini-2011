@@ -1,0 +1,13 @@
+DEFINED_PHASES=configure install test
+DEPEND=dev-db/postgresql-base
+DESCRIPTION=C++ client API for PostgreSQL. The standard front-end for writing C++ programs that use PostgreSQL.
+EAPI=4
+HOMEPAGE=http://pqxx.org/development/libpqxx/
+IUSE=doc static-libs
+KEYWORDS=~alpha ~amd64 ~hppa ~ia64 ~ppc ~ppc64 ~sparc ~x86 ~x86-fbsd
+LICENSE=BSD
+RDEPEND=dev-db/postgresql-base
+SLOT=0
+SRC_URI=http://pqxx.org/download/software/libpqxx/libpqxx-4.0.tar.gz
+_eclasses_=eutils	d92f291efb4ef0595cb90e4b4e7e6b6c	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	portability	536c5e70c5fb252ed3b769e04aa3f05b	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
+_md5_=a88a6b9a1dc48eba62a1bedc1713e484
