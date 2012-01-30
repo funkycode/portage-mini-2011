@@ -1,6 +1,6 @@
-# Copyright 1999-2011 Gentoo Foundation
+# Copyright 1999-2012 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/sci-physics/camfr/camfr-20070717-r2.ebuild,v 1.4 2011/06/21 14:41:10 jlec Exp $
+# $Header: /var/cvsroot/gentoo-x86/sci-physics/camfr/camfr-20070717-r2.ebuild,v 1.5 2012/01/30 01:45:42 bicatali Exp $
 
 EAPI=2
 
@@ -25,7 +25,7 @@ RDEPEND="
 	virtual/fortran
 
 	dev-libs/blitz
-	dev-libs/boost[python]
+	<dev-libs/boost-1.48[python]
 	dev-python/imaging[tk]
 	dev-python/matplotlib
 	sci-libs/scipy

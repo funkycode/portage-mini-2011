@@ -10,4 +10,4 @@ RDEPEND=!app-emulation/qemu !<=app-emulation/qemu-kvm-1.0
 SLOT=0
 SRC_URI=http://savannah.gnu.org/download/vgabios/vgabios-0.6c.tgz http://dev.gentoo.org/~cardoe/distfiles/vgabios-0.6c-fixes-1.tar.bz2
 _eclasses_=eutils	d92f291efb4ef0595cb90e4b4e7e6b6c	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	portability	536c5e70c5fb252ed3b769e04aa3f05b	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
-_md5_=fc2555b07fb069be3b845ef65af2b882
+_md5_=9fdbd2cd9e597b9bb6dd5cecc5bb6295

@@ -1,13 +1,13 @@
 DEFINED_PHASES=configure install prepare setup
-DEPEND=mpi? ( virtual/mpi ) blas? ( virtual/blas ) lapack? ( virtual/lapack ) fortran? ( virtual/fortran ) dev-util/pkgconfig
+DEPEND=sci-libs/superlu blas? ( virtual/blas ) lapack? ( virtual/lapack ) mpi? ( virtual/mpi ) dev-util/pkgconfig fortran? ( virtual/fortran )
 DESCRIPTION=Parallel matrix preconditioners library
 EAPI=4
 HOMEPAGE=http://acts.nersc.gov/hypre/
 IUSE=blas doc examples fortran lapack mpi
 KEYWORDS=~amd64 ~x86
 LICENSE=LGPL-2.1
-RDEPEND=mpi? ( virtual/mpi ) blas? ( virtual/blas ) lapack? ( virtual/lapack )
+RDEPEND=sci-libs/superlu blas? ( virtual/blas ) lapack? ( virtual/lapack ) mpi? ( virtual/mpi )
 SLOT=0
 SRC_URI=https://computation.llnl.gov/casc/hypre/download/hypre-2.8.0b.tar.gz
 _eclasses_=eutils	d92f291efb4ef0595cb90e4b4e7e6b6c	fortran-2	368b82ae80c1184988a9d651e6efcbd0	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	portability	536c5e70c5fb252ed3b769e04aa3f05b	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
-_md5_=012a84af671d1c68b65f4fd56cb5e5ad
+_md5_=ff070d13da328fc5268c42f2f07bcf4c

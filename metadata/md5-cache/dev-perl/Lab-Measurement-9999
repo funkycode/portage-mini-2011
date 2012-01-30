@@ -1,0 +1,9 @@
+DEFINED_PHASES=compile install postinst postrm preinst prerm setup test unpack
+DEPEND=dev-lang/perl dev-perl/Clone dev-perl/Exception-Class dev-perl/TermReadKey dev-perl/XML-Generator dev-perl/XML-DOM dev-perl/XML-Twig dev-perl/encoding-warnings perl-core/Switch sci-visualization/gnuplot virtual/perl-Time-HiRes !dev-perl/Lab-Instrument !dev-perl/Lab-Tools virtual/perl-Module-Build dev-vcs/git
+DESCRIPTION=Measurement control and automation with Perl
+HOMEPAGE=http://www.labmeasurement.de/
+LICENSE=|| ( Artistic GPL-2 )
+RDEPEND=dev-lang/perl dev-perl/Clone dev-perl/Exception-Class dev-perl/TermReadKey dev-perl/XML-Generator dev-perl/XML-DOM dev-perl/XML-Twig dev-perl/encoding-warnings perl-core/Switch sci-visualization/gnuplot virtual/perl-Time-HiRes !dev-perl/Lab-Instrument !dev-perl/Lab-Tools
+SLOT=0
+_eclasses_=base	809ab15a673823938260f6b17661c3f1	eutils	d92f291efb4ef0595cb90e4b4e7e6b6c	git-2	6bb20ec18cca375571bcbe67bcf2e1d7	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	perl-module	01501a30505074cd0012cabbf5d99447	portability	536c5e70c5fb252ed3b769e04aa3f05b	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
+_md5_=b3773623b6feb503424f7c8ee40a00cf

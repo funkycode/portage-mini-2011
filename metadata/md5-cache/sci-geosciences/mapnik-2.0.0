@@ -1,13 +1,13 @@
 DEFINED_PHASES=compile configure install postinst prepare
-DEPEND=dev-libs/boost net-misc/curl media-libs/libpng media-libs/jpeg media-libs/tiff sys-libs/zlib media-libs/freetype dev-lang/python sci-libs/proj dev-libs/libxml2 dev-libs/icu x11-libs/agg[truetype] postgres? ( >=dev-db/postgresql-base-8.3 ) python? ( dev-libs/boost[python] ) gdal? ( sci-libs/gdal ) geos? ( sci-libs/geos ) python? ( dev-lang/python ) bidi? ( dev-libs/fribidi ) cairo? ( x11-libs/cairo dev-cpp/cairomm python? ( dev-python/pycairo ) ) sqlite? ( dev-db/sqlite:3 ) nobfonts? ( media-fonts/dejavu ) doc? ( dev-python/epydoc ) dev-util/scons >=app-admin/eselect-python-20091230 python? ( =dev-lang/python-2* ) dev-util/scons
+DEPEND=net-misc/curl media-libs/libpng media-libs/jpeg media-libs/tiff sys-libs/zlib media-libs/freetype dev-lang/python sci-libs/proj dev-libs/libxml2 dev-libs/icu x11-libs/agg[truetype] dev-libs/boost[python?] postgres? ( >=dev-db/postgresql-base-8.3 ) gdal? ( sci-libs/gdal ) geos? ( sci-libs/geos ) bidi? ( dev-libs/fribidi ) cairo? ( x11-libs/cairo dev-cpp/cairomm python? ( dev-python/pycairo ) ) sqlite? ( dev-db/sqlite:3 ) nobfonts? ( media-fonts/dejavu ) doc? ( dev-python/epydoc ) dev-util/scons >=app-admin/eselect-python-20091230 python? ( =dev-lang/python-2* ) dev-util/scons
 DESCRIPTION=A Free Toolkit for developing mapping applications.
 EAPI=3
 HOMEPAGE=http://www.mapnik.org/
 IUSE=bidi cairo debug doc gdal geos nobfonts postgres python sqlite
 KEYWORDS=~amd64 ~ppc ~ppc64 ~x86
 LICENSE=LGPL-3
-RDEPEND=dev-libs/boost net-misc/curl media-libs/libpng media-libs/jpeg media-libs/tiff sys-libs/zlib media-libs/freetype dev-lang/python sci-libs/proj dev-libs/libxml2 dev-libs/icu x11-libs/agg[truetype] postgres? ( >=dev-db/postgresql-base-8.3 ) python? ( dev-libs/boost[python] ) gdal? ( sci-libs/gdal ) geos? ( sci-libs/geos ) python? ( dev-lang/python ) bidi? ( dev-libs/fribidi ) cairo? ( x11-libs/cairo dev-cpp/cairomm python? ( dev-python/pycairo ) ) sqlite? ( dev-db/sqlite:3 ) nobfonts? ( media-fonts/dejavu ) >=app-admin/eselect-python-20091230 python? ( =dev-lang/python-2* )
+RDEPEND=net-misc/curl media-libs/libpng media-libs/jpeg media-libs/tiff sys-libs/zlib media-libs/freetype dev-lang/python sci-libs/proj dev-libs/libxml2 dev-libs/icu x11-libs/agg[truetype] dev-libs/boost[python?] postgres? ( >=dev-db/postgresql-base-8.3 ) gdal? ( sci-libs/gdal ) geos? ( sci-libs/geos ) bidi? ( dev-libs/fribidi ) cairo? ( x11-libs/cairo dev-cpp/cairomm python? ( dev-python/pycairo ) ) sqlite? ( dev-db/sqlite:3 ) nobfonts? ( media-fonts/dejavu ) >=app-admin/eselect-python-20091230 python? ( =dev-lang/python-2* )
 SLOT=0
 SRC_URI=mirror://berlios/mapnik/mapnik-2.0.0.tar.bz2
 _eclasses_=eutils	d92f291efb4ef0595cb90e4b4e7e6b6c	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	portability	536c5e70c5fb252ed3b769e04aa3f05b	python	cf73fe2a491ad5310ed71ffc829b7464	scons-utils	9cb9120b919b1ea34b4b7028d9973261	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
-_md5_=f29d93c0a2088e880b230bbb97f02c6b
+_md5_=f403a2435cc00d2ed36dc38d6808f975
