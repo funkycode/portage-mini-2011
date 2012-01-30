@@ -1,0 +1,13 @@
+DEFINED_PHASES=compile install postinst prepare
+DEPEND=>=app-text/ghostscript-gpl-9.02 >=net-print/cups-1.4.0 jbig? ( media-libs/jbigkit )
+DESCRIPTION=A set of CUPS printer drivers for SPL (Samsung Printer Language) printers
+EAPI=4
+HOMEPAGE=http://splix.sourceforge.net/
+IUSE=+jbig
+KEYWORDS=~amd64 ~x86
+LICENSE=GPL-2
+RDEPEND=>=app-text/ghostscript-gpl-9.02 >=net-print/cups-1.4.0 jbig? ( media-libs/jbigkit )
+SLOT=0
+SRC_URI=http://dev.gentoo.org/~voyageur/distfiles/splix-2.0.0_p20111206.tar.bz2 http://splix.ap2c.org/samsung_cms.tar.bz2
+_eclasses_=eutils	d92f291efb4ef0595cb90e4b4e7e6b6c	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	portability	536c5e70c5fb252ed3b769e04aa3f05b	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
+_md5_=3e92a4739a295992093d090ee2b5f185

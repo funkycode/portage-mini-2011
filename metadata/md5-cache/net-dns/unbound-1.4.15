@@ -1,0 +1,13 @@
+DEFINED_PHASES=configure install postinst postrm prepare setup
+DEPEND=dev-libs/expat dev-libs/libevent >=dev-libs/openssl-0.9.8 >=net-libs/ldns-1.6.5[ssl,gost?] python? ( dev-lang/swig ) test? ( net-dns/ldns-utils[examples] dev-util/splint app-text/wdiff ) >=app-admin/eselect-python-20091230 python? ( =dev-lang/python-2* )
+DESCRIPTION=A validating, recursive and caching DNS resolver
+EAPI=3
+HOMEPAGE=http://unbound.net/
+IUSE=debug gost python static-libs test threads
+KEYWORDS=~amd64 ~x86 ~x64-macos
+LICENSE=BSD
+RDEPEND=dev-libs/expat dev-libs/libevent >=dev-libs/openssl-0.9.8 >=net-libs/ldns-1.6.5[ssl,gost?] net-dns/dnssec-root >=app-admin/eselect-python-20091230 python? ( =dev-lang/python-2* )
+SLOT=0
+SRC_URI=http://unbound.net/downloads/unbound-1.4.15.tar.gz
+_eclasses_=eutils	d92f291efb4ef0595cb90e4b4e7e6b6c	flag-o-matic	a2e1c4641a8aed225d4ddb0f74f382de	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	portability	536c5e70c5fb252ed3b769e04aa3f05b	python	cf73fe2a491ad5310ed71ffc829b7464	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
+_md5_=380c51486ff90c69f352db01fbf45a79

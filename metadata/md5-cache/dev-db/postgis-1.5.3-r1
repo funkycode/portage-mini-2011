@@ -4,11 +4,11 @@ DESCRIPTION=Geographic Objects for PostgreSQL
 EAPI=4
 HOMEPAGE=http://postgis.refractions.net
 IUSE=doc gtk
-KEYWORDS=~amd64 ~ppc ~x86
+KEYWORDS=amd64 ~ppc ~x86
 LICENSE=GPL-2
 RDEPEND=|| ( dev-db/postgresql-server:9.0 dev-db/postgresql-server:8.4 dev-db/postgresql-server:8.3 dev-db/postgresql-server:9.1 ) dev-libs/libxml2:2 >=sci-libs/geos-3.2 >=sci-libs/proj-4.6.0 gtk? ( x11-libs/gtk+:2 )
 RESTRICT=test
 SLOT=0
 SRC_URI=http://postgis.refractions.net/download/postgis-1.5.3.tar.gz
 _eclasses_=eutils	d92f291efb4ef0595cb90e4b4e7e6b6c	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	portability	536c5e70c5fb252ed3b769e04aa3f05b	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e	versionator	6601b4c5b3f019a993db59a50e1854e4
-_md5_=85359818ca1d61916010ec01f61eb54d
+_md5_=9005e82a899d7be2565c54b2165a7ad8
