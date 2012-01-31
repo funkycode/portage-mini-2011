@@ -6,5 +6,5 @@ HOMEPAGE=http://jean-francois.richard.name/ghh/
 LICENSE=GPL-2
 RDEPEND=x11-libs/gtk+:2 dev-libs/glib:2 gnome-base/libgnome app-text/gnome-doc-utils >=app-text/asciidoc-8 dev-python/pygtk:2 dev-vcs/git >=app-admin/eselect-python-20091230 || ( =dev-lang/python-2.7* =dev-lang/python-2.6* )
 SLOT=0
-_eclasses_=autotools	cc61a7c888abf6d8622105c6184881ed	eutils	d92f291efb4ef0595cb90e4b4e7e6b6c	git-2	6bb20ec18cca375571bcbe67bcf2e1d7	libtool	5f623f5a211fb1b2d84d88ee49959a54	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	portability	536c5e70c5fb252ed3b769e04aa3f05b	python	cf73fe2a491ad5310ed71ffc829b7464	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
+_eclasses_=autotools	cc61a7c888abf6d8622105c6184881ed	eutils	d92f291efb4ef0595cb90e4b4e7e6b6c	git-2	6bb20ec18cca375571bcbe67bcf2e1d7	libtool	5f623f5a211fb1b2d84d88ee49959a54	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	portability	536c5e70c5fb252ed3b769e04aa3f05b	python	5526ca0199105d7b31120cf9d0bda586	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
 _md5_=acaddcea82cafb1c0fa942272b9a9417

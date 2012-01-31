@@ -1,5 +1,5 @@
 ####################################################################
-# $Header: /var/cvsroot/gentoo-x86/profiles/package.mask,v 1.13447 2012/01/30 12:40:33 johu Exp $
+# $Header: /var/cvsroot/gentoo-x86/profiles/package.mask,v 1.13449 2012/01/31 05:05:14 jdhore Exp $
 #
 # When you add an entry to the top of this file, add your name, the date, and
 # an explanation of why something is getting masked. Please be extremely
@@ -30,6 +30,10 @@
 ## app-misc/some-package
 
 #--- END OF EXAMPLES ---
+
+# Jeff Horelick <jdhore@gentoo.org> (31 Jan 2011)
+# Masking alpha release series.
+>=dev-libs/libmowgli-2.0.0_alpha1
 
 # Aaron W. Swenson <titanofold@gentoo.org> (28 Jan 2012)
 # Masked for last rites. Package is no longer maintained upstream and
@@ -102,6 +106,7 @@ media-fonts/gnu-gs-fonts-other
 =net-libs/rb_libtorrent-0.15.9-r1
 =net-mail/libpst-0.6.54-r1
 =sci-physics/camfr-20070717-r3
+=sci-geosciences/mapnik-0.7.1-r2
 
 # Jorge Manuel B. S. Vicetto <jmbsvicetto@gentoo.org> (22 Jan 2012)
 # Mask compiz for last-rites unless someone steps up

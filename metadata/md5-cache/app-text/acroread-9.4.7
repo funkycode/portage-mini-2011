@@ -3,12 +3,12 @@ DEPEND=>=sys-apps/sed-4
 DESCRIPTION=Adobe's PDF reader
 EAPI=4
 HOMEPAGE=http://www.adobe.com/products/reader/
-IUSE=cups ldap minimal nsplugin linguas_en
+IUSE=cups ldap minimal nsplugin linguas_en linguas_zh_CN linguas_zh_TW linguas_ja linguas_ko
 KEYWORDS=-* amd64 x86
 LICENSE=Adobe
-RDEPEND=media-libs/fontconfig x86? ( =dev-libs/openssl-0.9.8* ) cups? ( net-print/cups ) x86? ( x11-libs/gtk+:2 net-dns/libidn ldap? ( net-nds/openldap ) !minimal? ( || ( net-libs/xulrunner www-client/firefox www-client/seamonkey ) ) ) amd64? ( app-emulation/emul-linux-x86-gtklibs app-emulation/emul-linux-x86-baselibs )
+RDEPEND=media-libs/fontconfig x86? ( =dev-libs/openssl-0.9.8* ) cups? ( net-print/cups ) x86? ( x11-libs/gtk+:2 net-dns/libidn ldap? ( net-nds/openldap ) !minimal? ( || ( net-libs/xulrunner www-client/firefox www-client/seamonkey ) ) ) amd64? ( app-emulation/emul-linux-x86-gtklibs app-emulation/emul-linux-x86-baselibs ) linguas_zh_CN? ( media-fonts/acroread-asianfonts[linguas_zh_CN] ) linguas_ja? ( media-fonts/acroread-asianfonts[linguas_ja] ) linguas_zh_TW? ( media-fonts/acroread-asianfonts[linguas_zh_TW] ) linguas_ko? ( media-fonts/acroread-asianfonts[linguas_ko] )
 RESTRICT=strip mirror
 SLOT=0
 SRC_URI=linguas_en? ( http://ardownload.adobe.com/pub/adobe/reader/unix/9.x/9.4.7/enu/AdbeRdr9.4.7-1_i486linux_enu.tar.bz2 ) !linguas_en? ( http://ardownload.adobe.com/pub/adobe/reader/unix/9.x/9.4.7/enu/AdbeRdr9.4.7-1_i486linux_enu.tar.bz2 )
 _eclasses_=eutils	d92f291efb4ef0595cb90e4b4e7e6b6c	gnome2-utils	b5ca2ccadb60760889faa3bccba121d9	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	nsplugins	6695ecf00333c6acf870a802d3ceb9fd	portability	536c5e70c5fb252ed3b769e04aa3f05b	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
-_md5_=824245b5f18e07c73827a63b60445861
+_md5_=253a9b96fbb941e9e7884e83f12aa5d9

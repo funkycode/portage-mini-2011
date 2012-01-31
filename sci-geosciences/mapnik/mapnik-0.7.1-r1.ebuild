@@ -1,6 +1,6 @@
-# Copyright 1999-2011 Gentoo Foundation
+# Copyright 1999-2012 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/sci-geosciences/mapnik/mapnik-0.7.1-r1.ebuild,v 1.9 2011/11/27 16:05:08 swegener Exp $
+# $Header: /var/cvsroot/gentoo-x86/sci-geosciences/mapnik/mapnik-0.7.1-r1.ebuild,v 1.10 2012/01/30 21:59:14 hwoarang Exp $
 
 EAPI=3
 
@@ -36,12 +36,19 @@ RDEPEND="dev-libs/boost
 	postgres? (
 		>=dev-db/postgresql-base-8.3
 	)
-	python? ( dev-libs/boost[python] )
+	python? ( <dev-libs/boost-1.48[python] )
 	sqlite? ( dev-db/sqlite:3 )"
 
 DEPEND="${RDEPEND}
 	doc? ( dev-python/epydoc )
 	dev-util/scons"
+
+pkg_setup() {
+	if use python; then
+		python_set_active_version 2
+		python_pkg_setup
+	fi
+}
 
 src_prepare() {
 	sed -i \

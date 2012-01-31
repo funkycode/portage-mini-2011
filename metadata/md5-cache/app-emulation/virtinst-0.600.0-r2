@@ -8,5 +8,5 @@ LICENSE=GPL-2
 RDEPEND=>=app-emulation/libvirt-0.7.0[python] dev-python/urlgrabber dev-libs/libxml2[python] >=app-admin/eselect-python-20091230 =dev-lang/python-2*
 SLOT=0
 SRC_URI=http://virt-manager.et.redhat.com/download/sources/virtinst/virtinst-0.600.0.tar.gz mirror://gentoo/virtinst-0.600.0-bp-2.tar.bz2 http://dev.gentoo.org/~cardoe/distfiles/virtinst-0.600.0-bp-2.tar.bz2
-_eclasses_=distutils	c8b0cab86443a130f3737ad1456d57d3	eutils	d92f291efb4ef0595cb90e4b4e7e6b6c	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	portability	536c5e70c5fb252ed3b769e04aa3f05b	python	cf73fe2a491ad5310ed71ffc829b7464	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
+_eclasses_=distutils	c8b0cab86443a130f3737ad1456d57d3	eutils	d92f291efb4ef0595cb90e4b4e7e6b6c	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	portability	536c5e70c5fb252ed3b769e04aa3f05b	python	5526ca0199105d7b31120cf9d0bda586	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
 _md5_=c96847bf93c6b64e98082e74d97b166a

@@ -8,5 +8,5 @@ LICENSE=ZPL
 RDEPEND=dev-python/martian net-zope/accesscontrol net-zope/acquisition net-zope/five-formlib net-zope/five-localsitemanager net-zope/grokcore-annotation net-zope/grokcore-component net-zope/grokcore-formlib net-zope/grokcore-security net-zope/grokcore-site net-zope/grokcore-view net-zope/grokcore-viewlet >=net-zope/zope-2.12.3 net-zope/zope-annotation net-zope/zope-app-container net-zope/zope-app-pagetemplate net-zope/zope-component net-zope/zope-formlib net-zope/zope-interface net-zope/zope-pagetemplate net-zope/zope-location net-zope/zope-publisher net-zope/zope-traversing >=app-admin/eselect-python-20091230 || ( =dev-lang/python-2.7* =dev-lang/python-2.6* )
 SLOT=0
 SRC_URI=mirror://pypi/f/five.grok/five.grok-1.2.0.zip
-_eclasses_=distutils	c8b0cab86443a130f3737ad1456d57d3	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	python	cf73fe2a491ad5310ed71ffc829b7464	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68
+_eclasses_=distutils	c8b0cab86443a130f3737ad1456d57d3	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	python	5526ca0199105d7b31120cf9d0bda586	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68
 _md5_=4848b724b4b92f0e8371f65369ab6171

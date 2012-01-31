@@ -9,5 +9,5 @@ LICENSE=LGPL-2.1
 RDEPEND=gtk? ( =dev-libs/glib-2* =x11-libs/gtk+-2* ) imagemagick? ( >=media-gfx/imagemagick-6.2.6 ) jpeg? ( virtual/jpeg ) python? ( gtk? ( dev-python/pygtk ) ) qt4? ( x11-libs/qt-core x11-libs/qt-gui ) X? ( x11-libs/libXext xv? ( x11-libs/libXv ) ) >=app-admin/eselect-python-20091230 =dev-lang/python-2*
 SLOT=0
 SRC_URI=mirror://sourceforge/zbar/zbar-0.10.tar.bz2
-_eclasses_=multilib	5f4ad6cf85e365e8f0c6050ddd21659e	python	cf73fe2a491ad5310ed71ffc829b7464	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68
+_eclasses_=multilib	5f4ad6cf85e365e8f0c6050ddd21659e	python	5526ca0199105d7b31120cf9d0bda586	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68
 _md5_=f3204a0e39aef0475459c8e1ff25572a
