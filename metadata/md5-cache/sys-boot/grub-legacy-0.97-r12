@@ -9,5 +9,5 @@ PROVIDE=virtual/bootloader
 RDEPEND=ncurses? ( >=sys-libs/ncurses-5.2-r5 amd64? ( app-emulation/emul-linux-x86-baselibs ) )
 SLOT=0
 SRC_URI=mirror://gentoo/grub-0.97.tar.gz ftp://alpha.gnu.org/gnu/grub/grub-0.97.tar.gz mirror://gentoo/splash.xpm.gz mirror://gentoo/grub-0.97-patches-1.9.tar.bz2
-_eclasses_=autotools	cc61a7c888abf6d8622105c6184881ed	eutils	d92f291efb4ef0595cb90e4b4e7e6b6c	flag-o-matic	a2e1c4641a8aed225d4ddb0f74f382de	libtool	5f623f5a211fb1b2d84d88ee49959a54	mount-boot	410bdaef41d2c8674e24edfa9d521177	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	portability	536c5e70c5fb252ed3b769e04aa3f05b	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
+_eclasses_=autotools	cc61a7c888abf6d8622105c6184881ed	eutils	87297b51c585746a3759c390fa2cf24f	flag-o-matic	a2e1c4641a8aed225d4ddb0f74f382de	libtool	5f623f5a211fb1b2d84d88ee49959a54	mount-boot	410bdaef41d2c8674e24edfa9d521177	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	portability	536c5e70c5fb252ed3b769e04aa3f05b	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
 _md5_=f930ec2a1dafc0e464efb933c2813b47

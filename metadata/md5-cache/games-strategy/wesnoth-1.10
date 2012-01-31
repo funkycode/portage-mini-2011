@@ -9,5 +9,5 @@ LICENSE=GPL-2
 RDEPEND=>=media-libs/libsdl-1.2.7[video,X] media-libs/sdl-net >=media-libs/sdl-ttf-2.0.8 >=media-libs/sdl-mixer-1.2[vorbis] >=media-libs/sdl-image-1.2[jpeg,png] !dedicated? ( dbus? ( sys-apps/dbus ) ) >=dev-libs/boost-1.36 sys-libs/zlib x11-libs/pango dev-lang/lua media-libs/fontconfig virtual/libintl
 SLOT=0
 SRC_URI=mirror://sourceforge/wesnoth/wesnoth-1.10.tar.bz2
-_eclasses_=base	809ab15a673823938260f6b17661c3f1	cmake-utils	d9f3f2f6cc1a1d6ad8e31702e44133e5	eutils	d92f291efb4ef0595cb90e4b4e7e6b6c	flag-o-matic	a2e1c4641a8aed225d4ddb0f74f382de	games	f75cdbfdf1760e514ca65e2f6c6a7c72	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	portability	536c5e70c5fb252ed3b769e04aa3f05b	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
+_eclasses_=base	809ab15a673823938260f6b17661c3f1	cmake-utils	d9f3f2f6cc1a1d6ad8e31702e44133e5	eutils	87297b51c585746a3759c390fa2cf24f	flag-o-matic	a2e1c4641a8aed225d4ddb0f74f382de	games	f75cdbfdf1760e514ca65e2f6c6a7c72	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	portability	536c5e70c5fb252ed3b769e04aa3f05b	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
 _md5_=e542ee637d457ee419284e094bf149ea

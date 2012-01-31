@@ -9,5 +9,5 @@ LICENSE=GPL-2
 RDEPEND=>=app-accessibility/festival-1.96_beta[mbrola?] mbrola? ( >=app-accessibility/mbrola-3.0.1h-r4[linguas_it] )
 SLOT=0
 SRC_URI=mirror://sourceforge/it-festival/Italian-FESTIVAL.zip
-_eclasses_=eutils	d92f291efb4ef0595cb90e4b4e7e6b6c	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	portability	536c5e70c5fb252ed3b769e04aa3f05b	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
+_eclasses_=eutils	87297b51c585746a3759c390fa2cf24f	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	portability	536c5e70c5fb252ed3b769e04aa3f05b	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
 _md5_=45784d3ca7dbc42b874164ff18233d1f

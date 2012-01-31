@@ -9,5 +9,5 @@ LICENSE=GPL-2 warsow
 RDEPEND=net-misc/curl opengl? ( virtual/jpeg media-libs/libvorbis media-libs/libsdl virtual/opengl x11-libs/libXinerama x11-libs/libXxf86dga x11-libs/libXxf86vm openal? ( media-libs/openal ) ) !opengl? ( !dedicated? ( virtual/jpeg media-libs/libvorbis media-libs/libsdl virtual/opengl x11-libs/libXinerama x11-libs/libXxf86dga x11-libs/libXxf86vm openal? ( media-libs/openal ) ) )
 SLOT=0
 SRC_URI=http://static.warsow.net/release/warsow_0.5_unified.zip http://static.warsow.net/release/warsow_0.5_sdk.zip mirror://gentoo/warsow.png
-_eclasses_=base	809ab15a673823938260f6b17661c3f1	eutils	d92f291efb4ef0595cb90e4b4e7e6b6c	games	f75cdbfdf1760e514ca65e2f6c6a7c72	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	portability	536c5e70c5fb252ed3b769e04aa3f05b	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e	versionator	6601b4c5b3f019a993db59a50e1854e4
+_eclasses_=base	809ab15a673823938260f6b17661c3f1	eutils	87297b51c585746a3759c390fa2cf24f	games	f75cdbfdf1760e514ca65e2f6c6a7c72	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	portability	536c5e70c5fb252ed3b769e04aa3f05b	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e	versionator	6601b4c5b3f019a993db59a50e1854e4
 _md5_=608547014a1b8cede2a3d9e2b52bcb0e

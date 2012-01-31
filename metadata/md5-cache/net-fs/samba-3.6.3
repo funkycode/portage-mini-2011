@@ -1,4 +1,4 @@
-DEFINED_PHASES=compile configure install postinst prepare setup
+DEFINED_PHASES=compile configure install postinst prepare pretend setup
 DEPEND=dev-libs/popt !net-fs/samba-client !net-fs/samba-libs !net-fs/samba-server >=sys-libs/talloc-2.0.5 >=sys-libs/tdb-1.2.9 virtual/libiconv ads? ( virtual/krb5 sys-fs/e2fsprogs client? ( sys-apps/keyutils kernel_linux? ( net-fs/cifs-utils[ads] ) ) ) avahi? ( net-dns/avahi[dbus] ) caps? ( sys-libs/libcap ) client? ( !net-fs/mount-cifs dev-libs/iniparser kernel_linux? ( net-fs/cifs-utils ) ) cluster? ( >=dev-db/ctdb-1.0.114_p1 ) cups? ( net-print/cups ) debug? ( dev-libs/dmalloc ) fam? ( virtual/fam ) ldap? ( net-nds/openldap ) ldb? ( sys-libs/ldb ) pam? ( virtual/pam winbind? ( dev-libs/iniparser ) ) readline? ( >=sys-libs/readline-5.2 ) syslog? ( virtual/logger )
 DESCRIPTION=Library bits of the samba network filesystem
 EAPI=4
@@ -11,5 +11,5 @@ REQUIRED_USE=ads? ( ldap ) swat? ( server )
 RESTRICT=test
 SLOT=0
 SRC_URI=mirror://samba/samba-3.6.3.tar.gz
-_eclasses_=eutils	d92f291efb4ef0595cb90e4b4e7e6b6c	flag-o-matic	a2e1c4641a8aed225d4ddb0f74f382de	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	pam	3f746974e1cc47cabe3bd488c08cdc8e	portability	536c5e70c5fb252ed3b769e04aa3f05b	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e	versionator	6601b4c5b3f019a993db59a50e1854e4
-_md5_=a7b812d629c24e0ac8aa674c4af336ae
+_eclasses_=eutils	87297b51c585746a3759c390fa2cf24f	flag-o-matic	a2e1c4641a8aed225d4ddb0f74f382de	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	pam	3f746974e1cc47cabe3bd488c08cdc8e	portability	536c5e70c5fb252ed3b769e04aa3f05b	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e	versionator	6601b4c5b3f019a993db59a50e1854e4
+_md5_=97bd35b903f765ac46ce25b948c756cf

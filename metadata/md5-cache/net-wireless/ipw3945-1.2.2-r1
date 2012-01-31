@@ -8,5 +8,5 @@ LICENSE=BSD GPL-2
 RDEPEND=>=net-wireless/ipw3945-ucode-1.14.2 >=net-wireless/ipw3945d-1.7.22 kernel_linux? ( sys-apps/module-init-tools )
 SLOT=0
 SRC_URI=mirror://sourceforge/ipw3945/ipw3945-1.2.2.tgz
-_eclasses_=eutils	d92f291efb4ef0595cb90e4b4e7e6b6c	linux-info	cc184ad3383ffb6ffbaa82f53608e77f	linux-mod	a4e07f78bacb6b129ea7b18ad060dbfc	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	portability	536c5e70c5fb252ed3b769e04aa3f05b	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e	versionator	6601b4c5b3f019a993db59a50e1854e4
+_eclasses_=eutils	87297b51c585746a3759c390fa2cf24f	linux-info	cc184ad3383ffb6ffbaa82f53608e77f	linux-mod	a4e07f78bacb6b129ea7b18ad060dbfc	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	portability	536c5e70c5fb252ed3b769e04aa3f05b	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e	versionator	6601b4c5b3f019a993db59a50e1854e4
 _md5_=ddaff9204f115ff5ffe05730a1bc3432

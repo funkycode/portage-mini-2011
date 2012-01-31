@@ -8,5 +8,5 @@ LICENSE=|| ( Artistic GPL-1 GPL-2 GPL-3 )
 RDEPEND=virtual/perl-Scalar-List-Utils >=virtual/perl-Compress-Raw-Zlib-2.024 >=virtual/perl-Compress-Raw-Bzip2-2.024 !perl-core/Compress-Zlib !perl-core/IO-Compress-Zlib !perl-core/IO-Compress-Bzip2 !perl-core/IO-Compress-Base dev-lang/perl[-build]
 SLOT=0
 SRC_URI=mirror://cpan/authors/id/P/PM/PMQS/IO-Compress-2.024.tar.gz
-_eclasses_=alternatives	7a734a903498a04a0722152a124aa3a5	base	809ab15a673823938260f6b17661c3f1	eutils	d92f291efb4ef0595cb90e4b4e7e6b6c	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	perl-module	01501a30505074cd0012cabbf5d99447	portability	536c5e70c5fb252ed3b769e04aa3f05b	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
+_eclasses_=alternatives	7a734a903498a04a0722152a124aa3a5	base	809ab15a673823938260f6b17661c3f1	eutils	87297b51c585746a3759c390fa2cf24f	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	perl-module	01501a30505074cd0012cabbf5d99447	portability	536c5e70c5fb252ed3b769e04aa3f05b	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
 _md5_=e16427acc48f4836ff37c580b164513b

@@ -10,5 +10,5 @@ RDEPEND=media-libs/alsa-lib sys-libs/glibc x86? ( media-libs/libsdl media-libs/o
 RESTRICT=strip
 SLOT=0
 SRC_URI=http://updatefiles.linuxgamepublishing.com/x2/x2-1.4-1.4.01-x86.run http://updatefiles.linuxgamepublishing.com/x2/x2-1.4.01-1.4.02-x86.run http://updatefiles.linuxgamepublishing.com/x2/x2-1.4.02-1.4.03-x86.run http://updatefiles.linuxgamepublishing.com/x2/x2-1.4.03-1.4.04-x86.run http://updatefiles.linuxgamepublishing.com/x2/x2-1.4.04-1.4.05-x86.run
-_eclasses_=base	809ab15a673823938260f6b17661c3f1	cdrom	415b847346ef9001a89e5c7da6711215	eutils	d92f291efb4ef0595cb90e4b4e7e6b6c	games	f75cdbfdf1760e514ca65e2f6c6a7c72	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	portability	536c5e70c5fb252ed3b769e04aa3f05b	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
+_eclasses_=base	809ab15a673823938260f6b17661c3f1	cdrom	415b847346ef9001a89e5c7da6711215	eutils	87297b51c585746a3759c390fa2cf24f	games	f75cdbfdf1760e514ca65e2f6c6a7c72	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	portability	536c5e70c5fb252ed3b769e04aa3f05b	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
 _md5_=1c53e88dbbf8d09bc12a0f6eeeb06421
