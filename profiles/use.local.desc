@@ -1943,6 +1943,19 @@ gnome-extra/synapse:ayatana - Build in support for Ayatana notification using th
 gnome-extra/synapse:plugins - Build support for plugins using librest
 gnome-extra/synapse:zeitgeist - Add support for Zeitgeist event tracking system
 gnome-extra/zeitgeist:fts - Enable the full text search extension
+gnome-extra/zeitgeist-datasources:bzr - Zeitgeist plugin for dev-vcs/bzr as data source
+gnome-extra/zeitgeist-datasources:chromium - Zeitgeist plugin for www-client/chromium as data source
+gnome-extra/zeitgeist-datasources:emacs - Zeitgeist plugin for emacs as data source
+gnome-extra/zeitgeist-datasources:eog - Zeitgeist plugin for media-gfx/eog as data source
+gnome-extra/zeitgeist-datasources:firefox - Zeitgeist plugin for www-client/firefox as data source
+gnome-extra/zeitgeist-datasources:geany - Zeitgeist plugin for dev-util/geany as data source
+gnome-extra/zeitgeist-datasources:gedit - Zeitgeist plugin for app-editors/gedit as data source
+gnome-extra/zeitgeist-datasources:rhythmbox - Zeitgeist plugin for media-sound/rhythmbox as data source
+gnome-extra/zeitgeist-datasources:telepathy - Zeitgeist plugin for telepathy framework as data source
+gnome-extra/zeitgeist-datasources:tomboy - Zeitgeist plugin for app-misc/tomboy as data source
+gnome-extra/zeitgeist-datasources:totem - Zeitgeist plugin for media-video/totem as data source
+gnome-extra/zeitgeist-datasources:vim - Zeitgeist plugin for vim as data source
+gnome-extra/zeitgeist-datasources:xchat - Zeitgeist plugin for net-irc/xchat-gnome as data source
 gnome-extra/zenity:compat - Installs gdialog for compatibility with older shell scripts which uses dev-lang/perl
 gnome-extra/zenity:webkit - Enable HTML rendering using net-libs/webkit-gtk
 gnustep-apps/cdplayer:preferences - Use gnustep-apps/preferences for preferences setting

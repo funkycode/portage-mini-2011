@@ -3,10 +3,10 @@ DEPEND=dev-lang/php >=dev-php/pear-1.8.1
 DESCRIPTION=Easy parsing of URLs (PHP5 port of PEAR-Net_URL package).
 EAPI=4
 HOMEPAGE=http://pear.php.net/Net_URL2
-KEYWORDS=~amd64 ~x86
+KEYWORDS=~amd64 ~ppc ~ppc64 ~x86
 LICENSE=BSD
 RDEPEND=dev-lang/php >=dev-php/pear-1.8.1
 SLOT=0
 SRC_URI=http://pear.php.net/get/Net_URL2-2.0.0.tgz
 _eclasses_=multilib	5f4ad6cf85e365e8f0c6050ddd21659e	php-pear-r1	ec6ca81a78eed55923c519977010e559	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68
-_md5_=131dfebe8ba5fcff1c26e2ea66a9dec3
+_md5_=190761f5e5655483f6bb7699d3ff2bec
