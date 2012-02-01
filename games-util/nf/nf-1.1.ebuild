@@ -19,7 +19,7 @@ RESTRICT="mirror"
 DEPEND=">=x11-libs/qt-core-4.2
 	>=x11-libs/qt-gui-4.2"
 
-RDEPEND=">=games-util/nsrt-3.4"
+RDEPEND="games-util/nsrt-bin"
 
 MAKEOPTS+=" -j1"
 

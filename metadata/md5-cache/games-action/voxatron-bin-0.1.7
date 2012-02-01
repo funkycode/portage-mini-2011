@@ -2,11 +2,12 @@ DEFINED_PHASES=compile configure install nofetch postinst preinst prepare setup 
 DESCRIPTION=Action/adventure game set in a destructable world made of voxels
 EAPI=3
 HOMEPAGE=http://www.lexaloffle.com/voxatron.php
+IUSE=opengl
 KEYWORDS=-* ~x86 ~amd64
 LICENSE=Voxatron
-RDEPEND=>=media-libs/libsdl-1.2 media-libs/alsa-lib media-libs/mesa media-libs/libsndfile[-minimal] virtual/opengl x11-base/xorg-server[-minimal] amd64? ( app-emulation/emul-linux-x86-baselibs app-emulation/emul-linux-x86-opengl app-emulation/emul-linux-x86-sdl app-emulation/emul-linux-x86-soundlibs app-emulation/emul-linux-x86-xlibs )
+RDEPEND=media-libs/libsdl media-libs/alsa-lib media-libs/libsndfile[-minimal] x11-base/xorg-server[-minimal] opengl? ( virtual/opengl media-libs/mesa ) amd64? ( app-emulation/emul-linux-x86-baselibs app-emulation/emul-linux-x86-sdl app-emulation/emul-linux-x86-soundlibs app-emulation/emul-linux-x86-xlibs opengl? ( app-emulation/emul-linux-x86-opengl ) )
 RESTRICT=fetch strip
 SLOT=0
-SRC_URI=voxatron_0.1.6_i386.tar.gz
+SRC_URI=voxatron-linux_0.1.7_i386.tar.gz
 _eclasses_=base	809ab15a673823938260f6b17661c3f1	eutils	87297b51c585746a3759c390fa2cf24f	games	f75cdbfdf1760e514ca65e2f6c6a7c72	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	portability	536c5e70c5fb252ed3b769e04aa3f05b	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
-_md5_=7ba6b96a336f8c10198efd1cd4b1dad6
+_md5_=0e4a7f8916255beea83558505b25b915

@@ -11,15 +11,15 @@ SRC_URI="http://7clams.org/flora/distfiles/nsrt34l.tar.gz"
 
 LICENSE="NSRT"
 SLOT="0"
-KEYWORDS="-* ~amd64 ~x86"
+KEYWORDS="-* amd64 x86"
 IUSE="+ipsedit"
 RESTRICT="mirror strip"
 
-S="${WORKDIR}"
+S=${WORKDIR}
 
 src_install() {
 	dogamesbin nren nsrt || die
-	dodoc nsrt.txt || die
+	dodoc nsrt.txt
 	if use ipsedit; then
 		dogamesbin ipsedit || die
 	fi
