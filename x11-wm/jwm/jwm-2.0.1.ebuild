@@ -1,11 +1,11 @@
-# Copyright 1999-2010 Gentoo Foundation
+# Copyright 1999-2012 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/x11-wm/jwm/jwm-2.0.1.ebuild,v 1.9 2010/11/08 18:48:32 xarthisius Exp $
+# $Header: /var/cvsroot/gentoo-x86/x11-wm/jwm/jwm-2.0.1.ebuild,v 1.10 2012/01/31 23:02:05 jer Exp $
 
 EAPI=3
 inherit eutils
 
-DESCRIPTION="Very fast and lightweight still powerfull window manager for X"
+DESCRIPTION="Very fast and lightweight still powerful window manager for X"
 HOMEPAGE="http://joewing.net/programs/jwm/"
 SRC_URI="http://joewing.net/programs/jwm/releases/${P}.tar.bz2"
 

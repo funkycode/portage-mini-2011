@@ -1,8 +1,8 @@
 # Copyright 1999-2012 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/media-sound/gmusicbrowser/gmusicbrowser-1.1.8.ebuild,v 1.1 2012/01/31 17:07:46 ssuominen Exp $
+# $Header: /var/cvsroot/gentoo-x86/media-sound/gmusicbrowser/gmusicbrowser-1.1.8.ebuild,v 1.3 2012/01/31 19:20:41 ssuominen Exp $
 
-# note: AnyEvent::HTTP missing from gentoo-x86, fixing later...
+# note: dev-perl/Gtk2-MozEmbed left out in purpose because gtkmozembed and xulrunner are obsolete
 
 EAPI=4
 inherit fdo-mime
@@ -17,6 +17,7 @@ KEYWORDS="~amd64 ~x86"
 IUSE="dbus gstreamer libnotify mplayer webkit"
 
 RDEPEND="dev-lang/perl
+	dev-perl/AnyEvent-HTTP
 	dev-perl/gnome2-wnck
 	dev-perl/gtk2-perl
 	dev-perl/gtk2-trayicon

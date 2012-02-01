@@ -9,4 +9,5 @@ LICENSE=GPL-2
 RDEPEND=sys-libs/ncurses pulseaudio? ( media-sound/pulseaudio )
 SLOT=0
 SRC_URI=http://fkurz.net/ham/qrq/qrq-0.3.0.tar.gz
-_md5_=ff0f5aebbe980b78114a6f0752e0bd24
+_eclasses_=multilib	5f4ad6cf85e365e8f0c6050ddd21659e	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68
+_md5_=5c65e1ecefe5e671bd082276312cfef9
