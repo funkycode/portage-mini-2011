@@ -1,0 +1,12 @@
+DEFINED_PHASES=install prepare
+DEPEND=x11-libs/libX11
+DESCRIPTION=simple X screen locker
+EAPI=4
+HOMEPAGE=http://tools.suckless.org/slock
+KEYWORDS=~amd64 ~hppa ~x86
+LICENSE=MIT
+RDEPEND=x11-libs/libX11
+SLOT=0
+SRC_URI=http://code.suckless.org/dl/tools/slock-0.9.tar.gz
+_eclasses_=multilib	5f4ad6cf85e365e8f0c6050ddd21659e	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68
+_md5_=de0c84c4fa9c366cdea6bd3d96d6e2a9
