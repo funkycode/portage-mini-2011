@@ -1,8 +1,8 @@
-# Copyright 1999-2010 Gentoo Foundation
+# Copyright 1999-2012 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/dev-util/qdevelop/qdevelop-0.28.ebuild,v 1.2 2010/11/01 15:59:14 ssuominen Exp $
+# $Header: /var/cvsroot/gentoo-x86/dev-util/qdevelop/qdevelop-0.28.ebuild,v 1.5 2012/02/02 15:54:20 ago Exp $
 
-EAPI="2"
+EAPI=4
 
 inherit eutils cmake-utils
 
@@ -12,7 +12,7 @@ HOMEPAGE="http://biord-software.org/qdevelop/"
 SRC_URI="http://biord-software.org/downloads/${MY_P}.tar.gz"
 
 LICENSE="GPL-2"
-KEYWORDS="~amd64 ~x86"
+KEYWORDS="amd64 ~x86"
 SLOT="0"
 IUSE="debug plugins"
 
@@ -26,14 +26,19 @@ PATCHES=( "${FILESDIR}"/${P}-qt-4.7_fix.patch )
 
 src_configure() {
 	mycmakeargs=( "-DAUTOPLUGINS=$(use plugins && echo 1 || echo 0)" )
+
+	sed -e "s#/lib/pkgconfig#/$(get_libdir)/pkgconfig#" \
+		-e "s#DESTINATION lib#DESTINATION $(get_libdir)#" \
+	    -i CMakeLists.txt || die "sed fixing multilib failed"
+
 	cmake-utils_src_configure
 }
 
 src_install() {
 	cmake-utils_src_install
-	dodoc ChangeLog.txt README.txt || die "dodoc failed"
+	dodoc ChangeLog.txt README.txt
 	newicon "${S}"/resources/images/QDevelop.png qdevelop.png
-	domenu "${S}"/qdevelop.desktop
+	make_desktop_entry ${PN}
 }
 
 pkg_postinst(){
