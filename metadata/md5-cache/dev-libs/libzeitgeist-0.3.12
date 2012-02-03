@@ -1,5 +1,5 @@
 DEFINED_PHASES=compile configure install prepare test
-DEPEND=dev-libs/glib:2 dev-util/pkgconfig || ( =sys-devel/automake-1.11* ) >=sys-devel/autoconf-2.61 sys-devel/libtool
+DEPEND=dev-libs/glib:2 dev-util/gtk-doc dev-util/pkgconfig || ( =sys-devel/automake-1.11* ) >=sys-devel/autoconf-2.61 sys-devel/libtool
 DESCRIPTION=Client library to interact with zeitgeist
 EAPI=4
 HOMEPAGE=http://launchpad.net/libzeitgeist/
@@ -10,4 +10,4 @@ RDEPEND=dev-libs/glib:2 gnome-extra/zeitgeist
 SLOT=0
 SRC_URI=http://launchpad.net/libzeitgeist/0.3/0.3.12/+download/libzeitgeist-0.3.12.tar.gz
 _eclasses_=autotools	cc61a7c888abf6d8622105c6184881ed	autotools-utils	4028066892ca15ca617098a97e4c4cd7	eutils	87297b51c585746a3759c390fa2cf24f	libtool	5f623f5a211fb1b2d84d88ee49959a54	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	portability	536c5e70c5fb252ed3b769e04aa3f05b	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e	versionator	6601b4c5b3f019a993db59a50e1854e4
-_md5_=c1a26d5ca732b51a96cff25a18ab9dd7
+_md5_=93f2814aacb97d0484eec2d219b486b2

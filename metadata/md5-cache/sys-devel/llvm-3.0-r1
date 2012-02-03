@@ -1,0 +1,13 @@
+DEFINED_PHASES=compile configure install prepare setup
+DEPEND=dev-lang/perl >=sys-devel/make-3.79 >=sys-devel/flex-2.5.4 >=sys-devel/bison-1.875d || ( >=sys-devel/gcc-3.0 >=sys-devel/gcc-apple-4.2.1 ) || ( >=sys-devel/binutils-2.18 >=sys-devel/binutils-apple-3.2.3 ) gold? ( >=sys-devel/binutils-2.22 ) libffi? ( dev-util/pkgconfig virtual/libffi ) ocaml? ( dev-lang/ocaml ) udis86? ( amd64? ( dev-libs/udis86[pic] ) !amd64? ( dev-libs/udis86 ) )
+DESCRIPTION=Low Level Virtual Machine
+EAPI=3
+HOMEPAGE=http://llvm.org/
+IUSE=debug gold +libffi multitarget ocaml test udis86 vim-syntax
+KEYWORDS=~amd64 ~ppc ~x86 ~x86-fbsd ~amd64-linux ~x86-linux ~ppc-macos
+LICENSE=UoI-NCSA
+RDEPEND=dev-lang/perl libffi? ( virtual/libffi ) vim-syntax? ( || ( app-editors/vim app-editors/gvim ) )
+SLOT=0
+SRC_URI=http://llvm.org/releases/3.0/llvm-3.0.tar.gz
+_eclasses_=eutils	87297b51c585746a3759c390fa2cf24f	flag-o-matic	a2e1c4641a8aed225d4ddb0f74f382de	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	portability	536c5e70c5fb252ed3b769e04aa3f05b	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
+_md5_=e72dc2d5d014fbdcf6edbc6cafc13ac3
