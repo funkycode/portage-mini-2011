@@ -9,6 +9,6 @@ LICENSE=google-chrome
 RDEPEND=media-libs/alsa-lib app-arch/bzip2 x11-libs/cairo net-print/cups sys-apps/dbus dev-libs/expat media-libs/fontconfig media-libs/freetype app-misc/ca-certificates gnome-base/gconf:2 dev-libs/libgcrypt x11-libs/gdk-pixbuf x11-libs/gtk+:2 dev-libs/glib:2 dev-libs/nspr dev-libs/nss x11-libs/pango media-libs/libpng:1.2 || ( >=sys-devel/gcc-4.4.0[-nocxx] >=sys-devel/gcc-4.4.0[cxx] ) sys-fs/udev x11-libs/libX11 x11-libs/libXext x11-libs/libXfixes x11-libs/libXrender x11-libs/libXScrnSaver sys-libs/zlib x11-misc/xdg-utils net-misc/curl !www-client/google-chrome:0 !www-client/google-chrome:beta !www-client/google-chrome:stable
 RESTRICT=mirror strip
 SLOT=unstable
-SRC_URI=amd64? ( http://dl.google.com/linux/chrome/deb/pool/main/g/google-chrome-unstable/google-chrome-unstable_18.0.1025.1-r119930_amd64.deb ) x86? ( http://dl.google.com/linux/chrome/deb/pool/main/g/google-chrome-unstable/google-chrome-unstable_18.0.1025.1-r119930_i386.deb )
+SRC_URI=amd64? ( http://dl.google.com/linux/chrome/deb/pool/main/g/google-chrome-unstable/google-chrome-unstable_18.0.1025.3-r120234_amd64.deb ) x86? ( http://dl.google.com/linux/chrome/deb/pool/main/g/google-chrome-unstable/google-chrome-unstable_18.0.1025.3-r120234_i386.deb )
 _eclasses_=eutils	87297b51c585746a3759c390fa2cf24f	fdo-mime	0acfe1a88fd8751a1d5dc671168219fa	gnome2-utils	b5ca2ccadb60760889faa3bccba121d9	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	pax-utils	3551398d6ede2b572568832730cc2a45	portability	536c5e70c5fb252ed3b769e04aa3f05b	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
-_md5_=d1a75bfc71c3c8c404f7dc92a65dae06
+_md5_=c80fd02d2a8d4f51b1b38673892ff9c2
