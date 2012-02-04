@@ -33,8 +33,9 @@ S=${WORKDIR}/voxatron
 dir=/opt/voxatron
 
 pkg_nofetch() {
-	einfo "Fetch ${SRC_URI} and put it into or link it in ${DISTDIR}"
-	einfo "Purchase the game from http://www.lexaloffle.com/voxatron.php"
+	elog "Fetch ${SRC_URI} and move or link it"
+	elog "in ${DISTDIR}"
+	elog "Purchase the game from http://www.lexaloffle.com/voxatron.php"
 }
 
 src_unpack() {

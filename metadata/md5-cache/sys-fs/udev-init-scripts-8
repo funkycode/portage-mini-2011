@@ -1,0 +1,10 @@
+DEFINED_PHASES=compile postinst
+DESCRIPTION=udev startup scripts for openrc
+EAPI=4
+HOMEPAGE=http://www.gentoo.org
+KEYWORDS=~amd64 ~arm ~hppa ~ppc ~ppc64 ~x86
+LICENSE=GPL-2
+RDEPEND=>=sys-fs/udev-180
+SLOT=0
+SRC_URI=mirror://gentoo/udev-init-scripts-8.tar.bz2
+_md5_=29801098cc79cef2e49114c3a2586022

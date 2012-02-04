@@ -1,0 +1,13 @@
+DEFINED_PHASES=compile configure install nofetch postinst preinst prepare setup unpack
+DESCRIPTION=A design-based puzzle game from Zachtronics Industries
+EAPI=2
+HOMEPAGE=http://spacechemthegame.com/
+IUSE=hib
+KEYWORDS=-* x86 amd64
+LICENSE=SPACECHEM
+RDEPEND=>=dev-lang/mono-2 x11-misc/xclip media-libs/libsdl media-libs/sdl-mixer media-libs/sdl-image amd64? ( app-emulation/emul-linux-x86-sdl )
+RESTRICT=fetch strip
+SLOT=0
+SRC_URI=!hib? ( SpaceChem-1012.tar.gz ) hib? ( SpaceChem-1012-1-hib.tar.gz )
+_eclasses_=base	809ab15a673823938260f6b17661c3f1	eutils	87297b51c585746a3759c390fa2cf24f	games	f75cdbfdf1760e514ca65e2f6c6a7c72	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	portability	536c5e70c5fb252ed3b769e04aa3f05b	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
+_md5_=6609c49593f14e5ab622197ff86c49b0

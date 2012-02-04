@@ -298,6 +298,7 @@ app-editors/emacs-vcs:toolkit-scroll-bars - Use the selected toolkit's scrollbar
 app-editors/emacs-vcs:wide-int - Prefer wide Emacs integers (typically 62-bit). This option has an effect only on architectures where "long" and "long long" types have different size.
 app-editors/fe:sendmail - Send mail after editor abend
 app-editors/gedit:introspection - Use dev-libs/gobject-introspection for introspection
+app-editors/gedit:zeitgeist - Build the plugin to inject events to gnome-extra/zeitgeist
 app-editors/gedit-plugins:charmap - Insert special characters just by clicking on them
 app-editors/gedit-plugins:synctex - Synchronize between LaTeX and PDF with gedit and evince
 app-editors/gedit-plugins:terminal - Embed a terminal in the bottom pane
@@ -3107,6 +3108,7 @@ media-video/totem:tracker - Enable support for searching media files using the i
 media-video/totem:upnp - Enable DLNA support through media-video/coherence
 media-video/totem:vala - Enable bindings for dev-lang/vala
 media-video/totem:youtube - Enable youtube plugin
+media-video/totem:zeitgeist - Build the plugin to inject events to gnome-extra/zeitgeist
 media-video/transcode:mjpeg - Enables mjpegtools support
 media-video/transcode:nuv - NuppelVideo container format demuxing
 media-video/transcode:pic - disable optimized assembly code that is not PIC friendly
