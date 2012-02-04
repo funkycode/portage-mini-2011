@@ -1,8 +1,8 @@
-# Copyright 1999-2010 Gentoo Foundation
+# Copyright 1999-2012 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/sys-fs/dd-rescue/dd-rescue-1.23.ebuild,v 1.2 2010/11/19 18:53:47 jlec Exp $
+# $Header: /var/cvsroot/gentoo-x86/sys-fs/dd-rescue/dd-rescue-1.25.ebuild,v 1.1 2012/02/04 18:08:59 radhermit Exp $
 
-EAPI=3
+EAPI=4
 
 inherit base toolchain-funcs
 
@@ -32,14 +32,14 @@ src_compile() {
 	# 2.10 and later. If somebody can think of a better way to
 	# optionally use it, suggestions are welcome.
 	emake RPM_OPT_FLAGS="${CFLAGS} ${LDFLAGS}" CC="$(tc-getCC)" \
-		$(use kernel_linux && use elibc_glibc && echo "falloc") || die "emake failed"
+		$(use kernel_linux && use elibc_glibc && echo "falloc")
 }
 
 src_install() {
 	# easier to install by hand than trying to make sense of the
 	# Makefile.
 	into /
-	dobin dd_rescue || die
+	dobin dd_rescue
 
-	dodoc README.dd_rescue || die
+	dodoc README.dd_rescue
 }

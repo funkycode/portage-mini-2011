@@ -1,0 +1,10 @@
+DEFINED_PHASES=compile install prepare
+DESCRIPTION=Utility to change hard drive performance parameters
+EAPI=4
+HOMEPAGE=http://sourceforge.net/projects/hdparm/
+KEYWORDS=~alpha ~amd64 ~arm ~hppa ~ia64 ~m68k ~mips ~ppc ~ppc64 ~s390 ~sh ~sparc ~x86 ~x86-linux
+LICENSE=as-is
+SLOT=0
+SRC_URI=mirror://sourceforge/hdparm/hdparm-9.39.tar.gz
+_eclasses_=multilib	5f4ad6cf85e365e8f0c6050ddd21659e	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68
+_md5_=2c6dfcde00d2eb023f137308abf576c5

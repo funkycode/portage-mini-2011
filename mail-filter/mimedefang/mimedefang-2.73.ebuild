@@ -1,6 +1,6 @@
-# Copyright 1999-2011 Gentoo Foundation
+# Copyright 1999-2012 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/mail-filter/mimedefang/mimedefang-2.71.ebuild,v 1.2 2011/06/16 05:52:57 eras Exp $
+# $Header: /var/cvsroot/gentoo-x86/mail-filter/mimedefang/mimedefang-2.73.ebuild,v 1.1 2012/02/04 18:26:28 radhermit Exp $
 
 EAPI=4
 
@@ -15,7 +15,7 @@ SLOT="0"
 KEYWORDS="~amd64 ~x86"
 IUSE="clamav +poll"
 
-DEPEND="dev-perl/MIME-tools
+DEPEND=">=dev-perl/MIME-tools-5.412
 	dev-perl/IO-stringy
 	virtual/perl-MIME-Base64
 	dev-perl/Digest-SHA1
@@ -30,22 +30,19 @@ pkg_setup() {
 }
 
 src_prepare() {
-	epatch "${FILESDIR}/${P}"-ldflags.patch
+	epatch "${FILESDIR}"/${PN}-2.72-ldflags.patch
 }
 
 src_configure() {
-	econf --with-user=defang \
+	econf \
+		--with-user=defang \
 		$(use_enable poll) \
 		$(use_enable clamav) \
 		$(use_enable clamav clamd)
 }
 
-src_compile() {
-	emake unstripped
-}
-
 src_install() {
-	emake DESTDIR="${D}" install
+	emake DESTDIR="${D}" INSTALL_STRIP_FLAG="" install
 
 	fowners defang:defang /etc/mail/mimedefang-filter
 	fperms 644 /etc/mail/mimedefang-filter
