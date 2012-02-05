@@ -4,11 +4,11 @@ DESCRIPTION=A statistical-algorithmic hybrid anti-spam filter
 EAPI=4
 HOMEPAGE=http://dspam.sourceforge.net/
 IUSE=clamav daemon debug ldap static-libs syslog virtual-users user-homedirs +hash mysql postgres sqlite small-scale +domain-scale large-scale
-KEYWORDS=~alpha amd64 ~ppc ~sparc x86
+KEYWORDS=amd64 ~ppc x86
 LICENSE=AGPL-3
 RDEPEND=ldap? ( net-nds/openldap ) mysql? ( >=virtual/mysql-5.0 ) postgres? ( dev-db/postgresql-base ) sqlite? ( dev-db/sqlite:3 ) clamav? ( app-antivirus/clamav ) syslog? ( virtual/logger )
 REQUIRED_USE=|| ( hash mysql postgres sqlite ) static-libs? ( ^^ ( hash mysql postgres sqlite ) ) ^^ ( small-scale domain-scale large-scale ) virtual-users? ( !user-homedirs ) hash? ( !virtual-users ) sqlite? ( !virtual-users )
 SLOT=0
 SRC_URI=mirror://sourceforge/dspam/dspam-3.10.1.tar.gz
 _eclasses_=eutils	87297b51c585746a3759c390fa2cf24f	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	portability	536c5e70c5fb252ed3b769e04aa3f05b	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
-_md5_=6b64d54908fe13db8264e6db8c369bff
+_md5_=523cd9b6d4ca20ed9c4faee12dcc1538

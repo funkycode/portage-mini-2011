@@ -5,9 +5,9 @@ HOMEPAGE=http://developer.nvidia.com/cuda
 IUSE=debugger doc profiler
 KEYWORDS=~amd64 ~x86
 LICENSE=NVIDIA
-RDEPEND=>=sys-devel/binutils-2.20 debugger? ( >=sys-libs/libtermcap-compat-2.0.8-r2 ) !<=x11-drivers/nvidia-drivers-270.41
+RDEPEND=>=sys-devel/binutils-2.20 >=sys-devel/gcc-4.5 debugger? ( >=sys-libs/libtermcap-compat-2.0.8-r2 ) !<=x11-drivers/nvidia-drivers-270.41
 RESTRICT=binchecks
 SLOT=0
 SRC_URI=amd64? ( http://developer.download.nvidia.com/compute/cuda/4_1/rel/toolkit/cudatoolkit_4.1.28_linux_64_ubuntu11.04.run ) x86? ( http://developer.download.nvidia.com/compute/cuda/4_1/rel/toolkit/cudatoolkit_4.1.28_linux_32_ubuntu11.04.run )
 _eclasses_=eutils	87297b51c585746a3759c390fa2cf24f	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	portability	536c5e70c5fb252ed3b769e04aa3f05b	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	unpacker	252b9131206bba031c089c38b96c7704	user	32a09e82e2f592bf88ad2fd08525166e
-_md5_=7ad979bebfcce9666694ae781a7411f0
+_md5_=7d6e8783efaa6aa5fae4d1da12736473

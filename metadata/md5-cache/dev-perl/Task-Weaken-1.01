@@ -2,10 +2,10 @@ DEFINED_PHASES=compile install postinst postrm preinst prerm setup test unpack
 DEPEND=dev-lang/perl
 DESCRIPTION=Ensure that a platform has weaken support
 HOMEPAGE=http://search.cpan.org/search?query=Task-Weaken
-KEYWORDS=amd64 ~ppc sparc x86
+KEYWORDS=amd64 ~ppc x86
 LICENSE=|| ( Artistic GPL-2 )
 RDEPEND=dev-lang/perl
 SLOT=0
 SRC_URI=mirror://cpan/authors/id/A/AD/ADAMK/Task-Weaken-1.01.tar.gz
 _eclasses_=base	809ab15a673823938260f6b17661c3f1	eutils	87297b51c585746a3759c390fa2cf24f	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	perl-module	01501a30505074cd0012cabbf5d99447	portability	536c5e70c5fb252ed3b769e04aa3f05b	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
-_md5_=95e624ef5619a7921b266a94130e00c6
+_md5_=ec9fec3b06e9cba0552dff7f5685cc8c
