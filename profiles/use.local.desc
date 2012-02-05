@@ -4446,7 +4446,11 @@ sci-libs/armadillo:atlas - Link with ATLAS libraries for cblas and clapack (need
 sci-libs/arprec:qd - Use sci-libs/qd
 sci-libs/cholmod:metis - Enable the Partition module to cholmod using metis (sci-libs/metis, sci-libs/parmetis)
 sci-libs/cholmod:supernodal - Enable the Supernodal module (needs virtual/lapack)
+sci-libs/fftw:avx - Adds support for Advanced Vector Extensions
 sci-libs/fftw:float - Link default library to single precision instead of double (symlinks only and fftw-2.1)
+sci-libs/fftw:paired-single - Adds support for pair-single optimizations of mips
+sci-libs/fftw:quad - Build quadruple precision lib
+sci-libs/fftw:zbus - Adds support for ZBus cycle-counter of mips
 sci-libs/flann:octave - Add bindings for sci-mathematics/octave
 sci-libs/gdal:aux_xml - Enable Portable Auxilliary Metadata generation
 sci-libs/gdal:ecwj2k - Enable support for alternate jpeg2k library sci-libs/libecwj2

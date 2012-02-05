@@ -9,5 +9,5 @@ PROPERTIES=interactive
 RDEPEND=!amd64? ( x11-libs/libXext x11-libs/libX11 x11-libs/libXau x11-libs/libXdmcp =media-libs/libsdl-1.2* opengl? ( virtual/opengl ) ) amd64? ( app-emulation/emul-linux-x86-sdl app-emulation/emul-linux-x86-baselibs app-emulation/emul-linux-x86-xlibs )
 SLOT=0
 SRC_URI=ftp://ftp.lokigames.com/pub/beta/ut/ut-install-436-GOTY.run http://utpg.org/patches/UTPGPatch451.tar.bz2
-_eclasses_=base	809ab15a673823938260f6b17661c3f1	cdrom	415b847346ef9001a89e5c7da6711215	eutils	87297b51c585746a3759c390fa2cf24f	games	f75cdbfdf1760e514ca65e2f6c6a7c72	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	portability	536c5e70c5fb252ed3b769e04aa3f05b	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
-_md5_=010b3ede29552c1c3458a82482c950a9
+_eclasses_=base	809ab15a673823938260f6b17661c3f1	cdrom	415b847346ef9001a89e5c7da6711215	eutils	87297b51c585746a3759c390fa2cf24f	games	f75cdbfdf1760e514ca65e2f6c6a7c72	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	portability	536c5e70c5fb252ed3b769e04aa3f05b	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	unpacker	252b9131206bba031c089c38b96c7704	user	32a09e82e2f592bf88ad2fd08525166e
+_md5_=0cf7c00a3bb9217bd52f5d5b4d9a014c

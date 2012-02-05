@@ -5,5 +5,5 @@ KEYWORDS=~amd64 ~hppa ~ppc ~s390 ~x86 ~amd64-linux ~x86-linux
 LICENSE=GPL-2
 SLOT=0
 SRC_URI=http://www.megastep.org/makeself/makeself-2.1.5.run
-_eclasses_=eutils	87297b51c585746a3759c390fa2cf24f	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	portability	536c5e70c5fb252ed3b769e04aa3f05b	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
-_md5_=efeeb744c61571b762a59e870689c931
+_eclasses_=unpacker	252b9131206bba031c089c38b96c7704
+_md5_=201fb7aa799e4021e385dfdd48d43f8e

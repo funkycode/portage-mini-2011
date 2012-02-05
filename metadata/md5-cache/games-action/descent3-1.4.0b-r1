@@ -9,5 +9,5 @@ RDEPEND=sys-libs/glibc virtual/opengl sys-libs/lib-compat-loki x86? ( x11-libs/l
 RESTRICT=strip
 SLOT=0
 SRC_URI=mirror://lokigames/descent3/descent3-1.4.0a-x86.run mirror://lokigames/descent3/descent3-1.4.0b-x86.run
-_eclasses_=base	809ab15a673823938260f6b17661c3f1	cdrom	415b847346ef9001a89e5c7da6711215	eutils	87297b51c585746a3759c390fa2cf24f	games	f75cdbfdf1760e514ca65e2f6c6a7c72	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	portability	536c5e70c5fb252ed3b769e04aa3f05b	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
-_md5_=9c27ee6be4951e6a2987f237f673c4dc
+_eclasses_=base	809ab15a673823938260f6b17661c3f1	cdrom	415b847346ef9001a89e5c7da6711215	eutils	87297b51c585746a3759c390fa2cf24f	games	f75cdbfdf1760e514ca65e2f6c6a7c72	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	portability	536c5e70c5fb252ed3b769e04aa3f05b	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	unpacker	252b9131206bba031c089c38b96c7704	user	32a09e82e2f592bf88ad2fd08525166e
+_md5_=3b0db84e5a078a242c002805442a108e

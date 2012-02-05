@@ -3,11 +3,11 @@ DEPEND=dev-libs/libpcre sys-libs/ncurses >=sys-apps/sed-4 || ( =sys-devel/automa
 DESCRIPTION=A flexible and fast logfile colorizer
 EAPI=4
 HOMEPAGE=http://dev.gentoo.org/~joker/ccze/ccze.txt
-KEYWORDS=amd64 ~ppc ~sparc ~x86 ~x86-fbsd
+KEYWORDS=amd64 ppc ~sparc ~x86 ~x86-fbsd
 LICENSE=GPL-2
 RDEPEND=dev-libs/libpcre sys-libs/ncurses
 RESTRICT=test
 SLOT=0
 SRC_URI=mirror://gentoo/ccze-0.2.1.tar.gz
 _eclasses_=autotools	cc61a7c888abf6d8622105c6184881ed	eutils	87297b51c585746a3759c390fa2cf24f	fixheadtails	f96922acc9287f1e889a1e50a6c8986e	libtool	5f623f5a211fb1b2d84d88ee49959a54	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	portability	536c5e70c5fb252ed3b769e04aa3f05b	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
-_md5_=b4fbb3b63d759afbc5a10d9f41a42e48
+_md5_=1dd618241fc078dd81147c6a882a7bca
