@@ -1295,6 +1295,7 @@ dev-libs/libowfat:diet - Compile against dev-libs/dietlibc
 dev-libs/libp11:doc - Generate and install API documentation for the package.
 dev-libs/libpcre:bzip2 - Add support for pcregrep command to search within bzip2-compressed files, through sys-libs/zlib.
 dev-libs/libpcre:jit - Enable Just-In-Time compilation of regexp bytecode to machine code, through the SLJIT compiler. This feature might conflict wtih security mitigation strategies such as NX/PaX as enabled by Gentoo Hardened.
+dev-libs/libpcre:pcre16 - Build 16 bit PCRE library.
 dev-libs/libpcre:readline - Add support for command line editing to pcretest, through sys-libs/readline.
 dev-libs/libpcre:recursion-limit - Limit match recursion to 8192; if disabled, the default limit is used, which is the same as the match limit.
 dev-libs/libpcre:zlib - Add support for pcregrep command to search within gzip-compressed files, through app-arch/gzip.
@@ -4622,7 +4623,7 @@ sys-apps/busybox:nfs - Support mounting nfs shares
 sys-apps/dmtcp:fast - Enable experimental performance options such as mmap allocator.
 sys-apps/dmtcp:trace - Enable ptrace support (only valid with debug enabled).
 sys-apps/dstat:wifi - Enable wireless network functions
-sys-apps/elfix:xtpax - Enable XT_PAX and prefer it to PT_PAX.
+sys-apps/elfix:xtpax - Enable XATTR_PAX_FLAGS support (EXPERIMENTAL).
 sys-apps/flashrom:atahpt - Highpoint (HPT) ATA/RAID controller support
 sys-apps/flashrom:bitbang_spi - Bitbanging SPI infrastructure
 sys-apps/flashrom:buspirate_spi - Enable Bus Pirate SPI programmer

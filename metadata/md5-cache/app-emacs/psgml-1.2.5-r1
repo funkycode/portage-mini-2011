@@ -2,10 +2,10 @@ DEFINED_PHASES=compile install postinst postrm setup unpack
 DEPEND=app-text/openjade >=virtual/emacs-21
 DESCRIPTION=A GNU Emacs Major Mode for editing SGML and XML coded documents.
 HOMEPAGE=http://sourceforge.net/projects/psgml/
-KEYWORDS=x86 sparc amd64 ppc
+KEYWORDS=amd64 ppc x86
 LICENSE=GPL-2
 RDEPEND=app-text/openjade >=virtual/emacs-21
 SLOT=0
 SRC_URI=mirror://sourceforge/psgml/psgml-1.2.5.tar.gz
 _eclasses_=elisp	6e2733d3f6b8238de88467c371e1da8a	elisp-common	3048b6bde509e1aa680e77d093d01409	eutils	87297b51c585746a3759c390fa2cf24f	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	portability	536c5e70c5fb252ed3b769e04aa3f05b	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
-_md5_=06e3303c49a2829a53e8d516738604f3
+_md5_=65e944bc6ead5a3ecd1995eb2df9faf5

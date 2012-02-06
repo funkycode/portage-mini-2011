@@ -4,10 +4,10 @@ DESCRIPTION=an implementation of an E-component of Network Intrusion Detection S
 EAPI=2
 HOMEPAGE=http://libnids.sourceforge.net/
 IUSE=+glib +libnet
-KEYWORDS=~alpha amd64 ~ppc ~sparc x86
+KEYWORDS=amd64 ~ppc x86
 LICENSE=GPL-2
 RDEPEND=net-libs/libpcap glib? ( dev-libs/glib ) libnet? ( >=net-libs/libnet-1.1.0-r3 ) !net-libs/libnids:1.1
 SLOT=1.2
 SRC_URI=mirror://sourceforge/libnids/libnids-1.24.tar.gz
 _eclasses_=eutils	87297b51c585746a3759c390fa2cf24f	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	portability	536c5e70c5fb252ed3b769e04aa3f05b	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
-_md5_=0d392408a84cec3b6f7dfcc92b50b1ba
+_md5_=10747900ae462b2f6c788ccac62b5725

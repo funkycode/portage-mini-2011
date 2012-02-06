@@ -1,0 +1,12 @@
+DEFINED_PHASES=compile install postinst postrm prepare setup
+DEPEND=dev-python/setuptools >=app-admin/eselect-python-20091230 =dev-lang/python-2*
+DESCRIPTION=HTTP library for human beings
+EAPI=4
+HOMEPAGE=http://python-requests.org/ http://pypi.python.org/pypi/requests
+KEYWORDS=~amd64 ~x86
+LICENSE=ISC
+RDEPEND=dev-python/certifi >=app-admin/eselect-python-20091230 =dev-lang/python-2*
+SLOT=0
+SRC_URI=mirror://pypi/r/requests/requests-0.10.0.tar.gz
+_eclasses_=distutils	c8b0cab86443a130f3737ad1456d57d3	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	python	5526ca0199105d7b31120cf9d0bda586	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68
+_md5_=e5164f9dc69b49a8a0ddfe3ef68ecc8b
