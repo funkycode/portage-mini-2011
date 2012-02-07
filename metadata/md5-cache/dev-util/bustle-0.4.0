@@ -8,5 +8,5 @@ LICENSE=LGPL-2 GPL-2
 RDEPEND=net-libs/libpcap sys-apps/dbus x11-libs/cairo x11-libs/pango gnome-base/libglade:2.0
 SLOT=0
 SRC_URI=http://willthompson.co.uk/bustle/releases/0.4.0/bustle-0.4.0.tar.gz
-_eclasses_=eutils	87297b51c585746a3759c390fa2cf24f	ghc-package	83329f14231f6ba420fb965d858f37c0	haskell-cabal	767aa23a83969933bf11eab4206eb447	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	portability	536c5e70c5fb252ed3b769e04aa3f05b	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e	versionator	6601b4c5b3f019a993db59a50e1854e4
+_eclasses_=eutils	87297b51c585746a3759c390fa2cf24f	ghc-package	83329f14231f6ba420fb965d858f37c0	haskell-cabal	3e3a8d848b113b19eff54b771a020c8b	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	portability	536c5e70c5fb252ed3b769e04aa3f05b	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e	versionator	6601b4c5b3f019a993db59a50e1854e4
 _md5_=6f38bd5ba63d79efd5c5212e9bed2650

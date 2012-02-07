@@ -1,6 +1,6 @@
 # Copyright 1999-2012 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/sys-cluster/ceph/ceph-0.40.ebuild,v 1.1 2012/01/17 17:53:08 xarthisius Exp $
+# $Header: /var/cvsroot/gentoo-x86/sys-cluster/ceph/ceph-0.40.ebuild,v 1.2 2012/02/07 16:58:08 xarthisius Exp $
 
 EAPI=4
 
@@ -46,6 +46,8 @@ src_prepare() {
 	sed -i "/^docdir =/d" src/Makefile.am || die #fix doc path
 	# disable testsnaps
 	sed -e '/testsnaps/d' -i src/Makefile.am || die
+	sed -e "/bin=/ s:lib:$(get_libdir):" "${FILESDIR}"/${PN}.initd \
+		> "${T}"/${PN}.initd || die
 	eautoreconf
 }
 
@@ -82,6 +84,6 @@ src_install() {
 	keepdir /var/log/${PN}/stat
 	keepdir /var/run/${PN}
 
-	newinitd "${FILESDIR}/${PN}.initd" ${PN}
+	newinitd "${T}/${PN}.initd" ${PN}
 	newconfd "${FILESDIR}/${PN}.confd" ${PN}
 }

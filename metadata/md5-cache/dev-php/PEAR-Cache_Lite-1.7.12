@@ -2,10 +2,10 @@ DEFINED_PHASES=install
 DEPEND=dev-lang/php >=dev-php/pear-1.8.1
 DESCRIPTION=Fast and safe little cache system.
 HOMEPAGE=http://pear.php.net/Cache_Lite
-KEYWORDS=alpha amd64 ~hppa ia64 ppc ppc64 sparc x86
+KEYWORDS=alpha amd64 hppa ia64 ppc ppc64 sparc x86
 LICENSE=LGPL-2.1
 RDEPEND=dev-lang/php >=dev-php/pear-1.8.1
 SLOT=0
 SRC_URI=http://pear.php.net/get/Cache_Lite-1.7.12.tgz
 _eclasses_=multilib	5f4ad6cf85e365e8f0c6050ddd21659e	php-pear-r1	ec6ca81a78eed55923c519977010e559	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68
-_md5_=ff83bf73fe00ec9d12abf4fefb70a2fc
+_md5_=dfccdaa7fc7ab4ea7cec434677d1e333
