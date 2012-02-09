@@ -1,0 +1,8 @@
+DEFINED_PHASES=-
+DEPEND=net-misc/leechcraft-summary
+DESCRIPTION=Virtual for LeechCraft plugins providing UI for search plugins.
+EAPI=4
+KEYWORDS=~amd64 ~x86
+RDEPEND=net-misc/leechcraft-summary
+SLOT=0
+_md5_=d9f16bb1d2c8ea3c25452345486de38a

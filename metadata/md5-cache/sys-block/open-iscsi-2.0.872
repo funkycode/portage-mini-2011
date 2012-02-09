@@ -10,4 +10,4 @@ RDEPEND=slp? ( net-libs/openslp ) sys-apps/util-linux
 SLOT=0
 SRC_URI=mirror://kernel/linux/kernel/people/mnc/open-iscsi/releases/open-iscsi-2.0-872.tar.gz
 _eclasses_=eutils	87297b51c585746a3759c390fa2cf24f	flag-o-matic	a2e1c4641a8aed225d4ddb0f74f382de	linux-info	cc184ad3383ffb6ffbaa82f53608e77f	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	portability	536c5e70c5fb252ed3b769e04aa3f05b	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e	versionator	6601b4c5b3f019a993db59a50e1854e4
-_md5_=836ebd12d88d54f19bfc327fef9befe4
+_md5_=cb5c0fde3ba16c79d9059924a94711d4

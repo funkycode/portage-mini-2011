@@ -4146,6 +4146,7 @@ net-misc/vpnc:hybrid-auth - Enable hybrid authentication (certificates), only if
 net-misc/vpnc:openssl - Use dev-libs/openssl for hybrid-auth instead of net-libs/gnutls, may cause license issues when redistributing.
 net-misc/vpnc:resolvconf - Enable support for DNS managing framework net-dns/openresolv
 net-misc/wget:ntlm - Enable support for NTLM (Windows-based) authorization
+net-misc/wicd:ambiance - Install icons from Ubuntu's ambiance theme
 net-misc/wicd:gtk - Installs a gtk UI. This is enabled by default because it is intended behavior. Requires dev-python/pygtk
 net-misc/wicd:ioctl - Installs additional python libraries to use as a backend. This will improve speed but is experimental.
 net-misc/wicd:mac4lin - Change default icons to mac4lin icon set
@@ -4987,6 +4988,7 @@ sys-kernel/ck-sources:deblob - Remove binary blobs from kernel sources to provid
 sys-kernel/dracut:debug - Module installing additional tools like strace, file editor, ssh and more
 sys-kernel/gentoo-sources:deblob - Remove binary blobs from kernel sources to provide libre license compliance.
 sys-kernel/hardened-sources:deblob - Remove binary blobs from kernel sources to provide libre license compliance.
+sys-kernel/hardened-sources:xtpax - Enable XATTR_PAX_FLAGS support (EXPERIMENTAL).
 sys-kernel/linux-docs:html - Install HTML documentation
 sys-kernel/linux-firmware:savedconfig - Allows individual selection of firmware files
 sys-kernel/mips-sources:cobalt - Enables support for Cobalt Microserver hardware (Qube2/RaQ2)

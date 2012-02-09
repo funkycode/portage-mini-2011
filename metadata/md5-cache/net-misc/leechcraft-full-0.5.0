@@ -1,0 +1,10 @@
+DEFINED_PHASES=-
+DESCRIPTION=Metapackage containing all ready-to-use LeechCraft plugins
+EAPI=4
+HOMEPAGE=http://leechcraft.org/
+IUSE=kde
+KEYWORDS=~amd64 ~x86
+LICENSE=GPL-3
+RDEPEND=~app-editors/leechcraft-popishu-0.5.0 ~media-video/leechcraft-lmp-0.5.0 ~net-analyzer/leechcraft-networkmonitor-0.5.0 ~net-ftp/leechcraft-lcftp-0.5.0 ~net-im/leechcraft-azoth-0.5.0 ~net-misc/leechcraft-advancednotifications-0.5.0 kde? ( ~net-misc/leechcraft-anhero-0.5.0 ) ~net-misc/leechcraft-auscrie-0.5.0 ~net-misc/leechcraft-core-0.5.0 ~net-misc/leechcraft-cstp-0.5.0 ~net-misc/leechcraft-dbusmanager-0.5.0 ~net-misc/leechcraft-glance-0.5.0 ~net-misc/leechcraft-historyholder-0.5.0 ~net-misc/leechcraft-kinotify-0.5.0 ~net-misc/leechcraft-knowhow-0.5.0 ~net-misc/leechcraft-lackman-0.5.0 ~net-misc/leechcraft-newlife-0.5.0 ~net-misc/leechcraft-qrosp-0.5.0 ~net-misc/leechcraft-secman-0.5.0 ~net-misc/leechcraft-summary-0.5.0 ~net-misc/leechcraft-tabpp-0.5.0 ~net-misc/leechcraft-tabslist-0.5.0 ~net-news/leechcraft-aggregator-0.5.0 ~net-p2p/leechcraft-bittorrent-0.5.0 ~www-client/leechcraft-deadlyrics-0.5.0 ~www-client/leechcraft-poshuku-0.5.0 ~www-client/leechcraft-vgrabber-0.5.0 ~www-misc/leechcraft-seekthru-0.5.0
+SLOT=0
+_md5_=22a9553a74c6fb48e4bedca26347e1c8
