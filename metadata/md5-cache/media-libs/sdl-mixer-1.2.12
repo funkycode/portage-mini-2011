@@ -9,4 +9,4 @@ LICENSE=ZLIB
 REQUIRED_USE=midi? ( || ( timidity fluidsynth ) )
 SLOT=0
 SRC_URI=http://www.libsdl.org/projects/SDL_mixer/release/SDL_mixer-1.2.12.tar.gz
-_md5_=00d70de46c45b1d4eb3125ec0f09339c
+_md5_=f4913c40101221cd66f3beb14645bf62

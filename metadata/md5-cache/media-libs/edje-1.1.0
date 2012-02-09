@@ -1,0 +1,13 @@
+DEFINED_PHASES=compile install unpack
+DEPEND=dev-lang/lua >=dev-libs/eet-1.4.0_beta >=dev-libs/eina-1.0.0_beta >=dev-libs/embryo-1.0.0_beta >=media-libs/evas-1.0.0_beta >=dev-libs/ecore-1.0.0_beta doc? ( app-doc/doxygen )
+DESCRIPTION=graphical layout and animation library
+EAPI=1
+HOMEPAGE=http://www.enlightenment.org/pages/edje.html
+IUSE=debug +cache static-libs vim-syntax nls doc
+KEYWORDS=~amd64 ~x86
+LICENSE=BSD
+RDEPEND=dev-lang/lua >=dev-libs/eet-1.4.0_beta >=dev-libs/eina-1.0.0_beta >=dev-libs/embryo-1.0.0_beta >=media-libs/evas-1.0.0_beta >=dev-libs/ecore-1.0.0_beta nls? ( sys-devel/gettext )
+SLOT=0
+SRC_URI=http://download.enlightenment.org/releases/edje-1.1.0.tar.bz2
+_eclasses_=enlightenment	8b2f159cf37ac63433934b2282d9c318	eutils	87297b51c585746a3759c390fa2cf24f	libtool	5f623f5a211fb1b2d84d88ee49959a54	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	portability	536c5e70c5fb252ed3b769e04aa3f05b	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
+_md5_=560af3ac32cd549b5e2f3b2eee39eaa6

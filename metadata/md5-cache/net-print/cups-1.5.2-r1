@@ -4,7 +4,7 @@ DESCRIPTION=The Common Unix Printing System
 EAPI=4
 HOMEPAGE=http://www.cups.org/
 IUSE=acl dbus debug +filters gnutls java +jpeg kerberos ldap pam perl +png python slp +ssl static-libs +threads +tiff usb X xinetd linguas_da linguas_de linguas_es linguas_eu linguas_fi linguas_fr linguas_id linguas_it linguas_ja linguas_ko linguas_nl linguas_no linguas_pl linguas_pt linguas_pt_BR linguas_ru linguas_sv linguas_zh linguas_zh_TW elibc_FreeBSD java
-KEYWORDS=~amd64 ~arm ~ppc ~x86
+KEYWORDS=~amd64 ~arm ~hppa ~ppc ~x86
 LICENSE=GPL-2
 PDEPEND=app-text/ghostscript-gpl[cups] >=app-text/poppler-0.12.3-r3[utils] filters? ( net-print/foomatic-filters )
 RDEPEND=app-text/libpaper acl? ( kernel_linux? ( sys-apps/acl sys-apps/attr ) ) dbus? ( sys-apps/dbus ) java? ( >=virtual/jre-1.6 ) jpeg? ( virtual/jpeg:0 ) kerberos? ( virtual/krb5 ) ldap? ( net-nds/openldap[ssl?,gnutls?] ) pam? ( virtual/pam ) perl? ( dev-lang/perl ) png? ( >=media-libs/libpng-1.4.3:0 ) slp? ( >=net-libs/openslp-1.0.4 ) ssl? ( gnutls? ( dev-libs/libgcrypt net-libs/gnutls ) !gnutls? ( >=dev-libs/openssl-0.9.8g ) ) tiff? ( >=media-libs/tiff-3.5.5:0 ) usb? ( virtual/libusb:0 ) X? ( x11-misc/xdg-utils ) xinetd? ( sys-apps/xinetd ) dev-lang/perl[-build] >=app-admin/eselect-python-20091230 python? ( || ( =dev-lang/python-2.7* =dev-lang/python-2.6* =dev-lang/python-2.5* ) ) java? ( >=dev-java/java-config-2.1.9-r1 )
@@ -12,4 +12,4 @@ RESTRICT=test
 SLOT=0
 SRC_URI=mirror://easysw/cups/1.5.2/cups-1.5.2-source.tar.bz2 http://dev.gentoo.org/~dilfridge/distfiles/cups-1.5.2-ipp-r8950.patch.bz2
 _eclasses_=autotools	cc61a7c888abf6d8622105c6184881ed	base	5f35078c26d6c60556d5c8a2feb4f84f	eutils	87297b51c585746a3759c390fa2cf24f	fdo-mime	0acfe1a88fd8751a1d5dc671168219fa	flag-o-matic	a2e1c4641a8aed225d4ddb0f74f382de	gnome2-utils	b5ca2ccadb60760889faa3bccba121d9	java-pkg-opt-2	131dd2a697d663c0e33247611b9a1cd7	java-utils-2	0b830e0a2e6c4bdf1c81fec1b53d95f1	libtool	5f623f5a211fb1b2d84d88ee49959a54	linux-info	cc184ad3383ffb6ffbaa82f53608e77f	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	pam	3f746974e1cc47cabe3bd488c08cdc8e	perl-module	01501a30505074cd0012cabbf5d99447	portability	536c5e70c5fb252ed3b769e04aa3f05b	python	5526ca0199105d7b31120cf9d0bda586	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e	versionator	6601b4c5b3f019a993db59a50e1854e4
-_md5_=9e9360606006a92b11f4f8975b63fe75
+_md5_=32c7007c5b2d6a33228403e02798994e

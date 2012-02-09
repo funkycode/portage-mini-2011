@@ -1,0 +1,14 @@
+DEFINED_PHASES=compile configure install prepare test unpack
+DEPEND=>=dev-libs/eina-1.0.0_beta ares? ( net-dns/c-ares ) glib? ( dev-libs/glib ) curl? ( net-misc/curl ) gnutls? ( net-libs/gnutls ) !gnutls? ( ssl? ( dev-libs/openssl ) ) evas? ( >=media-libs/evas-1.0.0_beta[directfb?,fbcon?,opengl?,sdl?,X?,xcb?] opengl? ( virtual/opengl ) ) directfb? ( >=dev-libs/DirectFB-0.9.16 ) tslib? ( x11-libs/tslib ) sdl? ( media-libs/libsdl ) X? ( x11-libs/libX11 x11-libs/libXcomposite x11-libs/libXcursor x11-libs/libXdamage x11-libs/libXext x11-libs/libXfixes x11-libs/libXi x11-libs/libXrender x11-libs/libXtst xinerama? ( x11-libs/libXinerama x11-libs/libXrandr ) xprint? ( x11-libs/libXp ) xscreensaver? ( x11-libs/libXScrnSaver ) ) !X? ( xcb? ( x11-libs/xcb-util ) ) test? ( !prefix? ( x11-base/xorg-server[xvfb] ) x11-apps/xhost ) doc? ( app-doc/doxygen )
+DESCRIPTION=Enlightenment's core event abstraction layer and OS abstraction layer
+EAPI=2
+HOMEPAGE=http://www.enlightenment.org/
+IUSE=ares curl directfb +evas fbcon glib gnutls +inotify ipv6 opengl sdl ssl static-libs +threads tslib +X xcb xinerama xprint xscreensaver test nls doc
+KEYWORDS=~amd64 ~x86
+LICENSE=BSD
+RDEPEND=>=dev-libs/eina-1.0.0_beta ares? ( net-dns/c-ares ) glib? ( dev-libs/glib ) curl? ( net-misc/curl ) gnutls? ( net-libs/gnutls ) !gnutls? ( ssl? ( dev-libs/openssl ) ) evas? ( >=media-libs/evas-1.0.0_beta[directfb?,fbcon?,opengl?,sdl?,X?,xcb?] opengl? ( virtual/opengl ) ) directfb? ( >=dev-libs/DirectFB-0.9.16 ) tslib? ( x11-libs/tslib ) sdl? ( media-libs/libsdl ) X? ( x11-libs/libX11 x11-libs/libXcomposite x11-libs/libXcursor x11-libs/libXdamage x11-libs/libXext x11-libs/libXfixes x11-libs/libXi x11-libs/libXrender x11-libs/libXtst xinerama? ( x11-libs/libXinerama x11-libs/libXrandr ) xprint? ( x11-libs/libXp ) xscreensaver? ( x11-libs/libXScrnSaver ) ) !X? ( xcb? ( x11-libs/xcb-util ) ) nls? ( sys-devel/gettext )
+RESTRICT=test
+SLOT=0
+SRC_URI=http://download.enlightenment.org/releases/ecore-1.1.0.tar.bz2
+_eclasses_=enlightenment	8b2f159cf37ac63433934b2282d9c318	eutils	87297b51c585746a3759c390fa2cf24f	libtool	5f623f5a211fb1b2d84d88ee49959a54	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	portability	536c5e70c5fb252ed3b769e04aa3f05b	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e	virtualx	0c41ff55e46b959d9457dde69e7a09d9
+_md5_=248049dcadc26c8a6e6ff239c40451f8

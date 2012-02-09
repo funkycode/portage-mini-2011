@@ -1,0 +1,12 @@
+DEFINED_PHASES=configure prepare
+DEPEND=media-libs/ftgl media-libs/oyranos x11-libs/fltk
+DESCRIPTION=viewer for the internals of a ICC profile, measurement data (CGATS), argylls gamut vrml visualisations and video card gamma tables
+EAPI=4
+HOMEPAGE=http://www.behrmann.name/index.php?option=com_content&task=view&id=99&Itemid=1&lang=de
+KEYWORDS=~amd64 ~x86
+LICENSE=GPL-2
+RDEPEND=media-libs/ftgl media-libs/oyranos x11-libs/fltk
+SLOT=0
+SRC_URI=mirror://sourceforge/oyranos/ICC%20Examin/ICC%20Examin%200.50/icc_examin-0.50.tar.bz2
+_eclasses_=multilib	5f4ad6cf85e365e8f0c6050ddd21659e	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68
+_md5_=d1c0b71cb9fada39eff18df05a75be8b

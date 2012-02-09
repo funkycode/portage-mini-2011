@@ -1,6 +1,6 @@
 # Copyright 1999-2012 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/net-misc/tor/tor-0.2.3.11_alpha.ebuild,v 1.1 2012/01/24 13:06:55 blueness Exp $
+# $Header: /var/cvsroot/gentoo-x86/net-misc/tor/tor-0.2.3.11_alpha.ebuild,v 1.2 2012/02/07 21:11:21 blueness Exp $
 
 EAPI="4"
 
@@ -16,12 +16,13 @@ S="${WORKDIR}/${MY_PF}"
 LICENSE="BSD"
 SLOT="0"
 KEYWORDS="~amd64 ~arm ~ppc ~ppc64 ~sparc ~x86 ~x86-fbsd"
-IUSE="+bufferevents doc nat-pmp tor-hardening transparent-proxy threads upnp"
+IUSE="+bufferevents doc nat-pmp tor-hardening transparent-proxy threads upnp selinux"
 
 DEPEND="dev-libs/openssl
 	>=dev-libs/libevent-2.0.14
 	nat-pmp? ( net-libs/libnatpmp )
-	upnp? ( <net-libs/miniupnpc-1.6 )"
+	upnp? ( <net-libs/miniupnpc-1.6 )
+	selinux? ( sec-policy/selinux-tor )"
 RDEPEND="${DEPEND}"
 
 pkg_setup() {

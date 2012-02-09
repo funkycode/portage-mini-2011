@@ -1,6 +1,6 @@
 # Copyright 1999-2012 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/net-im/kadu/kadu-0.10.1.ebuild,v 1.4 2012/01/07 17:20:38 halcy0n Exp $
+# $Header: /var/cvsroot/gentoo-x86/net-im/kadu/kadu-0.10.1.ebuild,v 1.6 2012/02/08 20:05:53 reavertm Exp $
 
 EAPI="4"
 
@@ -25,7 +25,7 @@ REQUIRED_USE="
 COMMON_DEPEND="
 	>=app-crypt/qca-2.0.0-r2
 	>=media-libs/libsndfile-1.0
-	>=net-libs/libgadu-1.11.0[threads]
+	x11-libs/libX11
 	x11-libs/libXfixes
 	x11-libs/libXScrnSaver
 	>=x11-libs/qt-dbus-4.7.0:4
@@ -34,7 +34,10 @@ COMMON_DEPEND="
 	>=x11-libs/qt-sql-4.7.0:4[sqlite]
 	>=x11-libs/qt-svg-4.7.0:4
 	>=x11-libs/qt-webkit-4.7.0:4
-	gadu? ( >=x11-libs/qt-xmlpatterns-4.7.0:4 )
+	gadu? (
+		>=net-libs/libgadu-1.11.0[threads]
+		>=x11-libs/qt-xmlpatterns-4.7.0:4
+	)
 	mpd? ( media-libs/libmpdclient )
 	phonon? (
 		|| (
@@ -51,6 +54,7 @@ COMMON_DEPEND="
 DEPEND="${COMMON_DEPEND}
 	x11-proto/fixesproto
 	x11-proto/scrnsaverproto
+	x11-proto/xproto
 "
 RDEPEND="${COMMON_DEPEND}
 	app-crypt/qca-ossl:2
