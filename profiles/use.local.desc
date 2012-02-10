@@ -5523,6 +5523,7 @@ x11-wm/subtle:xtest - Enable support for the XTest extension
 x11-wm/vtwm:rplay - Enable rplay support, needed for sound.
 x11-wm/windowmaker:modelock - Enable XKB language status lock support. README says: "If you don't know what it is you probably don't need it."
 x11-wm/windowmaker:vdesktop - Enable dynamic virtual desktop (conflicts with software that works on the edges of the screen)
+x11-wm/windowmaker:xrandr - Enable XRandR window extension support
 x11-wm/xpra:parti - Runtime support for partioning window manager
 x11-wm/xpra:server - Build server-side code
 x11-wm/xpra:ssh - Runtime support for secure shell communication
