@@ -1,0 +1,11 @@
+DEFINED_PHASES=compile install unpack
+DEPEND=>=dev-lang/python-2.5 >=dev-python/m2crypto-0.16 >=dev-python/wxpython-2.8 >=dev-python/apsw-3.6 >=media-video/vlc-1.0.1 >=dev-libs/openssl-0.9.8 app-arch/unzip
+DESCRIPTION=Bittorrent client that does not require a website to discover content
+EAPI=4
+HOMEPAGE=http://www.tribler.org/
+KEYWORDS=~amd64 ~x86
+LICENSE=LGPL-2.1
+RDEPEND=>=dev-lang/python-2.5 >=dev-python/m2crypto-0.16 >=dev-python/wxpython-2.8 >=dev-python/apsw-3.6 >=media-video/vlc-1.0.1 >=dev-libs/openssl-0.9.8
+SLOT=0
+SRC_URI=http://dl.tribler.org/tribler_5.5.10-1ubuntu1_all.deb
+_md5_=bbfeffbface1dea0273467710f9bcb52

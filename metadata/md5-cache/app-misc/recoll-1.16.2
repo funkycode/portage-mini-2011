@@ -1,0 +1,14 @@
+DEFINED_PHASES=compile configure install postinst prepare pretend setup unpack
+DEPEND=virtual/libiconv >=dev-libs/xapian-1.0.12 sys-libs/zlib spell? ( app-text/aspell ) !inotify? ( fam? ( virtual/fam ) ) qt4? ( x11-libs/qt-core:4[qt3support] ) session? ( inotify? ( x11-libs/libX11 x11-libs/libSM x11-libs/libICE ) !inotify? ( fam? ( x11-libs/libX11 x11-libs/libSM x11-libs/libICE ) ) )
+DESCRIPTION=A personal full text search package
+EAPI=4
+HOMEPAGE=http://www.lesbonscomptes.com/recoll/
+IUSE=+spell +inotify +qt4 +session camelcase xattr fam audio chm djvu dvi exif ps ics info lyx msdoc msppt msxls pdf rtf tex wordperfect xml
+KEYWORDS=~amd64 ~x86
+LICENSE=GPL-2
+RDEPEND=virtual/libiconv >=dev-libs/xapian-1.0.12 sys-libs/zlib spell? ( app-text/aspell ) !inotify? ( fam? ( virtual/fam ) ) qt4? ( x11-libs/qt-core:4[qt3support] ) session? ( inotify? ( x11-libs/libX11 x11-libs/libSM x11-libs/libICE ) !inotify? ( fam? ( x11-libs/libX11 x11-libs/libSM x11-libs/libICE ) ) ) app-arch/unzip sys-apps/sed || ( sys-apps/gawk sys-apps/mawk ) pdf? ( app-text/poppler ) ps? ( app-text/pstotext ) msdoc? ( app-text/antiword ) msxls? ( app-text/catdoc ) msppt? ( app-text/catdoc ) wordperfect? ( app-text/libwpd:0.9 ) rtf? ( app-text/unrtf ) tex? ( dev-tex/detex ) dvi? ( virtual/tex-base ) djvu? ( >=app-text/djvu-3.5.15 ) exif? ( media-libs/exiftool ) chm? ( dev-python/pychm ) ics? ( dev-python/icalendar ) lyx? ( app-office/lyx ) audio? ( media-libs/mutagen ) xml? ( dev-libs/libxslt ) info? ( sys-apps/texinfo )
+REQUIRED_USE=^^ ( fam inotify ) session? ( || ( fam inotify ) )
+SLOT=0
+SRC_URI=http://www.lesbonscomptes.com/recoll/recoll-1.16.2.tar.gz
+_eclasses_=base	5f35078c26d6c60556d5c8a2feb4f84f	eutils	87297b51c585746a3759c390fa2cf24f	linux-info	cc184ad3383ffb6ffbaa82f53608e77f	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	portability	536c5e70c5fb252ed3b769e04aa3f05b	qt4-r2	05d7a72491b4cbbac2f4d4383657bc4f	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e	versionator	6601b4c5b3f019a993db59a50e1854e4
+_md5_=5a3f6e49baa9f1cb43449019cbfe2b83

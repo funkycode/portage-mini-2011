@@ -8,5 +8,5 @@ LICENSE=MIT
 RDEPEND=>=app-admin/eselect-python-20091230 =dev-lang/python-2*
 SLOT=0
 SRC_URI=http://launchpad.net/testtools/0.9/0.9.11/+download/testtools-0.9.11.tar.gz
-_eclasses_=distutils	c8b0cab86443a130f3737ad1456d57d3	eutils	87297b51c585746a3759c390fa2cf24f	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	portability	536c5e70c5fb252ed3b769e04aa3f05b	python	5526ca0199105d7b31120cf9d0bda586	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e	versionator	6601b4c5b3f019a993db59a50e1854e4
+_eclasses_=distutils	c8b0cab86443a130f3737ad1456d57d3	eutils	87297b51c585746a3759c390fa2cf24f	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	portability	536c5e70c5fb252ed3b769e04aa3f05b	python	6e672db8e0a68a2800e6b6bced0ae3eb	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e	versionator	6601b4c5b3f019a993db59a50e1854e4
 _md5_=ca5d7c379d6e749993e14be77241f71c

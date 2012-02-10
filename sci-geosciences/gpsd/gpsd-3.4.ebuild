@@ -1,6 +1,6 @@
 # Copyright 1999-2012 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/sci-geosciences/gpsd/gpsd-3.4.ebuild,v 1.1 2012/01/13 17:32:06 vapier Exp $
+# $Header: /var/cvsroot/gentoo-x86/sci-geosciences/gpsd/gpsd-3.4.ebuild,v 1.2 2012/02/09 22:14:45 vapier Exp $
 
 EAPI="4"
 
@@ -11,13 +11,19 @@ SCONS_MIN_VERSION="1.2.1"
 
 inherit eutils user multilib distutils scons-utils toolchain-funcs
 
+if [[ ${PV} == "9999" ]] ; then
+	EGIT_REPO_URI="git://git.savannah.nongnu.org/gpsd.git"
+	inherit git-2
+else
+	SRC_URI="mirror://nongnu/${PN}/${P}.tar.gz"
+	KEYWORDS="~amd64 ~arm ~ppc ~ppc64 ~x86"
+fi
+
 DESCRIPTION="GPS daemon and library to support USB/serial GPS devices and various GPS/mapping clients"
 HOMEPAGE="http://catb.org/gpsd/"
-SRC_URI="mirror://nongnu/${PN}/${P}.tar.gz"
 
 LICENSE="BSD"
 SLOT="0"
-KEYWORDS="~amd64 ~arm ~ppc ~ppc64 ~x86"
 
 GPSD_PROTOCOLS=(
 	ashtech aivdm clientdebug earthmate evermore fv18 garmin
@@ -39,11 +45,15 @@ RDEPEND="X? ( dev-python/pygtk:2 )
 	)
 	ntp? ( net-misc/ntp )
 	qt4? ( x11-libs/qt-gui )"
-# xml packages are for man page generation
 DEPEND="${RDEPEND}
-	app-text/xmlto
-	=app-text/docbook-xml-dtd-4.1*
 	test? ( sys-devel/bc )"
+
+# xml packages are for man page generation
+if [[ ${PV} == "9999" ]] ; then
+	DEPEND+="
+		app-text/xmlto
+		=app-text/docbook-xml-dtd-4.1*"
+fi
 
 pkg_setup() {
 	use python && python_pkg_setup
@@ -55,6 +65,7 @@ src_prepare() {
 	epatch "${FILESDIR}"/${PN}-3.4-gpsmon-lm.patch
 	epatch "${FILESDIR}"/${PN}-3.4-strptime.patch
 	epatch "${FILESDIR}"/${PN}-3.4-chrpath.patch
+	epatch "${FILESDIR}"/${PN}-3.4-always-install-man-pages.patch
 
 	# Avoid useless -L paths to the install dir
 	sed -i \

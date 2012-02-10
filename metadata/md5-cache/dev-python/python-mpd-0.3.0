@@ -1,12 +1,12 @@
 DEFINED_PHASES=compile install postinst postrm prepare
-DEPEND=>=app-admin/eselect-python-20091230 || ( =dev-lang/python-2.7* =dev-lang/python-2.6* =dev-lang/python-2.5* =dev-lang/python-2.4* )
+DEPEND=>=app-admin/eselect-python-20091230 || ( =dev-lang/python-2.7* =dev-lang/python-2.6* =dev-lang/python-2.5* )
 DESCRIPTION=Python MPD client library
 EAPI=3
 HOMEPAGE=http://jatreuman.indefero.net/p/python-mpd/
 KEYWORDS=amd64 ~ppc ~ppc64 x86
 LICENSE=LGPL-3
-RDEPEND=>=app-admin/eselect-python-20091230 || ( =dev-lang/python-2.7* =dev-lang/python-2.6* =dev-lang/python-2.5* =dev-lang/python-2.4* )
+RDEPEND=>=app-admin/eselect-python-20091230 || ( =dev-lang/python-2.7* =dev-lang/python-2.6* =dev-lang/python-2.5* )
 SLOT=0
 SRC_URI=mirror://pypi/p/python-mpd/python-mpd-0.3.0.tar.bz2
-_eclasses_=distutils	c8b0cab86443a130f3737ad1456d57d3	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	python	5526ca0199105d7b31120cf9d0bda586	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68
-_md5_=1caeb00445bdeb2519429b5f79eba765
+_eclasses_=distutils	c8b0cab86443a130f3737ad1456d57d3	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	python	6e672db8e0a68a2800e6b6bced0ae3eb	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68
+_md5_=87ce6300786f90d459e3bc9971a19622

@@ -2781,6 +2781,7 @@ media-sound/pulseaudio:gnome - Use GConf to store user preferences on streams an
 media-sound/pulseaudio:orc - Use dev-lang/orc for runtime optimisations.
 media-sound/pulseaudio:oss - Enable OSS sink/source (output/input). Deprecated, upstream does not support this on systems where other sink/source systems are available (i.e.: Linux). The padsp wrapper is now always build if the system supports OSS at all.
 media-sound/pulseaudio:realtime - Makes PulseAudio use RealtimeKit (sys-auth/rtkit) to get real-time priority while running.
+media-sound/pulseaudio:ssl - Use dev-libs/openssl to provide support for RAOP (AirPort) streaming.
 media-sound/pulseaudio:system-wide - Allow preparation and installation of the system-wide init script for PulseAudio. Since this support is only supported for embedded situations, do not enable without reading the upstream instructions at http://pulseaudio.org/wiki/WhatIsWrongWithSystemMode .
 media-sound/qmmp:bs2b - Enable Bauer stereophonic-to-binaural headphone filter
 media-sound/qmmp:cover - Enable album cover support
@@ -3423,6 +3424,7 @@ net-firewall/ipsec-tools:hybrid - Makes available both mode-cfg and xauth suppor
 net-firewall/ipsec-tools:idea - Enable support for the IDEA algorithm
 net-firewall/ipsec-tools:nat - Enable NAT-Traversal
 net-firewall/ipsec-tools:rc5 - Enable support for the patented RC5 algorithm
+net-firewall/ipsec-tools:stats - Enable statistics reporting
 net-firewall/iptables:netlink - Build against libnfnetlink which enables the nfnl_osf util
 net-firewall/nufw:nfconntrack - Use netfilter_conntrack
 net-firewall/nufw:nfqueue - Use NFQUEUE instead of QUEUE
@@ -4022,6 +4024,7 @@ net-misc/iputils:SECURITY_HAZARD - Allow non-root users to flood (ping -f). This
 net-misc/italc:system-libvncserver - Build against the system libvncserver (experimental)
 net-misc/knock:server - Installs the knockd server daemon.
 net-misc/leechcraft-netstoremanager:yandexdisk - Support Yandex.Disk storage backend
+net-misc/lldpd:snmp - Enable the use of SNMP
 net-misc/mediatomb:inotify - Enable inotify filesystem monitoring support
 net-misc/mediatomb:lastfm - Enable last.fm support
 net-misc/mediatomb:libextractor - Use libextractor to gather files' metadata.

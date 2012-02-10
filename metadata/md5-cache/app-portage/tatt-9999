@@ -7,5 +7,5 @@ IUSE=+templates
 LICENSE=GPL-2
 RDEPEND=app-portage/eix app-portage/gentoolkit www-client/pybugz dev-python/configobj >=app-admin/eselect-python-20091230 || ( =dev-lang/python-2.7* =dev-lang/python-2.6* )
 SLOT=0
-_eclasses_=distutils	c8b0cab86443a130f3737ad1456d57d3	git-2	6bb20ec18cca375571bcbe67bcf2e1d7	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	python	5526ca0199105d7b31120cf9d0bda586	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68
+_eclasses_=distutils	c8b0cab86443a130f3737ad1456d57d3	git-2	6bb20ec18cca375571bcbe67bcf2e1d7	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	python	6e672db8e0a68a2800e6b6bced0ae3eb	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68
 _md5_=8574fc66f9116a02a75bc344318dd1af

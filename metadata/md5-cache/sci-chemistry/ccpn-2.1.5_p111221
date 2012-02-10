@@ -11,5 +11,5 @@ RDEPEND=dev-lang/tk[threads] >=dev-python/numpy-1.4 >=dev-tcltk/tix-8.4.3 =sci-l
 RESTRICT=mirror
 SLOT=0
 SRC_URI=http://www.bio.cam.ac.uk/ccpn/download/ccpnmr/analysis2.1.5.tar.gz http://dev.gentoo.org/~jlec/distfiles/ccpn-update-2.1.5-111221.patch.xz
-_eclasses_=eutils	87297b51c585746a3759c390fa2cf24f	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	portability	536c5e70c5fb252ed3b769e04aa3f05b	python	5526ca0199105d7b31120cf9d0bda586	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e	versionator	6601b4c5b3f019a993db59a50e1854e4
+_eclasses_=eutils	87297b51c585746a3759c390fa2cf24f	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	portability	536c5e70c5fb252ed3b769e04aa3f05b	python	6e672db8e0a68a2800e6b6bced0ae3eb	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e	versionator	6601b4c5b3f019a993db59a50e1854e4
 _md5_=cb3f3547bacba232568ae76f5a0063dc

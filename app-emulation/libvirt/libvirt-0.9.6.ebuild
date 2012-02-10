@@ -1,6 +1,6 @@
-# Copyright 1999-2011 Gentoo Foundation
+# Copyright 1999-2012 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/app-emulation/libvirt/libvirt-0.9.6.ebuild,v 1.5 2011/11/17 18:55:21 phajdan.jr Exp $
+# $Header: /var/cvsroot/gentoo-x86/app-emulation/libvirt/libvirt-0.9.6.ebuild,v 1.7 2012/02/10 03:59:22 patrick Exp $
 
 #BACKPORTS=2
 #AUTOTOOLIZE=yes
@@ -15,7 +15,7 @@ if [[ ${PV} = *9999* ]]; then
 	AUTOTOOLIZE=yes
 fi
 
-PYTHON_DEPEND="python? 2:2.4"
+PYTHON_DEPEND="python? 2:2.5"
 #RESTRICT_PYTHON_ABIS="3.*"
 #SUPPORT_PYTHON_ABIS="1"
 
@@ -51,6 +51,7 @@ RDEPEND="sys-libs/readline
 	>=dev-libs/libxml2-2.7.6
 	>=dev-libs/libnl-1.1:1.1
 	>=net-libs/gnutls-1.0.25
+	sys-apps/dmidecode
 	>=sys-apps/util-linux-2.17
 	sys-devel/gettext
 	>=net-analyzer/netcat6-1.0-r2

@@ -1,0 +1,14 @@
+DEFINED_PHASES=install postinst prepare
+DEPEND=dev-embedded/avrdude sys-devel/crossdev java? ( virtual/jre dev-embedded/uisp dev-java/jikes dev-java/jna >=dev-java/rxtx-2.2_pre2 )
+DESCRIPTION=Arduino is an open-source AVR electronics prototyping platform
+EAPI=3
+HOMEPAGE=http://arduino.cc/
+IUSE=+java
+KEYWORDS=~x86 ~amd64
+LICENSE=GPL-2 LGPL-2 CCPL-Attribution-ShareAlike-3.0
+RDEPEND=dev-embedded/avrdude sys-devel/crossdev
+RESTRICT=strip binchecks
+SLOT=0
+SRC_URI=x86? ( http://arduino.googlecode.com/files/arduino-1.0-linux.tgz ) amd64? ( http://arduino.googlecode.com/files/arduino-1.0-linux64.tgz )
+_eclasses_=eutils	87297b51c585746a3759c390fa2cf24f	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	portability	536c5e70c5fb252ed3b769e04aa3f05b	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
+_md5_=e4407d8218665b5b6bedd6675ce9378a

@@ -6,5 +6,5 @@ HOMEPAGE=http://hotot.org
 LICENSE=LGPL-3
 RDEPEND=dev-libs/keybinder[python] dev-python/notify-python dev-python/python-distutils-extra >=dev-python/pywebkitgtk-1.1.8 >=app-admin/eselect-python-20091230 =dev-lang/python-2*
 SLOT=0
-_eclasses_=distutils	c8b0cab86443a130f3737ad1456d57d3	eutils	87297b51c585746a3759c390fa2cf24f	mercurial	273cde614620d32d35127c71eb18d702	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	portability	536c5e70c5fb252ed3b769e04aa3f05b	python	5526ca0199105d7b31120cf9d0bda586	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
+_eclasses_=distutils	c8b0cab86443a130f3737ad1456d57d3	eutils	87297b51c585746a3759c390fa2cf24f	mercurial	273cde614620d32d35127c71eb18d702	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	portability	536c5e70c5fb252ed3b769e04aa3f05b	python	6e672db8e0a68a2800e6b6bced0ae3eb	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
 _md5_=a717a07956760811932c887bba1222ae
