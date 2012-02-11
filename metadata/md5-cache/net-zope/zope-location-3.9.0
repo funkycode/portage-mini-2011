@@ -8,5 +8,5 @@ LICENSE=ZPL
 RDEPEND=>=net-zope/zope-component-3.8.0 net-zope/zope-copy net-zope/zope-interface net-zope/zope-proxy net-zope/zope-schema >=app-admin/eselect-python-20091230 dev-lang/python
 SLOT=0
 SRC_URI=mirror://pypi/z/zope.location/zope.location-3.9.0.zip
-_eclasses_=distutils	c8b0cab86443a130f3737ad1456d57d3	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	python	6e672db8e0a68a2800e6b6bced0ae3eb	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68
+_eclasses_=distutils	c8b0cab86443a130f3737ad1456d57d3	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	python	545e9598725a7ef2e104d245dbeb7653	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68
 _md5_=b5dc775539160749ef114a95e3bb1a2a

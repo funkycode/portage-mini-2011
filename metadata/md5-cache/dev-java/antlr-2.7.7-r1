@@ -9,5 +9,5 @@ LICENSE=ANTLR
 RDEPEND=>=virtual/jdk-1.3 mono? ( dev-lang/mono ) >=dev-java/java-config-2.1.9-r1 >=app-admin/eselect-python-20091230 python? ( =dev-lang/python-2* )
 SLOT=0
 SRC_URI=http://www.antlr2.org/download/antlr-2.7.7.tar.gz
-_eclasses_=base	5f35078c26d6c60556d5c8a2feb4f84f	distutils	c8b0cab86443a130f3737ad1456d57d3	eutils	87297b51c585746a3759c390fa2cf24f	java-pkg-2	6f723b44cff6b07377ca5c0848da887b	java-utils-2	0b830e0a2e6c4bdf1c81fec1b53d95f1	mono	203a4295c06155d318bdff9c6b2d5e1c	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	portability	536c5e70c5fb252ed3b769e04aa3f05b	python	6e672db8e0a68a2800e6b6bced0ae3eb	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e	versionator	6601b4c5b3f019a993db59a50e1854e4
+_eclasses_=base	5f35078c26d6c60556d5c8a2feb4f84f	distutils	c8b0cab86443a130f3737ad1456d57d3	eutils	87297b51c585746a3759c390fa2cf24f	java-pkg-2	6f723b44cff6b07377ca5c0848da887b	java-utils-2	0b830e0a2e6c4bdf1c81fec1b53d95f1	mono	203a4295c06155d318bdff9c6b2d5e1c	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	portability	536c5e70c5fb252ed3b769e04aa3f05b	python	545e9598725a7ef2e104d245dbeb7653	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e	versionator	6601b4c5b3f019a993db59a50e1854e4
 _md5_=4e2c1830d452b0fe0a1b38dd28e13fb8
