@@ -9,5 +9,5 @@ LICENSE=ErlPL-1.1
 RDEPEND=>=dev-lang/perl-5.6.1 ssl? ( >=dev-libs/openssl-0.9.7d ) emacs? ( virtual/emacs ) java? ( >=virtual/jdk-1.2 ) odbc? ( dev-db/unixODBC ) java? ( >=dev-java/java-config-2.1.9-r1 )
 SLOT=0
 SRC_URI=http://www.erlang.org/download/otp_src_R14B02.tar.gz http://erlang.org/download/otp_doc_man_R14B02.tar.gz doc? ( http://erlang.org/download/otp_doc_html_R14B02.tar.gz )
-_eclasses_=elisp-common	3048b6bde509e1aa680e77d093d01409	eutils	87297b51c585746a3759c390fa2cf24f	java-pkg-opt-2	131dd2a697d663c0e33247611b9a1cd7	java-utils-2	0b830e0a2e6c4bdf1c81fec1b53d95f1	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	portability	536c5e70c5fb252ed3b769e04aa3f05b	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e	versionator	6601b4c5b3f019a993db59a50e1854e4	wxwidgets	fb1a306837717dfa2af841ecdf929565
+_eclasses_=elisp-common	aa9676ce708f8aacf54ff9df8015963b	eutils	87297b51c585746a3759c390fa2cf24f	java-pkg-opt-2	131dd2a697d663c0e33247611b9a1cd7	java-utils-2	0b830e0a2e6c4bdf1c81fec1b53d95f1	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	portability	536c5e70c5fb252ed3b769e04aa3f05b	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e	versionator	6601b4c5b3f019a993db59a50e1854e4	wxwidgets	fb1a306837717dfa2af841ecdf929565
 _md5_=fbbe144107206befce8dc9dbeb1f5299

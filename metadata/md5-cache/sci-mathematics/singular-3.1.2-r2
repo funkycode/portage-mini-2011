@@ -10,5 +10,5 @@ RDEPEND=dev-libs/gmp >=dev-libs/ntl-5.5.1 emacs? ( >=virtual/emacs-22 )
 RESTRICT=test
 SLOT=0
 SRC_URI=http://www.mathematik.uni-kl.de/ftp/pub/Math/Singular/SOURCES/3-1-2/Singular-3-1-2.tar.gz http://www.mathematik.uni-kl.de/ftp/pub/Math/Singular/SOURCES/3-1-2/Singular-3-1-2-share.tar.gz
-_eclasses_=autotools	cc61a7c888abf6d8622105c6184881ed	elisp-common	3048b6bde509e1aa680e77d093d01409	eutils	87297b51c585746a3759c390fa2cf24f	flag-o-matic	a2e1c4641a8aed225d4ddb0f74f382de	libtool	5f623f5a211fb1b2d84d88ee49959a54	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	portability	536c5e70c5fb252ed3b769e04aa3f05b	prefix	21058c21ca48453d771df15500873ede	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e	versionator	6601b4c5b3f019a993db59a50e1854e4
+_eclasses_=autotools	cc61a7c888abf6d8622105c6184881ed	elisp-common	aa9676ce708f8aacf54ff9df8015963b	eutils	87297b51c585746a3759c390fa2cf24f	flag-o-matic	a2e1c4641a8aed225d4ddb0f74f382de	libtool	5f623f5a211fb1b2d84d88ee49959a54	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	portability	536c5e70c5fb252ed3b769e04aa3f05b	prefix	21058c21ca48453d771df15500873ede	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e	versionator	6601b4c5b3f019a993db59a50e1854e4
 _md5_=75450a1d7cd2220cbe11e3674f4c5632
