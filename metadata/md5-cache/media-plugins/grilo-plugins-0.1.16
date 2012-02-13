@@ -1,5 +1,5 @@
 DEFINED_PHASES=compile configure install postinst postrm preinst prepare setup unpack
-DEPEND=>=dev-libs/glib-2.26:2 =media-libs/grilo-0.1.16[network] dev-libs/gmime:2.4 dev-libs/libxml2:2 dev-db/sqlite:3 youtube? ( >=dev-libs/libgdata-0.4.0 >=media-libs/quvi-0.2.15 ) upnp? ( >=net-libs/gupnp-0.13 >=net-libs/gupnp-av-0.5 ) vimeo? ( net-libs/libsoup:2.4 dev-libs/libgcrypt ) >=dev-util/pkgconfig-0.9 || ( =sys-devel/automake-1.11* ) >=sys-devel/autoconf-2.61 sys-devel/libtool app-arch/xz-utils >=sys-apps/sed-4
+DEPEND=>=dev-libs/glib-2.26:2 =media-libs/grilo-0.1.16[network] dev-libs/gmime:2.4 dev-libs/libxml2:2 dev-db/sqlite:3 youtube? ( >=dev-libs/libgdata-0.4.0 >=media-libs/quvi-0.2.15 ) upnp? ( >=net-libs/gupnp-0.13 >=net-libs/gupnp-av-0.5 ) vimeo? ( net-libs/libsoup:2.4 dev-libs/libgcrypt ) >=dev-util/pkgconfig-0.9 || ( =sys-devel/automake-1.11* ) >=sys-devel/autoconf-2.68 sys-devel/libtool app-arch/xz-utils >=sys-apps/sed-4
 DESCRIPTION=A framework for easy media discovery and browsing
 EAPI=4
 HOMEPAGE=https://live.gnome.org/Grilo
@@ -10,5 +10,5 @@ RDEPEND=>=dev-libs/glib-2.26:2 =media-libs/grilo-0.1.16[network] dev-libs/gmime:
 RESTRICT=test
 SLOT=0
 SRC_URI=mirror://gnome/sources/grilo-plugins/0.1/grilo-plugins-0.1.16.tar.xz
-_eclasses_=autotools	a4a56dd86b9994ad0d63175029238bf0	eutils	87297b51c585746a3759c390fa2cf24f	fdo-mime	0acfe1a88fd8751a1d5dc671168219fa	gnome.org	8fef8f967214f56e08fa92d61163d891	gnome2	490ce89f5d905297c7a34898fa498bd0	gnome2-utils	b5ca2ccadb60760889faa3bccba121d9	libtool	5f623f5a211fb1b2d84d88ee49959a54	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	portability	536c5e70c5fb252ed3b769e04aa3f05b	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e	versionator	6601b4c5b3f019a993db59a50e1854e4
+_eclasses_=autotools	8dd6d5965d958613b3c50c63586af9e0	eutils	87297b51c585746a3759c390fa2cf24f	fdo-mime	0acfe1a88fd8751a1d5dc671168219fa	gnome.org	8fef8f967214f56e08fa92d61163d891	gnome2	490ce89f5d905297c7a34898fa498bd0	gnome2-utils	b5ca2ccadb60760889faa3bccba121d9	libtool	5f623f5a211fb1b2d84d88ee49959a54	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	portability	536c5e70c5fb252ed3b769e04aa3f05b	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e	versionator	6601b4c5b3f019a993db59a50e1854e4
 _md5_=711abfc437c84b49ad022d086b7397e9

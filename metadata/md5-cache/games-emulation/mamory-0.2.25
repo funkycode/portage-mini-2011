@@ -1,5 +1,5 @@
 DEFINED_PHASES=compile install postinst preinst setup unpack
-DEPEND=dev-libs/expat || ( =sys-devel/automake-1.11* ) >=sys-devel/autoconf-2.61 sys-devel/libtool
+DEPEND=dev-libs/expat || ( =sys-devel/automake-1.11* ) >=sys-devel/autoconf-2.68 sys-devel/libtool
 DESCRIPTION=ROM management tools and library
 HOMEPAGE=http://mamory.sourceforge.net/
 KEYWORDS=~amd64 ppc x86
@@ -7,5 +7,5 @@ LICENSE=GPL-2
 RDEPEND=dev-libs/expat
 SLOT=0
 SRC_URI=mirror://sourceforge/mamory/mamory-0.2.25.tar.gz
-_eclasses_=autotools	a4a56dd86b9994ad0d63175029238bf0	base	5f35078c26d6c60556d5c8a2feb4f84f	eutils	87297b51c585746a3759c390fa2cf24f	games	f75cdbfdf1760e514ca65e2f6c6a7c72	libtool	5f623f5a211fb1b2d84d88ee49959a54	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	portability	536c5e70c5fb252ed3b769e04aa3f05b	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
+_eclasses_=autotools	8dd6d5965d958613b3c50c63586af9e0	base	5f35078c26d6c60556d5c8a2feb4f84f	eutils	87297b51c585746a3759c390fa2cf24f	games	f75cdbfdf1760e514ca65e2f6c6a7c72	libtool	5f623f5a211fb1b2d84d88ee49959a54	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	portability	536c5e70c5fb252ed3b769e04aa3f05b	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
 _md5_=57c84e969cbea552e0453cf83f507cf4

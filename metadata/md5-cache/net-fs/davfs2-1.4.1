@@ -1,5 +1,5 @@
 DEFINED_PHASES=compile configure install postinst postrm preinst prepare setup
-DEPEND=dev-libs/libxml2 net-libs/neon sys-libs/zlib || ( =sys-devel/automake-1.11* ) >=sys-devel/autoconf-2.61 sys-devel/libtool kernel_linux? ( sys-apps/module-init-tools ) sys-apps/sed kernel_linux? ( virtual/linux-sources )
+DEPEND=dev-libs/libxml2 net-libs/neon sys-libs/zlib || ( =sys-devel/automake-1.11* ) >=sys-devel/autoconf-2.68 sys-devel/libtool kernel_linux? ( sys-apps/module-init-tools ) sys-apps/sed kernel_linux? ( virtual/linux-sources )
 DESCRIPTION=a Linux file system driver that allows you to mount a WebDAV server as a local disk drive. Davfs2 uses fuse (or coda) for kernel driver and neon for WebDAV interface
 EAPI=2
 HOMEPAGE=http://savannah.nongnu.org/projects/davfs2
@@ -10,5 +10,5 @@ RDEPEND=dev-libs/libxml2 net-libs/neon sys-libs/zlib kernel_linux? ( sys-apps/mo
 RESTRICT=test
 SLOT=0
 SRC_URI=http://mirror.lihnidos.org/GNU/savannah/davfs2/davfs2-1.4.1.tar.gz
-_eclasses_=autotools	a4a56dd86b9994ad0d63175029238bf0	eutils	87297b51c585746a3759c390fa2cf24f	libtool	5f623f5a211fb1b2d84d88ee49959a54	linux-info	cc184ad3383ffb6ffbaa82f53608e77f	linux-mod	a4e07f78bacb6b129ea7b18ad060dbfc	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	portability	536c5e70c5fb252ed3b769e04aa3f05b	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e	versionator	6601b4c5b3f019a993db59a50e1854e4
+_eclasses_=autotools	8dd6d5965d958613b3c50c63586af9e0	eutils	87297b51c585746a3759c390fa2cf24f	libtool	5f623f5a211fb1b2d84d88ee49959a54	linux-info	cc184ad3383ffb6ffbaa82f53608e77f	linux-mod	a4e07f78bacb6b129ea7b18ad060dbfc	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	portability	536c5e70c5fb252ed3b769e04aa3f05b	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e	versionator	6601b4c5b3f019a993db59a50e1854e4
 _md5_=72a957e55334de6f79f07feda4d7b4c2

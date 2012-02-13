@@ -1,5 +1,5 @@
 DEFINED_PHASES=configure install postinst preinst prepare
-DEPEND=>=gnome-base/librsvg-2.14.0:2 virtual/jpeg:0 x11-libs/cairo >=x11-libs/compiz-bcop-0.8.4 >=x11-wm/compiz-0.8.6[gconf?] >=dev-util/intltool-0.35 >=dev-util/pkgconfig-0.19 >=sys-devel/gettext-0.15 gconf? ( gnome-base/gconf:2 ) || ( =sys-devel/automake-1.11* ) >=sys-devel/autoconf-2.61 sys-devel/libtool >=sys-apps/sed-4
+DEPEND=>=gnome-base/librsvg-2.14.0:2 virtual/jpeg:0 x11-libs/cairo >=x11-libs/compiz-bcop-0.8.4 >=x11-wm/compiz-0.8.6[gconf?] >=dev-util/intltool-0.35 >=dev-util/pkgconfig-0.19 >=sys-devel/gettext-0.15 gconf? ( gnome-base/gconf:2 ) || ( =sys-devel/automake-1.11* ) >=sys-devel/autoconf-2.68 sys-devel/libtool >=sys-apps/sed-4
 DESCRIPTION=Compiz Fusion Window Decorator Plugins
 EAPI=2
 HOMEPAGE=http://www.compiz.org/
@@ -9,5 +9,5 @@ LICENSE=GPL-2
 RDEPEND=>=gnome-base/librsvg-2.14.0:2 virtual/jpeg:0 x11-libs/cairo >=x11-libs/compiz-bcop-0.8.4 >=x11-wm/compiz-0.8.6[gconf?]
 SLOT=0
 SRC_URI=http://releases.compiz.org/0.8.6/compiz-plugins-main-0.8.6.tar.bz2
-_eclasses_=autotools	a4a56dd86b9994ad0d63175029238bf0	eutils	87297b51c585746a3759c390fa2cf24f	gnome2-utils	b5ca2ccadb60760889faa3bccba121d9	libtool	5f623f5a211fb1b2d84d88ee49959a54	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	portability	536c5e70c5fb252ed3b769e04aa3f05b	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
+_eclasses_=autotools	8dd6d5965d958613b3c50c63586af9e0	eutils	87297b51c585746a3759c390fa2cf24f	gnome2-utils	b5ca2ccadb60760889faa3bccba121d9	libtool	5f623f5a211fb1b2d84d88ee49959a54	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	portability	536c5e70c5fb252ed3b769e04aa3f05b	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
 _md5_=e6d73c48488c2d73ab4261eb43511b30

@@ -1,5 +1,5 @@
 DEFINED_PHASES=configure install unpack
-DEPEND=zlib? ( sys-libs/zlib ) dev-vcs/git || ( =sys-devel/automake-1.11* ) >=sys-devel/autoconf-2.61 sys-devel/libtool
+DEPEND=zlib? ( sys-libs/zlib ) dev-vcs/git || ( =sys-devel/automake-1.11* ) >=sys-devel/autoconf-2.68 sys-devel/libtool
 DESCRIPTION=Load another kernel from the currently executing Linux kernel
 EAPI=2
 HOMEPAGE=http://kernel.org/pub/linux/utils/kernel/kexec/
@@ -7,5 +7,5 @@ IUSE=xen zlib
 LICENSE=GPL-2
 RDEPEND=zlib? ( sys-libs/zlib )
 SLOT=0
-_eclasses_=autotools	a4a56dd86b9994ad0d63175029238bf0	eutils	87297b51c585746a3759c390fa2cf24f	git-2	6bb20ec18cca375571bcbe67bcf2e1d7	libtool	5f623f5a211fb1b2d84d88ee49959a54	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	portability	536c5e70c5fb252ed3b769e04aa3f05b	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
+_eclasses_=autotools	8dd6d5965d958613b3c50c63586af9e0	eutils	87297b51c585746a3759c390fa2cf24f	git-2	6bb20ec18cca375571bcbe67bcf2e1d7	libtool	5f623f5a211fb1b2d84d88ee49959a54	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	portability	536c5e70c5fb252ed3b769e04aa3f05b	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
 _md5_=8d6561593ff2a1c6d9d3e57c3736a1f3

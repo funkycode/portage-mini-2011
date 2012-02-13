@@ -1,5 +1,5 @@
 DEFINED_PHASES=configure install prepare
-DEPEND=media-libs/libsndfile sys-libs/zlib alsa? ( media-libs/alsa-lib ) audiofile? ( media-libs/audiofile ) flac? ( media-libs/flac ) gtk? ( >=x11-libs/gtk+-2.10:2 ) id3tag? ( media-libs/libid3tag ) jack? ( >=media-sound/jack-audio-connection-kit-0.80 ) mad? ( media-libs/libmad ) mikmod? ( media-libs/libmikmod:0 ) nas? ( media-libs/nas ) ogg? ( media-libs/libogg ) opengl? ( virtual/opengl ) vorbis? ( media-libs/libvorbis ) xosd? ( x11-libs/xosd ) dev-util/pkgconfig doc? ( app-doc/doxygen ) nls? ( sys-devel/gettext ) oss? ( virtual/os-headers ) || ( =sys-devel/automake-1.11* ) >=sys-devel/autoconf-2.61 sys-devel/libtool
+DEPEND=media-libs/libsndfile sys-libs/zlib alsa? ( media-libs/alsa-lib ) audiofile? ( media-libs/audiofile ) flac? ( media-libs/flac ) gtk? ( >=x11-libs/gtk+-2.10:2 ) id3tag? ( media-libs/libid3tag ) jack? ( >=media-sound/jack-audio-connection-kit-0.80 ) mad? ( media-libs/libmad ) mikmod? ( media-libs/libmikmod:0 ) nas? ( media-libs/nas ) ogg? ( media-libs/libogg ) opengl? ( virtual/opengl ) vorbis? ( media-libs/libvorbis ) xosd? ( x11-libs/xosd ) dev-util/pkgconfig doc? ( app-doc/doxygen ) nls? ( sys-devel/gettext ) oss? ( virtual/os-headers ) || ( =sys-devel/automake-1.11* ) >=sys-devel/autoconf-2.68 sys-devel/libtool
 DESCRIPTION=A heavily multi-threaded pluggable audio player.
 EAPI=4
 HOMEPAGE=http://www.alsaplayer.org/
@@ -10,5 +10,5 @@ RDEPEND=media-libs/libsndfile sys-libs/zlib alsa? ( media-libs/alsa-lib ) audiof
 REQUIRED_USE=|| ( alsa jack nas oss )
 SLOT=0
 SRC_URI=http://www.alsaplayer.org/alsaplayer-0.99.81.tar.bz2
-_eclasses_=autotools	a4a56dd86b9994ad0d63175029238bf0	eutils	87297b51c585746a3759c390fa2cf24f	libtool	5f623f5a211fb1b2d84d88ee49959a54	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	portability	536c5e70c5fb252ed3b769e04aa3f05b	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
+_eclasses_=autotools	8dd6d5965d958613b3c50c63586af9e0	eutils	87297b51c585746a3759c390fa2cf24f	libtool	5f623f5a211fb1b2d84d88ee49959a54	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	portability	536c5e70c5fb252ed3b769e04aa3f05b	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
 _md5_=88a20490daf67b3137b5cbdb7046a352

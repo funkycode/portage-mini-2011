@@ -1,5 +1,5 @@
 DEFINED_PHASES=configure install prepare setup
-DEPEND=>=app-i18n/tomoe-0.6.0[python?] python? ( dev-python/pygtk:2 dev-python/pygobject:2 ) gucharmap? ( gnome-extra/gucharmap:0 ) dev-util/gtk-doc-am dev-util/pkgconfig sys-devel/gettext doc? ( >=dev-util/gtk-doc-1.4 ) || ( =sys-devel/automake-1.11* ) >=sys-devel/autoconf-2.61 sys-devel/libtool >=app-admin/eselect-python-20091230 python? ( =dev-lang/python-2* )
+DEPEND=>=app-i18n/tomoe-0.6.0[python?] python? ( dev-python/pygtk:2 dev-python/pygobject:2 ) gucharmap? ( gnome-extra/gucharmap:0 ) dev-util/gtk-doc-am dev-util/pkgconfig sys-devel/gettext doc? ( >=dev-util/gtk-doc-1.4 ) || ( =sys-devel/automake-1.11* ) >=sys-devel/autoconf-2.68 sys-devel/libtool >=app-admin/eselect-python-20091230 python? ( =dev-lang/python-2* )
 DESCRIPTION=Tomoe GTK+ interface widget library
 EAPI=3
 HOMEPAGE=http://tomoe.sourceforge.jp/
@@ -9,5 +9,5 @@ LICENSE=LGPL-2.1
 RDEPEND=>=app-i18n/tomoe-0.6.0[python?] python? ( dev-python/pygtk:2 dev-python/pygobject:2 ) gucharmap? ( gnome-extra/gucharmap:0 ) >=app-admin/eselect-python-20091230 python? ( =dev-lang/python-2* )
 SLOT=0
 SRC_URI=mirror://sourceforge/tomoe/tomoe-gtk-0.6.0.tar.gz
-_eclasses_=autotools	a4a56dd86b9994ad0d63175029238bf0	eutils	87297b51c585746a3759c390fa2cf24f	libtool	5f623f5a211fb1b2d84d88ee49959a54	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	portability	536c5e70c5fb252ed3b769e04aa3f05b	python	545e9598725a7ef2e104d245dbeb7653	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
+_eclasses_=autotools	8dd6d5965d958613b3c50c63586af9e0	eutils	87297b51c585746a3759c390fa2cf24f	libtool	5f623f5a211fb1b2d84d88ee49959a54	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	portability	536c5e70c5fb252ed3b769e04aa3f05b	python	545e9598725a7ef2e104d245dbeb7653	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
 _md5_=629a774c388003f067f1b5b03a8a317e

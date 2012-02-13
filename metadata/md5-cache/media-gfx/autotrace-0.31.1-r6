@@ -1,5 +1,5 @@
 DEFINED_PHASES=configure install prepare
-DEPEND=media-libs/libexif >=media-libs/libpng-1.4.3 >=media-libs/ming-0.4.2 >=media-gfx/pstoedit-3.50 imagemagick? ( >=media-gfx/imagemagick-6.6.2.5 ) dev-util/pkgconfig || ( =sys-devel/automake-1.11* ) >=sys-devel/autoconf-2.61 sys-devel/libtool
+DEPEND=media-libs/libexif >=media-libs/libpng-1.4.3 >=media-libs/ming-0.4.2 >=media-gfx/pstoedit-3.50 imagemagick? ( >=media-gfx/imagemagick-6.6.2.5 ) dev-util/pkgconfig || ( =sys-devel/automake-1.11* ) >=sys-devel/autoconf-2.68 sys-devel/libtool
 DESCRIPTION=A program for converting bitmaps to vector graphics
 EAPI=4
 HOMEPAGE=http://packages.qa.debian.org/a/autotrace.html http://autotrace.sourceforge.net/
@@ -9,5 +9,5 @@ LICENSE=GPL-2 LGPL-2.1
 RDEPEND=media-libs/libexif >=media-libs/libpng-1.4.3 >=media-libs/ming-0.4.2 >=media-gfx/pstoedit-3.50 imagemagick? ( >=media-gfx/imagemagick-6.6.2.5 )
 SLOT=0
 SRC_URI=mirror://debian/pool/main/a/autotrace/autotrace_0.31.1.orig.tar.gz mirror://debian/pool/main/a/autotrace/autotrace_0.31.1-15.diff.gz
-_eclasses_=autotools	a4a56dd86b9994ad0d63175029238bf0	eutils	87297b51c585746a3759c390fa2cf24f	libtool	5f623f5a211fb1b2d84d88ee49959a54	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	portability	536c5e70c5fb252ed3b769e04aa3f05b	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
+_eclasses_=autotools	8dd6d5965d958613b3c50c63586af9e0	eutils	87297b51c585746a3759c390fa2cf24f	libtool	5f623f5a211fb1b2d84d88ee49959a54	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	portability	536c5e70c5fb252ed3b769e04aa3f05b	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
 _md5_=5e052925240e84b54ef60ac381bb1740

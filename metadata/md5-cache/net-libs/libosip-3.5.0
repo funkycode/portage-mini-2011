@@ -1,5 +1,5 @@
 DEFINED_PHASES=configure install prepare
-DEPEND=|| ( =sys-devel/automake-1.11* ) >=sys-devel/autoconf-2.61 sys-devel/libtool
+DEPEND=|| ( =sys-devel/automake-1.11* ) >=sys-devel/autoconf-2.68 sys-devel/libtool
 DESCRIPTION=a simple way to support the Session Initiation Protocol
 EAPI=2
 HOMEPAGE=http://www.gnu.org/software/osip/
@@ -8,5 +8,5 @@ KEYWORDS=amd64 ppc ~sparc x86 ~ppc-macos ~x86-macos
 LICENSE=LGPL-2
 SLOT=2
 SRC_URI=mirror://gnu/osip/libosip2-3.5.0.tar.gz
-_eclasses_=autotools	a4a56dd86b9994ad0d63175029238bf0	eutils	87297b51c585746a3759c390fa2cf24f	libtool	5f623f5a211fb1b2d84d88ee49959a54	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	portability	536c5e70c5fb252ed3b769e04aa3f05b	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
+_eclasses_=autotools	8dd6d5965d958613b3c50c63586af9e0	eutils	87297b51c585746a3759c390fa2cf24f	libtool	5f623f5a211fb1b2d84d88ee49959a54	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	portability	536c5e70c5fb252ed3b769e04aa3f05b	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
 _md5_=a2389010037d1524c72dd4b629a58b35

@@ -1,5 +1,5 @@
 DEFINED_PHASES=configure install prepare
-DEPEND=sci-libs/minuit atlas? ( || ( sci-libs/blas-atlas sci-libs/atlas ) ) || ( =sys-devel/automake-1.11* ) >=sys-devel/autoconf-2.61 sys-devel/libtool
+DEPEND=sci-libs/minuit atlas? ( || ( sci-libs/blas-atlas sci-libs/atlas ) ) || ( =sys-devel/automake-1.11* ) >=sys-devel/autoconf-2.68 sys-devel/libtool
 DESCRIPTION=lite version of pNMRsim
 EAPI=3
 HOMEPAGE=http://www.dur.ac.uk/paul.hodgkinson/pNMRsim/
@@ -9,5 +9,5 @@ LICENSE=as-is
 RDEPEND=sci-libs/minuit atlas? ( || ( sci-libs/blas-atlas sci-libs/atlas ) )
 SLOT=0
 SRC_URI=http://dev.gentoo.org/~jlec/distfiles/libcmatrix-3.9.0.tar.gz
-_eclasses_=autotools	a4a56dd86b9994ad0d63175029238bf0	eutils	87297b51c585746a3759c390fa2cf24f	libtool	5f623f5a211fb1b2d84d88ee49959a54	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	portability	536c5e70c5fb252ed3b769e04aa3f05b	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
+_eclasses_=autotools	8dd6d5965d958613b3c50c63586af9e0	eutils	87297b51c585746a3759c390fa2cf24f	libtool	5f623f5a211fb1b2d84d88ee49959a54	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	portability	536c5e70c5fb252ed3b769e04aa3f05b	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
 _md5_=5c70cb6a6222c212c9348d3699a5cf51

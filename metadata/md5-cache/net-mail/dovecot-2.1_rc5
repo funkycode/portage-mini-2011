@@ -1,5 +1,5 @@
 DEFINED_PHASES=compile configure install postinst preinst prepare setup test
-DEPEND=caps? ( sys-libs/libcap ) kerberos? ( virtual/krb5 ) ldap? ( net-nds/openldap ) lucene? ( >=dev-cpp/clucene-2.3 ) mysql? ( virtual/mysql ) pam? ( virtual/pam ) postgres? ( dev-db/postgresql-base !dev-db/postgresql-base[ldap,threads] ) sqlite? ( dev-db/sqlite ) ssl? ( dev-libs/openssl ) vpopmail? ( net-mail/vpopmail ) virtual/libiconv ssl? ( dev-libs/openssl ) || ( =sys-devel/automake-1.11* ) >=sys-devel/autoconf-2.61 sys-devel/libtool
+DEPEND=caps? ( sys-libs/libcap ) kerberos? ( virtual/krb5 ) ldap? ( net-nds/openldap ) lucene? ( >=dev-cpp/clucene-2.3 ) mysql? ( virtual/mysql ) pam? ( virtual/pam ) postgres? ( dev-db/postgresql-base !dev-db/postgresql-base[ldap,threads] ) sqlite? ( dev-db/sqlite ) ssl? ( dev-libs/openssl ) vpopmail? ( net-mail/vpopmail ) virtual/libiconv ssl? ( dev-libs/openssl ) || ( =sys-devel/automake-1.11* ) >=sys-devel/autoconf-2.68 sys-devel/libtool
 DESCRIPTION=An IMAP and POP3 server written with security primarily in mind
 EAPI=4
 HOMEPAGE=http://www.dovecot.org/
@@ -9,5 +9,5 @@ LICENSE=LGPL-2.1 MIT
 RDEPEND=caps? ( sys-libs/libcap ) kerberos? ( virtual/krb5 ) ldap? ( net-nds/openldap ) lucene? ( >=dev-cpp/clucene-2.3 ) mysql? ( virtual/mysql ) pam? ( virtual/pam ) postgres? ( dev-db/postgresql-base !dev-db/postgresql-base[ldap,threads] ) sqlite? ( dev-db/sqlite ) ssl? ( dev-libs/openssl ) vpopmail? ( net-mail/vpopmail ) virtual/libiconv >=net-mail/mailbase-0.00-r8
 SLOT=0
 SRC_URI=http://www.dovecot.org/releases/2.1/rc/dovecot-2.1.rc5.tar.gz sieve? ( http://hg.rename-it.nl/dovecot-2.1-pigeonhole/archive/bc5acd9e957e.tar.bz2 -> dovecot-2.1-pigeonhole-bc5acd9e957e.tar.bz2 ) managesieve? ( http://hg.rename-it.nl/dovecot-2.1-pigeonhole/archive/bc5acd9e957e.tar.bz2 -> dovecot-2.1-pigeonhole-bc5acd9e957e.tar.bz2 )
-_eclasses_=autotools	a4a56dd86b9994ad0d63175029238bf0	eutils	87297b51c585746a3759c390fa2cf24f	libtool	5f623f5a211fb1b2d84d88ee49959a54	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	portability	536c5e70c5fb252ed3b769e04aa3f05b	ssl-cert	7f678cd359743d336ecf3a6cc4ce1521	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e	versionator	6601b4c5b3f019a993db59a50e1854e4
+_eclasses_=autotools	8dd6d5965d958613b3c50c63586af9e0	eutils	87297b51c585746a3759c390fa2cf24f	libtool	5f623f5a211fb1b2d84d88ee49959a54	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	portability	536c5e70c5fb252ed3b769e04aa3f05b	ssl-cert	7f678cd359743d336ecf3a6cc4ce1521	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e	versionator	6601b4c5b3f019a993db59a50e1854e4
 _md5_=b6aaa435d6402eaa9687fccf0f35b819
