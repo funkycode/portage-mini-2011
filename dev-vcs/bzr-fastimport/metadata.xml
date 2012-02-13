@@ -1,12 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE pkgmetadata SYSTEM "http://www.gentoo.org/dtd/metadata.dtd">
 <pkgmetadata>
-  <maintainer>
-    <email>staff@funtoo.org</email>
-    <name>Funtoo Core Team</name>
-  </maintainer>
-  <longdescription lang="en">
-    Bazaar Fast Import is a plugin providing fast loading of revision
-    control data into Bazaar as well as exporting.
-  </longdescription>
+<maintainer>
+	<email>tetromino@gentoo.org</email>
+	<name>Alexandre Rostovtsev</name>
+</maintainer>
 </pkgmetadata>

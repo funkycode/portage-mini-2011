@@ -4730,6 +4730,7 @@ sys-apps/razercfg:qt4 - Installs a qt UI. Requires dev-python/pygtk
 sys-apps/s390-tools:fuse - build cmsfs-fuse to read files stored on a z/VM CMS disk
 sys-apps/s390-tools:zfcpdump - build the kernel disk dumping utility
 sys-apps/shadow:audit - Enable support for sys-process/audit
+sys-apps/shadow:tcb - Enable support for sys-auth/tcb
 sys-apps/smartmontools:minimal - Do not install the monitoring daemon and associated scripts.
 sys-apps/superiotool:pci - Support for PCI-attached "Super I/Os" (e.g. in VIA VT82686A/B).
 sys-apps/systemd:audit - Enable support for sys-process/audit
