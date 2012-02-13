@@ -10,5 +10,5 @@ RDEPEND=>=dev-libs/dbus-glib-0.76 >=dev-libs/glib-2.16:2 >=x11-libs/gtk+-3.2:3 >
 RESTRICT=test
 SLOT=0
 SRC_URI=http://launchpad.net/notify-osd/oneiric/0.9.32/+download/notify-osd-0.9.32.tar.gz
-_eclasses_=autotools	cc61a7c888abf6d8622105c6184881ed	eutils	87297b51c585746a3759c390fa2cf24f	gnome2-utils	b5ca2ccadb60760889faa3bccba121d9	libtool	5f623f5a211fb1b2d84d88ee49959a54	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	portability	536c5e70c5fb252ed3b769e04aa3f05b	savedconfig	973a6df1a0949eba28a185eac79de815	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
+_eclasses_=autotools	a4a56dd86b9994ad0d63175029238bf0	eutils	87297b51c585746a3759c390fa2cf24f	gnome2-utils	b5ca2ccadb60760889faa3bccba121d9	libtool	5f623f5a211fb1b2d84d88ee49959a54	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	portability	536c5e70c5fb252ed3b769e04aa3f05b	savedconfig	973a6df1a0949eba28a185eac79de815	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
 _md5_=75f5a3c5f768169f9d82171a3aee8b46

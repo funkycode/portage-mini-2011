@@ -10,5 +10,5 @@ RDEPEND=>=x11-libs/qt-gui-4.4:4[dbus?] >=app-crypt/qca-2.0.2:2 whiteboarding? ( 
 REQUIRED_USE=iconsets? ( extras ) plugins? ( extras ) powersave? ( extras ) webkit? ( extras )
 RESTRICT=test
 SLOT=0
-_eclasses_=base	5f35078c26d6c60556d5c8a2feb4f84f	eutils	87297b51c585746a3759c390fa2cf24f	git-2	6bb20ec18cca375571bcbe67bcf2e1d7	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	portability	536c5e70c5fb252ed3b769e04aa3f05b	qt4-r2	05d7a72491b4cbbac2f4d4383657bc4f	subversion	358513fdd056fcbb3d06deb666e85ef0	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
+_eclasses_=base	5f35078c26d6c60556d5c8a2feb4f84f	eutils	87297b51c585746a3759c390fa2cf24f	git-2	6bb20ec18cca375571bcbe67bcf2e1d7	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	portability	536c5e70c5fb252ed3b769e04aa3f05b	qt4-r2	0d58394f40a89c8ec116c71510d7584b	subversion	358513fdd056fcbb3d06deb666e85ef0	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
 _md5_=611eacdba3fd5144cfb907502cb4e0bb

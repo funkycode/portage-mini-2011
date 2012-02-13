@@ -1,11 +1,11 @@
 # Copyright 1999-2012 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/net-im/telepathy-logger/telepathy-logger-0.2.12.ebuild,v 1.3 2012/01/14 17:32:44 maekke Exp $
+# $Header: /var/cvsroot/gentoo-x86/net-im/telepathy-logger/telepathy-logger-0.2.12.ebuild,v 1.4 2012/02/12 18:30:17 eva Exp $
 
 EAPI="4"
 PYTHON_DEPEND="2:2.5"
 
-inherit base python virtualx
+inherit gnome2-utils python virtualx
 
 DESCRIPTION="Telepathy Logger is a session daemon that should be activated whenever telepathy is being used."
 HOMEPAGE="http://telepathy.freedesktop.org/wiki/Logger"
@@ -30,6 +30,8 @@ DEPEND="${RDEPEND}
 	doc? ( >=dev-util/gtk-doc-1.10 )
 "
 
+DOCS=(AUTHORS ChangeLog NEWS README)
+
 pkg_setup() {
 	python_set_active_version 2
 	python_pkg_setup
@@ -43,6 +45,7 @@ src_prepare() {
 src_configure() {
 	econf \
 		$(use_enable doc gtk-doc) \
+		--enable-call \
 		--enable-debug \
 		--enable-public-extensions \
 		--disable-coding-style-checks \
@@ -51,14 +54,11 @@ src_configure() {
 }
 
 src_test() {
-	unset DBUS_SESSION_BUS_ADDRESS
-	mkdir -p "${T}/home/cache"
-	export XDG_CACHE_HOME="${T}/home/cache"
+	gnome2_environment_reset
 	Xemake check || die "make check failed"
 }
 
 src_install() {
-	base_src_install
-	dodoc AUTHORS ChangeLog NEWS README
+	default
 	find "${D}" -name "*.la" -delete || die "la files removal failed"
 }

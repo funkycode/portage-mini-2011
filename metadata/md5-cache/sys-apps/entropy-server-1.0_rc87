@@ -1,0 +1,12 @@
+DEFINED_PHASES=compile install postinst postrm
+DEPEND=app-text/asciidoc >=app-admin/eselect-python-20091230 =dev-lang/python-2*
+DESCRIPTION=Entropy Package Manager server-side tools
+EAPI=3
+HOMEPAGE=http://www.sabayon.org
+KEYWORDS=~amd64 ~arm ~x86
+LICENSE=GPL-2
+RDEPEND=~sys-apps/entropy-1.0_rc87 >=app-admin/eselect-python-20091230 =dev-lang/python-2*
+SLOT=0
+SRC_URI=mirror://sabayon/sys-apps/entropy-1.0_rc87.tar.bz2
+_eclasses_=bash-completion-r1	3480f8385cb9e31797e7b659e366e2d2	eutils	87297b51c585746a3759c390fa2cf24f	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	portability	536c5e70c5fb252ed3b769e04aa3f05b	python	545e9598725a7ef2e104d245dbeb7653	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
+_md5_=08cd592837c64f735c1ef9e3935f2d98

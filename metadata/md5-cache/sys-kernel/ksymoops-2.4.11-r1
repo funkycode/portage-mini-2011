@@ -1,9 +1,9 @@
 DEFINED_PHASES=compile install unpack
 DESCRIPTION=Utility to decode a kernel oops, or other kernel call traces
 HOMEPAGE=http://www.kernel.org/pub/linux/utils/kernel/ksymoops/
-KEYWORDS=~alpha amd64 ~ia64 ~mips ~ppc ~s390 ~sparc ~x86
+KEYWORDS=alpha amd64 ia64 ~mips ~ppc s390 sparc x86
 LICENSE=GPL-2
 SLOT=0
 SRC_URI=ftp://ftp.kernel.org/pub/linux/utils/kernel/ksymoops/v2.4/ksymoops-2.4.11.tar.gz
 _eclasses_=eutils	87297b51c585746a3759c390fa2cf24f	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	portability	536c5e70c5fb252ed3b769e04aa3f05b	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
-_md5_=3b279f220d3f8fcfc3309841d46e4345
+_md5_=fb564a935d58597003f1e5696281e6e4

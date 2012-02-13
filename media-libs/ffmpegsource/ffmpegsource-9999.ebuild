@@ -1,10 +1,12 @@
-# Copyright 1999-2011 Gentoo Foundation
+# Copyright 1999-2012 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/media-libs/ffmpegsource/ffmpegsource-9999.ebuild,v 1.2 2011/12/23 21:01:05 maksbotan Exp $
+# $Header: /var/cvsroot/gentoo-x86/media-libs/ffmpegsource/ffmpegsource-9999.ebuild,v 1.3 2012/02/12 12:15:08 maksbotan Exp $
 
 EAPI=4
 
-inherit autotools subversion
+AUTOTOOLS_AUTORECONF=1
+
+inherit subversion autotools-utils
 
 DESCRIPTION="An FFmpeg based source library for easy frame accurate access"
 HOMEPAGE="https://code.google.com/p/ffmpegsource/"
@@ -13,7 +15,7 @@ ESVN_REPO_URI="http://ffmpegsource.googlecode.com/svn/trunk/"
 LICENSE="MIT"
 SLOT="0"
 KEYWORDS=""
-IUSE="postproc static-libs"
+IUSE="static-libs"
 
 RDEPEND="
 	sys-libs/zlib
@@ -23,20 +25,10 @@ DEPEND="${RDEPEND}
 	dev-util/pkgconfig
 "
 
-src_prepare() {
-	eautoreconf
-}
-
 src_configure() {
-	econf \
-		--docdir="${EPREFIX}/usr/share/doc/${PF}/html" \
-		$(use_enable postproc) \
-		$(use_enable static-libs static) \
-		--enable-shared
-}
+	local myeconfargs=(
+		--docdir="${EPREFIX}/usr/share/doc/${PF}/html"
+	)
 
-src_install() {
-	default
-
-	use static-libs || find "${D}" -name '*.la' -delete
+	autotools-utils_src_configure
 }

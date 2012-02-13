@@ -1,0 +1,11 @@
+DEFINED_PHASES=-
+DEPEND=sys-libs/zlib dev-libs/openssl sys-libs/e2fsprogs-libs
+DESCRIPTION=Online backups for the truly paranoid
+EAPI=4
+HOMEPAGE=http://www.tarsnap.com/
+KEYWORDS=~amd64 ~x86
+LICENSE=tarsnap
+RDEPEND=sys-libs/zlib dev-libs/openssl sys-libs/e2fsprogs-libs
+SLOT=0
+SRC_URI=https://www.tarsnap.com/download/tarsnap-autoconf-1.0.31.tgz
+_md5_=dcf5fb6c77c15189e4b64e9d96d7405b

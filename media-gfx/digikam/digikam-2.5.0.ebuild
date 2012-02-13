@@ -1,6 +1,6 @@
 # Copyright 1999-2012 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/media-gfx/digikam/digikam-2.5.0.ebuild,v 1.1 2012/01/03 16:30:11 dilfridge Exp $
+# $Header: /var/cvsroot/gentoo-x86/media-gfx/digikam/digikam-2.5.0.ebuild,v 1.4 2012/02/12 16:01:42 dilfridge Exp $
 
 EAPI=4
 
@@ -11,6 +11,8 @@ rw se sk sl sq sr sr@Latn ss sv ta te tg th tr tt uk uz uz@cyrillic ven vi wa xh
 KDE_HANDBOOK="optional"
 CMAKE_MIN_VERSION="2.8"
 KDE_MINIMAL="4.7"
+
+KDE_DOC_DIRS="doc-digikam doc-showfoto"
 
 inherit kde4-base
 
@@ -61,6 +63,7 @@ RDEPEND="${CDEPEND}
 	)
 "
 DEPEND="${CDEPEND}
+	dev-libs/boost
 	sys-devel/gettext
 	doc? ( app-doc/doxygen )
 "
@@ -70,16 +73,22 @@ S="${WORKDIR}/${MY_P}/core"
 RESTRICT=test
 # bug 366505
 
-PATCHES=( "${FILESDIR}/${P}-libkipi.patch" )
+PATCHES=(
+	"${FILESDIR}/${P}-libkipi.patch"
+	"${FILESDIR}/${P}-boost148.patch"
+)
 
 src_prepare() {
 	# just to make absolutely sure
 	rm -rf "${WORKDIR}/${MY_P}/extra" || die
 
 	# prepare the handbook
-	mv "${WORKDIR}/${MY_P}/doc/${PN}" doc || die
-	echo "add_subdirectory( digikam )" > doc/CMakeLists.txt
-	echo "add_subdirectory( showfoto )" >> doc/CMakeLists.txt
+	mkdir doc-digikam doc-showfoto || die
+	echo "add_subdirectory( en )" > doc-digikam/CMakeLists.txt || die
+	mv "${WORKDIR}/${MY_P}/doc/${PN}/digikam" doc-digikam/en || die
+	echo "add_subdirectory( en )" > doc-showfoto/CMakeLists.txt || die
+	mv "${WORKDIR}/${MY_P}/doc/${PN}/showfoto" doc-showfoto/en || die
+	sed -i -e 's:../digikam/:../../doc-digikam/en/:g' doc-showfoto/en/index.docbook || die
 
 	# prepare the translations
 	mv "${WORKDIR}/${MY_P}/po" po || die
@@ -92,7 +101,8 @@ src_prepare() {
 	kde4-base_src_prepare
 
 	if use handbook; then
-		echo "add_subdirectory( doc )" >> CMakeLists.txt
+		echo "add_subdirectory( doc-digikam )" >> CMakeLists.txt
+		echo "add_subdirectory( doc-showfoto )" >> CMakeLists.txt
 	fi
 }
 

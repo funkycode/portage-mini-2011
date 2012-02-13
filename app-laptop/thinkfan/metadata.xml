@@ -1,15 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE pkgmetadata SYSTEM "http://www.gentoo.org/dtd/metadata.dtd">
 <pkgmetadata>
-	<maintainer>
-		<email>ereslibre@kde.org</email>
-		<name>Rafael Fernández López</name>
-	</maintainer>
-	<longdescription lang="en">
-		Minimalist tool to control fan using temperature. It is presented in a
-		daemon form, so your fan levels are corrected live when they need to be
-		changed, according to some rules specified by the user. It is mainly
-		targeted to ThinkPad laptop users, using thinkpad_acpi, despite it also
-		supports sysfs hwmon.
-	</longdescription>
+<maintainer>
+<email>xmw@gentoo.org</email>
+<name>Michael Weber</name>
+</maintainer>
 </pkgmetadata>
+
