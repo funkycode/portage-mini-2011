@@ -7,5 +7,5 @@ LICENSE=as-is
 RDEPEND=net-fs/nfs-utils
 SLOT=0
 SRC_URI=mirror://debian/pool/main/c/cfs/cfs_1.4.1.orig.tar.gz mirror://debian/pool/main/c/cfs/cfs_1.4.1-17.diff.gz
-_eclasses_=eutils	87297b51c585746a3759c390fa2cf24f	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	portability	536c5e70c5fb252ed3b769e04aa3f05b	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e	versionator	6601b4c5b3f019a993db59a50e1854e4
+_eclasses_=eutils	d360ca0f1b0275dd8f9c1656049c09d7	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	portability	536c5e70c5fb252ed3b769e04aa3f05b	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e	versionator	6601b4c5b3f019a993db59a50e1854e4
 _md5_=db95d582204df1ee387b58ad91e1c7de

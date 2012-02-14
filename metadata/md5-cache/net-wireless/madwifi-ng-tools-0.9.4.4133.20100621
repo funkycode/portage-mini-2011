@@ -7,5 +7,5 @@ LICENSE=|| ( BSD GPL-2 )
 RDEPEND=!net-wireless/madwifi-old-tools
 SLOT=0
 SRC_URI=http://snapshots.madwifi-project.org/madwifi-0.9.4/madwifi-0.9.4-r4133-20100621.tar.gz
-_eclasses_=eutils	87297b51c585746a3759c390fa2cf24f	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	portability	536c5e70c5fb252ed3b769e04aa3f05b	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e	versionator	6601b4c5b3f019a993db59a50e1854e4
+_eclasses_=eutils	d360ca0f1b0275dd8f9c1656049c09d7	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	portability	536c5e70c5fb252ed3b769e04aa3f05b	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e	versionator	6601b4c5b3f019a993db59a50e1854e4
 _md5_=7a27fdb8fd1a8e08d80f55706a417a1f

@@ -9,5 +9,5 @@ LICENSE=GPL-2
 RDEPEND=!static? ( ldap? ( net-nds/openldap ) bzip2? ( app-arch/bzip2 ) zlib? ( sys-libs/zlib ) curl? ( net-misc/curl ) virtual/mta readline? ( sys-libs/readline ) smartcard? ( =virtual/libusb-0* ) usb? ( =virtual/libusb-0* ) ) selinux? ( sec-policy/selinux-gnupg ) nls? ( virtual/libintl )
 SLOT=0
 SRC_URI=mirror://gnupg/gnupg/gnupg-1.4.12.tar.bz2 idea? ( mirror://gentoo/idea.c.gz )
-_eclasses_=eutils	87297b51c585746a3759c390fa2cf24f	flag-o-matic	a2e1c4641a8aed225d4ddb0f74f382de	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	portability	536c5e70c5fb252ed3b769e04aa3f05b	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
+_eclasses_=eutils	d360ca0f1b0275dd8f9c1656049c09d7	flag-o-matic	a2e1c4641a8aed225d4ddb0f74f382de	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	portability	536c5e70c5fb252ed3b769e04aa3f05b	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
 _md5_=15e105872f3e5132a85820d6e871eee6

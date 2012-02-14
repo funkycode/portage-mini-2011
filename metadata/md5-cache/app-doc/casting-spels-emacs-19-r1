@@ -8,5 +8,5 @@ LICENSE=GPL-2 FDL-1.2
 RDEPEND=virtual/emacs
 SLOT=0
 SRC_URI=http://casting-spels-emacs.googlecode.com/files/casting-spels-emacs-v19.zip
-_eclasses_=elisp-common	aa9676ce708f8aacf54ff9df8015963b	eutils	87297b51c585746a3759c390fa2cf24f	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	portability	536c5e70c5fb252ed3b769e04aa3f05b	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
+_eclasses_=elisp-common	aa9676ce708f8aacf54ff9df8015963b	eutils	d360ca0f1b0275dd8f9c1656049c09d7	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	portability	536c5e70c5fb252ed3b769e04aa3f05b	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
 _md5_=4da486585d630d62d8a4ae0518c77e5e

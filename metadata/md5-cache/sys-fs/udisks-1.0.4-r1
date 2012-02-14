@@ -10,5 +10,5 @@ RDEPEND=|| ( >=sys-fs/udev-171[gudev] >=sys-fs/udev-147[extras] ) >=dev-libs/gli
 RESTRICT=test
 SLOT=0
 SRC_URI=http://hal.freedesktop.org/releases/udisks-1.0.4.tar.gz
-_eclasses_=bash-completion-r1	3480f8385cb9e31797e7b659e366e2d2	eutils	87297b51c585746a3759c390fa2cf24f	linux-info	cc184ad3383ffb6ffbaa82f53608e77f	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	portability	536c5e70c5fb252ed3b769e04aa3f05b	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e	versionator	6601b4c5b3f019a993db59a50e1854e4
+_eclasses_=bash-completion-r1	3480f8385cb9e31797e7b659e366e2d2	eutils	d360ca0f1b0275dd8f9c1656049c09d7	linux-info	cc184ad3383ffb6ffbaa82f53608e77f	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	portability	536c5e70c5fb252ed3b769e04aa3f05b	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e	versionator	6601b4c5b3f019a993db59a50e1854e4
 _md5_=8ce25c7ee88b9eb554a05b09923ee5b7

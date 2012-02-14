@@ -11,5 +11,5 @@ RDEPEND=>=sys-apps/tuxonice-userui-1.0 || ( >=sys-power/hibernate-script-2.0 sys
 RESTRICT=binchecks strip
 SLOT=3.0.17-r1
 SRC_URI=mirror://kernel/linux/kernel/v3.x/linux-3.0.tar.bz2 mirror://gentoo/genpatches-3.0-18.base.tar.bz2 mirror://gentoo/genpatches-3.0-18.extras.tar.bz2 http://dev.gentoo.org/~pacho/tuxonice/current-tuxonice-for-3.0_20111012.patch.bz2
-_eclasses_=eutils	87297b51c585746a3759c390fa2cf24f	kernel-2	86f1b70fd28e9511b2a8205ac837c9e4	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	portability	536c5e70c5fb252ed3b769e04aa3f05b	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e	versionator	6601b4c5b3f019a993db59a50e1854e4
+_eclasses_=eutils	d360ca0f1b0275dd8f9c1656049c09d7	kernel-2	86f1b70fd28e9511b2a8205ac837c9e4	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	portability	536c5e70c5fb252ed3b769e04aa3f05b	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e	versionator	6601b4c5b3f019a993db59a50e1854e4
 _md5_=9d25f029d422bf0a36fba26433880260

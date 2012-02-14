@@ -8,5 +8,5 @@ LICENSE=PICO
 RDEPEND=>=sys-apps/sed-4 >=sys-libs/ncurses-5.1 pam? ( >=sys-libs/pam-0.72 ) ssl? ( dev-libs/openssl ) ldap? ( net-nds/openldap ) kerberos? ( app-crypt/mit-krb5 ) app-misc/mime-types net-mail/uw-mailutils !<=net-mail/uw-imap-2004g
 SLOT=0
 SRC_URI=ftp://ftp.cac.washington.edu/pine/pine4.64.tar.bz2 mirror://gentoo/pine-4.64-r5-chappa-all.patch.gz
-_eclasses_=eutils	87297b51c585746a3759c390fa2cf24f	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	portability	536c5e70c5fb252ed3b769e04aa3f05b	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
+_eclasses_=eutils	d360ca0f1b0275dd8f9c1656049c09d7	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	portability	536c5e70c5fb252ed3b769e04aa3f05b	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
 _md5_=556048378525d8ab9f42435c3b623342

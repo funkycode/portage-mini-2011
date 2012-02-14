@@ -9,5 +9,5 @@ LICENSE=LGPL-2.1
 RDEPEND=>=dev-python/apiextractor-0.10.8 >=dev-python/generatorrunner-0.6.14 >=x11-libs/qt-core-4.7.0 !dev-python/boostpythongenerator >=app-admin/eselect-python-20091230 || ( =dev-lang/python-2.7* =dev-lang/python-2.6* =dev-lang/python-2.5* )
 SLOT=0
 SRC_URI=http://www.pyside.org/files/shiboken-1.0.10.tar.bz2
-_eclasses_=base	5f35078c26d6c60556d5c8a2feb4f84f	cmake-utils	d9f3f2f6cc1a1d6ad8e31702e44133e5	eutils	87297b51c585746a3759c390fa2cf24f	flag-o-matic	a2e1c4641a8aed225d4ddb0f74f382de	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	portability	536c5e70c5fb252ed3b769e04aa3f05b	python	ba318f39f69a4478c5097f9ccf8c1173	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e	versionator	6601b4c5b3f019a993db59a50e1854e4
+_eclasses_=base	5f35078c26d6c60556d5c8a2feb4f84f	cmake-utils	d9f3f2f6cc1a1d6ad8e31702e44133e5	eutils	d360ca0f1b0275dd8f9c1656049c09d7	flag-o-matic	a2e1c4641a8aed225d4ddb0f74f382de	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	portability	536c5e70c5fb252ed3b769e04aa3f05b	python	ba318f39f69a4478c5097f9ccf8c1173	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e	versionator	6601b4c5b3f019a993db59a50e1854e4
 _md5_=01ba27d51fca8ca7771f348b1c1d4770

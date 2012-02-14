@@ -7,4 +7,4 @@ RDEPEND=x11-misc/afbinit
 SLOT=0
 SRC_URI=http://dlc.sun.com/osol/sparc-gfx/downloads/afb-ucode.tar.bz2 mirror://gentoo/afb-ucode.tar.bz2
 _eclasses_=multilib	5f4ad6cf85e365e8f0c6050ddd21659e	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68
-_md5_=6f278605fa98fe0b03710cefd5a78eab
+_md5_=c53d63dc3ed615c2152dc60344d3bb24

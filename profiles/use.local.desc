@@ -270,6 +270,7 @@ app-crypt/seahorse-plugins:nautilus - Enable file encryption plugin to integrate
 app-crypt/tpm-tools:pkcs11 - Build Token data management utilities based on OpenCryptoki's (dev-libs/opencryptoki) PKCS#11 implementation.
 app-dicts/aspell-be:classic - Support classic spelling by default
 app-dicts/gwaei:unique - Enable single instance support using dev-libs/libunique.
+app-doc/doxygen:dot - allow to create dot graphs using media-gfx/graphviz
 app-doc/doxygen:nodot - removes graphviz dependency, along with dot graphs
 app-doc/doxygen:tcl - adds experimental support for parsing/documenting Tcl source code
 app-doc/linuxfromscratch:htmlsingle - Also install single-page HTML version

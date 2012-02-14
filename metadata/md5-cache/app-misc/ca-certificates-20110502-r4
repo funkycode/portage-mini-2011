@@ -8,5 +8,5 @@ LICENSE=MPL-1.1
 RDEPEND=kernel_AIX? ( app-arch/deb2targz ) dev-libs/openssl sys-apps/debianutils
 SLOT=0
 SRC_URI=mirror://debian/pool/main/c/ca-certificates/ca-certificates_20110502+nmu1_all.deb
-_eclasses_=eutils	87297b51c585746a3759c390fa2cf24f	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	portability	536c5e70c5fb252ed3b769e04aa3f05b	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
+_eclasses_=eutils	d360ca0f1b0275dd8f9c1656049c09d7	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	portability	536c5e70c5fb252ed3b769e04aa3f05b	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
 _md5_=22935a54a018bc9f000519f42b3e6368

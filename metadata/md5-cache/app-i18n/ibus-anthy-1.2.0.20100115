@@ -9,5 +9,5 @@ LICENSE=GPL-2
 RDEPEND=>=app-i18n/ibus-1.2.0.20090904 app-i18n/anthy >=dev-lang/python-2.5 nls? ( virtual/libintl ) >=app-admin/eselect-python-20091230
 SLOT=0
 SRC_URI=http://ibus.googlecode.com/files/ibus-anthy-1.2.0.20100115.tar.gz
-_eclasses_=eutils	87297b51c585746a3759c390fa2cf24f	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	portability	536c5e70c5fb252ed3b769e04aa3f05b	python	ba318f39f69a4478c5097f9ccf8c1173	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
+_eclasses_=eutils	d360ca0f1b0275dd8f9c1656049c09d7	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	portability	536c5e70c5fb252ed3b769e04aa3f05b	python	ba318f39f69a4478c5097f9ccf8c1173	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
 _md5_=6619cf7e31ba7d0b8c6b1ccc5d36450a

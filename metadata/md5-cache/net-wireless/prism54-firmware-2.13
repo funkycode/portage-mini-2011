@@ -8,5 +8,5 @@ RDEPEND=|| ( >=sys-fs/udev-096 >=sys-apps/hotplug-20040923 )
 RESTRICT=mirror
 SLOT=1
 SRC_URI=http://daemonizer.de/prism54/prism54-fw/fw-softmac/2.13.12.0.arm http://daemonizer.de/prism54/prism54-fw/fw-usb/2.13.1.0.lm86.arm http://daemonizer.de/prism54/prism54-fw/fw-usb/2.13.24.0.lm87.arm http://daemonizer.de/prism54/prism54-fw/stlc4560/2.13.12.0.a.5.2.arm
-_eclasses_=eutils	87297b51c585746a3759c390fa2cf24f	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	portability	536c5e70c5fb252ed3b769e04aa3f05b	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
+_eclasses_=eutils	d360ca0f1b0275dd8f9c1656049c09d7	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	portability	536c5e70c5fb252ed3b769e04aa3f05b	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
 _md5_=c91dc1615b7696e958ca6434c49b68a1

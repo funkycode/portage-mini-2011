@@ -8,5 +8,5 @@ LICENSE=BSD
 RDEPEND=>=net-firewall/iptables-1.4.6 sys-apps/lsb-release >=sys-kernel/linux-headers-2.6.31
 SLOT=0
 SRC_URI=http://miniupnp.free.fr/files/miniupnpd-1.6.20120207.tar.gz
-_eclasses_=eutils	87297b51c585746a3759c390fa2cf24f	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	portability	536c5e70c5fb252ed3b769e04aa3f05b	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
+_eclasses_=eutils	d360ca0f1b0275dd8f9c1656049c09d7	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	portability	536c5e70c5fb252ed3b769e04aa3f05b	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
 _md5_=c590c634e58dc2b2756e49e84689da0c

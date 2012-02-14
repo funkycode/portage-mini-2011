@@ -9,5 +9,5 @@ LICENSE=LGPL-3
 RDEPEND=>=dev-libs/glib-2.2.1:2 >=dev-libs/popt-1.7 >=dev-libs/libxml2-2.6.7:2 gtk? ( >=x11-libs/gtk+-2.2.1:2 >=media-libs/t1lib-5:5 >=dev-libs/gmetadom-0.1.8 x11-libs/pango ) mathml? ( media-fonts/texcm-ttf ) t1lib? ( >=media-libs/t1lib-5:5 )
 SLOT=0
 SRC_URI=http://helm.cs.unibo.it/mml-widget/sources/gtkmathview-0.8.0.tar.gz
-_eclasses_=eutils	87297b51c585746a3759c390fa2cf24f	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	portability	536c5e70c5fb252ed3b769e04aa3f05b	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
+_eclasses_=eutils	d360ca0f1b0275dd8f9c1656049c09d7	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	portability	536c5e70c5fb252ed3b769e04aa3f05b	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
 _md5_=e5377bbb4a46cdbc7fa844271cf63a0e

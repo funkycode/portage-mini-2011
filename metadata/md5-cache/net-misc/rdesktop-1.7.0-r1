@@ -9,5 +9,5 @@ LICENSE=GPL-3
 RDEPEND=>=dev-libs/openssl-0.9.6b x11-libs/libX11 x11-libs/libXext x11-libs/libXau x11-libs/libXdmcp alsa? ( media-libs/alsa-lib ) ao? ( >=media-libs/libao-0.8.6 ) libsamplerate? ( media-libs/libsamplerate ) pcsc-lite? ( >=sys-apps/pcsc-lite-1.6.6 )
 SLOT=0
 SRC_URI=mirror://sourceforge/rdesktop/rdesktop-1.7.0.tar.gz
-_eclasses_=autotools	8dd6d5965d958613b3c50c63586af9e0	eutils	87297b51c585746a3759c390fa2cf24f	libtool	5f623f5a211fb1b2d84d88ee49959a54	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	portability	536c5e70c5fb252ed3b769e04aa3f05b	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
+_eclasses_=autotools	8dd6d5965d958613b3c50c63586af9e0	eutils	d360ca0f1b0275dd8f9c1656049c09d7	libtool	5f623f5a211fb1b2d84d88ee49959a54	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	portability	536c5e70c5fb252ed3b769e04aa3f05b	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
 _md5_=b3148bc666326ebefa9851b55b34eb68

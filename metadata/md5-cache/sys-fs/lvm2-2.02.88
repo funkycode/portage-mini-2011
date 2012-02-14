@@ -9,5 +9,5 @@ LICENSE=GPL-2
 RDEPEND=!!sys-fs/device-mapper readline? ( sys-libs/readline ) clvm? ( =sys-cluster/dlm-2* cman? ( =sys-cluster/cman-2* ) ) >=sys-fs/udev-151-r4 !<sys-apps/openrc-0.4 !!sys-fs/lvm-user !!sys-fs/clvm >=sys-apps/util-linux-2.16 !<sys-fs/cryptsetup-1.1.2
 SLOT=0
 SRC_URI=ftp://sources.redhat.com/pub/lvm2/LVM2.2.02.88.tgz ftp://sources.redhat.com/pub/lvm2/old/LVM2.2.02.88.tgz
-_eclasses_=autotools	8dd6d5965d958613b3c50c63586af9e0	eutils	87297b51c585746a3759c390fa2cf24f	libtool	5f623f5a211fb1b2d84d88ee49959a54	linux-info	cc184ad3383ffb6ffbaa82f53608e77f	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	portability	536c5e70c5fb252ed3b769e04aa3f05b	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e	versionator	6601b4c5b3f019a993db59a50e1854e4
+_eclasses_=autotools	8dd6d5965d958613b3c50c63586af9e0	eutils	d360ca0f1b0275dd8f9c1656049c09d7	libtool	5f623f5a211fb1b2d84d88ee49959a54	linux-info	cc184ad3383ffb6ffbaa82f53608e77f	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	portability	536c5e70c5fb252ed3b769e04aa3f05b	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e	versionator	6601b4c5b3f019a993db59a50e1854e4
 _md5_=640975fbef28ff3dd85d6d7525c76017

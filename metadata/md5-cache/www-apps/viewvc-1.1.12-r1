@@ -9,5 +9,5 @@ LICENSE=BSD-2
 RDEPEND=cvs? ( dev-vcs/rcs ) subversion? ( >=dev-vcs/subversion-1.3.1[python] ) mod_python? ( www-apache/mod_python ) mod_wsgi? ( www-apache/mod_wsgi ) !mod_python? ( !mod_wsgi? ( virtual/httpd-cgi ) ) cvsgraph? ( >=dev-vcs/cvsgraph-1.5.0 ) mysql? ( >=dev-python/mysql-python-0.9.0 ) pygments? ( dev-python/pygments app-misc/mime-types ) >=app-admin/eselect-python-20091230 =dev-lang/python-2* >=app-admin/webapp-config-1.50.15
 SLOT=0
 SRC_URI=http://viewvc.tigris.org/files/documents/3330/49132/viewvc-1.1.12.tar.gz
-_eclasses_=confutils	a80706bb5b9ddcf6bbd14365656d4985	eutils	87297b51c585746a3759c390fa2cf24f	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	portability	536c5e70c5fb252ed3b769e04aa3f05b	python	ba318f39f69a4478c5097f9ccf8c1173	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e	webapp	30d951d5c98c4f31c7999ab4ba4806d1
+_eclasses_=confutils	a80706bb5b9ddcf6bbd14365656d4985	eutils	d360ca0f1b0275dd8f9c1656049c09d7	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	portability	536c5e70c5fb252ed3b769e04aa3f05b	python	ba318f39f69a4478c5097f9ccf8c1173	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e	webapp	30d951d5c98c4f31c7999ab4ba4806d1
 _md5_=1a4c68c9642dc1e22ca7db75a4358b22

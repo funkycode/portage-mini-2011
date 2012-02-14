@@ -9,5 +9,5 @@ LICENSE=GPL-2
 RDEPEND=>=net-misc/networkmanager-0.9.2.0 >=dev-libs/dbus-glib-0.74 dev-libs/libxml2:2 net-misc/openconnect gnome? ( >=x11-libs/gtk+-2.91.4:3 gnome-base/gconf:2 gnome-base/gnome-keyring )
 SLOT=0
 SRC_URI=mirror://gnome/sources/NetworkManager-openconnect/0.9/NetworkManager-openconnect-0.9.2.0.tar.xz
-_eclasses_=eutils	87297b51c585746a3759c390fa2cf24f	gnome.org	8fef8f967214f56e08fa92d61163d891	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	portability	536c5e70c5fb252ed3b769e04aa3f05b	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e	versionator	6601b4c5b3f019a993db59a50e1854e4
+_eclasses_=eutils	d360ca0f1b0275dd8f9c1656049c09d7	gnome.org	8fef8f967214f56e08fa92d61163d891	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	portability	536c5e70c5fb252ed3b769e04aa3f05b	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e	versionator	6601b4c5b3f019a993db59a50e1854e4
 _md5_=db577cf2760d24a476079f40e5c73d0c

@@ -8,5 +8,5 @@ LICENSE=GPL-2
 RDEPEND=emacs? ( virtual/emacs ) readline? ( sys-libs/readline ) >=dev-libs/gmp-4.1 tk? ( dev-lang/tk ) X? ( x11-libs/libXt x11-libs/libXext x11-libs/libXmu x11-libs/libXaw ) virtual/latex-base
 SLOT=0
 SRC_URI=mirror://debian/pool/main/g/gcl/gcl_2.6.7.orig.tar.gz mirror://debian/pool/main/g/gcl/gcl_2.6.7-32.diff.gz ftp://ftp.gnu.org/pub/gnu/gcl/gcl.info.tgz
-_eclasses_=elisp-common	aa9676ce708f8aacf54ff9df8015963b	eutils	87297b51c585746a3759c390fa2cf24f	flag-o-matic	a2e1c4641a8aed225d4ddb0f74f382de	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	portability	536c5e70c5fb252ed3b769e04aa3f05b	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
+_eclasses_=elisp-common	aa9676ce708f8aacf54ff9df8015963b	eutils	d360ca0f1b0275dd8f9c1656049c09d7	flag-o-matic	a2e1c4641a8aed225d4ddb0f74f382de	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	portability	536c5e70c5fb252ed3b769e04aa3f05b	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
 _md5_=c19eeba2cf933c49c2dca00669b4b5a9

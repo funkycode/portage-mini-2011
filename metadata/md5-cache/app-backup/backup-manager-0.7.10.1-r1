@@ -9,5 +9,5 @@ LICENSE=GPL-2
 RDEPEND=dev-lang/perl sys-devel/gettext >=sys-apps/findutils-4.3.0 s3? ( dev-perl/Net-Amazon-S3 dev-perl/File-Slurp )
 SLOT=0
 SRC_URI=http://www.backup-manager.org/download/Backup-Manager-0.7.10.1.tar.gz
-_eclasses_=eutils	87297b51c585746a3759c390fa2cf24f	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	portability	536c5e70c5fb252ed3b769e04aa3f05b	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
+_eclasses_=eutils	d360ca0f1b0275dd8f9c1656049c09d7	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	portability	536c5e70c5fb252ed3b769e04aa3f05b	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
 _md5_=35d472b55791d2fc222c9d6fe128b58c

@@ -7,5 +7,5 @@ LICENSE=BSD
 RDEPEND==dev-lang/ruby-1.8*
 SLOT=0
 SRC_URI=http://rubyforge.org/frs/download.php/30221/rmail-1.0.0.tgz
-_eclasses_=eutils	87297b51c585746a3759c390fa2cf24f	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	portability	536c5e70c5fb252ed3b769e04aa3f05b	ruby	d0d4dafe867eb79ce8953e27d88fc00f	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
+_eclasses_=eutils	d360ca0f1b0275dd8f9c1656049c09d7	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	portability	536c5e70c5fb252ed3b769e04aa3f05b	ruby	d0d4dafe867eb79ce8953e27d88fc00f	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
 _md5_=a5bf13ad3e66d73bfccd429fe8ba6770

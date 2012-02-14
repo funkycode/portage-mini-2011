@@ -8,5 +8,5 @@ LICENSE=GPL-2
 RDEPEND=~sys-apps/entropy-1.0_rc38 >=app-admin/eselect-python-20091230 =dev-lang/python-2*
 SLOT=0
 SRC_URI=mirror://sabayon/sys-apps/entropy-1.0_rc38.tar.bz2
-_eclasses_=eutils	87297b51c585746a3759c390fa2cf24f	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	portability	536c5e70c5fb252ed3b769e04aa3f05b	python	ba318f39f69a4478c5097f9ccf8c1173	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
+_eclasses_=eutils	d360ca0f1b0275dd8f9c1656049c09d7	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	portability	536c5e70c5fb252ed3b769e04aa3f05b	python	ba318f39f69a4478c5097f9ccf8c1173	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
 _md5_=58cb8f0d1d3695341b4008d213d49a52
