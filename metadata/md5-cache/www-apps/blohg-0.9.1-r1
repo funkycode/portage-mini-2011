@@ -9,5 +9,5 @@ LICENSE=GPL-2
 RDEPEND=>=dev-python/docutils-0.7 >=dev-python/flask-0.7 >=dev-python/flask-babel-0.6 >=dev-python/flask-script-0.3 >=dev-python/frozen-flask-0.7 >=dev-python/jinja-2.5.2 >=dev-vcs/mercurial-1.6 dev-python/pyyaml dev-python/setuptools dev-python/pygments doc? ( dev-python/sphinx ) >=app-admin/eselect-python-20091230 || ( =dev-lang/python-2.7* =dev-lang/python-2.6* )
 SLOT=0
 SRC_URI=mirror://pypi/b/blohg/blohg-0.9.1.tar.gz
-_eclasses_=distutils	c8b0cab86443a130f3737ad1456d57d3	eutils	87297b51c585746a3759c390fa2cf24f	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	portability	536c5e70c5fb252ed3b769e04aa3f05b	python	545e9598725a7ef2e104d245dbeb7653	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
+_eclasses_=distutils	c8b0cab86443a130f3737ad1456d57d3	eutils	87297b51c585746a3759c390fa2cf24f	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	portability	536c5e70c5fb252ed3b769e04aa3f05b	python	ba318f39f69a4478c5097f9ccf8c1173	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
 _md5_=a3a87ece45c8b7a32b0f49fec3179c67

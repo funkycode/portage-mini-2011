@@ -9,5 +9,5 @@ LICENSE=GPL-2
 RDEPEND=net-misc/rsync[xattr,acl] kde? ( >=kde-base/kdelibs-4 kde-base/pykde4 kde-base/kompare kde-base/kdesu ) gnome? ( gnome-base/libglade dev-util/meld gnome-base/gnome-session dev-python/gnome-vfs-python dev-python/libgnome-python dev-python/pygobject:2 dev-python/pygtk ) dev-python/notify-python >=app-admin/eselect-python-20091230 =dev-lang/python-2*
 SLOT=0
 SRC_URI=http://backintime.le-web.org/download/backintime/backintime-1.0.8_src.tar.gz
-_eclasses_=eutils	87297b51c585746a3759c390fa2cf24f	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	portability	536c5e70c5fb252ed3b769e04aa3f05b	python	545e9598725a7ef2e104d245dbeb7653	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
+_eclasses_=eutils	87297b51c585746a3759c390fa2cf24f	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	portability	536c5e70c5fb252ed3b769e04aa3f05b	python	ba318f39f69a4478c5097f9ccf8c1173	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
 _md5_=81d3ba0a9c7130f7d7cae858e27e9b65

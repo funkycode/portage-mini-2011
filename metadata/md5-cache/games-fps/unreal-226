@@ -9,5 +9,5 @@ PROPERTIES=interactive
 RDEPEND=!amd64? ( x11-libs/libXext x11-libs/libX11 x11-libs/libXau x11-libs/libXdmcp =media-libs/libsdl-1.2* opengl? ( virtual/opengl ) ) amd64? ( app-emulation/emul-linux-x86-sdl app-emulation/emul-linux-x86-baselibs app-emulation/emul-linux-x86-xlibs )
 SLOT=0
 SRC_URI=http://www.icculus.org/%7Echunky/ut/unreal/unreali-install.run ftp://ftp.lokigames.com/pub/patches/ut/ut-install-436.run ftp://ftp.lokigames.com/pub/patches/ut/IpDrv-436-Linux-08-20-02.zip
-_eclasses_=base	5f35078c26d6c60556d5c8a2feb4f84f	cdrom	415b847346ef9001a89e5c7da6711215	eutils	87297b51c585746a3759c390fa2cf24f	games	f75cdbfdf1760e514ca65e2f6c6a7c72	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	portability	536c5e70c5fb252ed3b769e04aa3f05b	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	unpacker	252b9131206bba031c089c38b96c7704	user	32a09e82e2f592bf88ad2fd08525166e
+_eclasses_=base	5f35078c26d6c60556d5c8a2feb4f84f	cdrom	415b847346ef9001a89e5c7da6711215	eutils	87297b51c585746a3759c390fa2cf24f	games	f75cdbfdf1760e514ca65e2f6c6a7c72	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	portability	536c5e70c5fb252ed3b769e04aa3f05b	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	unpacker	3bad9303b54075673d368b65e22dfdc8	user	32a09e82e2f592bf88ad2fd08525166e
 _md5_=891ab9d5dd85d531883e1e2504b08c74

@@ -3,9 +3,9 @@ DEPEND=|| ( =sys-devel/automake-1.11* ) >=sys-devel/autoconf-2.68 sys-devel/libt
 DESCRIPTION=Library for handling paper characteristics
 EAPI=4
 HOMEPAGE=http://packages.debian.org/unstable/source/libpaper
-KEYWORDS=~alpha amd64 ~arm hppa ~ia64 ~m68k ~mips ppc ~ppc64 ~s390 ~sh ~sparc ~x86 ~sparc-fbsd ~x86-fbsd ~x86-freebsd ~x86-interix ~amd64-linux ~ia64-linux ~x86-linux ~ppc-macos ~x64-macos ~x86-macos ~sparc-solaris ~x86-solaris
+KEYWORDS=~alpha amd64 arm hppa ~ia64 ~m68k ~mips ppc ~ppc64 ~s390 ~sh ~sparc ~x86 ~sparc-fbsd ~x86-fbsd ~x86-freebsd ~x86-interix ~amd64-linux ~ia64-linux ~x86-linux ~ppc-macos ~x64-macos ~x86-macos ~sparc-solaris ~x86-solaris
 LICENSE=GPL-2
 SLOT=0
 SRC_URI=mirror://debian/pool/main/libp/libpaper/libpaper_1.1.24.tar.gz
 _eclasses_=autotools	8dd6d5965d958613b3c50c63586af9e0	eutils	87297b51c585746a3759c390fa2cf24f	libtool	5f623f5a211fb1b2d84d88ee49959a54	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	portability	536c5e70c5fb252ed3b769e04aa3f05b	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
-_md5_=97ce9dd43d3718803de776a540cb7c2a
+_md5_=3a8a70ac64934c6a8de89584c4116168

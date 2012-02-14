@@ -8,5 +8,5 @@ LICENSE=LGPL-3
 RDEPEND=dev-libs/keybinder[python] dev-python/notify-python dev-python/python-distutils-extra >=dev-python/pywebkitgtk-1.1.8 >=app-admin/eselect-python-20091230 =dev-lang/python-2*
 SLOT=0
 SRC_URI=mirror://gentoo/hotot-0.9.6_p20111015.tar.bz2
-_eclasses_=distutils	c8b0cab86443a130f3737ad1456d57d3	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	python	545e9598725a7ef2e104d245dbeb7653	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68
+_eclasses_=distutils	c8b0cab86443a130f3737ad1456d57d3	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	python	ba318f39f69a4478c5097f9ccf8c1173	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68
 _md5_=c7e0bdcad49c13b647c362ff2ca698a5

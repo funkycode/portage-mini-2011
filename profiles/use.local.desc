@@ -4721,6 +4721,7 @@ sys-apps/policycoreutils:audit - Enable support for sys-process/audit and use th
 sys-apps/portage:epydoc - Build html API documentation with epydoc.
 sys-apps/portage:ipc - Use inter-process communication between portage and running ebuilds.
 sys-apps/portage:less - Pull in sys-apps/less as default pager for etc-update.
+sys-apps/portage:pypy1_8 - Use pypy-c1.8 as Python interpreter.
 sys-apps/portage:python2 - Use python2 as Python interpreter.
 sys-apps/portage:python3 - Use python3 as Python interpreter.
 sys-apps/pyrenamer:music - Enable support for renaming music

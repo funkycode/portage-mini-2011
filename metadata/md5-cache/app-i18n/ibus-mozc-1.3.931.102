@@ -10,5 +10,5 @@ RDEPEND=dev-libs/glib:2 dev-libs/protobuf net-misc/curl sys-libs/zlib emacs? ( v
 RESTRICT=test
 SLOT=0
 SRC_URI=http://mozc.googlecode.com/files/mozc-1.3.931.102.tar.bz2
-_eclasses_=elisp-common	aa9676ce708f8aacf54ff9df8015963b	eutils	87297b51c585746a3759c390fa2cf24f	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	portability	536c5e70c5fb252ed3b769e04aa3f05b	python	545e9598725a7ef2e104d245dbeb7653	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
+_eclasses_=elisp-common	aa9676ce708f8aacf54ff9df8015963b	eutils	87297b51c585746a3759c390fa2cf24f	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	portability	536c5e70c5fb252ed3b769e04aa3f05b	python	ba318f39f69a4478c5097f9ccf8c1173	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
 _md5_=20a645bcf5f1e02c41eecb37bb9ed94b

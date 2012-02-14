@@ -1,0 +1,14 @@
+DEFINED_PHASES=compile install postinst postrm prepare setup
+DEPEND=doc? ( x11-libs/qt-assistant ) >=app-admin/eselect-python-20091230 =dev-lang/python-2.7*
+DESCRIPTION=Check websites for broken links
+EAPI=4
+HOMEPAGE=http://linkchecker.sourceforge.net/ http://pypi.python.org/pypi/linkchecker/
+IUSE=bash-completion bookmarks clamav doc geoip gnome login syntax-check X
+KEYWORDS=~amd64 ~ppc ~x86 ~ppc-macos ~x64-solaris
+LICENSE=GPL-2
+RDEPEND=dev-python/dnspython bash-completion? ( dev-python/optcomplete ) bookmarks? ( dev-python/pysqlite:2 ) clamav? ( app-antivirus/clamav ) geoip? ( dev-python/geoip-python ) gnome? ( dev-python/pygtk:2 ) login? ( dev-python/twill ) syntax-check? ( dev-python/cssutils dev-python/utidylib ) X? ( dev-python/PyQt4[X,assistant] dev-python/qscintilla-python ) >=app-admin/eselect-python-20091230 =dev-lang/python-2.7*
+RESTRICT=test
+SLOT=0
+SRC_URI=mirror://sourceforge/linkchecker/LinkChecker-7.5.tar.bz2
+_eclasses_=bash-completion-r1	3480f8385cb9e31797e7b659e366e2d2	distutils	c8b0cab86443a130f3737ad1456d57d3	eutils	87297b51c585746a3759c390fa2cf24f	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	portability	536c5e70c5fb252ed3b769e04aa3f05b	python	ba318f39f69a4478c5097f9ccf8c1173	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
+_md5_=cff1cb24e70fcd7d4b103a3ac65a65ce

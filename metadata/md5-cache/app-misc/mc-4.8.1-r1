@@ -4,11 +4,11 @@ DESCRIPTION=GNU Midnight Commander is a text based file manager
 EAPI=4
 HOMEPAGE=http://www.midnight-commander.org
 IUSE=+edit gpm mclib +ncurses nls samba slang test X +xdg
-KEYWORDS=~alpha amd64 ~arm hppa ~ia64 ~mips ppc ~ppc64 ~s390 ~sh ~sparc x86 ~x86-fbsd ~x86-interix ~amd64-linux ~ppc-macos ~x64-macos ~x86-macos ~sparc-solaris ~sparc64-solaris ~x86-solaris
+KEYWORDS=~alpha amd64 arm hppa ~ia64 ~mips ppc ~ppc64 ~s390 ~sh ~sparc x86 ~x86-fbsd ~x86-interix ~amd64-linux ~ppc-macos ~x64-macos ~x86-macos ~sparc-solaris ~sparc64-solaris ~x86-solaris
 LICENSE=GPL-3
 RDEPEND=>=dev-libs/glib-2.8:2 gpm? ( sys-libs/gpm ) kernel_linux? ( sys-fs/e2fsprogs ) ncurses? ( sys-libs/ncurses ) samba? ( net-fs/samba ) slang? ( >=sys-libs/slang-2 ) X? ( x11-libs/libX11 x11-libs/libICE x11-libs/libXau x11-libs/libXdmcp x11-libs/libSM )
 REQUIRED_USE=^^ ( ncurses slang )
 SLOT=0
 SRC_URI=http://www.midnight-commander.org/downloads/mc-4.8.1.tar.xz
 _eclasses_=eutils	87297b51c585746a3759c390fa2cf24f	flag-o-matic	a2e1c4641a8aed225d4ddb0f74f382de	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	portability	536c5e70c5fb252ed3b769e04aa3f05b	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
-_md5_=aa7f5e0eccf53d2644f570705cbd7bc1
+_md5_=4d6ff7b722f6136ebd07698380ebae6c

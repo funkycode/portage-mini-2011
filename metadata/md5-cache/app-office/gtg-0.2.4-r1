@@ -8,5 +8,5 @@ LICENSE=GPL-3
 RDEPEND=dev-python/configobj dev-python/dbus-python dev-python/pycairo dev-python/pygobject:2 dev-python/pygtk dev-python/pyxdg dev-python/simplejson >=app-admin/eselect-python-20091230 || ( =dev-lang/python-2.7* =dev-lang/python-2.6* )
 SLOT=0
 SRC_URI=http://launchpad.net/gtg/0.2/0.2.4/+download/gtg-0.2.4.tar.gz
-_eclasses_=distutils	c8b0cab86443a130f3737ad1456d57d3	eutils	87297b51c585746a3759c390fa2cf24f	fdo-mime	0acfe1a88fd8751a1d5dc671168219fa	gnome2-utils	b5ca2ccadb60760889faa3bccba121d9	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	portability	536c5e70c5fb252ed3b769e04aa3f05b	python	545e9598725a7ef2e104d245dbeb7653	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
+_eclasses_=distutils	c8b0cab86443a130f3737ad1456d57d3	eutils	87297b51c585746a3759c390fa2cf24f	fdo-mime	0acfe1a88fd8751a1d5dc671168219fa	gnome2-utils	b5ca2ccadb60760889faa3bccba121d9	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	portability	536c5e70c5fb252ed3b769e04aa3f05b	python	ba318f39f69a4478c5097f9ccf8c1173	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
 _md5_=5022cc93ec778acae8b00e7fd63300b1
