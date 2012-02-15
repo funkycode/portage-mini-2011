@@ -1,0 +1,13 @@
+DEFINED_PHASES=configure prepare
+DEPEND=>=app-arch/unrar-4.1.4-r2 sys-fs/fuse || ( =sys-devel/automake-1.11* ) >=sys-devel/autoconf-2.68 sys-devel/libtool
+DESCRIPTION=A FUSE based filesystem that can mount one or multiple RAR archive(s)
+EAPI=4
+HOMEPAGE=http://code.google.com/p/rar2fs/
+IUSE=debug
+KEYWORDS=~amd64 ~x86
+LICENSE=GPL-3
+RDEPEND=>=app-arch/unrar-4.1.4-r2 sys-fs/fuse
+SLOT=0
+SRC_URI=http://rar2fs.googlecode.com/files/rar2fs-1.14.0.tar.gz
+_eclasses_=autotools	8dd6d5965d958613b3c50c63586af9e0	eutils	d360ca0f1b0275dd8f9c1656049c09d7	libtool	5f623f5a211fb1b2d84d88ee49959a54	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	portability	536c5e70c5fb252ed3b769e04aa3f05b	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
+_md5_=4b2539cd079c82d761e596e9ad545211

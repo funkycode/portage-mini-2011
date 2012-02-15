@@ -1,6 +1,6 @@
-# Copyright 1999-2011 Gentoo Foundation
+# Copyright 1999-2012 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/net-misc/olsrd/olsrd-0.6.2.ebuild,v 1.1 2011/10/07 17:01:39 jer Exp $
+# $Header: /var/cvsroot/gentoo-x86/net-misc/olsrd/olsrd-0.6.2.ebuild,v 1.2 2012/02/15 14:58:31 jer Exp $
 
 EAPI="4"
 
@@ -21,7 +21,6 @@ S="${WORKDIR}/${PN}-${MY_PV}"
 
 src_prepare() {
 	epatch "${FILESDIR}/${PN}-0.6.1-build_fix.patch"
-cp -av gui/linux-gtk/Makefile{,.org}
 	sed -i gui/linux-gtk/Makefile \
 		-e 's|LFLAGS|LDFLAGS|g;' \
 		-e 's|$(CC).*|$(CC) $(CFLAGS) -o $@ $(OBJS) $(LDFLAGS)|g' \

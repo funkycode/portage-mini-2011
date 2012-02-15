@@ -1,0 +1,12 @@
+DEFINED_PHASES=compile install postinst postrm prepare setup test
+DEPEND=test? ( app-misc/geoclue ) >=app-admin/eselect-python-20091230 =dev-lang/python-2*
+DESCRIPTION=Geoclue python module
+EAPI=4
+HOMEPAGE=http://live.gnome.org/gtg/soc/python_geoclue/
+KEYWORDS=~amd64 ~x86 ~amd64-linux ~x86-linux
+LICENSE=GPL-3
+RDEPEND=app-misc/geoclue dev-python/dbus-python >=app-admin/eselect-python-20091230 =dev-lang/python-2*
+SLOT=0
+SRC_URI=http://www.paulocabido.com/soc/python-geoclue/python-geoclue-0.1.0.tar.gz
+_eclasses_=distutils	c8b0cab86443a130f3737ad1456d57d3	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	python	ba318f39f69a4478c5097f9ccf8c1173	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68
+_md5_=a9e8c89f38b2d5e854e59d4b3c8f78ba

@@ -2,7 +2,7 @@ DEFINED_PHASES=compile configure install postinst prerm setup test
 DEPEND=dev-haskell/binary >=dev-lang/ghc-6.10.1 >=dev-haskell/cabal-1.6 doc? ( dev-haskell/haddock ) hscolour? ( dev-haskell/hscolour ) >=dev-haskell/cabal-1.1.4
 DESCRIPTION=Implementations of the SHA suite of message digest functions
 EAPI=3
-HOMEPAGE=http://hackage.haskell.org/package/sha
+HOMEPAGE=http://hackage.haskell.org/package/SHA
 IUSE=doc hscolour profile
 KEYWORDS=~amd64 ~x86
 LICENSE=BSD
@@ -10,4 +10,4 @@ RDEPEND=dev-haskell/binary >=dev-lang/ghc-6.10.1 dev-lang/ghc
 SLOT=0
 SRC_URI=http://hackage.haskell.org/packages/archive/SHA/1.5.0.0/SHA-1.5.0.0.tar.gz
 _eclasses_=eutils	d360ca0f1b0275dd8f9c1656049c09d7	ghc-package	83329f14231f6ba420fb965d858f37c0	haskell-cabal	3e3a8d848b113b19eff54b771a020c8b	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	portability	536c5e70c5fb252ed3b769e04aa3f05b	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e	versionator	6601b4c5b3f019a993db59a50e1854e4
-_md5_=70ee26c04295b0000fc1b32e9d9702fa
+_md5_=185f5dc398b4598400226aed3bce8030

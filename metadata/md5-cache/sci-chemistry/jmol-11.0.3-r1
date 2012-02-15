@@ -8,6 +8,6 @@ KEYWORDS=~amd64 ~x86
 LICENSE=LGPL-2.1
 RDEPEND=>=virtual/jre-1.4 dev-java/commons-cli:1 dev-java/itext:0 sci-libs/jmol-acme:0 sci-libs/vecmath-objectclub:0 >=dev-java/java-config-2.1.9-r1 >=sys-apps/portage-2.1.2.7
 SLOT=0
-SRC_URI=mirror://sourceforge/jmol/jmol-11.0.3-full.tar.gz http://dev.gentoo.org/~jlec/jmol-selfSignedCertificate.store.tar
+SRC_URI=mirror://sourceforge/jmol/jmol-11.0.3-full.tar.gz http://dev.gentoo.org/~jlec/distfiles/jmol-selfSignedCertificate.store.tar
 _eclasses_=eutils	d360ca0f1b0275dd8f9c1656049c09d7	java-ant-2	c637c20d93ef0d49a5efcf5feaa776cd	java-pkg-2	6f723b44cff6b07377ca5c0848da887b	java-utils-2	0b830e0a2e6c4bdf1c81fec1b53d95f1	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	portability	536c5e70c5fb252ed3b769e04aa3f05b	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e	versionator	6601b4c5b3f019a993db59a50e1854e4	webapp	30d951d5c98c4f31c7999ab4ba4806d1
-_md5_=a66edaf616989a769fe4b9212618b132
+_md5_=5c9e79823e51c7dafe99104290b5903a

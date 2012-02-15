@@ -1,0 +1,12 @@
+DEFINED_PHASES=compile install prepare
+DESCRIPTION=Download books from google, amazon, barnes and noble.
+EAPI=4
+HOMEPAGE=http://njw.me.uk/software/getxbook/
+IUSE=pdf djvu ocr tk
+KEYWORDS=~x86
+LICENSE=ISC
+RDEPEND=djvu? ( app-text/djvu ) pdf? ( media-gfx/imagemagick ) ocr? ( app-text/tesseract pdf? ( media-gfx/exact-image app-text/pdftk ) ) tk? ( dev-lang/tk )
+SLOT=0
+SRC_URI=http://njw.me.uk/software/getxbook/getxbook-0.8.tar.bz2
+_eclasses_=eutils	d360ca0f1b0275dd8f9c1656049c09d7	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	portability	536c5e70c5fb252ed3b769e04aa3f05b	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
+_md5_=b72848dc7d60796e3c9548dd7ac02938
