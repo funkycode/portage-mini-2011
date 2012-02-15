@@ -1950,7 +1950,6 @@ gnome-extra/nautilus-sendto:pidgin - Enables support for net-im/pidgin
 gnome-extra/nautilus-sendto:upnp - Enables support for sending files over upnp using net-libs/gupnp-av
 gnome-extra/panflute:mpd - Enable MPD support
 gnome-extra/polkit-gnome:introspection - Use dev-libs/gobject-introspection for introspection
-gnome-extra/synapse:ayatana - Build in support for Ayatana notification using the libindicate plugin
 gnome-extra/synapse:plugins - Build support for plugins using librest
 gnome-extra/synapse:zeitgeist - Add support for Zeitgeist event tracking system
 gnome-extra/zeitgeist:fts - Enable the full text search extension
@@ -1977,6 +1976,7 @@ gnustep-base/gnustep-back-cairo:xim - Enable X11 XiM input method
 gnustep-base/gnustep-back-xlib:xim - Enable X11 XiM input method
 gnustep-base/gnustep-make:libobjc2 - Enables use of the GNUstep Objective-C runtime (gnustep-base/libobjc2) with non-fragile ABI and sys-devel/clang compiler
 gnustep-base/gnustep-make:native-exceptions - Enables use of the native Objective-C exception support (@try/@catch/@finally) built-in objective-c exceptions with compilers that support it
+gnustep-base/libobjc2:boehm-gc - Enable Hans Boehm's garbage collector (dev-libs/boehm-gc)
 gpe-base/gpe:games - Builds and installs GPE games.
 kde-base/ark:archive - Enable support for a variety of archive formats through libarchive
 kde-base/cantor:R - Enable R backend support
@@ -2181,7 +2181,6 @@ mail-client/nail:net - Enable support for network protocols (POP, IMAP and SMTP)
 mail-client/nail:ssl - If network is enabled, this adds support for S/MIME and SSL/TLS-powered protocols through dev-libs/openssl.
 mail-client/pine:largeterminal - Add support for large terminals by doubling the size of pine's internal display buffer
 mail-client/pine:passfile - Adds support for caching IMAP passwords into a file between sessions
-mail-client/postler:ayatana - Enable Messaging Menu support via dev-libs/libindicate
 mail-client/squirrelmail:filter - Enable mail-filter/amavisd-new filtering
 mail-client/sylpheed:oniguruma - Use dev-libs/oniguruma for regular expression
 mail-client/thunderbird:bindist - Disable official Firefox branding (icons, name) which are not binary-redistributable according to upstream.
@@ -2724,7 +2723,6 @@ media-sound/gmpc:xspf - Enable support for reading and saving XSPF playlists
 media-sound/gmusicbrowser:webkit - Enable GTK+ based WebKit support
 media-sound/google-musicmanager:log - Enables advanced logging through dev-libs/log4cxx
 media-sound/gpodder:webkit - Enable the webkit rendering engine for HTML episode shownotes
-media-sound/guayadeque:ayatana - Build in support for Ayatana notification using the libindicate plugin.
 media-sound/herrie:http - Enable http streaming
 media-sound/herrie:xspf - Enable support for reading and saving XSPF playlists
 media-sound/hydrogen:archive - Use libarchive instead of libtar
@@ -3533,7 +3531,6 @@ net-im/centerim:gadu - Enable support for the Gadu-Gadu protocol
 net-im/centerim:irc - Enable support for the IRC protocol
 net-im/centerim:lj - Enable support for the LiveJournal weblog system
 net-im/centerim:otr - Enable encrypted conversations
-net-im/choqok:ayatana - Build in support for Ayatana notification using the libindicate-qt plugin.
 net-im/climm:otr - Enable encrypted conversations
 net-im/ejabberd:captcha - Support for CAPTCHA Forms (XEP-158)
 net-im/ejabberd:mod_irc - Build irc gateway
@@ -3566,7 +3563,6 @@ net-im/gajim:srv - SRV capabilities
 net-im/gajim:xhtml - Enable XHTML support
 net-im/gnugadu:tlen - Enable Tlen.pl protocol support
 net-im/jabberd2:memdebug - Enable nad and pool debug. Requires USE="debug" to be set.
-net-im/kadu:ayatana - Enables support for Ayatana notifications using libindicate-qt
 net-im/kadu:gadu - Enables Gadu communication protocol
 net-im/kadu:mpd - Enables Music Player Daemon support
 net-im/kadu:phonon - Enables phonon audio plugin
@@ -3699,7 +3695,6 @@ net-irc/psybnc:multinetwork - Adds support for multiple networks
 net-irc/psybnc:oidentd - Adds support for oidentd
 net-irc/psybnc:scripting - Adds scripting support
 net-irc/quassel:X - Build the Qt 4 GUI client for quassel. If this USE flag is disabled, the GUI is not built, and cannot be used. You might want to disable this on the server, but you need it enabled on the client.
-net-irc/quassel:ayatana - Build in support for Ayatana notification using the libindicate-qt plugin.
 net-irc/quassel:crypt - Support core->network per-channel and per-query blowfish encryption via app-crypt/qca:2.
 net-irc/quassel:monolithic - Build Standalone client with integrated core, no external quasselcore needed. Only useful if you don't want to use quassels client/server model. The server and X flags are not needed in this case but it is possible to enable them too.
 net-irc/quassel:phonon - Build client with phonon backend support. This enables sound playback in client.
@@ -4096,9 +4091,9 @@ net-misc/quagga:pam - Add support for PAM (via sys-libs/pam) to the Quagga Virtu
 net-misc/quagga:readline - Enable support for sys-libs/readline to provide the Quagga Virtual Terminal Interface Shell (vtysh).
 net-misc/quagga:tcp-zebra - Enable TCP zserv interface on port 2600 for Zebra/protocol-daemon communication. Unix domain sockets are chosen otherwise.
 net-misc/rdesktop:pcsc-lite - Enable smartcard support with sys-apps/pcsc-lite driver
-net-misc/remmina:ayatana - Add support for the Unity desktop
 net-misc/remmina:freerdp - Add support for the net-misc/freerdp application
 net-misc/remmina:ssh - Enable support for SSH/SFTP using net-libs/libssh
+net-misc/remmina:telepathy - Enable telepathy support
 net-misc/remmina:unique - Enable single instance support using dev-libs/libunique
 net-misc/remmina:vte - Enable Terminal support using x11-libs/vte
 net-misc/remmina:xdmcp - Enable support for X Display Manager Control Protocol
@@ -4190,7 +4185,6 @@ net-nds/openldap:overlays - Enable contributed OpenLDAP overlays
 net-nds/openldap:smbkrb5passwd - Enable overlay for syncing ldap, unix and lanman passwords
 net-nds/tac_plus:finger - Adds support for checking user counts via fingering the NAS
 net-nds/tac_plus:maxsess - Enforce a limit on maximum sessions per user
-net-news/liferea:ayatana - Build in support for Ayatana notification using the libindicate plugin.
 net-news/liferea:libnotify - Enable popup notifications
 net-news/liferea:lua - Enable lua scripting
 net-nntp/inn:innkeywords - Enable automatic keyword generation support
@@ -4261,11 +4255,11 @@ net-p2p/mldonkey:guionly - enable client build only
 net-p2p/mldonkey:magic - enable use of libmagic
 net-p2p/rtorrent:color - Add custom color support for torrent list
 net-p2p/rtorrent:daemon - Uses app-misc/screen to daemonize this application
-net-p2p/transmission:ayatana - Enable Ayatana support with dev-libs/libappindicator
 net-p2p/transmission:libcanberra - Enable sound event support with media-libs/libcanberra
 net-p2p/transmission:utp - Adds support for µTP (Micro Transport Protocol)
 net-p2p/transmission-remote-gtk:libproxy - Use net-libs/libproxy for getting the HTTP/HTTPS/SOCKS proxy configuration.
 net-p2p/transmission-remote-gtk:unique - Enable single instance support using dev-libs/libunique
+net-p2p/tribler:vlc - Enable vlc support.
 net-print/cups:filters - Pull in net-print/foomatic-filters for filtering by default.
 net-print/cups:java - Add support for the Java interpeter in the web server CGIs.
 net-print/cups:perl - Add support for the Perl interpeter in the web server CGIs.

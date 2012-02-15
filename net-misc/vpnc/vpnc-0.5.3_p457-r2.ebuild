@@ -1,6 +1,6 @@
-# Copyright 1999-2011 Gentoo Foundation
+# Copyright 1999-2012 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/net-misc/vpnc/vpnc-0.5.3_p457-r2.ebuild,v 1.1 2011/07/03 17:30:21 fauli Exp $
+# $Header: /var/cvsroot/gentoo-x86/net-misc/vpnc/vpnc-0.5.3_p457-r2.ebuild,v 1.2 2012/02/14 19:14:11 jlec Exp $
 
 EAPI=3
 
@@ -21,8 +21,9 @@ IUSE="resolvconf openssl bindist"
 DEPEND=">=dev-libs/libgcrypt-1.1.91
 	>=sys-apps/iproute2-2.6.19.20061214[-minimal]
 	bindist? ( net-libs/gnutls )
-	openssl? (
-		!bindist? ( dev-libs/openssl )
+	!bindist? (
+		openssl? ( dev-libs/openssl )
+		!openssl? ( net-libs/gnutls )
 	)"
 
 RDEPEND="${DEPEND}
