@@ -9,5 +9,5 @@ RDEPEND=x11-libs/qt-gui:4 >=x11-libs/libXinerama-1.0.2
 RESTRICT=strip
 SLOT=0
 SRC_URI=amd64? ( http://ftp.4players.de/pub/hosted/ts3/releases/beta-36/TeamSpeak3-Client-linux_amd64-3.0.0-beta36.run ) x86? ( http://ftp.4players.de/pub/hosted/ts3/releases/beta-36/TeamSpeak3-Client-linux_x86-3.0.0-beta36.run )
-_eclasses_=eutils	d360ca0f1b0275dd8f9c1656049c09d7	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	portability	536c5e70c5fb252ed3b769e04aa3f05b	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	unpacker	3bad9303b54075673d368b65e22dfdc8	user	32a09e82e2f592bf88ad2fd08525166e
+_eclasses_=eutils	bd31a910fcf7757bdb34af6ea39f8ae0	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	portability	536c5e70c5fb252ed3b769e04aa3f05b	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	unpacker	3bad9303b54075673d368b65e22dfdc8	user	32a09e82e2f592bf88ad2fd08525166e
 _md5_=0c78a40d865d7f4925e19e302dc38263

@@ -9,5 +9,5 @@ RDEPEND=!mail-mta/courier !mail-mta/esmtp !mail-mta/exim !mail-mta/mini-qmail !m
 RESTRICT=test
 SLOT=0
 SRC_URI=mirror://qmail/netqmail-1.06.tar.gz http://dev.gentoo.org/~hollow/distfiles/genqmail-20080406.tar.bz2 !vanilla? ( highvolume? ( mirror://qmail/big-todo.103.patch ) qmail-spp? ( mirror://sourceforge/qmail-spp/qmail-spp-0.42.tar.gz ) ssl? ( http://shupp.org/patches/netqmail-1.05-tls-smtpauth-20070417.patch ) )
-_eclasses_=eutils	d360ca0f1b0275dd8f9c1656049c09d7	fixheadtails	f96922acc9287f1e889a1e50a6c8986e	flag-o-matic	a2e1c4641a8aed225d4ddb0f74f382de	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	portability	536c5e70c5fb252ed3b769e04aa3f05b	qmail	4769a115633d2afbfcd65d8ee0ed76d8	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
+_eclasses_=eutils	bd31a910fcf7757bdb34af6ea39f8ae0	fixheadtails	f96922acc9287f1e889a1e50a6c8986e	flag-o-matic	a2e1c4641a8aed225d4ddb0f74f382de	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	portability	536c5e70c5fb252ed3b769e04aa3f05b	qmail	4769a115633d2afbfcd65d8ee0ed76d8	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
 _md5_=95c1f474c1b56e1782561b1b6417190a

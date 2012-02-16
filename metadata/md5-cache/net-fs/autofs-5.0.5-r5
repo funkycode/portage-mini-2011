@@ -10,5 +10,5 @@ RDEPEND=hesiod? ( net-dns/hesiod ) ldap? ( >=net-nds/openldap-2.0 sasl? ( dev-li
 REQUIRED_USE=sasl? ( ldap )
 SLOT=0
 SRC_URI=mirror://kernel/linux/daemons/autofs/v5/autofs-5.0.5.tar.bz2 mirror://gentoo/autofs-5.0.5-patches-5.tar.lzma
-_eclasses_=autotools	8dd6d5965d958613b3c50c63586af9e0	eutils	d360ca0f1b0275dd8f9c1656049c09d7	libtool	5f623f5a211fb1b2d84d88ee49959a54	linux-info	cc184ad3383ffb6ffbaa82f53608e77f	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	portability	536c5e70c5fb252ed3b769e04aa3f05b	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e	versionator	6601b4c5b3f019a993db59a50e1854e4
+_eclasses_=autotools	8dd6d5965d958613b3c50c63586af9e0	eutils	bd31a910fcf7757bdb34af6ea39f8ae0	libtool	5f623f5a211fb1b2d84d88ee49959a54	linux-info	cc184ad3383ffb6ffbaa82f53608e77f	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	portability	536c5e70c5fb252ed3b769e04aa3f05b	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e	versionator	6601b4c5b3f019a993db59a50e1854e4
 _md5_=83adc4b69bf2663a7804df48c260ff46

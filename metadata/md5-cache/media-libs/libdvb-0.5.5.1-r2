@@ -1,12 +1,12 @@
 DEFINED_PHASES=install unpack
-DEPEND=media-tv/linuxtv-dvb-headers
+DEPEND=virtual/linuxtv-dvb-headers
 DESCRIPTION=libdvb package with added CAM library and libdvbmpegtools as well as dvb-mpegtools
 HOMEPAGE=http://www.metzlerbros.org/dvb/
 IUSE=doc
 KEYWORDS=amd64 ppc x86
 LICENSE=GPL-2
-RDEPEND=media-tv/linuxtv-dvb-headers
+RDEPEND=virtual/linuxtv-dvb-headers
 SLOT=0
 SRC_URI=http://www.metzlerbros.org/dvb/libdvb-0.5.5.1.tar.gz
-_eclasses_=eutils	d360ca0f1b0275dd8f9c1656049c09d7	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	portability	536c5e70c5fb252ed3b769e04aa3f05b	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
-_md5_=7660a3b3b1289ae0257c1e8d79b83b4a
+_eclasses_=eutils	bd31a910fcf7757bdb34af6ea39f8ae0	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	portability	536c5e70c5fb252ed3b769e04aa3f05b	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
+_md5_=49cd688eba8383f9a084a0a8500eb0e4

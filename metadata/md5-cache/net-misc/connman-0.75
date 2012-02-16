@@ -9,5 +9,5 @@ LICENSE=GPL-2
 RDEPEND=>=dev-libs/glib-2.16 >=sys-apps/dbus-1.2.24 >=dev-libs/libnl-1.1 >=net-firewall/iptables-1.4.8 net-libs/gnutls bluetooth? ( net-wireless/bluez ) caps? ( sys-libs/libcap-ng ) ntpd? ( net-misc/ntp ) ofono? ( net-misc/ofono ) policykit? ( sys-auth/polkit ) openvpn? ( net-misc/openvpn ) vpnc? ( net-misc/vpnc ) wifi? ( >=net-wireless/wpa_supplicant-0.7[dbus] ) wimax? ( net-wireless/wimax )
 SLOT=0
 SRC_URI=mirror://kernel/linux/network/connman/connman-0.75.tar.gz
-_eclasses_=eutils	d360ca0f1b0275dd8f9c1656049c09d7	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	portability	536c5e70c5fb252ed3b769e04aa3f05b	systemd	70a153740015c3457222dbdd8e07c1f7	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
+_eclasses_=eutils	bd31a910fcf7757bdb34af6ea39f8ae0	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	portability	536c5e70c5fb252ed3b769e04aa3f05b	systemd	70a153740015c3457222dbdd8e07c1f7	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
 _md5_=7d2b047b90d93c30fd4a83983f24287c

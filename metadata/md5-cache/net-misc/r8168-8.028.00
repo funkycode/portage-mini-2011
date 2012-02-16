@@ -1,0 +1,13 @@
+DEFINED_PHASES=compile install postinst postrm preinst setup
+DEPEND=kernel_linux? ( sys-apps/module-init-tools ) sys-apps/sed kernel_linux? ( virtual/linux-sources )
+DESCRIPTION=r8168 driver for Realtek 8111/8168 PCI-E NICs
+EAPI=4
+HOMEPAGE=http://www.realtek.com.tw
+IUSE=kernel_linux
+KEYWORDS=~amd64 ~x86
+LICENSE=GPL-2
+RDEPEND=kernel_linux? ( sys-apps/module-init-tools )
+SLOT=0
+SRC_URI=http://r8168.googlecode.com/files/r8168-8.028.00.tar.bz2
+_eclasses_=eutils	bd31a910fcf7757bdb34af6ea39f8ae0	linux-info	cc184ad3383ffb6ffbaa82f53608e77f	linux-mod	a4e07f78bacb6b129ea7b18ad060dbfc	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	portability	536c5e70c5fb252ed3b769e04aa3f05b	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e	versionator	6601b4c5b3f019a993db59a50e1854e4
+_md5_=2a94a03c30f93f66e8cdcfb0e8a00f3b

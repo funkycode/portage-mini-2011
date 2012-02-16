@@ -1,6 +1,6 @@
-# Copyright 1999-2011 Gentoo Foundation
+# Copyright 1999-2012 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/media-plugins/vdr-burn/vdr-burn-0.2.0_beta5-r1.ebuild,v 1.1 2011/02/13 13:16:00 hd_brummy Exp $
+# $Header: /var/cvsroot/gentoo-x86/media-plugins/vdr-burn/vdr-burn-0.2.0_beta5-r1.ebuild,v 1.2 2012/02/15 21:21:52 hd_brummy Exp $
 
 EAPI="3"
 
@@ -14,7 +14,7 @@ MY_P="${PN}-$(replace_version_separator 3 -)"
 
 DESCRIPTION="VDR Plugin: burn records on DVD"
 HOMEPAGE="http://projects.vdr-developer.org/projects/show/plg-burn"
-SRC_URI="http://projects.vdr-developer.org/attachments/download/${VERSION}/${MY_P}.tgz"
+SRC_URI="mirror://vdr-developerorg/${VERSION}/${MY_P}.tgz"
 
 KEYWORDS="~amd64 ~x86"
 SLOT="0"

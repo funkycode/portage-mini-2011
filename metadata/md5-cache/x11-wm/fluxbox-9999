@@ -7,5 +7,5 @@ IUSE=nls xinerama bidi +truetype +imlib +slit +toolbar vim-syntax
 LICENSE=MIT
 RDEPEND=x11-libs/libXpm x11-libs/libXrandr x11-libs/libXext x11-libs/libXft x11-libs/libXrender || ( x11-misc/gkmessage x11-apps/xmessage ) xinerama? ( x11-libs/libXinerama ) truetype? ( media-libs/freetype ) bidi? ( dev-libs/fribidi ) imlib? ( >=media-libs/imlib2-1.2.0[X] ) vim-syntax? ( app-vim/fluxbox-syntax ) !!<x11-themes/fluxbox-styles-fluxmod-20040809-r1 !!<=x11-misc/fluxconf-0.9.9 !!<=x11-misc/fbdesk-1.2.1
 SLOT=0
-_eclasses_=eutils	d360ca0f1b0275dd8f9c1656049c09d7	git-2	6bb20ec18cca375571bcbe67bcf2e1d7	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	portability	536c5e70c5fb252ed3b769e04aa3f05b	prefix	21058c21ca48453d771df15500873ede	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
+_eclasses_=eutils	bd31a910fcf7757bdb34af6ea39f8ae0	git-2	6bb20ec18cca375571bcbe67bcf2e1d7	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	portability	536c5e70c5fb252ed3b769e04aa3f05b	prefix	21058c21ca48453d771df15500873ede	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
 _md5_=62120e4e7fa022480056ec17ed184b40

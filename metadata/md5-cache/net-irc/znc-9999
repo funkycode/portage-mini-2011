@@ -7,5 +7,5 @@ IUSE=debug dns-threads extras ipv6 perl python ssl sasl tcl
 LICENSE=GPL-2
 RDEPEND=perl? ( >=dev-lang/perl-5.10 ) sasl? ( >=dev-libs/cyrus-sasl-2 ) ssl? ( >=dev-libs/openssl-0.9.7d ) tcl? ( dev-lang/tcl ) >=app-admin/eselect-python-20091230 python? ( =dev-lang/python-3* )
 SLOT=0
-_eclasses_=base	5f35078c26d6c60556d5c8a2feb4f84f	eutils	d360ca0f1b0275dd8f9c1656049c09d7	git-2	6bb20ec18cca375571bcbe67bcf2e1d7	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	portability	536c5e70c5fb252ed3b769e04aa3f05b	python	ba318f39f69a4478c5097f9ccf8c1173	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
+_eclasses_=base	5f35078c26d6c60556d5c8a2feb4f84f	eutils	bd31a910fcf7757bdb34af6ea39f8ae0	git-2	6bb20ec18cca375571bcbe67bcf2e1d7	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	portability	536c5e70c5fb252ed3b769e04aa3f05b	python	ba318f39f69a4478c5097f9ccf8c1173	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
 _md5_=0dfeaccfd1742406f6fa62e4cdf3af18

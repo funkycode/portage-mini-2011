@@ -1,11 +1,11 @@
-DEFINED_PHASES=install prepare unpack
-DESCRIPTION=designed to heavily load CPU chips [testing purposes]
-EAPI=2
+DEFINED_PHASES=install prepare
+DESCRIPTION=Designed to heavily load CPU chips [testing purposes]
+EAPI=4
 HOMEPAGE=http://pages.sbcglobal.net/redelm/
 KEYWORDS=-* amd64 x86
 LICENSE=GPL-2
 RDEPEND=amd64? ( >=app-emulation/emul-linux-x86-baselibs-1.0 )
 SLOT=0
-SRC_URI=http://pages.sbcglobal.net/redelm/cpuburn_1_4a_tar.gz
-_eclasses_=eutils	d360ca0f1b0275dd8f9c1656049c09d7	flag-o-matic	a2e1c4641a8aed225d4ddb0f74f382de	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	portability	536c5e70c5fb252ed3b769e04aa3f05b	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
-_md5_=0d5252a87e83845020c0766f717b9e7f
+SRC_URI=http://dev.gentoo.org/~jlec/distfiles/cpuburn-1.4a.tar.gz
+_eclasses_=eutils	bd31a910fcf7757bdb34af6ea39f8ae0	flag-o-matic	a2e1c4641a8aed225d4ddb0f74f382de	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	portability	536c5e70c5fb252ed3b769e04aa3f05b	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
+_md5_=0018a23b53898a75c43ac442c6382157

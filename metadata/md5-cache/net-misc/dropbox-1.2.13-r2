@@ -1,5 +1,5 @@
 DEFINED_PHASES=install unpack
-DESCRIPTION=Dropbox daemon (pretends to be GUI-less).
+DESCRIPTION=Dropbox daemon (pretends to be GUI-less)
 EAPI=4
 HOMEPAGE=http://dropbox.com/
 KEYWORDS=~amd64 ~x86
@@ -8,4 +8,4 @@ RDEPEND=net-misc/wget
 RESTRICT=mirror strip
 SLOT=0
 SRC_URI=x86? ( http://dl-web.dropbox.com/u/17/dropbox-lnx.x86-1.2.13.tar.gz ) amd64? ( http://dl-web.dropbox.com/u/17/dropbox-lnx.x86_64-1.2.13.tar.gz )
-_md5_=143ae5240962512d66585d596918bf2f
+_md5_=64aaf7f074c57b08af30e89687219e59

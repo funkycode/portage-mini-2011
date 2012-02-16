@@ -1,6 +1,6 @@
 # Copyright 1999-2012 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/media-libs/libvisio/libvisio-0.0.14.ebuild,v 1.2 2012/02/14 19:27:02 scarabeus Exp $
+# $Header: /var/cvsroot/gentoo-x86/media-libs/libvisio/libvisio-0.0.14.ebuild,v 1.4 2012/02/15 21:08:02 scarabeus Exp $
 
 EAPI=4
 
@@ -15,7 +15,7 @@ HOMEPAGE="http://www.freedesktop.org/wiki/Software/libvisio"
 
 LICENSE="LGPL-2.1"
 SLOT="0"
-[[ ${PV} == 9999 ]] || KEYWORDS="~amd64 ~ppc ~x86"
+[[ ${PV} == 9999 ]] || KEYWORDS="amd64 ~ppc x86"
 IUSE="doc static-libs"
 
 RDEPEND="
@@ -30,12 +30,14 @@ DEPEND="${RDEPEND}
 "
 
 src_prepare() {
+	[[ -d m4 ]] || mkdir "m4"
 	base_src_prepare
 	[[ ${PV} == 9999 ]] && eautoreconf
 }
 
 src_configure() {
 	econf \
+		--docdir="${EPREFIX}/usr/share/${PF}" \
 		$(use_enable static-libs static) \
 		--disable-werror \
 		$(use_with doc docs)

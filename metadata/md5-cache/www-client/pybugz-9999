@@ -8,5 +8,5 @@ LICENSE=GPL-2
 PDEPEND=bash-completion? ( app-shells/bash-completion )
 RDEPEND=zsh-completion? ( app-shells/zsh ) bash-completion? ( app-admin/eselect ) >=app-admin/eselect-python-20091230 =dev-lang/python-2.7* =dev-lang/python-2.7*[readline]
 SLOT=0
-_eclasses_=bash-completion	003731da0df19d26955927bd534f3058	distutils	c8b0cab86443a130f3737ad1456d57d3	eutils	d360ca0f1b0275dd8f9c1656049c09d7	git-2	6bb20ec18cca375571bcbe67bcf2e1d7	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	portability	536c5e70c5fb252ed3b769e04aa3f05b	python	ba318f39f69a4478c5097f9ccf8c1173	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
+_eclasses_=bash-completion	003731da0df19d26955927bd534f3058	distutils	c8b0cab86443a130f3737ad1456d57d3	eutils	bd31a910fcf7757bdb34af6ea39f8ae0	git-2	6bb20ec18cca375571bcbe67bcf2e1d7	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	portability	536c5e70c5fb252ed3b769e04aa3f05b	python	ba318f39f69a4478c5097f9ccf8c1173	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
 _md5_=767bf31bea9e078c803daf8e3f73eeb4

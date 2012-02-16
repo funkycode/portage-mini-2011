@@ -10,5 +10,5 @@ RDEPEND=ruby_targets_ruby18? ( >=dev-ruby/amazon-ec2-0.9.10[ruby_targets_ruby18]
 RESTRICT=test
 SLOT=0
 SRC_URI=http://github.com/solutious/rudy/tarball/v0.9.8.016 -> rudy-git-0.9.8.016.tgz
-_eclasses_=eutils	d360ca0f1b0275dd8f9c1656049c09d7	java-utils-2	0b830e0a2e6c4bdf1c81fec1b53d95f1	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	portability	536c5e70c5fb252ed3b769e04aa3f05b	ruby-fakegem	6732f927427c6069df6c4f22271f2c75	ruby-ng	4f1be3b6db6ebad08d2c6d7996907767	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e	versionator	6601b4c5b3f019a993db59a50e1854e4
+_eclasses_=eutils	bd31a910fcf7757bdb34af6ea39f8ae0	java-utils-2	0b830e0a2e6c4bdf1c81fec1b53d95f1	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	portability	536c5e70c5fb252ed3b769e04aa3f05b	ruby-fakegem	6732f927427c6069df6c4f22271f2c75	ruby-ng	4f1be3b6db6ebad08d2c6d7996907767	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e	versionator	6601b4c5b3f019a993db59a50e1854e4
 _md5_=d3fc7134c9f7c1b9f577bbe309040449
