@@ -1,10 +1,12 @@
 # Copyright 1999-2012 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/dev-lang/php/php-5.3.10-r2.ebuild,v 1.1 2012/02/06 21:24:03 olemarkus Exp $
+# $Header: /var/cvsroot/gentoo-x86/dev-lang/php/php-5.3.10-r2.ebuild,v 1.2 2012/02/16 19:22:11 olemarkus Exp $
 
 EAPI=4
 
 PHPCONFUTILS_MISSING_DEPS="adabas birdstep db2 dbmaker empress empress-bcs esoob interbase oci8 sapdb solid"
+
+RESTRICT="mirror"
 
 inherit eutils autotools flag-o-matic versionator depend.apache apache-module db-use libtool
 

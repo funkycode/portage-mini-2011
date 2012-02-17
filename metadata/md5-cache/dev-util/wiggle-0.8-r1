@@ -4,10 +4,10 @@ DESCRIPTION=program for applying patches that patch cannot apply because of conf
 EAPI=3
 HOMEPAGE=http://neil.brown.name/wiggle http://neil.brown.name/git?p=wiggle
 IUSE=test
-KEYWORDS=amd64 ppc ~x86 ~amd64-linux ~x86-linux
+KEYWORDS=amd64 ppc x86 ~amd64-linux ~x86-linux
 LICENSE=GPL-2
 RDEPEND=dev-util/diffstat dev-util/patchutils sys-apps/diffutils sys-apps/findutils sys-apps/gawk sys-apps/grep sys-apps/less sys-apps/sed sys-apps/coreutils sys-devel/patch
 SLOT=0
 SRC_URI=http://neil.brown.name/wiggle/wiggle-0.8.tar.gz
 _eclasses_=eutils	bd31a910fcf7757bdb34af6ea39f8ae0	fixheadtails	f96922acc9287f1e889a1e50a6c8986e	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	portability	536c5e70c5fb252ed3b769e04aa3f05b	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
-_md5_=747982b9a1e3483f8f2d514740b1f63a
+_md5_=628321b37fa103f0b7a2e5b61a7e7d14

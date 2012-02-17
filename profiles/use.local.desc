@@ -849,6 +849,7 @@ app-text/lodgeit:vim - Install a vim plugin allowing to paste and download from 
 app-text/mathtex:png - Generate png images by default instead of gif
 app-text/pandoc:highlight - Add support for syntax highlighting with dev-haskell/highlighting-kate
 app-text/pdf2djvu:graphicsmagick - Enable media-gfx/graphicsmagick support
+app-text/pdfgrep:unac - Rremoving accents and ligatures before search
 app-text/pdftk:nodrm - Decrypt a document with the user_pw even if it has an owner_pw set
 app-text/podofo:boost - Add support for boost
 app-text/poppler:exceptions - Enable exceptions throwing.
@@ -4345,9 +4346,21 @@ net-wireless/hostapd:logwatch - Install support files for sys-app/logwatch
 net-wireless/hostapd:madwifi - Add support for madwifi (Atheros chipset)
 net-wireless/hostapd:wps - Add support for Wi-Fi Protected Setup
 net-wireless/kismet:client - Build the ncurses-based user interface
+net-wireless/kismet:ncurses - Build the ncurses-based user interface
 net-wireless/kismet:pcap - Enable packet capturing support using net-libs/libpcap
+net-wireless/kismet:pcre - Build with pcre support
+net-wireless/kismet:plugin-autowep - Build the autowep plugin
+net-wireless/kismet:plugin-btscan - Build the btscan plugin
+net-wireless/kismet:plugin-dot15d4 - Build the dot15d4 plugin
+net-wireless/kismet:plugin-ptw - Build the ptw plugin
+net-wireless/kismet:plugin-spectools - Build the spectools plugin. This uses net-wireless/spectools
+net-wireless/kismet:ruby - Build extras which are written in ruby, example plugins and the like.
+net-wireless/kismet:speech - Audio support using app-accessibility/flite
 net-wireless/kismet:suid - Install a setuid root helper binary with limited functionality; this allows running kismet as a normal user, significantly reducing security risks
 net-wireless/madwifi-ng:injection - Adds support for net-wireless/aircrack-ng aireplay-ng packet injection
+net-wireless/spectools:debug - Build the raw output client for spectools. This is only needed for developing spectools.
+net-wireless/spectools:gtk - Build the gtk-2 based client for spectools
+net-wireless/spectools:ncurses - Build the ncurses based client for spectools
 net-wireless/wepattack:john - Build with app-crypt/johntheripper support
 net-wireless/wifiscanner:wireshark - Use the net-analyzer/wireshark wtap library
 net-wireless/wireless-tools:multicall - Build the most commonly used tools as one binary
@@ -4698,6 +4711,7 @@ sys-apps/hwloc:pci - Enable PCI device discovery using libpci
 sys-apps/ipmitool:openipmi - Use the system OpenIPMI implementation.
 sys-apps/iproute2:iptables - include support for iptables filtering
 sys-apps/irqbalance:numa - Support balancing IRQs across NUMA nodes
+sys-apps/kexec-tools:booke - Include support for Book-E memory management
 sys-apps/kexec-tools:lzma - Enables support for LZMA compressed kernel images
 sys-apps/kexec-tools:xen - Enable extended xen support
 sys-apps/kmod:compat - Install module-init-tools compatible symlinks.

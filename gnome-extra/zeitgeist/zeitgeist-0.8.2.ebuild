@@ -1,6 +1,6 @@
 # Copyright 1999-2012 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/gnome-extra/zeitgeist/zeitgeist-0.8.2.ebuild,v 1.2 2012/02/15 18:51:50 jlec Exp $
+# $Header: /var/cvsroot/gentoo-x86/gnome-extra/zeitgeist/zeitgeist-0.8.2.ebuild,v 1.3 2012/02/16 19:49:01 jlec Exp $
 
 EAPI=4
 
@@ -34,8 +34,6 @@ RDEPEND="
 	plugins? ( gnome-extra/zeitgeist-datasources )
 "
 DEPEND="${RDEPEND}"
-
-PATCHES=( )
 
 pkg_setup() {
 	python_set_active_version 2

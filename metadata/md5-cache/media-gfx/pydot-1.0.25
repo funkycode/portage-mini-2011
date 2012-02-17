@@ -3,10 +3,10 @@ DEPEND=dev-python/pyparsing media-gfx/graphviz dev-python/setuptools >=app-admin
 DESCRIPTION=Python interface to Graphviz's Dot language
 EAPI=3
 HOMEPAGE=http://code.google.com/p/pydot/ http://pypi.python.org/pypi/pydot
-KEYWORDS=~alpha ~amd64 ~arm ~hppa ~ia64 ~mips ~ppc ~ppc64 ~s390 ~sh ~sparc ~x86 ~x86-fbsd ~ppc-macos ~x64-macos ~x86-macos
+KEYWORDS=~alpha ~amd64 ~arm ~hppa ~ia64 ~mips ~ppc ~ppc64 ~s390 ~sh ~sparc ~x86 ~x86-fbsd ~ppc-macos ~x64-macos ~x86-macos ~sparc-solaris
 LICENSE=MIT
 RDEPEND=dev-python/pyparsing media-gfx/graphviz >=app-admin/eselect-python-20091230 =dev-lang/python-2*
 SLOT=0
 SRC_URI=http://pydot.googlecode.com/files/pydot-1.0.25.tar.gz
 _eclasses_=distutils	c8b0cab86443a130f3737ad1456d57d3	eutils	bd31a910fcf7757bdb34af6ea39f8ae0	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	portability	536c5e70c5fb252ed3b769e04aa3f05b	python	ba318f39f69a4478c5097f9ccf8c1173	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
-_md5_=9f5434469c4d8a4c81acd3c091c52086
+_md5_=9b041f8d9490cbaf1616cdbdf43bab46

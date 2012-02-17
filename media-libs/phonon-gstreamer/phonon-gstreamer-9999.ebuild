@@ -1,6 +1,6 @@
-# Copyright 1999-2011 Gentoo Foundation
+# Copyright 1999-2012 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/media-libs/phonon-gstreamer/phonon-gstreamer-9999.ebuild,v 1.8 2011/12/30 18:53:03 dilfridge Exp $
+# $Header: /var/cvsroot/gentoo-x86/media-libs/phonon-gstreamer/phonon-gstreamer-9999.ebuild,v 1.9 2012/02/16 23:09:24 johu Exp $
 
 EAPI=4
 
@@ -14,7 +14,7 @@ inherit cmake-utils ${git_eclass}
 
 DESCRIPTION="Phonon GStreamer backend"
 HOMEPAGE="https://projects.kde.org/projects/kdesupport/phonon/phonon-gstreamer"
-[[ ${PV} == *9999 ]] || SRC_URI="mirror://kde/stable/phonon/${MY_PN}/${PV}/src/${MY_P}.tar.bz2"
+[[ ${PV} == *9999 ]] || SRC_URI="mirror://kde/stable/phonon/${MY_PN}/${PV}/src/${MY_P}.tar.xz"
 
 LICENSE="LGPL-2.1"
 if [[ ${PV} == *9999 ]]; then
