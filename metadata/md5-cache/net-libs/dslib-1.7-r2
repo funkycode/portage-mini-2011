@@ -3,10 +3,10 @@ DEPEND=dev-python/pyasn1 dev-python/pyopenssl >=app-admin/eselect-python-2009123
 DESCRIPTION=Library to access Czech eGov system "Datove schranky"
 EAPI=4
 HOMEPAGE=http://labs.nic.cz/page/969/datovka/
-KEYWORDS=~amd64 ~x86
+KEYWORDS=amd64 x86
 LICENSE=GPL-2
 RDEPEND=dev-python/pyasn1 dev-python/pyopenssl >=app-admin/eselect-python-20091230 dev-lang/python
 SLOT=0
 SRC_URI=http://labs.nic.cz/files/labs/datove_schranky/dslib-1.7.tar.gz
 _eclasses_=distutils	c8b0cab86443a130f3737ad1456d57d3	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	python	ba318f39f69a4478c5097f9ccf8c1173	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68
-_md5_=3c82443f1d5cf69e4f7487fd1e19c5d4
+_md5_=9d128b696fcf4fb554b65e47c4d948f2
