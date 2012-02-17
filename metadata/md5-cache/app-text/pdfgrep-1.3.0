@@ -9,4 +9,4 @@ LICENSE=GPL-2
 RDEPEND=app-text/poppler[cxx] unac? ( app-text/unac )
 SLOT=0
 SRC_URI=mirror://sourceforge/pdfgrep/1.3.0/pdfgrep-1.3.0.tar.gz
-_md5_=5b54109290f7e2172ee8630495e2137f
+_md5_=79c42799d7c36b7884ddf689f125966d
