@@ -3,10 +3,10 @@ DEPEND=app-arch/xz-utils >=app-admin/eselect-python-20091230 =dev-lang/python-2*
 DESCRIPTION=Transparent proxy server that works as a poor man's VPN using ssh
 EAPI=4
 HOMEPAGE=https://github.com/apenwarr/sshuttle/
-KEYWORDS=~amd64 ~x86
+KEYWORDS=amd64 ~x86
 LICENSE=GPL-2
 RDEPEND=net-firewall/iptables || ( app-admin/sudo sys-apps/shadow ) >=app-admin/eselect-python-20091230 =dev-lang/python-2*
 SLOT=0
 SRC_URI=http://dev.gentoo.org/~radhermit/distfiles/sshuttle-0.60.tar.xz
 _eclasses_=eutils	bd31a910fcf7757bdb34af6ea39f8ae0	linux-info	cc184ad3383ffb6ffbaa82f53608e77f	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	portability	536c5e70c5fb252ed3b769e04aa3f05b	python	ba318f39f69a4478c5097f9ccf8c1173	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e	versionator	6601b4c5b3f019a993db59a50e1854e4
-_md5_=93f6aa99d9aaaeb64018fe07b8656d4b
+_md5_=d8361284701d6ce8a63fb08e013a3d9c

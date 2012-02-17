@@ -8,6 +8,6 @@ KEYWORDS=~amd64 ~x86
 LICENSE=Artistic-2
 RDEPEND=>=dev-lang/parrot-3.11.0[unicode] >=dev-lang/nqp-2011.12
 SLOT=0
-SRC_URI=http://cloud.github.com/downloads/rakudo/rakudo/rakudo-2011.12.tar.gz
+SRC_URI=mirror://github/rakudo/rakudo/rakudo-2011.12.tar.gz
 _eclasses_=eutils	bd31a910fcf7757bdb34af6ea39f8ae0	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	portability	536c5e70c5fb252ed3b769e04aa3f05b	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
-_md5_=8de8f240dd18bd06060504811cb48834
+_md5_=a0600046a33a7ebcbb5318c0f0ec26f2

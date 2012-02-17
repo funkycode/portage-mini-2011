@@ -10,4 +10,4 @@ RESTRICT=mirror strip
 SLOT=0
 SRC_URI=x86? ( http://dl-web.dropbox.com/u/17/dropbox-lnx.x86-1.2.51.tar.gz ) amd64? ( http://dl-web.dropbox.com/u/17/dropbox-lnx.x86_64-1.2.51.tar.gz )
 _eclasses_=gnome2-utils	b5ca2ccadb60760889faa3bccba121d9	pax-utils	3551398d6ede2b572568832730cc2a45
-_md5_=7d8b4cd87ba77538aed0ccfcf0b9e09c
+_md5_=0442d853144bdc6b8e06bfc5066a27c3

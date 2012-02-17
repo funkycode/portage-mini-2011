@@ -969,6 +969,7 @@ dev-db/postgresql-server:uuid - Enable server side UUID generation (via dev-libs
 dev-db/recutils:curl - Enable support for remote descriptors using libcurl
 dev-db/recutils:mdb - Build the mdb2rec utility
 dev-db/redis:jemalloc - Use dev-libs/jemalloc for allocations.
+dev-db/redis:tcmalloc - Use tcmalloc from dev-util/google-perftools for allocations.
 dev-db/spatialite:geos - Add the sci-libs/geos library for exact topological tests
 dev-db/spatialite:proj - Add the sci-libs/proj library for reprojection features
 dev-db/sqlite:extensions - Enable support for dynamic loading of extensions
@@ -1123,7 +1124,6 @@ dev-java/proguard:j2me - Adds support for J2ME Wireless Toolkit
 dev-java/rxtx:lfd - Installs and uses LockFileServer daemon (lfd)
 dev-java/sun-jdk:derby - Enable Installation of Bundled Derby (Java DB)
 dev-java/sun-jdk:jce - Enable Java Cryptographic Extension Unlimited Strength Policy files
-dev-java/sun-jdk:kernel_Solaris - Enable workaround for unpacking on Solaris
 dev-java/sun-jre-bin:jce - Enable Java Cryptographic Extension Unlimited Strength Policy files
 dev-java/swt:webkit - Embedded browser support via net-libs/webkit-gtk:2, replacing former xulrunner-based browser.
 dev-java/swt:xulrunner - Embedded browser support via xulrunner-1.9 (1.8 for swt-3.3). Xulrunner 2.0 is not supported, will be replaced by webkit in 3.7.
@@ -1971,6 +1971,11 @@ gnome-extra/zeitgeist-datasources:tomboy - Zeitgeist plugin for app-misc/tomboy 
 gnome-extra/zeitgeist-datasources:totem - Zeitgeist plugin for media-video/totem as data source
 gnome-extra/zeitgeist-datasources:vim - Zeitgeist plugin for vim as data source
 gnome-extra/zeitgeist-datasources:xchat - Zeitgeist plugin for net-irc/xchat-gnome as data source
+gnome-extra/zeitgeist-extensions:fts - Enable the full text search
+gnome-extra/zeitgeist-extensions:geolocation - Add the physical location of the computer at the moment when events are inserted
+gnome-extra/zeitgeist-extensions:memprofile - Memory profiling extension
+gnome-extra/zeitgeist-extensions:sqldebug - debug zeitgeists sql statements
+gnome-extra/zeitgeist-extensions:tracker - Notify Tracker on events
 gnome-extra/zenity:compat - Installs gdialog for compatibility with older shell scripts which uses dev-lang/perl
 gnome-extra/zenity:webkit - Enable HTML rendering using net-libs/webkit-gtk
 gnustep-apps/cdplayer:preferences - Use gnustep-apps/preferences for preferences setting
@@ -4086,6 +4091,7 @@ net-misc/openvpn:eurephia - Apply eurephia patch
 net-misc/openvpn:iproute2 - Enabled iproute2 support instead of net-tools
 net-misc/openvpn:passwordsave - Enables openvpn to save passwords
 net-misc/openvpn:pkcs11 - Enable PKCS#11 smartcard support
+net-misc/pavuk:hammer - Turn on chunky/hammer mode (DoS) in pavuk: when specified, pavuk will include features to stress test web sites using an ultrahigh performancereplay mechanism
 net-misc/plowshare:scripts - Install some additional helper scripts
 net-misc/plowshare:view-captcha - View captcha with aview
 net-misc/ps3mediaserver:multiuser - Allow renderer customization per-user.
@@ -5010,6 +5016,8 @@ sys-infiniband/openib-files:srp - Automatically generated description for srp
 sys-infiniband/openib-files:vnic - Automatically generated description for vnic
 sys-kernel/ck-sources:deblob - Remove binary blobs from kernel sources to provide libre license compliance.
 sys-kernel/dracut:debug - Module installing additional tools like strace, file editor, ssh and more
+sys-kernel/dracut:dm - Set of helper modules providing support for device mapper. You need to enable this only if emerge says so.
+sys-kernel/dracut:net - Set of helper modules providing networking support. You need to enable this only if emerge says so.
 sys-kernel/gentoo-sources:deblob - Remove binary blobs from kernel sources to provide libre license compliance.
 sys-kernel/hardened-sources:deblob - Remove binary blobs from kernel sources to provide libre license compliance.
 sys-kernel/hardened-sources:xtpax - Enable XATTR_PAX_FLAGS support (EXPERIMENTAL).

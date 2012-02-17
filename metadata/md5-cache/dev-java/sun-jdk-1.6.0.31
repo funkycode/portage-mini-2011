@@ -1,0 +1,14 @@
+DEFINED_PHASES=compile install nofetch postinst postrm prerm setup unpack
+DEPEND==dev-java/java-config-2*
+DESCRIPTION=Oracle's Java SE Development Kit
+EAPI=4
+HOMEPAGE=http://www.oracle.com/technetwork/java/javase/
+IUSE=X alsa derby doc examples jce kernel_SunOS nsplugin +source
+KEYWORDS=~amd64 ~x86 ~amd64-linux ~x86-linux ~sparc-solaris ~sparc64-solaris ~x64-solaris ~x86-solaris
+LICENSE=Oracle-BCLA-JavaSE
+RDEPEND=X? ( x11-libs/libXext x11-libs/libXi x11-libs/libXrender x11-libs/libXtst x11-libs/libX11 ) alsa? ( media-libs/alsa-lib ) doc? ( dev-java/java-sdk-docs:1.6.0 ) jce? ( dev-java/sun-jce-bin:1.6 ) kernel_SunOS? ( app-arch/unzip ) !prefix? ( sys-libs/glibc ) =dev-java/java-config-2*
+RESTRICT=fetch strip
+SLOT=1.6
+SRC_URI=x86? ( jdk-6u31-linux-i586.bin ) amd64? ( jdk-6u31-linux-x64.bin ) x86-solaris? ( jdk-6u31-solaris-i586.sh ) x64-solaris? ( jdk-6u31-solaris-i586.sh jdk-6u31-solaris-x64.sh ) sparc-solaris? ( jdk-6u31-solaris-sparc.sh ) sparc64-solaris? ( jdk-6u31-solaris-sparc.sh jdk-6u31-solaris-sparcv9.sh )
+_eclasses_=eutils	bd31a910fcf7757bdb34af6ea39f8ae0	fdo-mime	0acfe1a88fd8751a1d5dc671168219fa	java-vm-2	a34fe9a7d2a4f163b7f0c5af7d53ae33	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	pax-utils	3551398d6ede2b572568832730cc2a45	portability	536c5e70c5fb252ed3b769e04aa3f05b	prefix	21058c21ca48453d771df15500873ede	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e	versionator	6601b4c5b3f019a993db59a50e1854e4
+_md5_=640970fdd5e9dfa9b6d5d2118bc8363a
