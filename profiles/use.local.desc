@@ -244,7 +244,7 @@ app-crypt/ccid:twinserial - Enable twinserial reader
 app-crypt/ekeyd:minimal - Only install the ekey-egd-linux service rather than the full ekeyd package.
 app-crypt/ekeyd:munin - Install a plugin for net-analyzer/munin to graph statistical data from ekeyd.
 app-crypt/ekeyd:usb - Build the libusb-based userland daemon for accessing the EntropyKey (alternative to the CDC USB driver). It is suggested to use this option by default, as the CDC driver in the kernel often seems to be fragile (or the gadget implementation on the EntropyKey is too buggy), and can cause various problems.
-app-crypt/gnupg:idea - Use the patented IDEA algorithm
+app-crypt/gnupg:idea - Add support for the IDEA algorithm
 app-crypt/gnupg:openct - Bring in dev-libs/openct as a dependency; enable scdaemon.
 app-crypt/gnupg:pcsc-lite - Bring in sys-apps/pcsc-lite as a dependency; enable scdaemon.
 app-crypt/gnupg:smartcard - Build scdaemon software. Enables usage of OpenPGP cards. For other type of smartcards, try app-crypt/gnupg-pkcs11-scd.
@@ -850,7 +850,7 @@ app-text/lodgeit:vim - Install a vim plugin allowing to paste and download from 
 app-text/mathtex:png - Generate png images by default instead of gif
 app-text/pandoc:highlight - Add support for syntax highlighting with dev-haskell/highlighting-kate
 app-text/pdf2djvu:graphicsmagick - Enable media-gfx/graphicsmagick support
-app-text/pdfgrep:unac - Rremoving accents and ligatures before search
+app-text/pdfgrep:unac - Removing accents and ligatures before search
 app-text/pdftk:nodrm - Decrypt a document with the user_pw even if it has an owner_pw set
 app-text/podofo:boost - Add support for boost
 app-text/poppler:exceptions - Enable exceptions throwing.
@@ -1174,25 +1174,19 @@ dev-lang/path64:valgrind - Use dev-util/valgrind for memory debbuging
 dev-lang/perl:ithreads - Enable Perl threads, has some compatibility problems
 dev-lang/perl:perlsuid - Enable Perl SUID install. Has some risks associated.
 dev-lang/php:cli - Enable CLI SAPI
-dev-lang/php:discard-path - Switch on common security setting for CGI SAPI
 dev-lang/php:embed - Enable embed SAPI
 dev-lang/php:enchant - Add supports Enchant spelling library.
-dev-lang/php:fdftk - Add supports for Adobe's FDF toolkit.
 dev-lang/php:fileinfo - Add fileinfo extension support
 dev-lang/php:filter - Add filter extension support
-dev-lang/php:force-cgi-redirect - Switch on common security setting for CGI SAPI
 dev-lang/php:fpm - Enable the FastCGI Process Manager SAPI
 dev-lang/php:hash - Enable the hash extension
 dev-lang/php:intl - Enables the intl extension for extended internalization support
 dev-lang/php:json - Enable JSON support
 dev-lang/php:ldap-sasl - Add SASL support for the PHP LDAP extension
 dev-lang/php:mysqlnd - Use native driver for mysql, mysqli, PDO_Mysql
-dev-lang/php:pcre - Adds support for Perl Compatible Regular Expressions (deprecated: always "on" in php 5.3)
 dev-lang/php:pdo - Enable the bundled PDO extensions
 dev-lang/php:phar - Enables the phar extension to provide phar archive support
 dev-lang/php:pic - Force shared modules to build as PIC on x86 (speed tradeoff with memory usage)
-dev-lang/php:reflection - Enable the reflection extension (Reflection API) (deprecated: always "on" in php 5.3)
-dev-lang/php:spl - Adds support for the Standard PHP Library (deprecated: always "on" in php 5.3)
 dev-lang/php:suhosin - Add Suhosin support (patch and extension from http://www.suhosin.org/)
 dev-lang/php:xmlreader - Enable XMLReader support
 dev-lang/php:xmlwriter - Enable XMLWriter support
@@ -5031,7 +5025,7 @@ sys-infiniband/openib-files:srp - Automatically generated description for srp
 sys-infiniband/openib-files:vnic - Automatically generated description for vnic
 sys-kernel/ck-sources:deblob - Remove binary blobs from kernel sources to provide libre license compliance.
 sys-kernel/dracut:debug - Module installing additional tools like strace, file editor, ssh and more
-sys-kernel/dracut:dm - Set of helper modules providing support for device mapper. You need to enable this only if emerge says so.
+sys-kernel/dracut:device-mapper - Set of helper modules providing support for device mapper. You need to enable this only if emerge says so.
 sys-kernel/dracut:net - Set of helper modules providing networking support. You need to enable this only if emerge says so.
 sys-kernel/gentoo-sources:deblob - Remove binary blobs from kernel sources to provide libre license compliance.
 sys-kernel/hardened-sources:deblob - Remove binary blobs from kernel sources to provide libre license compliance.
@@ -5158,6 +5152,7 @@ www-apps/viewvc:cvsgraph - Add dev-vcs/cvsgraph support to show graphical views 
 www-apps/viewvc:mod_python - Add www-apache/mod_python support
 www-apps/viewvc:mod_wsgi - Add www-apache/mod_wsgi support
 www-apps/viewvc:pygments - Add dev-python/pygments support for syntax highlighting
+www-client/dwb:gtk3 - Link against x11-libs/gtk+:3 instead of x11-libs/gtk+:2
 www-client/elinks:bittorrent - Enable support for the BitTorrent protocol
 www-client/elinks:finger - Enable support for the finger protocol
 www-client/elinks:gopher - Enable support for the gopher protocol

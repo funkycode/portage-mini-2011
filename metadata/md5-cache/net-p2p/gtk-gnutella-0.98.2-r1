@@ -1,0 +1,13 @@
+DEFINED_PHASES=configure install prepare
+DEPEND=dev-libs/glib:2 sys-libs/zlib gtk? ( >=x11-libs/gtk+-2.2.1:2 ) dbus? ( >=sys-apps/dbus-0.35.2 ) ssl? ( >=net-libs/gnutls-2.2.5 ) nls? ( >=sys-devel/gettext-0.11.5 ) dev-util/pkgconfig
+DESCRIPTION=A GTK+ Gnutella client
+EAPI=4
+HOMEPAGE=http://gtk-gnutella.sourceforge.net/
+IUSE=nls dbus ssl +gtk
+KEYWORDS=~amd64 ~ppc ~x86 ~x86-fbsd
+LICENSE=GPL-2
+RDEPEND=dev-libs/glib:2 sys-libs/zlib gtk? ( >=x11-libs/gtk+-2.2.1:2 ) dbus? ( >=sys-apps/dbus-0.35.2 ) ssl? ( >=net-libs/gnutls-2.2.5 ) nls? ( >=sys-devel/gettext-0.11.5 )
+SLOT=0
+SRC_URI=mirror://sourceforge/gtk-gnutella/gtk-gnutella-0.98.2.tar.bz2
+_eclasses_=eutils	bd31a910fcf7757bdb34af6ea39f8ae0	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	portability	536c5e70c5fb252ed3b769e04aa3f05b	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
+_md5_=35656cc168404f5c769552714e52d150
