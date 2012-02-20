@@ -3950,7 +3950,6 @@ net-misc/asterisk:srtp - Enable support for encrypted voice transmission (secure
 net-misc/asterisk-core-sounds:alaw - Install the sounds files for the alaw codec.
 net-misc/asterisk-core-sounds:g722 - Install the sounds files for the g722 codec.
 net-misc/asterisk-core-sounds:g729 - Install the sounds files for the g729 codec.
-net-misc/asterisk-core-sounds:gsm - Install the sounds files for the +gsm codec.
 net-misc/asterisk-core-sounds:siren14 - Install the sounds files for the siren14 codec.
 net-misc/asterisk-core-sounds:siren7 - Install the sounds files for the siren7 codec.
 net-misc/asterisk-core-sounds:sln16 - Install the sounds files for the sln16 codec.

@@ -10,4 +10,4 @@ RDEPEND=>=dev-db/unixODBC-2.3.0 mssql? ( >=dev-db/freetds-0.64[odbc] ) >=app-adm
 SLOT=0
 SRC_URI=http://pyodbc.googlecode.com/files/pyodbc-2.1.11.zip
 _eclasses_=distutils	c8b0cab86443a130f3737ad1456d57d3	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	python	ba318f39f69a4478c5097f9ccf8c1173	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68
-_md5_=68ebb50226df548733ec8ce357e6b39a
+_md5_=4ee2ec43f44efc78b2564ed86d27c1ae

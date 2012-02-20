@@ -10,4 +10,4 @@ RDEPEND=>=dev-libs/glib-2.4.0 avahi? ( net-dns/avahi[python] ) sqlite? ( dev-pyt
 SLOT=0
 SRC_URI=mirror://sourceforge/freevo/kaa-base-0.6.0.tar.gz
 _eclasses_=distutils	c8b0cab86443a130f3737ad1456d57d3	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	python	ba318f39f69a4478c5097f9ccf8c1173	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68
-_md5_=7a0c93560595316c3cd468f4b6475463
+_md5_=12f02a3212ad8a4973aec4be3db6ddcd
