@@ -1,12 +1,12 @@
 DEFINED_PHASES=compile install postinst postrm prepare
-DEPEND=dev-python/pyyaml app-arch/unzip >=app-admin/eselect-python-20091230 =dev-lang/python-2*
+DEPEND=dev-python/numpy dev-python/pyyaml app-arch/unzip >=app-admin/eselect-python-20091230 =dev-lang/python-2*
 DESCRIPTION=Natural Language Toolkit
 EAPI=3
 HOMEPAGE=http://nltk.org/
 KEYWORDS=~amd64 ~x86 ~amd64-linux ~x86-linux ~ppc-macos ~x64-macos ~x86-macos ~x86-solaris
 LICENSE=GPL-2
-RDEPEND=dev-python/pyyaml app-arch/unzip dev-python/numpy >=app-admin/eselect-python-20091230 =dev-lang/python-2*
+RDEPEND=dev-python/numpy dev-python/pyyaml >=app-admin/eselect-python-20091230 =dev-lang/python-2*
 SLOT=0
 SRC_URI=http://nltk.googlecode.com/files/nltk-2.0.1rc1.zip
 _eclasses_=distutils	c8b0cab86443a130f3737ad1456d57d3	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	python	ba318f39f69a4478c5097f9ccf8c1173	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68
-_md5_=022a3caecf4377f4ec3ffcf22a54bcb8
+_md5_=c136e922756fc83616c334d72cfe811c

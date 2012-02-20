@@ -1,6 +1,6 @@
-# Copyright 1999-2011 Gentoo Foundation
+# Copyright 1999-2012 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/sci-electronics/kicad/kicad-99999999.ebuild,v 1.6 2011/05/24 23:56:20 rafaelmartins Exp $
+# $Header: /var/cvsroot/gentoo-x86/sci-electronics/kicad/kicad-99999999.ebuild,v 1.7 2012/02/19 04:43:33 calchan Exp $
 
 # rafaelmartins: Please try to keep the live ebuild synchronized with
 # the latest snapshot ebuild. e.g.:
@@ -10,24 +10,12 @@ EAPI="3"
 
 WX_GTK_VER="2.8"
 
-BZR_ECLASS=""
-if [[ "${PV}" = "99999999" ]]; then
-	BZR_ECLASS=" bzr"
-fi
-
-inherit cmake-utils wxwidgets fdo-mime gnome2-utils${BZR_ECLASS}
+inherit cmake-utils wxwidgets fdo-mime gnome2-utils bzr
 
 DESCRIPTION="Electronic Schematic and PCB design tools."
 HOMEPAGE="http://kicad.sourceforge.net"
 
 SRC_URI=""
-if [[ "${PV}" != "99999999" ]]; then
-	SRC_URI="
-		http://dev.gentoo.org/~rafaelmartins/distfiles/${PN}-sources-${PV}.tar.xz
-		!minimal? ( http://dev.gentoo.org/~rafaelmartins/distfiles/${PN}-library-${PV}.tar.xz )
-		doc? ( http://dev.gentoo.org/~rafaelmartins/distfiles/${PN}-doc-${PV}.tar.xz )
-		examples? ( http://dev.gentoo.org/~rafaelmartins/distfiles/${PN}-examples-${PV}.tar.xz )"
-fi
 
 LICENSE="GPL-2"
 SLOT="0"
@@ -49,43 +37,53 @@ RDEPEND="${CDEPEND}
 	sys-libs/zlib
 	sci-electronics/electronics-menu"
 
-if [[ "${PV}" != "99999999" ]]; then
-	S="${WORKDIR}/${PN}"
-else
-	src_unpack() {
-		# FIXME: we need to send patches for bzr.eclass, to avoid the weird
-		# declarations of ${P} below.
-		EBZR_REPO_URI="lp:~kicad-testing-committers/kicad/testing" bzr_fetch
-		if ! use minimal; then
-			EBZR_REPO_URI="lp:~kicad-lib-committers/kicad/library" \
-				EBZR_PROJECT="kicad-library" \
-				P="${P}/kicad-library" \
-				EBZR_CACHE_DIR="kicad-library" bzr_fetch
-		fi
-		if use doc; then
-			EBZR_REPO_URI="lp:~kicad-developers/kicad/doc" \
-				EBZR_PROJECT="kicad-doc" \
-				P="${P}/kicad-doc" \
-				EBZR_CACHE_DIR="kicad-doc" bzr_fetch
-		fi
-	}
-fi
+
+src_unpack() {
+	if [[ "${PV}" != "99999999" ]]; then
+		EBZR_REVISION="${PV#*_p}"
+	fi
+	EBZR_REPO_URI="lp:~kicad-testing-committers/kicad/testing" bzr_fetch
+
+	if [[ "${PV}" = "99999999" ]]; then
+		EBZR_REVISION=""
+	else
+		local date="${PV%_p*}"
+		EBZR_REVISION="before:${date:0:4}-${date:4:2}-${date:6:2},23:59:59"
+	fi
+
+	# FIXME: we need to send patches for bzr.eclass, to avoid the weird
+	# declarations of ${P} below.
+
+	if ! use minimal; then
+		EBZR_REPO_URI="lp:~kicad-lib-committers/kicad/library" \
+			EBZR_PROJECT="kicad-library" \
+			P="${P}/kicad-library" \
+			EBZR_CACHE_DIR="kicad-library" \
+			bzr_fetch
+	fi
+
+	if use doc; then
+		EBZR_REPO_URI="lp:~kicad-developers/kicad/doc" \
+			EBZR_PROJECT="kicad-doc" \
+			P="${P}/kicad-doc" \
+			EBZR_CACHE_DIR="kicad-doc" \
+			bzr_fetch
+	fi
+}
+
 
 src_prepare() {
+	sed -i \
+		-e '/add_subdirectory(template)/ a \
+			add_subdirectory(kicad-doc)\
+			add_subdirectory(kicad-library)' \
+		-e 's/create_svn_version_header()/#create_svn_version_header()/' \
+		-e 's/ -O2 / /' \
+		CMakeLists.txt || die 'sed failed'
 
-	# prepare sources from BZR, snapshots are already prepared with this
-	if [[ "${PV}" = "99999999" ]]; then
-		sed -i \
-			-e '/add_subdirectory(template)/ a \
-				add_subdirectory(kicad-doc)\
-				add_subdirectory(kicad-library)' \
-			-e 's/create_svn_version_header()/#create_svn_version_header()/' \
-			-e 's/ -O2 / /' \
-			CMakeLists.txt || die 'sed failed'
-		sed -i \
-			-e 's/Scientific;Development/Engineering;Electronics/' \
-			resources/linux/mime/applications/*.desktop || die 'sed failed'
-	fi
+	sed -i \
+		-e 's/Scientific;Development/Engineering;Electronics/' \
+		resources/linux/mime/applications/*.desktop || die 'sed failed'
 
 	# Use native boost
 	sed -i -e '/Boost/s/^#check_find_package/check_find_package/' \
@@ -120,6 +118,7 @@ src_prepare() {
 	fi
 }
 
+
 src_configure() {
 	need-wxwidgets unicode
 
@@ -134,16 +133,21 @@ src_configure() {
 		-DKICAD_HELP=/usr/share/doc/${PF}
 		$(cmake-utils_use python KICAD_PYTHON)"
 
-	[[ "${PV}" = "99999999" ]] && \
+	if [[ "${PV}" = "99999999" ]]; then
 		mycmakeargs="${mycmakeargs} -DKICAD_TESTING_VERSION=ON"
+	else
+		mycmakeargs="${mycmakeargs} -DKICAD_STABLE_VERSION=ON"
+	fi
 
 	cmake-utils_src_configure
 }
+
 
 src_compile() {
 	cmake-utils_src_compile
 	use dev-doc && doxygen Doxyfile
 }
+
 
 src_install() {
 	cmake-utils_src_install
@@ -155,9 +159,11 @@ src_install() {
 	fi
 }
 
+
 pkg_preinst() {
 	gnome2_icon_savelist
 }
+
 
 pkg_postinst() {
 	fdo-mime_desktop_database_update
@@ -175,6 +181,7 @@ pkg_postinst() {
 	fi
 	elog "You may want to emerge media-gfx/wings if you want to create 3D models of components."
 }
+
 
 pkg_postrm() {
 	fdo-mime_desktop_database_update

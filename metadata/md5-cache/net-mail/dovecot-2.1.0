@@ -10,4 +10,4 @@ RDEPEND=caps? ( sys-libs/libcap ) kerberos? ( virtual/krb5 ) ldap? ( net-nds/ope
 SLOT=0
 SRC_URI=http://www.dovecot.org/releases/2.1/dovecot-2.1.0.tar.gz sieve? ( http://www.rename-it.nl/dovecot/2.1/dovecot-2.1-pigeonhole-0.3.0.tar.gz ) managesieve? ( http://www.rename-it.nl/dovecot/2.1/dovecot-2.1-pigeonhole-0.3.0.tar.gz )
 _eclasses_=eutils	bd31a910fcf7757bdb34af6ea39f8ae0	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	portability	536c5e70c5fb252ed3b769e04aa3f05b	ssl-cert	7f678cd359743d336ecf3a6cc4ce1521	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e	versionator	6601b4c5b3f019a993db59a50e1854e4
-_md5_=a859a26c980ec234e3a1ac1f3c629246
+_md5_=1147944a180c653b6440849f9e2598de

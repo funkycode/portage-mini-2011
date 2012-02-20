@@ -4,9 +4,9 @@ DESCRIPTION=A high-speed character set detection library.
 EAPI=2
 HOMEPAGE=http://www.atheme.org/project/libguess
 IUSE=examples
-KEYWORDS=alpha amd64 hppa ~ppc ~ppc64 ~sparc x86 ~x86-fbsd ~amd64-linux ~x86-linux
+KEYWORDS=alpha amd64 hppa ~ppc ~ppc64 sparc x86 ~x86-fbsd ~amd64-linux ~x86-linux
 LICENSE=BSD-2
 RDEPEND=>=dev-libs/libmowgli-0.7.0:0
 SLOT=0
 SRC_URI=http://distfiles.atheme.org/libguess-1.0.tbz2
-_md5_=482df34523d04816eb35c872b7c1c026
+_md5_=ab3a72241e6af71ec2d9bf5181edd471

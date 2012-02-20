@@ -1,6 +1,6 @@
-# Copyright 1999-2011 Gentoo Foundation
+# Copyright 1999-2012 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/sci-libs/libtifiles2/libtifiles2-1.1.3.ebuild,v 1.1 2011/03/15 21:20:15 bicatali Exp $
+# $Header: /var/cvsroot/gentoo-x86/sci-libs/libtifiles2/libtifiles2-1.1.3.ebuild,v 1.2 2012/02/19 13:44:47 xarthisius Exp $
 
 EAPI=2
 
@@ -21,6 +21,11 @@ RDEPEND="dev-libs/glib:2
 DEPEND="${RDEPEND}
 	dev-util/pkgconfig
 	nls? ( sys-devel/gettext )"
+
+src_prepare() {
+	sed -e '/define _ZLIBIOAPI_H/ a#define OF(x) x' \
+	    -i src/minizip/ioapi.h || die #403387
+}
 
 src_configure() {
 	econf \

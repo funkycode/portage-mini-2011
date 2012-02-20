@@ -1,13 +1,13 @@
 DEFINED_PHASES=compile configure install prepare test
-DEPEND=virtual/libintl gtk? ( x11-libs/gtk+:2 ) ssl? ( dev-libs/openssl ) >=sys-apps/sed-4 sys-devel/gettext
+DEPEND=virtual/libintl gtk? ( x11-libs/gtk+:2 ) pcre? ( dev-libs/libpcre ) ssl? ( dev-libs/openssl ) >=sys-apps/sed-4 sys-devel/gettext
 DESCRIPTION=Web spider and website mirroring tool
 EAPI=4
 HOMEPAGE=http://www.pavuk.org/
-IUSE=debug gtk hammer ipv6 nls profile ssl
+IUSE=debug gtk hammer ipv6 nls pcre profile ssl
 KEYWORDS=~amd64 ~ppc ~sparc ~x86
 LICENSE=GPL-2
-RDEPEND=virtual/libintl gtk? ( x11-libs/gtk+:2 ) ssl? ( dev-libs/openssl )
+RDEPEND=virtual/libintl gtk? ( x11-libs/gtk+:2 ) pcre? ( dev-libs/libpcre ) ssl? ( dev-libs/openssl )
 SLOT=0
 SRC_URI=http://dev.gentoo.org/~pacho/maintainer-needed/pavuk-0.9.36_pre20120215.tar.xz
 _eclasses_=autotools	8dd6d5965d958613b3c50c63586af9e0	autotools-utils	748973db029ba52a1991320e1034bad9	eutils	bd31a910fcf7757bdb34af6ea39f8ae0	libtool	5f623f5a211fb1b2d84d88ee49959a54	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	portability	536c5e70c5fb252ed3b769e04aa3f05b	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
-_md5_=7eb699a35b035a7947448d83847868be
+_md5_=39821319b7525f236e84df2db6640709
