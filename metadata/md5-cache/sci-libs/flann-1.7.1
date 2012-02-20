@@ -1,0 +1,13 @@
+DEFINED_PHASES=compile configure install prepare test unpack
+DEPEND=sci-libs/hdf5[mpi?] mpi? ( dev-libs/boost[mpi] ) octave? ( sci-mathematics/octave ) python? ( dev-python/numpy ) app-arch/unzip test? ( dev-cpp/gtest ) >=dev-util/cmake-2.8.4 userland_GNU? ( >=sys-apps/findutils-4.4.0 ) >=app-admin/eselect-python-20091230 python? ( || ( =dev-lang/python-2.7* =dev-lang/python-2.6* =dev-lang/python-2.5* ) )
+DESCRIPTION=Library for performing fast approximate nearest neighbor searches in high dimensional spaces
+EAPI=3
+HOMEPAGE=http://www.cs.ubc.ca/~mariusm/index.php/FLANN/FLANN/
+IUSE=doc mpi octave python static-libs test
+KEYWORDS=~amd64 ~ppc ~x86
+LICENSE=BSD
+RDEPEND=sci-libs/hdf5[mpi?] mpi? ( dev-libs/boost[mpi] ) octave? ( sci-mathematics/octave ) python? ( dev-python/numpy ) >=app-admin/eselect-python-20091230 python? ( || ( =dev-lang/python-2.7* =dev-lang/python-2.6* =dev-lang/python-2.5* ) )
+SLOT=0
+SRC_URI=http://people.cs.ubc.ca/~mariusm/uploads/FLANN/flann-1.7.1-src.zip test? ( http://dev.gentoo.org/~dilfridge/distfiles/flann-1.6.10-testdata.tar.xz )
+_eclasses_=base	5f35078c26d6c60556d5c8a2feb4f84f	cmake-utils	d9f3f2f6cc1a1d6ad8e31702e44133e5	eutils	bd31a910fcf7757bdb34af6ea39f8ae0	flag-o-matic	a2e1c4641a8aed225d4ddb0f74f382de	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	portability	536c5e70c5fb252ed3b769e04aa3f05b	python	ba318f39f69a4478c5097f9ccf8c1173	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
+_md5_=4e6b944641b26a8c9df7078fafae1ed2

@@ -446,6 +446,7 @@ app-emulation/qemu-kvm:rbd - Enable rados block device backend support, see http
 app-emulation/qemu-kvm:sdl - Enable the SDL-based console
 app-emulation/qemu-kvm:spice - Enable Spice protocol support via app-emulation/spice
 app-emulation/qemu-kvm:ssl - Enable TLS support for the VNC console server
+app-emulation/qemu-kvm:tls - Enable TLS support for the VNC console server
 app-emulation/qemu-kvm:usbredir - Use sys-apps/usbredir to redirect USB devices to another machine over TCP
 app-emulation/qemu-kvm:vde - Enable VDE-based networking
 app-emulation/qemu-kvm:vhost-net - Enable accelerated networking using vhost-net, see http://www.linux-kvm.org/page/VhostNet
@@ -4353,7 +4354,7 @@ net-wireless/kismet:ruby - Build extras which are written in ruby, example plugi
 net-wireless/kismet:speech - Audio support using app-accessibility/flite
 net-wireless/kismet:suid - Install a setuid root helper binary with limited functionality; this allows running kismet as a normal user, significantly reducing security risks
 net-wireless/madwifi-ng:injection - Adds support for net-wireless/aircrack-ng aireplay-ng packet injection
-net-wireless/spectools:debug - Build the raw output client for spectools. This is only needed for developing spectools.
+net-wireless/spectools:debug - Build the raw output client for spectools.
 net-wireless/spectools:gtk - Build the gtk-2 based client for spectools
 net-wireless/spectools:ncurses - Build the ncurses based client for spectools
 net-wireless/wepattack:john - Build with app-crypt/johntheripper support

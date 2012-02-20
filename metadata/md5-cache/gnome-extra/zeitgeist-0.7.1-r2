@@ -9,5 +9,5 @@ LICENSE=GPL-2
 RDEPEND=media-libs/raptor:2 dev-python/rdflib dev-python/dbus-python dev-python/pyxdg fts? ( dev-libs/xapian-bindings[python] ) >=app-admin/eselect-python-20091230 =dev-lang/python-2* =dev-lang/python-2*[sqlite]
 SLOT=0
 SRC_URI=http://launchpad.net/zeitgeist/0.7/0.7.1/+download/zeitgeist-0.7.1.tar.gz http://launchpad.net/zeitgeist-extensions/trunk/0.0.7/+download/zeitgeist-extensions-0.0.7.tar.gz
-_eclasses_=autotools	8dd6d5965d958613b3c50c63586af9e0	eutils	bd31a910fcf7757bdb34af6ea39f8ae0	libtool	5f623f5a211fb1b2d84d88ee49959a54	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	portability	536c5e70c5fb252ed3b769e04aa3f05b	python	ba318f39f69a4478c5097f9ccf8c1173	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e	versionator	6601b4c5b3f019a993db59a50e1854e4
+_eclasses_=autotools	3e1370c6fcb964b30ad99070a466441d	eutils	bd31a910fcf7757bdb34af6ea39f8ae0	libtool	5f623f5a211fb1b2d84d88ee49959a54	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	portability	536c5e70c5fb252ed3b769e04aa3f05b	python	ba318f39f69a4478c5097f9ccf8c1173	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e	versionator	6601b4c5b3f019a993db59a50e1854e4
 _md5_=41711cb94fbac7cf920167e9474a52fe
