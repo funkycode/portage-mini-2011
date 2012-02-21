@@ -3,7 +3,7 @@ DEPEND=pam? ( virtual/pam ) skey? ( >=sys-auth/skey-1.1.5-r1 ) ldap? ( >=net-nds
 DESCRIPTION=Allows users or groups to run commands as other users
 EAPI=4
 HOMEPAGE=http://www.sudo.ws/
-IUSE=pam offensive ldap selinux skey
+IUSE=ldap nls pam offensive selinux skey
 KEYWORDS=alpha amd64 arm hppa ia64 m68k ~mips ppc ~ppc64 s390 sh sparc x86 ~sparc-fbsd ~x86-fbsd
 LICENSE=as-is BSD
 RDEPEND=pam? ( virtual/pam ) skey? ( >=sys-auth/skey-1.1.5-r1 ) ldap? ( >=net-nds/openldap-2.1.30-r1 dev-libs/cyrus-sasl ) sys-libs/zlib selinux? ( sec-policy/selinux-sudo ) ldap? ( dev-lang/perl ) pam? ( sys-auth/pambase ) >=app-misc/editor-wrapper-3 virtual/editor virtual/mta
@@ -11,4 +11,4 @@ REQUIRED_USE=pam? ( !skey ) skey? ( !pam )
 SLOT=0
 SRC_URI=http://www.sudo.ws/sudo/dist/sudo-1.8.3p2.tar.gz ftp://ftp.sudo.ws/pub/sudo/sudo-1.8.3p2.tar.gz
 _eclasses_=eutils	bd31a910fcf7757bdb34af6ea39f8ae0	flag-o-matic	a2e1c4641a8aed225d4ddb0f74f382de	libtool	5f623f5a211fb1b2d84d88ee49959a54	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	pam	3f746974e1cc47cabe3bd488c08cdc8e	portability	536c5e70c5fb252ed3b769e04aa3f05b	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
-_md5_=e9a5d1b67da723d607b9007e611bdda0
+_md5_=53f08414260dfc5eac6fb265a7066ba9

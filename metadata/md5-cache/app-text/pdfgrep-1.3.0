@@ -8,5 +8,5 @@ KEYWORDS=~amd64 ~x86
 LICENSE=GPL-2
 RDEPEND=app-text/poppler[cxx] unac? ( app-text/unac )
 SLOT=0
-SRC_URI=mirror://sourceforge/pdfgrep/1.3.0/pdfgrep-1.3.0.tar.gz
-_md5_=79c42799d7c36b7884ddf689f125966d
+SRC_URI=mirror://sourceforge/pdfgrep/pdfgrep-1.3.0.tar.gz
+_md5_=bcae986cfe7ad48bd56187ab67141c83

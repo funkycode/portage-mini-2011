@@ -4,10 +4,10 @@ DESCRIPTION=Jigsaw Download is a tool designed to ease the distribution of large
 EAPI=3
 HOMEPAGE=http://atterer.net/jigdo/
 IUSE=gtk nls berkdb libwww
-KEYWORDS=~amd64 ~ppc ~sparc ~x86
+KEYWORDS=amd64 ~ppc ~sparc ~x86
 LICENSE=GPL-2
 RDEPEND=gtk? ( x11-libs/gtk+:2 ) berkdb? ( >=sys-libs/db-3.2 ) libwww? ( >=net-libs/libwww-5.3.2 )
 SLOT=0
 SRC_URI=http://atterer.net/jigdo/jigdo-0.7.3.tar.bz2
 _eclasses_=eutils	bd31a910fcf7757bdb34af6ea39f8ae0	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	portability	536c5e70c5fb252ed3b769e04aa3f05b	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
-_md5_=4decc739d9d52c713172856e79aa8607
+_md5_=df1f6426737bc5b4fc4ea134c02a4726

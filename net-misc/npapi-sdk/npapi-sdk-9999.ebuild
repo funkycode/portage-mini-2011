@@ -1,6 +1,6 @@
-# Copyright 1999-2011 Gentoo Foundation
+# Copyright 1999-2012 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/net-misc/npapi-sdk/npapi-sdk-9999.ebuild,v 1.3 2011/09/13 16:30:31 mgorny Exp $
+# $Header: /var/cvsroot/gentoo-x86/net-misc/npapi-sdk/npapi-sdk-9999.ebuild,v 1.4 2012/02/21 16:32:21 mgorny Exp $
 
 EAPI=4
 inherit autotools-utils
@@ -13,13 +13,12 @@ inherit autotools git-2
 
 DESCRIPTION="NPAPI headers bundle"
 HOMEPAGE="https://github.com/mgorny/npapi-sdk/"
-SRC_URI="http://cloud.github.com/downloads/mgorny/${PN}/${P}.tar.bz2"
+SRC_URI="mirror://mgorny/${PN}/${P}.tar.bz2"
 
 LICENSE="MPL-1.1"
 SLOT="0"
-KEYWORDS="~amd64 ~x86 ~x86-fbsd"
+KEYWORDS="~alpha ~amd64 ~arm ~ppc ~ppc64 ~sparc ~x86 ~x86-fbsd"
 IUSE=""
-
 #if LIVE
 
 KEYWORDS=""

@@ -1,6 +1,6 @@
-# Copyright 1999-2011 Gentoo Foundation
+# Copyright 1999-2012 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/sys-fs/ocfs2-tools/ocfs2-tools-1.6.4.ebuild,v 1.1 2011/08/31 17:15:18 alexxy Exp $
+# $Header: /var/cvsroot/gentoo-x86/sys-fs/ocfs2-tools/ocfs2-tools-1.6.4.ebuild,v 1.2 2012/02/21 14:29:00 ultrabug Exp $
 
 EAPI=3
 PYTHON_DEPEND="gtk? 2"
