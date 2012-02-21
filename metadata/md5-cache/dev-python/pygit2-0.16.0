@@ -1,12 +1,12 @@
 DEFINED_PHASES=compile install postinst postrm prepare setup test unpack
-DEPEND=~dev-libs/libgit2-0.16.0 dev-libs/openssl sys-libs/zlib >=app-admin/eselect-python-20091230 || ( =dev-lang/python-3.2* =dev-lang/python-3.1* =dev-lang/python-2.7* =dev-lang/python-2.6* )
+DEPEND=~dev-libs/libgit2-0.16.0 dev-libs/openssl sys-libs/zlib >=app-admin/eselect-python-20091230 dev-lang/python
 DESCRIPTION=Python bindings for libgit2
 EAPI=4
 HOMEPAGE=https://github.com/libgit2/pygit2
 KEYWORDS=~amd64 ~x86
 LICENSE=GPL-2-with-linking-exception
-RDEPEND=~dev-libs/libgit2-0.16.0 dev-libs/openssl sys-libs/zlib >=app-admin/eselect-python-20091230 || ( =dev-lang/python-3.2* =dev-lang/python-3.1* =dev-lang/python-2.7* =dev-lang/python-2.6* )
+RDEPEND=~dev-libs/libgit2-0.16.0 dev-libs/openssl sys-libs/zlib >=app-admin/eselect-python-20091230 dev-lang/python
 SLOT=0
 SRC_URI=https://github.com/libgit2/pygit2/tarball/v0.16.0 -> pygit2-0.16.0.tar.gz
 _eclasses_=distutils	c8b0cab86443a130f3737ad1456d57d3	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	python	ba318f39f69a4478c5097f9ccf8c1173	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68
-_md5_=eb8328193ccee060688d4b35a6e263db
+_md5_=41018b93b4b3f62b251d36788daaee5a

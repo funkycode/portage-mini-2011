@@ -1435,17 +1435,17 @@ dev-php/pecl-memcached:igbinary - Enable support for the igbinary serializer
 dev-php/smarty-docs:html - Install the documentation in HTML format
 dev-php/smarty-docs:pdf - Install the documentation in PDF format
 dev-python/PyFoam:extras - Enable optional dependencies
-dev-python/PyQt4:X - Build the QtGui and QtDesigner modules
-dev-python/PyQt4:assistant - Build the QtHelp and QtAssistant modules
-dev-python/PyQt4:declarative - Build the QtDeclarative module
-dev-python/PyQt4:kde - Select media-sound/phonon as Phonon variant needed for KDE
-dev-python/PyQt4:multimedia - Build the QtMultimedia module
-dev-python/PyQt4:opengl - Build the QtOpenGL module
-dev-python/PyQt4:phonon - Build the phonon module
-dev-python/PyQt4:sql - Build the QtSql module
-dev-python/PyQt4:svg - Build the QtSvg module
-dev-python/PyQt4:webkit - Build the QtWebKit module
-dev-python/PyQt4:xmlpatterns - Build the QtXmlPatterns module
+dev-python/PyQt4:X - Build QtGui, QtDesigner and QtScriptTools modules
+dev-python/PyQt4:assistant - Build QtHelp and QtAssistant modules
+dev-python/PyQt4:declarative - Build QtDeclarative module
+dev-python/PyQt4:kde - Select media-sound/phonon as phonon variant, needed for KDE4
+dev-python/PyQt4:multimedia - Build QtMultimedia module
+dev-python/PyQt4:opengl - Build QtOpenGL module
+dev-python/PyQt4:phonon - Build phonon module
+dev-python/PyQt4:sql - Build QtSql module
+dev-python/PyQt4:svg - Build QtSvg module
+dev-python/PyQt4:webkit - Build QtWebKit module
+dev-python/PyQt4:xmlpatterns - Build QtXmlPatterns module
 dev-python/amqplib:extras - Install extra tools to generate initial Python mod from an AMQP XML file
 dev-python/anyvc:bazaar - Add support for Bazaar
 dev-python/anyvc:git - Add support for Git
@@ -3724,7 +3724,6 @@ net-irc/rbot:translator - Add dependency over dev-ruby/mechanize, which is neede
 net-irc/srvx:bahamut - Choose bahamut protocol over p10 protocol
 net-irc/supybot:twisted - Allows supybot to use dev-python/twisted as driver
 net-irc/unrealircd:extban-stacking - Enable extended channel bans (such as +b ~c: and +b ~n:) to contain other extended bans instead of just hostmasks.
-net-irc/unrealircd:hub - Enable hub support
 net-irc/unrealircd:operoverride - Enable OperOverride extension
 net-irc/unrealircd:operoverride-verify - Enable requiring opers to invite themselves to +s/+p channels
 net-irc/unrealircd:prefixaq - Enable chanadmin and chanowner prefixes
@@ -4101,6 +4100,7 @@ net-misc/quagga:readline - Enable support for sys-libs/readline to provide the Q
 net-misc/quagga:tcp-zebra - Enable TCP zserv interface on port 2600 for Zebra/protocol-daemon communication. Unix domain sockets are chosen otherwise.
 net-misc/rdesktop:pcsc-lite - Enable smartcard support with sys-apps/pcsc-lite driver
 net-misc/remmina:freerdp - Add support for the net-misc/freerdp application
+net-misc/remmina:gtk3 - Build against x11-libs/gtk+:3
 net-misc/remmina:ssh - Enable support for SSH/SFTP using net-libs/libssh
 net-misc/remmina:telepathy - Enable telepathy support
 net-misc/remmina:unique - Enable single instance support using dev-libs/libunique

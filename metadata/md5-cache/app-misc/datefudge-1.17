@@ -7,4 +7,4 @@ LICENSE=GPL-2
 SLOT=0
 SRC_URI=mirror://debian/pool/main/d/datefudge/datefudge_1.17.tar.gz
 _eclasses_=multilib	5f4ad6cf85e365e8f0c6050ddd21659e	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68
-_md5_=090f49bd6ceca218c8be839ef8071885
+_md5_=412389eb3eb42a964a6745293bce8ef3

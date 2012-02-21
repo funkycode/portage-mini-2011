@@ -1,10 +1,9 @@
-DEFINED_PHASES=configure install
+DEFINED_PHASES=install
 DESCRIPTION=Useful set of performance and usability-oriented extensions to C
 EAPI=4
 HOMEPAGE=http://www.atheme.org/project/mowgli
-IUSE=examples
 KEYWORDS=~alpha ~amd64 ~hppa ~ia64 ~mips ~ppc ~ppc64 ~sparc ~x86 ~x86-fbsd ~x86-freebsd ~x86-interix ~amd64-linux ~x86-linux ~ppc-macos ~x86-macos
 LICENSE=BSD-2
 SLOT=2
 SRC_URI=http://atheme.org/downloads/libmowgli-2.0.0-alpha1.tar.gz
-_md5_=149aa94d9daaaef9ac828e5d9e52422f
+_md5_=e3b4b0381f13583b96341f4991f61d90
