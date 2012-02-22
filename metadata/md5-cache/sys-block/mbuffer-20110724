@@ -7,5 +7,5 @@ KEYWORDS=~amd64 ~ppc ~x86
 LICENSE=GPL-2
 RDEPEND=ssl? ( dev-libs/openssl )
 SLOT=0
-SRC_URI=http://www.maier-komor.de/software/mbuffer/mbuffer-20100526.tgz
-_md5_=cd6d623c1eca665e51ba557e7dca5d3e
+SRC_URI=http://www.maier-komor.de/software/mbuffer/mbuffer-20110724.tgz
+_md5_=4827407be7898860e56aa16dc3712dd0

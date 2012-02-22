@@ -1,12 +1,12 @@
 DEFINED_PHASES=compile install postinst postrm prepare setup test
-DEPEND=dev-libs/crypto++ dev-python/setuptools >=app-admin/eselect-python-20091230 =dev-lang/python-2*
+DEPEND=dev-libs/crypto++ dev-python/setuptools >=app-admin/eselect-python-20091230 dev-lang/python
 DESCRIPTION=Python wrappers for a few algorithms from the Crypto++ library
 EAPI=4
 HOMEPAGE=http://tahoe-lafs.org/trac/pycryptopp http://pypi.python.org/pypi/pycryptopp
 KEYWORDS=~amd64 ~x86
 LICENSE=GPL-2
-RDEPEND=dev-libs/crypto++ >=app-admin/eselect-python-20091230 =dev-lang/python-2*
+RDEPEND=dev-libs/crypto++ >=app-admin/eselect-python-20091230 dev-lang/python
 SLOT=0
 SRC_URI=mirror://pypi/p/pycryptopp/pycryptopp-0.5.29.tar.gz
 _eclasses_=distutils	c8b0cab86443a130f3737ad1456d57d3	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	python	ba318f39f69a4478c5097f9ccf8c1173	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68
-_md5_=cb902229a7b3b3de3e774878fae76038
+_md5_=94d268135f85f6f58f3f8c20e4d423af
