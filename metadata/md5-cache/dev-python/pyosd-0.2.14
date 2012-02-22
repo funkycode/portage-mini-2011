@@ -10,4 +10,4 @@ RDEPEND=>=x11-libs/xosd-2.2.4 >=app-admin/eselect-python-20091230 =dev-lang/pyth
 SLOT=0
 SRC_URI=http://repose.cx/pyosd/pyosd-0.2.14.tar.gz
 _eclasses_=distutils	c8b0cab86443a130f3737ad1456d57d3	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	python	ba318f39f69a4478c5097f9ccf8c1173	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68
-_md5_=bbfe7c0b2970c28fc77ace4641b5e2e4
+_md5_=edd93b50f640d08dbc4d91fde135fc35

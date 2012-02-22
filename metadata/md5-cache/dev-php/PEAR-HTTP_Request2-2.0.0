@@ -4,10 +4,10 @@ DESCRIPTION=Provides an easy way to perform HTTP requests
 EAPI=4
 HOMEPAGE=http://pear.php.net/HTTP_Request2
 IUSE=+curl +fileinfo +ssl +zlib
-KEYWORDS=~alpha amd64 ~arm ~hppa ~ia64 ~ppc ~ppc64 ~s390 ~sh ~sparc ~x86
+KEYWORDS=~alpha amd64 ~arm hppa ~ia64 ~ppc ~ppc64 ~s390 ~sh ~sparc ~x86
 LICENSE=BSD
 RDEPEND=dev-lang/php[curl?,fileinfo?,ssl?,zlib?] >=dev-php/PEAR-Net_URL2-0.3.0 dev-lang/php >=dev-php/pear-1.8.1
 SLOT=0
 SRC_URI=http://pear.php.net/get/HTTP_Request2-2.0.0.tgz
 _eclasses_=multilib	5f4ad6cf85e365e8f0c6050ddd21659e	php-pear-r1	ec6ca81a78eed55923c519977010e559	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68
-_md5_=f4a5743027d6145622762e1a32ffe561
+_md5_=e30a2e421793a00d29c4c3b0e143003e

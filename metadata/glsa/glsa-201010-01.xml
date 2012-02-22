@@ -9,7 +9,7 @@
   </synopsis>
   <product type="ebuild">libpng</product>
   <announced>October 05, 2010</announced>
-  <revised>November 10, 2011: 2</revised>
+  <revised>February 21, 2012: 4</revised>
   <bug>307637</bug>
   <bug>324153</bug>
   <bug>335887</bug>
@@ -18,6 +18,7 @@
     <package name="media-libs/libpng" auto="yes" arch="*">
       <unaffected range="ge">1.4.3</unaffected>
       <unaffected range="rge">1.2.46</unaffected>
+      <unaffected range="rge">1.2.47</unaffected>
       <vulnerable range="lt">1.4.3</vulnerable>
     </package>
   </affected>
@@ -81,6 +82,6 @@
     </uri>
   </references>
   <metadata timestamp="Fri, 07 Oct 2011 22:32:46 +0000" tag="requester">craig</metadata>
-  <metadata timestamp="Thu, 10 Nov 2011 20:46:08 +0000" tag="submitter">system</metadata>
-  <metadata timestamp="Thu, 10 Nov 2011 21:46:11 +0100" tag="bugReady">system</metadata>
+  <metadata timestamp="Tue, 21 Feb 2012 22:38:07 +0000" tag="submitter">system</metadata>
+  <metadata timestamp="Tue, 21 Feb 2012 23:38:09 +0100" tag="bugReady">system</metadata>
 </glsa>

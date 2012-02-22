@@ -1,6 +1,6 @@
-# Copyright 1999-2011 Gentoo Foundation
+# Copyright 1999-2012 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/media-plugins/vdr-osdpip/vdr-osdpip-0.1.0.ebuild,v 1.1 2011/09/15 13:54:59 hd_brummy Exp $
+# $Header: /var/cvsroot/gentoo-x86/media-plugins/vdr-osdpip/vdr-osdpip-0.1.0.ebuild,v 1.2 2012/02/21 22:58:26 hd_brummy Exp $
 
 EAPI=3
 
@@ -8,7 +8,7 @@ inherit vdr-plugin flag-o-matic
 
 DESCRIPTION="VDR plugin: Show another channel in the OSD"
 HOMEPAGE="http://projects.vdr-developer.org/projects/plg-osdpip"
-SRC_URI="http://projects.vdr-developer.org/attachments/download/267/${P}.tgz"
+SRC_URI="mirror://vdr-developerorg/download/267/${P}.tgz"
 
 KEYWORDS="~amd64 ~x86"
 SLOT="0"
