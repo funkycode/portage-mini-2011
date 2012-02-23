@@ -9,4 +9,4 @@ RDEPEND=dev-lang/perl >=dev-python/flup-1.0 dev-python/imaging >=dev-python/lock
 SLOT=0
 SRC_URI=mirror://pypi/m/mwlib/mwlib-0.12.17.zip
 _eclasses_=distutils	c8b0cab86443a130f3737ad1456d57d3	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	python	ba318f39f69a4478c5097f9ccf8c1173	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68
-_md5_=093bfdd78305c312ffcf515c1bb67a25
+_md5_=196d77be882a0ae1fd74d7c50e40a20e

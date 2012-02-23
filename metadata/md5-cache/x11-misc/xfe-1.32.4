@@ -1,13 +1,13 @@
 DEFINED_PHASES=compile configure install prepare unpack
-DEPEND=x11-libs/libX11 media-libs/libpng =x11-libs/fox-1.6*[truetype,png] startup-notification? ( x11-libs/startup-notification ) nls? ( sys-devel/gettext )
+DEPEND=media-libs/libpng startup-notification? ( x11-libs/startup-notification ) x11-libs/fox:1.6[truetype,png] x11-libs/libX11 x11-libs/libXft nls? ( sys-devel/gettext )
 DESCRIPTION=MS-Explorer-like minimalist file manager for X
 EAPI=4
 HOMEPAGE=http://roland65.free.fr/xfe
 IUSE=debug nls startup-notification
-KEYWORDS=~amd64 ~ppc ~ppc64 ~sparc ~x86
+KEYWORDS=amd64 ~ppc ~ppc64 ~sparc ~x86
 LICENSE=GPL-2
-RDEPEND=x11-libs/libX11 media-libs/libpng =x11-libs/fox-1.6*[truetype,png] startup-notification? ( x11-libs/startup-notification )
+RDEPEND=media-libs/libpng startup-notification? ( x11-libs/startup-notification ) x11-libs/fox:1.6[truetype,png] x11-libs/libX11 x11-libs/libXft
 SLOT=0
 SRC_URI=mirror://sourceforge/xfe/xfe-1.32.4.tar.gz
 _eclasses_=base	5f35078c26d6c60556d5c8a2feb4f84f	eutils	bd31a910fcf7757bdb34af6ea39f8ae0	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	portability	536c5e70c5fb252ed3b769e04aa3f05b	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
-_md5_=592ba63480f5ca6ad9861c3882890cae
+_md5_=a9317bd9f0fd6f8a6b8d4c57ef19c8ed

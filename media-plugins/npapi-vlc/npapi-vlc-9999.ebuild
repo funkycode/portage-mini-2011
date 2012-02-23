@@ -1,6 +1,6 @@
 # Copyright 1999-2012 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/media-plugins/npapi-vlc/npapi-vlc-9999.ebuild,v 1.4 2012/01/07 15:06:00 aballier Exp $
+# $Header: /var/cvsroot/gentoo-x86/media-plugins/npapi-vlc/npapi-vlc-9999.ebuild,v 1.5 2012/02/23 10:18:58 aballier Exp $
 
 EAPI=3
 
@@ -15,15 +15,17 @@ inherit autotools multilib ${SCM}
 
 DESCRIPTION="Mozilla plugin based on VLC"
 HOMEPAGE="http://www.videolan.org/"
-SRC_URI=""
 
 LICENSE="LGPL-2.1"
 SLOT="0"
 
 if [ "${PV%9999}" = "${PV}" ] ; then
 	KEYWORDS="~amd64"
+	SRC_URI="http://download.videolan.org/pub/videolan/vlc/${PV}/${P}.tar.xz"
+	DEPEND="app-arch/xz-utils"
 else
 	KEYWORDS=""
+	SRC_URI=""
 fi
 IUSE="gtk"
 
@@ -34,6 +36,7 @@ RDEPEND=">=media-video/vlc-1.1
 	gtk? ( x11-libs/gtk+:2 )
 	!<media-video/vlc-1.2[nsplugin]"
 DEPEND="${RDEPEND}
+	${DEPEND}
 	dev-util/pkgconfig"
 
 src_prepare() {

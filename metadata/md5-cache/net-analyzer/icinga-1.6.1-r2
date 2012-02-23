@@ -4,10 +4,10 @@ DESCRIPTION=Nagios Fork - Check daemon, CGIs, docs, IDOutils
 EAPI=2
 HOMEPAGE=http://www.icinga.org/
 IUSE=+apache2 debug +idoutils lighttpd +mysql perl +plugins postgres ssl +vim-syntax +web apache2
-KEYWORDS=~amd64 ~x86
+KEYWORDS=amd64 ~x86
 LICENSE=GPL-2
 RDEPEND=idoutils? ( dev-db/libdbi-drivers[mysql?,postgres?] ) perl? ( dev-lang/perl ) virtual/mailx web? ( media-libs/gd[jpeg,png] lighttpd? ( www-servers/lighttpd dev-lang/php[cgi] ) apache2? ( || ( dev-lang/php[apache2] dev-lang/php[cgi] ) ) ) !net-analyzer/nagios-core plugins? ( net-analyzer/nagios-plugins ) apache2? ( =www-servers/apache-2* )
 SLOT=0
 SRC_URI=mirror://sourceforge/icinga/icinga-1.6.1.tar.gz
 _eclasses_=depend.apache	a471783c63e68987a2b20eb46f9edf68	eutils	bd31a910fcf7757bdb34af6ea39f8ae0	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	portability	536c5e70c5fb252ed3b769e04aa3f05b	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
-_md5_=ef1e1e13224969b2129a781acb318e99
+_md5_=904e8e4e7739e0239d590f5015164310

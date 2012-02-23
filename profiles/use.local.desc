@@ -779,7 +779,8 @@ app-office/tpp:figlet - Install app-misc/figlet to support the --huge command
 app-pda/barry:boost - Enable boost support
 app-pda/barry:gui - Install the GUI backup tool
 app-pda/barry:opensync - Install the barry-sync plugin for OpenSync 0.22
-app-pda/gtkpod:webkit - Enable webkit support for browsing and downloading album covers
+app-pda/gtkpod:clutter - Enable clutter support for displaying coverart
+app-pda/gtkpod:webkit - Enable webkit support for finding coverart
 app-pda/libopensync-plugin-irmc:irda - Enable infrared support
 app-pda/libopensync-plugin-syncml:http - Enable http transports
 app-pda/libopensync-plugin-syncml:obex - Enable obex transports
@@ -3213,6 +3214,7 @@ media-video/vlc:dirac - Enable Dirac video support (an advanced royalty-free vid
 media-video/vlc:direct2d - Enable Win7/VistaPU Direct2D support.
 media-video/vlc:directx - Enable Win32 DirectX support.
 media-video/vlc:dshow - Enables Win32 DirectShow support.
+media-video/vlc:dvbpsi - Enables support for Mpeg-TS files (.ts, .m2ts, .mts) via media-libs/libdvbpsi.
 media-video/vlc:dxva2 - Enables Win32 DxVA2 support.
 media-video/vlc:egl - Enables EGL video output module.
 media-video/vlc:fbosd - Enables the framebuffer overlay plugin.
@@ -3982,6 +3984,14 @@ net-misc/cfengine:postgres - Use dev-db/postgresql-server as database backend, d
 net-misc/cfengine:qdbm - Use dev-db/qdbm as database backend, default would be Berkeley DB (sys-libs/db)
 net-misc/cfengine:tests - Install test files
 net-misc/cfengine:tokyocabinet - Use dev-db/tokyocabinet as database backend, default would be Berkeley DB (sys-libs/db)
+net-misc/cgminer:adl - Enable support for controlling fans and overclocking on AMD cards with AMD Display Library
+net-misc/cgminer:bitforce - Enable support for mining with ButterFly Labs BitFORCE FPGAs
+net-misc/cgminer:cpumining - Enable support for mining with CPUs
+net-misc/cgminer:icarus - Enable support for mining with Icarus FPGAs
+net-misc/cgminer:opencl - Enable support for mining with OpenCL-capable devices (GPUs)
+net-misc/cgminer:padlock - Enable support for mining with VIA Padlock CPUs
+net-misc/cgminer:sse2_4way - Enable support for CPU SSE2 4way mining algorithm
+net-misc/cgminer:sse4 - Enable support for CPU SSE4 mining algorithm
 net-misc/connman:ethernet - Enable ethernet support.
 net-misc/connman:google - Enable Google Public DNS support.
 net-misc/connman:ntpd - Use net-misc/ntp for nptd plugin.

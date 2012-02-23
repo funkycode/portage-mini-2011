@@ -1,13 +1,13 @@
 DEFINED_PHASES=compile install postinst postrm prepare
-DEPEND=>=app-admin/eselect-python-20091230 =dev-lang/python-2*
+DEPEND=>=app-admin/eselect-python-20091230 dev-lang/python
 DESCRIPTION=Climate Data Analysis Module for Python
 EAPI=3
 HOMEPAGE=http://www.pyclimate.org/
 IUSE=examples
 KEYWORDS=amd64 ppc x86
 LICENSE=GPL-2
-RDEPEND=dev-python/numpy >=dev-python/scientificpython-2.8 >=sci-libs/netcdf-3.0 >=app-admin/eselect-python-20091230 =dev-lang/python-2*
+RDEPEND=dev-python/numpy >=dev-python/scientificpython-2.8 >=sci-libs/netcdf-3.0 >=app-admin/eselect-python-20091230 dev-lang/python
 SLOT=0
 SRC_URI=http://fisica.ehu.es/jsaenz/pyclimate_files/PyClimate-1.2.2.tar.gz
 _eclasses_=distutils	c8b0cab86443a130f3737ad1456d57d3	eutils	bd31a910fcf7757bdb34af6ea39f8ae0	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	portability	536c5e70c5fb252ed3b769e04aa3f05b	python	ba318f39f69a4478c5097f9ccf8c1173	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
-_md5_=aca9fb736fe5f6591f3bc16ff7491a24
+_md5_=97dac067c6eacd6cad4f439cf4e3d015

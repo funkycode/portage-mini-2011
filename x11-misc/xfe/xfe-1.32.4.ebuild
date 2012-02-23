@@ -1,6 +1,6 @@
-# Copyright 1999-2011 Gentoo Foundation
+# Copyright 1999-2012 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/x11-misc/xfe/xfe-1.32.4.ebuild,v 1.1 2011/11/15 22:24:56 jer Exp $
+# $Header: /var/cvsroot/gentoo-x86/x11-misc/xfe/xfe-1.32.4.ebuild,v 1.4 2012/02/23 16:22:51 jer Exp $
 
 EAPI=4
 
@@ -12,15 +12,20 @@ SRC_URI="mirror://sourceforge/${PN}/${P}.tar.gz"
 
 LICENSE="GPL-2"
 SLOT="0"
-KEYWORDS="~amd64 ~ppc ~ppc64 ~sparc ~x86"
+KEYWORDS="amd64 ~ppc ~ppc64 ~sparc ~x86"
 IUSE="debug nls startup-notification"
 
-RDEPEND="x11-libs/libX11
+RDEPEND="
 	media-libs/libpng
-	=x11-libs/fox-1.6*[truetype,png]
-	startup-notification? ( x11-libs/startup-notification )"
-DEPEND="${RDEPEND}
-	nls? ( sys-devel/gettext )"
+	startup-notification? ( x11-libs/startup-notification )
+	x11-libs/fox:1.6[truetype,png]
+	x11-libs/libX11
+	x11-libs/libXft
+"
+DEPEND="
+	${RDEPEND}
+	nls? ( sys-devel/gettext )
+"
 
 DOCS=( AUTHORS BUGS ChangeLog NEWS README TODO )
 PATCHES=( "${FILESDIR}"/${PN}-1.32.2-missing_Xlib_h.patch )
@@ -39,7 +44,6 @@ src_prepare() {
 
 src_configure() {
 	econf \
-		--disable-dependency-tracking \
 		$(use_enable nls) \
 		$(use_enable startup-notification sn) \
 		$(use_enable debug)
