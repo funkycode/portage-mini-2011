@@ -1,0 +1,12 @@
+DEFINED_PHASES=compile configure install
+DESCRIPTION=LibreOffice, a full office productivity suite. Binary package, debug info.
+EAPI=4
+HOMEPAGE=http://www.libreoffice.org
+IUSE=gnome java kde
+KEYWORDS=-* ~amd64
+LICENSE=LGPL-3
+RDEPEND==app-office/libreoffice-bin-debug-3.4.5.2-r1[gnome=,java=,kde=]
+RESTRICT=test strip
+SLOT=0
+SRC_URI=amd64? ( kde? ( !java? ( mirror://gentoo/amd64-debug-libreoffice-kde-3.4.5.2-r1.tbz2 ) java? ( mirror://gentoo/amd64-debug-libreoffice-kde-java-3.4.5.2-r1.tbz2 ) ) gnome? ( !java? ( mirror://gentoo/amd64-debug-libreoffice-gnome-3.4.5.2-r1.tbz2 ) java? ( mirror://gentoo/amd64-debug-libreoffice-gnome-java-3.4.5.2-r1.tbz2 ) ) !kde? ( !gnome? ( !java? ( mirror://gentoo/amd64-debug-libreoffice-base-3.4.5.2-r1.tbz2 ) java? ( mirror://gentoo/amd64-debug-libreoffice-base-java-3.4.5.2-r1.tbz2 ) ) ) )
+_md5_=98eb6b5806c16bb51389a63fd5c338a7

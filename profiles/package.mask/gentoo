@@ -1,5 +1,5 @@
 ####################################################################
-# $Header: /var/cvsroot/gentoo-x86/profiles/package.mask,v 1.13514 2012/02/22 09:14:55 dilfridge Exp $
+# $Header: /var/cvsroot/gentoo-x86/profiles/package.mask,v 1.13516 2012/02/23 05:31:22 ssuominen Exp $
 #
 # When you add an entry to the top of this file, add your name, the date, and
 # an explanation of why something is getting masked. Please be extremely
@@ -31,10 +31,12 @@
 
 #--- END OF EXAMPLES ---
 
-# Andreas K. Hüttel <dilfridge@gentoo.org> (22 Feb 2012)
-# Mask for testing
-=app-office/libreoffice-bin-3.4.5.2-r1
-=app-office/libreoffice-bin-debug-3.4.5.2-r1
+# Samuli Suominen <ssuominen@gentoo.org> (23 Feb 2012)
+# Last commit upstream 2010 and fails to build against
+# current e2fsprogs wrt #402633. Removal in 30 days unless
+# patch is provided.
+# Try ext3grep or ext4magic as replacement.
+sys-fs/extundelete
 
 # Michał Górny <mgorny@gentoo.org> (21 Feb 2012)
 # Masked until all reverse dependencies have proper versioned
