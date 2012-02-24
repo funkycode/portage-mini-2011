@@ -1,8 +1,8 @@
 # Copyright 1999-2012 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/x11-terms/terminator/terminator-0.96-r1.ebuild,v 1.2 2012/02/20 20:31:01 jlec Exp $
+# $Header: /var/cvsroot/gentoo-x86/x11-terms/terminator/terminator-0.96-r1.ebuild,v 1.4 2012/02/24 14:32:16 ago Exp $
 
-EAPI="2"
+EAPI=4
 
 PYTHON_DEPEND="2"
 PYTHON_MODNAME="terminatorlib"
@@ -17,7 +17,7 @@ SRC_URI="http://launchpad.net/${PN}/trunk/${PV}/+download/${PN}_${PV}.tar.gz"
 
 LICENSE="GPL-2"
 SLOT="0"
-KEYWORDS="~amd64 ~x86"
+KEYWORDS="amd64 ~x86"
 IUSE="dbus gnome"
 
 RDEPEND="
@@ -34,14 +34,13 @@ RDEPEND="
 DEPEND="dev-util/intltool"
 
 src_prepare() {
-	epatch "${FILESDIR}"/0.90-without-icon-cache.patch
-	epatch "${FILESDIR}"/0.94-session.patch
+	epatch \
+		"${FILESDIR}"/0.90-without-icon-cache.patch \
+		"${FILESDIR}"/0.94-session.patch
 	distutils_src_prepare
 }
 
-src_configure() {
-:
-}
+src_configure() { :; }
 
 pkg_postinst() {
 	gnome2_pkg_postinst

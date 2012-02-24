@@ -4,7 +4,7 @@ DESCRIPTION=udev startup scripts for openrc
 EAPI=4
 HOMEPAGE=http://www.gentoo.org
 LICENSE=GPL-2
-RDEPEND=>=sys-fs/udev-180
+RDEPEND=>=sys-fs/udev-181 !<sys-fs/udev-181
 SLOT=0
 _eclasses_=git-2	6bb20ec18cca375571bcbe67bcf2e1d7
-_md5_=815c40400087977c8b41bd18204b7b15
+_md5_=d64ad1d24a80e6abcebd913a89abc07f

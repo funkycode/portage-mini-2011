@@ -11,4 +11,4 @@ RESTRICT=mirror strip
 SLOT=unstable
 SRC_URI=amd64? ( http://dl.google.com/linux/chrome/deb/pool/main/g/google-chrome-unstable/google-chrome-unstable_19.0.1049.3-r123257_amd64.deb ) x86? ( http://dl.google.com/linux/chrome/deb/pool/main/g/google-chrome-unstable/google-chrome-unstable_19.0.1049.3-r123257_i386.deb )
 _eclasses_=eutils	bd31a910fcf7757bdb34af6ea39f8ae0	fdo-mime	0acfe1a88fd8751a1d5dc671168219fa	gnome2-utils	b5ca2ccadb60760889faa3bccba121d9	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	pax-utils	3551398d6ede2b572568832730cc2a45	portability	536c5e70c5fb252ed3b769e04aa3f05b	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
-_md5_=d7a1ad148334e9f38446def56eb7385f
+_md5_=13978b1a7cd14c54fad9dbf4d7d59e50

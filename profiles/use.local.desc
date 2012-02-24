@@ -1523,7 +1523,8 @@ dev-python/spyder:sphinx - Add support for dev-python/sphinx
 dev-python/sympy:imaging - Add support for dev-python/imaging
 dev-python/sympy:ipython - Add support for dev-python/ipython
 dev-python/sympy:mathml - Add support for mathml
-dev-python/sympy:texmacs - Add support for app-office/texmacs
+dev-python/sympy:pyglet - Use dev-python/pyglet for plots and print preview
+dev-python/sympy:texmacs - Add app-office/texmacs interface
 dev-python/translate-toolkit:html - Support conversion between po and html files
 dev-python/translate-toolkit:ical - Support conversion between po and ical files
 dev-python/translate-toolkit:ini - Support conversion between po and ini files

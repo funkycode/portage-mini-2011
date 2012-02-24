@@ -4,10 +4,10 @@ DESCRIPTION=JK module for connecting Tomcat and Apache using the ajp13 protocol.
 EAPI=2
 HOMEPAGE=http://tomcat.apache.org/connectors-doc/
 IUSE=elibc_FreeBSD
-KEYWORDS=~amd64 ~ppc ~x86
+KEYWORDS=amd64 ~ppc ~x86
 LICENSE=Apache-2.0
 RDEPEND==www-servers/apache-2* >=dev-java/java-config-2.1.9-r1
 SLOT=0
 SRC_URI=mirror://apache/tomcat/tomcat-connectors/jk/tomcat-connectors-1.2.32-src.tar.gz
 _eclasses_=apache-module	1f60370f9dceba046ec036cd6bbb0c8b	depend.apache	a471783c63e68987a2b20eb46f9edf68	eutils	bd31a910fcf7757bdb34af6ea39f8ae0	java-pkg-2	6f723b44cff6b07377ca5c0848da887b	java-utils-2	0b830e0a2e6c4bdf1c81fec1b53d95f1	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	portability	536c5e70c5fb252ed3b769e04aa3f05b	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e	versionator	6601b4c5b3f019a993db59a50e1854e4
-_md5_=c421026ed466f85264666956191e6421
+_md5_=e2642e6e81878506c72f1729cbe01856

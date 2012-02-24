@@ -9,4 +9,4 @@ RDEPEND=>=x11-libs/libsexy-0.1.9 >=dev-python/pygtk-2.6.2 >=app-admin/eselect-py
 SLOT=0
 SRC_URI=http://releases.chipx86.com/libsexy/sexy-python/sexy-python-0.1.9.tar.gz
 _eclasses_=multilib	5f4ad6cf85e365e8f0c6050ddd21659e	python	ba318f39f69a4478c5097f9ccf8c1173	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68
-_md5_=9c03ba678b91cdd7fa0476bc13e44063
+_md5_=afeb41394ddd377fc01bc469b060471e

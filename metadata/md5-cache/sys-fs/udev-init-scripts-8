@@ -4,7 +4,7 @@ EAPI=4
 HOMEPAGE=http://www.gentoo.org
 KEYWORDS=~amd64 ~arm ~hppa ~mips ~ppc ~ppc64 ~x86
 LICENSE=GPL-2
-RDEPEND=>=sys-fs/udev-180
+RDEPEND=>=sys-fs/udev-181 !<sys-fs/udev-181
 SLOT=0
 SRC_URI=mirror://gentoo/udev-init-scripts-8.tar.bz2
-_md5_=a2a76fc7c2f3cbe67bf3ec0ffd12f839
+_md5_=35ca9a8bde5aebee842e2bac2204cc68
