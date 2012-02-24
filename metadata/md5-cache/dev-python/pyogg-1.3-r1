@@ -9,4 +9,4 @@ RDEPEND=>=media-libs/libogg-1.0 >=app-admin/eselect-python-20091230 =dev-lang/py
 SLOT=0
 SRC_URI=mirror://gentoo/pyogg-1.3-r1.tar.gz
 _eclasses_=distutils	c8b0cab86443a130f3737ad1456d57d3	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	python	ba318f39f69a4478c5097f9ccf8c1173	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68
-_md5_=9bc8ee1ada967c3412b8e05786205dde
+_md5_=4e9750a08d56f4fed76158a394ceabc6

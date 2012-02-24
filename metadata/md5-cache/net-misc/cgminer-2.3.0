@@ -3,11 +3,11 @@ DEPEND=net-misc/curl sys-libs/ncurses dev-libs/jansson opencl? ( virtual/opencl 
 DESCRIPTION=Bitcoin CPU/GPU/FPGA miner in C
 EAPI=4
 HOMEPAGE=https://bitcointalk.org/index.php?topic=28402.0
-IUSE=+adl altivec bitforce +cpumining examples icarus +opencl padlock sse2 sse2_4way sse4
+IUSE=+adl altivec bitforce +cpumining examples hardened icarus +opencl padlock sse2 sse2_4way sse4
 KEYWORDS=~x86 ~amd64
 LICENSE=GPL-2
 RDEPEND=net-misc/curl sys-libs/ncurses dev-libs/jansson opencl? ( virtual/opencl )
 REQUIRED_USE=|| ( bitforce cpumining icarus opencl ) adl? ( opencl ) altivec? ( cpumining ppc ppc64 ) padlock? ( cpumining || ( amd64 x86 ) ) sse2? ( cpumining || ( amd64 x86 ) ) sse4? ( cpumining amd64 )
 SLOT=0
 SRC_URI=http://ck.kolivas.org/apps/cgminer/cgminer-2.3.0-1.tar.bz2
-_md5_=175fea25c8c05c7b9f43e35bcddbc6ce
+_md5_=e41c4a4c29b91cca69f63e1cd7fda07c

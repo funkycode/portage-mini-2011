@@ -1,12 +1,12 @@
-DEFINED_PHASES=compile install postinst postrm prepare
-DEPEND=dev-python/setuptools >=app-admin/eselect-python-20091230 || ( =dev-lang/python-2.7* =dev-lang/python-2.6* )
+DEFINED_PHASES=compile install postinst postrm prepare setup
+DEPEND=dev-python/setuptools >=app-admin/eselect-python-20091230 || ( =dev-lang/python-2.7* =dev-lang/python-2.6* ) || ( =dev-lang/python-2.7*[sqlite] =dev-lang/python-2.6*[sqlite] )
 DESCRIPTION=A fork of comix, a GTK image viewer for comic book archives.
 EAPI=3
 HOMEPAGE=http://mcomix.sourceforge.net
 KEYWORDS=~amd64 ~x86
 LICENSE=GPL-2
-RDEPEND=dev-python/setuptools app-arch/unrar >=dev-python/imaging-1.1.5 >=dev-python/pygtk-2.14 virtual/jpeg || ( dev-lang/python[sqlite] dev-python/pysqlite ) !media-gfx/comix >=app-admin/eselect-python-20091230 || ( =dev-lang/python-2.7* =dev-lang/python-2.6* )
+RDEPEND=dev-python/setuptools app-arch/unrar >=dev-python/imaging-1.1.5 >=dev-python/pygtk-2.14 virtual/jpeg !media-gfx/comix >=app-admin/eselect-python-20091230 || ( =dev-lang/python-2.7* =dev-lang/python-2.6* ) || ( =dev-lang/python-2.7*[sqlite] =dev-lang/python-2.6*[sqlite] )
 SLOT=0
 SRC_URI=mirror://sourceforge/mcomix/mcomix-0.97.1.tar.bz2
 _eclasses_=distutils	c8b0cab86443a130f3737ad1456d57d3	fdo-mime	0acfe1a88fd8751a1d5dc671168219fa	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	python	ba318f39f69a4478c5097f9ccf8c1173	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68
-_md5_=49d2faadc7b3002a260ac3af63a1e890
+_md5_=edf12d0a2b09601b4e6bff3b129e7bec

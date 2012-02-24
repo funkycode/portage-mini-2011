@@ -5234,6 +5234,8 @@ www-plugins/adobe-flash:kde - Enables a KCM plugin for configuring flash player 
 www-plugins/adobe-flash:vdpau - Enables VDPAU support to offload video processing (32-bit flash player only)
 www-plugins/gnash:agg - Rendering based on the Anti-Grain Geometry Rendering Engine library
 www-plugins/gnash:cygnal - Enable building of the cygnal server
+www-plugins/gnash:egl - Enable EGL support for the OpenVG, OpenGL and X11 renderers
+www-plugins/gnash:gconf - Enable GConf configuration backend
 www-plugins/gnash:openvg - Rendering based on the OpenVG graphics acceleration API
 www-plugins/gnash:sdl-sound - Enable SDL audio output for the standalone player
 www-plugins/gnash:ssh - Enable using SSH for network authentication in libnet
