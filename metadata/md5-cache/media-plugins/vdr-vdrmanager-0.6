@@ -1,0 +1,13 @@
+DEFINED_PHASES=compile config configure install postinst postrm prepare setup unpack
+DEPEND=>=media-video/vdr-1.6.0 >=media-tv/gentoo-vdr-scripts-0.4.2 virtual/linuxtv-dvb-headers
+DESCRIPTION=VDR Plugin: allows remote programming VDR using VDR-Manager running on Android devices
+EAPI=4
+HOMEPAGE=http://projects.vdr-developer.org/wiki/androvdr
+IUSE=-stream
+KEYWORDS=~x86 ~amd64
+LICENSE=GPL-2
+RDEPEND=stream? ( media-plugins/vdr-streamdev[server] ) >=media-tv/gentoo-vdr-scripts-0.4.2 >=app-admin/eselect-vdr-0.0.2
+SLOT=0
+SRC_URI=mirror://vdr-developerorg/828/vdr-vdrmanager-0.6.tar.gz
+_eclasses_=base	5f35078c26d6c60556d5c8a2feb4f84f	eutils	bd31a910fcf7757bdb34af6ea39f8ae0	flag-o-matic	a2e1c4641a8aed225d4ddb0f74f382de	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	portability	536c5e70c5fb252ed3b769e04aa3f05b	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e	vdr-plugin	8ce69af85ba439c4db133bbd9de6f0bd
+_md5_=349e12562b7578ed4fc029516278bbb8

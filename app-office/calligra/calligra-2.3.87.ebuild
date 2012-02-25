@@ -1,6 +1,6 @@
 # Copyright 1999-2012 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/app-office/calligra/calligra-2.3.87.ebuild,v 1.1 2012/02/07 23:19:33 dilfridge Exp $
+# $Header: /var/cvsroot/gentoo-x86/app-office/calligra/calligra-2.3.87.ebuild,v 1.4 2012/02/24 22:01:56 dilfridge Exp $
 
 # note: files that need to be checked for dependencies etc:
 # CMakeLists.txt, kexi/CMakeLists.txt kexi/migration/CMakeLists.txt
@@ -38,6 +38,7 @@ unset cal_ft
 
 REQUIRED_USE="
 	calligra_features_kexi? ( calligra_features_tables )
+	calligra_features_words? ( calligra_features_tables )
 	calligra_features_krita? ( eigen exif lcms )
 	calligra_features_plan? ( kdepim )
 	calligra_features_tables? ( eigen )
@@ -46,13 +47,14 @@ REQUIRED_USE="
 
 RDEPEND="
 	!app-office/karbon
+	!app-office/kexi
 	!app-office/koffice-data
 	!app-office/koffice-l10n
 	!app-office/koffice-libs
 	!app-office/koffice-meta
-	!app-office/krita
 	!app-office/kplato
 	!app-office/kpresenter
+	!app-office/krita
 	!app-office/kspread
 	!app-office/kword
 	dev-lang/perl
@@ -114,7 +116,10 @@ DEPEND="${RDEPEND}"
 RESTRICT=test
 # bug 394273
 
-PATCHES=( "${FILESDIR}/${P}-marble.patch" )
+PATCHES=(
+	"${FILESDIR}/${P}-marble.patch"
+	"${FILESDIR}/${P}-koabstr.patch"
+)
 
 src_configure() {
 	local cal_ft

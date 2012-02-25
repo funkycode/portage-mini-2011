@@ -2659,6 +2659,7 @@ media-plugins/vdr-softdevice:mmxext - enables MMXExt support
 media-plugins/vdr-streamdev:client - Compile the VDR plugin vdr-streamdev-client that acts like a dvb-budget card
 media-plugins/vdr-streamdev:server - Compile the VDR plugin vdr-streamdev-server that allows remote systems to access the DVB cards used for the local VDR
 media-plugins/vdr-text2skin:contrib - Install user contributed scripts
+media-plugins/vdr-vdrmanager:stream - Add support for streaming Video to Android client
 media-plugins/vdr-weatherng:dxr3 - enables lower osd color depth for dxr3 cards
 media-plugins/vdr-xine:yaepg - Enables support for the plugin vdr-yaepg (showing scaled video besides OSD)
 media-plugins/vdr-xineliboutput:libextractor - Use media-libs/libextract to gather files' metadata in media-player
@@ -3011,6 +3012,7 @@ media-video/ffmpeg2theora:kate - Adds support for Ogg Kate subtitles via libkate
 media-video/gnome-mplayer:dconf - Enable support for gnome-base/dconf
 media-video/google2srt:html - Install HTML documentation
 media-video/griffith:csv - Enable proper support for csv import (respectively auto-detection encoding of csv files)
+media-video/gxine:gnome-screensaver - Enable dbus support to communicate with gnome-extra/gnome-screensaver
 media-video/h264enc:ogm - Support for OGM container format
 media-video/hwdecode-demos:vaapi - Enables VAAPI (Video Acceleration API) for hardware decoding
 media-video/hwdecode-demos:vdpau - Enables VDPAU decoders (requires nVidia video cards to offload CPU processing to video card
@@ -5444,7 +5446,8 @@ x11-libs/qt-test:exceptions - Add support for exceptions - like catching them in
 x11-libs/qt-test:qpa - Build a window system agnostic implementation of Qt
 x11-libs/qt-webkit:c++0x - Build Qt using the C++11 standard
 x11-libs/qt-webkit:exceptions - Add support for exceptions - like catching them inside the event loop (recommended by Nokia)
-x11-libs/qt-webkit:jit - Enables JIT for Javascript usage inside Qt
+x11-libs/qt-webkit:gstreamer - Enable HTML5 audio/video support via media-libs/gstreamer
+x11-libs/qt-webkit:jit - Enable JavaScriptCore just-in-time compiler for faster JavaScript execution
 x11-libs/qt-webkit:kde - Select media-sound/phonon as phonon variant needed for kde
 x11-libs/qt-webkit:qpa - Build a window system agnostic implementation of Qt
 x11-libs/qt-xmlpatterns:c++0x - Build Qt using the C++11 standard

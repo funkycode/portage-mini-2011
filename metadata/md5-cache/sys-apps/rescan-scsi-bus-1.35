@@ -3,8 +3,8 @@ DESCRIPTION=Script to rescan the SCSI bus without rebooting
 HOMEPAGE=http://www.garloff.de/kurt/linux/
 KEYWORDS=~alpha ~amd64 ~arm ~hppa ~ia64 ~ppc ~ppc64 ~sh ~sparc ~x86
 LICENSE=GPL-2
-RDEPEND=>=sys-apps/sg3_utils-1.24 sys-apps/module-init-tools app-shells/bash
+RDEPEND=>=sys-apps/sg3_utils-1.24 virtual/modutils app-shells/bash
 SLOT=0
 SRC_URI=http://www.garloff.de/kurt/linux/rescan-scsi-bus.sh-1.35
 _eclasses_=eutils	bd31a910fcf7757bdb34af6ea39f8ae0	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	portability	536c5e70c5fb252ed3b769e04aa3f05b	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
-_md5_=01e12b6d079eddc98240f6cadf5023dd
+_md5_=940b639dd30a1e0a1ee7ec401db37cd0

@@ -10,4 +10,4 @@ RDEPEND=net-misc/curl sys-libs/ncurses dev-libs/jansson opencl? ( virtual/opencl
 REQUIRED_USE=|| ( bitforce cpumining icarus opencl ) adl? ( opencl ) altivec? ( cpumining ppc ppc64 ) padlock? ( cpumining || ( amd64 x86 ) ) sse2? ( cpumining || ( amd64 x86 ) ) sse4? ( cpumining amd64 )
 SLOT=0
 SRC_URI=http://ck.kolivas.org/apps/cgminer/cgminer-2.3.0-1.tar.bz2
-_md5_=e41c4a4c29b91cca69f63e1cd7fda07c
+_md5_=19d95060717747b9cc025b9d5c8d6fb2

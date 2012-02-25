@@ -10,4 +10,4 @@ RDEPEND=>=dev-libs/dbus-glib-0.98 >=sys-apps/dbus-1.4.16 >=app-admin/eselect-pyt
 SLOT=0
 SRC_URI=http://dbus.freedesktop.org/releases/dbus-python/dbus-python-1.0.0.tar.gz
 _eclasses_=multilib	5f4ad6cf85e365e8f0c6050ddd21659e	python	ba318f39f69a4478c5097f9ccf8c1173	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68
-_md5_=09e166e978b6ed80f5df735fb74c682a
+_md5_=addb52daeececf9fec1f55ef28703576

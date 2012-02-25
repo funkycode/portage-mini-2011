@@ -1,16 +1,18 @@
 # Copyright 1999-2012 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/app-text/gtranslator/gtranslator-2.90.7.ebuild,v 1.2 2012/01/01 00:20:05 tetromino Exp $
+# $Header: /var/cvsroot/gentoo-x86/app-text/gtranslator/gtranslator-2.90.7.ebuild,v 1.3 2012/02/24 23:57:57 tetromino Exp $
 
-EAPI="3"
+EAPI="4"
 GCONF_DEBUG="no"
 GNOME2_LA_PUNT="yes"
 PYTHON_DEPEND="gnome? 2"
+GNOME_TARBALL_SUFFIX="bz2"
 
 inherit autotools eutils gnome2 multilib python
 
 DESCRIPTION="An enhanced gettext po file editor for GNOME"
 HOMEPAGE="http://gtranslator.sourceforge.net/"
+SRC_URI="${SRC_URI} mirror://gentoo/introspection.m4.bz2" # for eautoreconf
 
 LICENSE="GPL-3"
 SLOT="0"
@@ -46,7 +48,10 @@ DEPEND="${COMMON_DEPEND}
 	dev-util/pkgconfig
 	app-text/gnome-doc-utils
 	app-text/docbook-xml-dtd:4.1.2
-	doc? ( >=dev-util/gtk-doc-1 )"
+	doc? ( >=dev-util/gtk-doc-1 )
+
+	gnome-base/gnome-common"
+# eautoreconf requires gnome-base/gnome-common
 
 pkg_setup() {
 	DOCS="AUTHORS ChangeLog HACKING INSTALL NEWS README THANKS"
@@ -55,18 +60,27 @@ pkg_setup() {
 		$(use_with gnome dictionary)
 		$(use_enable gnome introspection)
 		$(use_with spell gtkspell3)"
+
+	if use gnome; then
+		python_set_active_version 2
+		python_pkg_setup
+	fi
 }
 
 src_prepare() {
 	# Fix gtkspell detection, https://bugzilla.gnome.org/show_bug.cgi?id=660709
 	epatch "${FILESDIR}/${PN}-2.90.6-gtkspell3.patch"
+
+	# introspection.m4 needed for eautoreconf
+	mv "${WORKDIR}/introspection.m4" "${S}/m4/" || die
+
 	eautoreconf
 
 	gnome2_src_prepare
 
-	# disable pyc compiling
-	echo '#!/bin/sh' > py-compile
-	if ! use gnome; then
+	if use gnome; then
+		python_clean_py-compile_files
+	else
 		# don't install charmap plugin, it requires gnome-extra/gucharmap
 		sed -e 's:\scharmap\s: :g' -i plugins/Makefile.* ||
 			die "sed plugins/Makefile.* failed"

@@ -1,6 +1,6 @@
-# Copyright 1999-2011 Gentoo Foundation
+# Copyright 1999-2012 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/www-misc/vdradmin-am/vdradmin-am-3.6.8.ebuild,v 1.3 2011/12/21 09:01:25 phajdan.jr Exp $
+# $Header: /var/cvsroot/gentoo-x86/www-misc/vdradmin-am/vdradmin-am-3.6.8.ebuild,v 1.4 2012/02/24 20:55:01 hd_brummy Exp $
 
 EAPI=4
 
@@ -51,12 +51,6 @@ create_ssl_cert() {
 pkg_setup() {
 	enewgroup ${VDRADMIN_GROUP}
 	enewuser ${VDRADMIN_USER} -1 /bin/bash ${CACHE_DIR} ${VDRADMIN_GROUP}
-
-	if ! use vdr; then
-		elog
-		elog "You can run ${PN} outside a vdr install. For minimal"
-		elog "functionality you need access to the epg.data file of your VDR."
-	fi
 }
 
 src_prepare() {

@@ -3,10 +3,10 @@ DEPEND=>=dev-python/pygtk-2.4.1 >=app-admin/eselect-python-20091230 || ( =dev-la
 DESCRIPTION=A menu generation program for fluxbox, waimea, openbox, icewm, gnome and kde.
 EAPI=3
 HOMEPAGE=http://denu.sourceforge.net
-KEYWORDS=amd64 hppa ~ppc ~ppc64 x86
+KEYWORDS=amd64 hppa ppc ~ppc64 x86
 LICENSE=GPL-2
 RDEPEND=>=dev-python/pygtk-2.4.1 >=app-admin/eselect-python-20091230 || ( =dev-lang/python-2.7* =dev-lang/python-2.6* )
 SLOT=0
 SRC_URI=mirror://sourceforge/denu/denu-2.3.2.tar.bz2
 _eclasses_=multilib	5f4ad6cf85e365e8f0c6050ddd21659e	python	ba318f39f69a4478c5097f9ccf8c1173	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68
-_md5_=2341fe536551e8c38cbb0ba870c9b815
+_md5_=341a7b662da69242c1f23d455450013f

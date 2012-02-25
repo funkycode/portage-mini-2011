@@ -10,4 +10,4 @@ RDEPEND=dev-python/numpy dev-python/python-dateutil:python-2 dev-python/pytz med
 SLOT=0
 SRC_URI=mirror://sourceforge/matplotlib/matplotlib-1.1.0.tar.gz doc? ( mirror://sourceforge/matplotlib/mpl_sampledata-1.1.0.tar.gz ) examples? ( mirror://sourceforge/matplotlib/mpl_sampledata-1.1.0.tar.gz )
 _eclasses_=distutils	c8b0cab86443a130f3737ad1456d57d3	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	python	ba318f39f69a4478c5097f9ccf8c1173	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68
-_md5_=62395a3099785c884b98c5ffa96e3f6f
+_md5_=8e08e48ea76c9b06afbe42c33f0051e5
