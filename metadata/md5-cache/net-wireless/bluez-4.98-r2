@@ -4,10 +4,10 @@ DESCRIPTION=Bluetooth Tools and System Daemons for Linux
 EAPI=4
 HOMEPAGE=http://www.bluez.org/
 IUSE=alsa caps +consolekit cups debug gstreamer pcmcia test-programs usb readline
-KEYWORDS=amd64 ~arm hppa ~ppc ~ppc64 x86
+KEYWORDS=amd64 ~arm hppa ppc ppc64 x86
 LICENSE=GPL-2 LGPL-2.1
 RDEPEND=>=dev-libs/glib-2.14:2 sys-apps/dbus >=sys-fs/udev-169 alsa? ( media-libs/alsa-lib[alsa_pcm_plugins_extplug(+),alsa_pcm_plugins_ioplug(+)] media-libs/libsndfile ) caps? ( >=sys-libs/libcap-ng-0.6.2 ) cups? ( net-print/cups ) gstreamer? ( >=media-libs/gstreamer-0.10:0.10 >=media-libs/gst-plugins-base-0.10:0.10 ) usb? ( dev-libs/libusb:1 ) readline? ( sys-libs/readline ) !net-wireless/bluez-libs !net-wireless/bluez-utils consolekit? ( || ( sys-auth/consolekit >=sys-apps/systemd-37 ) ) test-programs? ( dev-python/dbus-python dev-python/pygobject:2 ) >=app-admin/eselect-python-20091230 test-programs? ( =dev-lang/python-2* )
 SLOT=0
 SRC_URI=mirror://kernel/linux/bluetooth/bluez-4.98.tar.xz http://dev.gentoo.org/~pacho/bluez/oui-20120113.txt.xz
 _eclasses_=eutils	bd31a910fcf7757bdb34af6ea39f8ae0	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	portability	536c5e70c5fb252ed3b769e04aa3f05b	python	ba318f39f69a4478c5097f9ccf8c1173	systemd	70a153740015c3457222dbdd8e07c1f7	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
-_md5_=abeb847d950b567cb654463f493ace82
+_md5_=b2f041207296730b0d34131bf2955bab

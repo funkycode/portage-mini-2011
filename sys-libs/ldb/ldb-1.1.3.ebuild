@@ -1,6 +1,6 @@
-# Copyright 1999-2011 Gentoo Foundation
+# Copyright 1999-2012 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/sys-libs/ldb/ldb-1.1.3.ebuild,v 1.4 2011/11/03 19:04:09 jer Exp $
+# $Header: /var/cvsroot/gentoo-x86/sys-libs/ldb/ldb-1.1.3.ebuild,v 1.6 2012/02/25 16:35:44 ago Exp $
 
 EAPI="3"
 PYTHON_DEPEND="2"
@@ -13,7 +13,7 @@ SRC_URI="http://www.samba.org/ftp/pub/${PN}/${P}.tar.gz"
 
 LICENSE="LGPL-3"
 SLOT="0"
-KEYWORDS="~amd64 ~hppa ~ppc ~ppc64 ~x86 ~x86-fbsd"
+KEYWORDS="amd64 ~hppa ~ppc ~ppc64 ~x86 ~x86-fbsd"
 IUSE="doc"
 
 RDEPEND="dev-libs/popt
@@ -68,4 +68,9 @@ src_install() {
 
 pkg_postinst() {
 	python_need_rebuild
+	if has_version sys-auth/sssd; then
+		ewarn "You have sssd installed. It is known to break after ldb upgrades,"
+		ewarn "so please try to rebuild it before reporting bugs."
+		ewarn "See http://bugs.gentoo.org/404281"
+	fi
 }

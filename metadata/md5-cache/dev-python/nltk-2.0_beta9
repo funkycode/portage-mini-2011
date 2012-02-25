@@ -9,4 +9,4 @@ RDEPEND=dev-python/numpy dev-python/pyyaml >=app-admin/eselect-python-20091230 =
 SLOT=0
 SRC_URI=http://nltk.googlecode.com/files/nltk-2.0b9.zip
 _eclasses_=distutils	c8b0cab86443a130f3737ad1456d57d3	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	python	ba318f39f69a4478c5097f9ccf8c1173	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68
-_md5_=49bce937acf0b1f1dd72a7f85c214c02
+_md5_=e6b9edb3dde1cf72313cd429f8391b1f

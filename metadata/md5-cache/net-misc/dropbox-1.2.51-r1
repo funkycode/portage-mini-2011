@@ -1,0 +1,14 @@
+DEFINED_PHASES=install postinst postrm preinst unpack
+DEPEND=>=sys-apps/sed-4
+DESCRIPTION=Dropbox daemon (pretends to be GUI-less)
+EAPI=4
+HOMEPAGE=http://dropbox.com/
+IUSE=librsync-bundled
+KEYWORDS=~amd64 ~x86
+LICENSE=CCPL-Attribution-NoDerivs-3.0 FTL MIT LGPL-2 openssl dropbox
+RDEPEND=app-arch/bzip2 dev-libs/popt dev-libs/openssl:0.9.8 media-libs/libpng:1.2 net-libs/librsync net-misc/wget >=sys-devel/gcc-4.2.0 sys-libs/zlib
+RESTRICT=mirror strip
+SLOT=0
+SRC_URI=x86? ( http://dl-web.dropbox.com/u/17/dropbox-lnx.x86-1.2.51.tar.gz ) amd64? ( http://dl-web.dropbox.com/u/17/dropbox-lnx.x86_64-1.2.51.tar.gz )
+_eclasses_=gnome2-utils	b5ca2ccadb60760889faa3bccba121d9	pax-utils	3551398d6ede2b572568832730cc2a45
+_md5_=a0e576eb741eb4de7d5044646f59d90a

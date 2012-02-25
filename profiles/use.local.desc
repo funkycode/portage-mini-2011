@@ -4017,6 +4017,7 @@ net-misc/dnetstats:gnome - Use gksu to gain root access
 net-misc/dnetstats:kde - Use kdesu to gain root access
 net-misc/dropbear:bsdpty - Add support for legacy BSD pty's rather than dynamic UNIX pty's -- do not use this flag unless you are absolutely sure you actually want it
 net-misc/dropbear:multicall - Build all the programs as one little binary (to save space)
+net-misc/dropbox:librsync-bundled - Use bundled librsync library
 net-misc/flexget:deluge - Enable deluge output plugin
 net-misc/flexget:transmission - Enable transmission output plugin
 net-misc/freerdp:debug-assert - Enable assert debugging
@@ -5160,6 +5161,7 @@ www-apps/redmine:mercurial - Enable support for dev-vcs/mercurial
 www-apps/redmine:openid - Enable support for OpenID
 www-apps/redmine:passenger - Enable support for www-apache/passenger
 www-apps/rt:lighttpd - Add www-servers/lighttpd support
+www-apps/sugarcrm:json - Add JSON (JavaScript Object Notation) support
 www-apps/trac:i18n - Enable support for i18n with dev-python/Babel
 www-apps/tt-rss:daemon - Install additional init scripts for automated RSS updates
 www-apps/venus:django - Support for django template style to config files
