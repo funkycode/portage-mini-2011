@@ -1,8 +1,8 @@
-# Copyright 1999-2011 Gentoo Foundation
+# Copyright 1999-2012 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/media-libs/mlt/mlt-0.7.2.ebuild,v 1.3 2011/10/30 15:23:55 dilfridge Exp $
+# $Header: /var/cvsroot/gentoo-x86/media-libs/mlt/mlt-0.7.8.ebuild,v 1.1 2012/02/26 00:54:02 aballier Exp $
 
-EAPI=3
+EAPI=4
 PYTHON_DEPEND="python? 2:2.6"
 inherit eutils toolchain-funcs multilib python
 
@@ -14,8 +14,10 @@ LICENSE="GPL-2"
 SLOT="0"
 KEYWORDS="~amd64 ~ppc ~ppc64 ~x86 ~x86-fbsd ~amd64-linux ~x86-linux"
 IUSE="compressed-lumas dv debug ffmpeg frei0r gtk jack kde libsamplerate melt
-mmx qt4 quicktime sdl sse sse2 vorbis xine xml lua python ruby vdpau" # java perl php tcl
+mmx qt4 quicktime rtaudio sdl sse sse2 swfdec vorbis xine xml lua python ruby vdpau" # java perl php tcl
+IUSE="${IUSE} kernel_linux"
 
+#rtaudio will use OSS on non linux OSes
 RDEPEND="ffmpeg? ( virtual/ffmpeg[vdpau?] )
 	dv? ( >=media-libs/libdv-0.104 )
 	xml? ( >=dev-libs/libxml2-2.5 )
@@ -28,10 +30,13 @@ RDEPEND="ffmpeg? ( virtual/ffmpeg[vdpau?] )
 		>=dev-libs/libxml2-2.5 )
 	frei0r? ( media-plugins/frei0r-plugins )
 	gtk? ( x11-libs/gtk+:2
+		media-libs/libexif
 		x11-libs/pango )
 	quicktime? ( media-libs/libquicktime )
+	rtaudio? ( kernel_linux? ( media-libs/alsa-lib ) )
+	swfdec? ( media-libs/swfdec )
 	xine? ( >=media-libs/xine-lib-1.1.2_pre20060328-r7 )
-	qt4? ( x11-libs/qt-gui:4 )
+	qt4? ( x11-libs/qt-gui:4 x11-libs/qt-svg:4 media-libs/libexif )
 	!media-libs/mlt++
 	lua? ( >=dev-lang/lua-5.1.4-r4 )
 	ruby? ( dev-lang/ruby )"
@@ -56,20 +61,19 @@ DEPEND="${RDEPEND}
 
 pkg_setup() {
 	python_set_active_version 2
+	python_pkg_setup
 }
 
 src_prepare() {
 	epatch "${FILESDIR}"/${PN}-0.7.2-ruby-link.patch
 	# respect CFLAGS LDFLAGS when building shared libraries. Bug #308873
 	for x in python lua; do
-		sed -i "/mlt.so/s: -lmlt++ :& ${CFLAGS} ${LDFLAGS} :" src/swig/$x/build
+		sed -i "/mlt.so/s: -lmlt++ :& ${CFLAGS} ${LDFLAGS} :" src/swig/$x/build || die
 	done
-	sed -i "/^LDFLAGS/s: += :& ${LDFLAGS} :" src/swig/ruby/build
+	sed -i "/^LDFLAGS/s: += :& ${LDFLAGS} :" src/swig/ruby/build || die
 }
 
 src_configure() {
-	use vdpau || export MLT_NO_VDPAU=1
-
 	tc-export CC CXX
 
 	local myconf="--enable-gpl
@@ -78,6 +82,7 @@ src_configure() {
 		$(use_enable dv)
 		$(use_enable sse)
 		$(use_enable sse2)
+		$(use_enable swfdec)
 		$(use_enable gtk gtk2)
 		$(use_enable vorbis)
 		$(use_enable sdl)
@@ -86,6 +91,8 @@ src_configure() {
 		$(use_enable frei0r)
 		$(use_enable melt)
 		$(use_enable libsamplerate resample)
+		$(use_enable rtaudio)
+		$(use vdpau && echo ' --avformat-vdpau')
 		$(use_enable xml)
 		$(use_enable xine)
 		$(use_enable kde kdenlive)
@@ -121,7 +128,7 @@ src_configure() {
 
 src_install() {
 	emake DESTDIR="${D}" install || die
-	dodoc AUTHORS ChangeLog NEWS README docs/{TODO,*.txt}
+	dodoc AUTHORS ChangeLog NEWS README docs/*.txt
 
 	dodir /usr/share/${PN}
 	insinto /usr/share/${PN}
