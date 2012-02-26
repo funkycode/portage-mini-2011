@@ -8,5 +8,5 @@ LICENSE=as-is
 RDEPEND=media-libs/audiofile motif? ( >=x11-libs/openmotif-2.3:0 ) alsa? ( media-libs/alsa-lib ) esd? ( media-sound/esound ) fam? ( virtual/fam ) fftw? ( sci-libs/fftw ) gsl? ( >=sci-libs/gsl-0.8 ) gtk? ( x11-libs/gtk+:2 opengl? ( x11-libs/gtkglext ) cairo? ( x11-libs/cairo ) ) guile? ( >=dev-scheme/guile-1.3.4 ) jack? ( media-sound/jack-audio-connection-kit ) ladspa? ( media-libs/ladspa-sdk ) nls? ( sys-devel/gettext ) opengl? ( virtual/opengl ) ruby? ( dev-lang/ruby ) xpm? ( x11-libs/libXpm )
 SLOT=0
 SRC_URI=ftp://ccrma-ftp.stanford.edu/pub/Lisp/snd-9.11.tar.gz
-_eclasses_=eutils	bd31a910fcf7757bdb34af6ea39f8ae0	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	portability	536c5e70c5fb252ed3b769e04aa3f05b	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e	versionator	6601b4c5b3f019a993db59a50e1854e4
+_eclasses_=eutils	80d5ff61404a8ac834527cfb70ab2fae	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	portability	536c5e70c5fb252ed3b769e04aa3f05b	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e	versionator	6601b4c5b3f019a993db59a50e1854e4
 _md5_=7ee83257e9a4e814f67fd5cf6e2152be

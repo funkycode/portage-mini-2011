@@ -1,6 +1,6 @@
 # Copyright 1999-2012 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/media-libs/mlt/mlt-0.7.8.ebuild,v 1.1 2012/02/26 00:54:02 aballier Exp $
+# $Header: /var/cvsroot/gentoo-x86/media-libs/mlt/mlt-0.7.8.ebuild,v 1.3 2012/02/26 15:28:01 aballier Exp $
 
 EAPI=4
 PYTHON_DEPEND="python? 2:2.6"
@@ -49,8 +49,8 @@ RDEPEND="ffmpeg? ( virtual/ffmpeg[vdpau?] )
 SWIG_DEPEND=">=dev-lang/swig-2.0"
 DEPEND="${RDEPEND}
 	dev-util/pkgconfig
-	compressed-lumas? ( || ( media-gfx/imagemagick
-			media-gfx/graphicsmagick[imagemagick] ) )
+	compressed-lumas? ( || ( media-gfx/imagemagick[png]
+			media-gfx/graphicsmagick[imagemagick,png] ) )
 	lua? ( ${SWIG_DEPEND} dev-util/pkgconfig )
 	python? ( ${SWIG_DEPEND} )
 	ruby? ( ${SWIG_DEPEND} )"
@@ -65,7 +65,8 @@ pkg_setup() {
 }
 
 src_prepare() {
-	epatch "${FILESDIR}"/${PN}-0.7.2-ruby-link.patch
+	epatch "${FILESDIR}"/${PN}-0.7.2-ruby-link.patch \
+		"${FILESDIR}"/${PN}-0.7.8-libavcodec54.patch
 	# respect CFLAGS LDFLAGS when building shared libraries. Bug #308873
 	for x in python lua; do
 		sed -i "/mlt.so/s: -lmlt++ :& ${CFLAGS} ${LDFLAGS} :" src/swig/$x/build || die

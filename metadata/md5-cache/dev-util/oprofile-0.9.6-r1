@@ -8,5 +8,5 @@ LICENSE=GPL-2
 RDEPEND=>=dev-libs/popt-1.7-r1 >=sys-devel/binutils-2.14.90.0.6-r3 >=sys-libs/glibc-2.3.2-r1
 SLOT=0
 SRC_URI=mirror://sourceforge/oprofile/oprofile-0.9.6.tar.gz
-_eclasses_=eutils	bd31a910fcf7757bdb34af6ea39f8ae0	linux-info	cc184ad3383ffb6ffbaa82f53608e77f	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	portability	536c5e70c5fb252ed3b769e04aa3f05b	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e	versionator	6601b4c5b3f019a993db59a50e1854e4
+_eclasses_=eutils	80d5ff61404a8ac834527cfb70ab2fae	linux-info	cc184ad3383ffb6ffbaa82f53608e77f	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	portability	536c5e70c5fb252ed3b769e04aa3f05b	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e	versionator	6601b4c5b3f019a993db59a50e1854e4
 _md5_=e6ab8a5fc4d55d0968234b5358ab1d02

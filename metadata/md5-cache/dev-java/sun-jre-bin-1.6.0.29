@@ -10,5 +10,5 @@ RDEPEND=!prefix? ( sys-libs/glibc ) alsa? ( media-libs/alsa-lib ) X? ( x11-libs/
 RESTRICT=fetch strip
 SLOT=1.6
 SRC_URI=x86? ( jre-6u29-linux-i586.bin ) amd64? ( jre-6u29-linux-x64.bin )
-_eclasses_=eutils	bd31a910fcf7757bdb34af6ea39f8ae0	fdo-mime	0acfe1a88fd8751a1d5dc671168219fa	java-vm-2	a34fe9a7d2a4f163b7f0c5af7d53ae33	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	pax-utils	3551398d6ede2b572568832730cc2a45	portability	536c5e70c5fb252ed3b769e04aa3f05b	prefix	21058c21ca48453d771df15500873ede	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e	versionator	6601b4c5b3f019a993db59a50e1854e4
+_eclasses_=eutils	80d5ff61404a8ac834527cfb70ab2fae	fdo-mime	0acfe1a88fd8751a1d5dc671168219fa	java-vm-2	a34fe9a7d2a4f163b7f0c5af7d53ae33	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	pax-utils	3551398d6ede2b572568832730cc2a45	portability	536c5e70c5fb252ed3b769e04aa3f05b	prefix	21058c21ca48453d771df15500873ede	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e	versionator	6601b4c5b3f019a993db59a50e1854e4
 _md5_=8316e299d2e29e6d9ddabe4162f5b14f

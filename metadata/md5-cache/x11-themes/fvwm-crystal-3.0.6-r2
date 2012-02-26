@@ -8,5 +8,5 @@ LICENSE=GPL-2
 RDEPEND=|| ( media-gfx/imagemagick[png] media-gfx/graphicsmagick[imagemagick,png] ) x11-apps/xwd || ( x11-misc/habak x11-misc/hsetroot ) || ( x11-misc/stalonetray x11-misc/trayer ) >=x11-wm/fvwm-2.6.2[png] >=app-admin/eselect-python-20091230 =dev-lang/python-2.7*
 SLOT=0
 SRC_URI=http://download.gna.org/fvwm-crystal/3.0.6/fvwm-crystal-3.0.6.tar.gz
-_eclasses_=eutils	bd31a910fcf7757bdb34af6ea39f8ae0	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	portability	536c5e70c5fb252ed3b769e04aa3f05b	python	ba318f39f69a4478c5097f9ccf8c1173	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
+_eclasses_=eutils	80d5ff61404a8ac834527cfb70ab2fae	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	portability	536c5e70c5fb252ed3b769e04aa3f05b	python	ba318f39f69a4478c5097f9ccf8c1173	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
 _md5_=27d7c86f7d7605dcbdaf4e82d3a8ba30

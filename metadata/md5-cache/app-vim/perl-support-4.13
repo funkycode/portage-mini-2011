@@ -8,5 +8,5 @@ LICENSE=as-is
 RDEPEND=dev-perl/Perl-Tags dev-perl/Perl-Critic || ( >=app-editors/vim-7.0 >=app-editors/gvim-7.0 )
 SLOT=0
 SRC_URI=https://github.com/vim-scripts/perl-support.vim/tarball/4.13 -> perl-support-4.13.tar.gz
-_eclasses_=eutils	bd31a910fcf7757bdb34af6ea39f8ae0	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	portability	536c5e70c5fb252ed3b769e04aa3f05b	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e	vim-doc	1c18baeec98cec3287524cbf2fee2bd2	vim-plugin	af7939f5d748a2ceeff320440e8905b1
+_eclasses_=eutils	80d5ff61404a8ac834527cfb70ab2fae	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	portability	536c5e70c5fb252ed3b769e04aa3f05b	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e	vim-doc	1c18baeec98cec3287524cbf2fee2bd2	vim-plugin	af7939f5d748a2ceeff320440e8905b1
 _md5_=bea0cb0a4220c955989cd33f9da0433d
