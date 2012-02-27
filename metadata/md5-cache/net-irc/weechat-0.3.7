@@ -1,0 +1,13 @@
+DEFINED_PHASES=compile configure install postinst prepare setup test unpack
+DEPEND=sys-libs/ncurses charset? ( virtual/libiconv ) lua? ( dev-lang/lua[deprecated] ) perl? ( dev-lang/perl ) ruby? ( ruby_targets_ruby18? ( dev-lang/ruby:1.8 ) ruby_targets_ruby19? ( dev-lang/ruby:1.9 ) ) ssl? ( net-libs/gnutls ) spell? ( app-text/aspell ) tcl? ( >=dev-lang/tcl-8.4.15 ) nls? ( >=sys-devel/gettext-0.15 ) >=app-admin/eselect-python-20091230 python? ( dev-lang/python ) >=dev-util/cmake-2.8.4 userland_GNU? ( >=sys-apps/findutils-4.4.0 )
+DESCRIPTION=Portable and multi-interface IRC client.
+EAPI=3
+HOMEPAGE=http://weechat.org/
+IUSE=lua +perl +python ruby tcl +alias +charset +fifo +logger +relay +rmodifier +scripts +spell +xfer +irc +crypt doc nls +ssl elibc_FreeBSD ruby_targets_ruby18 ruby_targets_ruby19
+KEYWORDS=~amd64 ~ppc ~x86 ~x86-fbsd ~x86-linux ~amd64-linux
+LICENSE=GPL-3
+RDEPEND=sys-libs/ncurses charset? ( virtual/libiconv ) lua? ( dev-lang/lua[deprecated] ) perl? ( dev-lang/perl ) ruby? ( ruby_targets_ruby18? ( dev-lang/ruby:1.8 ) ruby_targets_ruby19? ( dev-lang/ruby:1.9 ) ) ssl? ( net-libs/gnutls ) spell? ( app-text/aspell ) tcl? ( >=dev-lang/tcl-8.4.15 ) >=app-admin/eselect-python-20091230 python? ( dev-lang/python )
+SLOT=0
+SRC_URI=http://weechat.org/files/src/weechat-0.3.7.tar.bz2
+_eclasses_=base	5f35078c26d6c60556d5c8a2feb4f84f	cmake-utils	d9f3f2f6cc1a1d6ad8e31702e44133e5	eutils	80d5ff61404a8ac834527cfb70ab2fae	flag-o-matic	66cb710a2aa184a5687fe1289d7973ab	java-utils-2	0b830e0a2e6c4bdf1c81fec1b53d95f1	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	portability	536c5e70c5fb252ed3b769e04aa3f05b	python	06dff99bcab2fd584bd6d2aa6019ee19	ruby-ng	927a565459a62f2839d06e03cfbe1440	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e	versionator	6601b4c5b3f019a993db59a50e1854e4
+_md5_=b4c34a82f700d17cd64c198070b06ff9
