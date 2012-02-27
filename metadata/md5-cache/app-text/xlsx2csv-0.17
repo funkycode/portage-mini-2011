@@ -9,5 +9,5 @@ LICENSE=GPL-3
 RDEPEND=>=app-admin/eselect-python-20091230 =dev-lang/python-2* =dev-lang/python-2*[xml]
 SLOT=0
 SRC_URI=mirror://github/dilshod/xlsx2csv/xlsx2csv-0.17.zip
-_eclasses_=multilib	5f4ad6cf85e365e8f0c6050ddd21659e	python	ba318f39f69a4478c5097f9ccf8c1173	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68
+_eclasses_=multilib	5f4ad6cf85e365e8f0c6050ddd21659e	python	06dff99bcab2fd584bd6d2aa6019ee19	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68
 _md5_=7e422bfc7dd59a00d821c5799efe18ef

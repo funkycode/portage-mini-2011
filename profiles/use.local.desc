@@ -1350,6 +1350,8 @@ dev-libs/tntnet:server - Enable tntnet server daemon
 dev-libs/totem-pl-parser:archive - Enables support for accessing media files in archives transparently via app-arch/libarchive
 dev-libs/totem-pl-parser:introspection - Use dev-libs/gobject-introspection for introspection
 dev-libs/totem-pl-parser:quvi - Use media-libs/quvi for parsing video links
+dev-libs/ucommon:socks - Build with socks proxy support
+dev-libs/ucommon:ssl - Build with openssl as crypt library
 dev-libs/udis86:pic - Force shared libraries to be built as PIC
 dev-libs/xapian:brass - Enabled brass backend db support
 dev-libs/xapian:chert - Enabled chert backend db support
@@ -2554,6 +2556,7 @@ media-libs/opencv:ssse3 - faster floating point optimization for SSSE3 capable c
 media-libs/phonon:vlc - Install VLC Phonon backend
 media-libs/phonon:zeitgeist - Add support for Zeitgeist event tracking system
 media-libs/phonon-gstreamer:network - Enable network streaming support via libsoup
+media-libs/portmidi:test-programs - Install various example programs
 media-libs/raptor:json - Enable support for JSON parsing
 media-libs/sdif:ftruncate - Enables usage of ftruncate v. truncate
 media-libs/sdl-image:webp - support loading WEBP images
@@ -2722,6 +2725,23 @@ media-sound/clementine:projectm - Build with ProjectM visualization
 media-sound/clementine:wiimote - Enable support for Wii remote
 media-sound/cmus:pidgin - install support script for net-im/pidgin
 media-sound/cmus:wma - add support for Windows Media Audio
+media-sound/csound:beats - Build the beats score frontend
+media-sound/csound:chua - Build the chua opcodes
+media-sound/csound:csoundac - Build the CsoundAC extension module
+media-sound/csound:doc - Install the pdf version of the manual
+media-sound/csound:double-precision - Use double-precision floating point for audio samples
+media-sound/csound:dssi - Build the DSSI opcodes
+media-sound/csound:fluidsynth - Build the fluidsynth opcodes
+media-sound/csound:html - Install the html version of the manual
+media-sound/csound:image - Build the image opcodes
+media-sound/csound:keyboard - Build Virtual MIDI keyboard
+media-sound/csound:linear - Build the linear algebra Opcodes
+media-sound/csound:portmidi - Build the PortMIDI I/O module
+media-sound/csound:samples - Install the HRTF datafiles for use with hrtfmove, hrtfmove2, hrtfstat, hrtfearly, and hrtfreverb
+media-sound/csound:stk - Build the stk opcodes
+media-sound/csound:tcl - Build the tcl interface and clients
+media-sound/csound:utils - Build stand-alone executables for utilities that can also be used via `csound -U`
+media-sound/csound:vst - Build the CsoundVST frontend
 media-sound/darkice:twolame - Build with twolame support
 media-sound/decibel-audio-player:gnome - Adds Gnome media keys support, so you can control Decibel using hotkeys.
 media-sound/decibel-audio-player:gnome-keyring - Adds support for storing your Last.fm password using gnome-keyring.

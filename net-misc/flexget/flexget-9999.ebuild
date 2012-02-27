@@ -1,12 +1,12 @@
 # Copyright 1999-2012 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/net-misc/flexget/flexget-9999.ebuild,v 1.9 2012/02/20 16:17:17 floppym Exp $
+# $Header: /var/cvsroot/gentoo-x86/net-misc/flexget/flexget-9999.ebuild,v 1.13 2012/02/27 04:38:07 floppym Exp $
 
 EAPI=4
 
-PYTHON_DEPEND="2:2.5"
+PYTHON_DEPEND="2:2.6"
 SUPPORT_PYTHON_ABIS="1"
-RESTRICT_PYTHON_ABIS="2.4 3.*"
+RESTRICT_PYTHON_ABIS="2.4 2.5 *-pypy-* 3.*"
 DISTUTILS_SRC_TEST="setup.py"
 
 inherit distutils eutils subversion
@@ -23,7 +23,8 @@ IUSE="deluge test transmission"
 
 RDEPEND="
 	>=dev-python/feedparser-5.1
-	=dev-python/sqlalchemy-0.7.4
+	>=dev-python/sqlalchemy-0.7.4
+	!=dev-python/sqlalchemy-0.7.5
 	dev-python/pyyaml
 	dev-python/beautifulsoup:python-2
 	dev-python/html5lib
@@ -50,6 +51,9 @@ RDEPEND+="
 src_prepare() {
 	# Prevent setup from grabbing nose from pypi
 	sed -e /setup_requires/d -i pavement.py || die
+
+	# Silly upstream...
+	sed -e "s/SQLAlchemy==0.7.4/SQLAlchemy>=0.7.4/" -i pavement.py || die
 
 	# Generate setup.py
 	paver generate_setup || die

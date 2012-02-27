@@ -1,11 +1,11 @@
 DEFINED_PHASES=compile install postinst postrm preinst prepare setup test unpack
-DEPEND=dev-python/setuptools dev-python/paver test? ( >=dev-python/feedparser-5.1 =dev-python/sqlalchemy-0.7.4 dev-python/pyyaml dev-python/beautifulsoup:python-2 dev-python/html5lib dev-python/jinja dev-python/PyRSS2Gen dev-python/pynzb dev-python/progressbar dev-python/flask dev-python/cherrypy >=dev-python/requests-0.10.0 !=dev-python/requests-0.10.1 dev-python/nose ) >=app-admin/eselect-python-20091230 || ( =dev-lang/python-2.7* =dev-lang/python-2.6* =dev-lang/python-2.5* ) dev-vcs/subversion net-misc/rsync
+DEPEND=dev-python/setuptools dev-python/paver test? ( >=dev-python/feedparser-5.1 >=dev-python/sqlalchemy-0.7.4 !=dev-python/sqlalchemy-0.7.5 dev-python/pyyaml dev-python/beautifulsoup:python-2 dev-python/html5lib dev-python/jinja dev-python/PyRSS2Gen dev-python/pynzb dev-python/progressbar dev-python/flask dev-python/cherrypy >=dev-python/requests-0.10.0 !=dev-python/requests-0.10.1 dev-python/nose ) >=app-admin/eselect-python-20091230 || ( =dev-lang/python-2.7* =dev-lang/python-2.6* ) dev-vcs/subversion net-misc/rsync
 DESCRIPTION=Multipurpose automation tool for content like torrents, nzbs, podcasts, comics, etc
 EAPI=4
 HOMEPAGE=http://flexget.com/
 IUSE=deluge test transmission
 LICENSE=MIT
-RDEPEND=>=dev-python/feedparser-5.1 =dev-python/sqlalchemy-0.7.4 dev-python/pyyaml dev-python/beautifulsoup:python-2 dev-python/html5lib dev-python/jinja dev-python/PyRSS2Gen dev-python/pynzb dev-python/progressbar dev-python/flask dev-python/cherrypy >=dev-python/requests-0.10.0 !=dev-python/requests-0.10.1 dev-python/setuptools deluge? ( net-p2p/deluge ) transmission? ( dev-python/transmissionrpc ) >=app-admin/eselect-python-20091230 || ( =dev-lang/python-2.7* =dev-lang/python-2.6* =dev-lang/python-2.5* )
+RDEPEND=>=dev-python/feedparser-5.1 >=dev-python/sqlalchemy-0.7.4 !=dev-python/sqlalchemy-0.7.5 dev-python/pyyaml dev-python/beautifulsoup:python-2 dev-python/html5lib dev-python/jinja dev-python/PyRSS2Gen dev-python/pynzb dev-python/progressbar dev-python/flask dev-python/cherrypy >=dev-python/requests-0.10.0 !=dev-python/requests-0.10.1 dev-python/setuptools deluge? ( net-p2p/deluge ) transmission? ( dev-python/transmissionrpc ) >=app-admin/eselect-python-20091230 || ( =dev-lang/python-2.7* =dev-lang/python-2.6* )
 SLOT=0
-_eclasses_=distutils	c8b0cab86443a130f3737ad1456d57d3	eutils	80d5ff61404a8ac834527cfb70ab2fae	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	portability	536c5e70c5fb252ed3b769e04aa3f05b	python	ba318f39f69a4478c5097f9ccf8c1173	subversion	6945b2a4f19da5ca5867bb745cb01a35	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
-_md5_=fd36642780d8bc458fc6c611462c6cc0
+_eclasses_=distutils	c8b0cab86443a130f3737ad1456d57d3	eutils	80d5ff61404a8ac834527cfb70ab2fae	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	portability	536c5e70c5fb252ed3b769e04aa3f05b	python	06dff99bcab2fd584bd6d2aa6019ee19	subversion	6945b2a4f19da5ca5867bb745cb01a35	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
+_md5_=ebf9dc550aa3ead06e788b4eed05b237

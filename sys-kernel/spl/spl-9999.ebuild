@@ -1,10 +1,10 @@
 # Copyright 1999-2012 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/sys-kernel/spl/spl-9999.ebuild,v 1.7 2012/02/24 22:35:35 floppym Exp $
+# $Header: /var/cvsroot/gentoo-x86/sys-kernel/spl/spl-9999.ebuild,v 1.10 2012/02/27 01:28:05 floppym Exp $
 
 EAPI="4"
 
-inherit git-2 linux-mod autotools-utils
+inherit flag-o-matic git-2 linux-mod autotools-utils
 
 DESCRIPTION="The Solaris Porting Layer is a Linux kernel module which provides many of the Solaris kernel APIs"
 HOMEPAGE="http://zfsonlinux.org/"
@@ -14,7 +14,7 @@ EGIT_REPO_URI="git://github.com/zfsonlinux/spl.git"
 LICENSE="|| ( GPL-2 GPL-3 )"
 SLOT="0"
 KEYWORDS=""
-IUSE="debug"
+IUSE="custom-cflags debug"
 
 RDEPEND="!sys-devel/spl"
 
@@ -23,7 +23,8 @@ AUTOTOOLS_AUTORECONF="1"
 AUTOTOOLS_IN_SOURCE_BUILD="1"
 
 pkg_setup() {
-	CONFIG_CHECK="!PREEMPT
+	CONFIG_CHECK="MODULES
+		!PREEMPT
 		!DEBUG_LOCK_ALLOC
 		ZLIB_DEFLATE
 		ZLIB_INFLATE"
@@ -38,9 +39,11 @@ src_prepare() {
 }
 
 src_configure() {
+	use custom-cflags || strip-flags
 	set_arch_to_kernel
 	local myeconfargs=(
-		--exec-prefix=
+		--bindir=/bin
+		--sbindir=/sbin
 		--with-config=all
 		--with-linux="${KV_DIR}"
 		--with-linux-obj="${KV_OUT_DIR}"
@@ -64,5 +67,4 @@ src_test() {
 	else
 		autotools-utils_src_test
 	fi
-
 }

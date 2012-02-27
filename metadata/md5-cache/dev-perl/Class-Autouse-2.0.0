@@ -3,10 +3,10 @@ DEPEND=>=virtual/perl-Scalar-List-Utils-1.18 dev-lang/perl[-build]
 DESCRIPTION=Runtime aspect loading of one or more classes
 EAPI=4
 HOMEPAGE=http://search.cpan.org/dist/Class-Autouse/
-KEYWORDS=alpha amd64 ~hppa ~ia64 ~mips ~ppc ~sparc ~x86 ~amd64-linux ~x86-linux ~ppc-macos ~x86-macos ~sparc-solaris
+KEYWORDS=alpha amd64 hppa ~ia64 ~mips ~ppc ~sparc ~x86 ~amd64-linux ~x86-linux ~ppc-macos ~x86-macos ~sparc-solaris
 LICENSE=|| ( Artistic GPL-1 GPL-2 GPL-3 )
 RDEPEND=>=virtual/perl-Scalar-List-Utils-1.18 dev-lang/perl[-build]
 SLOT=0
 SRC_URI=mirror://cpan/authors/id/A/AD/ADAMK/Class-Autouse-2.00.tar.gz
 _eclasses_=base	5f35078c26d6c60556d5c8a2feb4f84f	eutils	80d5ff61404a8ac834527cfb70ab2fae	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	perl-module	01501a30505074cd0012cabbf5d99447	portability	536c5e70c5fb252ed3b769e04aa3f05b	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
-_md5_=6fe985e8e32b67a96d91a7109f2ed933
+_md5_=1d62a7f2c323a50bb4403bbe01ee6f6a
