@@ -1,12 +1,12 @@
-DEFINED_PHASES=install setup
+DEFINED_PHASES=install nofetch setup
 DEPEND=app-arch/unzip
 DESCRIPTION=LSI Logic MegaRAID Text User Interface management tool
 EAPI=3
 HOMEPAGE=http://www.lsi.com
 KEYWORDS=~amd64 ~x86
 LICENSE=LSI
-RESTRICT=mirror
+RESTRICT=mirror fetch
 SLOT=0
 SRC_URI=http://www.lsi.com/downloads/Public/MegaRAID%20Common%20Files/ut_linux_mgr_5.20.zip
 _eclasses_=multilib	5f4ad6cf85e365e8f0c6050ddd21659e	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68
-_md5_=0649ea54e038950a072e26040c75a2e0
+_md5_=8a0526f18ed87e4cb3123b0dcb1ad0fa

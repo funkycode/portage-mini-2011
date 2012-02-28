@@ -1,0 +1,11 @@
+DEFINED_PHASES=compile install prepare test
+DEPEND=dev-lang/perl
+DESCRIPTION=Primer Design for PCR reactions
+EAPI=3
+HOMEPAGE=http://primer3.sourceforge.net/
+KEYWORDS=~amd64 ~ppc ~ppc64 ~sparc ~x86 ~amd64-linux ~x86-linux ~ppc-macos ~sparc-solaris
+LICENSE=GPL-2
+SLOT=0
+SRC_URI=mirror://sourceforge/primer3/primer3-2.3.0.tar.gz
+_eclasses_=multilib	5f4ad6cf85e365e8f0c6050ddd21659e	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68
+_md5_=a5ac210eecc8b192bbad9c66cef7dcd4

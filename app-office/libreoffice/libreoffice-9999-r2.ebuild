@@ -1,6 +1,6 @@
 # Copyright 1999-2012 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/app-office/libreoffice/libreoffice-9999-r2.ebuild,v 1.25 2012/02/24 13:17:17 scarabeus Exp $
+# $Header: /var/cvsroot/gentoo-x86/app-office/libreoffice/libreoffice-9999-r2.ebuild,v 1.28 2012/02/27 21:44:55 scarabeus Exp $
 
 EAPI=4
 
@@ -69,7 +69,7 @@ unset ADDONS_URI
 unset EXT_URI
 unset ADDONS_SRC
 
-IUSE="binfilter +branding dbus debug eds gnome +graphite gstreamer +gtk gtk3
+IUSE="binfilter +branding +cups dbus debug eds gnome +graphite gstreamer +gtk gtk3
 jemalloc kde mysql +nsplugin odk opengl pdfimport postgres svg test +vba
 +webdav +xmlsec"
 LICENSE="LGPL-3"
@@ -95,7 +95,7 @@ COMMON_DEPEND="
 	dev-libs/expat
 	>=dev-libs/glib-2.28
 	>=dev-libs/hyphen-2.7.1
-	>=dev-libs/icu-4.8.1-r1
+	>=dev-libs/icu-4.8.1.1
 	>=dev-lang/perl-5.0
 	>=dev-libs/openssl-1.0.0d
 	>=dev-libs/redland-1.0.14[ssl]
@@ -104,7 +104,6 @@ COMMON_DEPEND="
 	>=media-libs/libpng-1.4
 	media-libs/libcdr
 	media-libs/libvisio
-	net-print/cups
 	sci-mathematics/lpsolve
 	>=sys-libs/db-4.8
 	virtual/jpeg
@@ -149,6 +148,7 @@ RDEPEND="${COMMON_DEPEND}
 	!app-office/openoffice
 	media-fonts/libertine-ttf
 	media-fonts/liberation-fonts
+	cups? ( net-print/cups )
 	java? ( >=virtual/jre-1.6 )
 "
 
@@ -172,6 +172,7 @@ DEPEND="${COMMON_DEPEND}
 	media-libs/sampleicc
 	>=net-misc/curl-7.21.4
 	net-misc/npapi-sdk
+	net-print/cups
 	>=sys-apps/findutils-4.4.2
 	sys-devel/bison
 	sys-apps/coreutils
@@ -496,6 +497,9 @@ pkg_postinst() {
 	kde4-base_pkg_postinst
 
 	pax-mark -m "${EPREFIX}"/usr/$(get_libdir)/libreoffice/program/soffice.bin
+
+	use cups || \
+		ewarn 'You will need net-print/cups to be able to print with libreoffice.'
 }
 
 pkg_postrm() {

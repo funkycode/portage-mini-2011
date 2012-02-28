@@ -1,6 +1,6 @@
 # Copyright 1999-2012 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/dev-ruby/syslogger/syslogger-1.2.5.ebuild,v 1.1 2012/01/22 18:45:01 flameeyes Exp $
+# $Header: /var/cvsroot/gentoo-x86/dev-ruby/syslogger/syslogger-1.2.5.ebuild,v 1.2 2012/02/27 20:45:24 flameeyes Exp $
 
 EAPI=4
 USE_RUBY="ruby18 ree18 ruby19"
@@ -21,7 +21,7 @@ DESCRIPTION="Drop-in replacement for the standard Logger, that logs to the syslo
 HOMEPAGE="https://github.com/crohr/syslogger"
 
 LICENSE="MIT"
-SLOT="3"
+SLOT="0"
 KEYWORDS="~amd64"
 IUSE=""
 
