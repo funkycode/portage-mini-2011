@@ -1,0 +1,13 @@
+DEFINED_PHASES=compile install postinst postrm prepare setup unpack
+DEPEND=>=dev-lang/python-2.5[sqlite] >=dev-python/m2crypto-0.16 >=dev-python/wxpython-2.8 >=dev-python/apsw-3.6 >=dev-libs/openssl-0.9.8 vlc? ( >=media-video/vlc-1.0.1 ) app-arch/unzip >=app-admin/eselect-python-20091230 || ( =dev-lang/python-2.7* =dev-lang/python-2.6* =dev-lang/python-2.5* )
+DESCRIPTION=Bittorrent client that does not require a website to discover content
+EAPI=4
+HOMEPAGE=http://www.tribler.org/
+IUSE=vlc
+KEYWORDS=~amd64 ~x86
+LICENSE=LGPL-2.1
+RDEPEND=>=dev-lang/python-2.5[sqlite] >=dev-python/m2crypto-0.16 >=dev-python/wxpython-2.8 >=dev-python/apsw-3.6 >=dev-libs/openssl-0.9.8 vlc? ( >=media-video/vlc-1.0.1 ) >=app-admin/eselect-python-20091230 || ( =dev-lang/python-2.7* =dev-lang/python-2.6* =dev-lang/python-2.5* )
+SLOT=0
+SRC_URI=http://dl.tribler.org/tribler_5.5.18-1ubuntu1_all.deb
+_eclasses_=eutils	80d5ff61404a8ac834527cfb70ab2fae	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	portability	536c5e70c5fb252ed3b769e04aa3f05b	python	06dff99bcab2fd584bd6d2aa6019ee19	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
+_md5_=e47171b54d9a4ee72cc150d3537bd706

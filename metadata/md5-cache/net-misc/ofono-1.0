@@ -1,0 +1,13 @@
+DEFINED_PHASES=configure install prepare
+DEPEND=>=sys-apps/dbus-1.2.24 >=dev-libs/glib-2.16 bluetooth? ( >=net-wireless/bluez-4.61 ) caps? ( sys-libs/libcap-ng ) udev? ( >=sys-fs/udev-143 ) examples? ( dev-python/dbus-python ) tools? ( dev-libs/libusb:1 ) dev-util/pkgconfig !<sys-apps/systemd-29-r4 !=sys-apps/systemd-37-r1
+DESCRIPTION=Open Source mobile telephony (GSM/UMTS) daemon.
+EAPI=2
+HOMEPAGE=http://ofono.org/
+IUSE=+atmodem bluetooth +caps +cdmamodem examples +isimodem +phonesim threads tools +udev
+KEYWORDS=~arm ~amd64 ~x86
+LICENSE=GPL-2
+RDEPEND=>=sys-apps/dbus-1.2.24 >=dev-libs/glib-2.16 bluetooth? ( >=net-wireless/bluez-4.61 ) caps? ( sys-libs/libcap-ng ) udev? ( >=sys-fs/udev-143 ) examples? ( dev-python/dbus-python ) tools? ( dev-libs/libusb:1 )
+SLOT=0
+SRC_URI=mirror://kernel/linux/network/ofono/ofono-1.0.tar.bz2
+_eclasses_=multilib	5f4ad6cf85e365e8f0c6050ddd21659e	systemd	70a153740015c3457222dbdd8e07c1f7	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68
+_md5_=832a89e2b859c3bdb52a6a87c5741fe9

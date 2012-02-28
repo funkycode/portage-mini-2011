@@ -1,0 +1,13 @@
+DEFINED_PHASES=compile configure install prepare unpack
+DEPEND=app-text/texi2html dev-util/pkgconfig sys-libs/zlib[static-libs] dev-libs/glib[static-libs]
+DESCRIPTION=Open source dynamic CPU translator
+EAPI=4
+HOMEPAGE=http://www.qemu.org
+IUSE=+qemu_user_targets_i386 +qemu_user_targets_x86_64 +qemu_user_targets_alpha +qemu_user_targets_arm +qemu_user_targets_cris +qemu_user_targets_m68k +qemu_user_targets_microblaze +qemu_user_targets_microblazeel +qemu_user_targets_mips +qemu_user_targets_mipsel +qemu_user_targets_ppc +qemu_user_targets_ppc64 +qemu_user_targets_sh4 +qemu_user_targets_sh4eb +qemu_user_targets_sparc +qemu_user_targets_sparc64 +qemu_user_targets_s390x +qemu_user_targets_armeb +qemu_user_targets_ppc64abi32 +qemu_user_targets_sparc32plus +qemu_user_targets_unicore32
+KEYWORDS=~amd64 ~ppc ~x86 ~ppc64
+LICENSE=GPL-2 LGPL-2.1
+RESTRICT=test
+SLOT=0
+SRC_URI=http://wiki.qemu.org/download/qemu-1.0.tar.gz http://dev.gentoo.org/~lu_zero/distfiles/qemu-1.0-patches.tar.xz
+_eclasses_=base	5f35078c26d6c60556d5c8a2feb4f84f	eutils	80d5ff61404a8ac834527cfb70ab2fae	flag-o-matic	66cb710a2aa184a5687fe1289d7973ab	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	pax-utils	3551398d6ede2b572568832730cc2a45	portability	536c5e70c5fb252ed3b769e04aa3f05b	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
+_md5_=3284712b22cc3d74644294c9002cddf9

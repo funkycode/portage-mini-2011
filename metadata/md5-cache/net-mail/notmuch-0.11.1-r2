@@ -1,0 +1,14 @@
+DEFINED_PHASES=compile configure install postinst postrm prepare setup
+DEPEND=>=dev-libs/glib-2.14 dev-libs/gmime:2.4 dev-libs/xapian doc? ( python? ( dev-python/sphinx ) ) sys-libs/talloc debug? ( dev-util/valgrind ) emacs? ( >=virtual/emacs-23 ) x86? ( >=dev-libs/xapian-1.2.7-r2 ) vim? ( || ( >=app-editors/vim-7.0 >=app-editors/gvim-7.0 ) ) dev-util/pkgconfig test? ( app-misc/dtach sys-devel/gdb ) >=app-admin/eselect-python-20091230 python? ( || ( =dev-lang/python-2.7* =dev-lang/python-2.6* ) )
+DESCRIPTION=The mail indexer
+EAPI=4
+HOMEPAGE=http://notmuchmail.org/
+IUSE=bash-completion crypt debug doc emacs nmbug python test vim zsh-completion
+KEYWORDS=~amd64 ~x86
+LICENSE=GPL-3
+RDEPEND=>=dev-libs/glib-2.14 dev-libs/gmime:2.4 dev-libs/xapian doc? ( python? ( dev-python/sphinx ) ) sys-libs/talloc debug? ( dev-util/valgrind ) emacs? ( >=virtual/emacs-23 ) x86? ( >=dev-libs/xapian-1.2.7-r2 ) vim? ( || ( >=app-editors/vim-7.0 >=app-editors/gvim-7.0 ) ) crypt? ( app-crypt/gnupg ) nmbug? ( dev-vcs/git virtual/perl-File-Temp virtual/perl-PodParser ) zsh-completion? ( app-shells/zsh ) >=app-admin/eselect-python-20091230 python? ( || ( =dev-lang/python-2.7* =dev-lang/python-2.6* ) )
+REQUIRED_USE=test? ( crypt emacs )
+SLOT=0
+SRC_URI=http://notmuchmail.org/releases/notmuch-0.11.1.tar.gz
+_eclasses_=distutils	c8b0cab86443a130f3737ad1456d57d3	elisp-common	aa9676ce708f8aacf54ff9df8015963b	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	python	06dff99bcab2fd584bd6d2aa6019ee19	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68
+_md5_=92ec8ac3a7ff505883ea180edbefc783
