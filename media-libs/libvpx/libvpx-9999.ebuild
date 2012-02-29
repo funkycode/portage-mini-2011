@@ -1,6 +1,6 @@
-# Copyright 1999-2011 Gentoo Foundation
+# Copyright 1999-2012 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/media-libs/libvpx/libvpx-9999.ebuild,v 1.19 2011/12/26 11:07:28 armin76 Exp $
+# $Header: /var/cvsroot/gentoo-x86/media-libs/libvpx/libvpx-9999.ebuild,v 1.20 2012/02/29 11:55:03 aballier Exp $
 
 EAPI=4
 inherit multilib toolchain-funcs
@@ -15,6 +15,7 @@ elif [[ ${PV} == *pre* ]]; then
 else
 	SRC_URI="http://webm.googlecode.com/files/${PN}-v${PV}.tar.bz2"
 	KEYWORDS="~alpha ~amd64 ~arm ~ia64 ~x86 ~x86-fbsd ~amd64-linux ~x86-linux"
+	S="${WORKDIR}/${PN}-v${PV}"
 fi
 
 DESCRIPTION="WebM VP8 Codec SDK"

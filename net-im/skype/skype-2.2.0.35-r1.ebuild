@@ -1,6 +1,6 @@
 # Copyright 1999-2012 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/net-im/skype/skype-2.2.0.35-r1.ebuild,v 1.2 2012/02/28 21:24:54 prometheanfire Exp $
+# $Header: /var/cvsroot/gentoo-x86/net-im/skype/skype-2.2.0.35-r1.ebuild,v 1.5 2012/02/29 13:07:46 sping Exp $
 
 EAPI=4
 inherit gnome2-utils eutils qt4-r2 pax-utils
@@ -64,22 +64,25 @@ pkg_setup() {
 	:
 }
 
-src_install() {
-	local MY_S="${S}"
-	use qt-static && MY_S="${WORKDIR}/${PN}_static-${PV}"
-	cd "${MY_S}"
+src_unpack() {
+	unpack ${A} || die
+	[[ ! -d "${S}" ]] && {
+		mv skype* "${S}" || die
+	}
+}
 
+src_install() {
 	exeinto /opt/skype
-	doexe skype || die
+	doexe skype
 	fowners root:audio /opt/skype/skype
 	make_wrapper skype ./skype /opt/skype /opt/skype
 
 	insinto /opt/skype/sounds
-	doins sounds/*.wav || die
+	doins sounds/*.wav
 
 	if ! use qt-static; then
 		insinto /etc/dbus-1/system.d
-		doins skype.conf || die
+		doins skype.conf
 	fi
 
 	if ! use qt-static; then
@@ -87,15 +90,15 @@ src_install() {
 	fi
 
 	insinto /opt/skype/lang
-	doins lang/*.qm || die
+	doins lang/*.qm
 
 	insinto /opt/skype/avatars
-	doins avatars/*.png || die
+	doins avatars/*.png
 
 	local res
 	for res in 16 32 48; do
 		insinto /usr/share/icons/hicolor/${res}x${res}/apps
-		newins icons/SkypeBlue_${res}x${res}.png skype.png || die
+		newins icons/SkypeBlue_${res}x${res}.png skype.png
 	done
 
 	dodoc README
@@ -105,7 +108,7 @@ src_install() {
 	dosym /opt/skype /usr/share/skype #Fix for disabled sound notification
 
 	if use pax_kernel; then
-		pax-mark m /opt/skype/skype || die
+		pax-mark Cm "${D}"/opt/skype/skype || die
 		eqawarn "You have set USE=pax_kernel meaning that you intend to run"
 		eqawarn "skype under a PaX enabled kernel.  To do so, we must modify"
 		eqawarn "the skype binary itself and this *may* lead to breakage!  If"
