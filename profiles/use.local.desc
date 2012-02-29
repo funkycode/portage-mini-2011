@@ -903,7 +903,6 @@ app-text/wpd2odt:visio - Add support for visio format using media-libs/libvisio
 app-text/wpd2odt:wpg - Add support for wpg format using app-text/libwpg
 app-text/wpd2odt:wps - Add support for wps format using app-text/libwps
 app-text/wv:tools - Install optional utilities considered deprecated in favor of using AbiWord.
-app-text/xpdf:nodrm - Disable the drm feature decoder
 app-text/yagf:cuneiform - Enable support for the app-text/cuneiform OCR engine.
 app-text/yagf:tesseract - Enable support for the tesseract OCR engine
 app-vim/gentoo-syntax:ignore-glep31 - Remove GLEP 31 (UTF-8 file encodings) settings
@@ -2736,6 +2735,7 @@ media-sound/csound:html - Install the html version of the manual
 media-sound/csound:image - Build the image opcodes
 media-sound/csound:keyboard - Build Virtual MIDI keyboard
 media-sound/csound:linear - Build the linear algebra Opcodes
+media-sound/csound:luajit - Use the lua just-in-time compiler dev-lang/luajit instead of dev-lang/lua
 media-sound/csound:portmidi - Build the PortMIDI I/O module
 media-sound/csound:samples - Install the HRTF datafiles for use with hrtfmove, hrtfmove2, hrtfstat, hrtfearly, and hrtfreverb
 media-sound/csound:stk - Build the stk opcodes
@@ -3010,23 +3010,30 @@ media-video/ffmpeg:3dnowext - Enable manually-optimised routines using the AMD 3
 media-video/ffmpeg:aacplus - AAC+ encoding via media-libs/libaacplus.
 media-video/ffmpeg:amr - Enables Adaptive Multi-Rate Audio support
 media-video/ffmpeg:ass - Enables media-libs/libass based subtitle renderer.
+media-video/ffmpeg:aviocat - Install aviocat: cat's an URL to another one, useful for dumping streams.
 media-video/ffmpeg:avx - Adds support for Advanced Vector Extensions instructions (Intel Sandy Bridge, AMD Bulldozer and later chips)
 media-video/ffmpeg:cdio - Enables audio CD grabbing with dev-libs/libcdio.
 media-video/ffmpeg:celt - Adds Xiph CELT audio decoding support via media-libs/celt
 media-video/ffmpeg:cpudetection - Enables runtime CPU detection (useful for bindist, compatibility on other CPUs)
+media-video/ffmpeg:cws2fws - Install cws2fws: converts cws files (Macromedia Flash, compressed) to fws ones (Macromedia Flash, uncompressed).
 media-video/ffmpeg:dirac - Enable Dirac video support (an advanced royalty-free video compression format) via the reference library: dirac.
 media-video/ffmpeg:faac - Use external faac library for AAC encoding
+media-video/ffmpeg:ffeval - Install ffeval: A simple expression evalutor.
 media-video/ffmpeg:frei0r - Enable frei0r wrapping in libavfilter
+media-video/ffmpeg:graph2dot - Install graph2dot: A tool to convert a libavfilter graph to a dot file.
 media-video/ffmpeg:hardcoded-tables - Use pre-calculated tables rather than calculating them on the fly.
+media-video/ffmpeg:ismindex - Install ismindex: A tool for creating smooth streaming manifests.
 media-video/ffmpeg:libv4l - Uses media-libs/libv4l for video4linux instead of direct calls. Adds support for more devices via the userspace library.
 media-video/ffmpeg:mmxext - Enables mmx2 support
 media-video/ffmpeg:network - Enables network streaming support
 media-video/ffmpeg:openssl - Enables dev-libs/openssl support. Adds support for encrypted network protocols (TLS/HTTPS).
 media-video/ffmpeg:pic - Force shared libraries to be built as PIC (this is slower)
+media-video/ffmpeg:pktdumper - Install pktdumper: Dumps packets as demuxed by libavformat.
 media-video/ffmpeg:qt-faststart - Build and install qt-faststart application
 media-video/ffmpeg:rtmp - Enable Real Time Messaging Protocol using librtmp
 media-video/ffmpeg:schroedinger - Enable Dirac video support (an advanced royalty-free video compression format) via libschroedinger (high-speed implementation in C of the Dirac codec).
-media-video/ffmpeg:ssse3 - faster floating point optimization for SSSE3 capable chips (Intel Core 2 and later chips)
+media-video/ffmpeg:ssse3 - Faster floating point optimization for SSSE3 capable chips (Intel Core 2 and later chips)
+media-video/ffmpeg:trasher - Install trasher: Writes burts of random data into a file. Great for testing error robustness/resilience/concealment.
 media-video/ffmpeg:vaapi - Enables VAAPI (Video Acceleration API) for hardware decoding
 media-video/ffmpeg:vdpau - Enables VDPAU decoders (requires nVidia video cards and binary nvidia-drivers to offload CPU processing to video card)
 media-video/ffmpeg:vis - Adds support for SIMD optimizations for UltraSPARC processors.
@@ -3666,6 +3673,7 @@ net-im/qutim:irc - Enable irc support
 net-im/qutim:mrim - Enable mrim plugin
 net-im/qutim:vkontakte - Enable vkontakte plugin
 net-im/qutim:yandexnarod - Enable yanderx.narod plugin
+net-im/skype:pax_kernel - Triggers a paxmarking of the binary
 net-im/skype:qt-static - Installs binaries statically linked to Qt
 net-im/telepathy-connection-managers:irc - Enable Internet Relay Chat (IRC) support.
 net-im/telepathy-connection-managers:jabber - Enable XMPP protocol handler (this is also Google Talk).
@@ -4849,6 +4857,8 @@ sys-block/tgt:fcp - Add support for new FC protocol
 sys-block/tgt:ibmvio - Add support for IBM Virtual I/O
 sys-boot/grub:device-mapper - Enable support for sys-fs/device-mapper
 sys-boot/grub:efiemu - Build and install the efiemu runtimes
+sys-boot/grub:libzfs - Enable support for sys-fs/zfs
+sys-boot/grub:mount - Build and install the grub-mount utility
 sys-boot/lilo:device-mapper - Enable support for sys-fs/device-mapper
 sys-boot/lilo:minimal - Do not install the dolilo helper script
 sys-boot/lilo:pxeserial - Avoid character echo on PXE serial console
@@ -5044,6 +5054,8 @@ sys-fs/udev:keymap - map custom hardware's multimedia keys
 sys-fs/udev:old-hd-rules - Install rules for /dev/hd* devices, removed upstream at udev-148
 sys-fs/udev:rule_generator - enable persistent network and optical device rule generator
 sys-fs/udisks:remote-access - Control whether connections from other clients over LAN are allowed
+sys-fs/zfs:dracut - Install dracut module
+sys-fs/zfs:test-suite - Install regression test suite
 sys-infiniband/openib:dapl - Automatically generated description for dapl
 sys-infiniband/openib:diags - Automatically generated description for diags
 sys-infiniband/openib:ehca - Automatically generated description for ehca
@@ -5531,6 +5543,7 @@ x11-terms/mlterm:scim - Enable app-i18n/scim support
 x11-terms/mlterm:uim - Enable app-i18n/uim support
 x11-terms/mrxvt:menubar - Enable mrxvt menubar
 x11-terms/mrxvt:utempter - REcords user logins. Useful on multi-user systems
+x11-terms/roxterm:gtk3 - Use gtk3 instead of gtk2 (and associated version of x11-libs/vte)
 x11-terms/rxvt:linuxkeys - Define LINUX_KEYS (changes Home/End key)
 x11-terms/rxvt:xgetdefault - Enable resources via X instead of rxvt small version
 x11-terms/rxvt-unicode:256-color - Enable 256 color support

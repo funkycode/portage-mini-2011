@@ -1,0 +1,12 @@
+DEFINED_PHASES=install prepare test
+DEPEND=net-libs/libpcap net-libs/libnet:1.1
+DESCRIPTION=A utility to see if a specific IP address is taken and what MAC address owns it
+EAPI=4
+HOMEPAGE=http://www.habets.pp.se/synscan/programs.php?prog=arping
+KEYWORDS=~amd64 ~arm ~hppa ~ia64 ~ppc ~ppc64 ~s390 ~sh ~sparc ~x86 ~x86-fbsd ~amd64-linux ~x86-linux ~x86-macos
+LICENSE=GPL-2
+RDEPEND=net-libs/libpcap net-libs/libnet:1.1
+SLOT=2
+SRC_URI=http://www.habets.pp.se/synscan/files/arping-2.11.tar.gz
+_eclasses_=multilib	5f4ad6cf85e365e8f0c6050ddd21659e	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68
+_md5_=802ed2d146a52a787ca4b17af07c40b9

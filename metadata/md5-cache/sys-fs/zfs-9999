@@ -3,9 +3,9 @@ DEPEND=>=sys-kernel/spl-9999 sys-apps/util-linux[static-libs?] sys-libs/zlib[sta
 DESCRIPTION=Native ZFS for Linux
 EAPI=4
 HOMEPAGE=http://zfsonlinux.org/
-IUSE=custom-cflags debug static-libs kernel_linux
+IUSE=custom-cflags debug dracut test-suite static-libs kernel_linux
 LICENSE=CDDL GPL-2
-RDEPEND=>=sys-kernel/spl-9999 sys-apps/util-linux[static-libs?] sys-libs/zlib[static-libs?] !sys-fs/zfs-fuse kernel_linux? ( sys-apps/module-init-tools )
+RDEPEND=>=sys-kernel/spl-9999 sys-apps/util-linux[static-libs?] sys-libs/zlib[static-libs?] !sys-fs/zfs-fuse sys-fs/udev test-suite? ( sys-apps/gawk sys-apps/util-linux sys-block/parted sys-fs/lsscsi sys-fs/mdadm sys-process/procps virtual/modutils ) kernel_linux? ( sys-apps/module-init-tools )
 SLOT=0
 _eclasses_=autotools	3e1370c6fcb964b30ad99070a466441d	autotools-utils	748973db029ba52a1991320e1034bad9	eutils	80d5ff61404a8ac834527cfb70ab2fae	flag-o-matic	66cb710a2aa184a5687fe1289d7973ab	git-2	6bb20ec18cca375571bcbe67bcf2e1d7	libtool	5f623f5a211fb1b2d84d88ee49959a54	linux-info	cc184ad3383ffb6ffbaa82f53608e77f	linux-mod	a4e07f78bacb6b129ea7b18ad060dbfc	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	portability	536c5e70c5fb252ed3b769e04aa3f05b	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e	versionator	6601b4c5b3f019a993db59a50e1854e4
-_md5_=0ae3c9db781818d1a26b4eb0bba2c8be
+_md5_=cf5203cc1452dc77e198e67cf8ef7246

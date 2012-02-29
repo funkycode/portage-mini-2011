@@ -1,6 +1,6 @@
 # Copyright 1999-2012 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/media-libs/xine-lib/xine-lib-1.2.1.ebuild,v 1.3 2012/02/28 16:41:12 jer Exp $
+# $Header: /var/cvsroot/gentoo-x86/media-libs/xine-lib/xine-lib-1.2.1.ebuild,v 1.5 2012/02/29 01:12:55 aballier Exp $
 
 EAPI=4
 
@@ -10,11 +10,11 @@ if [[ ${PV} == *9999* ]]; then
 	EHG_REPO_URI="http://hg.debian.org/hg/xine-lib/xine-lib-1.2"
 	_live_inherits="autotools mercurial"
 else
-	KEYWORDS="amd64 hppa ~ppc ~ppc64 ~x86 ~x86-fbsd"
+	KEYWORDS="amd64 hppa ppc ~ppc64 ~x86 ~x86-fbsd"
 	SRC_URI="mirror://sourceforge/xine/${P}.tar.xz"
 fi
 
-inherit libtool multilib ${_live_inherits}
+inherit eutils libtool multilib ${_live_inherits}
 
 DESCRIPTION="Core libraries for Xine movie player"
 HOMEPAGE="http://xine.sourceforge.net/"
@@ -113,6 +113,7 @@ REQUIRED_USE="vidix? ( || ( X fbcon ) )
 	xinerama? ( X )"
 
 src_prepare() {
+	epatch "${FILESDIR}/${P}-ffmpeg-git.patch"
 	sed -i -e '/define VDR_ABS_FIFO_DIR/s|".*"|"/var/vdr/xine"|' src/vdr/input_vdr.c || die
 
 	if [[ ${PV} == *9999* ]]; then

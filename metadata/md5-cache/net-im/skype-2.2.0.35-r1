@@ -3,7 +3,7 @@ DEPEND=!qt-static? ( x11-libs/qt-core:4 ) >=sys-apps/sed-4
 DESCRIPTION=A P2P-VoiceIP client.
 EAPI=4
 HOMEPAGE=http://www.skype.com/
-IUSE=qt-static
+IUSE=qt-static pax_kernel
 KEYWORDS=~amd64 ~x86
 LICENSE=skype-eula
 RDEPEND=amd64? ( >=app-emulation/emul-linux-x86-xlibs-20091231 >=app-emulation/emul-linux-x86-baselibs-20091231 >=app-emulation/emul-linux-x86-soundlibs-20091231 >=app-emulation/emul-linux-x86-opengl-20091231 !qt-static? ( >=app-emulation/emul-linux-x86-qtlibs-20091231 ) ) x86? ( >=media-libs/alsa-lib-1.0.11 x11-libs/libXScrnSaver x11-libs/libXv qt-static? ( media-libs/alsa-lib x11-libs/libXv x11-libs/libXScrnSaver x11-libs/libSM x11-libs/libICE x11-libs/libXi x11-libs/libXrender x11-libs/libXrandr media-libs/freetype media-libs/fontconfig x11-libs/libXext x11-libs/libX11 dev-libs/glib:2 ) !qt-static? ( media-libs/alsa-lib x11-libs/libXv x11-libs/libXScrnSaver x11-libs/qt-gui:4[accessibility,dbus] x11-libs/qt-dbus:4 x11-libs/libXext x11-libs/libX11 ) ) virtual/ttf-fonts
@@ -11,4 +11,4 @@ RESTRICT=mirror strip
 SLOT=0
 SRC_URI=!qt-static? ( http://download.skype.com/linux/skype-2.2.0.35.tar.bz2 ) qt-static? ( http://download.skype.com/linux/skype_static-2.2.0.35.tar.bz2 )
 _eclasses_=base	5f35078c26d6c60556d5c8a2feb4f84f	eutils	80d5ff61404a8ac834527cfb70ab2fae	gnome2-utils	b5ca2ccadb60760889faa3bccba121d9	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	pax-utils	3551398d6ede2b572568832730cc2a45	portability	536c5e70c5fb252ed3b769e04aa3f05b	qt4-r2	0d58394f40a89c8ec116c71510d7584b	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
-_md5_=543818c6e1cd857de42a09da2bddc3be
+_md5_=f8e822a22c01bcb3496b857ef2b93060

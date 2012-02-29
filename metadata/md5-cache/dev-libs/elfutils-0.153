@@ -1,4 +1,4 @@
-DEFINED_PHASES=compile configure install prepare test
+DEFINED_PHASES=configure install prepare test
 DEPEND=zlib? ( >=sys-libs/zlib-1.2.2.3 ) bzip2? ( app-arch/bzip2 ) lzma? ( app-arch/xz-utils ) !dev-libs/libelf nls? ( sys-devel/gettext ) >=sys-devel/flex-2.5.4a sys-devel/m4
 DESCRIPTION=Libraries/utilities to handle ELF objects (drop in replacement for libelf)
 EAPI=3
@@ -10,4 +10,4 @@ RDEPEND=zlib? ( >=sys-libs/zlib-1.2.2.3 ) bzip2? ( app-arch/bzip2 ) lzma? ( app-
 SLOT=0
 SRC_URI=https://fedorahosted.org/releases/e/l/elfutils/0.153/elfutils-0.153.tar.bz2 https://fedorahosted.org/releases/e/l/elfutils/0.153/elfutils-portability.patch -> elfutils-0.153-portability.patch https://fedorahosted.org/releases/e/l/elfutils/0.153/elfutils-robustify.patch -> elfutils-0.153-robustify.patch
 _eclasses_=eutils	80d5ff61404a8ac834527cfb70ab2fae	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	portability	536c5e70c5fb252ed3b769e04aa3f05b	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
-_md5_=7e5de93cfd59acd237802510cd2df1cd
+_md5_=a9348dfdb52892a8a33f2d78346d3bb1
