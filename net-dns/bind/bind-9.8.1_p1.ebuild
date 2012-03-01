@@ -1,6 +1,6 @@
 # Copyright 1999-2012 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/net-dns/bind/bind-9.8.1_p1.ebuild,v 1.7 2012/02/23 20:24:39 ranger Exp $
+# $Header: /var/cvsroot/gentoo-x86/net-dns/bind/bind-9.8.1_p1.ebuild,v 1.8 2012/02/29 19:05:51 idl0r Exp $
 
 # Re dlz/mysql and threads, needs to be verified..
 # MySQL uses thread local storage in its C api. Thus MySQL
@@ -42,7 +42,7 @@ LICENSE="as-is"
 SLOT="0"
 KEYWORDS="~alpha amd64 ~arm hppa ~ia64 ~mips ppc ~ppc64 ~s390 ~sh ~sparc ~x86 ~x86-fbsd"
 IUSE="berkdb caps dlz doc geoip gost gssapi idn ipv6 ldap mysql odbc pkcs11 postgres rpz sdb-ldap
-selinux ssl threads urandom xml"
+selinux ssl static-libs threads urandom xml"
 
 REQUIRED_USE="postgres? ( dlz )
 	berkdb? ( dlz )
@@ -168,6 +168,7 @@ src_configure() {
 		$(use_with pkcs11) \
 		$(use_enable caps linux-caps) \
 		$(use_with gost) \
+		$(use_enable static-libs static) \
 		${myconf}
 
 	# bug #151839

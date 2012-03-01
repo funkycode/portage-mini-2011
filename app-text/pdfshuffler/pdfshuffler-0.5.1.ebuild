@@ -1,6 +1,6 @@
-# Copyright 1999-2011 Gentoo Foundation
+# Copyright 1999-2012 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/app-text/pdfshuffler/pdfshuffler-0.5.1.ebuild,v 1.3 2011/02/10 23:05:18 hwoarang Exp $
+# $Header: /var/cvsroot/gentoo-x86/app-text/pdfshuffler/pdfshuffler-0.5.1.ebuild,v 1.4 2012/02/29 23:54:20 marienz Exp $
 
 EAPI="3"
 PYTHON_DEPEND="2"
@@ -17,7 +17,7 @@ KEYWORDS="amd64 x86"
 IUSE=""
 
 DEPEND="dev-python/pyPdf
-	dev-python/python-poppler"
+	<=dev-python/python-poppler-0.12.1-r2"
 RDEPEND="${DEPEND}"
 
 DOCS="ChangeLog README TODO AUTHORS"
