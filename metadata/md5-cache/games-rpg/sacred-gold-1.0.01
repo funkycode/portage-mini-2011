@@ -3,9 +3,10 @@ DESCRIPTION=Action role-playing game
 HOMEPAGE=http://linuxgamepublishing.com/info.php?id=sacred
 KEYWORDS=-* ~amd64 ~x86
 LICENSE=as-is GPL-2 LGPL-2
+PROPERTIES=interactive
 RDEPEND=virtual/opengl x86? ( x11-libs/libX11 x11-libs/libXext x11-libs/libXi ) amd64? ( app-emulation/emul-linux-x86-xlibs )
 RESTRICT=strip
 SLOT=0
 SRC_URI=http://updatefiles.linuxgamepublishing.com/sacred/sacred-1.0-1.0.01-x86.run
-_eclasses_=base	5f35078c26d6c60556d5c8a2feb4f84f	eutils	80d5ff61404a8ac834527cfb70ab2fae	games	f75cdbfdf1760e514ca65e2f6c6a7c72	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	portability	536c5e70c5fb252ed3b769e04aa3f05b	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	unpacker	3bad9303b54075673d368b65e22dfdc8	user	32a09e82e2f592bf88ad2fd08525166e	versionator	6601b4c5b3f019a993db59a50e1854e4
-_md5_=647f01df6a5fc0f4d2a9ca9da888324d
+_eclasses_=base	5f35078c26d6c60556d5c8a2feb4f84f	cdrom	415b847346ef9001a89e5c7da6711215	eutils	bd3e3c88ad13150d70c42729dc4eb9d0	games	f75cdbfdf1760e514ca65e2f6c6a7c72	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	portability	536c5e70c5fb252ed3b769e04aa3f05b	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	unpacker	3bad9303b54075673d368b65e22dfdc8	user	32a09e82e2f592bf88ad2fd08525166e	versionator	6601b4c5b3f019a993db59a50e1854e4
+_md5_=77c54fd38ae8d2e719e97c7057b4eb0e

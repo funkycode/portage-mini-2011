@@ -6,5 +6,5 @@ KEYWORDS=amd64 ppc ppc64 sparc x86
 LICENSE=MIT
 SLOT=0
 SRC_URI=http://repetae.net/john/computer/haskell/DrIFT/drop/DrIFT-2.2.0.tar.gz
-_eclasses_=eutils	80d5ff61404a8ac834527cfb70ab2fae	ghc-package	83329f14231f6ba420fb965d858f37c0	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	portability	536c5e70c5fb252ed3b769e04aa3f05b	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e	versionator	6601b4c5b3f019a993db59a50e1854e4
+_eclasses_=eutils	bd3e3c88ad13150d70c42729dc4eb9d0	ghc-package	83329f14231f6ba420fb965d858f37c0	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e	versionator	6601b4c5b3f019a993db59a50e1854e4
 _md5_=ad612040670c681fcd122869a91299b7

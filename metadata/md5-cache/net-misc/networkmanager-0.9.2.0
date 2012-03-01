@@ -10,5 +10,5 @@ RDEPEND=>=sys-apps/dbus-1.2 >=dev-libs/dbus-glib-0.75 >=net-wireless/wireless-to
 REQUIRED_USE=^^ ( nss gnutls ) ^^ ( dhclient dhcpcd )
 SLOT=0
 SRC_URI=mirror://gnome/sources/NetworkManager/0.9/NetworkManager-0.9.2.0.tar.xz
-_eclasses_=autotools	3e1370c6fcb964b30ad99070a466441d	eutils	80d5ff61404a8ac834527cfb70ab2fae	gnome.org	8fef8f967214f56e08fa92d61163d891	libtool	5f623f5a211fb1b2d84d88ee49959a54	linux-info	cc184ad3383ffb6ffbaa82f53608e77f	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	portability	536c5e70c5fb252ed3b769e04aa3f05b	systemd	70a153740015c3457222dbdd8e07c1f7	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e	versionator	6601b4c5b3f019a993db59a50e1854e4
+_eclasses_=autotools	3e1370c6fcb964b30ad99070a466441d	eutils	bd3e3c88ad13150d70c42729dc4eb9d0	gnome.org	8fef8f967214f56e08fa92d61163d891	libtool	5f623f5a211fb1b2d84d88ee49959a54	linux-info	cc184ad3383ffb6ffbaa82f53608e77f	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	systemd	70a153740015c3457222dbdd8e07c1f7	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e	versionator	6601b4c5b3f019a993db59a50e1854e4
 _md5_=9cfa7e05ad4b64d6f9545096a7c12f4f

@@ -8,5 +8,5 @@ LICENSE=GPL-2
 RDEPEND=>=dev-libs/libgeier-0.13 >=gnome-extra/gtkhtml-3.8:3.14 gnome-base/libgnomeui sys-devel/gettext >=dev-scheme/guile-1.8.0[regex,deprecated]
 SLOT=0
 SRC_URI=http://www.taxbird.de/download/taxbird/0.18/taxbird-0.18.tar.gz
-_eclasses_=eutils	80d5ff61404a8ac834527cfb70ab2fae	fdo-mime	0acfe1a88fd8751a1d5dc671168219fa	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	portability	536c5e70c5fb252ed3b769e04aa3f05b	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
+_eclasses_=eutils	bd3e3c88ad13150d70c42729dc4eb9d0	fdo-mime	0acfe1a88fd8751a1d5dc671168219fa	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
 _md5_=9c185e0ff2c5e4575b87540acd115aa3

@@ -8,5 +8,5 @@ LICENSE=GPL-2
 RDEPEND=selinux? ( sys-libs/libselinux ) pam? ( virtual/pam ) app-shells/bash >=app-misc/editor-wrapper-3 pam? ( >=sys-auth/pambase-20100310 ) virtual/mta >=sys-process/cronbase-0.3.2 !sys-process/vixie-cron !sys-process/bcron !sys-process/cronie !sys-process/dcron
 SLOT=0
 SRC_URI=http://fcron.free.fr/archives/fcron-3.0.6.src.tar.gz
-_eclasses_=cron	7f2ced83f02bd3c752860bd108b62e2c	eutils	80d5ff61404a8ac834527cfb70ab2fae	flag-o-matic	66cb710a2aa184a5687fe1289d7973ab	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	pam	3f746974e1cc47cabe3bd488c08cdc8e	portability	536c5e70c5fb252ed3b769e04aa3f05b	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
+_eclasses_=cron	7f2ced83f02bd3c752860bd108b62e2c	eutils	bd3e3c88ad13150d70c42729dc4eb9d0	flag-o-matic	66cb710a2aa184a5687fe1289d7973ab	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	pam	3f746974e1cc47cabe3bd488c08cdc8e	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
 _md5_=8fcfa595394907496c4e8cda8e06dcd3

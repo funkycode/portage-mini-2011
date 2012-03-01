@@ -9,5 +9,5 @@ LICENSE=GPL-2
 RDEPEND=dev-python/dbus-python dev-python/pygobject:2 dev-python/pyxdg dev-python/rdflib media-libs/raptor:2 extensions? ( gnome-extra/zeitgeist-extensions ) passiv? ( gnome-extra/zeitgeist-datahub ) plugins? ( gnome-extra/zeitgeist-datasources ) >=app-admin/eselect-python-20091230 =dev-lang/python-2* =dev-lang/python-2*[sqlite]
 SLOT=0
 SRC_URI=http://launchpad.net/zeitgeist/0.8/0.8.2/+download/zeitgeist-0.8.2.tar.gz
-_eclasses_=autotools	3e1370c6fcb964b30ad99070a466441d	autotools-utils	748973db029ba52a1991320e1034bad9	eutils	80d5ff61404a8ac834527cfb70ab2fae	libtool	5f623f5a211fb1b2d84d88ee49959a54	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	portability	536c5e70c5fb252ed3b769e04aa3f05b	python	06dff99bcab2fd584bd6d2aa6019ee19	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e	versionator	6601b4c5b3f019a993db59a50e1854e4
+_eclasses_=autotools	3e1370c6fcb964b30ad99070a466441d	autotools-utils	748973db029ba52a1991320e1034bad9	eutils	bd3e3c88ad13150d70c42729dc4eb9d0	libtool	5f623f5a211fb1b2d84d88ee49959a54	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	python	06dff99bcab2fd584bd6d2aa6019ee19	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e	versionator	6601b4c5b3f019a993db59a50e1854e4
 _md5_=4ba48c5ed331b4199fb723d2e092b263

@@ -9,5 +9,5 @@ LICENSE=GPL-2
 RDEPEND=>=dev-libs/expat-2.0.1 >=app-arch/bzip2-1.0.4 >=dev-libs/openssl-0.9.8o >=sys-libs/db-4.8.30:4.8[cxx] =dev-cpp/libmcpp-2.7.2 ruby? ( dev-lang/ruby:1.8 ) mono? ( dev-lang/mono ) !dev-python/IcePy !dev-ruby/IceRuby >=app-admin/eselect-python-20091230 python? ( =dev-lang/python-2* )
 SLOT=0
 SRC_URI=http://www.zeroc.com/download/Ice/3.4/Ice-3.4.0.tar.gz doc? ( http://www.zeroc.com/download/Ice/3.4/Ice-3.4.0.pdf.gz )
-_eclasses_=eutils	80d5ff61404a8ac834527cfb70ab2fae	java-utils-2	0b830e0a2e6c4bdf1c81fec1b53d95f1	mono	203a4295c06155d318bdff9c6b2d5e1c	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	portability	536c5e70c5fb252ed3b769e04aa3f05b	python	06dff99bcab2fd584bd6d2aa6019ee19	ruby-ng	927a565459a62f2839d06e03cfbe1440	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e	versionator	6601b4c5b3f019a993db59a50e1854e4
+_eclasses_=eutils	bd3e3c88ad13150d70c42729dc4eb9d0	java-utils-2	0b830e0a2e6c4bdf1c81fec1b53d95f1	mono	203a4295c06155d318bdff9c6b2d5e1c	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	python	06dff99bcab2fd584bd6d2aa6019ee19	ruby-ng	927a565459a62f2839d06e03cfbe1440	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e	versionator	6601b4c5b3f019a993db59a50e1854e4
 _md5_=f762f5dd35580d99b473432bf5374e0a
