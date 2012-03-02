@@ -10,5 +10,5 @@ RDEPEND=dev-db/sqlite:3 >=dev-libs/glib-2.22.0 dev-libs/openssl:0.9.8 media-libs
 RESTRICT=mirror strip
 SLOT=0
 SRC_URI=x86? ( https://spideroak.com/directdownload?platform=ubuntulucid&arch=i386&revision=9907 -> spideroak-bin-4.2.9907_x86.deb ) amd64? ( https://spideroak.com/directdownload?platform=ubuntulucid&arch=x86_64&revision=9907 -> spideroak-bin-4.2.9907_amd64.deb )
-_eclasses_=eutils	bd3e3c88ad13150d70c42729dc4eb9d0	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e	versionator	6601b4c5b3f019a993db59a50e1854e4
+_eclasses_=eutils	ba24d79270ea0022703f16b5de80051c	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e	versionator	6601b4c5b3f019a993db59a50e1854e4
 _md5_=a2c4ef45db4ad0440e7741b7360f922a

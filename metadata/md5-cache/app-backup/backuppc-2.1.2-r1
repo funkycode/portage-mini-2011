@@ -8,5 +8,5 @@ LICENSE=GPL-2
 RDEPEND=dev-perl/File-RsyncP app-arch/par2cmdline app-arch/gzip app-arch/bzip2 app-arch/unzip dev-perl/Archive-Zip virtual/mta samba? ( net-fs/samba ) >=app-admin/webapp-config-1.50.15
 SLOT=2.1.2-r1
 SRC_URI=mirror://sourceforge/backuppc/BackupPC-2.1.2.tar.gz mirror://gentoo/backuppc-2.1.2-gentoo-0.1.tar.bz2
-_eclasses_=eutils	bd3e3c88ad13150d70c42729dc4eb9d0	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e	webapp	30d951d5c98c4f31c7999ab4ba4806d1
+_eclasses_=eutils	ba24d79270ea0022703f16b5de80051c	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e	webapp	30d951d5c98c4f31c7999ab4ba4806d1
 _md5_=c1cd38becac246f6d202f4a76b445eee

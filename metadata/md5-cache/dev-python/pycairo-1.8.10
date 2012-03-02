@@ -9,5 +9,5 @@ LICENSE=|| ( LGPL-2.1 MPL-1.1 )
 RDEPEND=>=x11-libs/cairo-1.8.10[svg?] >=app-admin/eselect-python-20091230 || ( =dev-lang/python-2.7* =dev-lang/python-2.6* )
 SLOT=0
 SRC_URI=http://cairographics.org/releases/py2cairo-1.8.10.tar.gz
-_eclasses_=distutils	c8b0cab86443a130f3737ad1456d57d3	eutils	bd3e3c88ad13150d70c42729dc4eb9d0	flag-o-matic	66cb710a2aa184a5687fe1289d7973ab	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	python	06dff99bcab2fd584bd6d2aa6019ee19	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
+_eclasses_=distutils	c8b0cab86443a130f3737ad1456d57d3	eutils	ba24d79270ea0022703f16b5de80051c	flag-o-matic	66cb710a2aa184a5687fe1289d7973ab	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	python	06dff99bcab2fd584bd6d2aa6019ee19	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
 _md5_=bce67096dd27bfbf044e3ccb63102e22

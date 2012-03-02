@@ -8,5 +8,5 @@ LICENSE=GPL-2
 RDEPEND=dev-libs/popt dev-libs/elfutils dev-libs/beecrypt
 SLOT=0
 SRC_URI=http://dev.gentoo.org/~swegener/distfiles/debugedit-5.3.5.tar.bz2 http://dev.gentoo.org/~vapier/distfiles/debugedit-5.3.5.tar.bz2
-_eclasses_=eutils	bd3e3c88ad13150d70c42729dc4eb9d0	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
+_eclasses_=eutils	ba24d79270ea0022703f16b5de80051c	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
 _md5_=a4414db696ba840b13aa97354b9a4a89

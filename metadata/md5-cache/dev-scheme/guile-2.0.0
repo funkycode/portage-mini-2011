@@ -9,5 +9,5 @@ LICENSE=LGPL-3
 RDEPEND=dev-libs/gmp >=sys-devel/libtool-1.5.6 sys-devel/gettext dev-util/pkgconfig dev-libs/libunistring >=dev-libs/boehm-gc-7.0[threads?] virtual/libffi emacs? ( virtual/emacs )
 SLOT=2
 SRC_URI=mirror://gnu/guile/guile-2.0.0.tar.gz
-_eclasses_=elisp-common	aa9676ce708f8aacf54ff9df8015963b	eutils	bd3e3c88ad13150d70c42729dc4eb9d0	flag-o-matic	66cb710a2aa184a5687fe1289d7973ab	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
+_eclasses_=elisp-common	aa9676ce708f8aacf54ff9df8015963b	eutils	ba24d79270ea0022703f16b5de80051c	flag-o-matic	66cb710a2aa184a5687fe1289d7973ab	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
 _md5_=1ac7a2056258392a3ce1d9e9b1e07463

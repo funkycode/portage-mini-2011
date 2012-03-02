@@ -10,5 +10,5 @@ RDEPEND=app-arch/bzip2 app-misc/ca-certificates media-libs/alsa-lib dev-libs/atk
 RESTRICT=mirror strip
 SLOT=stable
 SRC_URI=amd64? ( http://dl.google.com/linux/chrome/deb/pool/main/g/google-chrome-stable/google-chrome-stable_17.0.963.56-r121963_amd64.deb ) x86? ( http://dl.google.com/linux/chrome/deb/pool/main/g/google-chrome-stable/google-chrome-stable_17.0.963.56-r121963_i386.deb )
-_eclasses_=eutils	bd3e3c88ad13150d70c42729dc4eb9d0	fdo-mime	0acfe1a88fd8751a1d5dc671168219fa	gnome2-utils	b5ca2ccadb60760889faa3bccba121d9	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	pax-utils	3551398d6ede2b572568832730cc2a45	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
+_eclasses_=eutils	ba24d79270ea0022703f16b5de80051c	fdo-mime	0acfe1a88fd8751a1d5dc671168219fa	gnome2-utils	b5ca2ccadb60760889faa3bccba121d9	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	pax-utils	3551398d6ede2b572568832730cc2a45	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
 _md5_=451f11397c65dd5dceba4b8d365ade78

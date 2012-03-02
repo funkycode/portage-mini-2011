@@ -9,5 +9,5 @@ LICENSE=GPL-2
 RDEPEND=>=x11-libs/gtk+-2.0.4:2 >=x11-libs/pango-1.2 >=dev-libs/glib-2.0.3:2 >=gnome-base/gconf-1.2:2 >=gnome-base/libgnomeui-2 >=gnome-base/libglade-2:2.0 x11-libs/libXScrnSaver
 SLOT=0
 SRC_URI=mirror://gnome/sources/drwright/0.17/drwright-0.17.tar.bz2
-_eclasses_=eutils	bd3e3c88ad13150d70c42729dc4eb9d0	fdo-mime	0acfe1a88fd8751a1d5dc671168219fa	flag-o-matic	66cb710a2aa184a5687fe1289d7973ab	gnome.org	8fef8f967214f56e08fa92d61163d891	gnome2	490ce89f5d905297c7a34898fa498bd0	gnome2-utils	b5ca2ccadb60760889faa3bccba121d9	libtool	5f623f5a211fb1b2d84d88ee49959a54	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e	versionator	6601b4c5b3f019a993db59a50e1854e4
+_eclasses_=eutils	ba24d79270ea0022703f16b5de80051c	fdo-mime	0acfe1a88fd8751a1d5dc671168219fa	flag-o-matic	66cb710a2aa184a5687fe1289d7973ab	gnome.org	8fef8f967214f56e08fa92d61163d891	gnome2	490ce89f5d905297c7a34898fa498bd0	gnome2-utils	b5ca2ccadb60760889faa3bccba121d9	libtool	5f623f5a211fb1b2d84d88ee49959a54	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e	versionator	6601b4c5b3f019a993db59a50e1854e4
 _md5_=323064d4c4fa5ca82853f1058ffc1708

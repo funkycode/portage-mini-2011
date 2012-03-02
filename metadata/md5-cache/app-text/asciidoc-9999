@@ -7,5 +7,5 @@ IUSE=examples graphviz highlight test vim-syntax
 LICENSE=GPL-2
 RDEPEND=>=app-text/docbook-xsl-stylesheets-1.75 dev-libs/libxslt graphviz? ( media-gfx/graphviz ) app-text/docbook-xml-dtd:4.5 highlight? ( dev-util/source-highlight ) >=app-admin/eselect-python-20091230 || ( =dev-lang/python-2.7* =dev-lang/python-2.6* =dev-lang/python-2.5* )
 SLOT=0
-_eclasses_=autotools	3e1370c6fcb964b30ad99070a466441d	eutils	bd3e3c88ad13150d70c42729dc4eb9d0	libtool	5f623f5a211fb1b2d84d88ee49959a54	mercurial	273cde614620d32d35127c71eb18d702	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	python	06dff99bcab2fd584bd6d2aa6019ee19	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
+_eclasses_=autotools	3e1370c6fcb964b30ad99070a466441d	eutils	ba24d79270ea0022703f16b5de80051c	libtool	5f623f5a211fb1b2d84d88ee49959a54	mercurial	273cde614620d32d35127c71eb18d702	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	python	06dff99bcab2fd584bd6d2aa6019ee19	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
 _md5_=b67c15d64fe3bd7f2c5d1877f38a5f6a

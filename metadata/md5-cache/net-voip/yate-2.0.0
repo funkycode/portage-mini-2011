@@ -9,5 +9,5 @@ LICENSE=GPL-2
 RDEPEND=sys-libs/glibc alsa? ( media-libs/alsa-lib ) gsm? ( media-sound/gsm ) h323? ( dev-libs/pwlib net-libs/openh323 ) ilbc? ( dev-libs/ilbc-rfc3951 ) mysql? ( virtual/mysql ) oss? ( sys-kernel/linux-headers ) postgres? ( dev-db/postgresql-base ) qt4? ( x11-libs/qt-core:4 x11-libs/qt-gui:4 ) spandsp? ( >=media-libs/spandsp-0.0.3 ) speex? ( media-libs/speex ) ssl? ( dev-libs/openssl )
 SLOT=0
 SRC_URI=http://yate.null.ro/tarballs/yate2/yate-2.0.0-1.tar.gz
-_eclasses_=autotools	3e1370c6fcb964b30ad99070a466441d	eutils	bd3e3c88ad13150d70c42729dc4eb9d0	libtool	5f623f5a211fb1b2d84d88ee49959a54	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
+_eclasses_=autotools	3e1370c6fcb964b30ad99070a466441d	eutils	ba24d79270ea0022703f16b5de80051c	libtool	5f623f5a211fb1b2d84d88ee49959a54	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
 _md5_=5346401ce81c9cf872101aba79125134

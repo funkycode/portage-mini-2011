@@ -9,5 +9,5 @@ LICENSE=richardson
 RDEPEND=x11-libs/libXext x11-libs/libXmu x11-libs/libX11 x11-libs/libXt X? ( >=x11-libs/openmotif-2.3:0 )
 SLOT=0
 SRC_URI=http://kinemage.biochem.duke.edu/downloads/software/prekin/prekin.6.51.081122.src.tgz
-_eclasses_=eutils	bd3e3c88ad13150d70c42729dc4eb9d0	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
+_eclasses_=eutils	ba24d79270ea0022703f16b5de80051c	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
 _md5_=ef9306d3dc97498cfee392c0553ea5cb

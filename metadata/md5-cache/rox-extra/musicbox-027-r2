@@ -8,5 +8,5 @@ LICENSE=GPL-2
 RDEPEND=>=dev-python/pyao-0.81 alsa? ( >=dev-python/pyalsaaudio-0.2 ) mp3? ( >=dev-python/pymad-0.4.1 >=dev-python/pyid3lib-0.5.1 ) vorbis? ( >=dev-python/pyvorbis-1.1 ) >=app-admin/eselect-python-20091230 =dev-lang/python-2* >=rox-base/rox-2.1.0 >=rox-base/rox-lib-2.0.0
 SLOT=0
 SRC_URI=http://rox-musicbox.googlecode.com/files/MusicBox-027.tgz
-_eclasses_=autotools	3e1370c6fcb964b30ad99070a466441d	eutils	bd3e3c88ad13150d70c42729dc4eb9d0	libtool	5f623f5a211fb1b2d84d88ee49959a54	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	python	06dff99bcab2fd584bd6d2aa6019ee19	rox	834255258a1a44797dcc9fff022b3fc4	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
+_eclasses_=autotools	3e1370c6fcb964b30ad99070a466441d	eutils	ba24d79270ea0022703f16b5de80051c	libtool	5f623f5a211fb1b2d84d88ee49959a54	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	python	06dff99bcab2fd584bd6d2aa6019ee19	rox	834255258a1a44797dcc9fff022b3fc4	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
 _md5_=ece6457961e42b42feb467d8fbaf2a92

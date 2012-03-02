@@ -9,5 +9,5 @@ LICENSE=MIT ISC CCPL-Attribution-3.0 GPL-3 md2k7-asyouwish LGPL-2.1 public-domai
 RDEPEND=>=dev-libs/boost-1.41.0 dev-libs/openssl[-bindist] upnp? ( net-libs/miniupnpc ) sys-libs/db:4.8[cxx] x11-libs/qt-gui dbus? ( x11-libs/qt-dbus )
 SLOT=0
 SRC_URI=http://gitorious.org/bitcoin/bitcoind-stable/archive-tarball/v0.5.0.3 -> bitcoin-v0.5.0.3.tgz bip17? ( http://luke.dashjr.org/programs/bitcoin/files/bip17/bip17_v0.5.0.3.patch -> bip17_v0.5.0.3_r2.patch ) eligius? ( http://luke.dashjr.org/programs/bitcoin/files/0.5.2-eligius_sendfee.patch.xz )
-_eclasses_=base	5f35078c26d6c60556d5c8a2feb4f84f	db-use	2f5d6a2718559b90a51648d8ff58be83	eutils	bd3e3c88ad13150d70c42729dc4eb9d0	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	qt4-r2	0d58394f40a89c8ec116c71510d7584b	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e	versionator	6601b4c5b3f019a993db59a50e1854e4
+_eclasses_=base	5f35078c26d6c60556d5c8a2feb4f84f	db-use	2f5d6a2718559b90a51648d8ff58be83	eutils	ba24d79270ea0022703f16b5de80051c	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	qt4-r2	0d58394f40a89c8ec116c71510d7584b	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e	versionator	6601b4c5b3f019a993db59a50e1854e4
 _md5_=9d4af49f64f658d6c0a342d1d0bbb2e0

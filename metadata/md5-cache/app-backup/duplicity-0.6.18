@@ -1,0 +1,13 @@
+DEFINED_PHASES=compile install postinst postrm prepare setup
+DEPEND=>=net-libs/librsync-0.9.6 app-crypt/gnupg >=app-admin/eselect-python-20091230 =dev-lang/python-2*
+DESCRIPTION=duplicity is a secure backup system using gnupg to encrypt data
+EAPI=4
+HOMEPAGE=http://www.nongnu.org/duplicity/
+IUSE=s3
+KEYWORDS=~amd64 ~ppc ~sparc ~x86 ~amd64-linux ~x86-linux ~x64-macos ~x86-macos
+LICENSE=GPL-3
+RDEPEND=>=net-libs/librsync-0.9.6 app-crypt/gnupg >=dev-python/py-gnupg-0.3.2 >=dev-python/pexpect-2.1 s3? ( dev-python/boto ) >=app-admin/eselect-python-20091230 =dev-lang/python-2*
+SLOT=0
+SRC_URI=http://code.launchpad.net/duplicity/0.6-series/0.6.18/+download/duplicity-0.6.18.tar.gz
+_eclasses_=distutils	c8b0cab86443a130f3737ad1456d57d3	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	python	06dff99bcab2fd584bd6d2aa6019ee19	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68
+_md5_=f271017effbd52a2d31c201c2b28a4df

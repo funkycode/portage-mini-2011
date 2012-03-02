@@ -9,5 +9,5 @@ RDEPEND==virtual/libstdc++-3.3 X? ( x11-libs/libXext x11-libs/libXft x11-libs/li
 RESTRICT=fetch
 SLOT=1.5
 SRC_URI=x86? ( ibm-java2-sdk-5.0-12.5-linux-i386.tgz ) amd64? ( ibm-java2-sdk-5.0-12.5-linux-x86_64.tgz ) ppc? ( ibm-java2-sdk-5.0-12.5-linux-ppc.tgz ) ppc64? ( ibm-java2-sdk-5.0-12.5-linux-ppc64.tgz ) javacomm? ( x86? ( ibm-java2-javacomm-5.0-12.5-linux-i386.tgz ) amd64? ( ibm-java2-javacomm-5.0-12.5-linux-x86_64.tgz ) ppc? ( ibm-java2-javacomm-5.0-12.5-linux-ppc.tgz ) ppc64? ( ibm-java2-javacomm-5.0-12.5-linux-ppc64.tgz ) )
-_eclasses_=eutils	bd3e3c88ad13150d70c42729dc4eb9d0	fdo-mime	0acfe1a88fd8751a1d5dc671168219fa	java-vm-2	a34fe9a7d2a4f163b7f0c5af7d53ae33	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	pax-utils	3551398d6ede2b572568832730cc2a45	prefix	21058c21ca48453d771df15500873ede	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e	versionator	6601b4c5b3f019a993db59a50e1854e4
+_eclasses_=eutils	ba24d79270ea0022703f16b5de80051c	fdo-mime	0acfe1a88fd8751a1d5dc671168219fa	java-vm-2	a34fe9a7d2a4f163b7f0c5af7d53ae33	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	pax-utils	3551398d6ede2b572568832730cc2a45	prefix	21058c21ca48453d771df15500873ede	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e	versionator	6601b4c5b3f019a993db59a50e1854e4
 _md5_=f036b54e80b2bf13683842151a42eaee

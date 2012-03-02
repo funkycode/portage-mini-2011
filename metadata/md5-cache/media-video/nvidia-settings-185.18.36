@@ -8,5 +8,5 @@ LICENSE=GPL-2
 RDEPEND=x11-libs/gtk+:2 x11-base/xorg-server x11-libs/libXt x11-drivers/nvidia-drivers
 SLOT=0
 SRC_URI=ftp://download.nvidia.com/XFree86/nvidia-settings/nvidia-settings-185.18.36.tar.gz
-_eclasses_=eutils	bd3e3c88ad13150d70c42729dc4eb9d0	flag-o-matic	66cb710a2aa184a5687fe1289d7973ab	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
+_eclasses_=eutils	ba24d79270ea0022703f16b5de80051c	flag-o-matic	66cb710a2aa184a5687fe1289d7973ab	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
 _md5_=8d34d9f2621aff6ccdc040ee072af4db

@@ -9,5 +9,5 @@ LICENSE=GPL-2
 RDEPEND=readline? ( sys-libs/readline ) sys-libs/zlib app-arch/bzip2 auth? ( virtual/mysql ) !dedicated? ( nls? ( virtual/libintl ) gtk? ( x11-libs/gtk+:2 ) sdl? ( media-libs/libsdl[video] media-libs/sdl-image[png] media-libs/freetype ) !gtk? ( !sdl? ( x11-libs/gtk+:2 ) ) sound? ( media-libs/libsdl[audio] media-libs/sdl-mixer ) ggz? ( games-board/ggz-gtk-client ) media-libs/libpng )
 SLOT=0
 SRC_URI=mirror://sourceforge/freeciv/freeciv-2.3.0.tar.bz2
-_eclasses_=base	5f35078c26d6c60556d5c8a2feb4f84f	eutils	bd3e3c88ad13150d70c42729dc4eb9d0	games	f75cdbfdf1760e514ca65e2f6c6a7c72	games-ggz	aef0f24cdad5837829ce07d9c25bf1d2	gnome2-utils	b5ca2ccadb60760889faa3bccba121d9	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
+_eclasses_=base	5f35078c26d6c60556d5c8a2feb4f84f	eutils	ba24d79270ea0022703f16b5de80051c	games	f75cdbfdf1760e514ca65e2f6c6a7c72	games-ggz	aef0f24cdad5837829ce07d9c25bf1d2	gnome2-utils	b5ca2ccadb60760889faa3bccba121d9	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
 _md5_=58dcce1d29febd721b20a2adaf260d22

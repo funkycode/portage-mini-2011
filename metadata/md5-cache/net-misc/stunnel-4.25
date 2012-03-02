@@ -8,5 +8,5 @@ LICENSE=GPL-2
 RDEPEND=tcpd? ( sys-apps/tcp-wrappers ) >=dev-libs/openssl-0.9.6j selinux? ( sec-policy/selinux-stunnel )
 SLOT=0
 SRC_URI=http://www.stunnel.org/download/stunnel/src/stunnel-4.25.tar.gz
-_eclasses_=autotools	3e1370c6fcb964b30ad99070a466441d	eutils	bd3e3c88ad13150d70c42729dc4eb9d0	libtool	5f623f5a211fb1b2d84d88ee49959a54	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	ssl-cert	7f678cd359743d336ecf3a6cc4ce1521	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
+_eclasses_=autotools	3e1370c6fcb964b30ad99070a466441d	eutils	ba24d79270ea0022703f16b5de80051c	libtool	5f623f5a211fb1b2d84d88ee49959a54	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	ssl-cert	7f678cd359743d336ecf3a6cc4ce1521	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
 _md5_=5efef59513b79438e98f1273c76fc4f4

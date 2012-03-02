@@ -1,0 +1,10 @@
+DEFINED_PHASES=install prepare
+DESCRIPTION=MCU-specific data for MSP430 microcontrollers
+EAPI=4
+HOMEPAGE=http://mspgcc.sourceforge.net
+KEYWORDS=~amd64 ~x86
+LICENSE=BSD
+SLOT=0
+SRC_URI=mirror://sourceforge/mspgcc/msp430mcu-20120224.tar.bz2
+_eclasses_=eutils	ba24d79270ea0022703f16b5de80051c	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
+_md5_=a9f77389089a662339526fa7d9813ebf

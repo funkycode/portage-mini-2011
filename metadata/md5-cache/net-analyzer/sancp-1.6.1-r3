@@ -9,5 +9,5 @@ LICENSE=QPL
 RDEPEND=net-libs/libpcap
 SLOT=0
 SRC_URI=http://www.metre.net/files/sancp-1.6.1.tar.gz http://sancp.sourceforge.net/sancp-1.6.1.fix200511.a.patch http://sancp.sourceforge.net/sancp-1.6.1.fix200511.b.patch http://sancp.sourceforge.net/sancp-1.6.1.fix200601.c.patch http://sancp.sourceforge.net/sancp-1.6.1.fix200606.d.patch
-_eclasses_=eutils	bd3e3c88ad13150d70c42729dc4eb9d0	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
+_eclasses_=eutils	ba24d79270ea0022703f16b5de80051c	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
 _md5_=3ce704d3c217615da8c0af18270c89b3

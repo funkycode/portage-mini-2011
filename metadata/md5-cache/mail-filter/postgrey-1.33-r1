@@ -8,5 +8,5 @@ LICENSE=GPL-2
 RDEPEND=>=dev-lang/perl-5.6.0 dev-perl/net-server dev-perl/IO-Multiplex dev-perl/BerkeleyDB dev-perl/Net-DNS dev-perl/Parse-Syslog dev-perl/Net-RBLClient >=sys-libs/db-4.1
 SLOT=0
 SRC_URI=http://postgrey.schweikert.ch/pub/postgrey-1.33.tar.gz http://postgrey.schweikert.ch/pub/old/postgrey-1.33.tar.gz targrey? ( http://k2net.hakuba.jp/pub/targrey-0.31-postgrey-1.33.patch )
-_eclasses_=eutils	bd3e3c88ad13150d70c42729dc4eb9d0	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
+_eclasses_=eutils	ba24d79270ea0022703f16b5de80051c	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
 _md5_=fb4f1475d7eaa2ace20762e1725b7bb9

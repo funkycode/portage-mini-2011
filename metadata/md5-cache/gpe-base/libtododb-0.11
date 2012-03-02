@@ -8,5 +8,5 @@ LICENSE=LGPL-2
 RDEPEND=>=gpe-base/libgpewidget-0.113 >=gpe-base/libgpepimc-0.6 =dev-db/sqlite-2.8*
 SLOT=0
 SRC_URI=http://gpe.linuxtogo.org/download/source/libtododb-0.11.tar.bz2
-_eclasses_=autotools	3e1370c6fcb964b30ad99070a466441d	eutils	bd3e3c88ad13150d70c42729dc4eb9d0	gpe	a89a2e4fe9adbdf6a9b4b50428d8d2ab	libtool	5f623f5a211fb1b2d84d88ee49959a54	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
+_eclasses_=autotools	3e1370c6fcb964b30ad99070a466441d	eutils	ba24d79270ea0022703f16b5de80051c	gpe	a89a2e4fe9adbdf6a9b4b50428d8d2ab	libtool	5f623f5a211fb1b2d84d88ee49959a54	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
 _md5_=2374bf358c1ba610f6ffe1d60fc22073

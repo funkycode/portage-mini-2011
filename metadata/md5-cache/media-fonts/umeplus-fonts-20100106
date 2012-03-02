@@ -8,5 +8,5 @@ LICENSE=as-is mplus-fonts
 RESTRICT=strip binchecks
 SLOT=0
 SRC_URI=http://www.geocities.jp/ep3797/snapshot/modified_fonts/umeplus-fonts-20100106.tar.bz2
-_eclasses_=eutils	bd3e3c88ad13150d70c42729dc4eb9d0	font	9aa70ebc5cefbdd9056687b550a2fdc4	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
+_eclasses_=eutils	ba24d79270ea0022703f16b5de80051c	font	9aa70ebc5cefbdd9056687b550a2fdc4	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
 _md5_=49ad7efddacdd51722c093529c35271b

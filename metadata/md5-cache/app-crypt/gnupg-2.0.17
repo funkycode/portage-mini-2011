@@ -9,5 +9,5 @@ LICENSE=GPL-3
 RDEPEND=!static? ( >=dev-libs/libassuan-2 >=dev-libs/libgcrypt-1.4 >=dev-libs/libgpg-error-1.7 >=dev-libs/libksba-1.0.7 >=dev-libs/pth-1.3.7 >=net-misc/curl-7.10 sys-libs/zlib adns? ( >=net-libs/adns-1.4 ) bzip2? ( app-arch/bzip2 ) pcsc-lite? ( >=sys-apps/pcsc-lite-1.3.0 ) openct? ( >=dev-libs/openct-0.5.0 ) smartcard? ( =virtual/libusb-0* ) ldap? ( net-nds/openldap ) ) || ( app-crypt/pinentry app-crypt/pinentry-qt ) virtual/mta !app-crypt/gpg-agent !<=app-crypt/gnupg-2.0.1 selinux? ( sec-policy/selinux-gnupg ) nls? ( virtual/libintl )
 SLOT=0
 SRC_URI=mirror://gnupg/gnupg/gnupg-2.0.17.tar.bz2
-_eclasses_=eutils	bd3e3c88ad13150d70c42729dc4eb9d0	flag-o-matic	66cb710a2aa184a5687fe1289d7973ab	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
+_eclasses_=eutils	ba24d79270ea0022703f16b5de80051c	flag-o-matic	66cb710a2aa184a5687fe1289d7973ab	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
 _md5_=831b5dc94d724c34fb874a0cdb1311e8

@@ -5,5 +5,5 @@ KEYWORDS=~amd64 ppc ~sparc x86 ~x86-fbsd
 LICENSE=GPL-2
 SLOT=0
 SRC_URI=http://www.nocrew.org/software/httptunnel/httptunnel-3.3.tar.gz
-_eclasses_=eutils	bd3e3c88ad13150d70c42729dc4eb9d0	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
+_eclasses_=eutils	ba24d79270ea0022703f16b5de80051c	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
 _md5_=20caf1ef87e2e17d2c6e94b1a527c74a

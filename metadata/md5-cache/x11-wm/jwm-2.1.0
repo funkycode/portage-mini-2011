@@ -9,5 +9,5 @@ LICENSE=GPL-2
 RDEPEND=xpm? ( x11-libs/libXpm ) xinerama? ( x11-libs/libXinerama ) x11-libs/libXext x11-libs/libXrender x11-libs/libXau x11-libs/libXdmcp truetype? ( x11-libs/libXft ) png? ( media-libs/libpng ) jpeg? ( virtual/jpeg ) bidi? ( dev-libs/fribidi ) dev-libs/expat
 SLOT=0
 SRC_URI=http://joewing.net/programs/jwm/releases/jwm-2.1.0.tar.bz2
-_eclasses_=eutils	bd3e3c88ad13150d70c42729dc4eb9d0	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
+_eclasses_=eutils	ba24d79270ea0022703f16b5de80051c	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
 _md5_=84033429665a0c6b14ab4c92b1a89f0c

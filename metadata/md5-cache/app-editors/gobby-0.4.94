@@ -9,5 +9,5 @@ LICENSE=GPL-2
 RDEPEND=dev-cpp/glibmm:2 dev-cpp/gtkmm:3.0 dev-libs/libsigc++:2 >=net-libs/libinfinity-0.4[gtk,avahi?] x11-libs/gtk+:3 dev-cpp/libxmlpp:2.6 x11-libs/gtksourceview:3.0
 SLOT=0.5
 SRC_URI=http://releases.0x539.de/gobby/gobby-0.4.94.tar.gz
-_eclasses_=eutils	bd3e3c88ad13150d70c42729dc4eb9d0	gnome2-utils	b5ca2ccadb60760889faa3bccba121d9	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
+_eclasses_=eutils	ba24d79270ea0022703f16b5de80051c	gnome2-utils	b5ca2ccadb60760889faa3bccba121d9	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
 _md5_=f78b03dc1c41bd0ef0c73fb9c997ab3f

@@ -9,5 +9,5 @@ LICENSE=BSD
 RDEPEND=dev-libs/gmp dev-libs/libpcre ofx? ( >=dev-libs/libofx-0.9 ) xml? ( dev-libs/expat ) emacs? ( virtual/emacs ) gnuplot? ( sci-visualization/gnuplot ) vim-syntax? ( || ( app-editors/vim app-editors/gvim ) )
 SLOT=0
 SRC_URI=mirror://github/jwiegley/ledger/ledger-2.6.3.tar.gz
-_eclasses_=autotools	3e1370c6fcb964b30ad99070a466441d	elisp-common	aa9676ce708f8aacf54ff9df8015963b	eutils	bd3e3c88ad13150d70c42729dc4eb9d0	libtool	5f623f5a211fb1b2d84d88ee49959a54	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
+_eclasses_=autotools	3e1370c6fcb964b30ad99070a466441d	elisp-common	aa9676ce708f8aacf54ff9df8015963b	eutils	ba24d79270ea0022703f16b5de80051c	libtool	5f623f5a211fb1b2d84d88ee49959a54	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
 _md5_=409f378e805d4bc824964a32a0261acd

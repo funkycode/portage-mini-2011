@@ -522,7 +522,6 @@ app-forensics/openscap:sql - Build the sql independant probes
 app-forensics/ovaldi:rpm - Enable the RPM probes
 app-forensics/rdd:rawio - Enables raw IO handling
 app-forensics/sleuthkit:aff - Enable extra aff formats
-app-forensics/sleuthkit:dbtool - Add patch for dbtool interface from PyFlag
 app-forensics/sleuthkit:ewf - Enable libewf support
 app-i18n/anthy:canna-2ch - Enable support for app-dicts/canna-2ch
 app-i18n/fcitx:gtk3 - Use GTK+3 instead of 2
@@ -4315,7 +4314,7 @@ net-p2p/mldonkey:magic - enable use of libmagic
 net-p2p/rtorrent:color - Add custom color support for torrent list
 net-p2p/rtorrent:daemon - Uses app-misc/screen to daemonize this application
 net-p2p/transmission:libcanberra - Enable sound event support with media-libs/libcanberra
-net-p2p/transmission:utp - Adds support for µTP (Micro Transport Protocol)
+net-p2p/transmission:xfs - Use sys-fs/xfsprogs headers in building of fdlimit(.c)
 net-p2p/transmission-remote-gtk:libproxy - Use net-libs/libproxy for getting the HTTP/HTTPS/SOCKS proxy configuration.
 net-p2p/transmission-remote-gtk:unique - Enable single instance support using dev-libs/libunique
 net-p2p/tribler:vlc - Enable vlc support.

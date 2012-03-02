@@ -9,5 +9,5 @@ LICENSE=GPL-3
 RDEPEND=dev-libs/libpcre app-text/ghostscript-gpl sys-libs/ncurses virtual/lapack curl? ( net-misc/curl ) fftw? ( sci-libs/fftw:3.0 ) glpk? ( sci-mathematics/glpk ) imagemagick? ( || ( media-gfx/graphicsmagick[cxx] media-gfx/imagemagick[cxx] ) ) opengl? ( media-libs/freetype:2 media-libs/fontconfig >=x11-libs/fltk-1.3:1[opengl] ) qhull? ( media-libs/qhull ) qrupdate? ( sci-libs/qrupdate ) readline? ( sys-libs/readline ) sparse? ( sci-libs/arpack sci-libs/camd sci-libs/ccolamd sci-libs/cholmod sci-libs/colamd sci-libs/cxsparse sci-libs/umfpack ) X? ( x11-libs/libX11 ) zlib? ( sys-libs/zlib )
 SLOT=0
 SRC_URI=ftp://ftp.gnu.org/pub/gnu/octave/octave-3.6.0.tar.bz2
-_eclasses_=autotools	3e1370c6fcb964b30ad99070a466441d	autotools-utils	748973db029ba52a1991320e1034bad9	eutils	bd3e3c88ad13150d70c42729dc4eb9d0	libtool	5f623f5a211fb1b2d84d88ee49959a54	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
+_eclasses_=autotools	3e1370c6fcb964b30ad99070a466441d	autotools-utils	748973db029ba52a1991320e1034bad9	eutils	ba24d79270ea0022703f16b5de80051c	libtool	5f623f5a211fb1b2d84d88ee49959a54	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
 _md5_=de6951fbc9f5c790c430fed8a8803cd2
