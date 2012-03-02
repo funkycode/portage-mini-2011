@@ -10,4 +10,4 @@ REQUIRED_USE=sse2? ( mmx )
 SLOT=0
 SRC_URI=http://webm.googlecode.com/files/libvpx-v1.0.0.tar.bz2
 _eclasses_=multilib	5f4ad6cf85e365e8f0c6050ddd21659e	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68
-_md5_=ad39eab939075aa62b5b559bfacf513a
+_md5_=5705471320269471c3ab68fe4548f430

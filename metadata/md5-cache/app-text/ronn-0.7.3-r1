@@ -4,10 +4,10 @@ DESCRIPTION=Ronn converts simple, human readable textfiles to roff for terminal 
 EAPI=2
 HOMEPAGE=http://github.com/rtomayko/ronn/
 IUSE=test elibc_FreeBSD ruby_targets_ruby18 ruby_targets_ruby19 ruby_targets_ree18 test test
-KEYWORDS=~amd64 ~ia64 ~ppc ~ppc64 ~sparc ~x86
+KEYWORDS=~amd64 ~ia64 ~ppc ~ppc64 ~sparc ~x86 ~x86-fbsd
 LICENSE=MIT
 RDEPEND=ruby_targets_ruby18? ( >=dev-ruby/hpricot-0.8.2[ruby_targets_ruby18] >=dev-ruby/mustache-0.7.0[ruby_targets_ruby18] >=dev-ruby/rdiscount-1.5.8[ruby_targets_ruby18] ) ruby_targets_ruby19? ( >=dev-ruby/hpricot-0.8.2[ruby_targets_ruby19] >=dev-ruby/mustache-0.7.0[ruby_targets_ruby19] >=dev-ruby/rdiscount-1.5.8[ruby_targets_ruby19] ) ruby_targets_ree18? ( >=dev-ruby/hpricot-0.8.2[ruby_targets_ree18] >=dev-ruby/mustache-0.7.0[ruby_targets_ree18] >=dev-ruby/rdiscount-1.5.8[ruby_targets_ree18] ) ruby_targets_ruby18? ( dev-lang/ruby:1.8 ) ruby_targets_ruby19? ( dev-lang/ruby:1.9 ) ruby_targets_ree18? ( dev-lang/ruby-enterprise:1.8 ) ruby_targets_ruby18? ( virtual/rubygems[ruby_targets_ruby18] ) ruby_targets_ruby19? ( virtual/rubygems[ruby_targets_ruby19] ) ruby_targets_ree18? ( virtual/rubygems[ruby_targets_ree18] )
 SLOT=0
 SRC_URI=mirror://rubygems/ronn-0.7.3.gem
 _eclasses_=eutils	ba24d79270ea0022703f16b5de80051c	java-utils-2	0b830e0a2e6c4bdf1c81fec1b53d95f1	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	ruby-fakegem	6732f927427c6069df6c4f22271f2c75	ruby-ng	927a565459a62f2839d06e03cfbe1440	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e	versionator	6601b4c5b3f019a993db59a50e1854e4
-_md5_=465164a07c7b728db07e97c16a78fd3d
+_md5_=33cf00afab4745f6718d327ae4234499
