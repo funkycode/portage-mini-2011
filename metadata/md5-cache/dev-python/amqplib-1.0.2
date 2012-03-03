@@ -1,13 +1,13 @@
 DEFINED_PHASES=compile install postinst postrm prepare test
-DEPEND=>=app-admin/eselect-python-20091230 =dev-lang/python-2*
+DEPEND=>=app-admin/eselect-python-20091230 || ( =dev-lang/python-3* =dev-lang/python-2* )
 DESCRIPTION=Python client for the Advanced Message Queuing Procotol (AMQP)
 EAPI=3
 HOMEPAGE=http://code.google.com/p/py-amqplib/
 IUSE=examples extras test
 KEYWORDS=~x86 ~amd64
 LICENSE=LGPL-3
-RDEPEND=>=app-admin/eselect-python-20091230 =dev-lang/python-2*
+RDEPEND=>=app-admin/eselect-python-20091230 || ( =dev-lang/python-3* =dev-lang/python-2* )
 SLOT=0
 SRC_URI=http://py-amqplib.googlecode.com/files/amqplib-1.0.2.tgz
 _eclasses_=distutils	c8b0cab86443a130f3737ad1456d57d3	eutils	ba24d79270ea0022703f16b5de80051c	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	python	06dff99bcab2fd584bd6d2aa6019ee19	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
-_md5_=96148a76b655f02e4487dd37841d5b81
+_md5_=0cbf8aa57b0ce6858423a332167c11f1
