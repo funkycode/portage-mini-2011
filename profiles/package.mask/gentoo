@@ -1,5 +1,5 @@
 ####################################################################
-# $Header: /var/cvsroot/gentoo-x86/profiles/package.mask,v 1.13535 2012/03/02 09:41:55 jlec Exp $
+# $Header: /var/cvsroot/gentoo-x86/profiles/package.mask,v 1.13541 2012/03/03 16:25:23 nelchael Exp $
 #
 # When you add an entry to the top of this file, add your name, the date, and
 # an explanation of why something is getting masked. Please be extremely
@@ -30,6 +30,10 @@
 ## app-misc/some-package
 
 #--- END OF EXAMPLES ---
+
+# Chí-Thanh Christopher Nguyễn <chithanh@gentoo.org> (01 Jan 2012)
+# Mask for breaking compile against glu.h, bug #406641
+=media-libs/mesa-8.0.1-r1
 
 # Samuli Suominen <ssuominen@gentoo.org> (29 Feb 2012)
 # The old version of gnunet in portage is broken with the
@@ -246,11 +250,6 @@ www-apps/twiki
 # in 60 days.
 # Alternatives: dev-db/pgadmin3 or dev-db/phppgadmin
 dev-db/pgaccess
-
-# Krzysztof Pawlik <nelchael@gentoo.org> (27 Jan 2012)
-# Deprecated, please migrate your code to dev-python/xhtml2pdf.
-# Removal by end of February.
-dev-python/pisa
 
 # Jorge Manuel B. S. Vicetto <jmbsvicetto@gentoo.org> (22 Jan 2012)
 # Mask compiz for last-rites unless someone steps up
@@ -505,10 +504,6 @@ sys-apps/elfix
 >=perl-core/ExtUtils-ParseXS-3.0
 >=virtual/perl-ExtUtils-ParseXS-3.0
 
-# Ole Markus With <olemarkus@gentoo.org> (21 Aug 2011)
-# Masking beta version
-=dev-php/pecl-memcached-2.0.0_beta2
-
 # Alexis Ballier <aballier@gentoo.org> (20 Aug 2011)
 # dev-tex/pdftex-1.40.11 is 100% identical to the one in TeX Live 2010;
 # TeX Live 2011 has a newer version, which makes the standalone package useless;
@@ -580,6 +575,7 @@ sci-chemistry/webmo
 # Mask new versions until thread-related crashes have been fixed.
 # See bug 367423.
 =dev-lang/ruby-enterprise-1.8.7.2011.03
+=dev-lang/ruby-enterprise-1.8.7.2012.02
 
 # Alexis Ballier <aballier@gentoo.org> (20 Apr 2011)
 # Breaks net-voip/sflphone, non maintainer update, but is needed by

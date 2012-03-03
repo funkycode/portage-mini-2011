@@ -11,4 +11,4 @@ REQUIRED_USE=d3d? ( gallium ) g3dvl? ( gallium ) llvm? ( gallium ) openvg? ( egl
 SLOT=0
 SRC_URI=ftp://ftp.freedesktop.org/pub/mesa/8.0.1/MesaLib-8.0.1.tar.bz2
 _eclasses_=autotools	3e1370c6fcb964b30ad99070a466441d	base	5f35078c26d6c60556d5c8a2feb4f84f	eutils	ba24d79270ea0022703f16b5de80051c	flag-o-matic	66cb710a2aa184a5687fe1289d7973ab	libtool	5f623f5a211fb1b2d84d88ee49959a54	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
-_md5_=221b1ec3a2888af9c2c9ed350b068d4c
+_md5_=e0f06cb89e4ccb4aecc34655e5d2befd

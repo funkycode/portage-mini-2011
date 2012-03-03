@@ -6,9 +6,9 @@ HOMEPAGE=http://drupal.org/
 IUSE=+mysql postgres sqlite vhosts
 KEYWORDS=~alpha ~amd64 ~ppc ~x86
 LICENSE=GPL-2
-RDEPEND=virtual/httpd-php dev-lang/php[pdo,postgres?,sqlite?,xml] mysql? ( || ( dev-lang/php[mysql] dev-lang/php[mysqli] ) ) || ( dev-lang/php[gd] dev-lang/php[gd-external] ) >=app-admin/webapp-config-1.50.15
+RDEPEND=virtual/httpd-php dev-lang/php[gd,pdo,postgres?,xml] mysql? ( || ( dev-lang/php[mysql] dev-lang/php[mysqli] ) ) sqlite? ( dev-lang/php[sqlite3] ) >=app-admin/webapp-config-1.50.15
 REQUIRED_USE=|| ( mysql postgres sqlite )
 SLOT=7.12
 SRC_URI=http://drupal.org/files/projects/drupal-7.12.tar.gz
 _eclasses_=webapp	30d951d5c98c4f31c7999ab4ba4806d1
-_md5_=be33dd63c057e0b3a15b9b9428e1ed2a
+_md5_=2aaccb23c1d61c08fbed87044ce3c247

@@ -4,10 +4,10 @@ DESCRIPTION=Standard EXT2/EXT3/EXT4 filesystem utilities
 EAPI=3
 HOMEPAGE=http://e2fsprogs.sourceforge.net/
 IUSE=nls static-libs elibc_FreeBSD
-KEYWORDS=~alpha amd64 ~arm hppa ~ia64 ~m68k ~mips ppc ppc64 ~s390 ~sh ~sparc x86 -x86-fbsd ~amd64-linux ~x86-linux ~ppc-macos ~x86-macos ~m68k-mint
+KEYWORDS=~alpha amd64 arm hppa ~ia64 ~m68k ~mips ppc ppc64 ~s390 ~sh ~sparc x86 -x86-fbsd ~amd64-linux ~x86-linux ~ppc-macos ~x86-macos ~m68k-mint
 LICENSE=GPL-2 BSD
 RDEPEND=~sys-libs/e2fsprogs-libs-1.42 >=sys-apps/util-linux-2.16 nls? ( virtual/libintl )
 SLOT=0
 SRC_URI=mirror://sourceforge/e2fsprogs/e2fsprogs-1.42.tar.gz
 _eclasses_=eutils	ba24d79270ea0022703f16b5de80051c	flag-o-matic	66cb710a2aa184a5687fe1289d7973ab	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
-_md5_=f1850ff0e9b7d46d5677edf44a113b09
+_md5_=fba64b9ba032aae7e9a5327147441656

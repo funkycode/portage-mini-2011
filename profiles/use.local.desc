@@ -3532,6 +3532,7 @@ net-fs/samba:swat - Enables support for swat configuration gui
 net-fs/samba:tools - Enable extra tools
 net-fs/samba:winbind - Enables support for the winbind auth daemon
 net-fs/smbnetfs:gnome - Use the gnome-base/gnome-keyring for password management.
+net-ftp/frox:transparent - Enable transparent proxying of data connections
 net-ftp/proftpd:authfile - Enable support for the auth-file module
 net-ftp/proftpd:ban - Enable support for the mod_ban module
 net-ftp/proftpd:case - Enable support for the mod_case module
@@ -3762,6 +3763,7 @@ net-irc/rbot:shorturl - Add dependency over dev-ruby/shorturl, which is needed t
 net-irc/rbot:timezone - Add dependency over dev-ruby/tzinfo to enable the "time" plugin for rbot. If the USE flag is disabled the plugin is also disabled by default.
 net-irc/rbot:toilet - Add dependency over app-misc/toilet, which is used by the "figlet" plugin for rbot. If the USE flag is disabled the plugin will be unable to use toilet; if figlet is also disabled, the plugin will be disabled.
 net-irc/rbot:translator - Add dependency over dev-ruby/mechanize, which is needed to enable the "translator" plugin for rbot. If the USE flag is disabled the plugin is also disabled by default.
+net-irc/shadowircd:largenet - Enable support/tweaks for large networks
 net-irc/srvx:bahamut - Choose bahamut protocol over p10 protocol
 net-irc/supybot:twisted - Allows supybot to use dev-python/twisted as driver
 net-irc/unrealircd:extban-stacking - Enable extended channel bans (such as +b ~c: and +b ~n:) to contain other extended bans instead of just hostmasks.
