@@ -3,10 +3,10 @@ DEPEND=dev-lang/php >=dev-php/pear-1.8.1
 DESCRIPTION=OO interface for searching and manipulating LDAP-entries
 EAPI=4
 HOMEPAGE=http://pear.php.net/Net_LDAP2
-KEYWORDS=~alpha amd64 hppa ppc ~sparc x86
+KEYWORDS=alpha amd64 hppa ppc ~sparc x86
 LICENSE=LGPL-2.1
 RDEPEND=dev-lang/php[ldap] dev-lang/php >=dev-php/pear-1.8.1
 SLOT=0
 SRC_URI=http://pear.php.net/get/Net_LDAP2-2.0.12.tgz
 _eclasses_=multilib	5f4ad6cf85e365e8f0c6050ddd21659e	php-pear-r1	ec6ca81a78eed55923c519977010e559	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68
-_md5_=df8275ee0f9c6378f9aebfc0c3b985d3
+_md5_=67fbeddde0b7c9ea173ae0f0e4a6510f

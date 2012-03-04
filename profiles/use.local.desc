@@ -1024,10 +1024,17 @@ dev-games/crystalspace:ode - include support for Open Dynamics Engine
 dev-games/guichan:allegro - Build the Allegro frontend
 dev-games/ode:double-precision - more precise calculations at the expense of speed
 dev-games/ode:gyroscopic - enable gyroscopic term (may cause instability)
+dev-games/ogre:boost - enable boost support
 dev-games/ogre:cegui - build the CEGUI samples
 dev-games/ogre:cg - NVIDIA toolkit plugin
 dev-games/ogre:devil - image loading support with DevIL
 dev-games/ogre:double-precision - more precise calculations at the expense of speed
+dev-games/ogre:freeimage - support images via freeimage
+dev-games/ogre:ois - pull in Object-oriented Input System library for samples
+dev-games/ogre:poco - when USE=threads, use poco for threading
+dev-games/ogre:tbb - when USE=threads, use tbb for threading
+dev-games/ogre:tools - build+install helper tools
+dev-games/ogre:zip - support zip archives
 dev-games/openscenegraph:fox - Build examples using x11-libs/fox library
 dev-games/openscenegraph:gdal - Enable support for sci-libs/gdal library
 dev-games/openscenegraph:itk - Build dev-tcltk/itk plugin

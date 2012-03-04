@@ -1,9 +1,11 @@
-# Copyright 1999-2009 Gentoo Foundation
+# Copyright 1999-2012 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/dev-haskell/x11-xft/x11-xft-0.3.ebuild,v 1.2 2009/11/26 21:44:36 kolmodin Exp $
+# $Header: /var/cvsroot/gentoo-x86/dev-haskell/x11-xft/x11-xft-0.3.ebuild,v 1.4 2012/03/04 05:12:57 gienah Exp $
+
+EAPI="4"
 
 CABAL_FEATURES="lib profile haddock"
-inherit haskell-cabal
+inherit base haskell-cabal
 
 MY_PN="X11-xft"
 MY_P="${MY_PN}-${PV}"
@@ -14,15 +16,17 @@ SRC_URI="http://hackage.haskell.org/packages/archive/${MY_PN}/${PV}/${MY_P}.tar.
 
 LICENSE="LGPL-2.1"
 SLOT="0"
-KEYWORDS="~amd64 ~x86"
+KEYWORDS="~amd64 ~ppc64 ~x86"
 IUSE=""
 
 RDEPEND=">=dev-lang/ghc-6.6.1
-		 >=dev-haskell/utf8-string-0.1
-		 >=dev-haskell/x11-1.2.1
+		 >=dev-haskell/utf8-string-0.1[profile?]
+		 >=dev-haskell/x11-1.2.1[profile?]
 		 x11-libs/libXft"
 
 DEPEND="${RDEPEND}
 		dev-haskell/cabal"
 
 S="${WORKDIR}/${MY_P}"
+
+PATCHES=("${FILESDIR}/${PN}-0.3-ghc72.patch")
