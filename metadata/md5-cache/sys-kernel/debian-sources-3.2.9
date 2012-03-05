@@ -1,0 +1,14 @@
+DEFINED_PHASES=compile install postinst preinst prepare setup unpack
+DEPEND=binary? ( >=sys-kernel/genkernel-3.4.12.6-r4 )
+DESCRIPTION=Debian Sources (and optional binary kernel)
+EAPI=2
+HOMEPAGE=http://www.debian.org
+IUSE=openvz binary
+KEYWORDS=*
+LICENSE=GPL-2
+RDEPEND=binary? ( >=sys-fs/udev-160 )
+RESTRICT=binchecks strip
+SLOT=3.2.9
+SRC_URI=http://ftp.bg.debian.org/debian/pool/main/l/linux-2.6/linux-2.6_3.2.9.orig.tar.gz http://ftp.bg.debian.org/debian/pool/main/l/linux-2.6/linux-2.6_3.2.9-1.diff.gz
+_eclasses_=mount-boot	410bdaef41d2c8674e24edfa9d521177
+_md5_=a2f9606fa112cabc4459774582b89150

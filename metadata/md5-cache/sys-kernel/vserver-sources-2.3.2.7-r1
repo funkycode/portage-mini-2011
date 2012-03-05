@@ -1,0 +1,14 @@
+DEFINED_PHASES=compile install postinst postrm preinst setup test unpack
+DEPEND=!build? ( sys-apps/sed >=sys-devel/binutils-2.11.90.0.31 )
+DESCRIPTION=Full sources including Linux-VServer patchsets for the 3.2 kernel tree.
+HOMEPAGE=http://www.gentoo.org/proj/en/vps/
+IUSE=symlink build
+KEYWORDS=~amd64 ~hppa ~x86
+LICENSE=GPL-2 freedist
+PDEPEND=!build? ( virtual/dev-manager )
+RDEPEND=!build? ( >=sys-libs/ncurses-5.2 sys-devel/make )
+RESTRICT=binchecks strip
+SLOT=2.3.2.7-r1
+SRC_URI=mirror://kernel/linux/kernel/v3.x/patch-3.2.9.bz2 mirror://kernel/linux/kernel/v3.x/linux-3.2.tar.bz2 http://vserver.13thfloor.at/Experimental/patch-3.2.9-vs2.3.2.7.diff
+_eclasses_=eutils	ba24d79270ea0022703f16b5de80051c	kernel-2	86f1b70fd28e9511b2a8205ac837c9e4	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e	versionator	6601b4c5b3f019a993db59a50e1854e4
+_md5_=0ecffb7505eb04716dd2466faf1de746

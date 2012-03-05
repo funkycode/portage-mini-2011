@@ -1,10 +1,9 @@
 # Copyright 1999-2012 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/sci-visualization/mayavi/mayavi-4.1.0.ebuild,v 1.1 2012/01/17 06:26:54 bicatali Exp $
+# $Header: /var/cvsroot/gentoo-x86/sci-visualization/mayavi/mayavi-4.1.0.ebuild,v 1.4 2012/03/05 10:53:04 jlec Exp $
 
 EAPI=4
 
-SUPPORT_PYTHON_ABIS="1"
 RESTRICT_PYTHON_ABIS="3.* *-jython"
 DISTUTILS_SRC_TEST="nosetests"
 
@@ -19,17 +18,19 @@ SLOT="2"
 KEYWORDS="~amd64 ~x86"
 IUSE="doc examples test"
 
-RDEPEND="dev-python/configobj
+RDEPEND="
+	dev-python/apptools
+	dev-python/configobj
+	dev-python/envisage
 	dev-python/ipython
-	>=dev-python/pyface-4
-	>=dev-python/traitsui-4
-	>=dev-python/envisage-4
-	>=dev-python/apptools-4
-	>=dev-python/traitsui-4
 	dev-python/numpy
-	>=sci-libs/vtk-5[python]"
-
-DEPEND="dev-python/setuptools
+	dev-python/pyface
+	dev-python/traitsui
+	dev-python/wxpython"
+CDEPEND="sci-libs/vtk[python]"
+DEPEND="
+	${CDEPEND}
+	dev-python/setuptools
 	test? (
 		${RDEPEND}
 		dev-python/wxpython[opengl]
@@ -38,6 +39,11 @@ DEPEND="dev-python/setuptools
 	)"
 
 DOCS="docs/*.txt"
+
+pkg_setup() {
+	python_set_active_version 2
+	python_pkg_setup
+}
 
 src_compile() {
 	distutils_src_compile

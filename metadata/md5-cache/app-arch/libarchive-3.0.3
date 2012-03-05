@@ -1,4 +1,4 @@
-DEFINED_PHASES=configure install postinst preinst test
+DEFINED_PHASES=configure install postinst preinst prepare test
 DEPEND=dev-libs/openssl:0 acl? ( virtual/acl ) bzip2? ( app-arch/bzip2 ) expat? ( dev-libs/expat ) !expat? ( dev-libs/libxml2 ) iconv? ( virtual/libiconv ) kernel_linux? ( xattr? ( sys-apps/attr ) ) lzma? ( app-arch/xz-utils ) nettle? ( dev-libs/nettle ) zlib? ( sys-libs/zlib ) kernel_linux? ( virtual/os-headers e2fsprogs? ( sys-fs/e2fsprogs ) )
 DESCRIPTION=BSD tar command
 EAPI=4
@@ -10,4 +10,4 @@ RDEPEND=dev-libs/openssl:0 acl? ( virtual/acl ) bzip2? ( app-arch/bzip2 ) expat?
 SLOT=0
 SRC_URI=http://libarchive.googlecode.com/files/libarchive-3.0.3.tar.gz
 _eclasses_=eutils	ba24d79270ea0022703f16b5de80051c	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
-_md5_=32706a1fe40e16e99c795e794cc0a73d
+_md5_=8b515bce0ae09c5c7b039a199aa4c8ed

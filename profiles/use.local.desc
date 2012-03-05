@@ -280,7 +280,6 @@ app-doc/tldp-howto:html - Install the docs in multipage HTML format (default)
 app-doc/tldp-howto:htmlsingle - Install the docs in single page HTML format
 app-doc/tldp-howto:pdf - Install the docs in pdf format
 app-doc/tldp-howto:text - Install the docs in plain text format
-app-editors/bluefish:gtk3 - Enable gtk3 frontend instead of gtk2 one
 app-editors/cssed:plugins - Install plugin development files
 app-editors/emacs:athena - Enable the MIT Athena widget set (x11-libs/libXaw)
 app-editors/emacs:gconf - Use gnome-base/gconf to read the system font name

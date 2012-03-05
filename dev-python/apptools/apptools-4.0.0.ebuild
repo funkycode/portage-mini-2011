@@ -1,6 +1,6 @@
 # Copyright 1999-2012 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/dev-python/apptools/apptools-4.0.0.ebuild,v 1.2 2012/01/17 06:16:44 bicatali Exp $
+# $Header: /var/cvsroot/gentoo-x86/dev-python/apptools/apptools-4.0.0.ebuild,v 1.4 2012/03/05 10:49:04 jlec Exp $
 
 EAPI=4
 PYTHON_DEPEND="2"

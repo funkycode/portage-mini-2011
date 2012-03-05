@@ -1,6 +1,6 @@
 # Copyright 1999-2012 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/dev-python/envisage/envisage-4.1.0.ebuild,v 1.2 2012/02/25 15:18:42 patrick Exp $
+# $Header: /var/cvsroot/gentoo-x86/dev-python/envisage/envisage-4.1.0.ebuild,v 1.4 2012/03/05 10:47:30 jlec Exp $
 
 EAPI=4
 
