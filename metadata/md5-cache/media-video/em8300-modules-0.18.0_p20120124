@@ -1,13 +1,13 @@
-DEFINED_PHASES=compile install postinst postrm preinst setup
+DEFINED_PHASES=compile install postinst postrm preinst prepare setup
 DEPEND=virtual/linux-sources kernel_linux? ( sys-apps/module-init-tools ) sys-apps/sed kernel_linux? ( virtual/linux-sources )
 DESCRIPTION=em8300 (RealMagic Hollywood+/Creative DXR3) video decoder card kernel modules
 EAPI=2
-HOMEPAGE=http://dxr3.sourceforge.net
+HOMEPAGE=http://dxr3.hg.sourceforge.net/hgweb/dxr3/em8300/
 IUSE=kernel_linux
 KEYWORDS=~amd64 ~ppc ~x86
 LICENSE=GPL-2
 RDEPEND=kernel_linux? ( sys-apps/module-init-tools )
 SLOT=0
-SRC_URI=http://vdr.websitec.de/download/em8300-0.18.0_p20120124.tar.gz
+SRC_URI=mirror://gentoo/em8300-0.18.0_p20120124.tar.gz http://vdr.websitec.de/download/em8300-0.18.0_p20120124.tar.gz
 _eclasses_=eutils	ba24d79270ea0022703f16b5de80051c	linux-info	cc184ad3383ffb6ffbaa82f53608e77f	linux-mod	a4e07f78bacb6b129ea7b18ad060dbfc	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e	versionator	6601b4c5b3f019a993db59a50e1854e4
-_md5_=cc8fc7bb2b48558df325acb045a9bc57
+_md5_=a7bb7ff012f720a1df7ffe21f6208ec8

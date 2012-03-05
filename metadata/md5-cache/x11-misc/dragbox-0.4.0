@@ -1,7 +1,7 @@
-DEFINED_PHASES=install postinst postrm
+DEFINED_PHASES=install postinst postrm prepare setup
 DEPEND=dev-python/pygtk:2 gnome-base/libglade:2.0 dev-python/gnome-vfs-python:2 dev-python/libgnome-python:2 dev-python/gconf-python:2 sys-apps/dbus x11-libs/gtk+:2 >=app-admin/eselect-python-20091230 =dev-lang/python-2*
 DESCRIPTION=GTK tool for connecting the commandline with the desktop environment
-EAPI=2
+EAPI=4
 HOMEPAGE=http://kaizer.se/wiki/dragbox/
 KEYWORDS=~amd64 ~x86
 LICENSE=GPL-2
@@ -9,4 +9,4 @@ RDEPEND=dev-python/pygtk:2 gnome-base/libglade:2.0 dev-python/gnome-vfs-python:2
 SLOT=0
 SRC_URI=http://kaizer.se/publicfiles/dragbox/dragbox-0.4.0.tar.gz
 _eclasses_=multilib	5f4ad6cf85e365e8f0c6050ddd21659e	python	06dff99bcab2fd584bd6d2aa6019ee19	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68
-_md5_=4e66427dd9111c70e94f6a6518c06416
+_md5_=50ea38cb64ad65c6950b359bf14112ba

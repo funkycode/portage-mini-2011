@@ -9,4 +9,4 @@ RDEPEND=dev-cpp/eigen:2 dev-libs/libxml2:2 !sci-chemistry/babel ~sci-chemistry/o
 SLOT=0
 SRC_URI=mirror://sourceforge/openbabel/openbabel-2.3.0.tar.gz
 _eclasses_=distutils	c8b0cab86443a130f3737ad1456d57d3	eutils	ba24d79270ea0022703f16b5de80051c	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	python	06dff99bcab2fd584bd6d2aa6019ee19	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
-_md5_=57146278d6159b329cf10b9030248282
+_md5_=259f7a9cab72403100e3ab76450f0904

@@ -1,0 +1,12 @@
+DEFINED_PHASES=compile install prepare
+DEPEND=app-arch/unzip
+DESCRIPTION=A program and library for generating standard and non-standard InChI and InChIKeys
+EAPI=4
+HOMEPAGE=http://www.iupac.org/inchi/
+IUSE=doc
+KEYWORDS=~amd64 ~x86 ~amd64-linux ~x86-linux
+LICENSE=IUPAC-InChi
+SLOT=0
+SRC_URI=http://www.inchi-trust.org/sites/default/files/inchi-1.04/INCHI-1-API.ZIP -> inchi-1.04.zip doc? ( http://www.inchi-trust.org/sites/default/files/inchi-1.04/INCHI-1-DOC.ZIP -> inchi-1.04-doc.zip )
+_eclasses_=eutils	ba24d79270ea0022703f16b5de80051c	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
+_md5_=63b4c25e3f5cb4621c7f738baee44b37

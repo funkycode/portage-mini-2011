@@ -8,4 +8,4 @@ LICENSE=GPL-3
 RDEPEND=media-libs/freetype:2 media-libs/jbig2dec virtual/jpeg media-libs/openjpeg X? ( x11-libs/libX11 x11-libs/libXext )
 SLOT=0
 _eclasses_=eutils	ba24d79270ea0022703f16b5de80051c	flag-o-matic	66cb710a2aa184a5687fe1289d7973ab	git-2	6bb20ec18cca375571bcbe67bcf2e1d7	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
-_md5_=f0bfcbcde2aa9b7a44ec7f59f8899bb6
+_md5_=d2ff94b98ef4d5d52873c58e89fd0fe5

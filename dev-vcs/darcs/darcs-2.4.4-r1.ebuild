@@ -1,10 +1,10 @@
-# Copyright 1999-2011 Gentoo Foundation
+# Copyright 1999-2012 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/dev-vcs/darcs/darcs-2.4.4-r1.ebuild,v 1.14 2011/12/08 20:42:47 slyfox Exp $
+# $Header: /var/cvsroot/gentoo-x86/dev-vcs/darcs/darcs-2.4.4-r1.ebuild,v 1.16 2012/03/04 14:17:07 gienah Exp $
 
 EAPI="3"
 CABAL_FEATURES="bin lib profile haddock hscolour"
-inherit haskell-cabal eutils bash-completion
+inherit haskell-cabal eutils bash-completion-r1
 
 DESCRIPTION="a distributed, interactive, smart revision control system"
 HOMEPAGE="http://darcs.net/"
@@ -23,17 +23,17 @@ IUSE="doc test"
 # 4) Use the same bounds for mmap as hashed-storage.
 
 COMMONDEPS=">=dev-lang/ghc-6.8
-		>=dev-haskell/hashed-storage-0.4.13
-		=dev-haskell/haskeline-0.6*
-		=dev-haskell/html-1.0*
-		=dev-haskell/mmap-0.4*
-		<dev-haskell/mtl-1.2
-		>=dev-haskell/network-2.2
-		>=dev-haskell/parsec-2.0
-		<dev-haskell/regex-compat-0.94
-		=dev-haskell/terminfo-0.3*
-		=dev-haskell/utf8-string-0.3*
-		<dev-haskell/zlib-0.6.0.0
+		>=dev-haskell/hashed-storage-0.4.13[profile?]
+		=dev-haskell/haskeline-0.6*[profile?]
+		=dev-haskell/html-1.0*[profile?]
+		=dev-haskell/mmap-0.4*[profile?]
+		<dev-haskell/mtl-1.2[profile?]
+		>=dev-haskell/network-2.2[profile?]
+		>=dev-haskell/parsec-2.0[profile?]
+		<dev-haskell/regex-compat-0.94[profile?]
+		=dev-haskell/terminfo-0.3*[profile?]
+		=dev-haskell/utf8-string-0.3*[profile?]
+		<dev-haskell/zlib-0.6.0.0[profile?]
 		net-misc/curl"
 
 DEPEND="${COMMONDEPS}
@@ -41,9 +41,9 @@ DEPEND="${COMMONDEPS}
 		dev-util/pkgconfig
 		doc?  ( virtual/latex-base
 				dev-tex/latex2html )
-		test? ( dev-haskell/test-framework
-				dev-haskell/test-framework-hunit
-				dev-haskell/test-framework-quickcheck2 )
+		test? ( dev-haskell/test-framework[profile?]
+				dev-haskell/test-framework-hunit[profile?]
+				dev-haskell/test-framework-quickcheck2[profile?] )
 		"
 
 # darcs also has a library version; we thus need $DEPEND
@@ -124,7 +124,7 @@ src_test() {
 
 src_install() {
 	cabal_src_install
-	dobashcompletion "${S}/contrib/darcs_completion" "${PN}"
+	newbashcomp "${S}/contrib/darcs_completion" "${PN}"
 
 	rm "${ED}/usr/bin/unit" 2> /dev/null
 
@@ -138,7 +138,6 @@ src_install() {
 
 pkg_postinst() {
 	ghc-package_pkg_postinst
-	bash-completion_pkg_postinst
 
 	ewarn "NOTE: in order for the darcs send command to work properly,"
 	ewarn "you must properly configure your mail transport agent to relay"

@@ -4,10 +4,10 @@ DESCRIPTION=Reading, writing and manipulating .tar archive files.
 EAPI=3
 HOMEPAGE=http://hackage.haskell.org/package/tar
 IUSE=doc hscolour profile
-KEYWORDS=~amd64 ~x86 ~x86-fbsd ~x86-macos
+KEYWORDS=~alpha ~amd64 ~ia64 ~ppc ~ppc64 ~sparc ~x86 ~x86-fbsd ~x86-macos
 LICENSE=BSD
 RDEPEND=>=dev-lang/ghc-6.10.1 dev-lang/ghc
 SLOT=0
 SRC_URI=http://hackage.haskell.org/packages/archive/tar/0.3.2.0/tar-0.3.2.0.tar.gz
 _eclasses_=eutils	ba24d79270ea0022703f16b5de80051c	ghc-package	83329f14231f6ba420fb965d858f37c0	haskell-cabal	3e3a8d848b113b19eff54b771a020c8b	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e	versionator	6601b4c5b3f019a993db59a50e1854e4
-_md5_=f675551467898383a4e4b0ee2e1ad246
+_md5_=20518bbfd796a35ab5b4bdc1212ecd1b

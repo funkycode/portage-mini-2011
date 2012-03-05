@@ -10,4 +10,4 @@ RDEPEND=>=net-libs/librsync-0.9.6 app-crypt/gnupg >=dev-python/py-gnupg-0.3.2 >=
 SLOT=0
 SRC_URI=http://code.launchpad.net/duplicity/0.6-series/0.6.18/+download/duplicity-0.6.18.tar.gz
 _eclasses_=distutils	c8b0cab86443a130f3737ad1456d57d3	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	python	06dff99bcab2fd584bd6d2aa6019ee19	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68
-_md5_=f271017effbd52a2d31c201c2b28a4df
+_md5_=c615f1deb5f43f5b5470348ccb8e1cf3

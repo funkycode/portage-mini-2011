@@ -4,10 +4,10 @@ DESCRIPTION=An efficient packed Unicode text type.
 EAPI=3
 HOMEPAGE=https://github.com/bos/text
 IUSE=test doc hscolour profile
-KEYWORDS=~amd64 ~x86 ~x86-fbsd ~x86-macos
+KEYWORDS=~alpha ~amd64 ~ia64 ~ppc ~ppc64 ~sparc ~x86 ~x86-fbsd ~x86-macos
 LICENSE=BSD
 RDEPEND=>=dev-haskell/deepseq-1.1.0.0 >=dev-lang/ghc-6.10.1 dev-lang/ghc
 SLOT=0
 SRC_URI=http://hackage.haskell.org/packages/archive/text/0.11.1.12/text-0.11.1.12.tar.gz
 _eclasses_=eutils	ba24d79270ea0022703f16b5de80051c	ghc-package	83329f14231f6ba420fb965d858f37c0	haskell-cabal	3e3a8d848b113b19eff54b771a020c8b	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e	versionator	6601b4c5b3f019a993db59a50e1854e4
-_md5_=245c2e1fefa4b6e07f1f89ad1a01044a
+_md5_=4bb0c6c3ff50e80b9fe57ad626717018
