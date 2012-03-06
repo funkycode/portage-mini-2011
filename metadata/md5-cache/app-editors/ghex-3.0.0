@@ -3,10 +3,10 @@ DEPEND=>=dev-libs/glib-2.26:2 >=x11-libs/gtk+-3.0:3 >=dev-libs/atk-1 >=dev-util/
 DESCRIPTION=Gnome hexadecimal editor
 EAPI=4
 HOMEPAGE=http://www.gnome.org/
-KEYWORDS=amd64 ~ppc x86 ~x86-interix ~amd64-linux ~x86-linux
+KEYWORDS=amd64 ppc x86 ~x86-interix ~amd64-linux ~x86-linux
 LICENSE=GPL-2 FDL-1.1
 RDEPEND=>=dev-libs/glib-2.26:2 >=x11-libs/gtk+-3.0:3 >=dev-libs/atk-1
 SLOT=2
 SRC_URI=mirror://gnome/sources/ghex/3.0/ghex-3.0.0.tar.xz
 _eclasses_=eutils	ba24d79270ea0022703f16b5de80051c	fdo-mime	0acfe1a88fd8751a1d5dc671168219fa	gnome.org	8fef8f967214f56e08fa92d61163d891	gnome2	490ce89f5d905297c7a34898fa498bd0	gnome2-utils	b5ca2ccadb60760889faa3bccba121d9	libtool	5f623f5a211fb1b2d84d88ee49959a54	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e	versionator	6601b4c5b3f019a993db59a50e1854e4
-_md5_=e9b3566d86e9ba97c0f6bfcc80ffb8ac
+_md5_=e74fa47c44ed0dd8f0a708033d51816c
