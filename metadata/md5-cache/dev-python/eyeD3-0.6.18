@@ -3,10 +3,10 @@ DEPEND=>=app-admin/eselect-python-20091230 || ( =dev-lang/python-2.7* =dev-lang/
 DESCRIPTION=Module for manipulating ID3 (v1 + v2) tags in Python
 EAPI=3
 HOMEPAGE=http://eyed3.nicfit.net/
-KEYWORDS=~alpha amd64 ~arm hppa ~ia64 ~ppc ~ppc64 ~sparc x86 ~amd64-linux ~x86-linux ~x64-macos ~x86-macos ~x86-solaris
+KEYWORDS=~alpha amd64 ~arm hppa ~ia64 ppc ~ppc64 ~sparc x86 ~amd64-linux ~x86-linux ~x64-macos ~x86-macos ~x86-solaris
 LICENSE=GPL-2
 RDEPEND=>=app-admin/eselect-python-20091230 || ( =dev-lang/python-2.7* =dev-lang/python-2.6* =dev-lang/python-2.5* )
 SLOT=0
 SRC_URI=http://eyed3.nicfit.net/releases/eyeD3-0.6.18.tar.gz
 _eclasses_=distutils	c8b0cab86443a130f3737ad1456d57d3	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	python	06dff99bcab2fd584bd6d2aa6019ee19	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68
-_md5_=60f7a1063ea4e39ebdf390c649d751f9
+_md5_=6dea902a1be6c82fd1c3f56c0671123f

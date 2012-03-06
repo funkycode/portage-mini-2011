@@ -1,10 +1,12 @@
-# Copyright 1999-2011 Gentoo Foundation
+# Copyright 1999-2012 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/sci-chemistry/coot/coot-0.6.2-r1.ebuild,v 1.2 2011/10/07 09:37:25 jlec Exp $
+# $Header: /var/cvsroot/gentoo-x86/sci-chemistry/coot/coot-0.6.2-r1.ebuild,v 1.3 2012/03/06 15:31:19 jlec Exp $
 
 EAPI=3
 
 PYTHON_DEPEND="2"
+
+AUTOTOOLS_AUTORECONF="true"
 
 inherit autotools-utils flag-o-matic python toolchain-funcs versionator
 
@@ -85,12 +87,6 @@ PATCHES=(
 	"${FILESDIR}"/${PV}-ssm.patch
 	"${FILESDIR}"/${PV}-libpng15.patch
 	)
-
-src_prepare() {
-	autotools-utils_src_prepare
-
-	eautoreconf
-}
 
 src_configure() {
 	# All the --with's are used to activate various parts.

@@ -1,0 +1,13 @@
+DEFINED_PHASES=install postinst prerm setup
+DEPEND==virtual/httpd-php-5* >=app-admin/webapp-config-1.50.15
+DESCRIPTION=TYPO3 is a free Open Source CMS. This is the source package.
+EAPI=4
+HOMEPAGE=http://typo3.org/
+IUSE=mysql vhosts
+KEYWORDS=amd64 ~hppa ~ppc ~ppc64 ~sparc x86
+LICENSE=GPL-2
+RDEPEND=~www-apps/typo3_dummy-4.6.5 || ( >=dev-lang/php-5.3[filter,gd,json,ssl,session,soap,xml,zlib,truetype,zlib,mysql] >=dev-lang/php-5.3[filter,gd,json,ssl,session,soap,xml,zlib,truetype,zlib,mysqli] ) || ( media-gfx/graphicsmagick[zlib,truetype,tiff,png,jpeg] <=media-gfx/imagemagick-4.2.9[zlib,truetype,tiff,png,jpeg] ) dev-libs/libpcre >=dev-db/mysql-5.0 =virtual/httpd-php-5* >=app-admin/webapp-config-1.50.15
+SLOT=4.6.5-r1
+SRC_URI=mirror://sourceforge/typo3/typo3_src-4.6.5.tar.gz
+_eclasses_=depend.php	ce98226ee6abc9debc88f584f7649f45	eutils	ba24d79270ea0022703f16b5de80051c	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	phpconfutils	e108303831029e5b8a9d24b991b1d62a	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e	webapp	30d951d5c98c4f31c7999ab4ba4806d1
+_md5_=fed3af0aa56ee22313a1511c2ecb9e6b
