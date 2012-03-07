@@ -8,5 +8,5 @@ LICENSE=GPL-3
 RDEPEND=app-emulation/wine app-arch/cabextract app-arch/unzip dev-python/wxpython:2.8 || ( media-gfx/imagemagick media-gfx/graphicsmagick[imagemagick] ) net-misc/wget x11-apps/mesa-progs x11-terms/xterm >=app-admin/eselect-python-20091230 =dev-lang/python-2*
 SLOT=0
 SRC_URI=http://www.playonlinux.com/script_files/PlayOnLinux/4.0.14/PlayOnLinux_4.0.14.tar.gz
-_eclasses_=base	5f35078c26d6c60556d5c8a2feb4f84f	eutils	ba24d79270ea0022703f16b5de80051c	games	f75cdbfdf1760e514ca65e2f6c6a7c72	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	python	06dff99bcab2fd584bd6d2aa6019ee19	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
+_eclasses_=base	5f35078c26d6c60556d5c8a2feb4f84f	eutils	ba24d79270ea0022703f16b5de80051c	games	f75cdbfdf1760e514ca65e2f6c6a7c72	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	python	dc3993dc1961bbb13c11bb835390ca29	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
 _md5_=bc82e28c9d52f80d4dd67c3b2804fdaf

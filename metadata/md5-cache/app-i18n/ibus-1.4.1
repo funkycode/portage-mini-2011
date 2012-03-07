@@ -4,11 +4,11 @@ DESCRIPTION=Intelligent Input Bus for Linux / Unix OS
 EAPI=3
 HOMEPAGE=http://code.google.com/p/ibus/
 IUSE=dconf doc +gconf gtk gtk3 introspection nls +python vala X
-KEYWORDS=~amd64 ~ppc ~ppc64 ~x86 ~x86-fbsd
+KEYWORDS=~amd64 ~ppc ppc64 ~x86 ~x86-fbsd
 LICENSE=LGPL-2.1
 RDEPEND=>=dev-libs/glib-2.26:2 dconf? ( >=gnome-base/dconf-0.7.5 ) gconf? ( >=gnome-base/gconf-2.12:2 ) gnome-base/librsvg:2 sys-apps/dbus[X?] app-text/iso-codes gtk? ( x11-libs/gtk+:2 ) gtk3? ( x11-libs/gtk+:3 ) X? ( x11-libs/libX11 x11-libs/gtk+:2 ) introspection? ( >=dev-libs/gobject-introspection-0.6.8 ) python? ( dev-python/notify-python >=dev-python/dbus-python-0.83 ) nls? ( virtual/libintl ) python? ( dev-python/pygtk dev-python/pyxdg ) >=app-admin/eselect-python-20091230 python? ( || ( =dev-lang/python-2.7* =dev-lang/python-2.6* =dev-lang/python-2.5* ) )
 RESTRICT=test
 SLOT=0
 SRC_URI=http://ibus.googlecode.com/files/ibus-1.4.1.tar.gz
-_eclasses_=autotools	3e1370c6fcb964b30ad99070a466441d	confutils	a80706bb5b9ddcf6bbd14365656d4985	eutils	ba24d79270ea0022703f16b5de80051c	gnome2-utils	b5ca2ccadb60760889faa3bccba121d9	libtool	5f623f5a211fb1b2d84d88ee49959a54	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	python	06dff99bcab2fd584bd6d2aa6019ee19	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
-_md5_=e1f1bdefa1ceedf303491ff506f3adaa
+_eclasses_=autotools	3e1370c6fcb964b30ad99070a466441d	confutils	a80706bb5b9ddcf6bbd14365656d4985	eutils	ba24d79270ea0022703f16b5de80051c	gnome2-utils	b5ca2ccadb60760889faa3bccba121d9	libtool	5f623f5a211fb1b2d84d88ee49959a54	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	python	dc3993dc1961bbb13c11bb835390ca29	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
+_md5_=316171bae32e3553c9521796742d3417

@@ -1497,20 +1497,20 @@ dev-python/pypy:jit - Enable the JIT compiler
 dev-python/pypy:sandbox - Enable sandboxing functionality
 dev-python/pypy:shadowstack - Use a shadow stack for finding GC roots
 dev-python/pypy:stackless - Enable running with stackless features
-dev-python/pyside:X - Build the QtGui and QtDesigner modules
-dev-python/pyside:assistant - Build the QtHelp module
-dev-python/pyside:declarative - Build the QtDeclarative module
-dev-python/pyside:help - Build the QtHelp module
-dev-python/pyside:kde - Select media-sound/phonon as Phonon variant needed for KDE
-dev-python/pyside:multimedia - Build the QtMultimedia module
-dev-python/pyside:opengl - Build the QtOpenGL module
-dev-python/pyside:phonon - Build the phonon module
-dev-python/pyside:script - Build the QtScript module
-dev-python/pyside:sql - Build the QtSql module
-dev-python/pyside:svg - Build the QtSvg module
-dev-python/pyside:test - Build the QtTest module
-dev-python/pyside:webkit - Build the QtWebKit module
-dev-python/pyside:xmlpatterns - Build the QtXmlPatterns module
+dev-python/pyside:X - Build QtGui, QtDesigner, QtTest and QtUiTools modules
+dev-python/pyside:assistant - Build QtHelp module
+dev-python/pyside:declarative - Build QtDeclarative module
+dev-python/pyside:help - Build QtHelp module
+dev-python/pyside:kde - Select media-sound/phonon as phonon variant, needed for KDE4
+dev-python/pyside:multimedia - Build QtMultimedia module
+dev-python/pyside:opengl - Build QtOpenGL module
+dev-python/pyside:phonon - Build phonon module
+dev-python/pyside:script - Build QtScript module
+dev-python/pyside:scripttools - Build QtScriptTools module
+dev-python/pyside:sql - Build QtSql module
+dev-python/pyside:svg - Build QtSvg module
+dev-python/pyside:webkit - Build QtWebKit module
+dev-python/pyside:xmlpatterns - Build QtXmlPatterns module
 dev-python/pytables:contrib - Install user-contributed files
 dev-python/pyudev:pygobject - Install PyGobject binding
 dev-python/pyudev:pyqt4 - Install PyQt4 binding
@@ -1762,8 +1762,6 @@ games-arcade/smc:music - Download and install the music files
 games-arcade/triplexinvaders:psyco - psyco python accelerator
 games-arcade/tuxanci:physfs - Use dev-games/physfs instead of dev-libs/libzip to load compressed data
 games-arcade/tuxanci:sound - Enable sound
-games-arcade/ultrastar-ng:songs - Install a few demo songs
-games-arcade/ultrastar-ng:video - Enable smpeg video support
 games-board/chessdb:tb4 - Install 4 pieces table bases
 games-board/crafty:no-opts - Don't try to enable crazy CFLAG options
 games-board/freedoko:backgrounds - Install additional background images
@@ -2880,6 +2878,7 @@ media-sound/sonata:trayicon - Enable support for trayicon
 media-sound/sonic-visualiser:id3tag - Enables ID3 tagging with id3tag library
 media-sound/sox:amr - Enables Adaptive Multi-Rate Audio support
 media-sound/sox:id3tag - Enables ID3 tagging with id3tag library
+media-sound/sox:twolame - Enables twolame support (MPEG Audio Layer 2 encoder)
 media-sound/split2flac:enca - Try to guess the charset using enca
 media-sound/split2flac:flake - Add support for Flake, alternative FLAC encoder
 media-sound/split2flac:mac - Add support for Monkey's Audio files
@@ -4932,6 +4931,7 @@ sys-cluster/slurm:torque - Enable perl scripts that emulates pbs (qstat, qsub et
 sys-cluster/torque:cpusets - Enable pbs_mom to utilize linux cpusets if available
 sys-cluster/torque:drmaa - Enable the Distributed Resource Management Application API
 sys-cluster/torque:munge - Enable authentication via munge
+sys-cluster/torque:nvidia - Enable management of Nvidia GPUs
 sys-cluster/torque:server - Enable compilation of pbs_server and pbs_sched
 sys-devel/binutils:multislot - Allow for multiple versions of binutils to be emerged at once for same CTARGET
 sys-devel/binutils:multitarget - Adds support to binutils for cross compiling (does not work with gas)

@@ -9,5 +9,5 @@ LICENSE=MIT
 RDEPEND=>=dev-libs/dbus-glib-0.98 >=sys-apps/dbus-1.4.16 >=app-admin/eselect-python-20091230 || ( =dev-lang/python-3* =dev-lang/python-2.7* =dev-lang/python-2.6* )
 SLOT=0
 SRC_URI=http://dbus.freedesktop.org/releases/dbus-python/dbus-python-1.0.0.tar.gz
-_eclasses_=eutils	ba24d79270ea0022703f16b5de80051c	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	python	06dff99bcab2fd584bd6d2aa6019ee19	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
+_eclasses_=eutils	ba24d79270ea0022703f16b5de80051c	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	python	dc3993dc1961bbb13c11bb835390ca29	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
 _md5_=8152f5981801418dc7c109a9b6a5434c
