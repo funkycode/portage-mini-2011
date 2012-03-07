@@ -1,13 +1,13 @@
 DEFINED_PHASES=compile install prepare
-DEPEND=dev-lang/ghc dev-haskell/json dev-haskell/curl dev-haskell/network dev-haskell/parallel
+DEPEND=dev-lang/ghc dev-haskell/json dev-haskell/curl dev-haskell/network dev-haskell/parallel test? ( dev-haskell/quickcheck:1 )
 DESCRIPTION=Cluster tools for fixing common allocation problems on Ganeti 2.0 clusters.
 EAPI=2
 HOMEPAGE=http://code.google.com/p/ganeti/
-IUSE=doc
+IUSE=doc test
 KEYWORDS=~amd64 ~x86
 LICENSE=GPL-2
 RDEPEND=dev-lang/ghc dev-haskell/json dev-haskell/curl dev-haskell/network dev-haskell/parallel !<app-emulation/ganeti-2.4
 SLOT=0
 SRC_URI=http://ganeti.googlecode.com/files/ganeti-htools-0.3.1.tar.gz
-_eclasses_=multilib	5f4ad6cf85e365e8f0c6050ddd21659e	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68
-_md5_=a4d72d50037b6bb05c1b0409d5847338
+_eclasses_=eutils	ba24d79270ea0022703f16b5de80051c	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
+_md5_=1b0e9ae1d6e9aa4754d384a9c1b9437f

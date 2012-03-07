@@ -1,6 +1,6 @@
 # Copyright 1999-2012 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/x11-terms/st/st-0.1.1.ebuild,v 1.3 2012/01/04 05:35:09 vapier Exp $
+# $Header: /var/cvsroot/gentoo-x86/x11-terms/st/st-0.1.1.ebuild,v 1.5 2012/03/07 18:17:30 jer Exp $
 
 EAPI=3
 
@@ -8,7 +8,7 @@ inherit savedconfig toolchain-funcs
 
 DESCRIPTION="simple terminal implementation for X"
 HOMEPAGE="http://st.suckless.org/"
-SRC_URI="http://hg.suckless.org/st/archive/0.1.1.tar.gz"
+SRC_URI="http://hg.suckless.org/st/archive/${PV}.tar.gz -> ${P}.tar.gz"
 
 LICENSE="BSD"
 SLOT="0"
@@ -39,7 +39,7 @@ src_prepare() {
 src_install() {
 	emake DESTDIR="${D}" PREFIX="${EPREFIX}"/usr install || die
 	tic -s -o "${ED}"/usr/share/terminfo st.info || die
-	dodoc README TODO || die
+	dodoc TODO || die
 
 	save_config config.h
 }
