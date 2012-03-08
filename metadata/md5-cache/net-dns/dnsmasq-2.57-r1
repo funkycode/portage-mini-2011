@@ -1,5 +1,5 @@
 DEFINED_PHASES=compile configure install prepare setup
-DEPEND=dbus? ( sys-apps/dbus ) idn? ( net-dns/libidn ) nls? ( sys-devel/gettext net-dns/libidn ) dev-util/pkgconfig || ( app-arch/xz-utils app-arch/lzma-utils )
+DEPEND=dbus? ( sys-apps/dbus ) idn? ( net-dns/libidn ) nls? ( sys-devel/gettext net-dns/libidn ) dev-util/pkgconfig || ( app-arch/xz-utils app-arch/lzma )
 DESCRIPTION=Small forwarding DNS server
 EAPI=4
 HOMEPAGE=http://www.thekelleys.org.uk/dnsmasq/
@@ -10,4 +10,4 @@ RDEPEND=dbus? ( sys-apps/dbus ) idn? ( net-dns/libidn ) nls? ( sys-devel/gettext
 SLOT=0
 SRC_URI=http://www.thekelleys.org.uk/dnsmasq/dnsmasq-2.57.tar.lzma
 _eclasses_=eutils	ba24d79270ea0022703f16b5de80051c	flag-o-matic	66cb710a2aa184a5687fe1289d7973ab	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
-_md5_=b7a2dfa26a548fcea19adcdd3584d656
+_md5_=50ec4f887264e4a9b6f0781eff23f5c7
