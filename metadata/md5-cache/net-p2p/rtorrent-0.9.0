@@ -1,13 +1,13 @@
 DEFINED_PHASES=configure install postinst prepare
-DEPEND=>=net-libs/libtorrent-0.12.0 >=dev-libs/libsigc++-2.2.2:2 >=net-misc/curl-7.19.1 sys-libs/ncurses xmlrpc? ( dev-libs/xmlrpc-c ) test? ( dev-util/cppunit ) dev-util/pkgconfig
+DEPEND=>=net-libs/libtorrent-0.13.0 >=dev-libs/libsigc++-2.2.2:2 >=net-misc/curl-7.19.1 sys-libs/ncurses xmlrpc? ( dev-libs/xmlrpc-c ) test? ( dev-util/cppunit ) dev-util/pkgconfig
 DESCRIPTION=BitTorrent Client using libtorrent
 EAPI=2
 HOMEPAGE=http://libtorrent.rakshasa.no/
 IUSE=color daemon debug ipv6 test xmlrpc
 KEYWORDS=~amd64 ~arm ~hppa ~ia64 ~ppc ~ppc64 ~sparc ~x86 ~x86-fbsd
 LICENSE=GPL-2
-RDEPEND=>=net-libs/libtorrent-0.12.0 >=dev-libs/libsigc++-2.2.2:2 >=net-misc/curl-7.19.1 sys-libs/ncurses xmlrpc? ( dev-libs/xmlrpc-c ) daemon? ( app-misc/screen )
+RDEPEND=>=net-libs/libtorrent-0.13.0 >=dev-libs/libsigc++-2.2.2:2 >=net-misc/curl-7.19.1 sys-libs/ncurses xmlrpc? ( dev-libs/xmlrpc-c ) daemon? ( app-misc/screen )
 SLOT=0
 SRC_URI=http://libtorrent.rakshasa.no/downloads/rtorrent-0.9.0.tar.gz
 _eclasses_=eutils	ba24d79270ea0022703f16b5de80051c	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
-_md5_=db027af9ea64e709d383fe903d052e76
+_md5_=b9107373f6a35cea6a3a500ab991aba3

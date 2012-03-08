@@ -790,10 +790,9 @@ app-pda/libsyncml:http - Enable http transports
 app-pda/libsyncml:obex - Enable obex transports
 app-pda/synce-sync-engine:opensync - Enable OpenSync (app-pda/libopensync) python plug-in
 app-portage/conf-update:colordiff - Use colors when displaying diffs (app-misc/colordiff)
-app-portage/eix:bzip2 - Support for parsing of environment.bz2 to guess repository name of packages installed with ancient portage versions (requires app-arch/bzip2). This flag is safe to disable for portage users that have re-merged all packages since 2007. This flag will be phased out.
 app-portage/eix:debug - Build with upstream's CXXFLAGS/LDFLAGS for debugging support; not recommended for normal use.
+app-portage/eix:dep - Make DEP=true the default which enables support for {,R,P}DEPEND but requires roughly double disk and memory.
 app-portage/eix:doc - Create description of the eix cache file additionally in html format
-app-portage/eix:hardened - Add CXXFLAGS/LDFLAGS enhancing security at the cost of a slight speed loss. If a hardened gcc is used, these flags should not make a difference.
 app-portage/eix:nls - Support foreign language messages (experimental; currently only de)
 app-portage/eix:optimization - Accept upstream's choices for CXXFLAGS/LDFLAGS for optimization. Absense of this USE flag does not strip user's *FLAGS
 app-portage/eix:security - This adds some checks which can prevent certain exploits if e.g. the eix code has a bug. If you use the hardened toolchain, using this flag does not increase security and can even lead to problems.
@@ -4159,7 +4158,6 @@ net-misc/quagga:readline - Enable support for sys-libs/readline to provide the Q
 net-misc/quagga:tcp-zebra - Enable TCP zserv interface on port 2600 for Zebra/protocol-daemon communication. Unix domain sockets are chosen otherwise.
 net-misc/rdesktop:pcsc-lite - Enable smartcard support with sys-apps/pcsc-lite driver
 net-misc/remmina:freerdp - Add support for the net-misc/freerdp application
-net-misc/remmina:gtk3 - Build against x11-libs/gtk+:3
 net-misc/remmina:ssh - Enable support for SSH/SFTP using net-libs/libssh
 net-misc/remmina:telepathy - Enable telepathy support
 net-misc/remmina:unique - Enable single instance support using dev-libs/libunique
@@ -5557,7 +5555,6 @@ x11-terms/mlterm:scim - Enable app-i18n/scim support
 x11-terms/mlterm:uim - Enable app-i18n/uim support
 x11-terms/mrxvt:menubar - Enable mrxvt menubar
 x11-terms/mrxvt:utempter - REcords user logins. Useful on multi-user systems
-x11-terms/roxterm:gtk3 - Use gtk3 instead of gtk2 (and associated version of x11-libs/vte)
 x11-terms/rxvt:linuxkeys - Define LINUX_KEYS (changes Home/End key)
 x11-terms/rxvt:xgetdefault - Enable resources via X instead of rxvt small version
 x11-terms/rxvt-unicode:256-color - Enable 256 color support

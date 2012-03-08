@@ -1,0 +1,12 @@
+DEFINED_PHASES=install postinst postrm setup
+DEPEND=X? ( x11-apps/mkfontdir media-fonts/encodings ) >=media-libs/fontconfig-2.4.0
+DESCRIPTION=A collection of Free fonts for Thai
+EAPI=4
+HOMEPAGE=http://linux.thai.net/projects/thaifonts-scalable
+IUSE=X
+KEYWORDS=~amd64 ~x86
+LICENSE=|| ( GPL-2-with-font-exception GPL-3-with-font-exception )
+SLOT=0
+SRC_URI=ftp://linux.thai.net/pub/thailinux/software/thai-ttf/thai-ttf-0.4.17.tar.gz
+_eclasses_=eutils	ba24d79270ea0022703f16b5de80051c	font	9aa70ebc5cefbdd9056687b550a2fdc4	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
+_md5_=cfea601413c9c501f6017c891fcdafb3

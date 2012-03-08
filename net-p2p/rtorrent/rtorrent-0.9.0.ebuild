@@ -1,6 +1,6 @@
 # Copyright 1999-2012 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/net-p2p/rtorrent/rtorrent-0.9.0.ebuild,v 1.1 2012/03/08 04:34:37 patrick Exp $
+# $Header: /var/cvsroot/gentoo-x86/net-p2p/rtorrent/rtorrent-0.9.0.ebuild,v 1.3 2012/03/08 09:48:21 sochotnicky Exp $
 
 EAPI=2
 
@@ -15,7 +15,7 @@ SLOT="0"
 KEYWORDS="~amd64 ~arm ~hppa ~ia64 ~ppc ~ppc64 ~sparc ~x86 ~x86-fbsd"
 IUSE="color daemon debug ipv6 test xmlrpc"
 
-COMMON_DEPEND=">=net-libs/libtorrent-0.12.${PV##*.}
+COMMON_DEPEND=">=net-libs/libtorrent-0.13.${PV##*.}
 	>=dev-libs/libsigc++-2.2.2:2
 	>=net-misc/curl-7.19.1
 	sys-libs/ncurses
@@ -29,6 +29,7 @@ DEPEND="${COMMON_DEPEND}
 src_prepare() {
 	# bug #358271
 	epatch "${FILESDIR}"/${P}-ncurses.patch
+	epatch "${FILESDIR}"/${P}-gold.patch
 	use color && EPATCH_OPTS="-p1" epatch "${FILESDIR}"/${P}-canvas-fix.patch
 }
 
@@ -42,7 +43,7 @@ src_configure() {
 
 src_install() {
 	emake DESTDIR="${D}" install || die
-	dodoc AUTHORS README TODO doc/rtorrent.rc
+	dodoc AUTHORS README doc/rtorrent.rc
 
 	if use daemon; then
 		newinitd "${FILESDIR}/rtorrentd.init" rtorrentd || die "newinitd failed"

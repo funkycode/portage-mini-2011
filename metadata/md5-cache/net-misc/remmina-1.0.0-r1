@@ -1,13 +1,13 @@
 DEFINED_PHASES=compile configure install postinst postrm preinst prepare test unpack
-DEPEND=x11-libs/libxkbfile gnome-keyring? ( gnome-base/libgnome-keyring ) crypt? ( dev-libs/libgcrypt ) freerdp? ( >=net-misc/freerdp-1.0 ) gtk3? ( x11-libs/gtk+:3 avahi? ( net-dns/avahi[gtk3] ) ayatana? ( dev-libs/libappindicator ) vte? ( x11-libs/vte:2.90 ) ) !gtk3? ( x11-libs/gtk+:2 avahi? ( net-dns/avahi[gtk] ) vte? ( x11-libs/vte:0 ) ) ssh? ( net-libs/libssh[sftp] ) telepathy? ( net-libs/telepathy-glib ) !net-misc/remmina-plugins dev-util/intltool dev-util/pkgconfig nls? ( sys-devel/gettext ) >=sys-apps/sed-4 >=dev-util/cmake-2.8.4 userland_GNU? ( >=sys-apps/findutils-4.4.0 )
+DEPEND=x11-libs/gtk+:3 x11-libs/libxkbfile avahi? ( net-dns/avahi[gtk3] ) ayatana? ( dev-libs/libappindicator ) crypt? ( dev-libs/libgcrypt ) freerdp? ( >=net-misc/freerdp-1.0 ) gnome-keyring? ( gnome-base/libgnome-keyring ) ssh? ( net-libs/libssh[sftp] ) telepathy? ( net-libs/telepathy-glib ) vte? ( x11-libs/vte:2.90 ) dev-util/intltool dev-util/pkgconfig nls? ( sys-devel/gettext ) >=sys-apps/sed-4 >=dev-util/cmake-2.8.4 userland_GNU? ( >=sys-apps/findutils-4.4.0 )
 DESCRIPTION=A GTK+ RDP, VNC, XDMCP and SSH client
 EAPI=4
 HOMEPAGE=http://remmina.sourceforge.net/
-IUSE=ayatana avahi crypt debug freerdp gnome-keyring +gtk3 nls ssh telepathy vte
+IUSE=ayatana avahi crypt debug freerdp gnome-keyring nls ssh telepathy vte
 KEYWORDS=~amd64 ~x86
 LICENSE=GPL-2
-RDEPEND=x11-libs/libxkbfile gnome-keyring? ( gnome-base/libgnome-keyring ) crypt? ( dev-libs/libgcrypt ) freerdp? ( >=net-misc/freerdp-1.0 ) gtk3? ( x11-libs/gtk+:3 avahi? ( net-dns/avahi[gtk3] ) ayatana? ( dev-libs/libappindicator ) vte? ( x11-libs/vte:2.90 ) ) !gtk3? ( x11-libs/gtk+:2 avahi? ( net-dns/avahi[gtk] ) vte? ( x11-libs/vte:0 ) ) ssh? ( net-libs/libssh[sftp] ) telepathy? ( net-libs/telepathy-glib ) !net-misc/remmina-plugins
+RDEPEND=x11-libs/gtk+:3 x11-libs/libxkbfile avahi? ( net-dns/avahi[gtk3] ) ayatana? ( dev-libs/libappindicator ) crypt? ( dev-libs/libgcrypt ) freerdp? ( >=net-misc/freerdp-1.0 ) gnome-keyring? ( gnome-base/libgnome-keyring ) ssh? ( net-libs/libssh[sftp] ) telepathy? ( net-libs/telepathy-glib ) vte? ( x11-libs/vte:2.90 ) !net-misc/remmina-plugins
 SLOT=0
 SRC_URI=https://github.com/downloads/FreeRDP/Remmina/Remmina-1.0.0.tar.gz
 _eclasses_=base	5f35078c26d6c60556d5c8a2feb4f84f	cmake-utils	d9f3f2f6cc1a1d6ad8e31702e44133e5	eutils	ba24d79270ea0022703f16b5de80051c	flag-o-matic	66cb710a2aa184a5687fe1289d7973ab	gnome2-utils	b5ca2ccadb60760889faa3bccba121d9	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
-_md5_=a928f64ead4908a67484af0c04b0da6f
+_md5_=e8c64c85d27dedc8ea1acf4da69fb4c2

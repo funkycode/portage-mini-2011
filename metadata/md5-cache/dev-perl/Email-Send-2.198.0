@@ -3,10 +3,10 @@ DEPEND=virtual/perl-Test-Simple >=virtual/perl-Module-Pluggable-2.97 virtual/per
 DESCRIPTION=Simply Sending Email
 EAPI=4
 HOMEPAGE=http://search.cpan.org/dist/Email-Send/
-KEYWORDS=amd64 ppc ppc64 ~x86
+KEYWORDS=amd64 ppc ppc64 x86
 LICENSE=|| ( Artistic GPL-1 GPL-2 GPL-3 )
 RDEPEND=virtual/perl-Test-Simple >=virtual/perl-Module-Pluggable-2.97 virtual/perl-Scalar-List-Utils >=dev-perl/Return-Value-1.302 virtual/perl-File-Spec dev-perl/Email-Simple dev-perl/Email-Address dev-lang/perl[-build]
 SLOT=0
 SRC_URI=mirror://cpan/authors/id/R/RJ/RJBS/Email-Send-2.198.tar.gz
 _eclasses_=base	5f35078c26d6c60556d5c8a2feb4f84f	eutils	ba24d79270ea0022703f16b5de80051c	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	perl-module	01501a30505074cd0012cabbf5d99447	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
-_md5_=24dd283267671f9224caffa10011b56d
+_md5_=b53ba9d8f4ac5401ae3315169ca50b95

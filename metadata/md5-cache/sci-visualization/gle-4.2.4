@@ -1,7 +1,7 @@
 DEFINED_PHASES=compile configure install postinst postrm prepare unpack
 DEPEND=sys-libs/ncurses X? ( x11-libs/libX11 ) qt4? ( x11-libs/qt-opengl:4 ) jpeg? ( virtual/jpeg ) png? ( media-libs/libpng ) tiff? ( media-libs/tiff ) emacs? ( virtual/emacs ) || ( =sys-devel/automake-1.11* ) >=sys-devel/autoconf-2.68 sys-devel/libtool
 DESCRIPTION=Graphics Layout Engine
-EAPI=2
+EAPI=4
 HOMEPAGE=http://glx.sourceforge.net/
 IUSE=X qt4 jpeg png tiff doc emacs vim-syntax
 KEYWORDS=~amd64 ~x86
@@ -10,4 +10,4 @@ RDEPEND=sys-libs/ncurses X? ( x11-libs/libX11 ) qt4? ( x11-libs/qt-opengl:4 ) jp
 SLOT=0
 SRC_URI=mirror://sourceforge/glx/gle-graphics-4.2.4f-src.tar.gz doc? ( mirror://sourceforge/glx/gle-manual-4.2.2.pdf mirror://sourceforge/glx/GLEusersguide.pdf )
 _eclasses_=autotools	3e1370c6fcb964b30ad99070a466441d	base	5f35078c26d6c60556d5c8a2feb4f84f	elisp-common	aa9676ce708f8aacf54ff9df8015963b	eutils	ba24d79270ea0022703f16b5de80051c	flag-o-matic	66cb710a2aa184a5687fe1289d7973ab	libtool	5f623f5a211fb1b2d84d88ee49959a54	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	qt4-r2	0d58394f40a89c8ec116c71510d7584b	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
-_md5_=4b50b70eab68c349efa92290d050670b
+_md5_=6a530ff9b54c049e0b51dc1b96582fbb

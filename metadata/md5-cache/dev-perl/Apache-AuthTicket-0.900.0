@@ -3,10 +3,10 @@ DEPEND=>=dev-perl/Apache-AuthCookie-3.0 dev-perl/DBI virtual/perl-Digest-MD5 dev
 DESCRIPTION=Cookie based access module.
 EAPI=4
 HOMEPAGE=http://search.cpan.org/dist/Apache-AuthTicket/
-KEYWORDS=amd64 ~x86
+KEYWORDS=amd64 x86
 LICENSE=|| ( Artistic-2 GPL-1 GPL-2 GPL-3 )
 RDEPEND=>=dev-perl/Apache-AuthCookie-3.0 dev-perl/DBI virtual/perl-Digest-MD5 dev-perl/SQL-Abstract dev-lang/perl[-build]
 SLOT=0
 SRC_URI=mirror://cpan/authors/id/M/MS/MSCHOUT/Apache-AuthTicket-0.90.tar.gz
 _eclasses_=base	5f35078c26d6c60556d5c8a2feb4f84f	eutils	ba24d79270ea0022703f16b5de80051c	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	perl-module	01501a30505074cd0012cabbf5d99447	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
-_md5_=954ea3a5d2090a151221570efb9ff3e4
+_md5_=ff7d6e79dedf4edf29baf53105bfe991
