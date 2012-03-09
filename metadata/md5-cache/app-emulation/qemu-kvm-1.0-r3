@@ -10,4 +10,4 @@ RDEPEND=!app-emulation/kqemu !app-emulation/qemu !app-emulation/qemu-user >=dev-
 SLOT=0
 SRC_URI=mirror://sourceforge/kvm/qemu-kvm/qemu-kvm-1.0.tar.gz
 _eclasses_=eutils	ba24d79270ea0022703f16b5de80051c	flag-o-matic	66cb710a2aa184a5687fe1289d7973ab	linux-info	cc184ad3383ffb6ffbaa82f53608e77f	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	python	dc3993dc1961bbb13c11bb835390ca29	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e	versionator	6601b4c5b3f019a993db59a50e1854e4
-_md5_=6ca554b95e948a7569dc9d0f2ca92a39
+_md5_=d8e4ad38df90e86255276c8dfc2aff17
