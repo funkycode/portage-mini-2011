@@ -1,0 +1,13 @@
+DEFINED_PHASES=configure install prepare
+DEPEND=sys-libs/ncurses nls? ( virtual/libintl ) sys-devel/bison nls? ( sys-devel/gettext )
+DESCRIPTION=Hypertext info and man viewer based on (n)curses
+EAPI=4
+HOMEPAGE=http://pinfo.alioth.debian.org/
+IUSE=nls readline
+KEYWORDS=~alpha ~amd64 ~hppa ~ia64 ~mips ~ppc ~ppc64 ~sparc ~x86 ~x86-fbsd
+LICENSE=GPL-2
+RDEPEND=sys-libs/ncurses nls? ( virtual/libintl )
+SLOT=0
+SRC_URI=https://alioth.debian.org/frs/download.php/3351/pinfo-0.6.10.tar.bz2
+_eclasses_=eutils	ba24d79270ea0022703f16b5de80051c	flag-o-matic	66cb710a2aa184a5687fe1289d7973ab	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
+_md5_=7dd1f0e09d7ab0bc03e1598be33eb6f2

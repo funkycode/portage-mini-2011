@@ -4,10 +4,10 @@ DESCRIPTION=Music On Console - ncurses interface for playing audio files
 EAPI=4
 HOMEPAGE=http://moc.daper.net
 IUSE=aac alsa curl debug ffmpeg flac jack libsamplerate mad modplug musepack oss sid sndfile speex timidity +unicode vorbis wavpack
-KEYWORDS=~alpha amd64 ppc ~ppc64 ~sparc x86
+KEYWORDS=~alpha amd64 ppc ppc64 ~sparc x86
 LICENSE=GPL-2
 RDEPEND=>=sys-devel/libtool-2.2.6b >=sys-libs/db-4 sys-libs/ncurses[unicode?] aac? ( media-libs/faad2 ) alsa? ( media-libs/alsa-lib ) curl? ( net-misc/curl ) ffmpeg? ( virtual/ffmpeg ) flac? ( media-libs/flac ) jack? ( media-sound/jack-audio-connection-kit ) libsamplerate? ( media-libs/libsamplerate ) mad? ( media-libs/libmad sys-libs/zlib media-libs/libid3tag ) modplug? ( media-libs/libmodplug ) musepack? ( media-sound/musepack-tools media-libs/taglib ) sid? ( >=media-libs/libsidplay-2 ) sndfile? ( media-libs/libsndfile ) speex? ( media-libs/speex ) timidity? ( media-libs/libtimidity media-sound/timidity++ ) vorbis? ( media-libs/libvorbis ) wavpack? ( media-sound/wavpack )
 SLOT=0
 SRC_URI=http://dev.gentoo.org/~ssuominen/moc-2.5.0_alpha4_p20111211.tar.xz
 _eclasses_=autotools	3e1370c6fcb964b30ad99070a466441d	eutils	ba24d79270ea0022703f16b5de80051c	libtool	5f623f5a211fb1b2d84d88ee49959a54	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
-_md5_=75720f05b1422d0cfc1173c5cb49e1ae
+_md5_=f3b8a79457243319547294b2aeb32d96

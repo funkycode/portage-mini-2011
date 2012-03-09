@@ -3015,6 +3015,7 @@ media-video/ffmpeg:amr - Enables Adaptive Multi-Rate Audio support
 media-video/ffmpeg:ass - Enables media-libs/libass based subtitle renderer.
 media-video/ffmpeg:aviocat - Install aviocat: cat's an URL to another one, useful for dumping streams.
 media-video/ffmpeg:avx - Adds support for Advanced Vector Extensions instructions (Intel Sandy Bridge, AMD Bulldozer and later chips)
+media-video/ffmpeg:bluray - Enable playback of Blu-ray filesystems
 media-video/ffmpeg:cdio - Enables audio CD grabbing with dev-libs/libcdio.
 media-video/ffmpeg:celt - Adds Xiph CELT audio decoding support via media-libs/celt
 media-video/ffmpeg:cpudetection - Enables runtime CPU detection (useful for bindist, compatibility on other CPUs)

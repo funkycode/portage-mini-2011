@@ -4,10 +4,10 @@ DESCRIPTION=Process huge XML documents in tree mode
 EAPI=4
 HOMEPAGE=http://search.cpan.org/dist/XML-Twig/
 IUSE=nls
-KEYWORDS=~alpha amd64 ~hppa ~ia64 ppc ~ppc64 ~sparc x86 ~x86-fbsd ~x86-freebsd ~amd64-linux ~ia64-linux ~x86-linux ~ppc-macos ~x86-macos
+KEYWORDS=~alpha amd64 ~hppa ~ia64 ppc ppc64 ~sparc x86 ~x86-fbsd ~x86-freebsd ~amd64-linux ~ia64-linux ~x86-linux ~ppc-macos ~x86-macos
 LICENSE=|| ( Artistic GPL-1 GPL-2 GPL-3 )
 RDEPEND=>=dev-perl/XML-Parser-2.31 virtual/perl-Scalar-List-Utils >=dev-libs/expat-1.95.5 dev-perl/Tie-IxHash dev-perl/XML-SAX-Writer dev-perl/XML-Handler-YAWriter dev-perl/XML-XPath dev-perl/libwww-perl nls? ( >=dev-perl/Text-Iconv-1.2-r1 ) dev-lang/perl[-build]
 SLOT=0
 SRC_URI=mirror://cpan/authors/id/M/MI/MIROD/XML-Twig-3.39.tar.gz
 _eclasses_=base	5f35078c26d6c60556d5c8a2feb4f84f	eutils	ba24d79270ea0022703f16b5de80051c	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	perl-module	01501a30505074cd0012cabbf5d99447	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
-_md5_=6dc85d4bf66571b3e819e8ce1ca53ccf
+_md5_=0daf7d3ffa2a3a7b79bb5dd155947f87

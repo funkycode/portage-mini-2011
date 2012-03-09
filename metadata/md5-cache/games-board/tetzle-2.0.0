@@ -3,10 +3,10 @@ DEPEND=>=x11-libs/qt-gui-4.7:4 >=x11-libs/qt-opengl-4.7:4
 DESCRIPTION=A jigsaw puzzle game that uses tetrominoes for the pieces
 EAPI=2
 HOMEPAGE=http://gottcode.org/tetzle/
-KEYWORDS=amd64 ~x86
+KEYWORDS=amd64 x86
 LICENSE=GPL-3
 RDEPEND=>=x11-libs/qt-gui-4.7:4 >=x11-libs/qt-opengl-4.7:4
 SLOT=0
 SRC_URI=http://gottcode.org/tetzle/tetzle-2.0.0-src.tar.bz2
 _eclasses_=base	5f35078c26d6c60556d5c8a2feb4f84f	eutils	ba24d79270ea0022703f16b5de80051c	games	f75cdbfdf1760e514ca65e2f6c6a7c72	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	qt4-r2	0d58394f40a89c8ec116c71510d7584b	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
-_md5_=f07b0e5a97abbb39a8f3f38305786efe
+_md5_=4af8351c0040bdb038b8306143e9af49
