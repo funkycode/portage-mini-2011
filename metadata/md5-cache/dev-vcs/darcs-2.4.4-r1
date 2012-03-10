@@ -9,5 +9,5 @@ LICENSE=GPL-2
 RDEPEND=>=dev-lang/ghc-6.8 >=dev-haskell/hashed-storage-0.4.13[profile?] =dev-haskell/haskeline-0.6*[profile?] =dev-haskell/html-1.0*[profile?] =dev-haskell/mmap-0.4*[profile?] <dev-haskell/mtl-1.2[profile?] >=dev-haskell/network-2.2[profile?] >=dev-haskell/parsec-2.0[profile?] <dev-haskell/regex-compat-0.94[profile?] =dev-haskell/terminfo-0.3*[profile?] =dev-haskell/utf8-string-0.3*[profile?] <dev-haskell/zlib-0.6.0.0[profile?] net-misc/curl virtual/mta dev-lang/ghc
 SLOT=0
 SRC_URI=http://hackage.haskell.org/packages/archive/darcs/2.4.4/darcs-2.4.4.tar.gz
-_eclasses_=bash-completion-r1	3480f8385cb9e31797e7b659e366e2d2	eutils	ba24d79270ea0022703f16b5de80051c	ghc-package	83329f14231f6ba420fb965d858f37c0	haskell-cabal	3e3a8d848b113b19eff54b771a020c8b	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e	versionator	6601b4c5b3f019a993db59a50e1854e4
+_eclasses_=bash-completion-r1	3480f8385cb9e31797e7b659e366e2d2	eutils	ba24d79270ea0022703f16b5de80051c	ghc-package	83329f14231f6ba420fb965d858f37c0	haskell-cabal	895f4f482b17c28f2f3f24062fc6ac8f	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e	versionator	6601b4c5b3f019a993db59a50e1854e4
 _md5_=36d23c11292cc588aa4609f027ce70aa

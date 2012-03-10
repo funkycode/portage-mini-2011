@@ -2815,7 +2815,6 @@ media-sound/ncmpcpp:clock - Enable clock screen
 media-sound/ncmpcpp:fftw - Build the visualizer plugin that pulls in sci-libs/fftw
 media-sound/ncmpcpp:outputs - Enable outputs screen
 media-sound/ncmpcpp:visualizer - Enable visualizer screen with sound wave/frequency spectrum modes
-media-sound/pavucontrol:gtk3 - Build against GTK+ 3 rather than 2 (which is the default).
 media-sound/pianobooster:fluidsynth - Enable Fluidsynth MIDI software synthesis
 media-sound/picard:coverart - Install plugin for direct coverart dowload
 media-sound/pms:regex - Enable regular expression searches using dev-libs/boost
@@ -4763,7 +4762,6 @@ sys-apps/irqbalance:numa - Support balancing IRQs across NUMA nodes
 sys-apps/kexec-tools:booke - Include support for Book-E memory management
 sys-apps/kexec-tools:lzma - Enables support for LZMA compressed kernel images
 sys-apps/kexec-tools:xen - Enable extended xen support
-sys-apps/kmod:compat - Install module-init-tools compatible symlinks.
 sys-apps/kmod:tools - Install module loading/unloading tools.
 sys-apps/lm_sensors:sensord - Enable sensord - a daemon that can be used to periodically log sensor readings from hardware health-monitoring chips
 sys-apps/memtest86:serial - Compile with serial console support
@@ -5295,6 +5293,7 @@ www-servers/cherokee:admin - Install web based cherokee conf tool
 www-servers/cherokee:coverpage - Installs the default cherokee coverpage
 www-servers/cherokee:rrdtool - Enable rrdtool support
 www-servers/fnord:auth - Enable HTTP authentication support
+www-servers/gatling:diet - Compile against dev-libs/dietlibc
 www-servers/lighttpd:libev - Enable fdevent handler
 www-servers/lighttpd:memcache - Enable memcache support for mod_cml and mod_trigger_b4_dl
 www-servers/lighttpd:rrdtool - Enable rrdtool support via mod_rrdtool
