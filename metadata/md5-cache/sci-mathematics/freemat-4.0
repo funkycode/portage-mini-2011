@@ -1,13 +1,13 @@
 DEFINED_PHASES=compile configure install postinst postrm prepare test unpack
-DEPEND=dev-libs/libpcre media-libs/portaudio sci-libs/arpack sci-libs/fftw:3.0 sci-libs/umfpack sys-libs/ncurses virtual/lapack virtual/opengl x11-libs/qt-gui:4 x11-libs/qt-opengl:4 x11-libs/qt-svg:4 volpack? ( media-libs/volpack ) dev-util/pkgconfig >=dev-util/cmake-2.8.4 userland_GNU? ( >=sys-apps/findutils-4.4.0 )
+DEPEND=dev-libs/libpcre media-libs/portaudio sci-libs/arpack sci-libs/fftw:3.0 sci-libs/umfpack sys-libs/ncurses virtual/lapack virtual/glu virtual/opengl x11-libs/qt-gui:4 x11-libs/qt-opengl:4 x11-libs/qt-svg:4 volpack? ( media-libs/volpack ) dev-util/pkgconfig >=dev-util/cmake-2.8.4 userland_GNU? ( >=sys-apps/findutils-4.4.0 )
 DESCRIPTION=Environment for rapid engineering and scientific processing
 EAPI=2
 HOMEPAGE=http://freemat.sourceforge.net/
 IUSE=volpack
 KEYWORDS=~amd64 ~x86
 LICENSE=GPL-2
-RDEPEND=dev-libs/libpcre media-libs/portaudio sci-libs/arpack sci-libs/fftw:3.0 sci-libs/umfpack sys-libs/ncurses virtual/lapack virtual/opengl x11-libs/qt-gui:4 x11-libs/qt-opengl:4 x11-libs/qt-svg:4 volpack? ( media-libs/volpack )
+RDEPEND=dev-libs/libpcre media-libs/portaudio sci-libs/arpack sci-libs/fftw:3.0 sci-libs/umfpack sys-libs/ncurses virtual/lapack virtual/glu virtual/opengl x11-libs/qt-gui:4 x11-libs/qt-opengl:4 x11-libs/qt-svg:4 volpack? ( media-libs/volpack )
 SLOT=0
 SRC_URI=mirror://sourceforge/freemat/FreeMat-4.0-Source.tar.gz
 _eclasses_=base	5f35078c26d6c60556d5c8a2feb4f84f	cmake-utils	d9f3f2f6cc1a1d6ad8e31702e44133e5	eutils	ba24d79270ea0022703f16b5de80051c	fdo-mime	0acfe1a88fd8751a1d5dc671168219fa	flag-o-matic	66cb710a2aa184a5687fe1289d7973ab	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
-_md5_=4888f06631be062759f9b842ebee1589
+_md5_=5eec7ded90ff00a78a254f7983781708

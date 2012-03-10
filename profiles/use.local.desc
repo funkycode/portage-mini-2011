@@ -1050,7 +1050,8 @@ dev-haskell/cabal-install:noprefs - Ignore 'preferred-versions' file from hackag
 dev-haskell/citeproc-hs:bibutils - Use Chris Putnam's app-text/bibutils
 dev-haskell/citeproc-hs:network - Use dev-haskell/network and dev-haskell/http to retrieve CSL file from URIs.
 dev-haskell/gtk:gio - Add glib's GIO bindings.
-dev-haskell/highlighting-kate:executable - Build the Highlight executable
+dev-haskell/highlighting-kate:executable - Build the Highlight executable.
+dev-haskell/highlighting-kate:pcre-light - Use the pcre-light library instead of regex-pcre-builtin.
 dev-haskell/json:generic - Add support for generic encoder (dev-haskell/syb)
 dev-haskell/json:parsec - Add support for parsing with Parsec
 dev-haskell/json:pretty - Add support for using pretty printing combinators
@@ -1282,6 +1283,7 @@ dev-libs/igraph:lapack - Use external lapack numerical library
 dev-libs/jemalloc:stats - Enable statistics calculation/reporting
 dev-libs/json-glib:introspection - Use dev-libs/gobject-introspection for introspection
 dev-libs/libappindicator:introspection - Use dev-libs/gobject-introspection for introspection
+dev-libs/libburn:cdio - Enable EXPERIMENTAL use of libcdio as system adapter
 dev-libs/libburn:track-src-odirect - Read track input with O_DIRECT (see man 2 open), this may deliver a better write performance in some situations
 dev-libs/libcdio:minimal - Only build the libcdio library and little more, just to be used to link against from multimedia players. With this USE flag enabled, none of the command-line utilities are built, nor is the CDDA library.
 dev-libs/libcgroup:daemon - Install the configuration tools and init/config files.
@@ -1292,6 +1294,7 @@ dev-libs/libgee:introspection - Use dev-libs/gobject-introspection for introspec
 dev-libs/libgpg-error:common-lisp - Install common-lisp files
 dev-libs/libgweather:introspection - Use dev-libs/gobject-introspection for introspection
 dev-libs/libindicate:introspection - Use dev-libs/gobject-introspection for introspection
+dev-libs/libisoburn:cdio - Enable EXPERIMENTAL use of libcdio as system adapter
 dev-libs/libisoburn:external-filters - Allow the use of external processes as file content filters (Note: this is a potential security risk)
 dev-libs/libisoburn:external-filters-setuid - Also allow the use of external setuid processes as file content filters (Note: this is a potential security risk)
 dev-libs/libisofs:verbose-debug - Enable verbose debug messages
@@ -3173,7 +3176,6 @@ media-video/rtmpdump:gnutls - Use GnuTLS library instead of the default OpenSSL
 media-video/rtmpdump:polarssl - Use PolarSSL library instead of the default OpenSSL
 media-video/smplayer2:download-subs - Enable subtitle downloader (requires QuaZip)
 media-video/totem:bluetooth - Enable support for user-presence detection via the user's bluetooth handset using net-wireless/bluez
-media-video/totem:galago - Allow Totem to set your IM client to "away" when a movie is playing in fullscreen using dev-libs/libgalago
 media-video/totem:grilo - Use media-libs/grilo to browse media content from various sources
 media-video/totem:introspection - Use dev-libs/gobject-introspection for introspection
 media-video/totem:iplayer - Enable BBC player support
@@ -4614,9 +4616,6 @@ sci-mathematics/Macaulay2:optimization - Accept upstream's choices for -O option
 sci-mathematics/agda:epic - Add support for the epic compiler.
 sci-mathematics/cgal:mpfi - Enable support for multiple recision interval arithmetic via sci-mathematics/mpfi
 sci-mathematics/dataplot:gs - Add Ghostscript support (app-text/ghostscript-gpl)
-sci-mathematics/freemat:arpack - Add sparse eigen value support via sci-libs/arpack
-sci-mathematics/freemat:ffcall - Enable use of dev-libs/ffcall
-sci-mathematics/freemat:umfpack - Add sparse solving via sci-libs/umfpack
 sci-mathematics/freemat:volpack - Add volume rendering via media-libs/volpack
 sci-mathematics/fricas:clisp - Add support for GNU CLISP (dev-lisp/clisp)
 sci-mathematics/fricas:clozurecl - Add support for Clozure Common Lisp (dev-lisp/closurecl)
@@ -5627,6 +5626,7 @@ x11-wm/vtwm:rplay - Enable rplay support, needed for sound.
 x11-wm/windowmaker:modelock - Enable XKB language status lock support. README says: "If you don't know what it is you probably don't need it."
 x11-wm/windowmaker:vdesktop - Enable dynamic virtual desktop (conflicts with software that works on the edges of the screen)
 x11-wm/windowmaker:xrandr - Enable XRandR window extension support
+x11-wm/xmonad:default-term - Pull terminal specified in default xmonad config to be a bit less hostile by default.
 x11-wm/xpra:parti - Runtime support for partioning window manager
 x11-wm/xpra:server - Build server-side code
 x11-wm/xpra:ssh - Runtime support for secure shell communication
