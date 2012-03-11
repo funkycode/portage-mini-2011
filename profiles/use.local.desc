@@ -3382,11 +3382,8 @@ net-analyzer/snort:active-response - Enables support for automatically sending T
 net-analyzer/snort:aruba - Adds support for monitoring wireless traffic using a Aruba Mobility Controler.
 net-analyzer/snort:decoder-preprocessor-rules - Added support to provide action control (alert, drop, pass, etc) over preprocessor and decoder generated events.
 net-analyzer/snort:dynamicplugin - Enable ability to dynamically load preprocessors, detection engine, and rules library. This is required if you want to use shared object (SO) snort rules.
-net-analyzer/snort:flexresp - (DEPRECIATED) Original method for enabling connection tearing for inline deployments. Replaced with flexresp3 in Snort-2.9.0.
-net-analyzer/snort:flexresp2 - (DEPRECIATED) Replaced flexresp for enabling connection tearing for inline deployments. Replaced with flexresp3 in Snort-2.9.0.
 net-analyzer/snort:flexresp3 - Enables support for new flexable response preprocessor for enabling connection tearing for inline deployments. Replaces flexresp and flexresp2.
 net-analyzer/snort:gre - Enable support for inspecting and processing Generic Routing Encapsulation (GRE) packet headders. Only needed if you are monitoring GRE tunnels.
-net-analyzer/snort:inline - (DEPRECIATED) Enables support for deploying snort inline. Uses net-firewall/iptables, via libipq, rather than net-libs/libpcap. Replaced by DAQ in Snort-2.9.0
 net-analyzer/snort:inline-init-failopen - Enables support to allow traffic to pass (fail-open) through inline deployments while snort is starting and not ready to begin inspecting traffic. If this option is not enabled, network traffic will not pass (fail-closed) until snort has fully started and is ready to perform packet inspection.
 net-analyzer/snort:large-pcap-64bit - Allows Snort to read pcap files that are larger than 2 GB. ONLY VALID FOR 64bit SYSTEMS!
 net-analyzer/snort:linux-smp-stats - Enable accurate statistics reporting through /proc on systems with multipule processors.
@@ -3396,10 +3393,8 @@ net-analyzer/snort:paf - Enables support for Protocol Aware Flushing. This allow
 net-analyzer/snort:perfprofiling - Enables support for preprocessor and rule performance profiling using the perfmonitor preprocessor.
 net-analyzer/snort:ppm - Enables support for setting per rule or per packet latency limits. Helps protect against introducing network latency with inline deployments.
 net-analyzer/snort:react - Enables support for the react rule keyword. Supports interception, termination, and redirection of HTTP connections.
-net-analyzer/snort:reload - Enables support for reloading a configuration without restarting snort.
 net-analyzer/snort:reload-error-restart - Enables support for completely restarting snort if an error is detected durring a reload.
 net-analyzer/snort:targetbased - Enables support in snort for using a host attibute XML file (attribute_table.dtd). This file needs to be created by the user and should define the IP address, operating system, and services for all hosts on the monitored network. This is cumbersome, but can improve intrusion detection accuracy.
-net-analyzer/snort:timestats - (DEPRECIATED) Enables support for printing packet stats on a per hour and per protocol breakdown. Depreciated in Snort-2.9.0.
 net-analyzer/snort:zlib - Enables HTTP inspection of compressed web traffic. Requires dynamicplugin be enabled.
 net-analyzer/symon:perl - Enables a generic perl symux client
 net-analyzer/symon:symon - Enables the system monitor. Offers no functionality but monitoring and forwarding of measured data

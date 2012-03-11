@@ -1,0 +1,6 @@
+DEFINED_PHASES=-
+DESCRIPTION=Virtual for user account management utilities
+KEYWORDS=alpha amd64 arm hppa ia64 m68k ~mips ppc ppc64 s390 sh sparc x86
+RDEPEND=|| ( >=sys-apps/shadow-4.1 sys-apps/hardened-shadow )
+SLOT=0
+_md5_=1eaf4ea444fa6c2793ac84d5a8e4933e

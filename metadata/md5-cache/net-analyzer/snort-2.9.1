@@ -1,13 +1,13 @@
 DEFINED_PHASES=configure install postinst prepare setup
-DEPEND=>=net-libs/libpcap-1.0.0 >=net-libs/daq-0.5 >=dev-libs/libpcre-6.0 dev-libs/libdnet postgres? ( dev-db/postgresql-base ) mysql? ( virtual/mysql ) odbc? ( dev-db/unixODBC ) zlib? ( sys-libs/zlib ) || ( =sys-devel/automake-1.11* ) >=sys-devel/autoconf-2.68 sys-devel/libtool
+DEPEND=>=net-libs/libpcap-1.0.0 >=net-libs/daq-0.6 >=dev-libs/libpcre-6.0 dev-libs/libdnet postgres? ( dev-db/postgresql-base ) mysql? ( virtual/mysql ) odbc? ( dev-db/unixODBC ) zlib? ( sys-libs/zlib ) || ( =sys-devel/automake-1.11* ) >=sys-devel/autoconf-2.68 sys-devel/libtool
 DESCRIPTION=The de facto standard for intrusion detection/prevention
 EAPI=2
 HOMEPAGE=http://www.snort.org/
 IUSE=static +dynamicplugin +zlib +gre +mpls +targetbased +decoder-preprocessor-rules +ppm +perfprofiling linux-smp-stats inline-init-failopen +threads debug +active-response +normalizer reload-error-restart +react +flexresp3 +paf large-pcap-64bit aruba mysql odbc postgres selinux
-KEYWORDS=~amd64 ~x86
+KEYWORDS=amd64 x86 ~mips
 LICENSE=GPL-2
-RDEPEND=>=net-libs/libpcap-1.0.0 >=net-libs/daq-0.5 >=dev-libs/libpcre-6.0 dev-libs/libdnet postgres? ( dev-db/postgresql-base ) mysql? ( virtual/mysql ) odbc? ( dev-db/unixODBC ) zlib? ( sys-libs/zlib ) selinux? ( sec-policy/selinux-snort )
+RDEPEND=>=net-libs/libpcap-1.0.0 >=net-libs/daq-0.6 >=dev-libs/libpcre-6.0 dev-libs/libdnet postgres? ( dev-db/postgresql-base ) mysql? ( virtual/mysql ) odbc? ( dev-db/unixODBC ) zlib? ( sys-libs/zlib ) selinux? ( sec-policy/selinux-snort )
 SLOT=0
-SRC_URI=http://www.snort.org/downloads/1107 -> snort-2.9.1.tar.gz
+SRC_URI=http://www.snort.org/dl/snort-current/snort-2.9.1.tar.gz
 _eclasses_=autotools	3e1370c6fcb964b30ad99070a466441d	eutils	ba24d79270ea0022703f16b5de80051c	libtool	5f623f5a211fb1b2d84d88ee49959a54	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
-_md5_=5cdcc7019bdb378d17a0984beb4f4b52
+_md5_=e2240d21f33d1d94dd8da21aa83ded54

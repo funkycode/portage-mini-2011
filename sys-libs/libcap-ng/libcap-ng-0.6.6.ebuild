@@ -1,6 +1,6 @@
 # Copyright 1999-2012 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/sys-libs/libcap-ng/libcap-ng-0.6.6.ebuild,v 1.4 2012/03/10 18:58:29 ssuominen Exp $
+# $Header: /var/cvsroot/gentoo-x86/sys-libs/libcap-ng/libcap-ng-0.6.6.ebuild,v 1.6 2012/03/11 15:40:06 ago Exp $
 
 EAPI=4
 
@@ -15,14 +15,14 @@ SRC_URI="http://people.redhat.com/sgrubb/${PN}/${P}.tar.gz"
 
 LICENSE="LGPL-2.1"
 SLOT="0"
-KEYWORDS="~alpha ~amd64 ~arm ~hppa ~ia64 ~ppc ~ppc64 ~s390 ~sh ~sparc ~x86"
+KEYWORDS="~alpha amd64 ~arm ~hppa ~ia64 ~ppc ~ppc64 ~s390 ~sh ~sparc ~x86"
 IUSE="python static-libs"
 
 RDEPEND="sys-apps/attr
 	python? ( dev-lang/python )"
 DEPEND="${RDEPEND}
 	sys-kernel/linux-headers
-	python? ( dev-lang/swig )"
+	python? ( >=dev-lang/swig-2 )"
 
 PYTHON_CFLAGS=("2.* + -fno-strict-aliasing")
 
