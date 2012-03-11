@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pkgmetadata SYSTEM "http://www.gentoo.org/dtd/metadata.dtd">
+<pkgmetadata>
+	<herd>no-herd</herd>
+	<maintainer>
+		<email>rootdesign@gmail.com</email>
+		<name>Harry Gabriel</name>
+	</maintainer>
+	<longdescription lang="en">
+		Disper is an on-the-fly display switch utility.
+		Disper gives you the option to either clone all detected displays,
+		or extend the desktop to them. Resolutions are automatically detected.
+		At the moment nVidia cards are supported, and a basic XRandR backend is in place.
+	</longdescription>
+</pkgmetadata>
+
