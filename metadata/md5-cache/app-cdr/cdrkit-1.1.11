@@ -1,13 +1,13 @@
 DEFINED_PHASES=compile configure install prepare test unpack
-DEPEND=!app-cdr/cdrtools unicode? ( virtual/libiconv ) kernel_linux? ( sys-libs/libcap ) hfs? ( sys-apps/file ) >=dev-util/cmake-2.8.4 userland_GNU? ( >=sys-apps/findutils-4.4.0 )
+DEPEND=app-arch/bzip2 !app-cdr/cdrtools sys-apps/file sys-libs/zlib unicode? ( virtual/libiconv ) kernel_linux? ( sys-libs/libcap ) hfs? ( sys-apps/file ) >=dev-util/cmake-2.8.4 userland_GNU? ( >=sys-apps/findutils-4.4.0 )
 DESCRIPTION=A set of tools for CD/DVD reading and recording, including cdrecord
 EAPI=3
 HOMEPAGE=http://cdrkit.org
 IUSE=debug hfs unicode
 KEYWORDS=alpha amd64 hppa ia64 ppc ppc64 s390 sparc x86 ~x86-fbsd
 LICENSE=GPL-2 LGPL-2.1
-RDEPEND=!app-cdr/cdrtools unicode? ( virtual/libiconv ) kernel_linux? ( sys-libs/libcap )
+RDEPEND=app-arch/bzip2 !app-cdr/cdrtools sys-apps/file sys-libs/zlib unicode? ( virtual/libiconv ) kernel_linux? ( sys-libs/libcap )
 SLOT=0
 SRC_URI=mirror://debian/pool/main/c/cdrkit/cdrkit_1.1.11.orig.tar.gz
 _eclasses_=base	5f35078c26d6c60556d5c8a2feb4f84f	cmake-utils	d9f3f2f6cc1a1d6ad8e31702e44133e5	eutils	ba24d79270ea0022703f16b5de80051c	flag-o-matic	66cb710a2aa184a5687fe1289d7973ab	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
-_md5_=31ccf68b9368bdf7f12e7f2ef946323a
+_md5_=a7488f76d5d46886b61ca96017a64f2e

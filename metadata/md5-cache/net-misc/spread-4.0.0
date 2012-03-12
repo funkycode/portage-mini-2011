@@ -7,4 +7,4 @@ LICENSE=Spread-1.0
 SLOT=0
 SRC_URI=mirror://gentoo/spread-src-4.0.0.tar.gz
 _eclasses_=eutils	ba24d79270ea0022703f16b5de80051c	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
-_md5_=3e123709568d19daf607ecfb70d364a1
+_md5_=726cb3734594b4e3c610e8d24f801302

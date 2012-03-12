@@ -1,0 +1,12 @@
+DEFINED_PHASES=compile install prepare
+DEPEND=net-irc/irssi net-libs/loudmouth
+DESCRIPTION=An irssi plugin providing Jabber/XMPP support
+EAPI=4
+HOMEPAGE=http://cybione.org/~irssi-xmpp/
+KEYWORDS=~amd64 ~x86
+LICENSE=GPL-2
+RDEPEND=net-irc/irssi net-libs/loudmouth
+SLOT=0
+SRC_URI=http://cybione.org/~irssi-xmpp/files/irssi-xmpp-0.52.tar.gz
+_eclasses_=multilib	5f4ad6cf85e365e8f0c6050ddd21659e	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68
+_md5_=8e8e94f09acdd3a14d226056754b5762
