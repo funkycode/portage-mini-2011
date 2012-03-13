@@ -1,0 +1,10 @@
+DEFINED_PHASES=install unpack
+DESCRIPTION=A proprietary peer-to-peer music streaming desktop application
+EAPI=3
+HOMEPAGE=http://www.spotify.com
+KEYWORDS=~amd64 ~x86
+LICENSE=Spotify
+RDEPEND=>=x11-libs/qt-dbus-4.5.0 >=x11-libs/qt-webkit-4.5.0 >=x11-libs/qt-core-4.5.0 >=x11-libs/qt-gui-4.5.0 =dev-libs/openssl-0.9.8s-r1
+SLOT=0
+SRC_URI=amd64? ( http://repository.spotify.com/pool/non-free/s/spotify/spotify-client-qt_0.6.6.10.gbd39032.58-1_amd64.deb ) x86? ( http://repository.spotify.com/pool/non-free/s/spotify/spotify-client-qt_0.6.6.10.gbd39032.58-1_i386.deb )
+_md5_=9f601c456e8b0598184238a843432c44
