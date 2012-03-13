@@ -1,0 +1,13 @@
+DEFINED_PHASES=configure postinst postrm prepare setup
+DEPEND=>=app-i18n/ibus-1.4 sys-apps/util-linux boost? ( >=dev-libs/boost-1.39 ) lua? ( >=dev-lang/lua-5.1 ) nls? ( virtual/libintl ) opencc? ( app-i18n/opencc ) dev-util/pkgconfig nls? ( >=sys-devel/gettext-0.16.1 ) >=app-admin/eselect-python-20091230 || ( =dev-lang/python-2.7* =dev-lang/python-2.6* =dev-lang/python-2.5* ) || ( =dev-lang/python-2.7*[sqlite] =dev-lang/python-2.6*[sqlite] =dev-lang/python-2.5*[sqlite] )
+DESCRIPTION=Chinese PinYin IMEngine for IBus Framework
+EAPI=4
+HOMEPAGE=http://code.google.com/p/ibus/
+IUSE=boost lua nls opencc
+KEYWORDS=~amd64 ~x86
+LICENSE=GPL-2
+RDEPEND=>=app-i18n/ibus-1.4 sys-apps/util-linux boost? ( >=dev-libs/boost-1.39 ) lua? ( >=dev-lang/lua-5.1 ) nls? ( virtual/libintl ) opencc? ( app-i18n/opencc ) >=app-admin/eselect-python-20091230 || ( =dev-lang/python-2.7* =dev-lang/python-2.6* =dev-lang/python-2.5* ) || ( =dev-lang/python-2.7*[sqlite] =dev-lang/python-2.6*[sqlite] =dev-lang/python-2.5*[sqlite] )
+SLOT=0
+SRC_URI=http://ibus.googlecode.com/files/ibus-pinyin-1.4.0.tar.gz http://ibus.googlecode.com/files/pinyin-database-1.2.99.tar.bz2
+_eclasses_=multilib	5f4ad6cf85e365e8f0c6050ddd21659e	python	dc3993dc1961bbb13c11bb835390ca29	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68
+_md5_=3087c2e4e7b00a00f43190e6fa0c94d1

@@ -1459,6 +1459,18 @@ dev-python/PyQt4:sql - Build QtSql module
 dev-python/PyQt4:svg - Build QtSvg module
 dev-python/PyQt4:webkit - Build QtWebKit module
 dev-python/PyQt4:xmlpatterns - Build QtXmlPatterns module
+dev-python/PyQtMobility:contacts - Build bindings for the QtContacts module
+dev-python/PyQtMobility:feedback - Build bindings for the QtFeedback module
+dev-python/PyQtMobility:gallery - Build bindings for the QtGallery module
+dev-python/PyQtMobility:location - Build bindings for the QtLocation module
+dev-python/PyQtMobility:messaging - Build bindings for the QtMessaging module
+dev-python/PyQtMobility:multimedia - Build bindings for the QtMultimediaKit module
+dev-python/PyQtMobility:organizer - Build bindings for the QtOrganizer module
+dev-python/PyQtMobility:publishsubscribe - Build bindings for the QtPublishSubscribe module
+dev-python/PyQtMobility:sensors - Build bindings for the QtSensors module
+dev-python/PyQtMobility:serviceframework - Build bindings for the QtServiceFramework module
+dev-python/PyQtMobility:systeminfo - Build bindings for the QtSystemInfo module
+dev-python/PyQtMobility:versit - Build bindings for the QtVersit module
 dev-python/amqplib:extras - Install extra tools to generate initial Python mod from an AMQP XML file
 dev-python/anyvc:bazaar - Add support for Bazaar
 dev-python/anyvc:git - Add support for Git
@@ -1845,6 +1857,7 @@ games-simulation/openttd:dedicated - Build only the openttd server, and not the 
 games-simulation/openttd:lzo - Enables LZO compression for savegames. This is only needed to load extremely old savegames. (versions before 0.2)
 games-simulation/openttd:openmedia - Enables the free open media sets: OpenGFX, OpenSFX, OpenMSX, removing the requirement for proprietary TTD assets to play OpenTTD.
 games-simulation/singularity:music - Install music files
+games-sports/speed-dreams:xrandr - Enable support for the X xrandr extension
 games-sports/xmoto:editor - Depend on inkscape, scripts to convert svg to level (svg2lvl)
 games-strategy/dark-oberon:fmod - Add sound support (fmod)
 games-strategy/defcon-demo:system-libs - Use system libraries instead of the ones included in the upstream distribution.
@@ -2759,6 +2772,7 @@ media-sound/flacon:mac - Add support for Monkey's Audio files
 media-sound/flacon:replaygain - Support for Replay Gain metadata, for relative volume adjustment
 media-sound/flacon:tta - Add support for True Audio encoding
 media-sound/freewheeling:fluidsynth - compile with support for fluidsynth
+media-sound/frescobaldi:portmidi - Enable media-libs/portmidi support
 media-sound/gejengel:audioscrobbler - Enable track submission on last.fm
 media-sound/gimmix:cover - Enable cover art fetching
 media-sound/gimmix:lyrics - Enable lyric fetching

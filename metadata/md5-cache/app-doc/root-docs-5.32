@@ -1,0 +1,10 @@
+DEFINED_PHASES=install
+DESCRIPTION=An Object-Oriented Data Analysis Framework
+EAPI=3
+HOMEPAGE=http://root.cern.ch/
+KEYWORDS=~amd64 ~x86
+LICENSE=as-is
+SLOT=0
+SRC_URI=ftp://root.cern.ch/root/html532.tar.gz
+_eclasses_=eutils	ba24d79270ea0022703f16b5de80051c	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e	versionator	6601b4c5b3f019a993db59a50e1854e4
+_md5_=190082b8d30467ebd824dda20ace880f

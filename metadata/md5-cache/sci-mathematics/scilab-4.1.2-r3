@@ -9,5 +9,5 @@ LICENSE=scilab
 RDEPEND=virtual/fortran virtual/blas virtual/lapack virtual/cblas sys-libs/ncurses gtk? ( virtual/jpeg media-libs/libpng sys-libs/zlib x11-libs/gtk+:2 x11-libs/vte:0 gnome-extra/gtkhtml:2 ) >=dev-lang/tk-8.4 >=dev-lang/tcl-8.4 Xaw3d? ( x11-libs/libXaw3d ) ocaml? ( dev-lang/ocaml ) java? ( >=virtual/jdk-1.4 ) java? ( >=dev-java/java-config-2.1.9-r1 )
 SLOT=0
 SRC_URI=http://www.scilab.org/download/4.1.2/scilab-4.1.2-src.tar.gz
-_eclasses_=autotools	3e1370c6fcb964b30ad99070a466441d	eutils	ba24d79270ea0022703f16b5de80051c	fortran-2	368b82ae80c1184988a9d651e6efcbd0	java-pkg-opt-2	131dd2a697d663c0e33247611b9a1cd7	java-utils-2	0b830e0a2e6c4bdf1c81fec1b53d95f1	libtool	5f623f5a211fb1b2d84d88ee49959a54	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e	versionator	6601b4c5b3f019a993db59a50e1854e4
+_eclasses_=autotools	3e1370c6fcb964b30ad99070a466441d	eutils	ba24d79270ea0022703f16b5de80051c	fortran-2	368b82ae80c1184988a9d651e6efcbd0	java-pkg-opt-2	131dd2a697d663c0e33247611b9a1cd7	java-utils-2	b173b5d55bfd6e328939985bc54a1c9e	libtool	5f623f5a211fb1b2d84d88ee49959a54	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e	versionator	6601b4c5b3f019a993db59a50e1854e4
 _md5_=c84e51147086de453b0599d8572c21a0
