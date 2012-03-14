@@ -1,0 +1,11 @@
+DEFINED_PHASES=install prepare
+DEPEND=|| ( =sys-devel/automake-1.11* ) >=sys-devel/autoconf-2.68 sys-devel/libtool
+DESCRIPTION=cstream is a general-purpose stream-handling tool like UNIX dd
+EAPI=2
+HOMEPAGE=http://www.cons.org/cracauer/cstream.html
+KEYWORDS=~x86 ~amd64
+LICENSE=MIT
+SLOT=0
+SRC_URI=http://www.cons.org/cracauer/download/cstream-3.0.0.tar.gz
+_eclasses_=autotools	3e1370c6fcb964b30ad99070a466441d	eutils	ba24d79270ea0022703f16b5de80051c	libtool	5f623f5a211fb1b2d84d88ee49959a54	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
+_md5_=d754100ea593e2cb41016d41e8977921

@@ -1,0 +1,13 @@
+DEFINED_PHASES=compile install prepare
+DEPEND=dev-libs/openssl:0 net-dns/libidn sys-libs/zlib
+DESCRIPTION=A fully automated, active web application security reconnaissance tool
+EAPI=4
+HOMEPAGE=http://code.google.com/p/skipfish/
+IUSE=debug
+KEYWORDS=~amd64 ~x86
+LICENSE=Apache-2.0 LGPL-3
+RDEPEND=dev-libs/openssl:0 net-dns/libidn sys-libs/zlib
+SLOT=0
+SRC_URI=http://skipfish.googlecode.com/files/skipfish-2.05b.tgz
+_eclasses_=multilib	5f4ad6cf85e365e8f0c6050ddd21659e	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68
+_md5_=c04c4f0bfa9a10f5fcf2e619f8e50e62

@@ -1,5 +1,5 @@
 DEFINED_PHASES=compile configure install postinst postrm prepare setup
-DEPEND=>=app-text/ghostscript-gpl-8.15 >=dev-scheme/guile-1.8.2[deprecated,regex] media-fonts/urw-fonts media-libs/fontconfig media-libs/freetype:2 >=x11-libs/pango-1.12.3 emacs? ( virtual/emacs ) app-text/t1utils dev-lang/perl dev-texlive/texlive-metapost media-gfx/fontforge >=sys-apps/texinfo-4.11 >=sys-devel/bison-2.0 sys-devel/flex sys-devel/gettext sys-devel/make >=app-admin/eselect-python-20091230 =dev-lang/python-2*
+DEPEND=>=app-text/ghostscript-gpl-8.15 >=dev-scheme/guile-1.8.2[deprecated,regex] media-fonts/urw-fonts media-libs/fontconfig media-libs/freetype:2 >=x11-libs/pango-1.12.3 emacs? ( virtual/emacs ) app-text/t1utils dev-lang/perl dev-texlive/texlive-metapost dev-util/pkgconfig media-gfx/fontforge >=sys-apps/texinfo-4.11 >=sys-devel/bison-2.0 sys-devel/flex sys-devel/gettext sys-devel/make >=app-admin/eselect-python-20091230 =dev-lang/python-2* || ( =sys-devel/automake-1.11* ) >=sys-devel/autoconf-2.68 sys-devel/libtool
 DESCRIPTION=GNU Music Typesetter
 EAPI=4
 HOMEPAGE=http://lilypond.org/
@@ -10,5 +10,5 @@ RDEPEND=>=app-text/ghostscript-gpl-8.15 >=dev-scheme/guile-1.8.2[deprecated,rege
 RESTRICT=test
 SLOT=0
 SRC_URI=http://download.linuxaudio.org/lilypond/sources/v2.14/lilypond-2.14.2.tar.gz
-_eclasses_=elisp-common	aa9676ce708f8aacf54ff9df8015963b	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	python	dc3993dc1961bbb13c11bb835390ca29	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68
-_md5_=45ace19711bd1bafa17cde7eb95bd8c7
+_eclasses_=autotools	3e1370c6fcb964b30ad99070a466441d	elisp-common	aa9676ce708f8aacf54ff9df8015963b	eutils	ba24d79270ea0022703f16b5de80051c	libtool	5f623f5a211fb1b2d84d88ee49959a54	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	python	dc3993dc1961bbb13c11bb835390ca29	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
+_md5_=642ce79216426d9bbe62b246f2d68f89
