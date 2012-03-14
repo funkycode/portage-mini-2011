@@ -2384,6 +2384,7 @@ media-gfx/freewrl:glew - Enable glew extensions
 media-gfx/freewrl:java - Build and install java EAI/SAI support library
 media-gfx/freewrl:libeai - Build EAI C library
 media-gfx/freewrl:osc - Allows for OSC-based control and communication between multiple freewrl instances
+media-gfx/gimp:gs - Enable Ghostscript support (app-text/ghostscript-gpl)
 media-gfx/gimp:smp - Enable support for multiprocessors
 media-gfx/gimp:webkit - Enable the webkit rendering engine
 media-gfx/gmic:graphicsmagick - Enable support for many common image file formats using the GraphicsMagick++ library
@@ -2555,6 +2556,7 @@ media-libs/mesa:shared-dricore - Enable sharing of common code for classic DRI d
 media-libs/mesa:shared-glapi - Enable sharing of common code for the OpenGL API.
 media-libs/mesa:vdpau - Enable the VDPAU acceleration interface for the Gallium3D Video Layer.
 media-libs/mesa:wayland - Enable support for dev-libs/wayland
+media-libs/mesa:xa - Enable the XA (X Acceleration) API for Gallium3D.
 media-libs/mesa:xvmc - Enable the XvMC acceleration interface for the Gallium3D Video Layer.
 media-libs/mlt:compressed-lumas - Compress the luma files in png.
 media-libs/mlt:frei0r - Build the module for media-plugins/frei0r-plugins
@@ -4611,6 +4613,8 @@ sci-libs/plplot:dynamic - Build with dynamic drivers
 sci-libs/plplot:octave - Add bindings for sci-mathematics/octave
 sci-libs/plplot:qhull - Add bindings for media-libs/qhull bindings
 sci-libs/scipy:umfpack - Adds support for sparse solving with sci-libs/umfpack
+sci-libs/scotch:int64 - Build the 64 bits integer library (needed for > 2^31 vertices)
+sci-libs/scotch:tools - Build and install extra exec tools
 sci-libs/spqr:metis - Use METIS (sci-libs/metis or sci-libs/parmetis) for partitioning
 sci-libs/spqr:tbb - Enable multithreading with the Intel Threads Building Block (needs dev-cpp/tbb)
 sci-libs/spr:root - Add sci-physics/root graphics and i/o support

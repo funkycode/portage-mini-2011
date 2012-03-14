@@ -7,9 +7,9 @@ IUSE=development
 KEYWORDS=-* amd64
 LICENSE=GPL-2 GPL-3 LGPL-2 LGPL-2.1 BSD BSD-2 public-domain
 PDEPEND=~app-emulation/emul-linux-x86-soundlibs-20110928 ~app-emulation/emul-linux-x86-sdl-20110928
-RDEPEND=~app-emulation/emul-linux-x86-baselibs-20110928 ~app-emulation/emul-linux-x86-xlibs-20110928 !<=app-emulation/emul-linux-x86-sdl-20081109
+RDEPEND=~app-emulation/emul-linux-x86-baselibs-20110928 ~app-emulation/emul-linux-x86-xlibs-20110928 !<=app-emulation/emul-linux-x86-sdl-20081109 !<=app-emulation/emul-linux-x86-soundlibs-20110101
 RESTRICT=strip
 SLOT=0
 SRC_URI=http://dev.gentoo.org/~pacho/emul/emul-linux-x86-medialibs-20110928.tar.xz
 _eclasses_=emul-linux-x86	c51a0cd6013332725233daa1b1b5c4ae	eutils	ba24d79270ea0022703f16b5de80051c	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e	versionator	6601b4c5b3f019a993db59a50e1854e4
-_md5_=b8e5845d6591204390046adf3d225f8a
+_md5_=0c7e30f1fc3b72a4f1c5371508bbea28

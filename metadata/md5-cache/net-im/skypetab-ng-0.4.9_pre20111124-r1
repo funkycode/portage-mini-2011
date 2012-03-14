@@ -1,0 +1,12 @@
+DEFINED_PHASES=compile configure install prepare setup unpack
+DEPEND=x11-libs/qt-gui amd64? ( app-emulation/emul-linux-x86-qtlibs )
+DESCRIPTION=An LD_PRELOAD wrapper that adds tabs to Skype for Linux
+EAPI=4
+HOMEPAGE=http://github.com/kekekeks/skypetab-ng
+KEYWORDS=-* ~x86 ~amd64
+LICENSE=LGPL-3
+RDEPEND=x11-libs/qt-gui amd64? ( app-emulation/emul-linux-x86-qtlibs ) net-im/skype[-qt-static]
+SLOT=0
+SRC_URI=http://dev.gentoo.org/~slyfox/skypetab-ng-0.4.9_pre20111124.tar.gz
+_eclasses_=base	5f35078c26d6c60556d5c8a2feb4f84f	eutils	ba24d79270ea0022703f16b5de80051c	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	qt4-r2	0d58394f40a89c8ec116c71510d7584b	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
+_md5_=921e5909de5ae70bfe078f21d49e3adc
