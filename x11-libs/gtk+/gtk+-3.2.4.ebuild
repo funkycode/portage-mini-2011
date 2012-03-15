@@ -1,6 +1,6 @@
 # Copyright 1999-2012 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/x11-libs/gtk+/gtk+-3.2.4.ebuild,v 1.1 2012/03/14 02:25:34 tetromino Exp $
+# $Header: /var/cvsroot/gentoo-x86/x11-libs/gtk+/gtk+-3.2.4.ebuild,v 1.2 2012/03/15 15:00:27 tetromino Exp $
 
 EAPI="4"
 
@@ -84,6 +84,9 @@ strip_builddir() {
 }
 
 src_prepare() {
+	# marshalers code was pre-generated with glib-2.31, upstream bug #671763
+	rm -v gdk/gdkmarshalers.c gtk/gtkmarshalers.c || die
+
 	# -O3 and company cause random crashes in applications. Bug #133469
 	replace-flags -O3 -O2
 	strip-flags

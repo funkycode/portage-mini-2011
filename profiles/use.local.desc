@@ -266,6 +266,12 @@ app-crypt/seahorse:ldap - Enable seahorse to manipulate GPG keys on a LDAP serve
 app-crypt/seahorse-plugins:applet - Enable seahorse applet for gnome-base/gnome-panel
 app-crypt/seahorse-plugins:gedit - Enable text encryption plugin to integrate into app-editors/gedit
 app-crypt/seahorse-plugins:nautilus - Enable file encryption plugin to integrate into the gnome-base/nautilus context menu
+app-crypt/shishi:3des - Enable 3DES encryption/checksum type.
+app-crypt/shishi:aes - Enable AES encryption/checksum types.
+app-crypt/shishi:arcfour - Enable ARCFOUR encryption/checksum type.
+app-crypt/shishi:des - Enable DES related encryption/checksum types.
+app-crypt/shishi:md - Enable unkeyed MD4/MD5 checksum types.
+app-crypt/shishi:null - Enable dummy NULL encryption/checksum type.
 app-crypt/tpm-tools:pkcs11 - Build Token data management utilities based on OpenCryptoki's (dev-libs/opencryptoki) PKCS#11 implementation.
 app-dicts/aspell-be:classic - Support classic spelling by default
 app-dicts/gwaei:unique - Enable single instance support using dev-libs/libunique.
@@ -367,9 +373,12 @@ app-emulation/ganeti:lxc - Enable Linux Countainers support
 app-emulation/ganeti:sharedstorage - Enable Shared Storage support
 app-emulation/ganeti:xen - Enable Xen support
 app-emulation/lib765:libdsk - Enable support for the floppy disk emulation library app-emulation/libdsk
+app-emulation/libguestfs:erlang - Install Erlang bindings
 app-emulation/libguestfs:fuse - Enable image mount support via fuse
 app-emulation/libguestfs:haskell - Install GHC binding
+app-emulation/libguestfs:introspection - Use dev-libs/gobject-introspection for introspection
 app-emulation/libguestfs:javadoc - Install java docs
+app-emulation/libguestfs:systemtap - Use dev-util/systemtap to trace programs
 app-emulation/libspectrum:gcrypt - Use dev-libs/libgcrypt for low-level crypto of some features, including logfiles.
 app-emulation/libvirt:iscsi - Allow using an iSCSI remote storage server as pool for disk image storage
 app-emulation/libvirt:json - Support QEmu 0.13 JSON-based interface, using dev-libs/yajl.
@@ -4280,10 +4289,8 @@ net-p2p/amule:daemon - Enable amule daemon
 net-p2p/amule:remote - Enable remote controlling of the client
 net-p2p/amule:stats - Enable statistic reporting
 net-p2p/amule:upnp - Enables support for Intel UPnP stack.
-net-p2p/bitcoin-qt:bip17 - Enable validation of new P2SH transactions
 net-p2p/bitcoin-qt:eligius - Enable using lower fees accepted by Eligius
 net-p2p/bitcoin-qt:upnp - Enable Universal Plug and Play
-net-p2p/bitcoind:bip17 - Enable validation of new P2SH transactions
 net-p2p/bitcoind:eligius - Enable using lower fees accepted by Eligius
 net-p2p/bitcoind:upnp - Enable Universal Plug and Play
 net-p2p/dbhub:switch_user - Enable support for switching user
