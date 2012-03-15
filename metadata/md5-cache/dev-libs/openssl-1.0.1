@@ -1,0 +1,13 @@
+DEFINED_PHASES=compile configure install postinst preinst prepare test unpack
+DEPEND=static-libs? ( gmp? ( dev-libs/gmp[static-libs(+)] ) zlib? ( sys-libs/zlib[static-libs(+)] ) kerberos? ( app-crypt/mit-krb5 ) ) !static-libs? ( gmp? ( dev-libs/gmp ) zlib? ( sys-libs/zlib ) kerberos? ( app-crypt/mit-krb5 ) ) sys-apps/diffutils >=dev-lang/perl-5 test? ( sys-devel/bc )
+DESCRIPTION=full-strength general purpose cryptography library (including SSL v2/v3 and TLS v1)
+EAPI=4
+HOMEPAGE=http://www.openssl.org/
+IUSE=bindist gmp kerberos rfc3779 sse2 static-libs test vanilla zlib
+LICENSE=openssl
+PDEPEND=app-misc/ca-certificates
+RDEPEND=static-libs? ( gmp? ( dev-libs/gmp[static-libs(+)] ) zlib? ( sys-libs/zlib[static-libs(+)] ) kerberos? ( app-crypt/mit-krb5 ) ) !static-libs? ( gmp? ( dev-libs/gmp ) zlib? ( sys-libs/zlib ) kerberos? ( app-crypt/mit-krb5 ) )
+SLOT=0
+SRC_URI=mirror://openssl/source/openssl-1.0.1.tar.gz http://cvs.pld-linux.org/cgi-bin/cvsweb.cgi/~checkout~/packages/openssl/openssl-c_rehash.sh?rev=1.7 -> openssl-c_rehash.sh.1.7
+_eclasses_=eutils	ba24d79270ea0022703f16b5de80051c	flag-o-matic	66cb710a2aa184a5687fe1289d7973ab	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
+_md5_=17b1e44c2131e25ddc7d52de994760d5

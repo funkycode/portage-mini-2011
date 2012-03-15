@@ -1,10 +1,14 @@
 # Copyright 1999-2012 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/www-client/google-chrome/google-chrome-19.0.1068.0_alpha126342.ebuild,v 1.1 2012/03/14 02:15:56 floppym Exp $
+# $Header: /var/cvsroot/gentoo-x86/www-client/google-chrome/google-chrome-19.0.1068.0_alpha126342.ebuild,v 1.3 2012/03/15 05:30:43 floppym Exp $
 
 EAPI="4"
 
-inherit eutils fdo-mime gnome2-utils multilib pax-utils
+CHROMIUM_LANGS="am ar bg bn ca cs da de el en_GB es es_LA et fa fi fil fr gu he
+	hi hr hu id it ja kn ko lt lv ml mr ms nb nl pl pt_BR pt_PT ro ru sk sl sr
+	sv sw ta te th tr uk vi zh_CN zh_TW"
+
+inherit chromium eutils multilib pax-utils unpacker
 
 DESCRIPTION="The web browser from Google"
 HOMEPAGE="http://www.google.com/chrome"
@@ -80,76 +84,17 @@ done
 QA_PREBUILT="*"
 S=${WORKDIR}
 
-# Chromium uses different names for some langs,
-# return Chromium name corresponding to a Gentoo lang.
-chromium_lang() {
-	if [[ "$1" == "es_LA" ]]; then
-		echo "es_419"
-	else
-		echo "$1"
-	fi
-}
-
-chrome_unpack() {
-	local x
-	for x in "${@}"; do
-		if [[ ${x} == *.deb ]]; then
-			# Avoid automagic usage of deb2targz.
-			echo ">>> Unpacking ${x} to ${PWD}"
-			ar x "${DISTDIR}/${x}" data.tar.lzma || die
-		else
-			unpack "${x}"
-		fi
-	done
-}
-
-src_unpack() {
-	chrome_unpack ${A} ./data.tar.lzma
-}
-
-src_prepare() {
+src_install() {
 	CHROME_HOME="opt/google/chrome/"
 
 	pax-mark m ${CHROME_HOME}chrome || die
 	rm -rf usr/share/menu || die
 	mv usr/share/doc/${PN} usr/share/doc/${PF} || die
 
-	# Support LINGUAS, bug #332751.
-	# Emulate logic from po.m4.
-	if [[ "%UNSET%" != "${LINGUAS-%UNSET%}" ]]; then
-		local found desiredlang presentlang pak pakname
+	pushd "${CHROME_HOME}locales" > /dev/null || die
+	chromium_remove_language_paks
+	popd
 
-		pushd "${CHROME_HOME}locales" > /dev/null || die
-
-		for pak in *.pak; do
-			pakname="${pak%.pak}"
-			pakname="${pakname/-/_}"
-			presentlang="$(chromium_lang "${pakname}")"
-
-			# Do not issue warning for en_US locale. This is the fallback
-			# locale so it should always be installed.
-			if [[ "${presentlang}" == "en_US" ]]; then
-				continue
-			fi
-
-			found=
-			for desiredlang in ${LINGUAS}; do
-				if [[ "${desiredlang}" == "${presentlang}"* ]]; then
-					found=1
-					break
-				fi
-			done
-
-			if [[ -z ${found} ]]; then
-				rm "${pak}" || die
-			fi
-		done
-
-		popd > /dev/null
-	fi
-}
-
-src_install() {
 	mv opt usr "${D}" || die
 
 	fperms u+s "/${CHROME_HOME}chrome-sandbox" || die
@@ -167,18 +112,4 @@ src_install() {
 		insinto /usr/share/icons/hicolor/${size}x${size}/apps
 		newins "${D}${CHROME_HOME}product_logo_${size}.png" google-chrome.png
 	done
-}
-
-pkg_preinst() {
-	gnome2_icon_savelist
-}
-
-pkg_postinst() {
-	fdo-mime_desktop_database_update
-	gnome2_icon_cache_update
-}
-
-pkg_postrm() {
-	fdo-mime_desktop_database_update
-	gnome2_icon_cache_update
 }
