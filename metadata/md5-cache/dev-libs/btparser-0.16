@@ -4,10 +4,10 @@ DESCRIPTION=Parser and analyzer for backtraces produced by gdb
 EAPI=4
 HOMEPAGE=https://fedorahosted.org/btparser/
 IUSE=static-libs
-KEYWORDS=amd64 ~x86
+KEYWORDS=amd64 x86
 LICENSE=GPL-2
 RDEPEND=>=app-admin/eselect-python-20091230 || ( =dev-lang/python-2.7* =dev-lang/python-2.6* )
 SLOT=0
 SRC_URI=https://fedorahosted.org/released/btparser/btparser-0.16.tar.xz
 _eclasses_=multilib	5f4ad6cf85e365e8f0c6050ddd21659e	python	dc3993dc1961bbb13c11bb835390ca29	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68
-_md5_=851c4d65274f87139d6ab1f176882558
+_md5_=8350b2d0c2383c2ef417b7be5fc93426

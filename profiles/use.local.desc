@@ -534,6 +534,7 @@ app-i18n/anthy:canna-2ch - Enable support for app-dicts/canna-2ch
 app-i18n/fcitx:gtk3 - Use GTK+3 instead of 2
 app-i18n/fcitx:opencc - Enable OpenCC for Chinese Transform
 app-i18n/fcitx:pango - Enable support for x11-libs/pango
+app-i18n/fcitx-configtool:gtk3 - Use GTK+3 instead of 2
 app-i18n/ibus:dconf - Enable support for gnome-base/dconf
 app-i18n/ibus:gconf - Enable support for gnome-base/gconf
 app-i18n/ibus:gtk3 - Enable support for gtk+3
@@ -2041,35 +2042,7 @@ kde-base/kdebase-data:wallpapers - Install the KDE wallpapers
 kde-base/kdebase-kioslaves:sftp - Enable SFTP protocol support using net-libs/libssh
 kde-base/kdebase-meta:wallpapers - Install the KDE wallpapers
 kde-base/kdebase-startkde:wallpapers - Install the KDE wallpapers
-kde-base/kdebindings-csharp:akonadi - Compile bindings for Akonadi.
-kde-base/kdebindings-csharp:phonon - Compile bindings for Phonon.
-kde-base/kdebindings-csharp:plasma - Compile bindings for KDE's Plasma.
-kde-base/kdebindings-csharp:qimageblitz - Compile bindings for media-libs/qimageblitz.
-kde-base/kdebindings-csharp:qscintilla - Compile bindings for x11-libs/qscintilla.
-kde-base/kdebindings-csharp:webkit - Compile bindings for x11-libs/qt-webkit.
 kde-base/kdebindings-meta:csharp - Enable C# language bindings for KDE and Qt
-kde-base/kdebindings-perl:akonadi - Compile bindings for Akonadi.
-kde-base/kdebindings-perl:attica - Compile bindings for dev-libs/libattica.
-kde-base/kdebindings-perl:declarative - Compile bindings for x11-libs/qt-declarative.
-kde-base/kdebindings-perl:kate - Compile bindings for KDE Advanced Text Editor.
-kde-base/kdebindings-perl:multimedia - Compile bindings for x11-libs/qt-multimedia.
-kde-base/kdebindings-perl:okular - Compile bindings for kde-base/okular.
-kde-base/kdebindings-perl:phonon - Compile bindings for Phonon.
-kde-base/kdebindings-perl:plasma - Compile bindings for KDE's Plasma.
-kde-base/kdebindings-perl:qimageblitz - Compile bindings for media-libs/qimageblitz.
-kde-base/kdebindings-perl:qscintilla - Compile bindings for x11-libs/qscintilla.
-kde-base/kdebindings-perl:qthelp - Compile bindings for QtHelp from x11-libs/qt-assistant.
-kde-base/kdebindings-perl:qwt - Compile bindings for x11-libs/qwt.
-kde-base/kdebindings-perl:webkit - Compile bindings for x11-libs/qt-webkit.
-kde-base/kdebindings-ruby:akonadi - Compile bindings for Akonadi.
-kde-base/kdebindings-ruby:declarative - Compile bindings for x11-libs/qt-declarative.
-kde-base/kdebindings-ruby:kate - Compile bindings for KDE Advanced Text Editor.
-kde-base/kdebindings-ruby:okular - Compile bindings for kde-base/okular.
-kde-base/kdebindings-ruby:phonon - Compile bindings for Phonon.
-kde-base/kdebindings-ruby:plasma - Compile bindings for KDE's Plasma.
-kde-base/kdebindings-ruby:qscintilla - Compile bindings for x11-libs/qscintilla.
-kde-base/kdebindings-ruby:qwt - Compile bindings for x11-libs/qwt.
-kde-base/kdebindings-ruby:webkit - Compile bindings for x11-libs/qt-webkit.
 kde-base/kdelibs:opengl - Enable OpenGL support for Plasma (GLApplet)
 kde-base/kdelibs:udisks - Use udisks for block device access (e.g., automounting)
 kde-base/kdelibs:upnp - Enable UPnP support
@@ -2153,18 +2126,6 @@ kde-base/qtruby:webkit - Compile bindings for x11-libs/qt-webkit.
 kde-base/qyoto:phonon - Compile bindings for Phonon.
 kde-base/qyoto:qscintilla - Compile bindings for x11-libs/qscintilla.
 kde-base/qyoto:webkit - Compile bindings for x11-libs/qt-webkit.
-kde-base/smoke:akonadi - Compile bindings for Akonadi.
-kde-base/smoke:attica - Compile bindings for dev-libs/libattica.
-kde-base/smoke:declarative - Compile bindings for x11-libs/qt-declarative.
-kde-base/smoke:kate - Compile bindings for KDE Advanced Text Editor.
-kde-base/smoke:multimedia - Compile bindings for x11-libs/qt-multimedia.
-kde-base/smoke:okular - Compile bindings for kde-base/okular.
-kde-base/smoke:phonon - Compile bindings for Phonon.
-kde-base/smoke:qimageblitz - Compile bindings for media-libs/qimageblitz.
-kde-base/smoke:qscintilla - Compile bindings for x11-libs/qscintilla.
-kde-base/smoke:qthelp - Compile bindings for QtHelp from x11-libs/qt-assistant.
-kde-base/smoke:qwt - Compile bindings for x11-libs/qwt.
-kde-base/smoke:webkit - Compile bindings for x11-libs/qt-webkit.
 kde-base/smokekde:akonadi - Compile bindings for Akonadi.
 kde-base/smokekde:attica - Compile bindings for dev-libs/libattica.
 kde-base/smokekde:kate - Compile bindings for KDE Advanced Text Editor.

@@ -1,12 +1,13 @@
 DEFINED_PHASES=compile configure install prepare test unpack
-DEPEND=dev-libs/glib:2 x11-libs/gtk+:2 app-arch/xz-utils ~app-i18n/fcitx-4.2.1 dev-libs/libunique:1 dev-util/intltool dev-util/pkgconfig sys-devel/gettext >=dev-util/cmake-2.8.4 userland_GNU? ( >=sys-apps/findutils-4.4.0 )
+DEPEND=dev-libs/glib:2 x11-libs/gtk+:2 app-arch/xz-utils ~app-i18n/fcitx-4.2.1 app-text/iso-codes dev-libs/libunique:1 dev-util/intltool dev-util/pkgconfig sys-devel/gettext >=dev-util/cmake-2.8.4 userland_GNU? ( >=sys-apps/findutils-4.4.0 )
 DESCRIPTION=A gtk GUI to edit fcitx settings
 EAPI=3
 HOMEPAGE=http://fcitx.googlecode.com
+IUSE=gtk gtk3
 KEYWORDS=~amd64 ~x86
 LICENSE=GPL-3
 RDEPEND=dev-libs/glib:2 x11-libs/gtk+:2
 SLOT=0
 SRC_URI=http://fcitx.googlecode.com/files/fcitx-configtool-0.4.1.tar.xz
 _eclasses_=base	5f35078c26d6c60556d5c8a2feb4f84f	cmake-utils	d9f3f2f6cc1a1d6ad8e31702e44133e5	eutils	ba24d79270ea0022703f16b5de80051c	flag-o-matic	66cb710a2aa184a5687fe1289d7973ab	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
-_md5_=34123fac797d9417f32547f737156198
+_md5_=0b2b08cee6d16e5978537a9fbcab6acb

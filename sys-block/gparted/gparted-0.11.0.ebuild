@@ -1,6 +1,6 @@
 # Copyright 1999-2012 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/sys-block/gparted/gparted-0.11.0.ebuild,v 1.3 2012/03/08 21:33:43 hwoarang Exp $
+# $Header: /var/cvsroot/gentoo-x86/sys-block/gparted/gparted-0.11.0.ebuild,v 1.5 2012/03/15 21:30:58 ssuominen Exp $
 
 EAPI=4
 GCONF_DEBUG=no
@@ -13,7 +13,7 @@ SRC_URI="mirror://sourceforge/${PN}/${P}.tar.bz2"
 
 LICENSE="GPL-2"
 SLOT="0"
-KEYWORDS="amd64 ~x86"
+KEYWORDS="amd64 x86"
 IUSE="btrfs dmraid fat gtk hfs jfs kde mdadm ntfs reiserfs reiser4 xfs"
 
 # FIXME: add gpart support
@@ -40,9 +40,7 @@ RDEPEND="${common_depends}
 		sys-fs/hfsutils )
 	jfs? ( sys-fs/jfsutils )
 	mdadm? ( sys-fs/mdadm )
-	ntfs? ( || (
-		>=sys-fs/ntfs3g-2011.4.12[ntfsprogs]
-		sys-fs/ntfsprogs ) )
+	ntfs? ( >=sys-fs/ntfs3g-2011.4.12[ntfsprogs] )
 	reiserfs? ( sys-fs/reiserfsprogs )
 	reiser4? ( sys-fs/reiser4progs )
 	xfs? ( sys-fs/xfsprogs sys-fs/xfsdump )"
