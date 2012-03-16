@@ -1,0 +1,13 @@
+DEFINED_PHASES=compile configure install prepare
+DEPEND=sys-libs/zlib >=dev-libs/tinyxml-2.6.2[stl] >=media-libs/libzen-0.4.25[static-libs=] curl? ( net-misc/curl ) mms? ( >=media-libs/libmms-0.6.1[static-libs=] ) dev-util/pkgconfig doc? ( app-doc/doxygen ) || ( =sys-devel/automake-1.11* ) >=sys-devel/autoconf-2.68 sys-devel/libtool
+DESCRIPTION=MediaInfo libraries
+EAPI=4
+HOMEPAGE=http://mediainfo.sourceforge.net/
+IUSE=curl doc mms static-libs
+KEYWORDS=~amd64 ~x86
+LICENSE=LGPL-3
+RDEPEND=sys-libs/zlib >=dev-libs/tinyxml-2.6.2[stl] >=media-libs/libzen-0.4.25[static-libs=] curl? ( net-misc/curl ) mms? ( >=media-libs/libmms-0.6.1[static-libs=] )
+SLOT=0
+SRC_URI=mirror://sourceforge/mediainfo/source/libmediainfo/0.7.54/libmediainfo_0.7.54.tar.bz2
+_eclasses_=autotools	3e1370c6fcb964b30ad99070a466441d	eutils	ba24d79270ea0022703f16b5de80051c	flag-o-matic	66cb710a2aa184a5687fe1289d7973ab	libtool	5f623f5a211fb1b2d84d88ee49959a54	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
+_md5_=da4be24d92b5ad58e039637130260f43

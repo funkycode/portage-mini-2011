@@ -1,12 +1,12 @@
 # Copyright 1999-2012 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/net-p2p/bitcoind/bitcoind-0.5.3.ebuild,v 1.1 2012/03/15 16:46:25 blueness Exp $
+# $Header: /var/cvsroot/gentoo-x86/net-p2p/bitcoind/bitcoind-0.5.3.ebuild,v 1.4 2012/03/16 12:33:19 blueness Exp $
 
-EAPI=4
+EAPI="4"
 
 DB_VER="4.8"
 
-inherit db-use eutils versionator
+inherit db-use eutils versionator toolchain-funcs
 
 DESCRIPTION="Original Bitcoin crypto-currency wallet for automated services"
 HOMEPAGE="http://bitcoin.org/"
@@ -16,7 +16,7 @@ SRC_URI="http://gitorious.org/bitcoin/bitcoind-stable/archive-tarball/v${PV/_/} 
 
 LICENSE="MIT ISC"
 SLOT="0"
-KEYWORDS="~amd64 ~arm ~x86"
+KEYWORDS="amd64 ~arm ~x86"
 IUSE="+eligius examples ssl upnp"
 
 RDEPEND="
@@ -41,6 +41,7 @@ pkg_setup() {
 
 src_prepare() {
 	cd src || die
+	epatch "${FILESDIR}"/${PN}-remove-debug.patch
 	use eligius && epatch "${WORKDIR}/0.5.2-eligius_sendfee.patch"
 }
 
@@ -69,7 +70,7 @@ src_compile() {
 	fi
 
 	cd src || die
-	emake -f makefile.unix "${OPTS[@]}" ${PN}
+	emake CC="$(tc-getCC)" CXX="$(tc-getCXX)" -f makefile.unix "${OPTS[@]}" ${PN}
 }
 
 src_install() {
