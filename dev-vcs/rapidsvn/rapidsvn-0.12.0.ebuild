@@ -1,6 +1,6 @@
 # Copyright 1999-2012 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/dev-vcs/rapidsvn/rapidsvn-0.12.0.ebuild,v 1.6 2012/02/06 19:16:53 jlec Exp $
+# $Header: /var/cvsroot/gentoo-x86/dev-vcs/rapidsvn/rapidsvn-0.12.0.ebuild,v 1.8 2012/03/17 19:42:32 jlec Exp $
 
 EAPI=4
 
@@ -20,13 +20,13 @@ SRC_URI="http://www.rapidsvn.org/download/release/${MY_PV}/${P}-${MY_REL}.tar.gz
 
 LICENSE="GPL-2 LGPL-2.1 FDL-1.2"
 SLOT="0"
-KEYWORDS="amd64 ppc ppc64 ~sparc x86 ~amd64-linux ~x86-linux"
+KEYWORDS="amd64 ppc ppc64 x86 ~amd64-linux ~x86-linux"
 IUSE="doc static-libs"
 
 COMMON_DEP="
 	dev-libs/apr
 	dev-libs/apr-util
-	dev-vcs/subversion
+	<dev-vcs/subversion-1.7
 	x11-libs/wxGTK:2.8[X]"
 DEPEND="${COMMON_DEP}
 	doc? (

@@ -1698,6 +1698,7 @@ dev-util/perf:demangle - Enable C++ symbol name demangling, using libbfd from sy
 dev-util/perf:doc - Build documentation and man pages. With this USE flag disabled, the --help parameter for perf and its sub-tools will not be available. This is optional because it depends on a few documentation handling tools that are not always welcome on user systems.
 dev-util/perf:perl - Add support for Perl as a scripting language for perf tools.
 dev-util/qdevelop:plugins - Build and install additional plugins
+dev-util/qt-creator:autotools - Enable autotools project manager plugin
 dev-util/qt-creator:bazaar - Add support for dev-vcs/bzr version control system
 dev-util/qt-creator:bineditor - Enable bineditor plugin
 dev-util/qt-creator:bookmarks - Enable bookmarks plugin
@@ -1708,7 +1709,7 @@ dev-util/qt-creator:fakevim - Enable support for vim-like key bindings
 dev-util/qt-creator:git - Add support for dev-vcs/git version control system
 dev-util/qt-creator:madde - Enable integration with MADDE (Maemo Application Development and Debugging Environment)
 dev-util/qt-creator:mercurial - Add support for dev-vcs/mercurial version control system
-dev-util/qt-creator:perforce - Enable perforce software configuration manager plugin
+dev-util/qt-creator:perforce - Add support for Perforce version control system (requires manual installation of Perforce client)
 dev-util/qt-creator:qml - Build QML support and many other QML-related tools (recommended)
 dev-util/qt-creator:qtscript - Enable QtScript editor plugin
 dev-util/qt-creator:valgrind - Add support for memory debugging using dev-util/valgrind
@@ -3559,6 +3560,7 @@ net-im/bitlbee:nss - Use NSS for SSL support in MSN and Jabber
 net-im/bitlbee:otr - Enable support for encrypted conversations
 net-im/bitlbee:plugins - Enable support for plugins
 net-im/bitlbee:purple - Use libpurple instead of the built-in IM protocol support
+net-im/bitlbee:skype - Enable Skype support
 net-im/bitlbee:twitter - Enable Twitter protocol support
 net-im/centerim:gadu - Enable support for the Gadu-Gadu protocol
 net-im/centerim:irc - Enable support for the IRC protocol

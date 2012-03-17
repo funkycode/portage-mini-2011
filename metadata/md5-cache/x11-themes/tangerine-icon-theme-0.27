@@ -3,11 +3,11 @@ DEPEND=gnome-base/librsvg >=x11-misc/icon-naming-utils-0.8.90 dev-util/intltool 
 DESCRIPTION=a derivative of the standard Tango theme, using a more orange approach
 EAPI=3
 HOMEPAGE=http://packages.ubuntu.com/gutsy/x11/tangerine-icon-theme
-KEYWORDS=amd64 ~sparc x86
+KEYWORDS=amd64 x86
 LICENSE=CCPL-Attribution-ShareAlike-2.5 LGPL-2.1
 RDEPEND=|| ( kde-base/oxygen-icons x11-themes/gnome-icon-theme )
 RESTRICT=binchecks strip
 SLOT=0
 SRC_URI=mirror://ubuntu/pool/universe/t/tangerine-icon-theme/tangerine-icon-theme_0.27.tar.gz http://www.gentoo.org/images/gentoo-logo.svg
 _eclasses_=gnome2-utils	b5ca2ccadb60760889faa3bccba121d9
-_md5_=5d21e3c7f3b37623d010c5a14511dc88
+_md5_=cb4ce2979d39575e238ca58ce1fcbc50
