@@ -370,7 +370,6 @@ app-emulation/ganeti:kvm - Enable KVM support
 app-emulation/ganeti:lxc - Enable Linux Countainers support
 app-emulation/ganeti:sharedstorage - Enable Shared Storage support
 app-emulation/ganeti:xen - Enable Xen support
-app-emulation/lib765:libdsk - Enable support for the floppy disk emulation library app-emulation/libdsk
 app-emulation/libguestfs:erlang - Install Erlang bindings
 app-emulation/libguestfs:fuse - Enable image mount support via fuse
 app-emulation/libguestfs:haskell - Install GHC binding
@@ -415,7 +414,6 @@ app-emulation/q4wine:wineappdb - Enable Win AppDB browser subsystem
 app-emulation/qemu:aio - Enables support for Linux's Async IO
 app-emulation/qemu:brltty - Adds support for braille displays using brltty
 app-emulation/qemu:curl - Adds support for read-only block device emulation based on files located on http and ftp servers
-app-emulation/qemu:esd - Enable esound output for sound emulation
 app-emulation/qemu:fdt - Enables firmware device tree support
 app-emulation/qemu:gnutls - Enable TLS support for the VNC console server
 app-emulation/qemu:kqemu - Enables the kernel acceleration module on a x86/x86-64 cpu
@@ -439,7 +437,6 @@ app-emulation/qemu-kvm:aio - Enables support for Linux's Async IO
 app-emulation/qemu-kvm:alsa - Enable alsa output for sound emulation
 app-emulation/qemu-kvm:brltty - Adds support for braille displays using brltty
 app-emulation/qemu-kvm:curl - Support ISOs / -cdrom directives vis HTTP or HTTPS.
-app-emulation/qemu-kvm:esd - Enable esound output for sound emulation
 app-emulation/qemu-kvm:fdt - Enables firmware device tree support
 app-emulation/qemu-kvm:jpeg - Enable JPEG compression for the VNC console server
 app-emulation/qemu-kvm:ncurses - Enable the ncurses-based console
@@ -549,6 +546,7 @@ app-i18n/im-ja:anthy - Support for Anthy input method
 app-i18n/im-ja:skk - Support for SKK input method
 app-i18n/imsettings:xfconf - Enable integration in the Xfce desktop environment with xfce-base/xfconf
 app-i18n/kimera:anthy - Support for Anthy input method
+app-i18n/libskk:introspection - Use dev-libs/gobject-introspection for introspection
 app-i18n/libtomoe-gtk:gucharmap - Enable gucharmap dictionary plugin
 app-i18n/scim-tomoe:gucharmap - Enable gucharmap dictionary plugin
 app-i18n/tomoe:hyperestraier - Enable support for app-text/hyperestraier
@@ -571,7 +569,6 @@ app-laptop/prey:session - Get screenshots from user session
 app-laptop/prey:userpriv - Create a prey user group so regular users can access and modify the prey configuration. Use it with caution
 app-laptop/prey:webcam - Use computer's webcam to take screenshots of the thief
 app-laptop/tp_smapi:hdaps - Install a compatible HDAPS module
-app-laptop/tpctl:tpctlir - Enable support for thinkpad models 760 and 765
 app-misc/anki:furigana - Enable support for furigana generation
 app-misc/anki:graph - Enable support for making graphs
 app-misc/anki:recording - Enable support for audio recording
@@ -867,7 +864,6 @@ app-text/poppler:xpdf-headers -
 app-text/sgmltools-lite:jadetex - Add support for app-text/jadetex (for processing tex files produced by the TeX backend of Jade)
 app-text/stardict:editor - Build and install the stardict-editor utility
 app-text/stardict:espeak - Enable text to speech synthesizer using espeak engine
-app-text/stardict:festival - Enable text to speech synthesizer using festival engine
 app-text/stardict:gucharmap - Enable gucharmap dictionary plugin
 app-text/stardict:pronounce - Install WyabdcRealPeopleTTS package (it is just many .wav files) to make StarDict pronounce English words
 app-text/stardict:qqwry - Enable QQWry plugin, which provides information (in Chinese language) about geographical positions, owner, etc. for IP addresses
@@ -1351,10 +1347,7 @@ dev-libs/openssl:rfc3779 - Enable support for RFC 3779 (X.509 Extensions for IP 
 dev-libs/pkcs11-helper:nss - Enable NSS crypto engine
 dev-libs/ppl:lpsol - Build the ppl_lpsol linear programming problem solver
 dev-libs/ppl:watchdog - Build the PPL Watchdog library - a C++ library for multiple, concurrent watchdog timers
-dev-libs/seed:dbus - Build the JS module for sys-apps/dbus and dev-libs/dbus-glib
-dev-libs/seed:mpfr - Build the JS module for dev-libs/mpfr
 dev-libs/seed:profile - Build support for profiling dev-libs/seed for development purposes
-dev-libs/seed:xml - Build JS module for dev-libs/libxml2
 dev-libs/soprano:clucene - Enable dev-cpp/clucene backend support.
 dev-libs/soprano:raptor - Enables support for media-libs/raptor RDF parser/serializer.
 dev-libs/soprano:redland - Enables support for the dev-libs/redland storage backend (really slow one).
@@ -2330,7 +2323,6 @@ media-gfx/darktable:slideshow - Build the opengl slideshow viewer
 media-gfx/digikam:addressbook - Add support for kdepim
 media-gfx/digikam:linguas_ha - Hausa translation
 media-gfx/digikam:linguas_mi - Maori translation
-media-gfx/digikam:linguas_tt - ?? translation
 media-gfx/digikam:linguas_ven - Venda translation
 media-gfx/digikam:themedesigner - Build the digikam theme designer
 media-gfx/digikam:thumbnails - Enable thumbnails database support
@@ -3140,7 +3132,6 @@ media-video/mplayer2:mng - MNG input support
 media-video/mplayer2:mp3 - Enable support for mp3 decoding over media-sound/mpg123 instead of relying on ffmpeg support.
 media-video/mplayer2:network - Enables network streaming support
 media-video/mplayer2:nut - Enables support for the NUT container format
-media-video/mplayer2:osdmenu - Enables support for on-screen display (OSD) menus
 media-video/mplayer2:pnm - Add PNM video output option, to create PPM/PGM/PGMYUV images
 media-video/mplayer2:pvr - Enable Video4Linux2 MPEG PVR
 media-video/mplayer2:radio - Enable V4L2 radio interface and support
@@ -3153,7 +3144,6 @@ media-video/mplayer2:symlink - Copy all binaries and configuration into location
 media-video/mplayer2:tga - Enables Targa video output
 media-video/mplayer2:vdpau - Enables experimental VDPAU support (requires nVidia video cards) to offload MPEG2/MPEG4/VC1/WMV CPU processing to video card
 media-video/mplayer2:xanim - Enables support for xanim based codecs
-media-video/mplayer2:xvmc - Enables X-Video Motion Compensation support
 media-video/ogmrip:ogm - Support for OGM container format
 media-video/ogmrip:srt - Support for SRT subtitle format
 media-video/rtmpdump:gnutls - Use GnuTLS library instead of the default OpenSSL
@@ -3298,6 +3288,10 @@ media-video/x264-encoder:10bit - Set output bit depth to 10
 media-video/x264-encoder:ffmpegsource - Enable ffmpegsource aka ffms support, disables lavf
 media-video/x264-encoder:interlaced - Enable interlaced encoding support, this can decrease encoding speed by up to 2%
 media-video/xine-ui:vdr - Enables Video Disk Recorder support
+net-analyzer/2ping:crc - Enable crc check.
+net-analyzer/2ping:md5 - Enable md5 hash check.
+net-analyzer/2ping:server - Install the server init scripts.
+net-analyzer/2ping:sha - Enable sha1 or sha256 check.
 net-analyzer/aimsniff:http - Install the WAS (Web AIM Sniff) frontend
 net-analyzer/barnyard:sguil - Enable sguil (The Analyst Console for Network Security Monitoring) support
 net-analyzer/barnyard2:aruba - Enable Aruba support

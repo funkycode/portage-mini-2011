@@ -1,13 +1,13 @@
 DEFINED_PHASES=compile install postinst prepare
 DEPEND=gnutls? ( net-libs/gnutls ) !gnutls? ( ssl? ( dev-libs/openssl ) ) pulseaudio? ( media-sound/pulseaudio )
-DESCRIPTION=Adds pulseaudio/esd/oss audio output and HTTPS/RTMPS support to Adobe Flash 9
+DESCRIPTION=Adds pulseaudio/oss audio output and HTTPS/RTMPS support to Adobe Flash 9
 EAPI=3
 HOMEPAGE=http://pulseaudio.org/wiki/FlashPlayer9Solution
-IUSE=pulseaudio esd oss ssl gnutls
+IUSE=pulseaudio oss ssl gnutls
 KEYWORDS=~amd64 ~x86
 LICENSE=Adobe-SourceCode
-RDEPEND=gnutls? ( net-libs/gnutls ) !gnutls? ( ssl? ( dev-libs/openssl ) ) pulseaudio? ( media-sound/pulseaudio ) esd? ( media-sound/esound )
+RDEPEND=gnutls? ( net-libs/gnutls ) !gnutls? ( ssl? ( dev-libs/openssl ) ) pulseaudio? ( media-sound/pulseaudio )
 SLOT=0
 SRC_URI=https://svn.revolutionlinux.com/MILLE/XTERM/trunk/libflashsupport/Tarballs/libflashsupport-1.2.tar.bz2
 _eclasses_=eutils	ba24d79270ea0022703f16b5de80051c	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
-_md5_=a9daf2ccecf480fa60cc0bf9adfe7505
+_md5_=29e824e5620e00b8f075a8a4b763616c

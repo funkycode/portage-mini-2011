@@ -1,10 +1,11 @@
 # Copyright 1999-2012 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/app-office/libreoffice/libreoffice-3.5.1.2.ebuild,v 1.3 2012/03/17 18:17:31 scarabeus Exp $
+# $Header: /var/cvsroot/gentoo-x86/app-office/libreoffice/libreoffice-3.5.1.2.ebuild,v 1.6 2012/03/18 12:12:14 scarabeus Exp $
 
 EAPI=4
 
 KDE_REQUIRED="optional"
+QT_MINIMAL="4.7.4"
 KDE_SCM="git"
 CMAKE_REQUIRED="never"
 
@@ -192,6 +193,8 @@ DEPEND="${COMMON_DEPEND}
 PATCHES=(
 	# this can't be upstreamed :(
 	"${FILESDIR}/${PN}-system-pyuno.patch"
+	"${FILESDIR}/${PN}-3.5-propagate-gb_FULLDEPS.patch"
+	"${FILESDIR}/${PN}-3.5-junit.patch"
 	"${FILESDIR}/libreoffice-3.5.1-kde-4.8.1-namespace.patch"
 )
 

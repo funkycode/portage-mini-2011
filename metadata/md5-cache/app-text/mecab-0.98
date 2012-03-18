@@ -4,7 +4,7 @@ DESCRIPTION=Yet Another Part-of-Speech and Morphological Analyzer
 EAPI=2
 HOMEPAGE=http://mecab.sourceforge.net/
 IUSE=unicode
-KEYWORDS=amd64 ~arm hppa ~ia64 ppc ppc64 ~sparc x86 ~x86-fbsd
+KEYWORDS=amd64 ~arm hppa ia64 ppc ppc64 sparc x86 ~x86-fbsd
 LICENSE=|| ( BSD LGPL-2.1 GPL-2 )
 PDEPEND=>=app-dicts/mecab-ipadic-2.7.0.20070610
 RDEPEND=dev-lang/perl virtual/libiconv
@@ -12,4 +12,4 @@ RESTRICT=test
 SLOT=0
 SRC_URI=mirror://sourceforge/mecab/mecab-0.98.tar.gz
 _eclasses_=autotools	3e1370c6fcb964b30ad99070a466441d	eutils	ba24d79270ea0022703f16b5de80051c	libtool	5f623f5a211fb1b2d84d88ee49959a54	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
-_md5_=5281e03aeaa205c0614aa3c435b61850
+_md5_=6ad1d8ddecc0af5843826fed4c7b27f5

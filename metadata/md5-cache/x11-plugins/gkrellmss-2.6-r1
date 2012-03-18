@@ -1,13 +1,13 @@
 DEFINED_PHASES=compile install setup
-DEPEND==sci-libs/fftw-3* esd? ( media-sound/esound ) alsa? ( media-libs/alsa-lib ) =app-admin/gkrellm-2* dev-util/pkgconfig
+DEPEND==sci-libs/fftw-3* media-libs/alsa-lib =app-admin/gkrellm-2* dev-util/pkgconfig
 DESCRIPTION=A plugin for GKrellM2 that has a VU meter and a sound chart
 EAPI=1
 HOMEPAGE=http://members.dslextreme.com/users/billw/gkrellmss/gkrellmss.html
-IUSE=+alsa esd nls
+IUSE=nls
 KEYWORDS=alpha amd64 ppc ~sparc x86
 LICENSE=GPL-2
-RDEPEND==sci-libs/fftw-3* esd? ( media-sound/esound ) alsa? ( media-libs/alsa-lib ) =app-admin/gkrellm-2*
+RDEPEND==sci-libs/fftw-3* media-libs/alsa-lib =app-admin/gkrellm-2*
 SLOT=0
 SRC_URI=http://web.wt.net/~billw/gkrellmss/gkrellmss-2.6.tar.gz
 _eclasses_=eutils	ba24d79270ea0022703f16b5de80051c	gkrellm-plugin	ed070af3b0d893d87445360bb28c119c	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
-_md5_=65c11ea1d7bc7f8fbecbaa350c078dc3
+_md5_=56de3cb75c7794c9aeb52aa6ff6f3360

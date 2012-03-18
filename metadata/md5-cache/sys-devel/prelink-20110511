@@ -3,10 +3,10 @@ DEPEND=>=dev-libs/elfutils-0.100 !dev-libs/libelf >=sys-libs/glibc-2.8
 DESCRIPTION=Modifies ELFs to avoid runtime symbol resolutions resulting in faster load times
 EAPI=2
 HOMEPAGE=http://people.redhat.com/jakub/prelink
-KEYWORDS=amd64 -arm ppc ppc64 ~s390 ~sparc x86
+KEYWORDS=amd64 -arm ppc ppc64 x86
 LICENSE=GPL-2
 RDEPEND=>=dev-libs/elfutils-0.100 !dev-libs/libelf >=sys-libs/glibc-2.8 >=sys-devel/binutils-2.18
 SLOT=0
 SRC_URI=mirror://gentoo/prelink-20110511.tar.bz2
 _eclasses_=eutils	ba24d79270ea0022703f16b5de80051c	flag-o-matic	66cb710a2aa184a5687fe1289d7973ab	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
-_md5_=f5069fefcc4fd2c0931d94fdc8fe61d0
+_md5_=a071a50a46ab279cb11379f3d8105fad

@@ -1,0 +1,12 @@
+DEFINED_PHASES=configure install
+DEPEND=>=dev-libs/glib-2.16 dev-libs/libgee:0 dev-libs/json-glib introspection? ( >=dev-libs/gobject-introspection-0.10.8 ) nls? ( virtual/libintl ) dev-lang/vala:0.14 dev-util/pkgconfig nls? ( dev-util/intltool sys-devel/gettext )
+DESCRIPTION=GObject-based library to deal with Japanese kana-to-kanji conversion method
+EAPI=4
+HOMEPAGE=https://github.com/ueno/libskk
+IUSE=nls +introspection static-libs
+KEYWORDS=~amd64 ~x86
+LICENSE=GPL-3
+RDEPEND=>=dev-libs/glib-2.16 dev-libs/libgee:0 dev-libs/json-glib introspection? ( >=dev-libs/gobject-introspection-0.10.8 ) nls? ( virtual/libintl )
+SLOT=0
+SRC_URI=mirror://github/ueno/libskk/libskk-0.0.11.tar.gz
+_md5_=4d198a767c686688370282696e4b17a1
