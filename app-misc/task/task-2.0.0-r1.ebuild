@@ -1,16 +1,14 @@
 # Copyright 1999-2012 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/app-misc/task/task-2.0.0_rc1.ebuild,v 1.1 2012/03/06 10:19:04 radhermit Exp $
+# $Header: /var/cvsroot/gentoo-x86/app-misc/task/task-2.0.0-r1.ebuild,v 1.1 2012/03/18 04:19:01 radhermit Exp $
 
 EAPI=4
 
 inherit eutils cmake-utils bash-completion-r1
 
-MY_P="${P/_rc/.RC}"
-
 DESCRIPTION="A task management tool with a command-line interface"
 HOMEPAGE="http://taskwarrior.org/projects/show/taskwarrior/"
-SRC_URI="http://taskwarrior.org/download/${MY_P}.tar.gz"
+SRC_URI="http://taskwarrior.org/download/${P}.tar.gz"
 
 LICENSE="MIT"
 SLOT="0"
@@ -19,8 +17,6 @@ IUSE="lua vim-syntax zsh-completion"
 
 DEPEND="lua? ( dev-lang/lua )"
 RDEPEND="${DEPEND}"
-
-S="${WORKDIR}/${MY_P}"
 
 src_prepare() {
 	# Use the correct directory locations
@@ -48,6 +44,11 @@ src_install() {
 	cmake-utils_src_install
 
 	newbashcomp scripts/bash/task_completion.sh task
+
+	if use lua ; then
+		insinto /usr/share/${PN}/extensions
+		doins scripts/extensions/*
+	fi
 
 	if use vim-syntax ; then
 		rm scripts/vim/README

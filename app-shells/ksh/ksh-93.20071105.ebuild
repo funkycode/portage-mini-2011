@@ -1,6 +1,6 @@
-# Copyright 1999-2010 Gentoo Foundation
+# Copyright 1999-2012 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/app-shells/ksh/ksh-93.20071105.ebuild,v 1.8 2010/01/24 21:51:37 vapier Exp $
+# $Header: /var/cvsroot/gentoo-x86/app-shells/ksh/ksh-93.20071105.ebuild,v 1.10 2012/03/18 04:01:39 floppym Exp $
 
 inherit eutils flag-o-matic toolchain-funcs
 

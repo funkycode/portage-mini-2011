@@ -1,6 +1,6 @@
-# Copyright 1999-2011 Gentoo Foundation
+# Copyright 1999-2012 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/www-client/xxxterm/xxxterm-9999.ebuild,v 1.2 2011/10/11 00:25:00 rafaelmartins Exp $
+# $Header: /var/cvsroot/gentoo-x86/www-client/xxxterm/xxxterm-9999.ebuild,v 1.3 2012/03/17 21:54:12 rafaelmartins Exp $
 
 EAPI="4"
 
@@ -14,13 +14,15 @@ inherit eutils fdo-mime toolchain-funcs ${GIT_ECLASS}
 DESCRIPTION="A minimalist web browser with sophisticated security features designed-in"
 HOMEPAGE="http://opensource.conformal.com/wiki/xxxterm"
 
+MY_P="${PN}-${PV/0/.}"
+
 KEYWORDS=""
 if [[ ${PV} = *9999* ]]; then
 	EGIT_REPO_URI="git://opensource.conformal.com/xxxterm.git
 		https://opensource.conformal.com/git/xxxterm.git"
-	EGIT_SOURCEDIR="${WORKDIR}/${P}"
+	EGIT_SOURCEDIR="${WORKDIR}/${MY_P}"
 else
-	SRC_URI="http://opensource.conformal.com/snapshots/${PN}/${P}.tgz"
+	SRC_URI="http://opensource.conformal.com/snapshots/${PN}/${MY_P}.tgz"
 	KEYWORDS="~amd64 ~x86"
 fi
 
@@ -35,7 +37,7 @@ DEPEND="x11-libs/gtk+:2
 	dev-libs/libbsd"
 RDEPEND="${DEPEND}"
 
-S="${WORKDIR}/${P}/linux"
+S="${WORKDIR}/${MY_P}/linux"
 
 src_prepare() {
 	sed -i \
