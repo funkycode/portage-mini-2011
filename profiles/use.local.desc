@@ -825,6 +825,7 @@ app-text/cb2bib:poll - use clipboard polling
 app-text/crm114:mew - Add support for using the mewdecode mime decoder (app-emacs/mew)
 app-text/crm114:mimencode - Add support for using the mimencode mime (net-mail/metamail)
 app-text/crm114:normalizemime - Add support for using the normalizemime (mail-filter/normalizemime)
+app-text/cuneiform:graphicsmagick - Enables support of various input formats using media-gfx/graphicsmagick. Otherwise only uncompressed BMP files are supported.
 app-text/cuneiform:imagemagick - Enables support of various input formats using media-gfx/imagemagick. Otherwise only uncompressed BMP files are supported.
 app-text/dictd:judy - Build Judy-based (dev-libs/judy) plugin implementing fast "exact" and especially "lev" strategies
 app-text/dictd:minimal - Don't build server but dict client, dictzip and dictfmt only.
@@ -904,7 +905,7 @@ app-text/wpd2odt:wps - Add support for wps format using app-text/libwps
 app-text/wv:tools - Install optional utilities considered deprecated in favor of using AbiWord.
 app-text/xiphos:webkit - Use net-libs/webkit-gtk instead of gnome-extra/gtkhtml
 app-text/yagf:cuneiform - Enable support for the app-text/cuneiform OCR engine.
-app-text/yagf:tesseract - Enable support for the tesseract OCR engine
+app-text/yagf:tesseract - Enable support for the app-text/tesseract OCR engine.
 app-vim/gentoo-syntax:ignore-glep31 - Remove GLEP 31 (UTF-8 file encodings) settings
 app-vim/vim-latex:html - Install HTML documentation
 dev-cpp/glog:gflags - Use gflags module for flag parsing

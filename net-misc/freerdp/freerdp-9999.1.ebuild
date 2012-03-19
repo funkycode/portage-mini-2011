@@ -1,20 +1,29 @@
 # Copyright 1999-2012 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/net-misc/freerdp/freerdp-9999.1.ebuild,v 1.6 2012/01/16 20:51:51 floppym Exp $
+# $Header: /var/cvsroot/gentoo-x86/net-misc/freerdp/freerdp-9999.1.ebuild,v 1.7 2012/03/19 15:12:25 floppym Exp $
 
 EAPI="4"
 
-inherit cmake-utils git-2
+inherit cmake-utils
+
+if [[ ${PV} != 9999* ]]; then
+	SRC_URI="https://github.com/downloads/FreeRDP/FreeRDP/${P}.tar.gz
+		mirror://gentoo/${P}.tar.gz
+		http://dev.gentoo.org/~floppym/distfiles/${P}.tar.gz"
+	KEYWORDS="~amd64 ~x86"
+else
+	inherit git-2
+	SRC_URI=""
+	EGIT_REPO_URI="git://github.com/FreeRDP/FreeRDP.git
+		https://github.com/FreeRDP/FreeRDP.git"
+	KEYWORDS=""
+fi
 
 DESCRIPTION="Free implementation of the Remote Desktop Protocol"
 HOMEPAGE="http://www.freerdp.com/"
-SRC_URI=""
-EGIT_REPO_URI="git://github.com/FreeRDP/FreeRDP.git
-	https://github.com/FreeRDP/FreeRDP.git"
 
 LICENSE="Apache-2.0"
 SLOT="0"
-KEYWORDS=""
 IUSE="alsa cups directfb doc ffmpeg pulseaudio smartcard sse2 test X xinerama xv"
 
 FREERDP_DEBUG="transport chanman svc dvc kbd nla nego certificate license gdi
@@ -53,8 +62,6 @@ DOCS=( README )
 
 # Test suite segfaults
 RESTRICT="test"
-
-CMAKE_VERBOSE=1
 
 src_configure() {
 	local mycmakeargs=(

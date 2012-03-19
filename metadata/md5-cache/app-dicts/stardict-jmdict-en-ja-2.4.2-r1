@@ -9,4 +9,4 @@ RESTRICT=strip
 SLOT=0
 SRC_URI=mirror://sourceforge/stardict/stardict-jmdict-en-ja-2.4.2.tar.bz2
 _eclasses_=stardict	4a50e866e514f535b51685c0df94d04c
-_md5_=64dcb1998c6d1dc4a3f1b3417bc47489
+_md5_=733ff18d9264ebc0c1166831d3203fb9
