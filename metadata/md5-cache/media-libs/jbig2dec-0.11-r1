@@ -4,11 +4,11 @@ DESCRIPTION=A decoder implementation of the JBIG2 image compression format
 EAPI=4
 HOMEPAGE=http://jbig2dec.sourceforge.net/
 IUSE=png static-libs test
-KEYWORDS=amd64 ~arm ~hppa ~mips ppc ppc64 x86 ~x86-fbsd
+KEYWORDS=~alpha amd64 ~arm ~hppa ~ia64 ~mips ppc ppc64 ~sparc x86 ~x86-fbsd
 LICENSE=GPL-3
 RDEPEND=png? ( >=media-libs/libpng-1.2:0 )
 RESTRICT=test
 SLOT=0
 SRC_URI=http://ghostscript.com/~giles/jbig2/jbig2dec/jbig2dec-0.11.tar.gz test? ( http://jbig2dec.sourceforge.net/ubc/jb2streams.zip )
 _eclasses_=autotools	3e1370c6fcb964b30ad99070a466441d	eutils	ba24d79270ea0022703f16b5de80051c	libtool	5f623f5a211fb1b2d84d88ee49959a54	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
-_md5_=78ff2e13a0450d5f96ae9f50a6544d37
+_md5_=9ffa33f5c2ebce02657f15051f324d4c

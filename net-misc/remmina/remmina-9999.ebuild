@@ -1,24 +1,33 @@
 # Copyright 1999-2012 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/net-misc/remmina/remmina-9999.ebuild,v 1.18 2012/03/08 16:31:42 floppym Exp $
+# $Header: /var/cvsroot/gentoo-x86/net-misc/remmina/remmina-9999.ebuild,v 1.19 2012/03/18 23:10:35 floppym Exp $
 
 EAPI="4"
 
-inherit gnome2-utils cmake-utils git-2
+inherit gnome2-utils cmake-utils
+
+if [[ ${PV} != 9999 ]]; then
+	SRC_URI="https://github.com/downloads/FreeRDP/Remmina/${P}.tar.gz
+		mirror://gentoo/${P}.tar.gz
+		http://dev.gentoo.org/~floppym/distfiles/${P}.tar.gz"
+	KEYWORDS="~amd64 ~x86"
+else
+	inherit git-2
+	SRC_URI=""
+	EGIT_REPO_URI="git://github.com/FreeRDP/Remmina.git"
+	KEYWORDS=""
+fi
 
 DESCRIPTION="A GTK+ RDP, VNC, XDMCP and SSH client"
 HOMEPAGE="http://remmina.sourceforge.net/"
-SRC_URI=""
-EGIT_REPO_URI="git://github.com/FreeRDP/Remmina.git"
 
 LICENSE="GPL-2"
 SLOT="0"
-KEYWORDS=""
 IUSE="ayatana avahi crypt debug freerdp gnome-keyring nls ssh telepathy vte"
 
 RDEPEND="
 	x11-libs/gtk+:3
-	net-libs/libvncserver
+	>=net-libs/libvncserver-0.9.8.2
 	x11-libs/libxkbfile
 	avahi? ( net-dns/avahi[gtk3] )
 	ayatana? ( dev-libs/libappindicator )

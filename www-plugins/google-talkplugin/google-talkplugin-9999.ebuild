@@ -1,10 +1,10 @@
 # Copyright 1999-2012 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/www-plugins/google-talkplugin/google-talkplugin-9999.ebuild,v 1.2 2012/01/07 04:50:06 ottxor Exp $
+# $Header: /var/cvsroot/gentoo-x86/www-plugins/google-talkplugin/google-talkplugin-9999.ebuild,v 1.3 2012/03/19 03:15:03 ottxor Exp $
 
 EAPI=4
 
-inherit eutils nsplugins
+inherit eutils nsplugins unpacker
 
 if [ "${PV}" != "9999" ]; then
 	DEB_PATCH="1"
@@ -30,7 +30,7 @@ KEYWORDS="-* ~amd64 ~x86"
 LICENSE="google-talkplugin openssl"
 RESTRICT="strip mirror"
 
-NATIVE_DEPS="|| ( media-sound/pulseaudio media-libs/alsa-lib )
+RDEPEND="|| ( media-sound/pulseaudio media-libs/alsa-lib )
 	dev-libs/glib:2
 	system-libCg? ( media-gfx/nvidia-cg-toolkit )
 	media-libs/fontconfig
@@ -51,15 +51,6 @@ NATIVE_DEPS="|| ( media-sound/pulseaudio media-libs/alsa-lib )
 	libnotify? ( x11-libs/libnotify )"
 
 DEPEND=""
-
-EMUL_DEPS=">=app-emulation/emul-linux-x86-baselibs-20100220
-	app-emulation/emul-linux-x86-gtklibs
-	app-emulation/emul-linux-x86-soundlibs
-	app-emulation/emul-linux-x86-xlibs"
-
-#amd64 needs EMUL_DEPS as GoogleTalkPlugin is a 32-bit binary
-RDEPEND="x86? ( ${NATIVE_DEPS} )
-	amd64? ( ${NATIVE_DEPS} ${EMUL_DEPS} )"
 
 INSTALL_BASE="opt/google/talkplugin"
 
@@ -88,24 +79,18 @@ pkg_nofetch() {
 }
 
 src_unpack() {
-	if [ "${PV}" != "9999" ]; then
-		unpack ${A}
-	else
-		local pkg="${MY_PKG}"
+	local pkg="${A:=${MY_PKG}}"
+	if [ "${PV}" = "9999" ]; then
 		use amd64 && pkg="${pkg/i386/amd64}"
 		einfo "Fetching ${pkg}"
 		wget "${MY_URL}/${pkg}" || die
-		unpack ./"${pkg}"
 	fi
-	unpack ./data.tar.gz
+	unpacker ${pkg}
 }
 
 src_install() {
-	#workaround for bug #376741
-	cd usr/share/doc/google-talkplugin || die
-	unpack ./changelog.Debian.gz
-	dodoc changelog.Debian
-	cd -
+	unpacker usr/share/doc/google-talkplugin/changelog.Debian.gz
+	dodoc usr/share/doc/google-talkplugin/changelog.Debian
 
 	exeinto "/${INSTALL_BASE}"
 	doexe "${INSTALL_BASE}"/GoogleTalkPlugin

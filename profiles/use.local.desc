@@ -2975,6 +2975,7 @@ media-video/arista:faac - Use external faac library for AAC encoding
 media-video/arista:nautilus - Add an entry in the Nautilus context menu to transcode media files for a specified device.
 media-video/avidemux:aften - Enable A/52 (AC-3) audio encoder support
 media-video/avidemux:amr - Enable Adaptive Multi-Rate format support through media-libs/opencore-amr
+media-video/avidemux:vpx - Enable vp8 codec support using media-libs/libvpx
 media-video/bombono-dvd:gnome - Use GVFS for desktop integration
 media-video/chaplin:transcode - Enable DVD ripping and transcoding
 media-video/cheese:introspection - Use dev-libs/gobject-introspection for introspection
@@ -3306,6 +3307,7 @@ net-analyzer/echoping:icp - enable support for ICP (used to monitor proxies).
 net-analyzer/echoping:priority - enable socket priority support.
 net-analyzer/echoping:smtp - enable support for SMTP protocol.
 net-analyzer/echoping:tos - enable support for TOS (TYpe Of Service).
+net-analyzer/flowgrind:pcap - Enable packet capturing support using net-libs/libpcap
 net-analyzer/fprobe:messages - enable console messages
 net-analyzer/hydra:ncp - NCP protocol (NetWare) support through net-fs/ncpfs
 net-analyzer/icinga:idoutils - Adds DB support

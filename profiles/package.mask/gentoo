@@ -1,5 +1,5 @@
 ####################################################################
-# $Header: /var/cvsroot/gentoo-x86/profiles/package.mask,v 1.13585 2012/03/18 13:10:15 pacho Exp $
+# $Header: /var/cvsroot/gentoo-x86/profiles/package.mask,v 1.13592 2012/03/19 00:46:54 williamh Exp $
 #
 # When you add an entry to the top of this file, add your name, the date, and
 # an explanation of why something is getting masked. Please be extremely
@@ -30,6 +30,24 @@
 ## app-misc/some-package
 
 #--- END OF EXAMPLES ---
+
+# Samuli Suominen <ssuominen@gentoo.org> (18 Mar 2012)
+# The only working versions got declared obsolete by upstream
+# See, http://bugs.gentoo.org/show_bug.cgi?id=402149#c9
+# Removal in 30 days
+dev-cpp/cppserv
+dev-cpp/sptk
+
+# Matti Bickel <mabi@gentoo.org> (18 Mar 2012)
+# masked for removal in 30 days, ~15 Apr 2012
+# unmaintained upstream (bug #396963)
+dev-php/PEAR-DB_DataObject_FormBuilder
+
+# Joerg Bornkessel <hd_brummy@gentoo.org> (18 Mar 2012)
+# masked for removel in 30 days, ~ 15 Apr 2012
+# technical issues on gcc-4.6
+# bug 380697
+media-plugins/vdr-games
 
 # Pacho Ramos <pacho@gentoo.org> (18 Mar 2012)
 # Broken in several ways, removal in 30 days.
@@ -93,12 +111,6 @@ app-pda/syncevolution
 # Tim Harder <radhermit@gentoo.org> (09 Mar 2012)
 # Masked for testing
 =mail-client/roundcube-0.8*
-
-# Chí-Thanh Christopher Nguyễn <chithanh@gentoo.org> (07 Mar 2012)
-# Too many reverse dependencies fail to build, mask until they are fixed or
-# made depend on the correct version
-=x11-base/xorg-server-1.12*
-=x11-base/xorg-drivers-1.12
 
 # Johannes Huber <johu@gentoo.org> (06 Mar 2012)
 # Masked for removal in 30 days. Superseded by
@@ -264,10 +276,6 @@ x11-wm/scrotwm
 media-libs/libdlna
 media-video/ushare
 
-# Michael Weber <xmw@gentoo.org> (13 Feb 2012)
-# Maked for testing
->=app-laptop/thinkfan-0.8_alpha2
-
 # Tim Harder <radhermit@gentoo.org> (10 Feb 2012)
 # Masked for testing
 =net-libs/gnutls-3*
@@ -341,11 +349,6 @@ sys-apps/systemd-sysv-utils
 # Mask experimental software
 =mail-mta/postfix-2.10*
 
-# Chí-Thanh Christopher Nguyễn <chithanh@gentoo.org> (01 Jan 2012)
-# Mask until dependencies are keyworded, bug #396669
->=x11-drivers/xf86-input-evdev-2.6.99
->=x11-drivers/xf86-input-synaptics-1.5.99
-
 # Jeroen Roovers <jer@gentoo.org> (23 Dec 2011)
 # Opera Next and Opera snapshots are unsupported and eternally unstable.
 # <http://my.opera.com/desktopteam/blog>
@@ -354,7 +357,7 @@ www-client/opera-next
 
 # Chí-Thanh Christopher Nguyễn <chithanh@gentoo.org> (19 Dec 2011)
 # Mask prerelease x11 packages
-=x11-base/xorg-server-1.11.99*
+=x11-drivers/xf86-input-synaptics-1.5.99*
 =x11-libs/libX11-1.4.99*
 >=x11-libs/libXi-1.5.99
 
@@ -406,8 +409,6 @@ dev-ruby/ruby-chasen
 # Nathan Phillip Brink <binki@gentoo.org> (8 Nov 2011)
 # Masking alpha release series.
 >=net-irc/atheme-services-7.0.0_alpha1
-
-# William Hubbs <williamh@gentoo.org> (6 Nov 2011)
 
 # Michael Weber <xmw@gentoo.org> (04 Nov 2011)
 # Masked due security issue bug 385967

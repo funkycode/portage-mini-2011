@@ -3,10 +3,10 @@ DEPEND=>=dev-libs/libxslt-1.1.8 >=dev-perl/XML-LibXML-1.70 dev-util/pkgconfig de
 DESCRIPTION=A Perl module to parse XSL Transformational sheets using gnome's libXSLT
 EAPI=4
 HOMEPAGE=http://search.cpan.org/dist/XML-LibXSLT/
-KEYWORDS=~alpha ~amd64 ~ia64 ~mips ~ppc ~ppc64 ~sparc ~x86 ~amd64-linux ~x86-linux ~ppc-macos ~x86-macos
+KEYWORDS=~alpha ~amd64 ~mips ~ppc ~ppc64 ~x86 ~amd64-linux ~x86-linux ~ppc-macos ~x86-macos
 LICENSE=|| ( Artistic GPL-1 GPL-2 GPL-3 )
 RDEPEND=>=dev-libs/libxslt-1.1.8 >=dev-perl/XML-LibXML-1.70 dev-lang/perl[-build]
 SLOT=0
 SRC_URI=mirror://cpan/authors/id/S/SH/SHLOMIF/XML-LibXSLT-1.77.tar.gz
 _eclasses_=base	5f35078c26d6c60556d5c8a2feb4f84f	eutils	ba24d79270ea0022703f16b5de80051c	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	perl-module	01501a30505074cd0012cabbf5d99447	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
-_md5_=52884cf245b5144298a0900134387d59
+_md5_=f73aa30f364d1b0da451387fceefcc26
