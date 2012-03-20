@@ -9,5 +9,5 @@ LICENSE=PHP-3.01
 RDEPEND=dev-libs/syck || ( <dev-lang/php-5.3.1[hash,spl] >=dev-lang/php-5.3.1[hash] ) || ( =dev-php/pecl-syck-0.9.3-r1[php_targets_php5-3] ) php_targets_php5-3? ( dev-lang/php:5.3 )
 SLOT=0
 SRC_URI=http://pecl.php.net/get/syck-0.9.3.tgz
-_eclasses_=autotools	3e1370c6fcb964b30ad99070a466441d	eutils	ba24d79270ea0022703f16b5de80051c	flag-o-matic	66cb710a2aa184a5687fe1289d7973ab	libtool	5f623f5a211fb1b2d84d88ee49959a54	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	php-ext-pecl-r2	de1308bcf4fef59a8ee8793efc7c3051	php-ext-source-r2	16faeec04ef5acbba2af3cab7f8966d3	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
+_eclasses_=autotools	6379b933727051b4b34f938eb654b935	eutils	ba24d79270ea0022703f16b5de80051c	flag-o-matic	66cb710a2aa184a5687fe1289d7973ab	libtool	5f623f5a211fb1b2d84d88ee49959a54	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	php-ext-pecl-r2	de1308bcf4fef59a8ee8793efc7c3051	php-ext-source-r2	16faeec04ef5acbba2af3cab7f8966d3	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
 _md5_=0ad374fa7cb72aa58494cd5c6595fd8e

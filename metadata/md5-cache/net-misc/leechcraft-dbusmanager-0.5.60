@@ -1,0 +1,13 @@
+DEFINED_PHASES=compile configure install prepare test unpack
+DEPEND=~net-misc/leechcraft-core-0.5.60 x11-libs/qt-dbus >=dev-util/cmake-2.8.4 userland_GNU? ( >=sys-apps/findutils-4.4.0 ) app-arch/xz-utils
+DESCRIPTION=DBusManager provides some basic D-Bus interoperability for LeechCraft.
+EAPI=4
+HOMEPAGE=http://leechcraft.org/
+IUSE=debug
+KEYWORDS=~amd64 ~x86
+LICENSE=GPL-3
+RDEPEND=~net-misc/leechcraft-core-0.5.60 x11-libs/qt-dbus
+SLOT=0
+SRC_URI=mirror://sourceforge/leechcraft/leechcraft-0.5.60.tar.xz
+_eclasses_=base	5f35078c26d6c60556d5c8a2feb4f84f	cmake-utils	d9f3f2f6cc1a1d6ad8e31702e44133e5	eutils	ba24d79270ea0022703f16b5de80051c	flag-o-matic	66cb710a2aa184a5687fe1289d7973ab	leechcraft	1b215843b07989f61c5a8ba447fd5550	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e	versionator	6601b4c5b3f019a993db59a50e1854e4
+_md5_=e9d3a94ccb5d86106e1aa06a7b0a05fb

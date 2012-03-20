@@ -3,10 +3,10 @@ DEPEND=>=x11-libs/qt-gui-4.5:4[qt3support] dev-libs/openssl kde-base/kdelibs x11
 DESCRIPTION=A BBS client for Linux
 EAPI=3
 HOMEPAGE=http://www.qterm.org/
-KEYWORDS=~amd64 ~ppc ~x86
+KEYWORDS=amd64 ~ppc ~x86
 LICENSE=GPL-2
 RDEPEND=>=x11-libs/qt-gui-4.5:4[qt3support] dev-libs/openssl
 SLOT=0
 SRC_URI=mirror://sourceforge/qterm/qterm-0.5.12.tar.bz2
 _eclasses_=base	5f35078c26d6c60556d5c8a2feb4f84f	cmake-utils	d9f3f2f6cc1a1d6ad8e31702e44133e5	eutils	ba24d79270ea0022703f16b5de80051c	flag-o-matic	66cb710a2aa184a5687fe1289d7973ab	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
-_md5_=2d871b7b2f17c88b40fe33d8c5b86b72
+_md5_=696ac3c7125ca2731e74eadcb57940ef

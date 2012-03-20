@@ -9,5 +9,5 @@ LICENSE=lam-mpi
 RDEPEND=fortran? ( virtual/fortran ) pbs? ( sys-cluster/torque ) !sys-cluster/mpich !sys-cluster/openmpi !sys-cluster/mpich2 !app-misc/wipe crypt? ( net-misc/openssh ) !crypt? ( net-misc/netkit-rsh )
 SLOT=6
 SRC_URI=http://www.lam-mpi.org/download/files/lam-7.1.4.tar.bz2
-_eclasses_=autotools	3e1370c6fcb964b30ad99070a466441d	eutils	ba24d79270ea0022703f16b5de80051c	flag-o-matic	66cb710a2aa184a5687fe1289d7973ab	fortran-2	368b82ae80c1184988a9d651e6efcbd0	libtool	5f623f5a211fb1b2d84d88ee49959a54	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	portability	536c5e70c5fb252ed3b769e04aa3f05b	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
+_eclasses_=autotools	6379b933727051b4b34f938eb654b935	eutils	ba24d79270ea0022703f16b5de80051c	flag-o-matic	66cb710a2aa184a5687fe1289d7973ab	fortran-2	368b82ae80c1184988a9d651e6efcbd0	libtool	5f623f5a211fb1b2d84d88ee49959a54	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	portability	536c5e70c5fb252ed3b769e04aa3f05b	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
 _md5_=a3e677ee9f8a4c416cd6159459a430bb

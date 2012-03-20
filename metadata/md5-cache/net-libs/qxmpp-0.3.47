@@ -1,0 +1,13 @@
+DEFINED_PHASES=compile configure install prepare unpack
+DEPEND=x11-libs/qt-core x11-libs/qt-gui media-libs/speex
+DESCRIPTION=A cross-platform C++ XMPP client library based on the Qt framework.
+EAPI=3
+HOMEPAGE=http://code.google.com/p/qxmpp/
+IUSE=debug +extras
+KEYWORDS=~amd64 ~x86
+LICENSE=LGPL-2.1
+RDEPEND=x11-libs/qt-core x11-libs/qt-gui media-libs/speex
+SLOT=0
+SRC_URI=https://github.com/downloads/0xd34df00d/qxmpp-dev/qxmpp-0.3.47-extras.tar.bz2
+_eclasses_=base	5f35078c26d6c60556d5c8a2feb4f84f	eutils	ba24d79270ea0022703f16b5de80051c	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	qt4-r2	0d58394f40a89c8ec116c71510d7584b	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
+_md5_=48ae4ca7c34d1a26a88d77a764409c5f

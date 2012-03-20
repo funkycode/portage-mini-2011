@@ -3,11 +3,11 @@ DEPEND=selinux? ( sys-libs/libselinux ) readline? ( sys-libs/readline ) pam? ( s
 DESCRIPTION=A port of KAME's IPsec utilities to the Linux-2.6 IPsec implementation
 EAPI=4
 HOMEPAGE=http://ipsec-tools.sourceforge.net/
-IUSE=idea ipv6 pam rc5 readline selinux ldap kerberos nat hybrid iconv selinux
+IUSE=hybrid iconv idea ipv6 kerberos ldap nat pam rc5 readline selinux
 KEYWORDS=~amd64 ~ppc ~sparc ~x86
 LICENSE=BSD
 RDEPEND=selinux? ( sys-libs/libselinux ) readline? ( sys-libs/readline ) pam? ( sys-libs/pam ) ldap? ( net-nds/openldap ) kerberos? ( virtual/krb5 ) >=dev-libs/openssl-0.9.8 iconv? ( virtual/libiconv ) selinux? ( sec-policy/selinux-ipsec-tools )
 SLOT=0
 SRC_URI=mirror://sourceforge/ipsec-tools/ipsec-tools-0.7.3.tar.bz2
-_eclasses_=autotools	3e1370c6fcb964b30ad99070a466441d	eutils	ba24d79270ea0022703f16b5de80051c	flag-o-matic	66cb710a2aa184a5687fe1289d7973ab	libtool	5f623f5a211fb1b2d84d88ee49959a54	linux-info	cc184ad3383ffb6ffbaa82f53608e77f	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e	versionator	6601b4c5b3f019a993db59a50e1854e4
-_md5_=477913780e7598eedd6eeea867e87a6d
+_eclasses_=autotools	6379b933727051b4b34f938eb654b935	eutils	ba24d79270ea0022703f16b5de80051c	flag-o-matic	66cb710a2aa184a5687fe1289d7973ab	libtool	5f623f5a211fb1b2d84d88ee49959a54	linux-info	cc184ad3383ffb6ffbaa82f53608e77f	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e	versionator	6601b4c5b3f019a993db59a50e1854e4
+_md5_=31bc7d89165c220a64fc520b23fca4df

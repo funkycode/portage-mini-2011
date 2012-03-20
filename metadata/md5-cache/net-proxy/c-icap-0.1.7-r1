@@ -3,11 +3,11 @@ DEPEND=berkdb? ( sys-libs/db ) ldap? ( net-nds/openldap ) sys-libs/zlib || ( =sy
 DESCRIPTION=C Implementation of an ICAP server
 EAPI=2
 HOMEPAGE=http://c-icap.sourceforge.net/
-IUSE=berkdb ldap ipv6 ldap
+IUSE=berkdb ipv6 ldap
 KEYWORDS=amd64 ~arm x86
 LICENSE=LGPL-2.1
 RDEPEND=berkdb? ( sys-libs/db ) ldap? ( net-nds/openldap ) sys-libs/zlib sys-apps/openrc
 SLOT=0
 SRC_URI=mirror://sourceforge/c-icap/c_icap-0.1.7.tar.gz
-_eclasses_=autotools	3e1370c6fcb964b30ad99070a466441d	eutils	ba24d79270ea0022703f16b5de80051c	flag-o-matic	66cb710a2aa184a5687fe1289d7973ab	libtool	5f623f5a211fb1b2d84d88ee49959a54	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
-_md5_=7d2b5993122602c0ae01f9c885a65a72
+_eclasses_=autotools	6379b933727051b4b34f938eb654b935	eutils	ba24d79270ea0022703f16b5de80051c	flag-o-matic	66cb710a2aa184a5687fe1289d7973ab	libtool	5f623f5a211fb1b2d84d88ee49959a54	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
+_md5_=f9cab0d0e8a12ef40c5f5983bfb0699e
