@@ -1,5 +1,5 @@
 DEFINED_PHASES=compile install postinst postrm preinst prepare setup unpack
-DEPEND=<x11-base/xorg-server-1.11.99 kernel_linux? ( >=sys-libs/glibc-2.6.1 ) multilib? ( app-emulation/emul-linux-x86-xlibs ) >=app-admin/eselect-opengl-1.0.9 app-admin/eselect-opencl !<media-video/nvidia-settings-256.52 kernel_linux? ( virtual/linux-sources ) kernel_linux? ( sys-apps/module-init-tools ) sys-apps/sed kernel_linux? ( virtual/linux-sources ) sys-apps/pciutils
+DEPEND=<x11-base/xorg-server-1.12.99 kernel_linux? ( >=sys-libs/glibc-2.6.1 ) multilib? ( app-emulation/emul-linux-x86-xlibs ) >=app-admin/eselect-opengl-1.0.9 app-admin/eselect-opencl !<media-video/nvidia-settings-256.52 kernel_linux? ( virtual/linux-sources ) kernel_linux? ( sys-apps/module-init-tools ) sys-apps/sed kernel_linux? ( virtual/linux-sources ) sys-apps/pciutils
 DESCRIPTION=NVIDIA X11 driver and GLX libraries
 EAPI=2
 HOMEPAGE=http://www.nvidia.com/
@@ -7,9 +7,9 @@ IUSE=acpi custom-cflags gtk multilib kernel_linux kernel_linux
 KEYWORDS=-* ~amd64 ~x86 ~x86-fbsd
 LICENSE=NVIDIA
 PDEPEND=>=x11-libs/libvdpau-0.3-r1 gtk? ( media-video/nvidia-settings )
-RDEPEND=<x11-base/xorg-server-1.11.99 kernel_linux? ( >=sys-libs/glibc-2.6.1 ) multilib? ( app-emulation/emul-linux-x86-xlibs ) >=app-admin/eselect-opengl-1.0.9 app-admin/eselect-opencl !<media-video/nvidia-settings-256.52 x11-libs/libXvMC acpi? ( sys-power/acpid ) kernel_linux? ( sys-apps/module-init-tools )
+RDEPEND=<x11-base/xorg-server-1.12.99 kernel_linux? ( >=sys-libs/glibc-2.6.1 ) multilib? ( app-emulation/emul-linux-x86-xlibs ) >=app-admin/eselect-opengl-1.0.9 app-admin/eselect-opencl !<media-video/nvidia-settings-256.52 x11-libs/libXvMC acpi? ( sys-power/acpid ) kernel_linux? ( sys-apps/module-init-tools )
 RESTRICT=strip
 SLOT=0
 SRC_URI=x86? ( http://us.download.nvidia.com/XFree86/Linux-x86/295.20/NVIDIA-Linux-x86-295.20.run ) amd64? ( http://us.download.nvidia.com/XFree86/Linux-x86_64/295.20/NVIDIA-Linux-x86_64-295.20.run ) x86-fbsd? ( http://us.download.nvidia.com/XFree86/FreeBSD-x86/295.20/NVIDIA-FreeBSD-x86-295.20.tar.gz )
 _eclasses_=eutils	ba24d79270ea0022703f16b5de80051c	flag-o-matic	66cb710a2aa184a5687fe1289d7973ab	linux-info	cc184ad3383ffb6ffbaa82f53608e77f	linux-mod	a4e07f78bacb6b129ea7b18ad060dbfc	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	nvidia-driver	9c7860a75fb935e7d572c8bc85148e56	portability	536c5e70c5fb252ed3b769e04aa3f05b	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	unpacker	3bad9303b54075673d368b65e22dfdc8	user	32a09e82e2f592bf88ad2fd08525166e	versionator	6601b4c5b3f019a993db59a50e1854e4
-_md5_=fa7184fd1621651be702262bc68e197b
+_md5_=e5b01d6489c1d39d7fe33955ecee4b3f
