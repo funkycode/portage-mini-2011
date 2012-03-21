@@ -1,6 +1,6 @@
 # Copyright 1999-2012 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/app-misc/mc/mc-9999.ebuild,v 1.4 2012/02/11 19:54:32 slyfox Exp $
+# $Header: /var/cvsroot/gentoo-x86/app-misc/mc/mc-9999.ebuild,v 1.5 2012/03/20 19:58:49 slyfox Exp $
 
 EAPI=4
 
@@ -24,16 +24,14 @@ HOMEPAGE="http://www.midnight-commander.org"
 
 LICENSE="GPL-3"
 SLOT="0"
-IUSE="+edit gpm mclib +ncurses nls samba slang test X +xdg"
-
-REQUIRED_USE="^^ ( ncurses slang )"
+IUSE="+edit gpm mclib nls samba +slang test X +xdg"
 
 RDEPEND=">=dev-libs/glib-2.8:2
 	gpm? ( sys-libs/gpm )
 	kernel_linux? ( sys-fs/e2fsprogs )
-	ncurses? ( sys-libs/ncurses )
 	samba? ( net-fs/samba )
 	slang? ( >=sys-libs/slang-2 )
+	!slang? ( sys-libs/ncurses )
 	X? ( x11-libs/libX11
 		x11-libs/libICE
 		x11-libs/libXau

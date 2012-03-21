@@ -1,5 +1,5 @@
 DEFINED_PHASES=install postinst preinst prepare
-DEPEND=>=sys-libs/gdbm-1.8.0 slp? ( net-libs/openslp ) || ( =sys-devel/automake-1.11* ) >=sys-devel/autoconf-2.68 sys-devel/libtool
+DEPEND=>=sys-libs/gdbm-1.8.0 slp? ( net-libs/openslp ) || ( =sys-devel/automake-1.11.1* ) >=sys-devel/autoconf-2.68 sys-devel/libtool
 DESCRIPTION=Network Information Service server
 EAPI=2
 HOMEPAGE=http://www.linux-nis.org/nis/
@@ -9,5 +9,5 @@ LICENSE=GPL-2
 RDEPEND=>=sys-libs/gdbm-1.8.0 slp? ( net-libs/openslp ) || ( net-nds/rpcbind net-nds/portmap )
 SLOT=0
 SRC_URI=mirror://kernel/linux/utils/net/NIS/ypserv-2.23.tar.bz2
-_eclasses_=autotools	6379b933727051b4b34f938eb654b935	eutils	ba24d79270ea0022703f16b5de80051c	libtool	5f623f5a211fb1b2d84d88ee49959a54	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
+_eclasses_=autotools	532e2870d0e19d852daff17d52cd792d	eutils	ba24d79270ea0022703f16b5de80051c	libtool	5f623f5a211fb1b2d84d88ee49959a54	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
 _md5_=a50fe8e66ef9110b2817d312191d28f1

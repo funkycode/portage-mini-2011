@@ -1,12 +1,12 @@
 DEFINED_PHASES=compile configure install postinst postrm prepare test
-DEPEND=dev-libs/libxslt >=app-admin/eselect-python-20091230 || ( =sys-devel/automake-1.11* ) >=sys-devel/autoconf-2.68 sys-devel/libtool
+DEPEND=dev-libs/libxslt || ( =sys-devel/automake-1.11.1* ) >=sys-devel/autoconf-2.68 sys-devel/libtool
 DESCRIPTION=Telepathy Python base classes for use in connection managers, and proxy classes for use in clients.
 EAPI=3
 HOMEPAGE=http://telepathy.freedesktop.org/
 KEYWORDS=alpha amd64 ia64 ppc ~ppc64 sparc x86
 LICENSE=LGPL-2.1
-RDEPEND=>=dev-python/dbus-python-0.80 >=app-admin/eselect-python-20091230
+RDEPEND=>=dev-python/dbus-python-0.80
 SLOT=0
 SRC_URI=http://telepathy.freedesktop.org/releases/telepathy-python/telepathy-python-0.15.19.tar.gz
-_eclasses_=autotools	6379b933727051b4b34f938eb654b935	eutils	ba24d79270ea0022703f16b5de80051c	libtool	5f623f5a211fb1b2d84d88ee49959a54	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	python	dc3993dc1961bbb13c11bb835390ca29	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
+_eclasses_=autotools	532e2870d0e19d852daff17d52cd792d	eutils	ba24d79270ea0022703f16b5de80051c	libtool	5f623f5a211fb1b2d84d88ee49959a54	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	python	d6df8e9d4686f7550769a9777aa622b9	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
 _md5_=c649e37ec4dff05545f1a34c9061d22f

@@ -1,5 +1,5 @@
 DEFINED_PHASES=configure install postinst postrm preinst prepare
-DEPEND=>=media-libs/xine-lib-1.1.20 x11-libs/gtk+:2 >=dev-libs/glib-2 >=dev-lang/spidermonkey-1.8.2.15 x11-libs/libX11 x11-libs/libXext x11-libs/libXrender gnome-screensaver? ( >=dev-libs/dbus-glib-0.90 ) lirc? ( app-misc/lirc ) nls? ( virtual/libintl ) nsplugin? ( dev-libs/nspr x11-libs/libXaw x11-libs/libXt ) udev? ( || ( >=sys-fs/udev-171-r1[gudev] <sys-fs/udev-171-r1[extras] ) ) xcb? ( x11-libs/libxcb ) xinerama? ( x11-libs/libXinerama ) dev-util/pkgconfig nls? ( sys-devel/gettext ) || ( =sys-devel/automake-1.11* ) >=sys-devel/autoconf-2.68 sys-devel/libtool >=sys-apps/sed-4
+DEPEND=>=media-libs/xine-lib-1.1.20 x11-libs/gtk+:2 >=dev-libs/glib-2 >=dev-lang/spidermonkey-1.8.2.15 x11-libs/libX11 x11-libs/libXext x11-libs/libXrender gnome-screensaver? ( >=dev-libs/dbus-glib-0.90 ) lirc? ( app-misc/lirc ) nls? ( virtual/libintl ) nsplugin? ( dev-libs/nspr x11-libs/libXaw x11-libs/libXt ) udev? ( || ( >=sys-fs/udev-171-r1[gudev] <sys-fs/udev-171-r1[extras] ) ) xcb? ( x11-libs/libxcb ) xinerama? ( x11-libs/libXinerama ) dev-util/pkgconfig nls? ( sys-devel/gettext ) || ( =sys-devel/automake-1.11.1* ) >=sys-devel/autoconf-2.68 sys-devel/libtool >=sys-apps/sed-4
 DESCRIPTION=GTK+ Front-End for libxine
 EAPI=4
 HOMEPAGE=http://xine.sourceforge.net/
@@ -9,5 +9,5 @@ LICENSE=GPL-2
 RDEPEND=>=media-libs/xine-lib-1.1.20 x11-libs/gtk+:2 >=dev-libs/glib-2 >=dev-lang/spidermonkey-1.8.2.15 x11-libs/libX11 x11-libs/libXext x11-libs/libXrender gnome-screensaver? ( >=dev-libs/dbus-glib-0.90 ) lirc? ( app-misc/lirc ) nls? ( virtual/libintl ) nsplugin? ( dev-libs/nspr x11-libs/libXaw x11-libs/libXt ) udev? ( || ( >=sys-fs/udev-171-r1[gudev] <sys-fs/udev-171-r1[extras] ) ) xcb? ( x11-libs/libxcb ) xinerama? ( x11-libs/libXinerama ) gnome-screensaver? ( gnome-extra/gnome-screensaver )
 SLOT=0
 SRC_URI=mirror://sourceforge/xine/gxine-0.5.907.tar.xz
-_eclasses_=autotools	6379b933727051b4b34f938eb654b935	eutils	ba24d79270ea0022703f16b5de80051c	fdo-mime	0acfe1a88fd8751a1d5dc671168219fa	gnome2-utils	b5ca2ccadb60760889faa3bccba121d9	libtool	5f623f5a211fb1b2d84d88ee49959a54	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	nsplugins	6695ecf00333c6acf870a802d3ceb9fd	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
+_eclasses_=autotools	532e2870d0e19d852daff17d52cd792d	eutils	ba24d79270ea0022703f16b5de80051c	fdo-mime	0acfe1a88fd8751a1d5dc671168219fa	gnome2-utils	b5ca2ccadb60760889faa3bccba121d9	libtool	5f623f5a211fb1b2d84d88ee49959a54	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	nsplugins	6695ecf00333c6acf870a802d3ceb9fd	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
 _md5_=69169723491387643da53c533ec8340c

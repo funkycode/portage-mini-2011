@@ -1,10 +1,10 @@
 DEFINED_PHASES=compile install postinst postrm prepare setup test unpack
-DEPEND=>=sys-apps/pkgcore-0.5.9 >=dev-python/snakeoil-0.3.6 >=app-admin/eselect-python-20091230 dev-lang/python dev-vcs/git
+DEPEND=>=sys-apps/pkgcore-0.5.9 >=dev-python/snakeoil-0.3.6 dev-lang/python dev-vcs/git
 DESCRIPTION=pkgcore developmental repoman replacement
 EAPI=3
 HOMEPAGE=http://www.pkgcore.org/
 LICENSE=GPL-2
-RDEPEND=>=sys-apps/pkgcore-0.5.9 >=dev-python/snakeoil-0.3.6 >=app-admin/eselect-python-20091230 dev-lang/python
+RDEPEND=>=sys-apps/pkgcore-0.5.9 >=dev-python/snakeoil-0.3.6 dev-lang/python
 SLOT=0
-_eclasses_=distutils	15ae23f6f8219a009bfcfff7724fe727	git-2	6bb20ec18cca375571bcbe67bcf2e1d7	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	python	dc3993dc1961bbb13c11bb835390ca29	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68
+_eclasses_=distutils	15ae23f6f8219a009bfcfff7724fe727	git-2	6bb20ec18cca375571bcbe67bcf2e1d7	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	python	d6df8e9d4686f7550769a9777aa622b9	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68
 _md5_=7c93a40fd2857218334942cff535b6d7

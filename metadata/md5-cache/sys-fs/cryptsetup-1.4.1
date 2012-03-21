@@ -1,5 +1,5 @@
 DEFINED_PHASES=configure install postinst prepare setup test
-DEPEND=!<sys-apps/baselayout-2 !static? ( >=dev-libs/libgcrypt-1.1.42 dev-libs/libgpg-error >=dev-libs/popt-1.7 >=sys-apps/util-linux-2.17.2 >=sys-fs/lvm2-2.02.64 ) >=sys-fs/udev-124 >=sys-libs/e2fsprogs-libs-1.41 selinux? ( sys-libs/libselinux ) !sys-fs/cryptsetup-luks static? ( >=dev-libs/libgpg-error-1.10[static-libs] >=dev-libs/popt-1.16-r1[static-libs] || ( >=sys-apps/util-linux-2.20[static-libs] <sys-apps/util-linux-2.20 ) dev-libs/libgcrypt[static-libs] || ( >=sys-fs/lvm2-2.02.88[static-libs] <sys-fs/lvm2-2.02.88 ) )
+DEPEND=!<sys-apps/baselayout-2 !static? ( >=dev-libs/libgcrypt-1.1.42 dev-libs/libgpg-error >=dev-libs/popt-1.7 >=sys-apps/util-linux-2.17.2 >=sys-fs/lvm2-2.02.64 ) >=sys-fs/udev-124 >=sys-libs/e2fsprogs-libs-1.41 selinux? ( sys-libs/libselinux ) !sys-fs/cryptsetup-luks static? ( >=dev-libs/libgpg-error-1.10[static-libs] >=dev-libs/popt-1.16-r1[static-libs] || ( >=sys-apps/util-linux-2.20[static-libs] <sys-apps/util-linux-2.20 ) dev-libs/libgcrypt[static-libs] || ( >=sys-fs/lvm2-2.02.88[static-libs] <sys-fs/lvm2-2.02.88 ) || ( >=sys-fs/udev-182[static-libs] <=sys-fs/udev-171-r5 ) )
 DESCRIPTION=Tool to setup encrypted devices with dm-crypt
 EAPI=2
 HOMEPAGE=http://code.google.com/p/cryptsetup/
@@ -10,4 +10,4 @@ RDEPEND=!<sys-apps/baselayout-2 !static? ( >=dev-libs/libgcrypt-1.1.42 dev-libs/
 SLOT=0
 SRC_URI=http://cryptsetup.googlecode.com/files/cryptsetup-1.4.1.tar.bz2
 _eclasses_=eutils	ba24d79270ea0022703f16b5de80051c	libtool	5f623f5a211fb1b2d84d88ee49959a54	linux-info	cc184ad3383ffb6ffbaa82f53608e77f	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e	versionator	6601b4c5b3f019a993db59a50e1854e4
-_md5_=7d0d8fec9feb161043514bd0a04b2b9e
+_md5_=16f0d11e1a1274baece897971dd24f02

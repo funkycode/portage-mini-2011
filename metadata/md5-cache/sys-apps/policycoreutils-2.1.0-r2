@@ -1,13 +1,13 @@
 DEFINED_PHASES=compile install postinst postrm prepare setup
-DEPEND=>=sys-libs/libselinux-2.1.0[python] >=sys-libs/glibc-2.4 >=sys-libs/libcap-1.10-r10 >=sys-libs/libsemanage-2.1.0[python] sys-libs/libcap-ng >=sys-libs/libsepol-2.1.0 sys-devel/gettext audit? ( >=sys-process/audit-1.5.1 ) pam? ( sys-libs/pam ) >=app-admin/eselect-python-20091230 dev-lang/python dev-lang/python[xml]
+DEPEND=>=sys-libs/libselinux-2.1.0[python] >=sys-libs/glibc-2.4 >=sys-libs/libcap-1.10-r10 >=sys-libs/libsemanage-2.1.0[python] sys-libs/libcap-ng >=sys-libs/libsepol-2.1.0 sys-devel/gettext audit? ( >=sys-process/audit-1.5.1 ) pam? ( sys-libs/pam ) dev-lang/python dev-lang/python[xml]
 DESCRIPTION=SELinux core utilities
 EAPI=3
 HOMEPAGE=http://userspace.selinuxproject.org
 IUSE=audit pam
 KEYWORDS=amd64 x86
 LICENSE=GPL-2
-RDEPEND=>=sys-libs/libselinux-2.1.0[python] >=sys-libs/glibc-2.4 >=sys-libs/libcap-1.10-r10 >=sys-libs/libsemanage-2.1.0[python] sys-libs/libcap-ng >=sys-libs/libsepol-2.1.0 sys-devel/gettext audit? ( >=sys-process/audit-1.5.1 ) pam? ( sys-libs/pam ) dev-python/sepolgen app-misc/pax-utils >=app-admin/eselect-python-20091230 dev-lang/python dev-lang/python[xml]
+RDEPEND=>=sys-libs/libselinux-2.1.0[python] >=sys-libs/glibc-2.4 >=sys-libs/libcap-1.10-r10 >=sys-libs/libsemanage-2.1.0[python] sys-libs/libcap-ng >=sys-libs/libsepol-2.1.0 sys-devel/gettext audit? ( >=sys-process/audit-1.5.1 ) pam? ( sys-libs/pam ) dev-python/sepolgen app-misc/pax-utils dev-lang/python dev-lang/python[xml]
 SLOT=0
 SRC_URI=http://userspace.selinuxproject.org/releases/20110727/devel/policycoreutils-2.1.0.tar.gz http://dev.gentoo.org/~swift/patches/policycoreutils/policycoreutils-2.0.85-sesandbox.patch.gz http://dev.gentoo.org/~swift/patches/policycoreutils/policycoreutils-2.0.85-fix-seunshare-vuln.patch.gz http://dev.gentoo.org/~swift/patches/policycoreutils/policycoreutils-2.1.0-fix-makefile-pam-audit.patch.gz mirror://gentoo/policycoreutils-extra-1.21.tar.bz2 mirror://gentoo/policycoreutils-2.0.85-python3.tar.gz
-_eclasses_=eutils	ba24d79270ea0022703f16b5de80051c	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	python	dc3993dc1961bbb13c11bb835390ca29	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
+_eclasses_=eutils	ba24d79270ea0022703f16b5de80051c	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	python	d6df8e9d4686f7550769a9777aa622b9	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
 _md5_=9bacc3ba1c7c8dcc3edaf5d77aef3294

@@ -1,5 +1,5 @@
 DEFINED_PHASES=configure install postinst prepare setup
-DEPEND=dev-libs/libpcre >=sys-libs/db-3 sys-devel/flex || ( =sys-devel/automake-1.11* ) >=sys-devel/autoconf-2.68 sys-devel/libtool
+DEPEND=dev-libs/libpcre >=sys-libs/db-3 sys-devel/flex || ( =sys-devel/automake-1.11.1* ) >=sys-devel/autoconf-2.68 sys-devel/libtool
 DESCRIPTION=An advanced multithreaded caching web proxy
 EAPI=2
 HOMEPAGE=http://zipper.paco.net/~igor/oops.eng/
@@ -8,5 +8,5 @@ LICENSE=GPL-2
 RDEPEND=dev-libs/libpcre >=sys-libs/db-3
 SLOT=0
 SRC_URI=http://zipper.paco.net/~igor/oops/oops-1.5.23.tar.gz mirror://gentoo/oops-1.5.24_pre20050503.patch.gz
-_eclasses_=autotools	6379b933727051b4b34f938eb654b935	eutils	ba24d79270ea0022703f16b5de80051c	flag-o-matic	66cb710a2aa184a5687fe1289d7973ab	libtool	5f623f5a211fb1b2d84d88ee49959a54	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
+_eclasses_=autotools	532e2870d0e19d852daff17d52cd792d	eutils	ba24d79270ea0022703f16b5de80051c	flag-o-matic	66cb710a2aa184a5687fe1289d7973ab	libtool	5f623f5a211fb1b2d84d88ee49959a54	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
 _md5_=bb49b5f61d7175b422e09499fd7445b4

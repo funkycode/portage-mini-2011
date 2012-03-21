@@ -1,12 +1,12 @@
 DEFINED_PHASES=compile install postinst postrm prepare test
-DEPEND=|| ( dev-lang/python:2.7[sqlite] dev-lang/python:2.6[sqlite] dev-lang/python:2.5[sqlite] dev-python/pysqlite:2 ) >=dev-python/epsilon-0.6 >=dev-python/twisted-2.4 >=dev-python/twisted-conch-0.7.0-r1 >=app-admin/eselect-python-20091230 =dev-lang/python-2*
+DEPEND=|| ( dev-lang/python:2.7[sqlite] dev-lang/python:2.6[sqlite] dev-lang/python:2.5[sqlite] dev-python/pysqlite:2 ) >=dev-python/epsilon-0.6 >=dev-python/twisted-2.4 >=dev-python/twisted-conch-0.7.0-r1 =dev-lang/python-2*
 DESCRIPTION=Axiom is an object database implemented on top of SQLite.
 EAPI=3
 HOMEPAGE=http://divmod.org/trac/wiki/DivmodAxiom http://pypi.python.org/pypi/Axiom
 KEYWORDS=amd64 ppc ppc64 sparc x86
 LICENSE=MIT
-RDEPEND=|| ( dev-lang/python:2.7[sqlite] dev-lang/python:2.6[sqlite] dev-lang/python:2.5[sqlite] dev-python/pysqlite:2 ) >=dev-python/epsilon-0.6 >=dev-python/twisted-2.4 >=dev-python/twisted-conch-0.7.0-r1 >=app-admin/eselect-python-20091230 =dev-lang/python-2*
+RDEPEND=|| ( dev-lang/python:2.7[sqlite] dev-lang/python:2.6[sqlite] dev-lang/python:2.5[sqlite] dev-python/pysqlite:2 ) >=dev-python/epsilon-0.6 >=dev-python/twisted-2.4 >=dev-python/twisted-conch-0.7.0-r1 =dev-lang/python-2*
 SLOT=0
 SRC_URI=mirror://pypi/A/Axiom/Axiom-0.6.0.tar.gz
-_eclasses_=distutils	15ae23f6f8219a009bfcfff7724fe727	eutils	ba24d79270ea0022703f16b5de80051c	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	python	dc3993dc1961bbb13c11bb835390ca29	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	twisted	fcb518bd0ad842f8f6ed16168341f5d4	user	32a09e82e2f592bf88ad2fd08525166e	versionator	6601b4c5b3f019a993db59a50e1854e4
+_eclasses_=distutils	15ae23f6f8219a009bfcfff7724fe727	eutils	ba24d79270ea0022703f16b5de80051c	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	python	d6df8e9d4686f7550769a9777aa622b9	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	twisted	fcb518bd0ad842f8f6ed16168341f5d4	user	32a09e82e2f592bf88ad2fd08525166e	versionator	6601b4c5b3f019a993db59a50e1854e4
 _md5_=8c164262faa5da93b3a7e37a2513a50b

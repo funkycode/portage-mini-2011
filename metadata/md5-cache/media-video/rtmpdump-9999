@@ -4,8 +4,8 @@ DESCRIPTION=Open source command-line RTMP client intended to stream audio or vid
 EAPI=4
 HOMEPAGE=http://rtmpdump.mplayerhq.hu/
 IUSE=gnutls polarssl ssl
-LICENSE=GPL-2
+LICENSE=GPL-2 LGPL-2.1
 RDEPEND=ssl? ( gnutls? ( net-libs/gnutls ) polarssl? ( !gnutls? ( >=net-libs/polarssl-0.14.0 ) ) !gnutls? ( !polarssl? ( dev-libs/openssl ) ) ) sys-libs/zlib
 SLOT=0
 _eclasses_=git-2	6bb20ec18cca375571bcbe67bcf2e1d7	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68
-_md5_=97af18f739102f35ae70d4186ed06f02
+_md5_=eb586bfd60895ddfab7f8620ff9d8e00

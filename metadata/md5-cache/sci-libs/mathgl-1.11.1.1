@@ -1,13 +1,13 @@
 DEFINED_PHASES=compile configure install postinst postrm prepare prerm setup unpack
-DEPEND=media-libs/libpng virtual/opengl python? ( dev-python/numpy ) glut? ( media-libs/freeglut ) fltk? ( x11-libs/fltk:1 ) gif? ( media-libs/giflib ) jpeg? ( virtual/jpeg ) hdf5? ( >=sci-libs/hdf5-1.8 ) gsl? ( sci-libs/gsl ) octave? ( >=sci-mathematics/octave-3.4.0 ) qt4? ( x11-libs/qt-gui:4 ) wxwidgets? ( x11-libs/wxGTK:2.8 ) >=sys-devel/libtool-2.2.4 doc? ( app-text/texi2html virtual/texi2dvi ) python? ( dev-lang/swig ) octave? ( dev-lang/swig ) || ( =sys-devel/automake-1.11* ) >=sys-devel/autoconf-2.68 sys-devel/libtool >=app-admin/eselect-python-20091230 =dev-lang/python-2*
+DEPEND=media-libs/libpng virtual/opengl python? ( dev-python/numpy ) glut? ( media-libs/freeglut ) fltk? ( x11-libs/fltk:1 ) gif? ( media-libs/giflib ) jpeg? ( virtual/jpeg ) hdf5? ( >=sci-libs/hdf5-1.8 ) gsl? ( sci-libs/gsl ) octave? ( >=sci-mathematics/octave-3.4.0 ) qt4? ( x11-libs/qt-gui:4 ) wxwidgets? ( x11-libs/wxGTK:2.8 ) >=sys-devel/libtool-2.2.4 doc? ( app-text/texi2html virtual/texi2dvi ) python? ( dev-lang/swig ) octave? ( dev-lang/swig ) || ( =sys-devel/automake-1.11.1* ) >=sys-devel/autoconf-2.68 sys-devel/libtool =dev-lang/python-2*
 DESCRIPTION=Math Graphics Library
 EAPI=3
 HOMEPAGE=http://mathgl.sourceforge.net/
 IUSE=doc fltk gif glut gsl hdf5 jpeg octave python qt4 wxwidgets
 KEYWORDS=~amd64 ~x86
 LICENSE=LGPL-3
-RDEPEND=media-libs/libpng virtual/opengl python? ( dev-python/numpy ) glut? ( media-libs/freeglut ) fltk? ( x11-libs/fltk:1 ) gif? ( media-libs/giflib ) jpeg? ( virtual/jpeg ) hdf5? ( >=sci-libs/hdf5-1.8 ) gsl? ( sci-libs/gsl ) octave? ( >=sci-mathematics/octave-3.4.0 ) qt4? ( x11-libs/qt-gui:4 ) wxwidgets? ( x11-libs/wxGTK:2.8 ) >=app-admin/eselect-python-20091230 =dev-lang/python-2*
+RDEPEND=media-libs/libpng virtual/opengl python? ( dev-python/numpy ) glut? ( media-libs/freeglut ) fltk? ( x11-libs/fltk:1 ) gif? ( media-libs/giflib ) jpeg? ( virtual/jpeg ) hdf5? ( >=sci-libs/hdf5-1.8 ) gsl? ( sci-libs/gsl ) octave? ( >=sci-mathematics/octave-3.4.0 ) qt4? ( x11-libs/qt-gui:4 ) wxwidgets? ( x11-libs/wxGTK:2.8 ) =dev-lang/python-2*
 SLOT=0
 SRC_URI=mirror://sourceforge/mathgl/mathgl-1.11.1.1.tar.gz mirror://sourceforge/mathgl/STIX_font.tgz
-_eclasses_=autotools	6379b933727051b4b34f938eb654b935	eutils	ba24d79270ea0022703f16b5de80051c	libtool	5f623f5a211fb1b2d84d88ee49959a54	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	python	dc3993dc1961bbb13c11bb835390ca29	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e	versionator	6601b4c5b3f019a993db59a50e1854e4	wxwidgets	fb1a306837717dfa2af841ecdf929565
+_eclasses_=autotools	532e2870d0e19d852daff17d52cd792d	eutils	ba24d79270ea0022703f16b5de80051c	libtool	5f623f5a211fb1b2d84d88ee49959a54	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	python	d6df8e9d4686f7550769a9777aa622b9	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e	versionator	6601b4c5b3f019a993db59a50e1854e4	wxwidgets	fb1a306837717dfa2af841ecdf929565
 _md5_=4187cb4b0c574c387be9076c70d52d9d

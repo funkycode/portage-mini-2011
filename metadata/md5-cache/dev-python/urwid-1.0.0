@@ -1,13 +1,13 @@
 DEFINED_PHASES=compile install postinst postrm prepare setup test
-DEPEND=dev-python/setuptools >=app-admin/eselect-python-20091230 dev-lang/python[ncurses] dev-lang/python
+DEPEND=dev-python/setuptools dev-lang/python[ncurses] dev-lang/python
 DESCRIPTION=Urwid is a curses-based user interface library for Python
 EAPI=3
 HOMEPAGE=http://excess.org/urwid/ http://pypi.python.org/pypi/urwid
 IUSE=examples
 KEYWORDS=~amd64 ~ia64 ~ppc ~ppc64 ~sparc ~x86 ~x86-interix ~amd64-linux ~ia64-linux ~x86-linux
 LICENSE=LGPL-2.1
-RDEPEND=>=app-admin/eselect-python-20091230 dev-lang/python[ncurses] dev-lang/python
+RDEPEND=dev-lang/python[ncurses] dev-lang/python
 SLOT=0
 SRC_URI=http://excess.org/urwid/urwid-1.0.0.tar.gz
-_eclasses_=distutils	15ae23f6f8219a009bfcfff7724fe727	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	python	dc3993dc1961bbb13c11bb835390ca29	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68
+_eclasses_=distutils	15ae23f6f8219a009bfcfff7724fe727	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	python	d6df8e9d4686f7550769a9777aa622b9	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68
 _md5_=a4fbd776ad9135adda02c61b73a8c25d

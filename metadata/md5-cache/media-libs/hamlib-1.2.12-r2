@@ -1,14 +1,14 @@
 DEFINED_PHASES=compile configure install postinst postrm prepare setup test
-DEPEND==virtual/libusb-0* dev-libs/libxml2 tcl? ( dev-lang/tcl ) dev-util/pkgconfig dev-lang/swig >=sys-devel/libtool-2.2 doc? ( app-doc/doxygen ) >=app-admin/eselect-python-20091230 python? ( =dev-lang/python-2* )
+DEPEND==virtual/libusb-0* dev-libs/libxml2 tcl? ( dev-lang/tcl ) dev-util/pkgconfig dev-lang/swig >=sys-devel/libtool-2.2 doc? ( app-doc/doxygen ) python? ( =dev-lang/python-2* )
 DESCRIPTION=Ham radio backend rig control libraries
 EAPI=3
 HOMEPAGE=http://sourceforge.net/apps/mediawiki/hamlib
 IUSE=doc python tcl
 KEYWORDS=alpha amd64 x86 ~x86-fbsd
 LICENSE=LGPL-2 GPL-2
-RDEPEND==virtual/libusb-0* dev-libs/libxml2 tcl? ( dev-lang/tcl ) >=app-admin/eselect-python-20091230 python? ( =dev-lang/python-2* )
+RDEPEND==virtual/libusb-0* dev-libs/libxml2 tcl? ( dev-lang/tcl ) python? ( =dev-lang/python-2* )
 RESTRICT=test
 SLOT=0
 SRC_URI=mirror://sourceforge/hamlib/hamlib-1.2.12.tar.gz
-_eclasses_=autotools	6379b933727051b4b34f938eb654b935	autotools-utils	748973db029ba52a1991320e1034bad9	eutils	ba24d79270ea0022703f16b5de80051c	libtool	5f623f5a211fb1b2d84d88ee49959a54	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	python	dc3993dc1961bbb13c11bb835390ca29	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
+_eclasses_=autotools	532e2870d0e19d852daff17d52cd792d	autotools-utils	748973db029ba52a1991320e1034bad9	eutils	ba24d79270ea0022703f16b5de80051c	libtool	5f623f5a211fb1b2d84d88ee49959a54	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	python	d6df8e9d4686f7550769a9777aa622b9	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
 _md5_=06043143092d17465113477867db8dd0

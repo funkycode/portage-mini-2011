@@ -1,13 +1,13 @@
 DEFINED_PHASES=compile install postinst postrm prepare
-DEPEND=dev-python/nose dev-lang/swig doc? ( dev-python/epydoc ) >=app-admin/eselect-python-20091230 =dev-lang/python-2*
+DEPEND=dev-python/nose dev-lang/swig doc? ( dev-python/epydoc ) =dev-lang/python-2*
 DESCRIPTION=Cosmology routines built on NumPy/SciPy
 EAPI=2
 HOMEPAGE=http://roban.github.com/CosmoloPy/ http://pypi.python.org/pypi/CosmoloPy
 IUSE=doc
 KEYWORDS=~amd64 ~x86
 LICENSE=MIT
-RDEPEND=sci-libs/scipy >=app-admin/eselect-python-20091230 =dev-lang/python-2*
+RDEPEND=sci-libs/scipy =dev-lang/python-2*
 SLOT=0
 SRC_URI=mirror://pypi/C/CosmoloPy/CosmoloPy-0.1.102.tar.gz
-_eclasses_=distutils	15ae23f6f8219a009bfcfff7724fe727	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	python	dc3993dc1961bbb13c11bb835390ca29	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68
+_eclasses_=distutils	15ae23f6f8219a009bfcfff7724fe727	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	python	d6df8e9d4686f7550769a9777aa622b9	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68
 _md5_=e9dd13b09f7918f9b9b41182c10839e6

@@ -1,5 +1,5 @@
 DEFINED_PHASES=compile configure install postinst prepare setup
-DEPEND=app-arch/bzip2 app-text/ghostscript-gpl dev-libs/libpcre virtual/blas virtual/fortran cairo? ( x11-libs/cairo[X] x11-libs/pango ) icu? ( dev-libs/icu ) jpeg? ( virtual/jpeg ) lapack? ( virtual/lapack ) perl? ( dev-lang/perl ) png? ( media-libs/libpng ) readline? ( sys-libs/readline ) tk? ( dev-lang/tk ) X? ( x11-libs/libXmu x11-misc/xdg-utils ) dev-util/pkgconfig doc? ( virtual/latex-base dev-texlive/texlive-fontsrecommended ) || ( =sys-devel/automake-1.11* ) >=sys-devel/autoconf-2.68 sys-devel/libtool
+DEPEND=app-arch/bzip2 app-text/ghostscript-gpl dev-libs/libpcre virtual/blas virtual/fortran cairo? ( x11-libs/cairo[X] x11-libs/pango ) icu? ( dev-libs/icu ) jpeg? ( virtual/jpeg ) lapack? ( virtual/lapack ) perl? ( dev-lang/perl ) png? ( media-libs/libpng ) readline? ( sys-libs/readline ) tk? ( dev-lang/tk ) X? ( x11-libs/libXmu x11-misc/xdg-utils ) dev-util/pkgconfig doc? ( virtual/latex-base dev-texlive/texlive-fontsrecommended ) || ( =sys-devel/automake-1.11.1* ) >=sys-devel/autoconf-2.68 sys-devel/libtool
 DESCRIPTION=Language and environment for statistical computing and graphics
 EAPI=4
 HOMEPAGE=http://www.r-project.org/
@@ -11,5 +11,5 @@ REQUIRED_USE=png? ( || ( cairo X ) ) jpeg? ( || ( cairo X ) ) tiff? ( || ( cairo
 RESTRICT=minimal? ( test )
 SLOT=0
 SRC_URI=mirror://cran/src/base/R-2/R-2.14.2.tar.gz bash-completion? ( mirror://gentoo/R.bash_completion.bz2 )
-_eclasses_=autotools	6379b933727051b4b34f938eb654b935	bash-completion-r1	3480f8385cb9e31797e7b659e366e2d2	eutils	ba24d79270ea0022703f16b5de80051c	flag-o-matic	66cb710a2aa184a5687fe1289d7973ab	fortran-2	368b82ae80c1184988a9d651e6efcbd0	libtool	5f623f5a211fb1b2d84d88ee49959a54	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e	versionator	6601b4c5b3f019a993db59a50e1854e4
+_eclasses_=autotools	532e2870d0e19d852daff17d52cd792d	bash-completion-r1	3480f8385cb9e31797e7b659e366e2d2	eutils	ba24d79270ea0022703f16b5de80051c	flag-o-matic	66cb710a2aa184a5687fe1289d7973ab	fortran-2	368b82ae80c1184988a9d651e6efcbd0	libtool	5f623f5a211fb1b2d84d88ee49959a54	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e	versionator	6601b4c5b3f019a993db59a50e1854e4
 _md5_=3e5fa7ca993c6311382728b9966e8ed0

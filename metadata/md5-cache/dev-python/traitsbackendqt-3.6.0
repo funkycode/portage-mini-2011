@@ -1,12 +1,12 @@
 DEFINED_PHASES=compile install postinst postrm prepare
-DEPEND=dev-python/PyQt4[X] dev-python/setuptools >=app-admin/eselect-python-20091230 =dev-lang/python-2*
+DEPEND=dev-python/PyQt4[X] dev-python/setuptools =dev-lang/python-2*
 DESCRIPTION=PyQt backend for Traits and TraitsGUI (Pyface)
 EAPI=3
 HOMEPAGE=http://code.enthought.com/projects/traits_gui/ http://pypi.python.org/pypi/TraitsBackendQt
 KEYWORDS=amd64 ppc ~ppc64 x86
 LICENSE=BSD
-RDEPEND=dev-python/PyQt4[X] dev-python/setuptools >=app-admin/eselect-python-20091230 =dev-lang/python-2*
+RDEPEND=dev-python/PyQt4[X] dev-python/setuptools =dev-lang/python-2*
 SLOT=0
 SRC_URI=http://www.enthought.com/repo/ETS/TraitsBackendQt-3.6.0.tar.gz
-_eclasses_=distutils	15ae23f6f8219a009bfcfff7724fe727	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	python	dc3993dc1961bbb13c11bb835390ca29	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68
+_eclasses_=distutils	15ae23f6f8219a009bfcfff7724fe727	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	python	d6df8e9d4686f7550769a9777aa622b9	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68
 _md5_=2ce639b1d6c7b065b1de131cd6856080

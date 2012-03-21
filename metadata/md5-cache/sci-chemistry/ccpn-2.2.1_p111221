@@ -1,5 +1,5 @@
 DEFINED_PHASES=compile install postinst postrm prepare setup
-DEPEND=dev-lang/tk[threads] >=dev-python/numpy-1.4 >=dev-tcltk/tix-8.4.3 =sci-libs/ccpn-data-2.2.1* >=sci-libs/ccpn-data-2.2.1_p111011 sci-biology/psipred x11-libs/libXext x11-libs/libX11 opengl? ( media-libs/freeglut dev-python/pyglet ) >=app-admin/eselect-python-20091230 || ( =dev-lang/python-2.7* =dev-lang/python-2.6* =dev-lang/python-2.5* ) || ( =dev-lang/python-2.7*[ssl,tk] =dev-lang/python-2.6*[ssl,tk] =dev-lang/python-2.5*[ssl,tk] )
+DEPEND=dev-lang/tk[threads] >=dev-python/numpy-1.4 >=dev-tcltk/tix-8.4.3 =sci-libs/ccpn-data-2.2.1* >=sci-libs/ccpn-data-2.2.1_p111011 sci-biology/psipred x11-libs/libXext x11-libs/libX11 opengl? ( media-libs/freeglut dev-python/pyglet ) || ( =dev-lang/python-2.7* =dev-lang/python-2.6* =dev-lang/python-2.5* ) || ( =dev-lang/python-2.7*[ssl,tk] =dev-lang/python-2.6*[ssl,tk] =dev-lang/python-2.5*[ssl,tk] )
 DESCRIPTION=The Collaborative Computing Project for NMR
 EAPI=3
 HOMEPAGE=http://www.ccpn.ac.uk/ccpn
@@ -7,9 +7,9 @@ IUSE=extendnmr +opengl
 KEYWORDS=~amd64 ~x86 ~amd64-linux ~x86-linux
 LICENSE=|| ( CCPN LGPL-2.1 )
 PDEPEND=extendnmr? ( >=sci-chemistry/aria-2.3.2-r1 sci-chemistry/prodecomp )
-RDEPEND=dev-lang/tk[threads] >=dev-python/numpy-1.4 >=dev-tcltk/tix-8.4.3 =sci-libs/ccpn-data-2.2.1* >=sci-libs/ccpn-data-2.2.1_p111011 sci-biology/psipred x11-libs/libXext x11-libs/libX11 opengl? ( media-libs/freeglut dev-python/pyglet ) >=app-admin/eselect-python-20091230 || ( =dev-lang/python-2.7* =dev-lang/python-2.6* =dev-lang/python-2.5* ) || ( =dev-lang/python-2.7*[ssl,tk] =dev-lang/python-2.6*[ssl,tk] =dev-lang/python-2.5*[ssl,tk] )
+RDEPEND=dev-lang/tk[threads] >=dev-python/numpy-1.4 >=dev-tcltk/tix-8.4.3 =sci-libs/ccpn-data-2.2.1* >=sci-libs/ccpn-data-2.2.1_p111011 sci-biology/psipred x11-libs/libXext x11-libs/libX11 opengl? ( media-libs/freeglut dev-python/pyglet ) || ( =dev-lang/python-2.7* =dev-lang/python-2.6* =dev-lang/python-2.5* ) || ( =dev-lang/python-2.7*[ssl,tk] =dev-lang/python-2.6*[ssl,tk] =dev-lang/python-2.5*[ssl,tk] )
 RESTRICT=mirror
 SLOT=0
 SRC_URI=http://www.bio.cam.ac.uk/ccpn/download/ccpnmr/analysis2.2.1.tar.gz http://dev.gentoo.org/~jlec/distfiles/ccpn-update-2.2.1-111221.patch.xz
-_eclasses_=eutils	ba24d79270ea0022703f16b5de80051c	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	portability	536c5e70c5fb252ed3b769e04aa3f05b	python	dc3993dc1961bbb13c11bb835390ca29	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e	versionator	6601b4c5b3f019a993db59a50e1854e4
+_eclasses_=eutils	ba24d79270ea0022703f16b5de80051c	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	portability	536c5e70c5fb252ed3b769e04aa3f05b	python	d6df8e9d4686f7550769a9777aa622b9	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e	versionator	6601b4c5b3f019a993db59a50e1854e4
 _md5_=f78a9854c73cc38f734b746089db9ffc

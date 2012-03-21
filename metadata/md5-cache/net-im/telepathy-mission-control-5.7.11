@@ -1,14 +1,14 @@
 DEFINED_PHASES=configure install prepare setup
-DEPEND=>=net-libs/telepathy-glib-0.13.14 >=dev-libs/dbus-glib-0.82 gnome-keyring? ( || ( gnome-base/libgnome-keyring <gnome-base/gnome-keyring-2.29.4 ) ) dev-util/pkgconfig dev-libs/libxslt test? ( dev-python/twisted-words ) >=app-admin/eselect-python-20091230 || ( =dev-lang/python-2.7* =dev-lang/python-2.6* =dev-lang/python-2.5* )
+DEPEND=>=net-libs/telepathy-glib-0.13.14 >=dev-libs/dbus-glib-0.82 gnome-keyring? ( || ( gnome-base/libgnome-keyring <gnome-base/gnome-keyring-2.29.4 ) ) dev-util/pkgconfig dev-libs/libxslt test? ( dev-python/twisted-words ) || ( =dev-lang/python-2.7* =dev-lang/python-2.6* =dev-lang/python-2.5* )
 DESCRIPTION=An account manager and channel dispatcher for the Telepathy framework.
 EAPI=3
 HOMEPAGE=http://telepathy.freedesktop.org/wiki/Mission%20Control
 IUSE=gnome-keyring test
 KEYWORDS=alpha amd64 ia64 ppc ~ppc64 sparc x86
 LICENSE=LGPL-2.1
-RDEPEND=>=net-libs/telepathy-glib-0.13.14 >=dev-libs/dbus-glib-0.82 gnome-keyring? ( || ( gnome-base/libgnome-keyring <gnome-base/gnome-keyring-2.29.4 ) ) >=app-admin/eselect-python-20091230 || ( =dev-lang/python-2.7* =dev-lang/python-2.6* =dev-lang/python-2.5* )
+RDEPEND=>=net-libs/telepathy-glib-0.13.14 >=dev-libs/dbus-glib-0.82 gnome-keyring? ( || ( gnome-base/libgnome-keyring <gnome-base/gnome-keyring-2.29.4 ) ) || ( =dev-lang/python-2.7* =dev-lang/python-2.6* =dev-lang/python-2.5* )
 RESTRICT=test
 SLOT=0
 SRC_URI=http://telepathy.freedesktop.org/releases/telepathy-mission-control/telepathy-mission-control-5.7.11.tar.gz
-_eclasses_=multilib	5f4ad6cf85e365e8f0c6050ddd21659e	python	dc3993dc1961bbb13c11bb835390ca29	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68
+_eclasses_=multilib	5f4ad6cf85e365e8f0c6050ddd21659e	python	d6df8e9d4686f7550769a9777aa622b9	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68
 _md5_=74b8a0cd5f4be48c3b7777c4d33c8f54

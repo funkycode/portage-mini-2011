@@ -1,5 +1,5 @@
 DEFINED_PHASES=compile configure install postinst preinst prepare unpack
-DEPEND=!sci-misc/boinc-bin !app-admin/quickswitch >=app-misc/ca-certificates-20080809 dev-libs/openssl net-misc/curl[ssl,-gnutls] sys-apps/util-linux sys-libs/zlib cuda? ( >=dev-util/nvidia-cuda-toolkit-2.1 >=x11-drivers/nvidia-drivers-180.22 ) X? ( dev-db/sqlite:3 media-libs/freeglut sys-libs/glibc:2.2 virtual/jpeg x11-libs/gtk+:2 >=x11-libs/libnotify-0.7 x11-libs/wxGTK:2.8[X,opengl] ) sys-devel/gettext app-text/docbook-xml-dtd:4.4 app-text/docbook2X || ( =sys-devel/automake-1.11* ) >=sys-devel/autoconf-2.68 sys-devel/libtool
+DEPEND=!sci-misc/boinc-bin !app-admin/quickswitch >=app-misc/ca-certificates-20080809 dev-libs/openssl net-misc/curl[ssl,-gnutls] sys-apps/util-linux sys-libs/zlib cuda? ( >=dev-util/nvidia-cuda-toolkit-2.1 >=x11-drivers/nvidia-drivers-180.22 ) X? ( dev-db/sqlite:3 media-libs/freeglut sys-libs/glibc:2.2 virtual/jpeg x11-libs/gtk+:2 >=x11-libs/libnotify-0.7 x11-libs/wxGTK:2.8[X,opengl] ) sys-devel/gettext app-text/docbook-xml-dtd:4.4 app-text/docbook2X || ( =sys-devel/automake-1.11.1* ) >=sys-devel/autoconf-2.68 sys-devel/libtool
 DESCRIPTION=The Berkeley Open Infrastructure for Network Computing
 EAPI=4
 HOMEPAGE=http://boinc.ssl.berkeley.edu/
@@ -9,5 +9,5 @@ LICENSE=LGPL-2.1
 RDEPEND=!sci-misc/boinc-bin !app-admin/quickswitch >=app-misc/ca-certificates-20080809 dev-libs/openssl net-misc/curl[ssl,-gnutls] sys-apps/util-linux sys-libs/zlib cuda? ( >=dev-util/nvidia-cuda-toolkit-2.1 >=x11-drivers/nvidia-drivers-180.22 ) X? ( dev-db/sqlite:3 media-libs/freeglut sys-libs/glibc:2.2 virtual/jpeg x11-libs/gtk+:2 >=x11-libs/libnotify-0.7 x11-libs/wxGTK:2.8[X,opengl] )
 SLOT=0
 SRC_URI=http://dev.gentooexperimental.org/~scarabeus/boinc-6.12.42.tar.xz
-_eclasses_=autotools	6379b933727051b4b34f938eb654b935	base	5f35078c26d6c60556d5c8a2feb4f84f	eutils	ba24d79270ea0022703f16b5de80051c	flag-o-matic	66cb710a2aa184a5687fe1289d7973ab	libtool	5f623f5a211fb1b2d84d88ee49959a54	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e	wxwidgets	fb1a306837717dfa2af841ecdf929565
+_eclasses_=autotools	532e2870d0e19d852daff17d52cd792d	base	5f35078c26d6c60556d5c8a2feb4f84f	eutils	ba24d79270ea0022703f16b5de80051c	flag-o-matic	66cb710a2aa184a5687fe1289d7973ab	libtool	5f623f5a211fb1b2d84d88ee49959a54	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e	wxwidgets	fb1a306837717dfa2af841ecdf929565
 _md5_=b2454bcd279bc9adb1bb109facdd4412

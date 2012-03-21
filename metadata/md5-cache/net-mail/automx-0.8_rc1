@@ -1,13 +1,13 @@
 DEFINED_PHASES=install postinst postrm setup
-DEPEND=>=app-admin/eselect-python-20091230 || ( =dev-lang/python-2.7* =dev-lang/python-2.6* )
+DEPEND=|| ( =dev-lang/python-2.7* =dev-lang/python-2.6* )
 DESCRIPTION=A mail user agent auto configuration service
 EAPI=4
 HOMEPAGE=http://www.automx.org
 IUSE=doc +tools
 KEYWORDS=~amd64 ~x86
 LICENSE=GPL-3
-RDEPEND=dev-python/lxml || ( www-apache/mod_wsgi www-servers/uwsgi ) tools? ( net-dns/bind-tools ) tools? ( net-misc/wget ) >=app-admin/eselect-python-20091230 || ( =dev-lang/python-2.7* =dev-lang/python-2.6* )
+RDEPEND=dev-python/lxml || ( www-apache/mod_wsgi www-servers/uwsgi ) tools? ( net-dns/bind-tools ) tools? ( net-misc/wget ) || ( =dev-lang/python-2.7* =dev-lang/python-2.6* )
 SLOT=0
 SRC_URI=http://www.automx.org/download/automx-0.8_rc1.tar.gz
-_eclasses_=multilib	5f4ad6cf85e365e8f0c6050ddd21659e	python	dc3993dc1961bbb13c11bb835390ca29	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68
+_eclasses_=multilib	5f4ad6cf85e365e8f0c6050ddd21659e	python	d6df8e9d4686f7550769a9777aa622b9	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68
 _md5_=b2e84cc8c3c1564ce9f04b58d6991cbe

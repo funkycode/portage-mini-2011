@@ -1,13 +1,13 @@
 DEFINED_PHASES=compile install postinst postrm prepare setup
-DEPEND=sci-libs/fftw:2.1 sci-libs/gsl dev-util/pkgconfig >=app-admin/eselect-python-20091230 =dev-lang/python-2*
+DEPEND=sci-libs/fftw:2.1 sci-libs/gsl dev-util/pkgconfig =dev-lang/python-2*
 DESCRIPTION=A crystallographic real-space electron-density refinement and optimization program
 EAPI=3
 HOMEPAGE=http://www.gromacs.org/pipermail/eden-users/
 IUSE=double-precision
 KEYWORDS=amd64 x86
 LICENSE=GPL-2
-RDEPEND=sci-libs/fftw:2.1 sci-libs/gsl >=app-admin/eselect-python-20091230 =dev-lang/python-2*
+RDEPEND=sci-libs/fftw:2.1 sci-libs/gsl =dev-lang/python-2*
 SLOT=0
 SRC_URI=mirror://gentoo/eden_V5.3.tar.gz
-_eclasses_=eutils	ba24d79270ea0022703f16b5de80051c	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	python	dc3993dc1961bbb13c11bb835390ca29	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
+_eclasses_=eutils	ba24d79270ea0022703f16b5de80051c	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	python	d6df8e9d4686f7550769a9777aa622b9	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
 _md5_=5c38e9e550cb6dbb07206d555cc126c2

@@ -1,12 +1,12 @@
 DEFINED_PHASES=install postinst postrm prepare unpack
-DEPEND=sci-chemistry/msms-bin sci-chemistry/pymol >=app-admin/eselect-python-20091230 =dev-lang/python-2*
+DEPEND=sci-chemistry/msms-bin sci-chemistry/pymol =dev-lang/python-2*
 DESCRIPTION=GUI for MSMS and displaying its results in PyMOL
 EAPI=3
 HOMEPAGE=http://www.biotec.tu-dresden.de/~hongboz/msms_pymol/msms_pymol.html
 KEYWORDS=~amd64 ~x86 ~amd64-linux ~x86-linux
 LICENSE=BSD pymol
-RDEPEND=sci-chemistry/msms-bin sci-chemistry/pymol >=app-admin/eselect-python-20091230 =dev-lang/python-2*
+RDEPEND=sci-chemistry/msms-bin sci-chemistry/pymol =dev-lang/python-2*
 SLOT=0
 SRC_URI=http://www.biotec.tu-dresden.de/~hongboz/msms_pymol/pymol_script/msms_pymol.py -> pymol-plugins-msms-100415.py
-_eclasses_=eutils	ba24d79270ea0022703f16b5de80051c	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	python	dc3993dc1961bbb13c11bb835390ca29	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
+_eclasses_=eutils	ba24d79270ea0022703f16b5de80051c	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	python	d6df8e9d4686f7550769a9777aa622b9	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
 _md5_=de7ec893dc677cd451035435afc4a631

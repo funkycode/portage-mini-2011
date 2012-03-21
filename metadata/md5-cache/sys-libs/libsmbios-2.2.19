@@ -1,13 +1,13 @@
 DEFINED_PHASES=configure install postinst postrm prepare
-DEPEND=dev-libs/libxml2 sys-libs/zlib nls? ( virtual/libintl ) python? ( >=dev-lang/python-2.3 ) dev-util/pkgconfig doc? ( app-doc/doxygen ) graphviz? ( media-gfx/graphviz ) nls? ( sys-devel/gettext ) test? ( >=dev-util/cppunit-1.9.6 ) >=app-admin/eselect-python-20091230
+DEPEND=dev-libs/libxml2 sys-libs/zlib nls? ( virtual/libintl ) python? ( >=dev-lang/python-2.3 ) dev-util/pkgconfig doc? ( app-doc/doxygen ) graphviz? ( media-gfx/graphviz ) nls? ( sys-devel/gettext ) test? ( >=dev-util/cppunit-1.9.6 )
 DESCRIPTION=Provide access to (SM)BIOS information
 EAPI=2
 HOMEPAGE=http://linux.dell.com/libsmbios/main/index.html
 IUSE=doc graphviz nls python static-libs test
 KEYWORDS=amd64 ia64 x86
 LICENSE=GPL-2 OSL-2.0
-RDEPEND=dev-libs/libxml2 sys-libs/zlib nls? ( virtual/libintl ) python? ( >=dev-lang/python-2.3 ) >=app-admin/eselect-python-20091230
+RDEPEND=dev-libs/libxml2 sys-libs/zlib nls? ( virtual/libintl ) python? ( >=dev-lang/python-2.3 )
 SLOT=0
 SRC_URI=http://linux.dell.com/libsmbios/download/libsmbios/libsmbios-2.2.19/libsmbios-2.2.19.tar.bz2
-_eclasses_=eutils	ba24d79270ea0022703f16b5de80051c	flag-o-matic	66cb710a2aa184a5687fe1289d7973ab	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	python	dc3993dc1961bbb13c11bb835390ca29	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
+_eclasses_=eutils	ba24d79270ea0022703f16b5de80051c	flag-o-matic	66cb710a2aa184a5687fe1289d7973ab	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	python	d6df8e9d4686f7550769a9777aa622b9	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
 _md5_=b3d244adbf12370f2c758171618e05c5

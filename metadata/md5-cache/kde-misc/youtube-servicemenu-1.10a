@@ -1,13 +1,13 @@
 DEFINED_PHASES=install prepare setup
-DEPEND=dev-python/lxml >=kde-base/konqueror-4.3.1 >=app-admin/eselect-python-20091230 =dev-lang/python-2*
+DEPEND=dev-python/lxml >=kde-base/konqueror-4.3.1 =dev-lang/python-2*
 DESCRIPTION=Download YouTube (tm) Videos
 EAPI=3
 HOMEPAGE=http://www.kde-apps.org/content/show.php/Get+YouTube+Video+(improved)?content=41456
 IUSE=linguas_de linguas_el linguas_es linguas_ru linguas_sk linguas_uk
 KEYWORDS=~amd64 ~x86
 LICENSE=GPL-2
-RDEPEND=dev-python/lxml >=kde-base/konqueror-4.3.1 >=app-admin/eselect-python-20091230 =dev-lang/python-2*
+RDEPEND=dev-python/lxml >=kde-base/konqueror-4.3.1 =dev-lang/python-2*
 SLOT=4
 SRC_URI=http://kde-apps.org/CONTENT/content-files/41456-youtube-servicemenu-1.10a.tar.bz2
-_eclasses_=multilib	5f4ad6cf85e365e8f0c6050ddd21659e	python	dc3993dc1961bbb13c11bb835390ca29	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68
+_eclasses_=multilib	5f4ad6cf85e365e8f0c6050ddd21659e	python	d6df8e9d4686f7550769a9777aa622b9	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68
 _md5_=3050ab58233197b2b83987ea3c7c9692

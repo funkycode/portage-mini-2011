@@ -1,13 +1,13 @@
 DEFINED_PHASES=compile configure install postinst prepare setup unpack
-DEPEND=dev-util/pkgconfig perl? ( dev-lang/swig ) python? ( >=dev-lang/swig-2.0.2 >=dev-lang/perl-5.10 ) ares? ( >=net-dns/c-ares-1.5 ) perl? ( >=dev-lang/perl-5.10 ) sasl? ( >=dev-libs/cyrus-sasl-2 ) ssl? ( >=dev-libs/openssl-0.9.7d ) tcl? ( dev-lang/tcl ) >=app-admin/eselect-python-20091230 python? ( =dev-lang/python-3* )
+DEPEND=dev-util/pkgconfig perl? ( dev-lang/swig ) python? ( >=dev-lang/swig-2.0.2 >=dev-lang/perl-5.10 ) ares? ( >=net-dns/c-ares-1.5 ) perl? ( >=dev-lang/perl-5.10 ) sasl? ( >=dev-libs/cyrus-sasl-2 ) ssl? ( >=dev-libs/openssl-0.9.7d ) tcl? ( dev-lang/tcl ) python? ( =dev-lang/python-3* )
 DESCRIPTION=An advanced IRC Bouncer
 EAPI=4
 HOMEPAGE=http://znc.sourceforge.net
 IUSE=ares debug extras ipv6 perl python ssl sasl tcl
 KEYWORDS=~amd64 ~arm ~x86
 LICENSE=GPL-2
-RDEPEND=ares? ( >=net-dns/c-ares-1.5 ) perl? ( >=dev-lang/perl-5.10 ) sasl? ( >=dev-libs/cyrus-sasl-2 ) ssl? ( >=dev-libs/openssl-0.9.7d ) tcl? ( dev-lang/tcl ) >=app-admin/eselect-python-20091230 python? ( =dev-lang/python-3* )
+RDEPEND=ares? ( >=net-dns/c-ares-1.5 ) perl? ( >=dev-lang/perl-5.10 ) sasl? ( >=dev-libs/cyrus-sasl-2 ) ssl? ( >=dev-libs/openssl-0.9.7d ) tcl? ( dev-lang/tcl ) python? ( =dev-lang/python-3* )
 SLOT=0
 SRC_URI=http://znc.in/releases/archive/znc-0.204.tar.gz
-_eclasses_=base	5f35078c26d6c60556d5c8a2feb4f84f	eutils	ba24d79270ea0022703f16b5de80051c	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	python	dc3993dc1961bbb13c11bb835390ca29	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
+_eclasses_=base	5f35078c26d6c60556d5c8a2feb4f84f	eutils	ba24d79270ea0022703f16b5de80051c	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	python	d6df8e9d4686f7550769a9777aa622b9	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
 _md5_=fee0de8ab141fe79a02b44a0056e8816

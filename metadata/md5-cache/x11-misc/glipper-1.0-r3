@@ -1,13 +1,13 @@
 DEFINED_PHASES=compile configure install postinst postrm preinst prepare setup unpack
-DEPEND=>=dev-python/pygobject-2.6:2 >=dev-python/pygtk-2.6 >=dev-python/gconf-python-2.22.0 >=dev-python/libgnome-python-2.22.0 >=dev-python/gnome-applets-python-2.22.0 >=dev-python/gnome-vfs-python-2.22.0 >=gnome-base/gnome-desktop-2.10:2 >=sys-apps/sed-4 >=app-admin/eselect-python-20091230 =dev-lang/python-2*
+DEPEND=>=dev-python/pygobject-2.6:2 >=dev-python/pygtk-2.6 >=dev-python/gconf-python-2.22.0 >=dev-python/libgnome-python-2.22.0 >=dev-python/gnome-applets-python-2.22.0 >=dev-python/gnome-vfs-python-2.22.0 >=gnome-base/gnome-desktop-2.10:2 >=sys-apps/sed-4 =dev-lang/python-2*
 DESCRIPTION=GNOME Clipboard Manager
 EAPI=3
 HOMEPAGE=http://glipper.sourceforge.net/
 KEYWORDS=~amd64 ~x86
 LICENSE=GPL-2
-RDEPEND=>=dev-python/pygobject-2.6:2 >=dev-python/pygtk-2.6 >=dev-python/gconf-python-2.22.0 >=dev-python/libgnome-python-2.22.0 >=dev-python/gnome-applets-python-2.22.0 >=dev-python/gnome-vfs-python-2.22.0 >=gnome-base/gnome-desktop-2.10:2 >=app-admin/eselect-python-20091230 =dev-lang/python-2*
+RDEPEND=>=dev-python/pygobject-2.6:2 >=dev-python/pygtk-2.6 >=dev-python/gconf-python-2.22.0 >=dev-python/libgnome-python-2.22.0 >=dev-python/gnome-applets-python-2.22.0 >=dev-python/gnome-vfs-python-2.22.0 >=gnome-base/gnome-desktop-2.10:2 =dev-lang/python-2*
 RESTRICT=test
 SLOT=0
 SRC_URI=mirror://sourceforge/glipper/glipper-1.0.tar.bz2
-_eclasses_=eutils	ba24d79270ea0022703f16b5de80051c	fdo-mime	0acfe1a88fd8751a1d5dc671168219fa	gnome.org	8fef8f967214f56e08fa92d61163d891	gnome2	490ce89f5d905297c7a34898fa498bd0	gnome2-utils	b5ca2ccadb60760889faa3bccba121d9	libtool	5f623f5a211fb1b2d84d88ee49959a54	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	python	dc3993dc1961bbb13c11bb835390ca29	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e	versionator	6601b4c5b3f019a993db59a50e1854e4
+_eclasses_=eutils	ba24d79270ea0022703f16b5de80051c	fdo-mime	0acfe1a88fd8751a1d5dc671168219fa	gnome.org	8fef8f967214f56e08fa92d61163d891	gnome2	490ce89f5d905297c7a34898fa498bd0	gnome2-utils	b5ca2ccadb60760889faa3bccba121d9	libtool	5f623f5a211fb1b2d84d88ee49959a54	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	python	d6df8e9d4686f7550769a9777aa622b9	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e	versionator	6601b4c5b3f019a993db59a50e1854e4
 _md5_=b49b21a125f709abe8f7e347a0a10fcd

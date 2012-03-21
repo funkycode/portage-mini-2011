@@ -1,13 +1,13 @@
 DEFINED_PHASES=configure install postinst postrm
-DEPEND=python? ( dev-lang/python ) jack? ( media-sound/jack-audio-connection-kit ) media-libs/ladspa-sdk audiofile? ( media-libs/audiofile ) alsa? ( media-libs/alsa-lib ) vorbis? ( media-libs/libvorbis ) libsamplerate? ( media-libs/libsamplerate ) mikmod? ( media-libs/libmikmod:0 ) ruby? ( dev-lang/ruby ) python? ( dev-lang/python ) ncurses? ( sys-libs/ncurses ) sndfile? ( media-libs/libsndfile ) sys-libs/readline >=app-admin/eselect-python-20091230
+DEPEND=python? ( dev-lang/python ) jack? ( media-sound/jack-audio-connection-kit ) media-libs/ladspa-sdk audiofile? ( media-libs/audiofile ) alsa? ( media-libs/alsa-lib ) vorbis? ( media-libs/libvorbis ) libsamplerate? ( media-libs/libsamplerate ) mikmod? ( media-libs/libmikmod:0 ) ruby? ( dev-lang/ruby ) python? ( dev-lang/python ) ncurses? ( sys-libs/ncurses ) sndfile? ( media-libs/libsndfile ) sys-libs/readline
 DESCRIPTION=a package for multitrack audio processing
 EAPI=3
 HOMEPAGE=http://ecasound.seul.org/ecasound
 IUSE=alsa audiofile debug doc jack libsamplerate mikmod ncurses vorbis oss python ruby sndfile
 KEYWORDS=amd64 ~ppc x86
 LICENSE=GPL-2
-RDEPEND=python? ( dev-lang/python ) jack? ( media-sound/jack-audio-connection-kit ) media-libs/ladspa-sdk audiofile? ( media-libs/audiofile ) alsa? ( media-libs/alsa-lib ) vorbis? ( media-libs/libvorbis ) libsamplerate? ( media-libs/libsamplerate ) mikmod? ( media-libs/libmikmod:0 ) ruby? ( dev-lang/ruby ) python? ( dev-lang/python ) ncurses? ( sys-libs/ncurses ) sndfile? ( media-libs/libsndfile ) sys-libs/readline >=app-admin/eselect-python-20091230
+RDEPEND=python? ( dev-lang/python ) jack? ( media-sound/jack-audio-connection-kit ) media-libs/ladspa-sdk audiofile? ( media-libs/audiofile ) alsa? ( media-libs/alsa-lib ) vorbis? ( media-libs/libvorbis ) libsamplerate? ( media-libs/libsamplerate ) mikmod? ( media-libs/libmikmod:0 ) ruby? ( dev-lang/ruby ) python? ( dev-lang/python ) ncurses? ( sys-libs/ncurses ) sndfile? ( media-libs/libsndfile ) sys-libs/readline
 SLOT=1
 SRC_URI=http://ecasound.seul.org/download/ecasound-2.6.0.tar.gz
-_eclasses_=eutils	ba24d79270ea0022703f16b5de80051c	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	python	dc3993dc1961bbb13c11bb835390ca29	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
+_eclasses_=eutils	ba24d79270ea0022703f16b5de80051c	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	python	d6df8e9d4686f7550769a9777aa622b9	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
 _md5_=b06cd1024e2f106cf4a4cdef601df4c0

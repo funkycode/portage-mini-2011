@@ -1,5 +1,5 @@
 DEFINED_PHASES=compile configure install postinst preinst prepare setup
-DEPEND=>=virtual/jdk-1.5 app-arch/unzip dev-java/ant-core dev-libs/openssl ~dev-java/resin-servlet-api-4.0.26 dev-java/glassfish-deployment-api:1.2 java-virtuals/javamail dev-java/jsr101 dev-java/mojarra:1.2 dev-java/validation-api:1.0 >=dev-java/java-config-2.1.9-r1 source? ( app-arch/zip ) >=dev-java/ant-core-1.7.0 >=dev-java/javatoolkit-0.3.0-r2 >=dev-lang/python-2.4 || ( =sys-devel/automake-1.11* ) >=sys-devel/autoconf-2.68 sys-devel/libtool
+DEPEND=>=virtual/jdk-1.5 app-arch/unzip dev-java/ant-core dev-libs/openssl ~dev-java/resin-servlet-api-4.0.26 dev-java/glassfish-deployment-api:1.2 java-virtuals/javamail dev-java/jsr101 dev-java/mojarra:1.2 dev-java/validation-api:1.0 >=dev-java/java-config-2.1.9-r1 source? ( app-arch/zip ) >=dev-java/ant-core-1.7.0 >=dev-java/javatoolkit-0.3.0-r2 >=dev-lang/python-2.4 || ( =sys-devel/automake-1.11.1* ) >=sys-devel/autoconf-2.68 sys-devel/libtool
 DESCRIPTION=A fast Servlet and JSP engine.
 EAPI=4
 HOMEPAGE=http://www.caucho.com
@@ -9,5 +9,5 @@ LICENSE=GPL-2
 RDEPEND=>=virtual/jdk-1.5 ~dev-java/resin-servlet-api-4.0.26 dev-java/glassfish-deployment-api:1.2 java-virtuals/javamail dev-java/jsr101 dev-java/mojarra:1.2 dev-java/validation-api:1.0 >=dev-java/java-config-2.1.9-r1 source? ( app-arch/zip )
 SLOT=0
 SRC_URI=http://www.caucho.com/download/resin-4.0.26-src.zip mirror://gentoo/resin-gentoo-patches-4.0.26.tar.bz2
-_eclasses_=autotools	6379b933727051b4b34f938eb654b935	eutils	ba24d79270ea0022703f16b5de80051c	flag-o-matic	66cb710a2aa184a5687fe1289d7973ab	java-ant-2	c637c20d93ef0d49a5efcf5feaa776cd	java-pkg-2	6f723b44cff6b07377ca5c0848da887b	java-utils-2	b173b5d55bfd6e328939985bc54a1c9e	libtool	5f623f5a211fb1b2d84d88ee49959a54	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e	versionator	6601b4c5b3f019a993db59a50e1854e4
+_eclasses_=autotools	532e2870d0e19d852daff17d52cd792d	eutils	ba24d79270ea0022703f16b5de80051c	flag-o-matic	66cb710a2aa184a5687fe1289d7973ab	java-ant-2	c637c20d93ef0d49a5efcf5feaa776cd	java-pkg-2	6f723b44cff6b07377ca5c0848da887b	java-utils-2	b173b5d55bfd6e328939985bc54a1c9e	libtool	5f623f5a211fb1b2d84d88ee49959a54	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e	versionator	6601b4c5b3f019a993db59a50e1854e4
 _md5_=cf4a449356c5ebec0bb6a754a430fd1f

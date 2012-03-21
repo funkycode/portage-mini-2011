@@ -1,5 +1,5 @@
 DEFINED_PHASES=compile install postinst unpack
-DEPEND==dev-libs/glib-1.2* x11-libs/libXi x11-libs/libXt x11-proto/inputproto x11-proto/xextproto nls? ( sys-devel/gettext dev-util/intltool ) || ( =sys-devel/automake-1.11* ) >=sys-devel/autoconf-2.68 sys-devel/libtool
+DEPEND==dev-libs/glib-1.2* x11-libs/libXi x11-libs/libXt x11-proto/inputproto x11-proto/xextproto nls? ( sys-devel/gettext dev-util/intltool ) || ( =sys-devel/automake-1.11.1* ) >=sys-devel/autoconf-2.68 sys-devel/libtool
 DESCRIPTION=The GIMP Toolkit
 HOMEPAGE=http://www.gtk.org/
 IUSE=nls debug linguas_az linguas_ca linguas_cs linguas_da linguas_de linguas_el linguas_es linguas_et linguas_eu linguas_fi linguas_fr linguas_ga linguas_gl linguas_hr linguas_hu linguas_it linguas_ja linguas_ko linguas_lt linguas_nl linguas_nn linguas_no linguas_pl linguas_pt_BR linguas_pt linguas_ro linguas_ru linguas_sk linguas_sl linguas_sr linguas_sv linguas_tr linguas_uk linguas_vi
@@ -8,5 +8,5 @@ LICENSE=LGPL-2.1
 RDEPEND==dev-libs/glib-1.2* x11-libs/libXi x11-libs/libXt
 SLOT=1
 SRC_URI=mirror://gnome/sources/gtk+/1.2/gtk+-1.2.10.tar.gz http://www.ibiblio.org/gentoo/distfiles/gtk+-1.2.10-r8-gentoo.diff.bz2
-_eclasses_=autotools	6379b933727051b4b34f938eb654b935	eutils	ba24d79270ea0022703f16b5de80051c	gnome.org	8fef8f967214f56e08fa92d61163d891	libtool	5f623f5a211fb1b2d84d88ee49959a54	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e	versionator	6601b4c5b3f019a993db59a50e1854e4
+_eclasses_=autotools	532e2870d0e19d852daff17d52cd792d	eutils	ba24d79270ea0022703f16b5de80051c	gnome.org	8fef8f967214f56e08fa92d61163d891	libtool	5f623f5a211fb1b2d84d88ee49959a54	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e	versionator	6601b4c5b3f019a993db59a50e1854e4
 _md5_=b841db6ee90da0a7a7023764847a695d

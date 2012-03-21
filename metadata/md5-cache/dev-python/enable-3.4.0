@@ -1,13 +1,13 @@
 DEFINED_PHASES=compile install postinst postrm prepare test
-DEPEND=>=dev-python/enthoughtbase-3.1.0 dev-python/numpy dev-python/reportlab dev-python/setuptools >=dev-python/traitsgui-3.6.0[wxwidgets] >=media-libs/freetype-2 virtual/opengl x11-libs/libX11 dev-lang/swig dev-python/cython doc? ( dev-python/sphinx ) test? ( dev-python/coverage dev-python/nose media-fonts/font-cursor-misc media-fonts/font-misc-misc x11-apps/xhost ) >=app-admin/eselect-python-20091230 =dev-lang/python-2* test? ( !prefix? ( x11-base/xorg-server[xvfb] ) x11-apps/xhost )
+DEPEND=>=dev-python/enthoughtbase-3.1.0 dev-python/numpy dev-python/reportlab dev-python/setuptools >=dev-python/traitsgui-3.6.0[wxwidgets] >=media-libs/freetype-2 virtual/opengl x11-libs/libX11 dev-lang/swig dev-python/cython doc? ( dev-python/sphinx ) test? ( dev-python/coverage dev-python/nose media-fonts/font-cursor-misc media-fonts/font-misc-misc x11-apps/xhost ) =dev-lang/python-2* test? ( !prefix? ( x11-base/xorg-server[xvfb] ) x11-apps/xhost )
 DESCRIPTION=Enthought Tool Suite: Drawing and interaction packages
 EAPI=3
 HOMEPAGE=http://code.enthought.com/projects/enable/ http://pypi.python.org/pypi/Enable
 IUSE=doc examples test test
 KEYWORDS=~amd64 ~x86
 LICENSE=BSD
-RDEPEND=>=dev-python/enthoughtbase-3.1.0 dev-python/numpy dev-python/reportlab dev-python/setuptools >=dev-python/traitsgui-3.6.0[wxwidgets] >=media-libs/freetype-2 virtual/opengl x11-libs/libX11 >=app-admin/eselect-python-20091230 =dev-lang/python-2*
+RDEPEND=>=dev-python/enthoughtbase-3.1.0 dev-python/numpy dev-python/reportlab dev-python/setuptools >=dev-python/traitsgui-3.6.0[wxwidgets] >=media-libs/freetype-2 virtual/opengl x11-libs/libX11 =dev-lang/python-2*
 SLOT=0
 SRC_URI=http://www.enthought.com/repo/ETS/Enable-3.4.0.tar.gz
-_eclasses_=distutils	15ae23f6f8219a009bfcfff7724fe727	eutils	ba24d79270ea0022703f16b5de80051c	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	python	dc3993dc1961bbb13c11bb835390ca29	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e	virtualx	0c41ff55e46b959d9457dde69e7a09d9
+_eclasses_=distutils	15ae23f6f8219a009bfcfff7724fe727	eutils	ba24d79270ea0022703f16b5de80051c	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	python	d6df8e9d4686f7550769a9777aa622b9	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e	virtualx	0c41ff55e46b959d9457dde69e7a09d9
 _md5_=a541c3511fb52b294b3f42b7033fdcb0

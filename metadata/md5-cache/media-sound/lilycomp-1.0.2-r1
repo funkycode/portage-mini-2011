@@ -1,12 +1,12 @@
 DEFINED_PHASES=install
-DEPEND=dev-lang/python[tk] >=app-admin/eselect-python-20091230
+DEPEND=dev-lang/python[tk]
 DESCRIPTION=graphical note entry program for use with LilyPond
 EAPI=2
 HOMEPAGE=http://lilycomp.sourceforge.net/
 KEYWORDS=~amd64 ~ppc ~sparc ~x86
 LICENSE=GPL-2
-RDEPEND=dev-lang/python[tk] >=app-admin/eselect-python-20091230
+RDEPEND=dev-lang/python[tk]
 SLOT=0
 SRC_URI=mirror://sourceforge/lilycomp/lilycomp.1.0.2.tar.gz
-_eclasses_=multilib	5f4ad6cf85e365e8f0c6050ddd21659e	python	dc3993dc1961bbb13c11bb835390ca29	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68
+_eclasses_=multilib	5f4ad6cf85e365e8f0c6050ddd21659e	python	d6df8e9d4686f7550769a9777aa622b9	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68
 _md5_=dc263296c6dd36e9a566c82462d6bf9e

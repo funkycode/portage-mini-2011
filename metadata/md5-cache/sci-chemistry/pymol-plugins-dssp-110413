@@ -1,12 +1,12 @@
 DEFINED_PHASES=install postinst postrm prepare
-DEPEND=>=app-admin/eselect-python-20091230 =dev-lang/python-2*
+DEPEND==dev-lang/python-2*
 DESCRIPTION=DSSP Plugin for PyMOL
 EAPI=3
 HOMEPAGE=http://www.biotec.tu-dresden.de/~hongboz/dssp_pymol/dssp_pymol.html
 KEYWORDS=~amd64 ~x86 ~amd64-linux ~x86-linux
 LICENSE=BSD pymol
-RDEPEND=>=sci-biology/biopython-1.5.7 sci-chemistry/dssp sci-chemistry/pymol >=app-admin/eselect-python-20091230 =dev-lang/python-2*
+RDEPEND=>=sci-biology/biopython-1.5.7 sci-chemistry/dssp sci-chemistry/pymol =dev-lang/python-2*
 SLOT=0
 SRC_URI=http://dev.gentoo.org/~jlec/distfiles/pymol-plugins-dssp-110413.py.xz
-_eclasses_=multilib	5f4ad6cf85e365e8f0c6050ddd21659e	python	dc3993dc1961bbb13c11bb835390ca29	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68
+_eclasses_=multilib	5f4ad6cf85e365e8f0c6050ddd21659e	python	d6df8e9d4686f7550769a9777aa622b9	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68
 _md5_=00149552a7c4099684ff74bed7935b45

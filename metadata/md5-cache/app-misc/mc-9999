@@ -1,12 +1,11 @@
 DEFINED_PHASES=configure install postinst prepare unpack
-DEPEND=>=dev-libs/glib-2.8:2 gpm? ( sys-libs/gpm ) kernel_linux? ( sys-fs/e2fsprogs ) ncurses? ( sys-libs/ncurses ) samba? ( net-fs/samba ) slang? ( >=sys-libs/slang-2 ) X? ( x11-libs/libX11 x11-libs/libICE x11-libs/libXau x11-libs/libXdmcp x11-libs/libSM ) app-arch/xz-utils dev-util/pkgconfig nls? ( sys-devel/gettext ) test? ( dev-libs/check ) dev-vcs/cvs dev-vcs/git || ( =sys-devel/automake-1.11* ) >=sys-devel/autoconf-2.68 sys-devel/libtool
+DEPEND=>=dev-libs/glib-2.8:2 gpm? ( sys-libs/gpm ) kernel_linux? ( sys-fs/e2fsprogs ) samba? ( net-fs/samba ) slang? ( >=sys-libs/slang-2 ) !slang? ( sys-libs/ncurses ) X? ( x11-libs/libX11 x11-libs/libICE x11-libs/libXau x11-libs/libXdmcp x11-libs/libSM ) app-arch/xz-utils dev-util/pkgconfig nls? ( sys-devel/gettext ) test? ( dev-libs/check ) dev-vcs/cvs dev-vcs/git || ( =sys-devel/automake-1.11.1* ) >=sys-devel/autoconf-2.68 sys-devel/libtool
 DESCRIPTION=GNU Midnight Commander is a text based file manager
 EAPI=4
 HOMEPAGE=http://www.midnight-commander.org
-IUSE=+edit gpm mclib +ncurses nls samba slang test X +xdg linguas_az linguas_be linguas_bg linguas_ca linguas_cs linguas_da linguas_de linguas_el linguas_eo linguas_es linguas_et linguas_eu linguas_fi linguas_fr linguas_gl linguas_hu linguas_ia linguas_id linguas_it linguas_ja linguas_ka linguas_ko linguas_lt linguas_lv linguas_mn linguas_nb linguas_nl linguas_pl linguas_pt_BR linguas_pt linguas_ro linguas_ru linguas_sk linguas_sl linguas_sr linguas_sv linguas_sv_SE linguas_ta linguas_tr linguas_uk linguas_vi linguas_wa linguas_zh_CN linguas_zh_TW
+IUSE=+edit gpm mclib nls samba +slang test X +xdg linguas_az linguas_be linguas_bg linguas_ca linguas_cs linguas_da linguas_de linguas_el linguas_eo linguas_es linguas_et linguas_eu linguas_fi linguas_fr linguas_gl linguas_hu linguas_ia linguas_id linguas_it linguas_ja linguas_ka linguas_ko linguas_lt linguas_lv linguas_mn linguas_nb linguas_nl linguas_pl linguas_pt_BR linguas_pt linguas_ro linguas_ru linguas_sk linguas_sl linguas_sr linguas_sv linguas_sv_SE linguas_ta linguas_tr linguas_uk linguas_vi linguas_wa linguas_zh_CN linguas_zh_TW
 LICENSE=GPL-3
-RDEPEND=>=dev-libs/glib-2.8:2 gpm? ( sys-libs/gpm ) kernel_linux? ( sys-fs/e2fsprogs ) ncurses? ( sys-libs/ncurses ) samba? ( net-fs/samba ) slang? ( >=sys-libs/slang-2 ) X? ( x11-libs/libX11 x11-libs/libICE x11-libs/libXau x11-libs/libXdmcp x11-libs/libSM )
-REQUIRED_USE=^^ ( ncurses slang )
+RDEPEND=>=dev-libs/glib-2.8:2 gpm? ( sys-libs/gpm ) kernel_linux? ( sys-fs/e2fsprogs ) samba? ( net-fs/samba ) slang? ( >=sys-libs/slang-2 ) !slang? ( sys-libs/ncurses ) X? ( x11-libs/libX11 x11-libs/libICE x11-libs/libXau x11-libs/libXdmcp x11-libs/libSM )
 SLOT=0
-_eclasses_=autotools	6379b933727051b4b34f938eb654b935	eutils	ba24d79270ea0022703f16b5de80051c	flag-o-matic	66cb710a2aa184a5687fe1289d7973ab	git-2	6bb20ec18cca375571bcbe67bcf2e1d7	libtool	5f623f5a211fb1b2d84d88ee49959a54	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
-_md5_=ba42de3910e35ce26b6d6750fc8a5900
+_eclasses_=autotools	532e2870d0e19d852daff17d52cd792d	eutils	ba24d79270ea0022703f16b5de80051c	flag-o-matic	66cb710a2aa184a5687fe1289d7973ab	git-2	6bb20ec18cca375571bcbe67bcf2e1d7	libtool	5f623f5a211fb1b2d84d88ee49959a54	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
+_md5_=2b31fdfba6d5fae203634e53b3c1dfdd

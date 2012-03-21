@@ -1,13 +1,13 @@
 DEFINED_PHASES=compile install postinst postrm prepare setup
-DEPEND=>=app-admin/eselect-python-20091230 || ( =dev-lang/python-2.7* =dev-lang/python-2.6* =dev-lang/python-2.5* ) X? ( || ( =dev-lang/python-2.7*[tk] =dev-lang/python-2.6*[tk] =dev-lang/python-2.5*[tk] ) )
+DEPEND=|| ( =dev-lang/python-2.7* =dev-lang/python-2.6* =dev-lang/python-2.5* ) X? ( || ( =dev-lang/python-2.7*[tk] =dev-lang/python-2.6*[tk] =dev-lang/python-2.5*[tk] ) )
 DESCRIPTION=DNS Benchmark Utility
 EAPI=3
 HOMEPAGE=http://code.google.com/p/namebench/
 IUSE=X
 KEYWORDS=~amd64 ~x86
 LICENSE=Apache-2.0
-RDEPEND=>=dev-python/dnspython-1.8.0 >=dev-python/httplib2-0.6 >=dev-python/graphy-1.0 >=dev-python/jinja-2.2.1 >=dev-python/simplejson-2.1.2 >=app-admin/eselect-python-20091230 || ( =dev-lang/python-2.7* =dev-lang/python-2.6* =dev-lang/python-2.5* ) X? ( || ( =dev-lang/python-2.7*[tk] =dev-lang/python-2.6*[tk] =dev-lang/python-2.5*[tk] ) )
+RDEPEND=>=dev-python/dnspython-1.8.0 >=dev-python/httplib2-0.6 >=dev-python/graphy-1.0 >=dev-python/jinja-2.2.1 >=dev-python/simplejson-2.1.2 || ( =dev-lang/python-2.7* =dev-lang/python-2.6* =dev-lang/python-2.5* ) X? ( || ( =dev-lang/python-2.7*[tk] =dev-lang/python-2.6*[tk] =dev-lang/python-2.5*[tk] ) )
 SLOT=0
 SRC_URI=http://namebench.googlecode.com/files/namebench-1.3.1-source.tgz
-_eclasses_=distutils	15ae23f6f8219a009bfcfff7724fe727	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	python	dc3993dc1961bbb13c11bb835390ca29	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68
+_eclasses_=distutils	15ae23f6f8219a009bfcfff7724fe727	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	python	d6df8e9d4686f7550769a9777aa622b9	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68
 _md5_=9c37741a7249ad7b2875738e111b9f6f

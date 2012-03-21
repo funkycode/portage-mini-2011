@@ -1,5 +1,5 @@
 DEFINED_PHASES=configure install postinst prepare setup test
-DEPEND=pam? ( virtual/pam ) kerberos? ( virtual/krb5 ) selinux? ( >=sys-libs/libselinux-1.28 ) skey? ( >=sys-auth/skey-1.1.5-r1 ) ldap? ( net-nds/openldap ) libedit? ( dev-libs/libedit ) >=dev-libs/openssl-0.9.6d >=sys-libs/zlib-1.2.3 tcpd? ( >=sys-apps/tcp-wrappers-7.6 ) X? ( x11-apps/xauth ) userland_GNU? ( virtual/shadow ) dev-util/pkgconfig virtual/os-headers sys-devel/autoconf || ( =sys-devel/automake-1.11* ) >=sys-devel/autoconf-2.68 sys-devel/libtool
+DEPEND=pam? ( virtual/pam ) kerberos? ( virtual/krb5 ) selinux? ( >=sys-libs/libselinux-1.28 ) skey? ( >=sys-auth/skey-1.1.5-r1 ) ldap? ( net-nds/openldap ) libedit? ( dev-libs/libedit ) >=dev-libs/openssl-0.9.6d >=sys-libs/zlib-1.2.3 tcpd? ( >=sys-apps/tcp-wrappers-7.6 ) X? ( x11-apps/xauth ) userland_GNU? ( virtual/shadow ) dev-util/pkgconfig virtual/os-headers sys-devel/autoconf || ( =sys-devel/automake-1.11.1* ) >=sys-devel/autoconf-2.68 sys-devel/libtool
 DESCRIPTION=Port of OpenBSD's free SSH release
 EAPI=2
 HOMEPAGE=http://www.openssh.org/
@@ -9,5 +9,5 @@ LICENSE=as-is
 RDEPEND=pam? ( virtual/pam ) kerberos? ( virtual/krb5 ) selinux? ( >=sys-libs/libselinux-1.28 ) skey? ( >=sys-auth/skey-1.1.5-r1 ) ldap? ( net-nds/openldap ) libedit? ( dev-libs/libedit ) >=dev-libs/openssl-0.9.6d >=sys-libs/zlib-1.2.3 tcpd? ( >=sys-apps/tcp-wrappers-7.6 ) X? ( x11-apps/xauth ) userland_GNU? ( virtual/shadow ) pam? ( >=sys-auth/pambase-20081028 )
 SLOT=0
 SRC_URI=mirror://openbsd/OpenSSH/portable/openssh-5.8p2.tar.gz hpn? ( http://www.psc.edu/networking/projects/hpn-ssh/openssh-5.8p1-hpn13v11.diff.gz mirror://gentoo/openssh-5.8p1-hpn13v11.diff.gz ) ldap? ( mirror://gentoo/openssh-lpk-5.8p2-0.3.14.patch.gz ) X509? ( http://roumenpetrov.info/openssh/x509-6.2.4/openssh-5.8p1+x509-6.2.4.diff.gz )
-_eclasses_=autotools	6379b933727051b4b34f938eb654b935	eutils	ba24d79270ea0022703f16b5de80051c	flag-o-matic	66cb710a2aa184a5687fe1289d7973ab	libtool	5f623f5a211fb1b2d84d88ee49959a54	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	pam	3f746974e1cc47cabe3bd488c08cdc8e	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
+_eclasses_=autotools	532e2870d0e19d852daff17d52cd792d	eutils	ba24d79270ea0022703f16b5de80051c	flag-o-matic	66cb710a2aa184a5687fe1289d7973ab	libtool	5f623f5a211fb1b2d84d88ee49959a54	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	pam	3f746974e1cc47cabe3bd488c08cdc8e	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
 _md5_=140d236189f7f05ddc70e144039375f0

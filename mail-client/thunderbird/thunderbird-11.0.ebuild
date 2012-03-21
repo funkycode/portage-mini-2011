@@ -1,9 +1,10 @@
 # Copyright 1999-2012 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/mail-client/thunderbird/thunderbird-11.0.ebuild,v 1.1 2012/03/16 02:16:06 anarchy Exp $
+# $Header: /var/cvsroot/gentoo-x86/mail-client/thunderbird/thunderbird-11.0.ebuild,v 1.2 2012/03/21 05:24:43 nirbheek Exp $
 
 EAPI="3"
 WANT_AUTOCONF="2.1"
+MOZ_ESR="0"
 
 # This list can be updated using scripts/get_langs.sh from the mozilla overlay
 MOZ_LANGS=(ar ast be bg bn-BD br ca cs da de el en en-GB en-US es-AR es-ES et eu fi
@@ -12,6 +13,10 @@ rm ro ru si sk sl sq sr sv-SE ta-LK tr uk vi zh-CN zh-TW)
 
 # Convert the ebuild version to the upstream mozilla version, used by mozlinguas
 MOZ_PV="${PV/_beta/b}"
+# ESR releases have slightly version numbers
+if [[ ${MOZ_ESR} == 1 ]]; then
+	MOZ_PV="${MOZ_PV}esr"
+fi
 MOZ_P="${PN}-${MOZ_PV}"
 
 # Enigmail version
@@ -75,7 +80,11 @@ DEPEND="${RDEPEND}
 if [[ ${PV} =~ beta ]]; then
 	S="${WORKDIR}/comm-beta"
 else
-	S="${WORKDIR}/comm-release"
+	if [[ ${MOZ_ESR} == 1 ]]; then
+		S="${WORKDIR}/comm-esr${PV%%.*}"
+	else
+		S="${WORKDIR}/comm-release"
+	fi
 fi
 
 pkg_setup() {

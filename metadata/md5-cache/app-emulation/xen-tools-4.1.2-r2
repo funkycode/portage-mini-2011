@@ -1,15 +1,15 @@
 DEFINED_PHASES=compile install postinst postrm prepare setup
-DEPEND=<dev-libs/yajl-2 dev-python/lxml dev-python/pypam dev-python/pyxml sys-libs/zlib hvm? ( media-libs/libsdl sys-power/iasl ) api? ( dev-libs/libxml2 net-misc/curl ) sys-devel/gcc dev-lang/perl app-misc/pax-utils dev-ml/findlib doc? ( app-doc/doxygen dev-tex/latex2html[png,gif] media-gfx/transfig media-gfx/graphviz dev-tex/xcolor dev-texlive/texlive-latexextra virtual/latex-base dev-tex/latexmk dev-texlive/texlive-latex dev-texlive/texlive-pictures dev-texlive/texlive-latexrecommended ) hvm? ( x11-proto/xproto sys-devel/dev86 ) pygrub? ( dev-lang/python[ncurses] ) >=app-admin/eselect-python-20091230 =dev-lang/python-2* =dev-lang/python-2*[xml,threads]
+DEPEND=<dev-libs/yajl-2 dev-python/lxml dev-python/pypam dev-python/pyxml sys-libs/zlib hvm? ( media-libs/libsdl sys-power/iasl ) api? ( dev-libs/libxml2 net-misc/curl ) sys-devel/gcc dev-lang/perl app-misc/pax-utils dev-ml/findlib doc? ( app-doc/doxygen dev-tex/latex2html[png,gif] media-gfx/transfig media-gfx/graphviz dev-tex/xcolor dev-texlive/texlive-latexextra virtual/latex-base dev-tex/latexmk dev-texlive/texlive-latex dev-texlive/texlive-pictures dev-texlive/texlive-latexrecommended ) hvm? ( x11-proto/xproto sys-devel/dev86 ) pygrub? ( dev-lang/python[ncurses] ) =dev-lang/python-2* =dev-lang/python-2*[xml,threads]
 DESCRIPTION=Xend daemon and tools
 EAPI=4
 HOMEPAGE=http://xen.org/
 IUSE=api custom-cflags debug doc flask hvm qemu pygrub screen xend
 KEYWORDS=~amd64 ~x86
 LICENSE=GPL-2
-RDEPEND=<dev-libs/yajl-2 dev-python/lxml dev-python/pypam dev-python/pyxml sys-libs/zlib hvm? ( media-libs/libsdl sys-power/iasl ) api? ( dev-libs/libxml2 net-misc/curl ) sys-apps/iproute2 net-misc/bridge-utils >=dev-lang/ocaml-3.12.0 screen? ( app-misc/screen app-admin/logrotate ) || ( sys-fs/udev sys-apps/hotplug ) >=app-admin/eselect-python-20091230 =dev-lang/python-2* =dev-lang/python-2*[xml,threads]
+RDEPEND=<dev-libs/yajl-2 dev-python/lxml dev-python/pypam dev-python/pyxml sys-libs/zlib hvm? ( media-libs/libsdl sys-power/iasl ) api? ( dev-libs/libxml2 net-misc/curl ) sys-apps/iproute2 net-misc/bridge-utils >=dev-lang/ocaml-3.12.0 screen? ( app-misc/screen app-admin/logrotate ) || ( sys-fs/udev sys-apps/hotplug ) =dev-lang/python-2* =dev-lang/python-2*[xml,threads]
 REQUIRED_USE=hvm? ( qemu )
 RESTRICT=test
 SLOT=0
 SRC_URI=http://bits.xensource.com/oss-xen/release/4.1.2/xen-4.1.2.tar.gz http://xenbits.xensource.com/xen-extfiles/ipxe-git-v1.0.0.tar.gz
-_eclasses_=eutils	ba24d79270ea0022703f16b5de80051c	flag-o-matic	66cb710a2aa184a5687fe1289d7973ab	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	python	dc3993dc1961bbb13c11bb835390ca29	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
+_eclasses_=eutils	ba24d79270ea0022703f16b5de80051c	flag-o-matic	66cb710a2aa184a5687fe1289d7973ab	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	python	d6df8e9d4686f7550769a9777aa622b9	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
 _md5_=9930c1b19cbe2ab5a48c9bfe77b2e73c

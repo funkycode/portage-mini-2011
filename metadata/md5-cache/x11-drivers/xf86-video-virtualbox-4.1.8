@@ -1,13 +1,13 @@
 DEFINED_PHASES=compile configure install postinst postrm preinst prepare setup
-DEPEND=x11-base/xorg-server[-minimal] x11-libs/libXcomposite >=dev-util/kbuild-0.1.999 =dev-lang/python-2* >=dev-lang/yasm-0.6.2 sys-devel/dev86 sys-power/iasl x11-proto/fontsproto x11-proto/randrproto x11-proto/renderproto x11-proto/xextproto x11-proto/xineramaproto x11-proto/xproto x11-libs/libXdmcp x11-libs/libXau x11-libs/libX11 x11-libs/libXfixes x11-libs/libXext dri? ( x11-proto/xf86driproto >=x11-libs/libdrm-2.4.5 ) kernel_linux? ( sys-apps/module-init-tools ) sys-apps/sed kernel_linux? ( virtual/linux-sources ) >=app-admin/eselect-python-20091230
+DEPEND=x11-base/xorg-server[-minimal] x11-libs/libXcomposite >=dev-util/kbuild-0.1.999 =dev-lang/python-2* >=dev-lang/yasm-0.6.2 sys-devel/dev86 sys-power/iasl x11-proto/fontsproto x11-proto/randrproto x11-proto/renderproto x11-proto/xextproto x11-proto/xineramaproto x11-proto/xproto x11-libs/libXdmcp x11-libs/libXau x11-libs/libX11 x11-libs/libXfixes x11-libs/libXext dri? ( x11-proto/xf86driproto >=x11-libs/libdrm-2.4.5 ) kernel_linux? ( sys-apps/module-init-tools ) sys-apps/sed kernel_linux? ( virtual/linux-sources )
 DESCRIPTION=VirtualBox video driver
 EAPI=2
 HOMEPAGE=http://www.virtualbox.org/
 IUSE=dri kernel_linux
 KEYWORDS=amd64 ~x86
 LICENSE=GPL-2
-RDEPEND=x11-base/xorg-server[-minimal] x11-libs/libXcomposite kernel_linux? ( sys-apps/module-init-tools ) >=app-admin/eselect-python-20091230
+RDEPEND=x11-base/xorg-server[-minimal] x11-libs/libXcomposite kernel_linux? ( sys-apps/module-init-tools )
 SLOT=0
 SRC_URI=http://download.virtualbox.org/virtualbox/4.1.8/VirtualBox-4.1.8.tar.bz2
-_eclasses_=eutils	ba24d79270ea0022703f16b5de80051c	linux-info	cc184ad3383ffb6ffbaa82f53608e77f	linux-mod	a4e07f78bacb6b129ea7b18ad060dbfc	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	python	dc3993dc1961bbb13c11bb835390ca29	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e	versionator	6601b4c5b3f019a993db59a50e1854e4
+_eclasses_=eutils	ba24d79270ea0022703f16b5de80051c	linux-info	cc184ad3383ffb6ffbaa82f53608e77f	linux-mod	a4e07f78bacb6b129ea7b18ad060dbfc	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	python	d6df8e9d4686f7550769a9777aa622b9	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e	versionator	6601b4c5b3f019a993db59a50e1854e4
 _md5_=7e633c8cda5d1aaeed7b9f99930d0429

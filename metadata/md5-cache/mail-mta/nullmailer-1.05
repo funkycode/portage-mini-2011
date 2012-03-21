@@ -1,5 +1,5 @@
 DEFINED_PHASES=compile config install postinst setup unpack
-DEPEND=sys-apps/groff || ( =sys-devel/automake-1.11* ) >=sys-devel/autoconf-2.68 sys-devel/libtool
+DEPEND=sys-apps/groff || ( =sys-devel/automake-1.11.1* ) >=sys-devel/autoconf-2.68 sys-devel/libtool
 DESCRIPTION=Simple relay-only local mail transport agent
 HOMEPAGE=http://untroubled.org/nullmailer/
 KEYWORDS=amd64 ppc x86
@@ -7,5 +7,5 @@ LICENSE=GPL-2
 RDEPEND=virtual/shadow virtual/logger !mail-mta/courier !mail-mta/esmtp !mail-mta/exim !mail-mta/mini-qmail !mail-mta/msmtp !mail-mta/nbsmtp !mail-mta/netqmail !mail-mta/postfix !mail-mta/qmail-ldap !mail-mta/sendmail !mail-mta/ssmtp
 SLOT=0
 SRC_URI=http://untroubled.org/nullmailer/archive/nullmailer-1.05.tar.gz mirror://debian/pool/main/n/nullmailer/nullmailer_1.04-1.diff.gz
-_eclasses_=autotools	6379b933727051b4b34f938eb654b935	eutils	ba24d79270ea0022703f16b5de80051c	flag-o-matic	66cb710a2aa184a5687fe1289d7973ab	libtool	5f623f5a211fb1b2d84d88ee49959a54	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
+_eclasses_=autotools	532e2870d0e19d852daff17d52cd792d	eutils	ba24d79270ea0022703f16b5de80051c	flag-o-matic	66cb710a2aa184a5687fe1289d7973ab	libtool	5f623f5a211fb1b2d84d88ee49959a54	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
 _md5_=0f25da6204bc2e0ba098fd6288994b5e

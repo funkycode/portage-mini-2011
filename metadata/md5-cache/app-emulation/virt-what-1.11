@@ -1,5 +1,5 @@
 DEFINED_PHASES=install
-DEPEND=dev-lang/perl || ( =sys-devel/automake-1.11* ) >=sys-devel/autoconf-2.68 sys-devel/libtool
+DEPEND=dev-lang/perl || ( =sys-devel/automake-1.11.1* ) >=sys-devel/autoconf-2.68 sys-devel/libtool
 DESCRIPTION=Detects if the current machine is running in a virtual machine
 EAPI=3
 HOMEPAGE=http://people.redhat.com/~rjones/virt-what/
@@ -8,5 +8,5 @@ LICENSE=GPL-2
 RDEPEND=app-shells/bash sys-apps/dmidecode
 SLOT=0
 SRC_URI=http://people.redhat.com/~rjones/virt-what/files/virt-what-1.11.tar.gz
-_eclasses_=autotools	6379b933727051b4b34f938eb654b935	eutils	ba24d79270ea0022703f16b5de80051c	libtool	5f623f5a211fb1b2d84d88ee49959a54	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
+_eclasses_=autotools	532e2870d0e19d852daff17d52cd792d	eutils	ba24d79270ea0022703f16b5de80051c	libtool	5f623f5a211fb1b2d84d88ee49959a54	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
 _md5_=b0c5c079f2091a62d2d03df975cbbe6b

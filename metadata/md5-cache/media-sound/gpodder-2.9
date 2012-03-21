@@ -1,13 +1,13 @@
 DEFINED_PHASES=compile install postinst postrm preinst prepare setup test
-DEPEND=dev-python/eyeD3 dev-python/feedparser dev-python/imaging >=dev-python/mygpoclient-1.4 >=dev-python/pygtk-2.12 dbus? ( dev-python/dbus-python ) bluetooth? ( net-wireless/bluez ) gstreamer? ( dev-python/gst-python ) ipod? ( media-libs/libgpod[python] ) mtp? ( >=media-libs/libmtp-1.0.0 ) webkit? ( dev-python/pywebkitgtk ) dev-util/intltool sys-apps/help2man test? ( dev-python/minimock dev-python/coverage ) >=app-admin/eselect-python-20091230 || ( =dev-lang/python-2.7* =dev-lang/python-2.6* ) || ( =dev-lang/python-2.7*[sqlite] =dev-lang/python-2.6*[sqlite] ) >=sys-apps/sed-4
+DEPEND=dev-python/eyeD3 dev-python/feedparser dev-python/imaging >=dev-python/mygpoclient-1.4 >=dev-python/pygtk-2.12 dbus? ( dev-python/dbus-python ) bluetooth? ( net-wireless/bluez ) gstreamer? ( dev-python/gst-python ) ipod? ( media-libs/libgpod[python] ) mtp? ( >=media-libs/libmtp-1.0.0 ) webkit? ( dev-python/pywebkitgtk ) dev-util/intltool sys-apps/help2man test? ( dev-python/minimock dev-python/coverage ) || ( =dev-lang/python-2.7* =dev-lang/python-2.6* ) || ( =dev-lang/python-2.7*[sqlite] =dev-lang/python-2.6*[sqlite] ) >=sys-apps/sed-4
 DESCRIPTION=gPodder is a Podcast receiver/catcher written in Python, using GTK.
 EAPI=3
 HOMEPAGE=http://gpodder.org/
 IUSE=+dbus bluetooth gstreamer ipod mtp test webkit
 KEYWORDS=~amd64 ~x86 ~amd64-linux ~x86-linux ~x86-solaris
 LICENSE=GPL-3
-RDEPEND=dev-python/eyeD3 dev-python/feedparser dev-python/imaging >=dev-python/mygpoclient-1.4 >=dev-python/pygtk-2.12 dbus? ( dev-python/dbus-python ) bluetooth? ( net-wireless/bluez ) gstreamer? ( dev-python/gst-python ) ipod? ( media-libs/libgpod[python] ) mtp? ( >=media-libs/libmtp-1.0.0 ) webkit? ( dev-python/pywebkitgtk ) >=app-admin/eselect-python-20091230 || ( =dev-lang/python-2.7* =dev-lang/python-2.6* ) || ( =dev-lang/python-2.7*[sqlite] =dev-lang/python-2.6*[sqlite] )
+RDEPEND=dev-python/eyeD3 dev-python/feedparser dev-python/imaging >=dev-python/mygpoclient-1.4 >=dev-python/pygtk-2.12 dbus? ( dev-python/dbus-python ) bluetooth? ( net-wireless/bluez ) gstreamer? ( dev-python/gst-python ) ipod? ( media-libs/libgpod[python] ) mtp? ( >=media-libs/libmtp-1.0.0 ) webkit? ( dev-python/pywebkitgtk ) || ( =dev-lang/python-2.7* =dev-lang/python-2.6* ) || ( =dev-lang/python-2.7*[sqlite] =dev-lang/python-2.6*[sqlite] )
 SLOT=0
 SRC_URI=mirror://berlios/gpodder/gpodder-2.9.tar.gz
-_eclasses_=distutils	15ae23f6f8219a009bfcfff7724fe727	gnome2-utils	b5ca2ccadb60760889faa3bccba121d9	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	python	dc3993dc1961bbb13c11bb835390ca29	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68
+_eclasses_=distutils	15ae23f6f8219a009bfcfff7724fe727	gnome2-utils	b5ca2ccadb60760889faa3bccba121d9	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	python	d6df8e9d4686f7550769a9777aa622b9	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68
 _md5_=6b7a2e2c0b60da7a5d46fa57859acb00

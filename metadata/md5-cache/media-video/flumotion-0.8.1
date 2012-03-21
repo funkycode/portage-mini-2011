@@ -1,13 +1,13 @@
 DEFINED_PHASES=compile configure install postinst postrm prepare test
-DEPEND=dev-python/gst-python:0.10 dev-python/kiwi dev-python/pycairo =dev-python/pygtk-2* dev-python/twisted media-libs/gstreamer:0.10 media-libs/gst-plugins-base:0.10 media-libs/gst-plugins-good:0.10 media-plugins/gst-plugins-ogg:0.10 media-plugins/gst-plugins-theora:0.10 media-plugins/gst-plugins-vorbis:0.10 sys-devel/gettext doc? ( dev-python/epydoc ) test? ( dev-python/icalendar dev-python/pychecker dev-python/twisted-conch ) >=app-admin/eselect-python-20091230 || ( =dev-lang/python-2.7* =dev-lang/python-2.6* ) test? ( !prefix? ( x11-base/xorg-server[xvfb] ) x11-apps/xhost )
+DEPEND=dev-python/gst-python:0.10 dev-python/kiwi dev-python/pycairo =dev-python/pygtk-2* dev-python/twisted media-libs/gstreamer:0.10 media-libs/gst-plugins-base:0.10 media-libs/gst-plugins-good:0.10 media-plugins/gst-plugins-ogg:0.10 media-plugins/gst-plugins-theora:0.10 media-plugins/gst-plugins-vorbis:0.10 sys-devel/gettext doc? ( dev-python/epydoc ) test? ( dev-python/icalendar dev-python/pychecker dev-python/twisted-conch ) || ( =dev-lang/python-2.7* =dev-lang/python-2.6* ) test? ( !prefix? ( x11-base/xorg-server[xvfb] ) x11-apps/xhost )
 DESCRIPTION=Flumotion Streaming server
 EAPI=3
 HOMEPAGE=http://www.flumotion.net/
 IUSE=doc test test
 KEYWORDS=~amd64 ~x86
 LICENSE=GPL-2
-RDEPEND=dev-python/gst-python:0.10 dev-python/kiwi dev-python/pycairo =dev-python/pygtk-2* dev-python/twisted media-libs/gstreamer:0.10 media-libs/gst-plugins-base:0.10 media-libs/gst-plugins-good:0.10 media-plugins/gst-plugins-ogg:0.10 media-plugins/gst-plugins-theora:0.10 media-plugins/gst-plugins-vorbis:0.10 >=app-admin/eselect-python-20091230 || ( =dev-lang/python-2.7* =dev-lang/python-2.6* )
+RDEPEND=dev-python/gst-python:0.10 dev-python/kiwi dev-python/pycairo =dev-python/pygtk-2* dev-python/twisted media-libs/gstreamer:0.10 media-libs/gst-plugins-base:0.10 media-libs/gst-plugins-good:0.10 media-plugins/gst-plugins-ogg:0.10 media-plugins/gst-plugins-theora:0.10 media-plugins/gst-plugins-vorbis:0.10 || ( =dev-lang/python-2.7* =dev-lang/python-2.6* )
 SLOT=0
 SRC_URI=http://www.flumotion.net/src/flumotion/flumotion-0.8.1.tar.bz2
-_eclasses_=eutils	ba24d79270ea0022703f16b5de80051c	flag-o-matic	66cb710a2aa184a5687fe1289d7973ab	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	python	dc3993dc1961bbb13c11bb835390ca29	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e	virtualx	0c41ff55e46b959d9457dde69e7a09d9
+_eclasses_=eutils	ba24d79270ea0022703f16b5de80051c	flag-o-matic	66cb710a2aa184a5687fe1289d7973ab	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	python	d6df8e9d4686f7550769a9777aa622b9	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e	virtualx	0c41ff55e46b959d9457dde69e7a09d9
 _md5_=9feb86b541f9b6533c9531d0dde5ee4e

@@ -1,12 +1,12 @@
 DEFINED_PHASES=compile install postinst postrm prepare setup
-DEPEND=>=app-admin/eselect-python-20091230 =dev-lang/python-2*
+DEPEND==dev-lang/python-2*
 DESCRIPTION=Conky weather forecast script with support for language files
 EAPI=3
 HOMEPAGE=https://launchpad.net/~conky-companions
 KEYWORDS=~amd64 ~x86
 LICENSE=GPL-3
-RDEPEND=app-admin/conky >=app-admin/eselect-python-20091230 =dev-lang/python-2*
+RDEPEND=app-admin/conky =dev-lang/python-2*
 SLOT=0
 SRC_URI=https://launchpad.net/~conky-companions/+archive/ppa/+files/conkyforecast_2.20.tar.gz
-_eclasses_=distutils	15ae23f6f8219a009bfcfff7724fe727	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	python	dc3993dc1961bbb13c11bb835390ca29	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68
+_eclasses_=distutils	15ae23f6f8219a009bfcfff7724fe727	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	python	d6df8e9d4686f7550769a9777aa622b9	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68
 _md5_=65a0814a9a6180ba6b84ca4201d46a92

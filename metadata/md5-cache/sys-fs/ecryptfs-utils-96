@@ -1,13 +1,13 @@
 DEFINED_PHASES=compile configure install postinst postrm prepare setup
-DEPEND=>=sys-apps/keyutils-1.0 >=dev-libs/libgcrypt-1.2.0 dev-libs/nss gpg? ( app-crypt/gpgme ) gtk? ( x11-libs/gtk+:2 ) openssl? ( >=dev-libs/openssl-0.9.7 ) pam? ( sys-libs/pam ) pkcs11? ( >=dev-libs/openssl-0.9.7 >=dev-libs/pkcs11-helper-1.04 ) tpm? ( app-crypt/trousers ) >=dev-util/pkgconfig-0.9.0 sys-devel/gettext >=dev-util/intltool-0.41.0 python? ( dev-lang/swig ) >=app-admin/eselect-python-20091230 python? ( || ( =dev-lang/python-2.7* =dev-lang/python-2.6* =dev-lang/python-2.5* ) ) || ( =sys-devel/automake-1.11* ) >=sys-devel/autoconf-2.68 sys-devel/libtool
+DEPEND=>=sys-apps/keyutils-1.0 >=dev-libs/libgcrypt-1.2.0 dev-libs/nss gpg? ( app-crypt/gpgme ) gtk? ( x11-libs/gtk+:2 ) openssl? ( >=dev-libs/openssl-0.9.7 ) pam? ( sys-libs/pam ) pkcs11? ( >=dev-libs/openssl-0.9.7 >=dev-libs/pkcs11-helper-1.04 ) tpm? ( app-crypt/trousers ) >=dev-util/pkgconfig-0.9.0 sys-devel/gettext >=dev-util/intltool-0.41.0 python? ( dev-lang/swig ) python? ( || ( =dev-lang/python-2.7* =dev-lang/python-2.6* =dev-lang/python-2.5* ) ) || ( =sys-devel/automake-1.11.1* ) >=sys-devel/autoconf-2.68 sys-devel/libtool
 DESCRIPTION=eCryptfs userspace utilities
 EAPI=4
 HOMEPAGE=https://launchpad.net/ecryptfs
 IUSE=doc gpg gtk openssl pam pkcs11 python suid tpm
 KEYWORDS=~amd64 ~x86
 LICENSE=GPL-2
-RDEPEND=>=sys-apps/keyutils-1.0 >=dev-libs/libgcrypt-1.2.0 dev-libs/nss gpg? ( app-crypt/gpgme ) gtk? ( x11-libs/gtk+:2 ) openssl? ( >=dev-libs/openssl-0.9.7 ) pam? ( sys-libs/pam ) pkcs11? ( >=dev-libs/openssl-0.9.7 >=dev-libs/pkcs11-helper-1.04 ) tpm? ( app-crypt/trousers ) >=app-admin/eselect-python-20091230 python? ( || ( =dev-lang/python-2.7* =dev-lang/python-2.6* =dev-lang/python-2.5* ) )
+RDEPEND=>=sys-apps/keyutils-1.0 >=dev-libs/libgcrypt-1.2.0 dev-libs/nss gpg? ( app-crypt/gpgme ) gtk? ( x11-libs/gtk+:2 ) openssl? ( >=dev-libs/openssl-0.9.7 ) pam? ( sys-libs/pam ) pkcs11? ( >=dev-libs/openssl-0.9.7 >=dev-libs/pkcs11-helper-1.04 ) tpm? ( app-crypt/trousers ) python? ( || ( =dev-lang/python-2.7* =dev-lang/python-2.6* =dev-lang/python-2.5* ) )
 SLOT=0
 SRC_URI=http://launchpad.net/ecryptfs/trunk/96/+download/ecryptfs-utils_96.orig.tar.gz
-_eclasses_=autotools	6379b933727051b4b34f938eb654b935	eutils	ba24d79270ea0022703f16b5de80051c	flag-o-matic	66cb710a2aa184a5687fe1289d7973ab	libtool	5f623f5a211fb1b2d84d88ee49959a54	linux-info	cc184ad3383ffb6ffbaa82f53608e77f	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	pam	3f746974e1cc47cabe3bd488c08cdc8e	python	dc3993dc1961bbb13c11bb835390ca29	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e	versionator	6601b4c5b3f019a993db59a50e1854e4
+_eclasses_=autotools	532e2870d0e19d852daff17d52cd792d	eutils	ba24d79270ea0022703f16b5de80051c	flag-o-matic	66cb710a2aa184a5687fe1289d7973ab	libtool	5f623f5a211fb1b2d84d88ee49959a54	linux-info	cc184ad3383ffb6ffbaa82f53608e77f	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	pam	3f746974e1cc47cabe3bd488c08cdc8e	python	d6df8e9d4686f7550769a9777aa622b9	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e	versionator	6601b4c5b3f019a993db59a50e1854e4
 _md5_=68a62f5d11ec40e0147b87a9310938c9

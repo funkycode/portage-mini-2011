@@ -1,5 +1,5 @@
 DEFINED_PHASES=configure install prepare
-DEPEND=sys-libs/zlib virtual/ffmpeg dev-util/pkgconfig || ( =sys-devel/automake-1.11* ) >=sys-devel/autoconf-2.68 sys-devel/libtool
+DEPEND=sys-libs/zlib virtual/ffmpeg dev-util/pkgconfig || ( =sys-devel/automake-1.11.1* ) >=sys-devel/autoconf-2.68 sys-devel/libtool
 DESCRIPTION=An FFmpeg based source library for easy frame accurate access
 EAPI=4
 HOMEPAGE=https://code.google.com/p/ffmpegsource/
@@ -9,5 +9,5 @@ LICENSE=MIT
 RDEPEND=sys-libs/zlib virtual/ffmpeg
 SLOT=0
 SRC_URI=https://ffmpegsource.googlecode.com/files/ffms-2.16-src.tar.bz2
-_eclasses_=autotools	6379b933727051b4b34f938eb654b935	eutils	ba24d79270ea0022703f16b5de80051c	libtool	5f623f5a211fb1b2d84d88ee49959a54	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
+_eclasses_=autotools	532e2870d0e19d852daff17d52cd792d	eutils	ba24d79270ea0022703f16b5de80051c	libtool	5f623f5a211fb1b2d84d88ee49959a54	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
 _md5_=2ec00d376628948d0cebb3378dacd1f5

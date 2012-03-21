@@ -1,12 +1,12 @@
 DEFINED_PHASES=compile install postinst postrm prepare test
-DEPEND=dev-python/python-dateutil:python-2 dev-python/setuptools >=app-admin/eselect-python-20091230 =dev-lang/python-2*
+DEPEND=dev-python/python-dateutil:python-2 dev-python/setuptools =dev-lang/python-2*
 DESCRIPTION=A full featured Python package for parsing and generating vCard and vCalendar files
 EAPI=3
 HOMEPAGE=http://vobject.skyhouseconsulting.com/ http://pypi.python.org/pypi/vobject
 KEYWORDS=amd64 x86
 LICENSE=Apache-1.1
-RDEPEND=dev-python/python-dateutil:python-2 >=app-admin/eselect-python-20091230 =dev-lang/python-2*
+RDEPEND=dev-python/python-dateutil:python-2 =dev-lang/python-2*
 SLOT=0
 SRC_URI=http://vobject.skyhouseconsulting.com/vobject-0.8.1c.tar.gz
-_eclasses_=distutils	15ae23f6f8219a009bfcfff7724fe727	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	python	dc3993dc1961bbb13c11bb835390ca29	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68
+_eclasses_=distutils	15ae23f6f8219a009bfcfff7724fe727	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	python	d6df8e9d4686f7550769a9777aa622b9	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68
 _md5_=3601ba51dcbed2dffcc9a5aa9e28e5e4

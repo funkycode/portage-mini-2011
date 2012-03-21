@@ -1,13 +1,13 @@
 DEFINED_PHASES=compile install postinst postrm prepare
-DEPEND=dev-db/postgresql-base >=app-admin/eselect-python-20091230 =dev-lang/python-2*
+DEPEND=dev-db/postgresql-base =dev-lang/python-2*
 DESCRIPTION=A Python interface for the PostgreSQL database.
 EAPI=3
 HOMEPAGE=http://www.pygresql.org/
 IUSE=doc
 KEYWORDS=~alpha ~amd64 ~hppa ~ia64 ~ppc ~sparc ~x86
 LICENSE=as-is
-RDEPEND=dev-db/postgresql-base >=app-admin/eselect-python-20091230 =dev-lang/python-2*
+RDEPEND=dev-db/postgresql-base =dev-lang/python-2*
 SLOT=0
 SRC_URI=ftp://ftp.pygresql.org/pub/distrib/PyGreSQL-4.0.tgz
-_eclasses_=distutils	15ae23f6f8219a009bfcfff7724fe727	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	python	dc3993dc1961bbb13c11bb835390ca29	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68
+_eclasses_=distutils	15ae23f6f8219a009bfcfff7724fe727	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	python	d6df8e9d4686f7550769a9777aa622b9	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68
 _md5_=4f1f4aa3e902b5d09032a4f86335546d

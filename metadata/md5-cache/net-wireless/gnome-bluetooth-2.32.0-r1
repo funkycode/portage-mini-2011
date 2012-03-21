@@ -1,5 +1,5 @@
 DEFINED_PHASES=compile configure install postinst postrm preinst prepare setup unpack
-DEPEND=>=dev-libs/glib-2.26.1-r1:2 >=x11-libs/gtk+-2.19.1:2 >=x11-libs/libnotify-0.4.3 >=gnome-base/gconf-2.6:2 >=dev-libs/dbus-glib-0.74 dev-libs/libunique:1 nautilus? ( >=gnome-extra/nautilus-sendto-2.31.7 ) !!net-wireless/bluez-gnome app-text/docbook-xml-dtd:4.1.2 app-text/gnome-doc-utils app-text/scrollkeeper dev-libs/libxml2 dev-util/intltool dev-util/pkgconfig sys-devel/gettext x11-libs/libX11 x11-libs/libXi x11-proto/xproto doc? ( >=dev-util/gtk-doc-1.9 ) gnome-base/gnome-common dev-util/gtk-doc-am >=sys-apps/sed-4 || ( =sys-devel/automake-1.11* ) >=sys-devel/autoconf-2.68 sys-devel/libtool
+DEPEND=>=dev-libs/glib-2.26.1-r1:2 >=x11-libs/gtk+-2.19.1:2 >=x11-libs/libnotify-0.4.3 >=gnome-base/gconf-2.6:2 >=dev-libs/dbus-glib-0.74 dev-libs/libunique:1 nautilus? ( >=gnome-extra/nautilus-sendto-2.31.7 ) !!net-wireless/bluez-gnome app-text/docbook-xml-dtd:4.1.2 app-text/gnome-doc-utils app-text/scrollkeeper dev-libs/libxml2 dev-util/intltool dev-util/pkgconfig sys-devel/gettext x11-libs/libX11 x11-libs/libXi x11-proto/xproto doc? ( >=dev-util/gtk-doc-1.9 ) gnome-base/gnome-common dev-util/gtk-doc-am >=sys-apps/sed-4 || ( =sys-devel/automake-1.11.1* ) >=sys-devel/autoconf-2.68 sys-devel/libtool
 DESCRIPTION=Fork of bluez-gnome focused on integration with GNOME
 EAPI=4
 HOMEPAGE=http://live.gnome.org/GnomeBluetooth
@@ -10,5 +10,5 @@ RDEPEND=>=dev-libs/glib-2.26.1-r1:2 >=x11-libs/gtk+-2.19.1:2 >=x11-libs/libnotif
 REQUIRED_USE=test? ( !doc )
 SLOT=2
 SRC_URI=mirror://gnome/sources/gnome-bluetooth/2.32/gnome-bluetooth-2.32.0.tar.bz2 mirror://gentoo/introspection.m4.bz2
-_eclasses_=autotools	6379b933727051b4b34f938eb654b935	eutils	ba24d79270ea0022703f16b5de80051c	fdo-mime	0acfe1a88fd8751a1d5dc671168219fa	gnome.org	8fef8f967214f56e08fa92d61163d891	gnome2	490ce89f5d905297c7a34898fa498bd0	gnome2-utils	b5ca2ccadb60760889faa3bccba121d9	libtool	5f623f5a211fb1b2d84d88ee49959a54	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e	versionator	6601b4c5b3f019a993db59a50e1854e4
+_eclasses_=autotools	532e2870d0e19d852daff17d52cd792d	eutils	ba24d79270ea0022703f16b5de80051c	fdo-mime	0acfe1a88fd8751a1d5dc671168219fa	gnome.org	8fef8f967214f56e08fa92d61163d891	gnome2	490ce89f5d905297c7a34898fa498bd0	gnome2-utils	b5ca2ccadb60760889faa3bccba121d9	libtool	5f623f5a211fb1b2d84d88ee49959a54	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e	versionator	6601b4c5b3f019a993db59a50e1854e4
 _md5_=cbe51e60f4cf0f20952d8918d7f499c6

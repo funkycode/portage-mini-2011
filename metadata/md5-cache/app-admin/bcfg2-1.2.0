@@ -1,13 +1,13 @@
 DEFINED_PHASES=compile install postinst postrm prepare
-DEPEND=>=app-admin/eselect-python-20091230 || ( =dev-lang/python-2.7* =dev-lang/python-2.6* )
+DEPEND=|| ( =dev-lang/python-2.7* =dev-lang/python-2.6* )
 DESCRIPTION=configuration management tool
 EAPI=3
 HOMEPAGE=http://bcfg2.org
 IUSE=server
 KEYWORDS=~amd64 ~x86 ~amd64-linux ~x86-linux ~x64-solaris
 LICENSE=BSD
-RDEPEND=app-portage/gentoolkit server? ( dev-python/lxml dev-libs/libgamin[python] ) >=app-admin/eselect-python-20091230 || ( =dev-lang/python-2.7* =dev-lang/python-2.6* )
+RDEPEND=app-portage/gentoolkit server? ( dev-python/lxml dev-libs/libgamin[python] ) || ( =dev-lang/python-2.7* =dev-lang/python-2.6* )
 SLOT=0
 SRC_URI=ftp://ftp.mcs.anl.gov/pub/bcfg/bcfg2-1.2.0.tar.gz
-_eclasses_=distutils	15ae23f6f8219a009bfcfff7724fe727	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	python	dc3993dc1961bbb13c11bb835390ca29	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68
+_eclasses_=distutils	15ae23f6f8219a009bfcfff7724fe727	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	python	d6df8e9d4686f7550769a9777aa622b9	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68
 _md5_=e2fa6ccad825bf266ec9f8e12b702790

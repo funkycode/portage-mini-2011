@@ -1,13 +1,13 @@
 DEFINED_PHASES=install prepare setup test
-DEPEND=app-arch/unzip >=app-admin/eselect-python-20091230 =dev-lang/python-2* =dev-lang/python-2*[xml]
+DEPEND=app-arch/unzip =dev-lang/python-2* =dev-lang/python-2*[xml]
 DESCRIPTION=Convert MS Office xlsx files to CSV
 EAPI=4
 HOMEPAGE=https://github.com/dilshod/xlsx2csv
 IUSE=test
 KEYWORDS=~amd64 ~x86
 LICENSE=GPL-3
-RDEPEND=>=app-admin/eselect-python-20091230 =dev-lang/python-2* =dev-lang/python-2*[xml]
+RDEPEND==dev-lang/python-2* =dev-lang/python-2*[xml]
 SLOT=0
 SRC_URI=mirror://github/dilshod/xlsx2csv/xlsx2csv-0.17.zip
-_eclasses_=multilib	5f4ad6cf85e365e8f0c6050ddd21659e	python	dc3993dc1961bbb13c11bb835390ca29	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68
+_eclasses_=multilib	5f4ad6cf85e365e8f0c6050ddd21659e	python	d6df8e9d4686f7550769a9777aa622b9	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68
 _md5_=7e422bfc7dd59a00d821c5799efe18ef

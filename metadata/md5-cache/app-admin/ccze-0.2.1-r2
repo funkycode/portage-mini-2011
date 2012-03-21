@@ -1,5 +1,5 @@
 DEFINED_PHASES=compile install unpack
-DEPEND=dev-libs/libpcre >=sys-apps/sed-4 || ( =sys-devel/automake-1.11* ) >=sys-devel/autoconf-2.68 sys-devel/libtool
+DEPEND=dev-libs/libpcre >=sys-apps/sed-4 || ( =sys-devel/automake-1.11.1* ) >=sys-devel/autoconf-2.68 sys-devel/libtool
 DESCRIPTION=A flexible and fast logfile colorizer
 HOMEPAGE=http://dev.gentoo.org/~joker/ccze/ccze.txt
 KEYWORDS=amd64 ppc x86 ~x86-fbsd
@@ -8,5 +8,5 @@ RDEPEND=dev-libs/libpcre
 RESTRICT=test
 SLOT=0
 SRC_URI=mirror://gentoo/ccze-0.2.1.tar.gz
-_eclasses_=autotools	6379b933727051b4b34f938eb654b935	eutils	ba24d79270ea0022703f16b5de80051c	fixheadtails	f96922acc9287f1e889a1e50a6c8986e	libtool	5f623f5a211fb1b2d84d88ee49959a54	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
+_eclasses_=autotools	532e2870d0e19d852daff17d52cd792d	eutils	ba24d79270ea0022703f16b5de80051c	fixheadtails	f96922acc9287f1e889a1e50a6c8986e	libtool	5f623f5a211fb1b2d84d88ee49959a54	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
 _md5_=8f99bf6587ca25bc18de251ef719cc0f

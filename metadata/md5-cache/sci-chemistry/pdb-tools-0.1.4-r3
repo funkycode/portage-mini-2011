@@ -1,12 +1,12 @@
 DEFINED_PHASES=compile install postinst postrm prepare setup
-DEPEND=>=app-admin/eselect-python-20091230 =dev-lang/python-2*
+DEPEND==dev-lang/python-2*
 DESCRIPTION=Tools for manipulating and doing calculations on wwPDB macromolecule structure files
 EAPI=3
 HOMEPAGE=http://code.google.com/p/pdb-tools/
 KEYWORDS=~amd64 ~x86 ~amd64-linux ~x86-linux
 LICENSE=GPL-3
-RDEPEND=sci-chemistry/dssp virtual/fortran >=app-admin/eselect-python-20091230 =dev-lang/python-2*
+RDEPEND=sci-chemistry/dssp virtual/fortran =dev-lang/python-2*
 SLOT=0
 SRC_URI=http://pdb-tools.googlecode.com/files/pdb-tools_0.1.4.tar.gz
-_eclasses_=fortran-2	368b82ae80c1184988a9d651e6efcbd0	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	python	dc3993dc1961bbb13c11bb835390ca29	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68
+_eclasses_=fortran-2	368b82ae80c1184988a9d651e6efcbd0	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	python	d6df8e9d4686f7550769a9777aa622b9	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68
 _md5_=2567a75423244cce3a4fa6ee926b3e29

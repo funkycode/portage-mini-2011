@@ -1,12 +1,12 @@
 DEFINED_PHASES=compile install postinst postrm prepare unpack
-DEPEND=!<sys-libs/libkudzu-1.2 !s390? ( >=net-wireless/wireless-tools-28 ) sys-devel/gettext >=app-admin/eselect-python-20091230 =dev-lang/python-2* >=app-arch/rpm2targz-9.0.0.3g
+DEPEND=!<sys-libs/libkudzu-1.2 !s390? ( >=net-wireless/wireless-tools-28 ) sys-devel/gettext =dev-lang/python-2* >=app-arch/rpm2targz-9.0.0.3g
 DESCRIPTION=Library of python code used by Red Hat Linux programs
 EAPI=3
 HOMEPAGE=http://fedoraproject.org/wiki/SystemConfig
 KEYWORDS=~amd64 ~ppc ~x86
 LICENSE=GPL-2
-RDEPEND=!<sys-libs/libkudzu-1.2 >=app-admin/eselect-python-20091230 =dev-lang/python-2*
+RDEPEND=!<sys-libs/libkudzu-1.2 =dev-lang/python-2*
 SLOT=0
 SRC_URI=mirror://fedora-dev/development/source/SRPMS/rhpl-0.219-2.src.rpm
-_eclasses_=eutils	ba24d79270ea0022703f16b5de80051c	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	python	dc3993dc1961bbb13c11bb835390ca29	rpm	b94b54b44f14d6bee3e966c8f5c86fba	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
+_eclasses_=eutils	ba24d79270ea0022703f16b5de80051c	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	python	d6df8e9d4686f7550769a9777aa622b9	rpm	b94b54b44f14d6bee3e966c8f5c86fba	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
 _md5_=31e2a2b7b4188cf0f47eadce4dcbc55d

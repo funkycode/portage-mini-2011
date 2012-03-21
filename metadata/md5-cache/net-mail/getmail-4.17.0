@@ -1,12 +1,12 @@
 DEFINED_PHASES=compile install postinst postrm prepare
-DEPEND=>=app-admin/eselect-python-20091230 =dev-lang/python-2*
+DEPEND==dev-lang/python-2*
 DESCRIPTION=A POP3 mail retriever with reliable Maildir and mbox delivery
 EAPI=3
 HOMEPAGE=http://pyropus.ca/software/getmail/
 KEYWORDS=alpha amd64 ppc x86 ~ppc-macos ~x86-macos ~x64-solaris
 LICENSE=GPL-2
-RDEPEND=>=app-admin/eselect-python-20091230 =dev-lang/python-2*
+RDEPEND==dev-lang/python-2*
 SLOT=4
 SRC_URI=http://pyropus.ca/software/getmail/old-versions/getmail-4.17.0.tar.gz
-_eclasses_=distutils	15ae23f6f8219a009bfcfff7724fe727	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	python	dc3993dc1961bbb13c11bb835390ca29	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68
+_eclasses_=distutils	15ae23f6f8219a009bfcfff7724fe727	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	python	d6df8e9d4686f7550769a9777aa622b9	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68
 _md5_=4bf3dd94a0c5896f65701f366a4e142e

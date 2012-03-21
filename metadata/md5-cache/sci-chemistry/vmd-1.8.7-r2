@@ -1,14 +1,14 @@
 DEFINED_PHASES=compile configure install nofetch prepare
-DEPEND=|| ( >=dev-lang/tk-8.5[-truetype] =dev-lang/tk-8.4* ) dev-lang/perl dev-python/numpy sci-libs/netcdf virtual/opengl >=x11-libs/fltk-1.1.10-r2:1 x11-libs/libXft >=app-admin/eselect-python-20091230 =dev-lang/python-2*
+DEPEND=|| ( >=dev-lang/tk-8.5[-truetype] =dev-lang/tk-8.4* ) dev-lang/perl dev-python/numpy sci-libs/netcdf virtual/opengl >=x11-libs/fltk-1.1.10-r2:1 x11-libs/libXft =dev-lang/python-2*
 DESCRIPTION=Visual Molecular Dynamics
 EAPI=3
 HOMEPAGE=http://www.ks.uiuc.edu/Research/vmd/
 IUSE=msms povray tachyon
 KEYWORDS=~amd64 ~ppc ~x86 ~amd64-linux ~x86-linux
 LICENSE=vmd
-RDEPEND=|| ( >=dev-lang/tk-8.5[-truetype] =dev-lang/tk-8.4* ) dev-lang/perl dev-python/numpy sci-libs/netcdf virtual/opengl >=x11-libs/fltk-1.1.10-r2:1 x11-libs/libXft sci-biology/stride x11-terms/xterm msms? ( sci-chemistry/msms-bin ) povray? ( media-gfx/povray ) tachyon? ( media-gfx/tachyon ) >=app-admin/eselect-python-20091230 =dev-lang/python-2*
+RDEPEND=|| ( >=dev-lang/tk-8.5[-truetype] =dev-lang/tk-8.4* ) dev-lang/perl dev-python/numpy sci-libs/netcdf virtual/opengl >=x11-libs/fltk-1.1.10-r2:1 x11-libs/libXft sci-biology/stride x11-terms/xterm msms? ( sci-chemistry/msms-bin ) povray? ( media-gfx/povray ) tachyon? ( media-gfx/tachyon ) =dev-lang/python-2*
 RESTRICT=fetch
 SLOT=0
 SRC_URI=mirror://gentoo/vmd-1.8.7-gentoo-patches.tar.xz vmd-1.8.7.src.tar.gz
-_eclasses_=eutils	ba24d79270ea0022703f16b5de80051c	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	python	dc3993dc1961bbb13c11bb835390ca29	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
+_eclasses_=eutils	ba24d79270ea0022703f16b5de80051c	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	python	d6df8e9d4686f7550769a9777aa622b9	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
 _md5_=1c65c1120c1838d37086811accb3565e

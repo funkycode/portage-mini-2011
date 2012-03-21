@@ -1,13 +1,13 @@
 DEFINED_PHASES=compile install postinst postrm prepare setup
-DEPEND=!dev-python/pydns:0 virtual/libiconv >=app-admin/eselect-python-20091230 =dev-lang/python-2*
+DEPEND=!dev-python/pydns:0 virtual/libiconv =dev-lang/python-2*
 DESCRIPTION=Python module for DNS (Domain Name Service)
 EAPI=4
 HOMEPAGE=http://pydns.sourceforge.net/ http://pypi.python.org/pypi/pydns
 IUSE=examples
 KEYWORDS=~amd64 ~x86
 LICENSE=CNRI
-RDEPEND=>=app-admin/eselect-python-20091230 =dev-lang/python-2*
+RDEPEND==dev-lang/python-2*
 SLOT=2
 SRC_URI=http://downloads.sourceforge.net/project/pydns/pydns/pydns-2.3.5/pydns-2.3.5.tar.gz
-_eclasses_=distutils	15ae23f6f8219a009bfcfff7724fe727	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	python	dc3993dc1961bbb13c11bb835390ca29	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68
+_eclasses_=distutils	15ae23f6f8219a009bfcfff7724fe727	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	python	d6df8e9d4686f7550769a9777aa622b9	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68
 _md5_=a72f868bffecc856b7f8ec9ae6fdaeb9

@@ -1,12 +1,12 @@
 DEFINED_PHASES=compile install postinst postrm prepare setup unpack
-DEPEND=>=app-admin/eselect-python-20091230 =dev-lang/python-2.7*
+DEPEND==dev-lang/python-2.7*
 DESCRIPTION=Experimental terminal UI for net-mail/notmuch written in Python
 EAPI=4
 HOMEPAGE=https://github.com/pazz/alot
 KEYWORDS=~amd64 ~x86
 LICENSE=GPL-3
-RDEPEND=dev-python/twisted >=dev-python/urwid-1.0.0 net-mail/mailbase net-mail/notmuch[crypt,python] sys-apps/file[python] >=app-admin/eselect-python-20091230 =dev-lang/python-2.7*
+RDEPEND=dev-python/twisted >=dev-python/urwid-1.0.0 net-mail/mailbase net-mail/notmuch[crypt,python] sys-apps/file[python] =dev-lang/python-2.7*
 SLOT=0
 SRC_URI=https://github.com/pazz/alot/tarball/0.21 -> alot-0.21.tar.gz
-_eclasses_=distutils	15ae23f6f8219a009bfcfff7724fe727	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	python	dc3993dc1961bbb13c11bb835390ca29	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68
+_eclasses_=distutils	15ae23f6f8219a009bfcfff7724fe727	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	python	d6df8e9d4686f7550769a9777aa622b9	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68
 _md5_=97bd720ffbc809d48c0f59e09258b117

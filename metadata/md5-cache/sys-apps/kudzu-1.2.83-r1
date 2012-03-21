@@ -1,12 +1,12 @@
 DEFINED_PHASES=compile install postinst postrm prepare setup unpack
-DEPEND=dev-libs/popt >=sys-apps/pciutils-2.2.4 >=app-admin/eselect-python-20091230 =dev-lang/python-2* >=app-arch/rpm2targz-9.0.0.3g
+DEPEND=dev-libs/popt >=sys-apps/pciutils-2.2.4 =dev-lang/python-2* >=app-arch/rpm2targz-9.0.0.3g
 DESCRIPTION=Red Hat Hardware detection tools
 EAPI=3
 HOMEPAGE=http://rhlinux.redhat.com/kudzu/
 KEYWORDS=~amd64 ~ppc ~ppc64 ~x86
 LICENSE=GPL-2
-RDEPEND=dev-lang/python dev-libs/popt sys-apps/hwdata-redhat !sys-libs/libkudzu >=app-admin/eselect-python-20091230 =dev-lang/python-2*
+RDEPEND=dev-lang/python dev-libs/popt sys-apps/hwdata-redhat !sys-libs/libkudzu =dev-lang/python-2*
 SLOT=0
 SRC_URI=http://fedora.mirror.iweb.ca/releases/test/9-Beta/Fedora/source/SRPMS/kudzu-1.2.83-3.src.rpm
-_eclasses_=eutils	ba24d79270ea0022703f16b5de80051c	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	python	dc3993dc1961bbb13c11bb835390ca29	rpm	b94b54b44f14d6bee3e966c8f5c86fba	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
+_eclasses_=eutils	ba24d79270ea0022703f16b5de80051c	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	python	d6df8e9d4686f7550769a9777aa622b9	rpm	b94b54b44f14d6bee3e966c8f5c86fba	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
 _md5_=e07004cb78ade0cb8b8b0ecfe6a5e070

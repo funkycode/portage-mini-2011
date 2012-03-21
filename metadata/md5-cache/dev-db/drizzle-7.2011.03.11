@@ -1,5 +1,5 @@
 DEFINED_PHASES=compile configure install prepare setup test
-DEPEND=tcmalloc? ( dev-util/google-perftools ) sys-libs/readline sys-apps/util-linux dev-libs/libpcre >=dev-libs/libevent-1.4 >=dev-libs/protobuf-2.1.0 gearman? ( >=sys-cluster/gearmand-0.12 ) pam? ( sys-libs/pam ) curl? ( net-misc/curl ) memcache? ( >=dev-libs/libmemcached-0.39 ) md5? ( >=dev-libs/libgcrypt-1.4.2 ) haildb? ( >=dev-db/haildb-2.3.2 ) >=dev-libs/boost-1.32 ldap? ( net-nds/openldap ) !dev-db/libdrizzle sys-devel/gettext dev-util/intltool dev-util/gperf sys-devel/flex doc? ( app-doc/doxygen ) >=dev-util/boost-build-1.32 || ( =sys-devel/automake-1.11* ) >=sys-devel/autoconf-2.68 sys-devel/libtool
+DEPEND=tcmalloc? ( dev-util/google-perftools ) sys-libs/readline sys-apps/util-linux dev-libs/libpcre >=dev-libs/libevent-1.4 >=dev-libs/protobuf-2.1.0 gearman? ( >=sys-cluster/gearmand-0.12 ) pam? ( sys-libs/pam ) curl? ( net-misc/curl ) memcache? ( >=dev-libs/libmemcached-0.39 ) md5? ( >=dev-libs/libgcrypt-1.4.2 ) haildb? ( >=dev-db/haildb-2.3.2 ) >=dev-libs/boost-1.32 ldap? ( net-nds/openldap ) !dev-db/libdrizzle sys-devel/gettext dev-util/intltool dev-util/gperf sys-devel/flex doc? ( app-doc/doxygen ) >=dev-util/boost-build-1.32 || ( =sys-devel/automake-1.11.1* ) >=sys-devel/autoconf-2.68 sys-devel/libtool
 DESCRIPTION=Database optimized for Cloud and Net applications
 EAPI=2
 HOMEPAGE=http://drizzle.org
@@ -9,5 +9,5 @@ LICENSE=GPL-2
 RDEPEND=tcmalloc? ( dev-util/google-perftools ) sys-libs/readline sys-apps/util-linux dev-libs/libpcre >=dev-libs/libevent-1.4 >=dev-libs/protobuf-2.1.0 gearman? ( >=sys-cluster/gearmand-0.12 ) pam? ( sys-libs/pam ) curl? ( net-misc/curl ) memcache? ( >=dev-libs/libmemcached-0.39 ) md5? ( >=dev-libs/libgcrypt-1.4.2 ) haildb? ( >=dev-db/haildb-2.3.2 ) >=dev-libs/boost-1.32 ldap? ( net-nds/openldap ) !dev-db/libdrizzle
 SLOT=0
 SRC_URI=http://launchpad.net/drizzle/elliott/2011-02-28/+download/drizzle7-2011.03.11.tar.gz
-_eclasses_=autotools	6379b933727051b4b34f938eb654b935	eutils	ba24d79270ea0022703f16b5de80051c	flag-o-matic	66cb710a2aa184a5687fe1289d7973ab	libtool	5f623f5a211fb1b2d84d88ee49959a54	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	pam	3f746974e1cc47cabe3bd488c08cdc8e	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e	versionator	6601b4c5b3f019a993db59a50e1854e4
+_eclasses_=autotools	532e2870d0e19d852daff17d52cd792d	eutils	ba24d79270ea0022703f16b5de80051c	flag-o-matic	66cb710a2aa184a5687fe1289d7973ab	libtool	5f623f5a211fb1b2d84d88ee49959a54	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	pam	3f746974e1cc47cabe3bd488c08cdc8e	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e	versionator	6601b4c5b3f019a993db59a50e1854e4
 _md5_=718a774a91357dc23393514d42520d57

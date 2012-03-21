@@ -1,11 +1,11 @@
 DEFINED_PHASES=compile install postinst postrm setup
-DEPEND=app-cdr/cdrdao rox-extra/mp3ogg2wav >=app-admin/eselect-python-20091230 =dev-lang/python-2* || ( =sys-devel/automake-1.11* ) >=sys-devel/autoconf-2.68 sys-devel/libtool
+DEPEND=app-cdr/cdrdao rox-extra/mp3ogg2wav =dev-lang/python-2* || ( =sys-devel/automake-1.11.1* ) >=sys-devel/autoconf-2.68 sys-devel/libtool
 DESCRIPTION=RoxDAO: A graphical frontend to cdrdao for the ROX Desktop.
 HOMEPAGE=http://kymatica.com/index.php/Software
 KEYWORDS=amd64 ~ppc x86
 LICENSE=GPL-2
-RDEPEND=app-cdr/cdrdao rox-extra/mp3ogg2wav >=app-admin/eselect-python-20091230 =dev-lang/python-2* >=rox-base/rox-2.1.0 >=rox-base/rox-lib-2.0.3
+RDEPEND=app-cdr/cdrdao rox-extra/mp3ogg2wav =dev-lang/python-2* >=rox-base/rox-2.1.0 >=rox-base/rox-lib-2.0.3
 SLOT=0
 SRC_URI=http://kymatica.com/uploads/Software/RoxDAO-0.4.tar.bz2
-_eclasses_=autotools	6379b933727051b4b34f938eb654b935	eutils	ba24d79270ea0022703f16b5de80051c	libtool	5f623f5a211fb1b2d84d88ee49959a54	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	python	dc3993dc1961bbb13c11bb835390ca29	rox	834255258a1a44797dcc9fff022b3fc4	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
+_eclasses_=autotools	532e2870d0e19d852daff17d52cd792d	eutils	ba24d79270ea0022703f16b5de80051c	libtool	5f623f5a211fb1b2d84d88ee49959a54	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	python	d6df8e9d4686f7550769a9777aa622b9	rox	834255258a1a44797dcc9fff022b3fc4	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
 _md5_=21a2e447d57a1148d576aebc7477a575

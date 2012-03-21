@@ -1,11 +1,11 @@
 DEFINED_PHASES=compile install postinst postrm prepare setup unpack
-DEPEND=sys-apps/portage >=app-admin/eselect-python-20091230 dev-lang/python[xml] dev-lang/python dev-vcs/git
+DEPEND=sys-apps/portage dev-lang/python[xml] dev-lang/python dev-vcs/git
 DESCRIPTION=Collection of administration scripts for Gentoo
 EAPI=3
 HOMEPAGE=http://www.gentoo.org/proj/en/portage/tools/index.xml
 IUSE=minimal
 LICENSE=GPL-2
-RDEPEND=sys-apps/portage !<=app-portage/gentoolkit-dev-0.2.7 dev-python/argparse || ( >=sys-apps/coreutils-8.15 app-misc/realpath sys-freebsd/freebsd-bin ) sys-apps/gawk sys-apps/grep !minimal? ( app-portage/diffmask app-portage/eclean-kernel app-portage/flaggie app-portage/install-mask app-portage/smart-live-rebuild ) >=app-admin/eselect-python-20091230 dev-lang/python[xml] dev-lang/python
+RDEPEND=sys-apps/portage !<=app-portage/gentoolkit-dev-0.2.7 dev-python/argparse || ( >=sys-apps/coreutils-8.15 app-misc/realpath sys-freebsd/freebsd-bin ) sys-apps/gawk sys-apps/grep !minimal? ( app-portage/diffmask app-portage/eclean-kernel app-portage/flaggie app-portage/install-mask app-portage/smart-live-rebuild ) dev-lang/python[xml] dev-lang/python
 SLOT=0
-_eclasses_=distutils	15ae23f6f8219a009bfcfff7724fe727	git-2	6bb20ec18cca375571bcbe67bcf2e1d7	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	python	dc3993dc1961bbb13c11bb835390ca29	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68
+_eclasses_=distutils	15ae23f6f8219a009bfcfff7724fe727	git-2	6bb20ec18cca375571bcbe67bcf2e1d7	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	python	d6df8e9d4686f7550769a9777aa622b9	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68
 _md5_=0bbc9dee5f6f6aad947063c8e18113a6

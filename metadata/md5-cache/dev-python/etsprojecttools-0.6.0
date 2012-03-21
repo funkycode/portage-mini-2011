@@ -1,13 +1,13 @@
 DEFINED_PHASES=compile install postinst postrm prepare test
-DEPEND=dev-python/setuptools dev-vcs/subversion test? ( dev-python/nose ) >=app-admin/eselect-python-20091230 =dev-lang/python-2*
+DEPEND=dev-python/setuptools dev-vcs/subversion test? ( dev-python/nose ) =dev-lang/python-2*
 DESCRIPTION=Enthought Tool Suite: Tools for working with projects with many dependencies
 EAPI=3
 HOMEPAGE=http://code.enthought.com/projects/ets_project_tools.php http://pypi.python.org/pypi/ETSProjectTools
 IUSE=test
 KEYWORDS=~amd64 ~x86
 LICENSE=BSD
-RDEPEND=dev-python/setuptools dev-vcs/subversion >=app-admin/eselect-python-20091230 =dev-lang/python-2*
+RDEPEND=dev-python/setuptools dev-vcs/subversion =dev-lang/python-2*
 SLOT=0
 SRC_URI=http://www.enthought.com/repo/ETS/ETSProjectTools-0.6.0.tar.gz
-_eclasses_=distutils	15ae23f6f8219a009bfcfff7724fe727	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	python	dc3993dc1961bbb13c11bb835390ca29	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68
+_eclasses_=distutils	15ae23f6f8219a009bfcfff7724fe727	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	python	d6df8e9d4686f7550769a9777aa622b9	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68
 _md5_=6e4ec68e3103c2ee25d994436abc70e0

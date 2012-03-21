@@ -1,5 +1,5 @@
 DEFINED_PHASES=compile configure install postinst prepare
-DEPEND=>=dev-libs/lzo-1.07 kernel_linux? ( iproute2? ( sys-apps/iproute2[-minimal] ) !iproute2? ( sys-apps/net-tools ) ) !minimal? ( pam? ( virtual/pam ) ) selinux? ( sec-policy/selinux-openvpn ) ssl? ( >=dev-libs/openssl-0.9.6 ) pkcs11? ( >=dev-libs/pkcs11-helper-1.05 ) || ( =sys-devel/automake-1.11* ) >=sys-devel/autoconf-2.68 sys-devel/libtool
+DEPEND=>=dev-libs/lzo-1.07 kernel_linux? ( iproute2? ( sys-apps/iproute2[-minimal] ) !iproute2? ( sys-apps/net-tools ) ) !minimal? ( pam? ( virtual/pam ) ) selinux? ( sec-policy/selinux-openvpn ) ssl? ( >=dev-libs/openssl-0.9.6 ) pkcs11? ( >=dev-libs/pkcs11-helper-1.05 ) || ( =sys-devel/automake-1.11.1* ) >=sys-devel/autoconf-2.68 sys-devel/libtool
 DESCRIPTION=OpenVPN is a robust and highly flexible tunneling application compatible with many OSes.
 EAPI=2
 HOMEPAGE=http://openvpn.net/
@@ -9,5 +9,5 @@ LICENSE=GPL-2
 RDEPEND=>=dev-libs/lzo-1.07 kernel_linux? ( iproute2? ( sys-apps/iproute2[-minimal] ) !iproute2? ( sys-apps/net-tools ) ) !minimal? ( pam? ( virtual/pam ) ) selinux? ( sec-policy/selinux-openvpn ) ssl? ( >=dev-libs/openssl-0.9.6 ) pkcs11? ( >=dev-libs/pkcs11-helper-1.05 )
 SLOT=0
 SRC_URI=http://swupdate.openvpn.net/community/releases/openvpn-2.1.4.tar.gz ipv6? ( mirror://github/jjo/openvpn-ipv6/openvpn-2.1.1-ipv6-0.4.11.patch.gz ) eurephia? ( mirror://sourceforge/eurephia/openvpn-2.1.0_eurephia.patch )
-_eclasses_=autotools	6379b933727051b4b34f938eb654b935	eutils	ba24d79270ea0022703f16b5de80051c	flag-o-matic	66cb710a2aa184a5687fe1289d7973ab	libtool	5f623f5a211fb1b2d84d88ee49959a54	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
+_eclasses_=autotools	532e2870d0e19d852daff17d52cd792d	eutils	ba24d79270ea0022703f16b5de80051c	flag-o-matic	66cb710a2aa184a5687fe1289d7973ab	libtool	5f623f5a211fb1b2d84d88ee49959a54	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
 _md5_=e23afbf2e2a3e747c07a057c3444d37c

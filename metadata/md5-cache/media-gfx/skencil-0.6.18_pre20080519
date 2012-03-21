@@ -1,13 +1,13 @@
 DEFINED_PHASES=compile install prepare setup
-DEPEND=>=dev-python/imaging-1.1.2-r1 dev-python/pyxml dev-python/reportlab dev-lang/tk nls? ( sys-devel/gettext ) >=app-admin/eselect-python-20091230 =dev-lang/python-2* =dev-lang/python-2*[tk]
+DEPEND=>=dev-python/imaging-1.1.2-r1 dev-python/pyxml dev-python/reportlab dev-lang/tk nls? ( sys-devel/gettext ) =dev-lang/python-2* =dev-lang/python-2*[tk]
 DESCRIPTION=Interactive X11 vector drawing program
 EAPI=3
 HOMEPAGE=http://www.skencil.org/
 IUSE=nls
 KEYWORDS=amd64 hppa ppc ppc64 sparc x86
 LICENSE=GPL-2
-RDEPEND=>=dev-python/imaging-1.1.2-r1 dev-python/pyxml dev-python/reportlab dev-lang/tk nls? ( sys-devel/gettext ) !elibc_glibc? ( nls? ( sys-devel/gettext ) ) >=app-admin/eselect-python-20091230 =dev-lang/python-2* =dev-lang/python-2*[tk]
+RDEPEND=>=dev-python/imaging-1.1.2-r1 dev-python/pyxml dev-python/reportlab dev-lang/tk nls? ( sys-devel/gettext ) !elibc_glibc? ( nls? ( sys-devel/gettext ) ) =dev-lang/python-2* =dev-lang/python-2*[tk]
 SLOT=0
 SRC_URI=mirror://gentoo/skencil-0.6.18_pre20080519.tar.bz2
-_eclasses_=eutils	ba24d79270ea0022703f16b5de80051c	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	python	dc3993dc1961bbb13c11bb835390ca29	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
+_eclasses_=eutils	ba24d79270ea0022703f16b5de80051c	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	python	d6df8e9d4686f7550769a9777aa622b9	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
 _md5_=58e2d9612d27dcbd197cf51698c0ad3e
