@@ -1,5 +1,5 @@
 DEFINED_PHASES=compile install postinst unpack
-DEPEND==dev-lang/ruby-1.8* >=sys-libs/db-4.2 >=dev-ruby/ruby-bdb-0.5.2 dev-ruby/ruby-progressbar ocaml? ( dev-lang/ocaml ) perl? ( dev-perl/PPI ) || ( =sys-devel/automake-1.11.1* ) >=sys-devel/autoconf-2.68 sys-devel/libtool =dev-lang/ruby-1.8*
+DEPEND==dev-lang/ruby-1.8* >=sys-libs/db-4.2 >=dev-ruby/ruby-bdb-0.5.2 dev-ruby/ruby-progressbar ocaml? ( dev-lang/ocaml ) perl? ( dev-perl/PPI ) >=sys-devel/automake-1.11.1 =sys-devel/automake-1.11* >=sys-devel/autoconf-2.68 sys-devel/libtool =dev-lang/ruby-1.8*
 DESCRIPTION=source code search engine
 HOMEPAGE=http://gonzui.sourceforge.net/
 IUSE=ocaml perl
@@ -9,5 +9,5 @@ RDEPEND==dev-lang/ruby-1.8* >=sys-libs/db-4.2 >=dev-ruby/ruby-bdb-0.5.2 dev-ruby
 RESTRICT=test
 SLOT=0
 SRC_URI=mirror://sourceforge/gonzui/gonzui-1.2.tar.gz
-_eclasses_=autotools	532e2870d0e19d852daff17d52cd792d	eutils	ba24d79270ea0022703f16b5de80051c	libtool	5f623f5a211fb1b2d84d88ee49959a54	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	ruby	d0d4dafe867eb79ce8953e27d88fc00f	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
+_eclasses_=autotools	5f30b960294681188533f1047d54f1fc	eutils	ba24d79270ea0022703f16b5de80051c	libtool	5f623f5a211fb1b2d84d88ee49959a54	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	ruby	d0d4dafe867eb79ce8953e27d88fc00f	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e	versionator	6601b4c5b3f019a993db59a50e1854e4
 _md5_=7d25b4ee12bb27c34a598c4b1937e225

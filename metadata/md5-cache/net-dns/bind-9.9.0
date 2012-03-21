@@ -1,5 +1,5 @@
 DEFINED_PHASES=config configure install postinst prepare setup
-DEPEND=ssl? ( >=dev-libs/openssl-0.9.6g ) mysql? ( >=virtual/mysql-4.0 ) odbc? ( >=dev-db/unixODBC-2.2.6 ) ldap? ( net-nds/openldap ) idn? ( net-dns/idnkit ) postgres? ( dev-db/postgresql-base ) caps? ( >=sys-libs/libcap-2.1.0 ) xml? ( dev-libs/libxml2 ) geoip? ( >=dev-libs/geoip-1.4.6 ) gssapi? ( virtual/krb5 ) sdb-ldap? ( net-nds/openldap ) gost? ( >=dev-libs/openssl-1.0.0 ) || ( =sys-devel/automake-1.11.1* ) >=sys-devel/autoconf-2.68 sys-devel/libtool
+DEPEND=ssl? ( >=dev-libs/openssl-0.9.6g ) mysql? ( >=virtual/mysql-4.0 ) odbc? ( >=dev-db/unixODBC-2.2.6 ) ldap? ( net-nds/openldap ) idn? ( net-dns/idnkit ) postgres? ( dev-db/postgresql-base ) caps? ( >=sys-libs/libcap-2.1.0 ) xml? ( dev-libs/libxml2 ) geoip? ( >=dev-libs/geoip-1.4.6 ) gssapi? ( virtual/krb5 ) sdb-ldap? ( net-nds/openldap ) gost? ( >=dev-libs/openssl-1.0.0 ) >=sys-devel/automake-1.11.1:1.11 >=sys-devel/autoconf-2.68 sys-devel/libtool
 DESCRIPTION=BIND - Berkeley Internet Name Domain - Name Server
 EAPI=4
 HOMEPAGE=http://www.isc.org/software/bind
@@ -10,5 +10,5 @@ RDEPEND=ssl? ( >=dev-libs/openssl-0.9.6g ) mysql? ( >=virtual/mysql-4.0 ) odbc? 
 REQUIRED_USE=postgres? ( dlz ) berkdb? ( dlz ) mysql? ( dlz !threads ) odbc? ( dlz ) ldap? ( dlz ) sdb-ldap? ( dlz ) gost? ( ssl ) threads? ( caps )
 SLOT=0
 SRC_URI=ftp://ftp.isc.org/isc/bind9/9.9.0/bind-9.9.0.tar.gz doc? ( mirror://gentoo/dyndns-samples.tbz2 ) geoip? ( http://bind-geoip.googlecode.com//files/bind-geoip-1.3-readme.txt http://bind-geoip.googlecode.com//files/bind-9.9.0-geoip-1.3.patch ) sdb-ldap? ( http://ftp.disconnected-by-peer.at/pub/bind-sdb-ldap-1.1.0-fc14.patch.bz2 )
-_eclasses_=autotools	532e2870d0e19d852daff17d52cd792d	db-use	2f5d6a2718559b90a51648d8ff58be83	eutils	ba24d79270ea0022703f16b5de80051c	flag-o-matic	66cb710a2aa184a5687fe1289d7973ab	libtool	5f623f5a211fb1b2d84d88ee49959a54	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e	versionator	6601b4c5b3f019a993db59a50e1854e4
+_eclasses_=autotools	5f30b960294681188533f1047d54f1fc	db-use	2f5d6a2718559b90a51648d8ff58be83	eutils	ba24d79270ea0022703f16b5de80051c	flag-o-matic	66cb710a2aa184a5687fe1289d7973ab	libtool	5f623f5a211fb1b2d84d88ee49959a54	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e	versionator	6601b4c5b3f019a993db59a50e1854e4
 _md5_=728c7a146d2ef751fe8025fdf4384dbf

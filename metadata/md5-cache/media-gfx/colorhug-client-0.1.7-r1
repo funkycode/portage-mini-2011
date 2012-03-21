@@ -1,0 +1,12 @@
+DEFINED_PHASES=postinst postrm
+DEPEND=dev-db/sqlite:3 >=dev-libs/glib-2.28.0 dev-libs/libgusb media-libs/lcms:2 net-libs/libsoup:2.4 x11-libs/gtk+:3 >=x11-misc/colord-0.1.15 >=sys-apps/sed-4
+DESCRIPTION=Client tools for the ColorHug display colorimeter
+EAPI=4
+HOMEPAGE=http://www.hughsie.com/
+KEYWORDS=~amd64 ~x86
+LICENSE=GPL-2
+RDEPEND=dev-db/sqlite:3 >=dev-libs/glib-2.28.0 dev-libs/libgusb media-libs/lcms:2 net-libs/libsoup:2.4 x11-libs/gtk+:3 >=x11-misc/colord-0.1.15
+SLOT=0
+SRC_URI=http://people.freedesktop.org/~hughsient/releases/colorhug-client-0.1.7.tar.xz
+_eclasses_=gnome2-utils	b5ca2ccadb60760889faa3bccba121d9
+_md5_=edef54fe1611c8f10abf1857c0b77a3b

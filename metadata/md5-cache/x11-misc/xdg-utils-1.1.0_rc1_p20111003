@@ -7,5 +7,5 @@ KEYWORDS=alpha amd64 arm hppa ia64 ~mips ppc ppc64 s390 sh sparc x86 ~x86-fbsd ~
 LICENSE=MIT
 RDEPEND=dev-util/desktop-file-utils x11-misc/shared-mime-info x11-apps/xprop x11-apps/xset perl? ( dev-perl/File-MimeInfo )
 SLOT=0
-SRC_URI=http://dev.gentoo.org/~ssuominen/xdg-utils-1.1.0_rc1_p20111003.tar.xz
-_md5_=5c83115df88fb0fac997c9eec83dd740
+SRC_URI=mirror://gentoo/xdg-utils-1.1.0_rc1_p20111003.tar.xz
+_md5_=4a794d82f7bc4d2470c7bf1f639c6aad

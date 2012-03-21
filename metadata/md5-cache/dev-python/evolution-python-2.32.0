@@ -1,5 +1,5 @@
 DEFINED_PHASES=compile configure install postinst postrm preinst prepare setup unpack
-DEPEND=>=gnome-extra/evolution-data-server-1.2 dev-python/libbonobo-python:2 !<dev-python/gnome-python-desktop-2.22.0-r10 || ( =sys-devel/automake-1.11.1* ) >=sys-devel/autoconf-2.68 sys-devel/libtool app-arch/xz-utils >=sys-apps/sed-4 =dev-lang/python-2* ~dev-python/gnome-python-desktop-base-2.32.0 dev-util/pkgconfig
+DEPEND=>=gnome-extra/evolution-data-server-1.2 dev-python/libbonobo-python:2 !<dev-python/gnome-python-desktop-2.22.0-r10 >=sys-devel/automake-1.11.1:1.11 >=sys-devel/autoconf-2.68 sys-devel/libtool app-arch/xz-utils >=sys-apps/sed-4 =dev-lang/python-2* ~dev-python/gnome-python-desktop-base-2.32.0 dev-util/pkgconfig
 DESCRIPTION=Python bindings for Evolution and Evolution Data Server
 EAPI=4
 HOMEPAGE=http://pygtk.org/
@@ -9,5 +9,5 @@ RDEPEND=>=gnome-extra/evolution-data-server-1.2 dev-python/libbonobo-python:2 !<
 RESTRICT=test
 SLOT=0
 SRC_URI=mirror://gnome/sources/gnome-python-desktop/2.32/gnome-python-desktop-2.32.0.tar.bz2
-_eclasses_=autotools	532e2870d0e19d852daff17d52cd792d	eutils	ba24d79270ea0022703f16b5de80051c	fdo-mime	0acfe1a88fd8751a1d5dc671168219fa	gnome-python-common	57bbcde80501a4dd81bdf8243c10ff6f	gnome.org	8fef8f967214f56e08fa92d61163d891	gnome2	490ce89f5d905297c7a34898fa498bd0	gnome2-utils	b5ca2ccadb60760889faa3bccba121d9	libtool	5f623f5a211fb1b2d84d88ee49959a54	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	python	d6df8e9d4686f7550769a9777aa622b9	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e	versionator	6601b4c5b3f019a993db59a50e1854e4
+_eclasses_=autotools	5f30b960294681188533f1047d54f1fc	eutils	ba24d79270ea0022703f16b5de80051c	fdo-mime	0acfe1a88fd8751a1d5dc671168219fa	gnome-python-common	57bbcde80501a4dd81bdf8243c10ff6f	gnome.org	8fef8f967214f56e08fa92d61163d891	gnome2	490ce89f5d905297c7a34898fa498bd0	gnome2-utils	b5ca2ccadb60760889faa3bccba121d9	libtool	5f623f5a211fb1b2d84d88ee49959a54	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	python	d6df8e9d4686f7550769a9777aa622b9	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e	versionator	6601b4c5b3f019a993db59a50e1854e4
 _md5_=676c8e83b52d8f4de46c4589517db393

@@ -1,5 +1,5 @@
 DEFINED_PHASES=compile configure install postinst prepare test unpack
-DEPEND=!dev-php/eaccelerator !dev-php/xcache || ( =sys-devel/automake-1.11.1* ) >=sys-devel/autoconf-2.68 sys-devel/libtool >=sys-devel/m4-1.4.3 >=sys-devel/libtool-1.5.18 php_targets_php5-3? ( dev-lang/php:5.3 )
+DEPEND=!dev-php/eaccelerator !dev-php/xcache >=sys-devel/automake-1.11.1:1.11 >=sys-devel/autoconf-2.68 sys-devel/libtool >=sys-devel/m4-1.4.3 >=sys-devel/libtool-1.5.18 php_targets_php5-3? ( dev-lang/php:5.3 )
 DESCRIPTION=A free, open, and robust framework for caching and optimizing PHP code.
 EAPI=2
 HOMEPAGE=http://pecl.php.net/APC
@@ -9,5 +9,5 @@ LICENSE=PHP-3.01
 RDEPEND=!dev-php/eaccelerator !dev-php/xcache || ( =dev-php/pecl-apc-3.1.7[php_targets_php5-3] ) php_targets_php5-3? ( dev-lang/php:5.3 )
 SLOT=0
 SRC_URI=http://pecl.php.net/get/APC-3.1.7.tgz
-_eclasses_=autotools	532e2870d0e19d852daff17d52cd792d	confutils	a80706bb5b9ddcf6bbd14365656d4985	eutils	ba24d79270ea0022703f16b5de80051c	flag-o-matic	66cb710a2aa184a5687fe1289d7973ab	libtool	5f623f5a211fb1b2d84d88ee49959a54	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	php-ext-pecl-r2	de1308bcf4fef59a8ee8793efc7c3051	php-ext-source-r2	16faeec04ef5acbba2af3cab7f8966d3	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
+_eclasses_=autotools	5f30b960294681188533f1047d54f1fc	confutils	a80706bb5b9ddcf6bbd14365656d4985	eutils	ba24d79270ea0022703f16b5de80051c	flag-o-matic	66cb710a2aa184a5687fe1289d7973ab	libtool	5f623f5a211fb1b2d84d88ee49959a54	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	php-ext-pecl-r2	de1308bcf4fef59a8ee8793efc7c3051	php-ext-source-r2	16faeec04ef5acbba2af3cab7f8966d3	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e	versionator	6601b4c5b3f019a993db59a50e1854e4
 _md5_=83bee339db5cb728a3a6990d8c15e109

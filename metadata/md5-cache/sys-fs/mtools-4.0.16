@@ -1,5 +1,5 @@
 DEFINED_PHASES=configure install prepare
-DEPEND=X? ( x11-libs/libICE x11-libs/libXau x11-libs/libSM x11-libs/libX11 x11-libs/libXt ) || ( =sys-devel/automake-1.11.1* ) >=sys-devel/autoconf-2.68 sys-devel/libtool
+DEPEND=X? ( x11-libs/libICE x11-libs/libXau x11-libs/libSM x11-libs/libX11 x11-libs/libXt ) >=sys-devel/automake-1.11.1:1.11 >=sys-devel/autoconf-2.68 sys-devel/libtool
 DESCRIPTION=utilities to access MS-DOS disks from Unix without mounting them
 EAPI=2
 HOMEPAGE=http://mtools.linux.lu/
@@ -9,5 +9,5 @@ LICENSE=GPL-3
 RDEPEND=X? ( x11-libs/libICE x11-libs/libXau x11-libs/libSM x11-libs/libX11 x11-libs/libXt )
 SLOT=0
 SRC_URI=mirror://gnu/mtools/mtools-4.0.16.tar.bz2
-_eclasses_=autotools	532e2870d0e19d852daff17d52cd792d	eutils	ba24d79270ea0022703f16b5de80051c	libtool	5f623f5a211fb1b2d84d88ee49959a54	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
+_eclasses_=autotools	5f30b960294681188533f1047d54f1fc	eutils	ba24d79270ea0022703f16b5de80051c	libtool	5f623f5a211fb1b2d84d88ee49959a54	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e	versionator	6601b4c5b3f019a993db59a50e1854e4
 _md5_=cf3ca3fb7b801900af208d0563f9f1eb

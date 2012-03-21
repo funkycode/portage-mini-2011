@@ -1,5 +1,5 @@
 DEFINED_PHASES=configure install postinst prepare setup
-DEPEND=>=dev-libs/openssl-0.9.8m apache2_modules_deflate? ( sys-libs/zlib ) || ( =sys-devel/automake-1.11.1* ) >=sys-devel/autoconf-2.68 sys-devel/libtool ssl? ( dev-libs/openssl ) dev-lang/perl =dev-libs/apr-1* =dev-libs/apr-util-1*[ldap?] dev-libs/libpcre ldap? ( =net-nds/openldap-2* ) selinux? ( sec-policy/selinux-apache ) ssl? ( >=dev-libs/openssl-0.9.8f ) !=www-servers/apache-1*
+DEPEND=>=dev-libs/openssl-0.9.8m apache2_modules_deflate? ( sys-libs/zlib ) >=sys-devel/automake-1.11.1:1.11 >=sys-devel/autoconf-2.68 sys-devel/libtool ssl? ( dev-libs/openssl ) dev-lang/perl =dev-libs/apr-1* =dev-libs/apr-util-1*[ldap?] dev-libs/libpcre ldap? ( =net-nds/openldap-2* ) selinux? ( sec-policy/selinux-apache ) ssl? ( >=dev-libs/openssl-0.9.8f ) !=www-servers/apache-1*
 DESCRIPTION=The Apache Web Server.
 EAPI=2
 HOMEPAGE=http://httpd.apache.org/
@@ -10,5 +10,5 @@ PDEPEND=~app-admin/apache-tools-2.2.21
 RDEPEND=>=dev-libs/apr-1.4.5 >=dev-libs/openssl-0.9.8m apache2_modules_mime? ( app-misc/mime-types ) dev-lang/perl =dev-libs/apr-1* =dev-libs/apr-util-1*[ldap?] dev-libs/libpcre ldap? ( =net-nds/openldap-2* ) selinux? ( sec-policy/selinux-apache ) ssl? ( >=dev-libs/openssl-0.9.8f ) !=www-servers/apache-1*
 SLOT=2
 SRC_URI=mirror://apache/httpd/httpd-2.2.21.tar.bz2 http://dev.gentoo.org/~jmbsvicetto/dist/apache/gentoo-apache-2.2.21-r2-20120213.tar.bz2
-_eclasses_=apache-2	e0a9c89874dc5c307f54aebd3e76760f	autotools	532e2870d0e19d852daff17d52cd792d	eutils	ba24d79270ea0022703f16b5de80051c	flag-o-matic	66cb710a2aa184a5687fe1289d7973ab	libtool	5f623f5a211fb1b2d84d88ee49959a54	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	ssl-cert	7f678cd359743d336ecf3a6cc4ce1521	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
+_eclasses_=apache-2	e0a9c89874dc5c307f54aebd3e76760f	autotools	5f30b960294681188533f1047d54f1fc	eutils	ba24d79270ea0022703f16b5de80051c	flag-o-matic	66cb710a2aa184a5687fe1289d7973ab	libtool	5f623f5a211fb1b2d84d88ee49959a54	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	ssl-cert	7f678cd359743d336ecf3a6cc4ce1521	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e	versionator	6601b4c5b3f019a993db59a50e1854e4
 _md5_=686aa273d2a1d8dfeb3f8f29f5ba814e

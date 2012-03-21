@@ -1,5 +1,5 @@
 DEFINED_PHASES=compile configure install prepare test
-DEPEND=sci-libs/amd sci-libs/colamd metis? ( sci-libs/camd sci-libs/ccolamd || ( sci-libs/metis sci-libs/parmetis ) ) supernodal? ( virtual/lapack ) supernodal? ( dev-util/pkgconfig ) metis? ( dev-util/pkgconfig ) || ( =sys-devel/automake-1.11.1* ) >=sys-devel/autoconf-2.68 sys-devel/libtool
+DEPEND=sci-libs/amd sci-libs/colamd metis? ( sci-libs/camd sci-libs/ccolamd || ( sci-libs/metis sci-libs/parmetis ) ) supernodal? ( virtual/lapack ) supernodal? ( dev-util/pkgconfig ) metis? ( dev-util/pkgconfig ) >=sys-devel/automake-1.11.1:1.11 >=sys-devel/autoconf-2.68 sys-devel/libtool
 DESCRIPTION=Sparse Cholesky factorization and update/downdate library
 EAPI=4
 HOMEPAGE=http://www.cise.ufl.edu/research/sparse/cholmod/
@@ -9,5 +9,5 @@ LICENSE=LGPL-2.1 GPL-2
 RDEPEND=sci-libs/amd sci-libs/colamd metis? ( sci-libs/camd sci-libs/ccolamd || ( sci-libs/metis sci-libs/parmetis ) ) supernodal? ( virtual/lapack )
 SLOT=0
 SRC_URI=http://www.cise.ufl.edu/research/sparse/cholmod/CHOLMOD-1.7.4.tar.gz mirror://gentoo/cholmod-1.7.0-autotools.patch.bz2
-_eclasses_=autotools	532e2870d0e19d852daff17d52cd792d	autotools-utils	748973db029ba52a1991320e1034bad9	eutils	ba24d79270ea0022703f16b5de80051c	libtool	5f623f5a211fb1b2d84d88ee49959a54	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
+_eclasses_=autotools	5f30b960294681188533f1047d54f1fc	autotools-utils	748973db029ba52a1991320e1034bad9	eutils	ba24d79270ea0022703f16b5de80051c	libtool	5f623f5a211fb1b2d84d88ee49959a54	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e	versionator	6601b4c5b3f019a993db59a50e1854e4
 _md5_=1c701614f23c2ac4d761f7beec603cda

@@ -1,0 +1,14 @@
+DEFINED_PHASES=compile configure install prepare test
+DEPEND=dev-lang/perl[doc?] sys-libs/readline opengl? ( media-libs/freeglut ) nls? ( sys-devel/gettext ) unicode? ( >=dev-libs/icu-2.6 ) gdbm? ( >=sys-libs/gdbm-1.8.3-r1 ) gmp? ( >=dev-libs/gmp-4.1.4 ) ssl? ( dev-libs/openssl ) pcre? ( dev-libs/libpcre )
+DESCRIPTION=Virtual machine designed to efficiently compile and execute bytecode for dynamic languages
+EAPI=3
+HOMEPAGE=http://www.parrot.org/
+IUSE=opengl nls doc examples gdbm gmp ssl +unicode pcre
+KEYWORDS=~amd64 ~ppc ~ppc64 ~sparc ~x86 ~amd64-linux ~x86-linux ~ppc-macos ~x64-macos ~x86-macos
+LICENSE=Artistic-2
+RDEPEND=sys-libs/readline opengl? ( media-libs/freeglut ) nls? ( sys-devel/gettext ) unicode? ( >=dev-libs/icu-2.6 ) gdbm? ( >=sys-libs/gdbm-1.8.3-r1 ) gmp? ( >=dev-libs/gmp-4.1.4 ) ssl? ( dev-libs/openssl ) pcre? ( dev-libs/libpcre )
+RESTRICT=test
+SLOT=0
+SRC_URI=ftp://ftp.parrot.org/pub/parrot/releases/devel/4.2.0/parrot-4.2.0.tar.bz2
+_eclasses_=eutils	ba24d79270ea0022703f16b5de80051c	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
+_md5_=6c054f99e6eada8671c6d66ad201e1dd

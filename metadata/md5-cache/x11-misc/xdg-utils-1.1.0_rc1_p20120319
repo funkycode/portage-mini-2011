@@ -8,5 +8,5 @@ LICENSE=MIT
 RDEPEND=dev-util/desktop-file-utils x11-misc/shared-mime-info x11-apps/xprop x11-apps/xset perl? ( dev-perl/File-MimeInfo )
 RESTRICT=test
 SLOT=0
-SRC_URI=http://dev.gentoo.org/~ssuominen/xdg-utils-1.1.0_rc1_p20120319.tar.xz
-_md5_=0c6fb417cb0f1669bdf387652b0f7984
+SRC_URI=mirror://gentoo/xdg-utils-1.1.0_rc1_p20120319.tar.xz
+_md5_=1f97de42b9e190557ecccd785c7819d2

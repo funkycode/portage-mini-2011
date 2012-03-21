@@ -20,7 +20,7 @@
    always a description without a lang attribute. Also there are no overlapping
    descriptions allowed (multiple description tags with the same language)
 
-   $Header: /var/cvsroot/gentoo/xml/htdocs/proj/en/metastructure/herds/herds.xml,v 1.911 2012/03/18 19:27:51 pacho Exp $
+   $Header: /var/cvsroot/gentoo/xml/htdocs/proj/en/metastructure/herds/herds.xml,v 1.912 2012/03/21 11:40:44 pacho Exp $
 
 -->
 <herds>
@@ -1406,11 +1406,6 @@
   </maintainer>
 </herd>
 <herd>
-  <name>text-markup</name>
-  <email>text-markup@gentoo.org</email>
-  <description>Docbook-xml, Docbook-sgml, TeX and text utilities</description>
-</herd>
-<herd>
   <name>antivirus</name>
   <email>antivirus@gentoo.org</email>
   <description>
@@ -1592,11 +1587,6 @@
     <email>sochotnicky@gentoo.org</email>
     <name>Stanislav Ochotnický</name>
   </maintainer>
-</herd>
-<herd>
-  <name>net-zope</name>
-  <email>net-zope@gentoo.org</email>
-  <description>Zope and ZProduct packages</description>
 </herd>
 <herd>
   <name>dev-embedded</name>
@@ -2191,11 +2181,6 @@
   <email>vmware@gentoo.org</email>
   <description>Handles all issues with VMware and VMware-related ebuilds in Gentoo</description>
     <maintainingproject>/proj/en/virtualization/vmware/index.xml</maintainingproject>
-</herd>
-<herd>
-  <name>www-servers</name>
-  <email>www-servers@gentoo.org</email>
-  <description>Web servers other than Apache</description>
 </herd>
 <herd>
   <name>nx</name>

@@ -1,5 +1,5 @@
 DEFINED_PHASES=compile configure install postinst prepare setup
-DEPEND=app-arch/unzip =www-servers/apache-2* || ( =sys-devel/automake-1.11.1* ) >=sys-devel/autoconf-2.68 sys-devel/libtool
+DEPEND=app-arch/unzip =www-servers/apache-2* >=sys-devel/automake-1.11.1:1.11 >=sys-devel/autoconf-2.68 sys-devel/libtool
 DESCRIPTION=mod_caucho connects Resin and Apache2.
 EAPI=2
 HOMEPAGE=http://www.caucho.com/
@@ -8,5 +8,5 @@ LICENSE=GPL-2
 RDEPEND==www-servers/apache-2*
 SLOT=0
 SRC_URI=http://www.caucho.com/download/resin-4.0.25-src.zip mirror://gentoo/resin-gentoo-patches-4.0.25.tar.bz2
-_eclasses_=apache-module	1f60370f9dceba046ec036cd6bbb0c8b	autotools	532e2870d0e19d852daff17d52cd792d	depend.apache	a471783c63e68987a2b20eb46f9edf68	eutils	ba24d79270ea0022703f16b5de80051c	libtool	5f623f5a211fb1b2d84d88ee49959a54	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
+_eclasses_=apache-module	1f60370f9dceba046ec036cd6bbb0c8b	autotools	5f30b960294681188533f1047d54f1fc	depend.apache	a471783c63e68987a2b20eb46f9edf68	eutils	ba24d79270ea0022703f16b5de80051c	libtool	5f623f5a211fb1b2d84d88ee49959a54	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e	versionator	6601b4c5b3f019a993db59a50e1854e4
 _md5_=fb84b45df06bd26244d3da383674b32a

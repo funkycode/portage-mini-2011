@@ -8,6 +8,6 @@ KEYWORDS=alpha amd64 hppa ia64 ~mips ppc ppc64 sparc x86 ~x86-fbsd
 LICENSE=xv
 RDEPEND=x11-libs/libXt jpeg? ( virtual/jpeg ) tiff? ( media-libs/tiff:0 ) png? ( >=media-libs/libpng-1.2:0 sys-libs/zlib )
 SLOT=0
-SRC_URI=mirror://sourceforge/png-mng/xv-3.10a-jumbo-patches-20070520.tar.gz ftp://ftp.cis.upenn.edu/pub/xv/xv-3.10a.tar.gz http://dev.gentoo.org/~ssuominen/xv-3.10a.png.bz2
+SRC_URI=mirror://sourceforge/png-mng/xv-3.10a-jumbo-patches-20070520.tar.gz ftp://ftp.cis.upenn.edu/pub/xv/xv-3.10a.tar.gz mirror://gentoo/xv-3.10a.png.bz2
 _eclasses_=eutils	ba24d79270ea0022703f16b5de80051c	flag-o-matic	66cb710a2aa184a5687fe1289d7973ab	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
-_md5_=0238428149790dd33546a10ffe0b91e6
+_md5_=542dd1a6bd45b0fd40727b9e04b89ee3
