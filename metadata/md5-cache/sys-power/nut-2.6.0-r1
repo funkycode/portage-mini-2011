@@ -10,5 +10,5 @@ PDEPEND=bash-completion? ( app-shells/bash-completion )
 RDEPEND=cgi? ( >=media-libs/gd-2[png] ) snmp? ( net-analyzer/net-snmp ) usb? ( virtual/libusb:0 ) ssl? ( >=dev-libs/openssl-1 ) tcpd? ( sys-apps/tcp-wrappers ) xml? ( >=net-libs/neon-0.25.0 ) >=sys-fs/udev-114 bash-completion? ( app-admin/eselect )
 SLOT=0
 SRC_URI=http://random.networkupstools.org/source/2.6/nut-2.6.0.tar.gz http://www.networkupstools.org/source/2.6/nut-2.6.0.tar.gz
-_eclasses_=autotools	ccfdfc42a39f4d539297a1291e4c5348	bash-completion	003731da0df19d26955927bd534f3058	eutils	ba24d79270ea0022703f16b5de80051c	fixheadtails	f96922acc9287f1e889a1e50a6c8986e	libtool	5f623f5a211fb1b2d84d88ee49959a54	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
+_eclasses_=autotools	7ab833dc3fe456bb82bd3d8416510e73	bash-completion	003731da0df19d26955927bd534f3058	eutils	ba24d79270ea0022703f16b5de80051c	fixheadtails	f96922acc9287f1e889a1e50a6c8986e	libtool	5f623f5a211fb1b2d84d88ee49959a54	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
 _md5_=6528a8f9ddf2dd233163b7a2249ea1ca

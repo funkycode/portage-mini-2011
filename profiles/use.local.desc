@@ -189,7 +189,6 @@ app-arch/gzip:pic - disable optimized assembly code that is not PIC friendly
 app-arch/libarchive:bzip2 - Allow accessing bzip2-compressed archives through libbz2 (which comes with app-arch/bzip2). This only affects libarchive's native support: bsdtar will keep using bunzip2 as a filter if that's not built-in.
 app-arch/libarchive:e2fsprogs - Use file flags from sys-fs/e2fsprogs headers instead of virtual/os-headers headers
 app-arch/libarchive:nettle - Use dev-libs/nettle as crypto backend
-app-arch/libarchive:static - Build bsdtar and bsdcpio as static archives, removing dependencies over the enabled compression libraries (lzma, libbz2, zlib).
 app-arch/libarchive:zlib - Allow accessing gzip-compressed archives through sys-libs/zlib. This only affects libarchive's native support: bsdtar will keep using gunzip as a filter if that's not built-in. It's also needed for supporting extraction of ZIP files.
 app-arch/p7zip:rar - Enable support for non-free rar decoder
 app-arch/pbzip2:symlink - Install symlinks which override app-arch/bzip2 implementation
@@ -2225,6 +2224,7 @@ mail-filter/dspam:virtual-users - Build with virtual-users support
 mail-filter/libmilter:poll - Use poll instead of select
 mail-filter/maildrop:authlib - Add courier-authlib support
 mail-filter/maildrop:tools - Install maildirmake and deliverquota tools
+mail-filter/maildrop:trashquota - Count deleted messages as part of the maildir quota
 mail-filter/mimedefang:poll - Use poll instead of select
 mail-filter/opendkim:asyncdns - Use inbuilt asynchronous DNS library for queries
 mail-filter/opendkim:ldap - Enable openldap as a dataset facilitator or keys, determining domains to sign for, and any other dataset that opendkim supports.
@@ -2998,31 +2998,24 @@ media-video/ffmpeg:3dnowext - Enable manually-optimised routines using the AMD 3
 media-video/ffmpeg:aacplus - AAC+ encoding via media-libs/libaacplus.
 media-video/ffmpeg:amr - Enables Adaptive Multi-Rate Audio support
 media-video/ffmpeg:ass - Enables media-libs/libass based subtitle renderer.
-media-video/ffmpeg:aviocat - Install aviocat: cat's an URL to another one, useful for dumping streams.
 media-video/ffmpeg:avx - Adds support for Advanced Vector Extensions instructions (Intel Sandy Bridge, AMD Bulldozer and later chips)
 media-video/ffmpeg:bluray - Enable playback of Blu-ray filesystems
 media-video/ffmpeg:cdio - Enables audio CD grabbing with dev-libs/libcdio.
 media-video/ffmpeg:celt - Adds Xiph CELT audio decoding support via media-libs/celt
 media-video/ffmpeg:cpudetection - Enables runtime CPU detection (useful for bindist, compatibility on other CPUs)
-media-video/ffmpeg:cws2fws - Install cws2fws: converts cws files (Macromedia Flash, compressed) to fws ones (Macromedia Flash, uncompressed).
 media-video/ffmpeg:dirac - Enable Dirac video support (an advanced royalty-free video compression format) via the reference library: dirac.
 media-video/ffmpeg:faac - Use external faac library for AAC encoding
-media-video/ffmpeg:ffeval - Install ffeval: A simple expression evalutor.
 media-video/ffmpeg:frei0r - Enable frei0r wrapping in libavfilter
-media-video/ffmpeg:graph2dot - Install graph2dot: A tool to convert a libavfilter graph to a dot file.
 media-video/ffmpeg:hardcoded-tables - Use pre-calculated tables rather than calculating them on the fly.
-media-video/ffmpeg:ismindex - Install ismindex: A tool for creating smooth streaming manifests.
 media-video/ffmpeg:libv4l - Uses media-libs/libv4l for video4linux instead of direct calls. Adds support for more devices via the userspace library.
 media-video/ffmpeg:mmxext - Enables mmx2 support
 media-video/ffmpeg:network - Enables network streaming support
 media-video/ffmpeg:openssl - Enables dev-libs/openssl support. Adds support for encrypted network protocols (TLS/HTTPS).
 media-video/ffmpeg:pic - Force shared libraries to be built as PIC (this is slower)
-media-video/ffmpeg:pktdumper - Install pktdumper: Dumps packets as demuxed by libavformat.
 media-video/ffmpeg:qt-faststart - Build and install qt-faststart application
 media-video/ffmpeg:rtmp - Enable Real Time Messaging Protocol using librtmp
 media-video/ffmpeg:schroedinger - Enable Dirac video support (an advanced royalty-free video compression format) via libschroedinger (high-speed implementation in C of the Dirac codec).
 media-video/ffmpeg:ssse3 - Faster floating point optimization for SSSE3 capable chips (Intel Core 2 and later chips)
-media-video/ffmpeg:trasher - Install trasher: Writes burts of random data into a file. Great for testing error robustness/resilience/concealment.
 media-video/ffmpeg:vaapi - Enables VAAPI (Video Acceleration API) for hardware decoding
 media-video/ffmpeg:vdpau - Enables VDPAU decoders (requires nVidia video cards and binary nvidia-drivers to offload CPU processing to video card)
 media-video/ffmpeg:vis - Adds support for SIMD optimizations for UltraSPARC processors.

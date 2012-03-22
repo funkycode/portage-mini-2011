@@ -9,5 +9,5 @@ LICENSE=GPL-2
 RDEPEND=>=virtual/jre-1.4 >=dev-java/antlr-2.7.1:0[java] >=dev-java/java-config-2.1.9-r1 source? ( app-arch/zip )
 SLOT=0
 SRC_URI=mirror://gnu/classpath/gjdoc-0.7.9.tar.gz
-_eclasses_=autotools	ccfdfc42a39f4d539297a1291e4c5348	eutils	ba24d79270ea0022703f16b5de80051c	java-pkg-2	6f723b44cff6b07377ca5c0848da887b	java-utils-2	b173b5d55bfd6e328939985bc54a1c9e	libtool	5f623f5a211fb1b2d84d88ee49959a54	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e	versionator	6601b4c5b3f019a993db59a50e1854e4
+_eclasses_=autotools	7ab833dc3fe456bb82bd3d8416510e73	eutils	ba24d79270ea0022703f16b5de80051c	java-pkg-2	6f723b44cff6b07377ca5c0848da887b	java-utils-2	b173b5d55bfd6e328939985bc54a1c9e	libtool	5f623f5a211fb1b2d84d88ee49959a54	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e	versionator	6601b4c5b3f019a993db59a50e1854e4
 _md5_=892e57744a39ad2124f3c6fef04dc2b7

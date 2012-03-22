@@ -8,5 +8,5 @@ LICENSE=as-is
 RDEPEND=sys-libs/readline virtual/inetd sys-apps/gawk app-arch/tar >=dev-lang/perl-5.6 app-arch/dump net-misc/openssh >=dev-libs/glib-2.2 nls? ( virtual/libintl ) s3? ( >=net-misc/curl-7.10.0 ) samba? ( net-fs/samba ) kerberos? ( app-crypt/mit-krb5 ) xfs? ( sys-fs/xfsdump ) !minimal? ( virtual/mailx app-arch/mt-st sys-block/mtx gnuplot? ( sci-visualization/gnuplot ) app-crypt/aespipe app-crypt/gnupg )
 SLOT=0
 SRC_URI=mirror://sourceforge/amanda/amanda-2.6.1p2.tar.gz
-_eclasses_=autotools	ccfdfc42a39f4d539297a1291e4c5348	eutils	ba24d79270ea0022703f16b5de80051c	libtool	5f623f5a211fb1b2d84d88ee49959a54	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
+_eclasses_=autotools	7ab833dc3fe456bb82bd3d8416510e73	eutils	ba24d79270ea0022703f16b5de80051c	libtool	5f623f5a211fb1b2d84d88ee49959a54	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
 _md5_=a4a7beb1ef5174cb1ef845773e5af353
