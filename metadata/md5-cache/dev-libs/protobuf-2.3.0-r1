@@ -1,5 +1,5 @@
 DEFINED_PHASES=compile configure install postinst postrm preinst prepare setup test
-DEPEND=java? ( >=virtual/jdk-1.5 ) python? ( dev-python/setuptools ) emacs? ( virtual/emacs ) >=sys-devel/automake-1.11.1:1.11 >=sys-devel/autoconf-2.68 sys-devel/libtool python? ( =dev-lang/python-2* ) java? ( >=dev-java/java-config-2.1.9-r1 source? ( app-arch/zip ) )
+DEPEND=java? ( >=virtual/jdk-1.5 ) python? ( dev-python/setuptools ) emacs? ( virtual/emacs ) || ( >=sys-devel/automake-1.11.1:1.11 ) >=sys-devel/autoconf-2.68 sys-devel/libtool python? ( =dev-lang/python-2* ) java? ( >=dev-java/java-config-2.1.9-r1 source? ( app-arch/zip ) )
 DESCRIPTION=Google's Protocol Buffers -- an efficient method of encoding structured data
 EAPI=3
 HOMEPAGE=http://code.google.com/p/protobuf/
@@ -9,5 +9,5 @@ LICENSE=Apache-2.0
 RDEPEND=java? ( >=virtual/jre-1.5 ) emacs? ( virtual/emacs ) python? ( =dev-lang/python-2* ) java? ( >=dev-java/java-config-2.1.9-r1 source? ( app-arch/zip ) )
 SLOT=0
 SRC_URI=http://protobuf.googlecode.com/files/protobuf-2.3.0.tar.bz2
-_eclasses_=autotools	5f30b960294681188533f1047d54f1fc	distutils	15ae23f6f8219a009bfcfff7724fe727	elisp-common	aa9676ce708f8aacf54ff9df8015963b	eutils	ba24d79270ea0022703f16b5de80051c	java-pkg-opt-2	131dd2a697d663c0e33247611b9a1cd7	java-utils-2	b173b5d55bfd6e328939985bc54a1c9e	libtool	5f623f5a211fb1b2d84d88ee49959a54	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	python	d6df8e9d4686f7550769a9777aa622b9	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e	versionator	6601b4c5b3f019a993db59a50e1854e4
+_eclasses_=autotools	ccfdfc42a39f4d539297a1291e4c5348	distutils	15ae23f6f8219a009bfcfff7724fe727	elisp-common	aa9676ce708f8aacf54ff9df8015963b	eutils	ba24d79270ea0022703f16b5de80051c	java-pkg-opt-2	131dd2a697d663c0e33247611b9a1cd7	java-utils-2	b173b5d55bfd6e328939985bc54a1c9e	libtool	5f623f5a211fb1b2d84d88ee49959a54	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	python	d6df8e9d4686f7550769a9777aa622b9	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e	versionator	6601b4c5b3f019a993db59a50e1854e4
 _md5_=866cc2471cf695bff87ba5dac04ac4f6

@@ -1,5 +1,5 @@
 DEFINED_PHASES=compile install postinst postrm unpack
-DEPEND=emacs? ( virtual/emacs ) X? ( x11-libs/libXt x11-libs/libXext x11-libs/libXmu x11-libs/libXaw ) readline? ( sys-libs/readline ) >=dev-libs/gmp-4.1 tk? ( dev-lang/tk ) doc? ( virtual/texi2dvi ) >=app-text/texi2html-1.64 >=sys-devel/autoconf-2.52 >=sys-devel/automake-1.11.1 =sys-devel/automake-1.11* >=sys-devel/autoconf-2.68 sys-devel/libtool
+DEPEND=emacs? ( virtual/emacs ) X? ( x11-libs/libXt x11-libs/libXext x11-libs/libXmu x11-libs/libXaw ) readline? ( sys-libs/readline ) >=dev-libs/gmp-4.1 tk? ( dev-lang/tk ) doc? ( virtual/texi2dvi ) >=app-text/texi2html-1.64 >=sys-devel/autoconf-2.52 || ( >=sys-devel/automake-1.11.1 ) >=sys-devel/autoconf-2.68 sys-devel/libtool
 DESCRIPTION=GNU Common Lisp
 HOMEPAGE=http://www.gnu.org/software/gcl/gcl.html
 IUSE=emacs readline debug X tk custreloc dlopen gprof doc ansi
@@ -8,5 +8,5 @@ LICENSE=GPL-2
 RDEPEND=emacs? ( virtual/emacs ) X? ( x11-libs/libXt x11-libs/libXext x11-libs/libXmu x11-libs/libXaw ) readline? ( sys-libs/readline ) >=dev-libs/gmp-4.1 tk? ( dev-lang/tk )
 SLOT=0
 SRC_URI=ftp://ftp.gnu.org/gnu/gcl/gcl-2.6.7.tar.gz
-_eclasses_=autotools	5f30b960294681188533f1047d54f1fc	elisp-common	aa9676ce708f8aacf54ff9df8015963b	eutils	ba24d79270ea0022703f16b5de80051c	flag-o-matic	66cb710a2aa184a5687fe1289d7973ab	libtool	5f623f5a211fb1b2d84d88ee49959a54	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e	versionator	6601b4c5b3f019a993db59a50e1854e4
+_eclasses_=autotools	ccfdfc42a39f4d539297a1291e4c5348	elisp-common	aa9676ce708f8aacf54ff9df8015963b	eutils	ba24d79270ea0022703f16b5de80051c	flag-o-matic	66cb710a2aa184a5687fe1289d7973ab	libtool	5f623f5a211fb1b2d84d88ee49959a54	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
 _md5_=9e94ae3cec26fc04c407e8ab03d45e35

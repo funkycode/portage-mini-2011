@@ -6,6 +6,7 @@ HOMEPAGE=http://www.gentoo.org
 KEYWORDS=~amd64 ~arm ~hppa ~mips ~ppc ~ppc64 ~x86
 LICENSE=GPL-2
 RDEPEND=!<sys-fs/udev-182 >=sys-fs/udev-182 sys-apps/openrc
+RESTRICT=test
 SLOT=0
 SRC_URI=mirror://gentoo/udev-init-scripts-10.tar.bz2
-_md5_=679677ccf74299f7c8ac3726627fa9b2
+_md5_=58ec19260af67fa00d6d489eee7fc9b6

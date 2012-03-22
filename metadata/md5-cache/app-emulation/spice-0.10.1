@@ -1,5 +1,5 @@
 DEFINED_PHASES=configure install prepare
-DEPEND=dev-util/pkgconfig >=app-emulation/spice-protocol-0.10.1 >=x11-libs/pixman-0.17.7 media-libs/alsa-lib media-libs/celt:0.5.1 dev-libs/openssl >=x11-libs/libXrandr-1.2 x11-libs/libX11 x11-libs/libXext x11-libs/libXinerama x11-libs/libXfixes x11-libs/libXrender virtual/jpeg sys-libs/zlib client? ( gui? ( =dev-games/cegui-0.6* ) ) sasl? ( dev-libs/cyrus-sasl ) smartcard? ( >=app-emulation/libcacard-0.1.2 ) >=sys-devel/automake-1.11.1:1.11 >=sys-devel/autoconf-2.68 sys-devel/libtool
+DEPEND=dev-util/pkgconfig >=app-emulation/spice-protocol-0.10.1 >=x11-libs/pixman-0.17.7 media-libs/alsa-lib media-libs/celt:0.5.1 dev-libs/openssl >=x11-libs/libXrandr-1.2 x11-libs/libX11 x11-libs/libXext x11-libs/libXinerama x11-libs/libXfixes x11-libs/libXrender virtual/jpeg sys-libs/zlib client? ( gui? ( =dev-games/cegui-0.6* ) ) sasl? ( dev-libs/cyrus-sasl ) smartcard? ( >=app-emulation/libcacard-0.1.2 ) || ( >=sys-devel/automake-1.11.1:1.11 ) >=sys-devel/autoconf-2.68 sys-devel/libtool
 DESCRIPTION=SPICE server and client.
 EAPI=4
 HOMEPAGE=http://spice-space.org/
@@ -9,5 +9,5 @@ LICENSE=LGPL-2.1
 RDEPEND=>=app-emulation/spice-protocol-0.10.1 >=x11-libs/pixman-0.17.7 media-libs/alsa-lib media-libs/celt:0.5.1 dev-libs/openssl >=x11-libs/libXrandr-1.2 x11-libs/libX11 x11-libs/libXext x11-libs/libXinerama x11-libs/libXfixes x11-libs/libXrender virtual/jpeg sys-libs/zlib client? ( gui? ( =dev-games/cegui-0.6* ) ) sasl? ( dev-libs/cyrus-sasl ) smartcard? ( >=app-emulation/libcacard-0.1.2 )
 SLOT=0
 SRC_URI=http://spice-space.org/download/releases/spice-0.10.1.tar.bz2
-_eclasses_=autotools	5f30b960294681188533f1047d54f1fc	eutils	ba24d79270ea0022703f16b5de80051c	libtool	5f623f5a211fb1b2d84d88ee49959a54	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e	versionator	6601b4c5b3f019a993db59a50e1854e4
+_eclasses_=autotools	ccfdfc42a39f4d539297a1291e4c5348	eutils	ba24d79270ea0022703f16b5de80051c	libtool	5f623f5a211fb1b2d84d88ee49959a54	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
 _md5_=f621603aaf9b4f19a7e2844543a8da78

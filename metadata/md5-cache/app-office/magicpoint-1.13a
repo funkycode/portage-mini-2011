@@ -1,5 +1,5 @@
 DEFINED_PHASES=compile configure install postinst postrm prepare
-DEPEND=x11-libs/libICE x11-libs/libSM x11-libs/libXrender x11-libs/libXmu >=media-libs/libpng-1.4 gif? ( >=media-libs/giflib-4.0.1 ) imlib? ( media-libs/imlib ) truetype? ( x11-libs/libXft ) emacs? ( virtual/emacs ) m17n-lib? ( dev-libs/m17n-lib ) mng? ( media-libs/libmng ) sys-devel/autoconf x11-proto/xextproto x11-libs/libxkbfile app-text/rman x11-misc/imake >=sys-devel/automake-1.11.1:1.11 >=sys-devel/autoconf-2.68 sys-devel/libtool >=sys-apps/sed-4
+DEPEND=x11-libs/libICE x11-libs/libSM x11-libs/libXrender x11-libs/libXmu >=media-libs/libpng-1.4 gif? ( >=media-libs/giflib-4.0.1 ) imlib? ( media-libs/imlib ) truetype? ( x11-libs/libXft ) emacs? ( virtual/emacs ) m17n-lib? ( dev-libs/m17n-lib ) mng? ( media-libs/libmng ) sys-devel/autoconf x11-proto/xextproto x11-libs/libxkbfile app-text/rman x11-misc/imake || ( >=sys-devel/automake-1.11.1:1.11 ) >=sys-devel/autoconf-2.68 sys-devel/libtool >=sys-apps/sed-4
 DESCRIPTION=An X11 based presentation tool
 EAPI=4
 HOMEPAGE=http://member.wide.ad.jp/wg/mgp/
@@ -9,5 +9,5 @@ LICENSE=BSD
 RDEPEND=x11-libs/libICE x11-libs/libSM x11-libs/libXrender x11-libs/libXmu >=media-libs/libpng-1.4 gif? ( >=media-libs/giflib-4.0.1 ) imlib? ( media-libs/imlib ) truetype? ( x11-libs/libXft ) emacs? ( virtual/emacs ) m17n-lib? ( dev-libs/m17n-lib ) mng? ( media-libs/libmng ) nls? ( sys-devel/gettext ) truetype? ( cjk? ( media-fonts/sazanami ) )
 SLOT=0
 SRC_URI=ftp://sh.wide.ad.jp/WIDE/free-ware/mgp/magicpoint-1.13a.tar.gz ftp://ftp.mew.org/pub/MagicPoint/magicpoint-1.13a.tar.gz
-_eclasses_=autotools	5f30b960294681188533f1047d54f1fc	elisp-common	aa9676ce708f8aacf54ff9df8015963b	eutils	ba24d79270ea0022703f16b5de80051c	fixheadtails	f96922acc9287f1e889a1e50a6c8986e	libtool	5f623f5a211fb1b2d84d88ee49959a54	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e	versionator	6601b4c5b3f019a993db59a50e1854e4
+_eclasses_=autotools	ccfdfc42a39f4d539297a1291e4c5348	elisp-common	aa9676ce708f8aacf54ff9df8015963b	eutils	ba24d79270ea0022703f16b5de80051c	fixheadtails	f96922acc9287f1e889a1e50a6c8986e	libtool	5f623f5a211fb1b2d84d88ee49959a54	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
 _md5_=b7f0c17f3aef1eddff167643225d8b44

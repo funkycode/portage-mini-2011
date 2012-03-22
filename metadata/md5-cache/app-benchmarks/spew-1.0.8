@@ -1,5 +1,5 @@
 DEFINED_PHASES=configure install prepare
-DEPEND=static? ( sys-libs/ncurses[-gpm] dev-libs/popt[static-libs] ) !static? ( sys-libs/ncurses dev-libs/popt ) >=sys-devel/automake-1.11.1:1.11 >=sys-devel/autoconf-2.68 sys-devel/libtool
+DEPEND=static? ( sys-libs/ncurses[-gpm] dev-libs/popt[static-libs] ) !static? ( sys-libs/ncurses dev-libs/popt ) || ( >=sys-devel/automake-1.11.1:1.11 ) >=sys-devel/autoconf-2.68 sys-devel/libtool
 DESCRIPTION=Measures I/O performance and/or generates I/O load
 EAPI=4
 HOMEPAGE=http://spew.berlios.de/
@@ -9,5 +9,5 @@ LICENSE=GPL-2
 RDEPEND=static? ( sys-libs/ncurses[-gpm] dev-libs/popt[static-libs] ) !static? ( sys-libs/ncurses dev-libs/popt )
 SLOT=0
 SRC_URI=ftp://ftp.berlios.de/pub/spew/1.0.8/spew-1.0.8.tgz
-_eclasses_=autotools	5f30b960294681188533f1047d54f1fc	eutils	ba24d79270ea0022703f16b5de80051c	libtool	5f623f5a211fb1b2d84d88ee49959a54	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e	versionator	6601b4c5b3f019a993db59a50e1854e4
+_eclasses_=autotools	ccfdfc42a39f4d539297a1291e4c5348	eutils	ba24d79270ea0022703f16b5de80051c	libtool	5f623f5a211fb1b2d84d88ee49959a54	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
 _md5_=09b8ff3f2ad7cf0067e6526ff6237e72

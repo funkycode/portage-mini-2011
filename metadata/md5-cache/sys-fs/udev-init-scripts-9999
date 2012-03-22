@@ -7,4 +7,4 @@ LICENSE=GPL-2
 RDEPEND=!<sys-fs/udev-182 >=sys-fs/udev-182 sys-apps/openrc
 SLOT=0
 _eclasses_=git-2	6bb20ec18cca375571bcbe67bcf2e1d7
-_md5_=ceb2f00a7fe8073318edb8e1909491da
+_md5_=2e3b6d01e0d44a96ab9e2233be2fdb18

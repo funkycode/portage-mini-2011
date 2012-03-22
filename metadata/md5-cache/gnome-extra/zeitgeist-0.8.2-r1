@@ -1,5 +1,5 @@
 DEFINED_PHASES=compile configure install postinst postrm prepare setup test
-DEPEND=dev-python/dbus-python dev-python/pygobject:2 dev-python/pyxdg dev-python/rdflib media-libs/raptor:2 extensions? ( gnome-extra/zeitgeist-extensions ) passiv? ( gnome-extra/zeitgeist-datahub ) plugins? ( gnome-extra/zeitgeist-datasources ) >=sys-devel/automake-1.11.1:1.11 >=sys-devel/autoconf-2.68 sys-devel/libtool =dev-lang/python-2* =dev-lang/python-2*[sqlite]
+DEPEND=dev-python/dbus-python dev-python/pygobject:2 dev-python/pyxdg dev-python/rdflib media-libs/raptor:2 extensions? ( gnome-extra/zeitgeist-extensions ) passiv? ( gnome-extra/zeitgeist-datahub ) plugins? ( gnome-extra/zeitgeist-datasources ) || ( >=sys-devel/automake-1.11.1:1.11 ) >=sys-devel/autoconf-2.68 sys-devel/libtool =dev-lang/python-2* =dev-lang/python-2*[sqlite]
 DESCRIPTION=Service to log activities and present to other apps
 EAPI=4
 HOMEPAGE=http://launchpad.net/zeitgeist/
@@ -9,5 +9,5 @@ LICENSE=GPL-2
 RDEPEND=dev-python/dbus-python dev-python/pygobject:2 dev-python/pyxdg dev-python/rdflib media-libs/raptor:2 extensions? ( gnome-extra/zeitgeist-extensions ) passiv? ( gnome-extra/zeitgeist-datahub ) plugins? ( gnome-extra/zeitgeist-datasources ) =dev-lang/python-2* =dev-lang/python-2*[sqlite]
 SLOT=0
 SRC_URI=http://launchpad.net/zeitgeist/0.8/0.8.2/+download/zeitgeist-0.8.2.tar.gz
-_eclasses_=autotools	5f30b960294681188533f1047d54f1fc	autotools-utils	748973db029ba52a1991320e1034bad9	eutils	ba24d79270ea0022703f16b5de80051c	libtool	5f623f5a211fb1b2d84d88ee49959a54	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	python	d6df8e9d4686f7550769a9777aa622b9	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e	versionator	6601b4c5b3f019a993db59a50e1854e4
+_eclasses_=autotools	ccfdfc42a39f4d539297a1291e4c5348	autotools-utils	748973db029ba52a1991320e1034bad9	eutils	ba24d79270ea0022703f16b5de80051c	libtool	5f623f5a211fb1b2d84d88ee49959a54	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	python	d6df8e9d4686f7550769a9777aa622b9	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e	versionator	6601b4c5b3f019a993db59a50e1854e4
 _md5_=4ba48c5ed331b4199fb723d2e092b263

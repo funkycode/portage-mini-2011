@@ -1,5 +1,5 @@
 DEFINED_PHASES=compile configure install postinst prepare unpack
-DEPEND=x11-libs/fox:1.7 jpeg? ( virtual/jpeg ) png? ( media-libs/libpng:0 ) tiff? ( media-libs/tiff:0 ) >=sys-devel/automake-1.11.1:1.11 >=sys-devel/autoconf-2.68 sys-devel/libtool dev-util/reswrap >=sys-apps/sed-4
+DEPEND=x11-libs/fox:1.7 jpeg? ( virtual/jpeg ) png? ( media-libs/libpng:0 ) tiff? ( media-libs/tiff:0 ) || ( >=sys-devel/automake-1.11.1:1.11 ) >=sys-devel/autoconf-2.68 sys-devel/libtool dev-util/reswrap >=sys-apps/sed-4
 DESCRIPTION=File manager based on the FOX Toolkit
 EAPI=4
 HOMEPAGE=http://www.fox-toolkit.org/
@@ -9,5 +9,5 @@ LICENSE=GPL-2
 RDEPEND=x11-libs/fox:1.7 jpeg? ( virtual/jpeg ) png? ( media-libs/libpng:0 ) tiff? ( media-libs/tiff:0 )
 SLOT=0
 SRC_URI=ftp://ftp.fox-toolkit.org/pub/fox-1.7.32.tar.gz
-_eclasses_=autotools	5f30b960294681188533f1047d54f1fc	eutils	ba24d79270ea0022703f16b5de80051c	fox	7fcd536b5a8615a764d2e6dfe8efa520	libtool	5f623f5a211fb1b2d84d88ee49959a54	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e	versionator	6601b4c5b3f019a993db59a50e1854e4
+_eclasses_=autotools	ccfdfc42a39f4d539297a1291e4c5348	eutils	ba24d79270ea0022703f16b5de80051c	fox	7fcd536b5a8615a764d2e6dfe8efa520	libtool	5f623f5a211fb1b2d84d88ee49959a54	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e	versionator	6601b4c5b3f019a993db59a50e1854e4
 _md5_=32b6d02753123baf845acdc3678b3b9e

@@ -1,0 +1,11 @@
+DEFINED_PHASES=install prepare
+DEPEND=>=sys-libs/ncurses-5.7-r7 !net-analyzer/iptraf
+DESCRIPTION=A console-based network monitoring utility
+EAPI=4
+HOMEPAGE=http://fedorahosted.org/iptraf-ng/
+KEYWORDS=~alpha ~amd64 ~arm ~hppa ~ia64 ~ppc ~ppc64 ~s390 ~sh ~sparc ~x86
+LICENSE=GPL-2
+RDEPEND=>=sys-libs/ncurses-5.7-r7
+SLOT=0
+SRC_URI=http://dev.gentoo.org/~jer/iptraf-ng-1.1.1.20120321.tar.xz
+_md5_=e73c9a8baceddaabaebbef2797e03c83

@@ -1,5 +1,5 @@
 DEFINED_PHASES=configure install postinst postrm prepare setup
-DEPEND=>=dev-libs/dbus-glib-0.76 >=dev-libs/glib-2.18:2 >=dev-libs/libdbusmenu-0.3.97:0[introspection?] dev-libs/libxml2:2 dev-python/pygtk:2 >=x11-libs/gtk+-2.12:2 dev-libs/libindicate:3 introspection? ( dev-libs/gobject-introspection ) !<dev-libs/libindicate-0.6.1-r201 gnome-base/gnome-common app-text/gnome-doc-utils dev-util/gtk-doc-am dev-util/pkgconfig dev-lang/vala:0.14[vapigen] >=sys-devel/automake-1.11.1:1.11 >=sys-devel/autoconf-2.68 sys-devel/libtool =dev-lang/python-2.7*
+DEPEND=>=dev-libs/dbus-glib-0.76 >=dev-libs/glib-2.18:2 >=dev-libs/libdbusmenu-0.3.97:0[introspection?] dev-libs/libxml2:2 dev-python/pygtk:2 >=x11-libs/gtk+-2.12:2 dev-libs/libindicate:3 introspection? ( dev-libs/gobject-introspection ) !<dev-libs/libindicate-0.6.1-r201 gnome-base/gnome-common app-text/gnome-doc-utils dev-util/gtk-doc-am dev-util/pkgconfig dev-lang/vala:0.14[vapigen] || ( >=sys-devel/automake-1.11.1:1.11 ) >=sys-devel/autoconf-2.68 sys-devel/libtool =dev-lang/python-2.7*
 DESCRIPTION=A library to raise flags on DBus for other components of the desktop to pick up and visualize
 EAPI=4
 HOMEPAGE=http://launchpad.net/libindicate
@@ -10,5 +10,5 @@ RDEPEND=>=dev-libs/dbus-glib-0.76 >=dev-libs/glib-2.18:2 >=dev-libs/libdbusmenu-
 RESTRICT=test
 SLOT=0
 SRC_URI=http://launchpad.net/libindicate/0.6/0.6.1/+download/libindicate-0.6.1.tar.gz
-_eclasses_=autotools	5f30b960294681188533f1047d54f1fc	eutils	ba24d79270ea0022703f16b5de80051c	libtool	5f623f5a211fb1b2d84d88ee49959a54	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	python	d6df8e9d4686f7550769a9777aa622b9	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e	versionator	6601b4c5b3f019a993db59a50e1854e4
+_eclasses_=autotools	ccfdfc42a39f4d539297a1291e4c5348	eutils	ba24d79270ea0022703f16b5de80051c	libtool	5f623f5a211fb1b2d84d88ee49959a54	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	python	d6df8e9d4686f7550769a9777aa622b9	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
 _md5_=030c66eb9fb9e1bcbe22b9dd207f04bd

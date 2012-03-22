@@ -1,5 +1,5 @@
 DEFINED_PHASES=compile install postinst postrm prepare setup test
-DEPEND=doc? ( <=dev-python/sphinx-1.0.7 ) test? ( dev-python/pytest ) || ( =dev-lang/python-2.7* =dev-lang/python-2.6* ) || ( =dev-lang/python-2.7*[tk] =dev-lang/python-2.6*[tk] )
+DEPEND=doc? ( dev-python/sphinx ) test? ( dev-python/pytest ) || ( =dev-lang/python-2.7* =dev-lang/python-2.6* ) || ( =dev-lang/python-2.7*[tk] =dev-lang/python-2.6*[tk] )
 DESCRIPTION=Simulation in Python is an object-oriented, process-based discrete-event simulation language
 EAPI=4
 HOMEPAGE=http://simpy.sourceforge.net/
@@ -10,4 +10,4 @@ RDEPEND=|| ( =dev-lang/python-2.7* =dev-lang/python-2.6* ) || ( =dev-lang/python
 SLOT=0
 SRC_URI=mirror://sourceforge/simpy/SimPy-2.3.tar.gz
 _eclasses_=distutils	15ae23f6f8219a009bfcfff7724fe727	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	python	d6df8e9d4686f7550769a9777aa622b9	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68
-_md5_=771014f9d2e9b1ee089b5fdd02277864
+_md5_=39884c0a5b983f9f24207d23b9b7e65b

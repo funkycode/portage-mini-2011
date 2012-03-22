@@ -1,5 +1,5 @@
 DEFINED_PHASES=compile configure install postinst postrm prepare
-DEPEND=>=app-text/djvu-3.5.22-r1 x11-libs/qt-gui:4 dev-util/pkgconfig nsplugin? ( dev-libs/glib:2 ) >=sys-devel/automake-1.11.1:1.11 >=sys-devel/autoconf-2.68 sys-devel/libtool
+DEPEND=>=app-text/djvu-3.5.22-r1 x11-libs/qt-gui:4 dev-util/pkgconfig nsplugin? ( dev-libs/glib:2 ) || ( >=sys-devel/automake-1.11.1:1.11 ) >=sys-devel/autoconf-2.68 sys-devel/libtool
 DESCRIPTION=Portable DjVu viewer using Qt4
 EAPI=3
 HOMEPAGE=http://djvu.sourceforge.net/djview4.html
@@ -9,5 +9,5 @@ LICENSE=GPL-2
 RDEPEND=>=app-text/djvu-3.5.22-r1 x11-libs/qt-gui:4
 SLOT=0
 SRC_URI=mirror://sourceforge/djvu/djview4-4.6.tar.gz
-_eclasses_=autotools	5f30b960294681188533f1047d54f1fc	eutils	ba24d79270ea0022703f16b5de80051c	fdo-mime	0acfe1a88fd8751a1d5dc671168219fa	flag-o-matic	66cb710a2aa184a5687fe1289d7973ab	libtool	5f623f5a211fb1b2d84d88ee49959a54	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	nsplugins	6695ecf00333c6acf870a802d3ceb9fd	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e	versionator	6601b4c5b3f019a993db59a50e1854e4
+_eclasses_=autotools	ccfdfc42a39f4d539297a1291e4c5348	eutils	ba24d79270ea0022703f16b5de80051c	fdo-mime	0acfe1a88fd8751a1d5dc671168219fa	flag-o-matic	66cb710a2aa184a5687fe1289d7973ab	libtool	5f623f5a211fb1b2d84d88ee49959a54	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	nsplugins	6695ecf00333c6acf870a802d3ceb9fd	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e	versionator	6601b4c5b3f019a993db59a50e1854e4
 _md5_=aa36cfe737e13def7c6467ac1fb789f2
