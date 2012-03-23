@@ -1,0 +1,12 @@
+DEFINED_PHASES=compile install postinst postrm
+DEPEND=sys-devel/gettext >=sys-apps/sed-4 =dev-lang/python-2*
+DESCRIPTION=Sulfur, the Entropy Package Manager Store
+EAPI=3
+HOMEPAGE=http://www.sabayon.org
+KEYWORDS=~amd64 ~arm ~x86
+LICENSE=GPL-2
+RDEPEND=dev-python/pygtk:2 ~sys-apps/entropy-1.0_rc90 sys-apps/file[python] sys-devel/gettext x11-libs/vte:0[python] x11-misc/xdg-utils =dev-lang/python-2*
+SLOT=0
+SRC_URI=mirror://sabayon/sys-apps/entropy-1.0_rc90.tar.bz2
+_eclasses_=eutils	0f008baa9552301d379ae5df233e9713	fdo-mime	0acfe1a88fd8751a1d5dc671168219fa	gnome2-utils	0556f216199e15cc37899e1130da3824	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	python	cb2844e25e38800105564c14a716c805	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
+_md5_=5f0e76aa8c098ea38679487790bc499c

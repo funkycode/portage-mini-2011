@@ -1,0 +1,13 @@
+DEFINED_PHASES=compile configure install postinst prepare setup
+DEPEND=dev-lang/perl ssl? ( dev-libs/openssl ) gnutls? ( net-libs/gnutls ) ldap? ( net-nds/openldap ) mysql? ( virtual/mysql ) postgres? ( dev-db/postgresql-server ) sqlite? ( >=dev-db/sqlite-3.0 )
+DESCRIPTION=Inspire IRCd - The Stable, High-Performance Modular IRCd
+EAPI=4
+HOMEPAGE=http://www.inspircd.org/
+IUSE=gnutls ipv6 ldap mysql postgres sqlite ssl
+KEYWORDS=~amd64 ~x86
+LICENSE=GPL-2
+RDEPEND=dev-lang/perl ssl? ( dev-libs/openssl ) gnutls? ( net-libs/gnutls ) ldap? ( net-nds/openldap ) mysql? ( virtual/mysql ) postgres? ( dev-db/postgresql-server ) sqlite? ( >=dev-db/sqlite-3.0 )
+SLOT=0
+SRC_URI=http://www.inspircd.org/downloads/InspIRCd-2.0.5.tar.bz2
+_eclasses_=eutils	0f008baa9552301d379ae5df233e9713	flag-o-matic	66cb710a2aa184a5687fe1289d7973ab	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
+_md5_=cf85ac713e405284a0c145037c5a229a

@@ -1,0 +1,12 @@
+DEFINED_PHASES=compile install
+DEPEND=~sys-apps/magneto-core-1.0_rc90
+DESCRIPTION=Official Sabayon Linux Entropy Notification Applet Loader
+EAPI=2
+HOMEPAGE=http://www.sabayon.org
+KEYWORDS=~amd64 ~arm ~x86
+LICENSE=GPL-2
+RDEPEND=~sys-apps/magneto-core-1.0_rc90
+SLOT=0
+SRC_URI=mirror://sabayon/sys-apps/entropy-1.0_rc90.tar.bz2
+_eclasses_=eutils	0f008baa9552301d379ae5df233e9713	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
+_md5_=815ee1781b8b1db1fbd0f933e548b189

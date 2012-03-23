@@ -3723,7 +3723,14 @@ net-irc/charybdis:largenet - Enable support/tweaks for large networks
 net-irc/epic5:archive - Use app-arch/libarchive to use zip and tar archives from scripts.
 net-irc/epic5:valgrind - Compile against dev-util/valgrind headers to improve memory-leak checking when running epic5 under valgrind.
 net-irc/ezbounce:boost - Compile against dev-libs/boost libraries
-net-irc/inspircd:openssl - Build dev-libs/openssl module
+net-irc/inspircd:gnutls - Enable TLS support
+net-irc/inspircd:ipv6 - Enable support for IP version 6
+net-irc/inspircd:ldap - Enable LDAP support
+net-irc/inspircd:mysql - Enable MySQL database backend
+net-irc/inspircd:openssl - Enable SSL support
+net-irc/inspircd:postgres - Enable PostgreSQL database backend
+net-irc/inspircd:sqlite - Enable Sqlite database backend
+net-irc/inspircd:ssl - Enable SSL support
 net-irc/kvirc:dcc_video - Support video connections over DCC protocol
 net-irc/kvirc:dcc_voice - Support voice connections over DCC protocol
 net-irc/kvirc:ipc - Support inter-process communication between KVIrc processes
@@ -3922,6 +3929,7 @@ net-libs/xulrunner:ipc - Use inter-process communication between tabs and plugin
 net-libs/xulrunner:system-sqlite - Use the system-wide dev-db/sqlite installation with secure-delete enabled
 net-libs/xulrunner:webm - Use system libvpx media-libs/libvpx
 net-libs/zeromq:pgm - 0MQ is build with 'Pragmatic General Multicast' (RFC 3208) support using the excellent OpenPGM implementation.
+net-mail/automx:sql - Enable support for SQL backends
 net-mail/automx:tools - Install additional tool: automx-test
 net-mail/courier-imap:trashquota - include deleted messages, and the Trash folder, in the estimated quota usage for maildirs
 net-mail/cyrus-imapd:replication - Enable replication support in the cyrus imap server

@@ -4,11 +4,11 @@ DESCRIPTION=irc to IM gateway that support multiple IM protocols
 EAPI=4
 HOMEPAGE=http://www.bitlbee.org/
 IUSE=debug gnutls ipv6 +jabber libevent msn nss +oscar otr +plugins purple skype ssl test twitter +yahoo xinetd
-KEYWORDS=~amd64 ~ppc ~x86 ~x86-fbsd
+KEYWORDS=amd64 ~ppc ~x86 ~x86-fbsd
 LICENSE=GPL-2
 RDEPEND=purple? ( net-im/pidgin ) libevent? ( dev-libs/libevent ) !libevent? ( >=dev-libs/glib-2.4 ) otr? ( net-libs/libotr ) gnutls? ( net-libs/gnutls ) !gnutls? ( nss? ( dev-libs/nss ) !nss? ( ssl? ( dev-libs/openssl ) ) ) virtual/logger skype? ( dev-python/skype4py net-im/skype ) xinetd? ( sys-apps/xinetd ) skype? ( || ( =dev-lang/python-2.7* =dev-lang/python-2.6* =dev-lang/python-2.5* ) )
 REQUIRED_USE=^^ ( purple || ( jabber msn oscar yahoo ) ) msn? ( || ( gnutls nss ssl ) ) jabber? ( !nss )
 SLOT=0
 SRC_URI=http://get.bitlbee.org/src/bitlbee-3.0.5.tar.gz
 _eclasses_=eutils	0f008baa9552301d379ae5df233e9713	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	python	cb2844e25e38800105564c14a716c805	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
-_md5_=ffb0809ed90316bf80a14c061b13ff87
+_md5_=f0e62338a2aaebdd933fe6ddea640c1e
