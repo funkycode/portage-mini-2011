@@ -9,5 +9,5 @@ LICENSE=GPL-2
 RDEPEND=media-libs/fidlib media-libs/flac media-libs/libid3tag media-libs/libogg media-libs/libsndfile >=media-libs/libsoundtouch-1.5 media-libs/libvorbis >=media-libs/portaudio-19_pre media-libs/portmidi media-libs/taglib virtual/glu virtual/opengl x11-libs/qt-gui:4 x11-libs/qt-opengl:4 x11-libs/qt-qt3support:4 x11-libs/qt-svg:4 x11-libs/qt-webkit:4 x11-libs/qt-xmlpatterns:4 aac? ( media-libs/faad2 media-libs/libmp4v2 ) mp3? ( media-libs/libmad ) pulseaudio? ( media-sound/pulseaudio ) shout? ( media-libs/libshout ) wavpack? ( media-sound/wavpack )
 SLOT=0
 SRC_URI=http://downloads.mixxx.org/mixxx-1.10.0/mixxx-1.10.0-src.tar.gz
-_eclasses_=eutils	ba24d79270ea0022703f16b5de80051c	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	scons-utils	9cb9120b919b1ea34b4b7028d9973261	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
+_eclasses_=eutils	0f008baa9552301d379ae5df233e9713	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	scons-utils	9cb9120b919b1ea34b4b7028d9973261	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
 _md5_=c16abf6b2bdceedb46290b26a13f2fa1

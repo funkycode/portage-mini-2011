@@ -8,5 +8,5 @@ LICENSE=GPL-2
 RDEPEND=X? ( x11-libs/libX11 x11-libs/libXaw x11-libs/libXmu x11-libs/libXt ) ncurses? ( sys-libs/ncurses sys-libs/readline ) ssl? ( dev-libs/openssl ) tcl? ( dev-lang/tcl )
 SLOT=0
 SRC_URI=mirror://sourceforge/x3270/suite3270-3.3.9ga12.tgz
-_eclasses_=eutils	ba24d79270ea0022703f16b5de80051c	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
+_eclasses_=eutils	0f008baa9552301d379ae5df233e9713	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
 _md5_=ee799b338ca55fd8309507ce41672270

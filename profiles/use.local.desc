@@ -5175,7 +5175,6 @@ www-apps/gallery:zip - Add app-arch/zip for the zip download module
 www-apps/horde-passwd:clearpasswd - Enables cleartext password storage in the vpopmail files
 www-apps/ikiwiki:extras - Installs additional modules used by ikiwiki plugins
 www-apps/lxr:freetext - Adds support for freetext search using swish-e
-www-apps/mediawiki:math - Ads math rendering support
 www-apps/otrs:mod_perl - Provide all dependencies for use of mod_perl instead of cgi
 www-apps/postfixadmin:extras - Install contributed scripts and plugins
 www-apps/postfixadmin:tests - Install model unit tests

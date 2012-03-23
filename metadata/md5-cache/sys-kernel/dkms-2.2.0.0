@@ -9,5 +9,5 @@ PDEPEND=bash-completion? ( app-shells/bash-completion )
 RDEPEND=app-arch/rpm bash-completion? ( app-admin/eselect )
 SLOT=0
 SRC_URI=http://linux.dell.com/dkms/permalink/dkms-2.2.0.0.tar.gz
-_eclasses_=bash-completion	003731da0df19d26955927bd534f3058	eutils	ba24d79270ea0022703f16b5de80051c	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
+_eclasses_=bash-completion	003731da0df19d26955927bd534f3058	eutils	0f008baa9552301d379ae5df233e9713	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
 _md5_=9dad88af02c6643d73c28269d96ac874

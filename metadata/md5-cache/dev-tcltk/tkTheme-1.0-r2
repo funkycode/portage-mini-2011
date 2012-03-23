@@ -9,5 +9,5 @@ LICENSE=BSD
 RDEPEND=dev-lang/tk x11-libs/libX11 x11-libs/libXext x11-libs/libXmu x11-libs/libXpm
 SLOT=0
 SRC_URI=http://www.xmission.com/~georgeps/Tk_Theme/other/tkTheme.tgz
-_eclasses_=autotools	7ab833dc3fe456bb82bd3d8416510e73	autotools-utils	748973db029ba52a1991320e1034bad9	eutils	ba24d79270ea0022703f16b5de80051c	libtool	5f623f5a211fb1b2d84d88ee49959a54	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
+_eclasses_=autotools	addbdf6cce5024ac93ad2084ad5e1d2d	autotools-utils	748973db029ba52a1991320e1034bad9	eutils	0f008baa9552301d379ae5df233e9713	libtool	5f623f5a211fb1b2d84d88ee49959a54	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
 _md5_=82ad2dbcc692c504d1796680bbd7f054

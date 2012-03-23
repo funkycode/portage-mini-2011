@@ -9,5 +9,5 @@ LICENSE=LGPL-2.1
 RDEPEND=>=dev-python/pygtk-2.8.0 >=dev-python/pyclutter-1.0.0:1.0 >=media-libs/clutter-1.0.0:1.0 >=media-libs/clutter-gtk-0.10.2:0.10 || ( =dev-lang/python-2.7* =dev-lang/python-2.6* )
 SLOT=0.10
 SRC_URI=http://www.clutter-project.org/sources/pyclutter-gtk/0.10/pyclutter-gtk-0.10.0.tar.bz2
-_eclasses_=clutter	4ca33727265c5b36907271e63783f635	eutils	ba24d79270ea0022703f16b5de80051c	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	python	d6df8e9d4686f7550769a9777aa622b9	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e	versionator	6601b4c5b3f019a993db59a50e1854e4
+_eclasses_=clutter	4ca33727265c5b36907271e63783f635	eutils	0f008baa9552301d379ae5df233e9713	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	python	d6df8e9d4686f7550769a9777aa622b9	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e	versionator	6601b4c5b3f019a993db59a50e1854e4
 _md5_=6f6b34f5d5eb1c96dace89a4fa3895ee

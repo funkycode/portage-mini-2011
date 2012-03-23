@@ -9,5 +9,5 @@ LICENSE=GPL-2
 RDEPEND=net-print/cups || ( =dev-lang/python-2.7* =dev-lang/python-2.6* =dev-lang/python-2.5* )
 SLOT=0
 SRC_URI=http://cyberelk.net/tim/data/pycups/pycups-1.9.49.tar.bz2
-_eclasses_=distutils	15ae23f6f8219a009bfcfff7724fe727	eutils	ba24d79270ea0022703f16b5de80051c	flag-o-matic	66cb710a2aa184a5687fe1289d7973ab	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	python	d6df8e9d4686f7550769a9777aa622b9	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
+_eclasses_=distutils	15ae23f6f8219a009bfcfff7724fe727	eutils	0f008baa9552301d379ae5df233e9713	flag-o-matic	66cb710a2aa184a5687fe1289d7973ab	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	python	d6df8e9d4686f7550769a9777aa622b9	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
 _md5_=e2c00550b6ee57b93fc365abdeb2a442

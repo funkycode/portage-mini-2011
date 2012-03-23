@@ -10,5 +10,5 @@ PDEPEND=!systemd? ( >=sys-auth/consolekit-0.4.5[policykit] ) pam? ( sys-auth/pam
 RDEPEND=>=dev-libs/glib-2.30 dev-libs/expat introspection? ( >=dev-libs/gobject-introspection-0.6.2 ) pam? ( virtual/pam ) systemd? ( sys-apps/systemd )
 SLOT=0
 SRC_URI=http://hal.freedesktop.org/releases/polkit-0.104.tar.gz
-_eclasses_=eutils	ba24d79270ea0022703f16b5de80051c	flag-o-matic	66cb710a2aa184a5687fe1289d7973ab	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	pam	3f746974e1cc47cabe3bd488c08cdc8e	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
+_eclasses_=eutils	0f008baa9552301d379ae5df233e9713	flag-o-matic	66cb710a2aa184a5687fe1289d7973ab	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	pam	3f746974e1cc47cabe3bd488c08cdc8e	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
 _md5_=d7acfa0b00894187097251c146ff339e

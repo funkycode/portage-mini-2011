@@ -8,5 +8,5 @@ LICENSE=GPL-2
 RDEPEND==www-servers/apache-2*
 SLOT=0
 SRC_URI=http://www.caucho.com/download/resin-4.0.15-src.zip mirror://gentoo/resin-gentoo-patches-4.0.15.tar.bz2
-_eclasses_=apache-module	1f60370f9dceba046ec036cd6bbb0c8b	autotools	7ab833dc3fe456bb82bd3d8416510e73	depend.apache	a471783c63e68987a2b20eb46f9edf68	eutils	ba24d79270ea0022703f16b5de80051c	libtool	5f623f5a211fb1b2d84d88ee49959a54	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
+_eclasses_=apache-module	1f60370f9dceba046ec036cd6bbb0c8b	autotools	addbdf6cce5024ac93ad2084ad5e1d2d	depend.apache	a471783c63e68987a2b20eb46f9edf68	eutils	0f008baa9552301d379ae5df233e9713	libtool	5f623f5a211fb1b2d84d88ee49959a54	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
 _md5_=8d511094804e75ab1e0c906f6c6495fc

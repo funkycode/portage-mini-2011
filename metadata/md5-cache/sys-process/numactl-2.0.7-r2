@@ -1,0 +1,12 @@
+DEFINED_PHASES=compile install prepare test
+DESCRIPTION=Utilities and libraries for NUMA systems
+EAPI=4
+HOMEPAGE=http://oss.sgi.com/projects/libnuma/
+IUSE=perl static-libs
+KEYWORDS=~amd64 ~ppc ~ppc64 ~x86 ~amd64-linux
+LICENSE=GPL-2
+RDEPEND=perl? ( dev-lang/perl )
+SLOT=0
+SRC_URI=ftp://oss.sgi.com/www/projects/libnuma/download/numactl-2.0.7.tar.gz
+_eclasses_=eutils	0f008baa9552301d379ae5df233e9713	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
+_md5_=1b95b9e65146d6b0d0de72bd1e11b3d2

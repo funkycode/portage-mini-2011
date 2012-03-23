@@ -8,5 +8,5 @@ LICENSE=ISC BSD-2 BSD
 RDEPEND=selinux? ( sys-libs/libselinux ) pam? ( virtual/pam ) virtual/mta >=sys-process/cronbase-0.3.2 !sys-process/bcron !sys-process/cronie !sys-process/dcron !sys-process/fcron
 SLOT=0
 SRC_URI=mirror://gentoo/vixie-cron-4.1.tar.bz2 mirror://gentoo/vixie-cron-4.1-gentoo-r4.patch.bz2
-_eclasses_=cron	7f2ced83f02bd3c752860bd108b62e2c	eutils	ba24d79270ea0022703f16b5de80051c	flag-o-matic	66cb710a2aa184a5687fe1289d7973ab	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	pam	3f746974e1cc47cabe3bd488c08cdc8e	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
+_eclasses_=cron	7f2ced83f02bd3c752860bd108b62e2c	eutils	0f008baa9552301d379ae5df233e9713	flag-o-matic	66cb710a2aa184a5687fe1289d7973ab	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	pam	3f746974e1cc47cabe3bd488c08cdc8e	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
 _md5_=0b653a49167134c4d44c767f08b669c2

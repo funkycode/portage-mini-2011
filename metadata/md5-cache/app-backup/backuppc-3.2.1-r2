@@ -9,5 +9,5 @@ LICENSE=GPL-2
 RDEPEND=dev-lang/perl app-admin/apache-tools app-admin/makepasswd perl-core/IO-Compress dev-perl/Archive-Zip dev-perl/libwww-perl >=app-arch/tar-1.13.20 app-arch/par2cmdline app-arch/gzip app-arch/bzip2 virtual/mta www-apache/mod_perl www-servers/apache net-misc/rsync >=dev-perl/File-RsyncP-0.68 rss? ( dev-perl/XML-RSS ) samba? ( net-fs/samba ) >=app-admin/webapp-config-1.50.15
 SLOT=0
 SRC_URI=mirror://sourceforge/backuppc/BackupPC-3.2.1.tar.gz http://dev.gentooexperimental.org/~dreeevil/02-fix-config.pl-formatting.patch
-_eclasses_=eutils	ba24d79270ea0022703f16b5de80051c	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e	webapp	30d951d5c98c4f31c7999ab4ba4806d1
+_eclasses_=eutils	0f008baa9552301d379ae5df233e9713	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e	webapp	30d951d5c98c4f31c7999ab4ba4806d1
 _md5_=87ed00ea5e9e8402605273dc972bffba

@@ -9,5 +9,5 @@ LICENSE=public-domain
 RDEPEND=app-shells/tcsh dev-lang/perl media-libs/libpng X? ( >=x11-libs/openmotif-2.3:0 )
 SLOT=0
 SRC_URI=ftp://ftp.ncbi.nlm.nih.gov/toolbox/ncbi_tools/old/20090809/ncbi.tar.gz -> ncbi-tools-20090809.tar.gz
-_eclasses_=eutils	ba24d79270ea0022703f16b5de80051c	flag-o-matic	66cb710a2aa184a5687fe1289d7973ab	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
+_eclasses_=eutils	0f008baa9552301d379ae5df233e9713	flag-o-matic	66cb710a2aa184a5687fe1289d7973ab	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
 _md5_=6418f5375c45ff599210f3fe2901c83c

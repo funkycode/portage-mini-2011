@@ -9,5 +9,5 @@ LICENSE=GPL-2
 RDEPEND=pppd? ( net-dialup/ppp ) dev-lang/perl
 SLOT=0
 SRC_URI=ftp://ftp.in-berlin.de/pub/capi4linux/capi4k-utils-2005-07-18.tar.gz ftp://ftp.in-berlin.de/pub/capi4linux/OLD/capi4k-utils-2005-07-18.tar.gz http://sbriesen.de/gentoo/distfiles/capi4k-files-20050718-r5.tar.xz http://sbriesen.de/gentoo/distfiles/capi4k-patches-20050718-r5.tar.xz
-_eclasses_=eutils	ba24d79270ea0022703f16b5de80051c	linux-info	cc184ad3383ffb6ffbaa82f53608e77f	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e	versionator	6601b4c5b3f019a993db59a50e1854e4
+_eclasses_=eutils	0f008baa9552301d379ae5df233e9713	linux-info	cc184ad3383ffb6ffbaa82f53608e77f	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e	versionator	6601b4c5b3f019a993db59a50e1854e4
 _md5_=aa0d5a2d61cfd9f674de5d7c86e1174a

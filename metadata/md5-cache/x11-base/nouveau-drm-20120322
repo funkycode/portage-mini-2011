@@ -1,0 +1,13 @@
+DEFINED_PHASES=compile install postinst postrm preinst setup
+DEPEND=kernel_linux? ( sys-apps/module-init-tools ) sys-apps/sed kernel_linux? ( virtual/linux-sources )
+DESCRIPTION=Nouveau DRM Kernel Modules for X11
+EAPI=2
+HOMEPAGE=http://nouveau.freedesktop.org/
+IUSE=kernel_linux
+KEYWORDS=~amd64 ~x86
+LICENSE=MIT
+RDEPEND=kernel_linux? ( sys-apps/module-init-tools )
+SLOT=0
+SRC_URI=mirror://gentoo/nouveau-drm-20120322.tar.gz
+_eclasses_=eutils	0f008baa9552301d379ae5df233e9713	linux-info	cc184ad3383ffb6ffbaa82f53608e77f	linux-mod	a4e07f78bacb6b129ea7b18ad060dbfc	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e	versionator	6601b4c5b3f019a993db59a50e1854e4
+_md5_=7a4432a76a7782581b895742fb7b12f3

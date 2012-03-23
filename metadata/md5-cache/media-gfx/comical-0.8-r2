@@ -8,5 +8,5 @@ LICENSE=GPL-2 unRAR
 RDEPEND=x11-libs/wxGTK:2.8
 SLOT=0
 SRC_URI=mirror://sourceforge/comical/comical-0.8.tar.gz
-_eclasses_=eutils	ba24d79270ea0022703f16b5de80051c	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e	wxwidgets	fb1a306837717dfa2af841ecdf929565
+_eclasses_=eutils	0f008baa9552301d379ae5df233e9713	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e	wxwidgets	fb1a306837717dfa2af841ecdf929565
 _md5_=b13c57e271a8192dca1101e4234982a1

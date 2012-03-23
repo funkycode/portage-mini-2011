@@ -8,5 +8,5 @@ LICENSE=GPL-2
 RDEPEND=>=sys-process/cronbase-0.3.2 virtual/mta sys-apps/ucspi-unix virtual/daemontools virtual/mta >=sys-process/cronbase-0.3.2 !sys-process/vixie-cron !sys-process/cronie !sys-process/dcron !sys-process/fcron
 SLOT=0
 SRC_URI=http://untroubled.org/bcron/archive/bcron-0.09.tar.gz
-_eclasses_=cron	7f2ced83f02bd3c752860bd108b62e2c	eutils	ba24d79270ea0022703f16b5de80051c	flag-o-matic	66cb710a2aa184a5687fe1289d7973ab	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
+_eclasses_=cron	7f2ced83f02bd3c752860bd108b62e2c	eutils	0f008baa9552301d379ae5df233e9713	flag-o-matic	66cb710a2aa184a5687fe1289d7973ab	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
 _md5_=762c161fdc4056a69ea8afd3dba582a3

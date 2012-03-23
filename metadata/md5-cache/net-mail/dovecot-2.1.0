@@ -9,5 +9,5 @@ LICENSE=LGPL-2.1 MIT
 RDEPEND=caps? ( sys-libs/libcap ) kerberos? ( virtual/krb5 ) ldap? ( net-nds/openldap ) lucene? ( >=dev-cpp/clucene-2.3 ) mysql? ( virtual/mysql ) pam? ( virtual/pam ) postgres? ( dev-db/postgresql-base !dev-db/postgresql-base[ldap,threads] ) sqlite? ( dev-db/sqlite ) ssl? ( dev-libs/openssl ) vpopmail? ( net-mail/vpopmail ) virtual/libiconv >=net-mail/mailbase-0.00-r8
 SLOT=0
 SRC_URI=http://www.dovecot.org/releases/2.1/dovecot-2.1.0.tar.gz sieve? ( http://www.rename-it.nl/dovecot/2.1/dovecot-2.1-pigeonhole-0.3.0.tar.gz ) managesieve? ( http://www.rename-it.nl/dovecot/2.1/dovecot-2.1-pigeonhole-0.3.0.tar.gz )
-_eclasses_=eutils	ba24d79270ea0022703f16b5de80051c	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	ssl-cert	7f678cd359743d336ecf3a6cc4ce1521	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e	versionator	6601b4c5b3f019a993db59a50e1854e4
+_eclasses_=eutils	0f008baa9552301d379ae5df233e9713	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	ssl-cert	7f678cd359743d336ecf3a6cc4ce1521	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e	versionator	6601b4c5b3f019a993db59a50e1854e4
 _md5_=1147944a180c653b6440849f9e2598de

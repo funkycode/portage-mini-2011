@@ -8,5 +8,5 @@ LICENSE=GPL-2
 RDEPEND=media-libs/libogg media-libs/libvorbis media-libs/libsdl[video] media-libs/sdl-mixer media-libs/glew
 SLOT=0
 SRC_URI=http://www.daphne-emu.com/download/daphne-1.0-src.tar.gz
-_eclasses_=base	5f35078c26d6c60556d5c8a2feb4f84f	eutils	ba24d79270ea0022703f16b5de80051c	games	f75cdbfdf1760e514ca65e2f6c6a7c72	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
+_eclasses_=base	5f35078c26d6c60556d5c8a2feb4f84f	eutils	0f008baa9552301d379ae5df233e9713	games	f75cdbfdf1760e514ca65e2f6c6a7c72	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
 _md5_=70ba40d1c1e6dd3945bc50c21c0e6115

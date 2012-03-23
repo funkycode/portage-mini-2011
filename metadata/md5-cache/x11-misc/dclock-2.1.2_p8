@@ -7,5 +7,5 @@ LICENSE=GPL-2
 RDEPEND=x11-libs/libX11 x11-libs/libXt x11-libs/libXext app-text/rman
 SLOT=0
 SRC_URI=mirror://debian/pool/main/d/dclock/dclock_2.1.2.orig.tar.gz mirror://debian/pool/main/d/dclock/dclock_2.1.2-8.diff.gz
-_eclasses_=eutils	ba24d79270ea0022703f16b5de80051c	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
+_eclasses_=eutils	0f008baa9552301d379ae5df233e9713	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
 _md5_=b319be3a080dd8c384e886a619505958

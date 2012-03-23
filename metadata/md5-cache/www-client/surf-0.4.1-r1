@@ -9,5 +9,5 @@ LICENSE=as-is
 RDEPEND=!sci-chemistry/surf !savedconfig? ( net-misc/wget x11-terms/xterm ) x11-apps/xprop x11-misc/dmenu dev-libs/glib net-libs/libsoup net-libs/webkit-gtk:2 x11-libs/gtk+:2 x11-libs/libX11
 SLOT=0
 SRC_URI=http://dl.suckless.org/surf/surf-0.4.1.tar.gz
-_eclasses_=eutils	ba24d79270ea0022703f16b5de80051c	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	portability	536c5e70c5fb252ed3b769e04aa3f05b	savedconfig	973a6df1a0949eba28a185eac79de815	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
+_eclasses_=eutils	0f008baa9552301d379ae5df233e9713	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	portability	536c5e70c5fb252ed3b769e04aa3f05b	savedconfig	973a6df1a0949eba28a185eac79de815	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
 _md5_=46e154d4960bf03a1a00da8f93ec2613

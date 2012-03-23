@@ -9,5 +9,5 @@ LICENSE=IBM BSD openafs-krb5-a APSL-2 sun-rpc
 RDEPEND=kernel_linux? ( sys-apps/module-init-tools )
 SLOT=0
 SRC_URI=http://openafs.org/dl/1.4.14/openafs-1.4.14-src.tar.bz2 mirror://gentoo/openafs-1.4.14-patches-1.tar.bz2
-_eclasses_=autotools	7ab833dc3fe456bb82bd3d8416510e73	eutils	ba24d79270ea0022703f16b5de80051c	libtool	5f623f5a211fb1b2d84d88ee49959a54	linux-info	cc184ad3383ffb6ffbaa82f53608e77f	linux-mod	a4e07f78bacb6b129ea7b18ad060dbfc	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e	versionator	6601b4c5b3f019a993db59a50e1854e4
+_eclasses_=autotools	addbdf6cce5024ac93ad2084ad5e1d2d	eutils	0f008baa9552301d379ae5df233e9713	libtool	5f623f5a211fb1b2d84d88ee49959a54	linux-info	cc184ad3383ffb6ffbaa82f53608e77f	linux-mod	a4e07f78bacb6b129ea7b18ad060dbfc	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e	versionator	6601b4c5b3f019a993db59a50e1854e4
 _md5_=b9686a7d5e910f1c3dd05a5f2465053f

@@ -9,5 +9,5 @@ LICENSE=GPL-2
 RDEPEND=net-libs/libpcap glib? ( dev-libs/glib ) libnet? ( >=net-libs/libnet-1.1.0-r3 ) !net-libs/libnids:1.1
 SLOT=1.2
 SRC_URI=mirror://sourceforge/libnids/libnids-1.24.tar.gz
-_eclasses_=eutils	ba24d79270ea0022703f16b5de80051c	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
+_eclasses_=eutils	0f008baa9552301d379ae5df233e9713	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
 _md5_=06664d1b96073f9d44691ceb2219ae0a

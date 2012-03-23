@@ -9,5 +9,5 @@ LICENSE=GPL-2
 RDEPEND=>=gnustep-base/gnustep-make-2.0 virtual/gnustep-back debug? ( >=sys-devel/gdb-6.0 )
 SLOT=0
 SRC_URI=ftp://ftp.gnustep.org/pub/gnustep/usr-apps/gworkspace-0.9.0.tar.gz
-_eclasses_=eutils	ba24d79270ea0022703f16b5de80051c	flag-o-matic	66cb710a2aa184a5687fe1289d7973ab	gnustep-2	8084c74922e0081b7eeea8408b9fd3d2	gnustep-base	a3ff8ba225ffccb43419fd84841dad54	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
+_eclasses_=eutils	0f008baa9552301d379ae5df233e9713	flag-o-matic	66cb710a2aa184a5687fe1289d7973ab	gnustep-2	8084c74922e0081b7eeea8408b9fd3d2	gnustep-base	a3ff8ba225ffccb43419fd84841dad54	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
 _md5_=b64337bd67be0ebd8374175bd3c09496

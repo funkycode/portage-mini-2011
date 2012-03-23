@@ -1,0 +1,12 @@
+DEFINED_PHASES=compile configure install postinst postrm prepare setup test unpack
+DEPEND=>=x11-libs/libdrm-2.4.24[video_cards_nouveau] x11-proto/glproto x11-proto/xf86driproto x11-proto/dri2proto || ( >=sys-devel/automake-1.11.1:1.11 ) >=sys-devel/autoconf-2.68 sys-devel/libtool x86-interix? ( >=sys-devel/libtool-2.2.6a sys-devel/m4 >=x11-misc/util-macros-1.15.0 >=media-fonts/font-util-1.2.0 ) ppc-aix? ( >=sys-devel/libtool-2.2.6a sys-devel/m4 >=x11-misc/util-macros-1.15.0 >=media-fonts/font-util-1.2.0 ) x86-winnt? ( >=sys-devel/libtool-2.2.6a sys-devel/m4 >=x11-misc/util-macros-1.15.0 >=media-fonts/font-util-1.2.0 ) >=sys-devel/libtool-2.2.6a sys-devel/m4 >=x11-misc/util-macros-1.15.0 >=media-fonts/font-util-1.2.0 >=dev-util/pkgconfig-0.23 x11-proto/xf86driproto x11-proto/glproto x11-proto/dri2proto x11-proto/fontsproto x11-proto/randrproto x11-proto/renderproto x11-proto/videoproto x11-proto/xextproto x11-proto/xineramaproto x11-proto/xproto x11-base/xorg-server[-minimal] x11-libs/libdrm x11-base/xorg-server[xorg] x11-libs/libpciaccess
+DESCRIPTION=Accelerated Open Source driver for nVidia cards
+EAPI=4
+HOMEPAGE=http://nouveau.freedesktop.org/
+KEYWORDS=~amd64 ~ppc ~ppc64 ~x86
+LICENSE=MIT
+RDEPEND=>=x11-libs/libdrm-2.4.24[video_cards_nouveau] x11-base/xorg-server[-minimal] x11-libs/libdrm x11-base/xorg-server[xorg] x11-libs/libpciaccess
+SLOT=0
+SRC_URI=mirror://gentoo/xf86-video-nouveau-0.0.16_pre20120322.tar.bz2
+_eclasses_=autotools	addbdf6cce5024ac93ad2084ad5e1d2d	autotools-utils	748973db029ba52a1991320e1034bad9	eutils	0f008baa9552301d379ae5df233e9713	flag-o-matic	66cb710a2aa184a5687fe1289d7973ab	libtool	5f623f5a211fb1b2d84d88ee49959a54	linux-info	cc184ad3383ffb6ffbaa82f53608e77f	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e	versionator	6601b4c5b3f019a993db59a50e1854e4	xorg-2	3a8bdddbfe71c4023df8cf5945dd2c54
+_md5_=b44e97535052f9f1dbd4e515e83321df

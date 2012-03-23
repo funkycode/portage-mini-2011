@@ -8,5 +8,5 @@ RDEPEND=sys-libs/ncurses sys-libs/readline sys-apps/which
 RESTRICT=test
 SLOT=0
 SRC_URI=mirror://sourceforge.jp/tomoyo/30298/ccs-tools-1.6.8-20090623.tar.gz
-_eclasses_=eutils	ba24d79270ea0022703f16b5de80051c	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
+_eclasses_=eutils	0f008baa9552301d379ae5df233e9713	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
 _md5_=e35cc738a7a10cc575a6a6b0c44ba41b

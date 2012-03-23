@@ -6,5 +6,5 @@ KEYWORDS=alpha amd64 ppc sparc x86
 LICENSE=LGPL-2.1
 SLOT=0
 SRC_URI=mirror://debian/pool/main/libv/libvformat/libvformat_1.13.orig.tar.gz mirror://debian/pool/main/libv/libvformat/libvformat_1.13-4.diff.gz
-_eclasses_=autotools	7ab833dc3fe456bb82bd3d8416510e73	eutils	ba24d79270ea0022703f16b5de80051c	libtool	5f623f5a211fb1b2d84d88ee49959a54	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
+_eclasses_=autotools	addbdf6cce5024ac93ad2084ad5e1d2d	eutils	0f008baa9552301d379ae5df233e9713	libtool	5f623f5a211fb1b2d84d88ee49959a54	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
 _md5_=2e622e068051de8e0e9acd7adee33681

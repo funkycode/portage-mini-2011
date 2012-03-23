@@ -9,5 +9,5 @@ LICENSE=GPL-2
 RDEPEND=sys-libs/zlib x11-libs/libXext x11-libs/libXfixes x11-libs/libXdamage media-libs/libvorbis media-libs/libogg media-libs/libtheora[encode] x11-libs/libICE x11-libs/libSM alsa? ( media-libs/alsa-lib ) jack? ( media-sound/jack-audio-connection-kit )
 SLOT=0
 SRC_URI=mirror://sourceforge/recordmydesktop/recordmydesktop-0.3.8.1.tar.gz
-_eclasses_=eutils	ba24d79270ea0022703f16b5de80051c	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
+_eclasses_=eutils	0f008baa9552301d379ae5df233e9713	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
 _md5_=eeb8568ed72478b0a982df5ded09f508
