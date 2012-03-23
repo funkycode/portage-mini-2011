@@ -1,11 +1,10 @@
-# Copyright 1999-2012 Gentoo Foundation
+# Copyright owners: Gentoo Foundation
+#                   Arfrever Frehtes Taifersar Arahesis
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/dev-python/twisted-news/twisted-news-12.0.0.ebuild,v 1.1 2012/03/22 07:06:57 patrick Exp $
 
-EAPI="4"
-PYTHON_DEPEND="2"
-SUPPORT_PYTHON_ABIS="1"
-RESTRICT_PYTHON_ABIS="3.* *-jython"
+EAPI="4-python"
+PYTHON_MULTIPLE_ABIS="1"
+PYTHON_RESTRICTED_ABIS="3.* *-jython"
 MY_PACKAGE="News"
 
 inherit twisted versionator
@@ -15,8 +14,8 @@ DESCRIPTION="Twisted News is an NNTP server and programming library."
 KEYWORDS="~alpha ~amd64 ~ia64 ~ppc ~ppc64 ~sparc ~x86"
 IUSE=""
 
-DEPEND="=dev-python/twisted-$(get_version_component_range 1-2)*
-	=dev-python/twisted-mail-$(get_version_component_range 1-2)*"
+DEPEND="$(python_abi_depend "=dev-python/twisted-$(get_version_component_range 1-2)*")
+	$(python_abi_depend "=dev-python/twisted-mail-$(get_version_component_range 1-2)*")"
 RDEPEND="${DEPEND}"
 
-PYTHON_MODNAME="twisted/news twisted/plugins"
+PYTHON_MODULES="twisted/news twisted/plugins"

@@ -5,11 +5,8 @@ Subject: Fix missing error status in XPath evaluation
 
 Started by Chris Evans, I added a few more place where the
 error should have been set in the evaluation context.
----
-diff --git a/xpath.c b/xpath.c
-index bcee2ea..d9d902c 100644
---- a/xpath.c
-+++ b/xpath.c
+--- xpath.c
++++ xpath.c
 @@ -2485,6 +2485,7 @@ valuePush(xmlXPathParserContextPtr ctxt, xmlXPathObjectPtr value)
                                               sizeof(ctxt->valueTab[0]));
          if (tmp == NULL) {
@@ -58,5 +55,3 @@ index bcee2ea..d9d902c 100644
      return (total);
  }
  
---
-cgit v0.9.0.2

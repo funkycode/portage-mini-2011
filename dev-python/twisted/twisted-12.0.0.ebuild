@@ -1,11 +1,10 @@
-# Copyright 1999-2012 Gentoo Foundation
+# Copyright owners: Gentoo Foundation
+#                   Arfrever Frehtes Taifersar Arahesis
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/dev-python/twisted/twisted-12.0.0.ebuild,v 1.1 2012/03/22 07:03:15 patrick Exp $
 
-EAPI="4"
-PYTHON_DEPEND="2"
-SUPPORT_PYTHON_ABIS="1"
-RESTRICT_PYTHON_ABIS="3.* *-jython"
+EAPI="4-python"
+PYTHON_MULTIPLE_ABIS="1"
+PYTHON_RESTRICTED_ABIS="3.* *-jython"
 MY_PACKAGE="Core"
 
 inherit eutils twisted versionator
@@ -17,10 +16,10 @@ SLOT="0"
 KEYWORDS="~alpha ~amd64 ~arm ~hppa ~ia64 ~mips ~ppc ~ppc64 ~s390 ~sh ~sparc ~x86 ~x86-fbsd ~ia64-hpux ~x86-interix ~amd64-linux ~x86-linux ~ppc-macos ~x64-macos ~x86-macos ~sparc-solaris ~sparc64-solaris ~x64-solaris ~x86-solaris"
 IUSE="crypt gtk serial"
 
-DEPEND="net-zope/zope-interface
-	crypt? ( >=dev-python/pyopenssl-0.10 )
-	gtk? ( dev-python/pygtk:2 )
-	serial? ( dev-python/pyserial )"
+DEPEND="$(python_abi_depend net-zope/zope-interface)
+	crypt? ( $(python_abi_depend ">=dev-python/pyopenssl-0.10") )
+	gtk? ( $(python_abi_depend -e "2.5 *-pypy-*" dev-python/pygtk:2) )
+	serial? ( $(python_abi_depend dev-python/pyserial) )"
 RDEPEND="${DEPEND}"
 
 DOCS="CREDITS NEWS README"
@@ -46,7 +45,7 @@ src_prepare(){
 src_test() {
 	testing() {
 		local exit_status="0"
-		"$(PYTHON)" setup.py build -b "build-${PYTHON_ABI}" install --root="${T}/tests" --no-compile || die "Installation of tests failed with $(python_get_implementation_and_version)"
+		python_execute "$(PYTHON)" setup.py build -b "build-${PYTHON_ABI}" install --root="${T}/tests" --no-compile || die "Installation of tests failed with $(python_get_implementation_and_version)"
 
 		pushd "${T}/tests${EPREFIX}$(python_get_sitedir)" > /dev/null || die
 
@@ -62,7 +61,7 @@ src_test() {
 		# An empty file doesn't work because the tests check for doc strings in all packages.
 		echo "'''plugins stub'''" > twisted/plugins/__init__.py || die
 
-		if ! PYTHONPATH="." "${T}/tests${EPREFIX}/usr/bin/trial" twisted; then
+		if ! python_execute PYTHONPATH="." "${T}/tests${EPREFIX}/usr/bin/trial" twisted; then
 			if [[ -n "${TWISTED_DEBUG_TESTS}" ]]; then
 				die "Tests failed with $(python_get_implementation_and_version)"
 			else
@@ -84,7 +83,7 @@ src_install() {
 	python_generate_wrapper_scripts -E -f -q "${ED}usr/bin/trial"
 
 	postinstallational_preparation() {
-		touch "${ED}$(python_get_sitedir)/Twisted-${PV}-py$(python_get_version).egg-info"
+		touch "${ED}$(python_get_sitedir)/Twisted-${PV}-py$(python_get_version -l).egg-info"
 
 		# Delete dropin.cache to avoid collisions.
 		# dropin.cache is regenerated in pkg_postinst().

@@ -1,20 +1,21 @@
-# Copyright 1999-2012 Gentoo Foundation
+# Copyright owners: Gentoo Foundation
+#                   Arfrever Frehtes Taifersar Arahesis
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/sci-libs/scipy/scipy-0.10.1.ebuild,v 1.1 2012/03/06 22:05:48 bicatali Exp $
 
-EAPI=4
+EAPI="4-python"
+PYTHON_MULTIPLE_ABIS="1"
+PYTHON_RESTRICTED_ABIS="*-jython *-pypy-*"
 
-SUPPORT_PYTHON_ABIS="1"
-RESTRICT_PYTHON_ABIS="*-jython *-pypy-*"
+inherit distutils eutils flag-o-matic fortran-2 toolchain-funcs
 
-inherit eutils fortran-2 distutils flag-o-matic toolchain-funcs
+DOC_P="${PN}-0.10.0"
 
 DESCRIPTION="Scientific algorithms library for Python"
 HOMEPAGE="http://www.scipy.org/ http://pypi.python.org/pypi/scipy"
 SRC_URI="mirror://sourceforge/${PN}/${P}.tar.gz
 	doc? (
-		http://docs.scipy.org/doc/${P}/${PN}-html.zip -> ${P}-html.zip
-		http://docs.scipy.org/doc/${P}/${PN}-ref.pdf -> ${P}-ref.pdf
+		http://docs.scipy.org/doc/${DOC_P}/${PN}-html.zip -> ${DOC_P}-html.zip
+		http://docs.scipy.org/doc/${DOC_P}/${PN}-ref.pdf -> ${DOC_P}-ref.pdf
 	)"
 
 LICENSE="BSD LGPL-2"
@@ -22,7 +23,7 @@ SLOT="0"
 IUSE="doc test umfpack"
 KEYWORDS="~amd64 ~ppc ~ppc64 ~x86 ~amd64-linux ~x86-linux ~ppc-macos ~x86-macos"
 
-CDEPEND="dev-python/numpy
+CDEPEND="$(python_abi_depend dev-python/numpy)
 	sci-libs/arpack
 	virtual/cblas
 	virtual/lapack
@@ -31,17 +32,18 @@ CDEPEND="dev-python/numpy
 DEPEND="${CDEPEND}
 	dev-util/pkgconfig
 	doc? ( app-arch/unzip )
-	test? ( dev-python/nose )
+	test? ( $(python_abi_depend dev-python/nose) )
 	umfpack? ( dev-lang/swig )"
 
 RDEPEND="virtual/fortran
 	${CDEPEND}
-	dev-python/imaging"
+	$(python_abi_depend -i "2.*" dev-python/imaging)"
 
 DOCS="THANKS.txt LATEST.txt TOCHANGE.txt"
 
 pkg_setup() {
 	fortran-2_pkg_setup
+	python_pkg_setup
 	# scipy automatically detects libraries by default
 	export {FFTW,FFTW3,UMFPACK}=None
 	use umfpack && unset UMFPACK
@@ -56,13 +58,12 @@ pkg_setup() {
 	export F90="${FC}"
 	export SCIPY_FCONFIG="config_fc --noopt --noarch"
 	append-fflags -fPIC
-	python_pkg_setup
 }
 
 src_unpack() {
 	unpack ${P}.tar.gz
 	if use doc; then
-		unzip -qo "${DISTDIR}"/${P}-html.zip -d html || die
+		unzip -qo "${DISTDIR}/${DOC_P}-html.zip" -d html || die
 	fi
 }
 
@@ -90,13 +91,11 @@ src_compile() {
 
 src_test() {
 	testing() {
-		"$(PYTHON)" setup.py build -b "build-${PYTHON_ABI}" install \
-			--home="${S}/test-${PYTHON_ABI}" --no-compile ${SCIPY_FCONFIG} \
-			|| die "install test failed"
+		python_execute "$(PYTHON)" setup.py build -b "build-${PYTHON_ABI}" install \
+			--home="${S}/test-${PYTHON_ABI}" --no-compile ${SCIPY_FCONFIG} || return
 		pushd "${S}/test-${PYTHON_ABI}/"lib*/python > /dev/null
-		PYTHONPATH=. "$(PYTHON)" -c "import scipy; scipy.test('full')" \
-			2>&1 | tee test.log
-		grep -q ^ERROR test.log && die "test failed"
+		python_execute PYTHONPATH="." "$(PYTHON)" -c "import scipy; scipy.test('full')" 2>&1 | tee test.log
+		grep -q ^ERROR test.log && return 1
 		popd > /dev/null
 		rm -fr test-${PYTHON_ABI}
 	}
@@ -105,7 +104,11 @@ src_test() {
 
 src_install() {
 	distutils_src_install ${SCIPY_FCONFIG}
-	use doc && dohtml -r "${WORKDIR}"/html/* && dodoc "${DISTDIR}"/${P}*pdf
+
+	if use doc; then
+		dohtml -r "${WORKDIR}/html/"*
+		dodoc "${DISTDIR}/${DOC_P}-ref.pdf"
+	fi
 }
 
 pkg_postinst() {

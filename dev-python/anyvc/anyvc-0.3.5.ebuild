@@ -1,11 +1,10 @@
-# Copyright 1999-2010 Gentoo Foundation
+# Copyright owners: Gentoo Foundation
+#                   Arfrever Frehtes Taifersar Arahesis
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/dev-python/anyvc/anyvc-0.3.5.ebuild,v 1.1 2010/10/30 16:25:34 arfrever Exp $
 
-EAPI="3"
-PYTHON_DEPEND="2:2.5"
-SUPPORT_PYTHON_ABIS="1"
-RESTRICT_PYTHON_ABIS="2.4 3.*"
+EAPI="4-python"
+PYTHON_MULTIPLE_ABIS="1"
+PYTHON_RESTRICTED_ABIS="3.* *-jython"
 
 inherit distutils
 
@@ -18,16 +17,16 @@ SLOT="0"
 KEYWORDS="~amd64 ~x86"
 IUSE="bazaar doc git mercurial subversion"
 
-RDEPEND="dev-python/apipkg
-	dev-python/execnet
-	dev-python/py
-	bazaar? ( dev-vcs/bzr )
-	git? ( dev-python/dulwich )
-	mercurial? ( dev-vcs/mercurial )
-	subversion? ( dev-python/subvertpy )"
+RDEPEND="$(python_abi_depend dev-python/apipkg)
+	$(python_abi_depend dev-python/execnet)
+	$(python_abi_depend dev-python/py)
+	bazaar? ( $(python_abi_depend -e "2.5 *-pypy-*" dev-vcs/bzr) )
+	git? ( $(python_abi_depend dev-python/dulwich) )
+	mercurial? ( $(python_abi_depend dev-vcs/mercurial) )
+	subversion? ( $(python_abi_depend dev-python/subvertpy) )"
 DEPEND="${RDEPEND}
-	dev-python/setuptools
-	doc? ( dev-python/sphinx )"
+	$(python_abi_depend dev-python/setuptools)
+	doc? ( $(python_abi_depend dev-python/sphinx) )"
 
 src_compile() {
 	distutils_src_compile
@@ -43,8 +42,8 @@ src_install() {
 
 	if use doc; then
 		pushd docs_output > /dev/null
-		docinto html
-		cp -R [a-z]* _static "${ED}usr/share/doc/${PF}/html" || die "Installation of documentation failed"
+		insinto /usr/share/doc/${PF}/html
+		doins -r [a-z]* _static
 		popd > /dev/null
 	fi
 }

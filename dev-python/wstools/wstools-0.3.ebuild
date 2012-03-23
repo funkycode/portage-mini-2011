@@ -1,26 +1,27 @@
-# Copyright 1999-2012 Gentoo Foundation
+# Copyright owners: Gentoo Foundation
+#                   Arfrever Frehtes Taifersar Arahesis
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/dev-python/wstools/wstools-0.3.ebuild,v 1.7 2012/02/01 20:59:08 ranger Exp $
 
-EAPI="3"
-PYTHON_DEPEND="2"
-PYTHON_USE_WITH="xml"
-SUPPORT_PYTHON_ABIS="1"
-RESTRICT_PYTHON_ABIS="2.4 3.*"
+EAPI="4-python"
+PYTHON_DEPEND="<<[xml]>>"
+PYTHON_MULTIPLE_ABIS="1"
+PYTHON_RESTRICTED_ABIS="3.*"
 
 inherit distutils
 
 DESCRIPTION="WSDL parsing services package for Web Services for Python"
-HOMEPAGE="https://github.com/kiorky/wstools http://pypi.python.org/pypi/wstools"
+HOMEPAGE="http://pywebsvcs.sourceforge.net/ http://pypi.python.org/pypi/wstools"
 SRC_URI="mirror://pypi/${PN:0:1}/${PN}/${P}.tar.gz"
 
 LICENSE="BSD"
 SLOT="0"
-KEYWORDS="~alpha ~amd64 ~arm ~hppa ~ia64 ~ppc ~s390 ~sh ~sparc ~x86 ~x86-macos"
+KEYWORDS="~alpha ~amd64 ~arm ~hppa ~ia64 ~ppc ~ppc64 ~s390 ~sh ~sparc ~x86 ~x86-fbsd ~x86-freebsd ~amd64-linux ~x86-linux ~ppc-macos ~x86-macos"
 IUSE=""
 
-DEPEND="dev-python/setuptools"
+DEPEND="$(python_abi_depend dev-python/setuptools)"
 RDEPEND=""
+
+DOCS="CHANGES.txt README.txt"
 
 src_prepare() {
 	distutils_src_prepare

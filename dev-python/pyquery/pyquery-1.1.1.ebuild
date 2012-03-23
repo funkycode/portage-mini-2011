@@ -1,13 +1,11 @@
-# Copyright 1999-2012 Gentoo Foundation
+# Copyright owners: Gentoo Foundation
+#                   Arfrever Frehtes Taifersar Arahesis
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/dev-python/pyquery/pyquery-1.1.1.ebuild,v 1.4 2012/03/18 15:06:30 armin76 Exp $
 
-EAPI=3
-
-PYTHON_DEPEND="2"
-SUPPORT_PYTHON_ABIS="1"
-RESTRICT_PYTHON_ABIS="2.4 *-jython 2.7-pypy-*"
-#DISTUTILS_SRC_TEST="nosetests" somewhat works, tries to test docs
+EAPI="4-python"
+PYTHON_MULTIPLE_ABIS="1"
+PYTHON_RESTRICTED_ABIS="2.5 3.1 *-jython *-pypy-*"
+DISTUTILS_SRC_TEST="nosetests"
 
 inherit distutils
 
@@ -17,14 +15,21 @@ SRC_URI="mirror://pypi/${PN:0:1}/${PN}/${P}.tar.gz"
 
 LICENSE="BSD"
 SLOT="0"
-KEYWORDS="~alpha ~amd64 ~arm ~ppc ~sparc ~x86"
-IUSE="test"
+KEYWORDS="~amd64 ~arm ~x86"
+IUSE=""
 
-RDEPEND=">=dev-python/lxml-2.1"
+RDEPEND="$(python_abi_depend ">=dev-python/lxml-2.1")
+	$(python_abi_depend dev-python/webob)"
 DEPEND="${RDEPEND}
-		test? (
-			dev-python/webob
-			dev-python/nose
-		)"
+	$(python_abi_depend dev-python/setuptools)"
 
-DOCS="CHANGES.txt"
+DOCS="CHANGES.txt README.txt"
+
+src_install() {
+	distutils_src_install
+
+	delete_tests() {
+		rm -f "${ED}$(python_get_sitedir)/pyquery/"{test.py,tests.txt}
+	}
+	python_execute_function -q delete_tests
+}

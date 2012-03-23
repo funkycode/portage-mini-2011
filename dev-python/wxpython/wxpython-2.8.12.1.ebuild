@@ -1,12 +1,11 @@
-# Copyright 1999-2012 Gentoo Foundation
+# Copyright owners: Gentoo Foundation
+#                   Arfrever Frehtes Taifersar Arahesis
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/dev-python/wxpython/wxpython-2.8.12.1.ebuild,v 1.11 2012/03/08 14:47:08 ranger Exp $
 
-EAPI="4"
-PYTHON_DEPEND="2"
+EAPI="4-python"
 WX_GTK_VER="2.8"
-SUPPORT_PYTHON_ABIS="1"
-RESTRICT_PYTHON_ABIS="3.* *-jython 2.7-pypy-*"
+PYTHON_MULTIPLE_ABIS="1"
+PYTHON_RESTRICTED_ABIS="3.* *-jython *-pypy-*"
 
 inherit alternatives distutils eutils fdo-mime wxwidgets
 
@@ -21,20 +20,20 @@ SRC_URI="mirror://sourceforge/wxpython/${MY_P}.tar.bz2
 
 LICENSE="wxWinLL-3"
 SLOT="2.8"
-KEYWORDS="~alpha amd64 arm hppa ~ia64 ppc ppc64 ~sh ~sparc x86 ~x86-fbsd"
+KEYWORDS="~alpha ~amd64 ~arm ~hppa ~ia64 ~ppc ~ppc64 ~sh ~sparc ~x86 ~x86-fbsd"
 IUSE="cairo doc examples opengl"
 
 RDEPEND="
 	>=x11-libs/wxGTK-${PV}:${WX_GTK_VER}[opengl?,tiff,X]
 	dev-libs/glib:2
-	dev-python/setuptools
+	$(python_abi_depend dev-python/setuptools)
 	media-libs/libpng:0
 	media-libs/tiff:0
 	virtual/jpeg
 	x11-libs/gtk+:2
 	x11-libs/pango[X]
-	cairo?	( >=dev-python/pycairo-1.8.4 )
-	opengl?	( dev-python/pyopengl )"
+	cairo?	( $(python_abi_depend -e "2.5" ">=dev-python/pycairo-1.8.4") )
+	opengl? ( $(python_abi_depend dev-python/pyopengl) )"
 
 DEPEND="${RDEPEND}
 	dev-util/pkgconfig"
@@ -45,7 +44,7 @@ DOC_S="${WORKDIR}/wxPython-${PV}"
 PYTHON_CFLAGS=("2.* + -fno-strict-aliasing")
 PYTHON_CXXFLAGS=("2.* + -fno-strict-aliasing")
 
-PYTHON_MODNAME="wx-${SLOT}-gtk2-unicode wxversion.py"
+PYTHON_MODULES="wx-${SLOT}-gtk2-unicode wxversion.py"
 
 src_prepare() {
 	sed -i "s:cflags.append('-O3'):pass:" config.py || die "sed failed"

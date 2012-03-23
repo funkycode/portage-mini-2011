@@ -1,14 +1,14 @@
-# Copyright 1999-2012 Gentoo Foundation
+# Copyright owners: Gentoo Foundation
+#                   Arfrever Frehtes Taifersar Arahesis
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/dev-python/certifi/certifi-0.0.8.ebuild,v 1.1 2012/02/27 05:05:43 floppym Exp $
 
-EAPI="4"
-SUPPORT_PYTHON_ABIS="1"
+EAPI="4-python"
+PYTHON_MULTIPLE_ABIS="1"
 
 inherit distutils
 
-DESCRIPTION="SSL root certificate bundle"
-HOMEPAGE="http://python-requests.org/"
+DESCRIPTION="Mozilla's SSL Certs."
+HOMEPAGE="http://python-requests.org/ http://pypi.python.org/pypi/certifi"
 SRC_URI="mirror://pypi/${P:0:1}/${PN}/${P}.tar.gz"
 
 LICENSE="ISC"
@@ -16,14 +16,15 @@ SLOT="0"
 KEYWORDS="~amd64 ~x86"
 IUSE=""
 
+DEPEND=""
 RDEPEND="app-misc/ca-certificates"
 
 src_install() {
 	distutils_src_install
-	installing() {
+
+	create_cacert.pem_symlink() {
 		# Overwrite bundled certificates with a symlink.
-		dosym "${EPREFIX}/etc/ssl/certs/ca-certificates.crt" \
-			"$(python_get_sitedir -b)/certifi/cacert.pem"
+		dosym "${EPREFIX}/etc/ssl/certs/ca-certificates.crt" "$(python_get_sitedir -b)/certifi/cacert.pem"
 	}
-	python_execute_function installing
+	python_execute_function -q create_cacert.pem_symlink
 }

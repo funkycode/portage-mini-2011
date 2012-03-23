@@ -1,11 +1,10 @@
-# Copyright 1999-2011 Gentoo Foundation
+# Copyright owners: Gentoo Foundation
+#                   Arfrever Frehtes Taifersar Arahesis
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/dev-python/pygraphviz/pygraphviz-1.1-r1.ebuild,v 1.2 2011/08/05 18:05:31 bicatali Exp $
 
-EAPI="3"
-PYTHON_DEPEND=2
-SUPPORT_PYTHON_ABIS="1"
-RESTRICT_PYTHON_ABIS="3.* *-jython"
+EAPI="4-python"
+PYTHON_MULTIPLE_ABIS="1"
+PYTHON_RESTRICTED_ABIS="3.* *-jython"
 
 inherit distutils eutils
 
@@ -23,8 +22,8 @@ DEPEND="${RDEPEND}"
 
 src_prepare() {
 	distutils_src_prepare
-	epatch "${FILESDIR}"/${PN}-1.0-setup.py.patch
-	epatch "${FILESDIR}"/${P}-avoid_tests.patch
+	epatch "${FILESDIR}/${PN}-1.0-setup.py.patch"
+	epatch "${FILESDIR}/${P}-avoid_tests.patch"
 }
 
 src_test() {
@@ -37,13 +36,13 @@ src_test() {
 src_install() {
 	distutils_src_install
 
-	if use examples; then
-		insinto /usr/share/doc/${PF}
-		doins -r examples || die "Installation of examples failed"
-	fi
-
 	delete_tests() {
 		rm -fr "${ED}$(python_get_sitedir)/${PN}/tests"
 	}
 	python_execute_function -q delete_tests
+
+	if use examples; then
+		insinto /usr/share/doc/${PF}
+		doins -r examples
+	fi
 }

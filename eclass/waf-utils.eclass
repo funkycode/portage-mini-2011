@@ -1,6 +1,5 @@
-# Copyright 1999-2011 Gentoo Foundation
+# Copyright owners: Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/eclass/waf-utils.eclass,v 1.7 2011/08/22 04:46:32 vapier Exp $
 
 # @ECLASS: waf-utils.eclass
 # @MAINTAINER:
@@ -18,7 +17,7 @@
 inherit base eutils multilib toolchain-funcs
 
 case ${EAPI:-0} in
-	4|3) EXPORT_FUNCTIONS src_configure src_compile src_install ;;
+	4-python|4|3) EXPORT_FUNCTIONS src_configure src_compile src_install ;;
 	*) die "EAPI=${EAPI} is not supported" ;;
 esac
 

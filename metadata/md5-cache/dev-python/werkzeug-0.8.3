@@ -1,13 +1,14 @@
-DEFINED_PHASES=compile install postinst postrm prepare test
-DEPEND=dev-python/setuptools test? ( dev-python/lxml ) || ( =dev-lang/python-2.7* =dev-lang/python-2.6* =dev-lang/python-2.5* )
+DEFINED_PHASES=compile install postinst postrm prepare setup test
+DEPEND=dev-python/setuptools[python_abis_2.5?,python_abis_2.6?,python_abis_2.7?,python_abis_2.5-jython?,python_abis_2.6-jython?,python_abis_2.7-pypy-1.7?,python_abis_2.7-pypy-1.8?] test? ( ( python_abis_2.5? ( dev-python/lxml[python_abis_2.5] ) python_abis_2.6? ( dev-python/lxml[python_abis_2.6] ) python_abis_2.7? ( dev-python/lxml[python_abis_2.7] ) ) ) python_abis_2.5? ( dev-lang/python:2.5 ) python_abis_2.6? ( dev-lang/python:2.6 ) python_abis_2.7? ( dev-lang/python:2.7 ) python_abis_2.5-jython? ( dev-java/jython:2.5 ) python_abis_2.6-jython? ( dev-java/jython:2.6 ) python_abis_2.7-pypy-1.7? ( dev-python/pypy:1.7 ) python_abis_2.7-pypy-1.8? ( dev-python/pypy:1.8 )
 DESCRIPTION=Collection of various utilities for WSGI applications
-EAPI=3
+EAPI=4-python
 HOMEPAGE=http://werkzeug.pocoo.org/ http://pypi.python.org/pypi/Werkzeug
-IUSE=test
+IUSE=redis test python_abis_2.5 python_abis_2.6 python_abis_2.7 python_abis_2.5-jython python_abis_2.6-jython python_abis_2.7-pypy-1.7 python_abis_2.7-pypy-1.8
 KEYWORDS=~amd64 ~x86 ~x86-fbsd ~amd64-linux ~x86-linux ~ppc-macos ~x86-macos
 LICENSE=BSD
-RDEPEND=dev-python/simplejson || ( =dev-lang/python-2.7* =dev-lang/python-2.6* =dev-lang/python-2.5* )
+RDEPEND=virtual/python-json[external,python_abis_2.5?,python_abis_2.6?,python_abis_2.7?,python_abis_2.5-jython?,python_abis_2.6-jython?,python_abis_2.7-pypy-1.7?,python_abis_2.7-pypy-1.8?] redis? ( dev-python/redis-py[python_abis_2.5?,python_abis_2.6?,python_abis_2.7?,python_abis_2.5-jython?,python_abis_2.6-jython?,python_abis_2.7-pypy-1.7?,python_abis_2.7-pypy-1.8?] ) python_abis_2.5? ( dev-lang/python:2.5 ) python_abis_2.6? ( dev-lang/python:2.6 ) python_abis_2.7? ( dev-lang/python:2.7 ) python_abis_2.5-jython? ( dev-java/jython:2.5 ) python_abis_2.6-jython? ( dev-java/jython:2.6 ) python_abis_2.7-pypy-1.7? ( dev-python/pypy:1.7 ) python_abis_2.7-pypy-1.8? ( dev-python/pypy:1.8 )
+REQUIRED_USE=|| ( python_abis_2.5 python_abis_2.6 python_abis_2.7 python_abis_2.5-jython python_abis_2.6-jython python_abis_2.7-pypy-1.7 python_abis_2.7-pypy-1.8 )
 SLOT=0
 SRC_URI=mirror://pypi/W/Werkzeug/Werkzeug-0.8.3.tar.gz
-_eclasses_=distutils	15ae23f6f8219a009bfcfff7724fe727	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	python	d6df8e9d4686f7550769a9777aa622b9	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68
-_md5_=0d1fe12ee5ae1fbe4056dd55b68267b4
+_eclasses_=distutils	82a876811ffd4907daba6062958daa26	python	cb2844e25e38800105564c14a716c805
+_md5_=e41fba2cbd4e8ee1d4010a1ebd714714

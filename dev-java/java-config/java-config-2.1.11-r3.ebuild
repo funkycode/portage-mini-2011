@@ -1,10 +1,10 @@
-# Copyright 1999-2012 Gentoo Foundation
+# Copyright owners: Gentoo Foundation
+#                   Arfrever Frehtes Taifersar Arahesis
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/dev-java/java-config/java-config-2.1.11-r3.ebuild,v 1.7 2012/01/04 18:22:13 sera Exp $
 
-EAPI="2"
-PYTHON_DEPEND="*:2.6"
-SUPPORT_PYTHON_ABIS="1"
+EAPI="4-python"
+PYTHON_MULTIPLE_ABIS="1"
+PYTHON_RESTRICTED_ABIS="2.5 *-jython"
 
 inherit distutils eutils fdo-mime gnome2-utils
 
@@ -14,7 +14,7 @@ SRC_URI="mirror://gentoo/${P}.tar.bz2"
 
 LICENSE="GPL-2"
 SLOT="2"
-KEYWORDS="amd64 ppc ppc64 x86 ~x86-fbsd"
+KEYWORDS="~amd64 ~ppc ~ppc64 ~x86 ~x86-fbsd"
 IUSE=""
 
 DEPEND=""
@@ -23,9 +23,8 @@ RDEPEND=">=dev-java/java-config-wrapper-0.15"
 PDEPEND=">=virtual/jre-1.5"
 # Tests fail when java-config isn't already installed.
 RESTRICT="test"
-RESTRICT_PYTHON_ABIS="2.4 2.5 *-jython"
 
-PYTHON_MODNAME="java_config_2"
+PYTHON_MODULES="java_config_2"
 
 src_prepare() {
 	distutils_src_prepare
@@ -45,7 +44,7 @@ src_install() {
 	rm -rf "${D}"/usr/share/mimelnk #350459
 
 	insinto /usr/share/java-config-2/config/
-	newins config/jdk-defaults-${ARCH}.conf jdk-defaults.conf || die "arch config not found"
+	newins config/jdk-defaults-${ARCH}.conf jdk-defaults.conf
 }
 
 pkg_postrm() {

@@ -1,0 +1,63 @@
+--- python/subunit/tests/sample-script.py
++++ python/subunit/tests/sample-script.py
+@@ -7,15 +7,15 @@
+     # subunit.tests.test_test_protocol.TestExecTestCase.test_sample_method_args 
+     # uses this code path to be sure that the arguments were passed to
+     # sample-script.py
+-    print "test fail"
+-    print "error fail"
++    print("test fail")
++    print("error fail")
+     sys.exit(0)
+-print "test old mcdonald"
+-print "success old mcdonald"
+-print "test bing crosby"
+-print "failure bing crosby ["
+-print "foo.c:53:ERROR invalid state"
+-print "]"
+-print "test an error"
+-print "error an error"
++print("test old mcdonald")
++print("success old mcdonald")
++print("test bing crosby")
++print("failure bing crosby [")
++print("foo.c:53:ERROR invalid state")
++print("]")
++print("test an error")
++print("error an error")
+ sys.exit(0)
+--- python/subunit/tests/sample-two-script.py
++++ python/subunit/tests/sample-two-script.py
+@@ -1,7 +1,7 @@
+ #!/usr/bin/env python
+ import sys
+-print "test old mcdonald"
+-print "success old mcdonald"
+-print "test bing crosby"
+-print "success bing crosby"
++print("test old mcdonald")
++print("success old mcdonald")
++print("test bing crosby")
++print("success bing crosby")
+ sys.exit(0)
+--- python/subunit/tests/test_subunit_filter.py
++++ python/subunit/tests/test_subunit_filter.py
+@@ -18,6 +18,7 @@
+ 
+ from datetime import datetime
+ from subunit import iso8601
++import sys
+ import unittest
+ 
+ from testtools import TestCase
+@@ -201,6 +202,10 @@
+              ('addSkip', foo, {}),
+              ('stopTest', foo), ], result._events)
+ 
++    if sys.version_info < (2, 7):
++        # These tests require Python >=2.7.
++        del test_fixup_expected_failures, test_fixup_expected_errors, test_fixup_unexpected_success
++
+ 
+ def test_suite():
+     loader = subunit.tests.TestUtil.TestLoader()

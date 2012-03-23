@@ -292,6 +292,3 @@ index b78bc2d..fe1424f 100644
    	    return(table);
          }
          xmlFree(table);
--- 
-1.7.8.4
-

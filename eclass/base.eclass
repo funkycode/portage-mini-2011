@@ -1,6 +1,5 @@
-# Copyright 1999-2011 Gentoo Foundation
+# Copyright owners: Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/eclass/base.eclass,v 1.56 2012/02/06 21:33:59 vapier Exp $
 
 # @ECLASS: base.eclass
 # @MAINTAINER:
@@ -19,11 +18,16 @@ inherit eutils
 
 BASE_EXPF="src_unpack src_compile src_install"
 case "${EAPI:-0}" in
-	2|3|4) BASE_EXPF+=" src_prepare src_configure" ;;
+	2|3|4|4-python) BASE_EXPF+=" src_prepare src_configure" ;;
 	*) ;;
 esac
 
 EXPORT_FUNCTIONS ${BASE_EXPF}
+
+# @ECLASS-VARIABLE: BASE_DESTDIR
+# @DESCRIPTION:
+# Custom destination directory for base_src_install().
+# ${D} is used by default.
 
 # @ECLASS-VARIABLE: DOCS
 # @DESCRIPTION:
@@ -161,7 +165,7 @@ base_src_make() {
 base_src_install() {
 	debug-print-function $FUNCNAME "$@"
 
-	emake DESTDIR="${D}" "$@" install || die "died running make install, $FUNCNAME"
+	emake DESTDIR="${BASE_DESTDIR-${D}}" "$@" install || die "died running make install, $FUNCNAME"
 	base_src_install_docs
 }
 

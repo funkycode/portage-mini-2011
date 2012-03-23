@@ -1,13 +1,14 @@
-DEFINED_PHASES=compile install postinst postrm prepare test
-DEPEND=>=dev-python/translationstring-1.1 >=dev-python/colander-0.9.6 >=dev-python/peppercorn-0.4 >=dev-python/chameleon-1.2.3 || ( =dev-lang/python-3.2* =dev-lang/python-2.7* =dev-lang/python-2.6* )
+DEFINED_PHASES=compile install postinst postrm prepare setup test
+DEPEND=>=dev-python/chameleon-1.2.3[python_abis_2.6?,python_abis_2.7?,python_abis_3.1?,python_abis_3.2?,python_abis_3.3?,python_abis_2.7-pypy-1.7?,python_abis_2.7-pypy-1.8?] >=dev-python/colander-0.8[python_abis_2.6?,python_abis_2.7?,python_abis_3.1?,python_abis_3.2?,python_abis_3.3?,python_abis_2.7-pypy-1.7?,python_abis_2.7-pypy-1.8?] >=dev-python/peppercorn-0.3[python_abis_2.6?,python_abis_2.7?,python_abis_3.1?,python_abis_3.2?,python_abis_3.3?,python_abis_2.7-pypy-1.7?,python_abis_2.7-pypy-1.8?] dev-python/translationstring[python_abis_2.6?,python_abis_2.7?,python_abis_3.1?,python_abis_3.2?,python_abis_3.3?,python_abis_2.7-pypy-1.7?,python_abis_2.7-pypy-1.8?] dev-python/setuptools[python_abis_2.6?,python_abis_2.7?,python_abis_3.1?,python_abis_3.2?,python_abis_3.3?,python_abis_2.7-pypy-1.7?,python_abis_2.7-pypy-1.8?] doc? ( dev-python/sphinx[python_abis_2.6?,python_abis_2.7?,python_abis_3.1?,python_abis_3.2?,python_abis_3.3?,python_abis_2.7-pypy-1.7?,python_abis_2.7-pypy-1.8?] ) test? ( dev-python/beautifulsoup:4[python_abis_2.6?,python_abis_2.7?,python_abis_3.1?,python_abis_3.2?,python_abis_3.3?,python_abis_2.7-pypy-1.7?,python_abis_2.7-pypy-1.8?] ) python_abis_2.6? ( dev-lang/python:2.6 ) python_abis_2.7? ( dev-lang/python:2.7 ) python_abis_3.1? ( dev-lang/python:3.1 ) python_abis_3.2? ( dev-lang/python:3.2 ) python_abis_3.3? ( dev-lang/python:3.3 ) python_abis_2.7-pypy-1.7? ( dev-python/pypy:1.7 ) python_abis_2.7-pypy-1.8? ( dev-python/pypy:1.8 )
 DESCRIPTION=Another form generation library
-EAPI=3
-HOMEPAGE=http://docs.pylonsproject.org/projects/deform/en/latest/ http://pypi.python.org/pypi/deform https://github.com/Pylons/deform
+EAPI=4-python
+HOMEPAGE=http://docs.repoze.org/deform http://pypi.python.org/pypi/deform
+IUSE=doc test python_abis_2.6 python_abis_2.7 python_abis_3.1 python_abis_3.2 python_abis_3.3 python_abis_2.7-pypy-1.7 python_abis_2.7-pypy-1.8
 KEYWORDS=~amd64 ~x86
 LICENSE=repoze
-RDEPEND=>=dev-python/translationstring-1.1 >=dev-python/colander-0.9.6 >=dev-python/peppercorn-0.4 >=dev-python/chameleon-1.2.3 || ( =dev-lang/python-3.2* =dev-lang/python-2.7* =dev-lang/python-2.6* )
-RESTRICT=test
+RDEPEND=>=dev-python/chameleon-1.2.3[python_abis_2.6?,python_abis_2.7?,python_abis_3.1?,python_abis_3.2?,python_abis_3.3?,python_abis_2.7-pypy-1.7?,python_abis_2.7-pypy-1.8?] >=dev-python/colander-0.8[python_abis_2.6?,python_abis_2.7?,python_abis_3.1?,python_abis_3.2?,python_abis_3.3?,python_abis_2.7-pypy-1.7?,python_abis_2.7-pypy-1.8?] >=dev-python/peppercorn-0.3[python_abis_2.6?,python_abis_2.7?,python_abis_3.1?,python_abis_3.2?,python_abis_3.3?,python_abis_2.7-pypy-1.7?,python_abis_2.7-pypy-1.8?] dev-python/translationstring[python_abis_2.6?,python_abis_2.7?,python_abis_3.1?,python_abis_3.2?,python_abis_3.3?,python_abis_2.7-pypy-1.7?,python_abis_2.7-pypy-1.8?] python_abis_2.6? ( dev-lang/python:2.6 ) python_abis_2.7? ( dev-lang/python:2.7 ) python_abis_3.1? ( dev-lang/python:3.1 ) python_abis_3.2? ( dev-lang/python:3.2 ) python_abis_3.3? ( dev-lang/python:3.3 ) python_abis_2.7-pypy-1.7? ( dev-python/pypy:1.7 ) python_abis_2.7-pypy-1.8? ( dev-python/pypy:1.8 )
+REQUIRED_USE=|| ( python_abis_2.6 python_abis_2.7 python_abis_3.1 python_abis_3.2 python_abis_3.3 python_abis_2.7-pypy-1.7 python_abis_2.7-pypy-1.8 )
 SLOT=0
 SRC_URI=mirror://pypi/d/deform/deform-0.9.4.tar.gz
-_eclasses_=distutils	15ae23f6f8219a009bfcfff7724fe727	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	python	d6df8e9d4686f7550769a9777aa622b9	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68
-_md5_=a9475926e9d5819ebd2edd216307d52d
+_eclasses_=distutils	82a876811ffd4907daba6062958daa26	python	cb2844e25e38800105564c14a716c805
+_md5_=3234227e141ec79955cc93a15e28062c

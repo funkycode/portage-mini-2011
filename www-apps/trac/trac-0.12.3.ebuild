@@ -1,18 +1,17 @@
-# Copyright 1999-2012 Gentoo Foundation
+# Copyright owners: Gentoo Foundation
+#                   Arfrever Frehtes Taifersar Arahesis
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/www-apps/trac/trac-0.12.3.ebuild,v 1.2 2012/03/16 02:44:26 floppym Exp $
 
-EAPI="4"
-PYTHON_DEPEND="2"
-SUPPORT_PYTHON_ABIS="1"
-RESTRICT_PYTHON_ABIS="3.* *-jython"
+EAPI="4-python"
+PYTHON_MULTIPLE_ABIS="1"
+PYTHON_RESTRICTED_ABIS="3.* *-jython"
 
 inherit distutils user webapp
 
-MY_PV=${PV/_beta/b}
-MY_P=Trac-${MY_PV}
+MY_PV="${PV/_beta/b}"
+MY_P="Trac-${MY_PV}"
 
-DESCRIPTION="Trac is a minimalistic web-based project management, wiki and bug/issue tracking system."
+DESCRIPTION="Integrated SCM, wiki, issue tracker and project environment"
 HOMEPAGE="http://trac.edgewall.com/ http://pypi.python.org/pypi/Trac"
 SRC_URI="http://ftp.edgewall.com/pub/trac/${MY_P}.tar.gz"
 
@@ -22,24 +21,19 @@ KEYWORDS="~amd64 ~ppc ~ppc64 ~sparc ~x86 ~x86-fbsd"
 IUSE="cgi fastcgi i18n mysql postgres +sqlite subversion"
 REQUIRED_USE="|| ( mysql postgres sqlite )"
 
-RDEPEND="
-	dev-python/setuptools
-	dev-python/docutils
-	dev-python/genshi
-	dev-python/pygments
-	dev-python/pytz
-	i18n? ( >=dev-python/Babel-0.9.5 )
+DEPEND="$(python_abi_depend dev-python/docutils)
+	$(python_abi_depend "=dev-python/genshi-0.6*")
+	$(python_abi_depend dev-python/pygments)
+	$(python_abi_depend dev-python/pytz)
+	$(python_abi_depend dev-python/setuptools)
 	cgi? ( virtual/httpd-cgi )
 	fastcgi? ( virtual/httpd-fastcgi )
-	mysql? ( dev-python/mysql-python )
-	postgres? ( >=dev-python/psycopg-2 )
-	sqlite? (
-		>=dev-db/sqlite-3.3.4
-		|| ( dev-lang/python:2.7[sqlite] dev-lang/python:2.6[sqlite] dev-lang/python:2.5[sqlite] >=dev-python/pysqlite-2.3.2 )
-	)
-	subversion? ( dev-vcs/subversion[python] )
-	"
-DEPEND="${RDEPEND}"
+	i18n? ( $(python_abi_depend ">=dev-python/Babel-0.9.5") )
+	mysql? ( $(python_abi_depend dev-python/mysql-python) )
+	postgres? ( $(python_abi_depend -e "*-pypy-*" dev-python/psycopg:2) )
+	sqlite? ( $(python_abi_depend virtual/python-sqlite[external]) )
+	subversion? ( $(python_abi_depend -e "*-pypy-*" dev-vcs/subversion[python]) )"
+RDEPEND="${DEPEND}"
 
 S="${WORKDIR}/${MY_P}"
 
@@ -55,7 +49,7 @@ pkg_setup() {
 
 src_test() {
 	testing() {
-		PYTHONPATH=. "$(PYTHON)" trac/test.py
+		python_execute PYTHONPATH="." "$(PYTHON)" trac/test.py
 	}
 	python_execute_function testing
 

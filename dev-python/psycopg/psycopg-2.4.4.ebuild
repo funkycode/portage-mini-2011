@@ -1,10 +1,10 @@
-# Copyright 1999-2012 Gentoo Foundation
+# Copyright owners: Gentoo Foundation
+#                   Arfrever Frehtes Taifersar Arahesis
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/dev-python/psycopg/psycopg-2.4.4.ebuild,v 1.3 2012/02/23 10:16:40 patrick Exp $
 
-EAPI="3"
-SUPPORT_PYTHON_ABIS="1"
-RESTRICT_PYTHON_ABIS="*-jython 2.7-pypy-* *-jython"
+EAPI="4-python"
+PYTHON_MULTIPLE_ABIS="1"
+PYTHON_RESTRICTED_ABIS="*-jython *-pypy-*"
 
 inherit distutils eutils
 
@@ -21,9 +21,9 @@ KEYWORDS="~alpha ~amd64 ~arm ~hppa ~ia64 ~ppc ~ppc64 ~sparc ~x86 ~x86-fbsd ~amd6
 IUSE="debug doc examples mxdatetime"
 
 RDEPEND=">=dev-db/postgresql-base-8.1
-	mxdatetime? ( dev-python/egenix-mx-base )"
+	mxdatetime? ( $(python_abi_depend -e "3.* *-pypy-*" dev-python/egenix-mx-base) )"
 DEPEND="${RDEPEND}
-	doc? ( dev-python/sphinx )"
+	doc? ( $(python_abi_depend dev-python/sphinx) )"
 RESTRICT="test"
 
 S="${WORKDIR}/${MY_P}"
@@ -31,20 +31,20 @@ S="${WORKDIR}/${MY_P}"
 PYTHON_CFLAGS=("2.* + -fno-strict-aliasing")
 
 DOCS="AUTHORS doc/HACKING doc/SUCCESS"
-PYTHON_MODNAME="${PN}2"
+PYTHON_MODULES="${PN}2"
 
 src_prepare() {
-	epatch "${FILESDIR}/${PN}-2.4.2-setup.py.patch"
 	epatch "${FILESDIR}/${PN}-2.0.9-round-solaris.patch"
+	epatch "${FILESDIR}/${PN}-2.4.2-setup.py.patch"
 
 	python_convert_shebangs 2 doc/src/tools/stitch_text.py
 
 	if use debug; then
-		sed -i 's/^\(define=\)/\1PSYCOPG_DEBUG,/' setup.cfg || die "sed failed"
+		sed -i "s/^\(define=\)/\1PSYCOPG_DEBUG,/" setup.cfg || die "sed failed"
 	fi
 
 	if use mxdatetime; then
-		sed -i 's/\(use_pydatetime=\)1/\10/' setup.cfg || die "sed failed"
+		sed -i "s/\(use_pydatetime=\)1/\10/" setup.cfg || die "sed failed"
 	fi
 }
 
@@ -54,7 +54,7 @@ src_compile() {
 	if use doc; then
 		einfo "Generation of documentation"
 		pushd doc > /dev/null
-		emake -j1 html text || die "Generation of documentation failed"
+		emake -j1 html text
 		popd > /dev/null
 	fi
 }
@@ -63,16 +63,16 @@ src_install() {
 	distutils_src_install
 
 	if use doc; then
-		dodoc doc/psycopg2.txt || die "dodoc failed"
+		dodoc doc/psycopg2.txt
 
 		pushd doc/html > /dev/null
 		insinto /usr/share/doc/${PF}/html
-		doins -r [a-z]* _static || die "Installation of documentation failed"
+		doins -r [a-z]* _static
 		popd > /dev/null
 	fi
 
 	if use examples; then
 		insinto /usr/share/doc/${PF}/examples
-		doins -r examples/* || die "Installation of examples failed"
+		doins -r examples/*
 	fi
 }

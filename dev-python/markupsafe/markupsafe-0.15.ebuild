@@ -1,9 +1,9 @@
-# Copyright 1999-2012 Gentoo Foundation
+# Copyright owners: Gentoo Foundation
+#                   Arfrever Frehtes Taifersar Arahesis
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/dev-python/markupsafe/markupsafe-0.15.ebuild,v 1.12 2012/02/25 22:28:33 marienz Exp $
 
-EAPI="3"
-SUPPORT_PYTHON_ABIS="1"
+EAPI="4-python"
+PYTHON_MULTIPLE_ABIS="1"
 DISTUTILS_SRC_TEST="setup.py"
 
 inherit distutils
@@ -17,35 +17,22 @@ SRC_URI="mirror://pypi/${MY_PN:0:1}/${MY_PN}/${MY_P}.tar.gz"
 
 LICENSE="BSD"
 SLOT="0"
-KEYWORDS="alpha amd64 arm hppa ia64 ~mips ppc ppc64 s390 sh sparc x86 ~x86-fbsd ~x86-interix ~amd64-linux ~x86-linux ~x64-macos ~x86-macos ~sparc-solaris ~sparc64-solaris"
+KEYWORDS="~alpha ~amd64 ~arm ~hppa ~ia64 ~mips ~ppc ~ppc64 ~s390 ~sh ~sparc ~x86 ~x86-fbsd ~x86-interix ~amd64-linux ~x86-linux ~x64-macos ~x86-macos ~sparc-solaris ~sparc64-solaris"
 IUSE=""
 
-DEPEND="dev-python/setuptools"
+DEPEND="$(python_abi_depend dev-python/setuptools)"
 RDEPEND=""
 
 S="${WORKDIR}/${MY_P}"
 
-set_global_options() {
-	if [[ "$(python_get_implementation)" = "CPython" ]]; then
-		DISTUTILS_GLOBAL_OPTIONS=("--with-speedups")
-	else
-		DISTUTILS_GLOBAL_OPTIONS=()
-	fi
-}
-
-distutils_src_compile_pre_hook() {
-	set_global_options
-}
-
-distutils_src_test_pre_hook() {
-	set_global_options
-}
-
-distutils_src_install_pre_hook() {
-	set_global_options
-}
+DISTUTILS_GLOBAL_OPTIONS=("*-cpython --with-speedups")
 
 src_install() {
 	distutils_src_install
 	python_clean_installation_image
+
+	delete_tests() {
+		rm -f "${ED}$(python_get_sitedir)/markupsafe/tests.py"
+	}
+	python_execute_function -q delete_tests
 }

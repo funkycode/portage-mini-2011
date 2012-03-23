@@ -9,5 +9,5 @@ LICENSE=GPL-2
 RDEPEND=>=app-mobilephone/gammu-1.25.0[python] >=dev-python/wxpython-2.8 bluetooth? ( dev-python/pybluez gnome? ( net-wireless/gnome-bluetooth ) ) =dev-lang/python-2*
 SLOT=0
 SRC_URI=http://dl.cihar.com/wammu/v0/wammu-0.35.tar.bz2
-_eclasses_=distutils	15ae23f6f8219a009bfcfff7724fe727	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	python	d6df8e9d4686f7550769a9777aa622b9	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68
+_eclasses_=distutils	82a876811ffd4907daba6062958daa26	python	cb2844e25e38800105564c14a716c805
 _md5_=bdc19bc7b5a278500dda02c67c3bab47

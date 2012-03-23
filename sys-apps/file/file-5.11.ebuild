@@ -1,13 +1,13 @@
-# Copyright 1999-2012 Gentoo Foundation
+# Copyright owners: Gentoo Foundation
+#                   Arfrever Frehtes Taifersar Arahesis
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/sys-apps/file/file-5.11.ebuild,v 1.1 2012/02/21 20:00:40 vapier Exp $
 
-EAPI="2"
-PYTHON_DEPEND="python? *"
-SUPPORT_PYTHON_ABIS="1"
-RESTRICT_PYTHON_ABIS="*-jython"
+EAPI="4-python"
+PYTHON_DEPEND="python? ( <<>> )"
+PYTHON_MULTIPLE_ABIS="1"
+PYTHON_RESTRICTED_ABIS="*-jython"
 
-inherit eutils distutils libtool flag-o-matic toolchain-funcs
+inherit distutils eutils flag-o-matic libtool toolchain-funcs
 
 DESCRIPTION="identify a file's format by scanning binary data for patterns"
 HOMEPAGE="ftp://ftp.astron.com/pub/file/"
@@ -22,7 +22,11 @@ IUSE="python static-libs zlib"
 RDEPEND="zlib? ( sys-libs/zlib )"
 DEPEND="${RDEPEND}"
 
-PYTHON_MODNAME="magic.py"
+PYTHON_MODULES="magic.py"
+
+pkg_setup() {
+	use python && python_pkg_setup
+}
 
 src_prepare() {
 	elibtoolize
@@ -65,7 +69,7 @@ src_configure() {
 }
 
 do_make() {
-	emake -C "$(wd)" "$@" || die
+	emake -C "$(wd)" "$@"
 }
 src_compile() {
 	if tc-is-cross-compiler && ! ROOT=/ has_version ~${CATEGORY}/${P} ; then
@@ -78,11 +82,11 @@ src_compile() {
 }
 
 src_install() {
-	do_make DESTDIR="${D}" install || die
+	do_make DESTDIR="${D}" install
 	dodoc ChangeLog MAINT README
 
 	use python && cd python && distutils_src_install
-	use static-libs || rm -f "${D}"/usr/lib*/libmagic.la
+	use static-libs || rm -f "${ED}"/usr/lib*/libmagic.la
 }
 
 pkg_postinst() {

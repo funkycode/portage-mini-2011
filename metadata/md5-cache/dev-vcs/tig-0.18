@@ -8,5 +8,5 @@ LICENSE=GPL-2
 RDEPEND=sys-libs/ncurses dev-vcs/git
 SLOT=0
 SRC_URI=http://jonas.nitro.dk/tig/releases/tig-0.18.tar.gz
-_eclasses_=bash-completion-r1	3480f8385cb9e31797e7b659e366e2d2
+_eclasses_=bash-completion-r1	fff8a4a7ab807c81d9000e0791370cb9
 _md5_=6f510ab1d3b1b34678e9ad94456a4806

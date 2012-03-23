@@ -1,40 +1,45 @@
-# Copyright 1999-2012 Gentoo Foundation
+# Copyright owners: Gentoo Foundation
+#                   Arfrever Frehtes Taifersar Arahesis
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/dev-python/amqplib/amqplib-1.0.2.ebuild,v 1.2 2012/03/02 22:15:19 neurogeek Exp $
 
-EAPI="3"
-PYTHON_DEPEND="2 3"
-SUPPORT_PYTHON_ABIS="1"
+EAPI="4-python"
+PYTHON_MULTIPLE_ABIS="1"
 
 inherit distutils eutils
 
 DESCRIPTION="Python client for the Advanced Message Queuing Procotol (AMQP)"
-HOMEPAGE="http://code.google.com/p/py-amqplib/"
+HOMEPAGE="http://code.google.com/p/py-amqplib/ http://pypi.python.org/pypi/amqplib"
 SRC_URI="http://py-amqplib.googlecode.com/files/${P}.tgz"
 
-LICENSE="LGPL-3"
+LICENSE="LGPL-2.1"
 SLOT="0"
-KEYWORDS="~x86 ~amd64"
-IUSE="examples extras test"
+KEYWORDS="~amd64 ~x86"
+IUSE="examples extras"
 
+DEPEND="$(python_abi_depend dev-python/setuptools)"
 RDEPEND=""
-DEPEND="${RDEPEND}"
+
+DISTUTILS_USE_SEPARATE_SOURCE_DIRECTORIES="1"
+DOCS="CHANGES README TODO"
 
 src_prepare() {
-	if use test; then
-		epatch "${FILESDIR}/${PN}-0.6.1_disable_socket_tests.patch"
-		epatch "${FILESDIR}/${P}-unicode_tests_py3.patch"
-	fi
+	epatch "${FILESDIR}/${PN}-0.6.1_disable_socket_tests.patch"
+
+	distutils_src_prepare
+
+	preparation() {
+		if [[ "$(python_get_version -l --major)" == "3" ]]; then
+			2to3-${PYTHON_ABI} -nw --no-diffs tests
+		fi
+	}
+	python_execute_function -s preparation
 }
 
 src_test() {
-
 	testing() {
-		PYTHONPATH="build-${PYTHON_ABI}/lib" python \
-			"tests/client_0_8/run_all.py"
+		python_execute PYTHONPATH="build/lib" "$(PYTHON)" tests/client_0_8/run_all.py
 	}
-
-	python_execute_function testing
+	python_execute_function -s testing
 }
 
 src_install() {
@@ -43,10 +48,10 @@ src_install() {
 	dodoc docs/*
 	if use examples; then
 		docinto examples
-		dodoc demo/* || die "dodoc failed"
+		dodoc demo/*
 	fi
 	if use extras; then
-		insinto /usr/share/${PF}
-		doins -r extras || die "doins failed"
+		insinto /usr/share/doc/${PF}
+		doins -r extras
 	fi
 }

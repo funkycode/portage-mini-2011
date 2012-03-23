@@ -8,5 +8,5 @@ RDEPEND=games-fps/ut2003
 RESTRICT=mirror strip
 SLOT=1
 SRC_URI=ftp://dl3.edgefiles.com/games-fusion.net/www/patches/ut2003/cbp2003.zip ftp://ftp.multiplay.co.uk/pub/games/fps/unrealtournament2003/mappacks/cbp2003.zip http://ftp1.gamesweb.com/cq2ert6g/cbp2003.zip
-_eclasses_=base	5f35078c26d6c60556d5c8a2feb4f84f	eutils	0f008baa9552301d379ae5df233e9713	games	f75cdbfdf1760e514ca65e2f6c6a7c72	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
+_eclasses_=base	56b5d6bcc4a0fc2a3055a84fd4a5c36b	eutils	0f008baa9552301d379ae5df233e9713	games	f75cdbfdf1760e514ca65e2f6c6a7c72	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
 _md5_=4b4d50605737374103ce33de45acdab6

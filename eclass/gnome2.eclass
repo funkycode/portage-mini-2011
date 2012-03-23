@@ -1,6 +1,5 @@
-# Copyright 1999-2011 Gentoo Foundation
+# Copyright owners: Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/eclass/gnome2.eclass,v 1.104 2011/12/14 19:47:54 tetromino Exp $
 
 # @ECLASS: gnome2.eclass
 # @MAINTAINER:
@@ -16,7 +15,7 @@ case "${EAPI:-0}" in
 	0|1)
 		EXPORT_FUNCTIONS src_unpack src_compile src_install pkg_preinst pkg_postinst pkg_postrm
 		;;
-	2|3|4)
+	2|3|4|4-python)
 		EXPORT_FUNCTIONS src_unpack src_prepare src_configure src_compile src_install pkg_preinst pkg_postinst pkg_postrm
 		;;
 	*) die "EAPI=${EAPI} is not supported" ;;
@@ -145,6 +144,14 @@ gnome2_src_compile() {
 # in packages and removal of .la files if requested
 gnome2_src_install() {
 	has ${EAPI:-0} 0 1 2 && ! use prefix && ED="${D}"
+
+	local installation_prefix
+	if [[ -n "${GNOME2_DESTDIR}" ]]; then
+		installation_prefix="${GNOME2_DESTDIR%/}${EPREFIX}/"
+	else
+		installation_prefix="${ED}"
+	fi
+
 	# if this is not present, scrollkeeper-update may segfault and
 	# create bogus directories in /var/lib/
 	local sk_tmp_dir="/var/lib/scrollkeeper"
@@ -155,10 +162,10 @@ gnome2_src_install() {
 
 	if [[ -z "${USE_EINSTALL}" || "${USE_EINSTALL}" = "0" ]]; then
 		debug-print "Installing with 'make install'"
-		emake DESTDIR="${D}" "scrollkeeper_localstate_dir=${ED}${sk_tmp_dir} " "$@" install || die "install failed"
+		emake DESTDIR="${GNOME2_DESTDIR:-${D}}" "scrollkeeper_localstate_dir=${installation_prefix}${sk_tmp_dir} " "$@" install || die "install failed"
 	else
 		debug-print "Installing with 'einstall'"
-		einstall "scrollkeeper_localstate_dir=${ED}${sk_tmp_dir} " "$@" || die "einstall failed"
+		einstall "scrollkeeper_localstate_dir=${installation_prefix}${sk_tmp_dir} " "$@" || die "einstall failed"
 	fi
 
 	unset GCONF_DISABLE_MAKEFILE_SCHEMA_INSTALL
@@ -170,21 +177,21 @@ gnome2_src_install() {
 
 	# Do not keep /var/lib/scrollkeeper because:
 	# 1. The scrollkeeper database is regenerated at pkg_postinst()
-	# 2. ${ED}/var/lib/scrollkeeper contains only indexes for the current pkg
+	# 2. ${installation_prefix}/var/lib/scrollkeeper contains only indexes for the current pkg
 	#    thus it makes no sense if pkg_postinst ISN'T run for some reason.
-	if [[ -z "$(find "${D}" -name '*.omf')" ]]; then
+	if [[ -z "$(find "${GNOME2_DESTDIR:-${D}}" -name '*.omf')" ]]; then
 		export SCROLLKEEPER_UPDATE="0"
 	fi
-	rm -rf "${ED}${sk_tmp_dir}"
+	rm -rf "${installation_prefix}${sk_tmp_dir}"
 
 	# Make sure this one doesn't get in the portage db
-	rm -fr "${ED}/usr/share/applications/mimeinfo.cache"
+	rm -fr "${installation_prefix}/usr/share/applications/mimeinfo.cache"
 
 	# Delete all .la files
 	if [[ "${GNOME2_LA_PUNT}" != "no" ]]; then
 		ebegin "Removing .la files"
 		if ! { has static-libs ${IUSE//+} && use static-libs; }; then
-			find "${D}" -name '*.la' -exec rm -f {} + || die "la file removal failed"
+			find "${GNOME2_DESTDIR:-${D}}" -name '*.la' -exec rm -f {} + || die "la file removal failed"
 		fi
 		eend
 	fi

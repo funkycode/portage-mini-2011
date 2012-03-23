@@ -1,11 +1,10 @@
-# Copyright 1999-2012 Gentoo Foundation
+# Copyright owners: Gentoo Foundation
+#                   Arfrever Frehtes Taifersar Arahesis
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/dev-python/reportlab/reportlab-2.5.ebuild,v 1.8 2012/02/22 07:18:29 patrick Exp $
 
-EAPI="3"
-PYTHON_DEPEND="2"
-SUPPORT_PYTHON_ABIS="1"
-RESTRICT_PYTHON_ABIS="3.* *-jython"
+EAPI="4-python"
+PYTHON_MULTIPLE_ABIS="1"
+PYTHON_RESTRICTED_ABIS="3.* *-jython"
 
 inherit distutils eutils versionator
 
@@ -15,10 +14,10 @@ SRC_URI="http://www.reportlab.org/ftp/${P}.tar.gz"
 
 LICENSE="BSD"
 SLOT="0"
-KEYWORDS="alpha amd64 ~arm hppa ia64 ppc ppc64 sparc x86 ~x86-fbsd"
+KEYWORDS="~alpha ~amd64 ~arm ~hppa ~ia64 ~ppc ~ppc64 ~sparc ~x86 ~x86-fbsd"
 IUSE="doc examples test"
 
-DEPEND="dev-python/imaging
+DEPEND="$(python_abi_depend dev-python/imaging)
 	media-fonts/ttf-bitstream-vera
 	media-libs/libart_lgpl
 	sys-libs/zlib"
@@ -66,13 +65,13 @@ src_install() {
 		rm -f docs/reference/reportlab-reference.pdf
 
 		insinto /usr/share/doc/${PF}
-		doins -r docs/* || die "Installation of documentation failed"
+		doins -r docs/*
 	fi
 
 	if use examples; then
 		insinto /usr/share/doc/${PF}
-		doins -r demos || die "Installation of examples failed"
+		doins -r demos
 		insinto /usr/share/doc/${PF}/tools/pythonpoint
-		doins -r tools/pythonpoint/demos || die "Installation of examples failed"
+		doins -r tools/pythonpoint/demos
 	fi
 }

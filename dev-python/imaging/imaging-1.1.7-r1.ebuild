@@ -1,17 +1,15 @@
-# Copyright 1999-2012 Gentoo Foundation
+# Copyright owners: Gentoo Foundation
+#                   Arfrever Frehtes Taifersar Arahesis
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/dev-python/imaging/imaging-1.1.7-r1.ebuild,v 1.4 2012/02/20 15:35:22 patrick Exp $
 
-EAPI="3"
-PYTHON_DEPEND="2"
-PYTHON_USE_WITH="tk"
-PYTHON_USE_WITH_OPT="tk"
-SUPPORT_PYTHON_ABIS="1"
-RESTRICT_PYTHON_ABIS="3.* *-jython 2.7-pypy-*"
+EAPI="4-python"
+PYTHON_DEPEND="<<[{*-cpython}tk?]>>"
+PYTHON_MULTIPLE_ABIS="1"
+PYTHON_RESTRICTED_ABIS="3.* *-jython"
 
-inherit eutils multilib distutils
+inherit distutils eutils multilib
 
-MY_P=Imaging-${PV}
+MY_P="Imaging-${PV}"
 
 DESCRIPTION="Python Imaging Library (PIL)"
 HOMEPAGE="http://www.pythonware.com/products/pil/index.htm"
@@ -22,8 +20,8 @@ SLOT="0"
 KEYWORDS="~alpha ~amd64 ~arm ~hppa ~ia64 ~ppc ~ppc64 ~sparc ~x86 ~x86-fbsd ~amd64-linux ~x86-linux ~ppc-macos ~x64-macos ~x86-macos ~x86-solaris"
 IUSE="doc examples lcms scanner tk X"
 
-DEPEND="virtual/jpeg
-	media-libs/freetype:2
+DEPEND="media-libs/freetype:2
+	virtual/jpeg
 	lcms? ( media-libs/lcms:0 )
 	scanner? ( media-gfx/sane-backends )
 	X? ( x11-misc/xdg-utils )"
@@ -34,7 +32,7 @@ S="${WORKDIR}/${MY_P}"
 DOCS="CHANGES CONTENTS"
 
 pkg_setup() {
-	PYTHON_MODNAME="PIL $(use scanner && echo sane.py)"
+	PYTHON_MODULES="PIL $(use scanner && echo sane.py)"
 	python_pkg_setup
 }
 
@@ -50,8 +48,7 @@ src_prepare() {
 	fi
 
 	# Add shebang.
-	sed -e "1i#!/usr/bin/python" -i Scripts/pilfont.py \
-		|| die "sed	failed adding shebang"
+	sed -e "1i#!/usr/bin/python" -i Scripts/pilfont.py || die "sed failed"
 
 	sed -i \
 		-e "s:/usr/lib\":/usr/$(get_libdir)\":" \
@@ -59,7 +56,7 @@ src_prepare() {
 		setup.py || die "sed failed"
 
 	if ! use tk; then
-		# Make the test always fail
+		# Make the test always fail.
 		sed -i \
 			-e 's/import _tkinter/raise ImportError/' \
 			setup.py || die "sed failed"
@@ -78,7 +75,7 @@ src_compile() {
 
 src_test() {
 	tests() {
-		PYTHONPATH="$(ls -d build-${PYTHON_ABI}/lib.*)" "$(PYTHON)" selftest.py
+		python_execute PYTHONPATH="$(ls -d build-${PYTHON_ABI}/lib.*)" "$(PYTHON)" selftest.py
 	}
 	python_execute_function tests
 }
@@ -87,7 +84,7 @@ src_install() {
 	distutils_src_install
 
 	if use doc; then
-		dohtml Docs/* || die "dohtml failed"
+		dohtml Docs/*
 	fi
 
 	if use scanner; then
@@ -107,11 +104,11 @@ src_install() {
 
 	if use examples; then
 		insinto /usr/share/doc/${PF}/examples
-		doins Scripts/* || die "doins failed"
+		doins Scripts/*
 
 		if use scanner; then
 			insinto /usr/share/doc/${PF}/examples/sane
-			doins Sane/demo_*.py || die "doins failed"
+			doins Sane/demo_*.py
 		fi
 	fi
 }

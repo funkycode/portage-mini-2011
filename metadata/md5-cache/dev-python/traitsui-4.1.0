@@ -9,5 +9,5 @@ LICENSE=BSD
 RDEPEND=dev-python/pyface dev-python/traits dev-lang/python
 SLOT=0
 SRC_URI=http://www.enthought.com/repo/ets/traitsui-4.1.0.tar.gz
-_eclasses_=distutils	15ae23f6f8219a009bfcfff7724fe727	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	python	d6df8e9d4686f7550769a9777aa622b9	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	virtualx	0c41ff55e46b959d9457dde69e7a09d9
+_eclasses_=distutils	82a876811ffd4907daba6062958daa26	python	cb2844e25e38800105564c14a716c805	virtualx	0c41ff55e46b959d9457dde69e7a09d9
 _md5_=74517d4ea57f2502349da5d0fe64c927

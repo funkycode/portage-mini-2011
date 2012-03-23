@@ -1,14 +1,14 @@
-# Copyright 1999-2012 Gentoo Foundation
+# Copyright owners: Gentoo Foundation
+#                   Arfrever Frehtes Taifersar Arahesis
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/dev-python/pyalsaaudio/pyalsaaudio-0.7.ebuild,v 1.1 2012/02/14 04:56:16 patrick Exp $
 
-EAPI="3"
-SUPPORT_PYTHON_ABIS="1"
-RESTRICT_PYTHON_ABIS="*-jython"
+EAPI="4-python"
+PYTHON_MULTIPLE_ABIS="1"
+PYTHON_RESTRICTED_ABIS="*-jython"
 
 inherit distutils
 
-DESCRIPTION="A Python wrapper for the ALSA API"
+DESCRIPTION="ALSA bindings"
 HOMEPAGE="http://www.sourceforge.net/projects/pyalsaaudio http://pypi.python.org/pypi/pyalsaaudio"
 SRC_URI="mirror://sourceforge/pyalsaaudio/${P}.tar.gz mirror://pypi/${PN:0:1}/${PN}/${P}.tar.gz"
 
@@ -17,21 +17,13 @@ SLOT="0"
 KEYWORDS="~amd64 ~ppc ~sparc ~x86"
 IUSE="doc"
 
-RDEPEND="media-libs/alsa-lib"
-DEPEND="${RDEPEND}
-	doc? ( >=dev-python/sphinx-0.6 )"
+DEPEND="media-libs/alsa-lib"
+RDEPEND="${DEPEND}"
 RESTRICT="test"
 
+PYTHON_CFLAGS=("2.* + -fno-strict-aliasing")
+
 DOCS="CHANGES README"
-
-src_compile() {
-	distutils_src_compile
-
-	if use doc; then
-		cd doc
-		emake html || die "emake html failed"
-	fi
-}
 
 src_test() {
 	testing() {
@@ -44,7 +36,10 @@ src_install() {
 	distutils_src_install
 
 	if use doc; then
-		dohtml -r doc/html/
+		pushd doc/html > /dev/null
+		insinto /usr/share/doc/${PF}/html
+		doins -r [a-z]* _static
+		popd > /dev/null
 	fi
 
 	insinto /usr/share/doc/${PF}/examples

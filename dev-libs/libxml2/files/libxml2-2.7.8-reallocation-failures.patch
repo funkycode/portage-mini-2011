@@ -8,11 +8,8 @@ and not fixed in case of failure
 * xpath.c: corrects a few instances where the available count of some
            structure is updated before we know the allocation actually
            succeeds
----
-diff --git a/xpath.c b/xpath.c
-index 8b56189..608fe00 100644
---- a/xpath.c
-+++ b/xpath.c
+--- xpath.c
++++ xpath.c
 @@ -3522,13 +3522,13 @@ xmlXPathNodeSetAddNs(xmlNodeSetPtr cur, xmlNodePtr node, xmlNsPtr ns) {
      } else if (cur->nodeNr == cur->nodeMax) {
          xmlNodePtr *temp;
@@ -97,5 +94,3 @@ index 8b56189..608fe00 100644
  	    }
  	    set1->nodeTab[set1->nodeNr++] = n2;
  	}
---
-cgit v0.9

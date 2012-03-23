@@ -1,12 +1,11 @@
-# Copyright 1999-2012 Gentoo Foundation
+# Copyright owners: Gentoo Foundation
+#                   Arfrever Frehtes Taifersar Arahesis
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/dev-python/pastescript/pastescript-1.7.5.ebuild,v 1.1 2012/02/20 07:51:35 patrick Exp $
 
-EAPI="3"
-PYTHON_DEPEND="2"
-SUPPORT_PYTHON_ABIS="1"
-RESTRICT_PYTHON_ABIS="3.*"
-#DISTUTILS_SRC_TEST="nosetests"
+EAPI="4-python"
+PYTHON_MULTIPLE_ABIS="1"
+PYTHON_RESTRICTED_ABIS="3.*"
+# DISTUTILS_SRC_TEST="nosetests"
 
 inherit distutils
 
@@ -22,19 +21,23 @@ SLOT="0"
 KEYWORDS="~amd64 ~x86 ~amd64-linux ~x86-linux ~x86-macos"
 IUSE="doc"
 
-RDEPEND="dev-python/cheetah
-	>=dev-python/paste-1.3
-	dev-python/pastedeploy
-	dev-python/setuptools"
+RDEPEND="$(python_abi_depend dev-python/namespaces-paste)
+	$(python_abi_depend dev-python/cheetah)
+	$(python_abi_depend ">=dev-python/paste-1.3")
+	$(python_abi_depend dev-python/pastedeploy)
+	$(python_abi_depend dev-python/setuptools)"
 DEPEND="${RDEPEND}
-	doc? ( dev-python/pygments dev-python/sphinx )"
+	doc? (
+		$(python_abi_depend dev-python/pygments)
+		$(python_abi_depend dev-python/sphinx)
+	)"
 
 # Tests are broken.
 RESTRICT="test"
 
 S="${WORKDIR}/${MY_P}"
 
-PYTHON_MODNAME="paste/script"
+PYTHON_MODULES="paste/script"
 
 src_compile() {
 	distutils_src_compile
@@ -48,10 +51,15 @@ src_compile() {
 src_install() {
 	distutils_src_install
 
+	delete_tests() {
+		rm -fr "${ED}$(python_get_sitedir)/tests"
+	}
+	python_execute_function -q delete_tests
+
 	if use doc; then
 		pushd build/sphinx/html > /dev/null
-		docinto html
-		cp -R [a-z]* _static "${ED}usr/share/doc/${PF}/html" || die "Installation of documentation failed"
+		insinto /usr/share/doc/${PF}/html
+		doins -r [a-z]* _static
 		popd > /dev/null
 	fi
 }

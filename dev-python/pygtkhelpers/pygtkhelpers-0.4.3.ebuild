@@ -1,11 +1,10 @@
-# Copyright 1999-2012 Gentoo Foundation
+# Copyright owners: Gentoo Foundation
+#                   Arfrever Frehtes Taifersar Arahesis
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/dev-python/pygtkhelpers/pygtkhelpers-0.4.3.ebuild,v 1.1 2012/01/11 23:38:52 ssuominen Exp $
 
-EAPI="3"
-PYTHON_DEPEND="2:2.6"
-SUPPORT_PYTHON_ABIS="1"
-RESTRICT_PYTHON_ABIS="2.4 2.5 3.*"
+EAPI="4-python"
+PYTHON_MULTIPLE_ABIS="1"
+PYTHON_RESTRICTED_ABIS="2.5 3.* *-jython *-pypy-*"
 
 inherit distutils
 
@@ -18,10 +17,14 @@ SLOT="0"
 KEYWORDS="~amd64 ~ppc64 ~x86"
 IUSE="doc examples"
 
-RDEPEND="dev-python/pygtk"
+# pygtkhelpers.forms requires flatland.
+# http://discorporate.us/projects/flatland/
+# https://bitbucket.org/jek/flatland
+# http://pypi.python.org/pypi/flatland
+RDEPEND="$(python_abi_depend dev-python/pygtk)"
 DEPEND="${RDEPEND}
-	dev-python/setuptools
-	doc? ( dev-python/sphinx )"
+	$(python_abi_depend dev-python/setuptools)
+	doc? ( $(python_abi_depend dev-python/sphinx) )"
 
 src_prepare() {
 	distutils_src_prepare
@@ -44,13 +47,13 @@ src_install() {
 
 	if use doc; then
 		pushd build/sphinx/html > /dev/null
-		docinto html
-		cp -R [a-z]* _images _static "${ED}usr/share/doc/${PF}/html" || die "Installation of documentation failed"
+		insinto /usr/share/doc/${PF}/html
+		doins -r [a-z]* _images _static
 		popd > /dev/null
 	fi
 
 	if use examples; then
 		insinto /usr/share/doc/${PF}/examples
-		doins -r examples/* || die "Installation of examples failed"
+		doins -r examples/*
 	fi
 }

@@ -1,11 +1,10 @@
-# Copyright 1999-2011 Gentoo Foundation
+# Copyright owners: Gentoo Foundation
+#                   Arfrever Frehtes Taifersar Arahesis
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/dev-python/storm/storm-0.19.ebuild,v 1.2 2011/11/05 19:33:08 hwoarang Exp $
 
-EAPI="3"
-PYTHON_DEPEND="2"
-SUPPORT_PYTHON_ABIS="1"
-RESTRICT_PYTHON_ABIS="3.*"
+EAPI="4-python"
+PYTHON_MULTIPLE_ABIS="1"
+PYTHON_RESTRICTED_ABIS="3.*"
 PYTHON_TESTS_FAILURES_TOLERANT_ABIS="*-jython"
 
 inherit distutils
@@ -19,11 +18,12 @@ SLOT="0"
 KEYWORDS="~amd64 ~x86"
 IUSE="mysql postgres sqlite test"
 
-RDEPEND="mysql? ( dev-python/mysql-python )
-	postgres? ( =dev-python/psycopg-2* )
-	sqlite? ( || ( dev-lang/python:2.7[sqlite] dev-lang/python:2.6[sqlite] dev-lang/python:2.5[sqlite] dev-python/pysqlite:2 ) )"
-DEPEND="dev-python/setuptools
-	test? ( || ( dev-lang/python:2.7[sqlite] dev-lang/python:2.6[sqlite] dev-lang/python:2.5[sqlite] dev-python/pysqlite:2 ) )"
+RDEPEND="$(python_abi_depend virtual/python-json)
+	mysql? ( $(python_abi_depend dev-python/mysql-python) )
+	postgres? ( $(python_abi_depend -e "*-jython *-pypy-*" dev-python/psycopg:2) )
+	sqlite? ( $(python_abi_depend -e "*-jython" virtual/python-sqlite[external]) )"
+DEPEND="$(python_abi_depend dev-python/setuptools)
+	test? ( $(python_abi_depend -e "*-jython" virtual/python-sqlite[external]) )"
 
 PYTHON_CFLAGS=("2.* + -fno-strict-aliasing")
 

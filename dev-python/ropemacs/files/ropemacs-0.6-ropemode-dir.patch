@@ -1,5 +1,5 @@
---- ropemacs-orig/setup.py
-+++ ropemacs/setup.py
+--- setup.py
++++ setup.py
 @@ -23,7 +23,7 @@
        version='0.6',
        description='An emacs mode for using rope python refactoring library',

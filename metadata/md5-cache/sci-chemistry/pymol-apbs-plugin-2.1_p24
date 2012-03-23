@@ -8,5 +8,5 @@ LICENSE=pymol
 RDEPEND=sci-chemistry/apbs sci-chemistry/pdb2pqr !<sci-chemistry/pymol-1.2.2-r1 =dev-lang/python-2*
 SLOT=0
 SRC_URI=http://pymolapbsplugin.svn.sourceforge.net/viewvc/pymolapbsplugin/trunk/src/apbsplugin.py?revision=24 -> pymol-apbs-plugin-2.1_p24.py
-_eclasses_=multilib	5f4ad6cf85e365e8f0c6050ddd21659e	python	d6df8e9d4686f7550769a9777aa622b9	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68
+_eclasses_=python	cb2844e25e38800105564c14a716c805
 _md5_=01c2c60b4c69f247f5d14a8e5cfa97a4

@@ -1,11 +1,10 @@
-# Copyright 1999-2011 Gentoo Foundation
+# Copyright owners: Gentoo Foundation
+#                   Arfrever Frehtes Taifersar Arahesis
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/dev-python/odfpy/odfpy-0.9.4.ebuild,v 1.2 2011/12/15 02:34:59 floppym Exp $
 
-EAPI="4"
-PYTHON_DEPEND="2"
-SUPPORT_PYTHON_ABIS="1"
-RESTRICT_PYTHON_ABIS="3.*"
+EAPI="4-python"
+PYTHON_MULTIPLE_ABIS="1"
+PYTHON_RESTRICTED_ABIS="3.* *-jython"
 
 inherit distutils eutils
 
@@ -21,7 +20,7 @@ IUSE=""
 DEPEND=""
 RDEPEND=""
 
-PYTHON_MODNAME="odf"
+PYTHON_MODULES="odf"
 
 src_prepare() {
 	distutils_src_prepare
@@ -29,15 +28,18 @@ src_prepare() {
 }
 
 src_test() {
-	cd tests || die
+	cd tests
+
 	testing() {
-		local exit_status=0 test
+		local exit_status="0" test
 		for test in test*.py; do
-			einfo "Running ${test} ..."
-			PYTHONPATH="../build-${PYTHON_ABI}/lib" "$(PYTHON)" "${test}"
-			[[ $? -ne 0 ]] && exit_status=1
+			if ! python_execute PYTHONPATH="../build-${PYTHON_ABI}/lib" "$(PYTHON)" "${test}"; then
+				eerror "${test} failed with $(python_get_implementation_and_version)"
+				exit_status="1"
+			fi
 		done
-		return ${exit_status}
+
+		return "${exit_status}"
 	}
 	python_execute_function testing
 }

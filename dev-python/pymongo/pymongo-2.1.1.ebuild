@@ -1,11 +1,10 @@
-# Copyright 1999-2012 Gentoo Foundation
+# Copyright owners: Gentoo Foundation
+#                   Arfrever Frehtes Taifersar Arahesis
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/dev-python/pymongo/pymongo-2.1.1.ebuild,v 1.1 2012/01/30 13:22:01 ultrabug Exp $
 
-EAPI="3"
-PYTHON_DEPEND="2"
-SUPPORT_PYTHON_ABIS="1"
-RESTRICT_PYTHON_ABIS="3.*"
+EAPI="4-python"
+PYTHON_MULTIPLE_ABIS="1"
+PYTHON_RESTRICTED_ABIS="3.*"
 PYTHON_TESTS_FAILURES_TOLERANT_ABIS="*-jython"
 DISTUTILS_SRC_TEST="nosetests"
 
@@ -22,18 +21,17 @@ IUSE="doc mod_wsgi"
 
 RDEPEND="dev-db/mongodb"
 DEPEND="${RDEPEND}
-	dev-python/setuptools
-	doc? ( dev-python/sphinx )"
+	$(python_abi_depend dev-python/setuptools)
+	doc? ( $(python_abi_depend dev-python/sphinx) )"
 
-PYTHON_MODNAME="bson gridfs pymongo"
+PYTHON_MODULES="bson gridfs pymongo"
 
 src_compile() {
 	distutils_src_compile
 
 	if use doc; then
 		einfo "Generation of documentation"
-		mkdir html
-		sphinx-build doc html || die "Generation of documentation failed"
+		python_execute sphinx-build doc html || die "Generation of documentation failed"
 	fi
 }
 
@@ -55,6 +53,9 @@ src_install() {
 	distutils_src_install $(use mod_wsgi && echo --no_ext)
 
 	if use doc; then
-		dohtml -r html/* || die "Error installing docs"
+		pushd html > /dev/null
+		insinto /usr/share/doc/${PF}/html
+		doins -r [a-z]* _static
+		popd > /dev/null
 	fi
 }

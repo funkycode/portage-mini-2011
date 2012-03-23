@@ -1,9 +1,11 @@
-# Copyright 1999-2012 Gentoo Foundation
+# Copyright owners: Gentoo Foundation
+#                   Arfrever Frehtes Taifersar Arahesis
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/dev-python/pytest/pytest-2.2.3.ebuild,v 1.1 2012/02/15 10:15:30 djc Exp $
 
-EAPI="3"
-SUPPORT_PYTHON_ABIS="1"
+EAPI="4-python"
+PYTHON_MULTIPLE_ABIS="1"
+# http://bugs.jython.org/issue1609
+PYTHON_TESTS_FAILURES_TOLERANT_ABIS="*-jython"
 
 inherit distutils
 
@@ -16,32 +18,32 @@ SLOT="0"
 KEYWORDS="~alpha ~amd64 ~arm ~hppa ~ia64 ~mips ~ppc ~ppc64 ~sh ~sparc ~x86 ~x86-fbsd ~amd64-linux ~ia64-linux ~x86-linux ~ppc-macos ~x86-macos"
 IUSE=""
 
-RDEPEND=">=dev-python/py-1.4.7"
+RDEPEND="$(python_abi_depend ">=dev-python/py-1.4.7")"
 DEPEND="${RDEPEND}
 	app-arch/unzip
-	dev-python/setuptools"
+	$(python_abi_depend dev-python/setuptools)"
 
 DOCS="CHANGELOG README.txt"
-PYTHON_MODNAME="pytest.py _pytest"
+PYTHON_MODULES="pytest.py _pytest"
 
 src_prepare() {
 	distutils_src_prepare
 
-	# Disable versioning of py.test script to avoid collision with versioning performed by distutils_src_install().
+	# Disable versioning of py.test script to avoid collision with versioning performed by python_merge_intermediate_installation_images().
 	sed -e "s/return points/return {'py.test': target}/" -i setup.py || die "sed failed"
 }
 
 src_test() {
 	testing() {
-		PYTHONPATH="${S}/build-${PYTHON_ABI}/lib" "$(PYTHON)" "build-${PYTHON_ABI}/lib/pytest.py"
+		python_execute PYTHONPATH="${S}/build-${PYTHON_ABI}/lib" "$(PYTHON)" "build-${PYTHON_ABI}/lib/pytest.py"
 	}
 	python_execute_function testing
+
+	find -name "__pycache__" -print0 | xargs -0 rm -fr
+	find "(" -name "*.pyc" -o -name "*\$py.class" ")" -print0 | xargs -0 rm -f
 }
 
 src_install() {
 	distutils_src_install
 	python_generate_wrapper_scripts -E -f -q "${ED}usr/bin/py.test"
-
-	# Bug 380275: Test suite pre-compiles modules
-	python_clean_installation_image -q
 }

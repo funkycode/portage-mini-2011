@@ -1,9 +1,10 @@
-# Copyright 1999-2012 Gentoo Foundation
+# Copyright owners: Gentoo Foundation
+#                   Arfrever Frehtes Taifersar Arahesis
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/dev-python/mako/mako-0.6.2.ebuild,v 1.1 2012/02/15 11:49:16 djc Exp $
 
-EAPI="3"
-SUPPORT_PYTHON_ABIS="1"
+EAPI="4-python"
+PYTHON_MULTIPLE_ABIS="1"
+PYTHON_TESTS_FAILURES_TOLERANT_ABIS="*-jython"
 DISTUTILS_SRC_TEST="nosetests"
 
 inherit distutils
@@ -19,10 +20,10 @@ SLOT="0"
 KEYWORDS="~amd64 ~arm ~ppc ~sparc ~x86 ~amd64-linux ~x86-linux ~x64-macos ~x86-macos"
 IUSE="doc"
 
-RDEPEND=">=dev-python/beaker-1.1
-	>=dev-python/markupsafe-0.9.2"
+RDEPEND="$(python_abi_depend ">=dev-python/beaker-1.1")
+	$(python_abi_depend ">=dev-python/markupsafe-0.9.2")"
 DEPEND="${RDEPEND}
-	dev-python/setuptools"
+	$(python_abi_depend dev-python/setuptools)"
 
 S="${WORKDIR}/${MY_P}"
 
@@ -31,11 +32,12 @@ DISTUTILS_USE_SEPARATE_SOURCE_DIRECTORIES="1"
 src_prepare() {
 	distutils_src_prepare
 
-	2to3_conversion() {
-		[[ "${PYTHON_ABI}" == 2.* ]] && return
-		2to3-${PYTHON_ABI} -nw --no-diffs test
+	preparation() {
+		if [[ "$(python_get_version -l --major)" == "3" ]]; then
+			2to3-${PYTHON_ABI} -nw --no-diffs test
+		fi
 	}
-	python_execute_function -s 2to3_conversion
+	python_execute_function -s preparation
 }
 
 src_test() {
@@ -49,7 +51,7 @@ src_install() {
 		pushd doc > /dev/null
 		rm -fr build
 		insinto /usr/share/doc/${PF}/html
-		doins -r [a-z]* _static || die "Installation of documentation failed"
+		doins -r [a-z]* _static
 		popd > /dev/null
 	fi
 }

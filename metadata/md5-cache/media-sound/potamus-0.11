@@ -8,5 +8,5 @@ LICENSE=GPL-2
 RDEPEND=x11-libs/gtk+:2 >=gnome-base/libglade-2 media-libs/libao media-libs/libsamplerate media-libs/libvorbis media-libs/libmad media-libs/audiofile media-libs/libmodplug virtual/ffmpeg media-libs/flac media-sound/jack-audio-connection-kit
 SLOT=0
 SRC_URI=http://offog.org/files/potamus-0.11.tar.gz
-_eclasses_=gnome2-utils	b5ca2ccadb60760889faa3bccba121d9
+_eclasses_=gnome2-utils	0556f216199e15cc37899e1130da3824
 _md5_=360fcbacf198058fb6ee749ca06477b1

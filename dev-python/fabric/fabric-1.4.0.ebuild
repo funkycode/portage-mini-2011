@@ -1,12 +1,11 @@
-# Copyright 1999-2012 Gentoo Foundation
+# Copyright owners: Gentoo Foundation
+#                   Arfrever Frehtes Taifersar Arahesis
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/dev-python/fabric/fabric-1.4.0.ebuild,v 1.1 2012/03/01 15:03:22 djc Exp $
 
-EAPI="3"
-PYTHON_DEPEND="2:2.5"
-SUPPORT_PYTHON_ABIS="1"
-RESTRICT_PYTHON_ABIS="2.4 3.* *-jython"
-DISTUTILS_SRC_TEST="setup.py"
+EAPI="4-python"
+PYTHON_MULTIPLE_ABIS="1"
+PYTHON_RESTRICTED_ABIS="3.* *-jython *-pypy-*"
+# DISTUTILS_SRC_TEST="nosetests"
 
 inherit distutils
 
@@ -22,9 +21,11 @@ SLOT="0"
 KEYWORDS="~amd64 ~x86"
 IUSE=""
 
-RDEPEND="dev-python/ssh"
+RDEPEND="$(python_abi_depend dev-python/pycrypto)
+	$(python_abi_depend ">=dev-python/ssh-1.7.12")"
 DEPEND="${RDEPEND}
-		dev-python/setuptools"
+	$(python_abi_depend dev-python/setuptools)"
+#	test? ( $(python_abi_depend dev-python/fudge) )
 
 # Tests broken.
 RESTRICT="test"
@@ -32,3 +33,7 @@ RESTRICT="test"
 S="${WORKDIR}/${MY_P}"
 
 PYTHON_MODULES="fabfile fabric"
+
+src_test() {
+	distutils_src_test --with-doctest
+}

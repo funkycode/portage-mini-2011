@@ -1,9 +1,9 @@
-# Copyright 1999-2011 Gentoo Foundation
+# Copyright owners: Gentoo Foundation
+#                   Arfrever Frehtes Taifersar Arahesis
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/dev-python/fudge/fudge-1.0.3.ebuild,v 1.1 2011/03/22 22:33:49 arfrever Exp $
 
-EAPI="3"
-SUPPORT_PYTHON_ABIS="1"
+EAPI="4-python"
+PYTHON_MULTIPLE_ABIS="1"
 DISTUTILS_SRC_TEST="nosetests"
 
 inherit distutils
@@ -17,7 +17,7 @@ SLOT="0"
 KEYWORDS="~amd64 ~x86"
 IUSE="doc"
 
-DEPEND="doc? ( dev-python/sphinx )"
+DEPEND="doc? ( $(python_abi_depend dev-python/sphinx) )"
 RDEPEND=""
 
 src_prepare() {
@@ -31,16 +31,13 @@ src_compile() {
 	if use doc; then
 		einfo "Generation of documentation"
 		pushd docs > /dev/null
-		emake html || die "Generation of documentation failed"
+		emake html
 		popd > /dev/null
 	fi
 }
 
 src_test() {
-	testing() {
-		nosetests build-${PYTHON_ABI}/lib
-	}
-	python_execute_function testing
+	python_execute_nosetests -e -P 'build-${PYTHON_ABI}/lib' -- -P 'build-${PYTHON_ABI}/lib'
 }
 
 src_install() {
@@ -54,7 +51,7 @@ src_install() {
 	if use doc; then
 		pushd docs/_build/html > /dev/null
 		insinto /usr/share/doc/${PF}/html
-		doins -r [a-z]* _static || die "Installation of documentation failed"
+		doins -r [a-z]* _static
 		popd > /dev/null
 	fi
 }

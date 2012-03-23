@@ -1,0 +1,44 @@
+--- IPython/frontend/terminal/console/tests/test_console.py
++++ IPython/frontend/terminal/console/tests/test_console.py
+@@ -35,7 +35,7 @@
+     ipython_cmd = None
+     for i in range(5):
+         try:
+-            ipython_cmd = find_cmd('ipython3' if py3compat.PY3 else 'ipython')
++            ipython_cmd = find_cmd('ipython')
+         except IOError:
+             time.sleep(0.1)
+         else:
+--- IPython/lib/irunner.py
++++ IPython/lib/irunner.py
+@@ -288,7 +288,7 @@
+ 
+         self.run_file(args[0],opts.interact)
+ 
+-_ipython_cmd = "ipython3" if py3compat.PY3 else "ipython"
++_ipython_cmd = "ipython"
+ 
+ # Specific runners for particular programs
+ class IPythonRunner(InteractiveRunner):
+--- IPython/testing/tools.py
++++ IPython/testing/tools.py
+@@ -211,7 +211,7 @@
+     _ip = get_ipython()
+     test_dir = os.path.dirname(__file__)
+ 
+-    ipython_cmd = find_cmd('ipython3' if py3compat.PY3 else 'ipython')
++    ipython_cmd = find_cmd('ipython')
+     # Absolute path for filename
+     full_fname = os.path.join(test_dir, fname)
+     full_cmd = '%s %s %s' % (ipython_cmd, cmdargs, full_fname)
+--- setup3.py
++++ setup3.py
+@@ -10,7 +10,7 @@
+                        record_commit_info,
+                        )
+     
+-setup_args['entry_points'] = find_scripts(True, suffix='3')
++setup_args['entry_points'] = find_scripts(True)
+ setup_args['packages'] = find_packages()
+ setup_args['package_data'] = find_package_data()
+ setup_args['cmdclass'] = {'build_py': record_commit_info('IPython', build_cmd=build_py)}

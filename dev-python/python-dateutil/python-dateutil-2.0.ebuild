@@ -1,14 +1,10 @@
-# Copyright 1999-2012 Gentoo Foundation
+# Copyright owners: Gentoo Foundation
+#                   Arfrever Frehtes Taifersar Arahesis
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/dev-python/python-dateutil/python-dateutil-2.0.ebuild,v 1.3 2012/01/21 21:53:38 mr_bones_ Exp $
 
-EAPI="3"
-
-# python eclass bloat
-PYTHON_DEPEND="3"
-SUPPORT_PYTHON_ABIS="1"
-RESTRICT_PYTHON_ABIS="2.*"
-PYTHON_MODNAME="dateutil"
+EAPI="4-python"
+PYTHON_MULTIPLE_ABIS="1"
+PYTHON_RESTRICTED_ABIS="2.*"
 
 inherit distutils
 
@@ -23,32 +19,27 @@ IUSE="examples"
 
 RDEPEND="sys-libs/timezone-data"
 DEPEND="${RDEPEND}
-	dev-python/setuptools"
+	$(python_abi_depend dev-python/setuptools)"
 
 DOCS="NEWS README"
+PYTHON_MODULES="dateutil"
 
 src_prepare() {
 	distutils_src_prepare
 
 	# Use zoneinfo in /usr/share/zoneinfo.
-	sed -i \
-		-e "s/zoneinfo.gettz/gettz/g" \
-		test.py || die
+	sed -e "s/zoneinfo.gettz/gettz/g" -i test.py || die "sed failed"
 
 	# Fix parsing of date in non-English locales.
-	sed -i \
-		-e 's/subprocess.getoutput("date")/subprocess.getoutput("LC_ALL=C date")/' \
-		example.py || die
+	sed -e 's/subprocess.getoutput("date")/subprocess.getoutput("LC_ALL=C date")/' -i example.py
 
 	# https://bugs.launchpad.net/dateutil/+bug/892569
-	sed -i \
-		-e '199s/fileobj = open(fileobj)/fileobj = open(fileobj, "rb")/' \
-		dateutil/tz.py || die
+	sed -e '199s/fileobj = open(fileobj)/fileobj = open(fileobj, "rb")/' -i dateutil/tz.py
 }
 
 src_test() {
 	testing() {
-		PYTHONPATH="build-${PYTHON_ABI}/lib" "$(PYTHON)" test.py
+		python_execute PYTHONPATH="build-${PYTHON_ABI}/lib" "$(PYTHON)" test.py
 	}
 	python_execute_function testing
 }
@@ -57,7 +48,7 @@ src_install() {
 	distutils_src_install
 
 	delete_zoneinfo() {
-		rm -f "${ED}"$(python_get_sitedir)/dateutil/zoneinfo/*.tar.* || return 1
+		rm -f "${ED}$(python_get_sitedir)/dateutil/zoneinfo/"*.tar.*
 	}
 	python_execute_function -q delete_zoneinfo
 

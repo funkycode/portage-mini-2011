@@ -1,12 +1,11 @@
-# Copyright 1999-2012 Gentoo Foundation
+# Copyright owners: Gentoo Foundation
+#                   Arfrever Frehtes Taifersar Arahesis
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/dev-python/gdata/gdata-2.0.16.ebuild,v 1.3 2012/02/26 04:00:30 floppym Exp $
 
-EAPI="4"
-PYTHON_DEPEND="2"
-PYTHON_USE_WITH="ssl xml"
-SUPPORT_PYTHON_ABIS="1"
-RESTRICT_PYTHON_ABIS="3.*"
+EAPI="4-python"
+PYTHON_DEPEND="<<[ssl,xml]>>"
+PYTHON_MULTIPLE_ABIS="1"
+PYTHON_RESTRICTED_ABIS="3.*"
 
 inherit distutils
 
@@ -21,9 +20,13 @@ SLOT="0"
 KEYWORDS="~alpha ~amd64 ~arm ~hppa ~ia64 ~ppc ~ppc64 ~sparc ~x86 ~x86-fbsd"
 IUSE="examples"
 
+DEPEND=""
+RDEPEND=""
+
 S="${WORKDIR}/${MY_P}"
 
-PYTHON_MODNAME="atom gdata"
+DOCS="RELEASE_NOTES.txt"
+PYTHON_MODULES="atom gdata"
 
 src_test() {
 	testing() {

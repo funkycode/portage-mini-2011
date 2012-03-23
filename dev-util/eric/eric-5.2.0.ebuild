@@ -1,16 +1,15 @@
-# Copyright 1999-2012 Gentoo Foundation
+# Copyright owners: Gentoo Foundation
+#                   Arfrever Frehtes Taifersar Arahesis
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/dev-util/eric/eric-5.2.0.ebuild,v 1.1 2012/02/28 14:59:58 pesa Exp $
 
-EAPI="4"
-PYTHON_DEPEND="3:3.1"
-SUPPORT_PYTHON_ABIS="1"
-RESTRICT_PYTHON_ABIS="2.* *-jython 2.7-pypy-*"
+EAPI="4-python"
+PYTHON_DEPEND="<<[xml]>>"
+PYTHON_MULTIPLE_ABIS="1"
+PYTHON_RESTRICTED_ABIS="2.* *-jython *-pypy-*"
 
 inherit eutils python
 
-SLOT="5"
-MY_PN="${PN}${SLOT}"
+MY_PN="${PN}${PV%%.*}"
 MY_PV="${PV/_pre/-snapshot-}"
 MY_P="${MY_PN}-${MY_PV}"
 
@@ -20,22 +19,18 @@ BASE_URI="mirror://sourceforge/eric-ide/${MY_PN}/stable/${PV}"
 SRC_URI="${BASE_URI}/${MY_P}.tar.gz"
 
 LICENSE="GPL-3"
+SLOT="5"
 KEYWORDS="~amd64 ~ppc ~ppc64 ~x86"
 IUSE="spell"
 
-DEPEND="
-	>=dev-python/sip-4.12.4
-	>=dev-python/PyQt4-4.8[assistant,svg,webkit,X]
-	>=dev-python/qscintilla-python-2.4
-"
+DEPEND="$(python_abi_depend ">=dev-python/sip-4.12.4")
+	$(python_abi_depend ">=dev-python/PyQt4-4.7[assistant,svg,webkit,X]")
+	$(python_abi_depend ">=dev-python/qscintilla-python-2.4")"
 RDEPEND="${DEPEND}
-	>=dev-python/chardet-2.0.1
-	>=dev-python/coverage-3.2
-	>=dev-python/pygments-1.4
-"
-PDEPEND="
-	spell? ( dev-python/pyenchant )
-"
+	$(python_abi_depend ">=dev-python/chardet-2.0.1")
+	$(python_abi_depend ">=dev-python/coverage-3.2")
+	$(python_abi_depend ">=dev-python/pygments-1.4")"
+PDEPEND="spell? ( $(python_abi_depend dev-python/pyenchant) )"
 
 LANGS="cs de en es fr it ru tr zh_CN"
 for L in ${LANGS}; do
@@ -44,32 +39,29 @@ for L in ${LANGS}; do
 done
 unset L
 
-S=${WORKDIR}/${MY_P}
+S="${WORKDIR}/${MY_P}"
 
 PYTHON_VERSIONED_EXECUTABLES=("/usr/bin/.*")
 
 src_prepare() {
+	epatch "${FILESDIR}/${PN}-5.0.2-remove_coverage.patch"
+
 	# Avoid file collisions between different slots of Eric.
-	sed -e "s/^Icon=eric$/&${SLOT}/" -i eric/${MY_PN}.desktop || die
-	sed -e "s/\([^[:alnum:]]\)eric\.png\([^[:alnum:]]\)/\1eric5.png\2/" \
-		-i $(grep -lr "eric\.png" .) || die
-	mv eric/icons/default/eric{,5}.png || die
-	mv eric/pixmaps/eric{,5}.png || die
+	sed -e "s/^Icon=eric$/&${SLOT}/" -i eric/${MY_PN}.desktop || die "sed failed"
+	sed -e "s/\([^[:alnum:]]\)eric\.png\([^[:alnum:]]\)/\1eric5.png\2/" -i $(grep -lr eric.png .) || die "sed failed"
+	mv eric/icons/default/eric{,5}.png || die "mv failed"
+	mv eric/pixmaps/eric{,5}.png || die "mv failed"
 	rm -f eric/APIs/Python/zope-*.api
 	rm -f eric/APIs/Ruby/Ruby-*.api
 
-	# Delete internal copies of dev-python/chardet,
-	# dev-python/coverage and dev-python/pygments.
+	# Delete internal copies of dev-python/chardet, dev-python/coverage and dev-python/pygments.
 	rm -fr eric/ThirdParty
 	rm -fr eric/DebugClients/Python{,3}/coverage
-	sed -i -e '\|/coverage/|d' eric/${MY_PN}.e4p || die
-	sed -i -e 's/from DebugClients\.Python3\?\.coverage /from coverage /' \
-		$(grep -lr 'from DebugClients\.Python3\?\.coverage' .) || die
 }
 
 src_install() {
 	installation() {
-		"$(PYTHON)" install.py \
+		python_execute "$(PYTHON)" install.py \
 			-z \
 			-b "${EPREFIX}/usr/bin" \
 			-i "${T}/images/${PYTHON_ABI}" \
@@ -79,15 +71,12 @@ src_install() {
 	python_execute_function installation
 	python_merge_intermediate_installation_images "${T}/images"
 
-	doicon eric/icons/default/${MY_PN}.png || die
+	doicon eric/icons/default/${MY_PN}.png
 }
 
 pkg_postinst() {
 	python_mod_optimize -x "/eric5/(DebugClients/Python|UtilitiesPython2)/" ${MY_PN}{,config.py,plugins}
 
-	elog
-	elog "If you want to use Eric with mod_python, have a look at"
-	elog "\"${EROOT}$(python_get_sitedir -b -f)/${MY_PN}/patch_modpython.py\"."
 	elog
 	elog "The following packages will give Eric extended functionality:"
 	elog "  dev-python/pylint"

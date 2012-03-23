@@ -1,12 +1,14 @@
-DEFINED_PHASES=compile install postinst postrm prepare test
-DEPEND=|| ( =dev-lang/python-3.2* =dev-lang/python-3.1* =dev-lang/python-2.7* =dev-lang/python-2.6* =dev-lang/python-2.5* )
+DEFINED_PHASES=compile install postinst postrm prepare setup test
+DEPEND=python_abis_2.5? ( dev-lang/python:2.5 ) python_abis_2.6? ( dev-lang/python:2.6 ) python_abis_2.7? ( dev-lang/python:2.7 ) python_abis_3.1? ( dev-lang/python:3.1 ) python_abis_3.2? ( dev-lang/python:3.2 ) python_abis_3.3? ( dev-lang/python:3.3 ) python_abis_2.5-jython? ( dev-java/jython:2.5 ) python_abis_2.6-jython? ( dev-java/jython:2.6 ) python_abis_2.7-pypy-1.7? ( dev-python/pypy:1.7 ) python_abis_2.7-pypy-1.8? ( dev-python/pypy:1.8 )
 DESCRIPTION=Class and tools for handling of IPv4 and IPv6 addresses and networks
-EAPI=3
+EAPI=4-python
 HOMEPAGE=https://github.com/haypo/python-ipy/wiki http://pypi.python.org/pypi/IPy
-KEYWORDS=amd64 ~ppc ~ppc64 ~sparc x86
+IUSE=python_abis_2.5 python_abis_2.6 python_abis_2.7 python_abis_3.1 python_abis_3.2 python_abis_3.3 python_abis_2.5-jython python_abis_2.6-jython python_abis_2.7-pypy-1.7 python_abis_2.7-pypy-1.8
+KEYWORDS=~amd64 ~ppc ~ppc64 ~sparc ~x86
 LICENSE=BSD
-RDEPEND=|| ( =dev-lang/python-3.2* =dev-lang/python-3.1* =dev-lang/python-2.7* =dev-lang/python-2.6* =dev-lang/python-2.5* )
+RDEPEND=python_abis_2.5? ( dev-lang/python:2.5 ) python_abis_2.6? ( dev-lang/python:2.6 ) python_abis_2.7? ( dev-lang/python:2.7 ) python_abis_3.1? ( dev-lang/python:3.1 ) python_abis_3.2? ( dev-lang/python:3.2 ) python_abis_3.3? ( dev-lang/python:3.3 ) python_abis_2.5-jython? ( dev-java/jython:2.5 ) python_abis_2.6-jython? ( dev-java/jython:2.6 ) python_abis_2.7-pypy-1.7? ( dev-python/pypy:1.7 ) python_abis_2.7-pypy-1.8? ( dev-python/pypy:1.8 )
+REQUIRED_USE=|| ( python_abis_2.5 python_abis_2.6 python_abis_2.7 python_abis_3.1 python_abis_3.2 python_abis_3.3 python_abis_2.5-jython python_abis_2.6-jython python_abis_2.7-pypy-1.7 python_abis_2.7-pypy-1.8 )
 SLOT=0
 SRC_URI=mirror://pypi/I/IPy/IPy-0.75.tar.gz
-_eclasses_=distutils	15ae23f6f8219a009bfcfff7724fe727	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	python	d6df8e9d4686f7550769a9777aa622b9	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68
-_md5_=dd3dd28c3c8ee23e8dfb179e61e32fc8
+_eclasses_=distutils	82a876811ffd4907daba6062958daa26	python	cb2844e25e38800105564c14a716c805
+_md5_=2833cb706133cf436d914b8769191648

@@ -1,4 +1,3 @@
-=== modified file 'twisted/test/test_process.py'
 --- twisted/test/test_process.py	
 +++ twisted/test/test_process.py	
 @@ -76,7 +76,7 @@

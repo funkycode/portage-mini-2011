@@ -1,12 +1,11 @@
-# Copyright 1999-2011 Gentoo Foundation
+# Copyright owners: Gentoo Foundation
+#                   Arfrever Frehtes Taifersar Arahesis
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/dev-python/flask-sqlalchemy/flask-sqlalchemy-0.15.ebuild,v 1.1 2011/09/08 07:03:16 rafaelmartins Exp $
 
-EAPI="3"
-PYTHON_DEPEND="2"
-SUPPORT_PYTHON_ABIS="1"
-RESTRICT_PYTHON_ABIS="2.4 3.*"
-DISTUTILS_SRC_TEST="nosetests"
+EAPI="4-python"
+PYTHON_MULTIPLE_ABIS="1"
+PYTHON_RESTRICTED_ABIS="3.*"
+DISTUTILS_SRC_TEST="setup.py"
 
 inherit distutils
 
@@ -22,11 +21,11 @@ SLOT="0"
 KEYWORDS="~amd64 ~x86"
 IUSE=""
 
-RDEPEND="dev-python/flask
-	dev-python/setuptools
-	dev-python/sqlalchemy"
-DEPEND="${RDEPEND}"
+RDEPEND="$(python_abi_depend dev-python/flask)
+	$(python_abi_depend dev-python/sqlalchemy)"
+DEPEND="${RDEPEND}
+	$(python_abi_depend dev-python/setuptools)"
 
 S="${WORKDIR}/${MY_P}"
 
-PYTHON_MODNAME="flaskext/sqlalchemy.py"
+PYTHON_MODULES="flaskext/sqlalchemy.py"

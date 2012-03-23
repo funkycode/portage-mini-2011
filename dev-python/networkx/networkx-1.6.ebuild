@@ -1,50 +1,69 @@
-# Copyright 1999-2011 Gentoo Foundation
+# Copyright owners: Gentoo Foundation
+#                   Arfrever Frehtes Taifersar Arahesis
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/dev-python/networkx/networkx-1.6.ebuild,v 1.3 2011/12/19 07:24:00 zmedico Exp $
 
-EAPI="3"
-PYTHON_DEPEND="*:2.6"
-#SUPPORT_PYTHON_ABIS="1"
-RESTRICT_PYTHON_ABIS="2.4 2.5 3.*"
+EAPI="4-python"
+PYTHON_MULTIPLE_ABIS="1"
+PYTHON_RESTRICTED_ABIS="2.5 *-jython"
 
 inherit distutils
 
-DESCRIPTION="Python tools to manipulate graphs and complex networks"
-HOMEPAGE="http://networkx.lanl.gov http://pypi.python.org/pypi/networkx"
+DESCRIPTION="Python package for creating and manipulating graphs and networks"
+HOMEPAGE="http://networkx.lanl.gov/ http://pypi.python.org/pypi/networkx"
 SRC_URI="mirror://pypi/${PN:0:1}/${PN}/${P}.tar.gz"
 
 LICENSE="BSD"
 SLOT="0"
 KEYWORDS="~amd64 ~ppc ~x86 ~x86-linux ~ppc-macos ~x86-macos"
-IUSE="doc examples"
+IUSE="doc examples graphviz matplotlib numpy pyparsing scipy yaml"
+REQUIRED_USE="examples? ( graphviz matplotlib numpy pyparsing scipy )"
 
-DEPEND="dev-python/setuptools
-		doc? (
-			dev-python/matplotlib
-			dev-python/pygraphviz
-			dev-python/sphinx
-		)"
-RDEPEND="examples? (
-		dev-python/matplotlib
-		dev-python/pygraphviz
-		dev-python/pyparsing
-		dev-python/pyyaml
-		sci-libs/scipy
+RDEPEND="$(python_abi_depend dev-python/decorator)
+	graphviz? ( $(python_abi_depend -e "3.*" dev-python/pygraphviz) )
+	matplotlib? ( $(python_abi_depend -e "3.* *-pypy-*" dev-python/matplotlib) )
+	numpy? ( $(python_abi_depend -e "*-pypy-*" dev-python/numpy) )
+	pyparsing? ( $(python_abi_depend dev-python/pyparsing) )
+	scipy? ( $(python_abi_depend -e "*-pypy-*" sci-libs/scipy) )
+	yaml? ( $(python_abi_depend dev-python/pyyaml) )"
+DEPEND="${RDEPEND}
+	$(python_abi_depend dev-python/setuptools)
+	doc? (
+		dev-python/matplotlib[python_abis_2.7]
+		dev-python/sphinx[python_abis_2.7]
 	)"
+
+src_prepare() {
+	distutils_src_prepare
+
+	# Don't use internal copy of dev-python/decorator.
+	rm -f networkx/external/decorator/{_decorator.py,_decorator3.py}
+	echo "from decorator import *" > networkx/external/decorator/__init__.py
+
+	# Disable installation of INSTALL.txt and LICENSE.txt.
+	sed -e 's/data = \[(docdirbase, glob("\*.txt"))\]/data = [(docdirbase, [x for x in glob("*.txt") if x not in ("INSTALL.txt", "LICENSE.txt")])]/' -i setup.py
+
+	python_convert_shebangs 2.7 doc/{make_examples_rst.py,make_gallery.py}
+}
 
 src_compile() {
 	distutils_src_compile
 
 	if use doc; then
-		# PYTHONPATH is necessary to use networkx to be installed.
-		cd "${S}/doc" && PYTHONPATH="${S}" make html \
-			|| die "doc compilation failed"
+		einfo "Generation of documentation"
+		pushd doc > /dev/null
+		PYTHONPATH=".." emake html SPHINXBUILD="sphinx-build-2.7"
+		popd > /dev/null
 	fi
 }
 
 src_install() {
 	distutils_src_install
-	rm -f "${ED}"usr/share/doc/${PF}/{INSTALL,LICENSE}.txt
-	use examples || rm -r "${ED}"usr/share/doc/${PF}/examples
-	use doc && dohtml -r doc/build/html/*
+
+	if use doc; then
+		dohtml -r doc/build/html/*
+	fi
+
+	if ! use examples; then
+		rm -fr "${ED}usr/share/doc/${PF}/examples"
+	fi
 }

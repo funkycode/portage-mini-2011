@@ -1,13 +1,14 @@
-DEFINED_PHASES=compile install postinst postrm prepare test
-DEPEND=sys-libs/timezone-data dev-python/setuptools =dev-lang/python-3*
+DEFINED_PHASES=compile install postinst postrm prepare setup test
+DEPEND=sys-libs/timezone-data dev-python/setuptools[python_abis_3.1?,python_abis_3.2?,python_abis_3.3?] python_abis_3.1? ( dev-lang/python:3.1 ) python_abis_3.2? ( dev-lang/python:3.2 ) python_abis_3.3? ( dev-lang/python:3.3 )
 DESCRIPTION=Extensions to the standard Python datetime module
-EAPI=3
+EAPI=4-python
 HOMEPAGE=http://labix.org/python-dateutil http://pypi.python.org/pypi/python-dateutil
-IUSE=examples
+IUSE=examples python_abis_3.1 python_abis_3.2 python_abis_3.3
 KEYWORDS=~amd64 ~ia64 ~ppc ~ppc64 ~x86 ~x86-fbsd ~amd64-linux ~x86-linux ~ppc-macos ~x64-macos ~x86-macos
 LICENSE=BSD
-RDEPEND=sys-libs/timezone-data =dev-lang/python-3*
+RDEPEND=sys-libs/timezone-data python_abis_3.1? ( dev-lang/python:3.1 ) python_abis_3.2? ( dev-lang/python:3.2 ) python_abis_3.3? ( dev-lang/python:3.3 )
+REQUIRED_USE=|| ( python_abis_3.1 python_abis_3.2 python_abis_3.3 )
 SLOT=python-3
 SRC_URI=http://labix.org/download/python-dateutil/python-dateutil-2.0.tar.gz
-_eclasses_=distutils	15ae23f6f8219a009bfcfff7724fe727	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	python	d6df8e9d4686f7550769a9777aa622b9	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68
-_md5_=64c7ccbc030b33a0b34c920bdfbfd7ac
+_eclasses_=distutils	82a876811ffd4907daba6062958daa26	python	cb2844e25e38800105564c14a716c805
+_md5_=9ce7999f1a84b7cafa91139d010c8eb9

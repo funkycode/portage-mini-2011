@@ -1,12 +1,14 @@
-DEFINED_PHASES=compile install postinst postrm prepare
-DEPEND=dev-python/setuptools =dev-lang/python-2*
+DEFINED_PHASES=compile install postinst postrm prepare setup
+DEPEND=net-zope/namespaces-zc[zc,python_abis_2.5?,python_abis_2.6?,python_abis_2.7?,python_abis_2.5-jython?,python_abis_2.6-jython?,python_abis_2.7-pypy-1.7?,python_abis_2.7-pypy-1.8?] dev-python/setuptools[python_abis_2.5?,python_abis_2.6?,python_abis_2.7?,python_abis_2.5-jython?,python_abis_2.6-jython?,python_abis_2.7-pypy-1.7?,python_abis_2.7-pypy-1.8?] python_abis_2.5? ( dev-lang/python:2.5 ) python_abis_2.6? ( dev-lang/python:2.6 ) python_abis_2.7? ( dev-lang/python:2.7 ) python_abis_2.5-jython? ( dev-java/jython:2.5 ) python_abis_2.6-jython? ( dev-java/jython:2.6 ) python_abis_2.7-pypy-1.7? ( dev-python/pypy:1.7 ) python_abis_2.7-pypy-1.8? ( dev-python/pypy:1.8 )
 DESCRIPTION=System for managing development buildouts
-EAPI=3
+EAPI=4-python
 HOMEPAGE=http://pypi.python.org/pypi/zc.buildout
+IUSE=python_abis_2.5 python_abis_2.6 python_abis_2.7 python_abis_2.5-jython python_abis_2.6-jython python_abis_2.7-pypy-1.7 python_abis_2.7-pypy-1.8
 KEYWORDS=~amd64 ~x86
 LICENSE=ZPL
-RDEPEND=dev-python/setuptools =dev-lang/python-2*
+RDEPEND=net-zope/namespaces-zc[zc,python_abis_2.5?,python_abis_2.6?,python_abis_2.7?,python_abis_2.5-jython?,python_abis_2.6-jython?,python_abis_2.7-pypy-1.7?,python_abis_2.7-pypy-1.8?] dev-python/setuptools[python_abis_2.5?,python_abis_2.6?,python_abis_2.7?,python_abis_2.5-jython?,python_abis_2.6-jython?,python_abis_2.7-pypy-1.7?,python_abis_2.7-pypy-1.8?] python_abis_2.5? ( dev-lang/python:2.5 ) python_abis_2.6? ( dev-lang/python:2.6 ) python_abis_2.7? ( dev-lang/python:2.7 ) python_abis_2.5-jython? ( dev-java/jython:2.5 ) python_abis_2.6-jython? ( dev-java/jython:2.6 ) python_abis_2.7-pypy-1.7? ( dev-python/pypy:1.7 ) python_abis_2.7-pypy-1.8? ( dev-python/pypy:1.8 )
+REQUIRED_USE=|| ( python_abis_2.5 python_abis_2.6 python_abis_2.7 python_abis_2.5-jython python_abis_2.6-jython python_abis_2.7-pypy-1.7 python_abis_2.7-pypy-1.8 )
 SLOT=0
 SRC_URI=mirror://pypi/z/zc.buildout/zc.buildout-1.5.2.tar.gz
-_eclasses_=distutils	15ae23f6f8219a009bfcfff7724fe727	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	python	d6df8e9d4686f7550769a9777aa622b9	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68
-_md5_=728ee5aec248e98556b781526e896a80
+_eclasses_=distutils	82a876811ffd4907daba6062958daa26	python	cb2844e25e38800105564c14a716c805
+_md5_=7ab7473436799020546a8333d06be187

@@ -1,12 +1,11 @@
-# Copyright 1999-2012 Gentoo Foundation
+# Copyright owners: Gentoo Foundation
+#                   Arfrever Frehtes Taifersar Arahesis
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/dev-python/pywebkitgtk/pywebkitgtk-1.1.8.ebuild,v 1.7 2012/02/24 08:14:23 patrick Exp $
 
-EAPI="3"
-PYTHON_DEPEND="2:2.6"
+EAPI="4-python"
+PYTHON_MULTIPLE_ABIS="1"
+PYTHON_RESTRICTED_ABIS="2.5 3.* *-jython *-pypy-*"
 PYTHON_EXPORT_PHASE_FUNCTIONS="1"
-SUPPORT_PYTHON_ABIS="1"
-RESTRICT_PYTHON_ABIS="2.4 2.5 3.* 2.7-pypy-* *-jython"
 
 inherit python
 
@@ -16,11 +15,11 @@ SRC_URI="http://pywebkitgtk.googlecode.com/files/${P}.tar.gz"
 
 LICENSE="LGPL-2"
 SLOT="0"
-KEYWORDS="amd64 ppc sparc x86"
+KEYWORDS="~amd64 ~ppc ~sparc ~x86"
 IUSE=""
 
-RDEPEND="dev-python/pygobject:2
-	dev-python/pygtk:2
+RDEPEND="$(python_abi_depend dev-python/pygobject:2)
+	$(python_abi_depend dev-python/pygtk:2)
 	dev-libs/libxslt
 	>=net-libs/webkit-gtk-1.1.15:2"
 DEPEND="${RDEPEND}
@@ -33,7 +32,7 @@ src_configure() {
 src_install() {
 	python_src_install
 	python_clean_installation_image
-	dodoc AUTHORS MAINTAINERS NEWS README || die "dodoc failed"
+	dodoc AUTHORS MAINTAINERS NEWS README
 }
 
 pkg_postinst() {

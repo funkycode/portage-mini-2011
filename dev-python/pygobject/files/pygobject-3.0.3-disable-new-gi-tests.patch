@@ -1,9 +1,7 @@
 Disable tests requiring >=gobject-introspection-1.31
 
-diff --git a/tests/test_everything.py b/tests/test_everything.py
-index 43735e5..ecfdef4 100644
---- a/tests/test_everything.py
-+++ b/tests/test_everything.py
+--- tests/test_everything.py
++++ tests/test_everything.py
 @@ -507,22 +507,3 @@ class TestAdvancedInterfaces(unittest.TestCase):
          self.assertEquals(ret[0], 51);
          self.assertEquals(ret[1], 61);
@@ -27,10 +25,8 @@ index 43735e5..ecfdef4 100644
 -
 -        obj.connect('sig-with-obj', callback)
 -        obj.emit_sig_with_obj()
-diff --git a/tests/test_gi.py b/tests/test_gi.py
-index 0a9b1b2..7e24778 100644
---- a/tests/test_gi.py
-+++ b/tests/test_gi.py
+--- tests/test_gi.py
++++ tests/test_gi.py
 @@ -770,18 +770,6 @@ class TestArray(unittest.TestCase):
      def test_gstrv_inout(self):
          self.assertEquals(['-1', '0', '1', '2'], GIMarshallingTests.gstrv_inout(['0', '1', '2']))

@@ -6,11 +6,8 @@ Subject: Hardening of XPath evaluation
 Add a mechanism of frame for XPath evaluation when entering a function
 or a scoped evaluation, also fix a potential problem in predicate
 evaluation.
----
-diff --git a/include/libxml/xpath.h b/include/libxml/xpath.h
-index 1a9e30e..ddd9dd8 100644
---- a/include/libxml/xpath.h
-+++ b/include/libxml/xpath.h
+--- include/libxml/xpath.h
++++ include/libxml/xpath.h
 @@ -68,7 +68,8 @@ typedef enum {
      XPATH_UNDEF_PREFIX_ERROR,
      XPATH_ENCODING_ERROR,
@@ -30,10 +27,8 @@ index 1a9e30e..ddd9dd8 100644
  };
  
  /************************************************************************
-diff --git a/xpath.c b/xpath.c
-index b59ac5a..bcee2ea 100644
---- a/xpath.c
-+++ b/xpath.c
+--- xpath.c
++++ xpath.c
 @@ -252,6 +252,7 @@ static const char *xmlXPathErrorMessages[] = {
      "Encoding error\n",
      "Char out of XML range\n",
@@ -208,10 +203,8 @@ index b59ac5a..bcee2ea 100644
      }
  #ifdef XPATH_STREAMING
      if (ctxt->comp->stream) {
-diff --git a/xpointer.c b/xpointer.c
-index 7a42d02..37afa3a 100644
---- a/xpointer.c
-+++ b/xpointer.c
+--- xpointer.c
++++ xpointer.c
 @@ -1269,6 +1269,7 @@ xmlXPtrEvalXPointer(xmlXPathParserContextPtr ctxt) {
  	ctxt->valueNr = 0;
  	ctxt->valueMax = 10;
@@ -220,5 +213,3 @@ index 7a42d02..37afa3a 100644
      }
      SKIP_BLANKS;
      if (CUR == '/') {
---
-cgit v0.9.0.2

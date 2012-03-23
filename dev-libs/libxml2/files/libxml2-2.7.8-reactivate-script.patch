@@ -3,11 +3,8 @@ From: Daniel Veillard <veillard@redhat.com>
 Date: Thu, 04 Nov 2010 20:53:14 +0000
 Subject: Reactivate the shared library versionning script
 
----
-diff --git a/configure.in b/configure.in
-index 59d0629..a1d2c89 100644
---- a/configure.in
-+++ b/configure.in
+--- configure.in
++++ configure.in
 @@ -84,7 +84,7 @@ else
    esac
  fi
@@ -17,5 +14,3 @@ index 59d0629..a1d2c89 100644
  
  dnl
  dnl We process the AC_ARG_WITH first so that later we can modify
---
-cgit v0.8.3.1

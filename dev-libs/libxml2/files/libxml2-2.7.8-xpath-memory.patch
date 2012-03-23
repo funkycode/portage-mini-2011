@@ -4,11 +4,8 @@ Date: Mon, 15 Nov 2010 11:06:29 +0000
 Subject: Fix a potential memory access error
 
 in case of a previus allocation error
----
-diff --git a/xpath.c b/xpath.c
-index 4d6826d..81e33f6 100644
---- a/xpath.c
-+++ b/xpath.c
+--- xpath.c
++++ xpath.c
 @@ -3575,13 +3575,13 @@ xmlXPathNodeSetAdd(xmlNodeSetPtr cur, xmlNodePtr val) {
      } else if (cur->nodeNr == cur->nodeMax) {
          xmlNodePtr *temp;
@@ -25,5 +22,3 @@ index 4d6826d..81e33f6 100644
  	cur->nodeTab = temp;
      }
      if (val->type == XML_NAMESPACE_DECL) {
---
-cgit v0.8.3.1

@@ -1,12 +1,11 @@
-# Copyright 1999-2012 Gentoo Foundation
+# Copyright owners: Gentoo Foundation
+#                   Arfrever Frehtes Taifersar Arahesis
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/dev-python/bpython/bpython-0.10.1.ebuild,v 1.4 2012/01/28 15:27:30 phajdan.jr Exp $
 
-EAPI="3"
-PYTHON_DEPEND="*:2.5"
-SUPPORT_PYTHON_ABIS="1"
-RESTRICT_PYTHON_ABIS="2.4 *-jython"
-PYTHON_USE_WITH="ncurses"
+EAPI="4-python"
+PYTHON_DEPEND="<<[ncurses]>>"
+PYTHON_MULTIPLE_ABIS="1"
+PYTHON_RESTRICTED_ABIS="*-jython"
 
 inherit distutils
 
@@ -16,22 +15,27 @@ SRC_URI="http://www.bpython-interpreter.org/releases/${P}.tar.gz"
 
 LICENSE="MIT"
 SLOT="0"
-KEYWORDS="amd64 x86"
-IUSE="gtk urwid"
+KEYWORDS="~amd64 ~x86"
+IUSE="gtk nls urwid"
 
-RDEPEND="dev-python/pygments
-	dev-python/setuptools
-	gtk? ( dev-python/pygobject:2 dev-python/pygtk )
-	urwid? ( dev-python/urwid )"
-DEPEND="${RDEPEND}"
+RDEPEND="$(python_abi_depend dev-python/pygments)
+	$(python_abi_depend dev-python/setuptools)
+	gtk? (
+		$(python_abi_depend -e "2.5 *-pypy-* 3.*" dev-python/pygobject:2)
+		$(python_abi_depend -e "2.5 *-pypy-* 3.*" dev-python/pygtk:2)
+	)
+	urwid? ( $(python_abi_depend dev-python/urwid) )"
+DEPEND="${RDEPEND}
+	nls? ( $(python_abi_depend -e "3.*" dev-python/Babel) )"
 
 DOCS="sample-config sample.theme light.theme"
+PYTHON_MODULES="bpdb bpython"
 
 src_install() {
 	distutils_src_install
 
 	if use gtk; then
-		# pygobject and pygtk currently don't support Python 3.
+		# pygtk does not support Python 3.
 		rm -f "${ED}"usr/bin/bpython-gtk-3.*
 	else
 		rm -f "${ED}"usr/bin/bpython-gtk*
@@ -41,7 +45,10 @@ src_install() {
 		}
 		python_execute_function -q delete_unneeded_modules
 	fi
+
 	if ! use urwid; then
+		rm -f "${ED}"usr/bin/bpython-urwid*
+
 		delete_urwid() {
 			rm -f "${ED}$(python_get_sitedir)/bpython/urwid.py"
 		}

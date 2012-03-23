@@ -1,11 +1,10 @@
-# Copyright 1999-2012 Gentoo Foundation
+# Copyright owners: Gentoo Foundation
+#                   Arfrever Frehtes Taifersar Arahesis
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/dev-python/pyconstruct/pyconstruct-2.06.ebuild,v 1.2 2012/01/06 21:28:06 hwoarang Exp $
 
-EAPI="3"
-PYTHON_DEPEND="2:2.5"
-SUPPORT_PYTHON_ABIS="1"
-RESTRICT_PYTHON_ABIS="2.4 3.* *-jython"
+EAPI="4-python"
+PYTHON_MULTIPLE_ABIS="1"
+PYTHON_RESTRICTED_ABIS="3.*"
 
 inherit distutils
 
@@ -21,28 +20,37 @@ SLOT="0"
 KEYWORDS="~amd64 ~x86"
 IUSE="doc"
 
-DEPEND="dev-python/setuptools
-	doc? ( dev-python/sphinx )"
+DEPEND="$(python_abi_depend dev-python/setuptools)
+	doc? ( $(python_abi_depend dev-python/sphinx) )"
 RDEPEND=""
 
 S="${WORKDIR}/${MY_P}"
 
-PYTHON_MODNAME="construct"
+PYTHON_MODULES="construct"
 
 src_compile() {
 	distutils_src_compile
 
 	if use doc; then
 		einfo "Generation of documentation"
-		cd docs
-		PYTHONPATH=".." emake html || die "Building of documentation failed"
+		pushd docs > /dev/null
+		PYTHONPATH=".." emake html || die "Generation of documentation failed"
+		popd > /dev/null
 	fi
 }
 
 src_install() {
 	distutils_src_install
 
+	delete_tests() {
+		rm -fr "${ED}$(python_get_sitedir)/construct/tests"
+	}
+	python_execute_function -q delete_tests
+
 	if use doc; then
-		dohtml -r docs/_build/html/* || die "Installation of documentation failed"
+		pushd docs/_build/html > /dev/null
+		insinto /usr/share/doc/${PF}/html
+		doins -r [a-z]* _static
+		popd > /dev/null
 	fi
 }

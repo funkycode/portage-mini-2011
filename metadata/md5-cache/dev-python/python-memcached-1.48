@@ -1,13 +1,14 @@
-DEFINED_PHASES=compile install postinst postrm prepare test
-DEPEND=dev-python/setuptools test? ( net-misc/memcached ) =dev-lang/python-2*
+DEFINED_PHASES=compile install postinst postrm prepare setup test
+DEPEND=dev-python/setuptools[python_abis_2.5?,python_abis_2.6?,python_abis_2.7?,python_abis_2.5-jython?,python_abis_2.6-jython?,python_abis_2.7-pypy-1.7?,python_abis_2.7-pypy-1.8?] test? ( net-misc/memcached ) python_abis_2.5? ( dev-lang/python:2.5 ) python_abis_2.6? ( dev-lang/python:2.6 ) python_abis_2.7? ( dev-lang/python:2.7 ) python_abis_2.5-jython? ( dev-java/jython:2.5 ) python_abis_2.6-jython? ( dev-java/jython:2.6 ) python_abis_2.7-pypy-1.7? ( dev-python/pypy:1.7 ) python_abis_2.7-pypy-1.8? ( dev-python/pypy:1.8 )
 DESCRIPTION=Pure python memcached client
-EAPI=3
+EAPI=4-python
 HOMEPAGE=http://www.tummy.com/Community/software/python-memcached/ http://pypi.python.org/pypi/python-memcached
-IUSE=test
+IUSE=test python_abis_2.5 python_abis_2.6 python_abis_2.7 python_abis_2.5-jython python_abis_2.6-jython python_abis_2.7-pypy-1.7 python_abis_2.7-pypy-1.8
 KEYWORDS=~amd64 ~ppc ~x86 ~amd64-linux ~x86-linux ~x86-macos
 LICENSE=OSL-2.0
-RDEPEND==dev-lang/python-2*
+RDEPEND=python_abis_2.5? ( dev-lang/python:2.5 ) python_abis_2.6? ( dev-lang/python:2.6 ) python_abis_2.7? ( dev-lang/python:2.7 ) python_abis_2.5-jython? ( dev-java/jython:2.5 ) python_abis_2.6-jython? ( dev-java/jython:2.6 ) python_abis_2.7-pypy-1.7? ( dev-python/pypy:1.7 ) python_abis_2.7-pypy-1.8? ( dev-python/pypy:1.8 )
+REQUIRED_USE=|| ( python_abis_2.5 python_abis_2.6 python_abis_2.7 python_abis_2.5-jython python_abis_2.6-jython python_abis_2.7-pypy-1.7 python_abis_2.7-pypy-1.8 )
 SLOT=0
 SRC_URI=ftp://ftp.tummy.com/pub/python-memcached/old-releases/python-memcached-1.48.tar.gz
-_eclasses_=distutils	15ae23f6f8219a009bfcfff7724fe727	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	python	d6df8e9d4686f7550769a9777aa622b9	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68
-_md5_=c640ebc4b0b20dd868312e4f5d693fc7
+_eclasses_=distutils	82a876811ffd4907daba6062958daa26	python	cb2844e25e38800105564c14a716c805
+_md5_=5ff003556aca49e3d890315433fde26f

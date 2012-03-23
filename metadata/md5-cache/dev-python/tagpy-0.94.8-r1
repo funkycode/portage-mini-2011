@@ -1,13 +1,14 @@
 DEFINED_PHASES=compile configure install postinst postrm prepare setup
-DEPEND=>=dev-libs/boost-1.48[python] >=media-libs/taglib-1.4 dev-python/setuptools =dev-lang/python-2*
+DEPEND=>=dev-libs/boost-1.48[python,python_abis_2.5?,python_abis_2.6?,python_abis_2.7?] >=media-libs/taglib-1.4 dev-python/setuptools[python_abis_2.5?,python_abis_2.6?,python_abis_2.7?] python_abis_2.5? ( dev-lang/python:2.5 ) python_abis_2.6? ( dev-lang/python:2.6 ) python_abis_2.7? ( dev-lang/python:2.7 )
 DESCRIPTION=Python Bindings for TagLib
-EAPI=4
+EAPI=4-python
 HOMEPAGE=http://mathema.tician.de//software/tagpy http://pypi.python.org/pypi/tagpy
-IUSE=examples
+IUSE=examples python_abis_2.5 python_abis_2.6 python_abis_2.7
 KEYWORDS=~amd64 ~ppc ~ppc64 ~sparc ~x86
 LICENSE=BSD
-RDEPEND=>=dev-libs/boost-1.48[python] >=media-libs/taglib-1.4 =dev-lang/python-2*
+RDEPEND=>=dev-libs/boost-1.48[python,python_abis_2.5?,python_abis_2.6?,python_abis_2.7?] >=media-libs/taglib-1.4 python_abis_2.5? ( dev-lang/python:2.5 ) python_abis_2.6? ( dev-lang/python:2.6 ) python_abis_2.7? ( dev-lang/python:2.7 )
+REQUIRED_USE=|| ( python_abis_2.5 python_abis_2.6 python_abis_2.7 )
 SLOT=0
 SRC_URI=mirror://pypi/t/tagpy/tagpy-0.94.8.tar.gz
-_eclasses_=distutils	15ae23f6f8219a009bfcfff7724fe727	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	python	d6df8e9d4686f7550769a9777aa622b9	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68
-_md5_=57a42e8e548da56727e42bb08bde394a
+_eclasses_=distutils	82a876811ffd4907daba6062958daa26	python	cb2844e25e38800105564c14a716c805
+_md5_=778d56a054b5ffe8fce99bfbe18bfec2

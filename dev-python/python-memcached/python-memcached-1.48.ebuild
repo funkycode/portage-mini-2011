@@ -1,11 +1,10 @@
-# Copyright 1999-2012 Gentoo Foundation
+# Copyright owners: Gentoo Foundation
+#                   Arfrever Frehtes Taifersar Arahesis
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/dev-python/python-memcached/python-memcached-1.48.ebuild,v 1.1 2012/01/08 07:00:30 patrick Exp $
 
-EAPI="3"
-PYTHON_DEPEND="2"
-SUPPORT_PYTHON_ABIS="1"
-RESTRICT_PYTHON_ABIS="3.*"
+EAPI="4-python"
+PYTHON_MULTIPLE_ABIS="1"
+PYTHON_RESTRICTED_ABIS="3.*"
 
 inherit distutils
 
@@ -18,20 +17,27 @@ SLOT="0"
 KEYWORDS="~amd64 ~ppc ~x86 ~amd64-linux ~x86-linux ~x86-macos"
 IUSE="test"
 
-DEPEND="dev-python/setuptools
+DEPEND="$(python_abi_depend dev-python/setuptools)
 	test? ( net-misc/memcached )"
 RDEPEND=""
 
-PYTHON_MODNAME="memcache.py"
+PYTHON_MODULES="memcache.py"
 
 src_test() {
-	cp memcache.py memcache_test.py || die
-	sed -ie "s/11211/11219/" memcache_test.py || die
+	if [[ "${EUID}" -eq 0 ]]; then
+		ewarn "Skipping tests due to root permissions"
+		return
+	fi
+
+	cp memcache.py test_memcache.py
+	sed -e "s/11211/11219/" -i test_memcache.py
+
+	memcached -d -l localhost -p 11219 -P "${T}/memcached.pid"
+
 	testing() {
-		memcached -u portage -d -p 11219 -l localhost -P "${T}/memcached.pid"
-		PYTHONPATH="build-${PYTHON_ABI}/lib" "$(PYTHON)" memcache_test.py || die
-		kill "$(<"${T}/memcached.pid")"
-		rm "${T}/memcached.pid"
+		python_execute PYTHONPATH="build-${PYTHON_ABI}/lib" "$(PYTHON)" test_memcache.py
 	}
 	python_execute_function testing
+
+	kill "$(<"${T}/memcached.pid")"
 }

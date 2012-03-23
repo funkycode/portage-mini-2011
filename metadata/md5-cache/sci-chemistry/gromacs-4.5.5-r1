@@ -11,5 +11,5 @@ REQUIRED_USE=fkernels? ( !threads )
 RESTRICT=test
 SLOT=0
 SRC_URI=ftp://ftp.gromacs.org/pub/gromacs/gromacs-4.5.5.tar.gz sse2? ( http://dev.gentoo.org/~alexxy/gromacs/0001-Make-stack-non-executable-for-GAS-assembly.patch.gz ) sse2? ( http://dev.gentoo.org/~alexxy/gromacs/0002-Make-stack-non-executable-for-ATT-assembly.patch.gz ) doc? ( ftp://ftp.gromacs.org/pub/manual/manual-4.5.4.pdf -> gromacs-manual-4.5.4.pdf ) test? ( ftp://ftp.gromacs.org/pub/tests/gmxtest-4.0.4.tgz )
-_eclasses_=base	5f35078c26d6c60556d5c8a2feb4f84f	bash-completion-r1	3480f8385cb9e31797e7b659e366e2d2	cmake-utils	d9f3f2f6cc1a1d6ad8e31702e44133e5	eutils	0f008baa9552301d379ae5df233e9713	flag-o-matic	66cb710a2aa184a5687fe1289d7973ab	fortran-2	368b82ae80c1184988a9d651e6efcbd0	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
+_eclasses_=base	56b5d6bcc4a0fc2a3055a84fd4a5c36b	bash-completion-r1	fff8a4a7ab807c81d9000e0791370cb9	cmake-utils	958bfc21321d16fe83e1df5e3e654469	eutils	0f008baa9552301d379ae5df233e9713	flag-o-matic	66cb710a2aa184a5687fe1289d7973ab	fortran-2	046b01b491c4eb09143ecc1e2d7f025c	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
 _md5_=3fe2387b6b4a60453e6c6b96a9353956

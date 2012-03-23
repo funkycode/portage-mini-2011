@@ -1,25 +1,20 @@
-From 812793c07d3202d3f5bc39091aec2e7071d000c8 Mon Sep 17 00:00:00 2001
-From: Sebastian Pipping <sebastian@pipping.org>
-Date: Sun, 1 Jan 2012 19:30:57 +0100
-Subject: [PATCH] Use shipped sgmllib for Python 3.x
+http://code.google.com/p/feedparser/issues/detail?id=311
 
----
- feedparser/feedparser.py |   19 +++----------------
- setup.py                 |    2 +-
- 2 files changed, 4 insertions(+), 17 deletions(-)
-
-diff --git a/feedparser/feedparser.py b/feedparser/feedparser.py
-index 8275c29..9a8a053 100644
---- a/feedparser/feedparser.py
-+++ b/feedparser/feedparser.py
-@@ -204,17 +204,9 @@ else:
+--- feedparser/feedparser.py
++++ feedparser/feedparser.py
+@@ -198,65 +198,50 @@
+     else:
+         _XML_AVAILABLE = 1
+ 
+-# sgmllib is not available by default in Python 3; if the end user doesn't have
+-# it available then we'll lose illformed XML parsing, content santizing, and
+-# microformat support (at least while feedparser depends on BeautifulSoup).
  try:
      import sgmllib
  except ImportError:
 -    # This is probably Python 3, which doesn't include sgmllib anymore
 -    _SGML_AVAILABLE = 0
-+    import _feedparser_sgmllib as sgmllib
- 
+-
 -    # Mock sgmllib enough to allow subclassing later on
 -    class sgmllib(object):
 -        class SGMLParser(object):
@@ -28,11 +23,92 @@ index 8275c29..9a8a053 100644
 -            def parse_starttag(self, i):
 -                pass
 -else:
-+if True:
-     _SGML_AVAILABLE = 1
+-    _SGML_AVAILABLE = 1
+-
+-    # sgmllib defines a number of module-level regular expressions that are
+-    # insufficient for the XML parsing feedparser needs. Rather than modify
+-    # the variables directly in sgmllib, they're defined here using the same
+-    # names, and the compiled code objects of several sgmllib.SGMLParser
+-    # methods are copied into _BaseHTMLProcessor so that they execute in
+-    # feedparser's scope instead of sgmllib's scope.
+-    charref = re.compile('&#(\d+|[xX][0-9a-fA-F]+);')
+-    tagfind = re.compile('[a-zA-Z][-_.:a-zA-Z0-9]*')
+-    attrfind = re.compile(
+-        r'\s*([a-zA-Z_][-:.a-zA-Z_0-9]*)[$]?(\s*=\s*'
+-        r'(\'[^\']*\'|"[^"]*"|[][\-a-zA-Z0-9./,:;+*%?!&$\(\)_#=~\'"@]*))?'
+-    )
+-
+-    # Unfortunately, these must be copied over to prevent NameError exceptions
+-    entityref = sgmllib.entityref
+-    incomplete = sgmllib.incomplete
+-    interesting = sgmllib.interesting
+-    shorttag = sgmllib.shorttag
+-    shorttagopen = sgmllib.shorttagopen
+-    starttagopen = sgmllib.starttagopen
+-
+-    class _EndBracketRegEx:
+-        def __init__(self):
+-            # Overriding the built-in sgmllib.endbracket regex allows the
+-            # parser to find angle brackets embedded in element attributes.
+-            self.endbracket = re.compile('''([^'"<>]|"[^"]*"(?=>|/|\s|\w+=)|'[^']*'(?=>|/|\s|\w+=))*(?=[<>])|.*?(?=[<>])''')
+-        def search(self, target, index=0):
+-            match = self.endbracket.match(target, index)
+-            if match is not None:
+-                # Returning a new object in the calling thread's context
+-                # resolves a thread-safety.
+-                return EndBracketMatch(match) 
+-            return None
+-    class EndBracketMatch:
+-        def __init__(self, match):
+-            self.match = match
+-        def start(self, n):
+-            return self.match.end(n)
+-    endbracket = _EndBracketRegEx()
++    import _feedparser_sgmllib as sgmllib
  
-     # sgmllib defines a number of module-level regular expressions that are
-@@ -2520,9 +2512,6 @@ class _RelativeURIResolver(_BaseHTMLProcessor):
++# sgmllib defines a number of module-level regular expressions that are
++# insufficient for the XML parsing feedparser needs. Rather than modify
++# the variables directly in sgmllib, they're defined here using the same
++# names, and the compiled code objects of several sgmllib.SGMLParser
++# methods are copied into _BaseHTMLProcessor so that they execute in
++# feedparser's scope instead of sgmllib's scope.
++charref = re.compile('&#(\d+|[xX][0-9a-fA-F]+);')
++tagfind = re.compile('[a-zA-Z][-_.:a-zA-Z0-9]*')
++attrfind = re.compile(
++    r'\s*([a-zA-Z_][-:.a-zA-Z_0-9]*)[$]?(\s*=\s*'
++    r'(\'[^\']*\'|"[^"]*"|[][\-a-zA-Z0-9./,:;+*%?!&$\(\)_#=~\'"@]*))?'
++)
++
++# Unfortunately, these must be copied over to prevent NameError exceptions
++entityref = sgmllib.entityref
++incomplete = sgmllib.incomplete
++interesting = sgmllib.interesting
++shorttag = sgmllib.shorttag
++shorttagopen = sgmllib.shorttagopen
++starttagopen = sgmllib.starttagopen
++
++class _EndBracketRegEx:
++    def __init__(self):
++        # Overriding the built-in sgmllib.endbracket regex allows the
++        # parser to find angle brackets embedded in element attributes.
++        self.endbracket = re.compile('''([^'"<>]|"[^"]*"(?=>|/|\s|\w+=)|'[^']*'(?=>|/|\s|\w+=))*(?=[<>])|.*?(?=[<>])''')
++    def search(self, target, index=0):
++        match = self.endbracket.match(target, index)
++        if match is not None:
++            # Returning a new object in the calling thread's context
++            # resolves a thread-safety.
++            return EndBracketMatch(match) 
++        return None
++class EndBracketMatch:
++    def __init__(self, match):
++        self.match = match
++    def start(self, n):
++        return self.match.end(n)
++endbracket = _EndBracketRegEx()
+ 
+ # iconv_codec provides support for more character encodings.
+ # It's available from http://cjkpython.i18n.org/
+@@ -2520,9 +2505,6 @@
          _BaseHTMLProcessor.unknown_starttag(self, tag, attrs)
  
  def _resolveRelativeURIs(htmlSource, baseURI, encoding, _type):
@@ -42,7 +118,7 @@ index 8275c29..9a8a053 100644
      p = _RelativeURIResolver(baseURI, encoding, _type)
      p.feed(htmlSource)
      return p.output()
-@@ -2803,8 +2792,6 @@ class _HTMLSanitizer(_BaseHTMLProcessor):
+@@ -2803,8 +2785,6 @@
  
  
  def _sanitizeHTML(htmlSource, encoding, _type):
@@ -51,7 +127,7 @@ index 8275c29..9a8a053 100644
      p = _HTMLSanitizer(encoding, _type)
      htmlSource = htmlSource.replace('<![CDATA[', '&lt;![CDATA[')
      p.feed(htmlSource)
-@@ -3890,7 +3877,7 @@ def parse(url_file_stream_or_string, etag=None, modified=None, agent=None, refer
+@@ -3890,7 +3870,7 @@
              result['bozo'] = 1
              result['bozo_exception'] = feedparser.exc or e
              use_strict_parser = 0
@@ -60,19 +136,36 @@ index 8275c29..9a8a053 100644
          feedparser = _LooseFeedParser(baseuri, baselang, 'utf-8', entities)
          feedparser.feed(data.decode('utf-8', 'replace'))
      result['feed'] = feedparser.feeddata
-diff --git a/setup.py b/setup.py
-index a4a60fe..8c15451 100644
---- a/setup.py
-+++ b/setup.py
-@@ -16,7 +16,7 @@ setup(
+--- setup.py
++++ setup.py
+@@ -1,9 +1,22 @@
+ from setuptools import setup
++from setuptools.command.build_py import build_py as _build_py
++import os
+ import sys
+ 
+ extra = {}
+ if sys.version_info >= (3, ):
++    class build_py(_build_py):
++        def build_modules(self):
++            _build_py.build_modules(self)
++            # Don't run 2to3 on _feedparser_sgmllib.py.
++            for module in self.__updated_files:
++                if os.path.basename(module) == "_feedparser_sgmllib.py":
++                    self.__updated_files.remove(module)
++    extra['cmdclass'] = {'build_py': build_py}
++    extra['py_modules'] = ['feedparser', '_feedparser_sgmllib']
+     extra['use_2to3'] = True
++else:
++    extra['py_modules'] = ['feedparser']
+ 
+ setup(
+     name = 'feedparser',
+@@ -16,7 +29,6 @@
      download_url = 'http://code.google.com/p/feedparser/',
      platforms = ['POSIX', 'Windows'],
      package_dir = {'': 'feedparser'},
 -    py_modules = ['feedparser'],
-+    py_modules = ['feedparser', '_feedparser_sgmllib'],
      keywords = ['atom', 'cdf', 'feed', 'parser', 'rdf', 'rss'],
      classifiers = [
          'Development Status :: 5 - Production/Stable',
--- 
-1.7.8.1
-

@@ -9,5 +9,5 @@ LICENSE=GPL-2
 RDEPEND=>=dev-libs/glib-2.22:2 >=dev-libs/json-glib-0.12.2 unique? ( dev-libs/libunique:1 ) libproxy? ( net-libs/libproxy ) net-misc/curl >=x11-libs/gtk+-2.16:2 x11-libs/libnotify geoip? ( dev-libs/geoip )
 SLOT=0
 SRC_URI=http://transmission-remote-gtk.googlecode.com/files/transmission-remote-gtk-1.0.tar.gz
-_eclasses_=gnome2-utils	b5ca2ccadb60760889faa3bccba121d9
+_eclasses_=gnome2-utils	0556f216199e15cc37899e1130da3824
 _md5_=e75c283dcbfcfaa5156340eba111556f

@@ -1,11 +1,10 @@
-# Copyright 1999-2012 Gentoo Foundation
+# Copyright owners: Gentoo Foundation
+#                   Arfrever Frehtes Taifersar Arahesis
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/dev-python/h5py/h5py-2.0.1.ebuild,v 1.3 2012/02/23 05:34:40 patrick Exp $
 
-EAPI="3"
-PYTHON_DEPEND="*"
-SUPPORT_PYTHON_ABIS="1"
-RESTRICT_PYTHON_ABIS="2.5 *-jython 2.7-pypy-*"
+EAPI="4-python"
+PYTHON_MULTIPLE_ABIS="1"
+PYTHON_RESTRICTED_ABIS="2.5 *-jython *-pypy-*"
 DISTUTILS_SRC_TEST="setup.py"
 
 inherit distutils
@@ -20,10 +19,10 @@ KEYWORDS="~amd64 ~x86 ~amd64-linux ~x86-linux"
 IUSE="test"
 
 RDEPEND="sci-libs/hdf5
-	dev-python/numpy"
+	$(python_abi_depend dev-python/numpy)"
 DEPEND="${RDEPEND}
-	dev-python/setuptools
-	test? ( dev-python/unittest2 )"
+	$(python_abi_depend dev-python/setuptools)
+	test? ( $(python_abi_depend dev-python/unittest2) )"
 
 PYTHON_CFLAGS=("2.* + -fno-strict-aliasing")
 

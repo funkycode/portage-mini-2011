@@ -1,11 +1,11 @@
 DEFINED_PHASES=compile install postinst postrm prepare unpack
-DEPEND=sys-devel/make dev-db/sqlite:3 dev-lang/python[sqlite] dev-python/PyQt4 dev-python/gst-python dev-python/feedparser dev-python/setuptools dev-python/yapsy || ( =dev-lang/python-2.7* =dev-lang/python-2.6* ) dev-vcs/git
+DEPEND=sys-devel/make dev-db/sqlite:3 dev-lang/python[sqlite] dev-python/PyQt4 dev-python/gst-python dev-python/feedparser dev-python/setuptools dev-python/yapsy || ( =dev-lang/python-2.7* =dev-lang/python-2.6* ) dev-vcs/git || ( =dev-lang/python-2.7* =dev-lang/python-2.6* )
 DESCRIPTION=Freeseer captures video from a choice of sources along with audio and mixes them together to produce a video.
 EAPI=3
 HOMEPAGE=https://github.com/fosslc/freeseer/wiki/
 KEYWORDS=~amd64 ~x86
 LICENSE=GPL-2
-RDEPEND=sys-devel/make dev-db/sqlite:3 dev-lang/python[sqlite] dev-python/PyQt4 dev-python/gst-python dev-python/feedparser dev-python/setuptools dev-python/yapsy || ( =dev-lang/python-2.7* =dev-lang/python-2.6* )
+RDEPEND=sys-devel/make dev-db/sqlite:3 dev-lang/python[sqlite] dev-python/PyQt4 dev-python/gst-python dev-python/feedparser dev-python/setuptools dev-python/yapsy || ( =dev-lang/python-2.7* =dev-lang/python-2.6* ) || ( =dev-lang/python-2.7* =dev-lang/python-2.6* )
 SLOT=0
-_eclasses_=distutils	15ae23f6f8219a009bfcfff7724fe727	git-2	6bb20ec18cca375571bcbe67bcf2e1d7	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	python	d6df8e9d4686f7550769a9777aa622b9	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68
+_eclasses_=distutils	82a876811ffd4907daba6062958daa26	git-2	6bb20ec18cca375571bcbe67bcf2e1d7	python	cb2844e25e38800105564c14a716c805
 _md5_=35dfe240db2b94855adb967210fb718d

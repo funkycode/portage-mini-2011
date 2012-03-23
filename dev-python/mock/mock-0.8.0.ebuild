@@ -1,9 +1,10 @@
-# Copyright 1999-2012 Gentoo Foundation
+# Copyright owners: Gentoo Foundation
+#                   Arfrever Frehtes Taifersar Arahesis
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/dev-python/mock/mock-0.8.0.ebuild,v 1.1 2012/02/17 08:32:10 djc Exp $
 
-EAPI="3"
-SUPPORT_PYTHON_ABIS="1"
+EAPI="4-python"
+PYTHON_MULTIPLE_ABIS="1"
+PYTHON_TESTS_FAILURES_TOLERANT_ABIS="*-jython"
 DISTUTILS_SRC_TEST="nosetests"
 
 inherit distutils
@@ -17,13 +18,12 @@ SLOT="0"
 KEYWORDS="~alpha ~amd64 ~arm ~hppa ~ia64 ~ppc ~ppc64 ~s390 ~sh ~sparc ~x86 ~x64-macos"
 IUSE="doc test"
 
-# dev-python/unittest2 is not required with Python >=3.2.
-DEPEND="dev-python/setuptools
-	test? ( dev-python/unittest2 )"
+DEPEND="$(python_abi_depend dev-python/setuptools)
+	test? ( $(python_abi_depend -i "2.* 3.1" dev-python/unittest2) )"
 RDEPEND=""
 
 DOCS="docs/*.txt"
-PYTHON_MODNAME="mock.py"
+PYTHON_MODULES="mock.py"
 
 src_install() {
 	distutils_src_install
@@ -32,7 +32,7 @@ src_install() {
 		pushd html > /dev/null
 		rm -f objects.inv output.txt
 		insinto /usr/share/doc/${PF}/html
-		doins -r [a-z]* _static || die "Installation of documentation failed"
+		doins -r [a-z]* _static
 		popd > /dev/null
 	fi
 }

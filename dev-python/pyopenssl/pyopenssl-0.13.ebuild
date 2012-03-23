@@ -1,10 +1,10 @@
-# Copyright 1999-2011 Gentoo Foundation
+# Copyright owners: Gentoo Foundation
+#                   Arfrever Frehtes Taifersar Arahesis
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/dev-python/pyopenssl/pyopenssl-0.13.ebuild,v 1.3 2011/12/22 20:24:16 floppym Exp $
 
-EAPI="3"
-SUPPORT_PYTHON_ABIS="1"
-RESTRICT_PYTHON_ABIS="*-jython"
+EAPI="4-python"
+PYTHON_MULTIPLE_ABIS="1"
+PYTHON_RESTRICTED_ABIS="*-jython"
 PYTHON_TESTS_FAILURES_TOLERANT_ABIS="3.1"
 
 inherit distutils
@@ -32,13 +32,11 @@ S="${WORKDIR}/${MY_P}"
 
 PYTHON_CFLAGS=("2.* + -fno-strict-aliasing")
 
-PYTHON_MODNAME="OpenSSL"
+PYTHON_MODULES="OpenSSL"
 
 src_prepare() {
 	distutils_src_prepare
-	sed \
-		-e "s/test_set_tlsext_host_name_wrong_args/_&/" \
-		-i OpenSSL/test/test_ssl.py
+
 	sed -e "s/python/&2/" -i doc/Makefile
 }
 
@@ -49,7 +47,7 @@ src_compile() {
 		addwrite /var/cache/fonts
 
 		pushd doc > /dev/null
-		emake -j1 html ps dvi || die "Generation of documentation failed"
+		emake -j1 html ps dvi
 		popd > /dev/null
 	fi
 }
@@ -83,10 +81,10 @@ src_install() {
 	python_execute_function -q delete_tests
 
 	if use doc; then
-		dohtml doc/html/* || die "dohtml failed"
-		dodoc doc/pyOpenSSL.* || die "dodoc failed"
+		dohtml doc/html/*
+		dodoc doc/pyOpenSSL.*
 	fi
 
 	insinto /usr/share/doc/${PF}/examples
-	doins -r examples/* || die "doins failed"
+	doins -r examples/*
 }

@@ -50,6 +50,3 @@ index 3421c3a..9de1a7f 100644
  class TestGdk(unittest.TestCase):
  
      def test_constructor(self):
--- 
-1.7.4.1
-

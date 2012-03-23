@@ -23,6 +23,3 @@ index 0a9b1b2..8726187 100644
  
  class TestGArray(unittest.TestCase):
  
--- 
-1.7.8.1
-

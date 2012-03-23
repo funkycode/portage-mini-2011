@@ -1,9 +1,9 @@
-# Copyright 1999-2012 Gentoo Foundation
+# Copyright owners: Gentoo Foundation
+#                   Arfrever Frehtes Taifersar Arahesis
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/dev-python/feedparser/feedparser-5.1.ebuild,v 1.1 2012/01/03 04:18:13 floppym Exp $
 
-EAPI="4"
-SUPPORT_PYTHON_ABIS="1"
+EAPI="4-python"
+PYTHON_MULTIPLE_ABIS="1"
 PYTHON_TESTS_RESTRICTED_ABIS="*-jython"
 PYTHON_TESTS_FAILURES_TOLERANT_ABIS="*"
 
@@ -19,11 +19,11 @@ SLOT="0"
 KEYWORDS="~alpha ~amd64 ~arm ~ia64 ~ppc ~ppc64 ~sparc ~x86 ~x86-fbsd ~x86-freebsd ~amd64-linux ~x86-linux ~x86-solaris"
 IUSE=""
 
-DEPEND="dev-python/setuptools"
+DEPEND="$(python_abi_depend dev-python/setuptools)"
 RDEPEND=""
 
 DISTUTILS_USE_SEPARATE_SOURCE_DIRECTORIES="1"
-PYTHON_MODNAME="feedparser.py _feedparser_sgmllib.py"
+DOCS="NEWS"
 
 src_prepare() {
 	mv feedparser/sgmllib3.py feedparser/_feedparser_sgmllib.py || die "Renaming sgmllib3.py failed"
@@ -34,11 +34,8 @@ src_prepare() {
 	distutils_src_prepare
 
 	preparation() {
-		if [[ "${PYTHON_ABI}" == 3.* ]]; then
+		if [[ "$(python_get_version -l --major)" == "3" ]]; then
 			2to3-${PYTHON_ABI} -nw --no-diffs feedparser/feedparsertest.py
-		else
-			# Avoid SyntaxErrors with Python 2.
-			echo "raise ImportError" > feedparser/_feedparser_sgmllib.py
 		fi
 	}
 	python_execute_function -s preparation
@@ -47,7 +44,17 @@ src_prepare() {
 src_test() {
 	testing() {
 		cd feedparser || return 1
-		"$(PYTHON)" feedparsertest.py
+		python_execute "$(PYTHON)" feedparsertest.py
 	}
 	python_execute_function -s testing
+}
+
+pkg_postinst() {
+	python_mod_optimize -A "2.*" feedparser.py
+	python_mod_optimize -A "3.*" feedparser.py _feedparser_sgmllib.py
+}
+
+pkg_postrm() {
+	python_mod_cleanup -A "2.*" feedparser.py
+	python_mod_cleanup -A "3.*" feedparser.py _feedparser_sgmllib.py
 }

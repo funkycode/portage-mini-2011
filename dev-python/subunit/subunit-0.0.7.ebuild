@@ -1,35 +1,44 @@
-# Copyright 1999-2012 Gentoo Foundation
+# Copyright owners: Gentoo Foundation
+#                   Arfrever Frehtes Taifersar Arahesis
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/dev-python/subunit/subunit-0.0.7.ebuild,v 1.1 2012/02/08 06:57:46 patrick Exp $
 
-EAPI="3"
-PYTHON_DEPEND="2"
-SUPPORT_PYTHON_ABIS="1"
-PYTHON_EXPORT_PHASE_FUNCTIONS="1"
+EAPI="4-python"
+PYTHON_MULTIPLE_ABIS="1"
 
-inherit python
+inherit distutils eutils
 
-DESCRIPTION="A streaming protocol for test results"
+MY_PN="python-${PN}"
+MY_P="${MY_PN}-${PV}"
+
+DESCRIPTION="Python implementation of subunit test streaming protocol"
 HOMEPAGE="https://launchpad.net/subunit http://pypi.python.org/pypi/python-subunit"
-SRC_URI="http://launchpad.net/${PN}/trunk/${PV}/+download/${P}.tar.gz"
+SRC_URI="mirror://pypi/${MY_PN:0:1}/${MY_PN}/${MY_P}.tar.gz
+	http://launchpad.net/${PN}/trunk/next/+download/${P}.tar.gz"
 
-LICENSE="Apache-2.0 BSD"
+LICENSE="|| ( Apache-2.0 BSD )"
 SLOT="0"
 KEYWORDS="~alpha ~amd64 ~arm ~hppa ~ia64 ~ppc ~ppc64 ~s390 ~sh ~sparc ~x86 ~x86-fbsd"
 IUSE=""
 
-RDEPEND=">=dev-python/testtools-0.9.4"
+RDEPEND="$(python_abi_depend ">=dev-python/testtools-0.9.11")"
 DEPEND="${RDEPEND}
-	dev-lang/perl
-	dev-libs/check
-	dev-util/cppunit
-	dev-util/pkgconfig"
-RESTRICT_PYTHON_ABIS="3.*"
+	$(python_abi_depend dev-python/setuptools)"
 
-pkg_postinst() {
-	python_mod_optimize subunit
+S="${WORKDIR}/${MY_P}"
+
+src_prepare() {
+	distutils_src_prepare
+
+	# Tests are missing in python-subunit tarball.
+	cp -r "${WORKDIR}/${P}/python/subunit/tests" python/subunit
+
+	epatch "${FILESDIR}/${P}-python-3.patch"
+	epatch "${FILESDIR}/${P}-tests.patch"
 }
 
-pkg_postrm() {
-	python_mod_cleanup subunit
+src_test() {
+	testing() {
+		PYTHONPATH="python" "$(PYTHON)" -m testtools.run subunit.test_suite
+	}
+	python_execute_function testing
 }

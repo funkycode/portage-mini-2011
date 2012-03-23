@@ -1,6 +1,5 @@
-diff -Naur QScintilla-gpl-2.4.orig/designer-Qt3/designer.pro QScintilla-gpl-2.4/designer-Qt3/designer.pro
---- QScintilla-gpl-2.4.orig/designer-Qt3/designer.pro	2009-06-07 21:55:35.000000000 +0200
-+++ QScintilla-gpl-2.4/designer-Qt3/designer.pro	2009-06-07 22:01:14.000000000 +0200
+--- designer-Qt3/designer.pro
++++ designer-Qt3/designer.pro
 @@ -3,10 +3,13 @@
  
  TEMPLATE = lib
@@ -17,9 +16,8 @@ diff -Naur QScintilla-gpl-2.4.orig/designer-Qt3/designer.pro QScintilla-gpl-2.4/
 +
 +INCLUDEPATH = ../Qt3
 +LIBS += -L../Qt3 -lqscintilla2
-diff -Naur QScintilla-gpl-2.4.orig/designer-Qt4/designer.pro QScintilla-gpl-2.4/designer-Qt4/designer.pro
---- QScintilla-gpl-2.4.orig/designer-Qt4/designer.pro	2009-06-07 21:55:35.000000000 +0200
-+++ QScintilla-gpl-2.4/designer-Qt4/designer.pro	2009-06-07 21:57:46.000000000 +0200
+--- designer-Qt4/designer.pro
++++ designer-Qt4/designer.pro
 @@ -12,4 +12,5 @@
  target.path = $$[QT_INSTALL_PLUGINS]/designer
  INSTALLS += target

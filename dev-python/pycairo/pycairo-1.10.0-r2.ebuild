@@ -1,11 +1,10 @@
-# Copyright 1999-2012 Gentoo Foundation
+# Copyright owners: Gentoo Foundation
+#                   Arfrever Frehtes Taifersar Arahesis
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/dev-python/pycairo/pycairo-1.10.0-r2.ebuild,v 1.7 2012/02/13 19:35:24 xarthisius Exp $
 
-EAPI="3"
-PYTHON_DEPEND="2:2.6 3:3.1"
-SUPPORT_PYTHON_ABIS="1"
-RESTRICT_PYTHON_ABIS="2.4 2.5 3.0 *-jython"
+EAPI="4-python"
+PYTHON_MULTIPLE_ABIS="1"
+PYTHON_RESTRICTED_ABIS="2.5 *-jython *-pypy-*"
 
 inherit eutils python waf-utils
 
@@ -17,30 +16,28 @@ HOMEPAGE="http://cairographics.org/pycairo/ http://pypi.python.org/pypi/pycairo"
 SRC_URI="http://cairographics.org/releases/py2cairo-${PYCAIRO_PYTHON2_VERSION}.tar.bz2
 	http://cairographics.org/releases/pycairo-${PYCAIRO_PYTHON3_VERSION}.tar.bz2"
 
-# LGPL-3 for pycairo 1.10.0.
-# || ( LGPL-2.1 MPL-1.1 ) for pycairo 1.8.10.
-LICENSE="LGPL-3 || ( LGPL-2.1 MPL-1.1 )"
+# Pycairo 1.10.0 for Python 2: || ( LGPL-2.1 MPL-1.1 )
+# Pycairo 1.10.0 for Python 3: LGPL-3
+LICENSE="|| ( LGPL-2.1 MPL-1.1 ) LGPL-3"
 SLOT="0"
-KEYWORDS="alpha amd64 arm hppa ia64 ~mips ppc ppc64 sh sparc x86 ~x86-fbsd ~x86-interix ~amd64-linux ~x86-linux ~ppc-macos ~x64-macos ~x86-macos ~sparc-solaris ~x64-solaris ~x86-solaris"
+KEYWORDS="~alpha ~amd64 ~arm ~hppa ~ia64 ~mips ~ppc ~ppc64 ~sh ~sparc ~x86 ~x86-fbsd ~x86-interix ~amd64-linux ~x86-linux ~ppc-macos ~x64-macos ~x86-macos ~sparc-solaris ~x64-solaris ~x86-solaris"
 IUSE="doc examples +svg test"
 
 RDEPEND=">=x11-libs/cairo-1.10.0[svg?]"
 DEPEND="${RDEPEND}
 	dev-util/pkgconfig
-	test? ( dev-python/pytest )"
+	test? ( $(python_abi_depend dev-python/pytest) )"
 
 PYTHON_CFLAGS=("2.* + -fno-strict-aliasing")
 
 src_prepare() {
-
 	pushd "${WORKDIR}/pycairo-${PYCAIRO_PYTHON3_VERSION}" > /dev/null
-	rm -f src/config.h || die
 	epatch "${FILESDIR}/${PN}-1.10.0-svg_check.patch"
 	popd > /dev/null
 
 	pushd "${WORKDIR}/py2cairo-${PYCAIRO_PYTHON2_VERSION}" > /dev/null
-	rm -f src/config.h || die
 	epatch "${FILESDIR}/py2cairo-1.10.0-svg_check.patch"
+	rm -f src/config.h
 	popd > /dev/null
 
 	preparation() {
@@ -67,7 +64,7 @@ src_compile() {
 
 src_test() {
 	test_installation() {
-		./waf install --destdir="${T}/tests/${PYTHON_ABI}"
+		python_execute ./waf install --destdir="${T}/tests/${PYTHON_ABI}"
 	}
 	python_execute_function -q -s test_installation
 
@@ -77,18 +74,18 @@ src_test() {
 src_install() {
 	python_execute_function -s waf-utils_src_install
 
-	dodoc AUTHORS NEWS README || die "dodoc failed"
+	dodoc AUTHORS NEWS README
 
 	if use doc; then
 		pushd doc/_build/html > /dev/null
 		insinto /usr/share/doc/${PF}/html
-		doins -r [a-z]* _static || die "Installation of documentation failed"
+		doins -r [a-z]* _static
 		popd > /dev/null
 	fi
 
 	if use examples; then
 		insinto /usr/share/doc/${PF}/examples
-		doins -r examples/* || die "Installation of examples failed"
+		doins -r examples/*
 	fi
 }
 

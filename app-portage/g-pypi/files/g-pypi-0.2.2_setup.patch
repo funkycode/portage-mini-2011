@@ -1,0 +1,11 @@
+--- setup.py
++++ setup.py
+@@ -28,6 +28,7 @@
+                       ],
+     packages=['g_pypi'],
+     package_dir={'g_pypi':'g_pypi' },
++    package_data={'g_pypi':['ebuild.tmpl',] },
+     include_package_data = True,
+     entry_points={'console_scripts': ['g-pypi = g_pypi.cli:main']},
+     test_suite='nose.collector',
+

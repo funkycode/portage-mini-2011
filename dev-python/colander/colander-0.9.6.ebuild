@@ -1,44 +1,61 @@
-# Copyright 1999-2012 Gentoo Foundation
+# Copyright owners: Gentoo Foundation
+#                   Arfrever Frehtes Taifersar Arahesis
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/dev-python/colander/colander-0.9.6.ebuild,v 1.1 2012/02/22 23:42:21 marienz Exp $
 
-EAPI=4
-
-SUPPORT_PYTHON_ABIS=1
-PYTHON_DEPEND="2:2.6 3:3.2"
-RESTRICT_PYTHON_ABIS="2.4 2.5 3.0 3.1"
+EAPI="4-python"
+PYTHON_MULTIPLE_ABIS="1"
+PYTHON_RESTRICTED_ABIS="2.5"
 DISTUTILS_SRC_TEST="setup.py"
 
 inherit distutils
 
 DESCRIPTION="A simple schema-based serialization and deserialization library"
-HOMEPAGE="http://docs.pylonsproject.org/projects/colander/en/latest/ http://pypi.python.org/pypi/colander"
+HOMEPAGE="http://docs.repoze.org/colander http://pypi.python.org/pypi/colander"
 SRC_URI="mirror://pypi/${PN:0:1}/${PN}/${P}.tar.gz"
 
-# MIT license is used by included (modified) iso8601.py code.
-LICENSE="repoze MIT"
+LICENSE="MIT repoze"
 SLOT="0"
 KEYWORDS="~amd64 ~x86"
-IUSE=""
+IUSE="doc"
 
-# Depend on an ebuild of translationstring with Python 3 support.
-RDEPEND=">=dev-python/translationstring-1.1"
-
+RDEPEND="$(python_abi_depend dev-python/translationstring)"
 DEPEND="${RDEPEND}
-	dev-python/setuptools"
+	$(python_abi_depend dev-python/setuptools)
+	doc? ( $(python_abi_depend dev-python/sphinx) )"
 
-# Include COPYRIGHT.txt because the license seems to require it.
-DOCS="CHANGES.txt COPYRIGHT.txt README.txt"
+DOCS="CHANGES.txt README.txt"
+
+src_prepare() {
+	distutils_src_prepare
+
+	# Fix Sphinx theme.
+	sed -e "/# Add and use Pylons theme/,+37d" -i docs/conf.py || die "sed failed"
+}
+
+src_compile() {
+	distutils_src_compile
+
+	if use doc; then
+		einfo "Generation of documentation"
+		pushd docs > /dev/null
+		# https://github.com/Pylons/colander/issues/38
+		PYTHONPATH=".." emake html SPHINXOPTS=""
+		popd > /dev/null
+	fi
+}
 
 src_install() {
 	distutils_src_install
 
-	# The docs do not currently build for me and depend on a theme
-	# only available from git that contains hardcoded references
-	# to files on https://static.pylonsproject.org/ (so the docs
-	# would not actually work offline). Include the source, which
-	# is at least somewhat readable.
+	delete_tests() {
+		rm -fr "${ED}$(python_get_sitedir)/colander/tests.py"
+	}
+	python_execute_function -q delete_tests
 
-	docinto docs
-	dodoc docs/*.rst
+	if use doc; then
+		pushd docs/_build/html > /dev/null
+		insinto /usr/share/doc/${PF}/html
+		doins -r [a-z]* _static
+		popd > /dev/null
+	fi
 }

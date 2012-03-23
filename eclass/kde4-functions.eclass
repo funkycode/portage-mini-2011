@@ -1,6 +1,5 @@
-# Copyright 1999-2011 Gentoo Foundation
+# Copyright owners: Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/eclass/kde4-functions.eclass,v 1.58 2011/12/18 00:00:45 dilfridge Exp $
 
 inherit versionator
 
@@ -16,7 +15,7 @@ inherit versionator
 # @DESCRIPTION:
 # Currently kde4 eclasses support EAPI 3 and 4.
 case ${EAPI:-0} in
-	4|3) : ;;
+	4-python|4|3) : ;;
 	*) die "EAPI=${EAPI} is not supported" ;;
 esac
 

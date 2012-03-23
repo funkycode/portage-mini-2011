@@ -1,14 +1,15 @@
-DEFINED_PHASES=compile install postinst postrm prepare test
-DEPEND=media-libs/alsa-lib doc? ( >=dev-python/sphinx-0.6 ) dev-lang/python
-DESCRIPTION=A Python wrapper for the ALSA API
-EAPI=3
+DEFINED_PHASES=compile install postinst postrm prepare setup test
+DEPEND=media-libs/alsa-lib python_abis_2.5? ( dev-lang/python:2.5 ) python_abis_2.6? ( dev-lang/python:2.6 ) python_abis_2.7? ( dev-lang/python:2.7 ) python_abis_3.1? ( dev-lang/python:3.1 ) python_abis_3.2? ( dev-lang/python:3.2 ) python_abis_3.3? ( dev-lang/python:3.3 ) python_abis_2.7-pypy-1.7? ( dev-python/pypy:1.7 ) python_abis_2.7-pypy-1.8? ( dev-python/pypy:1.8 )
+DESCRIPTION=ALSA bindings
+EAPI=4-python
 HOMEPAGE=http://www.sourceforge.net/projects/pyalsaaudio http://pypi.python.org/pypi/pyalsaaudio
-IUSE=doc
+IUSE=doc python_abis_2.5 python_abis_2.6 python_abis_2.7 python_abis_3.1 python_abis_3.2 python_abis_3.3 python_abis_2.7-pypy-1.7 python_abis_2.7-pypy-1.8
 KEYWORDS=~amd64 ~ppc ~sparc ~x86
 LICENSE=PSF-2
-RDEPEND=media-libs/alsa-lib dev-lang/python
+RDEPEND=media-libs/alsa-lib python_abis_2.5? ( dev-lang/python:2.5 ) python_abis_2.6? ( dev-lang/python:2.6 ) python_abis_2.7? ( dev-lang/python:2.7 ) python_abis_3.1? ( dev-lang/python:3.1 ) python_abis_3.2? ( dev-lang/python:3.2 ) python_abis_3.3? ( dev-lang/python:3.3 ) python_abis_2.7-pypy-1.7? ( dev-python/pypy:1.7 ) python_abis_2.7-pypy-1.8? ( dev-python/pypy:1.8 )
+REQUIRED_USE=|| ( python_abis_2.5 python_abis_2.6 python_abis_2.7 python_abis_3.1 python_abis_3.2 python_abis_3.3 python_abis_2.7-pypy-1.7 python_abis_2.7-pypy-1.8 )
 RESTRICT=test
 SLOT=0
 SRC_URI=mirror://sourceforge/pyalsaaudio/pyalsaaudio-0.7.tar.gz mirror://pypi/p/pyalsaaudio/pyalsaaudio-0.7.tar.gz
-_eclasses_=distutils	15ae23f6f8219a009bfcfff7724fe727	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	python	d6df8e9d4686f7550769a9777aa622b9	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68
-_md5_=879f580af57ed877b6624d9104778c19
+_eclasses_=distutils	82a876811ffd4907daba6062958daa26	python	cb2844e25e38800105564c14a716c805
+_md5_=67ba08723f86f840831a8368ee8d2b29

@@ -7,5 +7,5 @@ IUSE=examples opengl
 LICENSE=GPL-2
 RDEPEND=>=dev-libs/boost-1.48[python] dev-python/numpy =dev-python/pytools-9999 >=virtual/opencl-0-r1 =dev-lang/python-2*
 SLOT=0
-_eclasses_=distutils	15ae23f6f8219a009bfcfff7724fe727	git-2	6bb20ec18cca375571bcbe67bcf2e1d7	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	python	d6df8e9d4686f7550769a9777aa622b9	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68
+_eclasses_=distutils	82a876811ffd4907daba6062958daa26	git-2	6bb20ec18cca375571bcbe67bcf2e1d7	python	cb2844e25e38800105564c14a716c805
 _md5_=172fb0aba25e025e69db6645e4e16e65

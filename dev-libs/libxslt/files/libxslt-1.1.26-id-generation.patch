@@ -7,11 +7,8 @@ As pointed out by Chris Evans <scarybeasts@gmail.com> it's better
 security wise to not expose object addresses directly, use a diff
 w.r.t. the document root own address to avoid this
 * libxslt/functions.c: fix IDs generation code
----
-diff --git a/libxslt/functions.c b/libxslt/functions.c
-index 4720c7a..de962f4 100644
---- a/libxslt/functions.c
-+++ b/libxslt/functions.c
+--- libxslt/functions.c
++++ libxslt/functions.c
 @@ -654,8 +654,9 @@ xsltFormatNumberFunction(xmlXPathParserContextPtr ctxt, int nargs)
  void
  xsltGenerateIdFunction(xmlXPathParserContextPtr ctxt, int nargs){
@@ -52,5 +49,3 @@ index 4720c7a..de962f4 100644
      valuePush(ctxt, xmlXPathNewString(str));
  }
  
---
-cgit v0.8.3.4

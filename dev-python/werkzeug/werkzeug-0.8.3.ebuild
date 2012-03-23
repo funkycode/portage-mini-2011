@@ -1,11 +1,11 @@
-# Copyright 1999-2012 Gentoo Foundation
+# Copyright owners: Gentoo Foundation
+#                   Arfrever Frehtes Taifersar Arahesis
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/dev-python/werkzeug/werkzeug-0.8.3.ebuild,v 1.2 2012/03/13 02:59:05 floppym Exp $
 
-EAPI="3"
-PYTHON_DEPEND="2:2.5"
-SUPPORT_PYTHON_ABIS="1"
-RESTRICT_PYTHON_ABIS="2.4 3.*"
+EAPI="4-python"
+PYTHON_MULTIPLE_ABIS="1"
+PYTHON_RESTRICTED_ABIS="3.*"
+PYTHON_TESTS_FAILURES_TOLERANT_ABIS="*-jython"
 DISTUTILS_SRC_TEST="setup.py"
 
 inherit distutils
@@ -20,11 +20,13 @@ SRC_URI="mirror://pypi/${MY_PN:0:1}/${MY_PN}/${MY_P}.tar.gz"
 LICENSE="BSD"
 SLOT="0"
 KEYWORDS="~amd64 ~x86 ~x86-fbsd ~amd64-linux ~x86-linux ~ppc-macos ~x86-macos"
-IUSE="test"
+IUSE="redis test"
 
-RDEPEND="dev-python/simplejson"
-DEPEND="dev-python/setuptools
-	test? ( dev-python/lxml )"
+RDEPEND="$(python_abi_depend virtual/python-json[external])
+	redis? ( $(python_abi_depend dev-python/redis-py) )"
+DEPEND="$(python_abi_depend dev-python/setuptools)
+	test? ( $(python_abi_depend -e "*-jython *-pypy-*" dev-python/lxml) )"
+
 S="${WORKDIR}/${MY_P}"
 
 DOCS="CHANGES"
@@ -35,4 +37,13 @@ src_prepare() {
 	# Disable redis-related tests.
 	# https://github.com/mitsuhiko/werkzeug/issues/120
 	sed -e "s/import redis/redis = None/" -i werkzeug/testsuite/contrib/cache.py
+}
+
+src_install() {
+	distutils_src_install
+
+	delete_tests() {
+		rm -fr "${ED}$(python_get_sitedir)/werkzeug/testsuite"
+	}
+	python_execute_function -q delete_tests
 }

@@ -1,62 +1,64 @@
-# Copyright 1999-2012 Gentoo Foundation
+# Copyright owners: Gentoo Foundation
+#                   Arfrever Frehtes Taifersar Arahesis
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/dev-python/cssutils/cssutils-0.9.9.ebuild,v 1.2 2012/03/04 17:20:10 mr_bones_ Exp $
 
-EAPI="3"
-PYTHON_DEPEND="2"
-SUPPORT_PYTHON_ABIS="1"
-RESTRICT_PYTHON_ABIS=""
+EAPI="4-python"
+PYTHON_MULTIPLE_ABIS="1"
+PYTHON_TESTS_FAILURES_TOLERANT_ABIS="*-jython"
 DISTUTILS_SRC_TEST="nosetests"
-PYTHON_TESTS_RESTRICTED_ABIS="3.*"
 
 inherit distutils
 
-DESCRIPTION="A CSS Cascading Style Sheets library"
-HOMEPAGE="http://pypi.python.org/pypi/cssutils/ https://bitbucket.org/cthedot/cssutils"
-SRC_URI="mirror://pypi/${PN:0:1}/${PN}/${P}.zip"
+MY_P="${PN}-${PV/_alpha/a}"
 
-LICENSE="GPL-3"
+DESCRIPTION="A CSS Cascading Style Sheets library for Python"
+HOMEPAGE="https://bitbucket.org/cthedot/cssutils http://code.google.com/p/cssutils http://pypi.python.org/pypi/cssutils"
+SRC_URI="mirror://pypi/${PN:0:1}/${PN}/${MY_P}.zip"
+
+LICENSE="LGPL-3"
 SLOT="0"
 KEYWORDS="~amd64 ~ppc ~x86"
-IUSE="examples test"
+IUSE=""
 
-RDEPEND="dev-python/setuptools"
+RDEPEND="$(python_abi_depend dev-python/setuptools)"
 DEPEND="${RDEPEND}
 	app-arch/unzip
-	test? ( dev-python/mock )"
+	test? ( $(python_abi_depend dev-python/mock) )"
 
-PYTHON_MODNAME="cssutils encutils"
+S="${WORKDIR}/${MY_P}"
+
+PYTHON_MODULES="cssutils encutils"
 
 src_prepare() {
 	distutils_src_prepare
 
-	# Disable test failing with dev-python/pyxml installed.
-	if has_version dev-python/pyxml; then
-		sed -e "s/test_linecol/_&/" -i src/tests/test_errorhandler.py
-	fi
-
-	# https://bitbucket.org/cthedot/cssutils/issue/8/test-failure
+	# Disable failing tests.
+	# https://bitbucket.org/cthedot/cssutils/issue/8
+	# https://bitbucket.org/cthedot/cssutils/issue/10
 	sed -e "s/test_cssText2/_&/" -i src/tests/test_cssvariablesdeclaration.py
+	sed -e "s/test_getMetaInfo/_&/" -i src/tests/test_encutils/__init__.py
+}
+
+distutils_src_compile_post_hook() {
+	# Tests use path relative to sheets directory.
+	ln -s ../sheets build-${PYTHON_ABI}/sheets
+}
+
+src_test() {
+	python_execute_nosetests -e -P 'build-${PYTHON_ABI}/lib' -- -P 'build-${PYTHON_ABI}/lib'
 }
 
 src_install() {
 	distutils_src_install
 
-	# Don't install tests.
-	delete_tests() {
+	delete_tests_and_version-specific_modules() {
 		rm -fr "${ED}$(python_get_sitedir)/tests"
-	}
-	python_execute_function -q delete_tests
 
-	# Don't install py3 stuff on py2. Breaks py25
-	deletion_of_unneeded_files() {
-		[[ "${PYTHON_ABI}" == 3.* ]] && return
-		rm -f "${ED}$(python_get_sitedir)/cssutils/_codec3.py"
+		if [[ "$(python_get_version -l --major)" == "2" ]]; then
+			rm -f "${ED}$(python_get_sitedir)/cssutils/_codec3.py"
+		else
+			rm -f "${ED}$(python_get_sitedir)/cssutils/_codec2.py"
+		fi
 	}
-	python_execute_function -q deletion_of_unneeded_files
-
-	if use examples; then
-		insinto /usr/share/doc/${PF}
-		doins -r examples
-	fi
+	python_execute_function -q delete_tests_and_version-specific_modules
 }

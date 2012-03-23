@@ -1,11 +1,11 @@
-# Copyright 1999-2012 Gentoo Foundation
+# Copyright owners: Gentoo Foundation
+#                   Arfrever Frehtes Taifersar Arahesis
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/dev-python/urwid/urwid-1.0.1.ebuild,v 1.3 2012/02/24 14:40:35 phajdan.jr Exp $
 
-EAPI="4"
-PYTHON_USE_WITH="ncurses"
-SUPPORT_PYTHON_ABIS="1"
-RESTRICT_PYTHON_ABIS="*-jython"
+EAPI="4-python"
+PYTHON_DEPEND="<<[ncurses]>>"
+PYTHON_MULTIPLE_ABIS="1"
+PYTHON_RESTRICTED_ABIS="*-jython"
 PYTHON_TESTS_FAILURES_TOLERANT_ABIS="3.1"
 DISTUTILS_SRC_TEST="setup.py"
 
@@ -17,10 +17,11 @@ SRC_URI="http://excess.org/urwid/${P}.tar.gz"
 
 LICENSE="LGPL-2.1"
 SLOT="0"
-KEYWORDS="amd64 ~ia64 ~ppc ~ppc64 ~sparc x86 ~x86-interix ~amd64-linux ~ia64-linux ~x86-linux"
+KEYWORDS="~amd64 ~ia64 ~ppc ~ppc64 ~sparc ~x86 ~x86-interix ~amd64-linux ~ia64-linux ~x86-linux"
 IUSE="examples"
 
-DEPEND="dev-python/setuptools"
+DEPEND="$(python_abi_depend dev-python/setuptools)"
+RDEPEND=""
 
 PYTHON_CFLAGS=("2.* + -fno-strict-aliasing")
 
@@ -31,7 +32,6 @@ src_install() {
 
 	if use examples; then
 		docinto examples
-		dodoc bigtext.py browse.py calc.py dialog.py edit.py \
-			fib.py graph.py input_test.py tour.py
+		dodoc bigtext.py browse.py calc.py dialog.py edit.py fib.py graph.py input_test.py tour.py
 	fi
 }

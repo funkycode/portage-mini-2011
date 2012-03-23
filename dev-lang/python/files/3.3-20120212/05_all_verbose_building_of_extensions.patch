@@ -1,0 +1,10 @@
+--- Makefile.pre.in
++++ Makefile.pre.in
+@@ -440,7 +440,6 @@
+ # Build the shared modules
+ sharedmods: $(BUILDPYTHON) $(SYSCONFIGDATA)
+ 	@case $$MAKEFLAGS in \
+-	*s*) $(RUNSHARED) CC='$(CC)' LDSHARED='$(BLDSHARED)' OPT='$(OPT)' ./$(BUILDPYTHON) -E $(srcdir)/setup.py -q build;; \
+ 	*) $(RUNSHARED) CC='$(CC)' LDSHARED='$(BLDSHARED)' OPT='$(OPT)' ./$(BUILDPYTHON) -E $(srcdir)/setup.py build;; \
+ 	esac
+ 

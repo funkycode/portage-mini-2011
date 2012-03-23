@@ -1,11 +1,10 @@
-# Copyright 1999-2012 Gentoo Foundation
+# Copyright owners: Gentoo Foundation
+#                   Arfrever Frehtes Taifersar Arahesis
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/dev-python/webpy/webpy-0.36.ebuild,v 1.5 2012/02/24 15:21:11 phajdan.jr Exp $
 
-EAPI="3"
-PYTHON_DEPEND="2"
-SUPPORT_PYTHON_ABIS="1"
-RESTRICT_PYTHON_ABIS="3.* 2.7-pypy-*"
+EAPI="4-python"
+PYTHON_MULTIPLE_ABIS="1"
+PYTHON_RESTRICTED_ABIS="3.*"
 
 inherit distutils
 
@@ -17,7 +16,7 @@ SRC_URI="http://www.webpy.org/static/${MY_PN}-${PV}.tar.gz"
 
 LICENSE="public-domain"
 SLOT="0"
-KEYWORDS="amd64 hppa x86 ~amd64-linux ~x86-linux"
+KEYWORDS="~amd64 ~hppa ~x86 ~amd64-linux ~x86-linux"
 IUSE=""
 
 DEPEND=""
@@ -25,17 +24,16 @@ RDEPEND=""
 
 S="${WORKDIR}/web.py-${PV}"
 
-PYTHON_MODNAME="web"
+PYTHON_MODULES="web"
 
 src_test() {
 	testing() {
-		local return_status="0" test tests="db http net template utils"
+		local exit_status="0" test tests="db http net template utils"
 		for test in ${tests}; do
-			echo "Running doctests in ${test}.py..."
-			"$(PYTHON)" web/${test}.py || return_status="$?"
+			python_execute "$(PYTHON)" web/${test}.py || exit_status="$?"
 		done
 
-		return "${return_status}"
+		return "${exit_status}"
 	}
 	python_execute_function testing
 }

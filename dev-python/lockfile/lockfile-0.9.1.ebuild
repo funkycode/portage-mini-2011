@@ -1,11 +1,10 @@
-# Copyright 1999-2012 Gentoo Foundation
+# Copyright owners: Gentoo Foundation
+#                   Arfrever Frehtes Taifersar Arahesis
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/dev-python/lockfile/lockfile-0.9.1.ebuild,v 1.5 2012/03/12 17:45:10 ranger Exp $
 
-EAPI="3"
-PYTHON_DEPEND="2:2.5"
-SUPPORT_PYTHON_ABIS="1"
-RESTRICT_PYTHON_ABIS="2.4 3.*"
+EAPI="4-python"
+PYTHON_MULTIPLE_ABIS="1"
+PYTHON_RESTRICTED_ABIS="3.*"
 
 inherit distutils
 
@@ -15,10 +14,10 @@ SRC_URI="http://pylockfile.googlecode.com/files/${P}.tar.gz"
 
 LICENSE="MIT"
 SLOT="0"
-KEYWORDS="amd64 ppc x86"
+KEYWORDS="~amd64 ~ppc ~x86"
 IUSE="doc"
 
-DEPEND="doc? ( dev-python/sphinx )"
+DEPEND="doc? ( $(python_abi_depend dev-python/sphinx) )"
 RDEPEND=""
 
 DOCS="ACKS README RELEASE-NOTES"
@@ -28,8 +27,9 @@ src_compile() {
 
 	if use doc; then
 		einfo "Generation of documentation"
-		cd doc
-		emake html || die "Generation of documentation failed"
+		pushd doc > /dev/null
+		emake html
+		popd > /dev/null
 	fi
 }
 
@@ -37,8 +37,9 @@ src_install() {
 	distutils_src_install
 
 	if use doc; then
-		cd doc/.build/html
-		docinto html
-		cp -R [a-z]* _static "${ED}usr/share/doc/${PF}/html" || die "Installation of documentation failed"
+		pushd doc/.build/html > /dev/null
+		insinto /usr/share/doc/${PF}/html
+		doins -r [a-z]* _static
+		popd > /dev/null
 	fi
 }

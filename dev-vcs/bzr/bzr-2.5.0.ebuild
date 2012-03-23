@@ -1,12 +1,11 @@
-# Copyright 1999-2012 Gentoo Foundation
+# Copyright owners: Gentoo Foundation
+#                   Arfrever Frehtes Taifersar Arahesis
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/dev-vcs/bzr/bzr-2.5.0.ebuild,v 1.1 2012/03/16 23:32:48 fauli Exp $
 
-EAPI="3"
-PYTHON_DEPEND="2:2.6"
-PYTHON_USE_WITH="threads"
-SUPPORT_PYTHON_ABIS="1"
-RESTRICT_PYTHON_ABIS="2.[45] 3.* 2.7-pypy-*"
+EAPI="4-python"
+PYTHON_DEPEND="<<[threads,xml]>>"
+PYTHON_MULTIPLE_ABIS="1"
+PYTHON_RESTRICTED_ABIS="2.5 3.* *-jython *-pypy-*"
 
 inherit bash-completion-r1 distutils eutils versionator
 
@@ -14,7 +13,7 @@ MY_P=${PN}-${PV}
 SERIES=$(get_version_component_range 1-2)
 
 DESCRIPTION="Bazaar is a next generation distributed version control system."
-HOMEPAGE="http://bazaar-vcs.org/"
+HOMEPAGE="http://bazaar-vcs.org/ http://pypi.python.org/pypi/bzr"
 #SRC_URI="http://bazaar-vcs.org/releases/src/${MY_P}.tar.gz"
 SRC_URI="http://launchpad.net/bzr/${SERIES}/${PV}/+download/${MY_P}.tar.gz"
 
@@ -23,15 +22,17 @@ SLOT="0"
 KEYWORDS="~alpha ~amd64 ~arm ~hppa ~ia64 ~ppc ~ppc64 ~s390 ~sh ~sparc ~x86 ~x86-fbsd ~x86-interix ~amd64-linux ~x86-linux ~ppc-macos ~x64-macos ~x86-macos ~sparc-solaris"
 IUSE="curl doc +sftp test"
 
-RDEPEND="|| ( dev-lang/python:2.7[xml] dev-lang/python:2.6[xml] dev-python/celementtree )
-	curl? ( dev-python/pycurl )
-	sftp? ( dev-python/paramiko )"
+RDEPEND="curl? ( $(python_abi_depend dev-python/pycurl) )
+	sftp? ( $(python_abi_depend dev-python/paramiko) )"
 
 DEPEND="test? (
 		${RDEPEND}
-		|| ( dev-python/pyftpdlib dev-python/medusa )
-		dev-python/subunit
-		>=dev-python/testtools-0.9.5
+		|| (
+			$(python_abi_depend dev-python/pyftpdlib)
+			$(python_abi_depend dev-python/medusa)
+		)
+		$(python_abi_depend dev-python/subunit)
+		$(python_abi_depend ">=dev-python/testtools-0.9.5")
 	)"
 
 S="${WORKDIR}/${MY_P}"
@@ -39,13 +40,13 @@ S="${WORKDIR}/${MY_P}"
 PYTHON_CFLAGS=("2.* + -fno-strict-aliasing")
 
 DOCS="doc/*.txt"
-PYTHON_MODNAME="bzrlib"
+PYTHON_MODULES="bzrlib"
 
 src_prepare() {
 	distutils_src_prepare
 
-	# Don't regenerate .c files from .pyx when pyrex is found.
-	epatch "${FILESDIR}/${PN}-2.4.2-no-pyrex-citon.patch"
+	# Don't regenerate .c files from .pyx when Cython or Pyrex is found.
+	epatch "${FILESDIR}/${PN}-2.4.2-no-pyrex-cython.patch"
 }
 
 src_test() {
@@ -75,12 +76,12 @@ src_install() {
 
 	if use doc; then
 		docinto developers
-		dodoc doc/developers/* || die
+		dodoc doc/developers/*
 		for doc in mini-tutorial tutorials user-{guide,reference}; do
-			docinto $doc
-			dodoc doc/en/$doc/* || die
+			docinto ${doc}
+			dodoc doc/en/${doc}/*
 		done
 	fi
 
-	dobashcomp contrib/bash/bzr || die
+	dobashcomp contrib/bash/bzr
 }

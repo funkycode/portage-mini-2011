@@ -1,10 +1,10 @@
-# Copyright 1999-2012 Gentoo Foundation
+# Copyright owners: Gentoo Foundation
+#                   Arfrever Frehtes Taifersar Arahesis
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/dev-python/pygame/pygame-1.9.2_pre20120101.ebuild,v 1.2 2012/02/20 14:27:51 patrick Exp $
 
-EAPI="4"
-SUPPORT_PYTHON_ABIS="1"
-RESTRICT_PYTHON_ABIS="*-jython 2.7-pypy-**"
+EAPI="4-python"
+PYTHON_MULTIPLE_ABIS="1"
+PYTHON_RESTRICTED_ABIS="*-jython *-pypy-*"
 PYTHON_TESTS_RESTRICTED_ABIS="3.1"
 PYTHON_TESTS_FAILURES_TOLERANT_ABIS="*"
 
@@ -23,7 +23,7 @@ SLOT="0"
 KEYWORDS="~alpha ~amd64 ~arm ~hppa ~ia64 ~ppc ~sparc ~x86 ~x86-fbsd"
 IUSE="doc examples X"
 
-DEPEND="dev-python/numpy
+DEPEND="$(python_abi_depend dev-python/numpy)
 	>=media-libs/libsdl-1.2.5[X?]
 	>=media-libs/sdl-image-1.2.2[png,jpeg]
 	>=media-libs/sdl-mixer-1.2.4
@@ -52,7 +52,7 @@ src_configure() {
 
 src_test() {
 	testing() {
-		PYTHONPATH="$(ls -d build-${PYTHON_ABI}/lib.*)" "$(PYTHON)" run_tests.py
+		python_execute PYTHONPATH="$(ls -d build-${PYTHON_ABI}/lib.*)" "$(PYTHON)" run_tests.py
 	}
 	VIRTUALX_COMMAND="python_execute_function" virtualmake testing
 }

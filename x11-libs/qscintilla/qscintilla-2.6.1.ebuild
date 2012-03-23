@@ -1,8 +1,7 @@
-# Copyright 1999-2012 Gentoo Foundation
+# Copyright owners: Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/x11-libs/qscintilla/qscintilla-2.6.1.ebuild,v 1.1 2012/03/04 17:30:04 hwoarang Exp $
 
-EAPI="3"
+EAPI="4-python"
 
 inherit qt4-r2
 
@@ -21,7 +20,7 @@ DEPEND="x11-libs/qt-gui:4"
 RDEPEND="${DEPEND}"
 PDEPEND="python? ( ~dev-python/qscintilla-python-${PV} )"
 
-S=${WORKDIR}/${MY_P}
+S="${WORKDIR}/${MY_P}"
 
 PATCHES=("${FILESDIR}/${PN}-2.4-designer.patch")
 
@@ -40,31 +39,31 @@ src_configure() {
 src_compile() {
 	pushd Qt4 > /dev/null
 	einfo "Building of qscintilla"
-	emake || die "Building of qscintilla failed"
+	emake
 	popd > /dev/null
 
 	pushd designer-Qt4 > /dev/null
 	einfo "Building of designer plugin"
-	emake || die "Building of designer plugin failed"
+	emake
 	popd > /dev/null
 }
 
 src_install() {
 	pushd Qt4 > /dev/null
 	einfo "Installation of qscintilla"
-	emake INSTALL_ROOT="${D}" install || die "Installation of qscintilla failed"
+	emake INSTALL_ROOT="${D}" install
 	popd > /dev/null
 
 	pushd designer-Qt4 > /dev/null
 	einfo "Installation of designer plugin"
-	emake INSTALL_ROOT="${D}" install || die "Installation of designer plugin failed"
+	emake INSTALL_ROOT="${D}" install
 	popd > /dev/null
 
-	dodoc NEWS || die "dodoc failed"
+	dodoc NEWS
 	if use doc; then
 		einfo "Installation of documentation"
-		dohtml doc/html-Qt4/* || die "dohtml failed"
+		dohtml doc/html-Qt4/*
 		insinto /usr/share/doc/${PF}/Scintilla
-		doins doc/Scintilla/* || die "doins failed"
+		doins doc/Scintilla/*
 	fi
 }

@@ -1,39 +1,49 @@
-# Copyright 1999-2012 Gentoo Foundation
+# Copyright owners: Gentoo Foundation
+#                   Arfrever Frehtes Taifersar Arahesis
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/dev-python/pyudev/pyudev-0.15.ebuild,v 1.1 2012/03/09 09:18:26 patrick Exp $
 
-EAPI="4"
-PYTHON_DEPEND="*:2.6"
-SUPPORT_PYTHON_ABIS="1"
-RESTRICT_PYTHON_ABIS="2.[45] *-jython"
-#DISTUTILS_SRC_TEST="py.test"  # FIXME: some tests are known to fail
+EAPI="4-python"
+PYTHON_MULTIPLE_ABIS="1"
+PYTHON_RESTRICTED_ABIS="2.5 *-jython"
+DISTUTILS_SRC_TEST="py.test"
+VIRTUALX_REQUIRED="manual"
 
-inherit distutils
+inherit distutils virtualx
 
 DESCRIPTION="Python binding to libudev"
-HOMEPAGE="http://packages.python.org/pyudev/ http://pypi.python.org/pypi/pyudev"
+HOMEPAGE="http://pyudev.readthedocs.org/ http://pypi.python.org/pypi/pyudev"
 SRC_URI="mirror://pypi/${PN:0:1}/${PN}/${P}.tar.gz"
 
 LICENSE="LGPL-2.1"
 SLOT="0"
 KEYWORDS="~amd64 ~x86"
-IUSE="pygobject pyqt4 pyside"
+IUSE="pygobject pyqt4 pyside test wxwidgets"
 
 RDEPEND=">=sys-fs/udev-151
-	pygobject? ( dev-python/pygobject:2 )
-	pyqt4? ( dev-python/PyQt4 )
-	pyside? ( dev-python/pyside )"
+	pygobject? ( $(python_abi_depend -e "*-pypy-*" dev-python/pygobject:2) )
+	pyqt4? ( $(python_abi_depend -e "*-pypy-*" dev-python/PyQt4) )
+	pyside? ( dev-python/pyside )
+	wxwidgets? ( $(python_abi_depend -e "3.* *-pypy-*" dev-python/wxpython) )"
 DEPEND="${RDEPEND}
-	dev-python/setuptools"
-	# test? ( dev-python/mock )"
+	$(python_abi_depend dev-python/setuptools)
+	test? (
+		$(python_abi_depend dev-python/mock)
+		wxwidgets? ( ${VIRTUALX_DEPEND} )
+	)"
 
 DOCS="CHANGES.rst README.rst"
 
 src_prepare() {
 	distutils_src_prepare
 
-	# tests: fix run_path
-	sed -i -e "s|== \('/run/udev'\)|in (\1,'/dev/.udev')|g" tests/test_core.py
+	# Disable failing tests.
+	# https://github.com/lunaryorn/pyudev/issues/43
+	sed -e "s/test_is_wrapped/_&/" -i tests/test_libudev.py
+	sed -e "s/test_from_device_file_non_existing/_&/" -i tests/test_device.py
+	sed -e "s/test_get_device_type_not_existing/_&/" -i tests/test_util.py
+
+	# Fix run_path.
+	sed -i -e "s|== \('/run/udev'\)|in (\1, '/dev/.udev')|g" tests/test_core.py
 
 	if ! use pygobject; then
 		rm -f pyudev/glib.py
@@ -50,7 +60,19 @@ src_prepare() {
 	if ! use pyqt4 && ! use pyside; then
 		rm -f pyudev/_qt_base.py
 	fi
-	if ! use pyqt4 && ! use pyside && ! use pygobject; then
+	if ! use wxwidgets; then
+		rm -f pyudev/wx.py
+		sed -i -e "s|[, ]*WXBinding()||g" tests/test_observer.py
+	fi
+	if ! use pygobject && ! use pyqt4 && ! use pyside && ! use wxwidgets; then
 		rm -f tests/test_observer.py
+	fi
+}
+
+src_test() {
+	if use wxwidgets; then
+		VIRTUALX_COMMAND="distutils_src_test" virtualmake
+	else
+		distutils_src_test
 	fi
 }

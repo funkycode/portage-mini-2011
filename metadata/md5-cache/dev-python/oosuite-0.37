@@ -9,5 +9,5 @@ LICENSE=BSD
 RDEPEND=dev-python/numpy !minimal? ( dev-python/cvxopt[glpk] dev-python/lp_solve dev-python/matplotlib dev-python/setproctitle sci-libs/nlopt[python] sci-libs/scipy ) dev-lang/python[tk?] dev-lang/python
 SLOT=0
 SRC_URI=http://openopt.org/images/f/f3/OOSuite.zip -> OOSuite-0.37.zip
-_eclasses_=distutils	15ae23f6f8219a009bfcfff7724fe727	eutils	0f008baa9552301d379ae5df233e9713	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	python	d6df8e9d4686f7550769a9777aa622b9	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
+_eclasses_=distutils	82a876811ffd4907daba6062958daa26	eutils	0f008baa9552301d379ae5df233e9713	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	python	cb2844e25e38800105564c14a716c805	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
 _md5_=19761fac27bb7d53e45db4749826b37d

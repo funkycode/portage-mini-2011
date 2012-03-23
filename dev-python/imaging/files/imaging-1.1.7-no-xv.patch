@@ -1,5 +1,5 @@
---- PIL/ImageShow.py.old	2009-11-30 10:28:37.000000000 +0100
-+++ PIL/ImageShow.py	2009-11-30 10:29:02.000000000 +0100
+--- PIL/ImageShow.py
++++ PIL/ImageShow.py
 @@ -149,13 +149,10 @@
          def get_command_ex(self, file, title=None, **options):
              # note: xv is pretty outdated.  most modern systems have

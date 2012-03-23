@@ -1,13 +1,14 @@
-DEFINED_PHASES=compile install postinst postrm prepare test
-DEPEND=>=dev-python/beaker-1.1 >=dev-python/markupsafe-0.9.2 dev-python/setuptools dev-lang/python test? ( dev-python/nose )
+DEFINED_PHASES=compile install postinst postrm prepare setup test
+DEPEND=>=dev-python/beaker-1.1[python_abis_2.5?,python_abis_2.6?,python_abis_2.7?,python_abis_3.1?,python_abis_3.2?,python_abis_3.3?,python_abis_2.5-jython?,python_abis_2.6-jython?,python_abis_2.7-pypy-1.7?,python_abis_2.7-pypy-1.8?] >=dev-python/markupsafe-0.9.2[python_abis_2.5?,python_abis_2.6?,python_abis_2.7?,python_abis_3.1?,python_abis_3.2?,python_abis_3.3?,python_abis_2.5-jython?,python_abis_2.6-jython?,python_abis_2.7-pypy-1.7?,python_abis_2.7-pypy-1.8?] dev-python/setuptools[python_abis_2.5?,python_abis_2.6?,python_abis_2.7?,python_abis_3.1?,python_abis_3.2?,python_abis_3.3?,python_abis_2.5-jython?,python_abis_2.6-jython?,python_abis_2.7-pypy-1.7?,python_abis_2.7-pypy-1.8?] python_abis_2.5? ( dev-lang/python:2.5 ) python_abis_2.6? ( dev-lang/python:2.6 ) python_abis_2.7? ( dev-lang/python:2.7 ) python_abis_3.1? ( dev-lang/python:3.1 ) python_abis_3.2? ( dev-lang/python:3.2 ) python_abis_3.3? ( dev-lang/python:3.3 ) python_abis_2.5-jython? ( dev-java/jython:2.5 ) python_abis_2.6-jython? ( dev-java/jython:2.6 ) python_abis_2.7-pypy-1.7? ( dev-python/pypy:1.7 ) python_abis_2.7-pypy-1.8? ( dev-python/pypy:1.8 ) test? ( dev-python/nose[python_abis_2.5?,python_abis_2.6?,python_abis_2.7?,python_abis_3.1?,python_abis_3.2?,python_abis_3.3?,python_abis_2.5-jython?,python_abis_2.6-jython?,python_abis_2.7-pypy-1.7?,python_abis_2.7-pypy-1.8?] )
 DESCRIPTION=A Python templating language
-EAPI=3
+EAPI=4-python
 HOMEPAGE=http://www.makotemplates.org/ http://pypi.python.org/pypi/Mako
-IUSE=doc test
+IUSE=doc python_abis_2.5 python_abis_2.6 python_abis_2.7 python_abis_3.1 python_abis_3.2 python_abis_3.3 python_abis_2.5-jython python_abis_2.6-jython python_abis_2.7-pypy-1.7 python_abis_2.7-pypy-1.8 test
 KEYWORDS=~amd64 ~arm ~ppc ~sparc ~x86 ~amd64-linux ~x86-linux ~x64-macos ~x86-macos
 LICENSE=MIT
-RDEPEND=>=dev-python/beaker-1.1 >=dev-python/markupsafe-0.9.2 dev-lang/python
+RDEPEND=>=dev-python/beaker-1.1[python_abis_2.5?,python_abis_2.6?,python_abis_2.7?,python_abis_3.1?,python_abis_3.2?,python_abis_3.3?,python_abis_2.5-jython?,python_abis_2.6-jython?,python_abis_2.7-pypy-1.7?,python_abis_2.7-pypy-1.8?] >=dev-python/markupsafe-0.9.2[python_abis_2.5?,python_abis_2.6?,python_abis_2.7?,python_abis_3.1?,python_abis_3.2?,python_abis_3.3?,python_abis_2.5-jython?,python_abis_2.6-jython?,python_abis_2.7-pypy-1.7?,python_abis_2.7-pypy-1.8?] python_abis_2.5? ( dev-lang/python:2.5 ) python_abis_2.6? ( dev-lang/python:2.6 ) python_abis_2.7? ( dev-lang/python:2.7 ) python_abis_3.1? ( dev-lang/python:3.1 ) python_abis_3.2? ( dev-lang/python:3.2 ) python_abis_3.3? ( dev-lang/python:3.3 ) python_abis_2.5-jython? ( dev-java/jython:2.5 ) python_abis_2.6-jython? ( dev-java/jython:2.6 ) python_abis_2.7-pypy-1.7? ( dev-python/pypy:1.7 ) python_abis_2.7-pypy-1.8? ( dev-python/pypy:1.8 )
+REQUIRED_USE=|| ( python_abis_2.5 python_abis_2.6 python_abis_2.7 python_abis_3.1 python_abis_3.2 python_abis_3.3 python_abis_2.5-jython python_abis_2.6-jython python_abis_2.7-pypy-1.7 python_abis_2.7-pypy-1.8 )
 SLOT=0
 SRC_URI=http://www.makotemplates.org/downloads/Mako-0.6.2.tar.gz
-_eclasses_=distutils	15ae23f6f8219a009bfcfff7724fe727	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	python	d6df8e9d4686f7550769a9777aa622b9	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68
-_md5_=e6f34684ed323dac8dba1b41c56edd84
+_eclasses_=distutils	82a876811ffd4907daba6062958daa26	python	cb2844e25e38800105564c14a716c805
+_md5_=36f6e3c7018ce19db3708b826c642940

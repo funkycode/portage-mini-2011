@@ -9,5 +9,5 @@ LICENSE=GPL-2
 RDEPEND=!app-admin/eselect-news sys-apps/sed || ( sys-apps/coreutils sys-freebsd/freebsd-bin app-misc/realpath ) sys-apps/file sys-libs/ncurses
 SLOT=0
 SRC_URI=mirror://gentoo/eselect-1.2.18.tar.bz2
-_eclasses_=bash-completion-r1	3480f8385cb9e31797e7b659e366e2d2
+_eclasses_=bash-completion-r1	fff8a4a7ab807c81d9000e0791370cb9
 _md5_=95043055b5f0439b0ef21a868b87e09a

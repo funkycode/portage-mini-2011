@@ -1,11 +1,10 @@
-# Copyright 1999-2012 Gentoo Foundation
+# Copyright owners: Gentoo Foundation
+#                   Arfrever Frehtes Taifersar Arahesis
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/dev-python/tagpy/tagpy-0.94.8-r1.ebuild,v 1.4 2012/02/25 01:59:13 patrick Exp $
 
-EAPI="4"
-PYTHON_DEPEND="2"
-SUPPORT_PYTHON_ABIS="1"
-RESTRICT_PYTHON_ABIS="3.* *-jython 2.7-pypy-*"
+EAPI="4-python"
+PYTHON_MULTIPLE_ABIS="1"
+PYTHON_RESTRICTED_ABIS="3.* *-jython *-pypy-*"
 
 inherit distutils
 
@@ -18,10 +17,10 @@ SLOT="0"
 KEYWORDS="~amd64 ~ppc ~ppc64 ~sparc ~x86"
 IUSE="examples"
 
-RDEPEND=">=dev-libs/boost-1.48[python]
+RDEPEND="$(python_abi_depend ">=dev-libs/boost-1.48[python]")
 	>=media-libs/taglib-1.4"
 DEPEND="${RDEPEND}
-	dev-python/setuptools"
+	$(python_abi_depend dev-python/setuptools)"
 
 DISTUTILS_USE_SEPARATE_SOURCE_DIRECTORIES="1"
 
@@ -34,7 +33,7 @@ src_prepare() {
 
 src_configure() {
 	configuration() {
-		"$(PYTHON)" configure.py \
+		python_execute "$(PYTHON)" configure.py \
 			--taglib-inc-dir="${EPREFIX}/usr/include/taglib" \
 			--boost-python-libname="boost_python-${PYTHON_ABI}-mt"
 	}

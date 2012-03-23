@@ -1,5 +1,5 @@
---- PyQt-x11-gpl-4.7.2/configure.py.orig	2010-03-18 00:59:51.000000000 +0100
-+++ PyQt-x11-gpl-4.7.2/configure.py	2010-03-18 01:08:46.000000000 +0100
+--- configure.py
++++ configure.py
 @@ -478,7 +478,7 @@
              generate_code("QtXmlPatterns")
  

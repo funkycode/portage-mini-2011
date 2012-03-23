@@ -1,7 +1,7 @@
 http://bugs.gentoo.org/212784
 
---- libxslt-1.1.22/work/libxslt-1.1.22/python/Makefile.am 
-+++ libxslt-1.1.23/work/libxslt-1.1.23/python/Makefile.am 
+--- python/Makefile.am 
++++ python/Makefile.am 
 @@ -42,9 +42,9 @@
  	cat $(srcdir)/libxsl.py $(srcdir)/libxsltclass.py > libxslt.py
  

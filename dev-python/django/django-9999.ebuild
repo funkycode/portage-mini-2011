@@ -1,11 +1,11 @@
-# Copyright 1999-2011 Gentoo Foundation
+# Copyright owners: Gentoo Foundation
+#                   Arfrever Frehtes Taifersar Arahesis
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/dev-python/django/django-9999.ebuild,v 1.13 2011/12/21 07:06:46 floppym Exp $
 
-EAPI="3"
-PYTHON_DEPEND="2"
-SUPPORT_PYTHON_ABIS="1"
-RESTRICT_PYTHON_ABIS="3.*"
+EAPI="4-python"
+PYTHON_MULTIPLE_ABIS="1"
+PYTHON_RESTRICTED_ABIS="3.*"
+PYTHON_TESTS_RESTRICTED_ABIS="*-jython"
 
 inherit bash-completion-r1 distutils subversion webapp
 
@@ -18,19 +18,20 @@ SLOT="0"
 KEYWORDS=""
 IUSE="doc mysql postgres sqlite test"
 
-RDEPEND="dev-python/imaging
-	sqlite? ( || ( dev-lang/python:2.7[sqlite] dev-lang/python:2.6[sqlite] dev-lang/python:2.5[sqlite] dev-python/pysqlite:2 ) )
-	postgres? ( dev-python/psycopg )
-	mysql? ( >=dev-python/mysql-python-1.2.1_p2 )"
+RDEPEND="$(python_abi_depend -e "*-jython" dev-python/imaging)
+	$(python_abi_depend virtual/python-json[external])
+	mysql? ( $(python_abi_depend -e "*-jython" ">=dev-python/mysql-python-1.2.1_p2") )
+	postgres? ( $(python_abi_depend -e "*-jython *-pypy-*" dev-python/psycopg:2) )
+	sqlite? ( $(python_abi_depend -e "*-jython" virtual/python-sqlite[external]) )"
 DEPEND="${RDEPEND}
-	doc? ( >=dev-python/sphinx-0.3 )
-	test? ( || ( dev-lang/python:2.7[sqlite] dev-lang/python:2.6[sqlite] dev-lang/python:2.5[sqlite] dev-python/pysqlite:2 ) )"
+	doc? ( $(python_abi_depend dev-python/sphinx) )
+	test? ( $(python_abi_depend -e "*-jython" virtual/python-sqlite[external]) )"
 
 S="${WORKDIR}"
 
 ESVN_REPO_URI="http://code.djangoproject.com/svn/django/trunk/"
 
-DOCS="docs/README AUTHORS"
+DOCS="docs/* AUTHORS"
 WEBAPP_MANUAL_SLOT="yes"
 
 pkg_setup() {
@@ -59,7 +60,7 @@ src_compile() {
 	if use doc; then
 		einfo "Generation of documentation"
 		pushd docs > /dev/null
-		emake html || die "Generation of documentation failed"
+		emake html
 		popd > /dev/null
 	fi
 }
@@ -68,7 +69,7 @@ src_test() {
 	testing() {
 		# Tests have non-standard assumptions about PYTHONPATH and
 		# don't work with usual "build-${PYTHON_ABI}/lib".
-		PYTHONPATH="." "$(PYTHON)" tests/runtests.py --settings=test_sqlite -v1
+		python_execute PYTHONPATH="." "$(PYTHON)" tests/runtests.py --settings=test_sqlite -v1
 	}
 	python_execute_function testing
 }
@@ -76,15 +77,15 @@ src_test() {
 src_install() {
 	distutils_src_install
 
-	newbashcomp extras/django_bash_completion ${PN} || die
+	newbashcomp extras/django_bash_completion ${PN}
 
 	if use doc; then
 		rm -fr docs/_build/html/_sources
-		dohtml -A txt -r docs/_build/html/* || die "dohtml failed"
+		dohtml -A txt -r docs/_build/html/*
 	fi
 
 	insinto "${MY_HTDOCSDIR#${EPREFIX}}"
-	doins -r django/contrib/admin/media/* || die "doins failed"
+	doins -r django/contrib/admin/media/*
 
 	webapp_src_install
 }

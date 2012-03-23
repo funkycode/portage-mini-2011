@@ -1,13 +1,12 @@
-# Copyright 1999-2012 Gentoo Foundation
+# Copyright owners: Gentoo Foundation
+#                   Arfrever Frehtes Taifersar Arahesis
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/dev-python/pygobject/pygobject-3.0.4.ebuild,v 1.3 2012/02/25 01:55:42 patrick Exp $
 
-EAPI="4"
+EAPI="4-python"
 GCONF_DEBUG="no"
 GNOME2_LA_PUNT="yes"
-SUPPORT_PYTHON_ABIS="1"
-PYTHON_DEPEND="2:2.6 3:3.1"
-RESTRICT_PYTHON_ABIS="2.4 2.5 3.0 *-jython 2.7-pypy-*"
+PYTHON_MULTIPLE_ABIS="1"
+PYTHON_RESTRICTED_ABIS="2.5 *-jython *-pypy-*"
 
 # XXX: Is the alternatives stuff needed anymore?
 inherit alternatives autotools gnome2 python virtualx
@@ -23,7 +22,7 @@ IUSE="+cairo examples test +threads" # doc
 COMMON_DEPEND=">=dev-libs/glib-2.24.0:2
 	>=dev-libs/gobject-introspection-1.29
 	virtual/libffi
-	cairo? ( >=dev-python/pycairo-1.10.0 )"
+	cairo? ( $(python_abi_depend ">=dev-python/pycairo-1.10.0") )"
 DEPEND="${COMMON_DEPEND}
 	test? (
 		media-fonts/font-cursor-misc
@@ -61,12 +60,6 @@ src_prepare() {
 	# Do not build tests if unneeded, bug #226345
 	epatch "${FILESDIR}/${PN}-2.90.1-make_check.patch"
 
-	# Support installation for multiple Python versions, upstream bug #648292
-	epatch "${FILESDIR}/${PN}-3.0.0-support_multiple_python_versions.patch"
-
-	# Disable tests that fail
-	#epatch "${FILESDIR}/${PN}-2.28.3-disable-failing-tests.patch"
-
 	# FIXME: disable tests that require >=gobject-introspection-1.31
 	epatch "${FILESDIR}/${PN}-3.0.3-disable-new-gi-tests.patch"
 
@@ -79,23 +72,32 @@ src_prepare() {
 	gnome2_src_prepare
 
 	python_copy_sources
+
+	preparation() {
+		if [[ "$(python_get_version -l)" == "2.6" ]]; then
+			sed -e "/# https:\/\/bugzilla.gnome.org\/show_bug.cgi?id=656554/,+13d" -i tests/test_everything.py
+		fi
+	}
+	python_execute_function -q -s preparation
 }
 
 src_configure() {
-	python_execute_function -s gnome2_src_configure
+	configuration() {
+		PYTHON="$(PYTHON)" gnome2_src_configure
+	}
+	python_execute_function -s configuration
 }
 
 src_compile() {
 	python_src_compile
 }
 
-# FIXME: With python multiple ABI support, tests return 1 even when they pass
 src_test() {
 	unset DBUS_SESSION_BUS_ADDRESS
 	export GIO_USE_VFS="local" # prevents odd issues with deleting ${T}/.gvfs
 
 	testing() {
-		export XDG_CACHE_HOME="${T}/$(PYTHON --ABI)"
+		export XDG_CACHE_HOME="${T}/${PYTHON_ABI}"
 		Xemake check PYTHON=$(PYTHON -a)
 		unset XDG_CACHE_HOME
 	}

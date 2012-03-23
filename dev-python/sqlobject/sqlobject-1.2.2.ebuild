@@ -1,11 +1,10 @@
-# Copyright 1999-2012 Gentoo Foundation
+# Copyright owners: Gentoo Foundation
+#                   Arfrever Frehtes Taifersar Arahesis
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/dev-python/sqlobject/sqlobject-1.2.2.ebuild,v 1.1 2012/03/09 09:10:42 patrick Exp $
 
-EAPI="3"
-PYTHON_DEPEND="2"
-SUPPORT_PYTHON_ABIS="1"
-RESTRICT_PYTHON_ABIS="3.* *-jython"
+EAPI="4-python"
+PYTHON_MULTIPLE_ABIS="1"
+PYTHON_RESTRICTED_ABIS="3.* *-jython"
 
 inherit distutils
 
@@ -21,13 +20,13 @@ SLOT="0"
 KEYWORDS="~amd64 ~ia64 ~ppc ~sparc ~x86 ~amd64-linux ~x86-linux ~ppc-macos ~x86-macos"
 IUSE="doc firebird mysql postgres sqlite"
 
-RDEPEND=">=dev-python/formencode-0.2.2
-		firebird? ( >=dev-python/kinterbasdb-3.0.2 )
-		mysql? ( >=dev-python/mysql-python-0.9.2-r1 )
-		postgres? ( dev-python/psycopg )
-		sqlite? ( || ( dev-lang/python:2.7[sqlite] dev-lang/python:2.6[sqlite] dev-lang/python:2.5[sqlite] dev-python/pysqlite ) )"
+RDEPEND="$(python_abi_depend ">=dev-python/formencode-0.2.2")
+		firebird? ( $(python_abi_depend -e "*-pypy-*" ">=dev-python/kinterbasdb-3.0.2") )
+		mysql? ( $(python_abi_depend ">=dev-python/mysql-python-0.9.2-r1") )
+		postgres? ( $(python_abi_depend -e "*-pypy-*" dev-python/psycopg:2) )
+		sqlite? ( $(python_abi_depend virtual/python-sqlite[external]) )"
 DEPEND="${RDEPEND}
-		dev-python/setuptools"
+		$(python_abi_depend dev-python/setuptools)"
 
 S="${WORKDIR}/${MY_P}"
 
@@ -35,11 +34,11 @@ src_install() {
 	distutils_src_install
 
 	if use doc; then
-		pushd docs
-		dodoc *.txt || die "dodoc failed"
-		dohtml -r presentation-2004-11 || die "dohtml failed"
+		pushd docs > /dev/null
+		dodoc *.txt
+		dohtml -r presentation-2004-11
 		insinto /usr/share/doc/${PF}
-		doins -r europython || die "doins failed"
-		popd
+		doins -r europython
+		popd > /dev/null
 	fi
 }

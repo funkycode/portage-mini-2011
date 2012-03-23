@@ -1,9 +1,9 @@
-# Copyright 1999-2011 Gentoo Foundation
+# Copyright owners: Gentoo Foundation
+#                   Arfrever Frehtes Taifersar Arahesis
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/dev-python/pyserial/pyserial-2.6.ebuild,v 1.2 2011/12/28 00:03:57 neurogeek Exp $
 
-EAPI="3"
-SUPPORT_PYTHON_ABIS="1"
+EAPI="4-python"
+PYTHON_MULTIPLE_ABIS="1"
 
 inherit distutils
 
@@ -20,4 +20,4 @@ DEPEND=""
 RDEPEND=""
 
 DOCS="CHANGES.txt README.txt"
-PYTHON_MODNAME="serial"
+PYTHON_MODULES="serial"

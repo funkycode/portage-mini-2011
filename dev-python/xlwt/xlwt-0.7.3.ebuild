@@ -1,10 +1,10 @@
-# Copyright 1999-2012 Gentoo Foundation
+# Copyright owners: Gentoo Foundation
+#                   Arfrever Frehtes Taifersar Arahesis
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/dev-python/xlwt/xlwt-0.7.3.ebuild,v 1.1 2012/03/02 09:16:54 djc Exp $
 
-EAPI="2"
-PYTHON_DEPEND="2"
-SUPPORT_PYTHON_ABIS="1"
+EAPI="4-python"
+PYTHON_MULTIPLE_ABIS="1"
+PYTHON_RESTRICTED_ABIS="3.*"
 
 inherit distutils
 
@@ -19,7 +19,6 @@ IUSE="examples"
 
 DEPEND=""
 RDEPEND=""
-RESTRICT_PYTHON_ABIS="3.*"
 
 src_prepare() {
 	distutils_src_prepare
@@ -32,8 +31,8 @@ src_install() {
 	distutils_src_install
 
 	insinto /usr/share/doc/${PF}
-	doins -r HISTORY.html xlwt/doc/xlwt.html tests
+	doins -r xlwt/doc/xlwt.html
 	if use examples; then
-		doins -r xlwt/examples || die "doins failed"
+		doins -r xlwt/examples
 	fi
 }

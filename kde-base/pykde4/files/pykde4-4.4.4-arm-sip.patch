@@ -1,6 +1,5 @@
-diff -Naur pykde4-4.4.3.orig/python/pykde4/CMakeLists.txt pykde4-4.4.3/python/pykde4/CMakeLists.txt
---- pykde4-4.4.3.orig/python/pykde4/CMakeLists.txt	2010-03-29 14:57:40.000000000 +0200
-+++ pykde4-4.4.3/python/pykde4/CMakeLists.txt	2010-05-31 15:49:17.095615617 +0200
+--- python/pykde4/CMakeLists.txt
++++ python/pykde4/CMakeLists.txt
 @@ -75,6 +75,9 @@
      ${KDEPIMLIBS_INCLUDE_DIRS}
  )

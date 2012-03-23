@@ -1,47 +1,46 @@
-# Copyright 1999-2011 Gentoo Foundation
+# Copyright owners: Gentoo Foundation
+#                   Arfrever Frehtes Taifersar Arahesis
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/dev-python/python-openid/python-openid-2.2.5.ebuild,v 1.5 2011/05/24 21:02:40 maekke Exp $
 
-EAPI="3"
-PYTHON_DEPEND="2:2.5"
-SUPPORT_PYTHON_ABIS="1"
-RESTRICT_PYTHON_ABIS="2.4 3.*"
+EAPI="4-python"
+PYTHON_MULTIPLE_ABIS="1"
+PYTHON_RESTRICTED_ABIS="3.*"
 
 inherit distutils eutils
 
 DESCRIPTION="OpenID support for servers and consumers."
-HOMEPAGE="http://www.openidenabled.com/openid/libraries/python/ http://pypi.python.org/pypi/python-openid"
+HOMEPAGE="https://github.com/openid/python-openid http://pypi.python.org/pypi/python-openid"
 # Downloaded from http://github.com/openid/python-openid/downloads
 SRC_URI="mirror://gentoo/${P}.tar.gz"
 
 LICENSE="Apache-2.0"
 SLOT="0"
-KEYWORDS="amd64 ~arm x86"
+KEYWORDS="~amd64 ~arm ~x86"
 IUSE="examples mysql postgres sqlite"
 
-RDEPEND="mysql? ( >=dev-python/mysql-python-1.2.2 )
-	postgres? ( dev-python/psycopg )
-	sqlite? ( || ( dev-lang/python:2.7[sqlite] dev-lang/python:2.6[sqlite] dev-lang/python:2.5[sqlite] dev-python/pysqlite:2 ) )"
+RDEPEND="mysql? ( $(python_abi_depend -e "*-jython" ">=dev-python/mysql-python-1.2.2") )
+	postgres? ( $(python_abi_depend -e "*-jython *-pypy-*" dev-python/psycopg:2) )
+	sqlite? ( $(python_abi_depend -e "*-jython" virtual/python-sqlite) )"
 DEPEND="${RDEPEND}"
 
 S="${WORKDIR}/openid-python-openid-b666238"
 
-PYTHON_MODNAME="openid"
+PYTHON_MODULES="openid"
 
 src_prepare() {
 	distutils_src_prepare
 
-	# Patch to fix confusion with localhost/127.0.0.1
+	# Fix confusion with localhost/127.0.0.1.
 	epatch "${FILESDIR}/${PN}-2.0.0-gentoo-test_fetchers.diff"
+
+	# Disable test which requires running db server.
+	sed -e "/storetest/d" -i admin/runtests
 
 	# Disable broken tests from from examples/djopenid.
 	sed -e "s/django_failures =.*/django_failures = 0/" -i admin/runtests || die "sed admin/runtests failed"
 }
 
 src_test() {
-	# Remove test that requires running db server.
-	sed -e '/storetest/d' -i admin/runtests
-
 	testing() {
 		"$(PYTHON)" admin/runtests
 	}

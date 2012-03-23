@@ -7,5 +7,5 @@ IUSE=+lastfm libnotify +lyrics
 LICENSE=GPL-2
 RDEPEND=dev-db/sqlite:3 >=dev-libs/glib-2.26:2 dev-libs/libunique:1 dev-libs/libxml2:2 media-libs/gst-plugins-base:0.10 media-libs/gstreamer:0.10 media-libs/taglib x11-libs/cairo x11-libs/gdk-pixbuf:2 x11-libs/gtk+:2 lastfm? ( net-libs/libsoup:2.4 ) libnotify? ( x11-libs/libnotify ) lyrics? ( net-libs/libsoup:2.4 )
 SLOT=0
-_eclasses_=eutils	0f008baa9552301d379ae5df233e9713	fdo-mime	0acfe1a88fd8751a1d5dc671168219fa	gnome2-utils	b5ca2ccadb60760889faa3bccba121d9	mercurial	273cde614620d32d35127c71eb18d702	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
+_eclasses_=eutils	0f008baa9552301d379ae5df233e9713	fdo-mime	0acfe1a88fd8751a1d5dc671168219fa	gnome2-utils	0556f216199e15cc37899e1130da3824	mercurial	273cde614620d32d35127c71eb18d702	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
 _md5_=261577dc7125f9021036e3e8864b97d8

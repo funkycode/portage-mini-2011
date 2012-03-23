@@ -1,13 +1,14 @@
-DEFINED_PHASES=compile install postinst postrm prepare test
-DEPEND=mysql? ( >=dev-python/mysql-python-1.2.2 ) postgres? ( dev-python/psycopg ) sqlite? ( || ( dev-lang/python:2.7[sqlite] dev-lang/python:2.6[sqlite] dev-lang/python:2.5[sqlite] dev-python/pysqlite:2 ) ) || ( =dev-lang/python-2.7* =dev-lang/python-2.6* =dev-lang/python-2.5* )
+DEFINED_PHASES=compile install postinst postrm prepare setup test
+DEPEND=mysql? ( ( python_abis_2.5? ( >=dev-python/mysql-python-1.2.2[python_abis_2.5] ) python_abis_2.6? ( >=dev-python/mysql-python-1.2.2[python_abis_2.6] ) python_abis_2.7? ( >=dev-python/mysql-python-1.2.2[python_abis_2.7] ) python_abis_2.7-pypy-1.7? ( >=dev-python/mysql-python-1.2.2[python_abis_2.7-pypy-1.7] ) python_abis_2.7-pypy-1.8? ( >=dev-python/mysql-python-1.2.2[python_abis_2.7-pypy-1.8] ) ) ) postgres? ( ( python_abis_2.5? ( dev-python/psycopg:2[python_abis_2.5] ) python_abis_2.6? ( dev-python/psycopg:2[python_abis_2.6] ) python_abis_2.7? ( dev-python/psycopg:2[python_abis_2.7] ) ) ) sqlite? ( ( python_abis_2.5? ( virtual/python-sqlite[python_abis_2.5] ) python_abis_2.6? ( virtual/python-sqlite[python_abis_2.6] ) python_abis_2.7? ( virtual/python-sqlite[python_abis_2.7] ) python_abis_2.7-pypy-1.7? ( virtual/python-sqlite[python_abis_2.7-pypy-1.7] ) python_abis_2.7-pypy-1.8? ( virtual/python-sqlite[python_abis_2.7-pypy-1.8] ) ) ) python_abis_2.5? ( dev-lang/python:2.5 ) python_abis_2.6? ( dev-lang/python:2.6 ) python_abis_2.7? ( dev-lang/python:2.7 ) python_abis_2.5-jython? ( dev-java/jython:2.5 ) python_abis_2.6-jython? ( dev-java/jython:2.6 ) python_abis_2.7-pypy-1.7? ( dev-python/pypy:1.7 ) python_abis_2.7-pypy-1.8? ( dev-python/pypy:1.8 )
 DESCRIPTION=OpenID support for servers and consumers.
-EAPI=3
-HOMEPAGE=http://www.openidenabled.com/openid/libraries/python/ http://pypi.python.org/pypi/python-openid
-IUSE=examples mysql postgres sqlite
-KEYWORDS=amd64 ~arm x86
+EAPI=4-python
+HOMEPAGE=https://github.com/openid/python-openid http://pypi.python.org/pypi/python-openid
+IUSE=examples mysql postgres sqlite python_abis_2.5 python_abis_2.6 python_abis_2.7 python_abis_2.5-jython python_abis_2.6-jython python_abis_2.7-pypy-1.7 python_abis_2.7-pypy-1.8
+KEYWORDS=~amd64 ~arm ~x86
 LICENSE=Apache-2.0
-RDEPEND=mysql? ( >=dev-python/mysql-python-1.2.2 ) postgres? ( dev-python/psycopg ) sqlite? ( || ( dev-lang/python:2.7[sqlite] dev-lang/python:2.6[sqlite] dev-lang/python:2.5[sqlite] dev-python/pysqlite:2 ) ) || ( =dev-lang/python-2.7* =dev-lang/python-2.6* =dev-lang/python-2.5* )
+RDEPEND=mysql? ( ( python_abis_2.5? ( >=dev-python/mysql-python-1.2.2[python_abis_2.5] ) python_abis_2.6? ( >=dev-python/mysql-python-1.2.2[python_abis_2.6] ) python_abis_2.7? ( >=dev-python/mysql-python-1.2.2[python_abis_2.7] ) python_abis_2.7-pypy-1.7? ( >=dev-python/mysql-python-1.2.2[python_abis_2.7-pypy-1.7] ) python_abis_2.7-pypy-1.8? ( >=dev-python/mysql-python-1.2.2[python_abis_2.7-pypy-1.8] ) ) ) postgres? ( ( python_abis_2.5? ( dev-python/psycopg:2[python_abis_2.5] ) python_abis_2.6? ( dev-python/psycopg:2[python_abis_2.6] ) python_abis_2.7? ( dev-python/psycopg:2[python_abis_2.7] ) ) ) sqlite? ( ( python_abis_2.5? ( virtual/python-sqlite[python_abis_2.5] ) python_abis_2.6? ( virtual/python-sqlite[python_abis_2.6] ) python_abis_2.7? ( virtual/python-sqlite[python_abis_2.7] ) python_abis_2.7-pypy-1.7? ( virtual/python-sqlite[python_abis_2.7-pypy-1.7] ) python_abis_2.7-pypy-1.8? ( virtual/python-sqlite[python_abis_2.7-pypy-1.8] ) ) ) python_abis_2.5? ( dev-lang/python:2.5 ) python_abis_2.6? ( dev-lang/python:2.6 ) python_abis_2.7? ( dev-lang/python:2.7 ) python_abis_2.5-jython? ( dev-java/jython:2.5 ) python_abis_2.6-jython? ( dev-java/jython:2.6 ) python_abis_2.7-pypy-1.7? ( dev-python/pypy:1.7 ) python_abis_2.7-pypy-1.8? ( dev-python/pypy:1.8 )
+REQUIRED_USE=|| ( python_abis_2.5 python_abis_2.6 python_abis_2.7 python_abis_2.5-jython python_abis_2.6-jython python_abis_2.7-pypy-1.7 python_abis_2.7-pypy-1.8 )
 SLOT=0
 SRC_URI=mirror://gentoo/python-openid-2.2.5.tar.gz
-_eclasses_=distutils	15ae23f6f8219a009bfcfff7724fe727	eutils	0f008baa9552301d379ae5df233e9713	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	python	d6df8e9d4686f7550769a9777aa622b9	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
-_md5_=4e285826ff551c6f5c8207ae0109ca0b
+_eclasses_=distutils	82a876811ffd4907daba6062958daa26	eutils	0f008baa9552301d379ae5df233e9713	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	python	cb2844e25e38800105564c14a716c805	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
+_md5_=1b862e12606094f17c8fa996647a156c

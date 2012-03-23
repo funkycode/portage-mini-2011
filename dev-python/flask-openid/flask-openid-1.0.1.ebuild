@@ -1,11 +1,10 @@
-# Copyright 1999-2011 Gentoo Foundation
+# Copyright owners: Gentoo Foundation
+#                   Arfrever Frehtes Taifersar Arahesis
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/dev-python/flask-openid/flask-openid-1.0.1.ebuild,v 1.3 2011/10/08 17:46:15 floppym Exp $
 
-EAPI="3"
-PYTHON_DEPEND="2:2.5"
-SUPPORT_PYTHON_ABIS="1"
-RESTRICT_PYTHON_ABIS="2.4 3.*"
+EAPI="4-python"
+PYTHON_MULTIPLE_ABIS="1"
+PYTHON_RESTRICTED_ABIS="3.*"
 
 inherit distutils
 
@@ -21,22 +20,24 @@ SLOT="0"
 KEYWORDS="~amd64 ~x86"
 IUSE="doc examples"
 
-RDEPEND=">=dev-python/flask-0.3
-	>=dev-python/python-openid-2.0"
+RDEPEND="$(python_abi_depend ">=dev-python/flask-0.3")
+	$(python_abi_depend ">=dev-python/python-openid-2.0")"
 DEPEND="${RDEPEND}
-	dev-python/setuptools"
+	$(python_abi_depend dev-python/setuptools)
+	doc? ( $(python_abi_depend dev-python/sphinx) )"
 
 S="${WORKDIR}/${MY_P}"
 
-PYTHON_MODNAME="flaskext/openid.py"
+PYTHON_MODULES="flaskext/openid.py"
 
 src_compile() {
 	distutils_src_compile
 
 	if use doc; then
 		einfo "Generation of documentation"
-		cd docs
-		PYTHONPATH=".." emake html || die "Generation of documentation failed"
+		pushd docs > /dev/null
+		PYTHONPATH=".." emake html
+		popd > /dev/null
 	fi
 }
 
@@ -44,11 +45,14 @@ src_install() {
 	distutils_src_install
 
 	if use doc; then
-		dohtml -r docs/_build/html/* || die "Installation of documentation failed"
+		pushd docs/_build/html > /dev/null
+		insinto /usr/share/doc/${PF}/html
+		doins -r [a-z]* _static
+		popd > /dev/null
 	fi
 
 	if use examples; then
-		insinto /usr/share/doc/${PF}
-		doins -r example || die "Installation of examples failed"
+		insinto /usr/share/doc/${PF}/examples
+		doins -r example/*
 	fi
 }

@@ -1,0 +1,11 @@
+DEFINED_PHASES=setup
+DEPEND=python_abis_2.5? ( dev-lang/python:2.5 ) python_abis_2.6? ( dev-lang/python:2.6 ) python_abis_2.7? ( dev-lang/python:2.7 ) python_abis_3.1? ( dev-lang/python:3.1 ) python_abis_3.2? ( dev-lang/python:3.2 ) python_abis_3.3? ( dev-lang/python:3.3 ) python_abis_2.5-jython? ( dev-java/jython:2.5 ) python_abis_2.6-jython? ( dev-java/jython:2.6 ) python_abis_2.7-pypy-1.7? ( dev-python/pypy:1.7 ) python_abis_2.7-pypy-1.8? ( dev-python/pypy:1.8 )
+DESCRIPTION=Virtual for simplejson and json Python modules
+EAPI=4-python
+IUSE=external python_abis_2.5 python_abis_2.6 python_abis_2.7 python_abis_3.1 python_abis_3.2 python_abis_3.3 python_abis_2.5-jython python_abis_2.6-jython python_abis_2.7-pypy-1.7 python_abis_2.7-pypy-1.8
+KEYWORDS=~alpha ~amd64 ~arm ~hppa ~ia64 ~m68k ~mips ~ppc ~ppc64 ~s390 ~sh ~sparc ~x86 ~ppc-aix ~x86-fbsd ~x86-freebsd ~x86-interix ~amd64-linux ~x86-linux ~ppc-macos ~x64-macos ~x86-macos ~m68k-mint ~sparc-solaris ~sparc64-solaris ~x86-solaris
+RDEPEND=( python_abis_2.5? ( dev-python/simplejson[python_abis_2.5] ) python_abis_2.5-jython? ( dev-python/simplejson[python_abis_2.5-jython] ) ) external? ( ( python_abis_2.6? ( dev-python/simplejson[python_abis_2.6] ) python_abis_2.7? ( dev-python/simplejson[python_abis_2.7] ) python_abis_2.6-jython? ( dev-python/simplejson[python_abis_2.6-jython] ) python_abis_2.7-pypy-1.7? ( dev-python/simplejson[python_abis_2.7-pypy-1.7] ) python_abis_2.7-pypy-1.8? ( dev-python/simplejson[python_abis_2.7-pypy-1.8] ) ) ) python_abis_2.5? ( dev-lang/python:2.5 ) python_abis_2.6? ( dev-lang/python:2.6 ) python_abis_2.7? ( dev-lang/python:2.7 ) python_abis_3.1? ( dev-lang/python:3.1 ) python_abis_3.2? ( dev-lang/python:3.2 ) python_abis_3.3? ( dev-lang/python:3.3 ) python_abis_2.5-jython? ( dev-java/jython:2.5 ) python_abis_2.6-jython? ( dev-java/jython:2.6 ) python_abis_2.7-pypy-1.7? ( dev-python/pypy:1.7 ) python_abis_2.7-pypy-1.8? ( dev-python/pypy:1.8 )
+REQUIRED_USE=|| ( python_abis_2.5 python_abis_2.6 python_abis_2.7 python_abis_3.1 python_abis_3.2 python_abis_3.3 python_abis_2.5-jython python_abis_2.6-jython python_abis_2.7-pypy-1.7 python_abis_2.7-pypy-1.8 )
+SLOT=0
+_eclasses_=python	cb2844e25e38800105564c14a716c805
+_md5_=b51c8c16c4f82d3c457726d8a4c5a962

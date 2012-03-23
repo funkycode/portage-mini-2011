@@ -1,12 +1,11 @@
-# Copyright 1999-2012 Gentoo Foundation
+# Copyright owners: Gentoo Foundation
+#                   Arfrever Frehtes Taifersar Arahesis
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/dev-python/sip/sip-4.13.2-r1.ebuild,v 1.2 2012/03/07 22:10:46 pesa Exp $
 
-EAPI="4"
-PYTHON_DEPEND="*"
+EAPI="4-python"
+PYTHON_MULTIPLE_ABIS="1"
+PYTHON_RESTRICTED_ABIS="*-jython *-pypy-*"
 PYTHON_EXPORT_PHASE_FUNCTIONS="1"
-SUPPORT_PYTHON_ABIS="1"
-RESTRICT_PYTHON_ABIS="*-jython 2.7-pypy-*"
 
 inherit eutils python toolchain-funcs
 
@@ -23,9 +22,8 @@ DEPEND=""
 RDEPEND=""
 
 src_prepare() {
-	epatch "${FILESDIR}"/${PN}-4.9.3-darwin.patch
-	sed -i -e 's/-O2//g' specs/* || die
-
+	epatch "${FILESDIR}/${PN}-4.9.3-darwin.patch"
+	sed -e "s/ -O2//g" -i specs/* || die "sed failed"
 	python_src_prepare
 }
 
@@ -34,8 +32,8 @@ src_configure() {
 		local myconf=("$(PYTHON)"
 			configure.py
 			--bindir="${EPREFIX}/usr/bin"
-			--destdir="${EPREFIX}$(python_get_sitedir)"
 			--incdir="${EPREFIX}$(python_get_includedir)"
+			--destdir="${EPREFIX}$(python_get_sitedir)"
 			--sipdir="${EPREFIX}/usr/share/sip"
 			$(use debug && echo --debug)
 			CC="$(tc-getCC)"
@@ -46,8 +44,7 @@ src_configure() {
 			CXXFLAGS="${CXXFLAGS}"
 			LFLAGS="${LDFLAGS}"
 			STRIP=":")
-		echo "${myconf[@]}"
-		"${myconf[@]}"
+		python_execute "${myconf[@]}"
 	}
 	python_execute_function -s configuration
 }
@@ -65,9 +62,9 @@ src_install() {
 pkg_postinst() {
 	python_mod_optimize sipconfig.py sipdistutils.py
 
-	ewarn "When updating dev-python/sip, you usually need to rebuild packages that depend on it,"
-	ewarn "such as PyQt4, qscintilla-python and pykde4. If you have app-portage/gentoolkit"
-	ewarn "installed, you can find these packages with \`equery d dev-python/sip\`."
+	ewarn "When updating dev-python/sip, you usually need to rebuild packages, which depend on it,"
+	ewarn "such as dev-python/PyQt4, dev-python/qscintilla-python and kde-base/pykde4. If you have app-portage/gentoolkit"
+	ewarn "installed, you can find these packages with \`equery d dev-python/sip dev-python/PyQt4\`."
 }
 
 pkg_postrm() {

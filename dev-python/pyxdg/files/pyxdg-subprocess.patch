@@ -1,10 +1,5 @@
-#Patch sent to upstream on March 1st, 2009
-#Jesus Rivero (Neurogeek)
-#Replaced deprecated os.popen3 for subprocess
-
-diff -uNr xdg.orig/Menu.py xdg/Menu.py
---- xdg.orig/Menu.py	2009-03-01 04:34:38.000000000 -0430
-+++ xdg/Menu.py	2009-03-01 04:41:27.000000000 -0430
+--- xdg/Menu.py
++++ xdg/Menu.py
 @@ -12,6 +12,7 @@
  
  import xdg.Locale

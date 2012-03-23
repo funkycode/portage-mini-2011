@@ -1,16 +1,15 @@
-# Copyright 1999-2012 Gentoo Foundation
+# Copyright owners: Gentoo Foundation
+#                   Arfrever Frehtes Taifersar Arahesis
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/dev-python/python-gnutls/python-gnutls-1.2.4.ebuild,v 1.2 2012/02/22 03:58:12 patrick Exp $
 
-EAPI="4"
-SUPPORT_PYTHON_ABIS="1"
-RESTRICT_PYTHON_ABIS="3.* *-jython"
-PYTHON_MODNAME="gnutls"
+EAPI="4-python"
+PYTHON_MULTIPLE_ABIS="1"
+PYTHON_RESTRICTED_ABIS="3.* *-jython"
 
 inherit distutils
 
 DESCRIPTION="Python bindings for GnuTLS"
-HOMEPAGE="http://pypi.python.org/pypi/python-gnutls http://ag-projects.com/"
+HOMEPAGE="http://pypi.python.org/pypi/python-gnutls"
 SRC_URI="mirror://pypi/${PN:0:1}/${PN}/${P}.tar.gz"
 
 LICENSE="LGPL-2.1"
@@ -20,6 +19,8 @@ IUSE="examples"
 
 DEPEND="net-libs/gnutls"
 RDEPEND="${DEPEND}"
+
+PYTHON_MODULES="gnutls"
 
 src_install() {
 	distutils_src_install

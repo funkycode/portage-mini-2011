@@ -1,12 +1,11 @@
-# Copyright 1999-2012 Gentoo Foundation
+# Copyright owners: Gentoo Foundation
+#                   Arfrever Frehtes Taifersar Arahesis
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/dev-vcs/mercurial/mercurial-9999.ebuild,v 1.12 2012/02/21 03:31:01 patrick Exp $
 
-EAPI=3
-PYTHON_DEPEND="2"
-PYTHON_USE_WITH="threads"
-SUPPORT_PYTHON_ABIS="1"
-RESTRICT_PYTHON_ABIS="3.* *-jython 2.7-pypy-*"
+EAPI="4-python"
+PYTHON_DEPEND="<<[{*-cpython}threads]>>"
+PYTHON_MULTIPLE_ABIS="1"
+PYTHON_RESTRICTED_ABIS="3.* *-jython"
 
 inherit bash-completion-r1 elisp-common eutils distutils mercurial
 
@@ -19,13 +18,15 @@ SLOT="0"
 KEYWORDS=""
 IUSE="bugzilla emacs gpg test tk zsh-completion"
 
-RDEPEND="bugzilla? ( dev-python/mysql-python )
+RDEPEND="bugzilla? ( $(python_abi_depend dev-python/mysql-python) )
 	gpg? ( app-crypt/gnupg )
 	tk? ( dev-lang/tk )
 	zsh-completion? ( app-shells/zsh )"
 DEPEND="emacs? ( virtual/emacs )
-	test? ( app-arch/unzip
-		dev-python/pygments )
+	test? (
+		app-arch/unzip
+		$(python_abi_depend dev-python/pygments)
+	)
 	app-text/asciidoc"
 
 S="${WORKDIR}/hg"
@@ -35,7 +36,7 @@ PYTHON_CFLAGS=(
 	"* - -ftracer -ftree-vectorize"
 )
 
-PYTHON_MODNAME="${PN} hgext"
+PYTHON_MODULES="${PN} hgext"
 SITEFILE="70${PN}-gentoo.el"
 
 src_compile() {
@@ -46,8 +47,8 @@ src_compile() {
 		elisp-compile mercurial.el || die "elisp-compile failed!"
 	fi
 
-	rm -rf contrib/{win32,macosx}
-	make doc || die
+	rm -rf contrib/{win32,macosx} || die
+	make doc
 }
 
 src_install() {
@@ -57,27 +58,27 @@ src_install() {
 
 	if use zsh-completion ; then
 		insinto /usr/share/zsh/site-functions
-		newins contrib/zsh_completion _hg || die
+		newins contrib/zsh_completion _hg
 	fi
 
-	rm -f doc/*.?.txt
-	dodoc CONTRIBUTORS README doc/*.txt || die
+	rm -f doc/*.?.txt || die
+	dodoc CONTRIBUTORS README doc/*.txt
 	cp hgweb*.cgi "${ED}"/usr/share/doc/${PF}/ || die
 
-	dobin hgeditor || die
-	dobin contrib/hgk || die
-	dobin contrib/hg-ssh || die
+	dobin hgeditor
+	dobin contrib/hgk
+	dobin contrib/hg-ssh
 
-	rm -f contrib/hgk contrib/hg-ssh
+	rm -f contrib/hgk contrib/hg-ssh || die
 
-	rm -f contrib/bash_completion
+	rm -f contrib/bash_completion || die
 	cp -r contrib "${ED}"/usr/share/doc/${PF}/ || die
-	doman doc/*.? || die
+	doman doc/*.?
 
 	cat > "${T}/80mercurial" <<-EOF
 HG="${EPREFIX}/usr/bin/hg"
 EOF
-	doenvd "${T}/80mercurial" || die
+	doenvd "${T}/80mercurial"
 
 	if use emacs; then
 		elisp-install ${PN} contrib/mercurial.el* || die "elisp-install failed!"
@@ -87,30 +88,30 @@ EOF
 
 src_test() {
 	cd "${S}/tests/" || die
-	rm -rf *svn*				# Subversion tests fail with 1.5
-	rm -f test-archive			# Fails due to verbose tar output changes
-	rm -f test-convert-baz*		# GNU Arch baz
-	rm -f test-convert-cvs*		# CVS
-	rm -f test-convert-darcs*	# Darcs
-	rm -f test-convert-git*		# git
-	rm -f test-convert-mtn*		# monotone
-	rm -f test-convert-tla*		# GNU Arch tla
-	rm -f test-doctest*			# doctest always fails with python 2.5.x
+	rm -rf *svn* || die			# Subversion tests fail with 1.5
+	rm -f test-archive || die		# Fails due to verbose tar output changes
+	rm -f test-convert-baz* || die		# GNU Arch baz
+	rm -f test-convert-cvs*	|| die		# CVS
+	rm -f test-convert-darcs* || die	# Darcs
+	rm -f test-convert-git* || die		# git
+	rm -f test-convert-mtn*	|| die		# monotone
+	rm -f test-convert-tla*	|| die		# GNU Arch tla
+	rm -f test-doctest* || die		# doctest always fails with python 2.5.x
 	if [[ ${EUID} -eq 0 ]]; then
 		einfo "Removing tests which require user privileges to succeed"
-		rm -f test-command-template	# Test is broken when run as root
-		rm -f test-convert			# Test is broken when run as root
-		rm -f test-lock-badness		# Test is broken when run as root
-		rm -f test-permissions		# Test is broken when run as root
-		rm -f test-pull-permission	# Test is broken when run as root
-		rm -f test-clone-failure
-		rm -f test-journal-exists
-		rm -f test-repair-strip
+		rm -f test-command-template || die	# Test is broken when run as root
+		rm -f test-convert || die		# Test is broken when run as root
+		rm -f test-lock-badness	|| die		# Test is broken when run as root
+		rm -f test-permissions	|| die		# Test is broken when run as root
+		rm -f test-pull-permission || die	# Test is broken when run as root
+		rm -f test-clone-failure || die
+		rm -f test-journal-exists || die
+		rm -f test-repair-strip || die
 	fi
 
 	testing() {
 		local testdir="${T}/tests-${PYTHON_ABI}"
-		rm -rf "${testdir}"
+		rm -rf "${testdir}" || die
 		"$(PYTHON)" run-tests.py --tmpdir="${testdir}"
 	}
 	python_execute_function testing

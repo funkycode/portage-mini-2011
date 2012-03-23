@@ -1,29 +1,27 @@
-# Copyright 1999-2012 Gentoo Foundation
+# Copyright owners: Gentoo Foundation
+#                   Arfrever Frehtes Taifersar Arahesis
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/kde-base/pykde4/pykde4-4.7.4.ebuild,v 1.5 2012/03/07 02:36:13 patrick Exp $
 
-EAPI=4
+EAPI="4-python"
 
-PYTHON_DEPEND="*:2.5"
-RESTRICT_PYTHON_ABIS="*-jython 2.4 2.7-pypy-*"
-PYTHON_USE_WITH="threads"
-SUPPORT_PYTHON_ABIS="1"
+PYTHON_DEPEND="<<[threads]>>"
+PYTHON_MULTIPLE_ABIS="1"
+PYTHON_RESTRICTED_ABIS="*-jython *-pypy-*"
 
 OPENGL_REQUIRED="always"
 KDE_SCM="git"
-inherit python portability kde4-base
+inherit kde4-base multilib portability python toolchain-funcs
 
 DESCRIPTION="Python bindings for KDE4"
-KEYWORDS="amd64 ~arm ppc ~ppc64 x86 ~amd64-linux ~x86-linux"
+KEYWORDS="~amd64 ~arm ~ppc ~ppc64 ~x86 ~amd64-linux ~x86-linux"
 IUSE="debug doc examples semantic-desktop"
 
-# blocker added due to compatibility issues and error during compile time
 RDEPEND="
-	>=dev-python/sip-4.12.3-r2
+	$(python_abi_depend ">=dev-python/sip-4.12")
 	$(add_kdebase_dep kdelibs 'opengl,semantic-desktop=')
 	semantic-desktop? ( $(add_kdebase_dep kdepimlibs 'semantic-desktop') )
-	aqua? ( >=dev-python/PyQt4-4.8.2[dbus,declarative,sql,svg,webkit,aqua] )
-	!aqua? ( >=dev-python/PyQt4-4.8.2[dbus,declarative,sql,svg,webkit,X] )
+	aqua? ( $(python_abi_depend ">=dev-python/PyQt4-4.8.2[dbus,declarative,sql,svg,webkit,aqua]") )
+	!aqua? ( $(python_abi_depend ">=dev-python/PyQt4-4.8.2[dbus,declarative,sql,svg,webkit,X]") )
 "
 DEPEND="${RDEPEND}
 	sys-devel/libtool
@@ -86,11 +84,6 @@ src_configure() {
 	python_execute_function configuration
 }
 
-echo_and_run() {
-	echo "$@"
-	"$@"
-}
-
 src_compile() {
 	compilation() {
 		local CMAKE_BUILD_DIR=${S}_build-${PYTHON_ABI}
@@ -100,14 +93,14 @@ src_compile() {
 
 	if ${have_python2}; then
 		cd "${WORKDIR}/wrapper"
-		echo_and_run libtool --tag=CC --mode=compile $(tc-getCC) \
+		python_execute libtool --tag=CC --mode=compile $(tc-getCC) \
 			-shared \
 			${CFLAGS} ${CPPFLAGS} \
 			-DEPREFIX="\"${EPREFIX}\"" \
 			-DPLUGIN_DIR="\"/usr/$(get_libdir)/kde4\"" -c \
 			-o kpythonpluginfactorywrapper.lo \
 			kpythonpluginfactorywrapper.c
-		echo_and_run libtool --tag=CC --mode=link $(tc-getCC) \
+		python_execute libtool --tag=CC --mode=link $(tc-getCC) \
 			-shared -module -avoid-version \
 			${CFLAGS} ${LDFLAGS} \
 			-o kpythonpluginfactory.la \
@@ -133,7 +126,7 @@ src_install() {
 
 	if ${have_python2}; then
 		cd "${WORKDIR}/wrapper"
-		echo_and_run libtool --mode=install install kpythonpluginfactory.la "${ED}/usr/$(get_libdir)/kde4/kpythonpluginfactory.la"
+		python_execute libtool --mode=install install kpythonpluginfactory.la "${ED}/usr/$(get_libdir)/kde4/kpythonpluginfactory.la"
 		rm "${ED}/usr/$(get_libdir)/kde4/kpythonpluginfactory.la"
 	fi
 }

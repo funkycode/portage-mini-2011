@@ -3,11 +3,8 @@ From: Daniel Veillard <veillard@redhat.com>
 Date: Thu, 18 Nov 2010 10:07:24 +0000
 Subject: Small fix for previous commit
 
----
-diff --git a/xpath.c b/xpath.c
-index 1447be5..8b56189 100644
---- a/xpath.c
-+++ b/xpath.c
+--- xpath.c
++++ xpath.c
 @@ -11765,13 +11765,14 @@ xmlXPathCompOpEvalPositionalPredicate(xmlXPathParserContextPtr ctxt,
  	        xmlXPathObjectPtr tmp;
  		/* pop the result if any */
@@ -24,5 +21,3 @@ index 1447be5..8b56189 100644
  		goto evaluation_error;
  	    }
  
---
-cgit v0.8.3.1

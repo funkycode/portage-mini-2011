@@ -1,11 +1,10 @@
-# Copyright 1999-2012 Gentoo Foundation
+# Copyright owners: Gentoo Foundation
+#                   Arfrever Frehtes Taifersar Arahesis
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/dev-python/bsddb3/bsddb3-5.3.0.ebuild,v 1.2 2012/03/04 11:56:29 jlec Exp $
 
-EAPI="3"
-PYTHON_DEPEND="2 3:3.1"
-SUPPORT_PYTHON_ABIS="1"
-RESTRICT_PYTHON_ABIS="3.0 *-jython 2.7-pypy-*"
+EAPI="4-python"
+PYTHON_MULTIPLE_ABIS="1"
+PYTHON_RESTRICTED_ABIS="*-jython"
 
 inherit db-use distutils multilib
 
@@ -18,23 +17,21 @@ SLOT="0"
 KEYWORDS="~amd64 ~ia64 ~ppc ~sparc ~x86"
 IUSE="doc"
 
-RDEPEND=">=sys-libs/db-4.8.30"
+RDEPEND=">=sys-libs/db-4.8"
 DEPEND="${RDEPEND}
-	dev-python/setuptools"
+	$(python_abi_depend dev-python/setuptools)"
 
 PYTHON_CFLAGS=("2.* + -fno-strict-aliasing")
 
 DOCS="ChangeLog TODO.txt"
 
 src_configure() {
-	local DB_VER
-	if has_version sys-libs/db:5.1; then
-		DB_VER="5.1"
-	elif has_version sys-libs/db:5.0; then
-		DB_VER="5.0"
-	else
-		DB_VER="4.8"
-	fi
+	for DB_VER in 5.3 5.2 5.1 5.0 4.8; do
+		if has_version sys-libs/db:${DB_VER}; then
+			break
+		fi
+	done
+
 	sed -e "s/dblib = 'db'/dblib = '$(db_libname ${DB_VER})'/" -i setup2.py setup3.py || die "sed failed"
 }
 
@@ -50,8 +47,7 @@ src_test() {
 		rm -f build
 		ln -s build-${PYTHON_ABI} build
 
-		echo TMPDIR="${T}/tests-${PYTHON_ABI}" "$(PYTHON)" test.py
-		TMPDIR="${T}/tests-${PYTHON_ABI}" "$(PYTHON)" test.py
+		python_execute TMPDIR="${T}/tests-${PYTHON_ABI}" "$(PYTHON)" test.py
 	}
 	python_execute_function tests
 }
@@ -65,6 +61,6 @@ src_install() {
 	python_execute_function -q delete_tests
 
 	if use doc; then
-		dohtml -r docs/html/* || die "dohtml failed"
+		dohtml -r docs/html/*
 	fi
 }

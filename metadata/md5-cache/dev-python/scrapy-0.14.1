@@ -1,13 +1,13 @@
 DEFINED_PHASES=compile install postinst postrm prepare setup
-DEPEND=dev-python/setuptools doc? ( dev-python/sphinx ) || ( =dev-lang/python-2.7* =dev-lang/python-2.6* =dev-lang/python-2.5* ) || ( =dev-lang/python-2.7*[sqlite] =dev-lang/python-2.6*[sqlite] =dev-lang/python-2.5*[sqlite] )
+DEPEND=dev-python/setuptools doc? ( dev-python/sphinx ) || ( =dev-lang/python-2.7* =dev-lang/python-2.6* =dev-lang/python-2.5* ) || ( =dev-lang/python-2.7*[sqlite] =dev-lang/python-2.6*[sqlite] =dev-lang/python-2.5*[sqlite] ) || ( =dev-lang/python-2.7* =dev-lang/python-2.6* =dev-lang/python-2.5* ) || ( =dev-lang/python-2.7*[sqlite] =dev-lang/python-2.6*[sqlite] =dev-lang/python-2.5*[sqlite] )
 DESCRIPTION=A high-level Python Screen Scraping framework
 EAPI=3
 HOMEPAGE=http://scrapy.org http://pypi.python.org/pypi/Scrapy/
 IUSE=boto doc examples ibl ssl
 KEYWORDS=~amd64 ~x86
 LICENSE=BSD-2
-RDEPEND=dev-libs/libxml2[python] boto? ( dev-python/boto ) dev-python/imaging dev-python/lxml ibl? ( dev-python/numpy ) ssl? ( dev-python/pyopenssl ) dev-python/setuptools dev-python/simplejson dev-python/twisted dev-python/twisted-conch dev-python/twisted-mail dev-python/twisted-web dev-python/w3lib || ( =dev-lang/python-2.7* =dev-lang/python-2.6* =dev-lang/python-2.5* ) || ( =dev-lang/python-2.7*[sqlite] =dev-lang/python-2.6*[sqlite] =dev-lang/python-2.5*[sqlite] )
+RDEPEND=dev-libs/libxml2[python] boto? ( dev-python/boto ) dev-python/imaging dev-python/lxml ibl? ( dev-python/numpy ) ssl? ( dev-python/pyopenssl ) dev-python/setuptools dev-python/simplejson dev-python/twisted dev-python/twisted-conch dev-python/twisted-mail dev-python/twisted-web dev-python/w3lib || ( =dev-lang/python-2.7* =dev-lang/python-2.6* =dev-lang/python-2.5* ) || ( =dev-lang/python-2.7*[sqlite] =dev-lang/python-2.6*[sqlite] =dev-lang/python-2.5*[sqlite] ) || ( =dev-lang/python-2.7* =dev-lang/python-2.6* =dev-lang/python-2.5* ) || ( =dev-lang/python-2.7*[sqlite] =dev-lang/python-2.6*[sqlite] =dev-lang/python-2.5*[sqlite] )
 SLOT=0
 SRC_URI=mirror://pypi/S/Scrapy/Scrapy-0.14.1.tar.gz
-_eclasses_=distutils	15ae23f6f8219a009bfcfff7724fe727	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	python	d6df8e9d4686f7550769a9777aa622b9	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68
+_eclasses_=distutils	82a876811ffd4907daba6062958daa26	python	cb2844e25e38800105564c14a716c805
 _md5_=547b6a8b8a812bb4bc97b7964bdbf87f

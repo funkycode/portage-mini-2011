@@ -9,5 +9,5 @@ LICENSE=|| ( GPL-2 AFL-2.1 )
 RDEPEND=>=sys-apps/dbus-1.4.1 >=dev-libs/glib-2.26 >=dev-libs/expat-1.95.8
 SLOT=0
 SRC_URI=http://dbus.freedesktop.org/releases/dbus-glib/dbus-glib-0.98.tar.gz
-_eclasses_=bash-completion-r1	3480f8385cb9e31797e7b659e366e2d2
+_eclasses_=bash-completion-r1	fff8a4a7ab807c81d9000e0791370cb9
 _md5_=8369f185ecff7118cb0e97e6e730eb95

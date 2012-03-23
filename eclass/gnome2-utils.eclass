@@ -1,6 +1,5 @@
-# Copyright 1999-2011 Gentoo Foundation
+# Copyright owners: Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/eclass/gnome2-utils.eclass,v 1.25 2011/12/14 19:47:54 tetromino Exp $
 
 # @ECLASS: gnome2-utils.eclass
 # @MAINTAINER:
@@ -16,7 +15,7 @@
 #  * scrollkeeper (old Gnome help system) management
 
 case "${EAPI:-0}" in
-	0|1|2|3|4) ;;
+	0|1|2|3|4|4-python) ;;
 	*) die "EAPI=${EAPI} is not supported" ;;
 esac
 

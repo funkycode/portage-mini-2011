@@ -8,5 +8,5 @@ LICENSE=GPL-2
 RDEPEND=virtual/latex-base dev-lang/perl
 SLOT=0
 SRC_URI=http://www.phys.psu.edu/~collins/software/latexmk/latexmk-430a.zip
-_eclasses_=bash-completion-r1	3480f8385cb9e31797e7b659e366e2d2
+_eclasses_=bash-completion-r1	fff8a4a7ab807c81d9000e0791370cb9
 _md5_=07d86f5a6178952a291befe48cabf55b

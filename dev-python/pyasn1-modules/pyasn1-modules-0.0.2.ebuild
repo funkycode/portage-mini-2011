@@ -1,15 +1,13 @@
-# Copyright 1999-2012 Gentoo Foundation
+# Copyright owners: Gentoo Foundation
+#                   Arfrever Frehtes Taifersar Arahesis
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/dev-python/pyasn1-modules/pyasn1-modules-0.0.2.ebuild,v 1.1 2012/03/02 10:06:37 djc Exp $
 
-EAPI="3"
-PYTHON_DEPEND="2"
-SUPPORT_PYTHON_ABIS="1"
-RESTRICT_PYTHON_ABIS="3.* *-jython"
+EAPI="4-python"
+PYTHON_MULTIPLE_ABIS="1"
 
 inherit distutils
 
-DESCRIPTION="pyasn1 modules"
+DESCRIPTION="A collection of protocols modules written in ASN.1 language."
 HOMEPAGE="http://pyasn1.sourceforge.net/ http://pypi.python.org/pypi/pyasn1-modules"
 SRC_URI="mirror://pypi/${PN:0:1}/${PN}/${P}.tar.gz"
 
@@ -18,16 +16,16 @@ SLOT="0"
 KEYWORDS="~alpha ~amd64 ~arm ~hppa ~ia64 ~ppc ~ppc64 ~s390 ~sh ~sparc ~x86"
 IUSE=""
 
-RDEPEND="dev-python/pyasn1"
+RDEPEND="$(python_abi_depend ">=dev-python/pyasn1-0.1.1")"
 DEPEND="${RDEPEND}
-	dev-python/setuptools"
+	$(python_abi_depend dev-python/setuptools)"
 
 DOCS="CHANGES README"
-PYTHON_MODNAME="pyasn1_modules"
+PYTHON_MODULES="pyasn1_modules"
 
 src_install() {
 	distutils_src_install
 
 	insinto /usr/share/doc/${PF}/tools
-	doins tools/* || die "doins failed"
+	doins tools/*
 }

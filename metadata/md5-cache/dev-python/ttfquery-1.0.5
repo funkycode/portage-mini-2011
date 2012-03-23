@@ -1,12 +1,14 @@
 DEFINED_PHASES=compile install postinst postrm prepare setup
-DEPEND=dev-python/fonttools dev-python/numpy =dev-lang/python-2*
+DEPEND=dev-python/fonttools[python_abis_2.5?,python_abis_2.6?,python_abis_2.7?] dev-python/numpy[python_abis_2.5?,python_abis_2.6?,python_abis_2.7?] dev-python/setuptools[python_abis_2.5?,python_abis_2.6?,python_abis_2.7?] python_abis_2.5? ( dev-lang/python:2.5 ) python_abis_2.6? ( dev-lang/python:2.6 ) python_abis_2.7? ( dev-lang/python:2.7 )
 DESCRIPTION=Font metadata and glyph outline extraction utility library
-EAPI=4
-HOMEPAGE=http://ttfquery.sourceforge.net/ http://pypi.python.org/pypi/TTFQuery
+EAPI=4-python
+HOMEPAGE=http://ttfquery.sourceforge.net/ https://launchpad.net/ttfquery http://pypi.python.org/pypi/TTFQuery
+IUSE=python_abis_2.5 python_abis_2.6 python_abis_2.7
 KEYWORDS=~amd64 ~ia64 ~ppc ~x86
 LICENSE=BSD
-RDEPEND=dev-python/fonttools dev-python/numpy =dev-lang/python-2*
+RDEPEND=dev-python/fonttools[python_abis_2.5?,python_abis_2.6?,python_abis_2.7?] dev-python/numpy[python_abis_2.5?,python_abis_2.6?,python_abis_2.7?] python_abis_2.5? ( dev-lang/python:2.5 ) python_abis_2.6? ( dev-lang/python:2.6 ) python_abis_2.7? ( dev-lang/python:2.7 )
+REQUIRED_USE=|| ( python_abis_2.5 python_abis_2.6 python_abis_2.7 )
 SLOT=0
 SRC_URI=mirror://pypi/T/TTFQuery/TTFQuery-1.0.5.tar.gz
-_eclasses_=distutils	15ae23f6f8219a009bfcfff7724fe727	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	python	d6df8e9d4686f7550769a9777aa622b9	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68
-_md5_=ae0a7fcbf00040ecfb5e798c41c9c182
+_eclasses_=distutils	82a876811ffd4907daba6062958daa26	python	cb2844e25e38800105564c14a716c805
+_md5_=868cdb32afe97d36f645b858ded5f6e6

@@ -1,11 +1,10 @@
-# Copyright 1999-2011 Gentoo Foundation
+# Copyright owners: Gentoo Foundation
+#                   Arfrever Frehtes Taifersar Arahesis
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/dev-vcs/hgsubversion/hgsubversion-9999.ebuild,v 1.1 2011/12/21 23:11:09 floppym Exp $
 
-EAPI="3"
-PYTHON_DEPEND="2"
-SUPPORT_PYTHON_ABIS="1"
-RESTRICT_PYTHON_ABIS="3.* *-jython"
+EAPI="4-python"
+PYTHON_MULTIPLE_ABIS="1"
+PYTHON_RESTRICTED_ABIS="3.* *-jython *-pypy-*"
 
 inherit distutils mercurial
 
@@ -19,17 +18,14 @@ SLOT="0"
 KEYWORDS=""
 IUSE="test"
 
-RDEPEND="
-	>=dev-vcs/mercurial-1.4
+RDEPEND="$(python_abi_depend ">=dev-vcs/mercurial-1.4")
 	|| (
-		dev-python/subvertpy
-		>=dev-vcs/subversion-1.5[python]
-	)
-"
-DEPEND="
-	dev-python/setuptools
-	test? ( dev-python/nose )
-"
+		$(python_abi_depend dev-python/subvertpy)
+		$(python_abi_depend ">=dev-vcs/subversion-1.5[python]")
+	)"
+DEPEND="${RDEPEND}
+	$(python_abi_depend dev-python/setuptools)
+	test? ( $(python_abi_depend dev-python/nose) )"
 
 DOCS="README"
 
@@ -37,7 +33,7 @@ src_test() {
 	cd tests
 
 	testing() {
-		PYTHONPATH="../build-${PYTHON_ABI}/lib" "$(PYTHON)" run.py
+		python_execute PYTHONPATH="../build-${PYTHON_ABI}/lib" "$(PYTHON)" run.py
 	}
 	python_execute_function testing
 }
