@@ -2,7 +2,7 @@ DEFINED_PHASES=-
 DESCRIPTION=Virtual for OpenCL implementations
 EAPI=4
 IUSE=video_cards_fglrx video_cards_nvidia
-KEYWORDS=~amd64 ~x86
+KEYWORDS=amd64 ~x86
 RDEPEND=app-admin/eselect-opencl || ( video_cards_fglrx? ( >=x11-drivers/ati-drivers-12.1-r1 ) video_cards_nvidia? ( >=x11-drivers/nvidia-drivers-290.10-r2 ) dev-util/intel-ocl-sdk )
 SLOT=0
-_md5_=0fedcb3f5b9435d99e8b5d9aceb4f960
+_md5_=32ba7d1d6ecf0ec82d8088a8951c8d9b

@@ -1,13 +1,13 @@
 DEFINED_PHASES=compile install postinst postrm prepare setup unpack
-DEPEND=doc? ( dev-python/sphinx ) emacs? ( virtual/emacs ) dev-lang/python
+DEPEND=doc? ( dev-python/sphinx ) emacs? ( virtual/emacs ) =dev-lang/python-2*
 DESCRIPTION=A semantic grep for the C language
 EAPI=4
 HOMEPAGE=http://home.regit.org/software/coccigrep/
 IUSE=doc emacs vim
 KEYWORDS=~amd64 ~x86
 LICENSE=GPL-3
-RDEPEND=dev-util/coccinelle[python] || ( dev-lang/python:2.7 dev-python/argparse ) emacs? ( virtual/emacs ) vim? ( || ( app-editors/vim app-editors/gvim ) ) dev-lang/python
+RDEPEND=dev-util/coccinelle[python] || ( dev-lang/python:2.7 dev-python/argparse ) emacs? ( virtual/emacs ) vim? ( || ( app-editors/vim app-editors/gvim ) ) =dev-lang/python-2*
 SLOT=0
 SRC_URI=https://github.com/regit/coccigrep/tarball/v1.8 -> coccigrep-1.8.tar.gz
 _eclasses_=distutils	82a876811ffd4907daba6062958daa26	elisp-common	aa9676ce708f8aacf54ff9df8015963b	python	cb2844e25e38800105564c14a716c805
-_md5_=f1b741641b6746bde2384793bfd2272f
+_md5_=8c4609a85661787f414d145840fe8063

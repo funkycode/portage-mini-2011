@@ -1,6 +1,6 @@
 DEFINED_PHASES=-
 DESCRIPTION=Virtual for ExtUtils-Install
-KEYWORDS=alpha amd64 ~arm hppa ia64 ppc ~ppc64 ~s390 ~sh sparc x86 ~x86-fbsd
+KEYWORDS=alpha amd64 ~arm hppa ia64 ppc ~ppc64 ~s390 ~sh sparc x86 ~x86-fbsd ~ppc-aix ~x64-freebsd ~x86-freebsd ~x86-interix ~amd64-linux ~ia64-linux ~x86-linux ~ppc-macos ~x64-macos ~x86-macos ~m68k-mint ~sparc-solaris ~sparc64-solaris ~x64-solaris ~x86-solaris
 RDEPEND=|| ( ~dev-lang/perl-5.10.1 ~perl-core/ExtUtils-Install-1.54 )
 SLOT=0
-_md5_=3a80ebd597dfe191e08ed8aaefe95a4d
+_md5_=52ab3241a8c74165f2ea98a3a931b5fc

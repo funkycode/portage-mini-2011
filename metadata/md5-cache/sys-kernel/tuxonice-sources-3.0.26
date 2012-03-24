@@ -1,0 +1,15 @@
+DEFINED_PHASES=compile install postinst postrm preinst setup test unpack
+DEPEND=!build? ( sys-apps/sed >=sys-devel/binutils-2.11.90.0.31 )
+DESCRIPTION=TuxOnIce + Gentoo patchset sources
+EAPI=4
+HOMEPAGE=http://dev.gentoo.org/~mpagano/genpatches/ http://www.tuxonice.net
+IUSE=symlink build
+KEYWORDS=~amd64 ~x86
+LICENSE=GPL-2 freedist
+PDEPEND=!build? ( virtual/dev-manager )
+RDEPEND=>=sys-apps/tuxonice-userui-1.0 || ( >=sys-power/hibernate-script-2.0 sys-power/pm-utils ) !build? ( >=sys-libs/ncurses-5.2 sys-devel/make )
+RESTRICT=binchecks strip
+SLOT=3.0.26
+SRC_URI=mirror://kernel/linux/kernel/v3.x/linux-3.0.tar.bz2 mirror://gentoo/genpatches-3.0-22.base.tar.bz2 mirror://gentoo/genpatches-3.0-22.extras.tar.bz2 http://dev.gentoo.org/~pacho/tuxonice/current-tuxonice-for-3.0_20111012.patch.bz2
+_eclasses_=eutils	0f008baa9552301d379ae5df233e9713	kernel-2	4ad25895a12c475dde98376a2e743827	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e	versionator	6601b4c5b3f019a993db59a50e1854e4
+_md5_=3ccbc236801fff2672ea94261beebb0b
