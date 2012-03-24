@@ -1,0 +1,12 @@
+DEFINED_PHASES=install setup
+DESCRIPTION=the All-In-One Solution for Remote Access and Support over the Internet
+EAPI=4
+HOMEPAGE=http://www.teamviewer.com
+KEYWORDS=~*
+LICENSE=TeamViewerNovember2011
+RDEPEND=app-emulation/wine
+RESTRICT=mirror strip
+SLOT=0
+SRC_URI=http://www.teamviewer.com/download/teamviewer_linux.tar.gz -> teamviewer-7.0.9310.tar.gz
+_eclasses_=eutils	0f008baa9552301d379ae5df233e9713	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
+_md5_=e4afac73cd5c61d64c1836b81d3e911c
