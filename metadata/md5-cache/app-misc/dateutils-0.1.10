@@ -6,5 +6,5 @@ HOMEPAGE=http://hroptatyr.github.com/dateutils/
 KEYWORDS=~amd64 ~x86
 LICENSE=BSD
 SLOT=0
-SRC_URI=mirror://github/hroptatyr/dateutils/dateutils-0.1.8.tar.xz
-_md5_=ffddcefc7ac469b6cc100c628dd6d83a
+SRC_URI=mirror://github/hroptatyr/dateutils/dateutils-0.1.10.tar.xz
+_md5_=89f04b391eb1c782edb3f0923f6e163c

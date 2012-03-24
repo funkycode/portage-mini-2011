@@ -1,5 +1,6 @@
-DEFINED_PHASES=compile install setup unpack
+DEFINED_PHASES=compile configure install prepare setup
 DESCRIPTION=Newlib is a C library intended for use on embedded systems
+EAPI=4
 HOMEPAGE=http://sourceware.org/newlib/
 IUSE=nls threads unicode crosscompile_opts_headers-only
 KEYWORDS=-* ~arm ~hppa ~m68k ~mips ~ppc ~ppc64 ~sh ~sparc ~x86
@@ -8,4 +9,4 @@ RESTRICT=strip
 SLOT=0
 SRC_URI=ftp://sources.redhat.com/pub/newlib/newlib-1.20.0.tar.gz
 _eclasses_=eutils	0f008baa9552301d379ae5df233e9713	flag-o-matic	66cb710a2aa184a5687fe1289d7973ab	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
-_md5_=d0fafb67a0e8083d7968f23b4e511a94
+_md5_=71bf5d7e780d77113038d5706c2559e5

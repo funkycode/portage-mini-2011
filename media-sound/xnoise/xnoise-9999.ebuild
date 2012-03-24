@@ -1,14 +1,14 @@
-# Copyright 1999-2011 Gentoo Foundation
+# Copyright 1999-2012 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/media-sound/xnoise/xnoise-9999.ebuild,v 1.5 2011/12/18 10:26:44 angelos Exp $
+# $Header: /var/cvsroot/gentoo-x86/media-sound/xnoise/xnoise-9999.ebuild,v 1.6 2012/03/23 20:41:08 angelos Exp $
 
 EAPI=4
-inherit fdo-mime gnome2-utils mercurial
+inherit fdo-mime gnome2-utils git-2
 
 DESCRIPTION="A media player for Gtk+ with a slick GUI, great speed and lots of
 features"
 HOMEPAGE="http://www.xnoise-media-player.com/"
-EHG_REPO_URI="https://xnoise.googlecode.com/hg/"
+EGIT_REPO_URI="git://github.com/shuerhaaken/${PN}.git"
 
 LICENSE="GPL-2"
 SLOT="0"
@@ -16,20 +16,18 @@ KEYWORDS=""
 IUSE="+lastfm libnotify +lyrics"
 
 RDEPEND="dev-db/sqlite:3
-	>=dev-libs/glib-2.26:2
-	dev-libs/libunique:1
+	>=dev-libs/glib-2.28:2
 	dev-libs/libxml2:2
 	media-libs/gst-plugins-base:0.10
 	media-libs/gstreamer:0.10
 	media-libs/taglib
 	x11-libs/cairo
-	x11-libs/gdk-pixbuf:2
-	x11-libs/gtk+:2
+	x11-libs/gtk+:3
 	lastfm? ( net-libs/libsoup:2.4 )
 	libnotify? ( x11-libs/libnotify )
 	lyrics? ( net-libs/libsoup:2.4 )"
 DEPEND="${RDEPEND}
-	dev-lang/vala:0.12
+	dev-lang/vala:0.16
 	dev-util/intltool
 	dev-util/pkgconfig
 	gnome-base/gnome-common:3
@@ -43,16 +41,14 @@ src_prepare() {
 }
 
 src_configure() {
-	VALAC=$(type -p valac-0.12) \
+	VALAC=$(type -p valac-0.16) \
 	econf \
-		--disable-soundmenu \
 		--enable-soundmenu2 \
 		$(use_enable lastfm) \
 		$(use_enable libnotify notifications) \
-		$(use_enable lyrics leoslyrics) \
-		$(use_enable lyrics lyricsfly) \
-		$(use_enable lyrics lyricwiki) \
-		$(use_enable lyrics chartlyrics)
+		$(use_enable lyrics azlyrics) \
+		$(use_enable lyrics chartlyrics) \
+		$(use_enable lyrics lyricwiki)
 }
 
 src_install() {

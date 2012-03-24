@@ -1,0 +1,13 @@
+DEFINED_PHASES=configure install prepare
+DEPEND=dev-libs/boost dev-libs/libedit dev-libs/crypto++ sys-apps/keyutils fuse? ( sys-fs/fuse ) libatomic? ( dev-libs/libatomic_ops ) gtk? ( x11-libs/gtk+:2 dev-cpp/gtkmm:2.4 gnome-base/librsvg ) radosgw? ( dev-libs/fcgi dev-libs/expat ) tcmalloc? ( dev-util/google-perftools ) dev-util/pkgconfig || ( >=sys-devel/automake-1.11.1:1.11 ) >=sys-devel/autoconf-2.68 sys-devel/libtool
+DESCRIPTION=Ceph distributed filesystem
+EAPI=4
+HOMEPAGE=http://ceph.newdream.net/
+IUSE=debug fuse gtk libatomic radosgw static-libs tcmalloc
+KEYWORDS=~amd64 ~x86
+LICENSE=LGPL-2.1
+RDEPEND=dev-libs/boost dev-libs/libedit dev-libs/crypto++ sys-apps/keyutils fuse? ( sys-fs/fuse ) libatomic? ( dev-libs/libatomic_ops ) gtk? ( x11-libs/gtk+:2 dev-cpp/gtkmm:2.4 gnome-base/librsvg ) radosgw? ( dev-libs/fcgi dev-libs/expat ) tcmalloc? ( dev-util/google-perftools ) sys-fs/btrfs-progs
+SLOT=0
+SRC_URI=http://ceph.newdream.net/download/ceph-0.44.tar.gz
+_eclasses_=autotools	addbdf6cce5024ac93ad2084ad5e1d2d	eutils	0f008baa9552301d379ae5df233e9713	libtool	5f623f5a211fb1b2d84d88ee49959a54	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
+_md5_=7a0beee410cee8f4f654f0d378996e8f

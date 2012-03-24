@@ -1,0 +1,12 @@
+DEFINED_PHASES=configure install postinst prepare setup
+DEPEND=sys-devel/autoconf:2.1 || ( >=sys-devel/automake-1.11.1:1.11 ) =sys-devel/autoconf-2.1* sys-devel/libtool
+DESCRIPTION=Small and fast multiplexing webserver.
+EAPI=4
+HOMEPAGE=http://www.acme.com/software/thttpd/
+IUSE=static
+KEYWORDS=~amd64 ~hppa ~mips ~ppc ~sparc ~x86 ~x86-fbsd
+LICENSE=BSD
+SLOT=0
+SRC_URI=http://www.acme.com/software/thttpd/thttpd-2.25b.tar.gz
+_eclasses_=autotools	addbdf6cce5024ac93ad2084ad5e1d2d	eutils	0f008baa9552301d379ae5df233e9713	flag-o-matic	66cb710a2aa184a5687fe1289d7973ab	libtool	5f623f5a211fb1b2d84d88ee49959a54	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
+_md5_=7b2f50ac397d680b004471b70a82b379

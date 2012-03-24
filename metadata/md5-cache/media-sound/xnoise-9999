@@ -1,11 +1,11 @@
 DEFINED_PHASES=configure install postinst postrm preinst prepare unpack
-DEPEND=dev-db/sqlite:3 >=dev-libs/glib-2.26:2 dev-libs/libunique:1 dev-libs/libxml2:2 media-libs/gst-plugins-base:0.10 media-libs/gstreamer:0.10 media-libs/taglib x11-libs/cairo x11-libs/gdk-pixbuf:2 x11-libs/gtk+:2 lastfm? ( net-libs/libsoup:2.4 ) libnotify? ( x11-libs/libnotify ) lyrics? ( net-libs/libsoup:2.4 ) dev-lang/vala:0.12 dev-util/intltool dev-util/pkgconfig gnome-base/gnome-common:3 >=sys-devel/autoconf-2.67:2.5 sys-devel/gettext >=sys-apps/sed-4 dev-vcs/mercurial
+DEPEND=dev-db/sqlite:3 >=dev-libs/glib-2.28:2 dev-libs/libxml2:2 media-libs/gst-plugins-base:0.10 media-libs/gstreamer:0.10 media-libs/taglib x11-libs/cairo x11-libs/gtk+:3 lastfm? ( net-libs/libsoup:2.4 ) libnotify? ( x11-libs/libnotify ) lyrics? ( net-libs/libsoup:2.4 ) dev-lang/vala:0.16 dev-util/intltool dev-util/pkgconfig gnome-base/gnome-common:3 >=sys-devel/autoconf-2.67:2.5 sys-devel/gettext >=sys-apps/sed-4 dev-vcs/git
 DESCRIPTION=A media player for Gtk+ with a slick GUI, great speed and lots of features
 EAPI=4
 HOMEPAGE=http://www.xnoise-media-player.com/
 IUSE=+lastfm libnotify +lyrics
 LICENSE=GPL-2
-RDEPEND=dev-db/sqlite:3 >=dev-libs/glib-2.26:2 dev-libs/libunique:1 dev-libs/libxml2:2 media-libs/gst-plugins-base:0.10 media-libs/gstreamer:0.10 media-libs/taglib x11-libs/cairo x11-libs/gdk-pixbuf:2 x11-libs/gtk+:2 lastfm? ( net-libs/libsoup:2.4 ) libnotify? ( x11-libs/libnotify ) lyrics? ( net-libs/libsoup:2.4 )
+RDEPEND=dev-db/sqlite:3 >=dev-libs/glib-2.28:2 dev-libs/libxml2:2 media-libs/gst-plugins-base:0.10 media-libs/gstreamer:0.10 media-libs/taglib x11-libs/cairo x11-libs/gtk+:3 lastfm? ( net-libs/libsoup:2.4 ) libnotify? ( x11-libs/libnotify ) lyrics? ( net-libs/libsoup:2.4 )
 SLOT=0
-_eclasses_=eutils	0f008baa9552301d379ae5df233e9713	fdo-mime	0acfe1a88fd8751a1d5dc671168219fa	gnome2-utils	0556f216199e15cc37899e1130da3824	mercurial	273cde614620d32d35127c71eb18d702	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
-_md5_=261577dc7125f9021036e3e8864b97d8
+_eclasses_=fdo-mime	0acfe1a88fd8751a1d5dc671168219fa	git-2	6bb20ec18cca375571bcbe67bcf2e1d7	gnome2-utils	0556f216199e15cc37899e1130da3824
+_md5_=2087c57450116b09a14785acec732623

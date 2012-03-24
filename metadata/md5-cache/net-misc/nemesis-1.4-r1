@@ -1,0 +1,12 @@
+DEFINED_PHASES=prepare
+DEPEND=net-libs/libpcap =net-libs/libnet-1.0*
+DESCRIPTION=A commandline-based, portable human IP stack for UNIX/Linux
+EAPI=4
+HOMEPAGE=http://nemesis.sourceforge.net/
+KEYWORDS=~alpha ~amd64 ~sparc ~x86
+LICENSE=as-is
+RDEPEND=net-libs/libpcap
+SLOT=0
+SRC_URI=mirror://sourceforge/nemesis/nemesis-1.4.tar.gz
+_eclasses_=eutils	0f008baa9552301d379ae5df233e9713	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
+_md5_=f075c886219e2ba27b05a65e86b2cc40
