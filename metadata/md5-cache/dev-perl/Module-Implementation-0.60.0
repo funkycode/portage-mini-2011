@@ -4,10 +4,10 @@ DESCRIPTION=Loads one of several alternate underlying implementations for a modu
 EAPI=4
 HOMEPAGE=http://search.cpan.org/dist/Module-Implementation/
 IUSE=test
-KEYWORDS=~amd64 ~arm ~hppa ~x86 ~x86-fbsd ~x86-freebsd ~amd64-linux ~x86-linux ~ppc-macos ~x64-macos ~x86-macos ~x86-solaris
+KEYWORDS=~amd64 ~arm ~hppa ~ppc ~x86 ~x86-fbsd ~x86-freebsd ~amd64-linux ~x86-linux ~ppc-macos ~x64-macos ~x86-macos ~x86-solaris
 LICENSE=Artistic-2
 RDEPEND=>=dev-perl/Module-Runtime-0.12.0 dev-perl/Try-Tiny dev-lang/perl[-build]
 SLOT=0
 SRC_URI=mirror://cpan/authors/id/D/DR/DROLSKY/Module-Implementation-0.06.tar.gz
 _eclasses_=base	56b5d6bcc4a0fc2a3055a84fd4a5c36b	eutils	0f008baa9552301d379ae5df233e9713	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	perl-module	d4141c106a05d2a700d500676082a9f9	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
-_md5_=66aa39e7bbe97d7650a2fbf9b2295f40
+_md5_=4c6e952831cbf320bbe9bfdd80d28ab7

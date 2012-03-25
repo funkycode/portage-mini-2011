@@ -4,10 +4,10 @@ DESCRIPTION=Farsight connection manager for the Telepathy framework
 EAPI=3
 HOMEPAGE=http://telepathy.freedesktop.org
 IUSE=python
-KEYWORDS=~alpha amd64 ~ia64 ppc ~sparc x86 ~x86-linux
+KEYWORDS=alpha amd64 ia64 ppc sparc x86 ~x86-linux
 LICENSE=LGPL-2.1
 RDEPEND=>=dev-libs/glib-2.16:2 >=sys-apps/dbus-0.60 >=dev-libs/dbus-glib-0.60 >=net-libs/telepathy-glib-0.14.3 >=net-libs/farsight2-0.0.29 python? ( >=dev-python/pygobject-2.12.0:2 >=dev-python/gst-python-0.10.10 ) python? ( || ( =dev-lang/python-2.7* =dev-lang/python-2.6* ) )
 SLOT=0
 SRC_URI=http://telepathy.freedesktop.org/releases/telepathy-farsight/telepathy-farsight-0.0.19.tar.gz
 _eclasses_=python	cb2844e25e38800105564c14a716c805
-_md5_=36cf350af50f887e757a34d2aa61cf4f
+_md5_=0def5135db0e9abc3ae642706b9f6075

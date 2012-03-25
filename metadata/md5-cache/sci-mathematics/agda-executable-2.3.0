@@ -1,0 +1,11 @@
+DEFINED_PHASES=compile configure install postinst prepare prerm setup test
+DEPEND=~sci-mathematics/agda-2.3.0 >=dev-haskell/cabal-1.8 >=dev-lang/ghc-6.8.2 >=dev-haskell/cabal-1.1.4
+DESCRIPTION=Command-line program for type-checking and compiling Agda programs
+EAPI=3
+HOMEPAGE=http://wiki.portal.chalmers.se/agda/
+KEYWORDS=~amd64 ~x86
+LICENSE=MIT
+SLOT=0
+SRC_URI=http://hackage.haskell.org/packages/archive/Agda-executable/2.3.0/Agda-executable-2.3.0.tar.gz
+_eclasses_=eutils	0f008baa9552301d379ae5df233e9713	ghc-package	83329f14231f6ba420fb965d858f37c0	haskell-cabal	895f4f482b17c28f2f3f24062fc6ac8f	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e	versionator	6601b4c5b3f019a993db59a50e1854e4
+_md5_=07989650b23198cf8205fc49028a4063

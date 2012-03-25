@@ -3,10 +3,10 @@ DEPEND=>=dev-perl/libwww-perl-5.834 >=dev-perl/XML-LibXML-1.70 >=dev-perl/XML-Pa
 DESCRIPTION=An implementation of XML-RPC
 EAPI=4
 HOMEPAGE=http://search.cpan.org/dist/RPC-XML/
-KEYWORDS=~alpha ~amd64 ~ia64 ~ppc ~sparc ~x86 ~x86-fbsd
+KEYWORDS=~alpha ~amd64 ~ppc ~x86 ~x86-fbsd
 LICENSE=|| ( Artistic-2 LGPL-2.1 )
 RDEPEND=>=dev-perl/libwww-perl-5.834 >=dev-perl/XML-LibXML-1.70 >=dev-perl/XML-Parser-2.31 dev-perl/net-server >=virtual/perl-Scalar-List-Utils-1.20 dev-lang/perl[-build]
 SLOT=0
 SRC_URI=mirror://cpan/authors/id/R/RJ/RJRAY/RPC-XML-0.74.tar.gz
 _eclasses_=base	56b5d6bcc4a0fc2a3055a84fd4a5c36b	eutils	0f008baa9552301d379ae5df233e9713	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	perl-module	d4141c106a05d2a700d500676082a9f9	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
-_md5_=425302d0304e3b479ebfd22bd8259e0a
+_md5_=fc5c663924cacd5396fff7d58ea99e25

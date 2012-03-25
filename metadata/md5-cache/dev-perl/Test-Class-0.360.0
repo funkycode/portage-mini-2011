@@ -4,10 +4,10 @@ DESCRIPTION=Easily create test classes in an xUnit style.
 EAPI=4
 HOMEPAGE=http://search.cpan.org/dist/Test-Class/
 IUSE=test
-KEYWORDS=amd64 ~ia64 ~sparc x86 ~amd64-linux ~x86-linux ~ppc-macos ~x86-macos
+KEYWORDS=amd64 x86 ~amd64-linux ~x86-linux ~ppc-macos ~x86-macos
 LICENSE=|| ( Artistic GPL-1 GPL-2 GPL-3 )
 RDEPEND=>=virtual/perl-Storable-2 >=virtual/perl-Test-Simple-0.78 dev-perl/MRO-Compat dev-lang/perl[-build]
 SLOT=0
 SRC_URI=mirror://cpan/authors/id/A/AD/ADIE/Test-Class-0.36.tar.gz
 _eclasses_=base	56b5d6bcc4a0fc2a3055a84fd4a5c36b	eutils	0f008baa9552301d379ae5df233e9713	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	perl-module	d4141c106a05d2a700d500676082a9f9	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
-_md5_=5762302721ce3c36ddcebf355fc6981c
+_md5_=e318889c80215d272dc13b002dd61b79

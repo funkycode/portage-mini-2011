@@ -2,10 +2,10 @@ DEFINED_PHASES=compile install postinst postrm preinst prerm setup test unpack
 DEPEND=>=dev-perl/Set-IntSpan-1.07 dev-lang/perl
 DESCRIPTION=Manage newsrc files
 HOMEPAGE=http://search.cpan.org/~swmcd/
-KEYWORDS=alpha amd64 ~hppa ia64 ~ppc sparc x86
+KEYWORDS=alpha amd64 ~hppa ~ppc x86
 LICENSE=|| ( Artistic GPL-2 )
 RDEPEND=>=dev-perl/Set-IntSpan-1.07 dev-lang/perl
 SLOT=0
 SRC_URI=mirror://cpan/authors/id/S/SW/SWMCD/News-Newsrc-1.08.tar.gz
 _eclasses_=base	56b5d6bcc4a0fc2a3055a84fd4a5c36b	eutils	0f008baa9552301d379ae5df233e9713	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	perl-module	d4141c106a05d2a700d500676082a9f9	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
-_md5_=14637d674304cc46007a28c21f18c757
+_md5_=5928da0e1c14857ad6fe3be9f9728a31

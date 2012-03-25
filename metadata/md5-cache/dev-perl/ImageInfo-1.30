@@ -3,10 +3,10 @@ DEPEND=>=dev-perl/IO-String-1.01 dev-perl/XML-LibXML dev-perl/XML-Simple dev-lan
 DESCRIPTION=The Perl Image-Info Module
 EAPI=2
 HOMEPAGE=http://search.cpan.org/dist/Image-Info/
-KEYWORDS=alpha amd64 ia64 ppc ppc64 sparc x86
+KEYWORDS=alpha amd64 ppc ppc64 x86
 LICENSE=|| ( Artistic GPL-1 GPL-2 GPL-3 )
 RDEPEND=>=dev-perl/IO-String-1.01 dev-perl/XML-LibXML dev-perl/XML-Simple dev-lang/perl[-build]
 SLOT=0
 SRC_URI=mirror://cpan/authors/id/S/SR/SREZIC/Image-Info-1.30.tar.gz
 _eclasses_=base	56b5d6bcc4a0fc2a3055a84fd4a5c36b	eutils	0f008baa9552301d379ae5df233e9713	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	perl-module	d4141c106a05d2a700d500676082a9f9	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
-_md5_=98c53b67793f4f62ac53baab75e8cb19
+_md5_=8163a0594e07f72414d4a7633d2dcb4f

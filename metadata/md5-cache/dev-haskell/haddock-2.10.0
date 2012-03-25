@@ -1,5 +1,5 @@
-DEFINED_PHASES=compile configure install postinst prerm setup test
-DEPEND=dev-haskell/ghc-paths[profile?] =dev-haskell/xhtml-3000.2*[profile?] >=dev-lang/ghc-7.4 >=dev-haskell/cabal-1.10 hscolour? ( dev-haskell/hscolour ) >=dev-haskell/cabal-1.1.4
+DEFINED_PHASES=compile configure install postinst prepare prerm setup test
+DEPEND=dev-haskell/ghc-paths[profile?] =dev-haskell/xhtml-3000.2*[profile?] >=dev-lang/ghc-7.4 >=dev-haskell/cabal-1.14 hscolour? ( dev-haskell/hscolour ) >=dev-haskell/cabal-1.1.4
 DESCRIPTION=A documentation-generation tool for Haskell libraries
 EAPI=4
 HOMEPAGE=http://www.haskell.org/haddock/
@@ -11,4 +11,4 @@ RESTRICT=test
 SLOT=0
 SRC_URI=http://hackage.haskell.org/packages/archive/haddock/2.10.0/haddock-2.10.0.tar.gz
 _eclasses_=eutils	0f008baa9552301d379ae5df233e9713	ghc-package	83329f14231f6ba420fb965d858f37c0	haskell-cabal	895f4f482b17c28f2f3f24062fc6ac8f	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	pax-utils	3551398d6ede2b572568832730cc2a45	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e	versionator	6601b4c5b3f019a993db59a50e1854e4
-_md5_=2e3d77e86bab9b990e002f60a41cb5ab
+_md5_=cdd13e7c7b26ccb9aa18b96887ac56fd
