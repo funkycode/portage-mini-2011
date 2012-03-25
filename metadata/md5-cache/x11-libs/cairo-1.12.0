@@ -1,0 +1,15 @@
+DEFINED_PHASES=configure install prepare
+DEPEND=media-libs/fontconfig media-libs/freetype:2 media-libs/libpng:0 sys-libs/zlib >=x11-libs/pixman-0.18.4 directfb? ( dev-libs/DirectFB ) glib? ( >=dev-libs/glib-2.28.6:2 ) opengl? ( virtual/opengl ) openvg? ( media-libs/mesa[openvg] ) qt4? ( >=x11-libs/qt-gui-4.4:4 ) svg? ( dev-libs/libxml2 ) X? ( >=x11-libs/libXrender-0.6 x11-libs/libXext x11-libs/libX11 x11-libs/libXft drm? ( >=sys-fs/udev-136 gallium? ( media-libs/mesa[gallium] ) ) ) xcb? ( x11-libs/libxcb x11-libs/xcb-util ) dev-util/pkgconfig >=sys-devel/libtool-2 doc? ( >=dev-util/gtk-doc-1.6 ~app-text/docbook-xml-dtd-4.2 ) X? ( x11-proto/renderproto drm? ( x11-proto/xproto >=x11-proto/xextproto-7.1 ) ) || ( >=sys-devel/automake-1.11.1:1.11 ) >=sys-devel/autoconf-2.68 sys-devel/libtool
+DESCRIPTION=A vector graphics library with cross-device output support
+EAPI=4
+HOMEPAGE=http://cairographics.org/
+IUSE=X aqua debug directfb doc drm gallium +glib opengl openvg qt4 static-libs +svg xcb
+KEYWORDS=~alpha ~amd64 ~arm ~hppa ~ia64 ~mips ~ppc ~ppc64 ~s390 ~sh ~sparc ~x86 ~x86-fbsd ~x86-freebsd ~x86-interix ~amd64-linux ~x86-linux ~ppc-macos ~x64-macos ~x86-macos ~sparc-solaris ~sparc64-solaris ~x64-solaris ~x86-solaris
+LICENSE=|| ( LGPL-2.1 MPL-1.1 )
+RDEPEND=media-libs/fontconfig media-libs/freetype:2 media-libs/libpng:0 sys-libs/zlib >=x11-libs/pixman-0.18.4 directfb? ( dev-libs/DirectFB ) glib? ( >=dev-libs/glib-2.28.6:2 ) opengl? ( virtual/opengl ) openvg? ( media-libs/mesa[openvg] ) qt4? ( >=x11-libs/qt-gui-4.4:4 ) svg? ( dev-libs/libxml2 ) X? ( >=x11-libs/libXrender-0.6 x11-libs/libXext x11-libs/libX11 x11-libs/libXft drm? ( >=sys-fs/udev-136 gallium? ( media-libs/mesa[gallium] ) ) ) xcb? ( x11-libs/libxcb x11-libs/xcb-util )
+REQUIRED_USE=drm? ( X ) gallium? ( drm )
+RESTRICT=test
+SLOT=0
+SRC_URI=http://cairographics.org/releases/cairo-1.12.0.tar.gz
+_eclasses_=autotools	addbdf6cce5024ac93ad2084ad5e1d2d	eutils	0f008baa9552301d379ae5df233e9713	flag-o-matic	66cb710a2aa184a5687fe1289d7973ab	libtool	5f623f5a211fb1b2d84d88ee49959a54	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
+_md5_=2ea14cd9befa8be6bc6b47bc024bb964

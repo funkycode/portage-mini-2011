@@ -4,10 +4,10 @@ DESCRIPTION=Critique Perl source code for best-practices
 EAPI=4
 HOMEPAGE=http://search.cpan.org/dist/Perl-Critic/
 IUSE=test
-KEYWORDS=~amd64 ~ppc ~sparc ~x86 ~amd64-linux ~x86-linux ~ppc-macos ~x86-macos ~sparc-solaris
+KEYWORDS=~amd64 ~ppc ~x86 ~amd64-linux ~x86-linux ~ppc-macos ~x86-macos ~sparc-solaris
 LICENSE=|| ( Artistic GPL-1 GPL-2 GPL-3 )
 RDEPEND=>=virtual/perl-Module-Pluggable-3.1 >=dev-perl/Config-Tiny-2 >=dev-perl/Email-Address-1.88.9 dev-perl/List-MoreUtils dev-perl/IO-String dev-perl/perltidy >=dev-perl/PPI-1.215 dev-perl/PPIx-Utilities >=dev-perl/PPIx-Regexp-0.19.0 dev-perl/Pod-Spell >=dev-perl/set-scalar-1.20 dev-perl/File-Which dev-perl/B-Keywords dev-perl/Readonly dev-perl/Exception-Class dev-perl/String-Format >=virtual/perl-version-0.77 dev-lang/perl[-build]
 SLOT=0
 SRC_URI=mirror://cpan/authors/id/E/EL/ELLIOTJS/Perl-Critic-1.116.tar.gz
 _eclasses_=base	56b5d6bcc4a0fc2a3055a84fd4a5c36b	eutils	0f008baa9552301d379ae5df233e9713	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	perl-module	d4141c106a05d2a700d500676082a9f9	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
-_md5_=bdf6974ef2b109602756c6ace15f5154
+_md5_=373dcfb1166888dc7c3cb008ff4ba94b

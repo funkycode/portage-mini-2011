@@ -4,10 +4,10 @@ DESCRIPTION=Simple and lightweight interface to the SOAP protocol (sic) both on 
 EAPI=4
 HOMEPAGE=http://search.cpan.org/dist/SOAP-Lite/
 IUSE=jabber ssl
-KEYWORDS=~alpha ~amd64 ~ia64 ~ppc ~ppc64 ~sparc ~x86 ~amd64-linux ~x86-linux
+KEYWORDS=~alpha ~amd64 ~ppc ~ppc64 ~x86 ~amd64-linux ~x86-linux
 LICENSE=|| ( Artistic GPL-2 )
 RDEPEND=dev-perl/Class-Inspector dev-perl/XML-Parser dev-perl/libwww-perl virtual/perl-libnet dev-perl/MIME-Lite virtual/perl-MIME-Base64 ssl? ( dev-perl/Crypt-SSLeay ) jabber? ( dev-perl/Net-Jabber ) ssl? ( dev-perl/IO-Socket-SSL ) virtual/perl-IO-Compress >=dev-perl/MIME-tools-5.413 virtual/perl-version dev-lang/perl dev-lang/perl[-build]
 SLOT=0
 SRC_URI=mirror://cpan/authors/id/M/MK/MKUTTER/SOAP-Lite-0.712.tar.gz
 _eclasses_=base	56b5d6bcc4a0fc2a3055a84fd4a5c36b	eutils	0f008baa9552301d379ae5df233e9713	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	perl-module	d4141c106a05d2a700d500676082a9f9	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
-_md5_=5425e18367f84f8847d01be9b656e221
+_md5_=a5b76e7cb3ea3633d816988d686eb732

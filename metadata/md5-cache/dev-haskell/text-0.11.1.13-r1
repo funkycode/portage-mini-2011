@@ -1,5 +1,5 @@
 DEFINED_PHASES=compile configure install postinst prepare prerm setup test
-DEPEND=>=dev-haskell/deepseq-1.1.0.0[profile?] >=dev-lang/ghc-6.10.1 >=dev-haskell/cabal-1.8 test? ( >=dev-haskell/quickcheck-2.4.0.1[profile?] >=dev-haskell/test-framework-0.4[profile?] <dev-haskell/test-framework-0.6[profile?] <dev-haskell/test-framework-hunit-0.3[profile?] <dev-haskell/test-framework-quickcheck2-0.3[profile?] ) doc? ( dev-haskell/haddock ) hscolour? ( dev-haskell/hscolour ) >=dev-haskell/cabal-1.1.4
+DEPEND=>=dev-haskell/deepseq-1.1.0.0[profile?] >=dev-lang/ghc-6.10.1 >=dev-haskell/cabal-1.8 test? ( >=dev-haskell/quickcheck-2.4.0.1[profile?] >=dev-haskell/test-framework-0.4[profile?] <dev-haskell/test-framework-0.7[profile?] <dev-haskell/test-framework-hunit-0.3[profile?] <dev-haskell/test-framework-quickcheck2-0.3[profile?] ) doc? ( dev-haskell/haddock ) hscolour? ( dev-haskell/hscolour ) >=dev-haskell/cabal-1.1.4
 DESCRIPTION=An efficient packed Unicode text type.
 EAPI=4
 HOMEPAGE=https://github.com/bos/text
@@ -10,4 +10,4 @@ RDEPEND=>=dev-haskell/deepseq-1.1.0.0[profile?] >=dev-lang/ghc-6.10.1 dev-lang/g
 SLOT=0
 SRC_URI=http://hackage.haskell.org/packages/archive/text/0.11.1.13/text-0.11.1.13.tar.gz
 _eclasses_=eutils	0f008baa9552301d379ae5df233e9713	ghc-package	83329f14231f6ba420fb965d858f37c0	haskell-cabal	895f4f482b17c28f2f3f24062fc6ac8f	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e	versionator	6601b4c5b3f019a993db59a50e1854e4
-_md5_=3aa81da9356a2f2021f4c152ab0ebe41
+_md5_=9b29ec76ee9358d7d598301a4717df39
