@@ -2,7 +2,7 @@ http://code.google.com/p/feedparser/issues/detail?id=311
 
 --- feedparser/feedparser.py
 +++ feedparser/feedparser.py
-@@ -198,65 +198,50 @@
+@@ -200,65 +200,50 @@
      else:
          _XML_AVAILABLE = 1
  
@@ -56,7 +56,7 @@ http://code.google.com/p/feedparser/issues/detail?id=311
 -            if match is not None:
 -                # Returning a new object in the calling thread's context
 -                # resolves a thread-safety.
--                return EndBracketMatch(match) 
+-                return EndBracketMatch(match)
 -            return None
 -    class EndBracketMatch:
 -        def __init__(self, match):
@@ -108,7 +108,7 @@ http://code.google.com/p/feedparser/issues/detail?id=311
  
  # iconv_codec provides support for more character encodings.
  # It's available from http://cjkpython.i18n.org/
-@@ -2520,9 +2505,6 @@
+@@ -2562,9 +2547,6 @@
          _BaseHTMLProcessor.unknown_starttag(self, tag, attrs)
  
  def _resolveRelativeURIs(htmlSource, baseURI, encoding, _type):
@@ -118,7 +118,7 @@ http://code.google.com/p/feedparser/issues/detail?id=311
      p = _RelativeURIResolver(baseURI, encoding, _type)
      p.feed(htmlSource)
      return p.output()
-@@ -2803,8 +2785,6 @@
+@@ -2854,8 +2836,6 @@
  
  
  def _sanitizeHTML(htmlSource, encoding, _type):
@@ -127,7 +127,7 @@ http://code.google.com/p/feedparser/issues/detail?id=311
      p = _HTMLSanitizer(encoding, _type)
      htmlSource = htmlSource.replace('<![CDATA[', '&lt;![CDATA[')
      p.feed(htmlSource)
-@@ -3890,7 +3870,7 @@
+@@ -3999,7 +3979,7 @@
              result['bozo'] = 1
              result['bozo_exception'] = feedparser.exc or e
              use_strict_parser = 0
