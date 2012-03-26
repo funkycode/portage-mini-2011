@@ -1,0 +1,13 @@
+DEFINED_PHASES=compile configure install postinst prepare setup test unpack
+DEPEND=gtk? ( dev-python/pywebkitgtk ) qt4? ( x11-libs/qt-webkit:4 kde? ( kde-base/kdelibs ) ) sys-devel/gettext >=dev-util/cmake-2.8.4 userland_GNU? ( >=sys-apps/findutils-4.4.0 ) gtk? ( =dev-lang/python-2* )
+DESCRIPTION=lightweight & open source microblogging client
+EAPI=4
+HOMEPAGE=http://hotot.org
+IUSE=chrome gtk kde qt4
+KEYWORDS=~amd64 ~x86
+LICENSE=LGPL-3
+RDEPEND=gtk? ( dev-python/pywebkitgtk ) qt4? ( x11-libs/qt-webkit:4 kde? ( kde-base/kdelibs ) ) gtk? ( =dev-lang/python-2* )
+SLOT=0
+SRC_URI=https://github.com/shellex/Hotot/tarball/4c74e8b2 -> hotot-0.9.7.51.tar.gz
+_eclasses_=base	56b5d6bcc4a0fc2a3055a84fd4a5c36b	cmake-utils	958bfc21321d16fe83e1df5e3e654469	eutils	0f008baa9552301d379ae5df233e9713	flag-o-matic	66cb710a2aa184a5687fe1289d7973ab	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	python	cb2844e25e38800105564c14a716c805	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
+_md5_=70eee45ab516bbde389f343603b7503c

@@ -3,10 +3,10 @@ DEPEND=X? ( x11-apps/mkfontdir media-fonts/encodings ) >=media-libs/fontconfig-2
 DESCRIPTION=OpenType fonts from the Linux Libertine Open Fonts Project
 HOMEPAGE=http://linuxlibertine.sourceforge.net/
 IUSE=X
-KEYWORDS=alpha amd64 ia64 ppc sparc x86
+KEYWORDS=alpha amd64 ia64 ppc ~ppc64 sparc x86
 LICENSE=|| ( GPL-2-with-font-exception OFL )
 RDEPEND=!<x11-libs/pango-1.20.4
 SLOT=0
 SRC_URI=mirror://sourceforge/linuxlibertine/LinLibertineTTF-5.1.3_2011_06_15.tgz
 _eclasses_=eutils	0f008baa9552301d379ae5df233e9713	font	9aa70ebc5cefbdd9056687b550a2fdc4	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e	versionator	6601b4c5b3f019a993db59a50e1854e4
-_md5_=3e03d4ef479cee96b85ba0822cf77540
+_md5_=6f057efb4c1d37b564f032bebbbb7d32

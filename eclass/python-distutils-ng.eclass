@@ -1,6 +1,6 @@
 # Copyright 1999-2012 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/eclass/python-distutils-ng.eclass,v 1.1 2012/03/25 18:48:42 nelchael Exp $
+# $Header: /var/cvsroot/gentoo-x86/eclass/python-distutils-ng.eclass,v 1.3 2012/03/26 16:24:31 nelchael Exp $
 
 # @ECLASS: python-distutils-ng
 # @MAINTAINER:
@@ -105,16 +105,16 @@ _python-distutils-ng_get_binary_for_implementation() {
 	esac
 }
 
-required_use_str=" || (
-	python_targets_python2_5 python_targets_python2_6 python_targets_python2_7
-	python_targets_python3_1 python_targets_python3_2
-	python_targets_jython2_5
-	python_targets_pypy1_7 python_targets_pypy1_8 )"
+required_use_str=""
+for impl in ${PYTHON_COMPAT}; do
+	required_use_str="${required_use_str} python_targets_${impl}"
+done
+required_use_str=" || ( ${required_use_str} )"
 if [[ "${PYTHON_OPTIONAL}" = "yes" ]]; then
 	IUSE+="python"
 	REQUIRED_USE+=" python? ( ${required_use_str} )"
 else
-	REQUIRED_USE+="${required_use_str}"
+	REQUIRED_USE+=" ${required_use_str}"
 fi
 
 for impl in ${PYTHON_COMPAT}; do

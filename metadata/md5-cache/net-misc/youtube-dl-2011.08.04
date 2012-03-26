@@ -1,0 +1,12 @@
+DEFINED_PHASES=install setup
+DEPEND=|| ( =dev-lang/python-2.7* =dev-lang/python-2.6* =dev-lang/python-2.5* )
+DESCRIPTION=A small command-line program to download videos from YouTube.
+EAPI=3
+HOMEPAGE=http://rg3.github.com/youtube-dl/
+KEYWORDS=amd64 ~arm hppa ppc ppc64 x86 ~amd64-linux ~x86-linux ~ppc-macos ~x64-macos ~x86-macos ~x86-solaris
+LICENSE=public-domain
+RDEPEND=|| ( =dev-lang/python-2.7* =dev-lang/python-2.6* =dev-lang/python-2.5* )
+SLOT=0
+SRC_URI=http://github.com/rg3/youtube-dl/tarball/2011.08.04 -> youtube-dl-2011.08.04.tar.gz
+_eclasses_=python	cb2844e25e38800105564c14a716c805
+_md5_=93a18a031baf1df473f151912385b895

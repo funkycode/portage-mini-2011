@@ -1,0 +1,13 @@
+DEFINED_PHASES=compile install preinst prepare setup unpack
+DEPEND=~dev-java/bcprov-1.45 ~dev-java/bcmail-1.45 >=virtual/jdk-1.5 app-arch/unzip >=dev-java/java-config-2.1.9-r1 source? ( app-arch/zip )
+DESCRIPTION=Java cryptography APIs
+EAPI=4
+HOMEPAGE=http://www.bouncycastle.org/java.html
+IUSE=elibc_FreeBSD doc source elibc_FreeBSD
+KEYWORDS=~x86 ~amd64
+LICENSE=BSD
+RDEPEND=~dev-java/bcprov-1.45 ~dev-java/bcmail-1.45 >=virtual/jre-1.5 >=dev-java/java-config-2.1.9-r1 source? ( app-arch/zip )
+SLOT=0
+SRC_URI=http://www.bouncycastle.org/download/bctsp-jdk15-145.tar.gz
+_eclasses_=eutils	0f008baa9552301d379ae5df233e9713	java-pkg-2	6f723b44cff6b07377ca5c0848da887b	java-pkg-simple	d7cef87260947d4cce245c4f026377e2	java-utils-2	b173b5d55bfd6e328939985bc54a1c9e	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e	versionator	6601b4c5b3f019a993db59a50e1854e4
+_md5_=6c9eb67d8a687a1b190976458e0bafb4
