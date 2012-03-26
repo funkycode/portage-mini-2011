@@ -11,4 +11,4 @@ REQUIRED_USE=test? ( static-libs abyss curl cxx )
 SLOT=0
 SRC_URI=mirror://gentoo/xmlrpc-c-1.29.02.tar.gz
 _eclasses_=eutils	0f008baa9552301d379ae5df233e9713	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
-_md5_=3ece280a961cecbd2c0281f879851274
+_md5_=1d716b856f4c6fa84d73be9954c4c53b

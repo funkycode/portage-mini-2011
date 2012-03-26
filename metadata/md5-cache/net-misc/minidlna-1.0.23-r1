@@ -1,0 +1,12 @@
+DEFINED_PHASES=compile configure install postinst prepare
+DEPEND=dev-db/sqlite media-libs/flac media-libs/libexif media-libs/libid3tag media-libs/libogg media-libs/libvorbis virtual/ffmpeg virtual/jpeg dev-util/pkgconfig
+DESCRIPTION=server software with the aim of being fully compliant with DLNA/UPnP-AV clients
+EAPI=4
+HOMEPAGE=http://minidlna.sourceforge.net/
+KEYWORDS=~amd64 ~arm ~x86
+LICENSE=BSD GPL-2
+RDEPEND=dev-db/sqlite media-libs/flac media-libs/libexif media-libs/libid3tag media-libs/libogg media-libs/libvorbis virtual/ffmpeg virtual/jpeg
+SLOT=0
+SRC_URI=mirror://sourceforge/minidlna/minidlna_1.0.23_src.tar.gz
+_eclasses_=eutils	0f008baa9552301d379ae5df233e9713	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
+_md5_=91511a689393125d9d1a4838ce62dc0b

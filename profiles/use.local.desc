@@ -3802,6 +3802,8 @@ net-libs/daq:ipq - Build the IPQ data acquisition module. IPQ is the old way to 
 net-libs/daq:nfq - Build the NFQ data acquisition module. NFQ is the new way to process iptables packets for inline deployments. Snort can not run unprivileged when using this module.
 net-libs/daq:pcap - Build the PCAP data acquisition module.
 net-libs/farsight2:upnp - Enable UPnP IGD support
+net-libs/farstream:introspection - Use dev-libs/gobject-introspection for introspection
+net-libs/farstream:upnp - Enable UPnP IGD support
 net-libs/glib-networking:gnome - Extract HTTP/HTTPS/SOCKS proxy configuration stored using GSettings
 net-libs/glib-networking:libproxy - Use net-libs/libproxy for getting the HTTP/HTTPS/SOCKS proxy configuration
 net-libs/gnome-online-accounts:introspection - Use dev-libs/gobject-introspection for introspection
@@ -4087,6 +4089,7 @@ net-misc/freerdp:ssl - Use OpenSSL as crypto backend
 net-misc/gsasl:gcrypt - Use dev-libs/libgcrypt for low-level crypto
 net-misc/gsasl:ntlm - Add support for Microsoft's NTLM mechanism using net-libs/libntlm
 net-misc/gwget:epiphany - Build epiphany extensions
+net-misc/hotot:chrome - Build chrome browser extension
 net-misc/htbinit:esfq - Add support for Enhanced Stochastic Fairness queueing discipline.
 net-misc/icecast:yp - Build support for yp public directory listings
 net-misc/iputils:SECURITY_HAZARD - Allow non-root users to flood (ping -f). This is generally a very bad idea.

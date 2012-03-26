@@ -1,0 +1,14 @@
+DEFINED_PHASES=configure install preinst prepare setup
+DEPEND=xml? ( dev-libs/libxml2 ) java? ( >=virtual/jdk-1.6 dev-java/ant-core ) dev-util/pkgconfig || ( >=sys-devel/automake-1.11.1:1.11 ) >=sys-devel/autoconf-2.68 sys-devel/libtool java? ( >=dev-java/java-config-2.1.9-r1 )
+DESCRIPTION=Blu-ray playback libraries
+EAPI=4
+HOMEPAGE=http://www.videolan.org/developers/libbluray.html
+IUSE=aacs java static-libs utils +xml elibc_FreeBSD java
+KEYWORDS=~amd64 ~ppc ~ppc64 ~x86 ~x86-fbsd
+LICENSE=LGPL-2.1
+RDEPEND=xml? ( dev-libs/libxml2 ) aacs? ( media-libs/libaacs ) java? ( >=virtual/jre-1.6 ) java? ( >=dev-java/java-config-2.1.9-r1 )
+REQUIRED_USE=utils? ( static-libs )
+SLOT=0
+SRC_URI=ftp://ftp.videolan.org/pub/videolan/libbluray/0.2.2/libbluray-0.2.2.tar.bz2
+_eclasses_=autotools	addbdf6cce5024ac93ad2084ad5e1d2d	eutils	0f008baa9552301d379ae5df233e9713	flag-o-matic	66cb710a2aa184a5687fe1289d7973ab	java-pkg-opt-2	131dd2a697d663c0e33247611b9a1cd7	java-utils-2	b173b5d55bfd6e328939985bc54a1c9e	libtool	5f623f5a211fb1b2d84d88ee49959a54	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e	versionator	6601b4c5b3f019a993db59a50e1854e4
+_md5_=f78788eb77cc9d170a71f80b261c88ab

@@ -10,4 +10,4 @@ RDEPEND=dev-lang/perl sys-libs/cracklib
 SLOT=0
 SRC_URI=mirror://gentoo/skey-1.1.5.tar.bz2 mirror://gentoo/skey-1.1.5-patches-2.tar.xz
 _eclasses_=eutils	0f008baa9552301d379ae5df233e9713	flag-o-matic	66cb710a2aa184a5687fe1289d7973ab	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
-_md5_=7f308efd9eaaad51932760d065296953
+_md5_=4c18596e8f177093d342f97c4cc1a7de
