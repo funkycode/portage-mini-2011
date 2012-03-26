@@ -14,7 +14,7 @@ SRC_URI="http://launchpad.net/python-distutils-extra/trunk/${PV}/+download/${P}.
 
 LICENSE="GPL-2"
 SLOT="0"
-KEYWORDS="~amd64 ~ppc ~x86"
+KEYWORDS="amd64 ~ppc x86"
 IUSE=""
 
 DEPEND="$(python_abi_depend dev-python/setuptools)"

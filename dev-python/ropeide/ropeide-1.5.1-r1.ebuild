@@ -15,7 +15,7 @@ SRC_URI="mirror://sourceforge/rope/${P}.tar.gz"
 
 LICENSE="GPL-2"
 SLOT="0"
-KEYWORDS="~amd64 ~x86"
+KEYWORDS="amd64 x86"
 IUSE="doc"
 
 DEPEND="$(python_abi_depend ">=dev-python/rope-0.8.4")"

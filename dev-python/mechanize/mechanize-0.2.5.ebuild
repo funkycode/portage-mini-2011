@@ -14,7 +14,7 @@ SRC_URI="http://wwwsearch.sourceforge.net/${PN}/src/${P}.tar.gz"
 
 LICENSE="|| ( BSD ZPL )"
 SLOT="0"
-KEYWORDS="~alpha ~amd64 ~ia64 ~ppc ~sparc ~x86 ~amd64-linux ~ia64-linux ~x86-linux ~x86-macos"
+KEYWORDS="~alpha amd64 ~ia64 ~ppc sparc x86 ~amd64-linux ~ia64-linux ~x86-linux ~x86-macos"
 IUSE=""
 
 DEPEND="$(python_abi_depend dev-python/setuptools)"

@@ -4,11 +4,11 @@ DESCRIPTION=Python binding to libudev
 EAPI=4-python
 HOMEPAGE=http://pyudev.readthedocs.org/ http://pypi.python.org/pypi/pyudev
 IUSE=pygobject pyqt4 pyside test wxwidgets python_abis_2.6 python_abis_2.7 python_abis_3.1 python_abis_3.2 python_abis_3.3 python_abis_2.7-pypy-1.7 python_abis_2.7-pypy-1.8 test
-KEYWORDS=~amd64 ~x86
+KEYWORDS=amd64 x86
 LICENSE=LGPL-2.1
 RDEPEND=>=sys-fs/udev-151 pygobject? ( ( python_abis_2.6? ( dev-python/pygobject:2[python_abis_2.6] ) python_abis_2.7? ( dev-python/pygobject:2[python_abis_2.7] ) python_abis_3.1? ( dev-python/pygobject:2[python_abis_3.1] ) python_abis_3.2? ( dev-python/pygobject:2[python_abis_3.2] ) python_abis_3.3? ( dev-python/pygobject:2[python_abis_3.3] ) ) ) pyqt4? ( ( python_abis_2.6? ( dev-python/PyQt4[python_abis_2.6] ) python_abis_2.7? ( dev-python/PyQt4[python_abis_2.7] ) python_abis_3.1? ( dev-python/PyQt4[python_abis_3.1] ) python_abis_3.2? ( dev-python/PyQt4[python_abis_3.2] ) python_abis_3.3? ( dev-python/PyQt4[python_abis_3.3] ) ) ) pyside? ( dev-python/pyside ) wxwidgets? ( ( python_abis_2.6? ( dev-python/wxpython[python_abis_2.6] ) python_abis_2.7? ( dev-python/wxpython[python_abis_2.7] ) ) ) python_abis_2.6? ( dev-lang/python:2.6 ) python_abis_2.7? ( dev-lang/python:2.7 ) python_abis_3.1? ( dev-lang/python:3.1 ) python_abis_3.2? ( dev-lang/python:3.2 ) python_abis_3.3? ( dev-lang/python:3.3 ) python_abis_2.7-pypy-1.7? ( dev-python/pypy:1.7 ) python_abis_2.7-pypy-1.8? ( dev-python/pypy:1.8 )
 REQUIRED_USE=|| ( python_abis_2.6 python_abis_2.7 python_abis_3.1 python_abis_3.2 python_abis_3.3 python_abis_2.7-pypy-1.7 python_abis_2.7-pypy-1.8 )
 SLOT=0
 SRC_URI=mirror://pypi/p/pyudev/pyudev-0.15.tar.gz
 _eclasses_=distutils	82a876811ffd4907daba6062958daa26	python	cb2844e25e38800105564c14a716c805	virtualx	0c41ff55e46b959d9457dde69e7a09d9
-_md5_=9327f777a43d7dd79583d540229bb452
+_md5_=32e40db382da38ea274d9d688da0de69

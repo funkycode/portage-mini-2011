@@ -15,7 +15,7 @@ SRC_URI="http://launchpad.net/storm/trunk/${PV}/+download/${P}.tar.bz2"
 
 LICENSE="LGPL-2.1"
 SLOT="0"
-KEYWORDS="~amd64 ~x86"
+KEYWORDS="amd64 x86"
 IUSE="mysql postgres sqlite test"
 
 RDEPEND="$(python_abi_depend virtual/python-json)

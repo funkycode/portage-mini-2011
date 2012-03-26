@@ -18,7 +18,7 @@ SRC_URI="http://www.imagemagick.org/download/python/${MY_P}.tar.xz"
 
 LICENSE="GPL-3"
 SLOT="0"
-KEYWORDS="~amd64 ~ppc ~x86"
+KEYWORDS="amd64 ~ppc x86"
 IUSE=""
 
 RDEPEND="$(python_abi_depend ">=dev-libs/boost-1.48[python]")

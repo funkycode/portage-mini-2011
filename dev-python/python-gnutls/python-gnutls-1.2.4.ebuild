@@ -14,7 +14,7 @@ SRC_URI="mirror://pypi/${PN:0:1}/${PN}/${P}.tar.gz"
 
 LICENSE="LGPL-2.1"
 SLOT="0"
-KEYWORDS="~amd64 ~ppc ~x86 ~ppc-macos ~x64-macos ~x86-macos"
+KEYWORDS="amd64 ~ppc x86 ~ppc-macos ~x64-macos ~x86-macos"
 IUSE="examples"
 
 DEPEND="net-libs/gnutls"

@@ -14,7 +14,7 @@ SRC_URI="mirror://sourceforge/pymilter/${P}.tar.gz"
 
 LICENSE="PSF-2"
 SLOT="0"
-KEYWORDS="~amd64 ~x86"
+KEYWORDS="amd64 x86"
 IUSE=""
 
 DEPEND="$(python_abi_depend dev-python/authres)

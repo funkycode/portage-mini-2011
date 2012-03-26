@@ -19,7 +19,7 @@ SRC_URI="http://files.randombit.net/botan/${MY_P}.tbz"
 
 LICENSE="BSD"
 SLOT="0"
-KEYWORDS="~amd64 ~ia64 ~ppc ~sparc ~x86 ~ppc-macos"
+KEYWORDS="amd64 ~ia64 ~ppc sparc x86 ~ppc-macos"
 IUSE="bzip2 doc gmp python ssl threads zlib"
 
 RDEPEND="bzip2? ( >=app-arch/bzip2-1.0.5 )

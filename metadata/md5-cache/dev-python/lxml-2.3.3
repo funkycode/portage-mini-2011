@@ -4,11 +4,11 @@ DESCRIPTION=Powerful and Pythonic XML processing library combining libxml2/libxs
 EAPI=4-python
 HOMEPAGE=http://lxml.de/ http://pypi.python.org/pypi/lxml
 IUSE=doc examples +threads python_abis_2.5 python_abis_2.6 python_abis_2.7 python_abis_3.1 python_abis_3.2 python_abis_3.3
-KEYWORDS=~amd64 ~arm ~hppa ~ia64 ~ppc ~ppc64 ~sparc ~x86 ~x86-fbsd ~amd64-linux ~x86-linux ~ppc-macos ~x86-macos ~sparc-solaris ~x64-solaris ~x86-solaris
+KEYWORDS=~alpha amd64 ~arm ~hppa ~ia64 ~mips ~ppc ~ppc64 sparc x86 ~x86-fbsd ~amd64-linux ~x86-linux ~ppc-macos ~x86-macos ~sparc-solaris ~x64-solaris ~x86-solaris
 LICENSE=BSD ElementTree GPL-2 PSF-2
 RDEPEND=>=dev-libs/libxml2-2.7.2 >=dev-libs/libxslt-1.1.15 ( python_abis_2.5? ( dev-python/beautifulsoup:python-2[python_abis_2.5] ) python_abis_2.6? ( dev-python/beautifulsoup:python-2[python_abis_2.6] ) python_abis_2.7? ( dev-python/beautifulsoup:python-2[python_abis_2.7] ) ) ( python_abis_3.1? ( dev-python/beautifulsoup:python-3[python_abis_3.1] ) python_abis_3.2? ( dev-python/beautifulsoup:python-3[python_abis_3.2] ) python_abis_3.3? ( dev-python/beautifulsoup:python-3[python_abis_3.3] ) ) python_abis_2.5? ( dev-lang/python:2.5 ) python_abis_2.6? ( dev-lang/python:2.6 ) python_abis_2.7? ( dev-lang/python:2.7 ) python_abis_3.1? ( dev-lang/python:3.1 ) python_abis_3.2? ( dev-lang/python:3.2 ) python_abis_3.3? ( dev-lang/python:3.3 )
 REQUIRED_USE=|| ( python_abis_2.5 python_abis_2.6 python_abis_2.7 python_abis_3.1 python_abis_3.2 python_abis_3.3 )
 SLOT=0
 SRC_URI=mirror://pypi/l/lxml/lxml-2.3.3.tar.gz
 _eclasses_=distutils	82a876811ffd4907daba6062958daa26	python	cb2844e25e38800105564c14a716c805
-_md5_=2df6d5a25616964624a60b14b4a58141
+_md5_=3b1ea481ee6969d1f3d516e8c7e0eaa8

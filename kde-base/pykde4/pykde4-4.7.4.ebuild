@@ -13,7 +13,7 @@ KDE_SCM="git"
 inherit kde4-base multilib portability python toolchain-funcs
 
 DESCRIPTION="Python bindings for KDE4"
-KEYWORDS="~amd64 ~arm ~ppc ~ppc64 ~x86 ~amd64-linux ~x86-linux"
+KEYWORDS="amd64 ~arm ~ppc ~ppc64 x86 ~amd64-linux ~x86-linux"
 IUSE="debug doc examples semantic-desktop"
 
 RDEPEND="

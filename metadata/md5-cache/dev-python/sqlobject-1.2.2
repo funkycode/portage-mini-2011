@@ -4,11 +4,11 @@ DESCRIPTION=Object-Relational Manager, aka database wrapper
 EAPI=4-python
 HOMEPAGE=http://sqlobject.org/ http://pypi.python.org/pypi/SQLObject
 IUSE=doc firebird mysql postgres sqlite python_abis_2.5 python_abis_2.6 python_abis_2.7 python_abis_2.7-pypy-1.7 python_abis_2.7-pypy-1.8
-KEYWORDS=~amd64 ~ia64 ~ppc ~sparc ~x86 ~amd64-linux ~x86-linux ~ppc-macos ~x86-macos
+KEYWORDS=amd64 ~ia64 ~ppc sparc x86 ~amd64-linux ~x86-linux ~ppc-macos ~x86-macos
 LICENSE=LGPL-2.1
 RDEPEND=>=dev-python/formencode-0.2.2[python_abis_2.5?,python_abis_2.6?,python_abis_2.7?,python_abis_2.7-pypy-1.7?,python_abis_2.7-pypy-1.8?] firebird? ( ( python_abis_2.5? ( >=dev-python/kinterbasdb-3.0.2[python_abis_2.5] ) python_abis_2.6? ( >=dev-python/kinterbasdb-3.0.2[python_abis_2.6] ) python_abis_2.7? ( >=dev-python/kinterbasdb-3.0.2[python_abis_2.7] ) ) ) mysql? ( >=dev-python/mysql-python-0.9.2-r1[python_abis_2.5?,python_abis_2.6?,python_abis_2.7?,python_abis_2.7-pypy-1.7?,python_abis_2.7-pypy-1.8?] ) postgres? ( ( python_abis_2.5? ( dev-python/psycopg:2[python_abis_2.5] ) python_abis_2.6? ( dev-python/psycopg:2[python_abis_2.6] ) python_abis_2.7? ( dev-python/psycopg:2[python_abis_2.7] ) ) ) sqlite? ( virtual/python-sqlite[external,python_abis_2.5?,python_abis_2.6?,python_abis_2.7?,python_abis_2.7-pypy-1.7?,python_abis_2.7-pypy-1.8?] ) python_abis_2.5? ( dev-lang/python:2.5 ) python_abis_2.6? ( dev-lang/python:2.6 ) python_abis_2.7? ( dev-lang/python:2.7 ) python_abis_2.7-pypy-1.7? ( dev-python/pypy:1.7 ) python_abis_2.7-pypy-1.8? ( dev-python/pypy:1.8 )
 REQUIRED_USE=|| ( python_abis_2.5 python_abis_2.6 python_abis_2.7 python_abis_2.7-pypy-1.7 python_abis_2.7-pypy-1.8 )
 SLOT=0
 SRC_URI=mirror://pypi/S/SQLObject/SQLObject-1.2.2.tar.gz
 _eclasses_=distutils	82a876811ffd4907daba6062958daa26	python	cb2844e25e38800105564c14a716c805
-_md5_=e639fda701510bb573dec0ab37b5a3f4
+_md5_=ca3bc583d7ec4c9aea24cae1c87287af

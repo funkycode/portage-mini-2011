@@ -17,7 +17,7 @@ SRC_URI="http://www.vpython.org/contents/download/${MY_P}.tar.bz2"
 
 LICENSE="visual"
 SLOT="0"
-KEYWORDS="~amd64 ~x86"
+KEYWORDS="amd64 x86"
 IUSE="doc examples"
 
 RDEPEND=">=dev-cpp/gtkglextmm-1.2

@@ -7,4 +7,4 @@ PYTHON_NAMESPACES="+z3c +z3c.recipe"
 
 inherit python-namespaces
 
-KEYWORDS="~alpha ~amd64 ~ppc ~sparc ~x86"
+KEYWORDS="~alpha amd64 ~ppc sparc x86"

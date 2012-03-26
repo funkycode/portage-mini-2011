@@ -14,7 +14,7 @@ SRC_URI="mirror://sourceforge/firebird/${P}.tar.gz"
 
 LICENSE="kinterbasdb"
 SLOT="0"
-KEYWORDS="~amd64 -sparc ~x86"
+KEYWORDS="amd64 -sparc x86"
 IUSE="doc"
 
 DEPEND=">=dev-db/firebird-1.0_rc1

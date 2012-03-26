@@ -11,7 +11,7 @@ inherit twisted versionator
 
 DESCRIPTION="Twisted SSHv2 implementation"
 
-KEYWORDS="~alpha ~amd64 ~arm ~hppa ~ia64 ~ppc ~ppc64 ~s390 ~sh ~sparc ~x86"
+KEYWORDS="~alpha amd64 ~arm ~hppa ~ia64 ~ppc ~ppc64 ~s390 ~sh sparc x86"
 IUSE=""
 
 DEPEND="$(python_abi_depend "=dev-python/twisted-$(get_version_component_range 1-2)*")

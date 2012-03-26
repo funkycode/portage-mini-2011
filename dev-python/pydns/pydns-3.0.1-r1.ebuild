@@ -17,7 +17,7 @@ SRC_URI="mirror://sourceforge/pydns/${MY_P}.tar.gz"
 
 LICENSE="CNRI"
 SLOT="3"
-KEYWORDS="~amd64 ~x86"
+KEYWORDS="amd64 x86"
 IUSE="examples"
 
 RDEPEND="!dev-python/py3dns

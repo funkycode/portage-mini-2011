@@ -14,7 +14,7 @@ SRC_URI="http://networkx.lanl.gov/download/${PN}/${P}.tar.gz"
 
 LICENSE="BSD"
 SLOT="0"
-KEYWORDS="~amd64 ~ppc ~x86 ~x86-linux ~ppc-macos ~x64-macos ~x86-macos"
+KEYWORDS="amd64 ~ppc x86 ~x86-linux ~ppc-macos ~x64-macos ~x86-macos"
 IUSE="examples"
 
 RDEPEND=">=media-gfx/graphviz-2.12"

@@ -15,7 +15,7 @@ SRC_URI="http://launchpad.net/ecryptfs/trunk/${PV}/+download/${PN}_${PV}.orig.ta
 
 LICENSE="GPL-2"
 SLOT="0"
-KEYWORDS="~amd64 ~x86"
+KEYWORDS="amd64 x86"
 IUSE="doc gpg gtk openssl pam pkcs11 python suid tpm"
 
 RDEPEND=">=sys-apps/keyutils-1.0

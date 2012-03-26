@@ -13,7 +13,7 @@ SRC_URI="http://www.biopython.org/DIST/${P}.tar.gz"
 
 LICENSE="as-is"
 SLOT="0"
-KEYWORDS="~amd64 ~ppc ~x86"
+KEYWORDS="amd64 ~ppc x86"
 IUSE="mysql postgres reportlab"
 
 RDEPEND="$(python_abi_depend -e "*-jython *-pypy-*" dev-python/numpy)

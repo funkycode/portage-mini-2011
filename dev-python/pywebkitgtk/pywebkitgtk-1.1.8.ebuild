@@ -15,7 +15,7 @@ SRC_URI="http://pywebkitgtk.googlecode.com/files/${P}.tar.gz"
 
 LICENSE="LGPL-2"
 SLOT="0"
-KEYWORDS="~amd64 ~ppc ~sparc ~x86"
+KEYWORDS="amd64 ~ppc sparc x86"
 IUSE=""
 
 RDEPEND="$(python_abi_depend dev-python/pygobject:2)

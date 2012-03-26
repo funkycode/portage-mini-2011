@@ -17,7 +17,7 @@ SRC_URI="http://www.owlfish.com/software/simpleTAL/downloads/${MY_P}.tar.gz"
 
 LICENSE="BSD"
 SLOT="5"
-KEYWORDS="~alpha ~amd64 ~ia64 ~ppc ~sparc ~x86"
+KEYWORDS="~alpha amd64 ~ia64 ~ppc sparc x86"
 IUSE="examples"
 
 DEPEND=""

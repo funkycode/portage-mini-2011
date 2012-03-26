@@ -7,4 +7,4 @@ PYTHON_NAMESPACES="stsci"
 
 inherit python-namespaces
 
-KEYWORDS="~amd64 ~x86"
+KEYWORDS="amd64 x86"

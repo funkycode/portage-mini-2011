@@ -11,7 +11,7 @@ inherit twisted versionator
 
 DESCRIPTION="Twisted Pair contains low-level networking support."
 
-KEYWORDS="~amd64 ~x86"
+KEYWORDS="amd64 x86"
 IUSE=""
 
 DEPEND="$(python_abi_depend "=dev-python/twisted-$(get_version_component_range 1-2)*")

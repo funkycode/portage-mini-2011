@@ -14,7 +14,7 @@ SRC_URI="http://ftp.logilab.org/pub/${PN}/${P}.tar.gz"
 
 LICENSE="GPL-2"
 SLOT="0"
-KEYWORDS="~amd64 ~x86"
+KEYWORDS="amd64 x86"
 IUSE="doc +qt4 urwid"
 REQUIRED_USE="|| ( qt4 urwid )"
 

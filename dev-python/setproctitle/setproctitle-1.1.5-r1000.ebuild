@@ -15,13 +15,14 @@ SRC_URI="mirror://pypi/${PN:0:1}/${PN}/${P}.tar.gz"
 
 LICENSE="BSD"
 SLOT="0"
-KEYWORDS="~amd64 ~x86"
+KEYWORDS="amd64 x86"
 IUSE=""
 
 DEPEND=""
 RDEPEND=""
 
 DISTUTILS_USE_SEPARATE_SOURCE_DIRECTORIES="1"
+DOCS="HISTORY.rst README.rst"
 
 src_prepare() {
 	python_copy_sources

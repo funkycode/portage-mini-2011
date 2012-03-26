@@ -13,7 +13,7 @@ SRC_URI="http://py-amqplib.googlecode.com/files/${P}.tgz"
 
 LICENSE="LGPL-2.1"
 SLOT="0"
-KEYWORDS="~amd64 ~x86"
+KEYWORDS="amd64 x86"
 IUSE="examples extras"
 
 DEPEND="$(python_abi_depend dev-python/setuptools)"

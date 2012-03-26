@@ -15,7 +15,7 @@ SRC_URI="mirror://sourceforge/${PN}/${P}.tar.gz"
 
 LICENSE="LGPL-2.1"
 SLOT="0"
-KEYWORDS="~amd64 ~arm ~ia64 ~ppc ~ppc64 ~sh ~sparc ~x86 ~x86-linux"
+KEYWORDS="amd64 ~arm ~ia64 ~ppc ~ppc64 ~sh sparc x86 ~x86-linux"
 IUSE=""
 
 DEPEND="sys-apps/attr"

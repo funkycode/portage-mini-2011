@@ -19,7 +19,7 @@ SRC_URI="mirror://pypi/${MY_PN:0:1}/${MY_PN}/${MY_P}.tar.gz"
 # imdb/parser/http/bsouplxml/_bsoup.py: BSD
 LICENSE="BSD GPL-2"
 SLOT="0"
-KEYWORDS="~alpha ~amd64 ~ppc ~sparc ~x86"
+KEYWORDS="~alpha amd64 ~ppc sparc x86"
 IUSE=""
 
 DEPEND="$(python_abi_depend dev-python/setuptools)"

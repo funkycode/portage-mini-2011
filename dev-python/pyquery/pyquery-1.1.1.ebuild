@@ -15,7 +15,7 @@ SRC_URI="mirror://pypi/${PN:0:1}/${PN}/${P}.tar.gz"
 
 LICENSE="BSD"
 SLOT="0"
-KEYWORDS="~amd64 ~arm ~x86"
+KEYWORDS="~alpha amd64 ~arm ~ppc sparc x86"
 IUSE=""
 
 RDEPEND="$(python_abi_depend ">=dev-python/lxml-2.1")

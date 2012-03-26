@@ -14,7 +14,7 @@ SRC_URI="https://github.com/downloads/jraedler/Polygon2/Polygon-${PV}.zip"
 
 LICENSE="LGPL-2"
 SLOT="2"
-KEYWORDS="~amd64 ~x86"
+KEYWORDS="amd64 x86"
 IUSE="numpy"
 
 RDEPEND="numpy? ( $(python_abi_depend -e "*-pypy-*" dev-python/numpy) )"

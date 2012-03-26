@@ -14,7 +14,7 @@ SRC_URI="http://www.reportlab.org/ftp/${P}.tar.gz"
 
 LICENSE="BSD"
 SLOT="0"
-KEYWORDS="~alpha ~amd64 ~arm ~hppa ~ia64 ~ppc ~ppc64 ~sparc ~x86 ~x86-fbsd"
+KEYWORDS="~alpha amd64 ~arm ~hppa ~ia64 ~ppc ~ppc64 sparc x86 ~x86-fbsd"
 IUSE="doc examples test"
 
 DEPEND="$(python_abi_depend dev-python/imaging)

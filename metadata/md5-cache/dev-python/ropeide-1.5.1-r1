@@ -4,11 +4,11 @@ DESCRIPTION=Python refactoring IDE
 EAPI=4-python
 HOMEPAGE=http://rope.sourceforge.net/ropeide.html http://pypi.python.org/pypi/ropeide
 IUSE=doc python_abis_2.5 python_abis_2.6 python_abis_2.7
-KEYWORDS=~amd64 ~x86
+KEYWORDS=amd64 x86
 LICENSE=GPL-2
 RDEPEND=>=dev-python/rope-0.8.4[python_abis_2.5?,python_abis_2.6?,python_abis_2.7?] python_abis_2.5? ( dev-lang/python:2.5[tk] ) python_abis_2.6? ( dev-lang/python:2.6[tk] ) python_abis_2.7? ( dev-lang/python:2.7[tk] )
 REQUIRED_USE=|| ( python_abis_2.5 python_abis_2.6 python_abis_2.7 )
 SLOT=0
 SRC_URI=mirror://sourceforge/rope/ropeide-1.5.1.tar.gz
 _eclasses_=distutils	82a876811ffd4907daba6062958daa26	python	cb2844e25e38800105564c14a716c805
-_md5_=6a179265249ac90ff97a579662c0731c
+_md5_=9f428424a33758c1842b64b797908cb6

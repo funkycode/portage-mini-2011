@@ -14,7 +14,7 @@ SRC_URI="http://github.com/downloads/facebook/tornado/${P}.tar.gz"
 
 LICENSE="Apache-2.0"
 SLOT="0"
-KEYWORDS="~amd64 ~x86"
+KEYWORDS="amd64 x86"
 IUSE="curl"
 
 RDEPEND="curl? ( $(python_abi_depend -i "2.*" dev-python/pycurl) )

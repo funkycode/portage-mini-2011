@@ -16,7 +16,7 @@ SRC_URI="http://www.issuetrackerproduct.com/Download/${MY_P}.tgz"
 
 LICENSE="ZPL"
 SLOT="0"
-KEYWORDS="~amd64 ~x86"
+KEYWORDS="amd64 x86"
 IUSE=""
 
 DEPEND="$(python_abi_depend net-zope/namespaces-zope[Products])

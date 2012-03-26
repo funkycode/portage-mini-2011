@@ -17,7 +17,7 @@ SRC_URI="http://excess.org/urwid/${P}.tar.gz"
 
 LICENSE="LGPL-2.1"
 SLOT="0"
-KEYWORDS="~amd64 ~ia64 ~ppc ~ppc64 ~sparc ~x86 ~x86-interix ~amd64-linux ~ia64-linux ~x86-linux"
+KEYWORDS="amd64 ~ia64 ~ppc ~ppc64 sparc x86 ~x86-interix ~amd64-linux ~ia64-linux ~x86-linux"
 IUSE="examples"
 
 DEPEND="$(python_abi_depend dev-python/setuptools)"

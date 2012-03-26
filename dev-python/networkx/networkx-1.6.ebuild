@@ -14,7 +14,7 @@ SRC_URI="mirror://pypi/${PN:0:1}/${PN}/${P}.tar.gz"
 
 LICENSE="BSD"
 SLOT="0"
-KEYWORDS="~amd64 ~ppc ~x86 ~x86-linux ~ppc-macos ~x86-macos"
+KEYWORDS="amd64 ~ppc x86 ~x86-linux ~ppc-macos ~x86-macos"
 IUSE="doc examples graphviz matplotlib numpy pyparsing scipy yaml"
 REQUIRED_USE="examples? ( graphviz matplotlib numpy pyparsing scipy )"
 

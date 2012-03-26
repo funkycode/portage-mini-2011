@@ -18,7 +18,7 @@ SRC_URI="http://apsw.googlecode.com/files/${PN}-${MY_PV}.zip"
 
 LICENSE="as-is"
 SLOT="0"
-KEYWORDS="~amd64 ~ppc64 ~x86"
+KEYWORDS="amd64 ~ppc64 x86"
 IUSE="doc"
 
 RDEPEND=">=dev-db/sqlite-$(get_version_component_range 1-3)[extensions]"

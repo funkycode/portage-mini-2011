@@ -7,4 +7,4 @@ PYTHON_NAMESPACES="paste"
 
 inherit python-namespaces
 
-KEYWORDS="~amd64 ~x86 ~x86-interix ~amd64-linux ~x86-linux ~x86-macos ~sparc-solaris"
+KEYWORDS="amd64 x86 ~x86-interix ~amd64-linux ~x86-linux ~x86-macos ~sparc-solaris"

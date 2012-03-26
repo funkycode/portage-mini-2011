@@ -19,7 +19,7 @@ fi
 
 LICENSE="Apache-1.1"
 SLOT="0"
-KEYWORDS="~amd64 ~arm ~ppc ~x86 ~x86-freebsd ~x86-linux ~ppc-macos ~x86-solaris"
+KEYWORDS="amd64 ~arm ~ppc x86 ~x86-freebsd ~x86-linux ~ppc-macos ~x86-solaris"
 IUSE="doc examples"
 
 DEPEND="$(python_abi_depend ">=dev-python/pycxx-6.2.0")

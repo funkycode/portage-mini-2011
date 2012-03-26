@@ -8,4 +8,4 @@ PYTHON_NAMESPACES="+infrae +silva +silva.core"
 
 inherit python-namespaces
 
-KEYWORDS="~amd64 ~x86"
+KEYWORDS="amd64 x86"

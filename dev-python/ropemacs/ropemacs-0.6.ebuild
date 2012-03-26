@@ -14,7 +14,7 @@ SRC_URI="http://bitbucket.org/agr/ropemacs/get/8b277a188d00.gz -> ${P}.tar.gz"
 
 LICENSE="GPL-2"
 SLOT="0"
-KEYWORDS="~amd64 ~x86"
+KEYWORDS="amd64 x86"
 IUSE=""
 
 DEPEND="$(python_abi_depend dev-python/rope)

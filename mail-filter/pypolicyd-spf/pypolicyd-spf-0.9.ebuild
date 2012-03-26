@@ -14,7 +14,7 @@ SRC_URI="http://launchpad.net/pypolicyd-spf/$(get_version_component_range 1-2)/$
 
 LICENSE="Apache-2.0"
 SLOT="0"
-KEYWORDS="~amd64 ~x86"
+KEYWORDS="amd64 x86"
 IUSE=""
 
 DEPEND="$(python_abi_depend dev-python/authres)

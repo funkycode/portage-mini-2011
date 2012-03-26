@@ -20,7 +20,7 @@ SRC_URI="${BASE_URI}/${MY_P}.tar.gz"
 
 LICENSE="GPL-3"
 SLOT="5"
-KEYWORDS="~amd64 ~ppc ~ppc64 ~x86"
+KEYWORDS="amd64 ~ppc ~ppc64 x86"
 IUSE="spell"
 
 DEPEND="$(python_abi_depend ">=dev-python/sip-4.12.4")

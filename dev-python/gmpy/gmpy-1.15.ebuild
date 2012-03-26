@@ -14,7 +14,7 @@ SRC_URI="http://${PN}.googlecode.com/files/${P}.zip"
 
 LICENSE="LGPL-2.1"
 SLOT="0"
-KEYWORDS="~amd64 ~ia64 ~x86 ~x86-linux ~ppc-macos"
+KEYWORDS="amd64 ~ia64 x86 ~x86-linux ~ppc-macos"
 IUSE=""
 
 RDEPEND="dev-libs/gmp"

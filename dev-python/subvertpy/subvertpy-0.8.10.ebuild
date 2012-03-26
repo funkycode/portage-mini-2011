@@ -15,7 +15,7 @@ SRC_URI="http://www.samba.org/~jelmer/${PN}/${P}.tar.gz"
 
 LICENSE="|| ( LGPL-2.1 LGPL-3 )"
 SLOT="0"
-KEYWORDS="~amd64 ~x86"
+KEYWORDS="~alpha amd64 x86"
 IUSE="test"
 
 RDEPEND=">=dev-vcs/subversion-1.4"
