@@ -1,0 +1,13 @@
+DEFINED_PHASES=configure install postinst prepare setup
+DEPEND=dev-libs/openssl >=dev-libs/libevent-2.0.14 nat-pmp? ( net-libs/libnatpmp ) upnp? ( net-libs/miniupnpc ) selinux? ( sec-policy/selinux-tor ) || ( >=sys-devel/automake-1.11.1:1.11 ) >=sys-devel/autoconf-2.68 sys-devel/libtool
+DESCRIPTION=Anonymizing overlay network for TCP
+EAPI=4
+HOMEPAGE=http://www.torproject.org/
+IUSE=+bufferevents nat-pmp tor-hardening transparent-proxy threads upnp selinux
+KEYWORDS=~amd64 ~arm ~ppc ~ppc64 ~sparc ~x86 ~x86-fbsd
+LICENSE=BSD
+RDEPEND=dev-libs/openssl >=dev-libs/libevent-2.0.14 nat-pmp? ( net-libs/libnatpmp ) upnp? ( net-libs/miniupnpc ) selinux? ( sec-policy/selinux-tor )
+SLOT=0
+SRC_URI=http://www.torproject.org/dist/tor-0.2.3.13-alpha.tar.gz
+_eclasses_=autotools	addbdf6cce5024ac93ad2084ad5e1d2d	eutils	0f008baa9552301d379ae5df233e9713	flag-o-matic	66cb710a2aa184a5687fe1289d7973ab	libtool	5f623f5a211fb1b2d84d88ee49959a54	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e	versionator	6601b4c5b3f019a993db59a50e1854e4
+_md5_=ebbf293634ad3314181f1592b07dcc62

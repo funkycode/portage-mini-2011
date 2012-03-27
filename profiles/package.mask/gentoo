@@ -1,5 +1,5 @@
 ####################################################################
-# $Header: /var/cvsroot/gentoo-x86/profiles/package.mask,v 1.13620 2012/03/27 04:42:03 tetromino Exp $
+# $Header: /var/cvsroot/gentoo-x86/profiles/package.mask,v 1.13625 2012/03/27 15:10:03 tupone Exp $
 #
 # When you add an entry to the top of this file, add your name, the date, and
 # an explanation of why something is getting masked. Please be extremely
@@ -30,6 +30,18 @@
 ## app-misc/some-package
 
 #--- END OF EXAMPLES ---
+
+# Alexandre Rostovtsev <tetromino@gentoo.org> (27 Mar 2012)
+# NetworkManager-0.9.4, masked for testing
+=gnome-extra/nm-applet-0.9.4*
+=net-misc/modemmanager-0.5.2*
+=net-misc/networkmanager-0.9.4*
+=net-misc/networkmanager-openconnect-0.9.4*
+=net-misc/networkmanager-openswan-0.9.3*
+=net-misc/networkmanager-openswan-0.9.4*
+=net-misc/networkmanager-openvpn-0.9.4*
+=net-misc/networkmanager-pptp-0.9.4*
+=net-misc/networkmanager-vpnc-0.9.4*
 
 # Mike Gilbert <floppym@gentoo.org> (25 Mar 2012)
 # Arfrever Frehtes Taifersar Arahesis <arfrever.fta@gmail.com> (25 Mar 2012)
@@ -495,11 +507,10 @@ sys-apps/systemd-sysv-utils
 # Mask experimental software
 =mail-mta/postfix-2.10*
 
-# Jeroen Roovers <jer@gentoo.org> (23 Dec 2011)
+# Jeroen Roovers <jer@gentoo.org> (27 Mar 2012)
 # Opera Next and Opera snapshots are unsupported and eternally unstable.
 # <http://my.opera.com/desktopteam/blog>
 www-client/opera-next
->www-client/opera-11.62
 
 # Chí-Thanh Christopher Nguyễn <chithanh@gentoo.org> (19 Dec 2011)
 # Mask prerelease x11 packages
@@ -876,10 +887,6 @@ net-fs/samba-libs
 net-fs/samba-server
 net-fs/samba-client
 >net-fs/samba-4
-
-# Mounir Lamouri <volkmar@gentoo.org> (24 Mar 2010)
-# Masked because breaking backward compatibility and still not needed.
->dev-util/bam-0.2.0
 
 # Alistair Bush <ali_bush@gentoo.org> (22 Mar 2010)
 # Masked due to producing build failures in stable

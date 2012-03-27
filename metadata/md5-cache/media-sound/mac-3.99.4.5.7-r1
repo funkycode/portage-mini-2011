@@ -1,0 +1,13 @@
+DEFINED_PHASES=configure install prepare setup
+DEPEND=sys-apps/sed mmx? ( dev-lang/yasm )
+DESCRIPTION=Monkey's Audio Codecs
+EAPI=4
+HOMEPAGE=http://etree.org/shnutils/shntool/
+IUSE=mmx static-libs
+KEYWORDS=~alpha ~amd64 ~ppc ~x86
+LICENSE=mac
+RESTRICT=mirror
+SLOT=0
+SRC_URI=http://etree.org/shnutils/shntool/support/formats/ape/unix/3.99-u4-b5-s7/mac-3.99-u4-b5-s7.tar.gz
+_eclasses_=eutils	0f008baa9552301d379ae5df233e9713	flag-o-matic	66cb710a2aa184a5687fe1289d7973ab	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e	versionator	6601b4c5b3f019a993db59a50e1854e4
+_md5_=9b34374ad7d88cf567bce0186bd6d34a

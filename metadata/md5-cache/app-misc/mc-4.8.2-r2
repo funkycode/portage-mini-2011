@@ -1,0 +1,13 @@
+DEFINED_PHASES=configure install postinst prepare
+DEPEND=>=dev-libs/glib-2.8:2 gpm? ( sys-libs/gpm ) kernel_linux? ( sys-fs/e2fsprogs ) samba? ( net-fs/samba ) slang? ( >=sys-libs/slang-2 ) !slang? ( sys-libs/ncurses ) X? ( x11-libs/libX11 x11-libs/libICE x11-libs/libXau x11-libs/libXdmcp x11-libs/libSM ) app-arch/xz-utils dev-util/pkgconfig nls? ( sys-devel/gettext ) test? ( dev-libs/check )
+DESCRIPTION=GNU Midnight Commander is a text based file manager
+EAPI=4
+HOMEPAGE=http://www.midnight-commander.org
+IUSE=+edit gpm mclib nls samba +slang test X +xdg
+KEYWORDS=~alpha ~amd64 ~arm ~hppa ~ia64 ~mips ~ppc ~ppc64 ~s390 ~sh ~sparc ~x86 ~x86-fbsd ~x86-interix ~amd64-linux ~ppc-macos ~x64-macos ~x86-macos ~sparc-solaris ~sparc64-solaris ~x86-solaris
+LICENSE=GPL-3
+RDEPEND=>=dev-libs/glib-2.8:2 gpm? ( sys-libs/gpm ) kernel_linux? ( sys-fs/e2fsprogs ) samba? ( net-fs/samba ) slang? ( >=sys-libs/slang-2 ) !slang? ( sys-libs/ncurses ) X? ( x11-libs/libX11 x11-libs/libICE x11-libs/libXau x11-libs/libXdmcp x11-libs/libSM )
+SLOT=0
+SRC_URI=http://www.midnight-commander.org/downloads/mc-4.8.2.tar.xz
+_eclasses_=eutils	0f008baa9552301d379ae5df233e9713	flag-o-matic	66cb710a2aa184a5687fe1289d7973ab	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
+_md5_=a19b37f95f62e3ba00a505a564565394

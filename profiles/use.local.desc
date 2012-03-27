@@ -4114,6 +4114,7 @@ net-misc/networkmanager:introspection - Use dev-libs/gobject-introspection for i
 net-misc/networkmanager:nss - Use dev-libs/nss for cryptography
 net-misc/networkmanager:ppp - Enable support for mobile broadband and PPPoE connections using net-dialup/ppp
 net-misc/networkmanager:resolvconf - Use net-dns/openresolv for managing DNS information
+net-misc/networkmanager:systemd - Use sys-apps/systemd instead of sys-auth/consolekit for session tracking
 net-misc/networkmanager:wimax - Enable support for WiMAX connections using net-wireless/wimax
 net-misc/ntp:openntpd - Allow ntp to be installed alongside openntpd
 net-misc/ntp:parse-clocks - Add support for PARSE clocks
@@ -4714,10 +4715,7 @@ sci-visualization/paraview:gui - Build paraview's gui not just the server
 sci-visualization/paraview:overview - Enable the OverView plugin framework
 sci-visualization/paraview:plugins - Build and install additional plugins
 sci-visualization/paraview:streaming - Enable streaming paraview application
-sci-visualization/qtiplot:emf - Export support for Windows Enhanced Metafile
 sci-visualization/qtiplot:ods - Import support for OpenOffice .ods sheets
-sci-visualization/qtiplot:origin - Import support for Origin project files
-sci-visualization/qtiplot:xls - Import support for Microsoft office excel sheets
 sci-visualization/veusz:fits - Add FITS format via dev-python/pyfits
 sec-policy/selinux-base-policy:open_perms - Enable the open permissions for file object classes (SELinux policy capability).
 sec-policy/selinux-base-policy:peer_perms - Enable the labeled networking peer permissions (SELinux policy capability).
@@ -5621,7 +5619,6 @@ x11-wm/musca:xlisten - Optionally install the xlisten utility
 x11-wm/mutter:introspection - Use dev-libs/gobject-introspection for introspection
 x11-wm/openbox:session - Enables support for session managers
 x11-wm/ratpoison:history - Use sys-libs/readline for history handling
-x11-wm/sawfish:pango - Enable pango support
 x11-wm/stumpwm:clisp - Use CLISP for the runtime
 x11-wm/stumpwm:sbcl - Use SBCL for the runtime
 x11-wm/subtle:xrandr - Enable support for the X RandR extension
