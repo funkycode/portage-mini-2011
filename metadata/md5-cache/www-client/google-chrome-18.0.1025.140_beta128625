@@ -1,0 +1,14 @@
+DEFINED_PHASES=install postinst postrm preinst setup unpack
+DEPEND=>=sys-apps/sed-4
+DESCRIPTION=The web browser from Google
+EAPI=4
+HOMEPAGE=http://www.google.com/chrome
+IUSE=+plugins +linguas_am +linguas_ar +linguas_bg +linguas_bn +linguas_ca +linguas_cs +linguas_da +linguas_de +linguas_el +linguas_en_GB +linguas_es +linguas_es_LA +linguas_et +linguas_fa +linguas_fi +linguas_fil +linguas_fr +linguas_gu +linguas_he +linguas_hi +linguas_hr +linguas_hu +linguas_id +linguas_it +linguas_ja +linguas_kn +linguas_ko +linguas_lt +linguas_lv +linguas_ml +linguas_mr +linguas_ms +linguas_nb +linguas_nl +linguas_pl +linguas_pt_BR +linguas_pt_PT +linguas_ro +linguas_ru +linguas_sk +linguas_sl +linguas_sr +linguas_sv +linguas_sw +linguas_ta +linguas_te +linguas_th +linguas_tr +linguas_uk +linguas_vi +linguas_zh_CN +linguas_zh_TW
+KEYWORDS=-* ~amd64 ~x86
+LICENSE=google-chrome
+RDEPEND=media-libs/alsa-lib app-arch/bzip2 x11-libs/cairo net-print/cups sys-apps/dbus dev-libs/expat media-libs/fontconfig media-libs/freetype app-misc/ca-certificates gnome-base/gconf:2 dev-libs/libgcrypt x11-libs/gdk-pixbuf x11-libs/gtk+:2 dev-libs/glib:2 dev-libs/nspr dev-libs/nss x11-libs/pango media-libs/libpng:1.2 || ( >=sys-devel/gcc-4.4.0[-nocxx] >=sys-devel/gcc-4.4.0[cxx] ) sys-fs/udev x11-libs/libX11 x11-libs/libXext x11-libs/libXfixes x11-libs/libXrender x11-libs/libXScrnSaver sys-libs/zlib x11-misc/xdg-utils net-misc/curl dev-libs/openssl:0.9.8 !www-client/google-chrome:0 !www-client/google-chrome:stable !www-client/google-chrome:unstable
+RESTRICT=mirror strip
+SLOT=beta
+SRC_URI=amd64? ( http://dl.google.com/linux/chrome/deb/pool/main/g/google-chrome-beta/google-chrome-beta_18.0.1025.140-r128625_amd64.deb ) x86? ( http://dl.google.com/linux/chrome/deb/pool/main/g/google-chrome-beta/google-chrome-beta_18.0.1025.140-r128625_i386.deb )
+_eclasses_=chromium	7fa8b89b813dd73fc3fbb50a89b05383	eutils	0f008baa9552301d379ae5df233e9713	fdo-mime	0acfe1a88fd8751a1d5dc671168219fa	gnome2-utils	0556f216199e15cc37899e1130da3824	linux-info	cc184ad3383ffb6ffbaa82f53608e77f	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	pax-utils	3551398d6ede2b572568832730cc2a45	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	unpacker	3bad9303b54075673d368b65e22dfdc8	user	32a09e82e2f592bf88ad2fd08525166e	versionator	6601b4c5b3f019a993db59a50e1854e4
+_md5_=e3ebdc78fbf878f32fc930ec4e908bd6

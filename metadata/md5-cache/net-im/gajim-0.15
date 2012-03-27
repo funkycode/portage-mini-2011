@@ -4,11 +4,11 @@ DESCRIPTION=Jabber client written in PyGTK
 EAPI=4
 HOMEPAGE=http://www.gajim.org/
 IUSE=avahi crypt dbus gmail gnome kde idle jingle libnotify networkmanager nls spell srv X xhtml
-KEYWORDS=~alpha ~amd64 ~hppa ~ia64 ~ppc ~ppc64 ~sparc ~x86
+KEYWORDS=~alpha ~amd64 ~hppa ~ia64 ~ppc ~ppc64 ~sparc ~x86 ~x86-fbsd
 LICENSE=GPL-3
 RDEPEND=dev-python/pygtk:2 x11-libs/gtk+:2 dev-python/pyasn1 dev-python/pyopenssl crypt? ( app-crypt/gnupg dev-python/pycrypto ) dbus? ( dev-python/dbus-python dev-libs/dbus-glib libnotify? ( dev-python/notify-python ) avahi? ( net-dns/avahi[dbus,gtk,python] ) ) gmail? ( net-dns/bind-tools ) gnome? ( dev-python/libgnome-python dev-python/gnome-keyring-python dev-python/egg-python ) idle? ( x11-libs/libXScrnSaver ) jingle? ( net-libs/farsight2[python] ) kde? ( kde-base/kwallet ) networkmanager? ( dev-python/dbus-python net-misc/networkmanager ) srv? ( || ( dev-python/libasyncns-python net-dns/bind-tools ) ) spell? ( app-text/gtkspell:2 ) xhtml? ( dev-python/docutils ) =dev-lang/python-2* =dev-lang/python-2*[sqlite,xml]
 REQUIRED_USE=libnotify? ( dbus ) avahi? ( dbus )
 SLOT=0
 SRC_URI=http://www.gajim.org/downloads/0.15/gajim-0.15.tar.bz2
 _eclasses_=eutils	0f008baa9552301d379ae5df233e9713	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	python	cb2844e25e38800105564c14a716c805	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e	versionator	6601b4c5b3f019a993db59a50e1854e4
-_md5_=ae9ccab7e1aa5f215b88a74f7f9f0194
+_md5_=f4d6d734005f92fe7e3f0f19df406c60

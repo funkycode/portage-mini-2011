@@ -3,10 +3,10 @@ DEPEND=dev-lang/php >=dev-php/pear-1.8.1
 DESCRIPTION=Generating CHAP packets
 EAPI=4
 HOMEPAGE=http://pear.php.net/Crypt_CHAP
-KEYWORDS=~alpha amd64 ~arm ~hppa ~ia64 ppc ppc64 ~s390 ~sh ~sparc x86
+KEYWORDS=~alpha amd64 ~arm hppa ~ia64 ppc ppc64 ~s390 ~sh ~sparc x86
 LICENSE=BSD
 RDEPEND=dev-lang/php >=dev-php/pear-1.8.1
 SLOT=0
 SRC_URI=http://pear.php.net/get/Crypt_CHAP-1.5.0.tgz
 _eclasses_=multilib	5f4ad6cf85e365e8f0c6050ddd21659e	php-pear-r1	ec6ca81a78eed55923c519977010e559	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68
-_md5_=77813e011d56d569a470e8593435fa16
+_md5_=38ead9b4898f2448722cbb509599bb30

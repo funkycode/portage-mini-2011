@@ -1,0 +1,12 @@
+DEFINED_PHASES=compile configure install postinst postrm preinst prepare setup unpack
+DEPEND=gnome-base/librsvg:2 x11-libs/cairo >=x11-libs/gtk+-3.3.14:3 >=x11-themes/gtk-engines-2.15.3:2 >=dev-util/pkgconfig-0.19 >=dev-util/intltool-0.40 sys-devel/gettext app-arch/xz-utils >=sys-apps/sed-4
+DESCRIPTION=Adwaita theme for GNOME Shell
+EAPI=4
+HOMEPAGE=http://www.gnome.org/
+KEYWORDS=~alpha ~amd64 ~arm ~ia64 ~mips ~ppc ~ppc64 ~sh ~sparc ~x86 ~x86-fbsd ~x86-freebsd ~amd64-linux ~x86-linux ~x64-solaris ~x86-solaris
+LICENSE=LGPL-2.1
+RDEPEND=gnome-base/librsvg:2 x11-libs/cairo >=x11-libs/gtk+-3.3.14:3 >=x11-themes/gtk-engines-2.15.3:2 !<x11-themes/gnome-themes-2.32.1-r1
+SLOT=0
+SRC_URI=mirror://gnome/sources/gnome-themes-standard/3.4/gnome-themes-standard-3.4.0.tar.xz
+_eclasses_=eutils	0f008baa9552301d379ae5df233e9713	fdo-mime	0acfe1a88fd8751a1d5dc671168219fa	gnome.org	8fef8f967214f56e08fa92d61163d891	gnome2	c5477c755de0f2ff9adf317383ee2767	gnome2-utils	0556f216199e15cc37899e1130da3824	libtool	5f623f5a211fb1b2d84d88ee49959a54	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e	versionator	6601b4c5b3f019a993db59a50e1854e4
+_md5_=9036771769e26949224e8fe8378ecb7c
