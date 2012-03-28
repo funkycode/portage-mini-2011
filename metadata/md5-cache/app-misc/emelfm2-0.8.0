@@ -6,9 +6,9 @@ HOMEPAGE=http://emelfm2.net/
 IUSE=acl fam gimp kernel_linux nls policykit spell udev
 KEYWORDS=~amd64 ~ppc ~ppc64 ~sparc ~x86
 LICENSE=GPL-3 LGPL-3
-RDEPEND=>=dev-libs/glib-2.26:2 >=x11-libs/gtk+-2.12:2 acl? ( sys-apps/acl ) gimp? ( media-gfx/gimp ) policykit? ( sys-auth/polkit ) spell? ( >=app-text/gtkspell-2.0.14:2 ) udev? ( sys-fs/udisks )
+RDEPEND=>=dev-libs/glib-2.26:2 >=x11-libs/gtk+-2.12:2 acl? ( sys-apps/acl ) gimp? ( media-gfx/gimp ) policykit? ( sys-auth/polkit ) spell? ( >=app-text/gtkspell-2.0.14:2 ) udev? ( sys-fs/udisks:0 )
 RESTRICT=test
 SLOT=0
 SRC_URI=http://emelfm2.net/rel/emelfm2-0.8.0.tar.bz2
 _eclasses_=eutils	0f008baa9552301d379ae5df233e9713	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
-_md5_=cbcb448201d16ee27b0d5bb11385f59e
+_md5_=3daf7f416c31ac44c29c1a2cdc674e4c

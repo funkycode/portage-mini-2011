@@ -6,9 +6,9 @@ HOMEPAGE=http://sensors-applet.sourceforge.net/
 IUSE=+dbus hddtemp libnotify lm_sensors video_cards_fglrx video_cards_nvidia
 KEYWORDS=alpha amd64 ppc x86
 LICENSE=GPL-2
-PDEPEND=hddtemp? ( dbus? ( sys-fs/udisks ) )
+PDEPEND=hddtemp? ( dbus? ( sys-fs/udisks:0 ) )
 RDEPEND=>=dev-libs/glib-2.14:2 >=x11-libs/gtk+-2.14:2 gnome-base/gnome-panel[bonobo] >=gnome-base/libgnome-2.8 >=gnome-base/libgnomeui-2.8 >=x11-libs/cairo-1.0.4 hddtemp? ( dbus? ( >=dev-libs/dbus-glib-0.80 >=dev-libs/libatasmart-0.16 ) !dbus? ( >=app-admin/hddtemp-0.3_beta13 ) ) libnotify? ( x11-libs/libnotify ) lm_sensors? ( sys-apps/lm_sensors ) video_cards_fglrx? ( x11-drivers/ati-drivers ) video_cards_nvidia? ( || ( >=x11-drivers/nvidia-drivers-100.14.09 media-video/nvidia-settings ) )
 SLOT=0
 SRC_URI=mirror://sourceforge/sensors-applet/sensors-applet-2.2.7.tar.gz
 _eclasses_=eutils	0f008baa9552301d379ae5df233e9713	fdo-mime	0acfe1a88fd8751a1d5dc671168219fa	gnome.org	8fef8f967214f56e08fa92d61163d891	gnome2	c5477c755de0f2ff9adf317383ee2767	gnome2-utils	0556f216199e15cc37899e1130da3824	libtool	5f623f5a211fb1b2d84d88ee49959a54	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e	versionator	6601b4c5b3f019a993db59a50e1854e4
-_md5_=153d9de40efee33c9a40f663e7ce5a94
+_md5_=66acab9c9f7cdbecea9d42d5164c56cf

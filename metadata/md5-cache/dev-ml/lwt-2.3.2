@@ -1,13 +1,13 @@
-DEFINED_PHASES=configure install
-DEPEND=>=dev-lang/ocaml-3.12[ocamlopt?] react? ( dev-ml/react ) dev-libs/libev ssl? ( >=dev-ml/ocaml-ssl-0.4.0 ) gtk? ( dev-ml/lablgtk dev-libs/glib:2 ) >=dev-ml/findlib-1.0.4-r1
+DEFINED_PHASES=compile configure install prepare test unpack
+DEPEND=react? ( dev-ml/react ) dev-libs/libev ssl? ( >=dev-ml/ocaml-ssl-0.4.0 ) gtk? ( dev-ml/lablgtk dev-libs/glib:2 ) >=dev-ml/findlib-1.0.4-r1 >=dev-lang/ocaml-3.12[ocamlopt?]
 DESCRIPTION=Cooperative light-weight thread library for OCaml
-EAPI=2
+EAPI=3
 HOMEPAGE=http://ocsigen.org/lwt
-IUSE=gtk +ocamlopt +react +ssl
+IUSE=gtk +react +ssl +ocamlopt debug
 KEYWORDS=~amd64 ~x86 ~x86-fbsd
 LICENSE=LGPL-2.1 LGPL-2.1-linking-exception
-RDEPEND=>=dev-lang/ocaml-3.12[ocamlopt?] react? ( dev-ml/react ) dev-libs/libev ssl? ( >=dev-ml/ocaml-ssl-0.4.0 ) gtk? ( dev-ml/lablgtk dev-libs/glib:2 ) !<www-servers/ocsigen-1.1
+RDEPEND=react? ( dev-ml/react ) dev-libs/libev ssl? ( >=dev-ml/ocaml-ssl-0.4.0 ) gtk? ( dev-ml/lablgtk dev-libs/glib:2 ) !<www-servers/ocsigen-1.1 >=dev-lang/ocaml-3.12[ocamlopt?]
 SLOT=0
 SRC_URI=http://ocsigen.org/download/lwt-2.3.2.tar.gz
-_eclasses_=eutils	0f008baa9552301d379ae5df233e9713	findlib	9cf6020ee5481f39f1aa566a323f9868	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
-_md5_=bde86c2795041b0610d64ef003c1cb95
+_eclasses_=base	56b5d6bcc4a0fc2a3055a84fd4a5c36b	eutils	0f008baa9552301d379ae5df233e9713	findlib	9cf6020ee5481f39f1aa566a323f9868	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	oasis	b06dffa6b9fecb81ede1ade7fead8438	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
+_md5_=1cdc97bc9cab6b8f8d19386977608a04

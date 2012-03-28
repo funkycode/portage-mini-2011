@@ -1,13 +1,13 @@
-DEFINED_PHASES=configure install
-DEPEND=>=dev-lang/ocaml-3.12[ocamlopt?] >=dev-ml/type-conv-2.3.0 >=dev-ml/findlib-1.0.4-r1
+DEFINED_PHASES=compile configure install prepare test unpack
+DEPEND=>=dev-ml/type-conv-2.3.0 >=dev-ml/findlib-1.0.4-r1 >=dev-lang/ocaml-3.12[ocamlopt?]
 DESCRIPTION=Folding over record fields
-EAPI=2
+EAPI=3
 HOMEPAGE=http://www.janestreet.com/ocaml
-IUSE=debug +ocamlopt
+IUSE=+ocamlopt debug
 KEYWORDS=~amd64
 LICENSE=LGPL-2.1-linking-exception
-RDEPEND=>=dev-lang/ocaml-3.12[ocamlopt?] >=dev-ml/type-conv-2.3.0
+RDEPEND=>=dev-ml/type-conv-2.3.0 >=dev-lang/ocaml-3.12[ocamlopt?]
 SLOT=0
 SRC_URI=http://www.janestreet.com/ocaml/fieldslib-0.1.2.tar.gz
-_eclasses_=findlib	9cf6020ee5481f39f1aa566a323f9868	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68
-_md5_=f84b8eb581187189fd6d4d1d1aba2bf8
+_eclasses_=base	56b5d6bcc4a0fc2a3055a84fd4a5c36b	eutils	0f008baa9552301d379ae5df233e9713	findlib	9cf6020ee5481f39f1aa566a323f9868	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	oasis	b06dffa6b9fecb81ede1ade7fead8438	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
+_md5_=9432b45cf6195a86a35a6c5199d3a3ea

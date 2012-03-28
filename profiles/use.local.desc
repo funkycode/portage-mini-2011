@@ -1279,6 +1279,7 @@ dev-libs/geoip:perl-geoipupdate - Install pure perl version of geoipupdate, with
 dev-libs/glib:introspection - Use dev-libs/gobject-introspection for introspection
 dev-libs/glib:systemtap - Build support for profiling and tracing using dev-util/systemtap
 dev-libs/glib:utils - Install gtester-report utility to generate test report files for your software.
+dev-libs/gobject-introspection:doctool - Install g-ir-doc-tool for generating documentation from introspected data
 dev-libs/igraph:arpack - Use external sci-libs/arpack
 dev-libs/igraph:blas - Use external virtual/blas numerical library
 dev-libs/igraph:gmp - Enables dev-libs/gmp support
@@ -1884,7 +1885,6 @@ games-strategy/x2:langpacks - Install additional language packs
 games-strategy/x2:modkit - Install the modkit
 games-util/gslist:web - Enable the web interface
 games-util/pyfa:graph - Enable support for graphs
-gnome-base/dconf:introspection - Use dev-libs/gobject-introspection for introspection
 gnome-base/dconf:vala - Add support for dev-lang/vala
 gnome-base/gconf:introspection - Use dev-libs/gobject-introspection for introspection
 gnome-base/gconf:ldap - Build backend which enables default mail accounts, addressbooks and calendars for Evolution to be configured using each user's LDAP entry."
@@ -1920,9 +1920,9 @@ gnome-base/gvfs:archive - Enables support for accessing files in archives transp
 gnome-base/gvfs:bluray - Enable playback of Blu-ray filesystems using media-libs/libbluray
 gnome-base/gvfs:fuse - Enables fuse mount points in $HOME/.gvfs for legacy application access
 gnome-base/gvfs:gdu - Enable sys-apps/gnome-disk-utility integration
-gnome-base/gvfs:gnome - Enable support for reading settings from gnome-base/gconf and for the special network:/// URL
 gnome-base/gvfs:http - Enable the HTTP/DAV backend using net-libs/libsoup-gnome
 gnome-base/gvfs:udev - Enable udev base replacement code for cdda feature
+gnome-base/gvfs:udisks - Enable volume monitoring using sys-fs/udisks
 gnome-base/libgnomecanvas:glade - Enable glade support
 gnome-base/libgnomekbd:introspection - Use dev-libs/gobject-introspection for introspection
 gnome-base/libgtop:introspection - Use dev-libs/gobject-introspection for introspection
@@ -5063,6 +5063,7 @@ sys-fs/udev:keymap - map custom hardware's multimedia keys
 sys-fs/udev:old-hd-rules - Install rules for /dev/hd* devices, removed upstream at udev-148
 sys-fs/udev:openrc - install the OpenRC init scripts
 sys-fs/udev:rule_generator - enable persistent network and optical device rule generator
+sys-fs/udisks:introspection - Use dev-libs/gobject-introspection for introspection
 sys-fs/udisks:remote-access - Control whether connections from other clients over LAN are allowed
 sys-fs/zfs:dracut - Install dracut module
 sys-fs/zfs:test-suite - Install regression test suite
