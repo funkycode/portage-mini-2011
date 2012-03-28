@@ -1,6 +1,6 @@
 # Copyright 1999-2012 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/media-video/mplayer2/mplayer2-9999.ebuild,v 1.24 2012/03/18 13:48:26 ssuominen Exp $
+# $Header: /var/cvsroot/gentoo-x86/media-video/mplayer2/mplayer2-9999.ebuild,v 1.25 2012/03/28 07:38:59 scarabeus Exp $
 
 EAPI=4
 
@@ -30,7 +30,7 @@ SLOT="0"
 if [[ ${PV} == *9999* ]]; then
 	KEYWORDS=""
 else
-	KEYWORDS="~alpha ~amd64 ~arm ~hppa ~ia64 ~ppc ~ppc64 ~sparc ~x86 ~amd64-linux "
+	KEYWORDS="~alpha ~amd64 ~arm ~hppa ~ia64 ~ppc ~ppc64 ~sparc ~x86 ~amd64-linux"
 fi
 IUSE="3dnow 3dnowext +a52 aalib +alsa altivec aqua +ass bidi bindist bl
 bluray bs2b cddb +cdio cdparanoia cpudetection custom-cpuopts
@@ -141,7 +141,7 @@ RDEPEND+="
 	vorbis? ( media-libs/libvorbis )
 	xanim? ( media-video/xanim )
 	xvid? ( media-libs/xvid )
-	>=virtual/ffmpeg-0.6
+	>=virtual/ffmpeg-0.10.2
 	symlink? ( !media-video/mplayer )
 "
 ASM_DEP="dev-lang/yasm"
@@ -474,20 +474,18 @@ src_configure() {
 	###########################
 	# X enabled configuration #
 	###########################
+	myconf+=" --disable-dga1 --disable-dga2"
 	if use X; then
 		uses="dxr3 ggi xinerama xv"
 		for i in ${uses}; do
 			use ${i} || myconf+=" --disable-${i}"
 		done
-		myconf+=" --disable-dga1 --disable-dga2"
 		use opengl || myconf+=" --disable-gl"
 		use vdpau || myconf+=" --disable-vdpau"
 		use video_cards_vesa || myconf+=" --disable-vesa"
 		use xscreensaver || myconf+=" --disable-xss"
 	else
 		myconf+="
-			--disable-dga1
-			--disable-dga2
 			--disable-dxr3
 			--disable-ggi
 			--disable-gl

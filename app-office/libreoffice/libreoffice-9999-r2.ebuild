@@ -1,6 +1,6 @@
 # Copyright 1999-2012 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/app-office/libreoffice/libreoffice-9999-r2.ebuild,v 1.40 2012/03/27 16:08:17 scarabeus Exp $
+# $Header: /var/cvsroot/gentoo-x86/app-office/libreoffice/libreoffice-9999-r2.ebuild,v 1.42 2012/03/28 11:58:26 scarabeus Exp $
 
 EAPI=4
 
@@ -71,8 +71,8 @@ unset EXT_URI
 unset ADDONS_SRC
 
 IUSE="binfilter +branding +cups dbus eds gnome +graphite gstreamer +gtk gtk3
-jemalloc kde mysql +nsplugin odk opengl pdfimport postgres svg test +vba
-+webdav +xmlsec"
+jemalloc kde mysql nlpsolver +nsplugin odk opengl pdfimport postgres svg test
++vba +webdav +xmlsec"
 LICENSE="LGPL-3"
 SLOT="0"
 [[ ${PV} == *9999* ]] || KEYWORDS="~amd64 ~ppc ~x86 ~amd64-linux ~x86-linux"
@@ -109,6 +109,7 @@ COMMON_DEPEND="
 	>=media-libs/libpng-1.4
 	media-libs/libcdr
 	media-libs/libvisio
+	>=net-misc/curl-7.21.4
 	sci-mathematics/lpsolve
 	>=sys-libs/db-4.8
 	virtual/jpeg
@@ -175,7 +176,6 @@ DEPEND="${COMMON_DEPEND}
 	dev-util/mdds
 	>=dev-util/pkgconfig-0.26
 	media-libs/sampleicc
-	>=net-misc/curl-7.21.4
 	net-misc/npapi-sdk
 	net-print/cups
 	>=sys-apps/findutils-4.4.2
@@ -206,6 +206,7 @@ REQUIRED_USE="
 	nsplugin? ( gtk )
 	gnome? ( gtk )
 	eds? ( gnome )
+	nlpsolver? ( java )
 "
 
 S="${WORKDIR}/${PN}-core-${PV}"
@@ -385,7 +386,6 @@ src_configure() {
 		--with-system-libs \
 		--with-system-jars \
 		--with-system-dicts \
-		--with-system-libcdr \
 		--enable-cairo-canvas \
 		--enable-largefile \
 		--enable-mergelibs \
@@ -446,6 +446,7 @@ src_configure() {
 		$(use_enable java ext-scripting-beanshell) \
 		$(use_enable kde kde4) \
 		$(use_enable mysql ext-mysql-connector) \
+		$(use_enable nlpsolver ext-nlpsolver) \
 		$(use_enable nsplugin) \
 		$(use_enable odk) \
 		$(use_enable opengl) \

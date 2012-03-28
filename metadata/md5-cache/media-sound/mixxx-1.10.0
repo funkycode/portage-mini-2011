@@ -10,4 +10,4 @@ RDEPEND=media-libs/fidlib media-libs/flac media-libs/libid3tag media-libs/libogg
 SLOT=0
 SRC_URI=http://downloads.mixxx.org/mixxx-1.10.0/mixxx-1.10.0-src.tar.gz
 _eclasses_=eutils	0f008baa9552301d379ae5df233e9713	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	scons-utils	9cb9120b919b1ea34b4b7028d9973261	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
-_md5_=c16abf6b2bdceedb46290b26a13f2fa1
+_md5_=166a6d068b6afe336f749c37c7077c52
