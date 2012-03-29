@@ -4279,10 +4279,14 @@ net-p2p/bitcoind:eligius - Enable using lower fees accepted by Eligius
 net-p2p/bitcoind:upnp - Enable Universal Plug and Play
 net-p2p/dbhub:switch_user - Enable support for switching user
 net-p2p/deluge:webinterface - Install dependencies needed for the web interface
-net-p2p/eiskaltdcpp:cli - Enable eiskaltdcpp-daemon with sample cli based on readline
-net-p2p/eiskaltdcpp:daemon - Enable eiskaltdcpp-daemon without any UI
+net-p2p/eiskaltdcpp:cli - Enable sample cli based on readline
+net-p2p/eiskaltdcpp:daemon - Enable eiskaltdcpp-daemon
 net-p2p/eiskaltdcpp:dht - Enable DHT (distributed hash table) support for libeiskaltdcpp
 net-p2p/eiskaltdcpp:emoticons - Install emoticon packs
+net-p2p/eiskaltdcpp:gnome - Enable sound notifications support over libgnome2 in EiskaltDC++ Gtk
+net-p2p/eiskaltdcpp:gtk3 - Use x11-libs/gtk+:3 instead of x11-libs/gtk+:2
+net-p2p/eiskaltdcpp:json - Enable JSON for cli and daemon
+net-p2p/eiskaltdcpp:libcanberra - Enable sound notifications support over libcanberra in EiskaltDC++ Gtk
 net-p2p/eiskaltdcpp:minimal - Don't install headers
 net-p2p/eiskaltdcpp:upnp - Forward ports using UPnP
 net-p2p/fms:frost - Add support for frost boards
@@ -4414,6 +4418,8 @@ net-wireless/kismet:ruby - Build extras which are written in ruby, example plugi
 net-wireless/kismet:speech - Audio support using app-accessibility/flite
 net-wireless/kismet:suid - Install a setuid root helper binary with limited functionality; this allows running kismet as a normal user, significantly reducing security risks
 net-wireless/madwifi-ng:injection - Adds support for net-wireless/aircrack-ng aireplay-ng packet injection
+net-wireless/pyrit:cuda - Enable CUDA support via net-wireless/cpyrit-cuda
+net-wireless/pyrit:opencl - Enable OpenCL support via net-wireless/cpyrit-opencl
 net-wireless/spectools:debug - Build the raw output client for spectools.
 net-wireless/spectools:gtk - Build the gtk-2 based client for spectools
 net-wireless/spectools:ncurses - Build the ncurses based client for spectools
@@ -4789,6 +4795,8 @@ sys-apps/pcsc-lite:libusb - Use dev-libs/libusb detection to hotplug new smartca
 sys-apps/pcsc-lite:udev - Use sys-fs/udev rules to handle devices' permissions and hotplug support. Unless you know what you're doing do not disable this flag on Linux kernels. This is provided as an option for completeness.
 sys-apps/pcsc-lite:usb - Use dev-libs/libusb detection to hotplug new smartcard readers. This flag only makes sense on non-Linux systems, as on Linux, sys-fs/udev is used instead.
 sys-apps/pcsc-tools:network-cron - Monthly cronjob the update-smartcard_list script
+sys-apps/pkgcore:doc - Build and install API docs.
+sys-apps/pkgcore:man - Build and install man pages.
 sys-apps/policycoreutils:audit - Enable support for sys-process/audit and use the audit_* functions (like audit_getuid instead of getuid())
 sys-apps/portage:epydoc - Build html API documentation with epydoc.
 sys-apps/portage:ipc - Use inter-process communication between portage and running ebuilds.

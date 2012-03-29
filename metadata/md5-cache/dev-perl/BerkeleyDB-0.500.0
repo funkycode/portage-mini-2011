@@ -4,10 +4,10 @@ DESCRIPTION=This module provides Berkeley DB interface for Perl.
 EAPI=4
 HOMEPAGE=http://search.cpan.org/dist/BerkeleyDB/
 IUSE=test
-KEYWORDS=~alpha amd64 ~hppa ~ia64 ~ppc ~ppc64 ~sparc ~x86
+KEYWORDS=~alpha amd64 hppa ~ia64 ~ppc ~ppc64 ~sparc ~x86
 LICENSE=|| ( Artistic GPL-1 GPL-2 GPL-3 )
 RDEPEND=>=sys-libs/db-2.0 dev-lang/perl[-build]
 SLOT=0
 SRC_URI=mirror://cpan/authors/id/P/PM/PMQS/BerkeleyDB-0.50.tar.gz
 _eclasses_=base	56b5d6bcc4a0fc2a3055a84fd4a5c36b	db-use	2f5d6a2718559b90a51648d8ff58be83	eutils	0f008baa9552301d379ae5df233e9713	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	perl-module	d4141c106a05d2a700d500676082a9f9	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e	versionator	6601b4c5b3f019a993db59a50e1854e4
-_md5_=917c93691c55668e6fc9a48f781bb351
+_md5_=ad4642691623bc5e710e767676248b56

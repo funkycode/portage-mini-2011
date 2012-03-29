@@ -1,0 +1,13 @@
+DEFINED_PHASES=compile configure install prepare setup test unpack
+DEPEND=test? ( ruby_targets_ruby19? ( dev-ruby/ruby-gtk2[ruby_targets_ruby19] dev-ruby/rcairo[ruby_targets_ruby19] dev-ruby/httpclient[ruby_targets_ruby19] virtual/ruby-ssl[ruby_targets_ruby19] ) ) ruby_targets_ruby19? ( dev-lang/ruby:1.9 )
+DESCRIPTION=mikutter is simple, powerful and moeful twitter client
+EAPI=3
+HOMEPAGE=http://mikutter.hachune.net/
+IUSE=+libnotify sound test elibc_FreeBSD ruby_targets_ruby19
+KEYWORDS=~amd64 ~x86
+LICENSE=GPL-3
+RDEPEND=libnotify? ( x11-libs/libnotify ) sound? ( media-sound/alsa-utils ) ruby_targets_ruby19? ( dev-ruby/ruby-gtk2[ruby_targets_ruby19] dev-ruby/rcairo[ruby_targets_ruby19] dev-ruby/httpclient[ruby_targets_ruby19] virtual/ruby-ssl[ruby_targets_ruby19] ) ruby_targets_ruby19? ( dev-lang/ruby:1.9 )
+SLOT=0
+SRC_URI=http://mikutter.hachune.net/bin/mikutter.0.1.0.723.tar.gz
+_eclasses_=eutils	0f008baa9552301d379ae5df233e9713	java-utils-2	b173b5d55bfd6e328939985bc54a1c9e	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	ruby-ng	927a565459a62f2839d06e03cfbe1440	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e	versionator	6601b4c5b3f019a993db59a50e1854e4
+_md5_=2dd14da875932d6ca6ade1d5e0c66021

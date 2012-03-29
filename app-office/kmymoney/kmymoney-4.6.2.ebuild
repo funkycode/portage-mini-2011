@@ -1,6 +1,6 @@
 # Copyright 1999-2012 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/app-office/kmymoney/kmymoney-4.6.2.ebuild,v 1.1 2012/03/08 02:45:10 dilfridge Exp $
+# $Header: /var/cvsroot/gentoo-x86/app-office/kmymoney/kmymoney-4.6.2.ebuild,v 1.3 2012/03/29 08:06:17 dilfridge Exp $
 
 EAPI=4
 
@@ -57,6 +57,9 @@ PATCHES=(
 	"${FILESDIR}/${PN}-4.6.1-qt48.patch"
 )
 
+RESTRICT=test
+# bug 399467
+
 src_configure() {
 	mycmakeargs=(
 		-DUSE_QT_DESIGNER=OFF
@@ -70,7 +73,9 @@ src_configure() {
 }
 
 src_compile() {
-	kde4-base_src_compile
+	# workaround for bug 407611
+	MAKEOPTS="-j1" kde4-base_src_compile
+
 	use doc && kde4-base_src_compile apidoc
 }
 

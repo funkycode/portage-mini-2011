@@ -1,0 +1,12 @@
+DEFINED_PHASES=compile install prepare
+DEPEND=x11-libs/libX11 x11-libs/libXext x11-libs/libXpm x11-proto/xextproto
+DESCRIPTION=Dockable system resources monitor applet for WindowMaker
+EAPI=4
+HOMEPAGE=http://repo.or.cz/w/dockapps.git
+KEYWORDS=~amd64 ~ppc ~sparc ~x86
+LICENSE=GPL-2
+RDEPEND=x11-libs/libX11 x11-libs/libXext x11-libs/libXpm
+SLOT=0
+SRC_URI=http://dev.gentoo.org/~voyageur/distfiles/wmmon-1.2b1.tar.bz2
+_eclasses_=eutils	0f008baa9552301d379ae5df233e9713	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
+_md5_=1bd3765e7a05b30b986f9137069845a7
