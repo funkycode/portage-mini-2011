@@ -1,15 +1,15 @@
 DEFINED_PHASES=compile configure install postinst prepare pretend setup
-DEPEND=dev-libs/popt >=sys-libs/talloc-2.0.5 >=sys-libs/tdb-1.2.9 virtual/libiconv ads? ( virtual/krb5 sys-fs/e2fsprogs client? ( sys-apps/keyutils kernel_linux? ( net-fs/cifs-utils[ads] ) ) ) avahi? ( net-dns/avahi[dbus] ) caps? ( sys-libs/libcap ) client? ( !net-fs/mount-cifs dev-libs/iniparser kernel_linux? ( net-fs/cifs-utils ) ) cluster? ( >=dev-db/ctdb-1.0.114_p1 ) cups? ( net-print/cups ) debug? ( dev-libs/dmalloc ) fam? ( virtual/fam ) ldap? ( net-nds/openldap ) ldb? ( sys-libs/ldb ) pam? ( virtual/pam winbind? ( dev-libs/iniparser ) ) readline? ( >=sys-libs/readline-5.2 ) syslog? ( virtual/logger )
+DEPEND=dev-libs/popt >=sys-libs/talloc-2.0.5 >=sys-libs/tdb-1.2.9 virtual/libiconv ads? ( virtual/krb5 sys-fs/e2fsprogs client? ( sys-apps/keyutils kernel_linux? ( net-fs/cifs-utils[ads] ) ) ) avahi? ( net-dns/avahi[dbus] ) caps? ( sys-libs/libcap ) client? ( !net-fs/mount-cifs dev-libs/iniparser kernel_linux? ( net-fs/cifs-utils ) ) cluster? ( >=dev-db/ctdb-1.13 ) cups? ( net-print/cups ) debug? ( dev-libs/dmalloc ) fam? ( virtual/fam ) ldap? ( net-nds/openldap ) ldb? ( sys-libs/ldb ) pam? ( virtual/pam winbind? ( dev-libs/iniparser ) ) readline? ( >=sys-libs/readline-5.2 ) syslog? ( virtual/logger )
 DESCRIPTION=Library bits of the samba network filesystem
 EAPI=4
 HOMEPAGE=http://www.samba.org/
 IUSE=acl addns ads +aio avahi caps +client cluster cups debug doc examples fam ldap ldb +netapi pam quota +readline +server +smbclient smbsharemodes swat syslog winbind
 KEYWORDS=~amd64 ~x86 ~x86-fbsd
 LICENSE=GPL-3
-RDEPEND=dev-libs/popt >=sys-libs/talloc-2.0.5 >=sys-libs/tdb-1.2.9 virtual/libiconv ads? ( virtual/krb5 sys-fs/e2fsprogs client? ( sys-apps/keyutils kernel_linux? ( net-fs/cifs-utils[ads] ) ) ) avahi? ( net-dns/avahi[dbus] ) caps? ( sys-libs/libcap ) client? ( !net-fs/mount-cifs dev-libs/iniparser kernel_linux? ( net-fs/cifs-utils ) ) cluster? ( >=dev-db/ctdb-1.0.114_p1 ) cups? ( net-print/cups ) debug? ( dev-libs/dmalloc ) fam? ( virtual/fam ) ldap? ( net-nds/openldap ) ldb? ( sys-libs/ldb ) pam? ( virtual/pam winbind? ( dev-libs/iniparser ) ) readline? ( >=sys-libs/readline-5.2 ) syslog? ( virtual/logger )
+RDEPEND=dev-libs/popt >=sys-libs/talloc-2.0.5 >=sys-libs/tdb-1.2.9 virtual/libiconv ads? ( virtual/krb5 sys-fs/e2fsprogs client? ( sys-apps/keyutils kernel_linux? ( net-fs/cifs-utils[ads] ) ) ) avahi? ( net-dns/avahi[dbus] ) caps? ( sys-libs/libcap ) client? ( !net-fs/mount-cifs dev-libs/iniparser kernel_linux? ( net-fs/cifs-utils ) ) cluster? ( >=dev-db/ctdb-1.13 ) cups? ( net-print/cups ) debug? ( dev-libs/dmalloc ) fam? ( virtual/fam ) ldap? ( net-nds/openldap ) ldb? ( sys-libs/ldb ) pam? ( virtual/pam winbind? ( dev-libs/iniparser ) ) readline? ( >=sys-libs/readline-5.2 ) syslog? ( virtual/logger )
 REQUIRED_USE=ads? ( ldap ) swat? ( server )
 RESTRICT=test
 SLOT=0
 SRC_URI=mirror://samba/samba-3.6.3.tar.gz
 _eclasses_=eutils	0f008baa9552301d379ae5df233e9713	flag-o-matic	66cb710a2aa184a5687fe1289d7973ab	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	pam	3f746974e1cc47cabe3bd488c08cdc8e	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e	versionator	6601b4c5b3f019a993db59a50e1854e4
-_md5_=23a377fbf9630eed394f288119fa6a43
+_md5_=06d8adb44354acb792205835629e3a04

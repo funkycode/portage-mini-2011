@@ -10,4 +10,4 @@ RDEPEND=>=app-shells/bash-2.04-r3 !unicode? ( >=sys-libs/ncurses-5.2-r5 ) unicod
 SLOT=0
 SRC_URI=ftp://invisible-island.net/dialog/dialog-1.1-20111020.tgz
 _eclasses_=multilib	5f4ad6cf85e365e8f0c6050ddd21659e	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68
-_md5_=ecb5ae70e2562c543d6ff235c56e8f39
+_md5_=59e3e34086093d01022413903c8499ba

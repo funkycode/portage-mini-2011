@@ -3,10 +3,10 @@ DEPEND=>=dev-perl/Hook-LexWrap-0.20 virtual/perl-File-Spec dev-lang/perl[-build]
 DESCRIPTION=Track the number of times subs are called
 EAPI=4
 HOMEPAGE=http://search.cpan.org/dist/Test-SubCalls/
-KEYWORDS=amd64 ~ppc sparc x86 ~amd64-linux ~x86-linux ~ppc-macos ~x86-macos ~sparc-solaris
+KEYWORDS=amd64 ~ppc x86 ~amd64-linux ~x86-linux ~ppc-macos ~x86-macos ~sparc-solaris
 LICENSE=|| ( Artistic GPL-1 GPL-2 GPL-3 )
 RDEPEND=>=dev-perl/Hook-LexWrap-0.20 virtual/perl-File-Spec dev-lang/perl[-build]
 SLOT=0
 SRC_URI=mirror://cpan/authors/id/A/AD/ADAMK/Test-SubCalls-1.09.tar.gz
 _eclasses_=base	56b5d6bcc4a0fc2a3055a84fd4a5c36b	eutils	0f008baa9552301d379ae5df233e9713	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	perl-module	d4141c106a05d2a700d500676082a9f9	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
-_md5_=e41c69a7a4a72306276eb971b4b5bf02
+_md5_=ce12b0d17c3722d898073671caa2bd6d
