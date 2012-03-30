@@ -1,11 +1,11 @@
-DEFINED_PHASES=configure install prepare unpack
-DEPEND=virtual/libusb:1 cxx? ( dev-libs/boost ) python? ( dev-lang/python ) doc? ( app-doc/doxygen ) dev-vcs/git || ( >=sys-devel/automake-1.11.1:1.11 ) >=sys-devel/autoconf-2.68 sys-devel/libtool
+DEFINED_PHASES=compile configure install prepare test unpack
+DEPEND=virtual/libusb:0 cxx? ( dev-libs/boost ) python? ( dev-lang/python ) doc? ( app-doc/doxygen ) >=dev-util/cmake-2.8.4 userland_GNU? ( >=sys-apps/findutils-4.4.0 ) dev-vcs/git || ( >=sys-devel/automake-1.11.1:1.11 ) >=sys-devel/autoconf-2.68 sys-devel/libtool
 DESCRIPTION=Userspace access to FTDI USB interface chips
 EAPI=2
 HOMEPAGE=http://www.intra2net.com/en/developer/libftdi/
-IUSE=cxx doc examples python static-libs
+IUSE=cxx doc examples python
 LICENSE=LGPL-2
-RDEPEND=virtual/libusb:1 cxx? ( dev-libs/boost ) python? ( dev-lang/python )
+RDEPEND=virtual/libusb:0 cxx? ( dev-libs/boost ) python? ( dev-lang/python )
 SLOT=0
-_eclasses_=autotools	addbdf6cce5024ac93ad2084ad5e1d2d	eutils	0f008baa9552301d379ae5df233e9713	git-2	6bb20ec18cca375571bcbe67bcf2e1d7	libtool	5f623f5a211fb1b2d84d88ee49959a54	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
-_md5_=37d8200732acd6711a44a402f5de34fb
+_eclasses_=autotools	addbdf6cce5024ac93ad2084ad5e1d2d	base	56b5d6bcc4a0fc2a3055a84fd4a5c36b	cmake-utils	958bfc21321d16fe83e1df5e3e654469	eutils	0f008baa9552301d379ae5df233e9713	flag-o-matic	66cb710a2aa184a5687fe1289d7973ab	git-2	6bb20ec18cca375571bcbe67bcf2e1d7	libtool	5f623f5a211fb1b2d84d88ee49959a54	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
+_md5_=19e78593ad9f14f00567f546f5be58c3

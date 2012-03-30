@@ -1108,7 +1108,6 @@ dev-java/icedtea:X - Make X buildtime-only depenency.
 dev-java/icedtea:alsa - Make alsa buildtime-only dependency.
 dev-java/icedtea:cups - Make CUPS build-only dependency.
 dev-java/icedtea:hs20 - Use the new version of HotSpot (20).
-dev-java/icedtea:jamvm - Build additionally the JamVM virtual machine.
 dev-java/icedtea:jbootstrap - If possible, recompile the final IcedTea executables with itself.
 dev-java/icedtea:nsplugin - Enable browser plugin (NPPlugin), requires also the webstart flag to be enabled.
 dev-java/icedtea:nss - Enable NSS security provider support.
