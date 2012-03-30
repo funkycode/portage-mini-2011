@@ -5,9 +5,9 @@ EAPI=4
 HOMEPAGE=http://code.google.com/p/pyrit/
 KEYWORDS=~amd64 ~x86
 LICENSE=GPL-3
-PDEPEND=net-wireless/pyrit
+PDEPEND=~net-wireless/pyrit-0.4.0
 RDEPEND=dev-libs/openssl sys-libs/zlib virtual/opencl || ( =dev-lang/python-2.7* =dev-lang/python-2.6* =dev-lang/python-2.5* )
 SLOT=0
 SRC_URI=http://pyrit.googlecode.com/files/cpyrit-opencl-0.4.0.tar.gz
 _eclasses_=distutils	82a876811ffd4907daba6062958daa26	eutils	0f008baa9552301d379ae5df233e9713	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	python	cb2844e25e38800105564c14a716c805	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
-_md5_=b73c410b1746b6855eba02293969dad5
+_md5_=91b9b44f7984d333cf70b1fd60fb385a
