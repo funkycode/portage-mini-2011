@@ -85,7 +85,7 @@ src_install() {
 	fi
 
 	insinto "${MY_HTDOCSDIR#${EPREFIX}}"
-	doins -r django/contrib/admin/media/*
+	doins -r django/contrib/admin/static/admin/*
 
 	webapp_src_install
 }
