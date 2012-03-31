@@ -2993,7 +2993,6 @@ media-video/cheese:introspection - Use dev-libs/gobject-introspection for intros
 media-video/clive:clipboard - Support reading from X clipboard
 media-video/clive:pager - Support pager!?
 media-video/clive:password - Support password controlled sites
-media-video/devede:psyco - psyco python accelerator
 media-video/dv2sub:kino - install kino plugin
 media-video/dvd-slideshow:themes - Install theme pack
 media-video/dvdauthor:graphicsmagick - Use media-gfx/graphicsmagick instead of media-gfx/imagemagick
@@ -4727,6 +4726,9 @@ sci-visualization/paraview:plugins - Build and install additional plugins
 sci-visualization/paraview:streaming - Enable streaming paraview application
 sci-visualization/qtiplot:ods - Import support for OpenOffice .ods sheets
 sci-visualization/veusz:fits - Add FITS format via dev-python/pyfits
+sec-policy/selinux-base:open_perms - Enable the open permissions for file object classes (SELinux policy capability).
+sec-policy/selinux-base:peer_perms - Enable the labeled networking peer permissions (SELinux policy capability).
+sec-policy/selinux-base:ubac - Enable User Based Access Control (UBAC) in the SELinux policy
 sec-policy/selinux-base-policy:open_perms - Enable the open permissions for file object classes (SELinux policy capability).
 sec-policy/selinux-base-policy:peer_perms - Enable the labeled networking peer permissions (SELinux policy capability).
 sec-policy/selinux-base-policy:ubac - Enable User Based Access Control (UBAC) in the SELinux policy
@@ -4799,6 +4801,7 @@ sys-apps/pcsc-tools:network-cron - Monthly cronjob the update-smartcard_list scr
 sys-apps/pkgcore:doc - Build and install API docs.
 sys-apps/pkgcore:man - Build and install man pages.
 sys-apps/policycoreutils:audit - Enable support for sys-process/audit and use the audit_* functions (like audit_getuid instead of getuid())
+sys-apps/policycoreutils:sesandbox - Enable support for SELinux sandbox application
 sys-apps/portage:epydoc - Build html API documentation with epydoc.
 sys-apps/portage:ipc - Use inter-process communication between portage and running ebuilds.
 sys-apps/portage:less - Pull in sys-apps/less as default pager for etc-update.
@@ -5056,7 +5059,6 @@ sys-fs/owfs:fuse - Enable building the FUSE-based OWFS client (owfs)
 sys-fs/owfs:httpd - Enable building the OWFS web server (owhttpd)
 sys-fs/owfs:parport - Enable support for the DS1410E parallel port adapter
 sys-fs/owfs:server - Enable building the OWFS server (owserver)
-sys-fs/pysize:psyco - Adds psyco support
 sys-fs/quota:netlink - Compile daemon receiving quota messages via netlink
 sys-fs/quota:rpc - Enable quota interaction via RPC
 sys-fs/s3ql:contrib - Install additional contributed scripts

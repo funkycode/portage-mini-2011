@@ -9,4 +9,4 @@ RDEPEND=>=dev-perl/Test-Tester-0.107 dev-lang/perl[-build]
 SLOT=0
 SRC_URI=mirror://cpan/authors/id/A/AD/ADAMK/Test-NoWarnings-1.04.tar.gz
 _eclasses_=base	56b5d6bcc4a0fc2a3055a84fd4a5c36b	eutils	0f008baa9552301d379ae5df233e9713	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	perl-module	d4141c106a05d2a700d500676082a9f9	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
-_md5_=5c39ac768182efb23a380044e88b2eff
+_md5_=51d9fe9a353f73999ff357cf8b84fd45

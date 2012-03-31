@@ -39,6 +39,7 @@ src_test() {
 
 src_install() {
 	distutils_src_install
+	python_generate_wrapper_scripts -E -f -q "${ED}usr/bin/cython"
 
 	if use doc; then
 		# "-A c" is for ignoring of "Doc/primes.c".

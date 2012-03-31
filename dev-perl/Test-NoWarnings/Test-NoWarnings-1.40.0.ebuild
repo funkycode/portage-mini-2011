@@ -1,6 +1,6 @@
 # Copyright 1999-2012 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/dev-perl/Test-NoWarnings/Test-NoWarnings-1.40.0.ebuild,v 1.7 2012/03/18 19:48:08 armin76 Exp $
+# $Header: /var/cvsroot/gentoo-x86/dev-perl/Test-NoWarnings/Test-NoWarnings-1.40.0.ebuild,v 1.9 2012/03/31 13:41:04 klausman Exp $
 
 EAPI=4
 

@@ -1,0 +1,11 @@
+DEFINED_PHASES=compile install prepare
+DESCRIPTION=SELinux binary policy representation library
+EAPI=2
+HOMEPAGE=http://userspace.selinuxproject.org
+KEYWORDS=~amd64 ~x86
+LICENSE=GPL-2
+RESTRICT=test
+SLOT=0
+SRC_URI=http://userspace.selinuxproject.org/releases/20120216/libsepol-2.1.4.tar.gz
+_eclasses_=eutils	0f008baa9552301d379ae5df233e9713	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
+_md5_=bc3e288bdd8be356e8710a764f584f82

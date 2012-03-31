@@ -11,4 +11,4 @@ REQUIRED_USE=|| ( python_abis_2.5 python_abis_2.6 python_abis_2.7 python_abis_3.
 SLOT=0
 SRC_URI=http://www.cython.org/release/Cython-0.16.beta0.tar.gz
 _eclasses_=distutils	82a876811ffd4907daba6062958daa26	python	cb2844e25e38800105564c14a716c805
-_md5_=cac99e6384148d02844b52819f662127
+_md5_=4afc30f623faf13856b21c28dc51ef8a

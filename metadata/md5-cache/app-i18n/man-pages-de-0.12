@@ -7,4 +7,4 @@ LICENSE=as-is GPL-2 GPL-3 BSD
 RDEPEND=virtual/man
 SLOT=0
 SRC_URI=http://manpages-de.alioth.debian.org/downloads/manpages-de-0.12.tar.bz2
-_md5_=cdb505ac2a64a9eb779a93a803f68119
+_md5_=2b4d30a152e29c2b40e97da399e6faa7

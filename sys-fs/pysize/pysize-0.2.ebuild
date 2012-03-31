@@ -1,6 +1,6 @@
-# Copyright 1999-2011 Gentoo Foundation
+# Copyright 1999-2012 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/sys-fs/pysize/pysize-0.2.ebuild,v 1.4 2011/03/24 08:57:27 tomka Exp $
+# $Header: /var/cvsroot/gentoo-x86/sys-fs/pysize/pysize-0.2.ebuild,v 1.6 2012/03/31 16:14:58 jlec Exp $
 
 EAPI="3"
 
@@ -17,12 +17,11 @@ SRC_URI="http://guichaz.free.fr/${PN}/files/${P}.tar.bz2"
 LICENSE="GPL-2"
 SLOT="0"
 KEYWORDS="amd64 x86 ~amd64-linux ~x86-linux"
-IUSE="gtk ncurses psyco"
+IUSE="gtk ncurses"
 
 DEPEND="
 	gtk? ( dev-python/pygtk:2 )
-	ncurses? ( sys-libs/ncurses )
-	psyco? ( dev-python/psyco )"
+	ncurses? ( sys-libs/ncurses )"
 RDEPEND="${DEPEND}"
 
 src_prepare() {
@@ -42,7 +41,7 @@ src_prepare() {
 		rm -rf pysize/ui/curses || die "Failed to remove ncurses support"
 	fi
 
-	use psyco || epatch "${FILESDIR}/psyco-${PV}"-automagic.patch
+	epatch "${FILESDIR}/psyco-${PV}"-automagic.patch
 
 	epatch "${FILESDIR}"/${PV}-setuptools-automagic.patch
 	distutils_src_prepare

@@ -1,10 +1,12 @@
 # Copyright 1999-2012 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/net-irc/weechat/weechat-0.3.7.ebuild,v 1.1 2012/02/27 16:33:03 scarabeus Exp $
+# $Header: /var/cvsroot/gentoo-x86/net-irc/weechat/weechat-0.3.7.ebuild,v 1.5 2012/03/31 15:24:22 scarabeus Exp $
 
 EAPI=3
 
-USE_RUBY="ruby18 ruby19"
+# Can only add ruby19 support when ruby:1.9 is keyworded.
+#USE_RUBY="ruby18 ruby19"
+USE_RUBY="ruby18"
 RUBY_OPTIONAL="yes"
 
 PYTHON_DEPEND="python? *"
@@ -28,12 +30,14 @@ fi
 NETWORKS="+irc"
 PLUGINS="+alias +charset +fifo +logger +relay +rmodifier +scripts +spell +xfer"
 #INTERFACES="+ncurses gtk"
-SCRIPT_LANGS="lua +perl +python ruby tcl"
+SCRIPT_LANGS="guile lua +perl +python ruby tcl"
 IUSE="${SCRIPT_LANGS} ${PLUGINS} ${INTERFACES} ${NETWORKS} +crypt doc nls +ssl"
 
 RDEPEND="
+	net-misc/curl[ssl]
 	sys-libs/ncurses
 	charset? ( virtual/libiconv )
+	guile? ( dev-scheme/guile )
 	lua? ( dev-lang/lua[deprecated] )
 	perl? ( dev-lang/perl )
 	ruby? ( $(ruby_implementations_depend) )
@@ -51,24 +55,40 @@ DOCS="AUTHORS ChangeLog NEWS README"
 
 #REQUIRED_USE=" || ( ncurses gtk )"
 
+LANGS=( cs de es fr hu it ja pl pt_BR ru )
+for X in "${LANGS[@]}" ; do
+	IUSE="${IUSE} linguas_${X}"
+done
+
 pkg_setup() {
-	python_pkg_setup
-	ruby-ng_pkg_setup
+	use python && python_pkg_setup
+    use ruby && ruby-ng_pkg_setup
 }
 
 src_prepare() {
+	local i
+
 	# fix libdir placement
 	sed -i \
 		-e "s:lib/:$(get_libdir)/:g" \
 		-e "s:lib\":$(get_libdir)\":g" \
-		CMakeLists.txt || die "sed failed"
+		"${S}/CMakeLists.txt" || die "sed failed"
+
+	# install only required translations
+	for i in "${LANGS[@]}" ; do
+		if ! use linguas_${i} ; then
+			sed -i \
+				-e "/${i}.po/d" \
+				"${S}/po/CMakeLists.txt" || die
+		fi
+	done
 }
 
 # alias, rmodifier, xfer
 src_configure() {
 	# $(cmake-utils_use_enable gtk)
 	# $(cmake-utils_use_enable ncurses)
-	mycmakeargs=(
+	local mycmakeargs=(
 		"-DENABLE_NCURSES=ON"
 		"-DENABLE_LARGEFILE=ON"
 		"-DENABLE_DEMO=OFF"

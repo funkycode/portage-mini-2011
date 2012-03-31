@@ -3,10 +3,10 @@ DEPEND=>=dev-perl/glib-perl-1.180 >=dev-perl/gtk2-perl-1.042 >=x11-libs/libwnck-
 DESCRIPTION=Perl interface to the Window Navigator Construction Kit
 EAPI=1
 HOMEPAGE=http://gtk2-perl.sourceforge.net/
-KEYWORDS=amd64 ia64 ppc sparc x86
+KEYWORDS=amd64 ppc x86
 LICENSE=LGPL-2.1
 RDEPEND=>=dev-perl/glib-perl-1.180 >=dev-perl/gtk2-perl-1.042 >=x11-libs/libwnck-2.20:1 dev-lang/perl
 SLOT=0
 SRC_URI=mirror://sourceforge/gtk2-perl/Gnome2-Wnck-0.16.tar.gz
 _eclasses_=base	56b5d6bcc4a0fc2a3055a84fd4a5c36b	eutils	0f008baa9552301d379ae5df233e9713	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	perl-module	d4141c106a05d2a700d500676082a9f9	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
-_md5_=0d034cef31e293f9728f068cb7b5915e
+_md5_=35d455db947bba0f904e2813c639c5a5
