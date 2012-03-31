@@ -10,8 +10,8 @@ DISTUTILS_SRC_TEST="nosetests"
 inherit distutils
 
 DESCRIPTION="Dulwich is a pure-Python implementation of the Git file formats and protocols."
-HOMEPAGE="http://samba.org/~jelmer/dulwich/ http://pypi.python.org/pypi/dulwich"
-SRC_URI="http://samba.org/~jelmer/dulwich/${P}.tar.gz"
+HOMEPAGE="http://www.samba.org/~jelmer/dulwich/ http://pypi.python.org/pypi/dulwich"
+SRC_URI="http://www.samba.org/~jelmer/dulwich/${P}.tar.gz"
 
 LICENSE="GPL-2"
 SLOT="0"

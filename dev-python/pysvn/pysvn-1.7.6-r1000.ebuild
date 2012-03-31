@@ -22,9 +22,9 @@ SLOT="0"
 KEYWORDS="amd64 ~arm ~ppc x86 ~x86-freebsd ~x86-linux ~ppc-macos ~x86-solaris"
 IUSE="doc examples"
 
-DEPEND="$(python_abi_depend ">=dev-python/pycxx-6.2.0")
-	dev-vcs/subversion"
-RDEPEND="${DEPEND}"
+RDEPEND="dev-vcs/subversion"
+DEPEND="${RDEPEND}
+	$(python_abi_depend ">=dev-python/pycxx-6.2.0")"
 
 src_prepare() {
 	# Don't use internal copy of dev-python/pycxx.

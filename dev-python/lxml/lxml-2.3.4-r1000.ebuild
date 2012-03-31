@@ -44,8 +44,7 @@ src_test() {
 
 		local exit_status="0" test
 		for test in test.py selftest.py selftest2.py; do
-			einfo "Running ${test}"
-			if ! PYTHONPATH="$(ls -d build-${PYTHON_ABI}/lib.*)" "$(PYTHON)" "${test}"; then
+			if ! python_execute PYTHONPATH="$(ls -d build-${PYTHON_ABI}/lib.*)" "$(PYTHON)" "${test}"; then
 				eerror "${test} failed with $(python_get_implementation_and_version)"
 				exit_status="1"
 			fi
