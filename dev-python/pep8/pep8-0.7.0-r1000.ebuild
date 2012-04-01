@@ -21,3 +21,10 @@ RDEPEND="${DEPEND}"
 
 DOCS="CHANGES.txt"
 PYTHON_MODULES="${PN}.py"
+
+src_test() {
+	testing() {
+		python_execute "$(PYTHON)" pep8.py --testsuite=testsuite -v
+	}
+	python_execute_function testing
+}

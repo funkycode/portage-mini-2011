@@ -7,16 +7,15 @@ PYTHON_MULTIPLE_ABIS="1"
 # ast module is absent in CPython 2.5.
 PYTHON_RESTRICTED_ABIS="2.5-cpython"
 
-inherit distutils git-2
+inherit distutils
 
 DESCRIPTION="A tool that automatically formats Python code to conform to the PEP 8 style guide"
 HOMEPAGE="https://github.com/hhatto/autopep8 http://pypi.python.org/pypi/autopep8"
-SRC_URI=""
-EGIT_REPO_URI="git://github.com/hhatto/${PN}.git"
+SRC_URI="mirror://pypi/${PN:0:1}/${PN}/${P}.tar.gz"
 
 LICENSE="MIT"
 SLOT="0"
-KEYWORDS=""
+KEYWORDS="amd64 x86"
 IUSE=""
 
 DEPEND="$(python_abi_depend dev-python/pep8)
