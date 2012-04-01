@@ -12,7 +12,7 @@ MY_P="${MY_PN}-${PV}"
 
 DESCRIPTION="Zope Exceptions"
 HOMEPAGE="http://pypi.python.org/pypi/zope.exceptions"
-SRC_URI="mirror://pypi/${MY_PN:0:1}/${MY_PN}/${MY_P}.zip"
+SRC_URI="mirror://pypi/${MY_PN:0:1}/${MY_PN}/${MY_P}.tar.gz"
 
 LICENSE="ZPL"
 SLOT="0"
@@ -22,7 +22,6 @@ IUSE=""
 RDEPEND="$(python_abi_depend net-zope/namespaces-zope[zope])
 	$(python_abi_depend net-zope/zope-interface)"
 DEPEND="${RDEPEND}
-	app-arch/unzip
 	$(python_abi_depend dev-python/setuptools)
 	$(python_abi_depend -i "3.*" net-zope/zope-fixers)"
 

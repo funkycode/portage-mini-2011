@@ -1,11 +1,10 @@
-# Copyright 1999-2012 Gentoo Foundation
+# Copyright owners: Gentoo Foundation
+#                   Arfrever Frehtes Taifersar Arahesis
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/dev-python/vobject/vobject-0.8.1c.ebuild,v 1.5 2012/01/24 03:04:50 xarthisius Exp $
 
-EAPI="3"
-PYTHON_DEPEND="2"
-SUPPORT_PYTHON_ABIS="1"
-RESTRICT_PYTHON_ABIS="3.*"
+EAPI="4-python"
+PYTHON_MULTIPLE_ABIS="1"
+PYTHON_RESTRICTED_ABIS="2.5 3.*"
 
 inherit distutils
 
@@ -18,15 +17,15 @@ SLOT="0"
 KEYWORDS="amd64 x86"
 IUSE=""
 
-RDEPEND="dev-python/python-dateutil:python-2"
-DEPEND="${RDEPEND}
-	dev-python/setuptools"
+DEPEND="$(python_abi_depend dev-python/python-dateutil)
+	$(python_abi_depend dev-python/setuptools)"
+RDEPEND="${DEPEND}"
 
 DOCS="ACKNOWLEDGEMENTS.txt"
 
 src_test() {
 	testing() {
-		PYTHONPATH="build-${PYTHON_ABI}/lib" "$(PYTHON)" test_vobject.py
+		python_execute PYTHONPATH="build-${PYTHON_ABI}/lib" "$(PYTHON)" test_vobject.py
 	}
 	python_execute_function testing
 }

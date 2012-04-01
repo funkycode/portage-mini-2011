@@ -26,7 +26,7 @@ KEYWORDS="amd64 ~ppc ~ppc64 x86 ~x86-freebsd ~amd64-linux ~x86-linux ~ppc-macos 
 IUSE="cairo doc examples excel fltk gtk latex qt4 tk wxwidgets"
 
 CDEPEND="$(python_abi_depend dev-python/numpy)
-	$(python_abi_depend dev-python/python-dateutil:python-2)
+	$(python_abi_depend dev-python/python-dateutil)
 	$(python_abi_depend dev-python/pytz)
 	media-libs/freetype:2
 	media-libs/libpng
