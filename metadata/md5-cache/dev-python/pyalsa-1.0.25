@@ -3,10 +3,10 @@ DEPEND=media-libs/alsa-lib dev-python/setuptools =dev-lang/python-2*
 DESCRIPTION=Python bindings for ALSA library
 EAPI=2
 HOMEPAGE=http://alsa-project.org/
-KEYWORDS=amd64 ~ppc ppc64 ~sparc x86
+KEYWORDS=amd64 ~ppc ppc64 sparc x86
 LICENSE=GPL-2
 RDEPEND=media-libs/alsa-lib =dev-lang/python-2*
 SLOT=0
 SRC_URI=mirror://alsaproject/pyalsa/pyalsa-1.0.25.tar.bz2
 _eclasses_=distutils	82a876811ffd4907daba6062958daa26	eutils	0f008baa9552301d379ae5df233e9713	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	python	cb2844e25e38800105564c14a716c805	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
-_md5_=1c00a31b9ba4e92a9facf1b7f9916d21
+_md5_=859dd820b75376d12bc132108247118a

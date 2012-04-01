@@ -1,0 +1,10 @@
+DEFINED_PHASES=compile install
+DESCRIPTION=Hardware (PCI, USB) IDs databases
+EAPI=4
+HOMEPAGE=http://git.overlays.gentoo.org/gitweb/?p=proj/hwids.git;a=summary
+KEYWORDS=~amd64 ~x86-fbsd
+LICENSE=|| ( GPL-2 BSD )
+RDEPEND=!<sys-apps/pciutils-3.1.9-r2 !<sys-apps/usbutils-005-r1
+SLOT=0
+SRC_URI=http://dev.gentoo.org/~flameeyes/hwids/hwids-20120401.tar.xz
+_md5_=ca17634c905c0a391365de95d4e8209d

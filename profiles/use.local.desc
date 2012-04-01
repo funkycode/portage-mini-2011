@@ -217,6 +217,7 @@ app-backup/spideroak-bin:qt-bundled - Use bundled Qt4 libraries
 app-backup/spideroak-bin:system-libs - Use the system libraries rather than bundled
 app-backup/tsm:hsm - Installs Tivoli Storage Manager for Space Management
 app-benchmarks/bootchart:acct - Enable process accounting
+app-benchmarks/bootchart:java - Enable autorendering to svg via a java interface
 app-benchmarks/jmeter:beanshell - Enable BeanShell scripting support
 app-benchmarks/sysbench:aio - Enable libaio support
 app-cdr/backlite:mplayer - Add support for mplayer preview in addition to X11 and phonon
@@ -312,6 +313,7 @@ app-editors/jasspa-microemacs:nanoemacs - Build NanoEmacs instead of MicroEmacs
 app-editors/joe:xterm - Enable full xterm clipboard support
 app-editors/latexila:latexmk - Install dev-tex/latexmk (used by default for the build tools)
 app-editors/latexila:rubber - Install dev-tex/rubber (can be used for the build tools)
+app-editors/latexila:vala - Enable bindings for dev-lang/vala
 app-editors/leafpad:emacs - Enable Emacs key theme
 app-editors/nano:debug - Enable debug messages and assert warnings. Note that these will all be sent straight to stderr rather than some logging facility.
 app-editors/nano:justify - Enable justify/unjustify functions for text formatting.
@@ -1780,7 +1782,6 @@ games-arcade/performous:songs - Install a few demo songs
 games-arcade/performous:tools - Install tools
 games-arcade/slimevolley:net - Enable network support
 games-arcade/smc:music - Download and install the music files
-games-arcade/triplexinvaders:psyco - psyco python accelerator
 games-arcade/tuxanci:physfs - Use dev-games/physfs instead of dev-libs/libzip to load compressed data
 games-arcade/tuxanci:sound - Enable sound
 games-board/chessdb:tb4 - Install 4 pieces table bases
@@ -4225,7 +4226,6 @@ net-misc/vinagre:ssh - Enable ssh plugin using x11-libs/vte
 net-misc/vinagre:telepathy - Enable access to remote desktop via a net-libs/telepathy-glib client
 net-misc/vino:telepathy - Enable desktop sharing through a telepathy client
 net-misc/vpnc:hybrid-auth - Enable hybrid authentication (certificates), only if not redistributed as compiled binary
-net-misc/vpnc:openssl - Use dev-libs/openssl for hybrid-auth instead of net-libs/gnutls, may cause license issues when redistributing.
 net-misc/vpnc:resolvconf - Enable support for DNS managing framework net-dns/openresolv
 net-misc/wget:ntlm - Enable support for NTLM (Windows-based) authorization
 net-misc/wicd:ambiance - Install icons from Ubuntu's ambiance theme
@@ -5428,9 +5428,16 @@ x11-libs/qt-declarative:qpa - Build a window system agnostic implementation of Q
 x11-libs/qt-declarative:qt3support - Enable the Qt3Support libraries for Qt4. Note that this does not mean you can compile pure Qt3 programs with Qt4.
 x11-libs/qt-declarative:webkit - Build the WebView QML element
 x11-libs/qt-demo:c++0x - Build Qt using the C++11 standard
+x11-libs/qt-demo:dbus - Build QtDBus examples and demos
+x11-libs/qt-demo:declarative - Build QtDeclarative examples and demos
 x11-libs/qt-demo:exceptions - Add support for exceptions - like catching them inside the event loop (recommended by Nokia)
+x11-libs/qt-demo:multimedia - Build QtMultimedia examples and demos
+x11-libs/qt-demo:opengl - Build QtOpenGL examples and demos
+x11-libs/qt-demo:openvg - Build QtOpenVG examples and demos
 x11-libs/qt-demo:qpa - Build a window system agnostic implementation of Qt
-x11-libs/qt-demo:qt3support - Enable the Qt3Support libraries for Qt4. Note that this does not mean you can compile pure Qt3 programs with Qt4.
+x11-libs/qt-demo:qt3support - Build Qt3Support examples and demos
+x11-libs/qt-demo:webkit - Build QtWebKit examples and demos
+x11-libs/qt-demo:xmlpatterns - Build QtXmlPatterns examples and demos
 x11-libs/qt-gui:c++0x - Build Qt using the C++11 standard
 x11-libs/qt-gui:egl - Use EGL instead of default GLX to manage OpenGL contexts on the desktop
 x11-libs/qt-gui:exceptions - Add support for exceptions - like catching them inside the event loop (recommended by Nokia)

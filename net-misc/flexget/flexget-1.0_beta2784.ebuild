@@ -1,6 +1,6 @@
 # Copyright 1999-2012 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/net-misc/flexget/flexget-1.0_beta2784.ebuild,v 1.3 2012/03/06 06:25:27 mr_bones_ Exp $
+# $Header: /var/cvsroot/gentoo-x86/net-misc/flexget/flexget-1.0_beta2784.ebuild,v 1.5 2012/04/01 04:46:15 floppym Exp $
 
 EAPI=4
 
@@ -41,7 +41,7 @@ RDEPEND="
 	dev-python/progressbar
 	dev-python/flask
 	dev-python/cherrypy
-	dev-python/python-dateutil:python-2
+	dev-python/python-dateutil
 	>=dev-python/requests-0.10.0
 	!=dev-python/requests-0.10.1
 "
@@ -63,7 +63,9 @@ fi
 
 src_prepare() {
 	# Prevent setup from grabbing nose from pypi
-	sed -e /setup_requires/d -i pavement.py || die
+	sed -e /setup_requires/d \
+		-e '/requests/s/, <0.11//' \
+		-i pavement.py || die
 
 	if [[ ${PV} == 9999 ]]; then
 		# Generate setup.py

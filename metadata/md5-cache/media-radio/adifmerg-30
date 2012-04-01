@@ -1,0 +1,10 @@
+DEFINED_PHASES=install
+DESCRIPTION=A small conversion and check utility for ADIF files
+HOMEPAGE=http://jaakko.home.cern.ch/jaakko/Soft/
+IUSE=examples
+KEYWORDS=~amd64 ~x86
+LICENSE=GPL-2
+RDEPEND=dev-lang/perl
+SLOT=0
+SRC_URI=http://jaakko.home.cern.ch/jaakko/Soft/adifmerg30.tgz
+_md5_=84cfe2e04915599122b373b809372ad0

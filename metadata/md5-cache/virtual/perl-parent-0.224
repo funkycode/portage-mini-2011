@@ -1,6 +1,6 @@
 DEFINED_PHASES=-
 DESCRIPTION=Virtual for parent
-KEYWORDS=~alpha ~amd64 ~hppa ~ppc ~x86
+KEYWORDS=~alpha ~amd64 ~hppa ~ia64 ~ppc ~s390 ~sh ~sparc ~x86
 RDEPEND=~perl-core/parent-0.224
 SLOT=0
-_md5_=aa568982b97dc92c8cc02ce860ec8962
+_md5_=c0d724b13bad91abeb4aebfe02ad9520

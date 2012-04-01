@@ -1,0 +1,9 @@
+DEFINED_PHASES=compile install
+DEPEND=net-misc/wget
+DESCRIPTION=Hardware (PCI, USB) IDs databases
+EAPI=4
+HOMEPAGE=http://git.overlays.gentoo.org/gitweb/?p=proj/hwids.git;a=summary
+LICENSE=|| ( GPL-2 BSD )
+RDEPEND=!<sys-apps/pciutils-3.1.9-r2 !<sys-apps/usbutils-005-r1
+SLOT=0
+_md5_=00ba6d9a647b63068f4a230d6356df9f

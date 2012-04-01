@@ -1,0 +1,12 @@
+DEFINED_PHASES=compile configure install prepare test unpack
+DEPEND=www-apache/mod_perl dev-lang/perl[-build]
+DESCRIPTION=Perl module for Apache::Reload
+EAPI=4
+HOMEPAGE=http://search.cpan.org/dist/Apache-Reload/
+KEYWORDS=~alpha ~amd64 ~hppa ~ia64 ~ppc ~ppc64 ~sparc ~x86
+LICENSE=Apache-2.0
+RDEPEND=www-apache/mod_perl dev-lang/perl[-build]
+SLOT=0
+SRC_URI=mirror://cpan/authors/id/P/PH/PHRED/Apache-Reload-0.12.tar.gz
+_eclasses_=base	56b5d6bcc4a0fc2a3055a84fd4a5c36b	eutils	0f008baa9552301d379ae5df233e9713	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	perl-module	d4141c106a05d2a700d500676082a9f9	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
+_md5_=846103b13bebe5736c35a8dc98f6d0d8
