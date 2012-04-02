@@ -71,6 +71,8 @@ src_prepare() {
 	epatch "${FILESDIR}/${P}-python-3.patch"
 	epatch "${FILESDIR}/${P}-python-3-codegen.patch"
 
+	sed -e "s/print datetime.date.today()/print(datetime.date.today())/" -i docs/Makefile.am
+
 	python_clean_py-compile_files
 
 	eautoreconf
