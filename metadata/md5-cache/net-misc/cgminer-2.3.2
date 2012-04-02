@@ -1,0 +1,14 @@
+DEFINED_PHASES=configure install prepare
+DEPEND=net-misc/curl ncurses? ( sys-libs/ncurses ) dev-libs/jansson opencl? ( virtual/opencl ) dev-util/pkgconfig sys-apps/sed adl? ( x11-libs/amd-adl-sdk ) sse2? ( >=dev-lang/yasm-1.0.1 ) sse4? ( >=dev-lang/yasm-1.0.1 )
+DESCRIPTION=Bitcoin CPU/GPU/FPGA miner in C
+EAPI=4
+HOMEPAGE=https://bitcointalk.org/index.php?topic=28402.0
+IUSE=+adl altivec bitforce +cpumining examples hardened icarus ncurses +opencl padlock sse2 sse2_4way sse4
+KEYWORDS=~x86 ~amd64
+LICENSE=GPL-2
+RDEPEND=net-misc/curl ncurses? ( sys-libs/ncurses ) dev-libs/jansson opencl? ( virtual/opencl )
+REQUIRED_USE=|| ( bitforce cpumining icarus opencl ) adl? ( opencl ) altivec? ( cpumining ppc ppc64 ) padlock? ( cpumining || ( amd64 x86 ) ) sse2? ( cpumining || ( amd64 x86 ) ) sse4? ( cpumining amd64 )
+SLOT=0
+SRC_URI=http://ck.kolivas.org/apps/cgminer/cgminer-2.3.2.tar.bz2
+_eclasses_=eutils	0f008baa9552301d379ae5df233e9713	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e	versionator	6601b4c5b3f019a993db59a50e1854e4
+_md5_=20b9117c10c9c89c66a0cebb3b455b54

@@ -1,0 +1,14 @@
+DEFINED_PHASES=compile configure install postinst postrm preinst prepare setup unpack
+DEPEND=dev-libs/libxml2:2 >=app-emulation/libvirt-0.9.10 >=dev-libs/glib-2.10:2 introspection? ( >=dev-libs/gobject-introspection-0.10.8 ) dev-util/pkgconfig doc? ( >=dev-util/gtk-doc-1.10 ) vala? ( dev-lang/vala:0.14 ) app-arch/xz-utils >=sys-apps/sed-4
+DESCRIPTION=GLib and GObject mappings for libvirt
+EAPI=4
+HOMEPAGE=http://libvirt.org/git/?p=libvirt-glib.git
+IUSE=doc +introspection python +vala
+KEYWORDS=~amd64 ~x86
+LICENSE=LGPL-2.1
+RDEPEND=dev-libs/libxml2:2 >=app-emulation/libvirt-0.9.10 >=dev-libs/glib-2.10:2 introspection? ( >=dev-libs/gobject-introspection-0.10.8 )
+REQUIRED_USE=vala? ( introspection )
+SLOT=0
+SRC_URI=ftp://libvirt.org/libvirt/glib/libvirt-glib-0.0.7.tar.gz
+_eclasses_=eutils	0f008baa9552301d379ae5df233e9713	fdo-mime	0acfe1a88fd8751a1d5dc671168219fa	gnome.org	8fef8f967214f56e08fa92d61163d891	gnome2	c5477c755de0f2ff9adf317383ee2767	gnome2-utils	0556f216199e15cc37899e1130da3824	libtool	5f623f5a211fb1b2d84d88ee49959a54	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	python	cb2844e25e38800105564c14a716c805	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e	versionator	6601b4c5b3f019a993db59a50e1854e4
+_md5_=46dce3a28d411be632d2aeaefcedede7

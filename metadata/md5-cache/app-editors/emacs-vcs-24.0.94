@@ -9,6 +9,6 @@ LICENSE=GPL-3 FDL-1.3 BSD as-is MIT W3C unicode PSF-2
 RDEPEND=sys-libs/ncurses >=app-admin/eselect-emacs-1.2 net-libs/liblockfile hesiod? ( net-dns/hesiod ) kerberos? ( virtual/krb5 ) alsa? ( media-libs/alsa-lib ) gpm? ( sys-libs/gpm ) dbus? ( sys-apps/dbus ) gnutls? ( net-libs/gnutls ) libxml2? ( >=dev-libs/libxml2-2.2.0 ) selinux? ( sys-libs/libselinux ) X? ( x11-libs/libXmu x11-libs/libXt x11-misc/xbitmaps gconf? ( >=gnome-base/gconf-2.26.2 ) gsettings? ( >=dev-libs/glib-2.28.6 ) gif? ( media-libs/giflib ) jpeg? ( virtual/jpeg ) png? ( >=media-libs/libpng-1.4:0 ) svg? ( >=gnome-base/librsvg-2.0 ) tiff? ( media-libs/tiff ) xpm? ( x11-libs/libXpm ) imagemagick? ( >=media-gfx/imagemagick-6.6.2 ) xft? ( media-libs/fontconfig media-libs/freetype x11-libs/libXft m17n-lib? ( >=dev-libs/libotf-0.9.4 >=dev-libs/m17n-lib-1.5.1 ) ) gtk? ( gtk3? ( x11-libs/gtk+:3 ) !gtk3? ( x11-libs/gtk+:2 ) ) !gtk? ( Xaw3d? ( x11-libs/libXaw3d ) !Xaw3d? ( athena? ( x11-libs/libXaw ) !athena? ( motif? ( >=x11-libs/openmotif-2.3:0 ) ) ) ) ) >=app-emacs/emacs-common-gentoo-1.3[X?]
 REQUIRED_USE=aqua? ( !X )
 SLOT=24
-SRC_URI=mirror://gentoo/emacs-24.0.94.tar.gz ftp://alpha.gnu.org/gnu/emacs/pretest/emacs-24.0.94.tar.gz
+SRC_URI=mirror://gentoo/emacs-24.0.94.tar.gz mirror://gnu-alpha/emacs/pretest/emacs-24.0.94.tar.gz
 _eclasses_=autotools	addbdf6cce5024ac93ad2084ad5e1d2d	elisp-common	aa9676ce708f8aacf54ff9df8015963b	eutils	0f008baa9552301d379ae5df233e9713	flag-o-matic	66cb710a2aa184a5687fe1289d7973ab	libtool	5f623f5a211fb1b2d84d88ee49959a54	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
-_md5_=ab6f1bb0e694751110e17bbe85586aa2
+_md5_=d91bc1dca04109ffa11d4969d1ed6375

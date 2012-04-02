@@ -2061,6 +2061,7 @@ kde-base/kget:webkit - Enable KdeWebkit browser plugin using kde-misc/kwebkitpar
 kde-base/kig:kig-scripting - Support Python scripting
 kde-base/kimono:akonadi - Compile bindings for Akonadi.
 kde-base/kimono:plasma - Compile bindings for KDE's Plasma.
+kde-base/klipper:prison - Enable support for barcodes/QRcodes
 kde-base/konqueror:bookmarks - Add dependency on bookmark package.
 kde-base/kopete:addbookmarks - Automatically add incoming urls to bookmarks.
 kde-base/kopete:autoreplace - Automatically replace selected text

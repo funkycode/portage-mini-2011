@@ -1,6 +1,6 @@
 # Copyright 1999-2012 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/media-gfx/blender/blender-2.57-r1.ebuild,v 1.11 2012/02/23 16:57:16 xarthisius Exp $
+# $Header: /var/cvsroot/gentoo-x86/media-gfx/blender/blender-2.57-r1.ebuild,v 1.13 2012/04/02 13:34:47 ssuominen Exp $
 
 PYTHON_DEPEND="3:3.2"
 
@@ -58,7 +58,10 @@ RDEPEND="virtual/jpeg
 	openexr? ( media-libs/openexr )
 	ffmpeg? (
 		virtual/ffmpeg[x264,mp3,encode,theora]
-		jpeg2k? ( virtual/ffmpeg[x264,mp3,encode,theora,jpeg2k] )
+		jpeg2k? (
+			!<media-libs/openjpeg-1.5.0
+			virtual/ffmpeg[x264,mp3,encode,theora,jpeg2k]
+		)
 	)
 	openal? ( >=media-libs/openal-1.6.372 )
 	fftw? ( sci-libs/fftw:3.0 )
@@ -156,6 +159,11 @@ src_prepare() {
 
 	# Linux 3.x (bug #381099)
 	epatch "${FILESDIR}"/${P}-linux-3.patch
+
+	# Fix building with >=media-libs/openjpeg-1.5.0 (bug #409283)
+	sed -i \
+		-e '/parameters.*tile_size_on/s:false:FALSE:' \
+		source/blender/imbuf/intern/jp2.c || die
 }
 
 src_configure() {
