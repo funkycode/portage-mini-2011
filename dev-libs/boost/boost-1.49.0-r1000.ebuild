@@ -24,7 +24,7 @@ RDEPEND="icu? ( >=dev-libs/icu-3.3 )
 	mpi? ( || ( sys-cluster/openmpi[cxx] sys-cluster/mpich2[cxx,threads] ) )
 	sys-libs/zlib
 	!!<=dev-libs/boost-1.35.0-r2
-	>=app-admin/eselect-boost-0.3"
+	>=app-admin/eselect-boost-0.4"
 DEPEND="${RDEPEND}
 	dev-util/boost-build:${SLOT}"
 
@@ -264,7 +264,7 @@ src_install () {
 	fi
 
 	if use mpi && use python; then
-		_add_line "python=\""
+		_add_line "python_modules=\""
 	fi
 
 	installation() {
@@ -318,8 +318,20 @@ src_install () {
 			if use mpi; then
 				mkdir -p "${D}$(python_get_sitedir)/boost_${MAJOR_PV}" || die
 				mv "${D}usr/$(get_libdir)/mpi.so" "${D}$(python_get_sitedir)/boost_${MAJOR_PV}" || die
-				cp libs/mpi/build/__init__.py "${D}$(python_get_sitedir)/boost_${MAJOR_PV}/__init__.py" || die
-				_add_line "$(python_get_sitedir)/boost_${MAJOR_PV}/mpi.so"
+				cat << EOF > "${D}$(python_get_sitedir)/boost_${MAJOR_PV}/__init__.py" || die
+import sys
+if sys.platform.startswith('linux'):
+	import DLFCN
+	flags = sys.getdlopenflags()
+	sys.setdlopenflags(DLFCN.RTLD_NOW | DLFCN.RTLD_GLOBAL)
+	from . import mpi
+	sys.setdlopenflags(flags)
+	del DLFCN, flags
+else:
+	from . import mpi
+del sys
+EOF
+				_add_line "$(python_get_sitedir)/mpi.py:boost_${MAJOR_PV}.mpi"
 			fi
 		fi
 	}
