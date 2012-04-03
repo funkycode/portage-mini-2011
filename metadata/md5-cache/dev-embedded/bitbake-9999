@@ -7,5 +7,5 @@ IUSE=doc
 LICENSE=GPL-2
 RDEPEND=|| ( dev-lang/python:2.7[sqlite] dev-lang/python:2.6[sqlite] dev-lang/python:2.5[sqlite] >=dev-python/pysqlite-2.3.2 ) dev-python/futures dev-python/ply dev-python/progressbar || ( =dev-lang/python-2.7* =dev-lang/python-2.6* =dev-lang/python-2.5* )
 SLOT=0
-_eclasses_=distutils	82a876811ffd4907daba6062958daa26	git-2	6bb20ec18cca375571bcbe67bcf2e1d7	python	cb2844e25e38800105564c14a716c805
+_eclasses_=distutils	82a876811ffd4907daba6062958daa26	git-2	15733ab6a6feb34af9837b41623c2bad	python	cb2844e25e38800105564c14a716c805
 _md5_=5ca8eee3f35825e648c913c0767e05f0

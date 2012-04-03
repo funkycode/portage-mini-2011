@@ -7,5 +7,5 @@ IUSE=libnotify xinerama
 KEYWORDS=~x86 ~amd64
 LICENSE=MIT
 SLOT=0
-_eclasses_=git-2	6bb20ec18cca375571bcbe67bcf2e1d7	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68
+_eclasses_=git-2	15733ab6a6feb34af9837b41623c2bad	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68
 _md5_=ad6f631c14a3cb27830ad4dffba7f37a

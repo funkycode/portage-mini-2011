@@ -1,0 +1,12 @@
+DEFINED_PHASES=compile configure install prepare test unpack
+DEPEND=virtual/perl-Encode virtual/perl-ExtUtils-MakeMaker dev-lang/perl[-build]
+DESCRIPTION=Simple and very fast XML to hash conversion
+EAPI=4
+HOMEPAGE=http://search.cpan.org/dist/XML-Fast/
+KEYWORDS=~amd64 ~x86
+LICENSE=|| ( Artistic GPL-1 GPL-2 GPL-3 )
+RDEPEND=virtual/perl-Encode dev-lang/perl[-build]
+SLOT=0
+SRC_URI=mirror://cpan/authors/id/M/MO/MONS/XML-Fast-0.11.tar.gz
+_eclasses_=base	56b5d6bcc4a0fc2a3055a84fd4a5c36b	eutils	6891f6f484e3b44a0a15e1b0c0fc9a14	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	perl-module	d4141c106a05d2a700d500676082a9f9	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
+_md5_=b9bda9a01dc5b0a74e5d937f351374ec

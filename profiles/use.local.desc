@@ -4568,6 +4568,7 @@ sci-libs/acml:ifc - Fetch and install acml compiled with Intel Fortran Compiler 
 sci-libs/acml:int64 - Install the 64 bits integer library
 sci-libs/armadillo:atlas - Link with ATLAS libraries for cblas and clapack (needs sci-libs/lapack-atlas)
 sci-libs/arprec:qd - Use sci-libs/qd
+sci-libs/cfitsio:tools - Build execs fpack, funpack, imcopy, fitscopy, listhead
 sci-libs/cholmod:metis - Enable the Partition module to cholmod using metis (sci-libs/metis, sci-libs/parmetis)
 sci-libs/cholmod:supernodal - Enable the Supernodal module (needs virtual/lapack)
 sci-libs/fftw:avx - Adds support for Advanced Vector Extensions
