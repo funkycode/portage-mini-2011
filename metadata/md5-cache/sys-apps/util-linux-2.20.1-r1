@@ -9,5 +9,5 @@ LICENSE=GPL-2 GPL-3 LGPL-2.1 BSD-4 MIT public-domain
 RDEPEND=!sys-process/schedutils !sys-apps/setarch !<sys-apps/sysvinit-2.88-r3 !<sys-libs/e2fsprogs-libs-1.41.8 !<sys-fs/e2fsprogs-1.41.8 cramfs? ( sys-libs/zlib ) ncurses? ( >=sys-libs/ncurses-5.2-r2 ) perl? ( dev-lang/perl ) selinux? ( sys-libs/libselinux ) slang? ( sys-libs/slang )
 SLOT=0
 SRC_URI=mirror://kernel/linux/utils/util-linux/v2.20/util-linux-2.20.1.tar.bz2 loop-aes? ( http://loop-aes.sourceforge.net/updates/util-linux-2.20-20110905.diff.bz2 )
-_eclasses_=eutils	0f008baa9552301d379ae5df233e9713	flag-o-matic	66cb710a2aa184a5687fe1289d7973ab	libtool	5f623f5a211fb1b2d84d88ee49959a54	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
+_eclasses_=eutils	6891f6f484e3b44a0a15e1b0c0fc9a14	flag-o-matic	66cb710a2aa184a5687fe1289d7973ab	libtool	5f623f5a211fb1b2d84d88ee49959a54	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
 _md5_=198c1953a2f305b7e56aee53abfea749

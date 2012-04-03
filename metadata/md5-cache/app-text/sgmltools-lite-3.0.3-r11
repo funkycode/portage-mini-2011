@@ -9,5 +9,5 @@ LICENSE=GPL-2
 RDEPEND=app-text/sgml-common app-text/docbook-sgml-dtd:3.1 app-text/docbook-dsssl-stylesheets app-text/openjade jadetex? ( app-text/jadetex ) || ( www-client/w3m www-client/lynx ) =dev-lang/python-2*
 SLOT=0
 SRC_URI=mirror://sourceforge/sgmltools-lite/sgmltools-lite-3.0.3.tar.gz mirror://sourceforge/sgmltools-lite/nw-eps-icons-0.0.1.tar.gz
-_eclasses_=base	56b5d6bcc4a0fc2a3055a84fd4a5c36b	eutils	0f008baa9552301d379ae5df233e9713	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	python	cb2844e25e38800105564c14a716c805	sgml-catalog	764d8fba98220f915e0bb4f622873fb8	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
+_eclasses_=base	56b5d6bcc4a0fc2a3055a84fd4a5c36b	eutils	6891f6f484e3b44a0a15e1b0c0fc9a14	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	python	cb2844e25e38800105564c14a716c805	sgml-catalog	764d8fba98220f915e0bb4f622873fb8	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
 _md5_=72babc891efaf3f690de92ff584a7f39

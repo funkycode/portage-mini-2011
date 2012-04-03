@@ -10,5 +10,5 @@ RDEPEND=sys-libs/readline sys-libs/ncurses >=net-misc/curl-7.18.0 >=dev-libs/lib
 REQUIRED_USE=libvirtd? ( || ( lxc openvz qemu uml virtualbox xen ) ) lxc? ( libvirtd ) openvz? ( libvirtd ) qemu? ( libvirtd ) uml? ( libvirtd ) virtualbox? ( libvirtd ) xen? ( libvirtd )
 SLOT=0
 SRC_URI=http://libvirt.org/sources/libvirt-0.9.10.tar.gz ftp://libvirt.org/libvirt/libvirt-0.9.10.tar.gz http://dev.gentoo.org/~cardoe/distfiles/libvirt-0.9.10-bp-1.tar.bz2
-_eclasses_=eutils	0f008baa9552301d379ae5df233e9713	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	python	cb2844e25e38800105564c14a716c805	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
+_eclasses_=eutils	6891f6f484e3b44a0a15e1b0c0fc9a14	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	python	cb2844e25e38800105564c14a716c805	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
 _md5_=ddee4f78aeb29fe97d9ed20d26c4e9eb

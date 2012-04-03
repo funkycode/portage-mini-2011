@@ -338,6 +338,7 @@ app-emacs/company-mode:semantic - Install backend for semantic (app-emacs/cedet)
 app-emacs/delicious:planner - Include support for app-emacs/planner
 app-emacs/emacs-common-gentoo:emacs22icons - Install Emacs 22 style icons
 app-emacs/emhacks:jde - Enable support for Java Development Environment
+app-emacs/magit:contrib - Install user-contributed files
 app-emacs/org-mode:contrib - Install user-contributed files
 app-emacs/remember:bbdb - Include support for app-emacs/bbdb
 app-emacs/remember:planner - Include support for app-emacs/planner

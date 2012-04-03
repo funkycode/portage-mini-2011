@@ -9,5 +9,5 @@ LICENSE=GPL-2
 RDEPEND=emacs? ( virtual/emacs ) java? ( >=virtual/jdk-1.5 ) java? ( >=virtual/jre-1.5 ) java? ( >=dev-java/java-config-2.1.9-r1 )
 SLOT=0
 SRC_URI=ftp://ftp-sop.inria.fr/mimosa/fp/Bigloo/bigloo3.0c-4.tar.gz
-_eclasses_=elisp-common	aa9676ce708f8aacf54ff9df8015963b	eutils	0f008baa9552301d379ae5df233e9713	java-pkg-opt-2	131dd2a697d663c0e33247611b9a1cd7	java-utils-2	b173b5d55bfd6e328939985bc54a1c9e	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e	versionator	6601b4c5b3f019a993db59a50e1854e4
+_eclasses_=elisp-common	aa9676ce708f8aacf54ff9df8015963b	eutils	6891f6f484e3b44a0a15e1b0c0fc9a14	java-pkg-opt-2	131dd2a697d663c0e33247611b9a1cd7	java-utils-2	b173b5d55bfd6e328939985bc54a1c9e	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e	versionator	6601b4c5b3f019a993db59a50e1854e4
 _md5_=ae2859a2d2df5e9a73f974ba39aaf934

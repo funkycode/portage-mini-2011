@@ -8,5 +8,5 @@ KEYWORDS=~arm ~amd64 ~ppc ~ppc64 ~x86
 LICENSE=GPL-2
 RDEPEND=virtual/libusb
 SLOT=0
-SRC_URI=http://savannah.nongnu.org/download/avrdude/avrdude-5.11.tar.gz doc? ( http://savannah.nongnu.org/download/avrdude/avrdude-doc-5.11.tar.gz http://savannah.nongnu.org/download/avrdude/avrdude-doc-5.11.pdf )
-_md5_=e244084b5e261ec31b5931b6c3ca3b01
+SRC_URI=mirror://nongnu/avrdude/avrdude-5.11.tar.gz doc? ( mirror://nongnu/avrdude/avrdude-doc-5.11.tar.gz mirror://nongnu/avrdude/avrdude-doc-5.11.pdf )
+_md5_=4c81d0f06a16738c8609108e13bae5db

@@ -9,5 +9,5 @@ LICENSE=GPL-2
 RDEPEND=x11-libs/qt-dbus:4 x11-libs/qt-gui:4 x11-libs/qt-opengl:4 !kde? ( || ( x11-libs/qt-phonon:4 media-libs/phonon ) ) kde? ( media-libs/phonon ) x11-libs/qt-script:4 x11-libs/qt-sql:4 x11-libs/qt-svg:4 x11-libs/qt-webkit:4 x11-libs/qt-xmlpatterns:4
 SLOT=0
 SRC_URI=http://qtscriptgenerator.googlecode.com/files/qtscriptgenerator-src-0.1.0.tar.gz
-_eclasses_=base	56b5d6bcc4a0fc2a3055a84fd4a5c36b	eutils	0f008baa9552301d379ae5df233e9713	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	qt4	959838be1500b7d1451dd3eaca7220aa	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e	versionator	6601b4c5b3f019a993db59a50e1854e4
+_eclasses_=base	56b5d6bcc4a0fc2a3055a84fd4a5c36b	eutils	6891f6f484e3b44a0a15e1b0c0fc9a14	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	qt4	959838be1500b7d1451dd3eaca7220aa	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e	versionator	6601b4c5b3f019a993db59a50e1854e4
 _md5_=5c21625e8e49b4f9d6067f1073783918

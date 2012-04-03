@@ -1,0 +1,13 @@
+DEFINED_PHASES=configure install postinst prepare
+DEPEND=net-libs/libupnp dlna? ( >=media-libs/libdlna-0.2.4 ) dev-util/pkgconfig
+DESCRIPTION=uShare is a UPnP (TM) A/V & DLNA Media Server
+EAPI=4
+HOMEPAGE=http://ushare.geexbox.org/
+IUSE=dlna nls
+KEYWORDS=~amd64 ~x86
+LICENSE=GPL-2
+RDEPEND=net-libs/libupnp dlna? ( >=media-libs/libdlna-0.2.4 )
+SLOT=0
+SRC_URI=http://ushare.geexbox.org/releases/ushare-1.1a.tar.bz2
+_eclasses_=eutils	6891f6f484e3b44a0a15e1b0c0fc9a14	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
+_md5_=a343acbbaf13ef7ff1e60f1b1b744cdc

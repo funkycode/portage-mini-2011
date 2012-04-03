@@ -1,12 +1,12 @@
 DEFINED_PHASES=compile install prepare
-DEPEND=virtual/libusb
+DEPEND=virtual/libusb:0
 DESCRIPTION=AVR Downloader/UploaDEr
 EAPI=4
 HOMEPAGE=http://savannah.nongnu.org/projects/avrdude
 IUSE=doc
 KEYWORDS=~arm ~amd64 ~ppc ~ppc64 ~x86
 LICENSE=GPL-2
-RDEPEND=virtual/libusb
+RDEPEND=virtual/libusb:0
 SLOT=0
-SRC_URI=http://savannah.nongnu.org/download/avrdude/avrdude-5.11.1.tar.gz doc? ( http://savannah.nongnu.org/download/avrdude/avrdude-doc-5.11.1.tar.gz http://savannah.nongnu.org/download/avrdude/avrdude-doc-5.11.1.pdf )
-_md5_=ab637c4dd1a1f81e56396a80bf9be4be
+SRC_URI=mirror://nongnu/avrdude/avrdude-5.11.1.tar.gz doc? ( mirror://nongnu/avrdude/avrdude-doc-5.11.1.tar.gz mirror://nongnu/avrdude/avrdude-doc-5.11.1.pdf )
+_md5_=619e32554faa5006ae615645b11b8fd7

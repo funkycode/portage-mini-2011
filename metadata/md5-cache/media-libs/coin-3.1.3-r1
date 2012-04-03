@@ -9,5 +9,5 @@ LICENSE=|| ( GPL-2 PEL )
 RDEPEND=dev-libs/expat media-libs/fontconfig media-libs/freetype:2 virtual/opengl virtual/glu x11-libs/libICE x11-libs/libSM x11-libs/libX11 x11-libs/libXext bzip2? ( app-arch/bzip2 ) javascript? ( dev-lang/spidermonkey ) openal? ( media-libs/openal ) simage? ( media-libs/simage ) zlib? ( sys-libs/zlib )
 SLOT=0
 SRC_URI=ftp://ftp.coin3d.org/pub/coin/src/all/Coin-3.1.3.tar.gz
-_eclasses_=base	56b5d6bcc4a0fc2a3055a84fd4a5c36b	eutils	0f008baa9552301d379ae5df233e9713	flag-o-matic	66cb710a2aa184a5687fe1289d7973ab	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
+_eclasses_=base	56b5d6bcc4a0fc2a3055a84fd4a5c36b	eutils	6891f6f484e3b44a0a15e1b0c0fc9a14	flag-o-matic	66cb710a2aa184a5687fe1289d7973ab	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
 _md5_=c4db3c3305c2fe177173eaca2630e2ce

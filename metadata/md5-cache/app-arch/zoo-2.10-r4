@@ -5,5 +5,5 @@ KEYWORDS=alpha amd64 hppa ppc ppc64 sparc x86 ~x86-fbsd ~x86-interix ~amd64-linu
 LICENSE=zoo
 SLOT=0
 SRC_URI=ftp://ftp.kiarchive.ru/pub/unix/arcers/zoo-2.10pl1.tar.gz mirror://gentoo/zoo-2.10-gcc-issues-fix.patch
-_eclasses_=eutils	0f008baa9552301d379ae5df233e9713	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
+_eclasses_=eutils	6891f6f484e3b44a0a15e1b0c0fc9a14	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
 _md5_=670e809dfe65a83fd5fa56be159d5a3c

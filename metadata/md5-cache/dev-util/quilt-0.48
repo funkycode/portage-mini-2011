@@ -8,5 +8,5 @@ PDEPEND=emacs? ( app-emacs/quilt-el ) bash-completion? ( app-shells/bash-complet
 RDEPEND=sys-apps/ed dev-util/diffstat graphviz? ( media-gfx/graphviz ) || ( >=sys-apps/coreutils-6.10-r1 sys-apps/mktemp ) bash-completion? ( app-admin/eselect )
 SLOT=0
 SRC_URI=http://savannah.nongnu.org/download/quilt/quilt-0.48.tar.gz
-_eclasses_=bash-completion	003731da0df19d26955927bd534f3058	eutils	0f008baa9552301d379ae5df233e9713	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
+_eclasses_=bash-completion	003731da0df19d26955927bd534f3058	eutils	6891f6f484e3b44a0a15e1b0c0fc9a14	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
 _md5_=8e605c43bb215ad95209e55efd17b698

@@ -9,5 +9,5 @@ LICENSE=GPL-2
 RDEPEND=dev-python/numpy dev-python/PyQt4[X,svg] fits? ( dev-python/pyfits ) =dev-lang/python-2*
 SLOT=0
 SRC_URI=http://download.gna.org/veusz/veusz-1.14.tar.gz
-_eclasses_=distutils	82a876811ffd4907daba6062958daa26	eutils	0f008baa9552301d379ae5df233e9713	fdo-mime	0acfe1a88fd8751a1d5dc671168219fa	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	python	cb2844e25e38800105564c14a716c805	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
+_eclasses_=distutils	82a876811ffd4907daba6062958daa26	eutils	6891f6f484e3b44a0a15e1b0c0fc9a14	fdo-mime	0acfe1a88fd8751a1d5dc671168219fa	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	python	cb2844e25e38800105564c14a716c805	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
 _md5_=e1659edd876ef390fe57171b0d655197

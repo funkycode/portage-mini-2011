@@ -11,5 +11,5 @@ REQUIRED_USE=branding? ( gtk ) || ( gtk qt4 )
 RESTRICT=test
 SLOT=0
 SRC_URI=http://launchpad.net/lightdm/1.0/1.0.10/+download/lightdm-1.0.10.tar.gz mirror://gentoo/introspection-20110205.m4.tar.bz2 gtk? ( http://dev.gentoo.org/~hwoarang/distfiles/lightdm-gentoo-patch.tar.gz )
-_eclasses_=autotools	addbdf6cce5024ac93ad2084ad5e1d2d	eutils	0f008baa9552301d379ae5df233e9713	flag-o-matic	66cb710a2aa184a5687fe1289d7973ab	libtool	5f623f5a211fb1b2d84d88ee49959a54	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	pam	3f746974e1cc47cabe3bd488c08cdc8e	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e	virtualx	0c41ff55e46b959d9457dde69e7a09d9
+_eclasses_=autotools	addbdf6cce5024ac93ad2084ad5e1d2d	eutils	6891f6f484e3b44a0a15e1b0c0fc9a14	flag-o-matic	66cb710a2aa184a5687fe1289d7973ab	libtool	5f623f5a211fb1b2d84d88ee49959a54	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	pam	3f746974e1cc47cabe3bd488c08cdc8e	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e	virtualx	0c41ff55e46b959d9457dde69e7a09d9
 _md5_=d00d1d1e0dcd5be5507fb4334c872889

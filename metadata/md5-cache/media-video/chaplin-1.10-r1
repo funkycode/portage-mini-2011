@@ -9,5 +9,5 @@ LICENSE=GPL-2
 RDEPEND=>=media-libs/libdvdread-0.9.4 || ( media-gfx/imagemagick media-gfx/graphicsmagick[imagemagick] ) media-video/mjpegtools transcode? ( >=media-video/transcode-0.6.2 ) vcd? ( >=media-video/vcdimager-0.7.2 )
 SLOT=0
 SRC_URI=http://www.lallafa.de/bp/files/chaplin-1.10.tgz
-_eclasses_=eutils	0f008baa9552301d379ae5df233e9713	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
+_eclasses_=eutils	6891f6f484e3b44a0a15e1b0c0fc9a14	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
 _md5_=187a8f4531dda7addca1b5742a1172b8

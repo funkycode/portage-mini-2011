@@ -9,5 +9,5 @@ RDEPEND=!net-dialup/fritzcapi net-dialup/capi4k-utils kernel_linux? ( sys-apps/m
 RESTRICT=mirror primaryuri
 SLOT=0
 SRC_URI=http://opensuse.foehr-it.de/rpms/11_2/src/fcpci-0.1-0.src.rpm
-_eclasses_=eutils	0f008baa9552301d379ae5df233e9713	linux-info	cc184ad3383ffb6ffbaa82f53608e77f	linux-mod	a4e07f78bacb6b129ea7b18ad060dbfc	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	rpm	b94b54b44f14d6bee3e966c8f5c86fba	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e	versionator	6601b4c5b3f019a993db59a50e1854e4
+_eclasses_=eutils	6891f6f484e3b44a0a15e1b0c0fc9a14	linux-info	cc184ad3383ffb6ffbaa82f53608e77f	linux-mod	a4e07f78bacb6b129ea7b18ad060dbfc	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	rpm	b94b54b44f14d6bee3e966c8f5c86fba	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e	versionator	6601b4c5b3f019a993db59a50e1854e4
 _md5_=51afb2c990244f804a67293623e49746

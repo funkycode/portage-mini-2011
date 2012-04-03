@@ -1,0 +1,14 @@
+DEFINED_PHASES=install
+DEPEND=virtual/jpeg virtual/libc
+DESCRIPTION=Freeware advanced editor for dynamic and Web languages
+EAPI=4
+HOMEPAGE=http://www.activestate.com/products/komodo_edit
+IUSE=templates
+KEYWORDS=~x86 ~amd64
+LICENSE=MPL-1.1
+RDEPEND=virtual/jpeg virtual/libc
+RESTRICT=mirror
+SLOT=0
+SRC_URI=x86? ( http://downloads.activestate.com/Komodo/releases/7.0.0/Komodo-Edit-7.0.0-9615-linux-x86.tar.gz ) amd64? ( http://downloads.activestate.com/Komodo/releases/7.0.0/Komodo-Edit-7.0.0-9615-linux-x86_64.tar.gz )
+_eclasses_=eutils	6891f6f484e3b44a0a15e1b0c0fc9a14	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
+_md5_=fc0ad1f949ec56070d6880618769f644

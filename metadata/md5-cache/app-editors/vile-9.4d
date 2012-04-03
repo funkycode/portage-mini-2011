@@ -8,5 +8,5 @@ LICENSE=GPL-2
 RDEPEND=>=sys-libs/ncurses-5.2 perl? ( dev-lang/perl )
 SLOT=0
 SRC_URI=ftp://ftp.phred.org/pub/vile/vile-9.4.tgz ftp://ftp.phred.org/pub/vile/patches/vile-9.4a.patch.gz ftp://ftp.phred.org/pub/vile/patches/vile-9.4b.patch.gz ftp://ftp.phred.org/pub/vile/patches/vile-9.4c.patch.gz ftp://ftp.phred.org/pub/vile/patches/vile-9.4d.patch.gz
-_eclasses_=eutils	0f008baa9552301d379ae5df233e9713	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
+_eclasses_=eutils	6891f6f484e3b44a0a15e1b0c0fc9a14	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
 _md5_=9363e5bee8afaaf57f12075004a9fb3e

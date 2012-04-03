@@ -9,5 +9,5 @@ LICENSE=as-is
 RDEPEND=jpeg? ( virtual/jpeg ) jbig? ( media-libs/jbigkit ) lzma? ( app-arch/xz-utils ) zlib? ( sys-libs/zlib )
 SLOT=0
 SRC_URI=http://download.osgeo.org/libtiff/tiff-4.0.0.tar.gz ftp://ftp.remotesensing.org/pub/libtiff/tiff-4.0.0.tar.gz
-_eclasses_=eutils	0f008baa9552301d379ae5df233e9713	libtool	5f623f5a211fb1b2d84d88ee49959a54	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
+_eclasses_=eutils	6891f6f484e3b44a0a15e1b0c0fc9a14	libtool	5f623f5a211fb1b2d84d88ee49959a54	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
 _md5_=b73f7bdff7ff29b5802967d4b390b96b

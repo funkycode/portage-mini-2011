@@ -8,5 +8,5 @@ LICENSE=MPL-1.1
 RDEPEND=>=sys-apps/sed-4 =dev-libs/pwlib-1.10* >=media-video/ffmpeg-0.4.7 ssl? ( dev-libs/openssl )
 SLOT=0
 SRC_URI=http://www.voxgratia.org/releases/openh323-v1_18_0-src-tar.gz
-_eclasses_=eutils	0f008baa9552301d379ae5df233e9713	flag-o-matic	66cb710a2aa184a5687fe1289d7973ab	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
+_eclasses_=eutils	6891f6f484e3b44a0a15e1b0c0fc9a14	flag-o-matic	66cb710a2aa184a5687fe1289d7973ab	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
 _md5_=26043c8bee42143530d3970d57c8ca42

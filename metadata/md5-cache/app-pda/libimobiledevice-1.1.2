@@ -1,13 +1,14 @@
 DEFINED_PHASES=configure install prepare setup
-DEPEND=>=app-pda/libplist-1.8-r1[python?] >=app-pda/usbmuxd-0.1.4 ssl? ( dev-libs/openssl:0 ) !ssl? ( dev-libs/libgcrypt >=dev-libs/libtasn1-1.1 >=net-libs/gnutls-2.2.0 ) dev-util/pkgconfig python? ( >=dev-python/cython-0.13 ) python? ( =dev-lang/python-2.7* )
+DEPEND=>=app-pda/libplist-1.8-r1[python?] >=app-pda/usbmuxd-0.1.4 imobiledevice_backend_openssl? ( dev-libs/openssl:0 ) imobiledevice_backend_gnutls? ( dev-libs/libgcrypt >=dev-libs/libtasn1-1.1 >=net-libs/gnutls-2.2.0 ) dev-util/pkgconfig python? ( >=dev-python/cython-0.13 ) python? ( =dev-lang/python-2.7* )
 DESCRIPTION=Support library to communicate with Apple iPhone/iPod Touch devices
 EAPI=4
 HOMEPAGE=http://www.libimobiledevice.org/
-IUSE=python ssl static-libs
+IUSE=imobiledevice_backend_gnutls +imobiledevice_backend_openssl python static-libs
 KEYWORDS=~amd64 ~ppc64 ~x86
 LICENSE=GPL-2 LGPL-2.1
-RDEPEND=>=app-pda/libplist-1.8-r1[python?] >=app-pda/usbmuxd-0.1.4 ssl? ( dev-libs/openssl:0 ) !ssl? ( dev-libs/libgcrypt >=dev-libs/libtasn1-1.1 >=net-libs/gnutls-2.2.0 ) python? ( =dev-lang/python-2.7* )
+RDEPEND=>=app-pda/libplist-1.8-r1[python?] >=app-pda/usbmuxd-0.1.4 imobiledevice_backend_openssl? ( dev-libs/openssl:0 ) imobiledevice_backend_gnutls? ( dev-libs/libgcrypt >=dev-libs/libtasn1-1.1 >=net-libs/gnutls-2.2.0 ) python? ( =dev-lang/python-2.7* )
+REQUIRED_USE=^^ ( imobiledevice_backend_openssl imobiledevice_backend_gnutls )
 SLOT=0
 SRC_URI=http://www.libimobiledevice.org/downloads/libimobiledevice-1.1.2.tar.bz2
 _eclasses_=python	cb2844e25e38800105564c14a716c805
-_md5_=0a48ebb77b070889c66967e8a87765bb
+_md5_=b6cf4e8a3a5b1424e8fd5a8db4a0cf13

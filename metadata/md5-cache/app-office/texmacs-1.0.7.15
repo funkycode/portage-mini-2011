@@ -9,5 +9,5 @@ LICENSE=GPL-3
 RDEPEND=dev-scheme/guile[deprecated] virtual/latex-base app-text/ghostscript-gpl media-libs/freetype x11-libs/libXext x11-apps/xmodmap qt4? ( x11-libs/qt-gui:4 ) imlib? ( media-libs/imlib2 ) jpeg? ( || ( media-gfx/imagemagick media-gfx/jpeg2ps ) ) svg? ( || ( media-gfx/inkscape gnome-base/librsvg:2 ) ) netpbm? ( media-libs/netpbm ) spell? ( || ( >=app-text/ispell-3.2 >=app-text/aspell-0.5 ) )
 SLOT=0
 SRC_URI=ftp://ftp.texmacs.org/pub/TeXmacs/tmftp/source/TeXmacs-1.0.7.15-src.tar.gz
-_eclasses_=autotools	addbdf6cce5024ac93ad2084ad5e1d2d	eutils	0f008baa9552301d379ae5df233e9713	libtool	5f623f5a211fb1b2d84d88ee49959a54	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
+_eclasses_=autotools	addbdf6cce5024ac93ad2084ad5e1d2d	eutils	6891f6f484e3b44a0a15e1b0c0fc9a14	libtool	5f623f5a211fb1b2d84d88ee49959a54	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
 _md5_=4ae73bdeb6bc21b5ea67a7b77bd9d08e

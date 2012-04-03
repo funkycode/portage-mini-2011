@@ -7,5 +7,5 @@ LICENSE=GPL-2
 RDEPEND==virtual/ada-1995*
 SLOT=0
 SRC_URI=mirror://gentoo/glade-2006.0.tar.bz2
-_eclasses_=eutils	0f008baa9552301d379ae5df233e9713	flag-o-matic	66cb710a2aa184a5687fe1289d7973ab	gnat	5f4e57a467a92576c252ae7c317db6e4	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
+_eclasses_=eutils	6891f6f484e3b44a0a15e1b0c0fc9a14	flag-o-matic	66cb710a2aa184a5687fe1289d7973ab	gnat	5f4e57a467a92576c252ae7c317db6e4	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
 _md5_=a0eb2b87c20fc30771bb1b6cbb2ac87d

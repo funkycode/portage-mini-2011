@@ -9,5 +9,5 @@ LICENSE=LGPL-2
 RDEPEND=>=net-libs/gssdp-0.11.2[introspection?] >=net-libs/libsoup-2.28.2:2.4[introspection?] >=dev-libs/glib-2.24:2 dev-libs/libxml2 || ( >=sys-apps/util-linux-2.16 <sys-libs/e2fsprogs-libs-1.41.8 ) introspection? ( >=dev-libs/gobject-introspection-0.6.4 ) networkmanager? ( >=dev-libs/glib-2.26 )
 SLOT=0
 SRC_URI=mirror://gnome/sources/gupnp/0.18/gupnp-0.18.0.tar.xz
-_eclasses_=eutils	0f008baa9552301d379ae5df233e9713	gnome.org	8fef8f967214f56e08fa92d61163d891	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e	versionator	6601b4c5b3f019a993db59a50e1854e4
+_eclasses_=eutils	6891f6f484e3b44a0a15e1b0c0fc9a14	gnome.org	8fef8f967214f56e08fa92d61163d891	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e	versionator	6601b4c5b3f019a993db59a50e1854e4
 _md5_=671a7dc7eeb28ad1803449eb9ce907e2

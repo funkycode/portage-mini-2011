@@ -7,5 +7,5 @@ LICENSE=GPL-2
 RDEPEND=>=mail-client/thunderbird-2.0_alpha1
 SLOT=0
 SRC_URI=http://alumnit.ca/wiki/attachments/replytolist-0.3.0.xpi
-_eclasses_=eutils	0f008baa9552301d379ae5df233e9713	mozextension	3555597bb9fa8d695bf69f250bf59a1a	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
+_eclasses_=eutils	6891f6f484e3b44a0a15e1b0c0fc9a14	mozextension	3555597bb9fa8d695bf69f250bf59a1a	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
 _md5_=0a8360778bcf8dff550470d449aecd82

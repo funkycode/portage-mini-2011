@@ -1,0 +1,12 @@
+DEFINED_PHASES=install postinst prepare setup
+DEPEND=sys-apps/iproute2
+DESCRIPTION=iptables firewall generator
+EAPI=4
+HOMEPAGE=http://firehol.sourceforge.net/
+KEYWORDS=~amd64 ~ppc ~sparc ~x86
+LICENSE=GPL-2
+RDEPEND=net-firewall/iptables sys-apps/iproute2[-minimal] virtual/modutils || ( net-misc/wget net-misc/curl )
+SLOT=0
+SRC_URI=mirror://sourceforge/firehol/firehol-1.273.tar.bz2
+_eclasses_=eutils	6891f6f484e3b44a0a15e1b0c0fc9a14	linux-info	cc184ad3383ffb6ffbaa82f53608e77f	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e	versionator	6601b4c5b3f019a993db59a50e1854e4
+_md5_=a00c910a9b9c18d7ab479abad37185b9

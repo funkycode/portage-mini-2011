@@ -8,5 +8,5 @@ LICENSE=GPL-2 LGPL-2 BSD
 RDEPEND=>=x11-libs/openmotif-2.3:0 virtual/fortran dev-lang/cfortran sci-physics/cernlib sci-physics/paw
 SLOT=3
 SRC_URI=mirror://debian/pool/main/g/geant321/geant321_3.21.14.dfsg.orig.tar.gz mirror://debian/pool/main/g/geant321/geant321_3.21.14.dfsg-9.diff.gz
-_eclasses_=eutils	0f008baa9552301d379ae5df233e9713	fortran-2	046b01b491c4eb09143ecc1e2d7f025c	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
+_eclasses_=eutils	6891f6f484e3b44a0a15e1b0c0fc9a14	fortran-2	046b01b491c4eb09143ecc1e2d7f025c	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
 _md5_=209078117af8e79fc45a7bc659e0668c

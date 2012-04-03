@@ -9,5 +9,5 @@ LICENSE=as-is
 RDEPEND=fortran? ( virtual/fortran ) !minimal? ( >=virtual/jre-1.4 ) !minimal? ( x11-libs/libXtst x11-libs/libXi ) || ( sys-cluster/openmpi[fortran?,threads?] sys-cluster/mpich2[fortran?,threads?] )
 SLOT=0
 SRC_URI=ftp://ftp.mcs.anl.gov/pub/mpi/mpe/mpe2-1.0.6p1.tar.gz
-_eclasses_=eutils	0f008baa9552301d379ae5df233e9713	fortran-2	046b01b491c4eb09143ecc1e2d7f025c	java-utils-2	b173b5d55bfd6e328939985bc54a1c9e	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e	versionator	6601b4c5b3f019a993db59a50e1854e4
+_eclasses_=eutils	6891f6f484e3b44a0a15e1b0c0fc9a14	fortran-2	046b01b491c4eb09143ecc1e2d7f025c	java-utils-2	b173b5d55bfd6e328939985bc54a1c9e	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e	versionator	6601b4c5b3f019a993db59a50e1854e4
 _md5_=e2124a080629e5509b09e6af78c26fa3

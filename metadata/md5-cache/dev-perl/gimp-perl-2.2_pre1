@@ -7,5 +7,5 @@ LICENSE=Artistic GPL-2
 RDEPEND=>=dev-lang/perl-5.8 >=dev-perl/PDL-2.4 >=dev-perl/gtk2-perl-1.00 >=media-gfx/gimp-2.2
 SLOT=0
 SRC_URI=mirror://gimp/plug-ins/v2.2/perl/Gimp-2.2pre1.tar.gz mirror://cpan/authors/id/S/SJ/SJBURGES/Gimp-2.2pre1.tar.gz
-_eclasses_=base	56b5d6bcc4a0fc2a3055a84fd4a5c36b	eutils	0f008baa9552301d379ae5df233e9713	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	perl-module	d4141c106a05d2a700d500676082a9f9	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
+_eclasses_=base	56b5d6bcc4a0fc2a3055a84fd4a5c36b	eutils	6891f6f484e3b44a0a15e1b0c0fc9a14	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	perl-module	d4141c106a05d2a700d500676082a9f9	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
 _md5_=c2d1aabc44d5326eba9357350beceb36

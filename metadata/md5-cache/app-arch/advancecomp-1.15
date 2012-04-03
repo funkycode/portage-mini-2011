@@ -1,12 +1,14 @@
-DEFINED_PHASES=compile install unpack
+DEFINED_PHASES=configure install prepare
 DEPEND=sys-libs/zlib app-arch/bzip2
 DESCRIPTION=Recompress ZIP, PNG and MNG using deflate 7-Zip, considerably improving compression
+EAPI=4
 HOMEPAGE=http://advancemame.sourceforge.net/comp-readme.html
 IUSE=png mng
 KEYWORDS=alpha amd64 hppa ppc ~ppc64 x86 ~x86-fbsd
 LICENSE=GPL-2 LGPL-2
 RDEPEND=sys-libs/zlib app-arch/bzip2
+RESTRICT=test
 SLOT=0
 SRC_URI=mirror://sourceforge/advancemame/advancecomp-1.15.tar.gz
-_eclasses_=eutils	0f008baa9552301d379ae5df233e9713	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
-_md5_=b8aa03dfc987ef95907d7e4d87773773
+_eclasses_=eutils	6891f6f484e3b44a0a15e1b0c0fc9a14	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
+_md5_=24003bc72445556f2b70710f6e06cabb
