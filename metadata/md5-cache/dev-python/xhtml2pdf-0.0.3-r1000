@@ -1,0 +1,14 @@
+DEFINED_PHASES=compile install postinst postrm prepare setup
+DEPEND=dev-python/html5lib[python_abis_2.5?,python_abis_2.6?,python_abis_2.7?,python_abis_2.7-pypy-1.7?,python_abis_2.7-pypy-1.8?] dev-python/imaging[python_abis_2.5?,python_abis_2.6?,python_abis_2.7?,python_abis_2.7-pypy-1.7?,python_abis_2.7-pypy-1.8?] dev-python/pyPdf[python_abis_2.5?,python_abis_2.6?,python_abis_2.7?,python_abis_2.7-pypy-1.7?,python_abis_2.7-pypy-1.8?] dev-python/reportlab[python_abis_2.5?,python_abis_2.6?,python_abis_2.7?,python_abis_2.7-pypy-1.7?,python_abis_2.7-pypy-1.8?] dev-python/setuptools[python_abis_2.5?,python_abis_2.6?,python_abis_2.7?,python_abis_2.7-pypy-1.7?,python_abis_2.7-pypy-1.8?] python_abis_2.5? ( dev-lang/python:2.5 ) python_abis_2.6? ( dev-lang/python:2.6 ) python_abis_2.7? ( dev-lang/python:2.7 ) python_abis_2.7-pypy-1.7? ( dev-python/pypy:1.7 ) python_abis_2.7-pypy-1.8? ( dev-python/pypy:1.8 )
+DESCRIPTION=PDF generator using HTML and CSS
+EAPI=4-python
+HOMEPAGE=http://www.xhtml2pdf.com/ http://pypi.python.org/pypi/xhtml2pdf
+IUSE=python_abis_2.5 python_abis_2.6 python_abis_2.7 python_abis_2.7-pypy-1.7 python_abis_2.7-pypy-1.8
+KEYWORDS=amd64 x86
+LICENSE=Apache-2.0
+RDEPEND=dev-python/html5lib[python_abis_2.5?,python_abis_2.6?,python_abis_2.7?,python_abis_2.7-pypy-1.7?,python_abis_2.7-pypy-1.8?] dev-python/imaging[python_abis_2.5?,python_abis_2.6?,python_abis_2.7?,python_abis_2.7-pypy-1.7?,python_abis_2.7-pypy-1.8?] dev-python/pyPdf[python_abis_2.5?,python_abis_2.6?,python_abis_2.7?,python_abis_2.7-pypy-1.7?,python_abis_2.7-pypy-1.8?] dev-python/reportlab[python_abis_2.5?,python_abis_2.6?,python_abis_2.7?,python_abis_2.7-pypy-1.7?,python_abis_2.7-pypy-1.8?] dev-python/setuptools[python_abis_2.5?,python_abis_2.6?,python_abis_2.7?,python_abis_2.7-pypy-1.7?,python_abis_2.7-pypy-1.8?] python_abis_2.5? ( dev-lang/python:2.5 ) python_abis_2.6? ( dev-lang/python:2.6 ) python_abis_2.7? ( dev-lang/python:2.7 ) python_abis_2.7-pypy-1.7? ( dev-python/pypy:1.7 ) python_abis_2.7-pypy-1.8? ( dev-python/pypy:1.8 )
+REQUIRED_USE=|| ( python_abis_2.5 python_abis_2.6 python_abis_2.7 python_abis_2.7-pypy-1.7 python_abis_2.7-pypy-1.8 )
+SLOT=0
+SRC_URI=mirror://pypi/x/xhtml2pdf/xhtml2pdf-0.0.3.tar.gz
+_eclasses_=distutils	82a876811ffd4907daba6062958daa26	python	cb2844e25e38800105564c14a716c805
+_md5_=29fa8e9c7e9f2dc9b129b044230455d7
