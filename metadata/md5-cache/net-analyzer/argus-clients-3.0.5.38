@@ -1,0 +1,13 @@
+DEFINED_PHASES=compile configure install prepare
+DEPEND=net-libs/libpcap net-analyzer/rrdtool[perl] geoip? ( dev-libs/geoip ) mysql? ( virtual/mysql ) sys-libs/ncurses >=sys-devel/bison-1.28 >=sys-devel/flex-2.4.6 || ( >=sys-devel/automake-1.11.1:1.11 ) >=sys-devel/autoconf-2.68 sys-devel/libtool
+DESCRIPTION=Clients for net-analyzer/argus
+EAPI=4
+HOMEPAGE=http://www.qosient.com/argus/
+IUSE=debug geoip mysql tcpd
+KEYWORDS=~amd64 ~ppc ~x86
+LICENSE=GPL-2
+RDEPEND=net-libs/libpcap net-analyzer/rrdtool[perl] geoip? ( dev-libs/geoip ) mysql? ( virtual/mysql ) sys-libs/ncurses >=net-analyzer/argus-3.0.2
+SLOT=0
+SRC_URI=http://qosient.com/argus/dev/argus-clients-3.0.5.38.tar.gz
+_eclasses_=autotools	addbdf6cce5024ac93ad2084ad5e1d2d	eutils	6891f6f484e3b44a0a15e1b0c0fc9a14	libtool	5f623f5a211fb1b2d84d88ee49959a54	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
+_md5_=7b49e864dc308536e2384ff4a4cefdd3

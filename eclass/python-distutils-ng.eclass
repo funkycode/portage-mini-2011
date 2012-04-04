@@ -1,6 +1,6 @@
 # Copyright 1999-2012 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/eclass/python-distutils-ng.eclass,v 1.9 2012/03/30 16:41:40 nelchael Exp $
+# $Header: /var/cvsroot/gentoo-x86/eclass/python-distutils-ng.eclass,v 1.11 2012/04/03 19:21:45 nelchael Exp $
 
 # @ECLASS: python-distutils-ng
 # @MAINTAINER:
@@ -51,7 +51,7 @@ fi
 # Set the value to "yes" to skip compilation and/or optimization of Python
 # modules.
 
-EXPORT_FUNCTIONS src_prepare src_configure src_compile src_test src_install
+EXPORT_FUNCTIONS pkg_pretend src_prepare src_configure src_compile src_test src_install
 
 case "${EAPI}" in
 	0|1|2|3)
@@ -204,6 +204,19 @@ _python-distutils-ng_has_compileall_opt() {
 	esac
 }
 
+# @FUNCTION: python-distutils-ng_redoscript
+# @USAGE: script_file_path [destination_directory]
+# @DESCRIPTION:
+# Reinstall script installed already by setup.py. This works by first moving the
+# script to ${T} directory and later running python-distutils-ng_doscript on it.
+# script_file_path has to be a full path relative to ${D}.
+python-distutils-ng_redoscript() {
+	local sbn="$(basename "${1}")"
+	mkdir -p "${T}/_${sbn}/" || die "failed to create directory"
+	mv "${D}/${1}" "${T}/_${sbn}/${sbn}" || die "failed to move file"
+	python-distutils-ng_doscript "${T}/_${sbn}/${sbn}" "${2}"
+}
+
 # @FUNCTION: python-distutils-ng_doscript
 # @USAGE: script_file_name [destination_directory]
 # @DESCRIPTION:
@@ -285,6 +298,17 @@ python-distutils-ng_newscript() {
 		done
 
 		dosym "${destination_file}-${default_impl}" "${destination_directory}/${destination_file}"
+	fi
+}
+
+# Phase function: pkg_pretend
+python-distutils-ng_pkg_pretend() {
+	if has "collision-protect" ${FEATURES}; then
+		eerror "Due to previous eclass compiling Python files outside of src_install"
+		eerror "(and not recording resulting .pyc and .pyo files as owned by any package)"
+		eerror "merging this package with \"collision-protect\" in FEATURES will result"
+		eerror "in an error, please switch to using \"protect-owned\" instead."
+		die "\"collision-protect\" in FEATURES detected"
 	fi
 }
 

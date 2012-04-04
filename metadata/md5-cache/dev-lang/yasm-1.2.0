@@ -1,5 +1,5 @@
-DEFINED_PHASES=configure setup
-DEPEND=nls? ( sys-devel/gettext ) python? ( >=dev-python/cython-0.14 ) python? ( =dev-lang/python-2.7* )
+DEFINED_PHASES=configure prepare setup
+DEPEND=nls? ( sys-devel/gettext ) python? ( >=dev-python/cython-0.14 ) || ( >=sys-devel/automake-1.11.1:1.11 ) >=sys-devel/autoconf-2.68 sys-devel/libtool python? ( =dev-lang/python-2.7* )
 DESCRIPTION=An assembler for x86 and x86_64 instruction sets
 EAPI=4
 HOMEPAGE=http://www.tortall.net/projects/yasm/
@@ -9,5 +9,5 @@ LICENSE=BSD-2 BSD || ( Artistic GPL-2 LGPL-2 )
 RDEPEND=nls? ( virtual/libintl ) python? ( =dev-lang/python-2.7* )
 SLOT=0
 SRC_URI=http://www.tortall.net/projects/yasm/releases/yasm-1.2.0.tar.gz
-_eclasses_=python	cb2844e25e38800105564c14a716c805
-_md5_=72455ff7d152e334e4098f0c0f320ac6
+_eclasses_=autotools	addbdf6cce5024ac93ad2084ad5e1d2d	eutils	6891f6f484e3b44a0a15e1b0c0fc9a14	libtool	5f623f5a211fb1b2d84d88ee49959a54	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	python	cb2844e25e38800105564c14a716c805	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
+_md5_=ea5cb589b08d1b10d7023e056876e17f

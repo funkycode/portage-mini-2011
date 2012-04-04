@@ -1,5 +1,5 @@
 ####################################################################
-# $Header: /var/cvsroot/gentoo-x86/profiles/package.mask,v 1.13643 2012/04/03 09:08:29 ssuominen Exp $
+# $Header: /var/cvsroot/gentoo-x86/profiles/package.mask,v 1.13646 2012/04/03 23:19:01 floppym Exp $
 #
 # When you add an entry to the top of this file, add your name, the date, and
 # an explanation of why something is getting masked. Please be extremely
@@ -150,11 +150,6 @@ dev-php/Horde_Yaml
 >=dev-libs/boost-1.49
 >=dev-libs/boost-build-1.49
 
-# Mike Gilbert <floppym@gentoo.org> (25 Mar 2012)
-# Arfrever Frehtes Taifersar Arahesis <arfrever.fta@gmail.com> (25 Mar 2012)
-# Masked for testing.
->=dev-libs/icu-49
-
 # Nirbheek Chauhan <nirbheek@gentoo.org> (25 Mar 2012)
 # This is now the GNOME 3.4 mask
 # Core libraries to be unmasked first:
@@ -186,6 +181,8 @@ dev-php/Horde_Yaml
 # Farsight2 conflicts with Farstream
 # So pidgin needs a patch
 =net-im/pidgin-2.10.3-r100
+# Needs >=glib-2.32
+>=gnome-extra/gnome-dvb-daemon-0.2.8
 
 # Chí-Thanh Christopher Nguyễn <chithanh@gentoo.org> (24 Mar 2012)
 # Causes font corruption, bug #409593.
@@ -396,11 +393,6 @@ app-pda/syncevolution
 # Tim Harder <radhermit@gentoo.org> (09 Mar 2012)
 # Masked for testing
 =mail-client/roundcube-0.8*
-
-# Johannes Huber <johu@gentoo.org> (06 Mar 2012)
-# Masked for removal in 30 days. Superseded by
-# kde-base/nepomuk bug #406999.
-kde-misc/nepomukcontroller
 
 # Samuli Suominen <ssuominen@gentoo.org> (06 Mar 2012)
 # Masked for testing since this is known to break nearly
