@@ -1,4 +1,4 @@
-DEFINED_PHASES=compile install postinst postrm preinst setup
+DEFINED_PHASES=compile install postinst postrm preinst prepare setup
 DEPEND=kernel_linux? ( sys-apps/module-init-tools ) sys-apps/sed kernel_linux? ( virtual/linux-sources )
 DESCRIPTION=r8168 driver for Realtek 8111/8168 PCI-E NICs
 EAPI=4
@@ -10,4 +10,4 @@ RDEPEND=kernel_linux? ( sys-apps/module-init-tools )
 SLOT=0
 SRC_URI=http://r8168.googlecode.com/files/r8168-8.028.00.tar.bz2
 _eclasses_=eutils	6891f6f484e3b44a0a15e1b0c0fc9a14	linux-info	cc184ad3383ffb6ffbaa82f53608e77f	linux-mod	a4e07f78bacb6b129ea7b18ad060dbfc	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e	versionator	6601b4c5b3f019a993db59a50e1854e4
-_md5_=d212e1d49f8f382642c00776e5f57479
+_md5_=dc0557a535a63129985a0a514bba5d49

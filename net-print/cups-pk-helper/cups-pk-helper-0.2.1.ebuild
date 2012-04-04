@@ -1,11 +1,11 @@
-# Copyright 1999-2011 Gentoo Foundation
+# Copyright 1999-2012 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/net-print/cups-pk-helper/cups-pk-helper-0.2.1.ebuild,v 1.1 2011/11/16 01:50:08 tetromino Exp $
+# $Header: /var/cvsroot/gentoo-x86/net-print/cups-pk-helper/cups-pk-helper-0.2.1.ebuild,v 1.2 2012/04/04 07:30:21 tetromino Exp $
 
 EAPI="4"
 
 DESCRIPTION="PolicyKit helper to configure cups with fine-grained privileges"
-HOMEPAGE="http://cgit.freedesktop.org/cups-pk-helper/"
+HOMEPAGE="http://www.freedesktop.org/wiki/Software/cups-pk-helper"
 SRC_URI="http://www.freedesktop.org/software/${PN}/releases/${P}.tar.bz2"
 
 LICENSE="GPL-2"
