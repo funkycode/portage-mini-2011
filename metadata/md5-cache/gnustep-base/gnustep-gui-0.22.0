@@ -4,10 +4,10 @@ DESCRIPTION=Library of GUI classes written in Obj-C
 EAPI=4
 HOMEPAGE=http://www.gnustep.org/
 IUSE=cups gif jpeg png speech debug doc
-KEYWORDS=~alpha ~amd64 ~ppc ~sparc ~x86 ~x86-fbsd ~amd64-linux ~x86-linux ~x86-solaris
+KEYWORDS=~alpha amd64 ~ppc ~sparc ~x86 ~x86-fbsd ~amd64-linux ~x86-linux ~x86-solaris
 LICENSE=LGPL-2.1
 RDEPEND=doc? ( virtual/texi2dvi dev-tex/latex2html app-text/texi2html ) app-text/aspell >=gnustep-base/gnustep-base-1.24.0 media-libs/audiofile >=media-libs/tiff-3 x11-libs/libXt cups? ( >=net-print/cups-1.1 ) gif? ( >=media-libs/giflib-4.1 ) jpeg? ( virtual/jpeg ) png? ( >=media-libs/libpng-1.2 ) speech? ( app-accessibility/flite )
 SLOT=0
 SRC_URI=ftp://ftp.gnustep.org/pub/gnustep/core/gnustep-gui-0.22.0.tar.gz
 _eclasses_=eutils	6891f6f484e3b44a0a15e1b0c0fc9a14	flag-o-matic	66cb710a2aa184a5687fe1289d7973ab	gnustep-base	a3ff8ba225ffccb43419fd84841dad54	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
-_md5_=5f9e86c5f5d73e029d77b89a38234d68
+_md5_=9a0785e391d625e3fccb387f4161c7f7

@@ -4,10 +4,10 @@ DESCRIPTION=Seq24 is a loop based MIDI sequencer with focus on live performances
 EAPI=4
 HOMEPAGE=https://edge.launchpad.net/seq24/
 IUSE=jack lash
-KEYWORDS=amd64 ~ppc ~x86
+KEYWORDS=amd64 ~ppc x86
 LICENSE=GPL-2
 RDEPEND=media-libs/alsa-lib >=dev-cpp/gtkmm-2.4:2.4 >=dev-libs/libsigc++-2.2:2 jack? ( >=media-sound/jack-audio-connection-kit-0.90 ) lash? ( >=media-sound/lash-0.5 )
 SLOT=0
 SRC_URI=http://edge.launchpad.net/seq24/trunk/0.9.2/+download/seq24-0.9.2.tar.bz2
 _eclasses_=eutils	6891f6f484e3b44a0a15e1b0c0fc9a14	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
-_md5_=e88bcc01f248ed7604380ea63705b8a5
+_md5_=12bf18f4f1082c4d33662bb6c9a885e5
