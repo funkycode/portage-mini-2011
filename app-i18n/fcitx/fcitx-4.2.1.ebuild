@@ -1,10 +1,10 @@
 # Copyright 1999-2012 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/app-i18n/fcitx/fcitx-4.2.1.ebuild,v 1.2 2012/03/21 01:54:50 qiaomuf Exp $
+# $Header: /var/cvsroot/gentoo-x86/app-i18n/fcitx/fcitx-4.2.1.ebuild,v 1.4 2012/04/04 20:12:20 dilfridge Exp $
 
 EAPI="3"
 
-inherit cmake-utils eutils
+inherit multilib cmake-utils eutils
 
 DESCRIPTION="Free Chinese Input Toy for X. Another Chinese XIM Input Method"
 HOMEPAGE="http://www.fcitx.org/"
@@ -12,7 +12,7 @@ SRC_URI="http://fcitx.googlecode.com/files/${P}.tar.xz"
 
 LICENSE="GPL-2"
 SLOT="0"
-KEYWORDS="~amd64 ~x86"
+KEYWORDS="amd64 ~x86"
 IUSE="cairo dbus debug gtk gtk3 opencc pango qt table"
 
 RDEPEND="x11-libs/libX11
@@ -26,8 +26,9 @@ RDEPEND="x11-libs/libX11
 	dbus? ( sys-apps/dbus )"
 DEPEND="${RDEPEND}
 	app-arch/xz-utils
-	x11-proto/xproto
-	dev-util/pkgconfig"
+	dev-util/intltool
+	dev-util/pkgconfig
+	x11-proto/xproto"
 
 update_gtk_immodules() {
 	local GTK2_CONFDIR="/etc/gtk-2.0"
@@ -50,6 +51,7 @@ update_gtk3_immodules() {
 
 src_configure() {
 	local mycmakeargs="
+		-DLIB_INSTALL_DIR=/usr/$(get_libdir)
 		$(cmake-utils_use_enable cairo)
 		$(cmake-utils_use_enable dbus)
 		$(cmake-utils_use_enable debug)

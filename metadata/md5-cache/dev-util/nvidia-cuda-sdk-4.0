@@ -10,5 +10,5 @@ RDEPEND=>=dev-util/nvidia-cuda-toolkit-4.0 examples? ( >=x11-drivers/nvidia-driv
 RESTRICT=binchecks
 SLOT=0
 SRC_URI=http://developer.download.nvidia.com/compute/cuda/4_0/sdk/gpucomputingsdk_4.0.17_linux.run
-_eclasses_=multilib	5f4ad6cf85e365e8f0c6050ddd21659e	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	unpacker	3bad9303b54075673d368b65e22dfdc8
+_eclasses_=multilib	5f4ad6cf85e365e8f0c6050ddd21659e	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	unpacker	70e15279e12d6f095c52a04309c5d0a2
 _md5_=60f01a17b914c1b77150904f721f19d2

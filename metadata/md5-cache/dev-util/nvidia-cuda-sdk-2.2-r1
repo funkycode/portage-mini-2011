@@ -10,5 +10,5 @@ RDEPEND=>=dev-util/nvidia-cuda-toolkit-2.2 examples? ( !emulation? ( >=x11-drive
 RESTRICT=binchecks
 SLOT=0
 SRC_URI=http://developer.download.nvidia.com/compute/cuda/2_2/sdk/cudasdk_2.2_linux.run
-_eclasses_=multilib	5f4ad6cf85e365e8f0c6050ddd21659e	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	unpacker	3bad9303b54075673d368b65e22dfdc8
+_eclasses_=multilib	5f4ad6cf85e365e8f0c6050ddd21659e	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	unpacker	70e15279e12d6f095c52a04309c5d0a2
 _md5_=6bf4a841563f0fa9405eb66635228e0d

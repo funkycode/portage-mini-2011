@@ -8,5 +8,5 @@ LICENSE=google-talkplugin openssl
 RDEPEND=|| ( media-sound/pulseaudio media-libs/alsa-lib ) dev-libs/glib:2 system-libCg? ( media-gfx/nvidia-cg-toolkit ) media-libs/fontconfig media-libs/freetype:2 media-libs/libpng:1.2 >=sys-libs/glibc-2.4 x11-libs/cairo x11-libs/gdk-pixbuf x11-libs/gtk+:2 x11-libs/libX11 x11-libs/libXcomposite x11-libs/libXfixes x11-libs/libXrandr x11-libs/libXrender x11-libs/libXt sys-apps/lsb-release virtual/opengl libnotify? ( x11-libs/libnotify )
 RESTRICT=strip mirror
 SLOT=0
-_eclasses_=eutils	6891f6f484e3b44a0a15e1b0c0fc9a14	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	nsplugins	6695ecf00333c6acf870a802d3ceb9fd	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	unpacker	3bad9303b54075673d368b65e22dfdc8	user	32a09e82e2f592bf88ad2fd08525166e
+_eclasses_=eutils	6891f6f484e3b44a0a15e1b0c0fc9a14	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	nsplugins	6695ecf00333c6acf870a802d3ceb9fd	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	unpacker	70e15279e12d6f095c52a04309c5d0a2	user	32a09e82e2f592bf88ad2fd08525166e
 _md5_=95e3a16bfaf8dff92703c955e3adb0eb

@@ -1,0 +1,13 @@
+DEFINED_PHASES=compile configure install prepare setup test
+DEPEND=jpeg2k? ( media-libs/jasper ) lcms? ( media-libs/lcms:2 ) dev-util/pkgconfig || ( >=sys-devel/automake-1.11.1:1.11 ) >=sys-devel/autoconf-2.68 sys-devel/libtool
+DESCRIPTION=LibRaw is a library for reading RAW files obtained from digital photo cameras
+EAPI=4
+HOMEPAGE=http://www.libraw.org/
+IUSE=demosaic examples jpeg2k +lcms openmp static-libs
+KEYWORDS=~amd64 ~x86
+LICENSE=LGPL-2.1 CDDL GPL-2 GPL-3
+RDEPEND=jpeg2k? ( media-libs/jasper ) lcms? ( media-libs/lcms:2 )
+SLOT=0
+SRC_URI=http://www.libraw.org/data/LibRaw-0.14.6.tar.gz demosaic? ( http://www.libraw.org/data/LibRaw-demosaic-pack-GPL2-0.14.6.tar.gz http://www.libraw.org/data/LibRaw-demosaic-pack-GPL3-0.14.6.tar.gz )
+_eclasses_=autotools	addbdf6cce5024ac93ad2084ad5e1d2d	autotools-utils	748973db029ba52a1991320e1034bad9	eutils	6891f6f484e3b44a0a15e1b0c0fc9a14	libtool	5f623f5a211fb1b2d84d88ee49959a54	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
+_md5_=b161bd14e05dc2696cf4b7949d3260b0

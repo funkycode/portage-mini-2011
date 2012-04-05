@@ -3,10 +3,10 @@ DEPEND=>=app-text/mecab-0.98 =dev-lang/python-2*
 DESCRIPTION=Python binding for MeCab
 EAPI=3
 HOMEPAGE=http://mecab.sourceforge.net/
-KEYWORDS=amd64 ~ia64 ~ppc64 ~x86
+KEYWORDS=amd64 ~ia64 ~ppc64 x86
 LICENSE=|| ( BSD LGPL-2.1 GPL-2 )
 RDEPEND=>=app-text/mecab-0.98 =dev-lang/python-2*
 SLOT=0
 SRC_URI=mirror://sourceforge/mecab/mecab-python-0.98.tar.gz
 _eclasses_=distutils	82a876811ffd4907daba6062958daa26	python	cb2844e25e38800105564c14a716c805
-_md5_=0477c971e075bdc784567c985a7a517f
+_md5_=0944be2b4b4ef93865548750fb31dd18

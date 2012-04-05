@@ -7,5 +7,5 @@ RDEPEND=amd64? ( >=app-emulation/emul-linux-x86-baselibs-20110101 >=app-emulatio
 RESTRICT=mirror
 SLOT=0
 SRC_URI=http://updates.livestation.com/releases/Livestation-3.2.0-i386.run
-_eclasses_=eutils	6891f6f484e3b44a0a15e1b0c0fc9a14	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	unpacker	3bad9303b54075673d368b65e22dfdc8	user	32a09e82e2f592bf88ad2fd08525166e
+_eclasses_=eutils	6891f6f484e3b44a0a15e1b0c0fc9a14	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	unpacker	70e15279e12d6f095c52a04309c5d0a2	user	32a09e82e2f592bf88ad2fd08525166e
 _md5_=647ddf41727a4f2bc6633e61502c737e
