@@ -10,4 +10,4 @@ RDEPEND=>=dev-libs/glib-2.30.1:2 >=dev-libs/libgcrypt-1.4.2 dev-libs/libgpg-erro
 SLOT=0
 SRC_URI=mirror://gnome/sources/gtk-vnc/0.5/gtk-vnc-0.5.0.tar.xz
 _eclasses_=base	56b5d6bcc4a0fc2a3055a84fd4a5c36b	eutils	6891f6f484e3b44a0a15e1b0c0fc9a14	gnome.org	8fef8f967214f56e08fa92d61163d891	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	python	cb2844e25e38800105564c14a716c805	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e	versionator	6601b4c5b3f019a993db59a50e1854e4
-_md5_=9fa141a3f0a6d262868ef21503bd800d
+_md5_=78110d9c7c561bdfc9ab706fc734b7c8

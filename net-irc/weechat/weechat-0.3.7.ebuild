@@ -1,6 +1,6 @@
 # Copyright 1999-2012 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/net-irc/weechat/weechat-0.3.7.ebuild,v 1.7 2012/04/05 21:17:59 phajdan.jr Exp $
+# $Header: /var/cvsroot/gentoo-x86/net-irc/weechat/weechat-0.3.7.ebuild,v 1.9 2012/04/06 09:45:52 scarabeus Exp $
 
 EAPI=3
 
@@ -62,7 +62,7 @@ done
 
 pkg_setup() {
 	use python && python_pkg_setup
-    use ruby && ruby-ng_pkg_setup
+	use ruby && ruby-ng_pkg_setup
 }
 
 src_prepare() {
@@ -107,6 +107,7 @@ src_configure() {
 		$(cmake-utils_use_enable ruby)
 		$(cmake-utils_use_enable lua)
 		$(cmake-utils_use_enable tcl)
+		$(cmake-utils_use_enable guile)
 		$(cmake-utils_use_enable doc)
 	)
 
