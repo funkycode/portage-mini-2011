@@ -39,7 +39,11 @@ src_compile(){
 	if use doc; then
 		einfo "Generation of documentation"
 		pushd docs > /dev/null
-		PYTHONPATH=".." emake html
+		if [[ "$(python_get_version -f -l --major)" == "3" ]]; then
+			# https://github.com/mitsuhiko/jinja2/issues/115
+			2to3-$(PYTHON -f --ABI) -nw --no-diffs jinjaext.py
+		fi
+		PYTHONPATH="$(ls -d ../build-$(PYTHON -f --ABI)/lib*)" emake html
 		popd > /dev/null
 	fi
 }

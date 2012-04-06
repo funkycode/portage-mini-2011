@@ -10,7 +10,7 @@ PYTHON_RESTRICTED_ABIS="*-jython"
 inherit distutils
 
 DESCRIPTION="Syntax highlighting and autocompletion for the Python interpreter"
-HOMEPAGE="http://www.bpython-interpreter.org/ https://bitbucket.org/bobf/bpython/ http://pypi.python.org/pypi/bpython"
+HOMEPAGE="http://www.bpython-interpreter.org/ https://bitbucket.org/bobf/bpython http://pypi.python.org/pypi/bpython"
 SRC_URI="http://www.bpython-interpreter.org/releases/${P}.tar.gz"
 
 LICENSE="MIT"
