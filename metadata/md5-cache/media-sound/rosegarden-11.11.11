@@ -4,10 +4,10 @@ DESCRIPTION=MIDI and audio sequencer and notation editor
 EAPI=4
 HOMEPAGE=http://www.rosegardenmusic.com/
 IUSE=debug lirc
-KEYWORDS=amd64 ~ppc ~x86
+KEYWORDS=amd64 ~ppc x86
 LICENSE=GPL-2
 RDEPEND=x11-libs/qt-gui:4 media-libs/ladspa-sdk x11-libs/libSM media-sound/jack-audio-connection-kit media-libs/alsa-lib >=media-libs/dssi-1.0.0 media-libs/liblo media-libs/liblrdf sci-libs/fftw:3.0 media-libs/libsamplerate[sndfile] lirc? ( app-misc/lirc )
 SLOT=0
 SRC_URI=mirror://sourceforge/rosegarden/rosegarden-11.11.11.tar.bz2
 _eclasses_=autotools	addbdf6cce5024ac93ad2084ad5e1d2d	eutils	6891f6f484e3b44a0a15e1b0c0fc9a14	fdo-mime	0acfe1a88fd8751a1d5dc671168219fa	gnome2-utils	0556f216199e15cc37899e1130da3824	libtool	5f623f5a211fb1b2d84d88ee49959a54	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
-_md5_=b535849126a752e3c9a00d5410f34eb7
+_md5_=aa30ecfd06f63b7b56c8e66874ad947d

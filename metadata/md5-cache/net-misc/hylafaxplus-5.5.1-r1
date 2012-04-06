@@ -1,0 +1,13 @@
+DEFINED_PHASES=compile configure install postinst prepare
+DEPEND=>=sys-libs/zlib-1.1.4 !net-misc/hylafax app-text/ghostscript-gpl virtual/mta media-libs/tiff[jbig?] virtual/jpeg jbig? ( media-libs/jbigkit ) sys-apps/gawk ldap? ( net-nds/openldap ) pam? ( virtual/pam ) mgetty? ( net-dialup/mgetty[-fax] )
+DESCRIPTION=Enterprise client-server fax package for class 1 and 2 fax modems.
+EAPI=2
+HOMEPAGE=http://hylafax.sourceforge.net
+IUSE=jbig pam mgetty html ldap
+KEYWORDS=~x86 ~amd64
+LICENSE=hylafaxplus
+RDEPEND=>=sys-libs/zlib-1.1.4 !net-misc/hylafax app-text/ghostscript-gpl virtual/mta media-libs/tiff[jbig?] virtual/jpeg jbig? ( media-libs/jbigkit ) sys-apps/gawk ldap? ( net-nds/openldap ) pam? ( virtual/pam ) mgetty? ( net-dialup/mgetty[-fax] ) net-mail/metamail !net-dialup/sendpage
+SLOT=0
+SRC_URI=mirror://sourceforge/hylafax/hylafax-5.5.1.tar.gz
+_eclasses_=eutils	6891f6f484e3b44a0a15e1b0c0fc9a14	flag-o-matic	66cb710a2aa184a5687fe1289d7973ab	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	pam	3f746974e1cc47cabe3bd488c08cdc8e	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
+_md5_=a11f788bcca515c241207287fcdc372a
