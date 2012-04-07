@@ -1976,7 +1976,6 @@ gnome-extra/libgda:sourceview - Enable support for x11-libs/gtksourceview
 gnome-extra/libgsf:gtk - Enable use of gdk in thumbnailer
 gnome-extra/libgsf:thumbnail - Enable libgsf supported formats thumbnailer
 gnome-extra/mousetweaks:applet - Build the gnome-base/gnome-panel applet
-gnome-extra/music-applet:mpd - Enable MPD support
 gnome-extra/nautilus-actions:deprecated - Enable deprecated functions
 gnome-extra/nautilus-sendto:gajim - Enables support for net-im/gajim
 gnome-extra/nautilus-sendto:mail - Enables support for mailto using gnome-extra/evolution-data-server
@@ -3560,7 +3559,6 @@ net-ftp/pure-ftpd:paranoidmsg - Display paranoid messages instead of normal ones
 net-ftp/pure-ftpd:resolveids - Resolve UIDs/GIDs
 net-ftp/pure-ftpd:sysquota - Enables system quota support (needs sys-fs/quota)
 net-ftp/pure-ftpd:vchroot - Enable support for virtual chroot (possible security risk)
-net-ftp/twoftpd:breakrfc - Break RFC compliance to allow control symbols in filenames (required for some (e.g. cp1251) encodings, use with caution).
 net-im/ayttm:irc - Enable Internet Relay Chat support
 net-im/ayttm:lj - Enable livejournal.com support
 net-im/ayttm:smtp - Adds support for sending messages via RFC2821 SMTP
@@ -3667,11 +3665,24 @@ net-im/psi:xscreensaver - Use X screensaver protocol extension to monitor idle/a
 net-im/psimedia:demo - build simple test application for the PsiMedia system
 net-im/pyaim-t:webinterface - Install dependencies needed for the web interface
 net-im/pyicq-t:webinterface - Install dependencies needed for the web interface
-net-im/qutim:histman - Enable histman plugin
-net-im/qutim:irc - Enable irc support
-net-im/qutim:mrim - Enable mrim plugin
-net-im/qutim:vkontakte - Enable vkontakte plugin
-net-im/qutim:yandexnarod - Enable yanderx.narod plugin
+net-im/qutim:aspell - Enable spellchecking using app-text/aspell
+net-im/qutim:awn - Enable integration with gnome-extra/avant-window-navigator
+net-im/qutim:crypt - Enable AES crypto plugin
+net-im/qutim:histman - Enable history importer plugin
+net-im/qutim:hunspell - Enable spellchecking using app-text/hunspell
+net-im/qutim:irc - Enable IRC protocol support
+net-im/qutim:kinetic - Enable Growl-like kinetic popups plugin
+net-im/qutim:mrim - Enable mail.ru protocol support
+net-im/qutim:multimedia - Add sound support via x11-libs/qt-multimedia
+net-im/qutim:phonon - Add sound support via media-libs/phonon or x11-libs/qt-phonon
+net-im/qutim:purple - Enable libpurple-based protocol support
+net-im/qutim:qml - Enable QtQuick-based chat plugin
+net-im/qutim:sdl - Add sound support via media-libs/sdl-mixer
+net-im/qutim:telepathy - Enable telepathy-based protocol support
+net-im/qutim:vkontakte - Enable vkontakte protocol support
+net-im/qutim:webkit - Enable Adium-like WebView plugin
+net-im/qutim:xscreensaver - Use X screensaver protocol extension to monitor idle/active status based on mouse/keyboard events
+net-im/qutim:yandexnarod - Enable yandex.narod plugin
 net-im/skype:pax_kernel - Triggers a paxmarking of the binary
 net-im/skype:qt-static - Installs binaries statically linked to Qt
 net-im/telepathy-connection-managers:irc - Enable Internet Relay Chat (IRC) support.
@@ -3799,6 +3810,10 @@ net-irc/znc:dns-threads - Use threads for DNS resolving
 net-irc/znc:extras - Enable some additional modules
 net-irc/znc:user-networks - Allow non-admin users to add networks
 net-libs/aqbanking:chipcard - Enable support for DDV/RSA-chipcards
+net-libs/axTLS:cgi-lua - Enables lua backed cgi for axhttpd server
+net-libs/axTLS:cgi-php - Enables php backed cgi for axhttpd server
+net-libs/axTLS:httpd - Enables axhttpd web server component
+net-libs/axTLS:static - Statically build axhttpd server
 net-libs/c-client:doc - Install RFCs related to IMAP
 net-libs/courier-authlib:vpopmail - Enable vpopmail support
 net-libs/cvm:vpopmail - Enable vpopmail support
@@ -4305,15 +4320,6 @@ net-p2p/gift:ares - pull in Ares plugin
 net-p2p/gift:fasttrack - pull in FastTrack plugin
 net-p2p/gift:gnutella - pull in Gnutella plugin
 net-p2p/gift:openft - pull in OpenFT plugin
-net-p2p/gnunet:ares - enable asynchronous dns support through net-dns/c-ares library
-net-p2p/gnunet:gtk - enable gtk setup wizard
-net-p2p/gnunet:microhttpd - enable embedded http server support
-net-p2p/gnunet:mysql - enable mysql database backend
-net-p2p/gnunet:ncurses - enable ncurses setup wizard using dev-util/dialog
-net-p2p/gnunet:qt4 - enable qt4 setup wizard
-net-p2p/gnunet:setup - enable setup wizard
-net-p2p/gnunet:smtp - enable SMTP support using net-libs/libesmtp
-net-p2p/gnunet:sqlite - enable sqlite database backend
 net-p2p/ktorrent:bwscheduler - Schedule upload and download limits over a period of a week
 net-p2p/ktorrent:downloadorder - Specify the download order of a multi-file torrent
 net-p2p/ktorrent:infowidget - Displays general information about a torrent in several tabs

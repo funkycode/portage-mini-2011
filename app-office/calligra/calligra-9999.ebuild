@@ -1,6 +1,6 @@
 # Copyright 1999-2012 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/app-office/calligra/calligra-9999.ebuild,v 1.11 2012/03/25 08:48:33 dilfridge Exp $
+# $Header: /var/cvsroot/gentoo-x86/app-office/calligra/calligra-9999.ebuild,v 1.14 2012/04/06 21:53:32 dilfridge Exp $
 
 # note: files that need to be checked for dependencies etc:
 # CMakeLists.txt, kexi/CMakeLists.txt kexi/migration/CMakeLists.txt
@@ -10,6 +10,7 @@ EAPI=4
 
 KDE_SCM=git
 KDE_MINIMAL=4.6.4
+QT_MINIMAL=4.8.1
 OPENGL_REQUIRED=optional
 
 KDE_HANDBOOK=optional
@@ -19,11 +20,11 @@ inherit kde4-base
 
 DESCRIPTION="KDE Office Suite"
 HOMEPAGE="http://www.calligra-suite.org/"
-[[ ${PV} == 9999 ]] || SRC_URI="mirror://kde/unstable/${P}/${P}.tar.bz2"
+[[ ${PV} == *9999 ]] || SRC_URI="mirror://kde/stable/${P}/${P}.tar.bz2"
 
 LICENSE="GPL-2"
 SLOT="4"
-[[ ${PV} == 9999 ]] || KEYWORDS="~amd64 ~x86"
+[[ ${PV} == *9999 ]] || KEYWORDS="~amd64 ~x86"
 IUSE="attica +crypt +eigen +exif fftw +fontconfig freetds +gif glew +glib +gsf
 gsl +iconv +jpeg jpeg2k +kdcraw kdepim +lcms marble mysql +mso +okular openctl openexr
 +pdf postgres +semantic-desktop +ssl sybase test tiff +threads +truetype
@@ -63,6 +64,7 @@ RDEPEND="
 	$(add_kdebase_dep knewstuff)
 	media-libs/libpng
 	sys-libs/zlib
+	>=x11-libs/qt-gui-4.8.1-r1
 	attica? ( dev-libs/libattica )
 	crypt? ( app-crypt/qca:2 )
 	eigen? ( dev-cpp/eigen:2 )

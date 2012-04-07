@@ -9,5 +9,5 @@ RDEPEND=app-arch/bzip2 dev-libs/popt dev-libs/openssl:0.9.8 media-libs/libpng:1.
 RESTRICT=mirror strip
 SLOT=0
 SRC_URI=x86? ( http://dl-web.dropbox.com/u/17/dropbox-lnx.x86-1.2.51.tar.gz ) amd64? ( http://dl-web.dropbox.com/u/17/dropbox-lnx.x86_64-1.2.51.tar.gz )
-_eclasses_=gnome2-utils	0556f216199e15cc37899e1130da3824	pax-utils	3551398d6ede2b572568832730cc2a45
+_eclasses_=gnome2-utils	0556f216199e15cc37899e1130da3824	pax-utils	0ace932c4045349c7fc1af0fe7091acf
 _md5_=27b39f12865f9e34bfe67f5879165620
