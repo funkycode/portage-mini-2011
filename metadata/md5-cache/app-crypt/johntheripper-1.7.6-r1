@@ -1,13 +1,13 @@
 DEFINED_PHASES=compile install prepare test
-DEPEND=!minimal? ( >=dev-libs/openssl-0.9.7 ) openmp? ( >=sys-devel/gcc-4.2[openmp] )
+DEPEND=!minimal? ( >=dev-libs/openssl-0.9.7:0 ) openmp? ( >=sys-devel/gcc-4.2[openmp] )
 DESCRIPTION=fast password cracker
 EAPI=3
 HOMEPAGE=http://www.openwall.com/john/
 IUSE=custom-cflags -minimal mmx openmp sse2
 KEYWORDS=alpha amd64 hppa ~mips ppc ppc64 sparc x86 ~x86-interix ~amd64-linux ~x86-linux ~ppc-macos
 LICENSE=GPL-2
-RDEPEND=!minimal? ( >=dev-libs/openssl-0.9.7 )
+RDEPEND=!minimal? ( >=dev-libs/openssl-0.9.7:0 )
 SLOT=0
 SRC_URI=http://www.openwall.com/john/g/john-1.7.6.tar.gz !minimal? ( http://www.openwall.com/john/contrib/john-1.7.6-jumbo-4.diff.gz )
 _eclasses_=eutils	6891f6f484e3b44a0a15e1b0c0fc9a14	flag-o-matic	66cb710a2aa184a5687fe1289d7973ab	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	pax-utils	0ace932c4045349c7fc1af0fe7091acf	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
-_md5_=381fb04d6cb4d30eead41620c07adb49
+_md5_=cba22c2fd9cd1e315408088b31d55ff9

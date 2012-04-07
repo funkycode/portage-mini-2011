@@ -1,0 +1,12 @@
+DEFINED_PHASES=install
+DEPEND=app-text/ispell
+DESCRIPTION=A Spanish dictionary for ispell
+EAPI=4
+HOMEPAGE=http://www.datsi.fi.upm.es/~coes/
+KEYWORDS=~alpha ~amd64 ~hppa ~mips ~ppc ~sparc ~x86
+LICENSE=GPL-2
+RDEPEND=app-text/ispell
+SLOT=0
+SRC_URI=http://www.datsi.fi.upm.es/~coes/espa~nol-1.11.tar.gz
+_eclasses_=multilib	5f4ad6cf85e365e8f0c6050ddd21659e	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68
+_md5_=56c7f2dd9b203178ead1d315bd0980b7

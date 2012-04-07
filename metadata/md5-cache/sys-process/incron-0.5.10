@@ -1,0 +1,10 @@
+DEFINED_PHASES=compile install setup
+DESCRIPTION=inotify based cron daemon
+EAPI=4
+HOMEPAGE=http://incron.aiken.cz/
+KEYWORDS=~amd64 ~ppc ~x86
+LICENSE=GPL-2 LGPL-2.1
+SLOT=0
+SRC_URI=http://inotify.aiken.cz/download/incron/incron-0.5.10.tar.gz
+_eclasses_=eutils	6891f6f484e3b44a0a15e1b0c0fc9a14	linux-info	cc184ad3383ffb6ffbaa82f53608e77f	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e	versionator	6601b4c5b3f019a993db59a50e1854e4
+_md5_=a85a64d23b4a439b227c18b68fb7698c

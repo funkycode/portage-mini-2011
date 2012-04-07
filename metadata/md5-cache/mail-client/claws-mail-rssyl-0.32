@@ -4,10 +4,10 @@ DESCRIPTION=Read your favorite newsfeeds in Claws Mail. RSS 1.0, 2.0 and Atom fe
 EAPI=4
 HOMEPAGE=http://www.claws-mail.org/
 IUSE=nls
-KEYWORDS=alpha amd64 ppc ppc64 ~x86
+KEYWORDS=alpha amd64 ppc ppc64 x86
 LICENSE=GPL-2
 RDEPEND=>=mail-client/claws-mail-3.8.0 net-misc/curl dev-libs/libxml2 nls? ( >=sys-devel/gettext-0.12.1 )
 SLOT=0
 SRC_URI=http://www.claws-mail.org/downloads/plugins/rssyl-0.32.tar.gz
 _eclasses_=eutils	6891f6f484e3b44a0a15e1b0c0fc9a14	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
-_md5_=5922fd36db19bd9bce23de38f0718d33
+_md5_=446f4fed13e7aeb841038b7820cb2766
