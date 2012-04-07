@@ -1,14 +1,14 @@
-# Copyright 1999-2010 Gentoo Foundation
+# Copyright 2008-2012 Funtoo Technologies
 # Distributed under the terms of the GNU General Public License v2
 # $Header: $
 
-EAPI=3
+EAPI=4
 inherit eutils git
 
 DESCRIPTION="Windows Manager From Scratch"
 HOMEPAGE="https://www.wmfs.info"
-EGIT_REPO_URI="git://git.wmfs.info/wmfs.git"
-EGIT_PROJECT="wmfs"
+EGIT_REPO_URI="git://github.com/xorg62/wmfs.git"
+#EGIT_PROJECT="wmfs"
 SRC_URI=""
 
 LICENSE="BSD"
