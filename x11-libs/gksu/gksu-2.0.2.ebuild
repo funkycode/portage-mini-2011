@@ -1,11 +1,11 @@
-# Copyright 1999-2011 Gentoo Foundation
+# Copyright 1999-2012 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/x11-libs/gksu/gksu-2.0.2.ebuild,v 1.12 2011/01/06 15:28:15 eva Exp $
+# $Header: /var/cvsroot/gentoo-x86/x11-libs/gksu/gksu-2.0.2.ebuild,v 1.13 2012/04/07 23:55:39 tetromino Exp $
 
 EAPI="2"
 GCONF_DEBUG="no"
 
-inherit gnome2 fixheadtails
+inherit eutils gnome2 fixheadtails
 
 DESCRIPTION="A gtk+ frontend for libgksu"
 HOMEPAGE="http://www.nongnu.org/gksu/"
@@ -23,6 +23,8 @@ RDEPEND=">=x11-libs/libgksu-2.0.8
 		>=gnome-base/nautilus-2
 		x11-terms/gnome-terminal )"
 DEPEND="${RDEPEND}
+	dev-util/intltool
+	dev-util/pkgconfig
 	doc? ( dev-util/gtk-doc )"
 
 pkg_setup() {
@@ -36,6 +38,9 @@ src_prepare() {
 	gnome2_src_prepare
 
 	ht_fix_file "${S}/gksu-migrate-conf.sh"
+
+	# https://savannah.nongnu.org/bugs/index.php?36127
+	epatch "${FILESDIR}/${PN}-2.0.2-glib-2.31.patch"
 
 	if use gnome ; then
 		sed 's/x-terminal-emulator/gnome-terminal/' \

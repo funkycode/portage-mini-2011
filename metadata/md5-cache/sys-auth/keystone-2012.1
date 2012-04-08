@@ -1,0 +1,13 @@
+DEFINED_PHASES=compile install postinst postrm prepare setup
+DEPEND=dev-python/setuptools dev-python/pep8 dev-python/lxml dev-python/python-daemon python_abis_2.6? ( dev-lang/python:2.6 ) python_abis_2.7? ( dev-lang/python:2.7 ) python_abis_2.6-jython? ( dev-java/jython:2.6 ) python_abis_2.7-pypy-1.7? ( dev-python/pypy:1.7 ) python_abis_2.7-pypy-1.8? ( dev-python/pypy:1.8 )
+EAPI=4-python
+HOMEPAGE=https://launchpad.net/keystone
+IUSE=python_abis_2.6 python_abis_2.7 python_abis_2.6-jython python_abis_2.7-pypy-1.7 python_abis_2.7-pypy-1.8
+KEYWORDS=*
+LICENSE=Apache-2.0
+RDEPEND=dev-python/setuptools dev-python/pep8 dev-python/lxml dev-python/python-daemon dev-python/python-novaclient dev-python/python-ldap dev-python/passlib python_abis_2.6? ( dev-lang/python:2.6 ) python_abis_2.7? ( dev-lang/python:2.7 ) python_abis_2.6-jython? ( dev-java/jython:2.6 ) python_abis_2.7-pypy-1.7? ( dev-python/pypy:1.7 ) python_abis_2.7-pypy-1.8? ( dev-python/pypy:1.8 )
+REQUIRED_USE=|| ( python_abis_2.6 python_abis_2.7 python_abis_2.6-jython python_abis_2.7-pypy-1.7 python_abis_2.7-pypy-1.8 )
+SLOT=0
+SRC_URI=http://launchpad.net/keystone/essex/2012.1/+download/keystone-2012.1.tar.gz
+_eclasses_=distutils	82a876811ffd4907daba6062958daa26	python	cb2844e25e38800105564c14a716c805
+_md5_=5eae7ff56b042aa588642f3eb698baf8

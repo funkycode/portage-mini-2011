@@ -1,5 +1,5 @@
 DEFINED_PHASES=compile install unpack
-DEPEND=media-libs/freetype media-libs/jbig2dec media-libs/openjpeg virtual/jpeg x11-libs/libX11 x11-misc/xsel =app-text/mupdf-9999 dev-lang/ocaml[ocamlopt] dev-ml/lablgl[glut] dev-vcs/git
+DEPEND=media-libs/freetype media-libs/jbig2dec media-libs/openjpeg virtual/jpeg x11-libs/libX11 x11-misc/xsel >=app-text/mupdf-1.0_rc1 dev-lang/ocaml[ocamlopt] dev-ml/lablgl[glut] dev-vcs/git
 DESCRIPTION=a graphical PDF viewer which aims to superficially resemble less(1)
 EAPI=4
 HOMEPAGE=http://repo.or.cz/w/llpp.git
@@ -7,4 +7,4 @@ LICENSE=GPL-3
 RDEPEND=media-libs/freetype media-libs/jbig2dec media-libs/openjpeg virtual/jpeg x11-libs/libX11 x11-misc/xsel
 SLOT=0
 _eclasses_=eutils	6891f6f484e3b44a0a15e1b0c0fc9a14	git-2	15733ab6a6feb34af9837b41623c2bad	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
-_md5_=e816f7f4054c9701c62fa82a3246c7b4
+_md5_=97e7a7f39a36b7c48e2bc74a09b596e2

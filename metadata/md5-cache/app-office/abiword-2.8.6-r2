@@ -11,4 +11,4 @@ REQUIRED_USE=!plugins? ( !collab !grammar !latex !math !openxml !ots !readline !
 SLOT=2
 SRC_URI=http://www.abisource.com/downloads/abiword/2.8.6/source/abiword-2.8.6.tar.gz
 _eclasses_=alternatives	7a734a903498a04a0722152a124aa3a5	autotools	addbdf6cce5024ac93ad2084ad5e1d2d	eutils	6891f6f484e3b44a0a15e1b0c0fc9a14	fdo-mime	0acfe1a88fd8751a1d5dc671168219fa	gnome.org	8fef8f967214f56e08fa92d61163d891	gnome2	c5477c755de0f2ff9adf317383ee2767	gnome2-utils	0556f216199e15cc37899e1130da3824	libtool	5f623f5a211fb1b2d84d88ee49959a54	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e	versionator	6601b4c5b3f019a993db59a50e1854e4
-_md5_=63b906552612cd7a1dd09d30d7c6d2ff
+_md5_=f2d4203d6dab2625e50b97aece47b279

@@ -1,6 +1,6 @@
 # Copyright 1999-2012 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/net-dns/bind-tools/bind-tools-9.9.0.ebuild,v 1.1 2012/02/29 18:57:57 idl0r Exp $
+# $Header: /var/cvsroot/gentoo-x86/net-dns/bind-tools/bind-tools-9.9.0.ebuild,v 1.2 2012/04/07 18:16:21 idl0r Exp $
 
 EAPI="4"
 
@@ -75,23 +75,23 @@ src_compile() {
 }
 
 src_install() {
-	dodoc README CHANGES FAQ || die
+	dodoc README CHANGES FAQ
 
 	cd "${S}"/bin/dig
-	dobin dig host nslookup || die
-	doman {dig,host,nslookup}.1 || die
+	dobin dig host nslookup
+	doman {dig,host,nslookup}.1
 
 	cd "${S}"/bin/nsupdate
-	dobin nsupdate || die
-	doman nsupdate.1 || die
+	dobin nsupdate
+	doman nsupdate.1
 	if use doc; then
-		dohtml nsupdate.html || die
+		dohtml nsupdate.html
 	fi
 
 	cd "${S}"/bin/dnssec
-	dobin dnssec-keygen || die
-	doman dnssec-keygen.8 || die
+	dobin dnssec-keygen
+	doman dnssec-keygen.8
 	if use doc; then
-		dohtml dnssec-keygen.html || die
+		dohtml dnssec-keygen.html
 	fi
 }

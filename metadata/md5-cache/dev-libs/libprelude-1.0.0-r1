@@ -4,10 +4,10 @@ DESCRIPTION=Prelude-IDS Framework Library
 EAPI=3
 HOMEPAGE=http://www.prelude-technologies.com
 IUSE=doc lua perl python ruby
-KEYWORDS=amd64 ~x86
+KEYWORDS=amd64 x86
 LICENSE=GPL-2
 RDEPEND=>=net-libs/gnutls-1.0.17 lua? ( dev-lang/lua ) perl? ( dev-lang/perl ) ruby? ( dev-lang/ruby ) !net-analyzer/prelude-nids python? ( =dev-lang/python-2* )
 SLOT=0
 SRC_URI=http://www.prelude-technologies.com/download/releases/libprelude/libprelude-1.0.0.tar.gz
 _eclasses_=autotools	addbdf6cce5024ac93ad2084ad5e1d2d	base	56b5d6bcc4a0fc2a3055a84fd4a5c36b	distutils	82a876811ffd4907daba6062958daa26	eutils	6891f6f484e3b44a0a15e1b0c0fc9a14	flag-o-matic	66cb710a2aa184a5687fe1289d7973ab	libtool	5f623f5a211fb1b2d84d88ee49959a54	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	perl-module	d4141c106a05d2a700d500676082a9f9	python	cb2844e25e38800105564c14a716c805	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
-_md5_=c21ba1de839355e17bd3f7ca4677cd98
+_md5_=249ea42adf30af987d5daeb3eab842f3

@@ -1,6 +1,6 @@
 # Copyright 1999-2012 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/app-text/mupdf/mupdf-9999.ebuild,v 1.12 2012/04/06 17:18:41 xmw Exp $
+# $Header: /var/cvsroot/gentoo-x86/app-text/mupdf/mupdf-9999.ebuild,v 1.15 2012/04/07 22:10:06 xmw Exp $
 
 EAPI=4
 
@@ -10,7 +10,6 @@ inherit eutils flag-o-matic git-2 multilib toolchain-funcs
 
 DESCRIPTION="a lightweight PDF viewer and toolkit written in portable C"
 HOMEPAGE="http://mupdf.com/"
-SRC_URI=""
 
 LICENSE="GPL-3"
 SLOT="0"
@@ -38,17 +37,17 @@ src_compile() {
 	use X || my_nox11="NOX11=yes MUPDF= "
 
 	emake CC="$(tc-getCC)" \
-		build=debug verbose=true ${my_nox11} -j1 || die
+		build=debug verbose=true ${my_nox11} -j1
 }
 
 src_install() {
-	emake prefix="${ED}usr" LIBDIR="${ED}usr/$(get_libdir)" \
-		build=debug verbose=true ${my_nox11} install || die
+	emake prefix="${ED}usr" libdir="${ED}usr/$(get_libdir)" \
+		build=debug verbose=true ${my_nox11} install
 
 	insinto /usr/include
-	doins pdf/mupdf{,-internal}.h || die
-	doins fitz/fitz{,-internal}.h || die
-	doins xps/muxps{,-internal}.h || die
+	doins pdf/mupdf{,-internal}.h 
+	doins fitz/fitz{,-internal}.h
+	doins xps/muxps{,-internal}.h
 
 	insinto /usr/$(get_libdir)/pkgconfig
 	doins debian/mupdf.pc

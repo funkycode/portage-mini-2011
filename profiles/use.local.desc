@@ -239,6 +239,8 @@ app-cdr/k3b:wav - Enable support for reading WAVE files
 app-cdr/mirage2iso:pinentry - Support app-crypt/pinentry password input backend.
 app-cdr/mybashburn:normalize - Add support for normalizing audio file volume levels
 app-crypt/ccid:twinserial - Enable twinserial reader
+app-crypt/eid-mw:gtk - Enable the dialog pages, by using x11-libs/gtk:2
+app-crypt/eid-mw:xpi - Build and install an extension for Mozilla browsers.
 app-crypt/ekeyd:minimal - Only install the ekey-egd-linux service rather than the full ekeyd package.
 app-crypt/ekeyd:munin - Install a plugin for net-analyzer/munin to graph statistical data from ekeyd.
 app-crypt/ekeyd:usb - Build the libusb-based userland daemon for accessing the EntropyKey (alternative to the CDC USB driver). It is suggested to use this option by default, as the CDC driver in the kernel often seems to be fragile (or the gadget implementation on the EntropyKey is too buggy), and can cause various problems.
