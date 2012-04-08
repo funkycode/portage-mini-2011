@@ -1,0 +1,13 @@
+DEFINED_PHASES=compile configure install prepare setup test unpack
+DEPEND=ruby_targets_ruby18? ( doc? ( dev-ruby/yard[ruby_targets_ruby18] ) ) ruby_targets_ruby19? ( doc? ( dev-ruby/yard[ruby_targets_ruby19] ) ) ruby_targets_ree18? ( doc? ( dev-ruby/yard[ruby_targets_ree18] ) ) test? ( ruby_targets_ruby18? ( dev-ruby/bundler[ruby_targets_ruby18] ) ruby_targets_ruby19? ( dev-ruby/bundler[ruby_targets_ruby19] ) ruby_targets_ree18? ( dev-ruby/bundler[ruby_targets_ree18] ) ) ruby_targets_ruby18? ( dev-lang/ruby:1.8 ) ruby_targets_ruby19? ( dev-lang/ruby:1.9 ) ruby_targets_ree18? ( dev-lang/ruby-enterprise:1.8 ) ruby_targets_ruby18? ( doc? ( dev-ruby/rake[ruby_targets_ruby18] ) ) ruby_targets_ruby19? ( doc? ( dev-ruby/rake[ruby_targets_ruby19] ) ) ruby_targets_ree18? ( doc? ( dev-ruby/rake[ruby_targets_ree18] ) ) ruby_targets_ruby18? ( virtual/rubygems[ruby_targets_ruby18] ) ruby_targets_ruby19? ( virtual/rubygems[ruby_targets_ruby19] ) ruby_targets_ree18? ( virtual/rubygems[ruby_targets_ree18] ) test? ( ruby_targets_ruby18? ( virtual/rubygems[ruby_targets_ruby18] ) ruby_targets_ruby19? ( virtual/rubygems[ruby_targets_ruby19] ) ruby_targets_ree18? ( virtual/rubygems[ruby_targets_ree18] ) )
+DESCRIPTION=Rake tasks for managing gems and versioning and a generator for creating a new project
+EAPI=2
+HOMEPAGE=http://wiki.github.com/technicalpickles/jeweler
+IUSE=test elibc_FreeBSD ruby_targets_ruby18 ruby_targets_ruby19 ruby_targets_ree18 doc doc test
+KEYWORDS=~amd64 ~ppc64 ~x86 ~amd64-linux ~x86-linux ~ppc-macos ~x64-macos ~x86-macos ~x64-solaris ~x86-solaris
+LICENSE=MIT
+RDEPEND=ruby_targets_ruby18? ( dev-ruby/bundler[ruby_targets_ruby18] ) ruby_targets_ruby19? ( dev-ruby/bundler[ruby_targets_ruby19] ) ruby_targets_ree18? ( dev-ruby/bundler[ruby_targets_ree18] ) ruby_targets_ruby18? ( dev-lang/ruby:1.8 ) ruby_targets_ruby19? ( dev-lang/ruby:1.9 ) ruby_targets_ree18? ( dev-lang/ruby-enterprise:1.8 ) ruby_targets_ruby18? ( virtual/rubygems[ruby_targets_ruby18] ) ruby_targets_ruby19? ( virtual/rubygems[ruby_targets_ruby19] ) ruby_targets_ree18? ( virtual/rubygems[ruby_targets_ree18] )
+SLOT=0
+SRC_URI=mirror://rubygems/jeweler-1.8.3.gem
+_eclasses_=eutils	6891f6f484e3b44a0a15e1b0c0fc9a14	java-utils-2	b173b5d55bfd6e328939985bc54a1c9e	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	ruby-fakegem	6732f927427c6069df6c4f22271f2c75	ruby-ng	927a565459a62f2839d06e03cfbe1440	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e	versionator	6601b4c5b3f019a993db59a50e1854e4
+_md5_=b66ba2e91925fe24ab538390af3c6d02
