@@ -1,5 +1,5 @@
 DEFINED_PHASES=compile install postinst postrm prepare test
-DEPEND=|| ( =dev-lang/python-2.7* =dev-lang/python-2.6* =dev-lang/python-2.5* ) test? ( dev-python/nose )
+DEPEND=dev-python/setuptools || ( =dev-lang/python-2.7* =dev-lang/python-2.6* =dev-lang/python-2.5* ) test? ( dev-python/nose )
 DESCRIPTION=A Python implementation of Textile, Dean Allen's Human Text Generator for creating (X)HTML.
 EAPI=3
 HOMEPAGE=http://pypi.python.org/pypi/textile
@@ -10,4 +10,4 @@ RDEPEND=|| ( =dev-lang/python-2.7* =dev-lang/python-2.6* =dev-lang/python-2.5* )
 SLOT=0
 SRC_URI=mirror://pypi/t/textile/textile-2.1.5.tar.gz
 _eclasses_=distutils	82a876811ffd4907daba6062958daa26	python	cb2844e25e38800105564c14a716c805
-_md5_=885cd6232b9fa70303eb981a2498d9f8
+_md5_=bac96aa14b1c6b36c1d0df1aaaa3fdfe

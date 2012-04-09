@@ -43,6 +43,7 @@ app-admin/collectd:collectd_plugins_disk - Build the disk input plugin (sectors 
 app-admin/collectd:collectd_plugins_dns - Build the dns input plugin (collects statistics of your DNS traffic on port udp/53)
 app-admin/collectd:collectd_plugins_email - Build the email input plugin (opens a UNIX domain socket and starts accepting connections on that socket)
 app-admin/collectd:collectd_plugins_entropy - Build the entropy input plugin (available entropy on a system)
+app-admin/collectd:collectd_plugins_ethstat - Build the ethstat input plugin (performance statistics of Linux ethernet cards)
 app-admin/collectd:collectd_plugins_exec - Build the exec input/output plugin (executes scripts / applications and reads values back)
 app-admin/collectd:collectd_plugins_filecount - Build the filecount input plugin (countd the number of files in a directory and all its subdirectories)
 app-admin/collectd:collectd_plugins_fscache - Build the fscache input plugin (information about the caching infrastructure for network file-systems etc)
@@ -63,6 +64,7 @@ app-admin/collectd:collectd_plugins_match_regex - Build the match_regex filter p
 app-admin/collectd:collectd_plugins_match_timediff - Build the match_timediff filter plugin
 app-admin/collectd:collectd_plugins_match_value - Build the match_value filter plugin
 app-admin/collectd:collectd_plugins_mbmon - Build the mbmon input plugin (information from mainboard sensors)
+app-admin/collectd:collectd_plugins_md - Build the md input plugin (disk states in Linux md devices)
 app-admin/collectd:collectd_plugins_memcachec - Build the memcachec input plugin (connects to a memcached server)
 app-admin/collectd:collectd_plugins_memcached - Build the memcached input plugin (connects to a memcached daemon)
 app-admin/collectd:collectd_plugins_memory - Build the memory input plugin (physical memory utilization)
@@ -75,6 +77,7 @@ app-admin/collectd:collectd_plugins_nginx - Build the nginx input plugin (number
 app-admin/collectd:collectd_plugins_notify_desktop - Build the notify_desktop output plugin (uses libnotify to display notifications to the user)
 app-admin/collectd:collectd_plugins_notify_email - Build the notify_email output plugin (uses libESMTP to send notifications to a configured email address)
 app-admin/collectd:collectd_plugins_ntpd - Build the ntpd input plugin (queries an NTP server)
+app-admin/collectd:collectd_plugins_numa - Build the numa input plugin (statistics of the Linux Non-Uniform Memory Access (NUMA) subsystem)
 app-admin/collectd:collectd_plugins_nut - Build the nut input plugin (collects UPS statistics using the Network UPS Tools)
 app-admin/collectd:collectd_plugins_olsrd - Build the olsrd input plugin (reads information about the Optimized Link State Routing daemon)
 app-admin/collectd:collectd_plugins_onewire - Build the onewire input plugin (collects temperature information from sensors)
@@ -114,7 +117,9 @@ app-admin/collectd:collectd_plugins_varnish - Build the varnish input plugin
 app-admin/collectd:collectd_plugins_vmem - Build the vmem input plugin (information about the virtual memory subsystem)
 app-admin/collectd:collectd_plugins_vserver - Build the vserver input plugin (virtual servers running on a system)
 app-admin/collectd:collectd_plugins_wireless - Build the wireless input plugin (signal quality, signal power and signal-to-noise ratio for wireless LAN cards)
+app-admin/collectd:collectd_plugins_write_graphite - Build the write_graphite output plugin (sends the values collected by collectd to Carbon, the storage layer of the Graphite time-series database)
 app-admin/collectd:collectd_plugins_write_http - Build the write_http output plugin (sends the values collected by collectd to a web-server)
+app-admin/collectd:collectd_plugins_write_mongodb - Build the write_mongodb output plugin (sends the values collected by collectd to a MongoDB)
 app-admin/collectd:contrib - Install user-contributed files in the doc directory
 app-admin/conky:apcupsd - enable support for sys-power/apcupsd
 app-admin/conky:audacious - enable monitoring of music played by media-sound/audacious
@@ -1509,6 +1514,7 @@ dev-python/markdown:pygments - Enable fancy pygments support
 dev-python/matplotlib:excel - Pull dev-python/xlwt for the exceltools toolkit
 dev-python/matplotlib:traits - Pull dev-python/traits for the experimental enthought traits support
 dev-python/mpmath:matplotlib - Add support for dev-python/matplotlib
+dev-python/nose:coverage - Utilize dev-python/coverage
 dev-python/numexpr:mkl - Enable support for Intel Vector Math Library, part of sci-libs/mkl.
 dev-python/paste:flup - enable support for flup (and therefore for various wgsi servers and middleware)
 dev-python/paste:openid - enable OpenID support

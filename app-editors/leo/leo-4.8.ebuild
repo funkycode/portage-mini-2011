@@ -1,12 +1,12 @@
-# Copyright 1999-2011 Gentoo Foundation
+# Copyright 1999-2012 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/app-editors/leo/leo-4.8.ebuild,v 1.4 2011/05/28 13:54:26 ranger Exp $
+# $Header: /var/cvsroot/gentoo-x86/app-editors/leo/leo-4.8.ebuild,v 1.5 2012/04/08 19:31:17 floppym Exp $
 
 EAPI="3"
 PYTHON_DEPEND="2:2.6"
 PYTHON_USE_WITH="tk"
 SUPPORT_PYTHON_ABIS="1"
-RESTRICT_PYTHON_ABIS="2.4 2.5 3.* *-jython"
+RESTRICT_PYTHON_ABIS="2.4 2.5 3.* *-pypy-* *-jython"
 
 inherit distutils eutils
 

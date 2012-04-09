@@ -1,0 +1,12 @@
+DEFINED_PHASES=compile install postinst postrm prepare
+DEPEND=|| ( =dev-lang/python-3* =dev-lang/python-2.7* =dev-lang/python-2.6* )
+DESCRIPTION=Simple tool for static analysis of overlays
+EAPI=3
+HOMEPAGE=http://git.overlays.gentoo.org/gitweb/?p=proj/overlint.git;a=summary
+KEYWORDS=~amd64 ~x86
+LICENSE=|| ( GPL-2 GPL-3 )
+RDEPEND=|| ( >=dev-lang/python-2.7 ( dev-libs/argtable >=dev-lang/python-2.6 ) ) || ( =dev-lang/python-3* =dev-lang/python-2.7* =dev-lang/python-2.6* )
+SLOT=0
+SRC_URI=http://www.hartwork.org/public/overlint-0.5.tar.gz
+_eclasses_=distutils	82a876811ffd4907daba6062958daa26	python	cb2844e25e38800105564c14a716c805
+_md5_=b0ae6dcc58d4a216e8c21ffe3807dbbb
