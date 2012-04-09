@@ -3404,10 +3404,13 @@ net-analyzer/wireshark:pcap - Use net-libs/libpcap for network packet capturing 
 net-analyzer/wireshark:smi - Use net-libs/libsmi to resolve numeric OIDs into human readable format
 net-analyzer/zabbix:agent - Enable zabbix agent (for to-be-monitored machines)
 net-analyzer/zabbix:frontend - Enable zabbix web frontend
+net-analyzer/zabbix:iodbc - Use iodbc rather than unixodbc for ODBC functions
+net-analyzer/zabbix:odbc - Enable Database Monitor and use UnixODBC Library by default
 net-analyzer/zabbix:openipmi - Enable openipmi things
 net-analyzer/zabbix:proxy - Enable proxy support
 net-analyzer/zabbix:server - Enable zabbix server
-net-analyzer/zabbix:ssh - Enable ssh.run items
+net-analyzer/zabbix:ssh - SSH v2 based checks
+net-analyzer/zabbix:static - Build statically linked binaries
 net-dialup/capi4k-utils:fax - Install capi-fax demo programs
 net-dialup/capi4k-utils:pppd - Installs pppdcapiplugin modules
 net-dialup/capi4k-utils:rcapid - Installs rcapid daemon

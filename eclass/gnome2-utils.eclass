@@ -241,6 +241,14 @@ gnome2_icon_cache_update() {
 
 				retval=2
 			fi
+		elif [[ $(ls "${EROOT}${dir}") = "icon-theme.cache" ]]; then
+			# Clear stale cache files after theme uninstallation
+			rm "${EROOT}${dir}/icon-theme.cache"
+		fi
+
+		if [[ -z $(ls "${EROOT}${dir}") ]]; then
+			# Clear empty theme directories after theme uninstallation
+			rmdir "${EROOT}${dir}"
 		fi
 	done
 

@@ -9,5 +9,5 @@ RDEPEND=net-misc/wget
 RESTRICT=mirror strip
 SLOT=0
 SRC_URI=x86? ( http://dl-web.dropbox.com/u/17/dropbox-lnx.x86-1.2.48.tar.gz ) amd64? ( http://dl-web.dropbox.com/u/17/dropbox-lnx.x86_64-1.2.48.tar.gz )
-_eclasses_=gnome2-utils	0556f216199e15cc37899e1130da3824
+_eclasses_=gnome2-utils	dc10e9bc14d4a47bcd638b058f68a628
 _md5_=8891118575dd3f743357028f10caa695

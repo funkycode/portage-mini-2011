@@ -10,5 +10,5 @@ RDEPEND=!minimal? ( x11-themes/gnome-icon-theme ) x11-themes/hicolor-icon-theme
 RESTRICT=binchecks strip
 SLOT=0
 SRC_URI=http://ppa.launchpad.net/tiheum/equinox/ubuntu/pool/main/f/faenza-icon-theme/faenza-icon-theme_1.2.tar.gz
-_eclasses_=gnome2-utils	0556f216199e15cc37899e1130da3824
+_eclasses_=gnome2-utils	dc10e9bc14d4a47bcd638b058f68a628
 _md5_=e9f7981f610fd8f2644252e7298c7690

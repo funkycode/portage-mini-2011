@@ -9,5 +9,5 @@ LICENSE=GPL-2
 RDEPEND=dev-python/configobj dev-python/pygobject:2 dev-python/pygtk dev-python/pysvn dev-python/simplejson diff? ( dev-util/meld ) gedit? ( app-editors/gedit ) git? ( dev-python/dulwich ) nautilus? ( >=dev-python/nautilus-python-0.7.0 dev-python/dbus-python dev-python/gnome-vfs-python ) spell? ( dev-python/gtkspell-python ) thunar? ( dev-python/thunarx-python dev-python/dbus-python ) || ( =dev-lang/python-2.7* =dev-lang/python-2.6* =dev-lang/python-2.5* )
 SLOT=0
 SRC_URI=http://rabbitvcs.googlecode.com/files/rabbitvcs-0.15.0.5.tar.bz2
-_eclasses_=distutils	82a876811ffd4907daba6062958daa26	gnome2-utils	0556f216199e15cc37899e1130da3824	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	python	cb2844e25e38800105564c14a716c805	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68
+_eclasses_=distutils	82a876811ffd4907daba6062958daa26	gnome2-utils	dc10e9bc14d4a47bcd638b058f68a628	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	python	cb2844e25e38800105564c14a716c805	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68
 _md5_=a484f23523fd2ac58e9a19bb50b57aac

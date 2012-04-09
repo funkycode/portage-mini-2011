@@ -8,5 +8,5 @@ LICENSE=GPL-3
 RDEPEND=dev-python/pygobject:3 media-fonts/terminus-font || ( =dev-lang/python-3.3* =dev-lang/python-3.2* )
 SLOT=0
 SRC_URI=http://download.gna.org/nfoview/1.10/nfoview-1.10.tar.gz
-_eclasses_=distutils	82a876811ffd4907daba6062958daa26	fdo-mime	0acfe1a88fd8751a1d5dc671168219fa	gnome2-utils	0556f216199e15cc37899e1130da3824	python	cb2844e25e38800105564c14a716c805
+_eclasses_=distutils	82a876811ffd4907daba6062958daa26	fdo-mime	0acfe1a88fd8751a1d5dc671168219fa	gnome2-utils	dc10e9bc14d4a47bcd638b058f68a628	python	cb2844e25e38800105564c14a716c805
 _md5_=b86153e615ddc928f7c405a41c050561

@@ -7,5 +7,5 @@ IUSE=nls nx rdesktop ssh telepathy vnc xdmcp
 LICENSE=GPL-2
 RDEPEND=>=net-misc/remmina-0.8.0 nls? ( virtual/libintl ) nx? ( net-misc/nx ) rdesktop? ( =net-misc/freerdp-9999 ) xdmcp? ( x11-base/xorg-server[kdrive] ) ssh? ( net-libs/libssh[sftp] ) vnc? ( net-libs/libvncserver[jpeg,zlib] >=net-libs/gnutls-2.4.0 )
 SLOT=0
-_eclasses_=autotools	addbdf6cce5024ac93ad2084ad5e1d2d	eutils	6891f6f484e3b44a0a15e1b0c0fc9a14	git-2	15733ab6a6feb34af9837b41623c2bad	gnome2-utils	0556f216199e15cc37899e1130da3824	libtool	5f623f5a211fb1b2d84d88ee49959a54	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
+_eclasses_=autotools	addbdf6cce5024ac93ad2084ad5e1d2d	eutils	6891f6f484e3b44a0a15e1b0c0fc9a14	git-2	15733ab6a6feb34af9837b41623c2bad	gnome2-utils	dc10e9bc14d4a47bcd638b058f68a628	libtool	5f623f5a211fb1b2d84d88ee49959a54	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
 _md5_=ee97ac1cfa7644b9c60864f69c8a790d

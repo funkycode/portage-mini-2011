@@ -9,5 +9,5 @@ LICENSE=GPL-3
 RDEPEND=dev-python/eyeD3 dev-python/feedparser dev-python/imaging >=dev-python/mygpoclient-1.4 >=dev-python/pygtk-2.12 dbus? ( dev-python/dbus-python ) bluetooth? ( net-wireless/bluez ) gstreamer? ( dev-python/gst-python ) ipod? ( media-libs/libgpod[python] ) mtp? ( >=media-libs/libmtp-1.0.0 ) webkit? ( dev-python/pywebkitgtk ) || ( =dev-lang/python-2.7* =dev-lang/python-2.6* ) || ( =dev-lang/python-2.7*[sqlite] =dev-lang/python-2.6*[sqlite] )
 SLOT=0
 SRC_URI=mirror://berlios/gpodder/gpodder-2.15.tar.gz
-_eclasses_=distutils	82a876811ffd4907daba6062958daa26	gnome2-utils	0556f216199e15cc37899e1130da3824	python	cb2844e25e38800105564c14a716c805
+_eclasses_=distutils	82a876811ffd4907daba6062958daa26	gnome2-utils	dc10e9bc14d4a47bcd638b058f68a628	python	cb2844e25e38800105564c14a716c805
 _md5_=119545c317000b01358f253c38d79580

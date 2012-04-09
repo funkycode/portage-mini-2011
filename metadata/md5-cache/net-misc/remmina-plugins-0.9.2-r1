@@ -9,5 +9,5 @@ LICENSE=GPL-2
 RDEPEND=>=net-misc/remmina-0.8.0 nls? ( virtual/libintl ) nx? ( net-misc/nx ) rdesktop? ( <net-misc/freerdp-1.0_beta ) xdmcp? ( x11-base/xorg-server[kdrive] ) ssh? ( net-libs/libssh[sftp] ) vnc? ( net-libs/libvncserver[jpeg,zlib] >=net-libs/gnutls-2.4.0 )
 SLOT=0
 SRC_URI=mirror://sourceforge/remmina/remmina-plugins-0.9.2.tar.gz
-_eclasses_=gnome2-utils	0556f216199e15cc37899e1130da3824
+_eclasses_=gnome2-utils	dc10e9bc14d4a47bcd638b058f68a628
 _md5_=2a0a5f0f0d2261e904735dfecf04395e

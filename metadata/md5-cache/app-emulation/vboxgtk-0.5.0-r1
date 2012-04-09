@@ -9,5 +9,5 @@ LICENSE=GPL-3
 RDEPEND=|| ( app-emulation/virtualbox[-headless,sdk] >=app-emulation/virtualbox-bin-2.2.2 ) >=dev-python/pygtk-2.14.0 =dev-lang/python-2*
 SLOT=0
 SRC_URI=mirror://sourceforge/vboxgtk/vboxgtk-0.5.0.tar.gz
-_eclasses_=distutils	82a876811ffd4907daba6062958daa26	gnome2-utils	0556f216199e15cc37899e1130da3824	python	cb2844e25e38800105564c14a716c805
+_eclasses_=distutils	82a876811ffd4907daba6062958daa26	gnome2-utils	dc10e9bc14d4a47bcd638b058f68a628	python	cb2844e25e38800105564c14a716c805
 _md5_=ad59757d72cc560fbe0657174d38f489
