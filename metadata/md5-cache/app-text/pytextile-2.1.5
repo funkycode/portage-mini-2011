@@ -1,13 +1,14 @@
-DEFINED_PHASES=compile install postinst postrm prepare test
-DEPEND=dev-python/setuptools || ( =dev-lang/python-2.7* =dev-lang/python-2.6* =dev-lang/python-2.5* ) test? ( dev-python/nose )
+DEFINED_PHASES=compile install postinst postrm prepare setup test
+DEPEND=dev-python/setuptools[python_abis_2.5?,python_abis_2.6?,python_abis_2.7?,python_abis_2.5-jython?,python_abis_2.6-jython?,python_abis_2.7-pypy-1.7?,python_abis_2.7-pypy-1.8?] python_abis_2.5? ( dev-lang/python:2.5 ) python_abis_2.6? ( dev-lang/python:2.6 ) python_abis_2.7? ( dev-lang/python:2.7 ) python_abis_2.5-jython? ( dev-java/jython:2.5 ) python_abis_2.6-jython? ( dev-java/jython:2.6 ) python_abis_2.7-pypy-1.7? ( dev-python/pypy:1.7 ) python_abis_2.7-pypy-1.8? ( dev-python/pypy:1.8 ) test? ( dev-python/nose[python_abis_2.5?,python_abis_2.6?,python_abis_2.7?,python_abis_2.5-jython?,python_abis_2.6-jython?,python_abis_2.7-pypy-1.7?,python_abis_2.7-pypy-1.8?] )
 DESCRIPTION=A Python implementation of Textile, Dean Allen's Human Text Generator for creating (X)HTML.
-EAPI=3
+EAPI=4-python
 HOMEPAGE=http://pypi.python.org/pypi/textile
-IUSE=test
-KEYWORDS=amd64 ppc ppc64 ~sparc x86 ~x86-fbsd
+IUSE=python_abis_2.5 python_abis_2.6 python_abis_2.7 python_abis_2.5-jython python_abis_2.6-jython python_abis_2.7-pypy-1.7 python_abis_2.7-pypy-1.8 test
+KEYWORDS=amd64 ~ppc ~ppc64 sparc x86 ~x86-fbsd
 LICENSE=BSD
-RDEPEND=|| ( =dev-lang/python-2.7* =dev-lang/python-2.6* =dev-lang/python-2.5* )
+RDEPEND=python_abis_2.5? ( dev-lang/python:2.5 ) python_abis_2.6? ( dev-lang/python:2.6 ) python_abis_2.7? ( dev-lang/python:2.7 ) python_abis_2.5-jython? ( dev-java/jython:2.5 ) python_abis_2.6-jython? ( dev-java/jython:2.6 ) python_abis_2.7-pypy-1.7? ( dev-python/pypy:1.7 ) python_abis_2.7-pypy-1.8? ( dev-python/pypy:1.8 )
+REQUIRED_USE=|| ( python_abis_2.5 python_abis_2.6 python_abis_2.7 python_abis_2.5-jython python_abis_2.6-jython python_abis_2.7-pypy-1.7 python_abis_2.7-pypy-1.8 )
 SLOT=0
 SRC_URI=mirror://pypi/t/textile/textile-2.1.5.tar.gz
 _eclasses_=distutils	82a876811ffd4907daba6062958daa26	python	cb2844e25e38800105564c14a716c805
-_md5_=bac96aa14b1c6b36c1d0df1aaaa3fdfe
+_md5_=226a6f278039afb3b4352df30a10a852

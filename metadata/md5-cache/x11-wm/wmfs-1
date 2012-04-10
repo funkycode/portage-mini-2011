@@ -1,0 +1,12 @@
+DEFINED_PHASES=configure install unpack
+DEPEND=x11-libs/libX11 x11-libs/libSM x11-libs/libXft imlib2? ( media-libs/imlib2 ) xrandr? ( x11-libs/libXrandr ) xinerama? ( x11-libs/libXinerama ) dev-vcs/git
+DESCRIPTION=Windows Manager From Scratch
+EAPI=4
+HOMEPAGE=https://www.wmfs.info
+IUSE=xinerama xrandr imlib2
+KEYWORDS=~amd64 ~x86
+LICENSE=BSD
+RDEPEND=x11-libs/libX11 x11-libs/libSM x11-libs/libXft imlib2? ( media-libs/imlib2 ) xrandr? ( x11-libs/libXrandr ) xinerama? ( x11-libs/libXinerama )
+SLOT=0
+_eclasses_=eutils	6891f6f484e3b44a0a15e1b0c0fc9a14	git-2	15733ab6a6feb34af9837b41623c2bad	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
+_md5_=d2849119672a01b7c34ce94d95bf9da7

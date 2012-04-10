@@ -1,11 +1,11 @@
-# Copyright 1999-2012 Gentoo Foundation
+# Copyright owners: Gentoo Foundation
+#                   Arfrever Frehtes Taifersar Arahesis
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/app-text/pytextile/pytextile-2.1.5.ebuild,v 1.6 2012/04/09 03:41:03 floppym Exp $
 
-EAPI="3"
-PYTHON_DEPEND="2:2.5"
-SUPPORT_PYTHON_ABIS="1"
-RESTRICT_PYTHON_ABIS="2.4 3.*"
+EAPI="4-python"
+PYTHON_MULTIPLE_ABIS="1"
+PYTHON_RESTRICTED_ABIS="3.*"
+PYTHON_TESTS_FAILURES_TOLERANT_ABIS="*"
 DISTUTILS_SRC_TEST="nosetests"
 
 inherit distutils
@@ -19,12 +19,21 @@ SRC_URI="mirror://pypi/${MY_PN:0:1}/${MY_PN}/${MY_P}.tar.gz"
 
 LICENSE="BSD"
 SLOT="0"
-KEYWORDS="amd64 ppc ppc64 ~sparc x86 ~x86-fbsd"
+KEYWORDS="amd64 ~ppc ~ppc64 sparc x86 ~x86-fbsd"
 IUSE=""
 
-DEPEND="dev-python/setuptools"
+DEPEND="$(python_abi_depend dev-python/setuptools)"
 RDEPEND=""
 
 S="${WORKDIR}/${MY_P}"
 
-PYTHON_MODNAME="${MY_PN}"
+PYTHON_MODULES="${MY_PN}"
+
+src_install() {
+	distutils_src_install
+
+	delete_tests() {
+		rm -fr "${ED}$(python_get_sitedir)/textile/tests"
+	}
+	python_execute_function -q delete_tests
+}
