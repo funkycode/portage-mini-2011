@@ -1,0 +1,14 @@
+DEFINED_PHASES=compile configure install prepare unpack
+DEPEND=doc? ( dev-python/sphinx[latex] ) dev-util/omake dev-ml/findlib >=dev-ml/findlib-1.0.4-r1
+DESCRIPTION=An image manipulation library for ocaml
+EAPI=4
+HOMEPAGE=http://gallium.inria.fr/camlimages/
+IUSE=doc gif gs gtk jpeg png tiff truetype X xpm zlib
+KEYWORDS=~amd64 ~ppc ~x86
+LICENSE=LGPL-2.1
+RDEPEND=>=dev-lang/ocaml-3.10.2[X?,ocamlopt] gif? ( media-libs/giflib ) gtk? ( dev-ml/lablgtk ) gs? ( app-text/ghostscript-gpl ) jpeg? ( virtual/jpeg ) tiff? ( media-libs/tiff ) png? ( >=media-libs/libpng-1.4 ) truetype? ( >=media-libs/freetype-2 ) xpm? ( x11-libs/libXpm ) X? ( x11-apps/rgb ) zlib? ( sys-libs/zlib )
+REQUIRED_USE=png? ( zlib )
+SLOT=0
+SRC_URI=http://bitbucket.org/camlspotter/camlimages/get/v4.0.1.tar.bz2 -> camlimages-4.0.1.tar.bz2
+_eclasses_=eutils	6891f6f484e3b44a0a15e1b0c0fc9a14	findlib	9cf6020ee5481f39f1aa566a323f9868	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e	vcs-snapshot	da01f8084931ab770fd9ddf7e537a262
+_md5_=f2f1a14cba2f03ab2929f69ac52075a6

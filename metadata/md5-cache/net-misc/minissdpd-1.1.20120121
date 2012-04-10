@@ -8,4 +8,4 @@ RDEPEND=sys-apps/net-tools || ( net-misc/miniupnpd net-libs/miniupnpc )
 SLOT=0
 SRC_URI=http://miniupnp.free.fr/files/minissdpd-1.1.20120121.tar.gz
 _eclasses_=eutils	6891f6f484e3b44a0a15e1b0c0fc9a14	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
-_md5_=2b8099476f97e483440b9a4b1ba22da7
+_md5_=abe90db31ebd854557b8f2a15c3c04a3

@@ -1,14 +1,14 @@
 DEFINED_PHASES=configure install postinst postrm setup
-DEPEND=x11-libs/gtk+:3 gnome-extra/gucharmap:2.90 spell? ( app-text/enchant ) >=dev-libs/glib-2.16:2 dev-libs/libxml2:2 dev-util/pkgconfig x11-libs/pango nls? ( sys-devel/gettext dev-util/intltool ) || ( >=sys-devel/automake-1.11.1:1.11 ) >=sys-devel/autoconf-2.68 sys-devel/libtool python? ( =dev-lang/python-2* )
+DEPEND=x11-libs/gtk+:3 gnome-extra/gucharmap:2.90 sys-libs/zlib spell? ( app-text/enchant ) >=dev-libs/glib-2.16:2 dev-libs/libxml2:2 dev-util/pkgconfig x11-libs/pango nls? ( sys-devel/gettext dev-util/intltool ) python? ( =dev-lang/python-2* )
 DESCRIPTION=A GTK HTML editor for the experienced web designer or programmer.
 EAPI=4
 HOMEPAGE=http://bluefish.openoffice.nl/
 IUSE=nls python spell
 KEYWORDS=~alpha ~amd64 ~ia64 ~ppc ~ppc64 ~sparc ~x86
 LICENSE=GPL-2
-RDEPEND=x11-libs/gtk+:3 gnome-extra/gucharmap:2.90 spell? ( app-text/enchant ) python? ( =dev-lang/python-2* )
+RDEPEND=x11-libs/gtk+:3 gnome-extra/gucharmap:2.90 sys-libs/zlib spell? ( app-text/enchant ) python? ( =dev-lang/python-2* )
 RESTRICT=test
 SLOT=0
 SRC_URI=http://www.bennewitz.com/bluefish/stable/source/bluefish-2.2.2.tar.bz2
-_eclasses_=autotools	addbdf6cce5024ac93ad2084ad5e1d2d	eutils	6891f6f484e3b44a0a15e1b0c0fc9a14	fdo-mime	0acfe1a88fd8751a1d5dc671168219fa	libtool	5f623f5a211fb1b2d84d88ee49959a54	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	python	cb2844e25e38800105564c14a716c805	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
-_md5_=7f7c4722f262997fd800b7ebf01f8fb2
+_eclasses_=eutils	6891f6f484e3b44a0a15e1b0c0fc9a14	fdo-mime	0acfe1a88fd8751a1d5dc671168219fa	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	python	cb2844e25e38800105564c14a716c805	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
+_md5_=5eb665ace3b76cc2e90eb0b7dcc20804
