@@ -1530,7 +1530,6 @@ dev-python/pypy:sandbox - Enable sandboxing functionality
 dev-python/pypy:shadowstack - Use a shadow stack for finding GC roots
 dev-python/pypy:stackless - Enable running with stackless features
 dev-python/pyside:X - Build QtGui, QtDesigner, QtTest and QtUiTools modules
-dev-python/pyside:assistant - Build QtHelp module
 dev-python/pyside:declarative - Build QtDeclarative module
 dev-python/pyside:help - Build QtHelp module
 dev-python/pyside:kde - Select media-sound/phonon as phonon variant, needed for KDE4
@@ -3829,6 +3828,20 @@ net-libs/axTLS:static - Statically build axhttpd server
 net-libs/c-client:doc - Install RFCs related to IMAP
 net-libs/courier-authlib:vpopmail - Enable vpopmail support
 net-libs/cvm:vpopmail - Enable vpopmail support
+net-libs/cyassl:aes-ni - Enable Intel AES instruction support
+net-libs/cyassl:big - Choose big cache size (excludes small or huge)
+net-libs/cyassl:cyassl-hardening - Add hardening flags to CFLAGS/LDFLAGS
+net-libs/cyassl:dtls - Enable datagram TLS
+net-libs/cyassl:hc128 - Enable HC-128 support
+net-libs/cyassl:httpd - Enable features for yaSSL web server
+net-libs/cyassl:huge - Choose big cache size (excludes small or big)
+net-libs/cyassl:psk - Enable Pre-Shared Key support
+net-libs/cyassl:ripemd - Enable RIPEMD-160 support
+net-libs/cyassl:sessioncerts - Store session certificates
+net-libs/cyassl:sha512 - Enable SHA-160 support
+net-libs/cyassl:small - Choose small cache size (excludes big or huge)
+net-libs/cyassl:sniffer - Allow collection/decryption of SSL traffic
+net-libs/cyassl:testcert - Enable certificate testing
 net-libs/daq:afpacket - Build the AFPacket data acquisition module. Functions similar to the PCAP module but with better performance. Snort can run unprivileged when using this module. AFpacket supports both inline and passive modes.
 net-libs/daq:dump - Build the Dump data acquisition module. The dump DAQ allows you to test the various inline mode features available in 2.9 Snort like injection and normalization.
 net-libs/daq:ipq - Build the IPQ data acquisition module. IPQ is the old way to process iptables packets for inline deployments. Snort can not run unprivileged when using this module.
@@ -5281,6 +5294,7 @@ www-client/leechcraft-poshuku:keywords - Build Keywords for adjusting search sho
 www-client/leechcraft-poshuku:onlinebookmarks - Build OnlineBookmarks for syncing bookmarks with social bookmarking services like Read It Later.
 www-client/leechcraft-poshuku:pogooglue - Build Pogooglue for searching for selected words in Google in two clicks
 www-client/leechcraft-poshuku:wyfv - Build WYFV for replacing Flash-based video players on some sites.
+www-client/links:deprecated - Install deprecated 'links2 -> links' symlink for compability reasons temporarily
 www-client/luakit:helpers - Optional tools used by luakit
 www-client/luakit:luajit - Use the lua just-in-time compiler dev-lang/luajit instead of dev-lang/lua, which should make luakit faster.
 www-client/lynx:gnutls - Use gnutls library for HTTPS support (openssl is the default library for HTTPS support).

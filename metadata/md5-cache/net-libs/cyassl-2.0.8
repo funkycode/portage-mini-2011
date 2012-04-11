@@ -1,0 +1,14 @@
+DEFINED_PHASES=configure install prepare test
+DEPEND=sniffer? ( net-libs/libpcap ) zlib? ( sys-libs/zlib )
+DESCRIPTION=Lightweight SSL/TLS library targeted at embedded and RTOS environments
+EAPI=4
+HOMEPAGE=http://www.yassl.com/yaSSL/Home.html
+IUSE=-dtls ipv6 +httpd +sessioncerts +sniffer +testcert threads +zlib cyassl-hardening small big +huge aes-ni +hc128 +psk +ripemd sha512
+KEYWORDS=~amd64 ~x86
+LICENSE=GPL-2
+RDEPEND=sniffer? ( net-libs/libpcap ) zlib? ( sys-libs/zlib )
+REQUIRED_USE=^^ ( small big huge ) x86? ( !sha512 ) test? ( !dtls )
+SLOT=0
+SRC_URI=http://dev.gentoo.org/~blueness/cyassl/cyassl-2.0.8.tar.gz
+_eclasses_=eutils	6891f6f484e3b44a0a15e1b0c0fc9a14	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
+_md5_=ed1b602d1a6b86c83d56f495241f0237
