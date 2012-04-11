@@ -1,0 +1,13 @@
+DEFINED_PHASES=compile configure install postinst prepare test unpack
+DEPEND=app-crypt/qca >=dev-cpp/clucene-2.3.3.4 >=dev-libs/boost-1.41 >=dev-libs/qjson-0.7.1 >=media-libs/libechonest-1.1.10 >=media-libs/phonon-4.5.0 media-libs/taglib >=x11-libs/qt-core-4.7.0:4 >=x11-libs/qt-gui-4.7.0:4 >=x11-libs/qt-sql-4.7.0:4[sqlite] >=x11-libs/qt-webkit-4.7.0:4 >=x11-libs/qt-xmlpatterns-4.7.0:4 fftw? ( sci-libs/fftw:3.0 ) jabber? ( net-libs/jreen ) libsamplerate? ( media-libs/libsamplerate ) resolver? ( dev-libs/libattica >=dev-libs/quazip-0.4.3 ) twitter? ( net-libs/qtweetlib ) >=dev-util/cmake-2.8.4 userland_GNU? ( >=sys-apps/findutils-4.4.0 )
+DESCRIPTION=Qt playdar social music player
+EAPI=4
+HOMEPAGE=http://tomahawk-player.org/
+IUSE=debug fftw jabber libsamplerate +resolver twitter
+KEYWORDS=~amd64 ~x86
+LICENSE=GPL-3 BSD
+RDEPEND=app-crypt/qca >=dev-cpp/clucene-2.3.3.4 >=dev-libs/boost-1.41 >=dev-libs/qjson-0.7.1 >=media-libs/libechonest-1.1.10 >=media-libs/phonon-4.5.0 media-libs/taglib >=x11-libs/qt-core-4.7.0:4 >=x11-libs/qt-gui-4.7.0:4 >=x11-libs/qt-sql-4.7.0:4[sqlite] >=x11-libs/qt-webkit-4.7.0:4 >=x11-libs/qt-xmlpatterns-4.7.0:4 fftw? ( sci-libs/fftw:3.0 ) jabber? ( net-libs/jreen ) libsamplerate? ( media-libs/libsamplerate ) resolver? ( dev-libs/libattica >=dev-libs/quazip-0.4.3 ) twitter? ( net-libs/qtweetlib ) app-crypt/qca-ossl
+SLOT=0
+SRC_URI=http://download.tomahawk-player.org/tomahawk-0.4.2.tar.bz2
+_eclasses_=base	56b5d6bcc4a0fc2a3055a84fd4a5c36b	cmake-utils	958bfc21321d16fe83e1df5e3e654469	eutils	6891f6f484e3b44a0a15e1b0c0fc9a14	flag-o-matic	66cb710a2aa184a5687fe1289d7973ab	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	qt4-r2	b13ffeacb372a69eeff11fff275ca331	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
+_md5_=c594155d90bbba4ceff0d0019c30c4e7

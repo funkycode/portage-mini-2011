@@ -3,10 +3,11 @@ DEPEND=nls? ( sys-devel/gettext ) || ( >=sys-devel/automake-1.11.1:1.11 ) >=sys-
 DESCRIPTION=A tool to help manage 'well known' user directories
 EAPI=4
 HOMEPAGE=http://www.freedesktop.org/wiki/Software/xdg-user-dirs
-IUSE=nls
+IUSE=gtk nls
 KEYWORDS=alpha amd64 arm hppa ia64 ppc ppc64 sparc x86 ~x86-freebsd ~x86-interix ~amd64-linux ~x86-linux ~x86-solaris
 LICENSE=GPL-2
+PDEPEND=gtk? ( nls? ( x11-misc/xdg-user-dirs-gtk ) )
 SLOT=0
 SRC_URI=http://user-dirs.freedesktop.org/releases/xdg-user-dirs-0.14.tar.gz
 _eclasses_=autotools	addbdf6cce5024ac93ad2084ad5e1d2d	eutils	6891f6f484e3b44a0a15e1b0c0fc9a14	libtool	5f623f5a211fb1b2d84d88ee49959a54	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
-_md5_=f82037c8ec1e926a106db4921b233c61
+_md5_=30a331606c557ea680bb0b40c26ad190
