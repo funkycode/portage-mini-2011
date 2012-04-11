@@ -44,9 +44,9 @@ src_test() {
 		python_execute "$(PYTHON)" setup.py build -b "build-${PYTHON_ABI}" install --root="${tpath}" || die "Installation for tests failed with $(python_get_implementation_and_version)"
 
 		# pytest uses tests placed relatively to the current directory.
-		pushd "${spath}" > /dev/null || return 1
-		python_execute PYTHONPATH="${spath}" "$(PYTHON)" "${tpath}${EPREFIX}/usr/bin/pytest" -v || return 1
-		popd > /dev/null || return 1
+		pushd "${spath}" > /dev/null || return
+		python_execute PYTHONPATH="${spath}" "$(PYTHON)" "${tpath}${EPREFIX}/usr/bin/pytest" -v || return
+		popd > /dev/null || return
 	}
 	python_execute_function testing
 }

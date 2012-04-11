@@ -4,10 +4,9 @@
 
 EAPI="4-python"
 PYTHON_MULTIPLE_ABIS="1"
-# https://github.com/rthalley/dnspython/issues/7
-PYTHON_TESTS_FAILURES_TOLERANT_ABIS="3.* *-jython"
+PYTHON_TESTS_FAILURES_TOLERANT_ABIS="*-jython"
 
-inherit distutils
+inherit distutils eutils
 
 DESCRIPTION="DNS toolkit for Python"
 HOMEPAGE="http://www.dnspython.org/ http://pypi.python.org/pypi/dnspython http://pypi.python.org/pypi/dnspython3"
@@ -26,6 +25,10 @@ DOCS="ChangeLog README"
 PYTHON_MODULES="dns"
 
 src_prepare() {
+	pushd "${WORKDIR}/${PN}3-${PV}" > /dev/null
+	epatch "${FILESDIR}/${P}-python-3.patch"
+	popd > /dev/null
+
 	preparation() {
 		if [[ "$(python_get_version -l --major)" == "2" ]]; then
 			cp -r "${WORKDIR}/${P}" "${WORKDIR}/${P}-${PYTHON_ABI}"
