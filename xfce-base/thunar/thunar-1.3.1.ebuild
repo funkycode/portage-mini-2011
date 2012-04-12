@@ -14,7 +14,7 @@ SRC_URI="mirror://xfce/src/xfce/${PN}/${PV%.*}/${MY_P}.tar.bz2"
 LICENSE="GPL-2 LGPL-2"
 SLOT="0"
 KEYWORDS="~alpha ~amd64 ~arm ~ia64 ~ppc ~ppc64 ~sparc ~x86 ~x86-fbsd ~x86-freebsd ~x86-interix ~amd64-linux ~x86-linux ~x86-solaris"
-IUSE="+dbus debug exif libnotify pcre startup-notification test +xfce_plugins_trash udev"
+IUSE="+dbus debug exif libnotify pcre startup-notification test +xfce_plugins_trash udev archive media-tags shares git subversion volman"
 
 GVFS_DEPEND=">=gnome-base/gvfs-1.10.1"
 COMMON_DEPEND=">=dev-lang/perl-5.6
@@ -29,7 +29,12 @@ COMMON_DEPEND=">=dev-lang/perl-5.6
 	pcre? ( >=dev-libs/libpcre-6 )
 	startup-notification? ( x11-libs/startup-notification )
 	udev? ( || ( >=sys-fs/udev-171-r5[gudev] <sys-fs/udev-171-r5[extras] ) )
-	xfce_plugins_trash? ( >=xfce-base/xfce4-panel-4.9 )"
+	xfce_plugins_trash? ( >=xfce-base/xfce4-panel-4.9 )
+    volman? ( xfce-extra/thunar-volman )
+	media-tags? ( xfce-extra/thunar-media-tags-plugin )
+	shares? ( xfce-extra/thunar-shares-plugin )
+	git? ( xfce-extra/thunar-vcs-plugin[git] )
+	subversion?  ( xfce-extra/thunar-vcs-plugin[subversion] )"
 RDEPEND="${COMMON_DEPEND}
 	dev-util/desktop-file-utils
 	x11-misc/shared-mime-info
