@@ -4,9 +4,9 @@ DESCRIPTION=OBEX Server and Client
 EAPI=4
 HOMEPAGE=http://www.bluez.org/
 IUSE=-eds nokia -server usb
-KEYWORDS=amd64 ~arm ~ppc ~x86
+KEYWORDS=amd64 ~arm ~ppc x86
 LICENSE=GPL-2
 RDEPEND=eds? ( gnome-extra/evolution-data-server ) !eds? ( dev-libs/libical ) >=net-wireless/bluez-4.99 >=dev-libs/openobex-1.4 >=dev-libs/glib-2.16:2 sys-apps/dbus server? ( !app-mobilephone/obex-data-server )
 SLOT=0
 SRC_URI=mirror://kernel/linux/bluetooth/obexd-0.45.tar.xz
-_md5_=a633d5fc51612fd0d7658ba71d08a1c3
+_md5_=7f74c757f060099c6c2b486c6a1efb1a
